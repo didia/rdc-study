@@ -1,28 +1,44 @@
+// Vendor
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import {IntlProvider, addLocaleData} from 'react-intl'
+import fr from 'react-intl/locale-data/fr'
 
-import Header from '../components/Header'
+// Locale
+import messages from '../locales/fr.json'
+
+// Styles
 import './index.css'
 
+// Components
+import Header from '../components/Header'
+
+addLocaleData(fr)
+
 const TemplateWrapper = ({children}) => (
-  <div>
-    <Helmet
-      title="Gatsby Default Starter"
-      meta={[{name: 'description', content: 'Sample'}, {name: 'keywords', content: 'sample, something'}]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
+  <IntlProvider locale="fr" messages={messages}>
+    <div>
+      <Helmet
+        title="RDC Study"
+        meta={[
+          {name: 'description', content: 'Le guide des études à l’étranger'},
+          {name: 'keywords', content: 'etudier à l’étranger, étudier au Canada, étudier en Russie'},
+        ]}
+      />
+      <Header />
+      <div
+        style={{
+          margin: '0 auto',
+          maxWidth: 960,
+          padding: '0px 1.0875rem 1.45rem',
+          paddingTop: 0,
+        }}
+      >
+        {children()}
+      </div>
     </div>
-  </div>
+  </IntlProvider>
 )
 
 TemplateWrapper.propTypes = {
