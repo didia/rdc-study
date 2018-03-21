@@ -1,10 +1,10 @@
 // Vendor
-import React from 'react'
-import Link from 'gatsby-link'
-import {FormattedMessage} from 'react-intl'
+import React from 'react';
+import Link from 'gatsby-link';
+import {FormattedMessage} from 'react-intl';
 
 // Styles
-import styles from './styles.module.scss'
+import styles from './styles.module.scss';
 
 const Header = () => (
   <div className={styles.header}>
@@ -16,6 +16,6 @@ const Header = () => (
       </h1>
     </div>
   </div>
-)
+);
 
-export default Header
+export default Header;

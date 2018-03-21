@@ -1,20 +1,20 @@
 // Vendor
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import {IntlProvider, addLocaleData} from 'react-intl'
-import fr from 'react-intl/locale-data/fr'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import {IntlProvider, addLocaleData} from 'react-intl';
+import fr from 'react-intl/locale-data/fr';
 
 // Locale
-import messages from '../locales/fr.json'
+import messages from '../locales/fr.json';
 
 // Styles
-import './index.css'
+import './index.css';
 
 // Components
-import Header from '../components/Header'
+import Header from '../components/Header';
 
-addLocaleData(fr)
+addLocaleData(fr);
 
 const TemplateWrapper = ({children}) => (
   <IntlProvider locale="fr" messages={messages}>
@@ -39,10 +39,10 @@ const TemplateWrapper = ({children}) => (
       </div>
     </div>
   </IntlProvider>
-)
+);
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
-}
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;

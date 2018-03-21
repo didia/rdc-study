@@ -11,11 +11,11 @@
     "format": "prettier --write 'src/**/*.js'",
     "lint": "./node_modules/.bin/stylelint './src/**/*.scss' && ./node_modules/.bin/eslint './src/**/*.js'",
     "precommit": "lint-staged",
-    "prettier": "prettier --single-quote --print-width 120 --no-bracket-spacing --write 'src/**/*.{js,json,scss,md}'",
+    "prettier": "prettier --write 'src/**/*.{js,json,scss,md}'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "*.{js,json,scss,md}": ["prettier --single-quote --print-width 120 --no-bracket-spacing --write", "git add"]
+    "*.{js,json,scss,md}": ["prettier --write", "git add"]
   },
   "dependencies": {
     "gatsby": "^1.9.238",
