@@ -9,19 +9,19 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "lint":
-      "./node_modules/.bin/stylelint './src/**/*.scss' && ./node_modules/.bin/eslint './src/**/*.js'",
+    "lint": "./node_modules/.bin/stylelint './src/**/*.scss' && ./node_modules/.bin/eslint './src/**/*.js'",
     "precommit": "lint-staged",
-    "prettier": "prettier --write 'src/**/*.{js,json,scss,md}'",
+    "prettier": "prettier --single-quote --print-width 120 --no-bracket-spacing --write 'src/**/*.{js,json,scss,md}'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "*.{js,json,scss,md}": ["prettier --write", "git add"]
+    "*.{js,json,scss,md}": ["prettier --single-quote --print-width 120 --no-bracket-spacing --write", "git add"]
   },
   "dependencies": {
     "gatsby": "^1.9.238",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-plugin-sass": "^1.0.23",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
