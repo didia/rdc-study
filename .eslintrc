@@ -1,0 +1,31 @@
+{
+  "plugins": [
+    "mirego",
+    "prettier",
+    "react"
+  ],
+  "rules": {
+    "generator-star-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": false
+      }
+    ],
+    "indent": "off",
+    "operator-linebreak": [
+      0,
+      "after"
+    ],
+    "prettier/prettier": ["error", {
+      "singleQuote": true,
+      "printWidth": 120,
+      "bracketSpacing": false
+    }]
+  },
+  "extends": [
+    "plugin:mirego/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ]
+}
