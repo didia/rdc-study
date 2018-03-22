@@ -23,7 +23,7 @@ const TemplateWrapper = ({children}) => (
         title="RDC Study"
         meta={[
           {name: 'description', content: 'Le guide des études à l’étranger'},
-          {name: 'keywords', content: 'etudier à l’étranger, étudier au Canada, étudier en Russie'},
+          {name: 'keywords', content: 'etudier à l’étranger, étudier au Canada, étudier en Russie'}
         ]}
       />
       <Header />
@@ -32,7 +32,7 @@ const TemplateWrapper = ({children}) => (
           margin: '0 auto',
           maxWidth: 960,
           padding: '0px 1.0875rem 1.45rem',
-          paddingTop: 0,
+          paddingTop: 0
         }}
       >
         {children()}
@@ -42,7 +42,7 @@ const TemplateWrapper = ({children}) => (
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func
 };
 
 export default TemplateWrapper;
