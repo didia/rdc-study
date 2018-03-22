@@ -9,7 +9,8 @@ import fr from 'react-intl/locale-data/fr';
 import messages from '../locales/fr.json';
 
 // Styles
-import './index.css';
+import '../assets/styles/main.scss';
+import styles from './styles.module.scss';
 
 // Components
 import Header from '../components/Header';
@@ -18,7 +19,7 @@ addLocaleData(fr);
 
 const TemplateWrapper = ({children}) => (
   <IntlProvider locale="fr" messages={messages}>
-    <div>
+    <div className={styles['page-wrapper']}>
       <Helmet
         title="RDC Study"
         meta={[
