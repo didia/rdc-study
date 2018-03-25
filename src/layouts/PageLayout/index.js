@@ -6,14 +6,14 @@ import {IntlProvider, addLocaleData} from 'react-intl';
 import fr from 'react-intl/locale-data/fr';
 
 // Locale
-import messages from '../locales/fr.json';
+import messages from '../../locales/fr.json';
 
 // Styles
-import '../assets/styles/main.scss';
+import '../../assets/styles/main.scss';
 import styles from './styles.module.scss';
 
 // Components
-import Header from '../components/Header';
+import Header from '../../components/Header';
 
 addLocaleData(fr);
 
@@ -28,22 +28,13 @@ const TemplateWrapper = ({children}) => (
         ]}
       />
       <Header />
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '0px 1.0875rem 1.45rem',
-          paddingTop: 0
-        }}
-      >
-        {children()}
-      </div>
+      {children}
     </div>
   </IntlProvider>
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.element.isRequired
 };
 
 export default TemplateWrapper;

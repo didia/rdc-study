@@ -1,10 +1,11 @@
 import React from 'react';
+import PageLayout from '../layouts/PageLayout';
+import IndexPage from '../components/pages/IndexPage';
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>RDC-Study.</p>
-  </div>
+const Index = () => (
+  <PageLayout>
+    <IndexPage />
+  </PageLayout>
 );
 
-export default IndexPage;
+export default Index;

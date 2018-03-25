@@ -1,15 +1,85 @@
 .header {
-  margin-bottom: 1.45rem;
-  background-color: rebeccapurple;
+  position: fixed;
+  z-index: _misc(z-index-base);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5em;
+  padding: 0 1.25em;
+  background-color: transparentize(desaturate(lighten(_palette(bg), 3), 1.5), 0.05);
+  line-height: 3.5em;
+  transition: background-color #{_duration(transition)} ease-in-out;
 }
 
-.header__inner-wrapper {
-  max-width: 960px;
-  padding: 1.45em 1.0875rem;
-  margin: 0 auto;
+.header--home {
+  background-color: transparent;
+
+  .title {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
-.header__link {
-  text-decoration: none;
-  color: white;
+.nav {
+  position: absolute;
+  top: 0.7em;
+  right: 0.7em;
+  height: 3em;
+  text-transform: uppercase;
+  font-family: _font(family-heading);
+  font-size: 0.8em;
+  font-weight: _font(weight-heading-bold);
+  line-height: 3em;
+  letter-spacing: _font(kern-heading);
+}
+
+.nav__link {
+  display: inline-block;
+  padding: 0 1em;
+  border: 0;
+
+  &::before {
+    margin-left: 0.75em;
+    float: right;
+  }
+
+  &[href='#menu'] {
+    @include icon;
+    padding: 0 1.35em;
+    border-radius: _size(border-radius);
+    box-shadow: inset 0 0 2px _palette(border);
+    transition: background-color #{_duration(transition)} ease-in-out;
+
+    &::before {
+      content: '\f0c9';
+    }
+
+    &:hover {
+      background-color: _palette(border-bg);
+    }
+
+    &:active {
+      background-color: _palette(border2-bg);
+    }
+  }
+}
+
+.title {
+  opacity: 1;
+  border-bottom: 0;
+  margin-bottom: 0;
+  font-size: 0.8em;
+  transition: opacity #{_duration(transition)} ease-in-out, visibility #{_duration(transition)};
+  visibility: visible;
+}
+
+.title__link {
+  border: 0;
+}
+
+@include breakpoint(small) {
+  .header {
+    height: 2.75em;
+    line-height: 2.75em;
+  }
 }

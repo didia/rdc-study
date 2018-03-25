@@ -25,12 +25,12 @@ exports.modifyWebpackConfig = ({config, stage}, options) => {
       config.loader(`sass`, {
         test: sassFiles,
         exclude: sassModulesFiles,
-        loaders: [`style`, `css`, sassLoader, sassResourceLoader]
+        loaders: [`style`, `css`, `postcss`, sassLoader, sassResourceLoader]
       });
 
       config.loader(`sassModules`, {
         test: sassModulesFiles,
-        loaders: [`style`, cssModulesConfig(stage), sassLoader, sassResourceLoader]
+        loaders: [`style`, cssModulesConfig(stage), `postcss`, sassLoader, sassResourceLoader]
       });
       return config;
     }
@@ -38,12 +38,17 @@ exports.modifyWebpackConfig = ({config, stage}, options) => {
       config.loader(`sass`, {
         test: sassFiles,
         exclude: sassModulesFiles,
-        loader: extractTextPlugin(stage).extract([`css?minimize`, sassLoader, sassResourceLoader])
+        loader: extractTextPlugin(stage).extract([`css?minimize`, `postcss`, sassLoader, sassResourceLoader])
       });
 
       config.loader(`sassModules`, {
         test: sassModulesFiles,
-        loader: extractTextPlugin(stage).extract(`style`, [cssModulesConfig(stage), sassLoader, sassResourceLoader])
+        loader: extractTextPlugin(stage).extract(`style`, [
+          cssModulesConfig(stage),
+          `postcss`,
+          sassLoader,
+          sassResourceLoader
+        ])
       });
 
       return config;
@@ -59,7 +64,12 @@ exports.modifyWebpackConfig = ({config, stage}, options) => {
 
       config.loader(`sassModules`, {
         test: sassModulesFiles,
-        loader: extractTextPlugin(stage).extract(`style`, [cssModulesConfig(stage), sassLoader, sassResourceLoader])
+        loader: extractTextPlugin(stage).extract(`style`, [
+          cssModulesConfig(stage),
+          `postcss`,
+          sassLoader,
+          sassResourceLoader
+        ])
       });
 
       return config;
