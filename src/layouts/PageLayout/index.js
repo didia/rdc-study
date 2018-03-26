@@ -1,6 +1,6 @@
 // Vendor
 import React from 'react';
-import PropTypes from 'prop-types';
+import T from 'prop-types';
 import Helmet from 'react-helmet';
 import {IntlProvider, addLocaleData} from 'react-intl';
 import fr from 'react-intl/locale-data/fr';
@@ -34,7 +34,7 @@ const TemplateWrapper = ({children}) => (
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.element.isRequired
+  children: T.element.isRequired
 };
 
 export default TemplateWrapper;

@@ -3,5 +3,17 @@
   "header.title": "Guide",
 
   "pages.index.banner.title": "Voici RDC-Etudes",
-  "pages.index.banner.description": "Votre guide gratuit des demarches pour étudier à l'étranger!"
+  "pages.index.banner.description": "Votre guide gratuit des demarches pour étudier à l'étranger!",
+  "pages.index.consulting.description":
+    "Avez-vous besoin d'aide dans votre processus d'admission? Nous vous offrons un service d'accompagnement sur mesure correspondant à vos bésoins.",
+  "pages.index.consulting.learn-more-text": "En savoir plus",
+  "pages.index.consulting.title": "Un service d'accompagnement sur mesure!!",
+  "pages.index.study-guide.description":
+    "Vous n'avez pas besoin de payer quelqu'un 1500$ ou 2500$ pour vos demarches. \n Vous pouvez le faire vous même à moindre coût en utilisant le guide gratuit mis à votre disposition.",
+  "pages.index.study-guide.explore-text": "Explorez le guide",
+  "pages.index.study-guide.title": "Un guide 100% Gratuit!!!",
+  "pages.index.verification.description":
+    "Ne vous faites plus jamais escroqués! Vous faites affaire avec quelqu'un qui vous aide et vous voulez vérifier les informations qu'il vous donne? Nous pouvons vérifier gratuitement ces informations pour vous ainsi que les montants qui vous sont demandés.",
+  "pages.index.verification.contact-us-text": "Contactez nous",
+  "pages.index.verification.title": "Un service de vérification Gratuit!!!"
 }
