@@ -17,7 +17,7 @@ import Header from '../../components/Header';
 
 addLocaleData(fr);
 
-const TemplateWrapper = ({children}) => (
+const TemplateWrapper = ({children, headerWithTitle}) => (
   <IntlProvider locale="fr" messages={messages}>
     <div className={styles['page-wrapper']}>
       <Helmet
@@ -27,14 +27,15 @@ const TemplateWrapper = ({children}) => (
           {name: 'keywords', content: 'etudier à l’étranger, étudier au Canada, étudier en Russie'}
         ]}
       />
-      <Header />
+      <Header withTitle={headerWithTitle} />
       {children}
     </div>
   </IntlProvider>
 );
 
 TemplateWrapper.propTypes = {
-  children: T.element.isRequired
+  children: T.element.isRequired,
+  headerWithTitle: T.bool
 };
 
 export default TemplateWrapper;

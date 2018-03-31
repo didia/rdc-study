@@ -7,14 +7,14 @@ import IndexPage from '../components/pages/IndexPage';
 
 const Index = ({data}) => {
   const countries = data.allMarkdownRemark.edges.map(edge => ({
-    excerpt: edge.node.excerpt,
+    excerpt: edge.node.frontmatter.excerpt,
     path: edge.node.fields.path,
     thumbnail: edge.node.frontmatter.thumbnail.childImageSharp,
     title: edge.node.frontmatter.title
   }));
 
   return (
-    <PageLayout>
+    <PageLayout headerWithTitle={true}>
       <IndexPage images={data} countries={countries} />
     </PageLayout>
   );
@@ -35,11 +35,11 @@ export const pageQuery = graphql`
     allMarkdownRemark(limit: 2000, sort: {fields: [frontmatter___title], order: ASC}) {
       edges {
         node {
-          excerpt
           fields {
             path
           }
           frontmatter {
+            excerpt
             slug
             title
             thumbnail {
