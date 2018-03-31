@@ -11,14 +11,14 @@ import styles from './styles.module.scss';
 const Country = ({country}) => {
   return (
     <article className={styles.article}>
-      <a href="#" className={classnames(styles['image-wrapper'], 'image')}>
-        <Img className={styles.image} sizes={country.image.sizes} alt={country.name} />
+      <a href={country.path} className={classnames(styles['image-wrapper'], 'image')}>
+        <Img className={styles.image} sizes={country.thumbnail.sizes} alt={country.name} />
       </a>
-      <h3 className="major">{country.name}</h3>
-      <p>{country.description}</p>
+      <h3 className="major">{country.title}</h3>
+      <p>{country.excerpt}</p>
       <FormattedMessage id="pages.index.country-list.learn-more-text">
         {text => (
-          <a href="#" className="special">
+          <a href={country.path} className="special">
             {text}
           </a>
         )}
@@ -29,9 +29,10 @@ const Country = ({country}) => {
 
 Country.propTypes = {
   country: T.shape({
-    description: T.string.isRequired,
-    name: T.string.isRequired,
-    image: T.shape({
+    excerpt: T.string.isRequired,
+    path: T.string.isRequired,
+    title: T.string.isRequired,
+    thumbnail: T.shape({
       sizes: T.object
     }).isRequired
   })

@@ -10,7 +10,7 @@ import Banner from './Banner';
 import Service from './Service';
 import CountryList from './CountryList';
 
-const IndexPage = ({images}) => {
+const IndexPage = ({images, countries}) => {
   const services = [
     {
       descriptionTextKey: 'pages.index.services.study-guide.description',
@@ -44,24 +44,6 @@ const IndexPage = ({images}) => {
     }
   ];
 
-  const countries = [
-    {
-      description: 'Le Canada est un pays très beau mais avec des températures térribles l’hiver',
-      image: images.canadaThumbnailImage,
-      name: 'Canada'
-    },
-    {
-      description: 'La France est le pays de la mode mais aussi un pays où vous allez vous sentir chez vous',
-      image: images.franceThumbnailImage,
-      name: 'France'
-    },
-    {
-      description: 'Les Etats-Unis c’est le pays de Donald Trump, le pays du rêve américain',
-      image: images.usaThumbnailImage,
-      name: 'Etas-Unis'
-    }
-  ];
-
   return (
     <div>
       <Banner />
@@ -87,12 +69,10 @@ const IndexPage = ({images}) => {
 };
 
 IndexPage.propTypes = {
+  countries: T.arrayOf(T.object).isRequired,
   images: T.shape({
-    canadaThumbnailImage: T.object.isRequired,
     consultingServiceImage: T.object.isRequired,
-    franceThumbnailImage: T.object.isRequired,
     freeGuideImage: T.object.isRequired,
-    usaThumbnailImage: T.object.isRequired,
     verificationServiceImage: T.object.isRequired
   }).isRequired
 };

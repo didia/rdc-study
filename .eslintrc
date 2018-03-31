@@ -27,5 +27,9 @@
     "plugin:mirego/recommended",
     "plugin:react/recommended",
     "prettier"
-  ]
+  ],
+  "globals": {
+    "Promise": true,
+    "graphql": true
+  }
 }
