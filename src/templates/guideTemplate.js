@@ -2,25 +2,30 @@
 import React from 'react';
 import T from 'prop-types';
 
+import PageLayout from '../layouts/PageLayout';
+import CountryGuidePage from '../components/pages/CountryGuidePage';
+
 export default function Template({
   data // this prop will be injected by the GraphQL query below.
 }) {
   const {markdownRemark} = data; // data.markdownRemark holds our post data
   const {frontmatter, html} = markdownRemark;
+
+  const country = {
+    content: html,
+    excerpt: frontmatter.excerpt,
+    title: frontmatter.title
+  };
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div className="blog-post-content" dangerouslySetInnerHTML={{__html: html}} />
-      </div>
-    </div>
+    <PageLayout>
+      <CountryGuidePage country={country} />
+    </PageLayout>
   );
 }
 
 Template.propTypes = {
   data: T.shape({
-    title: T.string.isRequired
+    markdownRemark: T.object.isRequired
   })
 };
 
@@ -29,7 +34,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: {slug: {eq: $slug}}) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        excerpt
         title
       }
     }

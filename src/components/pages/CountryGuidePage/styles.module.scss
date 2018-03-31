@@ -1,0 +1,89 @@
+.wrapper {
+  @include wrapper-edges-color(_palette(bg));
+  position: relative;
+  margin: _size(wrapper-edges, large) 0;
+  background-color: _palette(bg);
+
+  &::before,
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: _size(wrapper-edges, large);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &::before {
+    top: (_size(wrapper-edges, large) * -1);
+    left: 0;
+  }
+
+  &::after {
+    bottom: (_size(wrapper-edges, large) * -1);
+    left: 0;
+    transform: scaleY(-1);
+  }
+}
+
+.inner {
+  @include padding(3em, 0);
+  width: _size(inner);
+  margin: 0 auto;
+}
+
+@include breakpoint(medium) {
+  .wrapper {
+    margin: _size(wrapper-edges, medium) 0;
+
+    &::before,
+    &::after {
+      height: _size(wrapper-edges, medium);
+    }
+
+    &::before {
+      top: (_size(wrapper-edges, medium) * -1);
+    }
+
+    &::after {
+      bottom: (_size(wrapper-edges, medium) * -1);
+      left: 0;
+    }
+  }
+
+  .inner {
+    @include padding(3em, 3em);
+    width: 100%;
+  }
+}
+
+@include breakpoint(small) {
+  .wrapper {
+    margin: _size(wrapper-edges, small) 0;
+
+    &::before,
+    &::after {
+      height: _size(wrapper-edges, small);
+    }
+
+    &::before {
+      top: (_size(wrapper-edges, small) * -1);
+    }
+
+    &::after {
+      bottom: (_size(wrapper-edges, small) * -1);
+      left: 0;
+    }
+  }
+
+  .inner {
+    @include padding(2em, 2em);
+  }
+}
+
+@include breakpoint(xxsmall) {
+  .inner {
+    @include padding(2em, 1.5em);
+  }
+}
