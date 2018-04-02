@@ -3,7 +3,9 @@ import React from 'react';
 import T from 'prop-types';
 
 const Content = ({country, className}) => (
-  <div className={className} dangerouslySetInnerHTML={{__html: country.content}} />
+  <div className={className}>
+    <div dangerouslySetInnerHTML={{__html: country.content}} />
+  </div>
 );
 
 Content.propTypes = {
