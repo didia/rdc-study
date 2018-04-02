@@ -1,0 +1,24 @@
+<svg width="638" height="198" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+    <defs>
+        <symbol id="svg_1" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+            <path d="m622.884,199.005l-275.817,85.1a96,96 0 0 1 -54.134,0l-200.535,-61.873c-8.564,11.438 -11.018,23.05 -11.918,38.335c9.298,5.598 15.52,15.788 15.52,27.433c0,11.952 -6.557,22.366 -16.265,27.861l16.197,123.096c0.63,4.786 -3.1,9.043 -7.932,9.043l-48,0c-4.828,0 -8.562,-4.253 -7.932,-9.044l16.197,-123.096c-9.708,-5.494 -16.265,-15.908 -16.265,-27.86c0,-12.034 6.646,-22.511 16.465,-27.976c0.947,-17.951 3.974,-33.231 12.152,-47.597l-43.502,-13.422c-22.876,-6.801 -22.766,-39.241 0,-46.01l275.817,-85.1a96,96 0 0 1 54.134,0l275.817,85.1c22.877,6.801 22.767,39.241 0.001,46.01zm-266.381,115.677l-0.207,0.064l-0.207,0.061a127.998,127.998 0 0 1 -72.177,0l-0.207,-0.061l-0.207,-0.064l-150.914,-46.57l-12.584,83.888c0,35.346 89.543,64 200,64s200,-28.654 200,-64l-12.583,-83.888l-150.914,46.57z" id="svg_4"/>
+        </symbol>
+        <style type="text/css">
+            <![CDATA[
+            @font-face {
+                font-family: Chicle;
+                src: url('https://fonts.googleapis.com/css?family=Chicle');
+            }
+           ]]>
+        </style>
+    </defs>
+    <g>
+        <title>Layer 1</title>
+        <g id="svg_3"/>
+        <use x="409.3148" y="450.41184" transform="matrix(0.9020155518502758,0,0,1.094611027884068,-530.5312657469302,-509.35056804094074) " xlink:href="#svg_1" id="svg_2" fill="#007fff"/>
+        <text stroke="#000000" fill="#ce0e19" stroke-width="0" x="236.06724" y="188.64066" font-size="24" font-family="Chicle" text-anchor="middle" xml:space="preserve" transform="matrix(2.4459907982836073,0,0,2.9801438009324235,-310.4394374114099,-399.57009794718306) " id="svg_7">RDC</text>
+  <text stroke="#000000" fill="#fde541" stroke-width="0" x="266.31877" y="186.5749" font-size="24" font-family="Chicle" text-anchor="middle" xml:space="preserve" transform="matrix(2.4459907982836073,0,0,2.9801438009324235,-310.4394374114099,-399.57009794718306) " id="svg_8">-</text>
+  <text stroke="#000000" fill="#ce0e19" stroke-width="0" x="317.72129" y="187.61651" font-size="24" font-family="Chicle" text-anchor="middle" xml:space="preserve" transform="matrix(2.4459907982836073,0,0,2.9801438009324235,-310.4394374114099,-399.57009794718306) " id="svg_9">ETUDES</text>
+    </g>
+</svg>

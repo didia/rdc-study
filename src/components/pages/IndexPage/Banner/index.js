@@ -10,7 +10,7 @@ const Banner = () => (
   <section className={styles.banner}>
     <div className={styles.wrapper}>
       <div className={styles.logo}>
-        <span className={classnames(styles.logo__icon, 'icon', 'fa-diamond')} />
+        <span className={classnames(styles.logo__icon, 'icon', 'fa-graduation-cap')} />
       </div>
 
       <FormattedMessage id="pages.index.banner.title">
