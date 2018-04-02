@@ -2,6 +2,15 @@
   "header.menu-toggle-label": "Menu",
   "header.title": "RDC-ETUDES",
 
+  "footer.copyright": "© RDC-Etudes. Tous droits réservés",
+  "footer.contact-form.email-label": "Email",
+  "footer.contact-form.message-label": "Message",
+  "footer.contact-form.name-label": "Nom",
+  "footer.contact-form.send-message-button-label": "Envoyer",
+  "footer.contact-us-text":
+    "Avez-vous des questions ou besoin d'informations supplémentaires? N'hésitez donc pas de nous contacter, de préférence à travers nos médias sociaux.",
+  "footer.title": "Contactez-nous",
+
   "pages.guides-show.banner.facebook-share-button-label": "Partagez ce guide sur facebook",
 
   "pages.index.banner.title": "Voici RDC-Etudes",
