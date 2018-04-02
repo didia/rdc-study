@@ -22,6 +22,10 @@
   letter-spacing: _font(kern-heading);
 }
 
+.social {
+  text-align: right;
+}
+
 @include breakpoint(large) {
   .banner {
     @include padding(5em, 0, (4em, 0, _size(wrapper-edges, large) * 0.5, 0));
