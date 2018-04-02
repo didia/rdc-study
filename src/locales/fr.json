@@ -1,21 +1,27 @@
 {
   "header.menu-toggle-label": "Menu",
-  "header.title": "Guide",
+  "header.title": "RDC-ETUDES",
+
+  "pages.guides-show.banner.facebook-share-button-label": "Partagez ce guide sur facebook",
 
   "pages.index.banner.title": "Voici RDC-Etudes",
   "pages.index.banner.description": "Votre guide gratuit des demarches pour étudier à l'étranger!",
+
   "pages.index.country-list.title": "Les pays que nous couvrons",
   "pages.index.country-list.description":
     "Chaque pays a ses avantages ainsi que désavantages lorsqu'il s'agit d'y mener un programme d'études. Quel pays convient le plus à votre projet d'étude ? Nous mettons à votre disponibilité un guide par pays pour vous accompagner dans le choix de votre prochaine destination d'études. Nous couvrons plusieurs pays dont:",
   "pages.index.country-list.learn-more-text": "En savoir plus",
+
   "pages.index.services.consulting.description":
     "Avez-vous besoin d'aide dans votre processus d'admission? Nous vous offrons un service d'accompagnement sur mesure correspondant à vos bésoins.",
   "pages.index.services.consulting.learn-more-text": "En savoir plus",
   "pages.index.services.consulting.title": "Un service d'accompagnement sur mesure!!",
+
   "pages.index.services.study-guide.description":
     "Vous n'avez pas besoin de payer quelqu'un 1500$ ou 2500$ pour vos demarches. \n Vous pouvez le faire vous même à moindre coût en utilisant le guide gratuit mis à votre disposition.",
   "pages.index.services.study-guide.explore-text": "Explorez le guide",
   "pages.index.services.study-guide.title": "Un guide 100% Gratuit!!!",
+
   "pages.index.services.verification.description":
     "Ne vous faites plus jamais escroqués! Vous faites affaire avec quelqu'un qui vous aide et vous voulez vérifier les informations qu'il vous donne? Nous pouvons vérifier gratuitement ces informations pour vous ainsi que les montants qui vous sont demandés.",
   "pages.index.services.verification.contact-us-text": "Contactez nous",

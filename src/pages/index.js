@@ -6,9 +6,16 @@ import PageLayout from '../layouts/PageLayout';
 import IndexPage from '../components/pages/IndexPage';
 
 const Index = ({data}) => {
+  const countries = data.allMarkdownRemark.edges.map(edge => ({
+    excerpt: edge.node.frontmatter.excerpt,
+    path: edge.node.fields.path,
+    thumbnail: edge.node.frontmatter.thumbnail.childImageSharp,
+    title: edge.node.frontmatter.title
+  }));
+
   return (
-    <PageLayout>
-      <IndexPage images={data} />
+    <PageLayout headerWithTitle={true}>
+      <IndexPage images={data} countries={countries} />
     </PageLayout>
   );
 };
@@ -23,12 +30,27 @@ Index.propTypes = {
 
 export default Index;
 
-// eslint-disable-next-line no-undef
 export const pageQuery = graphql`
   query PageQuery {
-    canadaThumbnailImage: imageSharp(id: {regex: "/canada.jpg/"}) {
-      sizes(maxHeight: 500) {
-        ...GatsbyImageSharpSizes
+    allMarkdownRemark(limit: 2000, sort: {fields: [frontmatter___title], order: ASC}) {
+      edges {
+        node {
+          fields {
+            path
+          }
+          frontmatter {
+            excerpt
+            slug
+            title
+            thumbnail {
+              childImageSharp {
+                sizes(maxHeight: 500) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
+          }
+        }
       }
     }
     consultingServiceImage: imageSharp(id: {regex: "/consulting-service.jpg/"}) {
@@ -36,18 +58,8 @@ export const pageQuery = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    franceThumbnailImage: imageSharp(id: {regex: "/france.jpg/"}) {
-      sizes(maxHeight: 500) {
-        ...GatsbyImageSharpSizes
-      }
-    }
     freeGuideImage: imageSharp(id: {regex: "/free-guide.jpg/"}) {
       sizes(maxWidth: 276) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    usaThumbnailImage: imageSharp(id: {regex: "/usa.jpg/"}) {
-      sizes(maxHeight: 500) {
         ...GatsbyImageSharpSizes
       }
     }
