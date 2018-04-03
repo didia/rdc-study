@@ -20,6 +20,7 @@
     "*.{js,json,scss,md}": ["prettier --write", "git add"]
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "classnames": "^2.2.5",
     "gatsby": "^1.9.238",
     "gatsby-1-config-css-modules": "^1.0.10",
