@@ -1,0 +1,33 @@
+ol {
+  padding-left: 1.25em;
+  margin: 0 0 _size(element-margin) 0;
+  list-style: decimal;
+
+  li {
+    padding-left: 0.25em;
+  }
+}
+
+ul {
+  padding-left: 1em;
+  margin: 0 0 _size(element-margin) 0;
+  list-style: disc;
+
+  li {
+    padding-left: 0.5em;
+  }
+}
+
+dl {
+  margin: 0 0 _size(element-margin) 0;
+
+  dt {
+    display: block;
+    margin: 0 0 (_size(element-margin) * 0.5) 0;
+    font-weight: _font(weight-bold);
+  }
+
+  dd {
+    margin-left: _size(element-margin);
+  }
+}

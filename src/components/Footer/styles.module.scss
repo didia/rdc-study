@@ -1,0 +1,225 @@
+.inner {
+  @include padding(5em, 0);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: _size(inner);
+  margin: 0 auto;
+
+  > * {
+    width: 100%;
+  }
+}
+
+.contact {
+  width: calc(50% - #{_size(section-spacing, large) * 0.5});
+  padding: 0;
+  list-style: none;
+}
+
+.contact__item {
+  @include icon;
+  position: relative;
+  padding: 0 0 0 3.25em;
+  margin: (_size(element-margin) * 1.25) 0 0 0;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5em;
+    height: 2.5em;
+    border: solid 2px _palette(border);
+    border-radius: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 2.35em;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.contact-form {
+  width: calc(50% - #{_size(section-spacing, large) * 0.5});
+  margin: 0 _size(section-spacing, large) 0 0;
+}
+
+.copyright {
+  width: 100%;
+  padding: _size(element-margin) 0 0 0;
+  border-top: solid 2px _palette(border);
+  margin: (_size(element-margin) * 2) 0 _size(element-margin) 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    padding: 0;
+    padding-left: 1em;
+    border-left: solid 2px _palette(border);
+    margin-left: 1em;
+    font-size: 0.9em;
+    line-height: 1;
+    color: _palette(fg-light);
+
+    &:first-child {
+      padding-left: 0;
+      border-left: 0;
+      margin-left: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+}
+
+.form {
+  opacity: 1;
+  overflow: hidden;
+  max-height: 600px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.form--hidden {
+  opacity: 0;
+  max-height: 0;
+  visibility: hidden;
+}
+
+.alert {
+  position: relative;
+  opacity: 1;
+  overflow: hidden;
+  max-height: 200px;
+  padding: 1em 1.25em;
+  border: 1px solid transparent;
+  border-radius: 0.25em;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.alert--success {
+  border-color: #c3e6cb;
+  background-color: #d4edda;
+  color: #155724;
+
+  .alert__title {
+    color: #155724;
+  }
+}
+
+.alert--error {
+  border-color: #f5c6cb;
+  background-color: #f8d7da;
+  color: #721c24;
+
+  .alert__title {
+    color: #721c24;
+  }
+}
+
+.alert--hidden {
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+.alert__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    font-weight: bold;
+  }
+
+  :global(.icon) {
+    cursor: pointer;
+  }
+}
+
+@include breakpoint(large) {
+  .footer {
+    padding-top: _size(wrapper-edges, large);
+    margin-top: (_size(wrapper-edges, large) * -1);
+    background-color: _palette(bg);
+    background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
+      url('../../assets/images/background-image.jpg');
+    background-position: center, center;
+    background-size: auto, cover;
+  }
+}
+
+@include breakpoint(medium) {
+  .footer {
+    padding-top: _size(wrapper-edges, medium);
+    margin-top: (_size(wrapper-edges, medium) * -1);
+  }
+
+  .inner {
+    @include padding(3em, 3em);
+    display: block;
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 0 0 (_size(element-margin) * 2) 0;
+  }
+
+  .contact {
+    width: 100%;
+    margin: 0 0 (_size(element-margin) * 2) 0;
+  }
+
+  .copyright {
+    margin: (_size(element-margin) * 2) 0 _size(element-margin) 0;
+  }
+}
+
+@include breakpoint(small) {
+  .footer {
+    padding-top: _size(wrapper-edges, small);
+    margin-top: (_size(wrapper-edges, small) * -1);
+  }
+
+  .inner {
+    @include padding(2em, 2em);
+  }
+
+  .contact-form {
+    margin: 0 0 (_size(element-margin) * 1.5) 0;
+  }
+
+  .contact__item {
+    margin: (_size(element-margin) * 0.75) 0 0 0;
+  }
+}
+
+@include breakpoint(xsmall) {
+  .inner {
+    @include padding(2em, 1.5em);
+  }
+
+  .copyright {
+    li {
+      display: block;
+      padding-left: 0;
+      border-left: 0;
+      margin: 1em 0 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@include breakpoint(xxsmall) {
+  .inner {
+    @include padding(2em, 1.5em);
+  }
+}

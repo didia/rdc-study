@@ -30,6 +30,7 @@
   ],
   "globals": {
     "Promise": true,
-    "graphql": true
+    "graphql": true,
+    "process": true
   }
 }

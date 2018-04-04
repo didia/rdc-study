@@ -12,6 +12,7 @@ import '../../assets/styles/main.scss';
 import styles from './styles.module.scss';
 
 // Components
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import SEO from '../../components/SEO';
 
@@ -23,6 +24,7 @@ const TemplateWrapper = ({children, headerWithTitle}) => (
       <SEO />
       <Header withTitle={headerWithTitle} />
       {children}
+      <Footer />
     </div>
   </IntlProvider>
 );

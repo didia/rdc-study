@@ -12,12 +12,15 @@
     "lint": "./node_modules/.bin/stylelint './src/**/*.scss' && ./node_modules/.bin/eslint './src/**/*.js'",
     "precommit": "lint-staged",
     "prettier": "prettier --write 'src/**/*.{js,json,scss,md}'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-contact-email-template":
+      "aws ses update-template --cli-input-json file://aws/email/email-template.json --region=us-east-1"
   },
   "lint-staged": {
     "*.{js,json,scss,md}": ["prettier --write", "git add"]
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "classnames": "^2.2.5",
     "gatsby": "^1.9.238",
     "gatsby-1-config-css-modules": "^1.0.10",
