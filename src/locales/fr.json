@@ -3,10 +3,18 @@
   "header.title": "RDC-ETUDES",
 
   "footer.copyright": "© RDC-Etudes. Tous droits réservés",
+
+  "footer.contact-form.error.title": "Oups!!",
+  "footer.contact-form.error.message-text":
+    "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer plutârd ou contactez nous à travers nos réseaux sociaux.",
   "footer.contact-form.email-label": "Email",
   "footer.contact-form.message-label": "Message",
   "footer.contact-form.name-label": "Nom",
   "footer.contact-form.send-message-button-label": "Envoyer",
+  "footer.contact-form.success.title": "Message envoyé",
+  "footer.contact-form.success.message-text":
+    "Nous vous remercions de nous avoir contacté. Nous vous répondrons dans le plus bref délai. Merci!",
+
   "footer.contact-us-text":
     "Avez-vous des questions ou besoin d'informations supplémentaires? N'hésitez donc pas de nous contacter, de préférence à travers nos médias sociaux.",
   "footer.title": "Contactez-nous",

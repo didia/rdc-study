@@ -76,6 +76,71 @@
   }
 }
 
+.form {
+  opacity: 1;
+  overflow: hidden;
+  max-height: 600px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.form--hidden {
+  opacity: 0;
+  max-height: 0;
+  visibility: hidden;
+}
+
+.alert {
+  position: relative;
+  opacity: 1;
+  overflow: hidden;
+  max-height: 200px;
+  padding: 1em 1.25em;
+  border: 1px solid transparent;
+  border-radius: 0.25em;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.alert--success {
+  border-color: #c3e6cb;
+  background-color: #d4edda;
+  color: #155724;
+
+  .alert__title {
+    color: #155724;
+  }
+}
+
+.alert--error {
+  border-color: #f5c6cb;
+  background-color: #f8d7da;
+  color: #721c24;
+
+  .alert__title {
+    color: #721c24;
+  }
+}
+
+.alert--hidden {
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+.alert__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    font-weight: bold;
+  }
+
+  :global(.icon) {
+    cursor: pointer;
+  }
+}
+
 @include breakpoint(large) {
   .footer {
     padding-top: _size(wrapper-edges, large);

@@ -166,9 +166,13 @@
     "selector-list-comma-newline-after": "always",
     "selector-list-comma-space-before": "never",
     "selector-no-vendor-prefix": true,
-    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-class-no-unknown": [true, {
+      "ignorePseudoClasses": ["global"]
+    }],
     "selector-pseudo-element-colon-notation": "double",
-    "selector-pseudo-element-no-unknown": true,
+    "selector-pseudo-element-no-unknown": [true, {
+      "ignorePseudoElements": ["global"]
+    }],
     "selector-type-no-unknown": true,
     "shorthand-property-no-redundant-values": true,
     "string-quotes": "single",

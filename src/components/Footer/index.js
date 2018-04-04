@@ -8,20 +8,22 @@ import T from 'prop-types';
 // Styles
 import styles from './styles.module.scss';
 
-// Contact
+// Config
 import {contact, contactFormEndpoint} from '../../../config';
 
 // Utils
 import getCurrentUrl from '../../utils/get-current-url';
 
-const ContactForm = ({submitDisabledState, onUpdate, onSubmit}) => (
-  <form onSubmit={onSubmit}>
+import ActivityIndicator from '../ActivityIndicator';
+
+const ContactForm = ({className, submitDisabledState, values, onUpdate, onSubmit}) => (
+  <form className={classnames(styles.form, className)} onSubmit={onSubmit}>
     <div className="field">
       <FormattedMessage id="footer.contact-form.name-label">
         {text => <label htmlFor="name">{text}</label>}
       </FormattedMessage>
 
-      <input type="text" name="name" onChange={onUpdate} />
+      <input type="text" name="name" onChange={onUpdate} value={values.name} />
     </div>
 
     <div className="field">
@@ -29,7 +31,7 @@ const ContactForm = ({submitDisabledState, onUpdate, onSubmit}) => (
         {text => <label htmlFor="email">{text}</label>}
       </FormattedMessage>
 
-      <input type="email" name="email" onChange={onUpdate} />
+      <input type="email" name="email" onChange={onUpdate} value={values.email} />
     </div>
 
     <div className="field">
@@ -37,7 +39,7 @@ const ContactForm = ({submitDisabledState, onUpdate, onSubmit}) => (
         {text => <label htmlFor="message">{text}</label>}
       </FormattedMessage>
 
-      <textarea name="message" rows="4" onChange={onUpdate} />
+      <textarea name="message" rows="4" onChange={onUpdate} value={values.message} />
     </div>
 
     <ul className="actions">
@@ -51,9 +53,60 @@ const ContactForm = ({submitDisabledState, onUpdate, onSubmit}) => (
 );
 
 ContactForm.propTypes = {
+  className: T.string,
   submitDisabledState: T.string.isRequired,
+  values: T.shape({
+    email: T.string,
+    message: T.string,
+    name: T.string
+  }).isRequired,
   onUpdate: T.func.isRequired,
   onSubmit: T.func.isRequired
+};
+
+const Alert = ({className, messageTranslationId, titleTranslationId, onDiscardAlert}) => (
+  <div className={classnames(styles.alert, className)}>
+    <h4 className={styles.alert__title}>
+      <FormattedMessage id={titleTranslationId} />
+
+      <a onClick={onDiscardAlert} className="icon fa-close" />
+    </h4>
+
+    <FormattedMessage id={messageTranslationId}>{text => <div>{text}</div>}</FormattedMessage>
+  </div>
+);
+
+Alert.propTypes = {
+  className: T.string,
+  titleTranslationId: T.string.isRequired,
+  messageTranslationId: T.string.isRequired,
+  onDiscardAlert: T.func.isRequired
+};
+
+const SuccessAlert = ({className, ...props}) => (
+  <Alert
+    className={classnames(styles['alert--success'], className)}
+    messageTranslationId="footer.contact-form.success.message-text"
+    titleTranslationId="footer.contact-form.success.title"
+    {...props}
+  />
+);
+
+SuccessAlert.propTypes = {
+  className: T.string
+};
+
+const ErrorAlert = ({className, ...props}) => (
+  <Alert
+    className={classnames(styles['alert--error'], className)}
+    messageTranslationId="footer.contact-form.error.message-text"
+    titleTranslationId="footer.contact-form.error.title"
+    {...props}
+  />
+);
+
+ErrorAlert.propTypes = {
+  className: T.string
 };
 
 class Footer extends Component {
@@ -64,18 +117,42 @@ class Footer extends Component {
       email: '',
       message: '',
       name: '',
-      hasSubmitted: false,
-      hasFailedToSubmit: false
+      showError: false,
+      showSuccess: false
     };
 
+    this.discardErrorAlert = this.discardErrorAlert.bind(this);
+    this.discardSuccessAlert = this.discardSuccessAlert.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   _submitDisabledState() {
-    const {email, message, name} = this.state;
+    const {email, message, name, isSubmitting} = this.state;
 
-    return email && message && name ? '' : 'disabled';
+    return email && message && name && !isSubmitting ? '' : 'disabled';
+  }
+
+  _shouldShowContactForm() {
+    return this.state.showSuccess || this.state.showError;
+  }
+
+  discardErrorAlert() {
+    this.setState({
+      showError: false,
+      showSuccess: false
+    });
+  }
+
+  discardSuccessAlert() {
+    this.setState({
+      email: '',
+      message: '',
+      name: '',
+      isSubmitting: false,
+      showError: false,
+      showSuccess: false
+    });
   }
 
   handleChange(event) {
@@ -98,20 +175,27 @@ class Footer extends Component {
       link: getCurrentUrl()
     };
 
+    this.setState({
+      ...this.state,
+      isSubmitting: true
+    });
+
     axios
       .post(contactFormEndpoint, payload)
       .then(() => {
         this.setState({
           ...this.state,
-          hasSubmitted: true,
-          hasFailedToSubmit: false
+          isSubmitting: false,
+          showError: false,
+          showSuccess: true
         });
       })
       .catch(error => {
         this.setState({
           ...this.state,
-          hasSubmitted: false,
-          hasFailtedToSubmit: true
+          isSubmitting: false,
+          showError: true,
+          showSuccess: false
         });
 
         window.console.log('An error occured: ', error);
@@ -121,6 +205,8 @@ class Footer extends Component {
   render() {
     return (
       <section className={styles.footer}>
+        <ActivityIndicator isActive={this.state.isSubmitting} />
+
         <div className={styles.inner}>
           <FormattedMessage id="footer.title">{text => <h2 className="major">{text}</h2>}</FormattedMessage>
 
@@ -128,9 +214,21 @@ class Footer extends Component {
 
           <div className={styles['contact-form']}>
             <ContactForm
+              className={this._shouldShowContactForm() ? styles['form--hidden'] : null}
               submitDisabledState={this._submitDisabledState()}
+              values={this.state}
               onUpdate={this.handleChange}
               onSubmit={this.handleSubmit}
+            />
+
+            <SuccessAlert
+              className={this.state.showSuccess ? null : styles['alert--hidden']}
+              onDiscardAlert={this.discardSuccessAlert}
+            />
+
+            <ErrorAlert
+              className={this.state.showError ? null : styles['alert--hidden']}
+              onDiscardAlert={this.discardErrorAlert}
             />
           </div>
 
