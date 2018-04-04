@@ -19,7 +19,7 @@ export default {
       link: 'tel:+1-581-998-8051'
     }
   },
-  contactFormEndpoint: process.env.CONTACT_FORM_ENDPOINT,
+  contactFormEndpoint: process.env.GATSBY_CONTACT_FORM_ENDPOINT,
   siteDescription: 'Guide gratuit pour la préparation d’un projet d’études à l’étranger pour étudiants congolais.',
   siteFBAppID: '192570431528735',
   siteKeywords: 'etudier à l’étranger, étudier au Canada, étudier en France, étudier aux Etats-Unis',
