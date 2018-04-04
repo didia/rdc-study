@@ -156,12 +156,10 @@ class Footer extends Component {
   }
 
   handleChange(event) {
-    const newState = {
+    this.setState({
       ...this.state,
       [event.target.name]: event.target.value
-    };
-
-    this.setState(newState);
+    });
   }
 
   handleSubmit(event) {
