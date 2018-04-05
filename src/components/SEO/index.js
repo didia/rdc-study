@@ -68,6 +68,8 @@ const SEO = ({meta}) => {
   }
   return (
     <Helmet>
+      <title>{title}</title>
+      <link rel="canonical" href={meta ? postURL : blogURL} />
       {/* General tags */}
       <meta name="description" content={description} />
       <meta name="image" content={image} />
