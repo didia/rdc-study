@@ -7,8 +7,8 @@ export default {
       streetAddress: '3214, Chemin Sainte-Foy'
     },
     email: {
-      label: 'thefuture2092@gmail.com',
-      link: 'mailto:thefuture2092@gmail.com'
+      label: 'salut@rdcetudes.com',
+      link: 'mailto:salut@rdcetudes.com'
     },
     facebook: {
       label: 'facebook.com/rdcetudes',
@@ -25,5 +25,5 @@ export default {
   siteKeywords: 'etudier à l’étranger, étudier au Canada, étudier en France, étudier aux Etats-Unis',
   siteLogo: '/logo.png',
   siteTitle: 'RDC-ETUDES',
-  siteURL: 'https://rdc-etudes.surge.sh'
+  siteURL: 'https://www.rdcetudes.com'
 };
