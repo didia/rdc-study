@@ -23,5 +23,6 @@ All environment variables prefixed by `GATSBY_` will be exposed to the browser.
 
 ```
 GATSBY_CONTACT_FORM_ENDPOINT=The endpoint to send contact information #required
+GOOGLE_TAG_MANAGER_ID=The Google Tag Manager Id #require in production
 SENTRY_DSN=The DSN for Sentry #required in production
 ```

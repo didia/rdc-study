@@ -4,6 +4,7 @@ import T from 'prop-types';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
 import Img from 'gatsby-image';
+import Link from 'gatsby-link';
 
 // Styles
 import styles from './styles.module.scss';
@@ -11,9 +12,9 @@ import styles from './styles.module.scss';
 const Country = ({country}) => {
   return (
     <article className={styles.article}>
-      <a href={country.path} className={classnames(styles['image-wrapper'], 'image')}>
+      <Link to={country.path} className={classnames(styles['image-wrapper'], 'image')}>
         <Img className={styles.image} sizes={country.thumbnail.sizes} alt={country.name} />
-      </a>
+      </Link>
       <h3 className="major">{country.title}</h3>
       <p>{country.excerpt}</p>
       <FormattedMessage id="pages.index.country-list.learn-more-text">
