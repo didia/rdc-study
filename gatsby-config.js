@@ -4,6 +4,7 @@ const plugins = [
   'gatsby-transformer-sharp',
   'gatsby-plugin-sharp',
   'gatsby-plugin-react-next',
+  'gatsby-plugin-sitemap',
   {
     resolve: 'gatsby-source-filesystem',
     options: {
@@ -53,5 +54,8 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://www.rdcetudes.com'
+  },
   plugins
 };
