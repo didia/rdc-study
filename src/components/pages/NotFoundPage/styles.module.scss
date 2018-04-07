@@ -1,0 +1,38 @@
+.wrapper {
+  @include wrapper-edges-color(_palette(bg));
+  position: relative;
+  margin: _size(wrapper-edges, large) 0;
+}
+
+.inner {
+  @include padding(3em, 0);
+  width: _size(inner);
+  margin: 0 auto;
+}
+
+@include breakpoint(medium) {
+  .wrapper {
+    margin: _size(wrapper-edges, medium) 0;
+  }
+
+  .inner {
+    @include padding(3em, 3em);
+    width: 100%;
+  }
+}
+
+@include breakpoint(small) {
+  .wrapper {
+    margin: _size(wrapper-edges, small) 0;
+  }
+
+  .inner {
+    @include padding(2em, 2em);
+  }
+}
+
+@include breakpoint(xxsmall) {
+  .inner {
+    @include padding(2em, 1.5em);
+  }
+}
