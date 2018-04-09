@@ -2,6 +2,7 @@
 const plugins = [
   'gatsby-plugin-react-helmet',
   'gatsby-transformer-sharp',
+  'gatsby-transformer-json',
   'gatsby-plugin-sharp',
   'gatsby-plugin-react-next',
   'gatsby-plugin-sitemap',
@@ -17,6 +18,13 @@ const plugins = [
     options: {
       path: `${__dirname}/data/guides`,
       name: 'guides'
+    }
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: `${__dirname}/data/team`,
+      name: 'team'
     }
   },
   {

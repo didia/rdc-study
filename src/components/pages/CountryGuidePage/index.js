@@ -1,32 +1,21 @@
 // Vendor
 import React from 'react';
 import T from 'prop-types';
-import classnames from 'classnames';
 
-// Styles
-import styles from './styles.module.scss';
-
-import Banner from './Banner';
-import Content from './Content';
-import SEO from '../../SEO';
+import GenericPage from '../GenericPage';
 
 const CountryGuidePage = ({country}) => {
-  const metaSEO = {
+  const page = {
     description: country.excerpt,
+    facebookShareButtonLabelKey: 'pages.guides-show.banner.facebook-share-button-label',
     image: country.coverImage,
     path: country.path,
     title: country.title
   };
   return (
-    <div>
-      <SEO meta={metaSEO} />
-
-      <Banner country={country} />
-
-      <section className={classnames(styles.wrapper, styles['wrapper--content'])}>
-        <Content className={styles.inner} country={country} />
-      </section>
-    </div>
+    <GenericPage page={page}>
+      <div dangerouslySetInnerHTML={{__html: country.content}} />
+    </GenericPage>
   );
 };
 
