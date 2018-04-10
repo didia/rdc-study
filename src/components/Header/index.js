@@ -8,7 +8,7 @@ import T from 'prop-types';
 // Styles
 import styles from './styles.module.scss';
 
-const Header = ({withTitle}) => {
+const Header = ({withTitle, onToggleMenu}) => {
   const className = withTitle ? classnames(styles.header, styles['header--with-title']) : styles.header;
 
   return (
@@ -22,7 +22,7 @@ const Header = ({withTitle}) => {
       <nav className={styles.nav}>
         <FormattedMessage id="header.menu-toggle-label">
           {text => (
-            <a className={styles.nav__link} href="#menu">
+            <a className={styles.nav__link} onClick={onToggleMenu} href="javascript:;">
               {text}
             </a>
           )}
@@ -33,6 +33,7 @@ const Header = ({withTitle}) => {
 };
 
 Header.propTypes = {
+  onToggleMenu: T.func.isRequired,
   withTitle: T.bool
 };
 

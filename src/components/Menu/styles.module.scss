@@ -1,0 +1,106 @@
+.menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparentize(_palette(bg), 0.2);
+  text-align: center;
+  transition: opacity #{_duration(menu)} ease, visibility #{_duration(menu)};
+  cursor: default;
+  pointer-events: none;
+  -webkit-tap-highlight-color: rgba(#000, 0);
+  user-select: none;
+  visibility: hidden;
+}
+
+.menu--visible {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+
+  .inner {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.inner {
+  @include padding(2.5em, 1.5em);
+  display: block;
+  position: relative;
+  opacity: 0;
+  transform: translateY(0.5em);
+  width: 18em;
+  max-width: 100%;
+  border-radius: _size(border-radius);
+  background: _palette(accent);
+  transition: opacity #{_duration(menu)} ease, transform #{_duration(menu)} ease;
+  -webkit-overflow-scrolling: touch;
+}
+
+.title {
+  padding-bottom: 1em;
+  border-bottom: solid 2px _palette(border);
+}
+
+.close-button {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 4em;
+  height: 4em;
+  border: 0;
+  background-image: url('../../assets/images/icons/close.svg');
+  background-position: 75% 25%;
+  background-repeat: no-repeat;
+  background-size: 2em 2em;
+  text-align: center;
+  text-indent: 4em;
+}
+
+.links {
+  padding: 0;
+  margin-bottom: (_size(element-margin) - 0.5em);
+  list-style: none;
+}
+
+.links__item {
+  padding: 0;
+}
+
+.links-item__link {
+  display: block;
+  padding: 0.75em 0;
+  border: 0;
+  border-radius: _size(border-radius);
+  text-transform: uppercase;
+  font-family: _font(family-heading);
+  font-size: 0.8em;
+  font-weight: _font(weight-heading);
+  line-height: 1.85em;
+  letter-spacing: _font(kern-heading);
+
+  &:hover {
+    background: saturate(darken(_palette(accent), 3), 1.5);
+  }
+}
+
+@include breakpoint(small) {
+  .inner {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 100%;
+
+    .close-button {
+      background-size: 1.5em 1.5em;
+    }
+  }
+}
