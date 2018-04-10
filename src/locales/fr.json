@@ -19,6 +19,11 @@
     "Avez-vous des questions ou besoin d'informations supplémentaires? N'hésitez donc pas de nous contacter, de préférence à travers nos médias sociaux.",
   "footer.title": "Contactez-nous",
 
+  "menu.about-us-link-label": "Qui sommes-nous?",
+  "menu.close-button-label": "Fermer",
+  "menu.home-link-label": "Accueil",
+  "menu.title": "Menu",
+
   "not-found.title": "Page non trouvée",
   "not-found.message-text": "La page à laquelle vous essayez d‘accéder n'existe pas ou n'existe plus!",
   "not-found.return-home-button-text": "Retourner à l‘accueil",
