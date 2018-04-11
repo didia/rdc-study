@@ -25,10 +25,26 @@ class TemplateWrapper extends React.Component {
     super(props);
 
     this.state = {
-      isMenuVisible: false
+      isMenuVisible: false,
+      isLoading: true
     };
 
     this.handleToggleMenu = this.handleToggleMenu.bind(this);
+  }
+
+  componentDidMount() {
+    this.timeoutId = setTimeout(() => {
+      this.setState({
+        ...this.state,
+        isLoading: false
+      });
+    }, 100);
+  }
+
+  componentWillUnmount() {
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId);
+    }
   }
 
   handleToggleMenu() {
@@ -40,11 +56,19 @@ class TemplateWrapper extends React.Component {
   render() {
     const {children, footerClassName, headerWithTitle, pageWrapperClassName} = this.props;
     const pageWrapperMenuVisibilityClassName = this.state.isMenuVisible ? styles['page-wrapper--menu-visible'] : null;
+    const globalIsLoadingClassName = this.state.isLoading ? 'is-loading' : null;
 
     return (
       <IntlProvider locale="fr" messages={messages}>
         <div>
-          <div className={classnames(styles['page-wrapper'], pageWrapperMenuVisibilityClassName, pageWrapperClassName)}>
+          <div
+            className={classnames(
+              styles['page-wrapper'],
+              pageWrapperMenuVisibilityClassName,
+              pageWrapperClassName,
+              globalIsLoadingClassName
+            )}
+          >
             <SEO />
             <Header withTitle={headerWithTitle} onToggleMenu={this.handleToggleMenu} />
             {children}

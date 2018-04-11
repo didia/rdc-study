@@ -6,6 +6,15 @@
   background-size: auto, cover;
   transition: filter 0.25s ease;
   background-attachment: fixed, fixed;
+
+  &.is-loading {
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
 }
 
 .page-wrapper--menu-visible {
