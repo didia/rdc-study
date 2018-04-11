@@ -19,7 +19,12 @@ const IndexPage = ({images, countries}) => {
       detailsLink: {
         isAnchor: true,
         labelKey: 'pages.index.services.study-guide.explore-text',
-        link: '#'
+        link: '#guides'
+      },
+      trackingData: {
+        category: 'Home page',
+        action: 'Explore guides',
+        label: '#guides'
       }
     },
     {
@@ -29,7 +34,12 @@ const IndexPage = ({images, countries}) => {
       detailsLink: {
         isAnchor: true,
         labelKey: 'pages.index.services.verification.contact-us-text',
-        link: '#'
+        link: '#contact-form'
+      },
+      trackingData: {
+        category: 'Home page',
+        action: 'Contact for verification service',
+        label: '#contact-form'
       }
     },
     {
@@ -39,7 +49,12 @@ const IndexPage = ({images, countries}) => {
       detailsLink: {
         isAnchor: true,
         labelKey: 'pages.index.services.consulting.learn-more-text',
-        link: '#'
+        link: '#contact-form'
+      },
+      trackingData: {
+        category: 'Home page',
+        action: 'Contact for consulting service',
+        label: '#contact-form'
       }
     }
   ];

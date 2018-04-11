@@ -6,6 +6,7 @@ const plugins = [
   'gatsby-plugin-sharp',
   'gatsby-plugin-react-next',
   'gatsby-plugin-sitemap',
+  'gatsby-plugin-remove-trailing-slashes',
   {
     resolve: 'gatsby-source-filesystem',
     options: {
@@ -47,7 +48,7 @@ const plugins = [
     resolve: 'gatsby-plugin-google-tagmanager',
     options: {
       id: process.env.GOOGLE_TAG_MANAGER_ID,
-      includeInDevelopment: true
+      includeInDevelopment: false
     }
   }
 ];
