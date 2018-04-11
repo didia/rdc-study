@@ -9,11 +9,14 @@ import Img from 'gatsby-image';
 // Styles
 import styles from './styles.module.scss';
 
+// Utils
+import analyticsPushEvent from '../../../../utils/push-analytics-event';
+
 const Service = ({service, className, imageWrapperClassName}) => {
   return (
     <div className={className}>
       {service.image && (
-        <a href="#" className={classnames(imageWrapperClassName, 'image')}>
+        <a className={classnames(imageWrapperClassName, 'image')}>
           <Img className={styles.image} sizes={service.image.sizes} />
         </a>
       )}
@@ -26,11 +29,19 @@ const Service = ({service, className, imageWrapperClassName}) => {
         <FormattedMessage id={service.detailsLink.labelKey}>
           {text =>
             service.detailsLink.isAnchor ? (
-              <a href={service.detailsLink.link} className="special">
+              <a
+                onClick={() => analyticsPushEvent(service.trackingData)}
+                href={service.detailsLink.link}
+                className="special"
+              >
                 {text}
               </a>
             ) : (
-              <Link to={service.detailsLink.link} className="special">
+              <Link
+                onClick={() => analyticsPushEvent(service.trackingData)}
+                to={service.detailsLink.link}
+                className="special"
+              >
                 {text}
               </Link>
             )
@@ -54,6 +65,11 @@ Service.propTypes = {
       isAnchor: T.bool.isRequired,
       labelKey: T.string.isRequired,
       link: T.string.isRequired
+    }).isRequired,
+    trackingData: T.shape({
+      category: T.string.isRequired,
+      action: T.string.isRequired,
+      label: T.string.isRequired
     }).isRequired
   })
 };

@@ -41,7 +41,7 @@ Country.propTypes = {
 
 const CountryList = ({className, countries}) => {
   return (
-    <div className={className}>
+    <div id="guides" className={className}>
       <FormattedMessage id="pages.index.country-list.title">
         {text => <h2 className="major">{text}</h2>}
       </FormattedMessage>
