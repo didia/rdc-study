@@ -16,6 +16,10 @@ Then you can run it by:
 nv .env npm run develop
 ```
 
+## Producing background images
+
+For background images, our styling structure right now does not allow us to use `gatsby-images`. So what we do is we run the image through the graphql query and copy the image produced to use it as background.
+
 ## Environment Variables
 
 We use `nv` to inject our environment variables when running locally.

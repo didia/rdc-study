@@ -2,7 +2,6 @@
 import React from 'react';
 import T from 'prop-types';
 
-import PageLayout from '../layouts/PageLayout';
 import CountryGuidePage from '../components/pages/CountryGuidePage';
 
 export default function Template({
@@ -15,13 +14,10 @@ export default function Template({
     coverImage: frontmatter.coverImage.childImageSharp.sizes.src,
     excerpt: frontmatter.excerpt,
     path: markdownRemark.fields.path,
+    slug: frontmatter.slug,
     title: frontmatter.title
   };
-  return (
-    <PageLayout>
-      <CountryGuidePage country={country} />
-    </PageLayout>
-  );
+  return <CountryGuidePage country={country} />;
 }
 
 Template.propTypes = {
@@ -39,6 +35,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         excerpt
+        slug
         title
         coverImage: thumbnail {
           childImageSharp {

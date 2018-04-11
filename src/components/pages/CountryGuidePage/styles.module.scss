@@ -1,0 +1,34 @@
+.page-wrapper--canada {
+  background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
+    url('../../../assets/images/canada-background-image.jpg') !important;
+}
+
+.page-wrapper--france {
+  background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
+    url('../../../assets/images/france-background-image.jpg') !important;
+}
+
+.page-wrapper--usa {
+  background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
+    url('../../../assets/images/usa-background-image.jpg') !important;
+}
+
+@include breakpoint(large) {
+  .banner--canada,
+  .footer--canada {
+    background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
+      url('../../../assets/images/canada-background-image.jpg') !important;
+  }
+
+  .banner--france,
+  .footer--france {
+    background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
+      url('../../../assets/images/france-background-image.jpg') !important;
+  }
+
+  .banner--usa,
+  .footer--usa {
+    background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
+      url('../../../assets/images/usa-background-image.jpg') !important;
+  }
+}

@@ -202,7 +202,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <section className={styles.footer}>
+      <section className={classnames(styles.footer, this.props.className)}>
         <ActivityIndicator isActive={this.state.isSubmitting} />
 
         <div className={styles.inner}>
@@ -265,5 +265,9 @@ class Footer extends Component {
     );
   }
 }
+
+Footer.propTypes = {
+  className: T.string
+};
 
 export default Footer;
