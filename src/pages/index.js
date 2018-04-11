@@ -2,7 +2,6 @@
 import React from 'react';
 import T from 'prop-types';
 
-import PageLayout from '../layouts/PageLayout';
 import IndexPage from '../components/pages/IndexPage';
 
 const Index = ({data}) => {
@@ -13,11 +12,7 @@ const Index = ({data}) => {
     title: edge.node.frontmatter.title
   }));
 
-  return (
-    <PageLayout headerWithTitle={true}>
-      <IndexPage images={data} countries={countries} />
-    </PageLayout>
-  );
+  return <IndexPage images={data} countries={countries} />;
 };
 
 Index.propTypes = {

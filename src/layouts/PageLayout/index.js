@@ -38,17 +38,17 @@ class TemplateWrapper extends React.Component {
   }
 
   render() {
-    const {children, headerWithTitle} = this.props;
-    const pageWrapperVisibilityClass = this.state.isMenuVisible ? styles['page-wrapper--menu-visible'] : null;
+    const {children, footerClassName, headerWithTitle, pageWrapperClassName} = this.props;
+    const pageWrapperMenuVisibilityClassName = this.state.isMenuVisible ? styles['page-wrapper--menu-visible'] : null;
 
     return (
       <IntlProvider locale="fr" messages={messages}>
         <div>
-          <div className={classnames(styles['page-wrapper'], pageWrapperVisibilityClass)}>
+          <div className={classnames(styles['page-wrapper'], pageWrapperMenuVisibilityClassName, pageWrapperClassName)}>
             <SEO />
             <Header withTitle={headerWithTitle} onToggleMenu={this.handleToggleMenu} />
             {children}
-            <Footer />
+            <Footer className={footerClassName} />
           </div>
 
           <Menu onToggleMenu={this.handleToggleMenu} isVisible={this.state.isMenuVisible} />
@@ -59,8 +59,10 @@ class TemplateWrapper extends React.Component {
 }
 
 TemplateWrapper.propTypes = {
-  children: T.element.isRequired,
-  headerWithTitle: T.bool
+  children: T.oneOfType([T.arrayOf(T.element), T.element]).isRequired,
+  footerClassName: T.string,
+  headerWithTitle: T.bool,
+  pageWrapperClassName: T.string
 };
 
 export default TemplateWrapper;

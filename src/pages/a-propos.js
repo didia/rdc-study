@@ -2,17 +2,12 @@
 import React from 'react';
 import T from 'prop-types';
 
-import PageLayout from '../layouts/PageLayout';
 import AboutUsPage from '../components/pages/AboutUsPage';
 
 const Page = ({data}) => {
   const team = data.allTeamJson.edges.map(edge => edge.node);
 
-  return (
-    <PageLayout>
-      <AboutUsPage team={team} />
-    </PageLayout>
-  );
+  return <AboutUsPage team={team} />;
 };
 
 Page.propTypes = {
