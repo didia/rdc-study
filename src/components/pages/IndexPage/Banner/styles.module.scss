@@ -97,3 +97,32 @@
     font-size: 0.8em;
   }
 }
+
+:global(.is-loading) {
+  .banner {
+    opacity: 1;
+  }
+
+  .wrapper {
+    opacity: 0;
+    transform: translateX(-0.5em);
+    filter: blur(0.125em);
+  }
+
+  .logo {
+    opacity: 0;
+    transform: translateY(0.5em);
+  }
+
+  .title {
+    opacity: 0;
+    transform: translateX(0.25em);
+    filter: blur(2px);
+  }
+
+  .description {
+    opacity: 0;
+    transform: translateX(0.5em);
+    filter: blur(2px);
+  }
+}
