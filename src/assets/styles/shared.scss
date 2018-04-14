@@ -12,8 +12,4 @@
     xxsmall: '(max-width: 360px)'
   )
 );
-@include skel-layout(
-  (reset: 'full', boxModel: 'border', grid: (gutters: 1.75em), breakpoints: (small: (grid: (gutters: 1.25em))))
-);
-//@import 'base/page';
 @import 'base/typography';

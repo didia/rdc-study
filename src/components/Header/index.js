@@ -14,9 +14,13 @@ const Header = ({withTitle, onToggleMenu}) => {
   return (
     <header className={className}>
       <h1 className={styles.title}>
-        <Link to="/" className={styles.title__link}>
-          <FormattedMessage id="header.title" />
-        </Link>
+        <FormattedMessage id="header.title">
+          {text => (
+            <Link to="/" className={styles.title__link}>
+              {text}
+            </Link>
+          )}
+        </FormattedMessage>
       </h1>
 
       <nav className={styles.nav}>

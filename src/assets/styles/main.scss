@@ -1,3 +1,6 @@
+@include skel-layout(
+  (reset: 'full', boxModel: 'border', grid: (gutters: 1.75em), breakpoints: (small: (grid: (gutters: 1.25em))))
+);
 @import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic');
 

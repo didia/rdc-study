@@ -5,13 +5,13 @@
     "image": "images/didia.jpg",
     "name": "Aristote",
     "role":
-      "Chez RDC-Etudes, Aristote est le gardien de la mission et des objectifs. Il s'assure que tout le monde travaille dans la même direction pour offrir le meilleur guide possible sur les études à l‘étranger aux congolais. Il est aussi en charge du développement de notre application web.",
+      "Chez RDC-Etudes, Aristote est le gardien de la mission et des objectifs. Il s'assure que tout le monde travaille dans la même direction pour offrir les meilleurs guides possible sur les études à l‘étranger aux congolais. Il est aussi en charge du développement de notre application web.",
     "title": "Président et développeur principal"
   },
   {
     "about":
-      "Beni est étudiant en finances à l‘Université de Moncton au Canada depuis Janvier 2018. Il a obtenu son diplôme d‘état au Complexe Scolaire Cardinal Malula en 2017.",
-    "image": "images/didia.jpg",
+      "Beni est actuellement étudiant en finances à l‘Université de Moncton au Canada. Beni est une personne très persistante. Quand il veut quelque chose, il fait tout pour l‘obtenir.",
+    "image": "images/beni.jpg",
     "name": "Beni",
     "role":
       "Chez RDC-Etudes, Beni est responsable de la stratégie et du plan de marketing. Il s‘assure que le contenu des nos guides répond stratégiquement au bésoin des futurs étudiants.",
@@ -19,17 +19,17 @@
   },
   {
     "about":
-      "David est un développeur logiciel basé à Miami aux Etats-Unis. Il a étudié 3 ans en Inde avant de se rendre aux Etats-Unis où il a poursuivi ses études au Miami Dade College.",
-    "image": "images/didia.jpg",
-    "name": "David",
+      "Davy est un développeur logiciel basé à Miami aux Etats-Unis. Il a étudié 3 ans en Inde avant de se rendre aux Etats-Unis où il a poursuivi ses études au Miami Dade College. Après avoir gradué de MDC, David s‘est inscrit à l‘Université d‘Etat de Floride où il poursuit actuellement ses études.",
+    "image": "images/davy.png",
+    "name": "Davy",
     "role":
-      "Chez RDC-Etudes, David est chargé de s‘assurer que le guide des Etats-Unis est le plus complet et détaillé possible. Il assiste aussi les étudiants dans leurs démarches pour les Etats-Unis.",
+      "Chez RDC-Etudes, Davy est chargé de s‘assurer que le guide des Etats-Unis est le plus complet et détaillé possible. Il assiste aussi les étudiants dans leurs démarches pour les Etats-Unis.",
     "title": "Vice-Président, Etats-Unis"
   },
   {
     "about":
-      "Kevin a obtenu son diplôme d‘état en 2012 au Complexe Scolaire Cardinal Malula. Après une année passée en droit à l‘Université Catholique du Congo, il poursuivit ses études en sciences politiques à l‘Université Laval au Québec.",
-    "image": "images/didia.jpg",
+      "Kevin a obtenu son diplôme d‘état en 2012 au Complexe Scolaire Cardinal Malula. Après une année passée en droit à l‘Université Catholique du Congo, il poursuivit ses études en sciences politiques à l‘Université Laval au Québec. Kevin est celui qui a assisté le plus grand nombre de personnes non seulement pendant leurs démarches mais aussi après leurs arrivées en les aidant à s‘installer.",
+    "image": "images/kevin.jpg",
     "name": "Kevin",
     "role":
       "Chez RDC-Etudes, Kevin est chargé de s‘assurer que le guide du Canada est le plus complet et détaillé possible. Il assiste aussi les étudiants dans leurs démarches pour le Canada.",
@@ -38,7 +38,7 @@
   {
     "about":
       "Merveille est étudiant en finances à l‘Université de Moncton au Canada depuis 2015. Il a obtenu son diplôme d‘état au Complexe Scolaire Cardinal Malula en 2014.",
-    "image": "images/didia.jpg",
+    "image": "images/merveille.jpg",
     "name": "Merveille",
     "role":
       "Chez RDC-Etudes, Merveille est chargé de s‘assurer que le guide de la France est le plus complet et détaillé possible. Il assiste aussi les étudiants dans leurs démarches pour la France.",
