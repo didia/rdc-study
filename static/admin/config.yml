@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
+  branch: master
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+collections:
+  - name: "guide"
+    label: "Guide"
+    folder: "data/guides"
+    create: false
+    fields:
+      - {label: "Le nom dans l‘URL", name: "slug", widget: "string", default: "{{slug}}"}
+      - {label: "Date de publication", name: "date", widget: "datetime"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Brève", name: "excerpt", widget: "string"}
+      - {label: "Image principale du guide", name: "thumbnail", widget: "image"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
