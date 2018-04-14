@@ -68,6 +68,7 @@
 
 .title__link {
   border: 0;
+  font-weight: bold;
 }
 
 @include breakpoint(small) {
