@@ -35,21 +35,21 @@
 
   "pages.index.country-list.title": "Les pays que nous couvrons",
   "pages.index.country-list.description":
-    "Chaque pays a ses avantages ainsi que désavantages lorsqu'il s'agit d'y mener un programme d'études. Quel pays convient le plus à votre projet d'étude ? Nous mettons à votre disponibilité un guide par pays pour vous accompagner dans le choix de votre prochaine destination d'études. Nous couvrons plusieurs pays dont:",
+    "Nos guides ci-dessous vous expliquent en détails les étapes nécessaires pour mener à bien vos démarches d‘études dans les pays concernés.",
   "pages.index.country-list.learn-more-text": "En savoir plus",
 
   "pages.index.services.consulting.description":
-    "Avez-vous besoin d'aide dans votre processus d'admission? Nous vous offrons un service d'accompagnement sur mesure correspondant à vos bésoins.",
-  "pages.index.services.consulting.learn-more-text": "En savoir plus",
-  "pages.index.services.consulting.title": "Un service d'accompagnement sur mesure!!",
+    "Nous pouvons vous accompagner dans vos démarches si vous avez besoin d‘une assistance, que ce soit pour faire une inscription ou pour produire des documents par rapport à votre demande de visa.",
+  "pages.index.services.consulting.learn-more-text": "Contactez nous",
+  "pages.index.services.consulting.title": "Une accompagnement sur mesure!!",
 
   "pages.index.services.study-guide.description":
-    "Vous n'avez pas besoin de payer quelqu'un 1500$ ou 2500$ pour vos demarches. \n Vous pouvez le faire vous même à moindre coût en utilisant les guides gratuits mis à votre disposition.",
+    "Nous mettons à votre disposition des guides gratuits qui vous expliquent ce que vous devez faire pour vos démarches. Avec ces guides, vous pouvez mener à bien votre projet d‘études par vous-même sans payer un franc.",
   "pages.index.services.study-guide.explore-text": "Explorez les guides",
   "pages.index.services.study-guide.title": "Des guides 100% Gratuits!!!",
 
   "pages.index.services.verification.description":
-    "Ne vous faites plus jamais escroqués! Vous faites affaire avec quelqu'un qui vous aide et vous voulez vérifier les informations qu'il vous donne? Nous pouvons vérifier gratuitement ces informations pour vous ainsi que les montants qui vous sont demandés.",
+    "Enfin de vous protéger de charlatans ou escrocs, nous pouvons vérifier des informations qui vous sont données par des personnes ou des entreprises qui vous aident dans vos démarches.",
   "pages.index.services.verification.contact-us-text": "Contactez nous",
   "pages.index.services.verification.title": "Un service de vérification Gratuit!!!"
 }
