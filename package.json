@@ -5,6 +5,10 @@
   "author": "Aristote Diasonama <thefuture2092@gmail.com>",
   "keywords": ["rdc-study"],
   "license": "rdc-study",
+  "engines": {
+    "node": "^10.0.0",
+    "npm": "^5.6"
+  },
   "scripts": {
     "build": "gatsby build",
     "deploy-qa": "gatsby build && surge public/ $SURGE_DOMAIN",
@@ -32,7 +36,7 @@
     "gatsby-plugin-google-tagmanager": "^1.0.17",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-react-next": "^1.0.11",
-    "gatsby-plugin-sentry": "0.0.3",
+    "gatsby-plugin-remove-trailing-slashes": "^1.0.9",
     "gatsby-plugin-sharp": "^1.6.41",
     "gatsby-plugin-sitemap": "^1.2.20",
     "gatsby-remark-copy-linked-files": "^1.5.30",
@@ -59,7 +63,6 @@
     "eslint-plugin-mirego": "0.0.1",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
-    "gatsby-plugin-remove-trailing-slashes": "^1.0.9",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1",

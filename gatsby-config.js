@@ -53,15 +53,6 @@ const plugins = [
   }
 ];
 
-if (process.env.NODE_ENV === 'production') {
-  plugins.push({
-    resolve: 'gatsby-plugin-sentry',
-    options: {
-      dsn: process.env.SENTRY_DSN_URL
-    }
-  });
-}
-
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.rdcetudes.com'
