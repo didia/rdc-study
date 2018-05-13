@@ -7,6 +7,7 @@
 .article {
   @include padding(1.75em, 1.75em);
   width: calc(50% - #{_size(section-spacing, large) * 0.5});
+  border-bottom: 0;
   border-radius: _size(border-radius);
   margin: (_size(section-spacing, large) * 0.5) _size(section-spacing, large) (_size(section-spacing, large) * 0.5) 0;
   background-color: desaturate(lighten(_palette(bg), 3), 1.5);

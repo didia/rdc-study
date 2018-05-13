@@ -11,20 +11,18 @@ import styles from './styles.module.scss';
 
 const Country = ({country}) => {
   return (
-    <article className={styles.article}>
-      <Link to={country.path} className={classnames(styles['image-wrapper'], 'image')}>
-        <Img className={styles.image} sizes={country.thumbnail.sizes} alt={country.name} />
-      </Link>
-      <h3 className="major">{country.title}</h3>
-      <p>{country.excerpt}</p>
-      <FormattedMessage id="pages.index.country-list.learn-more-text">
-        {text => (
-          <a href={country.path} className="special">
-            {text}
-          </a>
-        )}
-      </FormattedMessage>
-    </article>
+    <Link to={country.path} className={styles.article}>
+      <article>
+        <div className={classnames(styles['image-wrapper'], 'image')}>
+          <Img className={styles.image} sizes={country.thumbnail.sizes} alt={country.name} />
+        </div>
+        <h3 className="major">{country.title}</h3>
+        <p>{country.excerpt}</p>
+        <FormattedMessage id="pages.index.country-list.learn-more-text">
+          {text => <span className="special">{text}</span>}
+        </FormattedMessage>
+      </article>
+    </Link>
   );
 };
 

@@ -1,4 +1,5 @@
 ---
+active: false
 slug: "france"
 date: "2018-03-30"
 title: "Étudier en France"

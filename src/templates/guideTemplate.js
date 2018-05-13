@@ -17,6 +17,7 @@ export default function Template({
     slug: frontmatter.slug,
     title: frontmatter.title
   };
+
   return <CountryGuidePage country={country} />;
 }
 

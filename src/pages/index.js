@@ -27,7 +27,11 @@ export default Index;
 
 export const pageQuery = graphql`
   query PageQuery {
-    allMarkdownRemark(limit: 2000, sort: {fields: [frontmatter___title], order: ASC}) {
+    allMarkdownRemark(
+      limit: 2000
+      sort: {fields: [frontmatter___title], order: ASC}
+      filter: {frontmatter: {active: {eq: true}}}
+    ) {
       edges {
         node {
           fields {

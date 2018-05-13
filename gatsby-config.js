@@ -7,6 +7,7 @@ const plugins = [
   'gatsby-plugin-react-next',
   'gatsby-plugin-sitemap',
   'gatsby-plugin-remove-trailing-slashes',
+  'gatsby-plugin-catch-links',
   {
     resolve: 'gatsby-source-filesystem',
     options: {

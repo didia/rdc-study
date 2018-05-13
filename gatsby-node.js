@@ -88,7 +88,7 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.dir);
 
-    if (parsedFilePath.name === 'guides' && node.frontmatter && node.frontmatter.slug) {
+    if (parsedFilePath.name.indexOf('guides') !== 0 && node.frontmatter && node.frontmatter.slug) {
       createNodeField({node, name: 'path', value: `/guides/${node.frontmatter.slug}`});
     }
   }
@@ -101,7 +101,11 @@ exports.createPages = ({boundActionCreators, graphql}) => {
 
   return graphql(`
     {
-      allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1000) {
+      allMarkdownRemark(
+        sort: {order: DESC, fields: [frontmatter___date]}
+        limit: 1000
+        filter: {frontmatter: {active: {eq: true}}}
+      ) {
         edges {
           node {
             frontmatter {

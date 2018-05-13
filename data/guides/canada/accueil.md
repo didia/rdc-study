@@ -1,4 +1,5 @@
 ---
+active: false
 slug: "canada"
 date: "2018-03-30"
 title: "Étudier au Canada"

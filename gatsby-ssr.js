@@ -23,7 +23,7 @@ const setDevOnlyScripts = ({setHeadComponents}) => {
 };
 
 const setProdOnlyScripts = ({setPostBodyComponents}) => {
-  // if (process.env.NODE_ENV !== 'production') return;
+  if (process.env.NODE_ENV !== 'production') return;
 
   setPostBodyComponents([
     process.env.GATSBY_SENTRY_DSN_URL && (
