@@ -9,7 +9,7 @@ import styles from './styles.module.scss';
 import PageLayout from '../../../layouts/PageLayout';
 import Banner from './Banner';
 import Service from './Service';
-import CountryList from './CountryList';
+import GuideList from '../../GuideList';
 
 const IndexPage = ({images, countries}) => {
   const services = [
@@ -77,7 +77,12 @@ const IndexPage = ({images, countries}) => {
         <section
           className={classnames(styles.wrapper, styles['wrapper--country-list'], styles['wrapper--at-position-1'])}
         >
-          <CountryList className={styles.inner} countries={countries} />
+          <GuideList
+            className={styles.inner}
+            descriptionKey="pages.index.country-list.description"
+            guides={countries}
+            titleKey="pages.index.country-list.title"
+          />
         </section>
       </section>
     </PageLayout>

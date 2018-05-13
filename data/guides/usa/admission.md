@@ -4,7 +4,9 @@ slug: "usa/admission"
 date: "2018-03-30"
 title: "Obtenir une admission dans une université américaine"
 excerpt: "Pour vous rendre aux États-Unis pour études, vous devez au préalable obtenir une admission dans une institution américaine d'enseignement reconnue. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n'importe quelle institution américaine d'enseignement."
-thumbnail: images/usa.jpg
+thumbnail: "images/usa.jpg"
+topic: "admission"
+related: ["usa", "usa/visa"]
 ---
 
 Le processus d'admission diffère d'une institution à une autre. Toutefois les étapes générales sont sensiblement les mêmes dans toutes les institutions.\
@@ -29,11 +31,12 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     \
     \
     Voici une liste non-exhaustive des collèges et universités que vous pouvez explorer:
-    _ **Collèges:** [Miami Dade College](http://www.mdc.edu/future-students/), [Broaward College](http://broward.edu/international/students/Pages/default.aspx), [Houston Community College](http://www.hccs.edu/support-services/international-students/admissions/)
-    _ **Universités:** [Florida State University](http://admissions.fsu.edu/international/), [University of Houston](http://www.uh.edu/undergraduate-admissions/apply/international/)
-    \
-    \
-    _Nous pouvons vous assister si vous avez besoin d'une assistance dans le choix d'une université qui convient à votre situation situation financière._
+
+    * **Collèges:** [Miami Dade College](http://www.mdc.edu/future-students/), [Broaward College](http://broward.edu/international/students/Pages/default.aspx), [Houston Community College](http://www.hccs.edu/support-services/international-students/admissions/)
+    * **Universités:** [Florida State University](http://admissions.fsu.edu/international/), [University of Houston](http://www.uh.edu/undergraduate-admissions/apply/international/)
+      \
+      \
+      _Nous pouvons vous assister si vous avez besoin d'une assistance dans le choix d'une université qui convient à votre situation situation financière._
 
 3.  ## Faire la demande d'admission
     Chaque université a son processus particulier d'admission. Toutefois la demande d'admission s'est fait généralement en ligne pour la grande majorité d'universités aux États-Unis.
@@ -55,4 +58,4 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     \
     _Là aussi, nous pouvons vous assister si vous avez besoin d'une quelconque assistance, que ce soit pour faire la demande, payer la demande ou l'envoi et la reception des documents._
 
-Une fois admis, vous devrez maintenant faire une demande de visa d'études à l'ambassade des États-Unis. [Consultez notre guide sur les étapes à suivre pour obtenir un visa d'études pour les États-Unis.](/guides/usa/visa)
+Une fois admis, vous devrez maintenant faire une demande de visa d'études à l'ambassade des États-Unis. Pour cela, [consultez notre guide sur les étapes à suivre pour obtenir un visa d'études pour les États-Unis.](/guides/usa/visa)

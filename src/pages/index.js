@@ -30,7 +30,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 2000
       sort: {fields: [frontmatter___title], order: ASC}
-      filter: {frontmatter: {active: {eq: true}}}
+      filter: {frontmatter: {active: {eq: true}, topic: {eq: "country"}}}
     ) {
       edges {
         node {

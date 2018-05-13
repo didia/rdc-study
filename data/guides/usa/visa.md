@@ -4,18 +4,20 @@ slug: "usa/visa"
 date: "2018-03-30"
 title: "Obtenir un visa d'études pour les États-Unis"
 excerpt: "Avec votre admission dans un collège ou une université américaine en main, vous devez maintenant faire une demande de visa à l'ambassade des États-Unis. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le visa d'études pour les États-Unis."
-thumbnail: images/usa.jpg
+thumbnail: "images/usa.jpg"
+topic: "visa"
+related: ["usa", "usa/admission"]
 ---
 
-Une fois que vous avez obtenu votre admission et votre formulaire I-20, il ne vous reste plus qu'à faire vos démarches pour obtenir le visa d'études.
+Une fois que vous avez obtenu votre admission et votre formulaire I—20, il ne vous reste plus qu'à faire vos démarches pour obtenir le visa d'études.
 
-Nous vous recommandons de commencer vos démarches de visa 2 mois avant la date de début de vos cours tel que mentionnée dans votre _I-20_
+Nous vous recommandons de commencer vos démarches de visa 2 mois avant la date de début de vos cours tel que mentionnée dans votre _I—20_
 Vous ne pouvez pas entrer aux États-Unis plus de 30 jours avant la date de début de vos cours et le visa que vous obtiendrez à l'ambassade n'est valide que pour 30 jours.
 Vous devez donc en tenir compte lors de vos préparatifs.
 
 Voici donc les différentes étapes générales à suivre pour vos démarches de visa:
 
-1.  ### Payer les frais _I-901 (SEVIS)_
+1.  ### Payer les frais _I—901 (SEVIS)_
 
     _SEVIS_ est un service d'information sur internet qui contrôle et surveille les étudiants internationaux tout au long de leur parcours au sein du système d'éducation américaine.
     Vous devez payer les frais de _SEVIS_ avant de soumettre une demande de visa auprès de l'ambassade des États-Unis.
@@ -25,27 +27,30 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 2.  ### Rassembler les documents pour la demande de Visa
 
     Pour votre demande de visa, vous devez apporter les documents suivants:
-    _ Passeport (y compris tout passeport antérieur contenant un visa US)
-    _ Formulaire _I-20_
-    _ Les preuves financières (Relevé bancaire, Relevé de salaire, etc…)
-    _ Preuve de l'admission envoyé par l'université (Lettre d'admission)
-    * Réçu du paiement des frais *SEVIS\*
+
+    * Passeport (y compris tout passeport antérieur contenant un visa US)
+    * Formulaire _I-20_
+    * Les preuves financières (Relevé bancaire, Relevé de salaire, etc…)
+    * Preuve de l'admission envoyé par l'université (Lettre d'admission)
+    * Réçu du paiement des frais \*SEVIS\*
 
 3.  ### Prendre rendez-vous pour l'entrevue
 
     Pour obtenir votre visa, vous devez passer une entrevue à l'ambassade des États-Unis à Kinshasa.
     Voici donc les étapes pour prendre votre rendez-vous:
-    * Remplissez le formulaire de demande de visa (*DS-160*) en ligne.
-    Le DS-160 est un formulaire en ligne du gouvernement des États-Unis en ligne et peut être rempli uniquement en ligne sur [https://ceac.state.gov/CEAC](https://ceac.state.gov/CEAC).
+
+    * Remplissez le formulaire de demande de visa (_DS-160_) en ligne.
+      Le DS-160 est un formulaire en ligne du gouvernement des États-Unis en ligne et peut être rempli uniquement en ligne sur [https://ceac.state.gov/CEAC](https://ceac.state.gov/CEAC).
     * Allez ensuite sur [https://ais.usvisa-info.com/fr-cd/niv/users/sign_in](https://ais.usvisa-info.com/fr-cd/niv/users/sign_in) qui est le site pour prendre rendez-vous.
-    _ Créez un compte ou connectez-vous si vous avez déjà un compte.
-    _ Entrez le numéro de confirmation DS-160.
-    _ Payez les frais de demande de visa non-immigrant (MRV).
-    _ Choisissez ensuite une date de rendez-vous avec la Section Consulaire.
+    * Créez un compte ou connectez-vous si vous avez déjà un compte.
+    * Entrez le numéro de confirmation DS-160.
+    * Payez les frais de demande de visa non-immigrant (MRV).
+    * Choisissez ensuite une date de rendez-vous avec la Section Consulaire.
 
 4.  ### Passer l'entrevue
-    L'interview sert à démontrer que vous vous êtes préparé à poursuivre vos études aux Etats. Vous devrez donc démontrer ce qui suit:
-    _ **Vous êtes un étudiant légitime, prêt à étudier aux États-Unis**: Vous devez démontrer à l'officier consulaire que vous vous êtes réellement préparé pour vos études aux États-Unis.
-    Vous devez donc parler de vos objectifs académiques, de l'apprentissage préalable de l'anglais et toutes autres initiatives que vous avez prises pour vous préparer à votre séjour aux États-Unis.
-    _ **Vous avez les ressources financières pour payer vos études et votre séjour aux États-Unis**: Expliquez comment vous comptez utiliser l'argent à votre disposition pour financer votre séjour aux États-Unis. \* **Vous reviendrez en RDC à la fin de vos études**: Il s'agit de démontrer que votre objectif principal est bien d'aller étudier aux États-Unis.
-    Pour ce faire, vous devez démontrer comment vous utiliserez ce que vous aurez appris une fois de retour en RDC.
+    L'interview sert à démontrer que vous vous êtes préparé à poursuivre vos études aux États-Unis. Vous devrez donc démontrer ce qui suit:
+    * **Vous êtes un étudiant légitime, prêt à étudier aux États-Unis**: Vous devez démontrer à l'officier consulaire que vous vous êtes réellement préparé pour vos études aux États-Unis.
+      Vous devez donc parler de vos objectifs académiques, de l'apprentissage préalable de l'anglais et toutes autres initiatives que vous avez prises pour vous préparer à votre séjour aux États-Unis.
+    * **Vous avez les ressources financières pour payer vos études et votre séjour aux États-Unis**: Expliquez comment vous comptez utiliser l'argent à votre disposition pour financer votre séjour aux États-Unis.
+    * **Vous reviendrez en RDC à la fin de vos études**: Il s'agit de démontrer que votre objectif principal est bien d'aller étudier aux États-Unis.
+      Pour ce faire, vous devez démontrer comment vous utiliserez ce que vous aurez appris une fois de retour en RDC.
