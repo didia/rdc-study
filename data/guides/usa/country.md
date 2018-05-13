@@ -30,6 +30,5 @@ Pour en savoir plus, [consultez notre guide sur la demarche à suivre pour obten
 ## Qu'en est-il de bourses d'études?
 
 Les bourses d’études pour étudiants étrangers sont extrêmement rares.
-Pour les études au cycle supérieur, il existe des organismes qui peuvent offrir des bourses d’études cependant il est extrêmement difficile de trouver des bourses d’études pour le premier cycle.
-
+Pour les études au cycle supérieur, il existe des organismes qui peuvent offrir des bourses d’études cependant il est extrêmement difficile de trouver des bourses d’études pour le premier cycle.\
 Toutefois certaines universités offrent des bourses d’excellence aux étudiants admis en premier cycle. Il faudra vérifier que c’est le cas avec l’université que vous avez choisie.

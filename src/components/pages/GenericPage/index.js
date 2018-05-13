@@ -13,8 +13,8 @@ import SEO from '../../SEO';
 const GenericPage = ({children, bannerClassName, footerClassName, page, pageWrapperClassName}) => {
   return (
     <PageLayout pageWrapperClassName={pageWrapperClassName} footerClassName={footerClassName}>
-      <SEO key="seo" meta={page} />,
-      <Banner key="banner" page={page} className={bannerClassName} />,
+      <SEO key="seo" meta={page} />
+      <Banner key="banner" page={page} className={bannerClassName} />
       <section key="content" className={classnames(styles.wrapper, styles['wrapper--content'])}>
         <div className={styles.inner}>{children}</div>
       </section>

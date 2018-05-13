@@ -1,8 +1,8 @@
 {
   "header.menu-toggle-label": "Menu",
-  "header.title": "RDC-ETUDES",
+  "header.title": "RDC ETUDES",
 
-  "footer.copyright": "© RDC-Etudes. Tous droits réservés",
+  "footer.copyright": "© RDC Etudes. Tous droits réservés",
 
   "footer.contact-form.error.title": "Oups!!",
   "footer.contact-form.error.message-text":
@@ -34,7 +34,7 @@
   "pages.guides-show.other-guides.title": "Autres guides qui pourraient vous intéresser.",
   "pages.guides-show.related-guides.title": "Guides réliés",
 
-  "pages.index.banner.title": "Voici RDC-Etudes",
+  "pages.index.banner.title": "Voici RDC Etudes",
   "pages.index.banner.description": "Votre guide gratuit des demarches pour étudier à l'étranger!",
 
   "pages.index.country-list.title": "Les pays que nous couvrons",
@@ -44,7 +44,7 @@
   "pages.index.services.consulting.description":
     "Nous pouvons vous accompagner dans vos démarches si vous avez besoin d‘une assistance, que ce soit pour faire une inscription ou pour produire des documents par rapport à votre demande de visa.",
   "pages.index.services.consulting.learn-more-text": "Contactez nous",
-  "pages.index.services.consulting.title": "Une accompagnement sur mesure!!",
+  "pages.index.services.consulting.title": "Un accompagnement honnête et transparent!!!",
 
   "pages.index.services.study-guide.description":
     "Nous mettons à votre disposition des guides gratuits qui vous expliquent ce que vous devez faire pour vos démarches. Avec ces guides, vous pouvez mener à bien votre projet d‘études par vous-même sans payer un franc.",

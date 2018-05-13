@@ -32,17 +32,11 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
 
       {relatedGuides &&
         relatedGuides.length > 0 && (
-          <GuideList
-            className={styles.inner}
-            guides={relatedGuides}
-            titleKey="pages.guides-show.related-guides.title"
-          />
+          <GuideList guides={relatedGuides} titleKey="pages.guides-show.related-guides.title" />
         )}
 
       {otherGuides &&
-        otherGuides.length > 0 && (
-          <GuideList className={styles.inner} guides={otherGuides} titleKey="pages.guides-show.other-guides.title" />
-        )}
+        otherGuides.length > 0 && <GuideList guides={otherGuides} titleKey="pages.guides-show.other-guides.title" />}
     </GenericPage>
   );
 };

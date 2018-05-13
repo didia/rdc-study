@@ -4,7 +4,7 @@ slug: "usa/visa"
 date: "2018-03-30"
 title: "Obtenir un visa d'études pour les États-Unis"
 excerpt: "Avec votre admission dans un collège ou une université américaine en main, vous devez maintenant faire une demande de visa à l'ambassade des États-Unis. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le visa d'études pour les États-Unis."
-thumbnail: "images/usa.jpg"
+thumbnail: "images/usa-visa.jpg"
 topic: "visa"
 related: ["usa", "usa/admission"]
 ---
@@ -17,14 +17,14 @@ Vous devez donc en tenir compte lors de vos préparatifs.
 
 Voici donc les différentes étapes générales à suivre pour vos démarches de visa:
 
-1.  ### Payer les frais _I—901 (SEVIS)_
+1.  ## Payer les frais _I—901 (SEVIS)_
 
     _SEVIS_ est un service d'information sur internet qui contrôle et surveille les étudiants internationaux tout au long de leur parcours au sein du système d'éducation américaine.
     Vous devez payer les frais de _SEVIS_ avant de soumettre une demande de visa auprès de l'ambassade des États-Unis.
     Pour payer ces frais, veuillez visiter [www.fmjfee.com](https://www.fmjfee.com).
     Une fois que vous aurez payé, vous devez imprimer le reçu comme preuve de paiement. Vous amenerez ce réçu à votre rendez-vous de visa et aussi lorsque vous voyagerez aux États-Unis.
 
-2.  ### Rassembler les documents pour la demande de Visa
+2.  ## Rassembler les documents pour la demande de Visa
 
     Pour votre demande de visa, vous devez apporter les documents suivants:
 
@@ -32,9 +32,9 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     * Formulaire _I-20_
     * Les preuves financières (Relevé bancaire, Relevé de salaire, etc…)
     * Preuve de l'admission envoyé par l'université (Lettre d'admission)
-    * Réçu du paiement des frais \*SEVIS\*
+    * Réçu du paiement des frais _SEVIS_
 
-3.  ### Prendre rendez-vous pour l'entrevue
+3.  ## Prendre rendez-vous pour l'entrevue
 
     Pour obtenir votre visa, vous devez passer une entrevue à l'ambassade des États-Unis à Kinshasa.
     Voici donc les étapes pour prendre votre rendez-vous:
@@ -47,7 +47,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     * Payez les frais de demande de visa non-immigrant (MRV).
     * Choisissez ensuite une date de rendez-vous avec la Section Consulaire.
 
-4.  ### Passer l'entrevue
+4.  ## Passer l'entrevue
     L'interview sert à démontrer que vous vous êtes préparé à poursuivre vos études aux États-Unis. Vous devrez donc démontrer ce qui suit:
     * **Vous êtes un étudiant légitime, prêt à étudier aux États-Unis**: Vous devez démontrer à l'officier consulaire que vous vous êtes réellement préparé pour vos études aux États-Unis.
       Vous devez donc parler de vos objectifs académiques, de l'apprentissage préalable de l'anglais et toutes autres initiatives que vous avez prises pour vous préparer à votre séjour aux États-Unis.
