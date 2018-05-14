@@ -37,9 +37,9 @@ Guide.propTypes = {
   })
 };
 
-const GuideList = ({className, descriptionKey, guides, titleKey}) => {
+const GuideList = ({className, descriptionKey, guides, id, titleKey}) => {
   return (
-    <div id="guides" className={className}>
+    <div id={id} className={className}>
       <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>
 
       {descriptionKey && <FormattedMessage id={descriptionKey}>{text => <p>{text}</p>}</FormattedMessage>}
@@ -55,6 +55,7 @@ GuideList.propTypes = {
   className: T.string,
   descriptionKey: T.string,
   guides: T.arrayOf(T.object),
+  id: T.string,
   titleKey: T.string.isRequired
 };
 

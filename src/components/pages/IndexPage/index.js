@@ -78,6 +78,7 @@ const IndexPage = ({images, countries}) => {
           className={classnames(styles.wrapper, styles['wrapper--country-list'], styles['wrapper--at-position-1'])}
         >
           <GuideList
+            id="guides"
             className={styles.inner}
             descriptionKey="pages.index.country-list.description"
             guides={countries}
