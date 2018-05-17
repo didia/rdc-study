@@ -19,6 +19,8 @@
     "Avez-vous des questions ou besoin d'informations supplémentaires? N'hésitez donc pas de nous contacter, de préférence à travers nos médias sociaux.",
   "footer.title": "Contactez-nous",
 
+  "general.contact-us-text": "Contactez-nous",
+
   "guide-list.guide.learn-more-text": "En savoir plus",
 
   "menu.about-us-link-label": "Qui sommes-nous?",
@@ -26,10 +28,52 @@
   "menu.home-link-label": "Accueil",
   "menu.title": "Menu",
 
-  "not-found.title": "Page non trouvée",
   "not-found.message-text": "La page à laquelle vous essayez d‘accéder n'existe pas ou n'existe plus!",
   "not-found.return-home-button-text": "Retourner à l‘accueil",
+  "not-found.title": "Page non trouvée",
 
+  "pages.assistance.free.description":
+    "Toute l’information dont vous avez besoin pour réaliser votre projet d’études est disponible via nos guides en ligne. Ils sont gratuits et le resteront toujours.",
+  "pages.assistance.free.features.admission-guide": "Guide pour l’admission",
+  "pages.assistance.free.features.visa-guide": "Guide pour le visa",
+  "pages.assistance.free.features.countries-guide": "Canada et États-Unis",
+  "pages.assistance.free.features.protection-guide": "Protection anti-escrocs",
+  "pages.assistance.free.guide-link-text": "Explorez nos guides",
+  "pages.assistance.free.title": "GRATIS!",
+
+  "pages.assistance.packages.description":
+    "Choisissez un forfait selon vos besoins. Qu’il s'agisse juste d'une assistance pendant vos démarches d’admission ou pendant celles de visa ou encore pour tout le processus au complet, nous avons un forfait qui correspond parfaitement à vos besoins.",
+  "pages.assistance.packages.admission.features.application": "Demande d’admission",
+  "pages.assistance.packages.admission.features.application-documents": "Envoi et reception des documents",
+  "pages.assistance.packages.admission.features.program-choice": "Choix de programme",
+  "pages.assistance.packages.admission.features.university-choice": "Choix de l’université",
+  "pages.assistance.packages.admission.pricing": "250$",
+  "pages.assistance.packages.admission.title": "L’Admission",
+  "pages.assistance.packages.full.features.admission": "Forfait L’Admission",
+  "pages.assistance.packages.full.features.first-year": "Assistance pour s’installer",
+  "pages.assistance.packages.full.features.on-arrival": "Accueil à l’arrivée",
+  "pages.assistance.packages.full.features.visa": "Forfait Le Visa",
+  "pages.assistance.packages.full.pricing": "500$",
+  "pages.assistance.packages.full.title": "La Totale",
+  "pages.assistance.packages.title": "Un forfait qui vous convient!",
+  "pages.assistance.packages.visa.features.application-documents": "Rassembler les documents",
+  "pages.assistance.packages.visa.features.application-proof": "Rassembler les preuves",
+  "pages.assistance.packages.visa.features.fill-forms": "Remplir les formulaires",
+  "pages.assistance.packages.visa.features.interview": "Préparation à l‘interview",
+  "pages.assistance.packages.visa.pricing": "200$",
+  "pages.assistance.packages.visa.title": "Le Visa",
+
+  "pages.assistance.personal.description":
+    "Donnez-vous plus de chances de réussir vos démarches en vous faisant accompagner par un assistant personnel qui sera là pour vous tout le long de vos démarches. Nous sommes passés par là, avons fait les mêmes démarches que vous et pouvons vous aider à faire de même.",
+  "pages.assistance.personal.about-us-link": "Découvrez qui nous sommes",
+  "pages.assistance.personal.title": "Un assistant personnel pour vos démarches!",
+
+  "pages.guides-show.assistance.description-1":
+    "Bien que nos guides soient conçus pour vous permettre de faire vous-mêmes vos démarches, il se peut que vous ayez besoin d’un accompagnement particulier pour augmenter vos chances de réussite.",
+  "pages.guides-show.assistance.description-2":
+    "C’est ainsi que nous mettons à votre disponibilité un service d’accompagnement sur mesure basé sur la transparence, l’honnêteté et la serviabilité.",
+  "pages.guides-show.assistance.link-text": "En savoir plus",
+  "pages.guides-show.assistance.title": "Avez-vous besoin d'assistance?",
   "pages.guides-show.banner.facebook-share-button-label": "Partagez ce guide sur facebook",
   "pages.guides-show.other-guides.title": "Autres guides qui pourraient vous intéresser.",
   "pages.guides-show.related-guides.title": "Guides réliés",
@@ -41,10 +85,10 @@
   "pages.index.country-list.description":
     "Nos guides ci-dessous vous expliquent en détails les étapes nécessaires pour mener à bien vos démarches d‘études dans les pays concernés.",
 
-  "pages.index.services.consulting.description":
+  "pages.index.services.assistance.description":
     "Nous pouvons vous accompagner dans vos démarches si vous avez besoin d‘une assistance, que ce soit pour faire une inscription ou pour produire des documents par rapport à votre demande de visa.",
-  "pages.index.services.consulting.learn-more-text": "Contactez nous",
-  "pages.index.services.consulting.title": "Un accompagnement honnête et transparent!!!",
+  "pages.index.services.assistance.learn-more-text": "En savoir plus",
+  "pages.index.services.assistance.title": "Un accompagnement honnête et transparent!!!",
 
   "pages.index.services.study-guide.description":
     "Nous mettons à votre disposition des guides gratuits qui vous expliquent ce que vous devez faire pour vos démarches. Avec ces guides, vous pouvez mener à bien votre projet d‘études par vous-même sans payer un franc.",

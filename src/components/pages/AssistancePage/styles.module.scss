@@ -1,0 +1,143 @@
+.card {
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 40px rgba(#0e1e25, 0.16);
+  color: _palette(bg);
+}
+
+.card--main {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  margin-top: -180px;
+
+  .pricing {
+    margin-bottom: 0;
+    font-size: 4em;
+    font-weight: 700;
+  }
+
+  .column--left {
+    flex: 1 2 auto;
+    padding: 45px 25px;
+  }
+
+  .column--right {
+    flex: 2 1 450px;
+    padding: 45px 25px;
+    margin: 0;
+    list-style: none;
+    background: rgba(#0e1e25, 0.03);
+  }
+}
+
+.feature-list {
+  padding: 0;
+  list-style: none;
+}
+
+.feature-item {
+  padding-left: 0;
+  font-size: 1.3em;
+
+  &::before {
+    padding-right: 0.5em;
+    color: _palette(accent);
+  }
+}
+
+.offer-block {
+  margin-top: 80px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 80px;
+  }
+}
+
+.rate-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.rate-list__item {
+  flex: 0 1 32%;
+  padding: 25px;
+  composes: card;
+
+  .feature-item {
+    font-size: 0.95em;
+  }
+
+  .pricing {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: transparentize(_palette(bg), 0.6);
+  }
+}
+
+.rate-title {
+  margin-bottom: 5px;
+  color: _palette(bg);
+}
+
+@include breakpoint(large) {
+  .banner {
+    padding-bottom: 150px;
+  }
+}
+
+@include breakpoint(small) {
+  .card--main {
+    flex-direction: column;
+
+    .column--left,
+    .column--right {
+      flex: auto;
+      width: 100%;
+    }
+  }
+
+  .rate-list {
+    flex-wrap: wrap;
+  }
+
+  .rate-list__item {
+    flex: 0 0 49%;
+    margin-bottom: 25px;
+
+    &:last-child {
+      flex: 0 0 100%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include breakpoint(xsmall) {
+  .offer-block {
+    text-align: left;
+  }
+
+  .button {
+    padding: 0 2.25em;
+  }
+
+  .rate-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .rate-list__item {
+    flex: auto;
+    width: 100%;
+
+    &:last-child {
+      flex: auto;
+      width: 100%;
+    }
+  }
+}

@@ -35,27 +35,27 @@ const IndexPage = ({images, countries}) => {
       detailsLink: {
         isAnchor: true,
         labelKey: 'pages.index.services.verification.contact-us-text',
-        link: '#contact-form'
+        link: '#contact'
       },
       trackingData: {
         category: 'Home page',
         action: 'Contact for verification service',
-        label: '#contact-form'
+        label: '#contact'
       }
     },
     {
-      descriptionTextKey: 'pages.index.services.consulting.description',
+      descriptionTextKey: 'pages.index.services.assistance.description',
       image: images.consultingServiceImage,
-      titleKey: 'pages.index.services.consulting.title',
+      titleKey: 'pages.index.services.assistance.title',
       detailsLink: {
-        isAnchor: true,
-        labelKey: 'pages.index.services.consulting.learn-more-text',
-        link: '#contact-form'
+        isAnchor: false,
+        labelKey: 'pages.index.services.assistance.learn-more-text',
+        link: '/accompagnement'
       },
       trackingData: {
         category: 'Home page',
-        action: 'Contact for consulting service',
-        label: '#contact-form'
+        action: 'Contact for assistance service',
+        label: '/accompagnement'
       }
     }
   ];

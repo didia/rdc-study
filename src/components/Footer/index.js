@@ -17,7 +17,7 @@ import getCurrentUrl from '../../utils/get-current-url';
 import ActivityIndicator from '../ActivityIndicator';
 
 const ContactForm = ({className, submitDisabledState, values, onUpdate, onSubmit}) => (
-  <form id="contact-form" className={classnames(styles.form, className)} onSubmit={onSubmit}>
+  <form className={classnames(styles.form, className)} onSubmit={onSubmit}>
     <div className="field">
       <FormattedMessage id="footer.contact-form.name-label">
         {text => <label htmlFor="name">{text}</label>}
@@ -202,7 +202,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <section className={classnames(styles.footer, this.props.className)}>
+      <section id="contact" className={classnames(styles.footer, this.props.className)}>
         <ActivityIndicator isActive={this.state.isSubmitting} />
 
         <div className={styles.inner}>

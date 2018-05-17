@@ -7,6 +7,7 @@ import styles from './styles.module.scss';
 
 import GenericPage from '../GenericPage';
 import GuideList from '../../GuideList';
+import Assistance from './Assistance';
 
 const GuidePage = ({guide, otherGuides, relatedGuides}) => {
   const pageWrapperClassName = styles[`page-wrapper--${guide.slug}`];
@@ -29,6 +30,8 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
       pageWrapperClassName={pageWrapperClassName}
     >
       <div dangerouslySetInnerHTML={{__html: guide.content}} />
+
+      <Assistance />
 
       {relatedGuides &&
         relatedGuides.length > 0 && (
