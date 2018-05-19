@@ -30,6 +30,19 @@
   "not-found.return-home-button-text": "Retourner à l‘accueil",
   "not-found.title": "Page non trouvée",
 
+  "pages.about-us.mentors.title": "Nos mentors sont tous passés par ces démarches.",
+
+  "pages.about-us.values.helpfulness.description":
+    "Le plus important pour nous c’est vous rendre service. Voilà pourquoi nous offrons des guides gratuits. Nous savons que c’est en vous rendant le meilleur service possible, que vous parlerez de nous aux autres personnes et que nous aurons plus de clients.",
+  "pages.about-us.values.helpfulness.title": "La Serviabilité",
+  "pages.about-us.values.honesty.description":
+    "Nous vous dirons toujours la vérité par rapport à vos démarches. L’important pour nous c’est que vous ayez la vraie information. La réussite de vos démarches est et restera toujours notre première priorité.",
+  "pages.about-us.values.honesty.title": "L’Honnêteté",
+  "pages.about-us.values.title": "Trois valeurs qui guident nos actions!",
+  "pages.about-us.values.transparency.description":
+    "Nous serons toujours transparents avec vous. À la différence des autres, chez nous vous savez exactement à quoi sert votre argent. Vous avez le choix de faire le paiement vous-même. Si nous payons pour vous, nous vous donnerons toujours les preuves de paiement.",
+  "pages.about-us.values.transparency.title": "La transparence",
+
   "pages.assistance.free.description":
     "Toute l’information dont vous avez besoin pour réaliser votre projet d’études est disponible via nos guides en ligne. Ils sont gratuits et le resteront toujours.",
   "pages.assistance.free.features.admission-guide": "Guide pour l’admission",

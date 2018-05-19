@@ -1,11 +1,4 @@
-.card {
-  border-radius: 4px;
-  background-color: #fff;
-  box-shadow: 0 2px 40px rgba(#0e1e25, 0.16);
-  color: _palette(bg);
-}
-
-.card--main {
+.main-card {
   display: flex;
   position: relative;
   z-index: 10;
@@ -66,8 +59,7 @@
 
 .offer-list__item {
   flex: 0 1 32%;
-  padding: 25px;
-  composes: card;
+  padding: 0;
 
   .feature-item {
     font-size: 0.95em;
@@ -78,6 +70,10 @@
     font-weight: 700;
     color: transparentize(_palette(bg), 0.6);
   }
+}
+
+.offer-card {
+  padding: 25px;
 }
 
 .offer-title {
@@ -96,7 +92,7 @@
 }
 
 @include breakpoint(small) {
-  .card--main {
+  .main-card {
     flex-direction: column;
 
     .column--left,
@@ -106,11 +102,11 @@
     }
   }
 
-  .rate-list {
+  .offer-list {
     flex-wrap: wrap;
   }
 
-  .rate-list__item {
+  .offer-list__item {
     flex: 0 0 49%;
     margin-bottom: 25px;
 
@@ -127,15 +123,16 @@
   }
 
   .button {
+    width: 100%;
     padding: 0 2.25em;
   }
 
-  .rate-list {
+  .offer-list {
     flex-direction: column;
     flex-wrap: nowrap;
   }
 
-  .rate-list__item {
+  .offer-list__item {
     flex: auto;
     width: 100%;
 

@@ -10,6 +10,7 @@ import styles from './styles.module.scss';
 
 import GenericPage from '../GenericPage';
 import ContactUsLink from '../../ContactUsLink';
+import Card from '../../Card';
 
 const FeatureList = ({featureLabelKeys, className}) => (
   <ul className={classnames(styles['feature-list'], className)}>
@@ -76,7 +77,7 @@ const packages = [
 const AssistancePage = () => {
   return (
     <GenericPage page={page} bannerClassName={styles.banner}>
-      <section className={classnames(styles.card, styles['card--main'])}>
+      <Card className={styles['main-card']}>
         <header className={styles['column--left']}>
           <FormattedMessage id="pages.assistance.free.title" tagName="p">
             {text => <p className={styles.pricing}>{text}</p>}
@@ -94,7 +95,7 @@ const AssistancePage = () => {
         </header>
 
         <FeatureList className={styles['column--right']} featureLabelKeys={freeTierFeatureLabelKeys} />
-      </section>
+      </Card>
 
       <section className={styles['offer-block']}>
         <FormattedMessage id="pages.assistance.personal.title" tagName="h2" />
@@ -112,12 +113,14 @@ const AssistancePage = () => {
 
         <ul className={styles['offer-list']}>
           {packages.map((ratePackage, i) => (
-            <li key={`feature-${i}`} className={classnames(styles.card, styles['offer-list__item'])}>
-              <FormattedMessage id={ratePackage.titleKey}>
-                {text => <h3 className={styles['offer-title']}>{text}</h3>}
-              </FormattedMessage>
+            <li key={`feature-${i}`} className={styles['offer-list__item']}>
+              <Card className={styles['offer-card']}>
+                <FormattedMessage id={ratePackage.titleKey}>
+                  {text => <h3 className={styles['offer-title']}>{text}</h3>}
+                </FormattedMessage>
 
-              <FeatureList featureLabelKeys={ratePackage.featureLabelKeys} />
+                <FeatureList featureLabelKeys={ratePackage.featureLabelKeys} />
+              </Card>
             </li>
           ))}
         </ul>

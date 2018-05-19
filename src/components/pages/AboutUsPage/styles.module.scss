@@ -1,8 +1,21 @@
+.section {
+  margin-bottom: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.team-member-list {
+  display: grid;
+  column-gap: 2%;
+  grid-template-columns: 49% 49%;
+}
+
 .team-member-list__item {
   overflow: hidden;
-  padding-left: 0;
+  padding: 25px;
   margin-bottom: 10px;
-  list-style: none;
   clear: both;
 }
 
@@ -17,8 +30,69 @@
 .team-member-info-name {
   margin-bottom: 0;
   font-size: 1.8em;
+  color: _palette(bg);
 }
 
 .team-member-info-title {
   font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.value-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.value-list__item {
+  flex: 0 1 32%;
+  padding: 25px;
+}
+
+.value-title {
+  margin-bottom: 5px;
+  text-align: center;
+  color: _palette(bg);
+}
+
+@include breakpoint(small) {
+  .value-list {
+    flex-wrap: wrap;
+  }
+
+  .value-list__item {
+    flex: 0 0 49%;
+    margin-bottom: 25px;
+
+    &:last-child {
+      flex: 0 0 100%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include breakpoint(xsmall) {
+  .team-member-list {
+    display: block;
+  }
+
+  .value-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .value-list__item {
+    flex: auto;
+    width: 100%;
+
+    &:last-child {
+      flex: auto;
+      width: 100%;
+    }
+  }
 }

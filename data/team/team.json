@@ -1,12 +1,12 @@
 [
   {
     "about":
-      "Aristote est un ingénieur junior en génie logiciel, résidant à Québec. Il a obtenu son diplôme d‘état au Complexe Scolaire Cardinal Malula en 2010. Lauréat de la République cette année, Il n'obtint pas de bourse de la part du gouvernement et se fait escroqué au moins 1500$ dans les démarches pour le Canada. Il s'en va finalement en Inde où il étudie une année avant de quitter pour le Québec où il obtiendra sa license en génie logiciel en 2016 à l'Université Laval. Son objectif personnel est d‘empêcher que d‘autres congolais ne soient victime comme il était aussi.",
+      "Aristote est un ingénieur junior en génie logiciel, résidant à Québec. Il a obtenu son diplôme d‘état au Complexe Scolaire Cardinal Malula en 2010 et sa license en génie logiciel en 2016 à l'Université Laval. Aristote travaille depuis comme développeur logiciel dans une entreprise de Québec. Son objectif personnel est de rendre disponible l’information à tout congolais pour que tout le monde ait accès aux mêmes opportunités.",
     "image": "images/didia.jpg",
     "name": "Aristote",
     "role":
       "Chez RDC-Etudes, Aristote est le gardien de la mission et des objectifs. Il s'assure que tout le monde travaille dans la même direction pour offrir les meilleurs guides possible sur les études à l‘étranger aux congolais. Il est aussi en charge du développement de notre application web.",
-    "title": "Président et développeur principal"
+    "title": "Mentor, Canada"
   },
   {
     "about":
@@ -15,7 +15,7 @@
     "name": "Beni",
     "role":
       "Chez RDC-Etudes, Beni est responsable de la stratégie et du plan de marketing. Il s‘assure que le contenu des nos guides répond stratégiquement au bésoin des futurs étudiants.",
-    "title": "Vice-Président, Stratégie et Marketing"
+    "title": "Mentor, Canada"
   },
   {
     "about":
@@ -24,7 +24,7 @@
     "name": "Davy",
     "role":
       "Chez RDC-Etudes, Davy est chargé de s‘assurer que le guide des États-Unis est le plus complet et détaillé possible. Il assiste aussi les étudiants dans leurs démarches pour les États-Unis.",
-    "title": "Vice-Président, États-Unis"
+    "title": "Mentor, États-Unis"
   },
   {
     "about":
@@ -33,15 +33,15 @@
     "name": "Kevin",
     "role":
       "Chez RDC-Etudes, Kevin est chargé de s‘assurer que le guide du Canada est le plus complet et détaillé possible. Il assiste aussi les étudiants dans leurs démarches pour le Canada.",
-    "title": "Vice-Président, Canada"
+    "title": "Mentor, Canada"
   },
   {
     "about":
-      "Merveille est étudiant en finances à l‘Université de Moncton au Canada depuis 2015. Il a obtenu son diplôme d‘état au Complexe Scolaire Cardinal Malula en 2014.",
+      "Merveille est étudiant en finances à l‘Université de Moncton au Canada depuis 2015. Il a obtenu son diplôme d‘état au Complexe Scolaire Cardinal Malula en 2014. Depuis qu’il est à Moncton, Merveille a réussi à aider plusieurs personnes à s’inscrire à l’Université de Moncton.",
     "image": "images/merveille.jpg",
     "name": "Merveille",
     "role":
       "Chez RDC-Etudes, Merveille est chargé de s‘assurer que le guide de la France est le plus complet et détaillé possible. Il assiste aussi les étudiants dans leurs démarches pour la France.",
-    "title": "Vice-Président, France"
+    "title": "Mentor, Canada"
   }
 ]
