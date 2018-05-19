@@ -25,7 +25,6 @@
   .column--right {
     flex: 2 1 450px;
     padding: 45px 25px;
-    margin: 0;
     list-style: none;
     background: rgba(#0e1e25, 0.03);
   }
@@ -33,6 +32,7 @@
 
 .feature-list {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -55,7 +55,7 @@
   }
 }
 
-.rate-list {
+.offer-list {
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -64,7 +64,7 @@
   text-align: left;
 }
 
-.rate-list__item {
+.offer-list__item {
   flex: 0 1 32%;
   padding: 25px;
   composes: card;
@@ -80,9 +80,13 @@
   }
 }
 
-.rate-title {
+.offer-title {
   margin-bottom: 5px;
   color: _palette(bg);
+}
+
+.button--about-us {
+  margin-top: 20px;
 }
 
 @include breakpoint(large) {

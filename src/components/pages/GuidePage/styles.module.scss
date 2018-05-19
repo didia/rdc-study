@@ -1,0 +1,33 @@
+.guide-learn-more-link {
+  @include icon($where: 'after');
+  display: block;
+  border-bottom: 0;
+  margin: 0.5em 0 _size(element-margin) 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: _font(family-heading);
+  font-size: 0.8em;
+  font-weight: _font(weight-heading-bold);
+  letter-spacing: _font(kern-heading);
+  color: mix(_palette(fg-bold), _palette(accent), 35%);
+  transition: color #{_duration(transition)} ease-in-out, border-bottom-color #{_duration(transition)} ease-in-out;
+
+  &::after {
+    display: inline-block;
+    content: '\f061';
+    height: 2em;
+    margin-left: 0.5em;
+    text-align: center;
+    text-indent: 0.15em;
+    vertical-align: middle;
+  }
+
+  &:hover {
+    color: desaturate(lighten(_palette(accent), 3), 1.5) !important;
+    border-bottom-color: transparent;
+  }
+
+  &:active {
+    color: saturate(darken(_palette(accent), 3), 1.5) !important;
+  }
+}

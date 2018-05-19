@@ -19,8 +19,6 @@
     "Avez-vous des questions ou besoin d'informations supplémentaires? N'hésitez donc pas de nous contacter, de préférence à travers nos médias sociaux.",
   "footer.title": "Contactez-nous",
 
-  "general.contact-us-text": "Contactez-nous",
-
   "guide-list.guide.learn-more-text": "En savoir plus",
 
   "menu.about-us-link-label": "Qui sommes-nous?",
@@ -42,31 +40,33 @@
   "pages.assistance.free.title": "GRATIS!",
 
   "pages.assistance.packages.description":
-    "Choisissez un forfait selon vos besoins. Qu’il s'agisse juste d'une assistance pendant vos démarches d’admission ou pendant celles de visa ou encore pour tout le processus au complet, nous avons un forfait qui correspond parfaitement à vos besoins.",
+    "Nos coûts sont transparents et honnêtes. Vous savez exactement ce pourquoi vous payez avec fatures à l’appui.",
   "pages.assistance.packages.admission.features.application": "Demande d’admission",
   "pages.assistance.packages.admission.features.application-documents": "Envoi et reception des documents",
   "pages.assistance.packages.admission.features.program-choice": "Choix de programme",
   "pages.assistance.packages.admission.features.university-choice": "Choix de l’université",
-  "pages.assistance.packages.admission.pricing": "250$",
   "pages.assistance.packages.admission.title": "L’Admission",
-  "pages.assistance.packages.full.features.admission": "Forfait L’Admission",
-  "pages.assistance.packages.full.features.first-year": "Assistance pour s’installer",
-  "pages.assistance.packages.full.features.on-arrival": "Accueil à l’arrivée",
-  "pages.assistance.packages.full.features.visa": "Forfait Le Visa",
-  "pages.assistance.packages.full.pricing": "500$",
-  "pages.assistance.packages.full.title": "La Totale",
-  "pages.assistance.packages.title": "Un forfait qui vous convient!",
+  "pages.assistance.packages.after-visa.features.first-year": "Assistance pour s’installer",
+  "pages.assistance.packages.after-visa.features.housing": "Recherche de logement",
+  "pages.assistance.packages.after-visa.features.on-arrival": "Accueil à l’arrivée",
+  "pages.assistance.packages.after-visa.features.travel": "Préparation au voyage",
+  "pages.assistance.packages.after-visa.title": "Le Voyage",
+  "pages.assistance.packages.title": "Des coûts transparents et honnêtes!",
   "pages.assistance.packages.visa.features.application-documents": "Rassembler les documents",
   "pages.assistance.packages.visa.features.application-proof": "Rassembler les preuves",
   "pages.assistance.packages.visa.features.fill-forms": "Remplir les formulaires",
   "pages.assistance.packages.visa.features.interview": "Préparation à l‘interview",
-  "pages.assistance.packages.visa.pricing": "200$",
   "pages.assistance.packages.visa.title": "Le Visa",
 
-  "pages.assistance.personal.description":
-    "Donnez-vous plus de chances de réussir vos démarches en vous faisant accompagner par un assistant personnel qui sera là pour vous tout le long de vos démarches. Nous sommes passés par là, avons fait les mêmes démarches que vous et pouvons vous aider à faire de même.",
   "pages.assistance.personal.about-us-link": "Découvrez qui nous sommes",
+  "pages.assistance.personal.description":
+    "Donnez-vous plus de chances de réussir vos démarches en vous faisant accompagner par un mentor personnel qui sera là pour vous tout le long de vos démarches. Nous offrons trois forfaits d’assistance et vous ne payez que pour ceux dont vous avez besoin.",
+  "pages.assistance.personal.pricing":
+    "{pricePerPackage} seulement par forfait ou {priceForAllPackages} pour tout ensemble.",
   "pages.assistance.personal.title": "Un assistant personnel pour vos démarches!",
+
+  "pages.assistance.questions.description": "Vous ne savez pas par où commencer? Nous sommes là pour vous aider.",
+  "pages.assistance.questions.title": "Des questions?",
 
   "pages.guides-show.assistance.description-1":
     "Bien que nos guides soient conçus pour vous permettre de faire vous-mêmes vos démarches, il se peut que vous ayez besoin d’un accompagnement particulier pour augmenter vos chances de réussite.",
@@ -98,5 +98,7 @@
   "pages.index.services.verification.description":
     "Enfin de vous protéger de charlatans ou escrocs, nous pouvons vérifier des informations qui vous sont données par des personnes ou des entreprises qui vous aident dans vos démarches.",
   "pages.index.services.verification.contact-us-text": "Contactez nous",
-  "pages.index.services.verification.title": "Un service de vérification Gratuit!!!"
+  "pages.index.services.verification.title": "Un service de vérification Gratuit!!!",
+
+  "shared.contact-us-text": "Contactez-nous"
 }

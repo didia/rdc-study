@@ -1,13 +1,36 @@
 // Vendor
 import React from 'react';
 import T from 'prop-types';
+import {FormattedMessage} from 'react-intl';
+import Link from 'gatsby-link';
 
 // Styles
 import styles from './styles.module.scss';
 
 import GenericPage from '../GenericPage';
 import GuideList from '../../GuideList';
-import Assistance from './Assistance';
+
+const Assistance = () => (
+  <div>
+    <FormattedMessage id="pages.guides-show.assistance.title">
+      {text => <h2 className="major">{text}</h2>}
+    </FormattedMessage>
+
+    <p>
+      <FormattedMessage id="pages.guides-show.assistance.description-1" tagName="div" />
+
+      <FormattedMessage id="pages.guides-show.assistance.description-2" tagName="div" />
+
+      <FormattedMessage id="pages.guides-show.assistance.link-text">
+        {text => (
+          <Link to="/accompagnement" className={styles['guide-learn-more-link']}>
+            {text}
+          </Link>
+        )}
+      </FormattedMessage>
+    </p>
+  </div>
+);
 
 const GuidePage = ({guide, otherGuides, relatedGuides}) => {
   const pageWrapperClassName = styles[`page-wrapper--${guide.slug}`];

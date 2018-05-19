@@ -33,13 +33,10 @@ textarea {
 
 a,
 span.as-anchor {
-  @include vendor(
-    'transition',
-    'color #{_duration(transition)} ease-in-out, border-bottom-color #{_duration(transition)} ease-in-out'
-  );
   border-bottom: dotted 1px _palette(fg-light);
   text-decoration: none;
   color: _palette(fg-bold);
+  transition: color #{_duration(transition)} ease-in-out, border-bottom-color #{_duration(transition)} ease-in-out;
 
   &:hover {
     color: _palette(fg-bold) !important;

@@ -27,6 +27,16 @@ En outre, vous devez prouver que vous disposez de fonds suffisants pour couvir l
 \
 Pour en savoir plus, [consultez notre guide sur la demarche à suivre pour obtenir un visa d'études pour les États-Unis.](/guides/usa/visa)
 
+## Combien coûtent les démarches?
+
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1860$ et 2650$** pour toutes vos démarches.
+Ces frais se présentent comme suit:
+
+* **50$ à 350$** pour le processus d’admission.
+* **510$ à 600$** pour le processus de Visa.
+* **800$ à 1200$** pour le billet et autres dépenses de voyage.
+* **500$** pour les frais d’assistance RDC-Etudes.
+
 ## Qu'en est-il de bourses d'études?
 
 Les bourses d’études pour étudiants étrangers sont extrêmement rares.

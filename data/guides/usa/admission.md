@@ -52,3 +52,12 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     Après votre admission, vous recevrez de la part de l'universitee votre lettre d'admission et aussi un document appelé communément **I-20**. Ce document est très important pour la suite de vos demarches.
 
 Une fois admis, vous devrez maintenant faire une demande de visa d'études à l'ambassade des États-Unis. Pour cela, [consultez notre guide sur les étapes à suivre pour obtenir un visa d'études pour les États-Unis.](/guides/usa/visa)
+
+## Combien ça coûte?
+
+En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **250$ et 550$** pour toutes vos démarches.
+Ces frais se présentent comme suit:
+
+* **50$ à 200$** pour la demande d’admission.
+* **0 à 150$** pour l’envoi et reception des documents.
+* **200$** pour les frais d’assistance RDC-Etudes.

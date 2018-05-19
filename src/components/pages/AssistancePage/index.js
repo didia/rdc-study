@@ -9,6 +9,7 @@ import {FormattedMessage} from 'react-intl';
 import styles from './styles.module.scss';
 
 import GenericPage from '../GenericPage';
+import ContactUsLink from '../../ContactUsLink';
 
 const FeatureList = ({featureLabelKeys, className}) => (
   <ul className={classnames(styles['feature-list'], className)}>
@@ -61,13 +62,13 @@ const packages = [
     ]
   },
   {
-    titleKey: 'pages.assistance.packages.full.title',
-    priceKey: 'pages.assistance.packages.full.pricing',
+    titleKey: 'pages.assistance.packages.after-visa.title',
+    priceKey: 'pages.assistance.packages.after-visa.pricing',
     featureLabelKeys: [
-      'pages.assistance.packages.full.features.admission',
-      'pages.assistance.packages.full.features.visa',
-      'pages.assistance.packages.full.features.on-arrival',
-      'pages.assistance.packages.full.features.first-year'
+      'pages.assistance.packages.after-visa.features.travel',
+      'pages.assistance.packages.after-visa.features.housing',
+      'pages.assistance.packages.after-visa.features.on-arrival',
+      'pages.assistance.packages.after-visa.features.first-year'
     ]
   }
 ];
@@ -77,11 +78,11 @@ const AssistancePage = () => {
     <GenericPage page={page} bannerClassName={styles.banner}>
       <section className={classnames(styles.card, styles['card--main'])}>
         <header className={styles['column--left']}>
-          <FormattedMessage id="pages.assistance.free.title">
+          <FormattedMessage id="pages.assistance.free.title" tagName="p">
             {text => <p className={styles.pricing}>{text}</p>}
           </FormattedMessage>
 
-          <FormattedMessage id="pages.assistance.free.description">{text => <p>{text}</p>}</FormattedMessage>
+          <FormattedMessage id="pages.assistance.free.description" tagName="p" />
 
           <FormattedMessage id="pages.assistance.free.guide-link-text">
             {text => (
@@ -96,13 +97,34 @@ const AssistancePage = () => {
       </section>
 
       <section className={styles['offer-block']}>
-        <FormattedMessage id="pages.assistance.personal.title">{text => <h2>{text}</h2>}</FormattedMessage>
+        <FormattedMessage id="pages.assistance.personal.title" tagName="h2" />
 
-        <FormattedMessage id="pages.assistance.personal.description">{text => <p>{text}</p>}</FormattedMessage>
+        <FormattedMessage id="pages.assistance.personal.description" tagName="p" />
+
+        <FormattedMessage
+          id="pages.assistance.personal.pricing"
+          tagName="p"
+          values={{
+            pricePerPackage: <b>200$</b>,
+            priceForAllPackages: <b>500$</b>
+          }}
+        />
+
+        <ul className={styles['offer-list']}>
+          {packages.map((ratePackage, i) => (
+            <li key={`feature-${i}`} className={classnames(styles.card, styles['offer-list__item'])}>
+              <FormattedMessage id={ratePackage.titleKey}>
+                {text => <h3 className={styles['offer-title']}>{text}</h3>}
+              </FormattedMessage>
+
+              <FeatureList featureLabelKeys={ratePackage.featureLabelKeys} />
+            </li>
+          ))}
+        </ul>
 
         <FormattedMessage id="pages.assistance.personal.about-us-link">
           {text => (
-            <Link to="/a-propos" className={classnames(styles.button, 'button special')}>
+            <Link to="/a-propos" className={classnames(styles.button, styles['button--about-us'], 'button special')}>
               {text}
             </Link>
           )}
@@ -110,41 +132,11 @@ const AssistancePage = () => {
       </section>
 
       <section className={styles['offer-block']}>
-        <FormattedMessage id="pages.assistance.packages.title">{text => <h2>{text}</h2>}</FormattedMessage>
+        <FormattedMessage id="pages.assistance.questions.title" tagName="h2" />
 
-        <FormattedMessage id="pages.assistance.packages.description">{text => <p>{text}</p>}</FormattedMessage>
+        <FormattedMessage id="pages.assistance.questions.description" tagName="p" />
 
-        <ul className={styles['rate-list']}>
-          {packages.map((ratePackage, i) => (
-            <li key={`feature-${i}`} className={classnames(styles.card, styles['rate-list__item'])}>
-              <FormattedMessage id={ratePackage.titleKey}>
-                {text => <h3 className={styles['rate-title']}>{text}</h3>}
-              </FormattedMessage>
-
-              <FormattedMessage id={ratePackage.priceKey}>
-                {text => <p className={styles.pricing}>{text}</p>}
-              </FormattedMessage>
-
-              <FeatureList featureLabelKeys={ratePackage.featureLabelKeys} />
-
-              <FormattedMessage id="general.contact-us-text">
-                {text => (
-                  <Link to="#contact" className={classnames(styles.button, 'button fit special small')}>
-                    {text}
-                  </Link>
-                )}
-              </FormattedMessage>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className={styles['offer-block']}>
-        <h2>Des questions?</h2>
-        <p>Vous ne savez pas où commencer? Nous sommes là pour vous aider.</p>
-        <Link to="/a-props" className={classnames(styles.button, 'button special')}>
-          Contactez-nous
-        </Link>
+        <ContactUsLink className={classnames(styles.button, 'button special')} />
       </section>
     </GenericPage>
   );

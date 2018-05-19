@@ -54,3 +54,14 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     * **Vous avez les ressources financières pour payer vos études et votre séjour aux États-Unis**: Expliquez comment vous comptez utiliser l'argent à votre disposition pour financer votre séjour aux États-Unis.
     * **Vous reviendrez en RDC à la fin de vos études**: Il s'agit de démontrer que votre objectif principal est bien d'aller étudier aux États-Unis.
       Pour ce faire, vous devez démontrer comment vous utiliserez ce que vous aurez appris une fois de retour en RDC.
+
+## Combien ça coûte?
+
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **710$ et 800$** pour toutes vos démarches.
+Ces frais se présentent comme suit:
+
+* **0 à 90$** pour rassembler les documents
+* **200$** pour les frais de SEVIS.
+* **160$** pour les frais d’interview.
+* **150$** pour les frais de VISA.
+* **200$** pour les frais d’assistance RDC-Etudes.
