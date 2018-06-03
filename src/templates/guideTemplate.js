@@ -4,31 +4,30 @@ import T from 'prop-types';
 
 import GuidePage from '../components/pages/GuidePage';
 
-const guidePageFromMarkdownRemark = ({html, frontmatter, fields}) => ({
+const guideMarkdownRemark = ({html, frontmatter, fields}) => ({
   content: html,
-  coverImage: frontmatter.coverImage.childImageSharp.sizes.src,
+  coverImage: frontmatter.coverImage ? frontmatter.coverImage.childImageSharp.sizes.src : null,
   excerpt: frontmatter.excerpt,
   path: fields.path,
   related: frontmatter.related,
   slug: frontmatter.slug,
-  title: frontmatter.title
+  thumbnail: frontmatter.thumbnail ? frontmatter.thumbnail.childImageSharp : null,
+  title: frontmatter.title,
+  topic: frontmatter.topic
 });
 
-const guideThumbnailFromMarkdownRemark = ({fields, frontmatter}) => ({
-  excerpt: frontmatter.excerpt,
-  path: fields.path,
-  slug: frontmatter.slug,
-  thumbnail: frontmatter.thumbnail.childImageSharp,
-  title: frontmatter.title
-});
+const splitRelatedAndOthers = (guides, mainGuide) => {
+  if (!mainGuide.related)
+    return {relatedGuides: [], otherGuides: guides.filter(guide => guide.topic === mainGuide.topic)};
 
-const splitRelatedAndOthers = (guides, relatedSlugs) => {
-  if (!relatedSlugs) return {relatedGuides: [], otherGuides: guides};
   const relatedGuides = [];
   const otherGuides = [];
 
   guides.forEach(guide => {
-    if (relatedSlugs.includes(guide.slug)) return relatedGuides.push(guide);
+    if (mainGuide.related.includes(guide.slug)) return relatedGuides.push(guide);
+
+    if (guide.topic !== mainGuide.topic) return;
+
     otherGuides.push(guide);
   });
 
@@ -39,11 +38,11 @@ export default function Template({
   data // this prop will be injected by the GraphQL query below.
 }) {
   const {markdownRemark, allMarkdownRemark} = data; // data.markdownRemark holds our post data
-  const guide = guidePageFromMarkdownRemark(markdownRemark);
+  const guide = guideMarkdownRemark(markdownRemark);
 
-  const allGuides = allMarkdownRemark.edges.map(edge => guideThumbnailFromMarkdownRemark(edge.node));
+  const allGuides = allMarkdownRemark.edges.map(edge => guideMarkdownRemark(edge.node));
 
-  const {relatedGuides, otherGuides} = splitRelatedAndOthers(allGuides, guide.related);
+  const {relatedGuides, otherGuides} = splitRelatedAndOthers(allGuides, guide);
 
   return <GuidePage guide={guide} relatedGuides={relatedGuides} otherGuides={otherGuides} />;
 }
@@ -66,6 +65,7 @@ export const pageQuery = graphql`
         excerpt
         slug
         title
+        topic
         related
         coverImage: thumbnail {
           childImageSharp {
@@ -90,6 +90,7 @@ export const pageQuery = graphql`
             excerpt
             slug
             title
+            topic
             thumbnail {
               childImageSharp {
                 sizes(maxHeight: 500) {

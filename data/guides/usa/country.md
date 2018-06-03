@@ -3,7 +3,7 @@ active: true
 slug: "usa"
 date: "2018-03-30"
 title: "Étudier aux États-Unis"
-excerpt: "Destination de rêve pour beaucoup de congolais, les États-Unis d‘Amérique est le pays qui accueillent le plus d’étudiants étrangers au monde. Étudier aux États-Unis vous donne accès aux meilleures universités du monde et vous offrent des très bonnes opportunités de carrière."
+excerpt: "Destination de rêve pour beaucoup de congolais, les États-Unis d‘Amérique est le pays qui accueille le plus d’étudiants étrangers au monde. Étudier aux États-Unis vous donne accès aux meilleures universités du monde et vous offrent des très bonnes opportunités de carrière."
 thumbnail: "images/usa.jpg"
 topic: "country"
 related: ["usa/admission", "usa/visa"]
@@ -14,7 +14,7 @@ related: ["usa/admission", "usa/visa"]
 Pour étudier aux États-Unis, il faut commencer par obtenir une admission dans une institution d'enseignement américaine reconnue par le gouvernement américain.\
 L'admission se fait généralement en ligne pour la majeure partie des universités américaines. Il faudra donc avoir un bon accès à Internet pour pouvoir faire vos démarches d'admission.\
 Vous pouvez faire l'admission dans un collège pour obtenir l'équivalent du graduat en RDC, ou dans une université pour la license, la maitrise ou le doctorat.\
-Les frais académiques aux États-Unis varient entre 10 000$ et 55 000$ par année tandis qu'il faut prévoir entre 8 000 et 16 000$ pour les frais de subsistance selon votre train de vie.
+Quelques établissements vous sont proposés dans [notre guide sur la demarche à suivre pour obtenir une admission dans une université américaine.](/guides/usa/admission).
 \
 \
 Pour en savoir plus, [consultez notre guide sur la demarche à suivre pour obtenir une admission dans une université américaine.](/guides/usa/admission)
@@ -25,20 +25,25 @@ Pour obtenir votre visa, vous devrez convaincre l'officier consulaire que vous �
 En outre, vous devez prouver que vous disposez de fonds suffisants pour couvir la première année de vos études et que vous aurez accès à des fonds suffisants pour couvrir les années d'études suivantes.
 \
 \
-Pour en savoir plus, [consultez notre guide sur la demarche à suivre pour obtenir un visa d'études pour les États-Unis.](/guides/usa/visa)
+Pour en savoir plus, [consultez notre guide sur la démarche à suivre pour obtenir un visa d'études pour les États-Unis.](/guides/usa/visa)
 
-## Combien coûtent les démarches?
+## Combien coûtent les études aux Etats-Unis?
 
-En supposant que vous choisissez [d’être accompagné dans vos démarches par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1860$ et 2650$** pour toutes vos démarches.
-Ces frais se présentent comme suit:
-
-* **50$ à 350$** pour le processus d’admission.
-* **510$ à 600$** pour le processus de Visa.
-* **800$ à 1200$** pour le billet et autres dépenses de voyage.
-* **500$** pour les frais d’assistance RDC-Etudes.
+En réalisant votre projet pour aller étudier aux Etats-Unis, vous pensez premièrement aux frais académiques.
+Il est donc important pour vous d’avoir ne fut ce qu’une idée de combien coutent les études aux Etats-Unis.\
+Les frais académiques aux États-Unis varient entre 10 000$ et 55 000$ par année tandis qu'il faut prévoir entre 8 000 et 16 000$ pour les frais de subsistance selon votre train de vie.
 
 ## Qu'en est-il de bourses d'études?
 
 Les bourses d’études pour étudiants étrangers sont extrêmement rares.
 Pour les études au cycle supérieur, il existe des organismes qui peuvent offrir des bourses d’études cependant il est extrêmement difficile de trouver des bourses d’études pour le premier cycle.\
 Toutefois certaines universités offrent des bourses d’excellence aux étudiants admis en premier cycle. Il faudra vérifier que c’est le cas avec l’université que vous avez choisie.
+
+## Combien coûtent les démarches?
+
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1110 USD et 1450 USD** pour toutes vos démarches.
+Ces frais se présentent comme suit:
+
+* **100 USD à 350 USD** pour le processus d’admission.
+* **510 USD à 600 USD** pour le processus de Visa.
+* **500 USD** pour les frais d’assistance RDC-Etudes.

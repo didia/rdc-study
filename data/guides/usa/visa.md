@@ -6,7 +6,7 @@ title: "Obtenir un visa d'études pour les États-Unis"
 excerpt: "Avec votre admission dans un collège ou une université américaine en main, vous devez maintenant faire une demande de visa à l'ambassade des États-Unis. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le visa d'études pour les États-Unis."
 thumbnail: "images/usa-visa.jpg"
 topic: "visa"
-related: ["usa", "usa/admission"]
+related: ["usa/admission"]
 ---
 
 Une fois que vous avez obtenu votre admission et votre formulaire I—20, il ne vous reste plus qu'à faire vos démarches pour obtenir le visa d'études.
@@ -57,11 +57,11 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
 ## Combien ça coûte?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **710$ et 800$** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **710 USD et 800 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-* **0 à 90$** pour rassembler les documents
-* **200$** pour les frais de SEVIS.
-* **160$** pour les frais d’interview.
-* **150$** pour les frais de VISA.
-* **200$** pour les frais d’assistance RDC-Etudes.
+* **0 à 90 USD** pour rassembler les documents
+* **200 USD** pour les frais de SEVIS.
+* **160 USD** pour les frais d’interview.
+* **150 USD** pour les frais de VISA.
+* **200 USD** pour les frais d’assistance RDC-Etudes.

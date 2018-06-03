@@ -6,7 +6,7 @@ title: "Obtenir une admission dans une université américaine"
 excerpt: "Pour vous rendre aux États-Unis pour études, vous devez au préalable obtenir une admission dans une institution américaine d'enseignement reconnue. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n'importe quelle institution américaine d'enseignement."
 thumbnail: "images/usa-admission.jpg"
 topic: "admission"
-related: ["usa", "usa/visa"]
+related: ["usa/visa"]
 ---
 
 Le processus d'admission diffère d'une institution à une autre. Toutefois les étapes générales sont sensiblement les mêmes dans toutes les institutions.\
@@ -20,7 +20,7 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
 
 2.  ## Choisir un collège ou une université
 
-    Aux États-Unis, vous avez la possibilité de poursuivre vos études soit à l'Universitee ou au Collège.
+    Aux États-Unis, vous avez la possibilité de poursuivre vos études soit à l'Université ou au Collège.
     \
     Au Collège, vous obtiendrez après deux ans d'études, l'équivalent d'un diplôme de graduat en RDC. Vous pouvez ensuite vous inscrire à l'Université pour compléter votre license.
     L'avantage du collège est que les coûts des études sont géneralement inférieurs à ceux des universités.
@@ -49,15 +49,15 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     Il est donc aussi important de mentionner comme adresse de correspondance, une adresse d'une personne vivant dans un pays avec système postal public développé. Nous pouvons aussi vous assister en ce sens là.
     \
     \
-    Après votre admission, vous recevrez de la part de l'universitee votre lettre d'admission et aussi un document appelé communément **I-20**. Ce document est très important pour la suite de vos demarches.
+    Après votre admission, vous recevrez de la part de l'université votre lettre d'admission et aussi un document appelé communément **I-20**. Ce document est très important pour la suite de vos demarches.
 
 Une fois admis, vous devrez maintenant faire une demande de visa d'études à l'ambassade des États-Unis. Pour cela, [consultez notre guide sur les étapes à suivre pour obtenir un visa d'études pour les États-Unis.](/guides/usa/visa)
 
 ## Combien ça coûte?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **250$ et 550$** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **300 USD et 550 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-* **50$ à 200$** pour la demande d’admission.
-* **0 à 150$** pour l’envoi et reception des documents.
-* **200$** pour les frais d’assistance RDC-Etudes.
+* **100 USD à 200 USD** pour la demande d’admission.
+* **0 à 150 USD** pour l’envoi et reception des documents.
+* **200 USD** pour les frais d’assistance RDC-Etudes.
