@@ -24,6 +24,7 @@ export default {
   siteFBAppID: '192570431528735',
   siteKeywords: 'etudier à l’étranger, étudier au Canada, étudier en France, étudier aux États—Unis',
   siteLogo: '/logo.png',
-  siteTitle: 'RDC-ETUDES',
+  siteImage: '/sharable-image.jpg',
+  siteTitle: 'RDC Etudes - Votre guide gratuit sur les études à l’étranger!',
   siteURL: 'https://www.rdcetudes.com'
 };

@@ -39,7 +39,6 @@ export default function Template({
 }) {
   const {markdownRemark, allMarkdownRemark} = data; // data.markdownRemark holds our post data
   const guide = guideMarkdownRemark(markdownRemark);
-
   const allGuides = allMarkdownRemark.edges.map(edge => guideMarkdownRemark(edge.node));
 
   const {relatedGuides, otherGuides} = splitRelatedAndOthers(allGuides, guide);

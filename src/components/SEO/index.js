@@ -22,7 +22,7 @@ const SEO = ({meta}) => {
 
   title = title || config.siteTitle;
   description = description || config.siteDescription;
-  image = image || config.siteLogo;
+  image = image || config.siteImage;
   keywords = keywords || config.siteKeywords;
 
   image = `${config.siteURL}${image}`;
