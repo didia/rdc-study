@@ -26,5 +26,5 @@ export default {
   siteLogo: '/logo.png',
   siteImage: '/sharable-image.jpg',
   siteTitle: 'RDC Etudes - Votre guide gratuit sur les études à l’étranger!',
-  siteURL: 'https://www.rdcetudes.com'
+  siteURL: process.env.GATSBY_SITE_URL || 'https://www.rdcetudes.com'
 };
