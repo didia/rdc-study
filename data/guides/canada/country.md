@@ -3,7 +3,7 @@ active: true
 slug: "canada"
 date: "2018-05-28"
 title: "Étudier au Canada"
-excerpt: "Le Canada reconnu pour sa diversité, ses valeurs inclusives et sa qualité de vie élevée, est considéré à l’international comme un de meilleurs pays au monde où vivre et étudier.  Etudier au Canada constitue non seulement un énorme privilège mais aussi une opportunité à saisir avec grand coeur."
+excerpt: "Le Canada reconnu, pour sa diversité, ses valeurs inclusives et sa qualité de vie élevée, est considéré à l’international comme un de meilleurs pays au monde où vivre et étudier.  Etudier au Canada constitue non seulement un énorme privilège mais aussi une opportunité à saisir avec grand coeur."
 thumbnail: "images/canada.jpg"
 topic: "country"
 related: ["canada/admission", "canada/visa"]
@@ -32,7 +32,7 @@ Pour en savoir plus, [consultez notre guide sur la démarche à suivre pour obte
 
 En réalisant votre projet pour aller étudier au Canada, vous pensez premièrement aux droits de scolarité (frais académiques).
 Il est donc important pour vous d’avoir ne fut ce qu’une idée de combien coutent les études au Canada.\
-Les droits de scolarité varient d’un établissement à un autre, selon le niveau d’étude et le programme d’études (facultés et départements).
+Les droits de scolarité varient d’un établissement à un autre, selon le niveau d’études et le programme d’études (facultés et départements).
 En termes des chiffres, vos études au Canada vous coûteront rentre 4 000USD et 13 000USD par année tandis qu'il faut prévoir entre 9 000$ et 10 000$ pour les frais de subsistance qui varieront selon votre train de vie.
 
 ## Qu'en est-il de bourses d'études?

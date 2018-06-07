@@ -36,31 +36,31 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     Vous pouvez faire votre demande de permis d’études deux manières: en ligne ou au centre de réception des demandes de visa (CRDV) à Kinshasa.
 
     Pour faire la demande en ligne, vous devez être en mesure de numériser des documents et avoir une carte de crédit valide pour payer les frais de demande.\
-    L’avantage de faire la demande en ligne est que c’est plus rapide et il y’a moins de documents réquis comparé à ce que le CRDV demandent.\
-    Le seul désavantage avec la demande en ligne, c’est que nous n'en avons pas fait beaucoup. La majeure partie de demande que nous avons faite à Kinshasa ont été au CRDV.
+    L’avantage de faire la demande en ligne est que c’est plus rapide et il y’a moins de documents réquis comparé à ce que le CRDV demande.\
+    Le seul désavantage avec la demande en ligne, c’est que nous n'en avons pas beaucoup fait. La majeure partie de demande que nous avons faite à Kinshasa ont été au CRDV.
     Cependant, toutes les démarches que nous avons faites en ligne ont eu des résultats positifs.
 
-    Si vous choisissez de faire la demande en ligne, vous devez commencer par créer votre compte [ici](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/compte.html)
+    Si vous choisissez de faire la demande en ligne, vous devez commencer par créer votre compte sur [le site web de l'immigration.](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/compte.html)
 
 3)  ## Obtenir les formulaires exigés pour la demande
 
-    Une liste des formulaires à remplir sont exigés lorsque vous présentez votre demande de permis d’études.\
+    Une liste de formulaires à remplir sont exigés lorsque vous présentez votre demande de permis d’études.\
     Ces formulaires sont disponibles au CRDV ou encore gratuitement en ligne sur [le site web de immigration et citoyenneté Canada](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html).
 
     Pour la demande en ligne, les formulaires seront déjà disponible pour téléchargement à travers votre compte.
 
 4)  ## Remplir les formulaires
 
-    Vous devez remplir complètement et avec précisions tous les formulaires demandés.\
-    Fiez-vous donc au [guide en ligne](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html) sur le site d'Immigration Canada pour savoir quoi mettre à chaque case.\
-    Si vous avez toujours des doutes, contactez-nous, nous offrons des services pour vous accompagner dans ce processus.
+    Vous devez remplir complètement et avec précision tous les formulaires demandés.\
+    Fiez-vous donc au [guide en ligne](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html) sur le site d'Immigration Canada pour savoir quoi mettre dans chaque case.\
+    Si vous avez toujours des doutes, contactez-nous! Nous offrons des services pour vous accompagner dans ce processus.
 
 5)  ## Rassembler tous les documents exigés
 
     Parmi les formulaires obtenus au point 3, vous trouverez un formulaire nommé liste de contrôle.\
     Ce document liste tous les documents supplémentaires que vous devrez joindre à votre demande y compris vos photos passeport. Assurez-vous de n’oublier aucun document.
 
-    Pour la demande au CRDV, des documents supplémentaires doivent être fournis en plus de ceux déjà présents dans la liste des contrôles.
+    Pour la demande au CRDV, des documents supplémentaires doivent être fournis en plus de ceux déjà présents dans la liste de contrôle.
     Vous trouverez ces documents dans le document nommé **Directives du bureau de visa de Dakar**.
     Ce document est aussi disponible pour téléchargement [ici](http://www.cic.gc.ca/francais/pdf/trousses/form/IMM5826F.pdf). Il est important de fournir tous ces documents si vous faites une demande au CRDV.
 

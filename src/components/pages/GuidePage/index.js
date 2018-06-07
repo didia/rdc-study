@@ -16,7 +16,7 @@ const Assistance = () => (
       {text => <h2 className="major">{text}</h2>}
     </FormattedMessage>
 
-    <p>
+    <div>
       <FormattedMessage id="pages.guides-show.assistance.description-1" tagName="div" />
 
       <FormattedMessage id="pages.guides-show.assistance.description-2" tagName="div" />
@@ -28,7 +28,7 @@ const Assistance = () => (
           </Link>
         )}
       </FormattedMessage>
-    </p>
+    </div>
   </div>
 );
 
