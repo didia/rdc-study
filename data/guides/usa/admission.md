@@ -22,7 +22,7 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
 
     Aux États-Unis, vous avez la possibilité de poursuivre vos études soit à l'Université ou au Collège.
     \
-    Au Collège, vous obtiendrez après deux ans d'études, l'équivalent d'un diplôme de graduat en RDC. Vous pouvez ensuite vous inscrire à l'Université pour compléter votre license.
+    Au Collège, vous obtiendrez après deux ans d'études, l'équivalent d'un diplôme de graduat en RDC. Vous pouvez ensuite vous inscrire à l'Université pour compléter votre licence.
     L'avantage du collège est que les coûts des études sont géneralement inférieurs à ceux des universités.
     \
     \
@@ -61,3 +61,5 @@ Ces frais se présentent comme suit:
 * **100 USD à 200 USD** pour la demande d’admission.
 * **0 à 150 USD** pour l’envoi et reception des documents.
 * **200 USD** pour les frais d’assistance RDC-Etudes.
+
+**NB**: Ces prix sont juste là à titre d'estimé, ils peuvent changer par rapport aux universités. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.

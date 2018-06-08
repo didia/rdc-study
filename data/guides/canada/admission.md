@@ -23,7 +23,7 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     L’avantage d'étudier en Anglais est que cela vous offre plus d’opportunités puisque le Canada est majoritairement anglophone.
 
     Au Canada, vous avez la possibilité de poursuivre vos études soit à l'Université ou au Collège (Cégép au Québec).
-    Au Collège, vous obtiendrez après deux ans d'études, l'équivalent d'un diplôme de graduat en RDC. Vous pouvez ensuite vous inscrire à l'Université pour compléter votre license.
+    Au Collège, vous obtiendrez après deux ans d'études, l'équivalent d'un diplôme de graduat en RDC. Vous pouvez ensuite vous inscrire à l'Université pour compléter votre licence.
     L'avantage du collège est que la durée et les coûts des études sont géneralement inférieurs à ceux des universités.
     \
     \
@@ -32,8 +32,8 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     \
     Voici une liste non-exhaustive des collèges et universités que vous pouvez explorer:
 
-    * **Collèges:** [Dawson College (Anglais)](https://www.dawsoncollege.qc.ca/admissions/admission-requirements/international-students/), [Cégép Garneau (Français)](https://www.cegepgarneau.ca/etudier-a-garneau/etudiants-internationaux), [Collège communautaire du Nouveau-Brunswick](https://ccnb.ca/international/futurs-etudiants-internationaux/se-renseigner-sur-ladmission.aspx)
-    * **Universités:** [Université d’Ottawa (Anglais, Français)](http://www.uottawa.ca/voici-uottawa/), [Université de Moncton(Français)](https://choisir.umoncton.ca/international), [Université Laval (Français)](https://www.ulaval.ca/international/etudiants-internationaux.html)
+    * **Collèges:** [Dawson College (Anglais)](https://www.dawsoncollege.qc.ca/admissions/admission-requirements/international-students/), [Cégép Garneau (Français)](https://www.cegepgarneau.ca/etudier-a-garneau/etudiants-internationaux), [Collège communautaire du Nouveau-Brunswick (Français)](https://ccnb.ca/international/futurs-etudiants-internationaux/se-renseigner-sur-ladmission.aspx)
+    * **Universités:** [Université d’Ottawa (Anglais, Français)](http://www.uottawa.ca/voici-uottawa/), [Université de Moncton (Français)](https://choisir.umoncton.ca/international), [Université Laval (Français)](https://www.ulaval.ca/international/etudiants-internationaux.html)
 
 3.  ## Faire la demande d'admission
 
@@ -47,16 +47,18 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     Une fois que vous aurez complété et soumis votre demande, vous recevrez un message de confirmation et une liste des documents que vous devrez fournir à l’université par email ou ou par courrier postal selon ce que requiert l'Université.
     Certaines universités comme l’Université de Moncton par exemple exigent d’envoyer des documents soit originaux soit des copies certifiés et légalisés par voie postale.
 
-    Le délais de traitement de demande d’admission varient entre 2 et 4 semaines à compter de la date de réception des vos documents par l’Université.
+    Le délais de traitement de demande d’admission varient beaucoup dépendamment de l’Université et le cycle d’admission.
     Admettons que vous ayez soumis votre demande à l’Université Laval, il vous faudra attendre 4 semaines avant de recevoir une réponse. Inutile de vous inquiéter. Vous devez être patient.
 
 Une fois admis, vous devrez maintenant faire une demande de permis d’études. Pour cela, [consultez notre guide sur les étapes à suivre pour obtenir un visa permis d'études pour le Canada.](/guides/canada/visa)
 
 ## Combien ça coûte?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **280$ et 600$** pour toutes vos démarches d’admission.
+En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **280 USD et 600 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
-* **80$ à 250USD** pour la demande d’admission.
-* **0 à 150USD** pour l’envoi et reception des documents.
-* **200USD** pour les frais d’assistance RDC-Etudes.
+* **80 USD à 250 USD** pour la demande d’admission.
+* **0 à 150 USD** pour l’envoi et reception des documents.
+* **200 USD** pour les frais d’assistance RDC-Etudes.
+
+_NB_: Ces prix sont juste là à titre d'estimé, ils peuvent changer par rapport selon les universités. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.

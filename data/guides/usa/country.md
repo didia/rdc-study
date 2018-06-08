@@ -13,11 +13,11 @@ related: ["usa/admission", "usa/visa"]
 
 Pour étudier aux États-Unis, il faut commencer par obtenir une admission dans une institution d'enseignement américaine reconnue par le gouvernement américain.\
 L'admission se fait généralement en ligne pour la majeure partie des universités américaines. Il faudra donc avoir un bon accès à Internet pour pouvoir faire vos démarches d'admission.\
-Vous pouvez faire l'admission dans un collège pour obtenir l'équivalent du graduat en RDC, ou dans une université pour la license, la maitrise ou le doctorat.\
-Quelques établissements vous sont proposés dans [notre guide sur la demarche à suivre pour obtenir une admission dans une université américaine.](/guides/usa/admission).
+Vous pouvez faire l'admission dans un collège pour obtenir l'équivalent du graduat en RDC, ou dans une université pour la licence, la maîtrise ou le doctorat.\
+Quelques établissements vous sont proposés dans [notre guide sur les démarches à suivre pour obtenir une admission dans une université américaine.](/guides/usa/admission).
 \
 \
-Pour en savoir plus, [consultez notre guide sur la demarche à suivre pour obtenir une admission dans une université américaine.](/guides/usa/admission)
+Pour en savoir plus, [consultez notre guide sur les démarches à suivre pour obtenir une admission dans une université américaine.](/guides/usa/admission)
 \
 \
 Une fois l'admission obtenue, il faudra faire une demande de visa à l'ambassade des États-Unis.\
@@ -47,3 +47,5 @@ Ces frais se présentent comme suit:
 * **100 USD à 350 USD** pour le processus d’admission.
 * **510 USD à 600 USD** pour le processus de Visa.
 * **500 USD** pour les frais d’assistance RDC-Etudes.
+
+**NB**: Ces prix sont juste là à titre d'estimé, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement américain. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.

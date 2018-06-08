@@ -29,16 +29,14 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     Une fois le paiement effectué, vous recevrez dans votre compte, un document à remplir et une liste des documents additionnels à transmettre au ministère.\
     Rassemblez les documents exigés et renvoyez-les par DHL à l’adresse mentionée dans le document téléchargé.
 
-    Le délai de traitement de la demande du CAQ est de 4 semaines à compter de la date de réception des vos documents. Vous pouvez déjà commencer votre demande du permis d’études pendant que vous attendez votre CAQ.
+    Le délai de traitement de la demande du CAQ est de 4 semaines à compter de la date de réception des vos documents. Vous pouvez déjà commencer votre demande de permis d’études pendant que vous attendez votre CAQ.
 
 2)  ## Choisissez le type de demande
 
-    Vous pouvez faire votre demande de permis d’études deux manières: en ligne ou au centre de réception des demandes de visa (CRDV) à Kinshasa.
+    Vous pouvez faire votre demande de permis d’études deux manières: en ligne ou au centre de réception des demandes de visa (CRDV).
 
-    Pour faire la demande en ligne, vous devez être en mesure de numériser des documents et avoir une carte de crédit valide pour payer les frais de demande.\
-    L’avantage de faire la demande en ligne est que c’est plus rapide et il y’a moins de documents réquis comparé à ce que le CRDV demande.\
-    Le seul désavantage avec la demande en ligne, c’est que nous n'en avons pas beaucoup fait. La majeure partie de demande que nous avons faite à Kinshasa ont été au CRDV.
-    Cependant, toutes les démarches que nous avons faites en ligne ont eu des résultats positifs.
+    Pour faire la demande en ligne, vous devez être en mesure de numériser vos documents et avoir une carte de crédit valide pour payer les frais de demande.\
+    L’avantage de faire la demande en ligne est que c’est plus rapide et il y’a moins de documents réquis comparé à ce que le CRDV demande.
 
     Si vous choisissez de faire la demande en ligne, vous devez commencer par créer votre compte sur [le site web de l'immigration.](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/compte.html)
 
@@ -58,11 +56,11 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 5)  ## Rassembler tous les documents exigés
 
     Parmi les formulaires obtenus au point 3, vous trouverez un formulaire nommé liste de contrôle.\
-    Ce document liste tous les documents supplémentaires que vous devrez joindre à votre demande y compris vos photos passeport. Assurez-vous de n’oublier aucun document.
+    Cette list énumère tous les documents supplémentaires que vous devrez joindre à votre demande y compris vos photos passeport. Assurez-vous de n’oublier aucun document.
 
-    Pour la demande au CRDV, des documents supplémentaires doivent être fournis en plus de ceux déjà présents dans la liste de contrôle.
-    Vous trouverez ces documents dans le document nommé **Directives du bureau de visa de Dakar**.
-    Ce document est aussi disponible pour téléchargement [ici](http://www.cic.gc.ca/francais/pdf/trousses/form/IMM5826F.pdf). Il est important de fournir tous ces documents si vous faites une demande au CRDV.
+    Pour la demande au CRDV, des documents supplémentaires peuvent être sollicités en plus de ceux déjà présents dans la liste de contrôle.
+    Vous trouverez ces documents dans le document nommé **Directives du bureau de visa de Dakar** pour le CRDV de Kinshasa.
+    Ce document est aussi disponible pour téléchargement [sur le site d’Immigration Canada.](http://www.cic.gc.ca/francais/pdf/trousses/form/IMM5826F.pdf) Il est important de fournir tous ces documents si vous faites une demande au CRDV.
 
     Si vous faites la demande en ligne, vous n’aurez pas besoin de fournir une bonne partie de ces documents. Toutefois, vous devez founir tous les documents exigés dans la liste de contrôle.
 
@@ -76,6 +74,8 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     Ensuite vous devez fournir un engagement écrit à quitter le Canada après la fin de vos études.
     Cet engagement permet au Canada de s’assurer que vous n'essaierez pas de rester illégalement au Canada.
 
+    Si vous avez besoin d’aide pour rédiger ces documents, nous vous encourageons à souscrire à notre service d’accompagnement, plus spécifiquement le forfait Admission.
+
 7)  ## Vérifiez que vous avez tous les documents
 
     Assurez vous de bien remplir vos formulaires et de présenter tous les documents demandés pour pouvoir compléter votre demande.\
@@ -86,23 +86,27 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
     Vous devez ensuite vous rendre au CRDV pour déposer vos documents. Au dépôt de votre demande, vous allez payer les frais de traitement, les frais du CRDV ainsi que les frais pour les données biométriques.
 
-    Si vous avez fait votre demande en ligne, vous allez juste téléverser vos documents en ligne et payer les frais de traitement.\  
+    Si vous avez fait votre demande en ligne, vous allez juste téléverser vos documents en ligne et payer les frais de traitement.\
     Une fois que le bureau aura réçu votre demande, vous serez invité à aller déposer vos données biométriques au CRDV.
 
 9)  ## Examen médicale et réponse à la demande
 
-    Le délai de traitement de votre demande est de 6semaines sans compter le délai de transit entre le CRDV de Kinshasa et le bureau de visa de Dakar où les demandes sont acheminées et traitées.\
+    Le délai de traitement est varie selon votre location et la période de demande. En moyenne, le délai de demande à Kinshasa est de 6 semaines en moyenne sans compter le délai de transit entre le CRDV de Kinshasa et le bureau de visa de Dakar où les demandes sont acheminées et traitées.\
+    Pour savoir quel sera votre délai exact, veuillez consulter le [site d’Immigration Canada à cet effet.](http://www.cic.gc.ca/francais/information/delais/index.asp)
+
     Si votre demande est approuvée, vous recevrez par email une invitation à passer des examens médicaux.
     La réponse finale dépendra ainsi des résultats de ces examens médicaux.\
     Dans le cas d’un rejet, vous recevrez une lettre vous expliquant pourquoi votre demande a été rejetée.
 
 ## Combien ça coûte?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **690$ et 810$** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **690 USD et 810 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
 * **20 USD à 50 USD** pour les documents administratifs à obtenir du gouvernement congolais.
 * **90 USD** pour le CAQ (Seulement pour Québec)
 * **185 USD** pour le frais des visas (Y compris les empreintes)
 * **285 USD** pour les frais des examens médicaux.
-* **200$** pour les frais d’assistance RDC-Etudes.
+* **200 USD** pour les frais d’assistance RDC-Etudes.
+
+**NB**: Ces prix sont juste là à titre d'estimé, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leur site web pour les prix plus à jour.
