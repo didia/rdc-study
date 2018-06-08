@@ -90,8 +90,6 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
 
     if (parsedFilePath.name.indexOf('guides') !== 0 && node.frontmatter && node.frontmatter.slug) {
       createNodeField({node, name: 'path', value: `/guides/${node.frontmatter.slug}`});
-    } else {
-      console.log(fileNode);
     }
   }
 };
