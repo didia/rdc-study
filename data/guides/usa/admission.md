@@ -31,8 +31,8 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     \
     Voici une liste non-exhaustive des collèges et universités que vous pouvez explorer:
 
-    * **Collèges:** [Miami Dade College](http://www.mdc.edu/future-students/), [Broaward College](http://broward.edu/international/students/Pages/default.aspx), [Houston Community College](http://www.hccs.edu/support-services/international-students/admissions/)
-    * **Universités:** [Florida State University](http://admissions.fsu.edu/international/), [University of Houston](http://www.uh.edu/undergraduate-admissions/apply/international/)
+    * **Collèges:** <a href="http://www.mdc.edu/future-students/" target="_blank" rel="nofollow noopener">Miami Dade College</a>, <a href="http://broward.edu/international/students/Pages/default.aspx" target="_blank" rel="nofollow noopener">Broaward College</a>, <a href="http://www.hccs.edu/support-services/international-students/admissions/" target="_blank" rel="nofollow noopener">Houston Community College</a>[
+    * **Universités:** <a href="http://admissions.fsu.edu/international/" target="_blank" rel="nofollow noopener">Florida State University</a>, <a href="http://www.uh.edu/undergraduate-admissions/apply/international/" target="_blank" rel="nofollow noopener">University of Houston</a>
 
 3.  ## Faire la demande d'admission
     Chaque université a son processus particulier d'admission. Toutefois la demande d'admission s'est fait généralement en ligne pour la grande majorité d'universités aux États-Unis.

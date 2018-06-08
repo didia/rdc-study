@@ -21,7 +21,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
     _SEVIS_ est un service d'information sur internet qui contrôle et surveille les étudiants internationaux tout au long de leur parcours au sein du système d'éducation américaine.
     Vous devez payer les frais de _SEVIS_ avant de soumettre une demande de visa auprès de l'ambassade des États-Unis.
-    Pour payer ces frais, veuillez visiter [www.fmjfee.com](https://www.fmjfee.com).
+    Pour payer ces frais, veuillez visiter <a href="https://www.fmjfee.com" target="_blank" rel="nofollow noopener">www.fmjfee.com]</a>
     Une fois que vous aurez payé, vous devez imprimer le reçu comme preuve de paiement. Vous amenerez ce réçu à votre rendez-vous de visa et aussi lorsque vous voyagerez aux États-Unis.
 
 2.  ## Rassembler les documents pour la demande de Visa
@@ -40,8 +40,8 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     Voici donc les étapes pour prendre votre rendez-vous:
 
     * Remplissez le formulaire de demande de visa (_DS-160_) en ligne.
-      Le DS-160 est un formulaire en ligne du gouvernement des États-Unis en ligne et peut être rempli uniquement en ligne sur [https://ceac.state.gov/CEAC](https://ceac.state.gov/CEAC).
-    * Allez ensuite sur [https://ais.usvisa-info.com/fr-cd/niv/users/sign_in](https://ais.usvisa-info.com/fr-cd/niv/users/sign_in) qui est le site pour prendre rendez-vous.
+      Le DS-160 est un formulaire en ligne du gouvernement des États-Unis en ligne et peut être rempli uniquement en ligne sur <a href="https://ceac.state.gov/CEAC" target="_blank" rel="nofollow noopener">https://ceac.state.gov/CEAC.</a>
+    * Allez ensuite sur <a href="https://ais.usvisa-info.com/fr-cd/niv/users/sign_in" target="_blank" rel="nofollow noopener">https://ais.usvisa-info.com/fr-cd/niv/users/sign_in</a> qui est le site pour prendre rendez-vous.
     * Créez un compte ou connectez-vous si vous avez déjà un compte.
     * Entrez le numéro de confirmation DS-160.
     * Payez les frais de demande de visa non-immigrant (MRV).

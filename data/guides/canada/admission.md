@@ -32,15 +32,15 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     \
     Voici une liste non-exhaustive des collèges et universités que vous pouvez explorer:
 
-    * **Collèges:** [Dawson College (Anglais)](https://www.dawsoncollege.qc.ca/admissions/admission-requirements/international-students/), [Cégép Garneau (Français)](https://www.cegepgarneau.ca/etudier-a-garneau/etudiants-internationaux), [Collège communautaire du Nouveau-Brunswick (Français)](https://ccnb.ca/international/futurs-etudiants-internationaux/se-renseigner-sur-ladmission.aspx)
-    * **Universités:** [Université d’Ottawa (Anglais, Français)](http://www.uottawa.ca/voici-uottawa/), [Université de Moncton (Français)](https://choisir.umoncton.ca/international), [Université Laval (Français)](https://www.ulaval.ca/international/etudiants-internationaux.html)
+    * **Collèges:** <a href="https://www.dawsoncollege.qc.ca/admissions/admission-requirements/international-students/" target="_blank" rel="nofollow noopener">Dawson College (Anglais)</a>, <a href="https://www.cegepgarneau.ca/etudier-a-garneau/etudiants-internationaux" target="_blank" rel="nofollow noopener">Cégép Garneau (Français)</a>, <a href="https://ccnb.ca/international/futurs-etudiants-internationaux/se-renseigner-sur-ladmission.aspx" target="_blank" rel="nofollow noopener">Collège communautaire du Nouveau-Brunswick (Français).</a>
+    * **Universités:** <a href="http://www.uottawa.ca/voici-uottawa/" target="_blank" rel="nofollow noopener">Université d’Ottawa (Anglais, Français)</a>, <a href="https://choisir.umoncton.ca/international" target="_blank" rel="nofollow noopener">Université de Moncton (Français)</a>, <a href="https://www.ulaval.ca/international/etudiants-internationaux.html" target="_blank" rel="nofollow noopener">Université Laval (Français)</a>
 
 3.  ## Faire la demande d'admission
 
     Maintenant que vous avez choisi votre université, vous pouvez procéder à votre admission. Rendez vous sur le site de l’Université que vous avez choisi et trouvez l’onglet admission.\
     Généralement, tous les sites d’admission exigent de créer un compte en ligne afin de suivre l’évolution de votre demande.\
     Remplissez tous les champs demandés et créez votre compte. Lisez et remplissez attentivement les formulaires en ligne qui vous seront présentées.\
-    Contrairement à toutes les autres Universités, les admissions dans les Universités de l’Ontario ne se font pas à travers les sites web des universités mais plutôt à travers le site web du [centre de demande d’admission aux universités de l’Ontario.](https://www.ouac.on.ca/fr/)
+    Contrairement à toutes les autres Universités, les admissions dans les Universités de l’Ontario ne se font pas à travers les sites web des universités mais plutôt à travers le site web du <a href="https://www.ouac.on.ca/fr/" target="_blank" rel="nofollow noopener">centre de demande d’admission aux universités de l’Ontario.</a>
 
     Pour finaliser votre demande, il faudra payer les frais de traitement de dossier. Ces frais sont payables en ligne pour la majorité d'universités au moyen d’une carte visa ou Mastercard. Ils sont également payables par virement bancaire et via transfert d’argent (Western Union, Money gram) selon les exigences de l’université concernée.
 
