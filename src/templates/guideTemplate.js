@@ -24,7 +24,7 @@ const splitRelatedAndOthers = (guides, mainGuide) => {
   const otherGuides = [];
 
   guides.forEach(guide => {
-    if (mainGuide.related.includes(guide.slug)) return relatedGuides.push(guide);
+    if (mainGuide.related.indexOf(guide.slug) !== -1) return relatedGuides.push(guide);
 
     if (guide.topic !== mainGuide.topic) return;
 
