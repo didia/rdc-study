@@ -12,7 +12,7 @@
   "scripts": {
     "build": "gatsby build",
     "deploy-qa": "gatsby build && surge public/ $SURGE_DOMAIN",
-    "develop": "gatsby develop",
+    "start": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "lint": "./node_modules/.bin/stylelint './src/**/*.scss' && ./node_modules/.bin/eslint './src/**/*.js'",
     "precommit": "lint-staged",

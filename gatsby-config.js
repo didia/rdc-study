@@ -25,6 +25,13 @@ const plugins = [
   {
     resolve: 'gatsby-source-filesystem',
     options: {
+      path: `${__dirname}/data/articles`,
+      name: 'articles'
+    }
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
       path: `${__dirname}/data/team`,
       name: 'team'
     }

@@ -43,6 +43,8 @@
     "Nous serons toujours transparents avec vous. À la différence des autres, chez nous vous savez exactement à quoi sert votre argent. Vous avez le choix de faire le paiement vous-même. Si nous payons pour vous, nous vous donnerons toujours les preuves de paiement.",
   "pages.about-us.values.transparency.title": "La transparence",
 
+  "pages.articles-show.other-articles.title": "Articles récents",
+
   "pages.assistance.free.description":
     "Toute l’information dont vous avez besoin pour réaliser votre projet d’études est disponible via nos guides en ligne. Ils sont gratuits et le resteront toujours.",
   "pages.assistance.free.features.admission-guide": "Guide pour l’admission",
@@ -113,5 +115,8 @@
   "pages.index.services.verification.contact-us-text": "Contactez nous",
   "pages.index.services.verification.title": "Un service de vérification Gratuit!!!",
 
-  "shared.contact-us-text": "Contactez-nous"
+  "shared.contact-us-text": "Contactez-nous",
+  "shared.read-time": "{time} {time, plural, one {minute de lecture}\n other {minutes de lecture}}",
+  "shared.share-on-facebook": "Partagez sur facebook",
+  "shared.share-on-whatsapp": "Partagez sur whatsapp"
 }

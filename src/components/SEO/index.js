@@ -3,7 +3,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import T from 'prop-types';
 
+// Config
 import config from '../../../config';
+
+// Utils
+import getCanonicalLink from '../../utils/get-canonical-link';
 
 // eslint-disable-next-line complexity
 const SEO = ({meta}) => {
@@ -16,8 +20,8 @@ const SEO = ({meta}) => {
     title = meta.title;
     description = meta.description;
     image = meta.image;
-    keywords = meta.keywords;
-    postURL = `${config.siteURL}${meta.path}`;
+    keywords = meta.keywords ? meta.keywords.join(',') : null;
+    postURL = getCanonicalLink(meta.path);
   }
 
   title = title || config.siteTitle;
@@ -99,6 +103,7 @@ SEO.propTypes = {
   meta: T.shape({
     description: T.string,
     image: T.string,
+    keywords: T.arrayOf(T.string),
     path: T.string,
     title: T.string
   })

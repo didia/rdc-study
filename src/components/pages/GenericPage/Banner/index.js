@@ -1,14 +1,13 @@
 // Vendor
 import React from 'react';
 import T from 'prop-types';
-import {FormattedMessage} from 'react-intl';
 import classnames from 'classnames';
 
 // Styles
 import styles from './styles.module.scss';
 
 // Components
-import FacebookShareButton from '../../../../components/FacebookShareButton';
+import SocialShareButtons from '../../../SocialShareButtons';
 
 const Banner = ({className, page}) => (
   <header className={classnames(styles.banner, className)}>
@@ -17,9 +16,7 @@ const Banner = ({className, page}) => (
       <p className={styles.description}>{page.description}</p>
       {Boolean(page.facebookShareButtonLabelKey) && (
         <div className={styles.social}>
-          <FormattedMessage id={page.facebookShareButtonLabelKey}>
-            {text => <FacebookShareButton label={text} path={page.path} />}
-          </FormattedMessage>
+          <SocialShareButtons path={page.path} labelKey={page.facebookShareButtonLabelKey} />
         </div>
       )}
     </div>
