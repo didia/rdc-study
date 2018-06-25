@@ -12,7 +12,8 @@ collections:
     label: "Article"
     folder: "data/articles"
     create: true
-    slug: "{{slug}}"
+    sort: "date:asc"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Brève", name: "excerpt", widget: "text"}
