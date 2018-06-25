@@ -12,6 +12,7 @@ const articleMarkdownRemark = ({html, timeToRead, frontmatter, fields}) => ({
   path: fields.path,
   tags: frontmatter.tags,
   thumbnail: frontmatter.thumbnail ? {sizes: frontmatter.thumbnail.childImageSharp.contentImage} : null,
+  thumbnailCredits: frontmatter.thumbnailCredits,
   title: frontmatter.title,
   timeToRead
 });
@@ -63,6 +64,7 @@ export const pageQuery = graphql`
         excerpt
         tags
         title
+        thumbnailCredits
         thumbnail {
           childImageSharp {
             contentImage: sizes(maxWidth: 1200) {

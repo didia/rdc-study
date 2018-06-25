@@ -18,6 +18,7 @@ collections:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Brève", name: "excerpt", widget: "text"}
       - {label: "Image principale de l’article", name: "thumbnail", widget: "image"}
+      - {label: "Crédits de l’image principale", name: "thumbnailCredits", widget: "text", required: false}
       - {label: "Contenu", name: "body", widget: "markdown"}
-      - {label: "Mots clés", name: "tags", widget: "list"}
+      - {label: "Mots clés", name: "tags", widget: "list", required: false}
       - {label: "Date de publication", name: "date", widget: "datetime"}

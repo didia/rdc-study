@@ -32,7 +32,14 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
               <Img className={styles.image} sizes={article.thumbnail.sizes} alt={article.title} />
             </div>
 
-            <div>
+            {article.thumbnailCredits && (
+              <div
+                className={styles['thumbnail-credit']}
+                dangerouslySetInnerHTML={{__html: article.thumbnailCredits}}
+              />
+            )}
+
+            <div className={styles['cover__title-excerpt-wrapper']}>
               <h1 className={styles.cover__title}>{article.title}</h1>
               <p className={styles.cover__description}>{article.excerpt}</p>
             </div>
@@ -68,6 +75,8 @@ ArticlePage.propTypes = {
     excerpt: T.string.isRequired,
     path: T.string.isRequired,
     tags: T.arrayOf(T.string),
+    thumbnail: T.object.isRequired,
+    thumbnailCredits: T.string,
     timeToRead: T.number.isRequired,
     title: T.string.isRequired
   }).isRequired,

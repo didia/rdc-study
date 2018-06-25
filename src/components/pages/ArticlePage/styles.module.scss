@@ -54,7 +54,6 @@
   overflow: hidden;
   width: 100%;
   max-height: 400px;
-  margin-bottom: 40px;
 }
 
 .cover__title {
@@ -65,6 +64,17 @@
 
 .cover__description {
   margin-bottom: 1em;
+}
+
+.cover__title-excerpt-wrapper {
+  margin-top: 40px;
+}
+
+.thumbnail-credit {
+  a {
+    background-color: transparent;
+    border: 0;
+  }
 }
 
 @include breakpoint(medium) {
