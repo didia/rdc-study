@@ -5,20 +5,44 @@ import T from 'prop-types';
 import IndexPage from '../components/pages/IndexPage';
 
 const Index = ({data}) => {
-  const countries = data.allMarkdownRemark.edges.map(edge => ({
-    excerpt: edge.node.frontmatter.excerpt,
-    path: edge.node.fields.path,
-    thumbnail: edge.node.frontmatter.thumbnail.childImageSharp,
-    title: edge.node.frontmatter.title
+  const countries = data.guides.edges.map(({node}) => ({
+    excerpt: node.frontmatter.excerpt,
+    path: node.fields.path,
+    thumbnail: node.frontmatter.thumbnail.childImageSharp,
+    title: node.frontmatter.title
   }));
 
-  return <IndexPage images={data} countries={countries} />;
+  const articles = data.articles.edges.map(({node}) => ({
+    date: node.frontmatter.date,
+    excerpt: node.frontmatter.excerpt,
+    path: node.fields.path,
+    thumbnail: node.frontmatter.thumbnail ? node.frontmatter.thumbnail.childImageSharp : null,
+    title: node.frontmatter.title,
+    timeToRead: node.timeToRead
+  }));
+
+  const images = {
+    consultingServiceImage: data.consultingServiceImage,
+    freeGuideImage: data.freeGuideImage,
+    verificationServiceImage: data.verificationServiceImage
+  };
+
+  return (
+    <IndexPage
+      articles={articles}
+      countries={countries}
+      images={images}
+      hasMoreArticles={data.articles.pageInfo.hasNextPage}
+    />
+  );
 };
 
 Index.propTypes = {
   data: T.shape({
+    articles: T.object.isRequired,
     consultingServiceImage: T.object.isRequired,
     freeGuideImage: T.object.isRequired,
+    guides: T.object.isRequired,
     verificationServiceImage: T.object.isRequired
   })
 };
@@ -27,8 +51,8 @@ export default Index;
 
 export const pageQuery = graphql`
   query PageQuery {
-    allMarkdownRemark(
-      limit: 2000
+    guides: allMarkdownRemark(
+      limit: 10
       sort: {fields: [frontmatter___title], order: ASC}
       filter: {frontmatter: {active: {eq: true}, topic: {eq: "country"}}}
     ) {
@@ -50,6 +74,35 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+    articles: allMarkdownRemark(
+      limit: 5
+      sort: {fields: [frontmatter___date], order: DESC}
+      filter: {fields: {type: {eq: "article"}}}
+    ) {
+      edges {
+        node {
+          timeToRead
+          fields {
+            path
+          }
+          frontmatter {
+            date
+            excerpt
+            title
+            thumbnail {
+              childImageSharp {
+                sizes(maxHeight: 500) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
+          }
+        }
+      }
+      pageInfo {
+        hasNextPage
       }
     }
     consultingServiceImage: imageSharp(id: {regex: "/consulting-service.jpg/"}) {

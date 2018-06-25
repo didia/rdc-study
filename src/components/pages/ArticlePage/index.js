@@ -13,7 +13,7 @@ import ArticleList from '../../ArticleList';
 import PostMeta from '../../PostMeta';
 import SocialShareButtons from '../../SocialShareButtons';
 
-const ArticlePage = ({article, otherArticles}) => {
+const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
   const page = {
     description: article.excerpt,
     image: article.coverImage,
@@ -48,7 +48,11 @@ const ArticlePage = ({article, otherArticles}) => {
 
           {otherArticles &&
             otherArticles.length > 0 && (
-              <ArticleList articles={otherArticles} titleKey="pages.articles-show.other-articles.title" />
+              <ArticleList
+                articles={otherArticles}
+                hasMoreArticles={hasMoreArticles}
+                titleKey="pages.articles-show.other-articles.title"
+              />
             )}
         </div>
       </section>
@@ -67,6 +71,7 @@ ArticlePage.propTypes = {
     timeToRead: T.number.isRequired,
     title: T.string.isRequired
   }).isRequired,
+  hasMoreArticles: T.bool,
   otherArticles: T.arrayOf(T.object)
 };
 

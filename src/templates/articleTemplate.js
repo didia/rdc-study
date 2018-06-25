@@ -34,7 +34,13 @@ export default function Template({
     ? allMarkdownRemark.edges.map(edge => articlePreviewMarkdownRemark(edge.node))
     : [];
 
-  return <ArticlePage article={article} otherArticles={allArticles} />;
+  return (
+    <ArticlePage
+      article={article}
+      otherArticles={allArticles}
+      hasMoreArticles={allMarkdownRemark.pageInfo.hasNextPage}
+    />
+  );
 }
 
 Template.propTypes = {
@@ -93,6 +99,9 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+      pageInfo {
+        hasNextPage
       }
     }
   }

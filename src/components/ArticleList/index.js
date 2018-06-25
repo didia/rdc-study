@@ -21,12 +21,12 @@ const Article = ({article}) => {
           alt={article.name}
         />
 
-        <div>
+        <div className={styles.content}>
           <h3 className={styles.article__title}>{article.title}</h3>
-          <p className={styles.article__description}>{article.excerpt}</p>
-          <div>
+          <div className={styles['article__meta-wrapper']}>
             <PostMeta post={article} className={styles.article__meta} />
           </div>
+          <p className={styles.article__description}>{article.excerpt}</p>
         </div>
       </article>
     </Link>
@@ -44,26 +44,39 @@ Article.propTypes = {
   })
 };
 
-const ArticleList = ({className, descriptionKey, articles, id, titleKey}) => {
+const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, titleKey}) => {
   return (
     <div id={id} className={className}>
-      <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>
+      {titleKey && <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>}
 
       {descriptionKey && <FormattedMessage id={descriptionKey}>{text => <p>{text}</p>}</FormattedMessage>}
 
       <section className={styles['articles-wrapper']}>
         {articles.map((article, i) => <Article key={i} article={article} />)}
       </section>
+
+      {hasMoreArticles && (
+        <FormattedMessage id="shared.see-more-text">
+          {text => (
+            <div className={styles['see-more-button-wrapper']}>
+              <Link to="/articles" className={classnames('button', styles['see-more-button'])}>
+                {text}
+              </Link>
+            </div>
+          )}
+        </FormattedMessage>
+      )}
     </div>
   );
 };
 
 ArticleList.propTypes = {
+  articles: T.arrayOf(T.object),
   className: T.string,
   descriptionKey: T.string,
-  articles: T.arrayOf(T.object),
+  hasMoreArticles: T.bool,
   id: T.string,
-  titleKey: T.string.isRequired
+  titleKey: T.string
 };
 
 export default ArticleList;
