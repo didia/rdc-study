@@ -54,8 +54,8 @@ Template.propTypes = {
 };
 
 export const pageQuery = graphql`
-  query GuideByPath($slug: String!) {
-    markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+  query GuideByPath($path: String!, $type: String!) {
+    markdownRemark(fields: {path: {eq: $path}}) {
       html
       fields {
         path
@@ -78,7 +78,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 2000
       sort: {fields: [frontmatter___title], order: ASC}
-      filter: {frontmatter: {active: {eq: true}, slug: {ne: $slug}}}
+      filter: {frontmatter: {active: {eq: true}}, fields: {path: {ne: $path}, type: {eq: $type}}}
     ) {
       edges {
         node {

@@ -83,7 +83,10 @@
   }
 }
 
-.wrapper--country-list {
+.wrapper--article-list {
+  @include wrapper-edges-color(lighten(_palette(bg), 3%));
+  background-color: lighten(_palette(bg), 3%);
+
   &::before {
     transform: scaleX(-1);
   }

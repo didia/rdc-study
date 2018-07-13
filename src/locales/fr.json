@@ -43,6 +43,8 @@
     "Nous serons toujours transparents avec vous. À la différence des autres, chez nous vous savez exactement à quoi sert votre argent. Vous avez le choix de faire le paiement vous-même. Si nous payons pour vous, nous vous donnerons toujours les preuves de paiement.",
   "pages.about-us.values.transparency.title": "La transparence",
 
+  "pages.articles-show.other-articles.title": "Articles récents",
+
   "pages.assistance.free.description":
     "Toute l’information dont vous avez besoin pour réaliser votre projet d’études est disponible via nos guides en ligne. Ils sont gratuits et le resteront toujours.",
   "pages.assistance.free.features.admission-guide": "Guide pour l’admission",
@@ -92,9 +94,11 @@
   "pages.guides-show.related-guides.title": "Guides réliés",
 
   "pages.index.banner.title": "Voici RDC Etudes",
-  "pages.index.banner.description": "Votre guide gratuit sur les études à l’étranger!",
+  "pages.index.banner.description": "Votre source d’informations sur les études à l’étranger.!",
 
-  "pages.index.country-list.title": "Les pays que nous couvrons",
+  "pages.index.article-list.title": "Articles récents",
+
+  "pages.index.country-list.title": "Guides 100% gratuits!!!",
   "pages.index.country-list.description":
     "Nos guides ci-dessous vous expliquent en détails les étapes nécessaires pour mener à bien vos démarches d‘études dans les pays concernés.",
 
@@ -104,7 +108,7 @@
   "pages.index.services.assistance.title": "Un accompagnement honnête et transparent!!!",
 
   "pages.index.services.study-guide.description":
-    "Nous mettons à votre disposition des guides gratuits qui vous expliquent ce que vous devez faire pour vos démarches. Avec ces guides, vous pouvez mener à bien votre projet d‘études par vous-même sans payer un franc.",
+    "Nos guides gratuis ci-dessus vous permettent de faire vos démarches vous-mêmes sans avoir besoin d’une aide quelconque.",
   "pages.index.services.study-guide.explore-text": "Explorez les guides",
   "pages.index.services.study-guide.title": "Des guides 100% Gratuits!!!",
 
@@ -113,5 +117,9 @@
   "pages.index.services.verification.contact-us-text": "Contactez nous",
   "pages.index.services.verification.title": "Un service de vérification Gratuit!!!",
 
-  "shared.contact-us-text": "Contactez-nous"
+  "shared.contact-us-text": "Contactez-nous",
+  "shared.see-more-text": "Voir plus",
+  "shared.read-time": "{time} {time, plural, one {minute de lecture}\n other {minutes de lecture}}",
+  "shared.share-on-facebook": "Partagez sur facebook",
+  "shared.share-on-whatsapp": "Partagez sur whatsapp"
 }

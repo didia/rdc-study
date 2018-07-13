@@ -11,6 +11,11 @@ const {cssModulesConfig} = require(`gatsby-1-config-css-modules`);
 const {extractTextPlugin} = require(`gatsby-1-config-extract-plugin`);
 const path = require('path');
 
+const CONTENT_TYPE = {
+  ARTICLE: 'article',
+  GUIDE: 'guide'
+};
+
 exports.modifyWebpackConfig = ({config, stage}, options) => {
   const sassFiles = /\.s[ac]ss$/;
   const sassModulesFiles = /\.module\.s[ac]ss$/;
@@ -86,10 +91,13 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
 
   if (node.internal.type === 'MarkdownRemark') {
     const fileNode = getNode(node.parent);
-    const parsedFilePath = path.parse(fileNode.dir);
 
-    if (parsedFilePath.name.indexOf('guides') !== 0 && node.frontmatter && node.frontmatter.slug) {
+    if (fileNode.dir.indexOf('guides') !== -1 && node.frontmatter && node.frontmatter.slug) {
       createNodeField({node, name: 'path', value: `/guides/${node.frontmatter.slug}`});
+      createNodeField({node, name: 'type', value: CONTENT_TYPE.GUIDE});
+    } else if (fileNode.dir.indexOf('articles') !== -1) {
+      createNodeField({node, name: 'path', value: `/articles/${fileNode.name}`});
+      createNodeField({node, name: 'type', value: CONTENT_TYPE.ARTICLE});
     }
   }
 };
@@ -97,23 +105,22 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
 exports.createPages = ({boundActionCreators, graphql}) => {
   const {createPage} = boundActionCreators;
 
-  const guideTemplate = path.resolve(`src/templates/guideTemplate.js`);
+  const guideMapping = {
+    [CONTENT_TYPE.ARTICLE]: path.resolve('src/templates/articleTemplate.js'),
+    [CONTENT_TYPE.GUIDE]: path.resolve('src/templates/guideTemplate.js')
+  };
 
   return graphql(`
     {
-      allMarkdownRemark(
-        sort: {order: DESC, fields: [frontmatter___date]}
-        limit: 1000
-        filter: {frontmatter: {active: {eq: true}}}
-      ) {
+      allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
         edges {
           node {
-            frontmatter {
-              slug
-              title
-            }
             fields {
               path
+              type
+            }
+            frontmatter {
+              active
             }
           }
         }
@@ -125,11 +132,13 @@ exports.createPages = ({boundActionCreators, graphql}) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
+      if (node.fields.type === CONTENT_TYPE.GUIDE && !node.frontmatter.active) return;
+
       createPage({
         path: node.fields.path,
-        component: guideTemplate,
+        component: guideMapping[node.fields.type],
         context: {
-          slug: node.frontmatter.slug
+          type: node.fields.type
         }
       });
     });

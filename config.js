@@ -20,11 +20,12 @@ export default {
     }
   },
   contactFormEndpoint: process.env.GATSBY_CONTACT_FORM_ENDPOINT,
-  siteDescription: 'Guide gratuit pour la préparation d’un projet d’études à l’étranger pour étudiants congolais.',
+  siteDescription:
+    'Accédez à nos guides gratuits sur la préparation d’un projet d’études à l’étranger pour étudiants congolais.',
   siteFBAppID: '192570431528735',
   siteKeywords: 'etudier à l’étranger, étudier au Canada, étudier en France, étudier aux États—Unis',
   siteLogo: '/logo.png',
   siteImage: '/sharable-image.jpg',
-  siteTitle: 'RDC Etudes - Votre guide gratuit sur les études à l’étranger!',
+  siteTitle: 'RDC Etudes - Votre source d’informations sur les études à l’étranger.!',
   siteURL: process.env.GATSBY_SITE_URL || 'https://www.rdcetudes.com'
 };

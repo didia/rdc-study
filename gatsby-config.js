@@ -18,8 +18,22 @@ const plugins = [
   {
     resolve: 'gatsby-source-filesystem',
     options: {
+      name: 'uploaded-images',
+      path: `${__dirname}/static/images/uploads`
+    }
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
       path: `${__dirname}/data/guides`,
       name: 'guides'
+    }
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: `${__dirname}/data/articles`,
+      name: 'articles'
     }
   },
   {
