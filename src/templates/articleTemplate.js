@@ -34,14 +34,9 @@ export default function Template({
   const allArticles = allMarkdownRemark
     ? allMarkdownRemark.edges.map(edge => articlePreviewMarkdownRemark(edge.node))
     : [];
+  const hasMoreArticles = allMarkdownRemark ? allMarkdownRemark.pageInfo.hasNextPage : false;
 
-  return (
-    <ArticlePage
-      article={article}
-      otherArticles={allArticles}
-      hasMoreArticles={allMarkdownRemark.pageInfo.hasNextPage}
-    />
-  );
+  return <ArticlePage article={article} otherArticles={allArticles} hasMoreArticles={hasMoreArticles} />;
 }
 
 Template.propTypes = {

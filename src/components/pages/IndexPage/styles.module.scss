@@ -84,9 +84,8 @@
 }
 
 .wrapper--article-list {
-  $color: lighten(_palette(bg), 3%);
-  @include wrapper-edges-color($color);
-  background-color: $color;
+  @include wrapper-edges-color(lighten(_palette(bg), 3%));
+  background-color: lighten(_palette(bg), 3%);
 
   &::before {
     transform: scaleX(-1);
