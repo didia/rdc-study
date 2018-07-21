@@ -9,6 +9,21 @@ import enhanceWithClickOutside from 'react-click-outside';
 // Styles
 import styles from './styles.module.scss';
 
+const MENU_ITEMS = [
+  {
+    labelKey: 'menu.home-link-label',
+    to: '/'
+  },
+  {
+    labelKey: 'menu.assistance-link-label',
+    to: '/accompagnement'
+  },
+  {
+    labelKey: 'menu.about-us-link-label',
+    to: '/a-propos'
+  }
+];
+
 class InnerMenu extends React.Component {
   handleClickOutside() {
     if (this.props.isVisible) {
@@ -24,25 +39,17 @@ class InnerMenu extends React.Component {
         <FormattedMessage id="menu.title">{text => <h2 className={styles.title}>{text}</h2>}</FormattedMessage>
 
         <ul className={styles.links}>
-          <li className={styles.links__item}>
-            <FormattedMessage id="menu.home-link-label">
-              {text => (
-                <Link onClick={onToggleMenu} className={styles['links-item__link']} to="/">
-                  {text}
-                </Link>
-              )}
-            </FormattedMessage>
-          </li>
-
-          <li className={styles.links__item}>
-            <FormattedMessage id="menu.about-us-link-label">
-              {text => (
-                <Link onClick={onToggleMenu} className={styles['links-item__link']} to="/a-propos">
-                  {text}
-                </Link>
-              )}
-            </FormattedMessage>
-          </li>
+          {MENU_ITEMS.map((item, index) => (
+            <li key={`menu-item-${index}`} className={styles.links__item}>
+              <FormattedMessage id={item.labelKey}>
+                {text => (
+                  <Link onClick={onToggleMenu} className={styles['links-item__link']} to={item.to}>
+                    {text}
+                  </Link>
+                )}
+              </FormattedMessage>
+            </li>
+          ))}
         </ul>
 
         <FormattedMessage id="menu.close-button-label">
