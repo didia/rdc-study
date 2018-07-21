@@ -42,16 +42,13 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
             <div className={styles['cover__title-excerpt-wrapper']}>
               <h1 className={styles.cover__title}>{article.title}</h1>
               <p className={styles.cover__description}>{article.excerpt}</p>
-            </div>
-
-            <div>
               <PostMeta post={article} />
             </div>
+
+            <SocialShareButtons path={article.path} />
           </div>
 
           <div dangerouslySetInnerHTML={{__html: article.content}} />
-
-          <SocialShareButtons path={article.path} />
 
           {otherArticles &&
             otherArticles.length > 0 && (
