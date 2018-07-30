@@ -3,11 +3,12 @@ title: Étudier à coûts réduits à l'Université d'Ottawa
 excerpt: >-
   Vous pouvez économiser plus de 10 000$ sur les frais académiques en obtenant
   une bourse d‘exonération des frais de l‘Université d’Ottawa. Cette bourse est
-  accordée qui désire y poursuivre leurs études en français.
+  accordée aux étudiants étrangers qui désirent poursuivre leurs études à
+  l'Université d'Ottawa en français.
 thumbnail: /images/uploads/whatsapp-image-2018-07-27-at-15.41.51.jpeg
 tags:
   - canada guide voyage etudier à Uottawa
-date: '2018-07-30T01:02:06-04:00'
+date: '2018-07-30T18:00:00-04:00'
 ---
 Le Canada est l’un de plus grand pays bilingue au monde; l’université d’Ottawa est quand à elle, la plus grande université bilingue du monde. Pour contribuer à la promotion de la francophonie sur la scène internationale, l’Université d’Ottawa a mis en place un programme d'exonération partielle des droits de scolarité pour les étudiants internationaux qui souhaitent obtenir un diplôme de premier cycle en français, de même que pour ceux qui en ont déjà un et qui veulent entreprendre des études supérieures à l'Université d'Ottawa.
 
