@@ -16,6 +16,6 @@ C’est depuis l’année scolaire 2014-2015 que les nouveaux étudiants interna
 
 L'Université d'Ottawa en choisissant d'intensifier l'internationalisation de ses programmes d'études, donne une très bonne opportunité pour les étudiants étrangers francophones et francophiles qui bénéficieront d'une réduction substantielle de leurs frais de scolarité.
 
-Pour obtenir cette exoneration, il faudrait faire au préalable une admission normale à l’Université d’Ottawa. Une fois votre admission obtenue, vous pouvez ensuite être considéré pour la bourse d'exonération des frais.
+Pour obtenir cette exonération, il faudrait faire au préalable une admission normale à l’Université d’Ottawa. Une fois votre admission obtenue, vous pouvez ensuite être considéré pour la bourse d'exonération des frais.
 
-Pour plus de renseignements sur l'exonération, consultez <a href="<http://www.uottawa.ca/droits-universitaires/exoneration-partielle-des-droits-de-scolarite>" target="_blank" rel="nofollow noopener">le site Web du Bureau international de l'Université d'Ottawa</a>.
+Pour plus de renseignements sur l'exonération, consultez <a href="https://www.uottawa.ca/droits-universitaires/exoneration-partielle-des-droits-de-scolarite" target="_blank" rel="nofollow noopener">le site Web du Bureau international de l'Université d'Ottawa</a>.
