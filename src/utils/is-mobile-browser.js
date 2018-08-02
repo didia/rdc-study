@@ -1,6 +1,8 @@
 const MAX_CHARACTERS = 4;
+const MOBILE_MAX_INNER_WIDTH = 800;
+const MOBILE_MAX_INNER_HEIGHT = 600;
 
-export default function isMobileBrowser() {
+const isUserAgentMobile = () => {
   if (typeof navigator === 'undefined') return false;
 
   let check = false;
@@ -15,5 +17,12 @@ export default function isMobileBrowser() {
     )
       check = true;
   })(navigator.userAgent || navigator.vendor || window.opera);
+
   return check;
+};
+
+const isViewMobile = () => window.innerWidth <= MOBILE_MAX_INNER_WIDTH && window.innerHeight <= MOBILE_MAX_INNER_HEIGHT;
+
+export default function isMobileBrowser() {
+  return isUserAgentMobile() || isViewMobile();
 }
