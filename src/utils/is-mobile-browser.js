@@ -21,7 +21,10 @@ const isUserAgentMobile = () => {
   return check;
 };
 
-const isViewMobile = () => window.innerWidth <= MOBILE_MAX_INNER_WIDTH && window.innerHeight <= MOBILE_MAX_INNER_HEIGHT;
+const isViewMobile = () =>
+  typeof window !== 'undefined' &&
+  window.innerWidth <= MOBILE_MAX_INNER_WIDTH &&
+  window.innerHeight <= MOBILE_MAX_INNER_HEIGHT;
 
 export default function isMobileBrowser() {
   return isUserAgentMobile() || isViewMobile();
