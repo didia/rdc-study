@@ -21,6 +21,10 @@ const MENU_ITEMS = [
   {
     labelKey: 'menu.about-us-link-label',
     to: '/a-propos'
+  },
+  {
+    labelKey: 'menu.privacy-policy-link-label',
+    to: '/politique-de-confidentialite'
   }
 ];
 

@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
 import axios from 'axios';
 import T from 'prop-types';
+import Link from 'gatsby-link';
 
 // Styles
 import styles from './styles.module.scss';
@@ -256,6 +257,13 @@ class Footer extends Component {
           <ul className={styles.copyright}>
             <FormattedMessage id="footer.copyright">{text => <li>{text}</li>}</FormattedMessage>
 
+            <FormattedMessage id="footer.privacy-policy">
+              {text => (
+                <li>
+                  <Link to="/politique-de-confidentialite">{text}</Link>
+                </li>
+              )}
+            </FormattedMessage>
             <li>
               Design: <a href="http://html5up.net">HTML5 UP</a>
             </li>
