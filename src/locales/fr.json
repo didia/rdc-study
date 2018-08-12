@@ -17,6 +17,7 @@
 
   "footer.contact-us-text":
     "Avez-vous des questions ou besoin d'informations supplémentaires? N'hésitez donc pas de nous contacter, de préférence à travers nos médias sociaux.",
+  "footer.privacy-policy": "Politique de confidentialité",
   "footer.title": "Contactez-nous",
 
   "guide-list.guide.learn-more-text": "En savoir plus",
@@ -25,6 +26,7 @@
   "menu.assistance-link-label": "Besoin d’aide?",
   "menu.close-button-label": "Fermer",
   "menu.home-link-label": "Accueil",
+  "menu.privacy-policy-link-label": "Politique de confidentialité",
   "menu.title": "Menu",
 
   "not-found.message-text": "La page à laquelle vous essayez d‘accéder n'existe pas ou n'existe plus!",
