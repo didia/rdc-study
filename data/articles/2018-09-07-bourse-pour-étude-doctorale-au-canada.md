@@ -1,10 +1,10 @@
 ---
-title: Bourse pour étude doctorale au Canada!
+title: Bourse pour études doctorales au Canada!
 excerpt: >-
-  Les étudiants étrangers souhaitant poursuivre leurs études doctorales ont
+  Les étudiants étrangers souhaitant poursuivre leurs études doctorales au Canada ont
   droit, dans la majorité de cas, à une bourse d’exemption des frais
   académiques.
-thumbnail: /images/uploads/md-duran-628456-unsplash.jpg
+thumbnail: ../../static/images/uploads/md-duran-628456-unsplash.jpg
 thumbnailCredits: >-
   <a style="background-color:black;color:white;text-decoration:none;padding:4px
   6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;,
