@@ -70,7 +70,12 @@
   }
 
   .image-wrapper {
+    width: 100%;
     margin-right: 12px;
+
+    .image {
+      width: 100%;
+    }
   }
 
   .article__title {
@@ -87,6 +92,7 @@
 
   .article__inner {
     display: block;
+    width: 100%;
     border-bottom: 0;
     border-radius: _size(border-radius);
     background-color: desaturate(lighten(lighten(_palette(bg), 3%), 3), 1.5);
