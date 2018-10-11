@@ -5,7 +5,7 @@ excerpt: >-
   une bourse d‘exonération des frais de l‘Université d’Ottawa. Cette bourse est
   accordée aux étudiants étrangers qui désirent poursuivre leurs études à
   l'Université d'Ottawa en français.
-thumbnail: ../../static/images/uploads/whatsapp-image-2018-07-27-at-15.41.51.jpeg
+thumbnail: /images/uploads/whatsapp-image-2018-07-27-at-15.41.51.jpeg
 tags:
   - canada guide voyage etudier à Uottawa
 date: '2018-07-30T18:00:00-04:00'
