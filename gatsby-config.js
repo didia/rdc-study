@@ -1,8 +1,16 @@
 /* eslint-env node */
+const netlifyCmsPaths = {
+  resolve: `gatsby-plugin-netlify-cms-paths`,
+  options: {
+    cmsConfig: `/static/admin/config.yml`
+  }
+};
+
 const plugins = [
   'gatsby-plugin-react-helmet',
-  'gatsby-transformer-sharp',
   'gatsby-transformer-json',
+  netlifyCmsPaths,
+  'gatsby-transformer-sharp',
   'gatsby-plugin-sharp',
   'gatsby-plugin-react-next',
   'gatsby-plugin-sitemap',

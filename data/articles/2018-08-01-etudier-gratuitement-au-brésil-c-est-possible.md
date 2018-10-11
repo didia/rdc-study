@@ -3,7 +3,7 @@ title: Etudier gratuitement au Brésil? C'est possible.
 excerpt: >-
   Chaque année le gouvernement du Brésil octroie une bourse qui permet aux
   étudiants des pays en voie de développement d‘y étudier gratuitement.
-thumbnail: ../../static/images/uploads/opportunite-bresil.jpg
+thumbnail: /images/uploads/opportunite-bresil.jpg
 tags:
   - bresil
   - bourse
