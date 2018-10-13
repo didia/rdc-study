@@ -27,7 +27,7 @@ Pour que sa demande soit recevable, le candidat doit:
 
 Postuler à une bourse de l'ARES est totalement gratuit. Voici les étapes à suivre:
 
-1. Remplir complètement le formulaire unique de demande de bourse et d'admission à l'une des universités francophones de Belgique.
+1. Remplir complètement le <a href="https://www.ares-ac.be/images/Bourses/CSI/ARES-Bourses-Formulaire-de-candidature-2019-2020.doc" target="_blank" rel="nofollow noopener">formulaire</a> unique de demande de bourse et d'admission à l'une des universités francophones de Belgique.
 2. Réunir tous les annexes demandées.
 3. Envoyer le tout à l'ARES (rue Royale 180, 1000 Bruxelles, Belgique) uniquement par courrier postale ou courrier express. Nous vous conseillons d'utiliser DHL pour être sûr que les documents arriveront à temps.
 4. Si vous respectez tous les critères d'admissibilité mentionné ci-haut, vous recevrez d'ici juin 2019 un courriel qui vous informe si votre candidature est retenue ou pas.
