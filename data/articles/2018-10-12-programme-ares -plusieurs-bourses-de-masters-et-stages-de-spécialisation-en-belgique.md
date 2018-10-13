@@ -20,7 +20,7 @@ Pour que sa demande soit recevable, le candidat doit:
 
 1. Résider et travailler en RDC au moment de l'introduction du dossier.
 2. Avoir moins de 40 ans pour le master ou moins de 45 ans pour les stages.
-3. Avoir un diplôme de deuxième cycle au moins et avoir au moins deux ans d'occupation professionnelle pertinente.
+3. Avoir un diplôme de deuxième cycle (DES, DEA) au moins et avoir au moins deux ans d'occupation professionnelle pertinente.
 4. Bonne connaissance du français écrit et parlé.
 
 ## Comment postuler?
