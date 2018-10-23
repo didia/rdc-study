@@ -9,6 +9,7 @@ import styles from './styles.module.scss';
 
 import GenericPage from '../GenericPage';
 import GuideList from '../../GuideList';
+import HtmlContent from '../../HtmlContent';
 
 const Assistance = () => (
   <div>
@@ -52,7 +53,7 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
       page={page}
       pageWrapperClassName={pageWrapperClassName}
     >
-      <div dangerouslySetInnerHTML={{__html: guide.content}} />
+      <HtmlContent content={guide.content} />
 
       <Assistance />
 

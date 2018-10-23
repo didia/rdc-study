@@ -12,6 +12,7 @@ import SEO from '../../SEO';
 import ArticleList from '../../ArticleList';
 import PostMeta from '../../PostMeta';
 import SocialShareButtons from '../../SocialShareButtons';
+import HtmlContent from '../../HtmlContent';
 
 const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
   const page = {
@@ -48,7 +49,7 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
             <SocialShareButtons path={article.path} />
           </div>
 
-          <div dangerouslySetInnerHTML={{__html: article.content}} />
+          <HtmlContent content={article.content} />
 
           {otherArticles &&
             otherArticles.length > 0 && (
