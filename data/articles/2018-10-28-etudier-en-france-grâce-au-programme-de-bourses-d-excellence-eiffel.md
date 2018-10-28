@@ -47,4 +47,6 @@ Postuler à une bourse d'excellence Eiffel est simple. Vous devez choisir une bo
 * Prendre attache auprès de l’espace Campus France dans votre pays d’origine.
 * Contacter l'Ambassade de France (Service de Coopération et d’Action Culturelle) de votre pays d'origine qui pourra vous orienter.
 
+Pour en savoir plus sur les modalités du programme de la bourse Eiffel 2019, <a href="https://www.campusfrance.org/fr/le-programme-de-bourses-d-excellence-eiffel" target="_blank" rel="nofollow noopener">cliquez ici</a>
+
 Nous vous souhaitons une bonne chance et un bon courage dans votre projet d'études en France.
