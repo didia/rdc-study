@@ -30,8 +30,8 @@ En tant que boursier, vous allez bénéficier d'une indemnité mensuelle de 1 18
 
 Vous pouvez postuler à cette bourse d'excellence si vous remplissez les conditions suivantes:
 
-* Vous ne possédez pas la nationalité française
-* Vous avez 30 ans ou moins pour le master et 35 ans ou moins pour le doctorat
+* Vous ne possédez pas la nationalité française.
+* Vous avez 30 ans ou moins pour le master et 35 ans ou moins pour le doctorat.
 * Vous visez un un diplôme de niveau master, y compris en école d’ingénieurs ou un diplôme en doctorat, conjointement avec une université étrangère.
 
 ## Comment postuler?
@@ -39,7 +39,7 @@ Vous pouvez postuler à cette bourse d'excellence si vous remplissez les conditi
 1. Contacter le service des Relations internationales de l’établissement français en visitant leur
    site web, par courriel ou par téléphone, pour connaître la date limite de dépôt auprès de leur
    service. C’est à vous de choisir l’école ou l’université en lien avec votre projet d’études en France. Tous les établissements d’enseignement supérieur français peuvent déposer des candidatures. 
-2. Si l’établissement accepte et soutient votre dossier de candidature à la bourse EIFFEL, il vous transmettra un formulaire que vous devez compléter en lien avec le service des Relations internationales
+2. Si l’établissement accepte et soutient votre dossier de candidature à la bourse EIFFEL, il vous transmettra un formulaire que vous devez compléter en lien avec le service des Relations internationales.
 3. L'établissement va ensuite faire le dépôt en ligne de votre candidature.
 
 Postuler à une bourse d'excellence Eiffel est simple. Vous devez choisir une bonne université qui correspond vraiment à vos projets d'études. Si vous avez besoin de plus d'informations, nous vous encourageons à:
@@ -47,6 +47,6 @@ Postuler à une bourse d'excellence Eiffel est simple. Vous devez choisir une bo
 * Prendre attache auprès de l’espace Campus France dans votre pays d’origine.
 * Contacter l'Ambassade de France (Service de Coopération et d’Action Culturelle) de votre pays d'origine qui pourra vous orienter.
 
-Pour en savoir plus sur les modalités du programme de la bourse Eiffel 2019, <a href="https://www.campusfrance.org/fr/le-programme-de-bourses-d-excellence-eiffel" target="_blank" rel="nofollow noopener">cliquez ici</a>
+Pour en savoir plus sur les modalités du programme de la bourse Eiffel 2019, <a href="https://www.campusfrance.org/fr/le-programme-de-bourses-d-excellence-eiffel" target="_blank" rel="nofollow noopener">cliquez ici.</a>
 
 Nous vous souhaitons une bonne chance et un bon courage dans votre projet d'études en France.
