@@ -109,4 +109,4 @@ Ces frais se présentent comme suit:
 * **285 USD** pour les frais des examens médicaux.
 * **200 USD** pour les frais d’assistance RDC-Etudes.
 
-**NB**: Ces prix sont juste là à titre d'estimé, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leur site web pour les prix plus à jour.
+**NB**: Ces prix sont là à titre d'estimé, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leur site web pour les prix plus à jour.
