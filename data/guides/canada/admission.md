@@ -61,4 +61,4 @@ Ces frais se présentent comme suit:
 * **0 à 150 USD** pour l’envoi et reception des documents.
 * **200 USD** pour les frais d’assistance RDC Etudes.
 
-_NB_: Ces prix sont là à titre d'estimé, ils peuvent changer par rapport selon les universités. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.
+_NB_: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

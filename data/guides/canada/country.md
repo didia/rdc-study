@@ -51,4 +51,4 @@ Ces frais se présentent comme suit:
 * **490 USD à 610 USD** pour le processus de visa.
 * **500 USD** pour les frais d’assistance RDC Etudes. (Payable en trois tranches.)
 
-**NB**: Ces prix sont là à titre d'estimé, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.
+**NB**: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
