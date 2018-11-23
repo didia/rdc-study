@@ -3,7 +3,7 @@ active: true
 slug: "canada/admission"
 date: "2018-05-28"
 title: "Obtenir une admission dans une université canadienne"
-excerpt: "Pour vous rendre au Canada pour études, vous devez au préalable obtenir un établissement d'enseignement désigné au Canada. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n'importe quel établissement d'enseignement au Canada."
+excerpt: "Pour vous rendre au Canada pour études, vous devez au préalable obtenir une admission d'un établissement d'enseignement désigné au Canada. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n'importe quel établissement d'enseignement au Canada."
 thumbnail: "images/canada-admission.jpg"
 topic: "admission"
 related: ["canada/visa"]
@@ -50,15 +50,15 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     Le délais de traitement de demande d’admission varient beaucoup dépendamment de l’Université et le cycle d’admission.
     Admettons que vous ayez soumis votre demande à l’Université Laval, il vous faudra attendre 4 semaines avant de recevoir une réponse. Inutile de vous inquiéter. Vous devez être patient.
 
-Une fois admis, vous devrez maintenant faire une demande de permis d’études. Pour cela, [consultez notre guide sur les étapes à suivre pour obtenir un visa permis d'études pour le Canada.](/guides/canada/visa)
+Une fois admis, vous devrez maintenant faire une demande de permis d’études. Pour cela, [consultez notre guide sur les étapes à suivre pour obtenir un visa d'études pour le Canada.](/guides/canada/visa)
 
 ## Combien ça coûte?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **280 USD et 600 USD** pour toutes vos démarches d’admission.
+En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC Etudes](/accompagnement), vous devrez prévoir entre **280 USD et 600 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
 * **80 USD à 250 USD** pour la demande d’admission.
 * **0 à 150 USD** pour l’envoi et reception des documents.
-* **200 USD** pour les frais d’assistance RDC-Etudes.
+* **200 USD** pour les frais d’assistance RDC Etudes.
 
-_NB_: Ces prix sont juste là à titre d'estimé, ils peuvent changer par rapport selon les universités. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.
+_NB_: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

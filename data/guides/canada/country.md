@@ -18,15 +18,12 @@ Vous pouvez faire l'admission dans un collège pour obtenir l'équivalent du gra
 Quelques établissements vous sont proposés dans [notre guide sur les démarches à suivre pour obtenir une admission dans une université canadienne.](/guides/canada/admission)
 \
 \
-Pour en savoir plus, [consultez notre guide sur les démarches à suivre pour obtenir une admission dans une université canadienne.](/guides/canada/admission)
-\
-\
 Pour entamer les démarches de permis d’études, vous devez avoir été accepté/admis dans un établissement d’enseignement au Canada. Vous devez avoir un passeport valide.  
 Vous devez également être en mesure de prouver financièrement que vous êtes capables poursuivre des études au Canada c’est-à-dire que la personne qui prendra en charge vos études devra être capable de présenter les preuves financières requises pour présenter une demande de permis d’études et visa de résident temporaire.
 Les étudiants qui envisagent poursuivre leurs études dans un établissement dans la province du Québec devront avoir en leur possession non seulement une admission mais aussi le certificat d’acceptation du Québec (CAQ) avant d’amorcer la demande du permis d’études.
 \
 \
-Pour en savoir plus, [consultez notre guide sur la démarche à suivre pour obtenir un permis d'études pour le Canada.](/guides/canada/visa)
+Pour en savoir plus, [consultez notre guide sur les démarches à suivre pour obtenir un permis d'études pour le Canada.](/guides/canada/visa)
 
 ## Combien coûtent les études au Canada?
 
@@ -47,11 +44,11 @@ Cette dernière ne s’applique que pour les étudiants ayant été admis dans u
 
 ## Combien coûtent les démarches?
 
-En supposant que vous choisissez [d’être accompagné dans vos démarches par un assistant de RDC-Etudes](/accompagnement), vous devez prévoir entre **1 070 USD et 1 310 USD** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un assistant de RDC Etudes](/accompagnement), vous devez prévoir entre **1 070 USD et 1 310 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
 * **80 USD à 200 USD** pour le processus d’admission.
 * **490 USD à 610 USD** pour le processus de visa.
-* **500 USD** pour les frais d’assistance RDC-Etudes.
+* **500 USD** pour les frais d’assistance RDC Etudes. (Payable en trois tranches.)
 
-**NB**: Ces prix sont juste là à titre d'estimé, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.
+**NB**: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
