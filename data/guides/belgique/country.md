@@ -27,8 +27,7 @@ Pour en savoir plus, [consultez notre guide sur les démarches à suivre pour ob
 ## Combien coûtent les études en Belgique?
 
 Les frais académiques réguliers en Belgique s'élèvent actuellement à 835€.\
-Toutefois d'un coté, plusieurs universités majorent les frais académiques pour étudiants internationaux et de l'autre certaines accordent des réductions dépendant de la situation socio-économique de l'étudiant.\
-Ainsi les frais peuvent varier entre 400€ et 4200€ par année tandis qu'il faut prévoir en moyenne entre 8 000€ et 12 500€ pour les frais de subistances par année.
+Toutefois certaines universités majorent les frais académiques pour étudiants internationaux. Ainsi les frais peuvent varier entre 835€ et 4200€ par année tandis qu'il faut prévoir en moyenne entre 8 000€ et 12 500€ pour les frais de subistances par année.
 
 ## Qu'en est-il de bourses d'études?
 
