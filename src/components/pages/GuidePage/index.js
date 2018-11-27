@@ -2,7 +2,7 @@
 import React from 'react';
 import T from 'prop-types';
 import {FormattedMessage} from 'react-intl';
-import Link from 'gatsby-link';
+import {Link} from 'gatsby';
 
 // Styles
 import styles from './styles.module.scss';
@@ -57,13 +57,13 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
 
       <Assistance />
 
-      {relatedGuides &&
-        relatedGuides.length > 0 && (
-          <GuideList guides={relatedGuides} titleKey="pages.guides-show.related-guides.title" />
-        )}
+      {relatedGuides && relatedGuides.length > 0 && (
+        <GuideList guides={relatedGuides} titleKey="pages.guides-show.related-guides.title" />
+      )}
 
-      {otherGuides &&
-        otherGuides.length > 0 && <GuideList guides={otherGuides} titleKey="pages.guides-show.other-guides.title" />}
+      {otherGuides && otherGuides.length > 0 && (
+        <GuideList guides={otherGuides} titleKey="pages.guides-show.other-guides.title" />
+      )}
     </GenericPage>
   );
 };

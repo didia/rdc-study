@@ -1,6 +1,6 @@
 // Vendor
 import React from 'react';
-import Link from 'gatsby-link';
+import {Link} from 'gatsby';
 import {FormattedMessage} from 'react-intl';
 import classnames from 'classnames';
 import T from 'prop-types';

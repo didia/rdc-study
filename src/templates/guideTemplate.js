@@ -1,6 +1,7 @@
 // Vendor
 import React from 'react';
 import T from 'prop-types';
+import {graphql} from 'gatsby';
 
 import GuidePage from '../components/pages/GuidePage';
 

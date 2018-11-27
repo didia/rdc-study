@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
 import axios from 'axios';
 import T from 'prop-types';
-import Link from 'gatsby-link';
+import {Link} from 'gatsby';
 
 // Styles
 import styles from './styles.module.scss';

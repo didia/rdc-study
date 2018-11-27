@@ -56,33 +56,45 @@ const PrivacyPolicyPage = () => (
     <hr />
     <h2>Droit d‘opposition et de retrait</h2>
     <p>
-      Nous nous engageons à vous offrir un droit d‘opposition et de retrait quant à vos renseignements personnels.<br />
+      Nous nous engageons à vous offrir un droit d‘opposition et de retrait quant à vos renseignements personnels.
+      <br />
       Le droit d‘opposition s‘entend comme étant la possiblité offerte aux internautes de refuser que leurs
-      renseignements personnels soient utilisées à certaines fins mentionnées lors de la collecte.<br />
+      renseignements personnels soient utilisées à certaines fins mentionnées lors de la collecte.
+      <br />
     </p>
     <p>
       Le droit de retrait s‘entend comme étant la possiblité offerte aux internautes de demander à ce que leurs
-      renseignements personnels ne figurent plus, par exemple, dans une liste de diffusion.<br />
+      renseignements personnels ne figurent plus, par exemple, dans une liste de diffusion.
+      <br />
     </p>
     <p>
       Pour pouvoir exercer ces droits, vous pouvez : <br />
-      Code postal : 3214 Chemin Sainte-Foy, 301, Quebec City G1X 1R4<br /> Courriel : salut@rdcetudes.com<br />{' '}
-      Téléphone : 5819988051<br /> Section du site web : https://www.rdcetudes.com/<br />{' '}
+      Code postal : 3214 Chemin Sainte-Foy, 301, Quebec City G1X 1R4
+      <br /> Courriel : salut@rdcetudes.com
+      <br /> Téléphone : 5819988051
+      <br /> Section du site web : https://www.rdcetudes.com/
+      <br />{' '}
     </p>
     <hr />
     <h2>Droit d‘accès</h2>
     <p>
       Nous nous engageons à reconnaître un droit d‘accès et de rectification aux personnes concernées désireuses de
-      consulter, modifier, voire radier les informations les concernant.<br />
+      consulter, modifier, voire radier les informations les concernant.
+      <br />
       L‘exercice de ce droit se fera :<br />
-      Code postal : 3214 Chemin Sainte-Foy, 301, Quebec City G1X 1R4<br /> Courriel : salut@rdcetudes.com<br />
-      Téléphone : 5819988051<br /> Section du site web : https://www.rdcetudes.com/<br />
+      Code postal : 3214 Chemin Sainte-Foy, 301, Quebec City G1X 1R4
+      <br /> Courriel : salut@rdcetudes.com
+      <br />
+      Téléphone : 5819988051
+      <br /> Section du site web : https://www.rdcetudes.com/
+      <br />
     </p>
     <hr />
     <h2>Sécurité</h2>
     <p>
       Les renseignements personnels que nous collectons sont conservés dans un environnement sécurisé. Les personnes
-      travaillant pour nous sont tenues de respecter la confidentialité de vos informations.<br />
+      travaillant pour nous sont tenues de respecter la confidentialité de vos informations.
+      <br />
       Pour assurer la sécurité de vos renseignements personnels, nous avons recours aux mesures suivantes :
     </p>
     <ul>

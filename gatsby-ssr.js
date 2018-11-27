@@ -40,7 +40,7 @@ const setProdOnlyScripts = ({setPostBodyComponents}) => {
   ]);
 };
 
-exports.onRenderBody = ({setHeadComponents, setPostBodyComponents}) => {
+export const onRenderBody = ({setHeadComponents, setPostBodyComponents}) => {
   setHeadComponents([
     <script key="netlify-identity-widget" async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
   ]);

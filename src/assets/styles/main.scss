@@ -1,33 +1,37 @@
 @include skel-layout(
-  (reset: 'full', boxModel: 'border', grid: (gutters: 1.75em), breakpoints: (small: (grid: (gutters: 1.25em))))
+  (
+    reset: 'full',
+    boxModel: 'border',
+    grid: (
+      gutters: 1.75em
+    ),
+    breakpoints: (
+      small: (
+        grid: (
+          gutters: 1.25em
+        )
+      )
+    )
+  )
 );
 @import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic');
-
 // Base.
-
 @import 'base/page';
 @import 'base/typography';
-
 // Component.
-
 @import 'components/icon';
 @import 'components/image';
 @import 'components/form';
 @import 'components/section';
 @import 'components/button';
 @import 'components/list';
-
-//	@import 'components/box';
-
-//	@import 'components/table';
-
-//	@import 'components/features';
-//
-//// Layout.
-//
-//	@import 'layout/header';
-//	@import 'layout/menu';
-//	@import 'layout/banner';
-//	@import 'layout/wrapper';
-//	@import 'layout/footer';
+// @import 'components/box';
+// @import 'components/table';
+// @import 'components/features';
+// // Layout.
+// @import 'layout/header';
+// @import 'layout/menu';
+// @import 'layout/banner';
+// @import 'layout/wrapper';
+// @import 'layout/footer';

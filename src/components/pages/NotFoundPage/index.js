@@ -1,12 +1,12 @@
 // Vendor
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
-import Link from 'gatsby-link';
+import {Link} from 'gatsby';
 
 // Styles
 import styles from './styles.module.scss';
 
-import PageLayout from '../../../layouts/PageLayout';
+import PageLayout from '../../PageLayout';
 
 const NotFoundPage = () => (
   <PageLayout>

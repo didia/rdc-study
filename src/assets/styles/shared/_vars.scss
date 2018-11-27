@@ -15,14 +15,33 @@ $size: (
   element-height: 2.75em,
   element-margin: 2em,
   inner: 55em,
-  section-spacing: (large: 3em, medium: 2em, small: 1.75em),
-  wrapper-edges: (large: 6.5em, medium: 4.75em, small: 2.5em)
+  section-spacing: (
+    large: 3em,
+    medium: 2em,
+    small: 1.75em
+  ),
+  wrapper-edges: (
+    large: 6.5em,
+    medium: 4.75em,
+    small: 2.5em
+  )
 );
 // Font.
 $font: (
-  family: ('Source Sans Pro', Helvetica, sans-serif),
-  family-fixed: ('Courier New', monospace),
-  family-heading: (Raleway, Helvetica, sans-serif),
+  family: (
+    'Source Sans Pro',
+    Helvetica,
+    sans-serif
+  ),
+  family-fixed: (
+    'Courier New',
+    monospace
+  ),
+  family-heading: (
+    Raleway,
+    Helvetica,
+    sans-serif
+  ),
   weight: 300,
   weight-bold: 600,
   weight-heading: 200,
