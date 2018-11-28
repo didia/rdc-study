@@ -2,7 +2,7 @@
 import React from 'react';
 import T from 'prop-types';
 import classnames from 'classnames';
-import Link from 'gatsby-link';
+import {Link} from 'gatsby';
 import {FormattedMessage} from 'react-intl';
 
 // Styles

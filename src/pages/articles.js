@@ -1,6 +1,7 @@
 // Vendor
 import React from 'react';
 import T from 'prop-types';
+import {graphql} from 'gatsby';
 
 import ArticlesPage from '../components/pages/ArticlesPage';
 
@@ -44,8 +45,8 @@ export const pageQuery = graphql`
             title
             thumbnail {
               childImageSharp {
-                sizes(maxHeight: 500) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxHeight: 500) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

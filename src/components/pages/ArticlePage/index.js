@@ -7,7 +7,7 @@ import Img from 'gatsby-image';
 // Styles
 import styles from './styles.module.scss';
 
-import PageLayout from '../../../layouts/PageLayout';
+import PageLayout from '../../PageLayout';
 import SEO from '../../SEO';
 import ArticleList from '../../ArticleList';
 import PostMeta from '../../PostMeta';
@@ -30,7 +30,7 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
         <div className={styles.inner}>
           <div className={styles.cover}>
             <div className={styles['cover__image-wrapper']}>
-              <Img className={styles.image} sizes={article.thumbnail.sizes} alt={article.title} />
+              <Img className={styles.image} fluid={article.thumbnail.fluid} alt={article.title} />
             </div>
 
             {article.thumbnailCredits && (
@@ -51,14 +51,13 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
 
           <HtmlContent content={article.content} />
 
-          {otherArticles &&
-            otherArticles.length > 0 && (
-              <ArticleList
-                articles={otherArticles}
-                hasMoreArticles={hasMoreArticles}
-                titleKey="pages.articles-show.other-articles.title"
-              />
-            )}
+          {otherArticles && otherArticles.length > 0 && (
+            <ArticleList
+              articles={otherArticles}
+              hasMoreArticles={hasMoreArticles}
+              titleKey="pages.articles-show.other-articles.title"
+            />
+          )}
         </div>
       </section>
     </PageLayout>

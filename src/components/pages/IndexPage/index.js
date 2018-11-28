@@ -6,7 +6,7 @@ import classnames from 'classnames';
 // Styles
 import styles from './styles.module.scss';
 
-import PageLayout from '../../../layouts/PageLayout';
+import PageLayout from '../../PageLayout';
 import Banner from './Banner';
 import Service from './Service';
 import GuideList from '../../GuideList';

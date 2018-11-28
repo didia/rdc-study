@@ -5,18 +5,15 @@
   "footer.copyright": "© RDC Etudes. Tous droits réservés",
 
   "footer.contact-form.error.title": "Oups!!",
-  "footer.contact-form.error.message-text":
-    "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer plutârd ou contactez nous à travers nos réseaux sociaux.",
+  "footer.contact-form.error.message-text": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer plutârd ou contactez nous à travers nos réseaux sociaux.",
   "footer.contact-form.email-label": "Email",
   "footer.contact-form.message-label": "Message",
   "footer.contact-form.name-label": "Nom",
   "footer.contact-form.send-message-button-label": "Envoyer",
   "footer.contact-form.success.title": "Message envoyé",
-  "footer.contact-form.success.message-text":
-    "Nous vous remercions de nous avoir contacté. Nous vous répondrons dans le plus bref délai. Merci!",
+  "footer.contact-form.success.message-text": "Nous vous remercions de nous avoir contacté. Nous vous répondrons dans le plus bref délai. Merci!",
 
-  "footer.contact-us-text":
-    "Avez-vous des questions ou besoin d'informations supplémentaires? N'hésitez donc pas de nous contacter, de préférence à travers nos médias sociaux.",
+  "footer.contact-us-text": "Avez-vous des questions ou besoin d'informations supplémentaires? N'hésitez donc pas de nous contacter, de préférence à travers nos médias sociaux.",
   "footer.privacy-policy": "Politique de confidentialité",
   "footer.title": "Contactez-nous",
 
@@ -35,21 +32,17 @@
 
   "pages.about-us.mentors.title": "Nos mentors sont tous passés par ces démarches.",
 
-  "pages.about-us.values.helpfulness.description":
-    "Le plus important pour nous c’est vous rendre service. Voilà pourquoi nous offrons des guides gratuits. Nous savons que c’est en vous rendant le meilleur service possible, que vous parlerez de nous aux autres personnes et que nous aurons plus de clients.",
+  "pages.about-us.values.helpfulness.description": "Le plus important pour nous c’est vous rendre service. Voilà pourquoi nous offrons des guides gratuits. Nous savons que c’est en vous rendant le meilleur service possible, que vous parlerez de nous aux autres personnes et que nous aurons plus de clients.",
   "pages.about-us.values.helpfulness.title": "La Serviabilité",
-  "pages.about-us.values.honesty.description":
-    "Nous vous dirons toujours la vérité par rapport à vos démarches. L’important pour nous c’est que vous ayez la vraie information. La réussite de vos démarches est et restera toujours notre première priorité.",
+  "pages.about-us.values.honesty.description": "Nous vous dirons toujours la vérité par rapport à vos démarches. L’important pour nous c’est que vous ayez la vraie information. La réussite de vos démarches est et restera toujours notre première priorité.",
   "pages.about-us.values.honesty.title": "L’Honnêteté",
   "pages.about-us.values.title": "Trois valeurs qui guident nos actions!",
-  "pages.about-us.values.transparency.description":
-    "Nous serons toujours transparents avec vous. À la différence des autres, chez nous vous savez exactement à quoi sert votre argent. Vous avez le choix de faire le paiement vous-même. Si nous payons pour vous, nous vous donnerons toujours les preuves de paiement.",
+  "pages.about-us.values.transparency.description": "Nous serons toujours transparents avec vous. À la différence des autres, chez nous vous savez exactement à quoi sert votre argent. Vous avez le choix de faire le paiement vous-même. Si nous payons pour vous, nous vous donnerons toujours les preuves de paiement.",
   "pages.about-us.values.transparency.title": "La transparence",
 
   "pages.articles-show.other-articles.title": "Articles récents",
 
-  "pages.assistance.free.description":
-    "Toute l’information dont vous avez besoin pour réaliser votre projet d’études est disponible via nos guides en ligne. Ils sont gratuits et le resteront toujours.",
+  "pages.assistance.free.description": "Toute l’information dont vous avez besoin pour réaliser votre projet d’études est disponible via nos guides en ligne. Ils sont gratuits et le resteront toujours.",
   "pages.assistance.free.features.admission-guide": "Guide pour l’admission",
   "pages.assistance.free.features.visa-guide": "Guide pour le visa",
   "pages.assistance.free.features.countries-guide": "Canada et États-Unis",
@@ -57,8 +50,7 @@
   "pages.assistance.free.guide-link-text": "Explorez nos guides",
   "pages.assistance.free.title": "GRATIS!",
 
-  "pages.assistance.packages.description":
-    "Nos coûts sont transparents et honnêtes. Vous savez exactement ce pourquoi vous payez avec fatures à l’appui.",
+  "pages.assistance.packages.description": "Nos coûts sont transparents et honnêtes. Vous savez exactement ce pourquoi vous payez avec fatures à l’appui.",
   "pages.assistance.packages.admission.features.application": "Demande d’admission",
   "pages.assistance.packages.admission.features.application-documents": "Envoi et reception des documents",
   "pages.assistance.packages.admission.features.program-choice": "Choix de programme",
@@ -77,19 +69,15 @@
   "pages.assistance.packages.visa.title": "Le Visa",
 
   "pages.assistance.personal.about-us-link": "Découvrez qui nous sommes",
-  "pages.assistance.personal.description":
-    "Donnez-vous plus de chances de réussir vos démarches en vous faisant accompagner par un mentor personnel qui sera là pour vous tout le long de vos démarches. Nous offrons trois forfaits d’assistance et vous ne payez que pour ceux dont vous avez besoin.",
-  "pages.assistance.personal.pricing":
-    "{pricePerPackage} seulement par forfait ou {priceForAllPackages} pour tout ensemble.",
+  "pages.assistance.personal.description": "Donnez-vous plus de chances de réussir vos démarches en vous faisant accompagner par un mentor personnel qui sera là pour vous tout le long de vos démarches. Nous offrons trois forfaits d’assistance et vous ne payez que pour ceux dont vous avez besoin.",
+  "pages.assistance.personal.pricing": "{pricePerPackage} seulement par forfait ou {priceForAllPackages} pour tout ensemble.",
   "pages.assistance.personal.title": "Un assistant personnel pour vos démarches!",
 
   "pages.assistance.questions.description": "Vous ne savez pas par où commencer? Nous sommes là pour vous aider.",
   "pages.assistance.questions.title": "Des questions?",
 
-  "pages.guides-show.assistance.description-1":
-    "Bien que nos guides soient conçus pour vous permettre de faire vous-mêmes vos démarches, il se peut que vous ayez besoin d’un accompagnement particulier pour augmenter vos chances de réussite.",
-  "pages.guides-show.assistance.description-2":
-    "C’est ainsi que nous mettons à votre disponibilité un service d’accompagnement sur mesure basé sur la transparence, l’honnêteté et la serviabilité.",
+  "pages.guides-show.assistance.description-1": "Bien que nos guides soient conçus pour vous permettre de faire vous-mêmes vos démarches, il se peut que vous ayez besoin d’un accompagnement particulier pour augmenter vos chances de réussite.",
+  "pages.guides-show.assistance.description-2": "C’est ainsi que nous mettons à votre disponibilité un service d’accompagnement sur mesure basé sur la transparence, l’honnêteté et la serviabilité.",
   "pages.guides-show.assistance.link-text": "En savoir plus",
   "pages.guides-show.assistance.title": "Avez-vous besoin d'assistance?",
   "pages.guides-show.banner.facebook-share-button-label": "Partagez ce guide sur facebook",
@@ -102,21 +90,17 @@
   "pages.index.article-list.title": "Articles récents",
 
   "pages.index.country-list.title": "Guides 100% gratuits!!!",
-  "pages.index.country-list.description":
-    "Nos guides ci-dessous vous expliquent en détails les étapes nécessaires pour mener à bien vos démarches d‘études dans les pays concernés.",
+  "pages.index.country-list.description": "Nos guides ci-dessous vous expliquent en détails les étapes nécessaires pour mener à bien vos démarches d‘études dans les pays concernés.",
 
-  "pages.index.services.assistance.description":
-    "Nous pouvons vous accompagner dans vos démarches si vous en avez besoin, que ce soit pour faire une inscription ou pour produire des documents par rapport à votre demande de visa.",
+  "pages.index.services.assistance.description": "Nous pouvons vous accompagner dans vos démarches si vous en avez besoin, que ce soit pour faire une inscription ou pour produire des documents par rapport à votre demande de visa.",
   "pages.index.services.assistance.learn-more-text": "En savoir plus",
   "pages.index.services.assistance.title": "Un accompagnement honnête et transparent!!!",
 
-  "pages.index.services.study-guide.description":
-    "Nos guides gratuis ci-dessus vous permettent de faire vos démarches vous-mêmes sans avoir besoin d’une aide quelconque.",
+  "pages.index.services.study-guide.description": "Nos guides gratuis ci-dessus vous permettent de faire vos démarches vous-mêmes sans avoir besoin d’une aide quelconque.",
   "pages.index.services.study-guide.explore-text": "Explorez les guides",
   "pages.index.services.study-guide.title": "Des guides 100% Gratuits!!!",
 
-  "pages.index.services.verification.description":
-    "Enfin de vous protéger de charlatans ou escrocs, nous pouvons vérifier des informations qui vous sont données par des personnes ou des entreprises qui vous aident dans vos démarches.",
+  "pages.index.services.verification.description": "Enfin de vous protéger de charlatans ou escrocs, nous pouvons vérifier des informations qui vous sont données par des personnes ou des entreprises qui vous aident dans vos démarches.",
   "pages.index.services.verification.contact-us-text": "Contactez nous",
   "pages.index.services.verification.title": "Un service de vérification Gratuit!!!",
 

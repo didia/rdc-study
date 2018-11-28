@@ -7,8 +7,6 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const {cssModulesConfig} = require(`gatsby-1-config-css-modules`);
-const {extractTextPlugin} = require(`gatsby-1-config-extract-plugin`);
 const path = require('path');
 
 const CONTENT_TYPE = {
@@ -16,78 +14,8 @@ const CONTENT_TYPE = {
   GUIDE: 'guide'
 };
 
-exports.modifyWebpackConfig = ({config, stage}, options) => {
-  const sassFiles = /\.s[ac]ss$/;
-  const sassModulesFiles = /\.module\.s[ac]ss$/;
-  const sassLoader = `sass?${JSON.stringify(options)}`;
-  const sassResourceLoader = 'sass-resources';
-
-  config.merge({
-    sassResources: './src/assets/styles/shared.scss'
-  });
-
-  switch (stage) {
-    case `develop`: {
-      config.loader(`sass`, {
-        test: sassFiles,
-        exclude: sassModulesFiles,
-        loaders: [`style`, `css`, `postcss`, sassLoader, sassResourceLoader]
-      });
-
-      config.loader(`sassModules`, {
-        test: sassModulesFiles,
-        loaders: [`style`, cssModulesConfig(stage), `postcss`, sassLoader, sassResourceLoader]
-      });
-      return config;
-    }
-    case `build-css`: {
-      config.loader(`sass`, {
-        test: sassFiles,
-        exclude: sassModulesFiles,
-        loader: extractTextPlugin(stage).extract([`css?minimize`, `postcss`, sassLoader, sassResourceLoader])
-      });
-
-      config.loader(`sassModules`, {
-        test: sassModulesFiles,
-        loader: extractTextPlugin(stage).extract(`style`, [
-          cssModulesConfig(stage),
-          `postcss`,
-          sassLoader,
-          sassResourceLoader
-        ])
-      });
-
-      return config;
-    }
-    case `develop-html`:
-    case `build-html`:
-    case `build-javascript`: {
-      config.loader(`sass`, {
-        test: sassFiles,
-        exclude: sassModulesFiles,
-        loader: `null`
-      });
-
-      config.loader(`sassModules`, {
-        test: sassModulesFiles,
-        loader: extractTextPlugin(stage).extract(`style`, [
-          cssModulesConfig(stage),
-          `postcss`,
-          sassLoader,
-          sassResourceLoader
-        ])
-      });
-
-      return config;
-    }
-    default: {
-      return config;
-    }
-  }
-};
-
-exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
-  const {createNodeField} = boundActionCreators;
+exports.onCreateNode = ({node, actions, getNode}) => {
+  const {createNodeField} = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
     const fileNode = getNode(node.parent);
@@ -102,8 +30,8 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
   }
 };
 
-exports.createPages = ({boundActionCreators, graphql}) => {
-  const {createPage} = boundActionCreators;
+exports.createPages = ({actions, graphql}) => {
+  const {createPage} = actions;
 
   const guideMapping = {
     [CONTENT_TYPE.ARTICLE]: path.resolve('src/templates/articleTemplate.js'),

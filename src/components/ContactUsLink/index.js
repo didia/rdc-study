@@ -1,7 +1,7 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 import T from 'prop-types';
-import Link from 'gatsby-link';
+import {Link} from 'gatsby';
 
 const ContactUsButton = ({className}) => (
   <FormattedMessage id="shared.contact-us-text">

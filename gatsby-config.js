@@ -12,10 +12,19 @@ const plugins = [
   netlifyCmsPaths,
   'gatsby-transformer-sharp',
   'gatsby-plugin-sharp',
-  'gatsby-plugin-react-next',
   'gatsby-plugin-sitemap',
   'gatsby-plugin-remove-trailing-slashes',
   'gatsby-plugin-catch-links',
+  {
+    resolve: 'gatsby-plugin-sass',
+    options: {
+      cssLoaderOptions: {
+        camelCase: false
+      },
+      data: '@import "shared.scss";',
+      includePaths: ['src/assets/styles']
+    }
+  },
   {
     resolve: 'gatsby-source-filesystem',
     options: {

@@ -1,6 +1,7 @@
 // Vendor
 import React from 'react';
 import T from 'prop-types';
+import {graphql} from 'gatsby';
 
 import AboutUsPage from '../components/pages/AboutUsPage';
 
@@ -29,8 +30,8 @@ export const pageQuery = graphql`
           title
           image {
             childImageSharp {
-              sizes(maxWidth: 350) {
-                ...GatsbyImageSharpSizes
+              fluid(maxWidth: 350) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

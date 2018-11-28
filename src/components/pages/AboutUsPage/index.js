@@ -63,11 +63,9 @@ const AboutUsPage = ({team}) => {
         <div className={styles['team-member-list']}>
           {team.map((member, index) => (
             <Card key={member.name} className={styles['team-member-list__item']}>
-              <Img
-                outerWrapperClassName={classnames(styles['team-member-photo-outer'], imageClassPerIndex(index))}
-                sizes={member.image.childImageSharp.sizes}
-                alt={member.name}
-              />
+              <div className={classnames(styles['team-member-photo-outer'], imageClassPerIndex(index))}>
+                <Img fluid={member.image.childImageSharp.fluid} alt={member.name} />
+              </div>
 
               <div className={styles['team-member-info']}>
                 <header className={styles['team-member-info__header']}>

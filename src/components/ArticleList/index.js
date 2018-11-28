@@ -4,7 +4,7 @@ import T from 'prop-types';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
 import Img from 'gatsby-image';
-import Link from 'gatsby-link';
+import {Link} from 'gatsby';
 
 // Styles
 import styles from './styles.module.scss';
@@ -14,12 +14,9 @@ const Article = ({article}) => {
   return (
     <Link to={article.path} className={styles.article}>
       <article className={styles.article__inner}>
-        <Img
-          outerWrapperClassName={classnames(styles['image-wrapper'])}
-          className={styles.image}
-          sizes={article.thumbnail.sizes}
-          alt={article.name}
-        />
+        <div className={classnames(styles['image-wrapper'])}>
+          <Img className={styles.image} fluid={article.thumbnail.fluid} alt={article.name} />
+        </div>
 
         <div className={styles.content}>
           <h3 className={styles.article__title}>{article.title}</h3>
@@ -52,7 +49,9 @@ const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, 
       {descriptionKey && <FormattedMessage id={descriptionKey}>{text => <p>{text}</p>}</FormattedMessage>}
 
       <section className={styles['articles-wrapper']}>
-        {articles.map((article, i) => <Article key={i} article={article} />)}
+        {articles.map((article, i) => (
+          <Article key={i} article={article} />
+        ))}
       </section>
 
       {hasMoreArticles && (

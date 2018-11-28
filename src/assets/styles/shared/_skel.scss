@@ -8,12 +8,7 @@ $breakpoints: () !global;
 
 /// Vendor prefixes.
 /// @var {list}
-$vendor-prefixes: (
-  '-moz-',
-  '-webkit-',
-  '-ms-',
-  ''
-);
+$vendor-prefixes: ('-moz-', '-webkit-', '-ms-', '');
 
 /// Properties that should be vendorized.
 /// @var {list}
@@ -60,13 +55,7 @@ $vendor-properties: (
 
 /// Values that should be vendorized.
 /// @var {list}
-$vendor-values: (
-  'filter',
-  'flex',
-  'linear-gradient',
-  'radial-gradient',
-  'transform'
-);
+$vendor-values: ('filter', 'flex', 'linear-gradient', 'radial-gradient', 'transform');
 
 // Functions.
 
@@ -175,7 +164,7 @@ $vendor-values: (
   // Queries.
   @if $queries {
     @each $k, $v in $queries {
-      $query: $query + ' and (' + $k +':'+ $v + ')';
+      $query: $query + ' and (' + $k + ':' + $v + ')';
     }
   }
 
@@ -377,10 +366,7 @@ $vendor-values: (
 @mixin grid-gutters($gutters, $class: null, $multiplier: 1) {
   // Expand gutters if it's not a list.
   @if length($gutters) == 1 {
-    $gutters: (
-      $gutters,
-      0
-    );
+    $gutters: ($gutters, 0);
   }
   // Get column and row gutter values.
   $c: nth($gutters, 1);
@@ -424,14 +410,14 @@ $vendor-values: (
 // /
 // / Sets breakpoints.
 // / @param {map} $x Breakpoints.
-///
+//
 @mixin skel-breakpoints($x: ()) {
   $breakpoints: $x !global;
 }
 // /
 // / Initializes layout module.
 // / @param {map} config Config.
-///
+//
 @mixin skel-layout($config: ()) {
   // Config.
   $configPerBreakpoint: ();
@@ -442,21 +428,16 @@ $vendor-values: (
   // Reset.
   $x: map-get($config, 'reset');
   @if $x {
-    /* Reset */
     @include reset($x);
   }
-
   // Box model.
   $x: map-get($config, 'boxModel');
   @if $x {
-    /* Box Model */
     @include boxModel($x);
   }
-
   // Containers.
   $containers: map-get($config, 'containers');
   @if $containers {
-    /* Containers */
     .container {
       margin-right: auto;
       margin-left: auto;
@@ -471,6 +452,7 @@ $vendor-values: (
     @each $name in map-keys($breakpoints) {
       // Get/use breakpoint setting if it exists.
       $x: map-get($configPerBreakpoint, $name);
+
       // Per-breakpoint config exists?
       @if $x {
         $y: map-get($x, 'containers'); // Setting exists? Use it.
@@ -485,7 +467,6 @@ $vendor-values: (
     }
   }
   // Grid.
-
   $grid: map-get($config, 'grid');
   @if $grid {
     /* Grid */ // Use defaults if $grid is just "true".
@@ -531,8 +512,7 @@ $vendor-values: (
     // Apply per-breakpoint.
     @each $name in map-keys($breakpoints) {
       // Get/use breakpoint setting if it exists.
-      $x: map-get($configPerBreakpoint, $name);
-      // Per-breakpoint config exists?
+      $x: map-get($configPerBreakpoint, $name); // Per-breakpoint config exists?
       @if $x {
         $y: map-get($x, 'grid'); // Setting exists?
         @if $y {
@@ -870,8 +850,10 @@ $vendor-values: (
 // / @param {mixed} $value String/list of value(s).
 @mixin vendor($property, $value) {
   // Determine if property should expand.
-  $expandProperty: index($vendor-properties, $property);
-  // Determine if value should expand (and if so, add '-prefix-' placeholder).
+  $expandProperty: index(
+    $vendor-properties,
+    $property
+  ); // Determine if value should expand (and if so, add '-prefix-' placeholder).
   $expandValue: false;
   @each $x in $value {
     @each $y in $vendor-values {

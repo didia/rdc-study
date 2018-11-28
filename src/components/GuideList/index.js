@@ -4,7 +4,7 @@ import T from 'prop-types';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
 import Img from 'gatsby-image';
-import Link from 'gatsby-link';
+import {Link} from 'gatsby';
 
 // Styles
 import styles from './styles.module.scss';
@@ -14,7 +14,7 @@ const Guide = ({guide}) => {
     <Link to={guide.path} className={styles.article}>
       <article>
         <div className={classnames(styles['image-wrapper'], 'image')}>
-          <Img className={styles.image} sizes={guide.thumbnail.sizes} alt={guide.name} />
+          <Img className={styles.image} fluid={guide.thumbnail.fluid} alt={guide.name} />
         </div>
         <h3 className="major">{guide.title}</h3>
         <p>{guide.excerpt}</p>
@@ -32,7 +32,7 @@ Guide.propTypes = {
     path: T.string.isRequired,
     title: T.string.isRequired,
     thumbnail: T.shape({
-      sizes: T.object
+      fluid: T.object
     }).isRequired
   })
 };
@@ -45,7 +45,9 @@ const GuideList = ({className, descriptionKey, guides, id, titleKey}) => {
       {descriptionKey && <FormattedMessage id={descriptionKey}>{text => <p>{text}</p>}</FormattedMessage>}
 
       <section className={styles['guides-wrapper']}>
-        {guides.map((guide, i) => <Guide key={i} guide={guide} />)}
+        {guides.map((guide, i) => (
+          <Guide key={i} guide={guide} />
+        ))}
       </section>
     </div>
   );
