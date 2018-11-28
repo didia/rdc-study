@@ -7,7 +7,7 @@ import GuidePage from '../components/pages/GuidePage';
 
 const guideMarkdownRemark = ({html, frontmatter, fields}) => ({
   content: html,
-  coverImage: frontmatter.coverImage ? frontmatter.coverImage.childImageSharp.sizes.src : null,
+  coverImage: frontmatter.coverImage ? frontmatter.coverImage.childImageSharp.fluid.src : null,
   excerpt: frontmatter.excerpt,
   path: fields.path,
   related: frontmatter.related,
@@ -69,8 +69,8 @@ export const pageQuery = graphql`
         related
         coverImage: thumbnail {
           childImageSharp {
-            sizes(maxWidth: 1200) {
-              ...GatsbyImageSharpSizes_noBase64
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -93,8 +93,8 @@ export const pageQuery = graphql`
             topic
             thumbnail {
               childImageSharp {
-                sizes(maxHeight: 500) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 584, maxHeight: 394) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

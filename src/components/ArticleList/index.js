@@ -14,12 +14,9 @@ const Article = ({article}) => {
   return (
     <Link to={article.path} className={styles.article}>
       <article className={styles.article__inner}>
-        <Img
-          outerWrapperClassName={classnames(styles['image-wrapper'])}
-          className={styles.image}
-          sizes={article.thumbnail.sizes}
-          alt={article.name}
-        />
+        <div className={classnames(styles['image-wrapper'])}>
+          <Img className={styles.image} fluid={article.thumbnail.fluid} alt={article.name} />
+        </div>
 
         <div className={styles.content}>
           <h3 className={styles.article__title}>{article.title}</h3>

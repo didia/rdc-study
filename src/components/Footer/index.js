@@ -10,7 +10,9 @@ import {Link} from 'gatsby';
 import styles from './styles.module.scss';
 
 // Config
-import {contact, contactFormEndpoint} from '../../../config';
+import config from '../../../config';
+
+const {contact, contactFormEndpoint} = config;
 
 // Utils
 import getCurrentUrl from '../../utils/get-current-url';

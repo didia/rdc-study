@@ -12,7 +12,7 @@ const articleMarkdownRemark = ({html, timeToRead, frontmatter, fields}) => ({
   excerpt: frontmatter.excerpt,
   path: fields.path,
   tags: frontmatter.tags,
-  thumbnail: frontmatter.thumbnail ? {sizes: frontmatter.thumbnail.childImageSharp.contentImage} : null,
+  thumbnail: frontmatter.thumbnail ? {fluid: frontmatter.thumbnail.childImageSharp.contentImage} : null,
   thumbnailCredits: frontmatter.thumbnailCredits,
   title: frontmatter.title,
   timeToRead
@@ -63,11 +63,11 @@ export const pageQuery = graphql`
         thumbnailCredits
         thumbnail {
           childImageSharp {
-            contentImage: sizes(maxWidth: 1200) {
-              ...GatsbyImageSharpSizes
+            contentImage: fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
             }
-            coverImage: sizes(maxWidth: 1200) {
-              ...GatsbyImageSharpSizes_noBase64
+            coverImage: fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -90,8 +90,8 @@ export const pageQuery = graphql`
             title
             thumbnail {
               childImageSharp {
-                sizes(maxHeight: 500) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxHeight: 500) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

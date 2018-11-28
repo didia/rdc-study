@@ -68,8 +68,8 @@ export const pageQuery = graphql`
             title
             thumbnail {
               childImageSharp {
-                sizes(maxHeight: 500) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 584, maxHeight: 394) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -94,8 +94,8 @@ export const pageQuery = graphql`
             title
             thumbnail {
               childImageSharp {
-                sizes(maxHeight: 500) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxHeight: 500) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -106,19 +106,19 @@ export const pageQuery = graphql`
         hasNextPage
       }
     }
-    consultingServiceImage: imageSharp(id: {regex: "/consulting-service.jpg/"}) {
-      sizes(maxWidth: 276) {
-        ...GatsbyImageSharpSizes
+    consultingServiceImage: imageSharp(fluid: {originalName: {regex: "/consulting-service.jpg/"}}) {
+      fluid(maxWidth: 276) {
+        ...GatsbyImageSharpFluid
       }
     }
-    freeGuideImage: imageSharp(id: {regex: "/free-guide.jpg/"}) {
-      sizes(maxWidth: 276) {
-        ...GatsbyImageSharpSizes
+    freeGuideImage: imageSharp(fluid: {originalName: {regex: "/free-guide.jpg/"}}) {
+      fluid(maxWidth: 276) {
+        ...GatsbyImageSharpFluid
       }
     }
-    verificationServiceImage: imageSharp(id: {regex: "/verification-service.jpg/"}) {
-      sizes(maxWidth: 276) {
-        ...GatsbyImageSharpSizes
+    verificationServiceImage: imageSharp(fluid: {originalName: {regex: "/verification-service.jpg/"}}) {
+      fluid(maxWidth: 276) {
+        ...GatsbyImageSharpFluid
       }
     }
   }

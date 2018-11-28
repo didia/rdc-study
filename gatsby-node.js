@@ -25,8 +25,8 @@ const CONTENT_TYPE = {
 //   actions.replaceWebpackConfig(newConfig);
 // };
 
-exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
-  const {createNodeField} = boundActionCreators;
+exports.onCreateNode = ({node, actions, getNode}) => {
+  const {createNodeField} = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
     const fileNode = getNode(node.parent);
@@ -41,8 +41,8 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
   }
 };
 
-exports.createPages = ({boundActionCreators, graphql}) => {
-  const {createPage} = boundActionCreators;
+exports.createPages = ({actions, graphql}) => {
+  const {createPage} = actions;
 
   const guideMapping = {
     [CONTENT_TYPE.ARTICLE]: path.resolve('src/templates/articleTemplate.js'),

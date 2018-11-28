@@ -17,7 +17,7 @@ const Service = ({service, className, imageWrapperClassName}) => {
     <div className={className}>
       {service.image && (
         <a className={classnames(imageWrapperClassName, 'image')}>
-          <Img className={styles.image} sizes={service.image.sizes} />
+          <Img className={styles.image} fluid={service.image.fluid} />
         </a>
       )}
 
@@ -58,7 +58,7 @@ Service.propTypes = {
   service: T.shape({
     descriptionTextKey: T.string.isRequired,
     image: T.shape({
-      sizes: T.object
+      fluid: T.object
     }).isRequired,
     titleKey: T.string.isRequired,
     detailsLink: T.shape({

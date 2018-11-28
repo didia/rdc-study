@@ -30,7 +30,7 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
         <div className={styles.inner}>
           <div className={styles.cover}>
             <div className={styles['cover__image-wrapper']}>
-              <Img className={styles.image} sizes={article.thumbnail.sizes} alt={article.title} />
+              <Img className={styles.image} fluid={article.thumbnail.fluid} alt={article.title} />
             </div>
 
             {article.thumbnailCredits && (
