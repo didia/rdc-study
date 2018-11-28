@@ -14,17 +14,6 @@ const CONTENT_TYPE = {
   GUIDE: 'guide'
 };
 
-// exports.onCreateWebpackConfig = ({getConfig, actions}) => {
-//   const config = getConfig();
-//
-//   const newConfig = {
-//     ...config,
-//     sassResources: './src/assets/styles/shared.scss'
-//   };
-//
-//   actions.replaceWebpackConfig(newConfig);
-// };
-
 exports.onCreateNode = ({node, actions, getNode}) => {
   const {createNodeField} = actions;
 
