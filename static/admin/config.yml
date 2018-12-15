@@ -25,3 +25,15 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}
       - {label: "Mots clés", name: "tags", widget: "list", required: false}
       - {label: "Date de publication", name: "date", widget: "datetime"}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Foire aux questions"
+        name: "faqs"
+        file: "data/faqs.json"
+        fields:
+          - name: entries
+            widget: list
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Réponse", name: "answer", widget: "markdown"}
