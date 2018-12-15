@@ -32,7 +32,8 @@ collections:
         name: "faqs"
         file: "data/faqs/faqs.json"
         fields:
-          - name: entries
+          - name: "entries"
+            label: "Entrées"
             widget: list
             fields:
               - {label: "Question", name: "question", widget: "string"}
