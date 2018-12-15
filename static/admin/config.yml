@@ -30,7 +30,7 @@ collections:
     files:
       - label: "Foire aux questions"
         name: "faqs"
-        file: "data/faqs.json"
+        file: "data/faqs/faqs.json"
         fields:
           - name: entries
             widget: list
