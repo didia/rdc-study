@@ -1,0 +1,36 @@
+// Vendor
+import React from 'react';
+import T from 'prop-types';
+
+import GenericPage from '../GenericPage';
+
+const page = {
+  description: 'Voici les réponses aux questions les plus souvent posées.',
+  title: 'Questions populaires',
+  path: '/questions-populaires'
+};
+
+const QuestionEntry = ({entry: {question, answer}}) => (
+  <>
+    <dt>{question}</dt>
+    <dd dangerouslySetInnerHTML={{__html: answer}} />
+  </>
+);
+
+const FaqsPage = ({questions}) => {
+  return (
+    <GenericPage page={page}>
+      <dl>
+        {questions.map((question, index) => (
+          <QuestionEntry key={`question-${index}`} entry={question} />
+        ))}
+      </dl>
+    </GenericPage>
+  );
+};
+
+FaqsPage.propTypes = {
+  questions: T.arrayOf(T.object)
+};
+
+export default FaqsPage;
