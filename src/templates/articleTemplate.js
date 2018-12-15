@@ -63,10 +63,10 @@ export const pageQuery = graphql`
         thumbnailCredits
         thumbnail {
           childImageSharp {
-            contentImage: fluid(maxWidth: 1200) {
+            contentImage: fluid(maxWidth: 1200, cropFocus: CENTER) {
               ...GatsbyImageSharpFluid
             }
-            coverImage: fluid(maxWidth: 1200) {
+            coverImage: fluid(maxWidth: 1200, cropFocus: CENTER) {
               ...GatsbyImageSharpFluid_noBase64
             }
           }
@@ -90,7 +90,7 @@ export const pageQuery = graphql`
             title
             thumbnail {
               childImageSharp {
-                fluid(maxHeight: 500) {
+                fluid(maxHeight: 500, cropFocus: CENTER) {
                   ...GatsbyImageSharpFluid
                 }
               }

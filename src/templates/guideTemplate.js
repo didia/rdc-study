@@ -69,7 +69,7 @@ export const pageQuery = graphql`
         related
         coverImage: thumbnail {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 1200, cropFocus: CENTER) {
               ...GatsbyImageSharpFluid_noBase64
             }
           }
@@ -93,7 +93,7 @@ export const pageQuery = graphql`
             topic
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 584, maxHeight: 394) {
+                fluid(maxWidth: 584, maxHeight: 394, cropFocus: CENTER) {
                   ...GatsbyImageSharpFluid
                 }
               }
