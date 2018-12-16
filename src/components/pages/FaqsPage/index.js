@@ -1,6 +1,7 @@
 // Vendor
 import React from 'react';
 import T from 'prop-types';
+import HtmlContent from '../../HtmlContent';
 
 import GenericPage from '../GenericPage';
 
@@ -13,7 +14,9 @@ const page = {
 const QuestionEntry = ({entry: {question, answer}}) => (
   <>
     <dt>{question}</dt>
-    <dd dangerouslySetInnerHTML={{__html: answer}} />
+    <dd>
+      <HtmlContent content={answer} />
+    </dd>
   </>
 );
 
