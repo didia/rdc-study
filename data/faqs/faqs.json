@@ -2,7 +2,7 @@
   "entries": [
     {
       "question": "Qu’est-ce que RDC Études ?",
-      "answer": "RDC Etudes est une plateforme qui met gratuitement à votre disposition les informations nécessaires pour vos démarches d‘études à l'étranger. RDC Etudes peut aussi vous accompagner dans vos démarches d'admission et d'obtention des visas moyennant des frais d‘accompagnement.\\\nPour en savoir plus sur RDC Etudes, consultez notre page \\[à propos.](/a-propos)"
+      "answer": "RDC Etudes est une plateforme qui met gratuitement à votre disposition les informations nécessaires pour vos démarches d‘études à l'étranger. RDC Etudes peut aussi vous accompagner dans vos démarches d'admission et d'obtention des visas moyennant des frais d‘accompagnement.\\\nPour en savoir plus sur RDC Etudes, consultez notre page <a href=\"/a-propos\">à propos.</a>"
     },
     {
       "question": "Comment nous contacter ?",
@@ -10,11 +10,11 @@
     },
     {
       "question": "Faut-il payer pour accéder aux guides des démarches offerts par RDC Etudes?",
-      "answer": "Non! Les guides des démarches sur notre site web sont complètement gratuits. Vous n‘avez pas besoin de dépenser un seul sou pour vos démarches. Toutefois si vous avez besoin d‘être accompagné dans vos démarches, RDC Etudes vous offre un service d‘accompagnement qui est payant. Pour en savoir plus sur notre service d'accompagnement, consultez notre \\[page sur l'accompagnement.](/accompagnement)"
+      "answer": "Non! Les guides des démarches sur notre site web sont complètement gratuits. Vous n‘avez pas besoin de dépenser un seul sou pour vos démarches. Toutefois si vous avez besoin d‘être accompagné dans vos démarches, RDC Etudes vous offre un service d‘accompagnement qui est payant. Pour en savoir plus sur notre service d'accompagnement, consultez notre <a href=\"/accompagnement\">page sur l'accompagnement.</a>"
     },
     {
       "question": "Quels sont les pays pour lesquels vous offrez votre service d'accompagnement?",
-      "answer": "Actuellement, nous pouvons vous aider à faire les démarches pour \\[le Canada](/guides/canada), \\[les États-Unis](/guides/usa) et \\[la Belgique.](/guides/belgique)"
+      "answer": "Actuellement, nous pouvons vous aider à faire les démarches pour <a href=\"/guides/canada\">le Canada</a>, <a href=\"/guides/usa\">les États-Unis</a> et <a href=\"/guides/belgique\">la Belgique.</a>"
     },
     {
       "question": "Que dois-je faire pour obtenir une admission et un visa pour étudier à l’étranger ? ",
