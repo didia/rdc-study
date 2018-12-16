@@ -1,12 +1,24 @@
 {
   "entries": [
     {
-      "question": "Qu’est-ce que RDC ÉTUDES ?",
-      "answer": "RDC ETUDES est une plateforme qui permet au public d’avoir l’information de qualité pour toutes vos démarches d’études à l’étranger."
+      "question": "Qu’est-ce que RDC Études ?",
+      "answer": "RDC Etudes est une plateforme qui met gratuitement à votre disposition les informations nécessaires pour vos démarches d‘études à l'étranger. RDC Etudes peut aussi vous accompagner dans vos démarches d'admission et d'obtention des visas moyennant des frais d‘accompagnement.\\\nPour en savoir plus sur RDC Etudes, consultez notre page \\[à propos.](/a-propos)"
     },
     {
       "question": "Comment nous contacter ?",
-      "answer": "Vous pouvez nous contacter par courriel <a href=\"mailto:salut@rdcetudes.com\">salut@rdcetudes.com</a> ou par messagerie facebook."
+      "answer": "Vous pouvez nous contacter par courriel <a href=\"mailto:salut@rdcetudes.com\">salut@rdcetudes.com</a> ou par <a href=\"https://www.facebook.com/rdcetudes\">messagerie facebook.</a>"
+    },
+    {
+      "question": "Faut-il payer pour accéder aux guides des démarches offerts par RDC Etudes?",
+      "answer": "Non! Les guides des démarches sur notre site web sont complètement gratuits. Vous n‘avez pas besoin de dépenser un seul sou pour vos démarches. Toutefois si vous avez besoin d‘être accompagné dans vos démarches, RDC Etudes vous offre un service d‘accompagnement qui est payant. Pour en savoir plus sur notre service d'accompagnement, consultez notre \\[page sur l'accompagnement.](/accompagnement)"
+    },
+    {
+      "question": "Quels sont les pays pour lesquels vous offrez votre service d'accompagnement?",
+      "answer": "Actuellement, nous pouvons vous aider à faire les démarches pour \\[le Canada](/guides/canada), \\[les États-Unis](/guides/usa) et \\[la Belgique.](/guides/belgique)"
+    },
+    {
+      "question": "Que dois-je faire pour obtenir une admission et un visa pour étudier à l’étranger ? ",
+      "answer": "Pour obtenir une admission et un visa, vous devez commencer par choisir un ou des pays où vous voulez étudier. Ensuite vous devez choisir une université et procéder à la demande d'admission. Une fois la demande d'admission obtenue, vous pouvez faire une demande de Visa. Pour savoir comment faire une demande d'admission ou de visa, consultez nos \\[guides gratuits](/#guides) à ce sujet."
     }
   ]
 }
