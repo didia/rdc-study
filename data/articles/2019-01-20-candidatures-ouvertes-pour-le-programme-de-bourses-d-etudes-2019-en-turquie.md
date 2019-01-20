@@ -22,7 +22,7 @@ Les bourses de la Turquie sont très compétitives, financées par le gouverneme
 Le dépôt de candidature est complètement gratuit et se fait en ligne sur le site du gouvernement: <a href="https://turkiyeburslari.gov.tr/en/page/prospective-students/how-to-apply" target="_blank" rel="nofollow noopener">https://turkiyeburslari.gov.tr/en/page/prospective-students/how-to-apply</a>.
 Vous y trouverez également la démarche sur comment déposer sa candidature ainsi que les documents requis à cet effet.
 
-Pour faciliter et accélérer le processus d'admission, les candidats qui planifient de s'inscrire cette année sont fortement conseillés de faire leur demande en utilisant un passeport valide comme document d'identification ou au moins leur passeport en mains au moment de l'interview pour la bourse.
+Pour faciliter et accélérer le processus d'admission, les candidats qui planifient de s'inscrire cette année sont fortement conseillés de déposer leurs candidatures en utilisant un passeport valide comme document d'identification ou au moins à voir leurs passeports en mains au moment de l'interview pour la bourse.
 
 Comme d'habitude, si vous avez des questions ou vous n'arrivez pas à procéder, RDC Etudes peut vous assister dans vos démarches de candidature à la bourse d'études. Nous souhaitons bonne chance à tous ceux qui vont déposer leur candidature.
 
