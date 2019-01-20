@@ -17,7 +17,7 @@ date: '2019-01-20T13:26:17-05:00'
 ---
 La Turquie offre des bourses d‘études aux étudiants internationaux de partout dans le monde pour étudier dans les universités les plus prestigieuses de la Turquie.
 
-Les bourses de la Turquie sont très compétitives, financées par le gouvernement turque et offertes aux étudiants exceptionnels de par leurs dossiers académiques. Ces bourses comprennent non seulement le support financier mais aussi la garantie de l'admission à une université parmi vos choix.
+Les bourses de la Turquie sont très compétitives, financées par le gouvernement turque et offertes aux étudiants exceptionnels de par leurs dossiers académiques. Ces bourses comprennent non seulement le support financier mais aussi la garantie de l'admission à une université de votre choix.
 
 Le dépôt de candidature est complètement gratuit et se fait en ligne sur le site du gouvernement: <a href="https://turkiyeburslari.gov.tr/en/page/prospective-students/how-to-apply" target="_blank" rel="nofollow noopener">https://turkiyeburslari.gov.tr/en/page/prospective-students/how-to-apply</a>.
 Vous y trouverez également la démarche sur comment déposer sa candidature ainsi que les documents requis à cet effet.
