@@ -4,11 +4,6 @@
   list-style: none;
 }
 
-.icon {
-  margin-right: 0.5em;
-  font-size: 2em;
-}
-
 .button {
   display: flex !important;
   align-items: center;
@@ -32,19 +27,24 @@
       background-color: #2e7d32;
     }
   }
+
+  .icon {
+    margin-right: 0.5em;
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 540px) {
-  .icon {
-    margin-right: 0;
-    font-size: 2.5em;
-  }
-
   .button {
     padding: 1em;
 
     &.fa-facebook {
       padding: 1em 1.25em;
+    }
+
+    .icon {
+      margin-right: 0;
+      font-size: 2.5em;
     }
   }
 
