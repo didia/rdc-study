@@ -1,12 +1,12 @@
 ---
 active: true
-slug: "canada/visa"
-date: "2018-03-30"
+slug: 'canada/visa'
+date: '2018-03-30'
 title: "Obtenir un permis d'études pour le Canada"
 excerpt: "Avec votre admission dans une établissement d'enseignement canadien en main, vous devez maintenant faire une demande de visa à Immigration Canada. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le permis d'études pour le Canada."
-thumbnail: "images/canada-visa.jpg"
-topic: "visa"
-related: ["canada/admission"]
+thumbnail: 'images/canada-visa.jpg'
+topic: 'visa'
+related: ['canada/admission']
 ---
 
 Une fois admis dans un établissement d’enseignement au Canada, vous pouvez commencer votre demande de permis d’études pour immigrer au Canada.\
@@ -74,7 +74,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     Ensuite vous devez fournir un engagement écrit à quitter le Canada après la fin de vos études.
     Cet engagement permet au Canada de s’assurer que vous n'essaierez pas de rester illégalement au Canada.
 
-    Si vous avez besoin d’aide pour rédiger ces documents, nous vous encourageons à souscrire à notre service d’accompagnement, plus spécifiquement le forfait Admission.
+    Si vous avez besoin d’aide pour rédiger ces documents, nous vous encourageons à souscrire à notre [service d’accompagnement](/accompagnement), plus spécifiquement le forfait Visa.
 
 7)  ## Vérifiez que vous avez tous les documents
 
@@ -103,10 +103,10 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **690 USD et 810 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-* **20 USD à 50 USD** pour les documents administratifs à obtenir du gouvernement congolais.
-* **90 USD** pour le CAQ (Seulement pour Québec)
-* **185 USD** pour le frais des visas (Y compris les empreintes)
-* **285 USD** pour les frais des examens médicaux.
-* **200 USD** pour les frais d’assistance RDC-Etudes.
+- **20 USD à 50 USD** pour les documents administratifs à obtenir du gouvernement congolais.
+- **90 USD** pour le CAQ (Seulement pour Québec)
+- **185 USD** pour le frais des visas (Y compris les empreintes)
+- **285 USD** pour les frais des examens médicaux.
+- **200 USD** pour les frais d’assistance RDC-Etudes.
 
 **NB**: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leur site web pour les montants actualisés.
