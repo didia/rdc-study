@@ -18,6 +18,10 @@ import Header from '../../components/Header';
 import Menu from '../../components/Menu';
 import SEO from '../../components/SEO';
 
+// Utils
+// Utils
+import analyticsPushEvent from '../../utils/push-analytics-event';
+
 addLocaleData(fr);
 
 class TemplateWrapper extends React.Component {
@@ -48,6 +52,14 @@ class TemplateWrapper extends React.Component {
   }
 
   handleToggleMenu() {
+    if (!this.state.isMenuVisible) {
+      analyticsPushEvent({
+        category: 'Menu Button',
+        action: 'Open',
+        label: window.location.pathname
+      });
+    }
+
     this.setState({
       isMenuVisible: !this.state.isMenuVisible
     });

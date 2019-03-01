@@ -23,6 +23,10 @@ const MENU_ITEMS = [
     to: '/a-propos'
   },
   {
+    labelKey: 'menu.faq-label',
+    to: '/questions-populaires'
+  },
+  {
     labelKey: 'menu.privacy-policy-link-label',
     to: '/politique-de-confidentialite'
   }
