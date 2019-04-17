@@ -37,7 +37,7 @@ exports.handler = (event, _, callback) => {
     TemplateData: `{ "email":"${body.email}", "link":"${body.link}", "message":"${body.message}", "name":"${
       body.name
     }" }`,
-    ReplyToAddresses: [process.env.EMAIL_ADDRESS_FROM]
+    ReplyToAddresses: [body.email]
   };
 
   const sendPromise = new AWS.SES().sendTemplatedEmail(params).promise();
