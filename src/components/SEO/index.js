@@ -26,10 +26,10 @@ const SEO = ({meta}) => {
 
   title = title || config.siteTitle;
   description = description || config.siteDescription;
-  image = image || config.siteImage;
+  image = image || {src: config.siteImage};
   keywords = keywords || config.siteKeywords;
 
-  image = `${config.siteURL}${image}`;
+  image.src = `${config.siteURL}${image.src}`;
   const blogURL = config.siteURL;
   const schemaOrgJSONLD = [
     {
@@ -87,14 +87,16 @@ const SEO = ({meta}) => {
       <meta property="og:type" content={meta ? 'article' : 'website'} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={image.src} />
+      {image.width && <meta property="og:image:width" content={image.width} />}
+      {image.height && <meta property="og:image:height" content={image.height} />}
       <meta property="fb:app_id" content={config.siteFBAppID} />
 
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={image.src} />
     </Helmet>
   );
 };

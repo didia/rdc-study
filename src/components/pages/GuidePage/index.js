@@ -41,7 +41,7 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
   const page = {
     description: guide.excerpt,
     facebookShareButtonLabelKey: 'pages.guides-show.banner.facebook-share-button-label',
-    image: guide.coverImage,
+    image: guide.metaImage,
     path: guide.path,
     title: guide.title
   };
@@ -71,7 +71,7 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
 GuidePage.propTypes = {
   guide: T.shape({
     content: T.string.isRequired,
-    coverImage: T.string.isRequired,
+    metaImage: T.string.isRequired,
     excerpt: T.string.isRequired,
     path: T.string.isRequired,
     slug: T.string.isRequired,

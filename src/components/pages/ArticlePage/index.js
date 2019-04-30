@@ -17,7 +17,7 @@ import HtmlContent from '../../HtmlContent';
 const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
   const page = {
     description: article.excerpt,
-    image: article.coverImage,
+    image: article.metaImage,
     keywords: article.tags,
     path: article.path,
     title: article.title
@@ -67,7 +67,7 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
 ArticlePage.propTypes = {
   article: T.shape({
     content: T.string.isRequired,
-    coverImage: T.string.isRequired,
+    metaImage: T.string.isRequired,
     date: T.string.isRequired,
     excerpt: T.string.isRequired,
     path: T.string.isRequired,

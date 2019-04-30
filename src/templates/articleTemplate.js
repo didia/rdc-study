@@ -7,7 +7,7 @@ import ArticlePage from '../components/pages/ArticlePage';
 
 const articleMarkdownRemark = ({html, timeToRead, frontmatter, fields}) => ({
   content: html,
-  coverImage: frontmatter.thumbnail ? frontmatter.thumbnail.childImageSharp.coverImage.src : null,
+  metaImage: frontmatter.thumbnail ? frontmatter.thumbnail.childImageSharp.metaImage : null,
   date: frontmatter.date,
   excerpt: frontmatter.excerpt,
   path: fields.path,
@@ -66,8 +66,8 @@ export const pageQuery = graphql`
             contentImage: fluid(maxWidth: 1200, cropFocus: CENTER) {
               ...GatsbyImageSharpFluid
             }
-            coverImage: fluid(maxWidth: 1200, cropFocus: CENTER) {
-              ...GatsbyImageSharpFluid_noBase64
+            metaImage: fixed(width: 1200, height: 630, cropFocus: CENTER) {
+              ...GatsbyImageSharpFixed_noBase64
             }
           }
         }

@@ -7,7 +7,7 @@ import GuidePage from '../components/pages/GuidePage';
 
 const guideMarkdownRemark = ({html, frontmatter, fields}) => ({
   content: html,
-  coverImage: frontmatter.coverImage ? frontmatter.coverImage.childImageSharp.fluid.src : null,
+  metaImage: frontmatter.metaImage ? frontmatter.metaImage.childImageSharp.fixed : null,
   excerpt: frontmatter.excerpt,
   path: fields.path,
   related: frontmatter.related,
@@ -67,10 +67,10 @@ export const pageQuery = graphql`
         title
         topic
         related
-        coverImage: thumbnail {
+        metaImage: thumbnail {
           childImageSharp {
-            fluid(maxWidth: 1200, cropFocus: CENTER) {
-              ...GatsbyImageSharpFluid_noBase64
+            fixed(width: 1200, height: 630, cropFocus: CENTER) {
+              ...GatsbyImageSharpFixed_noBase64
             }
           }
         }
