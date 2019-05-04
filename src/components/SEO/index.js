@@ -21,11 +21,14 @@ const SEO = ({meta}) => {
   if (meta) {
     title = meta.title;
     description = meta.description;
-    imageURL = meta.image.src;
-    imageWidth = meta.image.width;
-    imageHeight = meta.image.height;
     keywords = meta.keywords ? meta.keywords.join(',') : null;
     postURL = getCanonicalLink(meta.path);
+
+    if (meta.image) {
+      imageURL = meta.image.src;
+      imageWidth = meta.image.width;
+      imageHeight = meta.image.height;
+    }
   }
 
   title = title || config.siteTitle;
