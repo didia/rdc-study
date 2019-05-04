@@ -13,25 +13,29 @@ import getCanonicalLink from '../../utils/get-canonical-link';
 const SEO = ({meta}) => {
   let title;
   let description;
-  let image;
+  let imageURL;
+  let imageWidth;
+  let imageHeight;
   let postURL;
   let keywords;
   if (meta) {
     title = meta.title;
     description = meta.description;
-    image = meta.image;
+    imageURL = meta.image.src;
+    imageWidth = meta.image.width;
+    imageHeight = meta.image.height;
     keywords = meta.keywords ? meta.keywords.join(',') : null;
     postURL = getCanonicalLink(meta.path);
   }
 
   title = title || config.siteTitle;
   description = description || config.siteDescription;
-  image = image || {src: config.siteImage};
+  imageURL = imageURL || config.siteImage;
   keywords = keywords || config.siteKeywords;
 
-  image.src = `${config.siteURL}${image.src}`;
+  imageURL = `${config.siteURL}${imageURL}`;
   const blogURL = config.siteURL;
-  const schemaOrgJSONLD = [
+  let schemaOrgJSONLD = [
     {
       '@context': 'http://schema.org',
       '@type': 'WebSite',
@@ -40,7 +44,7 @@ const SEO = ({meta}) => {
     }
   ];
   if (meta) {
-    schemaOrgJSONLD.push([
+    schemaOrgJSONLD = schemaOrgJSONLD.concat([
       {
         '@context': 'http://schema.org',
         '@type': 'BreadcrumbList',
@@ -51,7 +55,7 @@ const SEO = ({meta}) => {
             item: {
               '@id': postURL,
               name: title,
-              image
+              image: imageURL
             }
           }
         ]
@@ -64,7 +68,7 @@ const SEO = ({meta}) => {
         headline: title,
         image: {
           '@type': 'ImageObject',
-          url: image
+          url: imageURL
         },
         description
       }
@@ -76,7 +80,7 @@ const SEO = ({meta}) => {
       <link rel="canonical" href={meta ? postURL : blogURL} />
       {/* General tags */}
       <meta name="description" content={description} />
-      <meta name="image" content={image} />
+      <meta name="image" content={imageURL} />
       <meta name="keywords" content={keywords} />
 
       {/* Schema.org tags */}
@@ -87,16 +91,16 @@ const SEO = ({meta}) => {
       <meta property="og:type" content={meta ? 'article' : 'website'} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image.src} />
-      {image.width && <meta property="og:image:width" content={image.width} />}
-      {image.height && <meta property="og:image:height" content={image.height} />}
+      <meta property="og:image" content={imageURL} />
+      {imageWidth && <meta property="og:image:width" content={imageWidth} />}
+      {imageHeight && <meta property="og:image:height" content={imageHeight} />}
       <meta property="fb:app_id" content={config.siteFBAppID} />
 
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image.src} />
+      <meta name="twitter:image" content={imageURL} />
     </Helmet>
   );
 };
@@ -104,7 +108,11 @@ const SEO = ({meta}) => {
 SEO.propTypes = {
   meta: T.shape({
     description: T.string,
-    image: T.string,
+    image: T.shape({
+      src: T.string,
+      width: T.number,
+      height: T.number
+    }),
     keywords: T.arrayOf(T.string),
     path: T.string,
     title: T.string
