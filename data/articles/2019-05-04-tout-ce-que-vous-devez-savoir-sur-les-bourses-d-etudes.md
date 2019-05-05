@@ -39,11 +39,13 @@ Il existe donc trois types de bourses d’études en ce qui concerne la couvertu
 1. _**Les bourses d’études complètes**_\
    Les bourses complètes sont les bourses qui offrent non seulement les frais de scolarité mais aussi tous les autres frais nécessaires à la survie de l’étudiant dans son pays de destination. Ces bourses sont les plus sollicitées des étudiants et en même temps les plus rares. Elles sont souvent offertes par des gouvernements ou des grands organismes internationaux.\
    Par exemple, la Turquie via son [programme de bourse d'études pour les étudiants étrangers](https://www.rdcetudes.com/articles/2019-01-20-candidatures-ouvertes-pour-le-programme-de-bourses-d-etudes-2019-en-turquie) offre des bourses d'études complètes.
+
 2. **_Les bourses d’études partielles_**\
    Ces formes de bourses sont les plus populaires. Elles consistent souvent à une prise en charge partielle des frais de scolarité de l’étudiant ou tout autre frais nécessaire à son séjour dans son pays de destination. Ces bourses sont souvent offertes par les universités, des organismes de charité ou des bienfaiteurs.\
    Le gouvernement brésilien par exemple par son [programme PEC-G](https://www.rdcetudes.com/articles/2018-08-01-etudier-gratuitement-au-br%C3%A9sil-c-est-possible) permet aux étudiants sélectionnés d’étudier gratuitement mais la subsistance est assurée par l’étudiant (e). 
+
 3. **_Les ententes des réductions de frais académiques_**\
-   Généralement les étudiants étrangers paient des frais académiques supérieures à ceux des étudiants nationaux. Cependant certaines ententes entre pays permettent aux étudiants étrangers de payer comme les étudiants nationaux. Généralement, si ces ententes existent entre votre pays d’origine et celui de destination, vous devez faire la demande de cette réduction auprès de votre ministère de l’éducation ou auprès de l’ambassade de votre pays dans le pays de destination.
+   Généralement les étudiants étrangers paient des frais académiques supérieures à ceux des étudiants nationaux. Cependant certaines ententes entre pays permettent aux étudiants étrangers de payer comme les étudiants nationaux. Généralement, si ces ententes existent entre votre pays d’origine et celui de destination, vous devez faire la demande de cette réduction auprès de votre ministère de l’éducation ou auprès de l’ambassade de votre pays dans le pays de destination. L'Université d'Ottawa par exemple accorde [une exonération partielle des frais de scolarités](https://www.rdcetudes.com/articles/2018-07-30-%C3%A9tudier-%C3%A0-co%C3%BBts-r%C3%A9duits-%C3%A0-l-universit%C3%A9-d-ottawa) aux étudiants francophones.
 
 ## Types de bourses d’études selon la source.
 
@@ -57,7 +59,7 @@ Beaucoup d’étudiants ne savent souvent pas où trouver les différentes bours
    Ces bourses sont offertes par les universités aux étudiants déjà admis. Ces bourses couvrent rarement la totalité des frais académiques et sont souvent basées soit sur le dossier académique de l’étudiant ou ses besoins financiers.\
    Certaines universités, comme l’Université d’Ottawa, offrent des bourses de réduction des frais académiques à leurs étudiants francophones. Ces bourses ne sont pas assorties des clauses de retour comme les deux précédentes.\
    Ces bourses sont souvent affichées sur les sites web des universités concernées.
-4. _**Les bourses offerte par des particuliers.**_\
+4. _**Les bourses offertes par des particuliers.**_\
    Certains donateurs généreux offrent aussi des bourses aux étudiants. Ces bourses sont souvent affichés sur le site web des universités concernées. Ces bourses sont relativement difficiles à trouver car elles ne sont pas souvent regroupées en un seul endroit.
 
 Ainsi dit, vous voyez qu’il y’a plusieurs types de bourses auxquelles vous pouvez postuler. Généralement cela dépend de vos résultats académiques et votre capacité financière. Les bourses d’études complètes par exemple sont beaucoup plus compétitives et exigeantes que les bourses partielles. Cependant si vous n’avez pas assez des moyens disponibles, il sera difficile d’aller étudier à l’étranger même avec une bourse partielle.
