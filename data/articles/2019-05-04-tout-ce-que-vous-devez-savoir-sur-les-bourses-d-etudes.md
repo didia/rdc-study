@@ -47,7 +47,7 @@ Les bourses complètes sont les bourses qui offrent non seulement les frais de s
 
 Ces formes de bourses sont les plus populaires. Elles consistent souvent à une prise en charge partielle des frais de scolarité de l’étudiant ou tout autre frais nécessaire à son séjour dans son pays de destination. Ces bourses sont souvent offertes par les universités, des organismes de charité ou des bienfaiteurs.
 
-Le gouvernement brésilien par exemple par son <a href="https://www.rdcetudes.com/articles/2018-08-01-etudier-gratuitement-au-br%C3%A9sil-c-est-possible">programme PEC-G</a> permet aux étudiants sélectionnés d’étudier gratuitement mais la subsistance est assurée par l’étudiant (e). Tout comme la Turquie qui le fait via son [programme de bourse d'études pour les étudiants étrangers](https://www.rdcetudes.com/articles/2019-01-20-candidatures-ouvertes-pour-le-programme-de-bourses-d-etudes-2019-en-turquie), etc.
+Le gouvernement brésilien par exemple par son [programme PEC-G](https://www.rdcetudes.com/articles/2018-08-01-etudier-gratuitement-au-br%C3%A9sil-c-est-possible) permet aux étudiants sélectionnés d’étudier gratuitement mais la subsistance est assurée par l’étudiant (e). Tout comme la Turquie qui le fait via son [programme de bourse d'études pour les étudiants étrangers](https://www.rdcetudes.com/articles/2019-01-20-candidatures-ouvertes-pour-le-programme-de-bourses-d-etudes-2019-en-turquie), etc.
 
 * _**
   Les ententes des réductions de frais académiques.
