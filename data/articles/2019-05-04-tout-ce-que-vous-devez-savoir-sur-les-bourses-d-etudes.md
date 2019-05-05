@@ -42,16 +42,16 @@ Il existe donc trois types de bourses d’études en ce qui concerne la couvertu
 
 Les bourses complètes sont les bourses qui offrent non seulement les frais de scolarité mais aussi tous les autres frais nécessaires à la survie de l’étudiant dans son pays de destination. Ces bourses sont les plus sollicitées des étudiants et en même temps les plus rares. Elles sont souvent offertes par des gouvernements ou des grands organismes internationaux.
 
-* **_Les bourses d’études partielles.
-  _**
+* _**Les bourses d’études partielles.
+  **_
 
 Ces formes de bourses sont les plus populaires. Elles consistent souvent à une prise en charge partielle des frais de scolarité de l’étudiant ou tout autre frais nécessaire à son séjour dans son pays de destination. Ces bourses sont souvent offertes par les universités, des organismes de charité ou des bienfaiteurs.
 
-Le gouvernement brésilien par exemple par son <a href="https://www.rdcetudes.com/articles/2018-08-01-etudier-gratuitement-au-br%C3%A9sil-c-est-possible">programme PEC-G</a> permet aux étudiants sélectionnés d’étudier gratuitement mais la subsistance est assurée par l’étudiant (e). La Turquie via le Programme (insérer le programme turque), etc.
+Le gouvernement brésilien par exemple par son <a href="https://www.rdcetudes.com/articles/2018-08-01-etudier-gratuitement-au-br%C3%A9sil-c-est-possible">programme PEC-G</a> permet aux étudiants sélectionnés d’étudier gratuitement mais la subsistance est assurée par l’étudiant (e). Tout comme la Turquie qui le fait via son [programme de bourse d'études pour les étudiants étrangers](https://www.rdcetudes.com/articles/2019-01-20-candidatures-ouvertes-pour-le-programme-de-bourses-d-etudes-2019-en-turquie), etc.
 
-* **_
+* _**
   Les ententes des réductions de frais académiques.
-  _**
+  **_
 
 Généralement les étudiants étrangers paient des frais académiques supérieures à ceux des étudiants nationaux. Cependant certaines ententes entre pays permettent aux étudiants étrangers de payer comme les étudiants nationaux. Généralement, si ces ententes existent entre votre pays d’origine et celui de destination, vous devez faire la demande de cette réduction auprès de votre ministère de l’éducation ou auprès de l’ambassade de votre pays dans le pays de destination.
 
@@ -59,20 +59,20 @@ Généralement les étudiants étrangers paient des frais académiques supérieu
 
 Beaucoup d’étudiants ne savent souvent pas où trouver les différentes bourses d’études. En effet, il existe trois types de bourses en ce qui concerne l’origine de la bourse:
 
-* _**
-  Les bourses gouvernementales.**_
+* **_
+  Les bourses gouvernementales._**
 
 Ces bourses sont offertes par les gouvernements, soit à travers les ententes entre pays, soit dans des efforts d’encouragement des pays en voie de développement ou encore pour faire évoluer un champs de recherche donné. Ces bourses sont souvent publiées par l’entremise des sites web du gouvernement ou au journal officiel du pays. Ces bourses sont souvent assorties des clauses de retour dans son pays d’origine à la fin de ses études. Malheureusement dans plusieurs pays d’Afrique, ces appels sont souvent moins transparents d’où un des objets de RDC Études est de partager ces informations pour que plusieurs personnes y aient accès. 
 
-* **_
+* _**
   Les bourses offertes par des organismes internationaux.
-  _**
+  **_
 
 Les organismes internationaux comme la banque mondiale ou la coopération technique belge par exemple, offrent des bourses d’études aux étudiants des pays membres de leurs organismes. Ces bourses sont souvent mises en ligne via les sites web de ces organisations et affichées dans les universités locales. Comme les bourses gouvernementales, ces bourses sont souvent assorties des clauses de retour dans son pays d’origine.
 
-* _**
+* **_
   Les bourses offertes par des universités étrangères.
-  **_
+  _**
 
 Ces bourses sont offertes par les universités aux étudiants déjà admis. Ces bourses couvrent rarement la totalité des frais académiques et sont souvent basées soit sur le dossier académique de l’étudiant ou ses besoins financiers.
 
@@ -80,9 +80,9 @@ Certaines universités, comme l’Université d’Ottawa, offrent des bourses de
 
 Ces bourses sont souvent affichées sur les sites web des universités concernées.
 
-* _**
+* **_
   Les bourses offerte par des particuliers.
-  **_
+  _**
 
 Certains donateurs généreux offrent aussi des bourses aux étudiants. Ces bourses sont souvent affichés sur le site web des universités concernées. Ces bourses sont relativement difficiles à trouver car  elles ne sont pas souvent regroupées en un seul endroit.
 
