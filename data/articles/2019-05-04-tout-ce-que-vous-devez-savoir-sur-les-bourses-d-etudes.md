@@ -89,3 +89,5 @@ Certains donateurs généreux offrent aussi des bourses aux étudiants. Ces bour
 Ainsi dit, vous voyez qu’il y’a plusieurs types de bourses auxquelles vous pouvez postuler. Généralement cela dépend de vos résultats académiques et votre capacité financière. Les bourses d’études complètes par exemple sont beaucoup plus compétitives et exigeantes que les bourses partielles. Cependant si vous n’avez pas assez des moyens disponibles, il sera difficile d’aller étudier à l’étranger même avec une bourse partielle.
 
 Nous savons aussi qu’il n’est pas évident de trouver les bourses disponibles et souvent l’information est juste partagée à un certain groupe de personnes. C’est pour cette raison que RDC Études existe. Notre objectif est de rendre cette information disponible à tout le monde et d’assister ceux qui en ont besoin dans leurs démarches d’obtention de bourse.
+
+Pour plus d'informations, consultez nos guides des démarches(Belgique, Canada, Etats-Unis).
