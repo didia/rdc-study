@@ -90,4 +90,4 @@ Ainsi dit, vous voyez qu’il y’a plusieurs types de bourses auxquelles vous p
 
 Nous savons aussi qu’il n’est pas évident de trouver les bourses disponibles et souvent l’information est juste partagée à un certain groupe de personnes. C’est pour cette raison que RDC Études existe. Notre objectif est de rendre cette information disponible à tout le monde et d’assister ceux qui en ont besoin dans leurs démarches d’obtention de bourse.
 
-Pour plus d'informations concernant les procédures pour étudier à l'étranger, consultez nos guides des démarches ( [Belgique](https://www.rdcetudes.com/guides/belgique), [Canada](https://www.rdcetudes.com/guides/canada), [Etats-Unis](https://www.rdcetudes.com/guides/usa)).
+Pour plus d'informations concernant les procédures pour étudier à l'étranger, consultez nos guides ( [Belgique](https://www.rdcetudes.com/guides/belgique), [Canada](https://www.rdcetudes.com/guides/canada), [Etats-Unis](https://www.rdcetudes.com/guides/usa)).
