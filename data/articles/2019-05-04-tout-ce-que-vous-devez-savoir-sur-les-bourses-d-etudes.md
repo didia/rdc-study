@@ -53,12 +53,15 @@ Beaucoup d’étudiants ne savent souvent pas où trouver les différentes bours
 
 1. _**Les bourses gouvernementales.**_\
    Ces bourses sont offertes par les gouvernements, soit à travers les ententes entre pays, soit dans des efforts d’encouragement des pays en voie de développement ou encore pour faire évoluer un champs de recherche donné. Ces bourses sont souvent publiées par l’entremise des sites web du gouvernement ou au journal officiel du pays. Ces bourses sont souvent assorties des clauses de retour dans son pays d’origine à la fin de ses études. Malheureusement dans plusieurs pays d’Afrique, ces appels sont souvent moins transparents d’où un des objets de RDC Études est de partager ces informations pour que plusieurs personnes y aient accès.
+
 2. **_Les bourses offertes par des organismes internationaux._**\
    Les organismes internationaux comme la banque mondiale ou la coopération technique belge par exemple, offrent des bourses d’études aux étudiants des pays membres de leurs organismes. Ces bourses sont souvent mises en ligne via les sites web de ces organisations et affichées dans les universités locales. Comme les bourses gouvernementales, ces bourses sont souvent assorties des clauses de retour dans son pays d’origine.
+
 3. _**Les bourses offertes par des universités étrangères.**_\
    Ces bourses sont offertes par les universités aux étudiants déjà admis. Ces bourses couvrent rarement la totalité des frais académiques et sont souvent basées soit sur le dossier académique de l’étudiant ou ses besoins financiers.\
    Certaines universités, comme l’Université d’Ottawa, offrent des bourses de réduction des frais académiques à leurs étudiants francophones. Ces bourses ne sont pas assorties des clauses de retour comme les deux précédentes.\
    Ces bourses sont souvent affichées sur les sites web des universités concernées.
+
 4. _**Les bourses offertes par des particuliers.**_\
    Certains donateurs généreux offrent aussi des bourses aux étudiants. Ces bourses sont souvent affichés sur le site web des universités concernées. Ces bourses sont relativement difficiles à trouver car elles ne sont pas souvent regroupées en un seul endroit.
 
