@@ -30,11 +30,11 @@ date: '2019-05-04T19:21:07-04:00'
 ---
 En effet, les étudiants cherchent souvent une bourse d’études pouvant prendre en charge toutes leurs dépenses, c’est-à-dire les frais de scolarité, le logement et les frais de subsistance dans leur pays de destination. Cependant, c’est très rare de tomber sur les bourses d’études qui offrent tous ces avantages.
 
-Aussi, il est plus facile de trouver des bourses d’études pour les cycles supérieures (maîtrise et doctorat) que celles du premier cycle (licence ou baccalauréat). Cependant, en sachant quels sont les différents types de bourses, nous pensons que vous serez mieux en mesure de cerner vos options.
+Aussi, il est plus facile de trouver des bourses d’études pour les cycles supérieurs (maîtrise et doctorat) que celles du premier cycle (licence ou baccalauréat). Cependant, en sachant quels sont les différents types de bourses, nous pensons que vous serez mieux en mesure de cerner vos options.
 
 ## **Types de bourses d’études selon la couverture**.
 
-Il existe donc trois types de bourses d’études en ce qui concerne la couverture des dépenses:
+Il existe trois types de bourses d’études en ce qui concerne la couverture des dépenses:
 
 1. _**Les bourses d’études complètes**_\
    Les bourses complètes sont les bourses qui offrent non seulement les frais de scolarité mais aussi tous les autres frais nécessaires à la survie de l’étudiant dans son pays de destination. Ces bourses sont les plus sollicitées des étudiants et en même temps les plus rares. Elles sont souvent offertes par des gouvernements ou des grands organismes internationaux.\
@@ -52,14 +52,14 @@ Il existe donc trois types de bourses d’études en ce qui concerne la couvertu
 Beaucoup d’étudiants ne savent souvent pas où trouver les différentes bourses d’études. En effet, il existe trois types de bourses en ce qui concerne l’origine de la bourse:
 
 1. _**Les bourses gouvernementales.**_\
-   Ces bourses sont offertes par les gouvernements, soit à travers les ententes entre pays, soit dans des efforts d’encouragement des pays en voie de développement ou encore pour faire évoluer un champs de recherche donné. Ces bourses sont souvent publiées par l’entremise des sites web du gouvernement ou au journal officiel du pays. Ces bourses sont souvent assorties des clauses de retour dans son pays d’origine à la fin de ses études. Malheureusement dans plusieurs pays d’Afrique, ces appels sont souvent moins transparents d’où un des objets de RDC Études est de partager ces informations pour que plusieurs personnes y aient accès.
+   Ces bourses sont offertes par les gouvernements, soit à travers les ententes entre pays, soit dans des efforts d’encouragement des pays en voie de développement ou encore pour faire évoluer un champs de recherche donné. Elles sont souvent publiées par l’entremise des sites web du gouvernement ou au journal officiel du pays et sont souvent assorties des clauses de retour dans son pays d’origine à la fin de ses études. Malheureusement dans plusieurs pays d’Afrique, ces appels sont souvent moins transparents d’où un des objets de RDC Études est de partager ces informations pour que plusieurs personnes y aient accès.
 
 2. **_Les bourses offertes par des organismes internationaux._**\
    Les organismes internationaux comme la banque mondiale ou la coopération technique belge par exemple, offrent des bourses d’études aux étudiants des pays membres de leurs organismes. Ces bourses sont souvent mises en ligne via les sites web de ces organisations et affichées dans les universités locales. Comme les bourses gouvernementales, ces bourses sont souvent assorties des clauses de retour dans son pays d’origine.
 
 3. _**Les bourses offertes par des universités étrangères.**_\
    Ces bourses sont offertes par les universités aux étudiants déjà admis. Ces bourses couvrent rarement la totalité des frais académiques et sont souvent basées soit sur le dossier académique de l’étudiant ou ses besoins financiers.\
-   Certaines universités, comme l’Université d’Ottawa, offrent des bourses de réduction des frais académiques à leurs étudiants francophones. Ces bourses ne sont pas assorties des clauses de retour comme les deux précédentes.\
+   Certaines universités, comme [l’Université d’Ottawa](https://www.rdcetudes.com/articles/2018-07-30-%C3%A9tudier-%C3%A0-co%C3%BBts-r%C3%A9duits-%C3%A0-l-universit%C3%A9-d-ottawa), offrent des bourses de réduction des frais académiques à leurs étudiants francophones. Ces bourses ne sont pas assorties des clauses de retour comme les deux précédentes.\
    Ces bourses sont souvent affichées sur les sites web des universités concernées.
 
 4. _**Les bourses offertes par des particuliers.**_\
