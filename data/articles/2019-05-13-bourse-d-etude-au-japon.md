@@ -31,7 +31,7 @@ thumbnailCredits: >-
 tags:
   - Bourse d'études
   - Japon
-  - ''
+  - étudier gratuite au Japon
 date: '2019-05-13T18:20:36-04:00'
 ---
 En effet, il y a six types de Bourses d'études du gouvernement japonais (Monbukagakusho): 
