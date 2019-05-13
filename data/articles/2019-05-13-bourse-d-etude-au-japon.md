@@ -36,50 +36,18 @@ date: '2019-05-13T18:20:36-04:00'
 ---
 En effet, il y a six types de Bourses d'études du gouvernement japonais (Monbukagakusho): 
 
-
-
 * Bourse de premier cycle/Licence (inscription en juin);
-
-
-
 * Bourse de recherche ou master (inscription en mai);
-
-
-
 * Écoles Techniques supérieures (inscription en juin);
-
-
-
 * Cours de profession et spécialisation (inscription en juin);
-
-
-
 * Bourse pour les professeurs des études primaires et secondaires (inscription en janvier/février);
-
-
-
 * JET programme pour les coordonnateurs de relations internationales (inscription en décembre)
-
-
-
 
 Qui couvrent :
 
 * Allocation: Le montant du déboursement mensuel de la bourse d’études reste à déterminer, mais généralement, il revient à 117,000 yen par mois soit près de 1080 USD.
-
-
-
 * Transport au Japon : Vous avez droit à un billet d’aller vers le japon et de retour vers votre pays d’origine;
-
-
-
 * Les frais pour l'examen d'entrée, l'inscription et les frais de scolarité.
-
-
-
-
-
-
 
 Chacune de ces bourses dispose de ses propres critères d'éligibilité, veuillez donc postuler pour le type qui correspond le mieux à vos critères personnels. Veuillez consulter le [site du ministère](https://www.studyjapan.go.jp/fr/index.html) pour plus des détails. Les délais des applications diffèrent selon les pays, de ce fait nous vous recommandons donc de contacter l’ambassade ou le consulat général du Japon dans votre pays, si vous ne savez pas où se trouve l’ambassade, ne vous inquiétez surtout pas, vous pouvez trouver sa localisation sur le [site](https://www.mofa.go.jp/about/emb_cons/mofaserv.html) même du ministère.
 
@@ -91,6 +59,17 @@ En guise de bien vous préparer pour l’examen, vous pouvez consulter [les épr
 
 Au cas où vous ne serez pas intéressés par la bourse du gouvernement, il existe d’autres programmes des bourses pour le Japon tels que [Pamphlet "Scholarships for International Students in Japan 2019-2020"](https://www.jasso.go.jp/en/study_j/scholarships/brochure.html), [Student Exchange Support Program](https://www.jasso.go.jp/en/study_j/scholarships/short_term.html) (Scholarship for Short-term Study in Japan) et [Scholarships for Study in Japan](https://www.jasso.go.jp/en/study_j/scholarships/index.html).
 
-N’hésitez surtout pas de nous contacter, nous sommes disposés à répondre à toutes vos questions!
+Pour toutes vos préoccupations, veuillez vous rendre ou contacter l’ambassade du Japon, à Kinshasa, au sein la concession Immotex, sur l’avenue Colonel Mondjiba n 372, Ngaliema.
+Fonctionnement: Du lundi au vendredi de 7h30-12h30 13h30-16h15
+
+TEL : 
+
+* +243 81 555 4731
+* +243 81 555 4732
+* +243 81 555 4733
+* +243 81 555 4734
+
+
+
 
 Nous vous encourageons à postuler et bonne chance !
