@@ -81,15 +81,15 @@ Qui couvrent :
 
 
 
-Chacune de ces bourses dispose de ses propres critères d'éligibilité, veuillez donc postuler pour le type qui correspond le mieux à vos critères personnels. Veuillez consulter le \[site du ministère](https://www.studyjapan.go.jp/fr/index.html) pour plus des détails. Les délais des applications diffèrent selon les pays, de ce fait nous vous recommandons donc de contacter l’ambassade ou le consulat général du Japon dans votre pays, si vous ne savez pas où se trouve l’ambassade, ne vous inquiétez surtout pas, vous pouvez trouver sa localisation sur le \[site](https://www.mofa.go.jp/about/emb_cons/mofaserv.html) même du ministère.
+Chacune de ces bourses dispose de ses propres critères d'éligibilité, veuillez donc postuler pour le type qui correspond le mieux à vos critères personnels. Veuillez consulter le [site du ministère](https://www.studyjapan.go.jp/fr/index.html) pour plus des détails. Les délais des applications diffèrent selon les pays, de ce fait nous vous recommandons donc de contacter l’ambassade ou le consulat général du Japon dans votre pays, si vous ne savez pas où se trouve l’ambassade, ne vous inquiétez surtout pas, vous pouvez trouver sa localisation sur le [site](https://www.mofa.go.jp/about/emb_cons/mofaserv.html) même du ministère.
 
 Nous tenons à souligner que la bourse ainsi que les démarches sont totalement gratuites. Veuillez noter que les organismes et les particuliers qui vous exigent une commission ou une garantie n’ont aucun rapport avec le gouvernement du Japon, soyez vigilants! 
 
-Concernant \[les procédures d’admission](https://www.studyjapan.go.jp/fr/index.html) :  la sélection initiale (analyse des documents, examen écrit et entretien) est effectuée à l'ambassade du Japon entre juin et juillet, celle-ci recommande ensuite les candidats sélectionnés au ministère de l'Éducation, de la Culture, des Sports, de la Science et de la Technologie du Japon (MEXT) par l'intermédiaire du ministère des Affaires étrangères à la fin du mois d'août.
+Concernant [les procédures d’admission](https://www.studyjapan.go.jp/fr/index.html) :  la sélection initiale (analyse des documents, examen écrit et entretien) est effectuée à l'ambassade du Japon entre juin et juillet, celle-ci recommande ensuite les candidats sélectionnés au ministère de l'Éducation, de la Culture, des Sports, de la Science et de la Technologie du Japon (MEXT) par l'intermédiaire du ministère des Affaires étrangères à la fin du mois d'août.
 
-En guise de bien vous préparer pour l’examen, vous pouvez consulter \[les épreuves des années antérieures](https://www.studyjapan.go.jp/en/toj/toj0302e-32.html#1).
+En guise de bien vous préparer pour l’examen, vous pouvez consulter [les épreuves des années antérieures](https://www.studyjapan.go.jp/en/toj/toj0302e-32.html#1).
 
-Au cas où vous ne serez pas intéressés par la bourse du gouvernement, il existe d’autres programmes des bourses pour le Japon tels que \[Pamphlet "Scholarships for International Students in Japan 2019-2020"](https://www.jasso.go.jp/en/study_j/scholarships/brochure.html), \[Student Exchange Support Program](https://www.jasso.go.jp/en/study_j/scholarships/short_term.html) (Scholarship for Short-term Study in Japan) et \[Scholarships for Study in Japan](https://www.jasso.go.jp/en/study_j/scholarships/index.html).
+Au cas où vous ne serez pas intéressés par la bourse du gouvernement, il existe d’autres programmes des bourses pour le Japon tels que [Pamphlet "Scholarships for International Students in Japan 2019-2020"](https://www.jasso.go.jp/en/study_j/scholarships/brochure.html), [Student Exchange Support Program](https://www.jasso.go.jp/en/study_j/scholarships/short_term.html) (Scholarship for Short-term Study in Japan) et [Scholarships for Study in Japan](https://www.jasso.go.jp/en/study_j/scholarships/index.html).
 
 N’hésitez surtout pas de nous contacter, nous sommes disposés à répondre à toutes vos questions!
 
