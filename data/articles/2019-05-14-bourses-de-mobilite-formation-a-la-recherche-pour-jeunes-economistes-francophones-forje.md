@@ -13,11 +13,7 @@ date: '2019-05-14T17:13:28-03:00'
 ---
 Ces séjours donnent aux jeunes francophones l’occasion d’apprendre à mieux connaître le monde de la recherche universitaire, leur permettant ainsi de consolider leurs connaissances dans leur domaine de la recherche, de faire partie d’un réseau des chercheurs internationaux et d’établir des collaborations en recherche avec d’autres jeunes et avec des chercheurs aguerris.
 
-
-
 La bourse couvre : 
-
-
 
 Billet d’avion aller-retour en classe économique entre le pays de résidence du boursier et le pays de séjour
 
@@ -26,8 +22,6 @@ Assurance voyage de base
 Allocation forfaitaire applicable aux frais d’installation dans le pays de séjour, aux frais de visa et aux frais de transport (montant variable en fonction du pays de séjour)
 
 Allocation mensuelle de subsistance (montant variable en fonction du pays de séjour)
-
-
 
 Conditions de participation :
 
