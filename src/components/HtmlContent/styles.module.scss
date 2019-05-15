@@ -1,4 +1,9 @@
 .html-content {
+  p + ul,
+  p + ol {
+    margin-top: -1.5em;
+  }
+
   a {
     border-bottom: transparent;
     color: _palette(link-blue);
