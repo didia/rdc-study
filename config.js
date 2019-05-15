@@ -26,6 +26,6 @@ export default {
   siteKeywords: 'etudier à l’étranger, étudier au Canada, étudier en France, étudier aux États—Unis',
   siteLogo: '/logo.png',
   siteImage: '/sharable-image.jpg',
-  siteTitle: 'RDC Etudes - Votre source d’informations sur les études à l’étranger.!',
+  siteTitle: 'RDC Etudes - Votre source d’informations sur les études à l’étranger!',
   siteURL: process.env.GATSBY_SITE_URL || 'https://www.rdcetudes.com'
 };
