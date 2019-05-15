@@ -90,11 +90,12 @@ const SEO = ({meta}) => {
       <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
 
       {/* OpenGraph tags */}
+      <meta property="og:site_name" content={config.siteTitle} />
       <meta property="og:url" content={meta ? postURL : blogURL} />
       <meta property="og:type" content={meta ? 'article' : 'website'} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={imageURL} />
+      <meta property="og:image" itemProp="image" content={imageURL} />
       {imageWidth && <meta property="og:image:width" content={imageWidth} />}
       {imageHeight && <meta property="og:image:height" content={imageHeight} />}
       <meta property="fb:app_id" content={config.siteFBAppID} />
