@@ -10,6 +10,8 @@ excerpt: >
   intérêts en recherche s’arriment avec les axes prioritaires de l’OFE. 
 thumbnail: /images/uploads/poodar-chu-775490-unsplash.jpg
 thumbnailCredits: 'https://bit.ly/2w5mO8b'
+tags:
+  - bourse d'études pour étudiants en économie
 date: '2019-05-14T17:13:28-03:00'
 ---
 Ces séjours donnent aux jeunes francophones l’occasion d’apprendre à mieux connaître le monde de la recherche universitaire, leur permettant ainsi de consolider leurs connaissances dans leur domaine de la recherche, de faire partie d’un réseau des chercheurs internationaux et d’établir des collaborations en recherche avec d’autres jeunes et avec des chercheurs aguerris.
