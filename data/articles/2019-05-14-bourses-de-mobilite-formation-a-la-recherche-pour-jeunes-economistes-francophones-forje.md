@@ -9,8 +9,7 @@ excerpt: >
   l’international au profit de jeunes doctorants et post doctorants dont les
   intérêts en recherche s’arriment avec les axes prioritaires de l’OFE. 
 thumbnail: /images/uploads/poodar-chu-775490-unsplash.jpg
-thumbnailCredits: >-
-  https://unsplash.com/@poodar?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge
+thumbnailCredits: 'https://bit.ly/2w5mO8b'
 date: '2019-05-14T17:13:28-03:00'
 ---
 Ces séjours donnent aux jeunes francophones l’occasion d’apprendre à mieux connaître le monde de la recherche universitaire, leur permettant ainsi de consolider leurs connaissances dans leur domaine de la recherche, de faire partie d’un réseau des chercheurs internationaux et d’établir des collaborations en recherche avec d’autres jeunes et avec des chercheurs aguerris.
