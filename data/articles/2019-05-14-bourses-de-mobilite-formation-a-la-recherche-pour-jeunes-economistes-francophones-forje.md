@@ -8,30 +8,28 @@ excerpt: >
   consiste à financer des séjours de recherche de trois à quatre mois à
   l’international au profit de jeunes doctorants et post doctorants dont les
   intérêts en recherche s’arriment avec les axes prioritaires de l’OFE. 
-thumbnail: /images/uploads/149453-otyqze-777.jpg
+thumbnail: /images/uploads/poodar-chu-775490-unsplash.jpg
+thumbnailCredits: 'https://bit.ly/2w5mO8b'
+tags:
+  - bourse d'études pour étudiants en économie
 date: '2019-05-14T17:13:28-03:00'
 ---
 Ces séjours donnent aux jeunes francophones l’occasion d’apprendre à mieux connaître le monde de la recherche universitaire, leur permettant ainsi de consolider leurs connaissances dans leur domaine de la recherche, de faire partie d’un réseau des chercheurs internationaux et d’établir des collaborations en recherche avec d’autres jeunes et avec des chercheurs aguerris.
 
 La bourse couvre : 
 
-Billet d’avion aller-retour en classe économique entre le pays de résidence du boursier et le pays de séjour
-
-Assurance voyage de base
-
-Allocation forfaitaire applicable aux frais d’installation dans le pays de séjour, aux frais de visa et aux frais de transport (montant variable en fonction du pays de séjour)
-
-Allocation mensuelle de subsistance (montant variable en fonction du pays de séjour)
+* Billet d’avion aller-retour en classe économique entre le pays de résidence du boursier et le pays de séjour
+* Assurance voyage de base
+* Allocation forfaitaire applicable aux frais d’installation dans le pays de séjour, aux frais de visa et aux frais de transport (montant variable en fonction du pays de séjour)
+* Allocation mensuelle de subsistance (montant variable en fonction du pays de séjour)
 
 Conditions de participation :
 
-Avoir 35 ans ou moins
+* Avoir 35 ans ou moins
+* Être originaire d’un pays africain francophone
+* Être inscrit dans un programme de doctorat (dans n’importe quelle université du monde) et projeter de compléter ce programme avant le 31 septembre 2020 ou avoir obtenu son doctorat après le 1er septembre 2018
 
-Être originaire d’un pays africain francophone
-
-Être inscrit dans un programme de doctorat (dans n’importe quelle université du monde) et projeter de compléter ce programme avant le 31 septembre 2020 ou avoir obtenu son doctorat après le 1er septembre 2018
-
-Travailler sur un sujet qui s’inscrit dans un des axes de recherche de l’OFE (https://ofe.umontreal.ca/a-propos/axes-de-recherche/)
+Travailler sur un sujet qui s’inscrit dans un des axes de recherche de l’OFE (<https://ofe.umontreal.ca/a-propos/axes-de-recherche/>)
 
 Avoir un bon dossier académique
 
