@@ -27,7 +27,7 @@ thumbnailCredits: >-
   style="display:inline-block;padding:2px 3px">Poodar Chu</span></a>
 tags:
   - bourse d'études pour étudiants en économie
-date: '2019-05-14T17:13:28-03:00'
+date: '2019-05-18T08:30:00-04:00'
 ---
 Ces séjours donnent aux jeunes francophones l’occasion d’apprendre à mieux connaître le monde de la recherche universitaire, leur permettant ainsi de consolider leurs connaissances dans leur domaine de la recherche, de faire partie d’un réseau des chercheurs internationaux et d’établir des collaborations en recherche avec d’autres jeunes et avec des chercheurs aguerris.
 
