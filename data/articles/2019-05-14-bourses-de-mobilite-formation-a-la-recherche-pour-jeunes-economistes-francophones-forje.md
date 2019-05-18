@@ -15,23 +15,18 @@ Ces séjours donnent aux jeunes francophones l’occasion d’apprendre à mieux
 
 La bourse couvre : 
 
-Billet d’avion aller-retour en classe économique entre le pays de résidence du boursier et le pays de séjour
-
-Assurance voyage de base
-
-Allocation forfaitaire applicable aux frais d’installation dans le pays de séjour, aux frais de visa et aux frais de transport (montant variable en fonction du pays de séjour)
-
-Allocation mensuelle de subsistance (montant variable en fonction du pays de séjour)
+* Billet d’avion aller-retour en classe économique entre le pays de résidence du boursier et le pays de séjour
+* Assurance voyage de base
+* Allocation forfaitaire applicable aux frais d’installation dans le pays de séjour, aux frais de visa et aux frais de transport (montant variable en fonction du pays de séjour)
+* Allocation mensuelle de subsistance (montant variable en fonction du pays de séjour)
 
 Conditions de participation :
 
-Avoir 35 ans ou moins
+* Avoir 35 ans ou moins
+* Être originaire d’un pays africain francophone
+* Être inscrit dans un programme de doctorat (dans n’importe quelle université du monde) et projeter de compléter ce programme avant le 31 septembre 2020 ou avoir obtenu son doctorat après le 1er septembre 2018
 
-Être originaire d’un pays africain francophone
-
-Être inscrit dans un programme de doctorat (dans n’importe quelle université du monde) et projeter de compléter ce programme avant le 31 septembre 2020 ou avoir obtenu son doctorat après le 1er septembre 2018
-
-Travailler sur un sujet qui s’inscrit dans un des axes de recherche de l’OFE (https://ofe.umontreal.ca/a-propos/axes-de-recherche/)
+Travailler sur un sujet qui s’inscrit dans un des axes de recherche de l’OFE (<https://ofe.umontreal.ca/a-propos/axes-de-recherche/>)
 
 Avoir un bon dossier académique
 
