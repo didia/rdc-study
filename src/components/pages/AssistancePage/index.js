@@ -132,6 +132,13 @@ const AssistancePage = () => {
             </Link>
           )}
         </FormattedMessage>
+
+        <p style={{marginTop: '20px'}}>
+          <FormattedMessage id="pages.assistance.visa.warning" />
+          <FormattedMessage id="pages.assistance.visa.warning-learn-more">
+            {text => <Link to="/assistance-visa">{text}</Link>}
+          </FormattedMessage>
+        </p>
       </section>
 
       <section className={styles['offer-block']}>
