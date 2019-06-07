@@ -1,5 +1,5 @@
 ---
-title: Bourses postdoctorales Banting
+title: BOURSES POSTDOCTORALES BANTING
 excerpt: >-
   Chaque année le gouvernement canadien offre 70 bourses d’une valeur de 70.000
   dollars canadiens pour une durée de 2 ans non renouvelable aux étudiants
