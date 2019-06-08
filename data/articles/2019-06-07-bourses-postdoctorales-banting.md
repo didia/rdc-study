@@ -1,10 +1,12 @@
 ---
-title: BOURSES POSTDOCTORALES BANTING
+title: >-
+  Faites votre postdoc au Canada gratuitement grâce à la bourse postdoctorale
+  Banting.
 excerpt: >-
   Chaque année le gouvernement canadien offre 70 bourses d’une valeur de 70.000
-  dollars canadiens par année pour une durée de 2 ans non renouvelable aux étudiants
-  postdoctoraux afin qu'ils contribuent à l'essor économique, social et
-  scientifique du Canada.
+  dollars canadiens par année pour une durée de 2 ans non renouvelable aux
+  étudiants postdoctoraux afin qu'ils contribuent à l'essor économique, social
+  et scientifique du Canada. 
 thumbnail: /images/uploads/good-free-photos-773344-unsplash.jpg
 thumbnailCredits: >-
   <a style="background-color:black;color:white;text-decoration:none;padding:4px
@@ -23,25 +25,35 @@ thumbnailCredits: >-
   style="display:inline-block;padding:2px 3px">Good Free Photos</span></a>
 date: '2019-06-07T18:29:32-03:00'
 ---
+L’objectif de la bourse Banting est d’attirer les meilleurs candidats / chercheurs leur permettant de développer leur potentiel et les positionner comme meneurs des groupes de recherche.
 
-L’objectif est d’attirer les meilleurs candidats / chercheurs leur permettant de développer leur potentiel et les positionner comme meneurs des groupes de recherche. Étant une bourse d’excellence, toutes les demandes d’admission sont présentées et évaluées par les institutions de recherche en santé du Canada ([IRSC](http://banting.fellowships-bourses.gc.ca/fr/rev-eval_selection.html#tab1), [CRSNG](http://banting.fellowships-bourses.gc.ca/fr/rev-eval_selection.html#tab2), [CRSH](http://banting.fellowships-bourses.gc.ca/fr/rev-eval_selection.html#tab3)) en se basant sur [les critères d’admission suivants :
-](http://banting.fellowships-bourses.gc.ca/fr/rev-eval_overview-apercu.html)
+Pour pouvoir être admissible à cette bours:
 
-1. Excellence et leadership du candidat dans le domaine de la recherche
-2. Qualité du programme présentée par le sollicitant
-3. Le mariage entre les priorités de l'établissement et le candidat
+1. Vous devez avoir obtenu ou vous obtiendrez votre diplôme entre 16 septembre 2016 et le 30 septembre 2020,
+2. Votre programme de recherche vise soit les domaines de la santé, soit les sciences naturelles et/ou ingénierie ou soit les sciences sociales et humaines.
+3. Vous devez avoir déjà été selectionné par un établissement d'enseignement qui vous accueillera pour votre postdoc.
+
+Pour en savoir plus sur les critères d'admissibilité, consultez [la page de la bourse à ce sujet](http://banting.fellowships-bourses.gc.ca/fr/app-dem_elig-adm.html).
+
+En postulant pour cette bourse, votre candidature sera évaluée selon les critères suivants:
+
+1. Votre excellence et leadership dans le domaine de la recherche.
+2. La qualité du programme de recherche que vous allez proposer.
+3. L'engagement de l'établissement d'enseignement à vous soutenir ainsi que la correspondance entre votre programme de recherche ainsi que les priorités de stratégiques du dit établissement d'enseignement.
+
+Pour en savoir plus sur les critères de selection de cette bourse, consultez [la page de la bourse à ce sujet](http://banting.fellowships-bourses.gc.ca/fr/rev-eval_overview-apercu.html).
 
 Sont éligibles :
 
-- Les citoyens Canadiens
-- Résidents permanents au Canada
-- Citoyens étrangers vivants hors du Canada
+* Les citoyens Canadiens
+* Résidents permanents au Canada
+* Citoyens étrangers vivants hors du Canada
 
 Domaines de la bourse :
 
-- Sciences sociales et humaines
-- Sciences naturelles et/ou génie
-- Recherche en santé
+* Sciences sociales et humaines
+* Sciences naturelles et/ou génie
+* Recherche en santé
 
 Vous pouvez vous servir du [guide de présentation des demandes](http://banting.fellowships-bourses.gc.ca/fr/app-dem_guide.html) , disponible sur le site internet du gouvernement canadien, pour éviter d’être désorientés pendant votre processus de demande d’admission. Toutefois, avant de commencer votre processus de demande, il est impératif de lire [le guide à l’intention du comité de sélection](http://banting.fellowships-bourses.gc.ca/fr/app-dem_guide.html) où sont donnés les trois critères d'évaluation et des renseignements utiles sur la façon dont ces critères sont évalués.
 
