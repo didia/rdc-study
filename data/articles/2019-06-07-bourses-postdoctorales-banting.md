@@ -25,7 +25,7 @@ thumbnailCredits: >-
   style="display:inline-block;padding:2px 3px">Good Free Photos</span></a>
 date: '2019-06-07T18:29:32-03:00'
 ---
-L’objectif de la bourse Banting est d’attirer les meilleurs candidats / chercheurs leur permettant de développer leur potentiel et les positionner comme meneurs des groupes de recherche. Cette bourse n'est donc pas destinée aux fins de l'obtention d'un diplôme.
+L’objectif de la bourse Banting est d’attirer les meilleurs candidats / chercheurs leur permettant de développer leur potentiel et les positionner comme meneurs des groupes de recherche. Cette bourse n’est donc pas destinée aux fins de l'obtention d'un diplôme.
 
 Pour pouvoir être admissible à cette bourse:
 
@@ -33,13 +33,13 @@ Pour pouvoir être admissible à cette bourse:
 2. Votre programme de recherche vise soit les domaines de la santé, soit les sciences naturelles et/ou ingénierie ou soit les sciences sociales et humaines.
 3. Vous devez avoir déjà été sélectionné par un établissement d'enseignement qui vous accueillera pour votre postdoc.
 
-Pour en savoir plus sur les critères d'admissibilité, consultez [la page de la bourse à ce sujet](http://banting.fellowships-bourses.gc.ca/fr/app-dem_elig-adm.html).
+Pour en savoir plus sur les critères d’admissibilité, consultez [la page de la bourse à ce sujet](http://banting.fellowships-bourses.gc.ca/fr/app-dem_elig-adm.html).
 
 En postulant pour cette bourse, votre candidature sera évaluée selon les critères suivants:
 
 1. Votre excellence et leadership dans le domaine de la recherche.
 2. La qualité du programme de recherche que vous allez proposer.
-3. L'engagement de l'établissement d'enseignement à vous soutenir ainsi que la correspondance entre votre programme de recherche ainsi que les priorités de stratégiques du dit établissement d'enseignement.
+3. L'engagement de l’établissement d'enseignement à vous soutenir ainsi que la correspondance entre votre programme de recherche ainsi que les priorités de stratégiques du dit établissement d'enseignement.
 
 Pour en savoir plus sur les critères de sélection de cette bourse, consultez [la page de la bourse à ce sujet](http://banting.fellowships-bourses.gc.ca/fr/rev-eval_overview-apercu.html).
 
