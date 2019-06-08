@@ -27,15 +27,15 @@ date: '2019-06-07T18:29:32-03:00'
 ---
 L’objectif de la bourse Banting est d’attirer les meilleurs candidats / chercheurs leur permettant de développer leur potentiel et les positionner comme meneurs des groupes de recherche. Cette bourse n’est donc pas destinée aux fins de l'obtention d'un diplôme.
 
-Pour pouvoir être admissible à cette bourse:
+**Pour pouvoir être admissible à cette bourse**:
 
-1. Vous devez avoir obtenu ou vous obtiendrez votre diplôme entre 16 septembre 2016 et le 30 septembre 2020,
+1. Vous devez avoir obtenu ou vous obtiendrez votre diplôme entre le 16 septembre 2016 et le 30 septembre 2020,
 2. Votre programme de recherche vise soit les domaines de la santé, soit les sciences naturelles et/ou ingénierie ou soit les sciences sociales et humaines.
 3. Vous devez avoir déjà été sélectionné par un établissement d'enseignement qui vous accueillera pour votre postdoc.
 
 Pour en savoir plus sur les critères d’admissibilité, consultez <a href="http://banting.fellowships-bourses.gc.ca/fr/app-dem_elig-adm.html" target="_blank" rel="nofollow noopener">la page de la bourse à ce sujet</a>.
 
-En postulant pour cette bourse, votre candidature sera évaluée selon les critères suivants:
+**En postulant pour cette bourse, votre candidature sera évaluée selon les critères suivants:**
 
 1. Votre excellence et leadership dans le domaine de la recherche.
 2. La qualité du programme de recherche que vous allez proposer.
