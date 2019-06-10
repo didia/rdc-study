@@ -6,7 +6,7 @@ import {Link} from 'gatsby';
 const ContactUsButton = ({className}) => (
   <FormattedMessage id="shared.contact-us-text">
     {text => (
-      <Link to="#contact" className={className}>
+      <Link to={`${window.location.pathname}#contact`} className={className}>
         {text}
       </Link>
     )}
