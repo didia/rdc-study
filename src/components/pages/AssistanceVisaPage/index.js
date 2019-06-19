@@ -69,7 +69,6 @@ const AssistanceVisaPage = () => (
         </li>
         <li>traiter avec immigration Canada en votre nom.</li>
       </ul>
-      Toutefois, nous vous aiderons à utiliser les services en ligne pour que vous soyez capables de le faire vous-même.
       <strong>
         Nous n’avons aucune influence sur les décisions du gouvernement canadien de vous octroyer ou réfuser le visa.
         Cela relève entièrement de l’ambassade. Notre aide se limite à vous accompagner dans le processus de dépôt.
