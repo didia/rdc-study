@@ -1,5 +1,5 @@
 ---
-title: POURQUOI APPRENDRE UNE SECONDE LANGUE?
+title: POURQUOI APPRENDRE UNE NOUVELLE LANGUE?
 excerpt: >
   «J’aimerais étudier aux Etats-Unis mais je ne parle pas l’anglais » ou «
   J’aimerais postuler pour la bourse du Brésil mais étudier en portugais me
