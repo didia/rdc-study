@@ -126,7 +126,10 @@ const plugins = [
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.rdcetudes.com'
+    description:
+      'Accédez à nos guides gratuits sur la préparation d’un projet d’études à l’étranger pour étudiants congolais.',
+    siteUrl: 'https://www.rdcetudes.com',
+    title: 'RDC Etudes - Votre source d’informations sur les études à l’étranger!'
   },
   plugins
 };
