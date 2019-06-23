@@ -14,7 +14,6 @@ const plugins = [
   'gatsby-plugin-sharp',
   'gatsby-plugin-remove-trailing-slashes',
   'gatsby-plugin-catch-links',
-  'gatsby-plugin-feed',
   {
     resolve: 'gatsby-plugin-sitemap',
     options: {
@@ -126,10 +125,7 @@ const plugins = [
 
 module.exports = {
   siteMetadata: {
-    description:
-      'Accédez à nos guides gratuits sur la préparation d’un projet d’études à l’étranger pour étudiants congolais.',
-    siteUrl: 'https://www.rdcetudes.com',
-    title: 'RDC Etudes - Votre source d’informations sur les études à l’étranger!'
+    siteUrl: 'https://www.rdcetudes.com'
   },
   plugins
 };
