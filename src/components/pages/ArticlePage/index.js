@@ -67,7 +67,7 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
 ArticlePage.propTypes = {
   article: T.shape({
     content: T.string.isRequired,
-    metaImage: T.string.isRequired,
+    metaImage: T.object.isRequired,
     date: T.string.isRequired,
     excerpt: T.string.isRequired,
     path: T.string.isRequired,

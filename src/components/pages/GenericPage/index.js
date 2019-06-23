@@ -30,7 +30,7 @@ GenericPage.propTypes = {
   page: T.shape({
     description: T.string.isRequired,
     facebookShareButtonLabelKey: T.string,
-    image: T.string,
+    image: T.object,
     path: T.string.isRequired,
     title: T.string.isRequired
   })
