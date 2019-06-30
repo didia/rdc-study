@@ -51,3 +51,16 @@ Vous êtes 5 000 à nous suivre sur nos différents réseaux sociaux, à savoir 
 Nous avons échangé 3 600 emails avec vous durant la dernière année et un nombre incalculable de des messages messengers et Whatsapp.
 
 Bien que notre site ait été créé initialement pour les informations pour les congolais, nous avons rapidement réalisé que plusieurs autres pays d'Afrique faisaient face à ce problème. Nous avons donc assisté aussi des gens provenant de 10 pays différents dont: Guinée, Haiti, Congo Brazza, Sénégal, La Réunion, Benin, Cameroun, Maroc et Burundi.
+
+## Notre équipe
+
+RDC Etudes est actuellement composée de 9 membres éparpillée à travers le monde qui permettent ainsi de vous assister dans toutes vos différentes préoccupation. Nous remercions ainsi Nadia, Jonathan, Ludovic, Kevin, Césaire, Dieci, Aimé, Grévisse et Aristote qui continuent à donner de leur temps et motivation pour permettre à ce que RDC Etudes avance.
+
+Et bien évidemment, sans oublier vous aussi, qui visitez notre site web, qui nous suivez sur nos différents média sociaux et qui parlez de nous à vos proches; Sans vous, RDC Etudes ne serait pas possible.
+
+## Que nous réserve le futur ?
+
+Nous ne sommes qu'au début, RDC Etudes ne fait que commencer. Nous avons hate d'être plus présent physiquement à Kinshasa, trouver plus d'opportunités de bourses pour les étudiants congolais et commencer avec notre programme des mentors pour les étudiants qui sont déjà à l'étranger.
+
+\
+Si vous voulez contribuer à notre mission, n'hésitez pas de vous abonner à notre page et de  partager nos différents posts sur les réseaux sociaux car en faisant cela vous permettez à plusieurs personnes de nous découvrir et vous le sauvez eux aussi d'une potentielle fraude. Comme l'on dit en Anglais, "Sharing is caring" c'est à dire Partager c'est Aimer.
