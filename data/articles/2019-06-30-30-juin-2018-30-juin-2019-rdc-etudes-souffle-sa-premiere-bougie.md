@@ -49,7 +49,7 @@ Nous voulons vivre dans des pays où:
 * Vous avez été **7 620** à avoir consulté ce site Web et vous passez en moyenne **2 min 45 secondes** sur notre site.
 * Vous êtes **5 000** à nous suivre sur nos différents réseaux sociaux, à savoir Facebook, Instagram et Snapchat.
 * Nous avons échangé **3 600** emails avec vous durant la dernière année et un nombre incalculable des messages messengers et WhatsApp.
-* Nous avons partagé 9 opportunités de bourses d'´tudes
+* Nous avons partagé [**9 opportunités de bourses d'études**](/articles) avec vous.
 
 Bien que notre site ait été créé initialement pour les informations pour les congolais, nous avons rapidement réalisé que plusieurs autres pays d'Afrique faisaient face à ce problème. Nous avons donc assisté aussi des gens provenant de **10 pays différents** dont: Guinée, Haiti, Congo Brazza, Sénégal, La Réunion, Benin, Cameroun, Maroc et Burundi.
 
