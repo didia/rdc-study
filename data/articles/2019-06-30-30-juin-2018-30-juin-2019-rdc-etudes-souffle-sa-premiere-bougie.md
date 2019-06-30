@@ -24,7 +24,7 @@ tags:
   - Bourses d'études
   - Anniversaire
   - Etudier à l'étranger
-date: '2019-06-30T03:20:52-04:00'
+date: '2019-06-30T15:30:00-04:00'
 ---
 En effet, il est difficile de s'imaginer que 365 jours se sont déjà écoulés depuis le lancement de RDC Etudes, ce samedi 30 juin 2018. Nous sommes vraiment reconnaissants du support que vous nous avez apporté durant cette période et tous ces encouragements à aller de l'avant. Nous n'en serons pas où nous en sommes sans votre précieux soutient. Nous avons accompli beaucoup au courant de l'année dernière et nous avons hate de vous le présenter.
 
@@ -63,4 +63,4 @@ Et bien évidemment, sans oublier vous aussi, qui visitez notre site web, qui no
 Nous ne sommes qu'au début, RDC Etudes ne fait que commencer. Nous avons hate d'être plus présent physiquement à Kinshasa, trouver plus d'opportunités de bourses pour les étudiants congolais et commencer avec notre programme des mentors pour les étudiants qui sont déjà à l'étranger.
 
 \
-Si vous voulez contribuer à notre mission, n'hésitez pas de vous abonner à notre page et de  partager nos différents posts sur les réseaux sociaux car en faisant cela vous permettez à plusieurs personnes de nous découvrir et vous le sauvez eux aussi d'une potentielle fraude. Comme l'on dit en Anglais, "Sharing is caring" c'est à dire Partager c'est Aimer.
+Si vous voulez contribuer à notre mission, n'hésitez pas à vous abonner à notre page et à partager nos différents posts sur les réseaux sociaux car en faisant cela vous permettez à plusieurs personnes de nous découvrir et vous le sauvez eux aussi d'une potentielle fraude. Comme l'on dit en Anglais, "Sharing is caring" c'est à dire Partager c'est Aimer.
