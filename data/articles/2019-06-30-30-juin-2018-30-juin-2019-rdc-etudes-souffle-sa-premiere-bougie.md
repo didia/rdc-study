@@ -43,14 +43,14 @@ Nous voulons vivre dans des pays où:
 * Le niveau d'éducation nationale est élevé tel que l'on a pas besoin d'aller nécessairement étudier à l'étranger pour obtenir une éducation de qualité.
 * Les étudiants qui vont étudier à l'étranger ont accès à des mentors qui les aident à bien s'intégrer aux systèmes éducationnels de leurs pays de destination.
 
-## Notre première année en chiffres.
+## Notre première année en chiffres
 
-Nous avons écrit des guides de démarches pour la Belgique, le Canada et les États-Unis que vous avez consulté **23 400** fois. \
-Vous avez été 7 620 à avoir consulté ce site Web et vous passez en moyenne 2 min 45 secondes sur notre site.\
-Vous êtes 5 000 à nous suivre sur nos différents réseaux sociaux, à savoir Facebook, Instagram et Snapchat.\
-Nous avons échangé 3 600 emails avec vous durant la dernière année et un nombre incalculable de des messages messengers et WhatsApp.
+* Nous avons écrit des guides de démarches pour la **Belgique**, le **Canada** et les **États-Unis** que vous avez consulté **23 400** fois. 
+* Vous avez été **7 620** à avoir consulté ce site Web et vous passez en moyenne **2 min 45 secondes** sur notre site.
+* Vous êtes **5 000** à nous suivre sur nos différents réseaux sociaux, à savoir Facebook, Instagram et Snapchat.
+* Nous avons échangé **3 600** emails avec vous durant la dernière année et un nombre incalculable des messages messengers et WhatsApp.
 
-Bien que notre site ait été créé initialement pour les informations pour les congolais, nous avons rapidement réalisé que plusieurs autres pays d'Afrique faisaient face à ce problème. Nous avons donc assisté aussi des gens provenant de 10 pays différents dont: Guinée, Haiti, Congo Brazza, Sénégal, La Réunion, Benin, Cameroun, Maroc et Burundi.
+Bien que notre site ait été créé initialement pour les informations pour les congolais, nous avons rapidement réalisé que plusieurs autres pays d'Afrique faisaient face à ce problème. Nous avons donc assisté aussi des gens provenant de **10 pays différents** dont: Guinée, Haiti, Congo Brazza, Sénégal, La Réunion, Benin, Cameroun, Maroc et Burundi.
 
 ## Notre équipe
 
