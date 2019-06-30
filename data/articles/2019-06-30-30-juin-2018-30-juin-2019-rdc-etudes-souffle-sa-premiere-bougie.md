@@ -26,7 +26,7 @@ tags:
   - Etudier à l'étranger
 date: '2019-06-30T03:20:52-04:00'
 ---
-En effet, il est difficile de s'imaginer que 365 jours se sont déjà écroulés depuis le lancement de RDC Etudes, ce samedi 30 juin 2018. Nous sommes vraiment reconnaissants du support que vous nous avez apporté durant cette période et tous ces encouragements à aller de l'avant. Nous n'en serons pas où nous en sommes sans votre précieux soutient. Nous avons accompli beaucoup au courant de l'année dernière et nous avons hate de vous le présenter.
+En effet, il est difficile de s'imaginer que 365 jours se sont déjà écoulés depuis le lancement de RDC Etudes, ce samedi 30 juin 2018. Nous sommes vraiment reconnaissants du support que vous nous avez apporté durant cette période et tous ces encouragements à aller de l'avant. Nous n'en serons pas où nous en sommes sans votre précieux soutient. Nous avons accompli beaucoup au courant de l'année dernière et nous avons hate de vous le présenter.
 
 ## Notre mission
 
@@ -34,27 +34,27 @@ Notre mission est de permettre à tout congolais d'avoir facilement accès à un
 
 ## Notre vision
 
-Nous voulons que:
+Nous voulons vivre dans des pays où:
 
 * Toute personne désireuse d'aller étudier à l'étranger trouve facilement et gratuitement toutes les informations dont elle a besoin pour bien mener ces démarches;
-* Les personnes veulent aller étudier à l'étranger ne soient pas victimes des charlatans et escrocs qui profitent de leur manque de connaissances;
-* Toute personne ait l'opportunité de postuler pour les bourses d'études et non seulement les ayant-droits ou ceux qui ont des relations;
-* Les bourses soient de nouveau disponibles pour les meilleurs étudiants méritants qui ne sont pas en mesure de se payer leurs études eux-mêmes;
-* Le niveau d'éducation nationale soit élevée pour que l'on ait pas besoin d'aller nécessairement étudier à l'étranger pour obtenir une éducation de qualité.
-* Les étudiants qui vont étudier à l'étranger aient accès à des mentors qui les aident à bien s'intégrer aux systèmes éducationnels de leurs pays de destination.
+* Les personnes qui veulent aller étudier à l'étranger ne sont pas victimes des charlatans et escrocs qui profitent de leur manque de connaissances;
+* Toute personne a l'opportunité de postuler pour les bourses d'études et non seulement les ayant-droits ou ceux qui ont des relations;
+* Les bourses sont de nouveau disponibles pour les meilleurs étudiants méritants qui ne sont pas en mesure de se payer leurs études eux-mêmes;
+* Le niveau d'éducation nationale est élevé tel que l'on a pas besoin d'aller nécessairement étudier à l'étranger pour obtenir une éducation de qualité.
+* Les étudiants qui vont étudier à l'étranger ont accès à des mentors qui les aident à bien s'intégrer aux systèmes éducationnels de leurs pays de destination.
 
 ## Notre première année en chiffres.
 
 Nous avons écrit des guides de démarches pour la Belgique, le Canada et les États-Unis que vous avez consulté **23 400** fois. \
 Vous avez été 7 620 à avoir consulté ce site Web et vous passez en moyenne 2 min 45 secondes sur notre site.\
 Vous êtes 5 000 à nous suivre sur nos différents réseaux sociaux, à savoir Facebook, Instagram et Snapchat.\
-Nous avons échangé 3 600 emails avec vous durant la dernière année et un nombre incalculable de des messages messengers et Whatsapp.
+Nous avons échangé 3 600 emails avec vous durant la dernière année et un nombre incalculable de des messages messengers et WhatsApp.
 
 Bien que notre site ait été créé initialement pour les informations pour les congolais, nous avons rapidement réalisé que plusieurs autres pays d'Afrique faisaient face à ce problème. Nous avons donc assisté aussi des gens provenant de 10 pays différents dont: Guinée, Haiti, Congo Brazza, Sénégal, La Réunion, Benin, Cameroun, Maroc et Burundi.
 
 ## Notre équipe
 
-RDC Etudes est actuellement composée de 9 membres éparpillée à travers le monde qui permettent ainsi de vous assister dans toutes vos différentes préoccupation. Nous remercions ainsi Nadia, Jonathan, Ludovic, Kevin, Césaire, Dieci, Aimé, Grévisse et Aristote qui continuent à donner de leur temps et motivation pour permettre à ce que RDC Etudes avance.
+RDC Etudes est actuellement composée de 9 membres repartis à travers le monde qui permettent ainsi de vous assister dans toutes vos différentes préoccupation. Nous remercions ainsi Nadia, Jonathan, Ludovic, Kevin, Césaire, Dieci, Aimé, Grévisse et Aristote qui continuent à donner de leur temps et motivation pour permettre à ce que RDC Etudes avance.
 
 Et bien évidemment, sans oublier vous aussi, qui visitez notre site web, qui nous suivez sur nos différents média sociaux et qui parlez de nous à vos proches; Sans vous, RDC Etudes ne serait pas possible.
 
