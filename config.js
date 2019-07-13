@@ -15,8 +15,8 @@ export default {
       link: 'https://facebook.com/rdcetudes'
     },
     phone: {
-      label: '+1 (581) 998-8051',
-      link: 'tel:+1-581-998-8051'
+      label: '+1 (581) 9318-0180',
+      link: 'tel:+1-581-318-0180'
     }
   },
   contactFormEndpoint: process.env.GATSBY_CONTACT_FORM_ENDPOINT,
