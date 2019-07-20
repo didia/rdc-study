@@ -49,3 +49,7 @@ En effet plusieurs mesures peuvent être adoptées par les parents pour faire un
    Beaucoup d'enfants ne réalisent pas les efforts et sacrifices que font leurs parents pourqu'ils soient en mesure d'étudier. Si vous payez les frais académiques chaque année ou les frais de subsistance, vous devez parler ouvertement à votre enfant des autres sacrifices que vous avez dues faire pour lui consacrer cet argent. Peut-être que vous pensiez acheter une nouvelle voiture mais que vous ne le ferez pas puisque vous payez les frais académiques de votre enfant. L'enfant devrait le savoir. Cela décourage l'enfant à négliger ses études vues tout le sacrifice que vous faites.
 
 En bonus, si vous ne payez pas les frais académiques directement vous-mêmes (Vous devrez), il est important de demander à l'enfant de vous envoyer les factures de paiement des frais académiques. Rappelez-vous, la confiance n'exclut pas le contrôle.
+
+## En conclusion…
+
+Nous avons exposé la situation que rencontrent plusieurs étudiants africains à l'étranger. Bien que les étudiants ont la plus large responsabilité concernant la réussite de leurs projets d'étude, les parents peuvent assister leurs enfants dans ce sens. Nous avons donc proposé 4 actions que les parents peuvent prendre pour y arriver. Nous espérons cela contribuera à augmenter le pourcentage d'étudiants qui réussissent leurs projets d'études à l'étranger.
