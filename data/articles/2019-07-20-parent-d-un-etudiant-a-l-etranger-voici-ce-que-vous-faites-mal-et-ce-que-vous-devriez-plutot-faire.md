@@ -29,7 +29,11 @@ Beaucoup de parents réalisent très tard que leur enfant avait soit déjà aban
 
 En effet plusieurs mesures peuvent être adoptées par les parents pour faire un meilleur suivi de leurs enfants pendant qu'ils sont à l'étranger. Bien que ces derniers soient déjà majeurs, les parents restent leurs tuteurs responsables! C'est donc dans leurs responsabilités de savoir que font leurs enfants pendant leurs études. Voici donc quelques habitudes que peuvent adopter les parents des étudiants à l'étranger pour s'assurer du bon suivi des études de leurs enfants.
 
-1. **S'informer sur le pays, l'université ainsi que le programme d'études que votre enfant va suivre.**
+1. **S'informer sur le pays, l'université ainsi que le programme d'études que votre enfant va suivre.**\
+   Nous conseillons aux parents de prendre le temps de s'informer sur le pays où va étudier leur enfant. Vous pouvez lire dessus sur Wikipedia ou encore vous abonner aux journaux de ces pays sur les réseaux sociaux.\
+   Il est aussi important de s'informer sur l'université. Naviguez sur le site de l'Université, abonnez-vous à leurs pages sur les réseaux sociaux. Cela vous donnera une idée sur l'endroit où votre enfant passera les prochaines trois ou quatre ans de sa vie.\
+   Enfin le plus important c'est de vous informer sur le programme d'études de votre enfant. Vous devez savoir combien de temps prend le programme, le nombre des stages obligatoires, les opportunités d'emplois dans le domaine, la possibilité de poursuivre les études, etc.\
+   Vous trouverez ces informations généralement sur le site web de l'Université.
 2. **Communiquer régulièrement et de manière ouverte avec votre enfant.**
 3. **Demander des relevés de notes officiels de chaque trimestre à l'enfant.**
 4. **Faites réaliser régulièrement à l'enfant les efforts qui sont fournis pour ses études.**
