@@ -1,0 +1,35 @@
+---
+title: >-
+  Parent d'un étudiant à l'étranger, voici ce que vous faites mal et ce que vous
+  devriez plutôt faire!
+excerpt: >-
+  Le travail d'un parent d'étudiant à l'étranger ne devrait pas s'arrêter à
+  payer les frais académiques et frais de subsistances de l'enfant. Le parent
+  devrait s'assurer de la réussite académique de l'enfant et l'accompagner tout
+  le long de ses études.
+thumbnail: /images/uploads/jane-carmona-703571-unsplash.jpg
+tags:
+  - >-
+    étudier à l'étranger; envoyer son enfant à l'étranger; parent d'un étudiant
+    étranger; réussite académique
+  - suivi étudiant
+date: '2019-07-20T03:32:20-04:00'
+---
+En 2016, 64% de congolais qui sont arrivés aux États-Unis pour études n'ont pas complété leurs études. Au Canada, beaucoup nous disent qu'ils remarquent qu'ils sont souvent nombreux à la ligne de départ mais très peu finissent par graduer. Pourtant les parents dépensent beaucoup d'argent pour les études de leurs enfants. De fois ce sont des maisons vendues, des prêts pensant sur la famille qui sont utilisés pour payer les études ? Bien que la plus grande responsabilité soit celle des étudiants concernés, nous pensons aussi que les parents ont leurs parts de responsabilités. Alors qu'est-ce que les parents devraient faire pour aider leurs enfants à réussir ? C'est cela l'objet de cette réflexion.
+
+En effet, d'un coté, nous avons constaté que le majorité d'étudiants, une fois arrivés dans leurs pays d'accueil sont voués à eux-mêmes. Ils doivent soudainement prendre plus de responsabilités que ce qu'ils étaient habitués à avoir dans leurs pays d'origine. Il n'y a souvent plus des parents qui les surveillent ou sérmonent en cas de mauvais comportement comme ce fût le cas dans leur pays d'origine. \
+Beaucoup finissent alors par transformer cette liberté obtenue en libertinage. Souvent sous l'influence des amis, beaucoup vont tenter de profiter le plus de cette liberté recouvrée dans les pays d'accueil. Ainsi beaucoup se livreront dans la distraction, les excès, l'abus de l'alcool ou des subsistances qui sont de plus en plus légalisées dans les pays développés comme le Canada.
+
+De l'autre coté, les parents eux font confiance à leurs enfants qu'ils vont bien saisir l'opportunité et étudier. Ainsi ils ne s'informent pas vraiment de la situation de leurs enfants. Beaucoup se limitent à poser la question de savoir: "Est-ce que ça va bien ? Et les cours ? " Auquel la majorité des étudiants répondent toujours positivement sauf en cas des besoins financiers.\
+La relation parent-enfant devient donc une relation simplement financière où l'enfant n'appelle le parent que lorsqu'il a besoin d'argent pour payer les frais ou subsister. 
+
+À cause de la rélation d'autorité qui existe souvent entre parents et enfants en Afrique, l'enfant aura certainement peur d'informer son père lorsqu'ils rencontrent des difficultés ou échouent à l'Université plutôt que d'avoir une conversation ouverte. Il n'est pas rare de rencontrer des parents qui ne savent même pas quelles études suit leur enfant où à quel niveau ce dernier est rendu. C'est juste après que les années d'études soient écoulés que certains vont demander à leurs enfants où est le diplôme. Pire encore certains ne savent même pas c'est quoi la durée des études de leurs enfants et continueront à payer des frais académiques jusqu'à ce qu'ils s'en rendent compte que ça fait bien trop longtemps.
+
+Beaucoup de parents réalisent très tard que leur enfant avait soit déjà abandonné ses études ou qu'il n'avait pas réellement évolué depuis son arrivée dans son pays d'études. Combien d'histoires d'horreur n'avons-nous pas entendu des parents qui tombaient malades en réalisant que leur investissement a été jeté dans l'eau ? Pourtant ces situations auraient pu être évitées si les parents avaient été plus impliqués dans le parcours académique de leurs étudiants au délà de simplement être leurs banques.
+
+En effet plusieurs mesures peuvent être adoptées par les parents pour faire un meilleur suivi de leurs enfants pendant qu'ils sont à l'étranger. Bien que ces derniers soient déjà majeurs, les parents restent leurs tuteurs responsables! C'est donc dans leurs responsabilités de savoir que font leurs enfants pendant leurs études. Voici donc quelques habitudes que peuvent adopter les parents des étudiants à l'étranger pour s'assurer du bon suivi des études de leurs enfants.
+
+1. **S'informer sur le pays, l'université ainsi que le programme d'études que votre enfant va suivre.**
+2. **Communiquer régulièrement et de manière ouverte avec votre enfant.**
+3. **Demander des relevés de notes officiels de chaque trimestre à l'enfant.**
+4. **Faites réaliser régulièrement à l'enfant les efforts qui sont fournis pour ses études.**
