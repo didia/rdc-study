@@ -36,6 +36,6 @@ En effet plusieurs mesures peuvent être adoptées par les parents pour faire un
    Vous trouverez ces informations généralement sur le site web de l'Université.
 2. **Communiquer régulièrement et de manière ouverte avec votre enfant.**\
    En tant que parent, vous devez appeler votre enfant au moins une fois par semaine. L'objectif est de parler le plus possible avec l'enfant d'autres sujets que l'argent. Demandez comment se passe sa semaine, parlez-lui de son avenir, de la situation au pays ou tout autre sujet qui intéresse votre enfant. L'essentiel c'est d'avoir une communication ouverte sans jugement. Rappelez que votre enfant vit dans un pays où il est libre maintenant de faire ce qu'il veut. Alors ne jugez pas l'enfant, ne donnez pas d'ordre mais conseiller. Evitez non plus de conseiller à tout moment non plus et réservez le plus possible vos conseils pour des occasions où il en demande.
-3. **Demander des relevés de notes officiels de chaque trimestre à l'enfant.**\
+3. **Demander des relevés de notes officiels à la fin de chaque trimestre.**\
    La confiance n'exclut pas le contrôle. En tant que tuteur légal et source de financement principal de votre enfant, vous avez le droit de savoir comment il avance..
 4. **Faites réaliser régulièrement à l'enfant les efforts qui sont fournis pour ses études.**
