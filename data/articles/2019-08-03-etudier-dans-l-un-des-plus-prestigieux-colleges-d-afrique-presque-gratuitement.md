@@ -18,7 +18,7 @@ En effet, l'African Leadership Academy (ALA) cherche à recruter les jeunes lead
 
 ## En quoi consiste l'opportunité ?
 
-Les étudiants sélectionnés pour rejoindre ALA participe à un programme de formation de deux ans au bout duquel ils seront prêts à rejoindre les meilleures universités du monde. Le coût total des études à ALA est de 30 900 $USD par année. Ce montant comprend la scolarité, l'hébergement, la restauration, l'assurance médicale etc… Cependant presque tous les étudiants sont bénéficiaires d'une bourse d'études ou prêts selon leurs besoins financiers. Donc quelque soit votre situation financière, vous pouvez postuler si vous répondez aux critères de sélection.
+Les étudiants sélectionnés pour rejoindre ALA participe à un programme de formation de deux ans au bout duquel ils seront prêts à rejoindre les meilleures universités du monde. Le coût total des études à ALA est de 30 900 $USD par année. Ce montant comprend la scolarité, l'hébergement, la restauration, l'assurance médicale etc… Cependant tous les étudiants retenus sont bénéficiaires d'une bourse d'études ou prêts selon leurs besoins financiers. Donc quelque soit votre situation financière, vous pouvez postuler si vous répondez aux critères de sélection.
 
 À la fin de leurs formations, les étudiants seront soutenues par ALA pour poursuivre leurs études dans les meilleures universités du monde avec aide financière fournie.
 
