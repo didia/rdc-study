@@ -27,3 +27,22 @@ Les étudiants sélectionnés pour rejoindre ALA participe à un programme de fo
 Vous êtes éligibles au programme ALA si vous êtes nés après le 1 septembre 2000, vous êtes passionnés par l’émergence et le développement de l’Afrique, vous avez un esprit d'entrepreneuriat et vous avez un diplôme d'études secondaires ou êtes en voie de l'obtenir. Pour en savoir, consultez <a href="http://www.africanleadershipacademy.org/fr/postuler-a-ala/criteres-dadmission/" target="_blank" rel="noreferrer nofollow">le site de ALA à ce sujet.</a>
 
 ## Comment postuler ?
+
+Vous pouvez postuler en ligne sur le site web en allant sur le lien suivant: <a href="http://www.africanleadershipacademy.org/fr/postuler-a-ala/prospectus/" target="_blank" rel="noreferrer nofollow">http://www.africanleadershipacademy.org/fr/postuler-a-ala/prospectus/</a>.
+
+## Dates importantes
+
+* 31 août 2019 : Clôture du 1er cycle de candidatures (Décision Anticipée 1) ;
+* 15 octobre 2019 : Notifications des candidats admis pour la Décision Anticipée 1 ;
+* 31 octobre 2019 : Clôture du 2ème cycle des candidatures (Décision Anticipée 2) ;
+* 20 décembre 2019 : Clôture du 3ème cycle des candidatures (Décisions Régulières) ;
+* Janvier 2020 : Notifications des candidats admis pour la Décision Anticipée 2
+* 30 avril 2020 : Notifications des candidats admis pour Décisions Régulières.
+
+## Pour en savoir plus
+
+Vous pouvez directement contacter ALA pour obtenir plus des détails à travers ces différents contacts:
+
+* Site web: <a href="http://www.africanleadershipacademy.org" target="_blank" rel="noreferrer nofollow">http://www.africanleadershipacademy.org</a>
+* Email: <a href="mailto:apply@africanleadershipacademy.org" target="_top">apply@africanleadershipacademy.org</a>
+* Whatsapp: +27 78 422 9509
