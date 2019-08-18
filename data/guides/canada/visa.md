@@ -71,7 +71,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     Vous devez rédiger un plan d’études qui explique pourquoi vous avez choisi le Canada comme pays d’études et non la RDC,
     pourquoi vous avez choisi votre programme d’études et comment vous comptez utiliser l’argent disponible pour financer vos études.
 
-    Ensuite vous devez fournir un engagement écrit à quitter le Canada après la fin de vos études.
+    Ensuite vous devez fournir [un engagement écrit à quitter le Canada après la fin de vos études](/guides/canada/visa/exemple-lettre-engagement-quitter-canada-apres-etudes).
     Cet engagement permet au Canada de s’assurer que vous n'essaierez pas de rester illégalement au Canada.
 
     Si vous avez besoin d’aide pour rédiger ces documents, nous vous encourageons à souscrire à notre [service d’accompagnement](/accompagnement), plus spécifiquement le forfait Visa.
