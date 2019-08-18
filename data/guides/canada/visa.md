@@ -6,7 +6,7 @@ title: "Obtenir un permis d'études pour le Canada"
 excerpt: "Avec votre admission dans une établissement d'enseignement canadien en main, vous devez maintenant faire une demande de visa à Immigration Canada. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le permis d'études pour le Canada."
 thumbnail: 'images/canada-visa.jpg'
 topic: 'visa'
-related: ['canada/admission']
+related: ['canada/visa/exemple-lettre-engagement-quitter-canada-apres-etudes', 'canada/admission']
 ---
 
 Une fois admis dans un établissement d’enseignement au Canada, vous pouvez commencer votre demande de permis d’études pour immigrer au Canada.\
