@@ -1,12 +1,12 @@
 ---
 active: true
-slug: "usa/admission"
-date: "2018-03-30"
-title: "Obtenir une admission dans une université américaine"
+slug: 'usa/admission'
+date: '2018-03-30'
+title: 'Obtenir une admission dans une université américaine'
 excerpt: "Pour vous rendre aux États-Unis pour études, vous devez au préalable obtenir une admission dans une institution américaine d'enseignement reconnue. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n'importe quelle institution américaine d'enseignement."
-thumbnail: "images/usa-admission.jpg"
-topic: "admission"
-related: ["usa/visa"]
+thumbnail: 'images/usa-admission.jpg'
+topic: 'admission'
+related: ['usa/visa']
 ---
 
 Le processus d'admission diffère d'une institution à une autre. Toutefois les étapes générales sont sensiblement les mêmes dans toutes les institutions.\
@@ -31,8 +31,8 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     \
     Voici une liste non-exhaustive des collèges et universités que vous pouvez explorer:
 
-    * **Collèges:** <a href="http://www.mdc.edu/future-students/" target="_blank" rel="nofollow noopener">Miami Dade College</a>, <a href="http://broward.edu/international/students/Pages/default.aspx" target="_blank" rel="nofollow noopener">Broaward College</a>, <a href="http://www.hccs.edu/support-services/international-students/admissions/" target="_blank" rel="nofollow noopener">Houston Community College</a>[
-    * **Universités:** <a href="http://admissions.fsu.edu/international/" target="_blank" rel="nofollow noopener">Florida State University</a>, <a href="http://www.uh.edu/undergraduate-admissions/apply/international/" target="_blank" rel="nofollow noopener">University of Houston</a>
+    - **Collèges:** <a href="http://www.mdc.edu/future-students/" target="_blank" rel="nofollow noopener">Miami Dade College</a>, <a href="http://broward.edu/international/students/Pages/default.aspx" target="_blank" rel="nofollow noopener">Broaward College</a>, <a href="http://www.hccs.edu/support-services/international-students/admissions/" target="_blank" rel="nofollow noopener">Houston Community College</a>[
+    - **Universités:** <a href="http://admissions.fsu.edu/international/" target="_blank" rel="nofollow noopener">Florida State University</a>, <a href="http://www.uh.edu/undergraduate-admissions/apply/international/" target="_blank" rel="nofollow noopener">University of Houston</a>
 
 3.  ## Faire la demande d'admission
     Chaque université a son processus particulier d'admission. Toutefois la demande d'admission s'est fait généralement en ligne pour la grande majorité d'universités aux États-Unis.
@@ -47,6 +47,7 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     Certaines universités pourront vous demander d'envoyer vos documents administratifs c'est à dire les bulletins, relevés de note, photocopie du passeport soit par courriel, soit par la poste.
     Pour ce dernier, nous vous recommandons d'utiliser un service privé comme DHL plutôt que le service public si vous voulez avoir une chance d'obtenir votre inscription à temps.
     Il est donc aussi important de mentionner comme adresse de correspondance, une adresse d'une personne vivant dans un pays avec système postal public développé. Nous pouvons aussi vous assister en ce sens là.
+    Notez aussi qu'en général, les universités américaines exigent de traduire en anglais et légaliser tous les documents que vous envoyez. Toutefois réferez-vous toujours aux exigences particulières de votre université.
     \
     \
     Après votre admission, vous recevrez de la part de l'université votre lettre d'admission et aussi un document appelé communément **I-20**. Ce document est très important pour la suite de vos demarches.
@@ -58,8 +59,8 @@ Une fois admis, vous devrez maintenant faire une demande de visa d'études à l'
 En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **300 USD et 550 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-* **100 USD à 200 USD** pour la demande d’admission.
-* **0 à 150 USD** pour l’envoi et reception des documents.
-* **200 USD** pour les frais d’assistance RDC-Etudes.
+- **100 USD à 200 USD** pour la demande d’admission.
+- **0 à 150 USD** pour l’envoi et reception des documents.
+- **200 USD** pour les frais d’assistance RDC-Etudes.
 
 **NB**: Ces prix sont juste là à titre d'estimé, ils peuvent changer par rapport aux universités. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.
