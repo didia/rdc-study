@@ -1,6 +1,6 @@
 ---
 title: >-
-  Faites un master aux Royaume-Uni grâce au programme des bourses d'études
+  Faites un master au Royaume-Uni grâce au programme des bourses d'études
   gratuites Chevening.
 excerpt: >-
   Chaque année, le gouvernement britannique offre des bourses d'études complètes
