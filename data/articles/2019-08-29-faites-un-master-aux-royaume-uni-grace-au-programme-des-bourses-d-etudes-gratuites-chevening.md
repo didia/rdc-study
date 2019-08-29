@@ -49,3 +49,5 @@ Pour en savoir plus sur les critères d'éligibilité de la bourse, nous vous in
 Vous devez noter que vous avez jusqu'au 5 novembre 2019 pour postuler au programme de bourse 2020/2021.
 
 Pour en savoir plus sur le processus de sélection, nous vous invitons à <a href="https://www.chevening.org/scholarships/application-timeline/" target="_blank" rel="noreferrer noopener">consulter le site web de la bourse sur le processus de sélection.</a>
+
+Nous vous encourageons fortement à postuler si vous répondez aux critères. Bonne chance!
