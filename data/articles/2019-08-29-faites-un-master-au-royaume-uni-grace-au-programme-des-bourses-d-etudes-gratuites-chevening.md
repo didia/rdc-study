@@ -31,7 +31,7 @@ La bourse Chevening fait partie des rares bourses complètes où tous les frais 
 
 ## Quels sont les critères de la bourse ?
 
-- Vous avez un diplôme de license ou un équivalent.
+- Vous avez un diplôme de licence ou un équivalent.
 - Vous avez au moins <a href="https://www.chevening.org/scholarships/who-can-apply/work-experience/" rel="noreferrer noopener" target="_blank">deux ans d'expérience de travail.</a>
 - Vous devez avoir obtenu une admission d'une université britannique d'ici le 16 Juillet 2020 (Donc après avoir postulé)
 - Vous devez avoir réussi <a href="https://www.chevening.org/scholarships/who-can-apply/english-language/" rel="noreferrer noopener" target="_blank">un test d'anglais</a> démontrant vos capacités à étudier en anglais d'ici le 16 Juillet 2020.
