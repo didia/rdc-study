@@ -45,8 +45,12 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Nom de la bourse", name: "name", widget: "string"}
+      - {label: "Brève", name: "excerpt", widget: "text"}
       - {label: "Date limite", name: "deadline", widget: "datetime"}
-      - {label: "Pays de destination", name: "target_country", widget: "select", multiple: true, options: [{value: "ca", label: "Canada"}, {value: "us", label: "Etats-Unis"}, {value: "gb", label: "Grande-Bretagne"}, {value: "fr", label: "France"}, {value: "be", label: "Belgique"}]}
-      - {label: "Article rélié la bourse", name: "related_article", widget: "relation", collection: "article", displayFields: ["title"], searchFields: ["title", "excerpt"], valueField: "slug", required: false}
+      - {label: "Pays de destination", name: "targetCountry", widget: "select", multiple: true, options: [{value: "ca", label: "Canada"}, {value: "us", label: "Etats-Unis"}, {value: "gb", label: "Grande-Bretagne"}, {value: "fr", label: "France"}, {value: "be", label: "Belgique"}]}
       - {label: "En quoi consiste la bourse ?", name: "amount", widget: "markdown"}
-      - {label: "Description de la bourse", name: "description", widhet: "markdown"}
+      - {label: "Quelles sont les critères de la bourse ?", name: "criteria", widget: "markdown"}
+      - {label: "Comment postuler ?", name: "howToApply", widget: "markdown"}
+      - {label: "Mots clés", name: "tags", widget: "list", required: false}
+      - {label: "Image principale de l’article", name: "thumbnail", widget: "image"}
+      - {label: "Crédits de l’image principale", name: "thumbnailCredits", widget: "text", required: false}
