@@ -14,7 +14,7 @@ collections:
     label: "Article"
     folder: "data/articles"
     create: true
-    sort: "date:asc"
+    sort: "date:desc"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Titre", name: "title", widget: "string"}
@@ -29,7 +29,7 @@ collections:
     files:
       - label: "Foire aux questions"
         name: "faqs"
-        file: "data/faqs/faqs.json"
+        file: "data/faqs.json"
         fields:
           - name: "entries"
             label: "Entrées"
@@ -37,3 +37,16 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Réponse", name: "answer", widget: "markdown"}
+  - label: "Bourses d'études"
+    name: "scholarships"
+    folder: "data/scholarships"
+    create: true
+    sort: "date:desc"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Nom de la bourse", name: "name", widget: "string"}
+      - {label: "Date limite", name: "deadline", widget: "datetime"}
+      - {label: "Pays de destination", name: "target_country", widget: "select", multiple: true, options: [{value: "ca", label: "Canada"}, {value: "us", label: "Etats-Unis"}, {value: "gb", label: "Grande-Bretagne"}, {value: "fr", label: "France"}, {value: "be", label: "Belgique"}]}
+      - {label: "Article rélié la bourse", name: "related_article", widget: "relation", collection: "article", displayFields: ["title"], searchFields: ["title", "excerpt"], valueField: "slug", required: false}
+      - {label: "En quoi consiste la bourse ?", name: "amount", widget: "markdown"}
+      - {label: "Description de la bourse", name: "description", widhet: "markdown"}
