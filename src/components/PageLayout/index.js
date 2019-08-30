@@ -1,9 +1,8 @@
 // Vendor
 import React from 'react';
 import T from 'prop-types';
-import {IntlProvider, addLocaleData} from 'react-intl';
+import {IntlProvider} from 'react-intl';
 import classnames from 'classnames';
-import fr from 'react-intl/locale-data/fr';
 
 // Locale
 import messages from '../../locales/fr.json';
@@ -19,10 +18,7 @@ import Menu from '../../components/Menu';
 import SEO from '../../components/SEO';
 
 // Utils
-// Utils
 import analyticsPushEvent from '../../utils/push-analytics-event';
-
-addLocaleData(fr);
 
 class TemplateWrapper extends React.Component {
   constructor(props) {
