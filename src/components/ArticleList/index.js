@@ -33,9 +33,11 @@ const Article = ({article}) => {
 Article.propTypes = {
   article: T.shape({
     excerpt: T.string.isRequired,
+    name: T.string.isRequired,
     path: T.string.isRequired,
     title: T.string.isRequired,
     thumbnail: T.shape({
+      fluid: T.object.isRequired,
       sizes: T.object
     }).isRequired
   })
@@ -70,7 +72,13 @@ const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, 
 };
 
 ArticleList.propTypes = {
-  articles: T.arrayOf(T.object),
+  articles: T.arrayOf(
+    T.shape({
+      thumbnal: T.shape({
+        fluid: T.object
+      })
+    })
+  ),
   className: T.string,
   descriptionKey: T.string,
   hasMoreArticles: T.bool,

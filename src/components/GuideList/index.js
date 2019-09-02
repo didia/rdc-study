@@ -29,6 +29,7 @@ const Guide = ({guide}) => {
 Guide.propTypes = {
   guide: T.shape({
     excerpt: T.string.isRequired,
+    name: T.string.isRequired,
     path: T.string.isRequired,
     title: T.string.isRequired,
     thumbnail: T.shape({

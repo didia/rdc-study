@@ -20,6 +20,13 @@ const QuestionEntry = ({entry: {question, answer}}) => (
   </>
 );
 
+QuestionEntry.propTypes = {
+  entry: T.shape({
+    question: T.string.isRequired,
+    answer: T.string.isRequired
+  })
+};
+
 const FaqsPage = ({questions}) => {
   return (
     <GenericPage page={page}>
