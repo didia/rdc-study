@@ -41,7 +41,7 @@ Ensuite vous devez fournir les documents suivants:
 * Relevés de notes / dossiers académiques complets.
 * Deux dissertations.
 * Trois lettres de recommandation.
-* Une vidéo parlant de votre projet d'études (Optionnelle)
+* Une vidéo parlant de votre projet d'études (Optionnelle).
 
 Notez que la date limite de dépôt de candidature pour l'année académique 2020/2021 est le 26 septembre 2019.
 
