@@ -12,7 +12,7 @@ tags:
   - bourses chines;schwarzman;bourses d'études gratuites; bourses pour congolais
 date: '2019-09-10T14:00:08-04:00'
 ---
-Chaque année, 200 étudiants de partout dans le monde bénéficie de la bourse Schwarzman leur permettant de poursuivre un master d'un an à l'Université Tsinghua de Pékin, une de plus prestigieuses universités de Chine.
+Chaque année, 200 étudiants de partout dans le monde bénéficient de la bourse Schwarzman leur permettant de poursuivre un master d'un an à l'Université Tsinghua de Pékin, une de plus prestigieuses universités de Chine.
 
 ## En quoi consiste la bourse ?
 
@@ -34,14 +34,15 @@ La bourse Schwarzman est une bourse complète et donc très compétitive. Elle c
 
 ## Comment postuler ?
 
-Pour postuler, vous devez <a href="https://www.schwarzmanscholars.org/admissions/application/" rel="noopener noreferrer" target="_blank">créer un compte en ligne</a> et remplir le formulaire de demande de bourses. Vous pouvez vous inspirer de <a href="https://www.schwarzmanscholars.org/wp-content/uploads/2019/04/Schwarzman-Scholars-Sample-Application-2019.pdf" target="_blank" rel="noopener noreferrer">l'exemple disponible sur le site web.</a>\
+Pour postuler, vous devez <a href="https://www.schwarzmanscholars.org/admissions/application/" rel="noopener noreferrer" target="_blank">créer un compte en ligne</a> et remplir le formulaire de demande de bourses. Vous pouvez vous inspirer de <a href="https://www.schwarzmanscholars.org/wp-content/uploads/2019/04/Schwarzman-Scholars-Sample-Application-2019.pdf" target="_blank" rel="noopener noreferrer">l'exemple disponible sur le site web.</a>
+
 Ensuite vous devez fournir les documents suivants:
 
 * Curriculum vitae (2 pages maximum).
 * Relevés de notes / dossiers académiques complets.
 * Deux dissertations.
-* Trois lettres de recommandation.
-* Une vidéo parlant de votre projet d'études (Optionnelle).
+* Trois lettres de recommandation (témoignages).
+* Une vidéo présentant votre projet d'études (Optionnelle).
 
 Notez que la date limite de dépôt de candidature pour l'année académique 2020/2021 est le 26 septembre 2019.
 
