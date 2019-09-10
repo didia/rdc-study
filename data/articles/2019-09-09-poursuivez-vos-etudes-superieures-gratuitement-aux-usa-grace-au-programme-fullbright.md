@@ -5,8 +5,8 @@ title: >-
 excerpt: >-
   Le programme Fulbright offre des bourses d'études basées sur le mérite
   permettant aux étudiants étrangers de poursuivre leurs études de Cycle
-  Supérieur aux Etats-unis. La sélection se fait à travers d’un concours ouvert,
-  pendant lequel seront pris en considération, la capacité de leadership, le
+  Supérieur aux Etats-unis. La sélection se fait à travers un concours ouvert
+  pendant lequel seront pris en considération la capacité de leadership, le
   rendement académique ainsi que l’aptitude de survie dans un pays étranger.
 thumbnail: /images/uploads/fullbright-program.jpg
 tags:
