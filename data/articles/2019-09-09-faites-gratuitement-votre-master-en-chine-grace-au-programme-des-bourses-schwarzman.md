@@ -10,7 +10,7 @@ excerpt: >-
 thumbnail: /images/uploads/schwarzam-scholars.jpg
 tags:
   - bourses chines;schwarzman;bourses d'études gratuites; bourses pour congolais
-date: '2019-09-10T14:00:08-04:00'
+date: '2019-09-10T06:00:08-04:00'
 ---
 Chaque année, 200 étudiants de partout dans le monde bénéficient de la bourse Schwarzman leur permettant de poursuivre un master d'un an à l'Université Tsinghua de Pékin, une de plus prestigieuses universités de Chine.
 
