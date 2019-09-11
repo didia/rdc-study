@@ -49,7 +49,7 @@
     "gatsby-source-filesystem": "^2.1.22",
     "gatsby-transformer-json": "^2.2.8",
     "gatsby-transformer-remark": "^2.6.21",
-    "gatsby-transformer-sharp": "^2.2.13",
+    "gatsby-transformer-sharp": "^2.2.14",
     "lodash": "^4.17.15",
     "node-sass": "^4.12.0",
     "postcss-browser-reporter": "^0.6.0",
