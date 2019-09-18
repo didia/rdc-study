@@ -1,12 +1,12 @@
 ---
 active: true
-slug: "belgique/visa"
-date: "2018-11-19"
-title: "Obtenir un visa pour étudier en Belgique"
-excerpt: "Si vous êtes admis aux études  supérieures dans un établissement d’enseignement public ou privé en Belgique, vous pouvez introduire une demande pour immigrer en Belgique en tant qu’étudiant."
-thumbnail: "images/belgique-visa.jpg"
-topic: "visa"
-related: ["belgique/visa"]
+slug: 'belgique/visa'
+date: '2018-11-19'
+title: 'Obtenir un visa pour étudier en Belgique'
+excerpt: 'Si vous êtes admis aux études  supérieures dans un établissement d’enseignement public ou privé en Belgique, vous pouvez introduire une demande pour immigrer en Belgique en tant qu’étudiant.'
+thumbnail: 'images/belgique-visa.jpg'
+topic: 'visa'
+related: ['belgique/visa']
 ---
 
 Pour séjourner en qualité d’étudiant étranger en Belgique, vous avez besoin d’un visa national de long séjour (Visa type D).\
@@ -40,7 +40,6 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 4.  ## Déposer la demande
 
     Une fois tous les documents réunis, vous pouvez maintenant introduire votre demande de visa.\
-    La maison Schengen étant fermée, la demande doit être déposée à l'Ambassade ou au Consulat de Belgique.\
     N'oubliez pas que vous devez légaliser tous les documents que vous introduisez, premièrement à la commune puis au consulat belge. Vous devez apporter les photocopies accompagnées des originaux à l'ambassade; les originaux vous seront rendus.
 
 5.  ## Suivre l'évolution de la demande
@@ -51,10 +50,10 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **970 USD et 1200 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-* **40 USD à 100 USD** pour les documents administratifs à obtenir du gouvernement congolais.
-* **230 USD à 400 USD** pour le frais de redevance.
-* **200 USD** pour l'introduction de la demande à l'Ambassade.
-* **300 USD** pour les frais des examens médicaux.
-* **200 USD** pour les frais d’assistance RDC-Etudes.
+- **40 USD à 100 USD** pour les documents administratifs à obtenir du gouvernement congolais.
+- **230 USD à 400 USD** pour le frais de redevance.
+- **200 USD** pour l'introduction de la demande à l'Ambassade.
+- **300 USD** pour les frais des examens médicaux.
+- **200 USD** pour les frais d’assistance RDC-Etudes.
 
 **NB**: Ces prix ne sont qu'une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement belge. Veuillez toujours vous fier à leur site web pour les montants actualisés.
