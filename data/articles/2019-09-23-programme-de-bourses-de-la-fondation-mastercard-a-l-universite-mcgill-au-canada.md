@@ -44,9 +44,9 @@ Pour en savoir plus sur les critères, consultez <a href="https://www.mcgill.ca/
    * Curriculum vitae (CV)
    * une lettre de présentation (Max. 350 mots).
 3. La nomination faite par le département sert d’étape de vérification pour s’assurer que le candidat satisfait les exigences du programme. Si un candidat est retenu, on lui demandera de créer un compte sur le portail uApply et de communiquer le nom d’utilisateur au département proposant la candidature. **Vous DEVEZ attendre d’être nominé pour créer un compte afin que votre demande de bourse d’études du MCF soit prise en considération.**
-4. Une fois la mise en candidature le département doit envoyer le formulaire dûment rempli à mcfscholars@mcgill.ca. Le candidat recevra alors une exonération de frais de dossier et devra remplir la demande d’admission sur le portail uApply. Le candidat devra aussi télécharger le formulaire de demande
+4. Une fois la mise en candidature le département doit envoyer le formulaire dûment rempli à <a href="mailto:mcfscholars@mcgill.ca">mcfscholars@mcgill.ca</a>. Le candidat recevra alors une exonération de frais de dossier et devra remplir la demande d’admission sur le portail uApply. Le candidat devra aussi télécharger le formulaire de demande
    du programme des boursiers de la Mastercard Foundation, son relevé bancaire et la lettre du commanditaire de ses études antérieurs.
-5. Le candidat doit demander à son répondant de remplir le formulaire de recommandation du MCF et de le faire parvenir par courriel à mcf-scholars@mcgill.ca .
+5. Le candidat doit demander à son répondant de remplir le formulaire de recommandation du MCF et de le faire parvenir par courriel à <a href="mailto:mcf-scholars@mcgill.ca">mcf-scholars@mcgill.ca</a>.
 6. Une fois tous les documents sont reçus, le département prend une décision.
    * Si le candidat est admis à son programme d’étude, sa demande de MCF est présélectionnée. Une fois présélectionnée, la demande du candidat est soumise au Comité de sélection du MCF pour l’évaluation finale.
    * Si le candidat se voit refuser l’admission, il n’est plus en concurrence pour la bourse.
