@@ -27,7 +27,7 @@ Le programme est conçu pour procurer une assistance globale aux étudiants sél
 
 1. Être admissible à l'un des programmes d'études participants de l'Université McGill (<a href="https://www.mcgill.ca/mastercardfdn-scholars/files/mastercardfdn-scholars/liste_des_programmes_detudes_participants_2020.pdf" target="_blank" rel="noopener noreferrer">voir la liste des programmes ici</a>) ;
 2. N'avoir jamais entrepris d'études aux cycles supérieurs ;
-3. Être nominé par un professeur actuel de McGill ou un membre du personnel administratif du programme de votre choix (<a href="https://www.mcgill.ca/mastercardfdn-scholars/files/mastercardfdn-scholars/formulaire_de_candidature__1.pdf" target="_blank" rel="noopener noreferrer">voir le formulaire de candidature ici</a>) ;
+3. Être nominé par un professeur actuel de McGill ou un membre du personnel administratif du programme de votre choix;
 4. Être citoyen d'un pays subsaharien et y avoir résidé une grande partie de votre vie (<a href="https://www.mcgill.ca/mastercardfdn-scholars/files/mastercardfdn-scholars/liste_des_pays_admissibles_2020.pdf" target="_blank" rel="noopener noreferrer">voir la liste des pays admissibles ici</a>) ;
 5. Présenter un dossier exceptionnel d'activités et de services rendus dans le milieu scolaire ou communautaire ;
 6. Avoir l'intention de retourner dans votre pays immédiatement après l'obtention du diplôme avec l'objectif de transformer votre communauté en appuyant son développement socioéconomique ;
