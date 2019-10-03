@@ -10,7 +10,7 @@ tags:
   - >-
     bourses;belgique;ares;kinshasa;congo;rdc;etudes;rdcetudes;bourses d'études
     belgique;bourses gratuites;bourses d'études pour étudiants africains
-date: '2019-10-03T07:00:41-04:00'
+date: '2019-10-02T07:00:41-04:00'
 ---
 L'appel aux candidatures pour la bourse ARES pour l'année académique 2020-2021 est ouvert du 1er octobre 2019 au 7 février 2019 pour le master de spécialisation.
 
