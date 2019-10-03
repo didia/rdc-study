@@ -21,10 +21,10 @@ L'université de Lausanne (UNIL) offre 10 bourses d'études partielles d'excelle
 ## Quels sont les critères ?
 
 * Obtenir un diplôme universitaire étranger (généralement une licence) jugé équivalent à un bachelor de l’UNIL avant le début du programme de master à l’UNIL.
-* S’être distinguée au cours de ses études, notamment par des résultats académiques particulièrement brillants.
+* S’être distingué au cours de ses études, notamment par des résultats académiques particulièrement brillants.
 * Disposer d’un niveau de langue d’au minimum B2 (niveau selon l’échelle globale du Portfolio européen des langues) en Français ou au minimum C1 en Anglais selon la langue d’enseignement du master choisi.
 * Ne pas être actuellement étudiant à l'UNIL.
-* S’être acquittée de la taxe administrative de 200$ qui constitue les frais de demande d'admission à l'Université
+* S’être acquitté de la taxe administrative de 200$ qui constitue les frais de demande d'admission à l'Université
 
 ## Comment postuler ?
 
