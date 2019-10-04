@@ -59,7 +59,7 @@
     "prismjs": "^1.17.1",
     "react": "^16.10.1",
     "react-click-outside": "^3.0.1",
-    "react-dom": "^16.10.1",
+    "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "react-intl": "^3.3.2",
     "s3-deploy": "^1.4.0",
