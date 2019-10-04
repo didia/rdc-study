@@ -44,6 +44,6 @@ Voici <a href="https://www.unil.ch/international/files/live/sites/international/
 
 La date limite de dépôt de candidature est le **1er novembre** pour débuter un master au cours de l'année académique suivante.
 
-Pour en savoir plus sur la bourse, nous vous invitons à consulter <a href="https://www.unil.ch/international/boursesdemasterunil" target="_blank" rel="noreferrer noopener">le lien officiel de la bourse d'études.</a>
+Pour consulter la liste des programmes disponibles ainsi qu'en savoir plus sur la bourse, nous vous invitons à consulter <a href="https://www.unil.ch/international/boursesdemasterunil" target="_blank" rel="noreferrer noopener">le lien officiel de la bourse d'études.</a>
 
 Nous vous encourageons fortement à postuler si vous répondez aux critères. Bonne chance!
