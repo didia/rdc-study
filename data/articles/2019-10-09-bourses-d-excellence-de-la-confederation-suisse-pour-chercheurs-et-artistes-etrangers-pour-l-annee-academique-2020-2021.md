@@ -25,7 +25,7 @@ Les bourses d’excellence de la Confédération suisse s’adressent à de jeun
 * Un paiement de 300 Francs suisses (à peu près 300$) payé une fois à votre arrivée pour aider avec le logement.
 * La moitié de votre carte de transport.
 
-Les détails de la bourse varie d'un pays à l'autre et d'une bourse à l'autre. Pour avoir les détails précis pour votre cas, nous vous invitons à lire les informations sur <a href="https://www.sbfi.admin.ch/sbfi/fr/home/formation/bourses/bourses-d-excellence-de-la-confederation.html" target="_blank" rel="noopener noreferrer">le site web de la bourse d'études.</a>
+Les détails de la bourse varient d'un pays à l'autre et d'une bourse à une autre. Pour avoir les détails précis pour votre cas, nous vous invitons à lire les informations sur <a href="https://www.sbfi.admin.ch/sbfi/fr/home/formation/bourses/bourses-d-excellence-de-la-confederation.html" target="_blank" rel="noopener noreferrer">le site web de la bourse d'études.</a>
 
 ## Quelles sont les critères ?
 
