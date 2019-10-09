@@ -15,7 +15,7 @@ tags:
     d'études pour congolais; Bourses d'études;Suisse
 date: '2019-10-09T06:00:40-04:00'
 ---
-Les bourses d’excellence de la Confédération suisse s’adressent à de jeunes chercheurs étrangers titulaire d'un master ou d'un doctorat et à des artistes étrangers titulaires d’une license.
+Les bourses d’excellence de la Confédération suisse s’adressent à de jeunes chercheurs étrangers titulaire d'un master ou d'un doctorat et à des artistes étrangers titulaires d’une licence.
 
 ## En quoi consiste la bourse ?
 
