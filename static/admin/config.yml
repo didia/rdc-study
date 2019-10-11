@@ -47,11 +47,11 @@ collections:
       - {label: "Nom de la bourse", name: "title", widget: "string"}
       - {label: "Brève", name: "excerpt", widget: "text"}
       - {label: "Date limite", name: "deadline", widget: "datetime"}
+      - {label: "Mots clés", name: "tags", widget: "list", required: false}
+      - {label: "Image principale de l’article", name: "thumbnail", widget: "image"}
+      - {label: "Crédits de l’image principale", name: "thumbnailCredits", widget: "text", required: false}
       - {label: "Cycles visées", name: "level", widget: "select", multiple: true, default: "all", options: [{value: "undergraduate", label: "Licence"}, {"value": "graduate", label: "Master"}, {value: "postgraduate", label: "Doctorat"}, {value: "research", label: "Recherches"}, {value: "internship", label: "Stages"}, {value: "all", label: "Tous les cycles"}]}
       - {label: "Pays de destination", name: "targetCountry", widget: "select", multiple: true, options: [{value: "ca", label: "Canada"}, {value: "us", label: "Etats-Unis"}, {value: "gb", label: "Grande-Bretagne"}, {value: "fr", label: "France"}, {value: "be", label: "Belgique"}]}
       - {label: "En quoi consiste la bourse ?", name: "amount", widget: "markdown"}
       - {label: "Quelles sont les critères de la bourse ?", name: "criteria", widget: "markdown"}
       - {label: "Comment postuler ?", name: "howToApply", widget: "markdown"}
-      - {label: "Mots clés", name: "tags", widget: "list", required: false}
-      - {label: "Image principale de l’article", name: "thumbnail", widget: "image"}
-      - {label: "Crédits de l’image principale", name: "thumbnailCredits", widget: "text", required: false}
