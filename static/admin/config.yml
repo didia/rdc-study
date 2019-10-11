@@ -24,7 +24,7 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}
       - {label: "Mots clés", name: "tags", widget: "list", required: false}
       - {label: "Date de publication", name: "date", widget: "datetime"}
-  - label: "Pages"
+  - label: "Page"
     name: "pages"
     files:
       - label: "Foire aux questions"
@@ -37,7 +37,7 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Réponse", name: "answer", widget: "markdown"}
-  - label: "Bourses d'études"
+  - label: "Bourse d'études"
     name: "scholarships"
     folder: "data/scholarships"
     create: true
