@@ -44,7 +44,7 @@ collections:
     sort: "date:desc"
     slug: "{{slug}}"
     fields:
-      - {label: "Nom de la bourse", name: "name", widget: "string"}
+      - {label: "Nom de la bourse", name: "title", widget: "string"}
       - {label: "Brève", name: "excerpt", widget: "text"}
       - {label: "Date limite", name: "deadline", widget: "datetime"}
       - {label: "Cycles visées", name: "level", widget: "select", multiple: true, options: [{value: "undergraduate", label: "Licence"}, {"value": "graduate", label: "Master"}, {value: "postgraduate", label: "Doctorat"}, {value: "research", label: "Recherches"}, {value: "internship", label: "Stages"}]}
