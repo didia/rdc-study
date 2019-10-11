@@ -12,7 +12,7 @@ tags:
     belgique;bourses gratuites;bourses d'études pour étudiants africains
 date: '2019-10-02T07:00:41-04:00'
 ---
-L'appel aux candidatures pour la bourse ARES pour l'année académique 2020-2021 est ouvert du 1er octobre 2019 au 7 février 2019 pour le master de spécialisation.
+L'appel aux candidatures pour la bourse ARES pour l'année académique 2020-2021 est ouvert du 1er octobre 2019 au 7 février 2020 pour le master de spécialisation.
 
 Ceci est une énorme opportunité pour les étudiants qui désirent approfondir leurs connaissances dans différents domaines gratuitement en Belgique.
 
