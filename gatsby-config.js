@@ -14,6 +14,7 @@ const plugins = [
   'gatsby-plugin-sharp',
   'gatsby-plugin-remove-trailing-slashes',
   'gatsby-plugin-catch-links',
+  'gatsby-plugin-netlify-cms',
   {
     resolve: 'gatsby-plugin-sitemap',
     options: {
