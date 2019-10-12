@@ -1,5 +1,7 @@
 ---
-title: Bourses master de la Fondation MasterCard à l'Université McGill au Canada
+title: >-
+  Bourses de la Fondation MasterCard pour poursuivre un master à l'Université
+  McGill au Canada
 deadline: 2020-02-01T04:59:52.454Z
 tags:
   - bourse d'études canada;McGill;Mastercard Fondation;bourses pour africains
