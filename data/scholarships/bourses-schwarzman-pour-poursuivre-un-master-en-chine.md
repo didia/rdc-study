@@ -7,7 +7,7 @@ thumbnail: /images/uploads/schwarzam-scholars.jpg
 level:
   - graduate
 targetCountry:
-  - us
+  - cn
 excerpt: >-
   Le programme des bourses Schwarzman offre une opportunité aux plus brillants
   étudiants internationaux de développer leurs capacités de leadership ainsi que
