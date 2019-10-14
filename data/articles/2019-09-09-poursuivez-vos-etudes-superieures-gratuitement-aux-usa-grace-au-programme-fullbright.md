@@ -30,7 +30,7 @@ Les bourses Fulbright font partie des rares bourses complètes disponibles aux a
 ## Quels sont les critères ?
 
 * Être citoyen résidant du pays à partir duquel vous postulez;
-* Avoir un diplôme de license;
+* Avoir un diplôme de licence;
 * Être en bonne santé;
 * Avoir une bonne connaissance de l'anglais.
 
@@ -46,7 +46,7 @@ Vous aurez à fournir les documents suivants:
 * Trois lettres de référence/recommandation (témoignages). Au moins une des lettres de références devra être d'un professeur universitaire qui peut attester votre qualité et potentiel académique et les deux autres de vos employeurs actuels ainsi que de l’employeur précèdent.
 * Les scores du TOEFL et GRE (ou GMAT pour les candidats MBA) ou une date pour les examens si vous comptez passer les tests après la date de clôture. Vous devez passer votre test TOEFL pour démontrer votre connaissance de l'anglais et le test GRE pour avoir accès aux études supérieures aux Etats-Unis.
 
-Vous devez avoir également fait des recherches sur les programmes offerts dans votre domaine par les universités américaines et avoir clairement à l’esprit le type de programme d’étude désiré. Si vous êtes sélectionnés, vous passerez une entrevue pour parler de votre programme ansi que votre motivation dans le choix de votre projet d'études.
+Vous devez avoir également fait des recherches sur les programmes offerts dans votre domaine par les universités américaines et avoir clairement à l’esprit le type de programme d’étude désiré. Si vous êtes sélectionnés, vous passerez une entrevue pour parler de votre programme ainsi que votre motivation dans le choix de votre projet d'études.
 
 Pour avoir plus des précisions, contactez l'ambassade des États-Unis dans votre pays ou consultez le site web <a href="https://foreign.fulbrightonline.org/applicants" target="_blank" rel="noopener noreferrer">https://foreign.fulbrightonline.org/applicants</a>
 
