@@ -13,7 +13,7 @@ date: '2019-10-02T21:59:25-04:00'
 ---
 L'université de Lausanne (UNIL) offre 10 bourses d'études partielles d'excellence par année aux étudiants ayant un excellent dossier académique.
 
-## En quoi consiste la bourse ?
+## Que couvre la bourse ?
 
 * Une bourse de 1600$ par mois du 15 septembre au 15 juillet et ce, pour la durée complète du master (1 an et demi ou 2 ans selon le master choisi), sauf en cas d’échec définitif après la première année.
 * Une exemption de paiement des frais académiques à l'exception des taxes semestrielles de 80$.
@@ -38,7 +38,7 @@ Vous devez envoyer votre dossier complet par courriel postal uniquement à l'adr
 <strong>Suisse</strong>
 </p>
 
-Vous devez remplir le formulaire de demande de bourse à l'ordinateur et le signer. Voici <a href="https://www.unil.ch/international/files/live/sites/international/files/-New_Website/Etudiants%20internationaux/Etudiants%20internationaux%20r%c3%a9guliers/Formulaire_candidature_boursesmaster.pdf" target="_blank" rel="noreferrer noopener">le lien où trouver le formulaire.</a>
+Vous devez remplir le formulaire de demande de bourse en ligne et le signer. Voici <a href="https://www.unil.ch/international/files/live/sites/international/files/-New_Website/Etudiants%20internationaux/Etudiants%20internationaux%20r%c3%a9guliers/Formulaire_candidature_boursesmaster.pdf" target="_blank" rel="noreferrer noopener">le lien où trouver le formulaire.</a>
 
 Voici <a href="https://www.unil.ch/international/files/live/sites/international/files/-New_Website/Etudiants%20internationaux/Etudiants%20internationaux%20r%c3%a9guliers/Liste_des_documents_2018-9.pdf" target="_blank" rel="noreferrer noopener">le lien où trouver les documents à joindre pour accompagner votre demande.</a> Tous les documents demandés doivent être inclus dans le dossier complet que vous allez envoyer pour que votre demande soit traité, notamment les copies certifiées conformes des documents académiques.
 
