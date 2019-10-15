@@ -4,10 +4,10 @@ excerpt: >-
   La Bourse du recteur compte parmi les bourses les plus prestigieuses offertes
   par l’Université d’Ottawa.
 
-  Son objectif est de fournir de l’aide financière à une étudiante ou un
-  étudiant international qui, par son engagement et son travail bénévole,
-  correspond d’une manière exceptionnelle aux objectifs de l’Université d’Ottawa
-  tel qu’énoncés dans son mandat.
+  Son objectif est de fournir de l’aide financière à un(e) étudiant(e)
+  international(e) qui, par son engagement et son travail bénévole, correspond
+  d’une manière exceptionnelle aux objectifs de l’Université d’Ottawa tel
+  qu’énoncés dans son mandat.
 thumbnail: /images/uploads/uttowa.jpg
 tags:
   - bourses
