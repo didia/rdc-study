@@ -36,7 +36,7 @@ La bourse Schwarzman est une bourse complète et donc très compétitive. Elle c
 
 Pour postuler, vous devez <a href="https://www.schwarzmanscholars.org/admissions/application/" rel="noopener noreferrer" target="_blank">créer un compte en ligne</a> et remplir le formulaire de demande de bourses. Vous pouvez vous inspirer de <a href="https://www.schwarzmanscholars.org/wp-content/uploads/2019/04/Schwarzman-Scholars-Sample-Application-2019.pdf" target="_blank" rel="noopener noreferrer">l'exemple disponible sur le site web.</a>
 
-Ensuite vous devez fournir les documents suivants:
+## Quels sont les documents à fournir?
 
 * Curriculum vitae (2 pages maximum).
 * Relevés de notes / dossiers académiques complets.
