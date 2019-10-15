@@ -10,7 +10,7 @@ tags:
   - canada guide voyage etudier à Uottawa
 date: '2018-07-30T18:00:00-04:00'
 ---
-Le Canada est l’un de plus grand pays bilingue au monde; l’Université d’Ottawa est quand à elle, la plus grande université bilingue du monde. Pour contribuer à la promotion de la francophonie sur la scène internationale, l’Université d’Ottawa a mis en place un programme d'exonération partielle des droits de scolarité pour les étudiants internationaux qui souhaitent obtenir un diplôme de premier cycle en français, de même que pour ceux qui en ont déjà un et qui veulent entreprendre des études supérieures à l'Université d'Ottawa.
+Le Canada est l’un de plus grand pays bilingue au monde; l’Université d’Ottawa est quand à elle, la plus grande université bilingue du monde. Pour contribuer à la promotion de la francophonie sur la scène internationale, l’Université d’Ottawa a mis en place un programme d'exonération partielle des droits de scolarité pour les étudiants internationaux qui souhaitent obtenir un diplôme de premier cycle en français, de même que ceux qui veulent entreprendre des études supérieures à l'Université d'Ottawa.
 
 C’est depuis l’année scolaire 2014-2015 que les nouveaux étudiants internationaux admissibles à l'exonération paient les droits de scolarité comme les étudiants canadiens, ce qui revient à une économie de plus de 10 000 $ par an en moyenne.
 
