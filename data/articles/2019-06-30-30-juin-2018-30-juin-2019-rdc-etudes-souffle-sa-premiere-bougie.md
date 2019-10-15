@@ -26,7 +26,7 @@ tags:
   - Etudier à l'étranger
 date: '2019-06-30T15:30:00-04:00'
 ---
-En effet, il est difficile de s'imaginer que 365 jours se sont déjà écoulés depuis le lancement de RDC Etudes, ce samedi 30 juin 2018. Nous sommes vraiment reconnaissants du support que vous nous avez apporté durant cette période et tous ces encouragements à aller de l'avant. Nous n'en serons pas où nous en sommes sans votre précieux soutient. Nous avons accompli beaucoup au courant de l'année dernière et nous avons hate de vous le présenter.
+En effet, il est difficile de s'imaginer que 365 jours se sont déjà écoulés depuis le lancement de RDC Etudes, le 30 juin 2018. Nous sommes vraiment reconnaissants du support que vous nous avez apporté durant cette période et tous ces encouragements à aller de l'avant. Nous n'en serons pas où nous en sommes sans votre précieux soutient. Nous avons accompli beaucoup au courant de l'année dernière et nous avons hate de vous le présenter.
 
 ## Notre mission
 
@@ -57,7 +57,7 @@ Bien que notre site ait été créé initialement pour les informations pour les
 
 RDC Etudes est actuellement composée de 9 membres repartis à travers le monde qui permettent ainsi de vous assister dans toutes vos différentes préoccupation. Nous remercions ainsi Nadia, Jonathan, Ludovic, Kevin, Césaire, Dieci, Aimé, Grévisse et Aristote qui continuent à donner de leur temps et motivation pour permettre à ce que RDC Etudes avance.
 
-Et bien évidemment, sans oublier vous aussi, qui visitez notre site web, qui nous suivez sur nos différents média sociaux et qui parlez de nous à vos proches; Sans vous, RDC Etudes ne serait pas possible.
+Et bien évidemment, sans oublier vous aussi, qui visitez notre site web, qui nous suivez sur nos différents réseaux sociaux et qui parlez de nous à vos proches; Sans vous, RDC Etudes ne serait pas possible.
 
 ## Que nous réserve le futur ?
 
