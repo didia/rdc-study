@@ -2,8 +2,8 @@
 title: Candidatures ouvertes pour le programme de bourses d‘études 2019 en Turquie.
 excerpt: >-
   Le dépôt des candidatures pour le programme de bourses d'études 2019 en
-  Turquie est ouvert à tout étudiant international du 15 Janvier au 20 Février
-  2019.
+  Turquie est ouvert à tout étudiant international généralement au mois de
+  Janvier pour prendre fin en Février de chaque année sauf imprévu.
 thumbnail: /images/uploads/bourses-turquie-2.png
 tags:
   - bourse d'études
@@ -15,10 +15,9 @@ tags:
   - congo
 date: '2019-01-20T13:26:17-05:00'
 ---
+La Turquie offre des bourses d‘études aux étudiants internationaux de partout dans le monde pour étudier dans les universités les plus prestigieuses du pays.
 
-La Turquie offre des bourses d‘études aux étudiants internationaux de partout dans le monde pour étudier dans les universités les plus prestigieuses de la Turquie.
-
-Les bourses de la Turquie sont très compétitives, financées par le gouvernement turque et offertes aux étudiants exceptionnels de par leurs dossiers académiques. Ces bourses comprennent non seulement le support financier mais aussi la garantie de l'admission à une université de votre choix.
+Financées par le gouvernement, Les bourses de la Turquie offertes aux étudiants exceptionnels de par leurs dossiers académiques sont très compétitives . Ces bourses comprennent non seulement le support financier mais aussi la garantie de l'admission à une université de votre choix.
 
 Le dépôt de candidature est complètement gratuit et se fait en ligne sur <a href="https://turkiyeburslari.gov.tr/en/page/prospective-students/how-to-apply" target="_blank" rel="nofollow noopener">le site du gouvernement.</a>.
 Vous y trouverez également la démarche sur comment déposer sa candidature ainsi que les documents requis à cet effet.
