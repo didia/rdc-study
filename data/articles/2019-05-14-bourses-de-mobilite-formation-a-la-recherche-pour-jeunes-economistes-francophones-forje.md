@@ -29,9 +29,9 @@ tags:
   - bourse d'études pour étudiants en économie
 date: '2019-05-18T08:30:00-04:00'
 ---
-Ces séjours donnent aux jeunes francophones l’occasion d’apprendre à mieux connaître le monde de la recherche universitaire, leur permettant ainsi de consolider leurs connaissances dans leur domaine de la recherche, de faire partie d’un réseau des chercheurs internationaux et d’établir des collaborations en recherche avec d’autres jeunes et avec des chercheurs aguerris.
+Ces séjours donnent aux jeunes francophones l’occasion d’apprendre à mieux connaître le monde de la recherche universitaire, leur permettant ainsi de consolider leurs connaissances dans leur domaine de recherche, de faire partie d’un réseau des chercheurs internationaux et d’établir des collaborations en recherche avec d’autres jeunes et avec des chercheurs aguerris.
 
-## La bourse couvre : 
+## La bourse couvre :
 
 * Billet d’avion aller-retour en classe économique entre le pays de résidence du boursier et le pays de séjour
 * Assurance voyage de base
