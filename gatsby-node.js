@@ -11,7 +11,8 @@ const path = require('path');
 
 const CONTENT_TYPE = {
   ARTICLE: 'article',
-  GUIDE: 'guide'
+  GUIDE: 'guide',
+  SCHOLARSHIP: 'scholarship'
 };
 
 exports.onCreateNode = ({node, actions, getNode}) => {
@@ -26,6 +27,9 @@ exports.onCreateNode = ({node, actions, getNode}) => {
     } else if (fileNode.dir.indexOf('articles') !== -1) {
       createNodeField({node, name: 'path', value: `/articles/${fileNode.name}`});
       createNodeField({node, name: 'type', value: CONTENT_TYPE.ARTICLE});
+    } else if (fileNode.dir.indexOf('scholarships') !== -1) {
+      createNodeField({node, name: 'path', value: `/bourses/${fileNode.name}`});
+      createNodeField({node, name: 'type', value: CONTENT_TYPE.SCHOLARSHIP});
     }
   }
 };
@@ -35,7 +39,8 @@ exports.createPages = ({actions, graphql}) => {
 
   const guideMapping = {
     [CONTENT_TYPE.ARTICLE]: path.resolve('src/templates/articleTemplate.js'),
-    [CONTENT_TYPE.GUIDE]: path.resolve('src/templates/guideTemplate.js')
+    [CONTENT_TYPE.GUIDE]: path.resolve('src/templates/guideTemplate.js'),
+    [CONTENT_TYPE.SCHOLARSHIP]: path.resolve('src/templates/scholarshipTemplate.js')
   };
 
   return graphql(`

@@ -78,12 +78,12 @@
   }
 
   .inner {
-    @include padding(2em, 2em);
+    @include padding(2em, 1em);
   }
 }
 
 @include breakpoint(xxsmall) {
   .inner {
-    @include padding(2em, 1.5em);
+    @include padding(2em, 0.5em);
   }
 }

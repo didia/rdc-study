@@ -1,0 +1,55 @@
+.list {
+  display: grid;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  width: 18em;
+  color: #000;
+}
+
+.card__title {
+  color: #000;
+}
+
+.card__subtitle {
+  color: #000;
+}
+
+.card__description {
+  padding: 1em;
+}
+
+.card__header {
+  padding: 1em;
+  color: #000;
+}
+
+.card__body {
+  &:hover {
+    color: #000;
+  }
+}
+
+.card__button {
+  color: _palette(link-blue);
+}
+
+@include breakpoint(small) {
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .list__item {
+    margin-bottom: 1.5em;
+  }
+}

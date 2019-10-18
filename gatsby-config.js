@@ -54,7 +54,7 @@ const plugins = [
         camelCase: false
       },
       data: '@import "shared.scss";',
-      includePaths: ['src/assets/styles']
+      includePaths: ['src/assets/styles', 'node_modules']
     }
   },
   {
@@ -100,6 +100,13 @@ const plugins = [
     }
   },
   {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: `${__dirname}/data/scholarships`,
+      name: 'scholarships'
+    }
+  },
+  {
     resolve: 'gatsby-transformer-remark',
     options: {
       plugins: [
@@ -121,7 +128,8 @@ const plugins = [
       id: process.env.GOOGLE_TAG_MANAGER_ID,
       includeInDevelopment: false
     }
-  }
+  },
+  'gatsby-plugin-netlify'
 ];
 
 module.exports = {
