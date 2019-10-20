@@ -1,27 +1,32 @@
+@import '~@material/button/mixins';
+@import '~@material/ripple/mixins';
+
 .list {
   display: grid;
-  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
+  grid-column-gap: 5px;
+  grid-row-gap: 15px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
-  width: 18em;
-  color: #000;
+  color: rgba(#000, 0.54);
 }
 
 .card__title {
+  margin-bottom: 0.2em;
   color: #000;
 }
 
 .card__subtitle {
-  color: #000;
+  margin-bottom: 0;
 }
 
 .card__description {
-  padding: 1em;
+  padding: 0 1em 8px;
+  margin-bottom: 0;
 }
 
 .card__header {
@@ -31,15 +36,22 @@
 
 .card__body {
   &:hover {
-    color: #000;
+    color: rgba(#000, 0.54);
   }
 }
 
 .card__button {
-  color: _palette(link-blue);
+  @include mdc-button-ink-color(_palette(link-blue));
+  @include mdc-states-base-color(_palette(link-blue));
 }
 
-@include breakpoint(small) {
+@include breakpoint(medium) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include breakpoint(xsmall) {
   .list {
     display: flex;
     flex-direction: column;

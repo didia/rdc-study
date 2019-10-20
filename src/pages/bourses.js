@@ -9,9 +9,9 @@ const Scholarships = ({data}) => {
   const scholarships = data.scholarships.edges.map(({node}) => ({
     deadline: node.frontmatter.deadline,
     excerpt: node.frontmatter.excerpt,
-    level: node.frontmatter.level,
+    levels: node.frontmatter.levels,
     path: node.fields.path,
-    targetCountry: node.frontmatter.targetCountry,
+    targetCountries: node.frontmatter.targetCountries,
     thumbnail: node.frontmatter.thumbnail.childImageSharp,
     title: node.frontmatter.title
   }));
@@ -42,8 +42,8 @@ export const pageQuery = graphql`
           frontmatter {
             deadline
             excerpt
-            level
-            targetCountry
+            levels
+            targetCountries
             title
             thumbnail {
               childImageSharp {

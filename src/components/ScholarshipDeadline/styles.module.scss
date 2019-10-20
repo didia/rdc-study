@@ -1,0 +1,19 @@
+.text {
+  color: #000;
+
+  &::before {
+    padding-right: 5px;
+  }
+}
+
+.text.green {
+  color: #28a745;
+}
+
+.text.red {
+  color: #dc3545;
+}
+
+.text.yellow {
+  color: #fb0;
+}

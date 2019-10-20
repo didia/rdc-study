@@ -4,17 +4,17 @@ excerpt: >-
   Vous êtes titulaires d'un diplôme de master et d'une expérience
   professionnelle? Vous avez la possibilité de suivre un master de
   spécialisation d’un an ou un stage de perfectionnement entre 4 et 6 mois au
-  sein d’un établissement de la Fédération Wallonie-Bruxelles en Belgique. 
+  sein d’un établissement de la Fédération Wallonie-Bruxelles en Belgique.
 deadline: '2020-02-07T23:59:34-05:00'
 tags:
   - >-
     bourses;belgique;ares;kinshasa;congo;rdc;etudes;rdcetudes;bourses d'études
     belgique;bourses gratuites;bourses d'études pour étudiants africains
 thumbnail: /images/uploads/actu-appel-bourses-2019-2020_fr.jpg
-level:
+levels:
   - graduate
   - internship
-targetCountry:
+targetCountries:
   - be
 amount: "Pour les bourses de Master, vous avez:\n\n* Un billet aller-retour par année académique;\n* **1150\_€/mois** pour une durée de 12 mois comme frais d'allocation mensuelle;\n* **150\_€** à l'arrivée du boursier comme frais de mission;\n* **700\_€** à l'arrivée du boursier comme frais d'installation, didactiques et de retour;\n* Une réduction des frais d'inscription;\n* Frais d'assurance payés par ARES;\n* Des frais de déplacement dans le cadre de formations interuniversitaires sont aussi remboursées.\n\nPour les bourses de Stage, vous avez:\n\n* Un billet aller-retour année académique;\n* Une allocation mensuelle qui varie selon la durée de votre séjour. **83\_€/jour** pour des durées de 8 à 17 jour ou **1400\_€/mois** pour le reste;\n* **150 €** à l'arrivée du boursier comme frais de mission;\n* Frais d'assurance payés par ARES;\n* Des frais de déplacement dans le cadre de formations interuniversitaires sont aussi remboursées."
 criteria: >-
@@ -54,4 +54,3 @@ howToApply: >-
   href="https://www.ares-ac.be/fr/cooperation-au-developpement/bourses/masters-et-stages-en-belgique"
   target="_blank" rel="nofollow noopener">le site internet de l'ARES</a>.
 ---
-

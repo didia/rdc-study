@@ -6,9 +6,9 @@ deadline: 2020-02-01T04:59:52.454Z
 tags:
   - bourse d'études canada;McGill;Mastercard Fondation;bourses pour africains
 thumbnail: /images/uploads/mcgill-mastercard-foundation-scholarships.png
-level:
+levels:
   - graduate
-targetCountry:
+targetCountries:
   - ca
 excerpt: >-
   Le programme de bourses de la Fondation MasterCard identifie des jeunes doués
@@ -118,4 +118,3 @@ howToApply: >-
   href="https://www.mcgill.ca/mastercardfdn-scholars/fr/propos-du-programme/fiche-dinformation-programme-de-bourses-de-la-fondation-mastercard"
   target="_blank" rel="noopener noreferrer">site web du programme</a>
 ---
-

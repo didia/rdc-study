@@ -44,14 +44,14 @@ collections:
     sort: "date:desc"
     slug: "{{slug}}"
     fields:
-      - {label: "Nom de la bourse", name: "title", widget: "string"}
+      - {label: "Nom de la bourse", name: "title", widget: "string", pattern: [".{1,60}$", "Le nom de la bourse doit avoir moins de 60 caractères"]}
       - {label: "Date limite", name: "deadline", widget: "datetime"}
       - {label: "Mots clés", name: "tags", widget: "list", required: false}
       - {label: "Image principale de l’article", name: "thumbnail", widget: "image"}
       - {label: "Crédits de l’image principale", name: "thumbnailCredits", widget: "text", required: false}
-      - {label: "Cycles visées", name: "level", widget: "select", multiple: true, default: "all", options: [{value: "undergraduate", label: "Licence"}, {"value": "graduate", label: "Master"}, {value: "postgraduate", label: "Doctorat"}, {value: "research", label: "Recherches"}, {value: "internship", label: "Stages"}, {value: "all", label: "Tous les cycles"}]}
+      - {label: "Cycles visées", name: "levels", widget: "select", multiple: true, default: "all", options: [{value: "undergraduate", label: "Licence"}, {"value": "graduate", label: "Master"}, {value: "postgraduate", label: "Doctorat"}, {value: "research", label: "Recherches"}, {value: "internship", label: "Stages"}, {value: "all", label: "Tous les cycles"}]}
       - label: "Pays de destination"
-        name: "targetCountry"
+        name: "targetCountries"
         widget: "select"
         multiple: true
         options:
@@ -69,7 +69,7 @@ collections:
             label: "Royaume-Uni"
           - value: "ch"
             label: "Suisse"
-      - {label: "Brève", name: "excerpt", widget: "text"}
+      - {label: "Brève", name: "excerpt", widget: "text", pattern: [".{1,300}$", "Le resumé de la bourse doit avoir moins de 300 caractères"]}
       - {label: "En quoi consiste la bourse ?", name: "amount", widget: "markdown"}
       - {label: "Quelles sont les critères de la bourse ?", name: "criteria", widget: "markdown"}
       - {label: "Comment postuler ?", name: "howToApply", widget: "markdown"}
