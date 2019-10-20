@@ -16,8 +16,8 @@ const ScholarshipPage = ({activeOnly, page, scholarships}) => {
   let link;
 
   if (activeOnly) {
-    disclaimerTranslationId = 'pages.scholarships.recent-only-disclaimer';
-    linkLabelTranslationId = 'pages.scholarships.all-disclaimer';
+    disclaimerTranslationId = 'pages.scholarships.active-only-disclaimer';
+    linkLabelTranslationId = 'pages.scholarships.all-scholarships-link-label';
     link = '/toutes-les-bourses';
   } else {
     disclaimerTranslationId = 'pages.scholarships.all-disclaimer';
