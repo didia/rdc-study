@@ -25,6 +25,7 @@ const getDeadlineMessage = (date, intl) => {
   const remainingDays = differenceInCalendarDays(deadline, new Date());
 
   if (remainingDays >= 0 && remainingDays < MAX_NUMBER_OF_DAYS_IN_MONTH) {
+    debugger;
     return {
       color: 'yellow',
       message: intl.formatHTMLMessage({id: 'scholarship-deadline.remaining-days'}, {date, days: remainingDays})
