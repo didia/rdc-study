@@ -7,7 +7,7 @@ import ScholarshipsPage from '../components/pages/ScholarshipsPage';
 
 const page = {
   description: "Voici toutes les offres de bourses partagées avec ❤️ par l'équipe RDC Etudes.",
-  title: "Toutes les bourses d'études",
+  title: "Bourses d'études",
   path: '/toutes-les-bourses'
 };
 
