@@ -45,7 +45,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Nom de la bourse", name: "title", widget: "string", pattern: [".{1,60}$", "Le nom de la bourse doit avoir moins de 60 caractères"]}
-      - {label: "Date limite", name: "deadline", widget: "datetime"}
+      - {label: "Date limite", name: "deadline", widget: "datetime", required: false}
       - {label: "Mots clés", name: "tags", widget: "list", required: false}
       - {label: "Image principale de l’article", name: "thumbnail", widget: "image"}
       - {label: "Crédits de l’image principale", name: "thumbnailCredits", widget: "text", required: false}

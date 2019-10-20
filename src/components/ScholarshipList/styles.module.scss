@@ -12,6 +12,7 @@
 }
 
 .card {
+  height: 100%;
   color: rgba(#000, 0.54);
 }
 
@@ -35,6 +36,7 @@
 }
 
 .card__body {
+  height: 100%;
   &:hover {
     color: rgba(#000, 0.54);
   }
@@ -59,6 +61,11 @@
 
   .card {
     width: 100%;
+    height: auto;
+  }
+
+  .card__body {
+    height: auto;
   }
 
   .list__item {

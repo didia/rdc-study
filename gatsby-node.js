@@ -30,8 +30,28 @@ exports.onCreateNode = ({node, actions, getNode}) => {
     } else if (fileNode.dir.indexOf('scholarships') !== -1) {
       createNodeField({node, name: 'path', value: `/bourses/${fileNode.name}`});
       createNodeField({node, name: 'type', value: CONTENT_TYPE.SCHOLARSHIP});
+
+      const deadlineTimestamp = node.frontmatter.deadline
+        ? new Date(node.frontmatter.deadline).getTime()
+        : Number.MAX_SAFE_INTEGER;
+
+      createNodeField({node, name: 'timestamp', value: deadlineTimestamp});
     }
   }
+};
+
+exports.onCreatePage = ({page, actions}) => {
+  const {createPage, deletePage} = actions;
+
+  deletePage(page);
+  // You can access the variable "house" in your page queries now
+  createPage({
+    ...page,
+    context: {
+      ...page.context,
+      currentTimestamp: Date.now()
+    }
+  });
 };
 
 exports.createPages = ({actions, graphql}) => {
