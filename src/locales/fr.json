@@ -108,6 +108,11 @@
   "pages.index.services.verification.contact-us-text": "Contactez nous",
   "pages.index.services.verification.title": "Un service de vérification Gratuit!!!",
 
+  "pages.scholarships.active-only-link-label": "Cliquez ici pour n'afficher que les offres en cours.",
+  "pages.scholarships.all-disclaimer": "NB: Cette page affiche toutes les offres des bourses y compris celles expirées.",
+  "pages.scholarships.all-scholarships-link-label": "Cliquez ici pour afficher les offres expirées.",
+  "pages.scholarships.active-only-disclaimer": "NB: Cette page n'affiche que les offres des bourses d'études actives.",
+
   "scholarship-deadline.expiration-date": "Expire le <time datetime=\"{date}\">{deadline}</time>",
   "scholarship-deadline.expired": "Clôturée le <time datetime=\"{date}\">{deadline}</time>",
   "scholarship-deadline.no-expiration": "Aucune date d'expiration",

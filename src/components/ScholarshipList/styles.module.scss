@@ -11,6 +11,10 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.list__item {
+  padding: 0;
+}
+
 .card {
   height: 100%;
   color: rgba(#000, 0.54);

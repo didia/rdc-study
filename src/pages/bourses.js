@@ -2,9 +2,14 @@
 import React from 'react';
 import T from 'prop-types';
 import {graphql} from 'gatsby';
-import isAfter from 'date-fns/isAfter';
 
 import ScholarshipsPage from '../components/pages/ScholarshipsPage';
+
+const page = {
+  description: "Voici les offres de bourses en cours trouvées pour vous avec ❤️ par l'équipe RDC Etudes.",
+  title: "Trouver une bourse d'études",
+  path: '/bourses'
+};
 
 const Scholarships = ({data}) => {
   const currentTimestamp = Date.now();
@@ -20,7 +25,7 @@ const Scholarships = ({data}) => {
       title: node.frontmatter.title
     }));
 
-  return <ScholarshipsPage scholarships={scholarships} />;
+  return <ScholarshipsPage activeOnly={true} page={page} scholarships={scholarships} />;
 };
 
 Scholarships.propTypes = {
@@ -31,35 +36,41 @@ Scholarships.propTypes = {
 
 export default Scholarships;
 
-export const pageQuery = graphql`
-  query ScholarshipsPageQuery($currentTimestamp: Float) {
-    scholarships: allMarkdownRemark(
-      limit: 1000
-      sort: {fields: [frontmatter___deadline], order: ASC}
-      filter: {fields: {type: {eq: "scholarship"}, timestamp: {gt: $currentTimestamp}}}
-    ) {
-      edges {
-        node {
-          fields {
-            path
-            timestamp
-          }
-          frontmatter {
-            deadline
-            excerpt
-            levels
-            targetCountries
-            title
-            thumbnail {
-              childImageSharp {
-                fluid(maxHeight: 500, cropFocus: CENTER) {
-                  ...GatsbyImageSharpFluid
-                }
+export const scholarshipFragment = graphql`
+  fragment ScholarshipListItemFragment on MarkdownRemarkConnection {
+    edges {
+      node {
+        fields {
+          path
+          timestamp
+        }
+        frontmatter {
+          deadline
+          excerpt
+          levels
+          targetCountries
+          title
+          thumbnail {
+            childImageSharp {
+              fluid(maxHeight: 500, cropFocus: CENTER) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
         }
       }
+    }
+  }
+`;
+
+export const pageQuery = graphql`
+  query ScholarshipsPageQuery($currentTimestamp: Float) {
+    scholarships: allMarkdownRemark(
+      limit: 1000
+      sort: {fields: [fields___timestamp], order: ASC}
+      filter: {fields: {type: {eq: "scholarship"}, timestamp: {gt: $currentTimestamp}}}
+    ) {
+      ...ScholarshipListItemFragment
     }
   }
 `;
