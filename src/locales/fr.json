@@ -116,7 +116,7 @@
   "scholarship-deadline.expiration-date": "Expire le <time datetime=\"{date}\">{deadline}</time>",
   "scholarship-deadline.expired": "Clôturée le <time datetime=\"{date}\">{deadline}</time>",
   "scholarship-deadline.no-expiration": "Aucune date d'expiration",
-  "scholarship-deadline.remaining-days": "Expire <time datetime=\"{date}\">{days, plural, =0 {aujourd'hui} one {demain} other {dans # jours}}</time>",
+  "scholarship-deadline.remaining-days": "Expire <time datetime=\"{date}\">{days, plural,\n =0 {aujourd'hui}\n one {demain}\n other {dans # jours}}</time>",
 
   "scholarship-level.all": "Tous les niveaux académiques",
   "scholarship-level.graduate": "Master",
