@@ -1,4 +1,5 @@
 /* eslint-env node */
+
 exports.onClientEntry = () => {
   return new Promise((resolve, reject) => {
     window.__polyfillio__ = () => {

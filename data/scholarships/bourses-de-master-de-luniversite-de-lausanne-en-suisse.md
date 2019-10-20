@@ -9,9 +9,9 @@ tags:
     Bourses d'études pour étudiants africains;Bourses d'études pour étudiants
     congolais;Etudier en suisse;Université de Lausanne
 thumbnail: /images/uploads/ulausanne.jpeg
-level:
+levels:
   - graduate
-targetCountry:
+targetCountries:
   - ch
 amount: >-
   * Une bourse de 1600$ par mois du 15 septembre au 15 juillet et ce, pour la
@@ -82,4 +82,3 @@ howToApply: >-
   href="https://www.unil.ch/international/boursesdemasterunil" target="_blank"
   rel="noreferrer noopener">le lien officiel de la bourse d'études.</a>
 ---
-

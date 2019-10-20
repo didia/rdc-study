@@ -4,9 +4,9 @@ deadline: 2019-09-27T03:59:48.082Z
 tags:
   - bourses chines;schwarzman;bourses d'études gratuites; bourses pour congolais
 thumbnail: /images/uploads/schwarzam-scholars.jpg
-level:
+levels:
   - graduate
-targetCountry:
+targetCountries:
   - cn
 excerpt: >-
   Le programme des bourses Schwarzman offre une opportunité aux plus brillants
@@ -71,4 +71,3 @@ howToApply: >-
   programme <a href="https://www.schwarzmanscholars.org/about/" target="_blank"
   rel="noopener noreferrer">https://www.schwarzmanscholars.org</a>
 ---
-

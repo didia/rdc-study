@@ -39,7 +39,7 @@ span.as-anchor {
   transition: color #{_duration(transition)} ease-in-out, border-bottom-color #{_duration(transition)} ease-in-out;
 
   &:hover {
-    color: _palette(fg-bold) !important;
+    color: _palette(fg-bold);
     border-bottom-color: transparent;
   }
 

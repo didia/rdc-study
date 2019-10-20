@@ -8,10 +8,10 @@ tags:
     Bourses d'études gratuites 2020 - 2021;Bourses d'études suisse; Bourses
     d'études pour congolais; Bourses d'études;Suisse
 thumbnail: /images/uploads/switzerland-students.jpg
-level:
+levels:
   - research
   - postgraduate
-targetCountry:
+targetCountries:
   - ch
 excerpt: >-
   La Confédération suisse offre chaque année des bourses d’excellence dans le
@@ -81,4 +81,3 @@ howToApply: >-
   target="_blank" rel="noopener
   noreferrer">https://www.sbfi.admin.ch/sbfi/en/home/education/scholarships-and-grants/swiss-government-excellence-scholarships/countrys-m---z.html</a>
 ---
-

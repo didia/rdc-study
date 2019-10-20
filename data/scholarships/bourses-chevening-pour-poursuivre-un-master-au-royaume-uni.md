@@ -8,9 +8,9 @@ tags:
   - royaume-uni
   - bourses d'études 2020
 thumbnail: /images/uploads/bourse-chevening.jpg
-level:
+levels:
   - graduate
-targetCountry:
+targetCountries:
   - gb
 excerpt: >-
   La bourse Chevening est une bourse complète et gratuite qui permet aux futurs
@@ -89,4 +89,3 @@ howToApply: >-
   target="_blank" rel="noreferrer noopener">consulter le site web de la bourse
   sur le processus de sélection.</a>
 ---
-

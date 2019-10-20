@@ -19,7 +19,7 @@ button,
   font-weight: _font(weight-heading-bold);
   line-height: 3.75em;
   letter-spacing: _font(kern-heading);
-  color: _palette(fg-bold) !important;
+  color: _palette(fg-bold);
   transition: background-color #{_duration(transition)} ease-in-out;
   appearance: none;
   cursor: pointer;
