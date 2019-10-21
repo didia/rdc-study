@@ -11,26 +11,6 @@ import styles from './styles.module.scss';
 // Constants
 const MAX_NUMBER_OF_DAYS_IN_MONTH = 31;
 
-const getRemainingDaysMessage = (date, days, intl) => {
-  let translationKey;
-
-  switch (days) {
-    case 0:
-      translationKey = 'scholarship-deadline.today';
-      return;
-    case 1:
-      translationKey = 'scholarship-deadline.tomorrow';
-      return;
-    default:
-      translationKey = 'scholarship-deadline.remaining-days';
-  }
-
-  return {
-    color: 'yellow',
-    message: intl.formatHTMLMessage({id: translationKey}, {date, days})
-  };
-};
-
 // eslint-disable-next-line complexity
 const getDeadlineMessage = (date, intl) => {
   if (!date) {
@@ -45,7 +25,10 @@ const getDeadlineMessage = (date, intl) => {
   const remainingDays = differenceInCalendarDays(deadline, new Date());
 
   if (remainingDays >= 0 && remainingDays < MAX_NUMBER_OF_DAYS_IN_MONTH) {
-    return getRemainingDaysMessage(date, remainingDays, intl);
+    return {
+      color: 'yellow',
+      message: intl.formatHTMLMessage({id: 'scholarship-deadline.remaining-days'}, {date, days: remainingDays})
+    };
   }
 
   const messageKey = remainingDays < 0 ? 'scholarship-deadline.expired' : 'scholarship-deadline.expiration-date';
