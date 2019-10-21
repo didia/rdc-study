@@ -1,5 +1,5 @@
 // Vendor
-import React from 'react';
+import React, {Component} from 'react';
 import differenceInCalendarDays from 'date-fns/differenceInBusinessDays';
 import {injectIntl} from 'react-intl';
 import T from 'prop-types';
@@ -35,7 +35,7 @@ const getRemainingDaysMessage = (date, days, intl) => {
 const getDeadlineMessage = (date, intl) => {
   if (!date) {
     return {
-      class: 'green',
+      color: 'green',
       message: intl.formatMessage({id: 'scholarship-deadline.no-expiration'})
     };
   }
@@ -58,20 +58,30 @@ const getDeadlineMessage = (date, intl) => {
   };
 };
 
-const ScholarshipDeadline = injectIntl(({className, date, intl, tag}) => {
-  const Tag = tag || 'div';
-  const {color, message} = getDeadlineMessage(date, intl);
+class ScholarshipDeadline extends Component {
+  state = {
+    color: null,
+    message: null
+  };
 
-  return (
-    <Tag className={className}>
-      <span
-        data-message={message}
-        className={classnames('fa fa-clock-o', styles.text, styles[color])}
-        dangerouslySetInnerHTML={{__html: message}}
-      />
-    </Tag>
-  );
-});
+  componentDidMount() {
+    this.setState(getDeadlineMessage(this.props.date, this.props.intl));
+  }
+
+  render() {
+    const {className, tag} = this.props;
+    const Tag = tag || 'div';
+
+    return (
+      <Tag className={className}>
+        <span
+          className={classnames('fa fa-clock-o', styles.text, styles[this.state.color])}
+          dangerouslySetInnerHTML={{__html: this.state.message}}
+        />
+      </Tag>
+    );
+  }
+}
 
 ScholarshipDeadline.propTypes = {
   className: T.string,
@@ -84,4 +94,4 @@ ScholarshipDeadline.propTypes = {
   })
 };
 
-export default ScholarshipDeadline;
+export default injectIntl(ScholarshipDeadline);
