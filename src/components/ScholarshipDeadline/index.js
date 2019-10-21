@@ -65,6 +65,7 @@ const ScholarshipDeadline = injectIntl(({className, date, intl, tag}) => {
   return (
     <Tag className={className}>
       <span
+        data-message={message}
         className={classnames('fa fa-clock-o', styles.text, styles[color])}
         dangerouslySetInnerHTML={{__html: message}}
       />
