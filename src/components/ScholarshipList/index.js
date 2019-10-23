@@ -11,7 +11,7 @@ import styles from './styles.module.scss';
 
 // Components
 import ScholarshipDeadline from '../ScholarshipDeadline';
-import ScholarshipLevel from '../ScholarshipLevel';
+import ScholarshipLevels from '../ScholarshipLevels';
 
 const Scholarship = ({scholarship}) => {
   return (
@@ -20,7 +20,7 @@ const Scholarship = ({scholarship}) => {
         <CardMedia wide imageUrl={scholarship.thumbnail.fluid.src} />
         <div className={styles.card__header}>
           <Headline6 className={styles.card__title}>{scholarship.title}</Headline6>
-          <ScholarshipLevel className={styles.card__subtitle} levels={scholarship.levels} tag={Subtitle2} />
+          <ScholarshipLevels className={styles.card__subtitle} levels={scholarship.levels} tag={Subtitle2} />
           <ScholarshipDeadline className={styles.card__subtitle} date={scholarship.deadline} tag={Subtitle2} />
         </div>
         <Body2 className={styles.card__description}>{scholarship.excerpt}</Body2>

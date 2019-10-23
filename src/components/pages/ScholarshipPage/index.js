@@ -11,6 +11,10 @@ import styles from './styles.module.scss';
 import PageLayout from '../../PageLayout';
 import SEO from '../../SEO';
 import SocialShareButtons from '../../SocialShareButtons';
+import ScholarshipLevels from '../../ScholarshipLevels';
+import ScholarshipDeadline from '../../ScholarshipDeadline';
+import ScholarshipCountries from '../../ScholarshipCountries';
+import HtmlContent from '../../HtmlContent';
 
 const ScholarshipPage = ({scholarship, otherScholarships, hasMoreActiveScholarships}) => {
   const page = {
@@ -40,10 +44,18 @@ const ScholarshipPage = ({scholarship, otherScholarships, hasMoreActiveScholarsh
 
             <div className={styles['cover__title-excerpt-wrapper']}>
               <h1 className={styles.cover__title}>{scholarship.title}</h1>
+              <p className={styles.cover__description}>{scholarship.excerpt}</p>
+              <div className={styles.cover__meta}>
+                <ScholarshipCountries className={styles['cover-meta__item']} countries={scholarship.targetCountries} />
+                <ScholarshipLevels className={styles['cover-meta__item']} levels={scholarship.levels} />
+                <ScholarshipDeadline className={styles['cover-meta__item']} date={scholarship.deadline} />
+              </div>
             </div>
 
             <SocialShareButtons path={scholarship.path} />
           </div>
+
+          <HtmlContent content={scholarship.content} />
         </div>
       </section>
     </PageLayout>
@@ -52,10 +64,14 @@ const ScholarshipPage = ({scholarship, otherScholarships, hasMoreActiveScholarsh
 
 ScholarshipPage.propTypes = {
   scholarship: T.shape({
+    content: T.string.isRequired,
+    deadline: T.string,
     excerpt: T.string.isRequired,
+    levels: T.array,
     metaImage: T.object.isRequired,
     path: T.string.isRequired,
     tags: T.arrayOf(T.string),
+    targetCountries: T.arrayOf(T.string),
     thumbnail: T.object.isRequired,
     thumbnailCredits: T.string,
     title: T.string.isRequired

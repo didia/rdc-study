@@ -6,7 +6,8 @@ import {graphql} from 'gatsby';
 // Components
 import ScholarshipPage from '../components/pages/ScholarshipPage';
 
-const scholarshipFromMarkdownRemark = ({fields, frontmatter}) => ({
+const scholarshipFromMarkdownRemark = ({fields, html, frontmatter}) => ({
+  content: html,
   ...frontmatter,
   ...fields,
   metaImage: frontmatter.thumbnail ? frontmatter.thumbnail.childImageSharp.metaImage : null,
@@ -59,6 +60,7 @@ Template.propTypes = {
 export const pageQuery = graphql`
   query ScholarshipByPath($path: String!, $type: String!, $currentTimestamp: Float) {
     markdownRemark(fields: {path: {eq: $path}}) {
+      html
       fields {
         path
       }

@@ -63,12 +63,20 @@
 }
 
 .cover__description {
-  margin-bottom: 0.3em;
+  margin-bottom: 1em;
 }
 
 .cover__title-excerpt-wrapper {
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+.cover__meta {
+  display: flex;
+}
+
+.cover-meta__item {
+  margin-right: 20px;
 }
 
 .thumbnail-credit {
