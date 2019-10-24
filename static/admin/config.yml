@@ -44,7 +44,7 @@ collections:
     sort: "date:desc"
     slug: "{{slug}}"
     fields:
-      - {label: "Contenu", name: "body", widget: "markdown", default: "## En quoi consiste la bourse ?<br/><br/> ## Quelles sont les critères de la bourse ?<br/><br/> ## Comment postuler ?<br/><br/>"}
+      - {label: "Contenu", name: "body", widget: "markdown", default: "## En quoi consiste la bourse ?\n## Quelles sont les critères de la bourse ?\n## Comment postuler ?\n"}
       - {label: "Nom de la bourse", name: "title", widget: "string", pattern: [".{1,60}$", "Le nom de la bourse doit avoir moins de 60 caractères"]}
       - {label: "Date limite", name: "deadline", widget: "datetime", required: false}
       - {label: "Mots clés", name: "tags", widget: "list", required: false}
