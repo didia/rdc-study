@@ -52,6 +52,18 @@
   @include mdc-states-base-color(_palette(link-blue));
 }
 
+.see-more-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.see-more-button {
+  padding: 0 2.25em;
+}
+
 @include breakpoint(medium) {
   .list {
     grid-template-columns: 1fr 1fr;

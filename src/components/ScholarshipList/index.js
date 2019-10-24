@@ -5,6 +5,7 @@ import {Link} from 'gatsby';
 import Card, {CardMedia, CardActionButtons, CardActions} from '@material/react-card';
 import {Body2, Headline6, Subtitle2} from '@material/react-typography';
 import classnames from 'classnames';
+import {FormattedMessage} from 'react-intl';
 
 // Styles
 import styles from './styles.module.scss';
@@ -53,18 +54,36 @@ Scholarship.propTypes = {
   })
 };
 
-const ScholarshipList = ({scholarships}) => (
-  <ul className={styles.list}>
-    {scholarships.map((scholarship, i) => (
-      <li key={i} className={styles.list__item}>
-        <Scholarship scholarship={scholarship} />
-      </li>
-    ))}
-  </ul>
+const ScholarshipList = ({scholarships, showAllScholarshipsLink, titleKey}) => (
+  <div>
+    {titleKey && <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>}
+
+    <ul className={styles.list}>
+      {scholarships.map((scholarship, i) => (
+        <li key={i} className={styles.list__item}>
+          <Scholarship scholarship={scholarship} />
+        </li>
+      ))}
+    </ul>
+
+    {showAllScholarshipsLink && (
+      <FormattedMessage id="scholarship-list.see-all">
+        {text => (
+          <div className={styles['see-more-button-wrapper']}>
+            <Link to="/toutes-les-bourses" className={classnames('button', styles['see-more-button'])}>
+              {text}
+            </Link>
+          </div>
+        )}
+      </FormattedMessage>
+    )}
+  </div>
 );
 
 ScholarshipList.propTypes = {
-  scholarships: T.arrayOf(T.shape({}))
+  scholarships: T.arrayOf(T.shape({})),
+  showAllScholarshipsLink: T.bool,
+  titleKey: T.string
 };
 
 export default ScholarshipList;

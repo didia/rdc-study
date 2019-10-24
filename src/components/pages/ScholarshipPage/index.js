@@ -58,7 +58,13 @@ const ScholarshipPage = ({scholarship, otherScholarships, hasMoreActiveScholarsh
 
           <HtmlContent content={scholarship.content} />
 
-          {otherScholarships && otherScholarships.length > 0 && <ScholarshipList scholarships={otherScholarships} />}
+          {otherScholarships && otherScholarships.length > 0 && (
+            <ScholarshipList
+              showAllScholarshipsLink
+              scholarships={otherScholarships}
+              titleKey="pages.scholarships-show.other-scholarships.title"
+            />
+          )}
         </div>
       </section>
     </PageLayout>

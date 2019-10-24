@@ -113,6 +113,8 @@
   "pages.scholarships.all-scholarships-link-label": "Cliquez ici pour afficher les offres expirées.",
   "pages.scholarships.active-only-disclaimer": "NB: Cette page n'affiche que les offres des bourses d'études actives.",
 
+  "pages.scholarships-show.other-scholarships.title": "Autres bourses",
+
   "scholarship-deadline.expiration-date": "Expire le <time datetime=\"{date}\">{deadline}</time>",
   "scholarship-deadline.expired": "Clôturée le <time datetime=\"{date}\">{deadline}</time>",
   "scholarship-deadline.no-expiration": "Aucune date limite",
@@ -124,6 +126,8 @@
   "scholarship-levels.postgraduate": "Doctorat",
   "scholarship-levels.research": "Recherches",
   "scholarship-levels.undergraduate": "License",
+
+  "scholarship-list.see-all": "Afficher toutes les bourses",
 
   "shared.contact-us-text": "Contactez-nous",
 

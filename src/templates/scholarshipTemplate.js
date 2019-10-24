@@ -65,11 +65,8 @@ export const pageQuery = graphql`
         path
       }
       frontmatter {
-        amount
-        criteria
         deadline
         excerpt
-        howToApply
         levels
         tags
         targetCountries
