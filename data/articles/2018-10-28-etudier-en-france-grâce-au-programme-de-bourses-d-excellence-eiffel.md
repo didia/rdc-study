@@ -9,7 +9,7 @@ tags:
   - bourse excellence eiffel
   - bourse d'etudes
   - france bourse d'études
-date: '2018-10-28T07:39:35-04:00'
+date: 2019-10-24T11:39:00.000Z
 ---
 L' inscription pour la bourse d'excellence Eiffel pour l'année académique 2020 - 2021 est ouverte du 21 octobre 2019 au 09 janvier 2020.\
 En tant que candidat, vous devez donc contacter un établissement d'enseignement supérieur français qui pourra présenter votre candidature à la bourse. Seuls ces établissements peuvent postuler pour vous.
