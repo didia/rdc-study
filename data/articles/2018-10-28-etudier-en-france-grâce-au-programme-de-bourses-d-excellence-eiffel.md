@@ -11,10 +11,10 @@ tags:
   - france bourse d'études
 date: '2018-10-28T07:39:35-04:00'
 ---
-L' inscription pour la bourse d'excellence Eiffel pour l'année académique 2019 - 2020 est ouverte du 15 octobre 2018 au 11 janvier 2019.\
+L' inscription pour la bourse d'excellence Eiffel pour l'année académique 2020 - 2021 est ouverte du 21 octobre 2019 au 09 janvier 2020.\
 En tant que candidat, vous devez donc contacter un établissement d'enseignement supérieur français qui pourra présenter votre candidature à la bourse. Seuls ces établissements peuvent postuler pour vous.
 
-En tant que boursier, vous allez bénéficier d'une indemnité mensuelle de 1 181 € pour les étudiants en master et 1 400 € pour les étudiants au doctorat. En plus, vous disposerez d'un billet aller - retour vers votre pays d'origine ansi que l'accès à des activités culturelles.
+En tant que boursier, vous allez bénéficier d'une indemnité mensuelle de 1 181 € pour les étudiants en master et 1 400 € pour les étudiants au doctorat. En plus, vous disposerez d'un billet aller - retour vers votre pays d'origine ainsi que l'accès à des activités culturelles.
 
 ## Quelles sont les domaines d'études concernés?
 
