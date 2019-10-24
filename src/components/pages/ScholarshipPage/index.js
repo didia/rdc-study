@@ -15,6 +15,7 @@ import ScholarshipLevels from '../../ScholarshipLevels';
 import ScholarshipDeadline from '../../ScholarshipDeadline';
 import ScholarshipCountries from '../../ScholarshipCountries';
 import HtmlContent from '../../HtmlContent';
+import ScholarshipList from '../../../components/ScholarshipList';
 
 const ScholarshipPage = ({scholarship, otherScholarships, hasMoreActiveScholarships}) => {
   const page = {
@@ -56,6 +57,8 @@ const ScholarshipPage = ({scholarship, otherScholarships, hasMoreActiveScholarsh
           </div>
 
           <HtmlContent content={scholarship.content} />
+
+          {otherScholarships && otherScholarships.length > 0 && <ScholarshipList scholarships={otherScholarships} />}
         </div>
       </section>
     </PageLayout>

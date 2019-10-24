@@ -90,7 +90,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 10
       sort: {fields: [fields___timestamp], order: ASC}
-      filter: {fields: {type: {eq: $type}, timestamp: {gt: $currentTimestamp}}}
+      filter: {fields: {type: {eq: $type}, timestamp: {gt: $currentTimestamp}, path: {ne: $path}}}
     ) {
       ...ScholarshipListItemFragment
       pageInfo {
