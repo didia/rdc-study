@@ -1,5 +1,5 @@
 // Vendor
-import React from 'react';
+import React, {Component} from 'react';
 import T from 'prop-types';
 import {graphql} from 'gatsby';
 
@@ -11,30 +11,39 @@ const page = {
   path: '/bourses'
 };
 
-const Scholarships = ({data}) => {
-  const currentTimestamp = Date.now();
-  const scholarships = data.scholarships.edges
-    .filter(({node}) => node.fields.timestamp - currentTimestamp > 0)
-    .map(({node}) => ({
-      deadline: node.frontmatter.deadline,
-      excerpt: node.frontmatter.excerpt,
-      levels: node.frontmatter.levels,
-      path: node.fields.path,
-      targetCountries: node.frontmatter.targetCountries,
-      thumbnail: node.frontmatter.thumbnail.childImageSharp,
-      title: node.frontmatter.title
-    }));
+export default class Scholarships extends Component {
+  state = {
+    scholarships: []
+  };
 
-  return <ScholarshipsPage activeOnly={true} page={page} scholarships={scholarships} />;
-};
+  componentDidMount() {
+    const {data} = this.props;
+    const currentTimestamp = Date.now();
+    const scholarships = data.scholarships.edges
+      .filter(({node}) => node.fields.timestamp - currentTimestamp > 0)
+      .map(({node}) => ({
+        deadline: node.frontmatter.deadline,
+        excerpt: node.frontmatter.excerpt,
+        levels: node.frontmatter.levels,
+        path: node.fields.path,
+        targetCountries: node.frontmatter.targetCountries,
+        thumbnail: node.frontmatter.thumbnail.childImageSharp,
+        title: node.frontmatter.title
+      }));
+
+    this.setState({scholarships});
+  }
+
+  render() {
+    return <ScholarshipsPage activeOnly={true} page={page} scholarships={this.state.scholarships} />;
+  }
+}
 
 Scholarships.propTypes = {
   data: T.shape({
     scholarships: T.object.isRequired
   })
 };
-
-export default Scholarships;
 
 export const scholarshipFragment = graphql`
   fragment ScholarshipListItemFragment on MarkdownRemarkConnection {

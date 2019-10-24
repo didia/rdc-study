@@ -50,11 +50,13 @@ const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, 
 
       {descriptionKey && <FormattedMessage id={descriptionKey}>{text => <p>{text}</p>}</FormattedMessage>}
 
-      <section className={styles['articles-wrapper']}>
+      <ul className={styles['articles-wrapper']}>
         {articles.map((article, i) => (
-          <Article key={i} article={article} />
+          <li key={i}>
+            <Article key={i} article={article} />
+          </li>
         ))}
-      </section>
+      </ul>
 
       {hasMoreArticles && (
         <FormattedMessage id="shared.see-more-text">

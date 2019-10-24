@@ -27,6 +27,7 @@
 
 .card__subtitle {
   margin-bottom: 0;
+  color: rgba(#000, 0.87);
 }
 
 .card__description {
@@ -49,6 +50,18 @@
 .card__button {
   @include mdc-button-ink-color(_palette(link-blue));
   @include mdc-states-base-color(_palette(link-blue));
+}
+
+.see-more-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.see-more-button {
+  padding: 0 2.25em;
 }
 
 @include breakpoint(medium) {

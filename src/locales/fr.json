@@ -46,8 +46,8 @@
   "pages.assistance.free.description": "Toute l’information dont vous avez besoin pour réaliser votre projet d’études est disponible via nos guides en ligne. Ils sont gratuits et le resteront toujours.",
   "pages.assistance.free.features.admission-guide": "Guide pour l’admission",
   "pages.assistance.free.features.visa-guide": "Guide pour le visa",
-  "pages.assistance.free.features.countries-guide": "Canada et États-Unis",
-  "pages.assistance.free.features.protection-guide": "Protection anti-escrocs",
+  "pages.assistance.free.features.countries-guide": "Belgique, Canada et États-Unis",
+  "pages.assistance.free.features.protection-guide": "Prévention anti-fraude",
   "pages.assistance.free.guide-link-text": "Explorez nos guides",
   "pages.assistance.free.title": "GRATIS!",
 
@@ -113,19 +113,32 @@
   "pages.scholarships.all-scholarships-link-label": "Cliquez ici pour afficher les offres expirées.",
   "pages.scholarships.active-only-disclaimer": "NB: Cette page n'affiche que les offres des bourses d'études actives.",
 
+  "pages.scholarships-show.other-scholarships.title": "Autres bourses",
+
   "scholarship-deadline.expiration-date": "Expire le <time datetime=\"{date}\">{deadline}</time>",
   "scholarship-deadline.expired": "Clôturée le <time datetime=\"{date}\">{deadline}</time>",
   "scholarship-deadline.no-expiration": "Aucune date limite",
-  "scholarship-deadline.remaining-days": "Expire <time datetime=\"{date}\">{days, plural,\n =0 {aujourd'hui}\n one {demain}\n other {dans # jours}}</time>",
+  "scholarship-deadline.remaining-days": "<time datetime=\"{date}\">{days, plural,\n =0 {Dernier jour aujourd'hui}\n one {Dernier jour demain}\n other {# jours restants}}</time>",
 
-  "scholarship-level.all": "Tous les niveaux académiques",
-  "scholarship-level.graduate": "Master",
-  "scholarship-level.internship": "Stages",
-  "scholarship-level.postgraduate": "Doctorat",
-  "scholarship-level.research": "Recherches",
-  "scholarship-level.undergraduate": "License",
+  "scholarship-levels.all": "Tous les niveaux académiques",
+  "scholarship-levels.graduate": "Master",
+  "scholarship-levels.internship": "Stages",
+  "scholarship-levels.postgraduate": "Doctorat",
+  "scholarship-levels.research": "Recherches",
+  "scholarship-levels.undergraduate": "License",
+
+  "scholarship-list.see-all": "Afficher toutes les bourses",
 
   "shared.contact-us-text": "Contactez-nous",
+
+  "shared.countries.be": "Belgique",
+  "shared.countries.ca": "Canada",
+  "shared.countries.ch": "Suisse",
+  "shared.countries.cn": "Chine",
+  "shared.countries.fr": "France",
+  "shared.countries.gb": "Royaume-Uni",
+  "shared.countries.us": "États-Unis",
+
   "shared.see-more-text": "Voir plus",
   "shared.read-time": "{time} {time, plural, one {minute de lecture}\n other {minutes de lecture}}",
   "shared.share-on-facebook": "Partagez sur facebook",

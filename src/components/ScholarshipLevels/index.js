@@ -10,12 +10,12 @@ import styles from './styles.module.scss';
 // constants
 const LEVEL_ORDERS = ['undergraduate', 'graduate', 'postgraduate', 'research', 'internship'];
 
-const ScholarshipLevel = injectIntl(({className, levels, tag, intl}) => {
+const ScholarshipLevels = injectIntl(({className, levels, tag, intl}) => {
   const Tag = tag || 'div';
 
   const levelsText = levels
     .sort((level1, level2) => LEVEL_ORDERS.indexOf(level1) - LEVEL_ORDERS.indexOf(level2))
-    .map(level => intl.formatMessage({id: `scholarship-level.${level}`}))
+    .map(level => intl.formatMessage({id: `scholarship-levels.${level}`}))
     .join(', ');
 
   return (
@@ -25,7 +25,7 @@ const ScholarshipLevel = injectIntl(({className, levels, tag, intl}) => {
   );
 });
 
-ScholarshipLevel.propTypes = {
+ScholarshipLevels.propTypes = {
   className: T.string,
   tag: T.elementType,
   levels: T.arrayOf(T.string.isRequired),
@@ -34,4 +34,4 @@ ScholarshipLevel.propTypes = {
   })
 };
 
-export default ScholarshipLevel;
+export default ScholarshipLevels;
