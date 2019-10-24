@@ -38,15 +38,9 @@ export default class Template extends Component {
   }
 
   render() {
-    const {markdownRemark, allMarkdownRemark} = this.props.data;
+    const {markdownRemark} = this.props.data;
     const scholarship = scholarshipFromMarkdownRemark(markdownRemark);
-    return (
-      <ScholarshipPage
-        scholarship={scholarship}
-        otherScholarships={this.state.otherScholarships}
-        hasMoreActiveScholarships={allMarkdownRemark.pageInfo.hasNextPage}
-      />
-    );
+    return <ScholarshipPage scholarship={scholarship} otherScholarships={this.state.otherScholarships} />;
   }
 }
 
@@ -90,9 +84,6 @@ export const pageQuery = graphql`
       filter: {fields: {type: {eq: $type}, timestamp: {gt: $currentTimestamp}, path: {ne: $path}}}
     ) {
       ...ScholarshipListItemFragment
-      pageInfo {
-        hasNextPage
-      }
     }
   }
 `;
