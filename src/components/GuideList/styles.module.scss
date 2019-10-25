@@ -64,3 +64,14 @@
     margin: 0 0 _size(element-margin) 0 !important;
   }
 }
+
+@include breakpoint(xxsmall) {
+  .image-wrapper {
+    .image {
+      width: calc(100% + #{1em});
+      margin-top: -1.5em;
+      margin-bottom: 1.5em;
+      margin-left: -1.5em;
+    }
+  }
+}

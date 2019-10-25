@@ -62,7 +62,7 @@
     }
   }
 
-  @for $i from 2 through _misc(max-wrapper-styles) {
+  @for $i from 1 through _misc(max-wrapper-styles) {
     $j: 3 * ($i - 1);
     $color: saturate(darken(_palette(accent), $j), $j * 0.5);
 
@@ -70,7 +70,7 @@
       @include wrapper-edges-color($color);
       background-color: $color;
 
-      @if $i % 2 == 0 {
+      @if $i % 2 == 1 {
         &::before {
           transform: scaleX(-1);
         }
@@ -189,6 +189,6 @@
 
 @include breakpoint(xxsmall) {
   .inner {
-    @include padding(2em, 1.5em);
+    @include padding(2em, 0.5em);
   }
 }

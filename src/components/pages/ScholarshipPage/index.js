@@ -17,7 +17,7 @@ import ScholarshipCountries from '../../ScholarshipCountries';
 import HtmlContent from '../../HtmlContent';
 import ScholarshipList from '../../../components/ScholarshipList';
 
-const ScholarshipPage = ({scholarship, otherScholarships, hasMoreActiveScholarships}) => {
+const ScholarshipPage = ({scholarship, otherScholarships}) => {
   const page = {
     description: scholarship.excerpt,
     image: scholarship.metaImage,
@@ -85,8 +85,7 @@ ScholarshipPage.propTypes = {
     thumbnailCredits: T.string,
     title: T.string.isRequired
   }).isRequired,
-  otherScholarships: T.arrayOf(T.object).isRequired,
-  hasMoreActiveScholarships: T.bool
+  otherScholarships: T.arrayOf(T.object).isRequired
 };
 
 export default ScholarshipPage;

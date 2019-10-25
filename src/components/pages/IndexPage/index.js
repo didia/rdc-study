@@ -11,8 +11,9 @@ import Banner from './Banner';
 import Service from './Service';
 import GuideList from '../../GuideList';
 import ArticleList from '../../ArticleList';
+import ScholarshipList from '../../ScholarshipList';
 
-const IndexPage = ({articles, countries, hasMoreArticles, images}) => {
+const IndexPage = ({articles, countries, scholarships, hasMoreArticles, images}) => {
   const services = [
     {
       descriptionTextKey: 'pages.index.services.assistance.description',
@@ -84,6 +85,15 @@ const IndexPage = ({articles, countries, hasMoreArticles, images}) => {
           />
         </section>
 
+        <section className={classnames(styles.wrapper, styles['wrapper--scholarship-list'])}>
+          <ScholarshipList
+            showAllScholarshipsLink
+            className={styles.inner}
+            scholarships={scholarships}
+            titleKey="pages.index.scholarship-list.title"
+          />
+        </section>
+
         {services.map((service, i) => (
           <section
             key={i}
@@ -100,6 +110,7 @@ const IndexPage = ({articles, countries, hasMoreArticles, images}) => {
 IndexPage.propTypes = {
   articles: T.arrayOf(T.object).isRequired,
   countries: T.arrayOf(T.object).isRequired,
+  scholarships: T.arrayOf(T.object).isRequired,
   hasMoreArticles: T.bool,
   images: T.shape({
     consultingServiceImage: T.object.isRequired,

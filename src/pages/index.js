@@ -7,19 +7,22 @@ import IndexPage from '../components/pages/IndexPage';
 
 const Index = ({data}) => {
   const countries = data.guides.edges.map(({node}) => ({
-    excerpt: node.frontmatter.excerpt,
-    path: node.fields.path,
-    thumbnail: node.frontmatter.thumbnail.childImageSharp,
-    title: node.frontmatter.title
+    ...node.frontmatter,
+    ...node.fields,
+    thumbnail: node.frontmatter.thumbnail.childImageSharp
   }));
 
   const articles = data.articles.edges.map(({node}) => ({
-    date: node.frontmatter.date,
-    excerpt: node.frontmatter.excerpt,
-    path: node.fields.path,
-    thumbnail: node.frontmatter.thumbnail ? node.frontmatter.thumbnail.childImageSharp : null,
-    title: node.frontmatter.title,
-    timeToRead: node.timeToRead
+    ...node.frontmatter,
+    ...node.fields,
+    timeToRead: node.timeToRead,
+    thumbnail: node.frontmatter.thumbnail.childImageSharp
+  }));
+
+  const scholarships = data.scholarships.edges.map(({node}) => ({
+    ...node.frontmatter,
+    ...node.fields,
+    thumbnail: node.frontmatter.thumbnail.childImageSharp
   }));
 
   const images = {
@@ -32,6 +35,7 @@ const Index = ({data}) => {
     <IndexPage
       articles={articles}
       countries={countries}
+      scholarships={scholarships}
       images={images}
       hasMoreArticles={data.articles.pageInfo.hasNextPage}
     />
@@ -44,6 +48,7 @@ Index.propTypes = {
     consultingServiceImage: T.object.isRequired,
     freeGuideImage: T.object.isRequired,
     guides: T.object.isRequired,
+    scholarships: T.object.isRequired,
     verificationServiceImage: T.object.isRequired
   })
 };
@@ -51,7 +56,7 @@ Index.propTypes = {
 export default Index;
 
 export const pageQuery = graphql`
-  query PageQuery {
+  query PageQuery($currentTimestamp: Float) {
     guides: allMarkdownRemark(
       limit: 10
       sort: {fields: [frontmatter___title], order: ASC}
@@ -78,7 +83,7 @@ export const pageQuery = graphql`
       }
     }
     articles: allMarkdownRemark(
-      limit: 5
+      limit: 2
       sort: {fields: [frontmatter___date], order: DESC}
       filter: {fields: {type: {eq: "article"}}}
     ) {
@@ -105,6 +110,13 @@ export const pageQuery = graphql`
       pageInfo {
         hasNextPage
       }
+    }
+    scholarships: allMarkdownRemark(
+      limit: 3
+      sort: {fields: [fields___timestamp], order: ASC}
+      filter: {fields: {type: {eq: "scholarship"}, timestamp: {gt: $currentTimestamp}}}
+    ) {
+      ...ScholarshipListItemFragment
     }
     consultingServiceImage: imageSharp(fluid: {originalName: {regex: "/consulting-service.jpg/"}}) {
       fluid(maxWidth: 276) {

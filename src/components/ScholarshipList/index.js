@@ -54,8 +54,8 @@ Scholarship.propTypes = {
   })
 };
 
-const ScholarshipList = ({scholarships, showAllScholarshipsLink, titleKey}) => (
-  <div>
+const ScholarshipList = ({className, scholarships, showAllScholarshipsLink, titleKey}) => (
+  <div className={className}>
     {titleKey && <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>}
 
     <ul className={styles.list}>
@@ -81,6 +81,7 @@ const ScholarshipList = ({scholarships, showAllScholarshipsLink, titleKey}) => (
 );
 
 ScholarshipList.propTypes = {
+  className: T.string,
   scholarships: T.arrayOf(T.shape({})),
   showAllScholarshipsLink: T.bool,
   titleKey: T.string

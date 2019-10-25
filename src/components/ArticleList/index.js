@@ -15,7 +15,7 @@ const Article = ({article}) => {
     <Link to={article.path} className={styles.article}>
       <article className={styles.article__inner}>
         <div className={classnames(styles['image-wrapper'])}>
-          <Img className={styles.image} fluid={article.thumbnail.fluid} alt={article.name} />
+          <Img className={styles.image} fluid={article.thumbnail.fluid} alt={article.title} />
         </div>
 
         <div className={styles.content}>
@@ -33,7 +33,6 @@ const Article = ({article}) => {
 Article.propTypes = {
   article: T.shape({
     excerpt: T.string.isRequired,
-    name: T.string.isRequired,
     path: T.string.isRequired,
     title: T.string.isRequired,
     thumbnail: T.shape({
