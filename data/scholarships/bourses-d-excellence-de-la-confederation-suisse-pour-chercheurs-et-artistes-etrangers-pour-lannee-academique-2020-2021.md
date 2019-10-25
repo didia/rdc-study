@@ -23,14 +23,14 @@ excerpt: >-
 
 ## En quoi consiste la bourse ?
 
-- Un paiement de 1920 Francs suisses (à peu près 1920\$) par mois.
+- Un paiement de 1920 Francs suisses (à peu près 1920 \$) par mois.
 
 - Les frais académiques sont payés.
 
 - Un billet d'avion retour vers votre pays d'origine payé à la fin de votre
   séjour d'études.
 
-- Un paiement de 300 Francs suisses (à peu près 300\$) payé une fois à votre
+- Un paiement de 300 Francs suisses (à peu près 300 \$) payé une fois à votre
   arrivée pour aider avec le logement.
 
 - La moitié de votre carte de transport.
@@ -67,8 +67,6 @@ L'information sur les bourses disponibles pour votre pays, comment postuler et
 quels documents envoyer sont disponibles dans un dossier préparée pour votre
 pays. Nous vous invitons à télécharger le dossier sur le site web de la bourse
 d'études.
-
-\
 
 Si la première lettre du nom de votre pays est comprise entre A et L: Allez
 sur <a

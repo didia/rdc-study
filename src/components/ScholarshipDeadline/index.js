@@ -1,6 +1,6 @@
 // Vendor
 import React, {Component} from 'react';
-import differenceInCalendarDays from 'date-fns/differenceInBusinessDays';
+import differenceInCalendarDays from 'date-fns/differenceInCalendarDays';
 import {injectIntl} from 'react-intl';
 import T from 'prop-types';
 import classnames from 'classnames';
@@ -21,8 +21,13 @@ const getDeadlineMessage = (date, intl) => {
   }
 
   const deadline = new Date(date);
+  console.log(date);
+  console.log(deadline);
+  console.log(new Date());
 
   const remainingDays = differenceInCalendarDays(deadline, new Date());
+
+  console.log(remainingDays);
 
   if (remainingDays >= 0 && remainingDays < MAX_NUMBER_OF_DAYS_IN_MONTH) {
     return {

@@ -17,12 +17,12 @@ targetCountries:
 
 ## En quoi consiste la bourse ?
 
-- Une bourse de 1600\$ par mois du 15 septembre au 15 juillet et ce, pour la
+- Une bourse de **1600 \$** par mois du 15 septembre au 15 juillet et ce, pour la
   durée complète du master (1 an et demi ou 2 ans selon le master choisi), sauf
   en cas d’échec définitif après la première année.
 
 - Une exemption de paiement des frais académiques à l'exception des taxes
-  semestrielles de 80\$.
+  semestrielles de **80 \$**.
 
 ## Quelles sont les critères de la bourse ?
 

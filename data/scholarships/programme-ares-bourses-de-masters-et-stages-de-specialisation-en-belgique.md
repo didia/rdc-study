@@ -23,15 +23,17 @@ targetCountries:
 Pour les bourses de Master, vous avez:
 
 - Un billet aller-retour par année académique;
-- **1150_€/mois** pour une durée de 12 mois comme frais d'allocation mensuelle;
-- **150_€** à l'arrivée du boursier comme frais de mission;
-- **700_€** à l'arrivée du boursier comme frais d'installation, didactiques et de retour;
-- Une réduction des frais d'inscription;\n\* Frais d'assurance payés par ARES;
+- **1150 €/mois** pour une durée de 12 mois comme frais d'allocation mensuelle;
+- **150 €** à l'arrivée du boursier comme frais de mission;
+- **700 €** à l'arrivée du boursier comme frais d'installation, didactiques et de retour;
+- Une réduction des frais d'inscription;
+- Frais d'assurance payés par ARES;
 - Des frais de déplacement dans le cadre de formations interuniversitaires sont aussi remboursées.
 
 Pour les bourses de Stage, vous avez:
 
-- Un billet aller-retour année académique;\n\* Une allocation mensuelle qui varie selon la durée de votre séjour. **83_€/jour** pour des durées de 8 à 17 jour ou **1400_€/mois** pour le reste;
+- Un billet aller-retour année académique;
+- Une allocation mensuelle qui varie selon la durée de votre séjour; **83 €/jour** pour des durées de 8 à 17 jour ou **1400 €/mois** pour le reste;
 - **150 €** à l'arrivée du boursier comme frais de mission;
 - Frais d'assurance payés par ARES;
 - Des frais de déplacement dans le cadre de formations interuniversitaires sont aussi remboursées.
