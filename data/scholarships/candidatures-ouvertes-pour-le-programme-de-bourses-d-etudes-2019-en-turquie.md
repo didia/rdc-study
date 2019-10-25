@@ -1,5 +1,5 @@
 ---
-title: Candidatures ouvertes pour le programme de bourses d‘études 2019 en Turquie.
+title: Candidatures ouvertes pour le programme de bourses d‘études en Turquie.
 deadline: 2019-10-25T15:55:34.114Z
 thumbnail: /images/uploads/bourses-turquie-2.png
 levels:
