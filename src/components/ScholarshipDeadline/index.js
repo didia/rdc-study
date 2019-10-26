@@ -21,13 +21,8 @@ const getDeadlineMessage = (date, intl) => {
   }
 
   const deadline = new Date(date);
-  console.log(date);
-  console.log(deadline);
-  console.log(new Date());
 
   const remainingDays = differenceInCalendarDays(deadline, new Date());
-
-  console.log(remainingDays);
 
   if (remainingDays >= 0 && remainingDays < MAX_NUMBER_OF_DAYS_IN_MONTH) {
     return {
