@@ -24,7 +24,7 @@ targetCountries:
 ## En quoi consiste la bourse ?
 
 * La garantie d'une admission dans une université turque c'est à dire vous n'avez pas à faire l'admission vous-mêmes, ce sera fait pour vous une fois la bourse approuvée;
-* Argent de poche mensuel: **700 TL** (**121 $**) pour la license, **950 TL** (**164 $**) pour le master et **1400 TL** (**242 $**) pour le doctorat;
+* Allocation mensuelle: **700 TL** (**121 $**) pour la license, **950 TL** (**164 $**) pour le master et **1400 TL** (**242 $**) pour le doctorat;
 * Les frais académiques;
 * L'assurance santé;
 * Le logement;
