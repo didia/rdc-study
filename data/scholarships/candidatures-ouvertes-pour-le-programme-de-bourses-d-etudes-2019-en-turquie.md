@@ -1,6 +1,10 @@
 ---
-title: Bourses d‘études en Turquie.
+title: Bourses d'études en Turquie.
 deadline: 2019-02-20T21:59:34.114Z
+excerpt: >-
+  La Turquie ouvre les portes de ses universités aux étudiants internationaux à
+  travers le programme des bourses turques qui permet d'étudier gratuitement
+  dans les meilleurs universités de la Turquie.
 tags:
   - bourse d'études
   - turquie
