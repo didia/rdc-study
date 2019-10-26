@@ -24,19 +24,6 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}
       - {label: "Mots clés", name: "tags", widget: "list", required: false}
       - {label: "Date de publication", name: "date", widget: "datetime"}
-  - label: Page
-    name: pages
-    files:
-      - label: Foire aux questions
-        name: faqs
-        file: data/faqs.json
-        fields:
-          - name: entries
-            label: Entrées
-            widget: list
-            fields:
-              - {label: "Question", name: "question", widget: "string"}
-              - {label: "Réponse", name: "answer", widget: "markdown"}
   - label: Bourse d'études
     name: scholarships
     folder: data/scholarships
@@ -98,3 +85,16 @@ collections:
             value: ch
           - label: Turquie
             value: tr
+  - label: Pages
+    name: pages
+    files:
+      - label: Foire aux questions
+        name: faqs
+        file: data/faqs.json
+        fields:
+          - name: entries
+            label: Entrées
+            widget: list
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Réponse", name: "answer", widget: "markdown"}
