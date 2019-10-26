@@ -15,9 +15,7 @@ tags:
   - congo
 thumbnail: /images/uploads/bourses-turquie-2.png
 levels:
-  - undergraduate
-  - graduate
-  - postgraduate
+  - all
 targetCountries:
   - tr
 ---
