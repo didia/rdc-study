@@ -5,17 +5,17 @@ backend:
     - editor
   branch: master
 slug:
-  encoding: "ascii"
+  encoding: ascii
   clean_accents: true
-media_folder: "static/images/uploads"
-public_folder: "/images/uploads"
+media_folder: static/images/uploads
+public_folder: /images/uploads
 collections:
-  - name: "article"
-    label: "Article"
-    folder: "data/articles"
+  - name: article
+    label: Article
+    folder: data/articles
     create: true
-    sort: "date:desc"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sort: date:desc
+    slug: {{year}}-{{month}}-{{day}}-{{slug}}
     fields:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Brève", name: "excerpt", widget: "text"}
@@ -24,36 +24,53 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}
       - {label: "Mots clés", name: "tags", widget: "list", required: false}
       - {label: "Date de publication", name: "date", widget: "datetime"}
-  - label: "Page"
-    name: "pages"
+  - label: Page
+    name: pages
     files:
-      - label: "Foire aux questions"
-        name: "faqs"
-        file: "data/faqs.json"
+      - label: Foire aux questions
+        name: faqs
+        file: data/faqs.json
         fields:
-          - name: "entries"
-            label: "Entrées"
+          - name: entries
+            label: Entrées
             widget: list
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Réponse", name: "answer", widget: "markdown"}
-  - label: "Bourse d'études"
-    name: "scholarships"
-    folder: "data/scholarships"
+  - label: Bourse d'études
+    name: scholarships
+    folder: data/scholarships
     create: true
-    sort: "date:desc"
-    slug: "{{slug}}"
+    sort: date:desc
+    slug: {{slug}}
     fields:
-      - {label: "Contenu", name: "body", widget: "markdown", default: "## En quoi consiste la bourse ?\n## Quelles sont les critères de la bourse ?\n## Comment postuler ?\n"}
       - {label: "Nom de la bourse", name: "title", widget: "string", pattern: [".{1,60}$", "Le nom de la bourse doit avoir moins de 60 caractères"]}
       - {label: "Date limite", name: "deadline", widget: "datetime", required: false}
+      - {label: "Contenu", name: "body", widget: "markdown", default: "## En quoi consiste la bourse ?\n## Quelles sont les critères de la bourse ?\n## Comment postuler ?\n"}
       - {label: "Mots clés", name: "tags", widget: "list", required: false}
       - {label: "Image principale de l’article", name: "thumbnail", widget: "image"}
       - {label: "Crédits de l’image principale", name: "thumbnailCredits", widget: "text", required: false}
-      - {label: "Cycles visées", name: "levels", widget: "select", multiple: true, default: "all", options: [{value: "undergraduate", label: "Licence"}, {"value": "graduate", label: "Master"}, {value: "postgraduate", label: "Doctorat"}, {value: "research", label: "Recherches"}, {value: "internship", label: "Stages"}, {value: "all", label: "Tous les cycles"}]}
-      - label: "Pays de destination"
-        name: "targetCountries"
-        widget: "select"
+      - label: Cycles visées
+        name: levels
+        widget: select
+        multiple: true
+        default: all
+        options:
+          - label: Doctorat
+            value: postgraduate
+          - label: Licence
+            value: undergraduate
+          - label: Master
+            value: graduate
+          - label: Recherches
+            value: research
+          - label: Stages
+            value: internship
+          - label: Tous les cycles
+            value: all
+      - label: Pays de destination
+        name: targetCountries
+        widget: select
         multiple: true
         options:
           - label: Afrique du Sud
