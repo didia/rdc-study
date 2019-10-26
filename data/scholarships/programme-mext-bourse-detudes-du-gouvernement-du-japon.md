@@ -48,21 +48,20 @@ Le gouvernement japonais (Monbukagakusho) offre six catégories de bourses:
 
 Qui couvrent :
 
-* Allocation: La valeur mensuelle de la bourse d’études reste à déterminer, cependant elle est généralement aux alentours de 117 000 yen soit 1080 $.
+* Allocation mensuelle: La valeur de la bourse d’études reste à déterminer, cependant elle est généralement aux alentours de **117 000 yen** soit **1080 $**.
 * Transport au Japon : Vous avez droit à un billet aller-retour vers et à partir du Japon;
 * Les frais pour l'examen d'entrée, l'inscription et les frais de scolarité.
 
 ## Quelles sont les critères de la bourse ?
 
-Chacune de ces bourses dispose de ses propres critères d'éligibilité; veuillez donc postuler pour la catégorie qui correspond le mieux à votre situation personnelle. Vous les trouverez sur le [site du ministère](https://www.studyjapan.go.jp/fr/index.html). \
-Les délais des applications diffèrent selon les pays. De ce fait nous vous recommandons donc de contacter l’ambassade ou le consulat général du Japon dans votre pays. Si vous ne savez pas où se situe l’ambassade, vous la localiser à travers le [site du ministère](https://www.mofa.go.jp/about/emb_cons/mofaserv.html).
+Chacune de ces bourses dispose de ses propres critères d'éligibilité; veuillez donc postuler pour la catégorie qui correspond le mieux à votre situation personnelle. Vous les trouverez sur <a href="https://www.studyjapan.go.jp/fr/index.html" target="_blank" rel="noreferrer noopener">le site du ministère.</a>
 
 ## Comment postuler ?
 
-Concernant [la procédure d’admission](https://www.studyjapan.go.jp/fr/index.html), la sélection initiale (analyse des documents, examen écrit et entretien) est effectuée à l'ambassade du Japon entre juin et juillet, celle-ci recommande ensuite les candidats sélectionnés au ministère de l'Éducation, de la Culture, des Sports, de la Science et de la Technologie du Japon (MEXT) à la fin du mois d'août.
+Concernant <a href="https://www.studyjapan.go.jp/fr/index.html" target="_blank" rel="noopener noreferrer">la procédure d’admission</a>, la sélection initiale (analyse des documents, examen écrit et entretien) est effectuée à l'ambassade du Japon entre juin et juillet, celle-ci recommande ensuite les candidats sélectionnés au ministère de l'Éducation, de la Culture, des Sports, de la Science et de la Technologie du Japon (MEXT) à la fin du mois d'août.
 
-Les délais des applications diffèrent selon les pays. De ce fait nous vous recommandons donc de contacter l’ambassade ou le consulat général du Japon dans votre pays. Si vous ne savez pas où se situe l’ambassade, vous la localiser à travers le [site du ministère](https://www.mofa.go.jp/about/emb_cons/mofaserv.html).
+Les délais diffèrent selon les pays. De ce fait nous vous recommandons donc de contacter l’ambassade ou le consulat général du Japon dans votre pays. Si vous ne savez pas où se situe l’ambassade, vous la localiser à travers le <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank" rel="noopener noreferrer">site du ministère.</a>
 
-Pour bien vous préparer à l’examen, vous pouvez consulter [les épreuves des années antérieures](https://www.studyjapan.go.jp/en/toj/toj0302e-32.html#1).
+Pour bien vous préparer à l’examen, vous pouvez consulter <a href="https://www.studyjapan.go.jp/en/toj/toj0302e-32.html#1" target="_blank" rel="noopener noreferrer">les épreuves des années antérieures.</a>
 
-Au cas où vous ne serez pas intéressés par la bourse du gouvernement, il existe d’autres programmes des bourses pour le Japon tels que [Pamphlet "Scholarships for International Students in Japan 2019-2020"](https://www.jasso.go.jp/en/study_j/scholarships/brochure.html), [Student Exchange Support Program](https://www.jasso.go.jp/en/study_j/scholarships/short_term.html) (Scholarship for Short-term Study in Japan) et [Scholarships for Study in Japan](https://www.jasso.go.jp/en/study_j/scholarships/index.html).
+Au cas où vous ne serez pas intéressés par la bourse du gouvernement, il existe d’autres programmes des bourses pour le Japon tels que <a href="https://www.jasso.go.jp/en/study_j/scholarships/brochure.html" target="_blank" rel="noreferrer noopener">Pamphlet "Scholarships for International Students in Japan 2019-2020"</a>, <a href="https://www.jasso.go.jp/en/study_j/scholarships/short_term.html" target="_blank" rel="noreferrer noopener">Student Exchange Support Program</a> (Scholarship for Short-term Study in Japan) et <a href="https://www.jasso.go.jp/en/study_j/scholarships/index.html" target="_blank" rel="noreferrer noopener">Scholarships for Study in Japan.</a>
