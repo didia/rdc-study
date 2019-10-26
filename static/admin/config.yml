@@ -56,17 +56,27 @@ collections:
         widget: "select"
         multiple: true
         options:
-          - value: "be"
-            label: "Belgique"
-          - value: "ca"
-            label: "Canada"
-          - value: "cn"
-            label: "Chine"
-          - value: "us"
-            label: "Etats-Unis"
-          - value: "fr"
-            label: "France"
-          - value: "gb"
-            label: "Royaume-Uni"
-          - value: "ch"
-            label: "Suisse"
+          - label: Afrique du Sud
+            value: sa
+          - label: Belgique
+            value: be
+          - label: Brésil
+            value: br
+          - label: Canada
+            value: ca
+          - label: Chine
+            value: cn
+          - label: Etats-Unis
+            value: us
+          - label: France
+            value: fr
+          - label: Japon
+            value: jp
+          - label: RDC
+            value: cd
+          - label: Royaume-Uni
+            value: gb
+          - label: Suisse
+            value: ch
+          - label: Turquie
+            value: tr
