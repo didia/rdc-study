@@ -1,13 +1,13 @@
 ---
 title: >-
-  Bourses de mobilité – Formation à la recherche pour jeunes économistes
-  francophones (FORJE)
+  Programme FORJE: Bourses de formation à la recherche pour jeunes économistes
+  francophones
 deadline: 2020-06-01T03:59:29.034Z
-excerpt: >-
+excerpt: >
   Créé en Juin 2017, le programme FORJE consiste à financer des séjours de
   recherche de trois à quatre mois à l’international au profit de jeunes
   doctorants et post doctorants dont les intérêts en recherche s’arriment avec
-  les axes prioritaires de l’Observatoire de la francophonie économique (OFE)
+  les axes prioritaires de l’Observatoire de la francophonie économique.
 thumbnail: /images/uploads/poodar-chu-775490-unsplash.jpg
 thumbnailCredits: >-
   <a style="background-color:black;color:white;text-decoration:none;padding:4px
@@ -24,6 +24,7 @@ thumbnailCredits: >-
   viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12
   5h10v18H0V14h10v9h12v-9z"></path></svg></span><span
   style="display:inline-block;padding:2px 3px">Poodar Chu</span></a>
+startDate: 2019-10-27T16:10:54.859Z
 levels:
   - research
 targetCountries:
