@@ -61,6 +61,8 @@ collections:
         widget: select
         multiple: true
         options:
+          - label: Afrique
+            value: africa
           - label: Afrique du Sud
             value: sa
           - label: Belgique
