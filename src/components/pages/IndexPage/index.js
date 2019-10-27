@@ -87,6 +87,7 @@ const IndexPage = ({articles, countries, scholarships, hasMoreArticles, images})
 
         <section className={classnames(styles.wrapper, styles['wrapper--scholarship-list'])}>
           <ScholarshipList
+            allScholarshipsLink="/bourses"
             showAllScholarshipsLink
             className={styles.inner}
             scholarships={scholarships}
