@@ -33,9 +33,10 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-* Billet d’avion aller-retour en classe économique entre le pays de résidence du boursier et le pays de séjour.
-* Assurance voyage de base
-* Allocation forfaitaire applicable aux frais d’installation dans le pays de séjour, aux frais de visa et aux frais de transport (montant variable en fonction du pays de séjour)
+* La bourse consiste en un séjour de trois à quatre mois dans un pays Africain;
+* Billet d’avion aller-retour en classe économique entre le pays de résidence du boursier et le pays de séjour;
+* Assurance voyage de base;
+* Allocation forfaitaire applicable aux frais d’installation dans le pays de séjour, aux frais de visa et aux frais de transport (montant variable en fonction du pays de séjour);
 * Allocation mensuelle de subsistance (montant variable en fonction du pays de séjour)
 
 ## Quelles sont les critères de la bourse ?
