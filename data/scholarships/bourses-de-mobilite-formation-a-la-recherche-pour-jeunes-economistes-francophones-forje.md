@@ -7,7 +7,7 @@ excerpt: >
   Créé en Juin 2017, le programme FORJE consiste à financer des séjours de
   recherche de trois à quatre mois à l’international au profit de jeunes
   doctorants et post doctorants dont les intérêts en recherche s’arriment avec
-  les axes prioritaires de l’Observatoire de la francophonie économique
+  les axes prioritaires de l’Observatoire de la francophonie économique.
 thumbnail: /images/uploads/poodar-chu-775490-unsplash.jpg
 thumbnailCredits: >-
   <a style="background-color:black;color:white;text-decoration:none;padding:4px
