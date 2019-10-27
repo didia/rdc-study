@@ -32,12 +32,13 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Nom de la bourse", name: "title", widget: "string", pattern: ['.{1,60}$', "Le nom de la bourse doit avoir moins de 60 caractères"]}
-      - {label: "Date limite", name: "deadline", widget: "datetime", required: false}
+      - {label: "Date limite", name: "deadline", widget: "date", required: false}
       - {label: "Brève", name: "excerpt", widget: "text", pattern: ['.{1,300}$', "Le resumé de la bourse doit avoir moins de 300 caractères"]}
       - {label: "Contenu", name: "body", widget: "markdown", default: "## En quoi consiste la bourse ?\n## Quelles sont les critères de la bourse ?\n## Comment postuler ?\n"}
       - {label: "Mots clés", name: "tags", widget: "list", required: false}
       - {label: "Image principale de l’article", name: "thumbnail", widget: "image"}
       - {label: "Crédits de l’image principale", name: "thumbnailCredits", widget: "text", required: false}
+      - {label: "Date d'ouverture de candidature", name: "startDate", widget: "date", required: false}
       - label: Cycles visées
         name: levels
         widget: select
