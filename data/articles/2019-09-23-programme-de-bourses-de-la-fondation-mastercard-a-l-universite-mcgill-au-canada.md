@@ -1,7 +1,5 @@
 ---
-title: >-
-  Programme de bourses de la Fondation MasterCard à l'Université McGill au
-  Canada
+title: Bourses de la Fondation MasterCard à l'Université McGill au Canada
 excerpt: >-
   Le programme de bourses de la Fondation MasterCard est un projet de dix ans
   qui vise la formation et le perfectionnement de la prochaine génération de
