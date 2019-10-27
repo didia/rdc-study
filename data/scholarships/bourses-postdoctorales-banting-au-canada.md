@@ -1,5 +1,5 @@
 ---
-title: Bourses postdoctorales Banting au Canada
+title: Bourses de recherche postdoctorales Banting au Canada
 deadline: 2019-09-19T03:59:44.449Z
 excerpt: >-
   Chaque année le gouvernement canadien offre 70 bourses d’une valeur de 70.000
