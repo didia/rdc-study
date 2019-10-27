@@ -1,8 +1,14 @@
 ---
 title: >-
   Bourses d’excellence de la Confédération suisse pour chercheurs et artistes
-  étrangers pour l'année académique 2020-2021
+  étrangers
 deadline: 2019-12-16T04:59:54.743Z
+excerpt: >-
+  La Confédération suisse offre chaque année des bourses d’excellence dans le
+  domaine de la recherche et des arts. Ces bourses gouvernementales encouragent
+  les échanges internationaux et promeuvent la collaboration entre la Suisse et
+  plus de 180 pays. Elles sont attribuées par la Commission fédérale des bourses
+  pour étudiants étrangers (CFBE).
 tags:
   - >-
     Bourses d'études gratuites 2020 - 2021;Bourses d'études suisse; Bourses
@@ -13,12 +19,6 @@ levels:
   - postgraduate
 targetCountries:
   - ch
-excerpt: >-
-  La Confédération suisse offre chaque année des bourses d’excellence dans le
-  domaine de la recherche et des arts. Ces bourses gouvernementales encouragent
-  les échanges internationaux et promeuvent la collaboration entre la Suisse et
-  plus de 180 pays. Elles sont attribuées par la Commission fédérale des bourses
-  pour étudiants étrangers (CFBE).
 ---
 
 ## En quoi consiste la bourse ?
