@@ -29,4 +29,4 @@ La bourse est accordée automatiquement dès que vous êtes inscrit dans un prog
 
 Nos guides gratuits vous indiquent comment vous y prendre. Si vous avez besoin d'une assistance pour maximiser vos chances d'admission, vous pouvez toujours souscrire à notre [service d'accompagnement](/accompagnement).
 
-Pour plus de renseignements sur l'exonération, consultez <a href="https://www.uottawa.ca/droits-universitaires/exoneration-partielle-des-droits-de-scolarite" target="_blank" rel="nofollow noopener">le site Web du Bureau international de l'Université d'Ottawa</a>.
+Pour plus de renseignements sur l'exonération, consultez <a href="https://www.uottawa.ca/droits-universitaires/exoneration-partielle-des-droits-de-scolarite" target="_blank" rel="noreferrer noopener">le site Web du Bureau international de l'Université d'Ottawa</a>.
