@@ -5,13 +5,14 @@ import {graphql} from 'gatsby';
 
 import ScholarshipsPage from '../components/pages/ScholarshipsPage';
 
-const page = {
-  description: "Voici toutes les offres de bourses partagées avec ❤️ par l'équipe RDC Etudes.",
-  title: "Bourses d'études",
-  path: '/toutes-les-bourses'
-};
-
 const Scholarships = ({data}) => {
+  const page = {
+    description: "Voici toutes les offres de bourses partagées avec ❤️ par l'équipe RDC Etudes.",
+    image: data.metaImage.childImageSharp.metaImage,
+    title: "Bourses d'études",
+    path: '/toutes-les-bourses'
+  };
+
   const scholarships = data.scholarships.edges.map(({node}) => ({
     deadline: node.frontmatter.deadline,
     excerpt: node.frontmatter.excerpt,
@@ -27,6 +28,7 @@ const Scholarships = ({data}) => {
 
 Scholarships.propTypes = {
   data: T.shape({
+    metaImage: T.object,
     scholarships: T.object.isRequired
   })
 };
@@ -41,6 +43,11 @@ export const pageQuery = graphql`
       filter: {fields: {type: {eq: "scholarship"}}}
     ) {
       ...ScholarshipListItemFragment
+    }
+    metaImage: imageSharp(fluid: {originalName: {regex: "/toutes-les-bourses-cover.jpg/"}}) {
+      fixed(width: 1200, height: 630, cropFocus: NORTH) {
+        ...GatsbyImageSharpFixed_noBase64
+      }
     }
   }
 `;

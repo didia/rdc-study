@@ -5,12 +5,6 @@ import {graphql} from 'gatsby';
 
 import ScholarshipsPage from '../components/pages/ScholarshipsPage';
 
-const page = {
-  description: "Voici les offres de bourses en cours trouvées pour vous avec ❤️ par l'équipe RDC Etudes.",
-  title: "Trouver une bourse d'études",
-  path: '/bourses'
-};
-
 export default class Scholarships extends Component {
   state = {
     scholarships: []
@@ -35,12 +29,20 @@ export default class Scholarships extends Component {
   }
 
   render() {
+    const page = {
+      description: "Voici les offres de bourses en cours trouvées pour vous avec ❤️ par l'équipe RDC Etudes.",
+      image: this.props.data.metaImage.childImageSharp.metaImage,
+      title: "Trouver une bourse d'études",
+      path: '/bourses'
+    };
+
     return <ScholarshipsPage activeOnly={true} page={page} scholarships={this.state.scholarships} />;
   }
 }
 
 Scholarships.propTypes = {
   data: T.shape({
+    metaImage: T.object,
     scholarships: T.object.isRequired
   })
 };
@@ -80,6 +82,11 @@ export const pageQuery = graphql`
       filter: {fields: {type: {eq: "scholarship"}, timestamp: {gt: $currentTimestamp}}}
     ) {
       ...ScholarshipListItemFragment
+    }
+    metaImage: imageSharp(fluid: {originalName: {regex: "/bourses-cover.jpg/"}}) {
+      fixed(width: 1200, height: 630, cropFocus: NORTH) {
+        ...GatsbyImageSharpFixed_noBase64
+      }
     }
   }
 `;
