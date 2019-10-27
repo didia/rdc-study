@@ -1,5 +1,5 @@
 ---
-title: Bourses d'études en Turquie.
+title: Bourses d'études du gouvernement de la République de Turquie.
 deadline: 2019-02-20T21:59:34.114Z
 excerpt: >-
   La Turquie ouvre les portes de ses universités aux étudiants internationaux à
