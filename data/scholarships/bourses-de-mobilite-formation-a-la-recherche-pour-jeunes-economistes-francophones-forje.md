@@ -1,7 +1,7 @@
 ---
 title: >-
-  Bourses de formation à la recherche pour jeunes économistes francophones
-  (FORJE)
+  Programme FORJE: Bourses de formation à la recherche pour jeunes économistes
+  francophones
 deadline: 2020-06-01T03:59:29.034Z
 excerpt: >
   Créé en Juin 2017, le programme FORJE consiste à financer des séjours de
