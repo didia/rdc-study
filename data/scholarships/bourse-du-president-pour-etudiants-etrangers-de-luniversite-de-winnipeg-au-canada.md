@@ -1,6 +1,6 @@
 ---
 title: >-
-  Bourse du président pour étudiants étrangers de l'Université de Winnipeg au
+  Bourse du président pour étudiants étrangers à l'Université de Winnipeg au
   Canada
 deadline: 2019-10-01T03:59:00.000Z
 excerpt: >-
