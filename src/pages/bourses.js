@@ -83,7 +83,7 @@ export const pageQuery = graphql`
     ) {
       ...ScholarshipListItemFragment
     }
-    metaImage: imageSharp(fluid: {originalName: {regex: "/bourses-cover.jpg/"}}) {
+    metaImage: imageSharp(fluid: {originalName: {regex: "/bourses-courantes-cover.jpg/"}}) {
       fixed(width: 1200, height: 630, cropFocus: NORTH) {
         ...GatsbyImageSharpFixed_noBase64
       }
