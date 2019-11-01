@@ -11,6 +11,10 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.list--second {
+  margin-top: 15px;
+}
+
 .list__item {
   padding: 0;
 }
@@ -62,6 +66,12 @@
 
 .see-more-button {
   padding: 0 2.25em;
+}
+
+.newsletter {
+  padding: 30px 10px;
+  border: 1px solid _palette(border);
+  margin: 50px 0;
 }
 
 @include breakpoint(medium) {

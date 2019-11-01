@@ -26,7 +26,7 @@ const Header = ({withTitle, onToggleMenu}) => {
       <nav className={styles.nav}>
         <FormattedMessage id="header.menu-toggle-label">
           {text => (
-            <a className={styles.nav__link} onClick={onToggleMenu} href="javascript:;">
+            <a className={styles.nav__link} onClick={onToggleMenu} href="#">
               {text}
             </a>
           )}

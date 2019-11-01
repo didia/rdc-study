@@ -13,6 +13,10 @@ import styles from './styles.module.scss';
 // Components
 import ScholarshipDeadline from '../ScholarshipDeadline';
 import ScholarshipLevels from '../ScholarshipLevels';
+import Newsletter from '../Newsletter';
+
+// Constants
+const NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER = 6;
 
 const Scholarship = ({scholarship}) => {
   return (
@@ -54,40 +58,62 @@ Scholarship.propTypes = {
   })
 };
 
-const ScholarshipList = ({className, allScholarshipsLink, scholarships, showAllScholarshipsLink, titleKey}) => (
-  <div className={className}>
-    {titleKey && <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>}
+const ScholarshipList = ({
+  className,
+  allScholarshipsLink,
+  scholarships,
+  showAllScholarshipsLink,
+  showNewsletter,
+  titleKey
+}) => {
+  const scholarships1 = scholarships.slice(0, NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER);
+  const scholarships2 = scholarships.slice(NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER);
+  return (
+    <div className={className}>
+      {titleKey && <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>}
 
-    <ul className={styles.list}>
-      {scholarships.map((scholarship, i) => (
-        <li key={i} className={styles.list__item}>
-          <Scholarship scholarship={scholarship} />
-        </li>
-      ))}
-    </ul>
+      <ul className={styles.list}>
+        {scholarships1.map((scholarship, i) => (
+          <li key={i} className={styles.list__item}>
+            <Scholarship scholarship={scholarship} />
+          </li>
+        ))}
+      </ul>
 
-    {showAllScholarshipsLink && (
-      <FormattedMessage id="scholarship-list.see-all">
-        {text => (
-          <div className={styles['see-more-button-wrapper']}>
-            <Link
-              to={allScholarshipsLink || '/toutes-les-bourses'}
-              className={classnames('button', styles['see-more-button'])}
-            >
-              {text}
-            </Link>
-          </div>
-        )}
-      </FormattedMessage>
-    )}
-  </div>
-);
+      {showNewsletter && <Newsletter className={styles.newsletter} />}
+
+      <ul className={classnames(styles.list, styles['list--second'])}>
+        {scholarships2.map((scholarship, i) => (
+          <li key={i} className={styles.list__item}>
+            <Scholarship scholarship={scholarship} />
+          </li>
+        ))}
+      </ul>
+
+      {showAllScholarshipsLink && (
+        <FormattedMessage id="scholarship-list.see-all">
+          {text => (
+            <div className={styles['see-more-button-wrapper']}>
+              <Link
+                to={allScholarshipsLink || '/toutes-les-bourses'}
+                className={classnames('button', styles['see-more-button'])}
+              >
+                {text}
+              </Link>
+            </div>
+          )}
+        </FormattedMessage>
+      )}
+    </div>
+  );
+};
 
 ScholarshipList.propTypes = {
   allScholarshipsLink: T.string,
   className: T.string,
   scholarships: T.arrayOf(T.shape({})),
   showAllScholarshipsLink: T.bool,
+  showNewsletter: T.bool,
   titleKey: T.string
 };
 

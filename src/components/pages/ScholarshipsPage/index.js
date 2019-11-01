@@ -37,7 +37,7 @@ const ScholarshipPage = ({activeOnly, page, scholarships}) => {
           )}
         </FormattedMessage>
       </p>
-      <ScholarshipList scholarships={scholarships} showAllScholarshipsLink={activeOnly} />
+      <ScholarshipList showNewsletter scholarships={scholarships} showAllScholarshipsLink={activeOnly} />
     </GenericPage>
   );
 };

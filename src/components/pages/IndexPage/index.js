@@ -12,6 +12,7 @@ import Service from './Service';
 import GuideList from '../../GuideList';
 import ArticleList from '../../ArticleList';
 import ScholarshipList from '../../ScholarshipList';
+import Newsletter from '../../Newsletter';
 
 const IndexPage = ({articles, countries, scholarships, hasMoreArticles, images}) => {
   const services = [
@@ -86,6 +87,8 @@ const IndexPage = ({articles, countries, scholarships, hasMoreArticles, images})
         </section>
 
         <section className={classnames(styles.wrapper, styles['wrapper--scholarship-list'])}>
+          <Newsletter className={classnames(styles.inner, styles.newsletter)} />
+
           <ScholarshipList
             allScholarshipsLink="/bourses"
             showAllScholarshipsLink

@@ -31,7 +31,7 @@ export default class Scholarships extends Component {
   render() {
     const page = {
       description: "Voici les offres de bourses en cours trouvées pour vous avec ❤️ par l'équipe RDC Etudes.",
-      image: this.props.data.metaImage.childImageSharp.metaImage,
+      image: this.props.data.metaImage.fixed,
       title: "Trouver une bourse d'études",
       path: '/bourses'
     };

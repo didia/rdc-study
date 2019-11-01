@@ -199,7 +199,7 @@ class Footer extends Component {
           showSuccess: false
         });
 
-        window.console.log('An error occured: ', error);
+        window.console.error('An error occured: ', error);
       });
   }
 

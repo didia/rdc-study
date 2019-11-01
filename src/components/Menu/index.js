@@ -15,6 +15,10 @@ const MENU_ITEMS = [
     to: '/'
   },
   {
+    labelKey: 'menu.scholarships-link-label',
+    to: '/bourses'
+  },
+  {
     labelKey: 'menu.assistance-link-label',
     to: '/accompagnement'
   },
@@ -62,7 +66,7 @@ class InnerMenu extends React.Component {
 
         <FormattedMessage id="menu.close-button-label">
           {text => (
-            <a className={styles['close-button']} href="javascript:;" onClick={onToggleMenu}>
+            <a className={styles['close-button']} href="#" onClick={onToggleMenu}>
               {text}
             </a>
           )}

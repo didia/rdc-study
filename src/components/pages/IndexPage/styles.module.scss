@@ -130,6 +130,10 @@
     width: 32em;
     margin: 0 _size(section-spacing, medium) _size(element-margin) 0;
   }
+
+  .newsletter {
+    margin-bottom: 30px;
+  }
 }
 
 @include breakpoint(small) {

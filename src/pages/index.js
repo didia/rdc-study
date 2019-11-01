@@ -112,7 +112,7 @@ export const pageQuery = graphql`
       }
     }
     scholarships: allMarkdownRemark(
-      limit: 3
+      limit: 6
       sort: {fields: [fields___timestamp], order: ASC}
       filter: {fields: {type: {eq: "scholarship"}, timestamp: {gt: $currentTimestamp}}}
     ) {

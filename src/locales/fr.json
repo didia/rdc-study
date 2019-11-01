@@ -25,6 +25,7 @@
   "menu.faq-label": "Questions populaires",
   "menu.home-link-label": "Accueil",
   "menu.privacy-policy-link-label": "Politique de confidentialité",
+  "menu.scholarships-link-label": "Bourses d'études",
   "menu.title": "Menu",
 
   "not-found.message-text": "La page à laquelle vous essayez d‘accéder n'existe pas ou n'existe plus!",
@@ -146,6 +147,13 @@
   "shared.countries.sa": "Afrique du Sud",
   "shared.countries.tr": "Turquie",
   "shared.countries.us": "États-Unis",
+
+  "shared.newsletter.alert.error": "Une erreur inconnue est survenue lors de l'abonnement 😞",
+  "shared.newsletter.alert.success": "Yay 🎉🎉 Vous avez été abonné avec succès!",
+  "shared.newsletter.button-label": "M'abonner",
+  "shared.newsletter.input-placeholder": "Votre adresse email",
+  "shared.newsletter.title": "Abonnez-vous à notre infolettre",
+  "shared.newsletter.subtitle": "Toutes les nouveautés sur les bourses et les études à l'étranger directement dans votre boîte email.",
 
   "shared.see-more-text": "Voir plus",
   "shared.read-time": "{time} {time, plural, one {minute de lecture}\n other {minutes de lecture}}",

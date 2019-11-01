@@ -8,7 +8,7 @@ import ScholarshipsPage from '../components/pages/ScholarshipsPage';
 const Scholarships = ({data}) => {
   const page = {
     description: "Voici toutes les offres de bourses partagées avec ❤️ par l'équipe RDC Etudes.",
-    image: data.metaImage.childImageSharp.metaImage,
+    image: data.metaImage.fixed,
     title: "Bourses d'études",
     path: '/toutes-les-bourses'
   };
@@ -44,7 +44,7 @@ export const pageQuery = graphql`
     ) {
       ...ScholarshipListItemFragment
     }
-    metaImage: imageSharp(fluid: {originalName: {regex: "/toutes-les-bourses-cover.jpg/"}}) {
+    metaImage: imageSharp(fixed: {originalName: {regex: "/toutes-les-bourses-cover.jpg/"}}) {
       fixed(width: 1200, height: 630, cropFocus: NORTH) {
         ...GatsbyImageSharpFixed_noBase64
       }
