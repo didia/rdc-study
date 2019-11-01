@@ -16,7 +16,8 @@ targetCountries:
 ---
 # En quoi consiste la bourse ?
 
-[Ashinaga](https://en.ashinaga.org/ce-que-nous-faisons/ashinaga-en-afrique-subsaharienne/lashinaga-africa-initiative/?lang=fr) est une organisation à but non lucratif basée au Japon, qui procure un soutien éducatif et émotionnel à des étudiants orphelins déterminés à retourner dans leur pays afin d’y effectuer un changement.
+[Ashinaga](https://en.ashinaga.org/ce-que-nous-faisons/ashinaga-en-afrique-subsaharienne/lashinaga-africa-initiative/?lang=fr) est une organisation à but non lucratif basée au Japon, qui procure un soutien éducatif et émotionnel à des
+ étudiants orphelins déterminés à retourner dans leur pays afin d’y effectuer un changement.
 
 La bourse couvre:
 
@@ -68,19 +69,24 @@ Le formulaire de candidature doit contenir les documents suivants:
 
 * [Postuler en ligne](https://www.jotform.com/AshinagaAAI/AAI_2020_Registration)	
 * Scanner le formulaire de candidature complété et les documents requis au format PDF ou JPEG
-* Faire des copies des documents requis : il ne faut pas envoyer les originaux
+* 
+
+Faire des copies des documents requis : il ne faut pas envoyer les originaux
 
 **4ème étape**	
 
 * Candidature soumise	
-* Envoyer le formulaire et vos documents dans un seul email à : **admissions.fr@ashinaga.org**
-* Envoyer le formulaire et vos documents par la poste à : **Ashinaga Sénégal, BP5081, 10700, Fann, Dakar, Sénégal .**
-* ****
+* Envoyer le formulaire et vos documents dans un seul email à :
+  **admissions.fr@ashinaga.org**
+* 
+
+Envoyer le formulaire et vos documents par la poste à :
+ **Ashinaga Sénégal, BP5081, 10700, Fann, Dakar, Sénégal .**
+
+- - -
 
 **Pour plus d'informations sur la bourse, veuillez consulter** [**le site web du programme**](https://en.ashinaga.org/candidatures/?lang=fr) **.**
 
-
-
 Nous vous encourageons à postuler et bonne chance !
 
-****
+- - -
