@@ -2,7 +2,7 @@
 title: >-
   Bourses internationales en physique théorique à l'Institut Périmètre de
   Physique Théorique au Canada
-deadline: 2020-02-01T02:00:00.000Z
+deadline: 2020-02-02T02:00:00.000Z
 excerpt: >-
   L'institut Périmètre de Physique Théorique offre une bourse complète en Master
   pour les étudiants internationaux.
