@@ -14,7 +14,7 @@ const Guide = ({guide}) => {
     <Link to={guide.path} className={styles.article}>
       <article>
         <div className={classnames(styles['image-wrapper'], 'image')}>
-          <Img className={styles.image} fluid={guide.thumbnail.fluid} alt={guide.name} />
+          <Img className={styles.image} fluid={guide.thumbnail.fluid} alt={guide.title} />
         </div>
         <h3 className="major">{guide.title}</h3>
         <p>{guide.excerpt}</p>

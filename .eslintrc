@@ -32,5 +32,10 @@
     "Promise": true,
     "graphql": true,
     "process": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
