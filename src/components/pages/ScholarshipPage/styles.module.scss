@@ -87,6 +87,12 @@
   }
 }
 
+.newsletter {
+  padding: 30px 10px;
+  border: 1px solid _palette(border);
+  margin: 50px 0;
+}
+
 @include breakpoint(medium) {
   .wrapper {
     padding: _size(wrapper-edges, medium) 0 0 0;
