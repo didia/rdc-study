@@ -1,5 +1,5 @@
 // Vendor
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import T from 'prop-types';
 import {graphql} from 'gatsby';
 
@@ -19,17 +19,27 @@ const Index = ({data}) => {
     thumbnail: node.frontmatter.thumbnail.childImageSharp
   }));
 
-  const scholarships = data.scholarships.edges.map(({node}) => ({
-    ...node.frontmatter,
-    ...node.fields,
-    thumbnail: node.frontmatter.thumbnail.childImageSharp
-  }));
-
   const images = {
     consultingServiceImage: data.consultingServiceImage,
     freeGuideImage: data.freeGuideImage,
     verificationServiceImage: data.verificationServiceImage
   };
+
+  const [scholarships, setScholarships] = useState([]);
+
+  useEffect(() => {
+    const currentTimestamp = Date.now();
+
+    setScholarships(
+      data.scholarships.edges
+        .filter(({node}) => node.fields.timestamp - currentTimestamp > 0)
+        .map(({node}) => ({
+          ...node.frontmatter,
+          ...node.fields,
+          thumbnail: node.frontmatter.thumbnail.childImageSharp
+        }))
+    );
+  });
 
   return (
     <IndexPage
@@ -112,7 +122,7 @@ export const pageQuery = graphql`
       }
     }
     scholarships: allMarkdownRemark(
-      limit: 6
+      limit: 12
       sort: {fields: [fields___timestamp], order: ASC}
       filter: {fields: {type: {eq: "scholarship"}, timestamp: {gt: $currentTimestamp}}}
     ) {
