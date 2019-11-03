@@ -29,6 +29,8 @@ Les candidats retenus à la Sélection Internationale de L'ENS recevront une bou
 
 ## Comment postuler ?
 
+Pour postuler à la Sélection Internationale de l'ENS vous devez, vous vous enregistrer via [le portail de candidatures ](https://admission.ens.fr/Candidature/s/login/SelfRegister?language=en_US&startURL=%2FCandidature%2Fs%2Fcandidater%3FtrainCode%3DENSSIS)et présenter les documents suivants:
+
 * Passeport-1ère page uniquement (pour les candidats non-européens) ou carte nationale d’identité (candidats européens)
 * Diplôme de fin d’études secondaires
 * Relevés de notes universitaires
@@ -42,9 +44,12 @@ Si le jury sélectionne le dossier, le candidat est invité à passer les épreu
 
 candidature (majeure). L’oral peut contenir une préparation écrite. Coefficient 6.
 
-* Entretien de culture scientifique - disciplines majeure, mineure (si une mineure a été choisie) et au delà - et motivation de 45 (à 60) minutes -15 minutes de préparation éventuellement. Coefficient 3.
+* Entretien de culture scientifique - disciplines majeure, mineure (si une mineure a été choisie) et au delà - et
+  motivation de 45 (à 60) minutes -15 minutes de préparation éventuellement. Coefficient 3.
 
-**Certains départements peuvent faire passer les épreuves orales par vidéoconférence.**
+**NB: - Certains départements peuvent faire passer les épreuves orales par vidéoconférence.**
+
+\     **\- Votre candidature sera évaluée selon votre curiosité, votre ouverture intellectuelle ainsi que votre  goût pour la recherche et l'innovation**
 
 Pour plus d'informations vous pouvez consulter le [site web de l'université](http://www.ens.fr/une-formation-d-exception/admission-concours/concours-selection-internationale-0) ou contacter le service de concours:
 
