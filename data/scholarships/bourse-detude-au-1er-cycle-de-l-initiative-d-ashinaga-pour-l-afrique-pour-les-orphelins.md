@@ -1,34 +1,29 @@
 ---
-title: >-
-  BOURSE D'ÉTUDE AU 1ER CYCLE DE L’INITIATIVE D’ASHINAGA POUR L’AFRIQUE POUR LES
-  ORPHÉLINS
+title: Bourse d'études de l’initiative d’Ashinaga pour les orphelins d'Afrique.
 deadline: 2019-12-13T02:00:00.000Z
 excerpt: >-
-  Chaque année, l'initiative d'Ashinga offre 1 bourse par pays africain, à des
-  jeunes orphelins âgés de 23 ans afin des poursuivre leurs études dans une
-  université internationale.
+  Ashinaga est une organisation à but non lucratif basée au Japon, qui procure
+  un soutien éducatif et émotionnel à des étudiants orphelins déterminés à
+  retourner dans leur pays afin d’y effectuer un changement.
 thumbnail: /images/uploads/ashinaga-africa-initiative.jpg
 startDate: 2019-09-02T13:55:30.073Z
 levels:
   - undergraduate
 targetCountries:
   - us
+  - gb
+  - jp
+  - be
+  - fr
 ---
 # En quoi consiste la bourse ?
 
-[Ashinaga](https://en.ashinaga.org/ce-que-nous-faisons/ashinaga-en-afrique-subsaharienne/lashinaga-africa-initiative/?lang=fr) est une organisation à but non lucratif basée au Japon, qui procure un soutien éducatif et émotionnel à des
- étudiants orphelins déterminés à retourner dans leur pays afin d’y effectuer un changement.
-
-La bourse couvre:
-
-* les frais de scolarité, 
-* le logement, 
-* le transport et
-* les frais supplémentaires 
+* Les frais de scolarité; 
+* Le logement;
+* Le transport;
+* Une allocation mensuelle.
 
 ## Quelles sont les critères de la bourse ?
-
-Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
 * Être orphelin de père ou de mère ou encore de deux ( fournir un document officiel en attestant). 
 * Avoir terminé le cycle secondaire et avoir obtenu le baccalauréat (les baccalauréats techniques, technologiques ou professionnels ne sont pas acceptés) après le 1er septembre 2017 (2018 et 2019 inclus) ou l’obtiendront avant le 28 février 2020. 
@@ -42,51 +37,32 @@ Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 * N’avoir pas de personne à charge qui viendrait interférer avec la poursuite de leurs études. 
 * Être en bonne santé et capables d’aller étudier à l’international. 
 
-Le formulaire de candidature doit contenir les documents suivants:
+## Comment postuler ?
+
+Pour postuler, vous devez commencer par réunir tous les documents requis:
 
 * La copie de la carte d’identité nationale ou du passeport ;
 * La copie de tous les bulletins scolaires/relevés de notes des 3 dernières années du lycée (relevés du dernier trimestre ou semestre, ou les relevés annuels) ;
-* La copie du baccalauréat série générale ou une autre qualification de la fin des études secondaires, et le relevé de notes de l’examen (pour les bacheliers de 2017, 2018 et 2019)\*\* ;
+* La copie du baccalauréat série générale ou une autre qualification de la fin des études secondaires, et le relevé de notes de l’examen (pour les bacheliers de 2017, 2018 et 2019)*;
 * La preuve d’inscription ou les relevés de notes d’études supérieures, si applicable ;
 * La copie du certificat de décès ou de disparition du ou des parents, ou tout document officiel alternatif ;
 * La copie de l’acte de naissance du candidat.
 
-**Pour les étudiants qui obtiendront leurs résultats après le 13 décembre 2019 et avant le 28 février 2020, et si vous êtes retenus après la première phase de sélection, nous vous demanderons d’envoyer votre attestation du baccalauréat.** 
+\*_Pour les étudiants qui obtiendront leurs résultats après le 13 décembre 2019 et avant le 28 février 2020, et qui sont retenus après la première phase de sélection, nous vous demanderons d’envoyer votre attestation du baccalauréat._
 
-## Comment postuler ?
+Une fois que vous avez réuni les documents requis, vous pouvez choisir de postuler en ligne ou par email.
 
-**1ère étape** 	
+### Postuler en ligne
 
-* Obtenir les les documents requis pour la candidature	
-* Télécharger [le formulaire de candidature](https://drive.google.com/file/d/1pHJFSbTgAo126EpVHhuboAjlmwiDgvyj/view) 
+1. Numérisez tous les documents requis ci-haut en format PDF ou JPEG.
+2. Allez sur lien <a href="https://www.jotform.com/AshinagaAAI/AAI_2020_Registration" target="_blank" rel="noreferrer noopener">https://www.jotform.com/AshinagaAAI/AAI_2020_Registration</a> pour postuler.
 
-**2ème étape**	
+### Postuler par email
 
-* Scanner les documents au format PDF ou JPEG	
-* Imprimer et remplir le formulaire de candidature
+1. Téléchargez le formulaire le formulaire de candidature sur ce lien  <a href="https://drive.google.com/file/d/1pHJFSbTgAo126EpVHhuboAjlmwiDgvyj/view" target="_blank" rel="noopener noreferrer">https://drive.google.com/file/d/1pHJFSbTgAo126EpVHhuboAjlmwiDgvyj/view</a> 
+2. Remplissez le formulaire de candidature puis numérisez-le ainsi que tous les documents requis ci-haut en format PDF ou JPEG
+3. Envoyer le formulaire et vos documents dans un seul email à <a href="mailto:**admissions.fr@ashinaga.org**">**admissions.fr@ashinaga.org**</a>. Utilisez votre nom et pays comme titre de votre adresse email.
 
-**3ème étape**	
 
-* [Postuler en ligne](https://www.jotform.com/AshinagaAAI/AAI_2020_Registration)	
-* Scanner le formulaire de candidature complété et les documents requis au format PDF ou JPEG
-* 
+Pour plus d'informations sur la bourse, veuillez consulter <a href="https://en.ashinaga.org/candidatures/?lang=fr" target="_blank" rel="noopener noreferrer">le site web du programme.</a>
 
-Faire des copies des documents requis : il ne faut pas envoyer les originaux
-
-**4ème étape**	
-
-* Candidature soumise	
-* Envoyer le formulaire et vos documents dans un seul email à :
-  **admissions.fr@ashinaga.org**
-* 
-
-Envoyer le formulaire et vos documents par la poste à :
- **Ashinaga Sénégal, BP5081, 10700, Fann, Dakar, Sénégal .**
-
-- - -
-
-**Pour plus d'informations sur la bourse, veuillez consulter** [**le site web du programme**](https://en.ashinaga.org/candidatures/?lang=fr) **.**
-
-Nous vous encourageons à postuler et bonne chance !
-
-- - -
