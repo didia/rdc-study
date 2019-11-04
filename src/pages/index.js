@@ -25,21 +25,15 @@ const Index = ({data}) => {
     verificationServiceImage: data.verificationServiceImage
   };
 
-  const [scholarships, setScholarships] = useState([]);
+  const currentTimestamp = Date.now();
 
-  useEffect(() => {
-    const currentTimestamp = Date.now();
-
-    setScholarships(
-      data.scholarships.edges
-        .filter(({node}) => node.fields.timestamp - currentTimestamp > 0)
-        .map(({node}) => ({
-          ...node.frontmatter,
-          ...node.fields,
-          thumbnail: node.frontmatter.thumbnail.childImageSharp
-        }))
-    );
-  });
+  const scholarships = data.scholarships.edges
+    .filter(({node}) => node.fields.timestamp - currentTimestamp > 0)
+    .map(({node}) => ({
+      ...node.frontmatter,
+      ...node.fields,
+      thumbnail: node.frontmatter.thumbnail.childImageSharp
+    }));
 
   return (
     <IndexPage
