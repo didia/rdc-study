@@ -14,22 +14,18 @@ import styles from './styles.module.scss';
 import ActivityIndicator from '../ActivityIndicator';
 
 // Utils
-import getCurrentUrl from '../../utils/get-current-url';
 import analyticsPushEvent from '../../utils/push-analytics-event';
 
 // Config
 import config from '../../../config';
 
-const {contactFormEndpoint} = config;
+const {newsletterEndpoint} = config;
 
 const handleSubscribe = async (event, email, setFormState) => {
   event.preventDefault();
 
   const payload = {
-    email,
-    message: `Yay 🎉🎉 Nous avons un nouvel abonné à l'infolettre: ${email}`,
-    name: 'Infolettre',
-    link: getCurrentUrl()
+    email
   };
 
   setFormState({
@@ -45,7 +41,7 @@ const handleSubscribe = async (event, email, setFormState) => {
       label: window.location.pathname
     });
 
-    await axios.post(contactFormEndpoint, payload);
+    await axios.post(newsletterEndpoint, payload);
 
     setFormState({
       isSubmitting: false,

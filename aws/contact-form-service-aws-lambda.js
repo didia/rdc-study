@@ -12,7 +12,10 @@ const SUCCESS_CODE = 200;
 const handleResponse = ({callback, statusCode, responseBody, error}) => {
   const response = {
     statusCode,
-    body: JSON.stringify(responseBody)
+    body: JSON.stringify(responseBody),
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
   };
 
   callback(error, response);
@@ -34,9 +37,7 @@ exports.handler = (event, _, callback) => {
     },
     Source: process.env.EMAIL_ADDRESS_FROM,
     Template: process.env.TEMPLATE_NAME /* required */,
-    TemplateData: `{ "email":"${body.email}", "link":"${body.link}", "message":"${body.message}", "name":"${
-      body.name
-    }" }`,
+    TemplateData: `{ "email":"${body.email}", "link":"${body.link}", "message":"${body.message}", "name":"${body.name}" }`,
     ReplyToAddresses: [body.email]
   };
 
