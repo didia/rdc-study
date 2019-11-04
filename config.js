@@ -19,7 +19,8 @@ export default {
       link: 'tel:+1-581-318-0180'
     }
   },
-  contactFormEndpoint: process.env.GATSBY_CONTACT_FORM_ENDPOINT,
+  contactFormEndpoint: `${process.env.GATSBY_API_ENDPOINT}/contact-form`,
+  newsletterEndpoint: `${process.env.GATSBY_API_ENDPOINT}/newsletter`,
   siteCountries: [
     'Bénin',
     'Burkina Faso',
