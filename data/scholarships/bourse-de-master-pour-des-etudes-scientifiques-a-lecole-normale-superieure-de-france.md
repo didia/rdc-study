@@ -1,17 +1,16 @@
 ---
 title: >-
-  Concours Sélection internationale pour des études de master à l'école normale
-  supérieure de France
+  Concours Sélection internationale pour un master dans le domaine scientifique
+  à l'ENS France
 deadline: 2019-12-15T22:29:35.411Z
 excerpt: >
   L'École Normale Supérieure organise un concours international offrant 10
-  places pour les disciplines scientifiques et 10 pour les disciplines
-  littéraires aux étudiants ayant suivi leur premier cycle d'études
-  international à l'étranger. 
+  places pour les disciplines scientifiques aux étudiants ayant suivi leur
+  premier cycle d'études à l'étranger. 
 tags:
   - >-
     bourses;école normale supérieure;france;étudiants africains;sélection
-    internationale;concours ens
+    internationale;concours ENS;Etudes scientifiques
 thumbnail: /images/uploads/2519241.jpg
 startDate: 2019-10-15T23:30:40.345Z
 levels:
@@ -21,9 +20,9 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-* Frais académiques;
-* Logement;
-* Allocation mensuelle de **1000 €** pendant 3 ans.
+Le concours de la sélection internationale s’adresse à des étudiants scientifiques ayant suivi leur premier cycle d’études à l’international.
+
+Les lauréats du concours sont normaliens étudiants. Ils perçoivent une bourse mensuelle d’un montant de **1000 euros** pendant 3 ans et disposent d’une chambre sur un des campus de l’École. Au terme de leurs études, ils obtiennent le diplôme de l’École normale supérieure ainsi qu’un master dans leur domaine de spécialité.
 
 ## Quelles sont les critères de la bourse ?
 
@@ -32,10 +31,11 @@ targetCountries:
 * Ne pas avoir séjourné en France plus de 10 mois dans l’année de la candidature et celle qui la précède;
 * Justifier la validation d’au moins une année universitaire à l’étranger (hors de France) dans l'année civile précédant l’ouverture des candidatures;
 * Justifier, au 1 er septembre suivant le jury d’admission, la validation d’au moins deux années d’enseignement supérieur à l’étranger (hors de France).
+* Vous devez viser un domaine d'études parmi la Biologie, Chimie, Géosciences, Informatique, Mathématiques, Physique ou Sciences cognitives.
 
 ## Comment postuler ?
 
-Pour postuler à la Sélection Internationale de l'ENS, vous devez vous enregistrer via <a href="https://admission.ens.fr/Candidature/s/login/SelfRegister?language=en_US&startURL=%2FCandidature%2Fs%2Fcandidater%3FtrainCode%3DENSSIS" target="_blank" rel="noopener noreferrer">le portail de candidatures</a> et présenter les documents suivants:
+Pour postuler à la Sélection Internationale de l'ENS, vous devez vous enregistrer via <a href="https://admission.ens.fr/Candidature/s/login/SelfRegister?language=en_US&startURL=%2FCandidature%2Fs%2Fcandidater%3FtrainCode%3DENSSIL" target="_blank" rel="noopener noreferrer">le portail de candidatures</a> et présenter les documents suivants:
 
 * Première page du passeport;
 * Diplôme de fin d’études secondaires;
@@ -54,7 +54,5 @@ Certains départements peuvent faire passer les épreuves orales par vidéoconf�
 Votre candidature sera évaluée selon votre curiosité, votre ouverture intellectuelle ainsi que votre  goût pour la recherche et l'innovation.
 
 Le classement à ces épreuves déterminera les étudiants admis à l'ENS.
-
-La date limite pour postuler en lettres est le **29 novembre** tandis que la date limite pour postuler en sciences est le **15 décembre**.
 
 Pour plus d'informations veuillez consulter le <a href="http://www.ens.fr/une-formation-d-exception/admission-concours/concours-selection-internationale-0" target="_blank" rel="noopener noreferrer">site web de l'université.</a>
