@@ -1,6 +1,6 @@
 ---
 title: >-
-  Concours Sélection internationale pour un master dans le domaine littéraire à
+  Concours Sélection internationale pour des études dans le domaine littéraire à
   l'ENS France
 deadline: 2019-11-29T21:30:19.689Z
 excerpt: >
@@ -15,14 +15,15 @@ thumbnail: /images/uploads/2519260.jpg
 startDate: 2019-10-15T22:30:19.726Z
 levels:
   - graduate
+  - undergraduate
 targetCountries:
   - fr
 ---
 ## En quoi consiste la bourse ?
 
-* Frais académiques;
-* Logement;
-* Allocation mensuelle de **1000 €** pendant 3 ans.
+Le concours de la sélection internationale s’adresse à des étudiants littéraires ayant suivi leur premier cycle d’études à l’international.
+
+Les lauréats du concours sont normaliens étudiants. Ils perçoivent une bourse mensuelle d’un montant de **1000 euros** pendant 3 ans et disposent d’une chambre sur un des campus de l’École. Au terme de leurs études, ils obtiennent le diplôme de l’École normale supérieure ainsi qu’un master dans leur domaine de spécialité.
 
 ## Quelles sont les critères de la bourse ?
 
