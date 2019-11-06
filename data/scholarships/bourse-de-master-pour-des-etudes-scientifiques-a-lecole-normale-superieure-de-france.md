@@ -31,6 +31,7 @@ targetCountries:
 * Ne pas avoir séjourné en France plus de 10 mois dans l’année de la candidature et celle qui la précède;
 * Justifier la validation d’au moins une année universitaire à l’étranger (hors de France) dans l'année civile précédant l’ouverture des candidatures;
 * Justifier, au 1 er septembre suivant le jury d’admission, la validation d’au moins deux années d’enseignement supérieur à l’étranger (hors de France).
+* Vous devez viser un domaine d'études parmi la Biologie, Chimie, Géosciences, Informatique, Mathématiques, Physique ou Sciences cognitives.
 
 ## Comment postuler ?
 
