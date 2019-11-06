@@ -14,9 +14,7 @@ const setDevOnlyScripts = ({setHeadComponents}) => {
     <script
       key="ads-by-google-script"
       dangerouslySetInnerHTML={{
-        __html: `google_ad_test = "on"; (adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "${
-          process.env.GATSBY_GOOGLE_AD_CLIENT
-        }", enable_page_level_ads: true});`
+        __html: `google_ad_test = "on"; (adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "${process.env.GATSBY_GOOGLE_AD_CLIENT}", enable_page_level_ads: true});`
       }}
     />
   ]);
@@ -42,7 +40,13 @@ const setProdOnlyScripts = ({setPostBodyComponents}) => {
 
 export const onRenderBody = ({setHeadComponents, setPostBodyComponents}) => {
   setHeadComponents([
-    <script key="netlify-identity-widget" async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+    <script key="netlify-identity-widget" async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />,
+    <script
+      key="share-this-widget"
+      type="text/javascript"
+      src="https://platform-api.sharethis.com/js/sharethis.js#property=5d96bedd2303400012f930c1&product=inline-share-buttons"
+      async="async"
+    />
   ]);
 
   setPostBodyComponents([
