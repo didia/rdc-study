@@ -1,9 +1,9 @@
 ---
 title: >-
-  Concours Sélection internationale pour des études dans le domaine littéraire à
-  l'ENS France
+  Concours Sélection internationale pour un master littéraire à l'Ecole Normale
+  Supérieure en France
 deadline: 2019-11-29T21:30:19.689Z
-excerpt: >
+excerpt: >-
   L'École Normale Supérieure organise un concours international offrant 10
   places pour les disciplines littéraires aux étudiants ayant suivi leur premier
   cycle d'études à l'étranger. 
