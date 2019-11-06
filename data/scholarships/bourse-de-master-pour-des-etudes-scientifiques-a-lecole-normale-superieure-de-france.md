@@ -35,7 +35,7 @@ targetCountries:
 
 ## Comment postuler ?
 
-Pour postuler à la Sélection Internationale de l'ENS, vous devez vous enregistrer via <a href="https://admission.ens.fr/Candidature/s/login/SelfRegister?language=en_US&startURL=%2FCandidature%2Fs%2Fcandidater%3FtrainCode%3DENSSIS" target="_blank" rel="noopener noreferrer">le portail de candidatures</a> et présenter les documents suivants:
+Pour postuler à la Sélection Internationale de l'ENS, vous devez vous enregistrer via <a href="https://admission.ens.fr/Candidature/s/login/SelfRegister?language=en_US&startURL=%2FCandidature%2Fs%2Fcandidater%3FtrainCode%3DENSSIL" target="_blank" rel="noopener noreferrer">le portail de candidatures</a> et présenter les documents suivants:
 
 * Première page du passeport;
 * Diplôme de fin d’études secondaires;
