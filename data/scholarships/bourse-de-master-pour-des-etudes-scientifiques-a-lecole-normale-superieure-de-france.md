@@ -1,7 +1,7 @@
 ---
 title: >-
-  Concours Sélection internationale pour un master dans le domaine scientifique
-  à l'ENS France
+  Concours Sélection internationale pour un master scientifique à l'Ecole
+  Normale Supérieure de France
 deadline: 2019-12-15T22:29:35.411Z
 excerpt: >
   L'École Normale Supérieure organise un concours international offrant 10
