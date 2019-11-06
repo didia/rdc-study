@@ -15,7 +15,6 @@ thumbnail: /images/uploads/2519260.jpg
 startDate: 2019-10-15T22:30:19.726Z
 levels:
   - graduate
-  - undergraduate
 targetCountries:
   - fr
 ---
