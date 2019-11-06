@@ -1,17 +1,16 @@
 ---
 title: >-
-  Concours Sélection internationale pour des études de master à l'école normale
-  supérieure de France
+  Concours Sélection internationale pour des études scientifiques de master à
+  l'ENS France
 deadline: 2019-12-15T22:29:35.411Z
 excerpt: >
   L'École Normale Supérieure organise un concours international offrant 10
-  places pour les disciplines scientifiques et 10 pour les disciplines
-  littéraires aux étudiants ayant suivi leur premier cycle d'études
-  international à l'étranger. 
+  places pour les disciplines scientifiques aux étudiants ayant suivi leur
+  premier cycle d'études à l'étranger. 
 tags:
   - >-
     bourses;école normale supérieure;france;étudiants africains;sélection
-    internationale;concours ens
+    internationale;concours ENS;Etudes scientifiques
 thumbnail: /images/uploads/2519241.jpg
 startDate: 2019-10-15T23:30:40.345Z
 levels:
@@ -54,7 +53,5 @@ Certains départements peuvent faire passer les épreuves orales par vidéoconf�
 Votre candidature sera évaluée selon votre curiosité, votre ouverture intellectuelle ainsi que votre  goût pour la recherche et l'innovation.
 
 Le classement à ces épreuves déterminera les étudiants admis à l'ENS.
-
-La date limite pour postuler en lettres est le **29 novembre** tandis que la date limite pour postuler en sciences est le **15 décembre**.
 
 Pour plus d'informations veuillez consulter le <a href="http://www.ens.fr/une-formation-d-exception/admission-concours/concours-selection-internationale-0" target="_blank" rel="noopener noreferrer">site web de l'université.</a>
