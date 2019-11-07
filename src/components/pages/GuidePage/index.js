@@ -40,10 +40,10 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
 
   const page = {
     description: guide.excerpt,
-    facebookShareButtonLabelKey: 'pages.guides-show.banner.facebook-share-button-label',
     image: guide.metaImage,
     path: guide.path,
-    title: guide.title
+    title: guide.title,
+    socialShareEnabled: true
   };
 
   return (

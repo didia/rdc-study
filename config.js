@@ -21,6 +21,7 @@ export default {
   },
   contactFormEndpoint: `${process.env.GATSBY_API_ENDPOINT}/contact-form`,
   newsletterEndpoint: `${process.env.GATSBY_API_ENDPOINT}/newsletter`,
+  shareThisProperty: '5d96bedd2303400012f930c1',
   siteCountries: [
     'Bénin',
     'Burkina Faso',

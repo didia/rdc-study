@@ -40,13 +40,7 @@ const setProdOnlyScripts = ({setPostBodyComponents}) => {
 
 export const onRenderBody = ({setHeadComponents, setPostBodyComponents}) => {
   setHeadComponents([
-    <script key="netlify-identity-widget" async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />,
-    <script
-      key="share-this-widget"
-      type="text/javascript"
-      src="https://platform-api.sharethis.com/js/sharethis.js#property=5d96bedd2303400012f930c1&product=inline-share-buttons"
-      async="async"
-    />
+    <script key="netlify-identity-widget" async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
   ]);
 
   setPostBodyComponents([

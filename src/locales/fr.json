@@ -85,7 +85,6 @@
   "pages.guides-show.assistance.description-2": "C’est ainsi que nous mettons à votre disponibilité un service d’accompagnement sur mesure basé sur la transparence, l’honnêteté et la serviabilité.",
   "pages.guides-show.assistance.link-text": "En savoir plus",
   "pages.guides-show.assistance.title": "Avez-vous besoin d'assistance?",
-  "pages.guides-show.banner.facebook-share-button-label": "Partagez ce guide sur facebook",
   "pages.guides-show.other-guides.title": "Autres guides qui pourraient vous intéresser",
   "pages.guides-show.related-guides.title": "Guides réliés",
 
@@ -154,6 +153,8 @@
   "shared.newsletter.input-placeholder": "Votre adresse email",
   "shared.newsletter.title": "Abonnez-vous à notre infolettre",
   "shared.newsletter.subtitle": "Toutes les nouveautés sur les bourses et les études à l'étranger directement dans votre boîte email.",
+
+  "shared.social-share.email.message": "{excerpt} \n\n Pour en savoir plus, vas sur {link}",
 
   "shared.see-more-text": "Voir plus",
   "shared.read-time": "{time} {time, plural, one {minute de lecture}\n other {minutes de lecture}}",

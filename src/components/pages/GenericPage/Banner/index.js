@@ -14,9 +14,9 @@ const Banner = ({className, page}) => (
     <div className={styles.wrapper}>
       <h2 className={styles.title}>{page.title}</h2>
       <p className={styles.description}>{page.description}</p>
-      {Boolean(page.facebookShareButtonLabelKey) && (
+      {page.socialShareEnabled && (
         <div className={styles.social}>
-          <SocialShareButtons path={page.path} labelKey={page.facebookShareButtonLabelKey} />
+          <SocialShareButtons path={page.path} title={page.title} excerpt={page.description} />
         </div>
       )}
     </div>
@@ -27,9 +27,9 @@ Banner.propTypes = {
   className: T.string,
   page: T.shape({
     description: T.string.isRequired,
-    facebookShareButtonLabelKey: T.string,
+    socialShareEnabled: T.boolean,
     title: T.string.isRequired,
-    path: T.string.isRequireds
+    path: T.string.isRequired
   })
 };
 

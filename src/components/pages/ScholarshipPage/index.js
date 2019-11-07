@@ -54,7 +54,7 @@ const ScholarshipPage = ({scholarship, otherScholarships}) => {
               </div>
             </div>
 
-            <SocialShareButtons path={scholarship.path} />
+            <SocialShareButtons path={scholarship.path} excerpt={scholarship.excerpt} title={scholarship.title} />
           </div>
 
           <HtmlContent content={scholarship.content} />

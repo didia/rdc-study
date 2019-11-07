@@ -47,7 +47,7 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
               <PostMeta post={article} />
             </div>
 
-            <SocialShareButtons path={article.path} />
+            <SocialShareButtons path={article.path} title={article.title} excerpt={article.excerpt} />
           </div>
 
           <HtmlContent content={article.content} />
