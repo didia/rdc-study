@@ -35,6 +35,7 @@ const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
         show_mobile: true,
         show_toggle: false,
         show_total: true,
+        top: 200,
         message: emailMessage,
         subject: title,
         username: '@rdcetudes'
