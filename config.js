@@ -1,5 +1,4 @@
 export default {
-  branch: process.env.BRANCH,
   contact: {
     address: {
       country: 'Canada',

@@ -1,8 +1,3 @@
-// Config
-import config from '../../config';
-
-const {branch} = config;
-
 export default function(eventData) {
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
@@ -12,7 +7,9 @@ export default function(eventData) {
 }
 
 export const pushCurrentBranch = () => {
+  if (!window.CURRENT_BRANCH) return;
+
   window.dataLayer = window.dataLayer || [];
 
-  window.dataLayer.push({branch});
+  window.dataLayer.push({branch: window.CURRENT_BRANCH});
 };
