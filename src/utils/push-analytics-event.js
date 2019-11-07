@@ -1,3 +1,8 @@
+// Config
+import config from '../../config';
+
+const {branch} = config;
+
 export default function(eventData) {
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
@@ -5,3 +10,9 @@ export default function(eventData) {
     event: 'web-analytics'
   });
 }
+
+export const pushCurrentBranch = () => {
+  window.dataLayer = window.dataLayer || [];
+
+  window.dataLayer.push({branch});
+};
