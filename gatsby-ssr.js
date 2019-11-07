@@ -40,7 +40,26 @@ const setProdOnlyScripts = ({setPostBodyComponents}) => {
 
 export const onRenderBody = ({setHeadComponents, setPostBodyComponents}) => {
   setHeadComponents([
-    <script key="netlify-identity-widget" async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+    <script key="netlify-identity-widget" async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />,
+    <script
+      key="share-this"
+      type="text/javascript"
+      dangerouslySetInnerHTML={{
+        __html: `
+        window.onShareThisLoaded = () => {
+          window.__sharethis__.on("share", ({url}) => { 
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              category: "Social-Share",
+              action: "share",
+              label: url,
+              event: "web-analytics"
+            });
+          });
+        }
+        `
+      }}
+    />
   ]);
 
   setPostBodyComponents([
