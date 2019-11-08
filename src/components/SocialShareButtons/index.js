@@ -21,6 +21,7 @@ const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
     pushCurrentBranch();
   }, [path]);
   return (
+    /* eslint-disable camelcase */
     <InlineShareButtons
       config={{
         property: shareThisProperty,
@@ -30,16 +31,16 @@ const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
         labels: 'cta',
         language: 'fr',
         networks: ['whatsapp', 'facebook', 'twitter', 'email'],
-        // eslint-disable-next-line camelcase
         min_count: 10,
-        // eslint-disable-next-line camelcase
+        show_mobile: true,
+        show_toggle: false,
         show_total: true,
-        // OPTIONAL PARAMETERS
-        message: emailMessage, // (only for email sharing)
-        subject: title, // (only for email sharing)
-        username: '@rdcetudes' // (only for twitter sharing)
+        message: emailMessage,
+        subject: title,
+        username: '@rdcetudes'
       }}
     />
+    /* eslint-enable camelcase */
   );
 });
 
