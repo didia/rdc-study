@@ -19,7 +19,7 @@ Le programme dure deux ans et couvre presque la totalité (93%) des frais de sco
 ## Quelles sont les critères de la bourse ?
 
 * Candidats qui souhaitent enseigner la littérature au niveau secondaire ou universitaire
-*  Avoir obtenu une licence + un an d’études en lettres françaises, en littérature comparée, en anglais, en philosophie, ou en tout autre domaine des « humanités »
+* Avoir obtenu une licence + un an d’études en lettres françaises, en littérature comparée, en anglais, en philosophie, ou en tout autre domaine des « humanités »
 
 ## Comment postuler ?
 
@@ -31,6 +31,6 @@ Les candidats doivent [remplir le formulaire de candidature en ligne](https://ap
 
 **Vous devez inclure les traductions officielles des relevés de notes et des résultats du test d'anglais anglais (TOEFL) ou de l'IELTS. L’Université de Miami exige un minimum de 80 sur le TOEFL ou de 6,5 sur l’IELTS afin d’être considérée comme candidate à des études supérieures à l’Université de Miami.**
 
-Pour toute information complémentaire, veuillez consulter le site de l'université ou contacter Dr. Elisabeth Hodges, professeure et responsable du programme de Master, à l'adresse suivante : hodgesed@miamioh.edu.
+Pour toute information complémentaire, veuillez consulter [le site de l'université](https://miamioh.edu/cas/academics/departments/french-italian/academics/masters-in-french/index.html) ou contacter Dr. Elisabeth Hodges, professeure et responsable du programme de Master, à l'adresse suivante : hodgesed@miamioh.edu.
 
 Nous vous encourageons à postuler et bonne chance !
