@@ -31,7 +31,7 @@ const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
         labels: 'cta',
         language: 'fr',
         networks: ['whatsapp', 'facebook', 'twitter', 'email'],
-        min_count: 0,
+        min_count: 10,
         show_mobile: true,
         show_toggle: false,
         show_total: true,
