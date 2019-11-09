@@ -44,7 +44,6 @@ exports.onCreatePage = ({page, actions}) => {
   const {createPage, deletePage} = actions;
 
   deletePage(page);
-  // You can access the variable "house" in your page queries now
   createPage({
     ...page,
     context: {
@@ -91,6 +90,7 @@ exports.createPages = ({actions, graphql}) => {
         path: node.fields.path,
         component: guideMapping[node.fields.type],
         context: {
+          currentTimestamp: Date.now(),
           type: node.fields.type
         }
       });
