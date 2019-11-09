@@ -79,7 +79,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      limit: 10
+      limit: 12
       sort: {fields: [fields___timestamp], order: ASC}
       filter: {fields: {type: {eq: $type}, timestamp: {gt: $currentTimestamp}, path: {ne: $path}}}
     ) {

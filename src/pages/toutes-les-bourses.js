@@ -10,7 +10,8 @@ const Scholarships = ({data}) => {
     description: "Voici toutes les offres de bourses partagées avec ❤️ par l'équipe RDC Etudes.",
     image: data.metaImage.fixed,
     title: "Bourses d'études",
-    path: '/toutes-les-bourses'
+    path: '/toutes-les-bourses',
+    socialShareEnabled: true
   };
 
   const scholarships = data.scholarships.edges.map(({node}) => ({
@@ -39,7 +40,7 @@ export const pageQuery = graphql`
   query AllScholarshipsPageQuery {
     scholarships: allMarkdownRemark(
       limit: 1000
-      sort: {fields: [frontmatter___deadline], order: ASC}
+      sort: {fields: [fields___timestamp], order: DESC}
       filter: {fields: {type: {eq: "scholarship"}}}
     ) {
       ...ScholarshipListItemFragment

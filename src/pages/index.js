@@ -5,6 +5,8 @@ import {graphql} from 'gatsby';
 
 import IndexPage from '../components/pages/IndexPage';
 
+const NUMBER_OF_SCHOLARSHIPS_IN_HOME_PAGE = 6;
+
 const Index = ({data}) => {
   const countries = data.guides.edges.map(({node}) => ({
     ...node.frontmatter,
@@ -29,6 +31,7 @@ const Index = ({data}) => {
 
   const scholarships = data.scholarships.edges
     .filter(({node}) => node.fields.timestamp - currentTimestamp > 0)
+    .slice(0, NUMBER_OF_SCHOLARSHIPS_IN_HOME_PAGE)
     .map(({node}) => ({
       ...node.frontmatter,
       ...node.fields,
