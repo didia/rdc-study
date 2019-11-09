@@ -267,7 +267,7 @@ class Footer extends Component {
               )}
             </FormattedMessage>
             <li>
-              Design: <a href="http://html5up.net">HTML5 UP</a>
+              Design: <a href="https://html5up.net">HTML5 UP</a>
             </li>
           </ul>
         </div>
