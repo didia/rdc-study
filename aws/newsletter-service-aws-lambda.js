@@ -83,8 +83,8 @@ exports.handler = (event, _, callback) => {
       }
 
       const errorMessage = body.unsubscribe
-        ? `L'abonnement a échoué. Raison: ${error}`
-        : `Le désabonnement a échoué. Raison: ${error}`;
+        ? `Le désabonnement a échoué. Raison: ${error}`
+        : `L'abonnement a échoué. Raison: ${error}`;
 
       const params = {
         Destination: {
