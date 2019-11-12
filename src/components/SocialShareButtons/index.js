@@ -14,7 +14,8 @@ import config from '../../../config';
 const {shareThisProperty} = config;
 
 const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
-  const link = `${getCanonicalLink(path)}?utm_source=rdcetudes.com&utm_medium=email&campaign=user_share`;
+  const canonicalLink = getCanonicalLink(path);
+  const link = `${canonicalLink}?utm_source=rdcetudes.com&utm_medium=email&campaign=user_share`;
   const emailMessage = intl.formatMessage({id: 'shared.social-share.email.message'}, {excerpt, link});
 
   useEffect(() => {
@@ -38,7 +39,8 @@ const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
         top: 200,
         message: emailMessage,
         subject: title,
-        username: '@rdcetudes'
+        username: '@rdcetudes',
+        url: canonicalLink
       }}
     />
     /* eslint-enable camelcase */
