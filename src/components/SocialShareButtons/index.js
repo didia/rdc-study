@@ -1,7 +1,7 @@
 // Vendor
 import React, {useEffect} from 'react';
 import T from 'prop-types';
-import {InlineShareButtons} from 'sharethis-reactjs';
+import {StickyShareButtons} from 'sharethis-reactjs';
 import {injectIntl} from 'react-intl';
 
 // Utils
@@ -23,10 +23,10 @@ const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
   }, [path]);
   return (
     /* eslint-disable camelcase */
-    <InlineShareButtons
+    <StickyShareButtons
       config={{
         property: shareThisProperty,
-        alignment: 'right',
+        alignment: 'left',
         color: 'social',
         enabled: true,
         labels: 'cta',
@@ -36,6 +36,7 @@ const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
         show_mobile: true,
         show_toggle: false,
         show_total: true,
+        top: 200,
         message: emailMessage,
         subject: title,
         username: '@rdcetudes',
