@@ -1,7 +1,10 @@
 ---
-title: ' la bourse d''excellence Emile Boutmy de Sciences Po pour étudiants internationaux '
+title: 'Bourse d''excellence Emile Boutmy de Sciences Po pour étudiants internationaux '
 deadline: 2019-12-15T12:22:29.466Z
-excerpt: ' La bourse Emile Boutmy est attribuée aux meilleurs étudiants dont les profils correspondent aux priorités en matière d''admission de Sciences Po et aux exigences de chaque cours.'
+excerpt: >-
+  La bourse Emile Boutmy est attribuée aux meilleurs étudiants dont les profils
+  correspondent aux priorités en matière d'admission de Sciences Po et aux
+  exigences de chaque cours.
 tags:
   - ''
 thumbnail: /images/uploads/372013-pba7rs-434.jpg
@@ -14,7 +17,9 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-La bourse Emile Boutmy de[ l'Institut d'Études Politiques de Paris](https://www.sciencespo.fr/en) est attribuée en fonction du mérite et du type de profil recherché pour le programme . Les critères sociaux sont également pris en compte. Cette bourse n'est pas automatiquement attribuée, vous devez premièrement vous inscrire à un programme offert par l'université et ensuite indiquer votre souhait de postuler directement dans votre formulaire de candidature dans la section **_Informations financières_** au baccalauréat ou à la maîtrise en ligne.  
+La bourse Emile Boutmy de[ l'Institut d'Études Politiques de Paris](https://www.sciencespo.fr/en) est attribuée en fonction du mérite et du type de profil recherché pour le programme . Les critères sociaux sont également pris en compte.
+
+Cette bourse n'est pas automatiquement attribuée, vous devez premièrement vous inscrire à un programme offert par l'université et ensuite indiquer votre souhait de postuler directement dans votre formulaire de candidature dans la section _**Informations financières**_ au baccalauréat ou à la maîtrise en ligne.  
 
 La Bourse consiste à:
 
@@ -50,13 +55,9 @@ Pour être admis au programme de master vous devez remplir les critères suivant
 ## Comment postuler ?
 
 1. [Créer un compte](https://admission.sciencespo.fr/applicants/login?_ga=2.121803662.445751490.1573215378-947112867.1570534715) ;
-
 2. Se connecter à son dossier de candidature ;
-
 3. Remplir votre dossier de candidature ;
-
 4. Suivre votre candidature.
-
 5. Entrer les documents suivants:
 
 Pour le 1er cycle:
@@ -68,7 +69,7 @@ Pour le 1er cycle:
 * Une recommandation académique obligatoire (il est possible d'ajouter des recommandations académiques ou professionnelles facultatives);
 * Une photocopie d'une pièce d'identité : passeport ou carte d'identité.
 
-**Vous devez écrire votre mettre de motivation directement en ligne, dans l'espace prévu au sein du formulaire**
+**Vous devez écrire votre lettre de motivation directement en ligne, dans l'espace prévu au sein du formulaire**
 
 Pour le master:
 
@@ -76,14 +77,16 @@ Pour le master:
 * les relevés de notes officiels de toutes vos études supérieures. Les formats acceptés de relevés de notes sont les suivants : relevés de notes originaux scannés, relevés de notes officiels en version électronique ou copies d'écran de toutes vos notes incluant bien le nom de votre établissement. La Direction des admissions se réserve le droit de vous réclamer les originaux de tous vos relevés de notes.
 * une traduction officielle ou non, de l'ensemble des relevés de notes, si ces documents ne sont ni en français ni en anglais
 * [les tests de langue (le cas échéant)](https://www.sciencespo.fr/admissions/fr/master-international-langue.html)
-* [Deux recommandations académiques](https://www.sciencespo.fr/admissions/fr/master-france-recommendations.html)
+* [Deux recommandations académiques
+  ](https://www.sciencespo.fr/admissions/fr/master-france-recommendations.html)
 * Une attestation officielle (signée et tamponnée) de votre université indiquant votre moyenne cumulée du premier cycle, et le cas échéant une attestation de votre [moyenne cumulée en master](https://www.sciencespo.fr/admissions/fr/master-moyenne.html). Si vous avez étudié dans plusieurs établissements, vous devez joindre une attestation de moyenne par établissement.
 * Le mémoire de fin d’étude (facultatif).
 * Si vous postulez à deux programmes (un programme de double diplôme et un programme de master), les documents doivent être joints en langue originale, accompagnés, le cas échéant, d'une traduction officielle ou non, en anglais uniquement.
 
-**NB: - Vérifiez** [**les prérequis spécifiques et les documents requis par programme**](file:///C:/Users/lues093786/Downloads/Admission%20%C3%A0%20Sciences%20Po%20en%20master%20ou%20en%20double%20dipl%C3%B4me%20-%20R%C3%A9capitulatif%20(1).pdf)****
+**NB: - Vérifiez** [**les prérequis spécifiques et les documents requis par programme**
+](file:///C:/Users/lues093786/Downloads/Admission%20%C3%A0%20Sciences%20Po%20en%20master%20ou%20en%20double%20dipl%C3%B4me%20-%20R%C3%A9capitulatif%20(1).pdf)\*\*\*\*
 
-\    **\- Consultez** [**les informations pratiques**](https://www.sciencespo.fr/com/sciencespo-guide-candidat-fr.pdf)****
+\    **\- Consultez** [**les informations pratiques**](https://www.sciencespo.fr/com/sciencespo-guide-candidat-fr.pdf)\*\*\*\*
 
 Lors de votre candidature il est possible que les documents suivants vous soient demandés:
 
@@ -99,6 +102,4 @@ Lors de votre candidature il est possible que les documents suivants vous soient
 
 **NB: Ne présentez que les documents que vous possédez et qui répondent à votre situation !**
 
-Pour plus d'informations, consulter [le site de l'institut](https://www.sciencespo.fr/students/fr/financer/bourses-aides-financieres/boutmy.html) ou contactez le service des admissions en remplissant [le formulaire de contact](https://forms.sciencespo.fr/contact-admissions?_ga=2.206730646.445751490.1573215378-947112867.1570534715) ou par téléphone au +33 (0) 1 45 49 50 82. 
-
-Nous vous encourageons à postuler et bonne chance !
+Pour plus d'informations, consulter [le site de l'institut](https://www.sciencespo.fr/students/fr/financer/bourses-aides-financieres/boutmy.html) ou contactez le service des admissions en remplissant [le formulaire de contact](https://forms.sciencespo.fr/contact-admissions?_ga=2.206730646.445751490.1573215378-947112867.1570534715) ou par téléphone au +33 (0) 1 45 49 50 82.
