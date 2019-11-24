@@ -7,7 +7,9 @@ excerpt: >-
   recherché pour chacun des programmes de l'Institut d'Études Politiques de
   Paris (SciencesPo).
 tags:
-  - bourses d'études;france;rdc etudes
+  - >-
+    Bourses d'études;france;rdc etudes;sciencesPo;Bourses Emile Bootmy pour
+    congolais
 thumbnail: /images/uploads/372013-pba7rs-434.jpg
 startDate: 2019-09-15T12:22:29.489Z
 levels:
@@ -60,9 +62,9 @@ Pour le master, vous aurez besoin des documents suivants:
 * Un Curriculum Vitae
 * les relevés de notes officiels de toutes vos études supérieures. Les formats acceptés de relevés de notes sont les suivants : relevés de notes originaux scannés, relevés de notes officiels en version électronique ou copies d'écran de toutes vos notes incluant bien le nom de votre établissement. La Direction des admissions se réserve le droit de vous réclamer les originaux de tous vos relevés de notes.
 * une traduction officielle ou non, de l'ensemble des relevés de notes, si ces documents ne sont ni en français ni en anglais
-* [les tests de langue (le cas échéant)](https://www.sciencespo.fr/admissions/fr/master-international-langue.html)
-* [Deux recommandations académiques](https://www.sciencespo.fr/admissions/fr/master-france-recommendations.html)
-* Une attestation officielle (signée et tamponnée) de votre université indiquant votre moyenne cumulée du premier cycle, et le cas échéant une attestation de votre [moyenne cumulée en master](https://www.sciencespo.fr/admissions/fr/master-moyenne.html). Si vous avez étudié dans plusieurs établissements, vous devez joindre une attestation de moyenne par établissement.
+* <a href="https://www.sciencespo.fr/admissions/fr/master-international-langue.html" target="_blank" rel="noreferrer noopener">les tests de langue (le cas échéant)</a>
+* <a href="https://www.sciencespo.fr/admissions/fr/master-france-recommendations.html" target="_blank" rel="noreferrer noopener">Deux recommandations académiques</a>
+* Une attestation officielle (signée et tamponnée) de votre université indiquant votre moyenne cumulée du premier cycle, et le cas échéant une attestation de votre <a href="https://www.sciencespo.fr/admissions/fr/master-moyenne.html" target="_blank" rel="noreferrer noopener">moyenne cumulée en master</a>. Si vous avez étudié dans plusieurs établissements, vous devez joindre une attestation de moyenne par établissement.
 * Le mémoire de fin d’étude (facultatif).
 * Si vous postulez à deux programmes (un programme de double diplôme et un programme de master), les documents doivent être joints en langue originale, accompagnés, le cas échéant, d'une traduction officielle ou non, en anglais uniquement.
 
@@ -78,11 +80,8 @@ Pour votre demande de bourse, il est possible que les documents suivants vous so
 * certificat de décès)
 * leur test de langue avant la date limite de candidature de la bourse.
 
-**NB: - Vérifiez** [**les prérequis spécifiques et les documents requis par programme**
-](file:///C:/Users/lues093786/Downloads/Admission%20%C3%A0%20Sciences%20Po%20en%20master%20ou%20en%20double%20dipl%C3%B4me%20-%20R%C3%A9capitulatif%20(1).pdf)\*\*\*\*
-
-\    **\- Consultez** [**les informations pratiques**](https://www.sciencespo.fr/com/sciencespo-guide-candidat-fr.pdf)\*\*\*\*
-
 **NB: Ne présentez que les documents que vous possédez et qui répondent à votre situation !**
 
-Pour plus d'informations, consulter [le site de l'institut](https://www.sciencespo.fr/students/fr/financer/bourses-aides-financieres/boutmy.html) ou contactez le service des admissions en remplissant [le formulaire de contact](https://forms.sciencespo.fr/contact-admissions?_ga=2.206730646.445751490.1573215378-947112867.1570534715) ou par téléphone au +33 (0) 1 45 49 50 82.
+Pour plus d'informations sur la bourse Emile Boutmy, nous vous invitons à consulter <a href="https://www.sciencespo.fr/students/fr/financer/bourses-aides-financieres/boutmy.html" target="_blank" rel="noreferrer noopener">le site internet de la bourse.</a>
+
+En ce qui concerne l'admission à SciencesPo en général, vous pouvez consulter <a href="https://www.sciencespo.fr/com/sciencespo-guide-candidat-fr.pd" target="_blank" rel="noreferrer noopener">le guide du candidat.</a>
