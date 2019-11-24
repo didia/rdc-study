@@ -1,19 +1,19 @@
 ---
 active: true
-slug: "belgique/admission"
-date: "2018-11-19"
-title: "Obtenir une admission dans une université belge"
+slug: 'belgique/admission'
+date: '2018-11-19'
+title: 'Obtenir une admission dans une université belge'
 excerpt: "Pour vous rendre en Belgique pour études, vous devez au préalable obtenir une admission d'une université en Belgique. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n'importe quelle université belge."
-thumbnail: "images/belgique-admission.jpg"
-topic: "admission"
-related: ["belgique/visa"]
+thumbnail: 'images/belgique-admission.jpg'
+topic: 'admission'
+related: ['belgique/visa']
 ---
 
 Le processus d'admission restent sensiblement le même pour la majorité d'universités belges. Si vous êtes étudiants résidant hors de l'union européene comme c'est le cas pour les congolais, vous devez présenter votre demande d'admission entre le 15 février et le 30 avril de chaque année.
 \
 \
 Cependant les conditions d'admission, elles, dépendent du niveau et du domaine d'études que vous désirez poursuivre.\
-Si vous visez le premier cycle (Bachelier ou License), vous devez être titulaire d'un diplome d'études secondaires reconnu équivalent au certificat d'enseignement supérieur délivré en Belgique.
+Si vous visez le premier cycle (Bachelier ou Licence), vous devez être titulaire d'un diplome d'études secondaires reconnu équivalent au certificat d'enseignement supérieur délivré en Belgique.
 Certaines universités vous exigeront même d'obtenir une équivalence de votre diplôme d'études secondaires auprès du auprès du <a href="http://www.equivalences.cfwb.be/" target="_blank" rel="nofollow noopener">Service des Équivalences du Ministère de la Fédération Wallonie-Bruxelles.</a>\
 Aussi il est important de noter que certains domaines d’études (école d'arts, sciences de l’ingénieur) exigent aux étudiants de réussir un examen d’admission ou un concours à l’issue d’une première année d’études (études de médecine et de dentisterie).\
 Si vous visez le bachelier de spécialisation, vous devez être titulaire d'un diplôme d'études supérieurs. Tandis que si vous visez le deuxième cycle (master) vous devez détenir une license.\
@@ -54,8 +54,8 @@ Une fois admis, vous devrez maintenant faire une demande visa long séjour pour 
 En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC Etudes](/accompagnement), vous devrez prévoir entre **200 USD et 580 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
-* **0 à 230 USD** pour la demande d'admission.
-* **0 à 150 USD** pour l'envoi et reception des documents.
-* **200 USD** pour les frais d'assistance RDC Etudes
+- **0 à 230 USD** pour la demande d'admission.
+- **0 à 150 USD** pour l'envoi et reception des documents.
+- **200 USD** pour les frais d'assistance RDC Etudes
 
 _NB_: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
