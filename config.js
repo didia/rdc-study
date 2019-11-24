@@ -45,11 +45,10 @@ export default {
     'Tchad',
     'Togo'
   ],
-  siteDescription:
-    'Accédez à nos guides gratuits sur la préparation d’un projet d’études à l’étranger pour étudiants congolais.',
+  siteDescription: "Nous accompagnons les étudiants d'Afrique francophone dans leurs projets d'études.",
   siteFBAppID: '192570431528735',
   siteKeywords:
-    'etudier à l’étranger, étudier au Canada, étudier en France, étudier aux États—Unis, étudier en Belgique',
+    'etudier à l’étranger, étudier au Canada, étudier en France, étudier aux États—Unis, étudier en Belgique, bourses d‘études gratuites, projet d‘études, carrières',
   siteLogo: '/logo.png',
   siteImage: '/sharable-image.jpg',
   siteTitle: 'RDC Etudes - Votre source d’informations sur les études à l’étranger!',
