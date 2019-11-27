@@ -17,9 +17,20 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-[Le programme de bourse AFRICA KOMMIT](https://www.afrika-kommt.de/) consiste à un stage d'une durée de 8 mois auprès des entreprises allemandes suivantes: Bayer AG, B. Braun Melsungen AG, Boehringer Ingelheim GmbH, Robert Bosch GmbH, Kärcher SE & Co. KG, Merck KGaA, SAP SE, Siemens Healthineers GmbH et Voith Grou. Permettant aux participants :
+[Le programme de bourse AFRICA KOMMIT](https://www.afrika-kommt.de/) consiste à un stage d'une durée de 8 mois auprès des entreprises allemandes suivantes: Bayer AG
+, B. Braun Melsungen AG
+, Boehringer Ingelheim GmbH, 
+Robert Bosch GmbH, 
+Kärcher SE & Co. KG
+, Merck KGaA, 
+SAP SE, 
+Siemens Healthineers GmbH
+ et Voith Grou. Permettant aux participants :
 
-* d’acquérir d’expérience de première main dans une entreprise dirigeante allemande
+* 
+
+d’acquérir d’expérience de première main dans une entreprise dirigeante allemande
+
 * d’être exposé aux concepts de leadership et aux techniques de gestion en pratique
 * de se familiariser avec des processus de travail et avec la culture des affaires dans les entreprises allemandes
 * d’accroître leurs compétences a la gestion internationale
@@ -43,6 +54,7 @@ Avant de postuler, veuillez consulter les différents programmes des stages dans
 
 **NB: Il est obligatoire de parler couramment anglais pour participer à AFRIKA KOMMT !. L'anglais est la langue de travail de nombreuses entreprises allemandes, en particulier de celles qui travaillent à l'international.**
 
-Pour plus d'informations, veuillez consulter [le site web du programme](https://www.afrika-kommt.de/) ou les contacter aux **Tel: +49 (0)211 – 8689 – 166 / Fax: +49 (0)211 – 8689 – 151 .**
+Pour plus d'informations, veuillez consulter [le site web du programme](https://www.afrika-kommt.de/) ou les contacter aux **Tel: +49 (0)211 – 8689 – 166
+ / Fax: +49 (0)211 – 8689 – 151 .**
 
 Nous vous encourageons à postuler et bonne chance !
