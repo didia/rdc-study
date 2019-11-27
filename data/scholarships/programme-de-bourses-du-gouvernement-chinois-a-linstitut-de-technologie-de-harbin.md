@@ -105,8 +105,6 @@ M. LIU Wei (russe): Tél.: + 86-451-86402455E-mail: anatolii@hit.edu.cn
 
 Mme SHAO Wei (Mongolie, Japon): Tél.: + 86-451-86412647 Courriel: shaowei@hit.edu.cn
 
-
-
 Nous vous encourageons à postuler et bonne chance !
 
 - - -
