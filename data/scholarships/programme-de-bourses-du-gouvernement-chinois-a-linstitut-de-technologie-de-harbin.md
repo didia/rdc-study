@@ -93,6 +93,18 @@ Le documents et les frais d’évaluation ne sont pas remboursables.
 
 **SWIFT/BIC: ICBKCNBJHLJ**
 
+Pour plus d'informations, veuillez [consulter le site web](http://studyathit.hit.edu.cn/en/academic/program/view?id=17), ou encore contacter l'université au:
+
+Mme ZHAO Lin (anglais): Tél.: + 86-451-86402455 Courriel: StudyatHIT@hit.edu.cn
+
+Mme LI Dongmei (Anglais): Tél.: + 86-451-86402455 Courriel: lidongmei @ hit .edu.cn
+
+Mme PIAO Yuejin (coréenne): Tél.: + 86-451-86412647 Courriel: piaoyuejin@hit.edu.cn
+
+M. LIU Wei (russe): Tél.: + 86-451-86402455E-mail: anatolii@hit.edu.cn
+
+Mme SHAO Wei (Mongolie, Japon): Tél.: + 86-451-86412647 Courriel: shaowei@hit.edu.cn
+
 - - -
 
 - - -
