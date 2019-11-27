@@ -20,7 +20,7 @@ targetCountries:
 
 [La bourse du gouvernement chinois au HIT](http://studyathit.hit.edu.cn/en/academic/program/view?id=17) pour les étudiants étrangers consiste à [des études supérieures](http://studyathit.hit.edu.cn/upload/attachment/PhD%20&%20Master's%20Programs.docx). au sein de l’Institut de Technologie de Harbin, 2 à 3 ans pour le master et 4 ans pour le doctorat. En plus, il  d’un an supplémentaire pour l’apprentissage de la langue chinoise. La bourse couvre: 
 
-1.  Les frais d'inscription, les frais de scolarité ainsi les frais d'hébergement;
+1. Les frais d'inscription, les frais de scolarité ainsi les frais d'hébergement;
 2. 800 RMB par an pour l'assurance médicale complète;
 3. Une allocation mensuelle est accordée aux étudiants aux taux suivants:
 
@@ -33,11 +33,14 @@ targetCountries:
 
 Pour bénéficier de la bourse vous devez remplir les critères suivants:
 
-*  Être de nationalité non chinoise et en bonne santé.
+* Être de nationalité non chinoise et en bonne santé.
 * Être étudiants internationaux hors de Chine ou anciens diplômés des universités chinoises.
 * Les candidats à la maîtrise doivent être titulaires d'un baccalauréat et avoir moins de 35 ans. Les candidats aux études de doctorat doivent être titulaires d'une maîtrise et avoir moins de 40 ans.
-* Excellente performance en étude.
-*  Avoir de bonnes compétences en recherche scientifique.
+* 
+
+Excellente performance en étude.
+
+* Avoir de bonnes compétences en recherche scientifique.
 
 **NB: la bourse ne peut être combinée à aucune autre bourse.**
 
@@ -73,13 +76,12 @@ Casier judiciaire
 
 [Lettre d’acceptation](http://studyathit.hit.edu.cn/upload/attachment/Acceptance%20Letter.pdf) (facultatif). Les candidats sont encouragés à contacter [les professeurs](http://homepage.hit.edu.cn/home-index) avant de postuler et à joindre a leur dossier la lettre d’acceptation du superviseurs de HIT.
 
-NB: les documents doivent t'être poster et envoyer papier avec la copie du récépissé de versement au **No.11, rue Siling, district de Nangang, Harbin (150001), Chine .**Veuillez inscrire clairement «Demande de bourse d'études du SCC» sur l'enveloppe. 
-
-
+NB: les documents doivent t'être poster et envoyer papier avec la copie du récépissé de versement au **No.11, rue Siling, district de Nangang, Harbin (150001), Chine
+ .**Veuillez inscrire clairement «Demande de bourse d'études du SCC» sur l'enveloppe. 
 
 Le documents et les frais d’évaluation ne sont pas remboursables.
 
-**Informations sur l’envoi de frais de traitement de dossier:** 
+**Informations sur l’envoi de frais de traitement de dossier:**
 
 **Bank Name: Industrial and Commercial Bank of China, Harbin, Da Zhi Branch**
 
@@ -91,8 +93,6 @@ Le documents et les frais d’évaluation ne sont pas remboursables.
 
 **SWIFT/BIC: ICBKCNBJHLJ**
 
+- - -
 
-
-****
-
-****
+- - -
