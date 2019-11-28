@@ -66,6 +66,8 @@ collections:
             value: africa
           - label: Afrique du Sud
             value: sa
+          - label: Allemagne
+            value: de
           - label: Belgique
             value: be
           - label: Brésil
