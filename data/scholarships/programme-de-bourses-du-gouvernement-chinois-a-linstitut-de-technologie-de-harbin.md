@@ -1,13 +1,13 @@
 ---
-title: ' Programme de bourses du gouvernement chinois à l''Institut de technologie de Harbin'
+title: Bourses du gouvernement chinois à l'Institut de technologie de Harbin
 deadline: 2019-11-26T02:39:52.108Z
 excerpt: >-
-  La bourse du gouvernement chinois au HIT pour les étudiants étrangers est un
-  programme entièrement financé, elle est ouverte pour les étudiants étrangers
-  qui souhaitent faire des études de master ou doctorat à l’Institut de
-  Technologie de Harbin (HIT).
+  La bourse du gouvernement chinois l’Institut de Technologie de Harbin (HIT)
+  pour les étudiants étrangers est un programme entièrement financé, ouvert aux
+  étudiants étrangers qui souhaitent faire des études de master ou doctorat au
+  HIT.
 tags:
-  - BOURSE D'ETUDES EN CHINE
+  - bourses d'études chine;bourses pour étudiants africains
 thumbnail: /images/uploads/chinese-students.jpg
 startDate: 2019-10-16T02:39:52.160Z
 levels:
@@ -18,7 +18,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-[La bourse du gouvernement chinois au HIT](http://studyathit.hit.edu.cn/en/academic/program/view?id=17) pour les étudiants étrangers consiste à [des études supérieures](http://studyathit.hit.edu.cn/upload/attachment/PhD%20&%20Master's%20Programs.docx). au sein de l’Institut de Technologie de Harbin, 2 à 3 ans pour le master et 4 ans pour le doctorat. En plus, il  d’un an supplémentaire pour l’apprentissage de la langue chinoise. La bourse couvre: 
+[La bourse du gouvernement chinois au HIT](http://studyathit.hit.edu.cn/en/academic/program/view?id=17) pour les étudiants étrangers consiste à [des études supérieures](http://studyathit.hit.edu.cn/upload/attachment/PhD%20&%20Master's%20Programs.docx). au sein de l’Institut de Technologie de Harbin, 2 à 3 ans pour le master et 4 ans pour le doctorat. En plus, il  d’une année supplémentaire pour l’apprentissage de la langue chinoise. La bourse couvre: 
 
 1. Les frais d'inscription, les frais de scolarité ainsi les frais d'hébergement;
 2. 800 RMB par an pour l'assurance médicale complète;
@@ -36,10 +36,7 @@ Pour bénéficier de la bourse vous devez remplir les critères suivants:
 * Être de nationalité non chinoise et en bonne santé.
 * Être étudiants internationaux hors de Chine ou anciens diplômés des universités chinoises.
 * Les candidats à la maîtrise doivent être titulaires d'un baccalauréat et avoir moins de 35 ans. Les candidats aux études de doctorat doivent être titulaires d'une maîtrise et avoir moins de 40 ans.
-* 
-
-Excellente performance en étude.
-
+* Excellente performance en étude.
 * Avoir de bonnes compétences en recherche scientifique.
 
 **NB: la bourse ne peut être combinée à aucune autre bourse.**
@@ -104,9 +101,3 @@ Mme PIAO Yuejin (coréenne): Tél.: + 86-451-86412647 Courriel: piaoyuejin@hit.e
 M. LIU Wei (russe): Tél.: + 86-451-86402455E-mail: anatolii@hit.edu.cn
 
 Mme SHAO Wei (Mongolie, Japon): Tél.: + 86-451-86412647 Courriel: shaowei@hit.edu.cn
-
-Nous vous encourageons à postuler et bonne chance !
-
-- - -
-
-- - -
