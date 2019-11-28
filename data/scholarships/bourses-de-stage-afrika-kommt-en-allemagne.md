@@ -6,6 +6,8 @@ excerpt: >-
   qualifiés et à des cadres débutants originaires d’Afrique subsaharienne, dotés
   de plusieurs années d’expérience professionnelle, de fortes qualités de
   dirigeant et d’un grand dévouement.
+tags:
+  - bourses de stage;travailler en allemagne;allemagne;bourses afrika kommt
 thumbnail: /images/uploads/gern.png
 thumbnailCredits: ''
 startDate: 2019-11-25T13:54:30.032Z
@@ -44,4 +46,4 @@ Avant de postuler, veuillez consulter les différents programmes des stages dans
 
 **NB: Il est obligatoire de parler couramment anglais pour participer à AFRIKA KOMMT !. L'anglais est la langue de travail de nombreuses entreprises allemandes, en particulier de celles qui travaillent à l'international.**
 
-Pour plus d'informations, veuillez consulter [le site web du programme](https://www.afrika-kommt.de/) ou les contacter aux **Tel: +49 (0)211 – 8689 – 166**
+Pour plus d'informations, veuillez consulter <a href="https://www.afrika-kommt.de/" target="_blank" rel="noopener noreferrer">le site web du programme</a> ou les contacter aux **Tel: +49 (0)211 – 8689 – 166**
