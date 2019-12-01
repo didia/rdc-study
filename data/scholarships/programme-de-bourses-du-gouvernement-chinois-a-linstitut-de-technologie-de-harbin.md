@@ -28,7 +28,7 @@ Cette bourse finance une année d'apprentissage de langue ainsi que 2 à 3 ans d
 2. **800 RMB** (≈ 115 USD) par an pour l'assurance médicale complète;
 3. Une allocation mensuelle de **3 000 RMB** ( ≈ 430 USD) par mois pour le master et **3 500 RMB** (≈ 500 USD) pour le doctorat.
 
-* **NB: Pour pouvoir bénéficier d'une allocation complète, veuillez postuler jusqu'au plus tard le 15 décembre. Ceux qui postuleront après cette date recevront une demi-allocation.**
+**NB: Pour pouvoir bénéficier d'une allocation complète, veuillez postuler jusqu'au plus tard le 15 décembre. Ceux qui postuleront après cette date recevront une demi-allocation.**
 
 ## Quelles sont les critères de la bourse ?
 
