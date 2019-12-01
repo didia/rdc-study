@@ -14,19 +14,21 @@ date: 2019-11-27T09:34:12.751Z
 ---
 ## Pourquoi organiser des olympiades ?
 
-Les olympiades des mathématiques sont des concours des mathématiques organisés dans un peu plus de 100 pays du monde pour encourager les élèves à apprécier les mathématiques et à reconnaitre et identifier les élèves prometteurs en Mathématiques.
+Les olympiades des mathématiques sont des concours des mathématiques organisés dans un peu plus de 100 pays du monde pour identifier, reconnaitre et encourager les élèves ayant un tallent très prometteur en Mathématiques.
 
-Organiser ce concours correspond à notre objectif qui est de promouvoir une éducation de qualité auprès des étudiants de l'Afrique francophone. 
+Organiser ce concours correspond à notre objectif qui est de promouvoir une éducation de qualité pour des étudiants de l'Afrique francophone.
 
-Notre but ultime est de pouvoir faire reconnaitre notre concours auprès de l'organisation internationale des olympiades pour que les étudiants de l'Afrique centrale aient aussi la chance de participer à ce concours international qui est organisé depuis 1959.
+Nous croyons qu'offrir à ces génies une compétition pour exprimer leurs talents leur ouvrira les portes des futures opportunités dans les meilleures universités du monde.
+
+Notre but ultime est de pouvoir faire reconnaitre ce concours auprès de l'organisation internationale des olympiades pour que les étudiants de l'Afrique centrale aient aussi la chance de participer au concours international organisé depuis 1959.
 
 ## Qui peut participer ?
 
-Les olympiades seront ouvertes à tout étudiant du secondaire quelque soit son domaine d'études. En effet, les questions du concours des olympiades font plus appel au raisonnement qu'à des connaissances sophistiquées des mathématiques. Pour préparation au concours, nous enverrons une liste des matériels et des sujets qui seront abordés. Avec cette petite préparation, tous les élèves, soient-ils en littéraire ou électricité, seront à mesure d'y participer.
+Les olympiades seront ouvertes à tout étudiant du secondaire quelque soit son domaine d'études. En effet, les questions du concours des olympiades feront plus appel au raisonnement qu'à des connaissances sophistiquées des mathématiques. Pour préparation au concours, nous enverrons une liste des matériels et des sujets qui seront abordés. Avec cette petite préparation, tous les élèves, soient-ils en littéraire ou électricité, seront à mesure d'y participer.
 
 ## Quels sont les prix à gagner ?
 
-Nous prévoyons plusieurs prix à offrir aux gagnants du concours et ainsi qu'à l'école qui aura gagné les plus des points possibles via ces élèves. Des médailles d'or, de bronze et d'argent en plus d'une compensation financière correspondantes seront offertes aux trois premiers gagnants. Nous prévoyons aussi une mention honorable pour les 5 prochains meilleurs classés.
+Nous prévoyons offrir plusieurs prix aux gagnants du concours et ainsi qu'à l'école qui aura gagné les plus des points possibles via ces élèves. Des médailles d'or, de bronze et d'argent en plus d'une compensation financière correspondantes seront offertes aux trois premiers gagnants. Nous prévoyons aussi une mention honorable pour les 5 prochains meilleurs classés. La compensation financière dépendra du soutien de nos partenaires. Toutefois RDC Etudes de sa part offrira un accompagnement gratuit aux trois premiers gagnants pour les accompagner dans leur futur parcours académique.
 
 ## Quand est-ce que le concours sera organisé ?
 
