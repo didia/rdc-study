@@ -2,7 +2,7 @@
 title: >-
   Bourses de master et doctorat du gouvernement chinois à l'Institut de
   technologie de Harbin
-deadline: 2019-11-26T02:39:52.108Z
+deadline: 2019-12-25T05:00:00.000Z
 excerpt: >-
   La bourse du gouvernement chinois l’Institut de Technologie de Harbin (HIT)
   pour les étudiants étrangers est un programme entièrement financé, ouvert aux
