@@ -4,7 +4,7 @@ title: >-
   technologie de Harbin
 deadline: 2019-12-25T05:00:00.000Z
 excerpt: >-
-  La bourse du gouvernement chinois l’Institut de Technologie de Harbin (HIT)
+  La bourse du gouvernement chinois à l’Institut de Technologie de Harbin (HIT)
   pour les étudiants étrangers est un programme entièrement financé, ouvert aux
   étudiants étrangers qui souhaitent faire des études de master ou doctorat au
   HIT.
