@@ -2,9 +2,10 @@
 title: Bourse de Maîtrise en sciences mathématiques à l'AIMS
 deadline: 2020-03-31T12:08:46.889Z
 excerpt: >-
-  Le programme de maîtrise de l'AIMS vise à former des scientifiques bien
-  formés, dotés d'excellentes compétences en résolution de problèmes, capables
-  de penser de manière créative et d'innover véritablement.
+  Le programme de maîtrise de l'AIMS est un réseau universitaire qui vise à
+  former des scientifiques bien formés, dotés d'excellentes compétences en
+  résolution de problèmes, capables de penser de manière créative et d'innover
+  véritablement.
 tags:
   - ''
 thumbnail: /images/uploads/20190919_limpopo_student_visit_32a0834low.jpg
@@ -16,6 +17,8 @@ targetCountries:
   - africa
 ---
 ## En quoi consiste la bourse ?
+
+[L'Institut Africain des Sciences Mathématiques ](https://www.nexteinstein.org/) offre des bourses complètes de 3 semestres axées sur la résolution de problèmes informatiques et les compétences en programmation, il offre la possibilité de rivaliser dans les domaines les plus avancés des sciences mathématiques. La bourse couvre l'hébergement, l'alimentation et les frais de voyage.
 
 ## Quelles sont les critères de la bourse ?
 
