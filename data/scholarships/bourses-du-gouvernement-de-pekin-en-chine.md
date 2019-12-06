@@ -17,5 +17,19 @@ targetCountries:
   - cn
 ---
 ## En quoi consiste la bourse ?
+
+ la bourse du gouvernement consiste a couvrir uniquement les frais académiques pour les étudiants étrangers,soit a payer un montant de 40000 a 5000 RMB par année selon les programmes ou les niveaux choisis par les candidats(es).
+
 ## Quelles sont les critères de la bourse ?
-## Comment postuler ?
+
+.être un citoyen non chinois et être en bonne santé.
+
+.niveau d'études excellent et limite d'age pour les candidats(es).
+
+.répondre aux exigences linguistiques des établissements d'enseignement supérieur.
+
+.ne pas être récipiendaires des bourses du gouvernement chinois en même temps.
+
+# Postuler
+
+une fois admis dans votre programme,consultez les autorités responsables de l'envoi,telles que les services gouvernementaux ou les ambassades pour plus de détails sur le programme de bourse.
