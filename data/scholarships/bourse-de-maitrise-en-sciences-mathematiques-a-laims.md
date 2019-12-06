@@ -9,7 +9,7 @@ excerpt: >-
 tags:
   - ''
 thumbnail: /images/uploads/20190919_limpopo_student_visit_32a0834low.jpg
-startDate: 2019-12-02T03:00:00.000Z
+startDate: 2019-12-01T03:00:00.000Z
 levels:
   - graduate
 targetCountries:
