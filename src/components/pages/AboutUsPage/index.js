@@ -14,7 +14,7 @@ import Card from '../../Card';
 const imageClassPerIndex = index => (index % 2 === 0 ? 'image left' : 'image right');
 
 const page = {
-  description: 'Nous voulons que tout congolais ait facilement accès à une éducation de qualité.',
+  description: 'Nous voulons que tout le monde ait facilement accès à une éducation de qualité.',
   title: 'Pourquoi RDC-Etudes?',
   path: '/a-propos'
 };
