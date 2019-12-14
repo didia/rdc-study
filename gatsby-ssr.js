@@ -21,5 +21,26 @@ const setDevOnlyScripts = ({setHeadComponents}) => {
 };
 
 export const onRenderBody = ({setHeadComponents, setPostBodyComponents}) => {
+  setPostBodyComponents([
+    <script
+      key="share-this"
+      type="text/javascript"
+      dangerouslySetInnerHTML={{
+        __html: `
+        window.onShareThisLoaded = () => {
+          window.__sharethis__.on("share", ({url}) => { 
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              category: "Social-Share",
+              action: "share",
+              label: url,
+              event: "web-analytics"
+            });
+          });
+        }
+        `
+      }}
+    />
+  ]);
   setDevOnlyScripts({setHeadComponents, setPostBodyComponents});
 };
