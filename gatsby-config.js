@@ -7,6 +7,7 @@ const netlifyCmsPaths = {
 };
 
 const plugins = [
+  'gatsby-plugin-netlify-cache',
   'gatsby-plugin-react-helmet',
   'gatsby-transformer-json',
   netlifyCmsPaths,
@@ -14,7 +15,12 @@ const plugins = [
   'gatsby-plugin-sharp',
   'gatsby-plugin-remove-trailing-slashes',
   'gatsby-plugin-catch-links',
-  'gatsby-plugin-netlify-cms',
+  {
+    resolve: 'gatsby-plugin-netlify-cms',
+    options: {
+      enableIdentityWidget: false
+    }
+  },
   {
     resolve: 'gatsby-plugin-sitemap',
     options: {

@@ -371,3 +371,41 @@
     box-shadow: inset 0 -1px 0 0 $color, 0 1px 0 0 $color;
   }
 }
+
+// Ripple effect mixin
+@mixin ripple-effect($color: black) {
+  &:hover {
+    &::before {
+      opacity: 0.04;
+    }
+  }
+
+  &:focus {
+    &::before {
+      opacity: 0.12;
+      transition-duration: 75ms;
+    }
+  }
+
+  &::after,
+  &::before {
+    box-sizing: border-box;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -50%;
+    left: -50%;
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    background-color: $color;
+    transition: opacity 15ms linear, background-color 15ms linear;
+    pointer-events: none;
+  }
+
+  &::after {
+    transition: opacity 0.15s linear;
+  }
+}

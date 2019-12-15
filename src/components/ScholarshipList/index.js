@@ -1,11 +1,11 @@
 // Vendor
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import T from 'prop-types';
 import {Link} from 'gatsby';
-import Card, {CardMedia, CardActionButtons, CardActions} from '@material/react-card';
-import {Body2, Headline6, Subtitle2} from '@material/react-typography';
+import {Subtitle2} from '@material/react-typography';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
+import Img from 'gatsby-image';
 
 // Styles
 import styles from './styles.module.scss';
@@ -17,30 +17,67 @@ import Newsletter from '../Newsletter';
 
 // Constants
 const NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER = 6;
+const MOBILE_MAX_INNER_WIDTH = 640;
+
+const median = values => {
+  values.sort(function(a, b) {
+    return a - b;
+  });
+
+  const half = Math.floor(values.length / 2);
+
+  if (values.length % 2) return values[half];
+
+  return (values[half - 1] + values[half]) / 2.0;
+};
+
+const normalizeThumbnailAspectRatio = scholarships => {
+  if (!scholarships.length) return scholarships;
+
+  const minAspectRatio = median(scholarships.map(scholarship => scholarship.thumbnail.fluid.aspectRatio));
+
+  return scholarships.map(scholarship => ({
+    ...scholarship,
+    thumbnail: {
+      ...scholarship.thumbnail,
+      fluid: {
+        ...scholarship.thumbnail.fluid,
+        aspectRatio: minAspectRatio
+      }
+    }
+  }));
+};
+
+const isSmallScreen = () => {
+  if (typeof window === 'undefined') {
+    return true;
+  }
+  return window.innerWidth <= MOBILE_MAX_INNER_WIDTH;
+};
 
 const Scholarship = ({scholarship}) => {
   return (
-    <Card className={styles.card}>
-      <Link to={scholarship.path} className={classnames(styles.card__body, 'mdc-card__primary-action')} tabIndex="0">
-        <CardMedia wide imageUrl={scholarship.thumbnail.fluid.src} />
+    <article className={styles.card}>
+      <Link to={scholarship.path} className={styles.card__body} tabIndex="0">
+        <div className={styles['image-wrapper']}>
+          <Img className={styles.image} fluid={scholarship.thumbnail.fluid} alt={scholarship.title} />
+        </div>
         <div className={styles.card__header}>
-          <Headline6 className={styles.card__title}>{scholarship.title}</Headline6>
+          <h6 className={styles.card__title}>{scholarship.title}</h6>
           <ScholarshipLevels className={styles.card__subtitle} levels={scholarship.levels} tag={Subtitle2} />
           <ScholarshipDeadline className={styles.card__subtitle} date={scholarship.deadline} tag={Subtitle2} />
         </div>
-        <Body2 className={styles.card__description}>{scholarship.excerpt}</Body2>
+        <p className={styles.card__description}>{scholarship.excerpt}</p>
       </Link>
-      <CardActions>
-        <CardActionButtons>
-          <Link
-            to={scholarship.path}
-            className={classnames(styles.card__button, 'mdc-button mdc-card__action mdc-card__action--button')}
-          >
-            Voir les détails
+      <div className={styles.card__actions}>
+        <div className={styles['card__actions-buttons']}>
+          <Link to={scholarship.path} className={styles.card__button}>
+            {' '}
+            Voir les détails{' '}
           </Link>
-        </CardActionButtons>
-      </CardActions>
-    </Card>
+        </div>
+      </div>
+    </article>
   );
 };
 
@@ -66,8 +103,23 @@ const ScholarshipList = ({
   showNewsletter,
   titleKey
 }) => {
-  const scholarships1 = scholarships.slice(0, NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER);
-  const scholarships2 = scholarships.slice(NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER);
+  const [isMobile, setIsMobile] = useState(true);
+  const [normalizedScholarships, setNormalizedScholarships] = useState(scholarships);
+
+  useEffect(() => {
+    setIsMobile(isSmallScreen());
+  });
+
+  useEffect(() => {
+    if (!isMobile) {
+      setNormalizedScholarships(normalizeThumbnailAspectRatio(scholarships));
+    } else {
+      setNormalizedScholarships(scholarships);
+    }
+  }, [isMobile, scholarships]);
+
+  const scholarships1 = normalizedScholarships.slice(0, NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER);
+  const scholarships2 = normalizedScholarships.slice(NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER);
   return (
     <div className={className}>
       {titleKey && <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>}
