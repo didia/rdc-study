@@ -2,7 +2,6 @@
 import React, {useEffect, useState} from 'react';
 import T from 'prop-types';
 import {Link} from 'gatsby';
-import {Subtitle2} from '@material/react-typography';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
 import Img from 'gatsby-image';
@@ -14,6 +13,7 @@ import styles from './styles.module.scss';
 import ScholarshipDeadline from '../ScholarshipDeadline';
 import ScholarshipLevels from '../ScholarshipLevels';
 import Newsletter from '../Newsletter';
+import Button from '../Button';
 
 // Constants
 const NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER = 6;
@@ -64,17 +64,16 @@ const Scholarship = ({scholarship}) => {
         </div>
         <div className={styles.card__header}>
           <h6 className={styles.card__title}>{scholarship.title}</h6>
-          <ScholarshipLevels className={styles.card__subtitle} levels={scholarship.levels} tag={Subtitle2} />
-          <ScholarshipDeadline className={styles.card__subtitle} date={scholarship.deadline} tag={Subtitle2} />
+          <ScholarshipLevels className={styles.card__subtitle} levels={scholarship.levels} tag="h6" />
+          <ScholarshipDeadline className={styles.card__subtitle} date={scholarship.deadline} tag="h6" />
         </div>
         <p className={styles.card__description}>{scholarship.excerpt}</p>
       </Link>
       <div className={styles.card__actions}>
         <div className={styles['card__actions-buttons']}>
-          <Link to={scholarship.path} className={styles.card__button}>
-            {' '}
-            Voir les détails{' '}
-          </Link>
+          <Button tag={Link} to={scholarship.path}>
+            Voir les détails
+          </Button>
         </div>
       </div>
     </article>

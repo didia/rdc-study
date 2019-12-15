@@ -1,9 +1,7 @@
 // Vendor
 import React, {useState} from 'react';
-import Button from '@material/react-button';
 import classnames from 'classnames';
 import T from 'prop-types';
-import {Headline6, Body2} from '@material/react-typography';
 import {FormattedMessage} from 'react-intl';
 import axios from 'axios';
 
@@ -12,6 +10,7 @@ import styles from './styles.module.scss';
 
 // Components
 import ActivityIndicator from '../ActivityIndicator';
+import Button from '../Button';
 
 // Utils
 import analyticsPushEvent from '../../utils/push-analytics-event';
@@ -95,11 +94,11 @@ const Newsletter = ({className}) => {
         <i className={classnames('fa fa-envelope-o', styles.icon)} />
         <div className={styles['title-container']}>
           <FormattedMessage id="shared.newsletter.title">
-            {title => <Headline6 className={styles.title}>{title}</Headline6>}
+            {title => <h6 className={styles.title}>{title}</h6>}
           </FormattedMessage>
 
           <FormattedMessage id="shared.newsletter.subtitle">
-            {subtitle => <Body2 className={styles.subtitle}>{subtitle}</Body2>}
+            {subtitle => <p className={styles.subtitle}>{subtitle}</p>}
           </FormattedMessage>
         </div>
       </div>

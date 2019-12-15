@@ -13,7 +13,7 @@
     "npm": "^5.6"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "WITH_BUNDLE_ANALYZER=true gatsby build",
     "deploy-qa": "gatsby build && surge public/ $SURGE_DOMAIN",
     "start": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
@@ -31,14 +31,6 @@
     ]
   },
   "dependencies": {
-    "@material/button": "^4.0.0",
-    "@material/elevation": "^3.1.0",
-    "@material/react-button": "^0.15.0",
-    "@material/react-text-field": "^0.15.0",
-    "@material/react-typography": "^0.15.0",
-    "@material/ripple": "^3.2.0",
-    "@material/textfield": "^3.2.0",
-    "@material/typography": "^3.1.0",
     "axios": "^0.19.0",
     "classnames": "^2.2.5",
     "date-fns": "^2.8.1",
@@ -59,6 +51,7 @@
     "gatsby-plugin-sentry": "^1.0.1",
     "gatsby-plugin-sharp": "^2.3.7",
     "gatsby-plugin-sitemap": "^2.2.24",
+    "gatsby-plugin-webpack-bundle-analyzer": "^1.0.5",
     "gatsby-remark-copy-linked-files": "^2.1.33",
     "gatsby-remark-images": "^3.1.38",
     "gatsby-remark-prismjs": "^3.3.27",

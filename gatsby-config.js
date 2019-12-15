@@ -16,6 +16,12 @@ const plugins = [
   'gatsby-plugin-remove-trailing-slashes',
   'gatsby-plugin-catch-links',
   {
+    resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+    options: {
+      production: process.env.WITH_BUNDLE_ANALYZER != null
+    }
+  },
+  {
     resolve: 'gatsby-plugin-netlify-cms',
     options: {
       enableIdentityWidget: false

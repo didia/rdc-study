@@ -1,0 +1,44 @@
+.button {
+  @include ripple-effect(#118aec);
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-width: 64px;
+  height: 36px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: inherit;
+  letter-spacing: 0.08929em;
+  color: #118aec;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  vertical-align: middle;
+
+  &:hover {
+    color: #118aec;
+  }
+
+  &:disabled {
+    border-color: _palette(border);
+    background-color: rgba(#fff, 0);
+    color: #fff;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.outlined {
+  border: solid 2px #118aec;
+}
+
+.disabled {
+}
