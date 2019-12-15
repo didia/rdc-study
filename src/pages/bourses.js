@@ -64,7 +64,7 @@ export const scholarshipFragment = graphql`
           title
           thumbnail {
             childImageSharp {
-              fluid(maxHeight: 500, cropFocus: CENTER, fit: COVER) {
+              fluid(maxHeight: 300, cropFocus: CENTER, fit: COVER) {
                 ...GatsbyImageSharpFluid
               }
             }

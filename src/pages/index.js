@@ -21,12 +21,6 @@ const Index = ({data}) => {
     thumbnail: node.frontmatter.thumbnail.childImageSharp
   }));
 
-  const images = {
-    consultingServiceImage: data.consultingServiceImage,
-    freeGuideImage: data.freeGuideImage,
-    verificationServiceImage: data.verificationServiceImage
-  };
-
   const currentTimestamp = Date.now();
 
   const scholarships = data.scholarships.edges
@@ -43,7 +37,6 @@ const Index = ({data}) => {
       articles={articles}
       countries={countries}
       scholarships={scholarships}
-      images={images}
       hasMoreArticles={data.articles.pageInfo.hasNextPage}
     />
   );
@@ -124,21 +117,6 @@ export const pageQuery = graphql`
       filter: {fields: {type: {eq: "scholarship"}, timestamp: {gt: $currentTimestamp}}}
     ) {
       ...ScholarshipListItemFragment
-    }
-    consultingServiceImage: imageSharp(fluid: {originalName: {regex: "/consulting-service.jpg/"}}) {
-      fluid(maxWidth: 276) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-    freeGuideImage: imageSharp(fluid: {originalName: {regex: "/free-guide.jpg/"}}) {
-      fluid(maxWidth: 276) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-    verificationServiceImage: imageSharp(fluid: {originalName: {regex: "/verification-service.jpg/"}}) {
-      fluid(maxWidth: 276) {
-        ...GatsbyImageSharpFluid
-      }
     }
   }
 `;
