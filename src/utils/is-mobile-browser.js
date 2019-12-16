@@ -1,5 +1,6 @@
 const MAX_CHARACTERS = 4;
 const MOBILE_MAX_INNER_WIDTH = 640;
+const MOBILE_MAX_INNER_HEIGHT = 800;
 
 const isUserAgentMobile = () => {
   if (typeof navigator === 'undefined') return false;
