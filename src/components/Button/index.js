@@ -9,10 +9,9 @@ import styles from './styles.module.scss';
 const Button = ({className, children, outlined, tag, ...props}) => {
   const Tag = tag || 'button';
   const outlinedClass = outlined ? styles.outlined : null;
-  const disabledClass = props.disabled ? styles.disabled : null;
 
   return (
-    <Tag className={classnames(styles.button, outlinedClass, disabledClass, className)} {...props}>
+    <Tag className={classnames(styles.button, outlinedClass, className)} {...props}>
       {children}
     </Tag>
   );
