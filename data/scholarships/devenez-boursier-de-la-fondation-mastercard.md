@@ -19,7 +19,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-Le programme de bourse de la Fondation Mastercard est offerte en partenariats avec diverses établissements permettant aux étudiants africains dont le talent et la promesse dépassent leurs ressources financières de terminer leurs études dans les meilleures universités au monde.  La bourse  offre un soutien financier, social et académique aux boursiers qui comprend à la base:
+Le programme de bourse de la Fondation Mastercard est offerte en partenariats avec diverses établissements permettant aux étudiants africains dont le talent et la promesse dépassent leurs ressources financières de terminer leurs études dans les meilleures universités au monde. La bourse offre un soutien financier, social et académique aux boursiers qui comprend à la base:
 
 * les frais de scolarité, 
 * l'hébergement, 
@@ -36,7 +36,7 @@ NB: En plus de ces critères, chaque université a ses propres critères d'élig
 
 ## Comment postuler ?
 
-Si vous souhaitez devenir boursier, vous devez 
+Les institutions partenaires de la [Fondation Mastercard](https://mastercardfdn.org/foundation/) ont leurs propres délais et frais d'admission. Il est recommandé de rechercher les directives d'application ou de contacter l'institution de votre choix pour plus d'informations. Pour les écoles qui exigent des frais de candidature dans le cadre du processus d'admission, les frais seront remboursés si l'étudiant est sélectionné pour le programme de bourses. Pour être retenu au programme de bourse, vous devez :  
 
 * Faire votre demande auprès de l'université de votre choix via son site web, où vous devez les critères d'admissibilité, les exigences, les délais et les autres instructions de candidature. Vous trouverez la liste des universités partenaires dans le site web de la Fondation <https://mastercardfdn.org/partners/?filter=collapse&fwp_initiatives=6161>
 * Sélectionner l'institution et le programme auxquels vous souhaitez postuler. **Il n'y a pas de limite au nombre d'écoles auxquelles vous pouvez postuler.**
@@ -46,4 +46,8 @@ Si vous souhaitez devenir boursier, vous devez
 
 **NB: - Vous devez suivre les instructions d'application sur le programme universitaire. Certaines universités n'acceptent que les candidatures en ligne; d'autres nécessitent des applications sur papier.**
 
-**\- Prenez note de la date limite et évitez d'attendre le dernier jour pour soumettre votre candidature. Vérifiez votre dossier de candidature pour vous assurer d'avoir soumis tous les documents requis. Une candidature tardive ou incomplète ne sera pas prise en considération pour le programme de bourses**
+**\- Prenez note de la date limite et évitez d'attendre le dernier jour pour soumettre votre candidature. Vérifiez votre dossier de candidature pour vous assurer d'avoir soumis tous les documents requis. Une candidature tardive ou incomplète ne sera pas prise en considération pour le programme de bourses.** 
+
+Pour plus d'informations, veuillez consulter le site web de la Fondation Mastercard <https://mastercardfdn.org/all/scholars/> .
+
+Nous vous encourageons à postuler et bonne chance.
