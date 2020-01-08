@@ -84,6 +84,8 @@ collections:
             value: jp
           - label: RDC
             value: cd
+          - label: Roumanie
+            value: ro
           - label: Royaume-Uni
             value: gb
           - label: Suisse
