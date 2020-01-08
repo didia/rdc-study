@@ -1,10 +1,9 @@
 ---
-title: Bourse Du Gouvernement Roumain Pour Étudiants Internationaux 2020-2021
+title: Bourse du gouvernement roumain pour étudiants Internationaux
 deadline: 2020-03-16T14:07:41.207Z
 excerpt: >-
-  Le gouvernement Roumain offre une bourse partielle aux étudiants
-  internationaux souhaitant poursuivre les études pour le 1er cycle ainsi que
-  les cycles supérieures.
+  Le gouvernement roumain offre une bourse partielle aux étudiants
+  internationaux souhaitant poursuivre leurs études en Roumanie.
 thumbnail: /images/uploads/bourse-tss-24-news.jpg
 startDate: 2019-12-19T14:07:41.220Z
 levels:
@@ -15,7 +14,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
- Le ministère des Affaires étrangères [(MAE)](https://www.mae.ro/en/node/10251#null) et le ministère
+Le ministère des Affaires étrangères [(MAE)](https://www.mae.ro/en/node/10251#null) et le ministère
  de l'enseignement et de la recherche La bourse du gouvernement de la Roumanie offrent 
 85 bourses d'études de premier et de deuxième cycle aux étudiants internationaux couvrant:
 
