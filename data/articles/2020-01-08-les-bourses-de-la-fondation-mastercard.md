@@ -25,6 +25,3 @@ Pour devenir boursier de la Fondation Mastercard, vous devez
 * Répondre aux critères d'éligibilité de l'université hôte.
 
 Nous postons individuellement les opportunités des bourses par rapport à chaque université sur notre [page des bourses d'études](/bourses) lorsqu'elles deviennent disponible mais nous vous encourageons à consulter <a href="https://mastercardfdn.org/all/scholars/" target="_blank" rel="noopener noreferrer">le site web de la fondation</a> pour en savoir plus sur les opportunités en cours ou à venir.
-
-
-
