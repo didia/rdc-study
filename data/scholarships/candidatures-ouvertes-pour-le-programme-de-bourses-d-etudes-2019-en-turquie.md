@@ -14,7 +14,7 @@ tags:
   - kinshasa
   - congo
 thumbnail: /images/uploads/bourses-turquie-2.png
-startDate: 2020-01-15T10:50:47.201Z
+startDate: 2020-01-10T10:50:47.201Z
 levels:
   - all
 targetCountries:
