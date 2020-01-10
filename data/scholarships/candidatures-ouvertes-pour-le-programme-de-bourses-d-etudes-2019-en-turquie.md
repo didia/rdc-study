@@ -1,6 +1,6 @@
 ---
 title: Bourses d'études du gouvernement de la République de Turquie.
-deadline: 2019-02-20T21:59:34.114Z
+deadline: 2020-02-20T21:59:34.114Z
 excerpt: >-
   La Turquie ouvre les portes de ses universités aux étudiants internationaux à
   travers le programme des bourses turques qui permet d'étudier gratuitement
@@ -14,6 +14,7 @@ tags:
   - kinshasa
   - congo
 thumbnail: /images/uploads/bourses-turquie-2.png
+startDate: 2020-01-15T10:50:47.201Z
 levels:
   - all
 targetCountries:
@@ -38,8 +39,7 @@ targetCountries:
 
 ## Comment postuler ?
 
-Le dépôt de candidature est complètement gratuit et se fait en ligne sur <a href="https://turkiyeburslari.gov.tr/en/page/prospective-students/how-to-apply" target="_blank" rel="nofollow noopener">le site du gouvernement.</a>.
-Vous y trouverez également la démarche sur comment déposer sa candidature ainsi que les documents requis à cet effet.
+Le dépôt de candidature est complètement gratuit et se fait en ligne sur <a href="https://turkiyeburslari.gov.tr/en/page/prospective-students/how-to-apply" target="_blank" rel="nofollow noopener">le site du gouvernement.</a>. Vous y trouverez également la démarche sur comment déposer sa candidature ainsi que les documents requis à cet effet.
 
 Voici les documents que vous devez prévoir:
 
