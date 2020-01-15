@@ -76,7 +76,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 10
       sort: {fields: [frontmatter___date], order: DESC}
-      filter: {fields: {path: {ne: $path}, type: {eq: $type}}}
+      filter: {fields: {path: {ne: $path}, type: {eq: $type}, draft: {eq: false}}}
     ) {
       edges {
         node {

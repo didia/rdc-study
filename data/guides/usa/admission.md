@@ -1,5 +1,5 @@
 ---
-active: true
+draft: false
 slug: 'usa/admission'
 date: '2018-03-30'
 title: 'Obtenir une admission dans une université américaine'

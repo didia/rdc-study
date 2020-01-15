@@ -1,5 +1,5 @@
 ---
-active: true
+draft: false
 slug: 'canada/visa/exemple-lettre-engagement-quitter-canada-apres-etudes'
 date: '2019-08-18'
 title: "Exemple de lettre d'engagement à quitter le Canada après ses études"

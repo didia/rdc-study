@@ -1,12 +1,12 @@
 ---
-active: true
-slug: "belgique"
-date: "2018-11-18"
-title: "Étudier en Belgique"
-excerpt: "Outre le fait d’être le pays accueillant le plus de congolais dans le monde, la Belgique offre un enseignement de qualité qui possède plusieurs ressemblances avec le système congolais. Étudier en Belgique vous permettra d’élargir vos horizons et augmenter vos chances pour un très bon emploi dans le futur et ce  à un coût très raisonnable."
-thumbnail: "images/belgique.jpg"
-topic: "country"
-related: ["belgique/admission", "belgique/visa"]
+draft: false
+slug: 'belgique'
+date: '2018-11-18'
+title: 'Étudier en Belgique'
+excerpt: 'Outre le fait d’être le pays accueillant le plus de congolais dans le monde, la Belgique offre un enseignement de qualité qui possède plusieurs ressemblances avec le système congolais. Étudier en Belgique vous permettra d’élargir vos horizons et augmenter vos chances pour un très bon emploi dans le futur et ce  à un coût très raisonnable.'
+thumbnail: 'images/belgique.jpg'
+topic: 'country'
+related: ['belgique/admission', 'belgique/visa']
 ---
 
 ## Que faut-il pour étudier en Belgique?
@@ -43,8 +43,8 @@ Vous devrez vérifier si c’est le cas avec l’université que vous aurez choi
 En supposant que vous choisissez [d'être accompagné dans vos démarches par un assistant de RDC-Etudes](/accompagnement), vous devez prévoir entre **1370 USD et 1980 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-* **0 à 380 USD** pour le processus d'admission.
-* **970 USD à 1200 USD** pour le processus de visa.
-* **400 USD** pour les frais d'assistance RDC Etudes. (Payable en deux tranches.)
+- **0 à 380 USD** pour le processus d'admission.
+- **970 USD à 1200 USD** pour le processus de visa.
+- **400 USD** pour les frais d'assistance RDC Etudes. (Payable en deux tranches.)
 
 **NB**: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s'ils sont changés par le gouvernement belge. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

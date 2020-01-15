@@ -1,12 +1,12 @@
 ---
-active: true
-slug: "canada"
-date: "2018-05-28"
-title: "Étudier au Canada"
-excerpt: "Le Canada reconnu, pour sa diversité, ses valeurs inclusives et sa qualité de vie élevée, est considéré à l’international comme un de meilleurs pays au monde où vivre et étudier. Etudier au Canada constitue non seulement un énorme privilège mais aussi une opportunité à saisir avec grand coeur."
-thumbnail: "images/canada.jpg"
-topic: "country"
-related: ["canada/admission", "canada/visa"]
+draft: false
+slug: 'canada'
+date: '2018-05-28'
+title: 'Étudier au Canada'
+excerpt: 'Le Canada reconnu, pour sa diversité, ses valeurs inclusives et sa qualité de vie élevée, est considéré à l’international comme un de meilleurs pays au monde où vivre et étudier. Etudier au Canada constitue non seulement un énorme privilège mais aussi une opportunité à saisir avec grand coeur.'
+thumbnail: 'images/canada.jpg'
+topic: 'country'
+related: ['canada/admission', 'canada/visa']
 ---
 
 ## Que faut-il pour étudier au Canada?
@@ -47,8 +47,8 @@ Cette dernière ne s’applique que pour les étudiants ayant été admis dans u
 En supposant que vous choisissez [d’être accompagné dans vos démarches par un assistant de RDC Etudes](/accompagnement), vous devez prévoir entre **1 070 USD et 1 310 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-* **80 USD à 200 USD** pour le processus d’admission.
-* **490 USD à 610 USD** pour le processus de visa.
-* **500 USD** pour les frais d’assistance RDC Etudes. (Payable en trois tranches.)
+- **80 USD à 200 USD** pour le processus d’admission.
+- **490 USD à 610 USD** pour le processus de visa.
+- **500 USD** pour les frais d’assistance RDC Etudes. (Payable en trois tranches.)
 
 **NB**: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

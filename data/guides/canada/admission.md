@@ -1,12 +1,12 @@
 ---
-active: true
-slug: "canada/admission"
-date: "2018-05-28"
-title: "Obtenir une admission dans une université canadienne"
+draft: false
+slug: 'canada/admission'
+date: '2018-05-28'
+title: 'Obtenir une admission dans une université canadienne'
 excerpt: "Pour vous rendre au Canada pour études, vous devez au préalable obtenir une admission d'un établissement d'enseignement désigné au Canada. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n'importe quel établissement d'enseignement au Canada."
-thumbnail: "images/canada-admission.jpg"
-topic: "admission"
-related: ["canada/visa"]
+thumbnail: 'images/canada-admission.jpg'
+topic: 'admission'
+related: ['canada/visa']
 ---
 
 Le processus d'admission diffère d'une institution à une autre. Toutefois les étapes générales sont sensiblement les mêmes dans toutes les institutions.\
@@ -32,8 +32,8 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     \
     Voici une liste non-exhaustive des collèges et universités que vous pouvez explorer:
 
-    * **Collèges:** <a href="https://www.dawsoncollege.qc.ca/admissions/admission-requirements/international-students/" target="_blank" rel="nofollow noopener">Dawson College (Anglais)</a>, <a href="https://www.cegepgarneau.ca/etudier-a-garneau/etudiants-internationaux" target="_blank" rel="nofollow noopener">Cégép Garneau (Français)</a>, <a href="https://ccnb.ca/international/futurs-etudiants-internationaux/se-renseigner-sur-ladmission.aspx" target="_blank" rel="nofollow noopener">Collège communautaire du Nouveau-Brunswick (Français).</a>
-    * **Universités:** <a href="http://www.uottawa.ca/voici-uottawa/" target="_blank" rel="nofollow noopener">Université d’Ottawa (Anglais, Français)</a>, <a href="https://choisir.umoncton.ca/international" target="_blank" rel="nofollow noopener">Université de Moncton (Français)</a>, <a href="https://www.ulaval.ca/international/etudiants-internationaux.html" target="_blank" rel="nofollow noopener">Université Laval (Français)</a>
+    - **Collèges:** <a href="https://www.dawsoncollege.qc.ca/admissions/admission-requirements/international-students/" target="_blank" rel="nofollow noopener">Dawson College (Anglais)</a>, <a href="https://www.cegepgarneau.ca/etudier-a-garneau/etudiants-internationaux" target="_blank" rel="nofollow noopener">Cégép Garneau (Français)</a>, <a href="https://ccnb.ca/international/futurs-etudiants-internationaux/se-renseigner-sur-ladmission.aspx" target="_blank" rel="nofollow noopener">Collège communautaire du Nouveau-Brunswick (Français).</a>
+    - **Universités:** <a href="http://www.uottawa.ca/voici-uottawa/" target="_blank" rel="nofollow noopener">Université d’Ottawa (Anglais, Français)</a>, <a href="https://choisir.umoncton.ca/international" target="_blank" rel="nofollow noopener">Université de Moncton (Français)</a>, <a href="https://www.ulaval.ca/international/etudiants-internationaux.html" target="_blank" rel="nofollow noopener">Université Laval (Français)</a>
 
 3.  ## Faire la demande d'admission
 
@@ -57,8 +57,8 @@ Une fois admis, vous devrez maintenant faire une demande de permis d’études. 
 En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC Etudes](/accompagnement), vous devrez prévoir entre **280 USD et 600 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
-* **80 USD à 250 USD** pour la demande d’admission.
-* **0 à 150 USD** pour l’envoi et reception des documents.
-* **200 USD** pour les frais d’assistance RDC Etudes.
+- **80 USD à 250 USD** pour la demande d’admission.
+- **0 à 150 USD** pour l’envoi et reception des documents.
+- **200 USD** pour les frais d’assistance RDC Etudes.
 
 _NB_: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

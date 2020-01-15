@@ -41,7 +41,7 @@ export const pageQuery = graphql`
     scholarships: allMarkdownRemark(
       limit: 1000
       sort: {fields: [fields___timestamp], order: DESC}
-      filter: {fields: {type: {eq: "scholarship"}}}
+      filter: {fields: {type: {eq: "scholarship"}, draft: {eq: false}}}
     ) {
       ...ScholarshipListItemFragment
     }

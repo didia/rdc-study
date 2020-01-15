@@ -1,5 +1,5 @@
 ---
-active: true
+draft: false
 slug: 'canada/visa'
 date: '2018-03-30'
 title: "Obtenir un permis d'études pour le Canada"

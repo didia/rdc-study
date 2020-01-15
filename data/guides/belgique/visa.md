@@ -1,5 +1,5 @@
 ---
-active: true
+draft: false
 slug: 'belgique/visa'
 date: '2018-11-19'
 title: 'Obtenir un visa pour étudier en Belgique'

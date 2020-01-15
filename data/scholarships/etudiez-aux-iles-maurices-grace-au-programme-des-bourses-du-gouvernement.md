@@ -1,4 +1,5 @@
 ---
+draft: true
 title: 'ÉTUDIEZ AUX ÎLES MAURICES GRÂCE AU PROGRAMME DES BOURSES DU GOUVERNEMENT '
 deadline: 2020-04-30T12:17:56.368Z
 excerpt: >-
@@ -14,6 +15,9 @@ levels:
 targetCountries:
   - africa
 ---
+
 ## En quoi consiste la bourse ?
+
 ## Quelles sont les critères de la bourse ?
+
 ## Comment postuler ?

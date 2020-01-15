@@ -60,7 +60,7 @@ export const pageQuery = graphql`
     guides: allMarkdownRemark(
       limit: 10
       sort: {fields: [frontmatter___title], order: ASC}
-      filter: {frontmatter: {active: {eq: true}, topic: {eq: "country"}}}
+      filter: {frontmatter: {topic: {eq: "country"}}, fields: {draft: {eq: false}}}
     ) {
       edges {
         node {
@@ -85,7 +85,7 @@ export const pageQuery = graphql`
     articles: allMarkdownRemark(
       limit: 2
       sort: {fields: [frontmatter___date], order: DESC}
-      filter: {fields: {type: {eq: "article"}}}
+      filter: {fields: {type: {eq: "article"}, draft: {eq: false}}}
     ) {
       edges {
         node {
@@ -114,7 +114,7 @@ export const pageQuery = graphql`
     scholarships: allMarkdownRemark(
       limit: 12
       sort: {fields: [fields___timestamp], order: ASC}
-      filter: {fields: {type: {eq: "scholarship"}, timestamp: {gt: $currentTimestamp}}}
+      filter: {fields: {type: {eq: "scholarship"}, timestamp: {gt: $currentTimestamp}, draft: {eq: false}}}
     ) {
       ...ScholarshipListItemFragment
     }

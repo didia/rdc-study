@@ -1,5 +1,5 @@
 ---
-active: true
+draft: false
 slug: 'belgique/admission'
 date: '2018-11-19'
 title: 'Obtenir une admission dans une université belge'

@@ -15,11 +15,14 @@ const CONTENT_TYPE = {
   SCHOLARSHIP: 'scholarship'
 };
 
+const showDraft = process.env.SHOW_DRAFT;
+
 exports.onCreateNode = ({node, actions, getNode}) => {
   const {createNodeField} = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
     const fileNode = getNode(node.parent);
+    createNodeField({node, name: 'draft', value: showDraft ? false : Boolean(node.frontmatter.draft)});
 
     if (fileNode.dir.indexOf('guides') !== -1 && node.frontmatter && node.frontmatter.slug) {
       createNodeField({node, name: 'path', value: `/guides/${node.frontmatter.slug}`});
@@ -68,11 +71,9 @@ exports.createPages = ({actions, graphql}) => {
         edges {
           node {
             fields {
+              draft
               path
               type
-            }
-            frontmatter {
-              active
             }
           }
         }
@@ -84,7 +85,7 @@ exports.createPages = ({actions, graphql}) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
-      if (node.fields.type === CONTENT_TYPE.GUIDE && !node.frontmatter.active) return;
+      if (node.draft) return;
 
       createPage({
         path: node.fields.path,
