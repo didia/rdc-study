@@ -91,6 +91,8 @@ collections:
             value: ro
           - label: Royaume-Uni
             value: gb
+          - label: Rwanda
+            value: rw
           - label: Suisse
             value: ch
           - label: Turquie
