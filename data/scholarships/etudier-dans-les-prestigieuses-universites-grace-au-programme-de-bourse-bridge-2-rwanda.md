@@ -11,7 +11,7 @@ startDate: 2019-12-15T14:24:23.523Z
 levels:
   - undergraduate
 targetCountries:
-  - africa
+  - rw
 ---
 ## En quoi consiste la bourse ?
 
