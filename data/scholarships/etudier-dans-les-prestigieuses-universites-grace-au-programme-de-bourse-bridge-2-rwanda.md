@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Programme des bourses d'études Bridge 2 Rwanda
 deadline: 2020-01-31T14:24:23.474Z
 excerpt: >-
