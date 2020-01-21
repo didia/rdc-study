@@ -6,7 +6,7 @@ excerpt: >-
   Le programme des bourses d'études Bridge 2 Rwanda préparent les étudiants
   africains à être compétitifs afin de postuler pour des bourses d'études dans
   les plus prestigieuses universités du monde. 
-thumbnail: /images/uploads/bridge 2 rwanda.jpg
+thumbnail: /images/uploads/bridge2rwanda.jpg
 startDate: 2019-12-15T14:24:23.523Z
 levels:
   - undergraduate
