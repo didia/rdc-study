@@ -1,14 +1,14 @@
 ---
 draft: true
 title: 'Stage international d'' entraîneurs en Allemagne '
-deadline: 2020-01-23T13:34:39.008Z
+deadline: 2020-02-14T13:34:39.008Z
 excerpt: >-
   Le gouvernement allemand offre des formations aux athlètes dans le but de
   mettre à jour leurs connaissances scientifiques dans le domaine du sport, de
   perfectionner leurs capacités pratiques et méthodiques dans leur discipline
   sportive et d’élargir leur savoir-faire en management sportif.
 thumbnail: /images/uploads/itk-kurs-leipzig-2-fr.jpg
-startDate: 2020-01-23T13:34:39.029Z
+startDate: 2020-01-22T13:34:39.029Z
 levels:
   - internship
 targetCountries:
