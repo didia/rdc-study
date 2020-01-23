@@ -2,7 +2,9 @@
 draft: true
 title: 'Stage international d'' entraîneurs en Allemagne '
 deadline: 2020-01-23T13:34:39.008Z
-excerpt: 'Le ministère allemand '
+excerpt: >-
+  Le gouvernement allemand offre des formations  aux athlètes du monde entier
+  dans le but de perfectionner 
 thumbnail: /images/uploads/itk-kurs-leipzig-2-fr.jpg
 startDate: 2020-01-23T13:34:39.029Z
 levels:
@@ -12,7 +14,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-Dans le cadre de la politique culturelle et éducative étrangère poursuivie par le Ministère fédéral des Affaires Etrangères, la Faculté de la science du Sport de l'Université de Leipzig offre deux fois par an une Formation académique totalement financée au quelle chaque stagiaire touche une bourse mensuelle de 5 mois pour les entraîneurs d'athlétisme originaires de plusieurs pays du monde. Cette Formation offerte en 4 Langues (allemand, anglais, français et arabe) touche plusieurs disciplines à savoir: Spécialité (théorie et pratique), Science générale de l‘entraînement, Médecine du sport, Didactique du sport, Psychologie du sport, Management du sport, Musculation, Langue allemande. 
+Dans le cadre de la politique culturelle et éducative étrangère poursuivie par le Ministère fédéral des Affaires Etrangères, la Faculté de la science du Sport de l'Université de Leipzig offre deux fois par an une Formation académique totalement financée au quelle chaque stagiaire touche une bourse mensuelle de 5 mois pour les entraîneurs d'athlétisme originaires de plusieurs pays du monde <http://itk.spowi.uni-leipzig.de/fileadmin/itk/Download/DAC/DAC_List_ODA_2018to2020.pdf>. Cette Formation offerte en 4 Langues (allemand, anglais, français et arabe) touche plusieurs disciplines à savoir: Spécialité (théorie et pratique), Science générale de l‘entraînement, Médecine du sport, Didactique du sport, Psychologie du sport, Management du sport, Musculation, Langue allemande. 
 
 ## Quelles sont les critères de la bourse ?
 
