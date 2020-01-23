@@ -46,6 +46,8 @@ Le dépôt de candidature se fait  auprès de l’ambassade de la République f�
 
   \- Le visa d’entrée en République fédérale d’Allemagne ne peut être accordé que si le candidat présente un billet d’avion retour valable pour 6 mois au minimum.
 
+  \- Les stagiaires sont responsables de leur équipement personnel pour les cours pratiques.
+
 Pour toute informations supplémentaires, veuillez contacter: 
 
 Téléphone : +49 341 - 97 31 690\
