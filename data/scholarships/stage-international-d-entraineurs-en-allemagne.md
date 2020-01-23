@@ -30,9 +30,19 @@ Pour bénéficier à la formation, vus devez remplir les conditions suivants:
 
 Le dépôt de candidature se fait  auprès de l’ambassade de la République fédérale d’Allemagne dans votre pays de résidence pays, tout en respectant le délai de dépôt de dossiers.
 
+**Documents à joindre au dossier :**
 
+* Le formulaire d’inscription <http://itk.spowi.uni-leipzig.de/fileadmin/itk/Download/Bewerbungsbogen/Bewerbungsbogen_FR.pdf> rempli dans la langue du stage ;
+* Le questionnaire médical <https://kinshasa.diplo.de/blob/2294486/1d3256cfa7daee6a471ec632db557723/questionnaire-m%C3%A9dical-data.pdf> rempli dans la langue du stage, les originaux des résultats du laboratoire qui ne doivent pas dater de plus de 3 mois avant la date butoir de dépôt de dossiers ;
+* Des copies certifiés du diplôme universitaire ou d’un certificat de formation de professeur d’EPS, d’entraîneur ou de moniteur (établis ou traduits dans la langue du stage) ;
+* Pièces justificatives d’expériences en tant que professeur d’EPS/entraîneur/moniteur (établis ou traduits dans la langue du stage) ;
+* Pièces justificatives (établies ou traduites dans la langue du stage) de propres expériences en tant qu’athlète actif dans le sport choisi (ne s’applique pas à la section « sport pour handicapés ») ;
+* Pièce justificative ou déclaration explicite de la maîtrise de la langue du stage, si celle-ci n’est pas la langue officielle de leur pays, ou de la langue allemande ;
+* Le questionnaire médical dûment rempli et l’original des résultats de laboratoire, les deux ne datant pas de plus de 3 mois avant la fin du délai de dépôt de dossiers ;
+* Copie du passeport ; 
+* 4 photos d’identité biométriques
 
 Téléphone : +49 341 - 97 31 690\
 Fax : +49 341 - 97 31 799\
 E-mail :[itk@uni-leipzig.de](javascript:linkTo_UnCryptMailto('nbjmup+julAvoj.mfjqajh/ef'); "Opens window for sending email")\
-Internet : www.itk.uni-leipzi.de
+Site : www.itk.uni-leipzi.de
