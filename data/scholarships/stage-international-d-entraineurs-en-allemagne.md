@@ -16,7 +16,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-Dans le cadre de la politique culturelle et éducative étrangère poursuivie par le Ministère fédéral des Affaires Etrangères, la Faculté de la science du Sport de l'Université de Leipzig offre deux fois par an une Formation académique totalement financée au quelle chaque stagiaire touche une bourse mensuelle de 5 mois pour les entraîneurs d'athlétisme originaires de plusieurs pays du monde <http://itk.spowi.uni-leipzig.de/fileadmin/itk/Download/DAC/DAC_List_ODA_2018to2020.pdf>. Cette Formation offerte en 4 Langues (allemand, anglais, français et arabe) touche plusieurs disciplines à savoir: Spécialité (théorie et pratique), Science générale de l‘entraînement, Médecine du sport, Didactique du sport, Psychologie du sport, Management du sport, Musculation, Langue allemande. 
+Dans le cadre de la politique culturelle et éducative étrangère poursuivie par le Ministère fédéral des Affaires Etrangères, la Faculté de la science du Sport de l'Université de Leipzig <<http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/inscription/> > offre deux fois par an une Formation académique totalement financée au quelle chaque stagiaire touche une bourse mensuelle de 5 mois pour les entraîneurs d'athlétisme originaires de plusieurs pays du monde <http://itk.spowi.uni-leipzig.de/fileadmin/itk/Download/DAC/DAC_List_ODA_2018to2020.pdf>. Cette Formation offerte en 4 Langues (allemand, anglais, français et arabe) touche plusieurs disciplines à savoir: Spécialité (théorie et pratique), Science générale de l‘entraînement, Médecine du sport, Didactique du sport, Psychologie du sport, Management du sport, Musculation, Langue allemande. 
 
 ## Quelles sont les critères de la bourse ?
 
