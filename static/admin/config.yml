@@ -9,6 +9,7 @@ slug:
   clean_accents: true
 media_folder: static/images/uploads
 public_folder: /images/uploads
+publish_mode: editorial_workflow
 collections:
   - name: article
     label: Article
