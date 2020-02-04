@@ -1,10 +1,10 @@
 export default {
   contact: {
     address: {
-      country: 'Canada',
-      locality: 'Québec, QC, G1X 1R4',
-      name: 'RDC-Etudes',
-      streetAddress: '3214, Chemin Sainte-Foy'
+      country: 'R.D. Congo',
+      locality: 'Kinshasa',
+      name: 'Local 1M4, Anciennes Galeries Présidentielles',
+      streetAddress: 'Boulevard du 30 Juin'
     },
     email: {
       label: 'salut@rdcetudes.com',
@@ -14,10 +14,18 @@ export default {
       label: 'facebook.com/rdcetudes',
       link: 'https://facebook.com/rdcetudes'
     },
-    phone: {
-      label: '+1 (581) 9318-0180',
-      link: 'tel:+1-581-318-0180'
-    }
+    phones: [
+      {
+        countryFlag: '🇨🇩',
+        label: '+243 822 313 039',
+        link: 'tel:+243-822-313-039'
+      },
+      {
+        countryFlag: '🌏',
+        label: '+1 (581) 318-0180',
+        link: 'tel:+1-581-318-0180'
+      }
+    ]
   },
   contactFormEndpoint: `${process.env.GATSBY_API_ENDPOINT}/contact-form`,
   newsletterEndpoint: `${process.env.GATSBY_API_ENDPOINT}/newsletter`,

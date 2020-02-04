@@ -245,7 +245,13 @@ class Footer extends Component {
             </li>
 
             <li className={classnames(styles.contact__item, 'fa-phone')}>
-              <a href={contact.phone.link}>{contact.phone.label}</a>
+              {contact.phones.map(phone => (
+                <div key={phone.label}>
+                  <a href={phone.link}>
+                    {phone.countryFlag} {phone.label}
+                  </a>
+                </div>
+              ))}
             </li>
 
             <li className={classnames(styles.contact__item, 'fa-home')}>
