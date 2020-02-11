@@ -11,13 +11,16 @@ related: ['belgique/admission', 'belgique/visa']
 
 ## Que faut-il pour étudier en Belgique?
 
-Pour étudier en Belgique, il faut commencer par obtenir une admission dans une université belge.\
+Pour étudier en Belgique, il faut généralement commencer par obtenir une équivalence de vos diplômes obtenus à l'extérieur de la Belgique, à moins que vous ayez obtenu votre diplôme dans une école dispensant un programme belge.
+\
+\
+Ensuite, vous devez déposer une demande d'admission auprès d'une université belge.\
 Les demandes d'admission doivent être généralement faites entre le 15 février et le 30 avril de chaque année mais certaines universités permettent de le faire plus tôt.\
 La majeure partie d'universités permettent de faire la demande d'admission en ligne. Vous devez donc avoir une connexion internet et une dose de volonté.\
 Quelques universités vous sont proposées dans [notre guide sur les démarches à suivre pour obtenir une admission dans une université belge.](/guides/belgique/admission)
 \
 \
-Une fois l’admission obtenue, il faudra faire une demande de visa à l’ambassade du Royaume de Belgique.\
+Une fois l’admission obtenue, il faudra faire une demande de visa auprès du centre européen de visa (Maison Schengen).\
 Pour obtenir votre visa, vous devrez convaincre l’officier consulaire que vous êtes un étudiant qualifié, que vous accomplirez vos études et que vous reviendrez dans votre pays d’origine après avoir terminé vos études.\
 En outre, vous devez prouver que vous disposez de fonds suffisants pour couvrir la première année de vos études et que vous aurez accès à des fonds suffisants pour couvrir les années d’études suivantes.
 \
@@ -40,11 +43,11 @@ Vous devrez vérifier si c’est le cas avec l’université que vous aurez choi
 
 ## Combien coûtent les démarches?
 
-En supposant que vous choisissez [d'être accompagné dans vos démarches par un assistant de RDC-Etudes](/accompagnement), vous devez prévoir entre **1370 USD et 1980 USD** pour toutes vos démarches.
+En supposant que vous choisissez [d'être accompagné dans vos démarches par un mentor de RDC-Etudes](/accompagnement), vous devez prévoir entre **1370 USD et 2180 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
 - **0 à 380 USD** pour le processus d'admission.
 - **970 USD à 1200 USD** pour le processus de visa.
-- **400 USD** pour les frais d'assistance RDC Etudes. (Payable en deux tranches.)
+- **400 USD à 600 USD** pour les frais d'assistance RDC Etudes. (Payable en trois tranches de **200 USD**: Equivalence, Admission et Visa)
 
 **NB**: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s'ils sont changés par le gouvernement belge. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

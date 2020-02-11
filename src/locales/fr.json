@@ -71,8 +71,8 @@
   "pages.assistance.packages.visa.title": "Le Visa",
 
   "pages.assistance.personal.about-us-link": "Découvrez qui nous sommes",
-  "pages.assistance.personal.description": "Donnez-vous plus de chances de réussir vos démarches en vous faisant accompagner par un mentor personnel qui sera là pour vous tout le long de vos démarches. Nous offrons trois forfaits d’assistance et vous ne payez que pour ceux dont vous avez besoin.",
-  "pages.assistance.personal.pricing": "{pricePerPackage} seulement par forfait ou {priceForAllPackages} pour tout ensemble.",
+  "pages.assistance.personal.description": "Donnez-vous plus de chances de réussir vos démarches en vous faisant accompagner par un mentor personnel qui sera là pour vous tout le long de vos démarches. Nous travaillons en mode forfait et vous ne payez que pour ceux dont vous avez besoin.",
+  "pages.assistance.personal.pricing": "{pricePerPackage} seulement par forfait.",
   "pages.assistance.personal.title": "Un assistant personnel pour vos démarches!",
 
   "pages.assistance.questions.description": "Vous ne savez pas par où commencer? Nous sommes là pour vous aider.",

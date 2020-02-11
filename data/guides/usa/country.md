@@ -41,11 +41,11 @@ Toutefois certaines universités offrent des bourses d’excellence aux étudian
 
 ## Combien coûtent les démarches?
 
-En supposant que vous choisissez [d’être accompagné dans vos démarches par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1110 USD et 1450 USD** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1010 USD et 1350 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
 - **100 USD à 350 USD** pour le processus d’admission.
 - **510 USD à 600 USD** pour le processus de Visa.
-- **500 USD** pour les frais d’assistance RDC-Etudes.
+- **400 USD** pour les frais d’assistance RDC-Etudes. (Payable en deux tranches de **200 USD**: Admission et Visa)
 
 **NB**: Ces prix sont juste là à titre d'estimé, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement américain. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.

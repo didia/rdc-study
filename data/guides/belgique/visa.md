@@ -11,7 +11,7 @@ related: ['belgique/visa']
 
 Pour séjourner en qualité d’étudiant étranger en Belgique, vous avez besoin d’un visa national de long séjour (Visa type D).\
 Ce visa vous permet non seulement de séjourner en Belgique mais aussi de pouvoir circuler librement dans tous les pays du territoire Schengen.\
-Nous vous recommandons de commencer vos démarches de visa le plus rapidement possible auprès de l’Ambassade de Belgique une fois que vous aurez obtenu votre admission.
+Nous vous recommandons de commencer vos démarches de visa le plus rapidement possible auprès du centre européen de visa (Maison Schengen) une fois que vous aurez obtenu votre admission.
 
 Voici donc les différentes étapes générales à suivre pour vos démarches de visa:
 

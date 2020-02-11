@@ -14,7 +14,7 @@ Le processus d'admission restent sensiblement le même pour la majorité d'unive
 \
 Cependant les conditions d'admission, elles, dépendent du niveau et du domaine d'études que vous désirez poursuivre.\
 Si vous visez le premier cycle (Bachelier ou Licence), vous devez être titulaire d'un diplome d'études secondaires reconnu équivalent au certificat d'enseignement supérieur délivré en Belgique.
-Certaines universités vous exigeront même d'obtenir une équivalence de votre diplôme d'études secondaires auprès du auprès du <a href="http://www.equivalences.cfwb.be/" target="_blank" rel="nofollow noopener">Service des Équivalences du Ministère de la Fédération Wallonie-Bruxelles.</a>\
+Vous devez obtenir une équivalence de votre diplôme d'études secondaires auprès du <a href="http://www.equivalences.cfwb.be/" target="_blank" rel="nofollow noopener">Service des Équivalences du Ministère de la Fédération Wallonie-Bruxelles.</a>\
 Aussi il est important de noter que certains domaines d’études (école d'arts, sciences de l’ingénieur) exigent aux étudiants de réussir un examen d’admission ou un concours à l’issue d’une première année d’études (études de médecine et de dentisterie).\
 Si vous visez le bachelier de spécialisation, vous devez être titulaire d'un diplôme d'études supérieurs. Tandis que si vous visez le deuxième cycle (master) vous devez détenir une license.\
 Toutefois pour connaître toutes les modalités d’admission précises de l'établissement d'enseignement supérieur de votre choix, nous vous conseillons fortement de contacter son service admission.
