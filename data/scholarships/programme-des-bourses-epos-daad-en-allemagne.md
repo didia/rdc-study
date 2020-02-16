@@ -23,8 +23,16 @@ targetCountries:
 3. Une assurance maladie, accident et responsabilité civile
 4. Frais de déplacement
 
-<!--EndFragment-->
-
 ## Quelles sont les critères de la bourse ?
+
+Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suivants:
+
+\- Être ressortissants d'un pays en voie de développement, pour savoir si votre pays en fait partie, veuillez consulter la liste suivante <<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf>>
+
+\- Avoir un diplôme de licence (d'une durée d'au moins 4 ans) avec une mention supérieure à la moyenne, et n'ayant pas plus de 6 ans depuis son obtention
+
+\- Avoir une expérience professionnelle d'au moins deux ans dans les domaines de la technologie, économique ou social 
+
+\- Avoir des compétences linguistiques en allemand (B1 au moment de la candidature est une exigence, qui doit être vérifiée en fournissant un certificat) et en anglais (IELTS (bande 6) ou TOEFL note: 550)
 
 ## Comment postuler ?
