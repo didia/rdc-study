@@ -27,7 +27,7 @@ targetCountries:
 
 Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suivants:
 
-\- Être ressortissants d'un pays en voie de développement, pour savoir si votre pays en fait partie, veuillez consulter la liste suivante <<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf>>
+\- Être ressortissants d'un pays en voie de développement, pour savoir si votre pays en fait partie, veuillez consulter la liste suivante [<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf](<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf)>
 
 \- Avoir un diplôme de licence (d'une durée d'au moins 4 ans) avec une mention supérieure à la moyenne, et n'ayant pas plus de 6 ans depuis son obtention
 
@@ -36,3 +36,19 @@ Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suiva
 \- Avoir des compétences linguistiques en allemand (B1 au moment de la candidature est une exigence, qui doit être vérifiée en fournissant un certificat) et en anglais (IELTS (bande 6) ou TOEFL note: 550)
 
 ## Comment postuler ?
+
+Le programme des bourses EPOS DAAD offre des cours de troisième cycle dans les domaines suivants: 
+
+**• Sciences économiques / Administration des affaires /
+Économie politique**
+
+
+**• Coopération au développement
+• Génie et sciences connexes
+• Mathématiques
+• Planification régionale et urbaine
+• Sciences agronomiques et forestières
+• Sciences naturelles et environnementales
+• Médecine et santé publique
+• Sciences sociales, éducation et droit
+• Etudes des medias**
