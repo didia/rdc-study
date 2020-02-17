@@ -37,6 +37,39 @@ Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suiva
 
 ## Comment postuler ?
 
+Pour postuler au programme des bourses EPOS DAAD, vous devez envoyer votre candidature complète directement à l’université de votre choix avec les documents suivants:
+
+1. Formulaire de demande DAAD signé <<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf>>
+
+2. CV signé personnellement (veuillez utiliser le modèle de formulaire europass <<https://europass.cedefop.europa.eu/accessible-editors/cv/>>
+
+3. Lettre de motivation signée personnellement (avec référence à la profession actuelle et au choix programme (s) de troisième cycle, deux pages maximum) avec la date du jour.
+
+4. Lettre de recommandation de votre employeur actuel; la lettre doit avoir du papier à en-tête, un signature et cachet officiel 
+
+5. Certificat (s) d'emploi de l'employeur (s) qui prouve un minimum de deux années d'expérience de travail pertinente (après le baccalauréat) au moment de la candidature et si possible, une garantie de réemploi de votre employeur actuel à votre retour au pays.
+
+6. Preuve de compétences linguistiques en anglais et en allemand
+
+7. Copies des relevés de notes, échelle de notation (traduction certifiée si nécessaire)
+
+8. Copies des diplômes universitaires (traduction certifiée si nécessaire)
+
+NB: **\- Certains cours peuvent nécessiter des documents supplémentaires. Pour des informations détaillées, veuillez consulter la description du cours sur les pages suivantes et sur les sites Web respectifs.**
+
+**\- Les demandes complètes doivent être soumises en anglais ou en allemand pour être prises en considération.**
+
+**\- Si vous postulez à plusieurs cours, veuillez énumérer les cours par ordre de priorité dans le DAAD formulaires de candidature et ne modifient pas ces priorités dans la candidature correspondante.**
+
+**\- Lorsque vous postulez à plus d'un cours de troisième cycle (maximum 3 cours), vous devez soumettre une lettre de motivation expliquant pourquoi vous postulez pour ces cours spécifiques et
+pourquoi vous avez choisi cette priorité.**
+
+**\- Assurez-vous d'avoir une copie de chaque document de votre demande, car ils doivent être téléchargés sur le portail DAAD (sous forme de fichiers PDF)  au cas où vous êtes suggéré pour une bourse DAAD**
+
+
+
+
+
 Le programme des bourses EPOS DAAD offre des cours de troisième cycle dans les domaines suivants: 
 
 * **Sciences économiques / Administration des affaires / Économie politique**
@@ -197,7 +230,7 @@ Date limite de candidature: **1er mars 2020**.
 
 Programme: Master of Science in International Health (Heidelberg)\
 Ruprecht-Karls-Universität Heidelberg\
-Période d’application: **15 mai au15 octobre 2020**
+Période d’application: **du** **15 mai au 15 octobre 2020**
 
 **• Sciences sociales, éducation et droit**
 
@@ -218,3 +251,9 @@ Date limite de candidature: **15 octobre 2020**
 Programme: International Media Studies\
 Universités: [Deutsche Welle Akademie](https://www.dw.com/en/dw-akademie/about-us/s-9519), [Universität Bonn](https://www.uni-bonn.de/), and [Hochschule Bonn Rhein-Sieg](https://www.h-brs.de/de)\
 Date limite de candidature: **31 mars 2020**
+
+Pour plus d'informations sur les différents programmes, veuillez consulter le document 
+
+<https://www2.daad.de/medien/der-daad/medien-publikationen/publikationen-pdfs/2019_epos-broschuere-21-22.pdf>
+
+Nous vous encourageons à postuler et bonne chance !
