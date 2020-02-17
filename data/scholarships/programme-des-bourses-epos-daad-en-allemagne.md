@@ -27,7 +27,7 @@ targetCountries:
 
 Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suivants:
 
-\- Être ressortissants d'un pays en voie de développement, pour savoir si votre pays en fait partie, veuillez consulter la liste suivante [[https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf](<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf)](https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf](<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf))
+\- Être ressortissants d'un pays en voie de développement, pour savoir si votre pays en fait partie, veuillez consulter la liste suivante [\[https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf](<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf)](https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf](<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf))
 
 \- Avoir un diplôme de licence (d'une durée d'au moins 4 ans) avec une mention supérieure à la moyenne, et n'ayant pas plus de 6 ans depuis son obtention
 
@@ -50,8 +50,8 @@ Université: [Georg-August-Universität Göttingen](http://www.uni-goettingen.de
 Période d’application: **1er Octobre 2020 au15 novembre 2020**.
 
 *Promotion et formation des petites entreprises* \
-Université: Universität Leipzig\
-Date limite de candidature:**1er Octobre 2020**.
+Université: [Universität Leipzig](https://www.uni-leipzig.de/)\
+Date limite de candidature: **1er Octobre 2020**.
 
 * **Coopération au développement**
 
@@ -79,57 +79,57 @@ Date limite de candidature: **1er Octobre 2020**.
 Université: [Technische Universität Dresden](https://tu-dresden.de/)\
 Date limite de candidature: **15 octobre 2020**.
 
-Textile and Ready-Made Clothing Technology\
-Technische Universität Dresden\
+*Technologie textile et prêt-à-porter*\
+Université: [Technische Universität Dresden](https://tu-dresden.de/)\
 Date limite de candidature: **10 octobre 2020**.
 
-Master of Engineering in “Energy and Environmental Management in Developing Countries” (formerly SESAM)Europa-
+*Gestion de l'énergie et de l'environnement dans les pays en développement*
 
-Universität Flensburg\
+Université: [Universität Flensburg](https://www.uni-flensburg.de/)\
 Date limite de candidature: disponible sur [le site web du cours ](https://www.uni-flensburg.de/de/eem/admission/)
 
-Water Resources and Environmental Management – WATENV\
-Leibniz Universität Hannover\
+*Ressources en eau et gestion de l'environnement* \
+Université: [Leibniz Universität Hannover](https://www.uni-hannover.de/)\
 Date limite de candidature: **30 Septembre 2020**.
 
-Postgraduate Programme Renewable Energy – PPRE\
-Universität Oldenburg\
+*Energie Renouvelable*\
+Université: [Universität Oldenburg](https://uol.de/)\
 Date limite de candidature: **15 octobre 2020**.
 
-Photogrammetry and Geoinformatics\
-Hochschule für Technik Stuttgart\
+*Photogrammétrie et géoinformatique*\
+Université: [Université des sciences appliquées de Stuttgart](http://www.hft-stuttgart.de/)\
 Date limite de candidature: **15 octobre 2020**.
 
-Master’s Program Infrastructure Planning\
-Universität Stuttgart\
-Période d’application: **1er Août 2020 au Septembre 30, 2020**.
+*Master en Plannification des infrastructure*\
+Université: [Universität Stuttgart](https://www.uni-stuttgart.de/)\
+Période d’application: **du** **1er Août 2020 au Septembre 30, 2020**.
 
-Air Quality Control, Solid Waste and Waste Water Process Engineering (WASTE)\
-Universität Stuttgart\
-Période d’application:**15 Novembre 2020 au15 février 2021**.
+*Contrôle de la qualité de l'air, déchets solides et génie des procédés de traitement des eaux usées*\
+Université: [Universität Stuttgart](https://www.uni-stuttgart.de/)\
+Période d’application: **du** **15 Novembre 2020 au 15 février 2021**.
 
-Natural Hazards and Risks in Structural Engineering – NHRE\
-Bauhaus-Universität Weimar\
+Dangers et risques naturels en ingénierie des structures\
+Université: [Bauhaus-Universität Weimar](https://www.uni-weimar.de/de/universitaet/start/)\
 Date limite de candidature:**15 octobre 2020**.
 
 **• Mathématiques**
 
-PhD-Programme “Mathematics in Industry and Commerce” – MIC\
-Université: Technische Universität Kaiserslautern\
+*Programmes de doctorat «Mathématiques dans l'industrie et le commerce*\
+Université: [Technische Universität Kaiserslautern](https://www.uni-kl.de/)\
 Date limite de candidature: **1er Janvier 2021**
 
 **• Planification régionale et urbaine**
 
-Programme: Urban Management – UM\
-Université: Technische Universität Berlin\
-Date limite de candidature: **31 Août 2020**.
+*Gestion urbaine*\
+Université: [Technische Universität Berlin](https://www.tu-berlin.de/menue/home/)\
+Date limite de candidature: **31 Août 20**
 
-SPRING – Regional Development Planning and Management\
-Technische Universität Dortmund\
+*Planification et gestion du développement régional*\
+Université: [Technische Universität Dortmund](https://www.tu-dortmund.de/)\
 Date limite de candidature: **1er Octobre 2020**.
 
-Programme: Master of Science Integrated Urbanism and Sustainable Design – MSc. IUSD\
-Université: Universität Stuttgart\
+*Master en Urbanisme Intégré Et Design Durable*\
+Université: [Universität Stuttgart](https://www.uni-stuttgart.de/)\
 Date limite de candidature: veuillez consulter le site <https://www.iusd.uni-stuttgart.de/application> pour plus des détails.
 
 **• Sciences agronomiques et forestières**
