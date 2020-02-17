@@ -27,7 +27,7 @@ targetCountries:
 
 Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suivants:
 
-\- Être ressortissants d'un pays en voie de développement, pour savoir si votre pays en fait partie, veuillez consulter la liste suivante \[<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf](<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf)>
+\- Être ressortissants d'un pays en voie de développement, pour savoir si votre pays en fait partie, veuillez consulter la liste suivante [[https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf](<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf)](https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf](<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf))
 
 \- Avoir un diplôme de licence (d'une durée d'au moins 4 ans) avec une mention supérieure à la moyenne, et n'ayant pas plus de 6 ans depuis son obtention
 
@@ -39,49 +39,84 @@ Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suiva
 
 Le programme des bourses EPOS DAAD offre des cours de troisième cycle dans les domaines suivants: 
 
-**• Sciences économiques / Administration des affaires / Économie politique**
+* **Sciences économiques / Administration des affaires / Économie politique**
 
-*Master’s Programme in International and Development Economics – MIDE*\
-Universités: Hochschule für Technik et Wirtschaft (HTW) Berlin\
+*Programmes de maîtrise en économie internationale et du développement* \
+Universités: [Hochschule für Technik](https://www.htwk-leipzig.de/hochschule/standorte-lageplan/) et [Wirtschaft (HTW) Berlin](https://www.htw-berlin.de/)\
 Date limite de candidature: **31 Août 2020**.
 
-*MSc Development Economics*\
-Université: Georg-August-Universität Göttingen\
+*Economie du développement* \
+Université: [Georg-August-Universität Göttingen](http://www.uni-goettingen.de/)\
 Période d’application: **1er Octobre 2020 au15 novembre 2020**.
 
-*Small Enterprise Promotion and Training*\
+*Promotion et formation des petites entreprises* \
 Université: Universität Leipzig\
 Date limite de candidature:**1er Octobre 2020**.
 
-**• Coopération au développement**
+* **Coopération au développement**
 
-*Development Management*\
-Université: Ruhr-Universität Bochum\
+*Gestion du développement*\
+Université: [Ruhr-Universität Bochum](https://www.ruhr-uni-bochum.de/de)\
 Date limite de candidature: **30 Septembre 2021**. 
 
 Les candidatures doivent être soumises via la plateforme de candidature en ligne accessible via [le site web de l'université](http://www.development-research.org/index.php/study-programmes.html) , disponible à partir de **janvier 2021**.
 
-Programme: *Geography of Environmental Risks and Human Security*\
-Universités: Universität Bonn et United Nations Institute for Environment and Human Security (UNU-EHS)\
-Date limite de candidature:**15 décembre 2020**.
+*Géographie des risques environnementaux et sécurité humaine* \
+Universités: [Universität Bonn](https://www.uni-bonn.de/) et [United Nations Institute for Environment and Human Security (UNU-EHS)](https://ehs.unu.edu/)\
+Date limite de candidature: **15 décembre 2020**.
 
-Programme: *Bonn International Graduate School for Development Research (BIGS-DR)*\
-Universités: Universität Bonn, Zentrum für Entwicklungsforschung (ZEF)\
-Date limite de candidature:**31 Août 2020**.
+*Ecole internationale supérieure pour Recherche sur le développement* *(BIGS-DR)*\
+Universités: [Universität Bonn](https://www.uni-bonn.de/) et [Zentrum für Entwicklungsforschung (ZEF)](https://www.zef.de/zefhome.html)\
+Date limite de candidature: **31 Août 2020**.
 
-Programme: Sustainable Development Management\
-Université: Hochschule Rhein-Waal, Campus Kleve\
+*Gestion du développement durable*\
+Université: [Hochschule Rhein-Waal, Campus Kleve](https://www.hochschule-rhein-waal.de/en)\
 Date limite de candidature: **1er Octobre 2020**. 
 
  **• Génie et sciences connexes**
 
+*Hydro Science et ingénierie*\
+Université: [Technische Universität Dresden](https://tu-dresden.de/)\
+Date limite de candidature: **15 octobre 2020**.
+
+Textile and Ready-Made Clothing Technology\
+Technische Universität Dresden\
+Date limite de candidature: **10 octobre 2020**.
+
+Master of Engineering in “Energy and Environmental Management in Developing Countries” (formerly SESAM)Europa-
+
+Universität Flensburg\
+Date limite de candidature: disponible sur [le site web du cours ](https://www.uni-flensburg.de/de/eem/admission/)
+
+Water Resources and Environmental Management – WATENV\
+Leibniz Universität Hannover\
+Date limite de candidature: **30 Septembre 2020**.
+
+Postgraduate Programme Renewable Energy – PPRE\
+Universität Oldenburg\
+Date limite de candidature: **15 octobre 2020**.
+
+Photogrammetry and Geoinformatics\
+Hochschule für Technik Stuttgart\
+Date limite de candidature: **15 octobre 2020**.
+
+Master’s Program Infrastructure Planning\
+Universität Stuttgart\
+Période d’application: **1er Août 2020 au Septembre 30, 2020**.
+
+Air Quality Control, Solid Waste and Waste Water Process Engineering (WASTE)\
+Universität Stuttgart\
+Période d’application:**15 Novembre 2020 au15 février 2021**.
+
+Natural Hazards and Risks in Structural Engineering – NHRE\
+Bauhaus-Universität Weimar\
+Date limite de candidature:**15 octobre 2020**.
 
 **• Mathématiques**
 
 PhD-Programme “Mathematics in Industry and Commerce” – MIC\
 Université: Technische Universität Kaiserslautern\
 Date limite de candidature: **1er Janvier 2021**
-
 
 **• Planification régionale et urbaine**
 
@@ -96,7 +131,6 @@ Date limite de candidature: **1er Octobre 2020**.
 Programme: Master of Science Integrated Urbanism and Sustainable Design – MSc. IUSD\
 Université: Universität Stuttgart\
 Date limite de candidature: veuillez consulter le site <https://www.iusd.uni-stuttgart.de/application> pour plus des détails.
-
 
 **• Sciences agronomiques et forestières**
 
@@ -124,7 +158,6 @@ Master of Science in International Horticulture\
 Leibniz Universität Hannover\
 Date limite de candidature:**1er Octobre 2020**
 
-
 **• Sciences naturelles et environnementales**
 
 M.Sc. Marine Biology – International Studies in Aquatic Tropical Ecology (ISATEC)\
@@ -151,7 +184,6 @@ Environment and Resources Management (ENREM) – Focus Latin America\
 Technische Hochschule Köln, Institute for Technology and Resources Management in the Tropics and Subtropics (ITT) and Autonomous University of San Luis Potosi (UASLP), Mexico\
 Date limite de candidature:**31 janvier 2021**.
 
-
 **• Médecine et santé publique**
 
 Programme: Master of Science in International Health (Berlin)\
@@ -167,7 +199,6 @@ Programme: Master of Science in International Health (Heidelberg)\
 Ruprecht-Karls-Universität Heidelberg\
 Période d’application: **15 mai au15 octobre 2020**
 
-
 **• Sciences sociales, éducation et droit**
 
 Programme: Vocational Education and Personnel Capacity Building\
@@ -181,7 +212,6 @@ Date limite de candidature: Please visit www.inema-master.com for the current ap
 Programme: Master of Laws in Intellectual Property and Competition Law\
 Université: Munich Intellectual Property Law Center (MIPLC)\
 Date limite de candidature: **15 octobre 2020**
-
 
 **• Etudes des medias**
 
