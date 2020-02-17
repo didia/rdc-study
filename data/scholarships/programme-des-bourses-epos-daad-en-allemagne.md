@@ -39,8 +39,8 @@ Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suiva
 
 Pour postuler au programme des bourses EPOS DAAD, vous devez envoyer votre candidature complète directement à l’université de votre choix avec les documents suivants:
 
-1. Formulaire de demande DAAD signé \[<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf)>
-2. CV signé personnellement (veuillez utiliser le modèle de formulaire europass \[<https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/)>
+1. Formulaire de demande DAAD signé [[https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf)](https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf))
+2. CV signé personnellement (veuillez utiliser le modèle de formulaire europass [[https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/)](https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/))
 3. Lettre de motivation signée personnellement (avec référence à la profession actuelle et au choix programme (s) de troisième cycle, deux pages maximum) avec la date du jour.
 4. Lettre de recommandation de votre employeur actuel; la lettre doit avoir du papier à en-tête, un signature et cachet officiel 
 5. Certificat (s) d'emploi de l'employeur (s) qui prouve un minimum de deux années d'expérience de travail pertinente (après le baccalauréat) au moment de la candidature et si possible, une garantie de réemploi de votre employeur actuel à votre retour au pays.
@@ -129,7 +129,7 @@ Période d’application: **du** **1er Août 2020 au Septembre 30, 2020**.
 Université: [Universität Stuttgart](https://www.uni-stuttgart.de/)\
 Période d’application: **du** **15 Novembre 2020 au 15 février 2021**.
 
-Dangers et risques naturels en ingénierie des structures\
+*Dangers et risques naturels en ingénierie des structures*\
 Université: [Bauhaus-Universität Weimar](https://www.uni-weimar.de/de/universitaet/start/)\
 Date limite de candidature:**15 octobre 2020**.
 
@@ -207,13 +207,13 @@ Date limite de candidature: **31 janvier 2021**.
 
 **• Médecine et santé publique**
 
-Master en Science de Santé Internationale (Berlin)\
+*Master en Science de Santé Internationale (Berlin)*\
 Universités: [Charité – Universitätsmedizin Berlin](https://www.charite.de/),\
 Freie Universität Berlin et Humboldt-Universität zu Berlin\
 Date limite de candidature: **15 octobre 2020**.
 
-Master en Science de santé urbaine mondiale\
-Université: Albert-Ludwigs-Universität Freiburg\
+*Master en Science de santé urbaine mondiale*\
+Université: [Albert-Ludwigs-Universität Freiburg](http://www.uni-freiburg.de/)\
 Date limite de candidature: **1er mars 2020**.
 
 Programme: Master of Science in International Health (Heidelberg)\
@@ -223,7 +223,7 @@ Période d’application: **du** **15 mai au 15 octobre 2020**
 **• Sciences sociales, éducation et droit**
 
 *Enseignement professionnel et renforcement des capacités du personnel*\
-Technische Universität Dresden\
+Université: [Technische Universität Dresden](https://tu-dresden.de/)\
 Date limite de candidature: **30 Septembre 2020**.
 
 *Gestion de l'éducation internationale*\
