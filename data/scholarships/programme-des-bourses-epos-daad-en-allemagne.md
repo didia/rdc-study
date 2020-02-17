@@ -39,8 +39,8 @@ Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suiva
 
 Pour postuler au programme des bourses EPOS DAAD, vous devez envoyer votre candidature complète directement à l’université de votre choix avec les documents suivants:
 
-1. Formulaire de demande DAAD signé [\[https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf)](https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf))
-2. CV signé personnellement (veuillez utiliser le modèle de formulaire europass [\[https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/)](https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/))
+1. Formulaire de demande DAAD signé <<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf>>
+2. CV signé personnellement (veuillez utiliser le modèle de formulaire europass <<https://europass.cedefop.europa.eu/accessible-editors/cv/>>
 3. Lettre de motivation signée personnellement (avec référence à la profession actuelle et au choix programme (s) de troisième cycle, deux pages maximum) avec la date du jour.
 4. Lettre de recommandation de votre employeur actuel; la lettre doit avoir du papier à en-tête, un signature et cachet officiel 
 5. Certificat (s) d'emploi de l'employeur (s) qui prouve un minimum de deux années d'expérience de travail pertinente (après le baccalauréat) au moment de la candidature et si possible, une garantie de réemploi de votre employeur actuel à votre retour au pays.
