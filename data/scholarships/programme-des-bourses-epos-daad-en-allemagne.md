@@ -39,8 +39,8 @@ Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suiva
 
 Pour postuler au programme des bourses EPOS DAAD, vous devez envoyer votre candidature complète directement à l’université de votre choix avec les documents suivants:
 
-1. Formulaire de demande DAAD signé [<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf)>
-2. CV signé personnellement (veuillez utiliser le modèle de formulaire europass [<https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/)>
+1. Formulaire de demande DAAD signé \[<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf)>
+2. CV signé personnellement (veuillez utiliser le modèle de formulaire europass \[<https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/)>
 3. Lettre de motivation signée personnellement (avec référence à la profession actuelle et au choix programme (s) de troisième cycle, deux pages maximum) avec la date du jour.
 4. Lettre de recommandation de votre employeur actuel; la lettre doit avoir du papier à en-tête, un signature et cachet officiel 
 5. Certificat (s) d'emploi de l'employeur (s) qui prouve un minimum de deux années d'expérience de travail pertinente (après le baccalauréat) au moment de la candidature et si possible, une garantie de réemploi de votre employeur actuel à votre retour au pays.
@@ -197,22 +197,22 @@ Date limite de candidature:**15 décembre 2020**.
 Université: [Technische Hochschule Köln, Institute for Technology and Resources Management in the Tropics and Subtropics (ITT)](https://www.th-koeln.de/)\
 Date limite de candidature:**30 Septembre 2020**.
 
-Integrated Water Resources Management – IWRM MSc Joint Exchange Program with focus on Middle East and Northern Africa Region\
+*Gestion intégrée des ressources en eau - Programme d'échange conjoint IWRM MSc avec un accent sur la région du Moyen-Orient et de l'Afrique du Nord*\
 [Technische Hochschule Köln](https://www.th-koeln.de/), [Institute for Technology and Resources Management in the Tropics and Subtropics (ITT)](https://www.th-koeln.de/) et [German Jordanian University (GJU), Jordan](http://www.gju.edu.jo/)\
 Date limite de candidature: **31 janvier 2021**.
 
-Environment and Resources Management (ENREM) – Focus Latin America\
-Technische Hochschule Köln, Institute for Technology and Resources Management in the Tropics and Subtropics (ITT) and Autonomous University of San Luis Potosi (UASLP), Mexico\
-Date limite de candidature:**31 janvier 2021**.
+*Gestion de l'environnement et des ressources (ENREM) - Focus Amérique latine*\
+Universités: [Technische Hochschule Köln](https://www.th-koeln.de/), [Institute for Technology and Resources Management in the Tropics and Subtropics (ITT)](https://www.th-koeln.de/) et Autonomous University of San Luis Potosi (UASLP), Mexico\
+Date limite de candidature: **31 janvier 2021**.
 
 **• Médecine et santé publique**
 
-Programme: Master of Science in International Health (Berlin)\
-Université: Charité – Universitätsmedizin Berlin,\
-Freie Universität Berlin and Humboldt-Universität zu Berlin\
+Master en Science de Santé Internationale (Berlin)\
+Universités: [Charité – Universitätsmedizin Berlin](https://www.charite.de/),\
+Freie Universität Berlin et Humboldt-Universität zu Berlin\
 Date limite de candidature: **15 octobre 2020**.
 
-Programme: Master of Science in Global Urban Health\
+Master en Science de santé urbaine mondiale\
 Université: Albert-Ludwigs-Universität Freiburg\
 Date limite de candidature: **1er mars 2020**.
 
@@ -222,21 +222,21 @@ Période d’application: **du** **15 mai au 15 octobre 2020**
 
 **• Sciences sociales, éducation et droit**
 
-Programme: Vocational Education and Personnel Capacity Building\
+*Enseignement professionnel et renforcement des capacités du personnel*\
 Technische Universität Dresden\
 Date limite de candidature: **30 Septembre 2020**.
 
-Programme: International Education Management – INEMA\
-Universités: Ludwigsburg University of Education (PH Ludwigsburg) and Helwan University Cairo, Egypt\
-Date limite de candidature: Please visit www.inema-master.com for the current application deadline.
+*Gestion de l'éducation internationale*\
+Universités: [Ludwigsburg University of Education (PH Ludwigsburg)](https://www.ph-ludwigsburg.de/) et [Helwan University Cairo, Egypt](http://www.helwan.edu.eg/)\
+Date limite de candidature: Veuillez visiter le site <https://bildungsmanagement.ph-ludwigsburg.de/inema> pour la date limite de candidature actuelle.
 
-Programme: Master of Laws in Intellectual Property and Competition Law\
-Université: Munich Intellectual Property Law Center (MIPLC)\
+*Master of Laws in Intellectual Property and Competition Law*\
+Université: [Munich Intellectual Property Law Center (MIPLC)](https://www.miplc.de/)\
 Date limite de candidature: **15 octobre 2020**
 
-**• Etudes des medias**
+**• Etude des médias** 
 
-Programme: International Media Studies\
+Études des médias internationales\
 Universités: [Deutsche Welle Akademie](https://www.dw.com/en/dw-akademie/about-us/s-9519), [Universität Bonn](https://www.uni-bonn.de/), and [Hochschule Bonn Rhein-Sieg](https://www.h-brs.de/de)\
 Date limite de candidature: **31 mars 2020**
 
