@@ -39,36 +39,24 @@ Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suiva
 
 Pour postuler au programme des bourses EPOS DAAD, vous devez envoyer votre candidature complète directement à l’université de votre choix avec les documents suivants:
 
-1. Formulaire de demande DAAD signé <<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf>>
-
-2. CV signé personnellement (veuillez utiliser le modèle de formulaire europass <<https://europass.cedefop.europa.eu/accessible-editors/cv/>>
-
+1. Formulaire de demande DAAD signé [<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf)>
+2. CV signé personnellement (veuillez utiliser le modèle de formulaire europass [<https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/)>
 3. Lettre de motivation signée personnellement (avec référence à la profession actuelle et au choix programme (s) de troisième cycle, deux pages maximum) avec la date du jour.
-
 4. Lettre de recommandation de votre employeur actuel; la lettre doit avoir du papier à en-tête, un signature et cachet officiel 
-
 5. Certificat (s) d'emploi de l'employeur (s) qui prouve un minimum de deux années d'expérience de travail pertinente (après le baccalauréat) au moment de la candidature et si possible, une garantie de réemploi de votre employeur actuel à votre retour au pays.
-
 6. Preuve de compétences linguistiques en anglais et en allemand
-
 7. Copies des relevés de notes, échelle de notation (traduction certifiée si nécessaire)
-
 8. Copies des diplômes universitaires (traduction certifiée si nécessaire)
 
-NB: **\- Certains cours peuvent nécessiter des documents supplémentaires. Pour des informations détaillées, veuillez consulter la description du cours sur les pages suivantes et sur les sites Web respectifs.**
+**NB:** **\- Certains cours peuvent nécessiter des documents supplémentaires. Pour des informations détaillées, veuillez consulter la description du cours sur les pages suivantes et sur les sites Web respectifs.**
 
 **\- Les demandes complètes doivent être soumises en anglais ou en allemand pour être prises en considération.**
 
 **\- Si vous postulez à plusieurs cours, veuillez énumérer les cours par ordre de priorité dans le DAAD formulaires de candidature et ne modifient pas ces priorités dans la candidature correspondante.**
 
-**\- Lorsque vous postulez à plus d'un cours de troisième cycle (maximum 3 cours), vous devez soumettre une lettre de motivation expliquant pourquoi vous postulez pour ces cours spécifiques et
-pourquoi vous avez choisi cette priorité.**
+**\- Lorsque vous postulez à plus d'un cours de troisième cycle (maximum 3 cours), vous devez soumettre une lettre de motivation expliquant pourquoi vous postulez pour ces cours spécifiques et pourquoi vous avez choisi cette priorité.**
 
 **\- Assurez-vous d'avoir une copie de chaque document de votre demande, car ils doivent être téléchargés sur le portail DAAD (sous forme de fichiers PDF)  au cas où vous êtes suggéré pour une bourse DAAD**
-
-
-
-
 
 Le programme des bourses EPOS DAAD offre des cours de troisième cycle dans les domaines suivants: 
 
@@ -193,25 +181,25 @@ Date limite de candidature: **1er Octobre 2020**
 
 **• Sciences naturelles et environnementales**
 
-M.Sc. Marine Biology – International Studies in Aquatic Tropical Ecology (ISATEC)\
-Universität Bremen\
+*Biologie marine - Etudes internationales en écologie aquatique tropicale* \
+Université: [Universität Bremen](https://www.uni-bremen.de/)\
 Date limite de candidature:**15 octobre 2020**.
 
-Environmental Governance – MEG\
-Albert-Ludwigs-Universität Freiburg\
+*Gouvernance environnementale*\
+Université: [Albert-Ludwigs-Universität Freiburg](http://www.uni-freiburg.de/)\
 Date limite de candidature:**15 octobre 2020**.
 
-Landscape Ecology and Nature Conservation – LENC\
-Universität Greifswald\
+*Écologie du paysage et conservation de la nature*\
+Université: [Universität Greifswald](https://www.uni-greifswald.de/)\
 Date limite de candidature:**15 décembre 2020**.
 
-Natural Resources Management and Development (NRM)/Integrated Water Resources Management (IWRM)/Renewable Energy Management (REM)\
-Technische Hochschule Köln, Institute for Technology and Resources Management in the Tropics and Subtropics (ITT)\
+*Gestion et développement des ressources naturelles (NRM) / Gestion intégrée des ressources en eau (GIRE) / Gestion des énergies renouvelables (REM)*\
+Université: [Technische Hochschule Köln, Institute for Technology and Resources Management in the Tropics and Subtropics (ITT)](https://www.th-koeln.de/)\
 Date limite de candidature:**30 Septembre 2020**.
 
 Integrated Water Resources Management – IWRM MSc Joint Exchange Program with focus on Middle East and Northern Africa Region\
-Technische Hochschule Köln, Institute for Technology and Resources Management in the Tropics and Subtropics (ITT) and German Jordanian University (GJU), Jordan\
-Date limite de candidature:**31 janvier 2021**.
+[Technische Hochschule Köln](https://www.th-koeln.de/), [Institute for Technology and Resources Management in the Tropics and Subtropics (ITT)](https://www.th-koeln.de/) et [German Jordanian University (GJU), Jordan](http://www.gju.edu.jo/)\
+Date limite de candidature: **31 janvier 2021**.
 
 Environment and Resources Management (ENREM) – Focus Latin America\
 Technische Hochschule Köln, Institute for Technology and Resources Management in the Tropics and Subtropics (ITT) and Autonomous University of San Luis Potosi (UASLP), Mexico\
