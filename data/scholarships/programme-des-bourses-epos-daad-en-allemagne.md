@@ -27,7 +27,7 @@ targetCountries:
 
 Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suivants:
 
-\- Être ressortissants d'un pays en voie de développement, pour savoir si votre pays en fait partie, veuillez consulter la liste suivante [\[https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf](<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf)](https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf](<https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf))
+\- Être ressortissants d'un pays en voie de développement, pour savoir si votre pays en fait partie, veuillez consulter la liste suivante <https://www2.daad.de/medien/der-daad/unsere-aufgaben/entwicklungszusammenarbeit/pdfs/dac-liste_epos_2017.pdf>
 
 \- Avoir un diplôme de licence (d'une durée d'au moins 4 ans) avec une mention supérieure à la moyenne, et n'ayant pas plus de 6 ans depuis son obtention
 
@@ -116,7 +116,7 @@ Date limite de candidature:**15 octobre 2020**.
 
 *Programmes de doctorat «Mathématiques dans l'industrie et le commerce*\
 Université: [Technische Universität Kaiserslautern](https://www.uni-kl.de/)\
-Date limite de candidature: **1er Janvier 2021**
+Date limite de candidature: **1 er Janvier 2021**
 
 **• Planification régionale et urbaine**
 
@@ -134,29 +134,29 @@ Date limite de candidature: veuillez consulter le site <https://www.iusd.uni-stu
 
 **• Sciences agronomiques et forestières**
 
-Agricultural Sciences and Resource Management in the Tropics and Subtropics – ARTS\
-Rheinische Friedrich-Wilhelms-Universität Bonn\
-Date limite de candidature:**15 septembre 2020**.
+*Sciences agronomiques et gestion des ressources dans les régions tropicales et subtropicales* \
+Université: [Rheinische Friedrich-Wilhelms-Universität Bonn](https://www.uni-bonn.de/)\
+Date limite de candidature: **15 septembre 2020**.
 
-Tropical Forestry\
-Technische Universität Dresden\
-Date limite de candidature:**30 octobre 2020**.
+*Foresterie tropicale*\
+Université: [Technische Universität Dresden](https://tu-dresden.de/)\
+Date limite de candidature: **30 octobre 2020**.
 
-IPPAE: International Ph.D. Program in Agricultural Economics, Bioeconomy and Rural Development\
-Justus-Liebig-Universität Giessen and Universität Hohenheim\
+*Doctorat international Programme en économie agricole, bioéconomie et développement rural*\
+Universités: [Justus-Liebig-Universität Giessen](https://www.uni-giessen.de/index.html) et [Universität Hohenheim](https://www.uni-hohenheim.de/)\
 Date limite de candidature:**31 octobre 2020**.
 
-Tropical and International Forestry\
-Georg-August-Universität Göttingen\
+*Foresterie tropicale et internationale*\
+Université: [Georg-August-Universität Göttingen](http://www.uni-goettingen.de/)\
 Date limite de candidature:**15 octobre 2020**.
 
-Agricultural Economics – AgEcon\
-Universität Hohenheim\
-Date limite de candidature:**1er décembre 2020**.
+*Économie agricole* \
+Université: [Universität Hohenheim](https://www.uni-hohenheim.de/)\
+Date limite de candidature: **1er décembre 2020**.
 
-Master of Science in International Horticulture\
-Leibniz Universität Hannover\
-Date limite de candidature:**1er Octobre 2020**
+*Master en Science d'horticulture internationale*\
+Université: [Leibniz Universität Hannover](https://www.uni-hannover.de/)\
+Date limite de candidature: **1er Octobre 2020**
 
 **• Sciences naturelles et environnementales**
 
