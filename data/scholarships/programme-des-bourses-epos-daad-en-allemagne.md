@@ -39,8 +39,8 @@ Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suiva
 
 Pour postuler au programme des bourses EPOS DAAD, vous devez envoyer votre candidature complète directement à l’université de votre choix avec les documents suivants:
 
-1. Formulaire de demande DAAD signé [[https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf)](https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf))
-2. CV signé personnellement (veuillez utiliser le modèle de formulaire europass [[https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/)](https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/))
+1. Formulaire de demande DAAD signé [\[https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf)](https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf](<https://www2.daad.de/medien/deutschland/stipendien/formulare/forschungsstipendium_en.pdf))
+2. CV signé personnellement (veuillez utiliser le modèle de formulaire europass [\[https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/)](https://europass.cedefop.europa.eu/accessible-editors/cv/](<https://europass.cedefop.europa.eu/accessible-editors/cv/))
 3. Lettre de motivation signée personnellement (avec référence à la profession actuelle et au choix programme (s) de troisième cycle, deux pages maximum) avec la date du jour.
 4. Lettre de recommandation de votre employeur actuel; la lettre doit avoir du papier à en-tête, un signature et cachet officiel 
 5. Certificat (s) d'emploi de l'employeur (s) qui prouve un minimum de deux années d'expérience de travail pertinente (après le baccalauréat) au moment de la candidature et si possible, une garantie de réemploi de votre employeur actuel à votre retour au pays.
@@ -131,7 +131,7 @@ Période d’application: **du** **15 Novembre 2020 au 15 février 2021**.
 
 *Dangers et risques naturels en ingénierie des structures*\
 Université: [Bauhaus-Universität Weimar](https://www.uni-weimar.de/de/universitaet/start/)\
-Date limite de candidature:**15 octobre 2020**.
+Date limite de candidature: **15 octobre 2020**.
 
 **• Mathématiques**
 
@@ -165,11 +165,11 @@ Date limite de candidature: **30 octobre 2020**.
 
 *Doctorat international Programme en économie agricole, bioéconomie et développement rural*\
 Universités: [Justus-Liebig-Universität Giessen](https://www.uni-giessen.de/index.html) et [Universität Hohenheim](https://www.uni-hohenheim.de/)\
-Date limite de candidature:**31 octobre 2020**.
+Date limite de candidature: **31 octobre 2020**.
 
 *Foresterie tropicale et internationale*\
 Université: [Georg-August-Universität Göttingen](http://www.uni-goettingen.de/)\
-Date limite de candidature:**15 octobre 2020**.
+Date limite de candidature: **15 octobre 2020**.
 
 *Économie agricole* \
 Université: [Universität Hohenheim](https://www.uni-hohenheim.de/)\
@@ -183,19 +183,19 @@ Date limite de candidature: **1er Octobre 2020**
 
 *Biologie marine - Etudes internationales en écologie aquatique tropicale* \
 Université: [Universität Bremen](https://www.uni-bremen.de/)\
-Date limite de candidature:**15 octobre 2020**.
+Date limite de candidature: **15 octobre 2020**.
 
 *Gouvernance environnementale*\
 Université: [Albert-Ludwigs-Universität Freiburg](http://www.uni-freiburg.de/)\
-Date limite de candidature:**15 octobre 2020**.
+Date limite de candidature: **15 octobre 2020**.
 
 *Écologie du paysage et conservation de la nature*\
 Université: [Universität Greifswald](https://www.uni-greifswald.de/)\
-Date limite de candidature:**15 décembre 2020**.
+Date limite de candidature: **15 décembre 2020**.
 
 *Gestion et développement des ressources naturelles (NRM) / Gestion intégrée des ressources en eau (GIRE) / Gestion des énergies renouvelables (REM)*\
 Université: [Technische Hochschule Köln, Institute for Technology and Resources Management in the Tropics and Subtropics (ITT)](https://www.th-koeln.de/)\
-Date limite de candidature:**30 Septembre 2020**.
+Date limite de candidature: **30 Septembre 2020**.
 
 *Gestion intégrée des ressources en eau - Programme d'échange conjoint IWRM MSc avec un accent sur la région du Moyen-Orient et de l'Afrique du Nord*\
 [Technische Hochschule Köln](https://www.th-koeln.de/), [Institute for Technology and Resources Management in the Tropics and Subtropics (ITT)](https://www.th-koeln.de/) et [German Jordanian University (GJU), Jordan](http://www.gju.edu.jo/)\
