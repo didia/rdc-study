@@ -17,7 +17,7 @@ tags:
   - Bourses pour étudiants africains
   - Etudier en France
 thumbnail: /images/uploads/dyclam.png
-startDate: 2020-02-19T11:00:41.315Z
+startDate: 2019-12-20T11:00:41.315Z
 levels:
   - graduate
 targetCountries:
