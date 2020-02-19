@@ -3,7 +3,7 @@ draft: true
 title: >-
   Bourses DYCLAM+ pour un master en développement et gestion durables des
   territoires en France
-deadline: 2020-02-19T11:00:41.266Z
+deadline: 2020-03-04T11:00:41.266Z
 excerpt: >-
   La bourse Dyclam+ permet aux étudiants de suivre une formation universitaire
   de deux ans leur permettant d'acquérir les connaissances et compétences
