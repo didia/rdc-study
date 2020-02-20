@@ -1,8 +1,9 @@
 ---
+draft: true
 title: >-
   Bourse du président pour étudiants étrangers à l'Université de Winnipeg au
   Canada
-deadline: 2019-10-01T03:59:00.000Z
+deadline: 2020-06-01T03:59:00.000Z
 excerpt: >-
   La bourse d'études du président de l'Université de Winnipeg au Canada est
   offerte aux nouveaux étudiants étrangers qui démontrent un esprit de
@@ -16,6 +17,7 @@ tags:
   - étudiants congolais
   - étudiants internationaux
 thumbnail: /images/uploads/university-of-winnipeg.jpg
+startDate: 2020-02-20T14:32:45.874Z
 levels:
   - undergraduate
   - graduate
@@ -47,4 +49,6 @@ Une fois l'admission obtenue, vous devez remplir <a href="https://www.uwinnipeg.
 
 La date limite pour le programme de langue anglaise, la formation professionnelle ainsi que la license est le 30 septembre 2019. Pour le collège et la maitrise, la date limite était le 3 juin 2019.
 
-Pour plus de renseignements sur la bourse, consultez <a href="https://www.uwinnipeg.ca/awards/international-students.html" target="_blank" rel="noreferrer noopener">le site Web de l'Université de Winnipeg.</a>
+Pour plus de renseignements sur la bourse, consultez <a href="<https://www.uwinnipeg.ca/graduate-studies/funding/masters-and-doctoral-awards/presidents-scholarship/index.html>
+
+" target="_blank" rel="noreferrer noopener">le site Web de l'Université de Winnipeg.</a>
