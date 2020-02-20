@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: >-
   Bourses DYCLAM+ pour un master en développement et gestion durables des
   territoires en France
