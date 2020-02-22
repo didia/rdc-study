@@ -1,6 +1,6 @@
 ---
 draft: true
-title: PROGRAMME DES BOURSES EPOS DAAD en Allemagne
+title: Programme des bourses EPOS DAAD en Allemagne
 deadline: 2021-09-30T23:25:27.845Z
 excerpt: >-
   Le programme des bourses EPOS DAAD offre des bourses totalement financées aux
