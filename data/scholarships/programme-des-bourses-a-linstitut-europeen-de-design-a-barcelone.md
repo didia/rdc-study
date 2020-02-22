@@ -21,9 +21,8 @@ La bourse ne couvre que les frais de scolarité. Vous devrez acquitter le montan
 
 Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
-Avoir moins de 26 ans
-
-Avoir un diplôme de fin d'études secondaires
+* Avoir moins de 26 ans
+* Avoir un diplôme de fin d'études secondaires
 
 ## **Comment postuler ?**
 
@@ -49,8 +48,7 @@ Pour postuler à la bourse vous devez remplir [le formulaire en ligne](https://b
 
 * **Diplômes de premier cycle en design (240 ECTS, 4 ans):**
 
-Design de mode (espagnol) Design de mode, itinéraire Style et communication (espagnol)
-Conception graphique (espagnol ou anglais)
+Design de mode (espagnol) Design de mode, itinéraire Style et communication (espagnol) Conception graphique (espagnol ou anglais)
 Conception graphique, itinéraire Motion Graphics & Video (anglais)
 Design d'intérieur (espagnol ou anglais)
 Conception de produits (espagnol ou anglais)
@@ -58,8 +56,7 @@ Conception des transports (espagnol ou anglais)
 
 * **Baccalauréat en arts (avec distinction) validé par l'Université de Westminster (3 ans):**
 
-BA (Hons) Design de mode (eng) BA (Hons)  Marketing de la mode et communication (eng)
-BA (Hons) Business Design (eng) Diplômes IED (3 ans):
+BA (Hons) Design de mode (eng) BA (Hons)  Marketing de la mode et communication (eng) BA (Hons) Business Design (eng) Diplômes IED (3 ans):
 
 Marketing de la mode et communication (espagnol) 
 
@@ -72,9 +69,10 @@ Titre du projet: nom permettant d'identifier le projet.
 \- Description: Brève description du projet dans la langue du cours
 
 \- Brève description du projet.
-- Lettre de motivation et projet de description en 3 pages maximum ou 250 mots
 
- **NB: Le contenu du projet doit s'adapter aux exigences de chaque cours (texte et / ou croquis et / ou photos et / ou liens vers des vidéos). Les exigences sont disponibles en cliquant sur [le lien de votre cours de votre choix](https://iedbarcelona.es/en/becas-info/ied-barcelona-scholarship-university-level/)**.
+* Lettre de motivation et projet de description en 3 pages maximum ou 250 mots
+
+  **NB: Le contenu du projet doit s'adapter aux exigences de chaque cours (texte et / ou croquis et / ou photos et / ou liens vers des vidéos). Les exigences sont disponibles en cliquant sur [le lien de votre cours de votre choix](https://iedbarcelona.es/en/becas-info/ied-barcelona-scholarship-university-level/)**.
 
 **chaque candidat peut présenter plus d'un projet pour plus d'un cours si vous présentez des projets différents pour chaque cours. Assurez-vous que vous participez au concours pour le cours qui vous intéresse. Dans le cas où vous deviez sélectionner un cours différent, même par erreur, votre projet sera évalué selon les critères établis pour le cours reflétés dans votre candidature** 
 
