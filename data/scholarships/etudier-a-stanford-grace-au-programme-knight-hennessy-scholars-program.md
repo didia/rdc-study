@@ -34,6 +34,4 @@ Pour être éligible à la bourse Knight-Hennessy  vous devez d'abord
 
 ## Comment postuler ?
 
-
-
-Au cas où vous n'êtes pas éligible au programmes des bourses Knight Hennessy, vous pouvez postuler à d'autres opportunités offertes par l'université de Stanford, pour plus d'informations veuillez consulter le site web <https://vpge.stanford.edu/fellowships-funding/overview> .
+Au cas où vous n'êtes pas éligible au programmes des bourses Knight Hennessy, vous pouvez postuler à d'autres opportunités offertes par l'université de Stanford, pour plus d'informations veuillez consulter le site web <https://vpge.stanford.edu/fellowships-funding/overview> ou encore les différentes aides financières accordées aux étudiants étrangers <https://financialaid.stanford.edu/undergrad/how/international.html>
