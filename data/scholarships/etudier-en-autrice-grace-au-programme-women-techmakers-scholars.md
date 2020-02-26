@@ -35,3 +35,15 @@ Démontrer un solide dossier scolaire
 Faire preuve de leadership et démontrer sa passion pour accroître la participation des femmes à la technologie (c.-à-d. Informatique ou jeux)
 
 ## Comment postuler ?
+
+Pour postuler à la bourse vous devez soumettre votre demande en ligne en introduisant les élémments suivants:
+
+* Informations générales (y compris les coordonnées et les informations sur vos institutions actuelles et futures)
+* CV actuel
+* Relevés de notes universitaires de vos établissements actuels et antérieurs (si vous avez obtenu un diplôme antérieur)
+* Une lettre de référence d'un professeur, instructeur, conseiller ou superviseur
+* Réponses à cinq questions à développement
+
+
+
+NB: Pour toute question, veuillez envoyer[un](mailto:WTMScholars@google.com)e-mail à[WTMScholars@google.com](mailto:WTMScholars@google.com)
