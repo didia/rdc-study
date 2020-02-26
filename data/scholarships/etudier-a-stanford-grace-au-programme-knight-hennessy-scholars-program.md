@@ -34,4 +34,19 @@ Pour être éligible à la bourse Knight-Hennessy  vous devez d'abord
 
 ## Comment postuler ?
 
+Pour postuler à la bourse vous devez  soumettre votre candidature en ligne et:
+
+Remplir le formulaire de demande de bourse <https://stanford.app.box.com/s/z303d8tdsixtlzj62ruhlybzlu4yz708>
+
+Et présenter les documents suivants:
+
+1. Un CV d'une page
+2. Les relevés de notes de vos résultats académiques au premier cycle et au-delà, pour chaque établissement que vous avez fréquenté pendant une année universitaire ou plus (traduis en anglais)
+3. Résultat des test de langue (TOEL, IELTS, PTE)
+4. Deux lettres de recommandation
+5. Un essai de 1 000 mots parlant de Comment les influences de votre vie vous ont-elles façonné et Comment votre éducation à Stanford et votre expérience de boursiers Knight-Hennessy vous prépareront-elles à réaliser vos intentions?
+6. Enregistrer une vidéo de 2 min max à l'aide de l'application en ligne 
+
+Vous trouverez tous les détails sur les exigences de dépôt des candidatures dans le site web <https://knight-hennessy.stanford.edu/admission/application-requirements>.
+
 Au cas où vous n'êtes pas éligible au programmes des bourses Knight Hennessy, vous pouvez postuler à d'autres opportunités offertes par l'université de Stanford, pour plus d'informations veuillez consulter le site web <https://vpge.stanford.edu/fellowships-funding/overview> ou encore les différentes aides financières accordées aux étudiants étrangers <https://financialaid.stanford.edu/undergrad/how/international.html>
