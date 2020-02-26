@@ -8,7 +8,7 @@ excerpt: >-
   programmes JD, MA, MBA, MD, MFA, MS, DMA et PhD, ainsi que les diplômes
   conjoints et doubles.
 thumbnail: /images/uploads/stanford.jpg
-startDate: 2020-05-01T21:12:43.481Z
+startDate: 2020-10-10T21:12:43.481Z
 levels:
   - graduate
   - postgraduate
