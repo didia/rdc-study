@@ -29,12 +29,11 @@ targetCountries:
 
 Pour être éligible à la bourse Knight-Hennessy  vous devez d'abord 
 
-Avoir obtenu votre diplôme de janvier 2014 à septembre 2021 pour vous inscrire à Stanford en septembre 2021
-
-Être inscrit à un [programme d'études supérieures à Stanford University](https://gradadmissions.stanford.edu/programs) , ensuite obtenir [l'équivalent d'un baccalauréat américain d'un collège ou d'une université](https://gradadmissions.stanford.edu/applying/international-applicants) de réputation reconnue. Pour des questions supplémentaires, veuillez contacter [le bureau d'admission aux cycles supérieures de l'université](https://gradadmissions.stanford.edu/). Pour vous inscrire à Stanford University, veuillez consulter notre guide <https://www.rdcetudes.com/guides/usa/admission> , en cas de besoin d'aide, faites-vous assister par un mentor RDC ETUDES en souscrivant à [notre service d'accompagnement](<https://www.rdcetudes.com/accompagnement>) [](https://www.rdcetudes.com/accompagnement)
-
-
-
-
+* Avoir obtenu votre diplôme de janvier 2014 à septembre 2021 pour vous inscrire à Stanford en septembre 2021
+* Être inscrit à un [programme d'études supérieures à Stanford University](https://gradadmissions.stanford.edu/programs) , ensuite obtenir [l'équivalent d'un baccalauréat américain d'un collège ou d'une université](https://gradadmissions.stanford.edu/applying/international-applicants) de réputation reconnue. Pour des questions supplémentaires, veuillez contacter [le bureau d'admission aux cycles supérieures de l'université](https://gradadmissions.stanford.edu/). Pour vous inscrire à Stanford University, veuillez consulter notre guide <https://www.rdcetudes.com/guides/usa/admission> , en cas de besoin d'aide, faites-vous assister par un mentor RDC ETUDES en souscrivant à [notre service d'accompagnement](https://www.rdcetudes.com/accompagnement) [](https://www.rdcetudes.com/accompagnement).
 
 ## Comment postuler ?
+
+
+
+Au cas où vous n'êtes pas éligible au programmes des bourses Knight Hennessy, vous pouvez postuler à d'autres opportunités offertes par l'université de Stanford, pour plus d'informations veuillez consulter le site web <https://vpge.stanford.edu/fellowships-funding/overview> .
