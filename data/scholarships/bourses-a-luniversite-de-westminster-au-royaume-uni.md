@@ -62,4 +62,11 @@ En plus de remplir le formulaire de demande de bourse d'études pertinent, vous 
 * Une copie officielle de votre relevé de notes de votre étude universitaire la plus récente / actuelle.
 * Une lettre de référence écrite spécifiquement à l'appui de votre demande de bourse.Celui-ci doit être rédigé par un tuteur, un professeur, un universitaire ou un employeur précédent (le cas échéant pour le cursus choisi) et ne peut pas être la même référence fournie dans le cadre de votre demande d'admission.
 
-<!--EndFragment-->
+
+
+Bureau des bourses\
+Université de Westminster\
+Cavendish House\
+101 New Cavendish Street\
+Londres\
+W1W 6XH
