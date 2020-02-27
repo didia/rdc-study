@@ -26,25 +26,25 @@ Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
 **Pour la licence**
 
-Avoir moins de 25 ans
+\- Avoir moins de 25 ans
 
-Ne pas être un citoyen coréen 
+\- Ne pas être un citoyen coréen 
 
-Avoir fini vos études secondaires
+\- Avoir fini vos études secondaires
 
-être en bonne santé physique et mentale leur permettant de pouvoir rester dans un pays étranger pendant longtemps
+\- Être en bonne santé physique et mentale leur permettant de pouvoir rester dans un pays étranger pendant longtemps
 
-Posséder une moyenne pondérée au-dessus de 80% du dernier établissement d’enseignement fréquenté (G.P.A.)
+\- Posséder une moyenne pondérée au-dessus de 80% du dernier établissement d’enseignement fréquenté (G.P.A.)
 
  **Pour le master et doctorat**
 
-Avoir moins de 40 ans
+\- Avoir moins de 40 ans
 
-Avoir un diplôme baccalauréat ou une maîtrise 
+\- Avoir un diplôme baccalauréat ou une maîtrise 
 
-être en bonne santé physique et mentale leur permettant de pouvoir rester dans un pays étranger pendant longtemps
+\- Être en bonne santé physique et mentale leur permettant de pouvoir rester dans un pays étranger pendant longtemps
 
-Posséder une moyenne pondérée au-dessus de 80% du dernier établissement d’enseignement fréquenté (G.P.A.)
+\- Posséder une moyenne pondérée au-dessus de 80% du dernier établissement d’enseignement fréquenté (G.P.A.)
 
 ## Comment postuler ?
 
