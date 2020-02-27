@@ -17,7 +17,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-Le programme des bourses à l'université de Westminster couvre:
+[Le programme des bourses à l'université](https://www.westminster.ac.uk/study/fees-and-funding/scholarships/westminster-undergraduate-full-scholarship) de Westminster couvre:
 
 Frais de scolarité, 
 
@@ -33,14 +33,27 @@ Vols à destination et en provenance de Londres.
 
 Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
-Etre originaire d'un pays en voie de développement 
+Être originaire d'un pays en voie de développement 
 
 Être admis dans à un programme des cours à temps plein à l'université de Westminster, pour savoir comment postuler, veuillez consulter les liens suivants:
 
 Obtenir une admission au 1er cycle <https://www.westminster.ac.uk/study/undergraduate/how-to-apply>
 
-<!--EndFragment-->
+Obtenir une admission au niveau master <https://www.westminster.ac.uk/study/postgraduate/how-to-apply>
 
-Obtenir une admission au niveau master 
+Avoir un excellence dossier académique
+
+Avoir un potentiel de développement 
+
+Présenter des besoins financiers.
 
 ## Comment postuler ?
+
+**Bureau des bourses\
+Université de Westminster\
+Cavendish House\
+101 New Cavendish Street\
+Londres W1W 6XH\
+Royaume-Uni**
+
+Pour plus d'informations, veuillez contacter le Bureau des bourses d'études à l'adresse Scholarships@[minsterminster.ac.uk](mailto:scholarships@westminster.ac.uk).
