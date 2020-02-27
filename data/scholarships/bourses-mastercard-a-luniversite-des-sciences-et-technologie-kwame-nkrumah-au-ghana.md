@@ -21,13 +21,11 @@ targetCountries:
 
 Le programme des bourses de la fondation MasterCard à [L'université des sciences et Technologie Kwame Nkrumah](https://mcf.knust.edu.gh/) couvre:
 
-Soutien financier complet (frais de scolarité complets, logement sur le campus entièrement payé, matériel d'apprentissage, transport et allocation mensuelle). 
-
-Services de soutien en counseling 
-
-Services de développement de carrière (y compris le mentorat industriel, l'orientation professionnelle, le développement professionnel, le développement des entreprises, entre autres) Réunions de groupe régulières avec d’autres universitaires qui mettent l’accent sur les possibilités de développement personnel et professionnel et les activités conçues pour renforcer les relations sociales et la capacité des universitaires. Soutien académique continu grâce au mentorat académique, à l'apprentissage virtuel et au tutorat.
-Possibilités de participer à des congrès de leadership, des services communautaires et du mentorat (Go-back Give-Back),
-Stages de source unique avec l'industrie pour le développement professionnel.
+1. Soutien financier complet (frais de scolarité complets, logement sur le campus entièrement payé, matériel d'apprentissage, transport et allocation mensuelle). 
+2. Services de soutien en counseling 
+3. Services de développement de carrière (y compris le mentorat industriel, l'orientation professionnelle, le développement professionnel, le développement des entreprises, entre autres) Réunions de groupe régulières avec d’autres universitaires qui mettent l’accent sur les possibilités de développement personnel et professionnel et les activités conçues pour renforcer les relations sociales et la capacité des universitaires. Soutien académique continu grâce au mentorat académique, à l'apprentissage virtuel et au tutorat. 
+4. Possibilités de participer à des congrès de leadership, des services communautaires et du mentorat (Go-back Give-Back),
+5. Stages de source unique avec l'industrie pour le développement professionnel.
 
 ## Quelles sont les critères de la bourse ?
 
@@ -43,11 +41,16 @@ Pour postuler à la bourse, vous devez remplir le formulaire d'inscription <http
 
 Ainsi que les documents suivants:
 
-Certificat de réussite ou diplôme de fin d'études secondaires
+* Certificat de réussite ou diplôme de fin d'études secondaires
+* Copie de certificat de naissance
+* Relevés des notes ou bulletins des 3 dernières années (4em, 5em et 6em)
+* 3 lettres de recommandation signée par un professeur ou préfet d'école
+* Fournir des preuves du revenu des parents / tuteurs. Par exemple. Copies des fiches de paie de votre
 
+Une copie de la page du passeport Les candidats internationaux devraient avoir un passeport prêt à voyager au Ghana si leur la demande soit acceptée. (Joignez une copie de la page de données bio de votre passeport valide si vous avez déjà
+avoir un)
 
-
-Et doit-être envoyé par courrier à l'adresse suivante:
+Le dossier des candidatures doit-être envoyé par courrier (EMS/DHL/Fedex)  à l'adresse suivante:
 
 **The Program Manager**
 
@@ -59,4 +62,4 @@ Et doit-être envoyé par courrier à l'adresse suivante:
 
 **KNUST, Kumasi, Ghana**
 
-Pour plus d'informations et d'assistance sur la manière de postuler, veuillez contacter le Secrétariat au + 233-206-030-790 / + 233-3220-62975 ou envoyez-nous un courriel à mcfsecretariat@knust.edu.gh ou mcfknust@gmail.com
+Pour plus d'informations et d'assistance sur la manière de postuler, veuillez contacter le Secrétariat au + 233-206-030-790 / + 233-3220-62975 ou envoyez-nous un courriel à mcfsecretariat@knust.edu.gh ou mcfknust@gmail.com .
