@@ -59,9 +59,7 @@ Une lettre de référence écrite spécifiquement à l'appui de votre demande de
 
 NB: Veuillez consulter [le guide d'équivalence des diplômes universitaires à l'étranger](https://www.westminster.ac.uk/sites/default/public-files/general-documents/overseas-academic-qualifications-equivalency-chart.pdf) pour voir si vous êtes admissible à la bourse.
 
-
-
-
+les traductions certifiées de tous les documents justificatifs rédigés dans des langues autres que l'anglais doivent être fournies. N'envoyez pas **vos propres copies personnelles ou originaux des documents** car ils ne vous serons renvoyés.
 
 **Bureau des bourses\
 Université de Westminster\
