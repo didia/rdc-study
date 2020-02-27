@@ -2,7 +2,7 @@
 draft: true
 title: Etudier en Autrice grâce au programme Women Techmakers Scholars
 deadline: 2020-12-01T23:01:46.217Z
-excerpt: ' programme Women Techmakers Scholars vise à créer l''égalité des sexes dans l''industrie de la technologie en encourageant les femmes à exceller en tant que participantes actives et leaders dans le domaine.'
+excerpt: ' Le programme Women Techmakers Scholars vise à créer l''égalité des sexes dans l''industrie de la technologie en encourageant les femmes à exceller en tant que participantes actives et leaders dans le domaine.'
 thumbnail: /images/uploads/women techmakers.jpg
 startDate: 2020-09-01T23:01:46.256Z
 levels:
