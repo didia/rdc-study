@@ -16,5 +16,19 @@ targetCountries:
   - gb
 ---
 ## En quoi consiste la bourse ?
+
+Le programme des bourses à l'université de Westminster couvre:
+
+frais de scolarité, 
+
+hébergement, 
+
+frais de subsistance et 
+
+vols à destination et en provenance de Londres. 
+
+**La bourse sera renouvelée chaque année sous réserve de résultats académiques satisfaisants.**
+
 ## Quelles sont les critères de la bourse ?
+
 ## Comment postuler ?
