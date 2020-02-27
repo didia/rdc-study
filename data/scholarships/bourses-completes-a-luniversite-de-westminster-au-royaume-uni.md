@@ -44,11 +44,9 @@ Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
 En plus de remplir le formulaire de demande de bourse d'études pertinent, vous devrez fournir les pièces justificatives suivantes:
 
-Une copie de la lettre / e-mail de l'Université de Westminster confirmant votre offre conditionnelle ou inconditionnelle d'une place dans votre cours choisi.
-
-Une copie officielle de votre relevé de notes de votre étude universitaire la plus récente / actuelle.
-
-Une lettre de référence écrite spécifiquement à l'appui de votre demande de bourse.Celui-ci doit être rédigé par un tuteur, un professeur, un universitaire ou un employeur précédent (le cas échéant pour le cursus choisi) et ne peut pas être la même référence fournie dans le cadre de votre demande d'admission.
+1. Une copie de la lettre / e-mail de l'Université de Westminster confirmant votre offre conditionnelle ou inconditionnelle d'une place dans votre cours choisi.
+2. Une copie officielle de votre relevé de notes de votre étude universitaire la plus récente / actuelle.
+3. Une lettre de référence écrite spécifiquement à l'appui de votre demande de bourse.Celui-ci doit être rédigé par un tuteur, un professeur, un universitaire ou un employeur précédent (le cas échéant pour le cursus choisi) et ne peut pas être la même référence fournie dans le cadre de votre demande d'admission.
 
 NB: Veuillez consulter [le guide d'équivalence des diplômes universitaires à l'étranger](https://www.westminster.ac.uk/sites/default/public-files/general-documents/overseas-academic-qualifications-equivalency-chart.pdf) pour voir si vous êtes admissible à la bourse au niveau master.
 
