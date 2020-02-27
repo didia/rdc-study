@@ -49,6 +49,12 @@ Présenter des besoins financiers.
 
 ## Comment postuler ?
 
+En plus de remplir le formulaire de demande de bourse d'études pertinent, vous devrez fournir les pièces justificatives suivantes:
+
+* Une copie de la lettre / e-mail de l'Université de Westminster confirmant votre offre conditionnelle ou inconditionnelle d'une place dans votre cours choisi.
+* Une copie officielle de votre relevé de notes de votre étude universitaire la plus récente / actuelle.
+* Une lettre de référence écrite spécifiquement à l'appui de votre demande de bourse.Celui-ci doit être rédigé par un tuteur, un professeur, un universitaire ou un employeur précédent (le cas échéant pour le cursus choisi) et ne peut pas être la même référence fournie dans le cadre de votre demande d'admission.
+
 **Bureau des bourses\
 Université de Westminster\
 Cavendish House\
