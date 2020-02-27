@@ -11,6 +11,7 @@ thumbnail: /images/uploads/University of westminster.jpg
 startDate: 2020-02-01T23:42:39.564Z
 levels:
   - undergraduate
+  - graduate
 targetCountries:
   - gb
 ---
@@ -29,7 +30,7 @@ La bourse de l'université de Westminster couvre:
 
 Pour bénéficier de la bourse, vous devez remplir les conditions suivantes:
 
-Ëtre un étudiant international d'un pays en développement 
+Être un étudiant international d'un pays en développement 
 
 Être inscrit à un cours de premier cycle à temps plein
 
@@ -38,5 +39,13 @@ Avoir un excellence dossier académique,
 Présenter des besoins financiers 
 
 Avoir potentiel de développement
+
+**NB: Veuillez noter que si votre cours appartient à une ou plusieurs des catégories ci-dessous, vous ne pouvez pas postuler pour une bourse:**
+
+* Diplôme d'études supérieures (par exemple, diplôme d'études supérieures en droit).
+* Cours de pratique professionnelle (par exemple RIBA pt III).
+* Cours de conversion.
+* Année de fondation intégrée ou master.
+* Doctorat.
 
 ## Comment postuler ?
