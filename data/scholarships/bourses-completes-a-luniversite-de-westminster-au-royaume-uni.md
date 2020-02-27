@@ -19,16 +19,28 @@ targetCountries:
 
 Le programme des bourses à l'université de Westminster couvre:
 
-frais de scolarité, 
+Frais de scolarité, 
 
-hébergement, 
+Hébergement, 
 
-frais de subsistance et 
+Frais de subsistance et 
 
-vols à destination et en provenance de Londres. 
+Vols à destination et en provenance de Londres. 
 
 **La bourse sera renouvelée chaque année sous réserve de résultats académiques satisfaisants.**
 
 ## Quelles sont les critères de la bourse ?
+
+Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
+
+Etre originaire d'un pays en voie de développement 
+
+Être admis dans à un programme des cours à temps plein à l'université de Westminster, pour savoir comment postuler, veuillez consulter les liens suivants:
+
+Obtenir une admission au 1er cycle <https://www.westminster.ac.uk/study/undergraduate/how-to-apply>
+
+<!--EndFragment-->
+
+Obtenir une admission au niveau master 
 
 ## Comment postuler ?
