@@ -51,3 +51,5 @@ Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 Les demandes des bourse d'études ne se font que par l'intermédiaire de l'ambassade de Corée dans votre pays d'origine ou d'une université coréenne participante. Cependant, vous devez soumettre tous les documents liés à votre demande de bourse à l'ambassade de Corée dans votre pays de résidence ou à l'université nationale concernée.
 
 ![](/images/uploads/WhatsApp Image 2020-02-27 at 14.00.17.jpeg)
+
+**NB:  Vous devez vérifier la date limite auprès de l’institution à laquelle vous souhaitez soumettre votre candidature.**
