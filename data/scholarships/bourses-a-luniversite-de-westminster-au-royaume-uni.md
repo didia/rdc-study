@@ -30,19 +30,15 @@ La bourse de l'université de Westminster couvre:
 
 Pour bénéficier de la bourse, vous devez remplir les conditions suivantes:
 
-Être un étudiant international d'un pays en développement 
+* Être un étudiant international d'un pays en développement 
+* Être inscrit à un cours de premier cycle ou au niveau master à temps plein, veuillez consulter les liens suivants pour savoir comment s'inscrire:
 
-Être inscrit à un cours de premier cycle ou au niveau master à temps plein, veuillez consulter les liens suivants pour savoir comment s'inscrire:
+1. Avoir une admission au premier cycle <https://www.westminster.ac.uk/study/undergraduate/how-to-apply>
+2. Avoir une admission au niveau master <https://www.westminster.ac.uk/study/undergraduate/how-to-apply>
 
-Avoir une admission au premier cycle <https://www.westminster.ac.uk/study/undergraduate/how-to-apply>
-
-Avoir une admission au niveau master <https://www.westminster.ac.uk/study/undergraduate/how-to-apply>
-
-Avoir un excellence dossier académique, 
-
-Présenter des besoins financiers 
-
-Avoir potentiel de développement
+* Avoir un excellence dossier académique, 
+* Présenter des besoins financiers 
+* Avoir potentiel de développement
 
 **NB:**  Veuillez consulter le guide d'équivalence des diplômes universitaires <https://www.westminster.ac.uk/sites/default/public-files/general-documents/overseas-academic-qualifications-equivalency-chart.pdf>  à l'étranger pour voir si vous êtes admissible à une bourse.
 
