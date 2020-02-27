@@ -16,7 +16,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-La bourse du gouvernement de la Coréen consiste à: 
+[La bourse du gouvernement de la Coréen](http://www.studyinkorea.go.kr/fr/sub/gks/allnew_invite.do) consiste à: 
 
 ![](/images/uploads/WhatsApp Image 2020-02-27 at 13.32.51.jpeg)
 
