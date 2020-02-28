@@ -3,7 +3,7 @@ draft: false
 slug: 'belgique'
 date: '2018-11-18'
 title: 'Étudier en Belgique'
-excerpt: 'Outre le fait d’être le pays accueillant le plus de congolais dans le monde, la Belgique offre un enseignement de qualité qui possède plusieurs ressemblances avec le système congolais. Étudier en Belgique vous permettra d’élargir vos horizons et augmenter vos chances pour un très bon emploi dans le futur et ce  à un coût très raisonnable.'
+excerpt: 'La Belgique offre un enseignement de qualité qui possède plusieurs ressemblances avec le système congolais. Étudier en Belgique vous permettra d’élargir vos horizons et augmenter vos chances pour un très bon emploi dans le futur et ce  à un coût très raisonnable.'
 thumbnail: 'images/belgique.jpg'
 topic: 'country'
 related: ['belgique/admission', 'belgique/visa']

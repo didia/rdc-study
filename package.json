@@ -13,9 +13,10 @@
     "npm": "^5.6"
   },
   "scripts": {
-    "build": "WITH_BUNDLE_ANALYZER=true gatsby build",
+    "build": "gatsby build",
+    "build-with-bundle-analyzer": "WITH_BUNDLE_ANALYZER=true gatsby build",
     "deploy-qa": "gatsby build && surge public/ $SURGE_DOMAIN",
-    "start": "gatsby develop",
+    "start": "SHOW_DRAFT=true gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "lint": "./node_modules/.bin/stylelint './src/**/*.scss' && ./node_modules/.bin/eslint './src/**/*.js'",
     "prettier": "prettier --write 'src/**/*.{js,json,scss,md}'",

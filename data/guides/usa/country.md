@@ -3,7 +3,7 @@ draft: false
 slug: 'usa'
 date: '2018-03-30'
 title: 'Étudier aux États-Unis'
-excerpt: 'Destination de rêve pour beaucoup de congolais, les États-Unis d‘Amérique est le pays qui accueille le plus d’étudiants étrangers au monde. Étudier aux États-Unis vous donne accès aux meilleures universités du monde et vous offrent des très bonnes opportunités de carrière.'
+excerpt: 'Les États-Unis d‘Amérique est le pays qui accueille le plus d’étudiants étrangers au monde. Étudier aux États-Unis vous donne accès aux meilleures universités du monde et vous offrent des très bonnes opportunités de carrière.'
 thumbnail: 'images/usa.jpg'
 topic: 'country'
 related: ['usa/admission', 'usa/visa']
