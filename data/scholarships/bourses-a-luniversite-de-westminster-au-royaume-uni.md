@@ -36,9 +36,9 @@ Pour bénéficier de la bourse, vous devez remplir les conditions suivantes:
 1. Avoir une admission au premier cycle <https://www.westminster.ac.uk/study/undergraduate/how-to-apply>
 2. Avoir une admission au niveau master <https://www.westminster.ac.uk/study/undergraduate/how-to-apply>
 
-* Avoir un excellence dossier académique, 
+* Avoir un excellent dossier académique, 
 * Présenter des besoins financiers 
-* Avoir potentiel de développement
+* Avoir un fort potentiel de développement
 
 **NB:**  Veuillez consulter le guide d'équivalence des diplômes universitaires <https://www.westminster.ac.uk/sites/default/public-files/general-documents/overseas-academic-qualifications-equivalency-chart.pdf>  à l'étranger pour voir si vous êtes admissible à une bourse.
 
@@ -58,7 +58,7 @@ En plus de remplir le formulaire de demande de bourse d'études pertinent, vous 
 * Une copie officielle de votre relevé de notes de votre étude universitaire la plus récente / actuelle.
 * Une lettre de référence écrite spécifiquement à l'appui de votre demande de bourse.Celui-ci doit être rédigé par un tuteur, un professeur, un universitaire ou un employeur précédent (le cas échéant pour le cursus choisi) et ne peut pas être la même référence fournie dans le cadre de votre demande d'admission.
 
-  Votre demande des bourses doit être fait par courrier à l'adresse suivante: 
+  Votre demande des bourses doit être faite par courrier à l'adresse suivante: 
 
   **Bureau des bourses**\
   **Université de Westminster**\
