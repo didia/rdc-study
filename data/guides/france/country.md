@@ -30,3 +30,28 @@ Bien entendu, cette somme varie selon le lieu du séjour et le type de résidenc
 Pour en savoir plus sur les droits d’inscription, consultez le <a href="https://www.etudiant.gouv.fr/cid96721/droits-d-inscription.html" target="_blank" rel="noreferrer noopener">site web du gouvernement français à ce sujet.</a>
 
 ## Qu’en est-il des bourses d’études ?
+
+La France offre environ 600 programmes des bourses d’études qui visent les études supérieures, des stages ou la recherche.\
+Nous ajoutons régulièrement celles que nous maitrisons dans [notre page des bourses](/bourses)\
+Toutefois vous pouvez voir toutes les bourses offertes par la France sur <a href="http://campusbourses.campusfrance.org/fria/bourse/#/catalog" target="_blank" rel="noopener noreferrer">le site de Campus France.</a>
+
+## Combien coûtent les démarches ?
+
+Voici ce que vous devez prévoir comme frais pour vos démarches avec la plateforme Etudes en France:
+
+- **100 USD** pour les frais de dossier.
+- **50 EUROS** pour les frais de visa.
+
+**NB**: Ces montants sont basés sur les informations que nous avons consultés au moment de la rédaction de ce guide.
+Pour avoir les montants à jour, nous vous conseillons de vous informer auprès de votre espace Campus France et le consulat ou l’ambassade de France dans votre pays.
+
+## Est-ce que notre service d’accompagnement est nécessaire pour la France ?
+
+À travers Campus France et la plateforme Études en France, le gouvernement français a simplifié la procédure pour les études en France.
+Vous n’avez donc pas nécessairement besoin de notre service d’accompagnement pour vos démarches d’études en France.\
+
+Cependant, vous pouvez souscrire à notre service d'accompagnement si vous avez besoin d’aide pour:
+
+1. Élaborer votre projet d’études en préparation de l’entretien pédagogique avec Campus France;
+2. Rassembler les documents nécessaires pour votre demande de visa (Nous n’offrons pas de prise en charge);
+3. Avoir un point de contact en France qui pourra vous aider à préparer votre voyage et vous conseiller à votre arrivée;

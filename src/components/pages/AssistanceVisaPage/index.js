@@ -91,6 +91,18 @@ const AssistanceVisaPage = () => (
       </strong>
     </p>
     <hr />
+    <h2>France</h2>
+    <p>
+      Notre assistance consiste à vous aider à:
+      <ul>
+        <li>trouver un justificatif d’hébergement pour les 3 premiers mois en France;</li>
+        <li>rassembler les documents qui vous sont démandés.</li>
+      </ul>
+      <strong>
+        Nous n’avons aucune influence sur la délivrance de votre visa par l’ambassade de France. Notre aide se limite à
+        vous accompagner dans le processus de demande de visa.
+      </strong>
+    </p>
   </GenericPage>
 );
 
