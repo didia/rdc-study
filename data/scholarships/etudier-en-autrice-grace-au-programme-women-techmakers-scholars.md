@@ -15,7 +15,7 @@ targetCountries:
 
 La [Women Techmakers Scholars](https://www.womentechmakers.com/scholars) consiste à couvrir:
 
-7 000 EUR (ou équivalent local) pour l'année universitaire (bourse WTM pour l'informatique et les jeux)\
+7 000 EUR (ou équivalent local) pour l’année universitaire (bourse WTM pour l’informatique et les jeux)\
 5 000 EUR (ou équivalent local) pour la durée de leurs études de premier cycle (bourse WTM Irish University)
 
 ## Quelles sont les critères de la bourse ?
@@ -26,9 +26,9 @@ Pour être bénéficiaire de la Bourse vous devez remplir les conditions suivant
 
 Etre actuellement inscrit dans une université accréditée ou
 
-Avoir l'intention d'être inscrit ou accepté en tant qu'étudiant à temps plein dans un programme de licence, de maîtrise ou de doctorat dans une université en Europe, au Moyen-Orient ou en Afrique 
+Avoir l’intention d'être inscrit ou accepté en tant qu’étudiant à temps plein dans un programme de licence, de maîtrise ou de doctorat dans une université en Europe, au Moyen-Orient ou en Afrique 
 
-Étudier l'informatique, l'ingénierie informatique, l'informatique ou un domaine technique étroitement lié OU étudier la programmation de jeux vidéo, l'ingénierie des jeux, la conception et le développement de jeux, ou un domaine étroitement lié aux jeux
+Étudier l’informatique, l’ingénierie informatique, l’informatique ou un domaine technique étroitement lié OU étudier la programmation de jeux vidéo, l’ingénierie des jeux, la conception et le développement de jeux, ou un domaine étroitement lié aux jeux
 
 Démontrer un solide dossier scolaire
 
@@ -41,7 +41,7 @@ Pour postuler à la bourse vous devez soumettre votre demande en ligne en introd
 * Informations générales (y compris les coordonnées et les informations sur vos institutions actuelles et futures)
 * CV actuel
 * Relevés de notes universitaires de vos établissements actuels et antérieurs (si vous avez obtenu un diplôme antérieur)
-* Une lettre de référence d'un professeur, instructeur, conseiller ou superviseur
+* Une lettre de référence d’un professeur, instructeur, conseiller ou superviseur
 * Réponses à cinq questions à développement
 
 

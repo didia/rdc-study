@@ -13,7 +13,7 @@ tags:
 Aujourd’hui, le nombre d’agences de voyage a explosé à Kinshasa.
 Ci et là vous verrez plusieurs agences qui promettent aux étudiants de leur obtenir une inscription ou une bourse pour un pays donné.
 
-Toutefois, nous avons observé que beaucoup de ces agences, motivées par leurs désirs de faire de l'argent, profitent des futurs étudiants et leur fournissent des informations incomplètes ou carrément fausses.
+Toutefois, nous avons observé que beaucoup de ces agences, motivées par leurs désirs de faire de l’argent, profitent des futurs étudiants et leur fournissent des informations incomplètes ou carrément fausses.
 C’est pur cette raison que nous lançons RDC Etudes, qui est une source d’informations gratuites sur les démarches pour étudier à l’étranger.
 En suivant les guides que nous avons mis en ligne, vous pouvez faire vous-mêmes vos démarches pour étudier à l’étranger sans payer une quelconque agence.
 

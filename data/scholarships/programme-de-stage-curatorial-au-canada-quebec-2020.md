@@ -31,7 +31,7 @@ Cette bourse est ouverte à tout le monde sans distinction de nationalité ou de
 
 Pour bénéficier à la bourse, vous devez <a href="https://form.jotform.com/93316408956263" target="_blank" rel="noopener noreferrer">postuler en ligne</a> accompagné de 2 documents, rédigés en français ou en anglais, en format PDF (5Mo maximum par fichier) :
 
-1) Une analyse critique de 750 à 1 000 mots d’un objet de la collection, d’un événement ou d’une exposition du Centre Canadien d'Architecture;
+1) Une analyse critique de 750 à 1 000 mots d’un objet de la collection, d’un événement ou d’une exposition du Centre Canadien d’Architecture;
 
 2) Un curriculum vitae précisant la formation, les expériences professionnelles, les langues de travail et tout autre renseignement pertinent.
 

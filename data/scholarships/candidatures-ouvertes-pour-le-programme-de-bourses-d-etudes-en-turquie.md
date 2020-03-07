@@ -1,15 +1,15 @@
 ---
-title: Bourses d'études du gouvernement de la République de Turquie.
+title: Bourses d’études du gouvernement de la République de Turquie.
 deadline: 2020-02-20T21:59:34.114Z
 excerpt: >-
   La Turquie ouvre les portes de ses universités aux étudiants internationaux à
-  travers le programme des bourses turques qui permet d'étudier gratuitement
+  travers le programme des bourses turques qui permet d’étudier gratuitement
   dans les meilleurs universités de la Turquie.
 tags:
-  - bourse d'études
+  - bourse d’études
   - turquie
   - rdcetudes
-  - étudier à l'étranger
+  - étudier à l’étranger
   - rdc
   - kinshasa
   - congo
@@ -23,13 +23,13 @@ targetCountries:
 
 ## En quoi consiste la bourse ?
 
-- La garantie d'une admission dans une université turque c'est à dire vous n'avez pas à faire l'admission vous-mêmes, ce sera fait pour vous une fois la bourse approuvée;
+- La garantie d’une admission dans une université turque c’est à dire vous n’avez pas à faire l’admission vous-mêmes, ce sera fait pour vous une fois la bourse approuvée;
 - Allocation mensuelle: **700 TL** (**121 \$**) pour la license, **950 TL** (**164 \$**) pour le master et **1400 TL** (**242 \$**) pour le doctorat;
 - Les frais académiques;
-- L'assurance santé;
+- L’assurance santé;
 - Le logement;
 - Une année de cours de langue turque;
-- Un billet d'avion pour retourner chez soi à la fin des études.
+- Un billet d’avion pour retourner chez soi à la fin des études.
 
 ## Quelles sont les critères de la bourse ?
 
@@ -44,7 +44,7 @@ Le dépôt de candidature est complètement gratuit et se fait en ligne sur <a h
 
 Voici les documents que vous devez prévoir:
 
-1. Une carte d'identité nationale ou un passport valide;
+1. Une carte d’identité nationale ou un passport valide;
 2. Une photo passeport;
 3. Les résultats des examens nationaux (Ou des examens internationaux si vous en avez);
 4. Les résultats académiques certifiés (Bulletins ou relevés de notes);

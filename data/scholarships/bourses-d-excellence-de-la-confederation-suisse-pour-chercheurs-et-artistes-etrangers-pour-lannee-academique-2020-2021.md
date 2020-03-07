@@ -8,8 +8,8 @@ excerpt: >-
   plus de 180 pays.
 tags:
   - >-
-    Bourses d'études gratuites 2020 - 2021;Bourses d'études suisse; Bourses
-    d'études pour congolais; Bourses d'études;Suisse
+    Bourses d’études gratuites 2020 - 2021;Bourses d’études suisse; Bourses
+    d’études pour congolais; Bourses d’études;Suisse
 thumbnail: /images/uploads/switzerland-students.jpg
 levels:
   - research
@@ -24,20 +24,20 @@ targetCountries:
 
 - Les frais académiques sont payés.
 
-- Un billet d'avion retour vers votre pays d'origine payé à la fin de votre
-  séjour d'études.
+- Un billet d’avion retour vers votre pays d’origine payé à la fin de votre
+  séjour d’études.
 
 - Un paiement de 300 Francs suisses (à peu près 300 \$) payé une fois à votre
   arrivée pour aider avec le logement.
 
 - La moitié de votre carte de transport.
 
-Les détails de la bourse varient d'un pays à l'autre et d'une bourse à une
+Les détails de la bourse varient d’un pays à l’autre et d’une bourse à une
 autre. Pour avoir les détails précis pour votre cas, nous vous invitons à lire
 les informations sur <a
   href="https://www.sbfi.admin.ch/sbfi/fr/home/formation/bourses/bourses-d-excellence-de-la-confederation.html"
   target="_blank" rel="noopener noreferrer">le site web de la bourse
-d'études.</a>
+d’études.</a>
 
 ## Quelles sont les critères de la bourse ?
 
@@ -49,21 +49,21 @@ La CFBE examine les demandes de bourse selon les trois critères suivants:
 
 3. les synergies et le potentiel pour une future collaboration.
 
-Les critères précis auxquels vous devez répondre variant d'une bourse à une
+Les critères précis auxquels vous devez répondre variant d’une bourse à une
 autre, nous vous invitons à consulter les informations précises sur <a
   href="https://www.sbfi.admin.ch/sbfi/fr/home/formation/bourses/bourses-d-excellence-de-la-confederation.html"
   target="_blank" rel="noopener noreferrer">le site web de la bourse
-d'études.</a>
+d’études.</a>
 
 ## Comment postuler ?
 
-![Procédure de demande de la bourse d'excellence
+![Procédure de demande de la bourse d’excellence
   suisse.](/images/uploads/procedure-bourse-suisse.jpg)
 
-L'information sur les bourses disponibles pour votre pays, comment postuler et
+L’information sur les bourses disponibles pour votre pays, comment postuler et
 quels documents envoyer sont disponibles dans un dossier préparée pour votre
 pays. Nous vous invitons à télécharger le dossier sur le site web de la bourse
-d'études.
+d’études.
 
 Si la première lettre du nom de votre pays est comprise entre A et L: Allez
 sur <a

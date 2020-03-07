@@ -1,13 +1,13 @@
 ---
-title: Bourse de Maîtrise en sciences mathématiques à l'AIMS
+title: Bourse de Maîtrise en sciences mathématiques à l’AIMS
 deadline: 2020-03-31T12:08:46.889Z
 excerpt: >-
-  Le programme de maîtrise de l'AIMS est un réseau universitaire qui vise à
-  former des scientifiques bien formés, dotés d'excellentes compétences en
-  résolution de problèmes, capables de penser de manière créative et d'innover
+  Le programme de maîtrise de l’AIMS est un réseau universitaire qui vise à
+  former des scientifiques bien formés, dotés d’excellentes compétences en
+  résolution de problèmes, capables de penser de manière créative et d’innover
   véritablement.
 tags:
-  - bourses d'études;mathématiques;bourses completes pour africains
+  - bourses d’études;mathématiques;bourses completes pour africains
 thumbnail: /images/uploads/20190919_limpopo_student_visit_32a0834low.jpg
 startDate: 2019-12-01T03:00:00.000Z
 levels:
@@ -18,7 +18,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-<a href="https://www.nexteinstein.org/" target="_blank" rel="noopener noreferrer">L'Institut Africain des Sciences Mathématiques</a> offre des bourses complètes de 3 semestres axées sur la résolution de problèmes informatiques et les compétences en programmation. Les boursiers auront la possibilité de rivaliser dans les domaines les plus avancés des sciences mathématiques. La bourse couvre l'hébergement, l'alimentation et les frais de voyage.
+<a href="https://www.nexteinstein.org/" target="_blank" rel="noopener noreferrer">L’Institut Africain des Sciences Mathématiques</a> offre des bourses complètes de 3 semestres axées sur la résolution de problèmes informatiques et les compétences en programmation. Les boursiers auront la possibilité de rivaliser dans les domaines les plus avancés des sciences mathématiques. La bourse couvre l’hébergement, l’alimentation et les frais de voyage.
 
 ## Quelles sont les critères de la bourse ?
 
@@ -31,4 +31,4 @@ Pour bénéficier à la bourse de Master, vous devez remplir les conditions suiv
 
 ## Comment postuler ?
 
-Les inscriptions se font en ligne sur <a href="https://applications.nexteinstein.org/appl-prev.php?appltype=MasterIntake" rel="noopener noreferrer"> le site de l'Université.</a>
+Les inscriptions se font en ligne sur <a href="https://applications.nexteinstein.org/appl-prev.php?appltype=MasterIntake" rel="noopener noreferrer"> le site de l’Université.</a>

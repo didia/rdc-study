@@ -9,7 +9,7 @@ excerpt: >-
   sportive et d’élargir leur savoir-faire en management sportif.
 tags:
   - >-
-    bourses d'études; Allemagne; Stage international; Université de Leipzig;
+    bourses d’études; Allemagne; Stage international; Université de Leipzig;
     stages pour athlètes
 thumbnail: /images/uploads/itk-kurs-leipzig-2-fr.jpg
 startDate: 2020-01-22T13:34:39.029Z
@@ -20,7 +20,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-Cette bourse qui est offerte à la Faculté de Science du Sport de l'Université de Leipzig couvre:
+Cette bourse qui est offerte à la Faculté de Science du Sport de l’Université de Leipzig couvre:
 
 * Les frais de formations sont totalement payés.
 * Une allocation mensuelle vous permettant de subvenir aux besoins de base.
@@ -28,26 +28,26 @@ Cette bourse qui est offerte à la Faculté de Science du Sport de l'Université
 * Une assurance maladie et accident.
 * Le transport public.
 
-NB: Les frais de voyage aller-retour tout comme votre équipement personnel pour les cours de pratique ne sont pas couverts par la bourse d'études.
+NB: Les frais de voyage aller-retour tout comme votre équipement personnel pour les cours de pratique ne sont pas couverts par la bourse d’études.
 
-Pour en savoir plus sur ce qu'offre cette bourse, consultez la section à ce sujet sur <a href="http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/financement/http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/financement/" target="_blank" rel="noreferrer noopener">le site web de la bourse d'études</a>
+Pour en savoir plus sur ce qu’offre cette bourse, consultez la section à ce sujet sur <a href="http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/financement/http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/financement/" target="_blank" rel="noreferrer noopener">le site web de la bourse d’études</a>
 
 ## Quelles sont les critères de la bourse ?
 
 Pour bénéficier de la formation, vous devez remplir les conditions suivants:
 
-* Être citoyen d'un pays d'un pays de figurant sur <a href="http://itk.spowi.uni-leipzig.de/fileadmin/itk/Download/DAC/DAC_List_ODA_2018to2020.pdfhttp://itk.spowi.uni-leipzig.de/fileadmin/itk/Download/DAC/DAC_List_ODA_2018to2020.pdf" target="_blank" rel="noreferrer noopener">la liste du CAD de l'OCDE</a> ;
-* Être âgé d'au maximum 40 ans;
-* Être en possession d‘un diplôme universitaire dans le domaine de l'éducation physique et du sport ou faire preuve d'une qualification adéquate;
-* Avoir une expérience professionnelle dans le domaine sportif tel que professeur d'EPS, entraineur dans le sport choisi, conseiller sportif, coordonateur sportif ou similaire;
+* Être citoyen d’un pays d’un pays de figurant sur <a href="http://itk.spowi.uni-leipzig.de/fileadmin/itk/Download/DAC/DAC_List_ODA_2018to2020.pdfhttp://itk.spowi.uni-leipzig.de/fileadmin/itk/Download/DAC/DAC_List_ODA_2018to2020.pdf" target="_blank" rel="noreferrer noopener">la liste du CAD de l’OCDE</a> ;
+* Être âgé d’au maximum 40 ans;
+* Être en possession d‘un diplôme universitaire dans le domaine de l’éducation physique et du sport ou faire preuve d’une qualification adéquate;
+* Avoir une expérience professionnelle dans le domaine sportif tel que professeur d’EPS, entraineur dans le sport choisi, conseiller sportif, coordonateur sportif ou similaire;
 * Avoir été athlète dans le sport que vous choisirez pour la formation;
 * Être en bonne santé et avoir des bonnes aptitudes physiques et psychiques.
 
-Pour en savoir plus sur les critères d'admission, consultez la section à ce sujet sur <a href="http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/conditions-dadmission/http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/conditions-dadmission/" target="_blank" rel="noopener noreferrer">le site web de la bourse d'études.</a>
+Pour en savoir plus sur les critères d’admission, consultez la section à ce sujet sur <a href="http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/conditions-dadmission/http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/conditions-dadmission/" target="_blank" rel="noopener noreferrer">le site web de la bourse d’études.</a>
 
 ## Comment postuler ?
 
-Le dépôt de candidature se fait auprès du consulat ou de l’ambassade de la République fédérale d’Allemagne dans votre pays de résidence pays. Il faudra donc aller vous informer auprès du consulat ou de l'ambassade pour savoir comment postuler. 
+Le dépôt de candidature se fait auprès du consulat ou de l’ambassade de la République fédérale d’Allemagne dans votre pays de résidence pays. Il faudra donc aller vous informer auprès du consulat ou de l’ambassade pour savoir comment postuler. 
 
 Toutefois, voici une liste des documents que vous devez préparer pour postuler:
 
@@ -62,6 +62,6 @@ Toutefois, voici une liste des documents que vous devez préparer pour postuler:
 
 **NB**: Le visa d’entrée en République fédérale d’Allemagne ne peut être accordé que si le candidat présente un billet d’avion retour valable pour 6 mois au minimum.
 
-Pour en savoir plus sur comment postuler, nous vous invitons à consulter <a href="http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/inscription/" target="_blank" rel="noreferrer noopener">la section à ce sujet sur le site web de la bourse d'études.</a>
+Pour en savoir plus sur comment postuler, nous vous invitons à consulter <a href="http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/inscription/" target="_blank" rel="noreferrer noopener">la section à ce sujet sur le site web de la bourse d’études.</a>
 
-Pour les informations précises sur la bourse d'études, nous vous invitons à consulter <a href="http://itk.spowi.uni-leipzig.de/fr/informations-generales/http://itk.spowi.uni-leipzig.de/fr/informations-generales/" target="_blank" rel="noopener noreferrer">le site web de la bourse d'études.</a>
+Pour les informations précises sur la bourse d’études, nous vous invitons à consulter <a href="http://itk.spowi.uni-leipzig.de/fr/informations-generales/http://itk.spowi.uni-leipzig.de/fr/informations-generales/" target="_blank" rel="noopener noreferrer">le site web de la bourse d’études.</a>

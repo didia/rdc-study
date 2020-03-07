@@ -2,7 +2,7 @@
 title: "30 juin 2018 - 30 juin 2019: RDC Etudes souffle sa première bougie \U0001F382\U0001F382"
 excerpt: >-
   Alors que RDC Etudes fête son premier anniversaire, revenons ensemble sur ce
-  qu'a été sa première année, ce qui a été accompli et ce qui reste à améliorer.
+  qu’a été sa première année, ce qui a été accompli et ce qui reste à améliorer.
 thumbnail: /images/uploads/annie-spratt-m20ylqczszw-unsplash.jpg
 thumbnailCredits: >-
   <a style="background-color:black;color:white;text-decoration:none;padding:4px
@@ -21,27 +21,27 @@ thumbnailCredits: >-
   style="display:inline-block;padding:2px 3px">Annie Spratt</span></a>
 tags:
   - RDC-Etudes
-  - Bourses d'études
+  - Bourses d’études
   - Anniversaire
-  - Etudier à l'étranger
+  - Etudier à l’étranger
 date: '2019-06-30T15:30:00-04:00'
 ---
-En effet, il est difficile de s'imaginer que 365 jours se sont déjà écoulés depuis le lancement de RDC Etudes, le 30 juin 2018. Nous sommes vraiment reconnaissants du support que vous nous avez apporté durant cette période et tous ces encouragements à aller de l'avant. Nous n'en serons pas où nous en sommes sans votre précieux soutient. Nous avons accompli beaucoup au courant de l'année dernière et nous avons hate de vous le présenter.
+En effet, il est difficile de s’imaginer que 365 jours se sont déjà écoulés depuis le lancement de RDC Etudes, le 30 juin 2018. Nous sommes vraiment reconnaissants du support que vous nous avez apporté durant cette période et tous ces encouragements à aller de l’avant. Nous n’en serons pas où nous en sommes sans votre précieux soutient. Nous avons accompli beaucoup au courant de l’année dernière et nous avons hate de vous le présenter.
 
 ## Notre mission
 
-Notre mission est de permettre à tout congolais d'avoir facilement accès à une éducation de qualité. Cette éducation peut être au Congo, en Afrique, en Amérique ou partout dans le monde, l'essentiel est qu'elle soit en mesure de permettre à son bénéficiaire de s'épanouir dans sa société.
+Notre mission est de permettre à tout congolais d’avoir facilement accès à une éducation de qualité. Cette éducation peut être au Congo, en Afrique, en Amérique ou partout dans le monde, l’essentiel est qu’elle soit en mesure de permettre à son bénéficiaire de s’épanouir dans sa société.
 
 ## Notre vision
 
 Nous voulons vivre dans des pays où:
 
-* Toute personne désireuse d'aller étudier à l'étranger trouve facilement et gratuitement toutes les informations dont elle a besoin pour bien mener ces démarches;
-* Les personnes qui veulent aller étudier à l'étranger ne sont pas victimes des charlatans et escrocs qui profitent de leur manque de connaissances;
-* Toute personne a l'opportunité de postuler pour les bourses d'études et non seulement les ayant-droits ou ceux qui ont des relations;
+* Toute personne désireuse d’aller étudier à l’étranger trouve facilement et gratuitement toutes les informations dont elle a besoin pour bien mener ces démarches;
+* Les personnes qui veulent aller étudier à l’étranger ne sont pas victimes des charlatans et escrocs qui profitent de leur manque de connaissances;
+* Toute personne a l’opportunité de postuler pour les bourses d’études et non seulement les ayant-droits ou ceux qui ont des relations;
 * Les bourses sont de nouveau disponibles pour les meilleurs étudiants méritants qui ne sont pas en mesure de se payer leurs études eux-mêmes;
-* Le niveau d'éducation nationale est élevé tel que l'on a pas besoin d'aller nécessairement étudier à l'étranger pour obtenir une éducation de qualité.
-* Les étudiants qui vont étudier à l'étranger ont accès à des mentors qui les aident à bien s'intégrer aux systèmes éducationnels de leurs pays de destination.
+* Le niveau d’éducation nationale est élevé tel que l’on a pas besoin d’aller nécessairement étudier à l’étranger pour obtenir une éducation de qualité.
+* Les étudiants qui vont étudier à l’étranger ont accès à des mentors qui les aident à bien s’intégrer aux systèmes éducationnels de leurs pays de destination.
 
 ## Notre première année en chiffres
 
@@ -49,9 +49,9 @@ Nous voulons vivre dans des pays où:
 * Vous avez été **7 620** à avoir consulté ce site Web et vous passez en moyenne **2 min 45 secondes** sur notre site.
 * Vous êtes **5 000** à nous suivre sur nos différents réseaux sociaux, à savoir Facebook, Instagram et Snapchat.
 * Nous avons échangé **3 600** emails avec vous durant la dernière année et un nombre incalculable des messages messengers et WhatsApp.
-* Nous avons partagé [**9 opportunités de bourses d'études**](/articles) avec vous.
+* Nous avons partagé [**9 opportunités de bourses d’études**](/articles) avec vous.
 
-Bien que notre site ait été créé initialement pour les informations pour les congolais, nous avons rapidement réalisé que plusieurs autres pays d'Afrique faisaient face à ce problème. Nous avons donc assisté aussi des gens provenant de **10 pays différents** dont: Guinée, Haiti, Congo Brazza, Sénégal, La Réunion, Benin, Cameroun, Maroc et Burundi.
+Bien que notre site ait été créé initialement pour les informations pour les congolais, nous avons rapidement réalisé que plusieurs autres pays d’Afrique faisaient face à ce problème. Nous avons donc assisté aussi des gens provenant de **10 pays différents** dont: Guinée, Haiti, Congo Brazza, Sénégal, La Réunion, Benin, Cameroun, Maroc et Burundi.
 
 ## Notre équipe
 
@@ -61,7 +61,7 @@ Et bien évidemment, sans oublier vous aussi, qui visitez notre site web, qui no
 
 ## Que nous réserve le futur ?
 
-Nous ne sommes qu'au début, RDC Etudes ne fait que commencer. Nous avons hate d'être plus présent physiquement à Kinshasa, trouver plus d'opportunités de bourses pour les étudiants congolais et commencer avec notre programme des mentors pour les étudiants qui sont déjà à l'étranger.
+Nous ne sommes qu’au début, RDC Etudes ne fait que commencer. Nous avons hate d'être plus présent physiquement à Kinshasa, trouver plus d’opportunités de bourses pour les étudiants congolais et commencer avec notre programme des mentors pour les étudiants qui sont déjà à l’étranger.
 
 \
-Si vous voulez contribuer à notre mission, n'hésitez pas à vous abonner à notre page et à partager nos différents posts sur les réseaux sociaux car en faisant cela vous permettez à plusieurs personnes de nous découvrir et vous le sauvez eux aussi d'une potentielle fraude. Comme l'on dit en Anglais, "Sharing is caring" c'est à dire Partager c'est Aimer.
+Si vous voulez contribuer à notre mission, n’hésitez pas à vous abonner à notre page et à partager nos différents posts sur les réseaux sociaux car en faisant cela vous permettez à plusieurs personnes de nous découvrir et vous le sauvez eux aussi d’une potentielle fraude. Comme l’on dit en Anglais, "Sharing is caring" c’est à dire Partager c’est Aimer.

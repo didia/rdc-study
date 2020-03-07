@@ -2,8 +2,8 @@
 draft: false
 slug: 'canada/visa'
 date: '2018-03-30'
-title: "Obtenir un permis d'études pour le Canada"
-excerpt: "Avec votre admission dans une établissement d'enseignement canadien en main, vous devez maintenant faire une demande de visa à Immigration Canada. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le permis d'études pour le Canada."
+title: "Obtenir un permis d‘études pour le Canada"
+excerpt: "Avec votre admission dans une établissement d‘enseignement canadien en main, vous devez maintenant faire une demande de visa à Immigration Canada. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le permis d‘études pour le Canada."
 thumbnail: 'images/canada-visa.jpg'
 topic: 'visa'
 related: ['canada/visa/exemple-lettre-engagement-quitter-canada-apres-etudes', 'canada/admission']
@@ -38,7 +38,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     Pour faire la demande en ligne, vous devez être en mesure de numériser vos documents et avoir une carte de crédit valide pour payer les frais de demande.\
     L’avantage de faire la demande en ligne est que c’est plus rapide et il y’a moins de documents réquis comparé à ce que le CRDV demande.
 
-    Si vous choisissez de faire la demande en ligne, vous devez commencer par créer votre compte sur <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/compte.html" target="_blank" rel="nofollow noopener">le site web de l'immigration.</a>
+    Si vous choisissez de faire la demande en ligne, vous devez commencer par créer votre compte sur <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/compte.html" target="_blank" rel="nofollow noopener">le site web de l‘immigration.</a>
 
 3)  ## Obtenir les formulaires exigés pour la demande
 
@@ -50,7 +50,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 4)  ## Remplir les formulaires
 
     Vous devez remplir complètement et avec précision tous les formulaires demandés.\
-    Fiez-vous donc au <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html" target="_blank" rel="nofollow noopener">guide en ligne</a> sur le site d'Immigration Canada pour savoir quoi mettre dans chaque case.\
+    Fiez-vous donc au <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html" target="_blank" rel="nofollow noopener">guide en ligne</a> sur le site d‘Immigration Canada pour savoir quoi mettre dans chaque case.\
     Si vous avez toujours des doutes, contactez-nous! Nous offrons des services pour vous accompagner dans ce processus.
 
 5)  ## Rassembler tous les documents exigés
@@ -72,7 +72,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     pourquoi vous avez choisi votre programme d’études et comment vous comptez utiliser l’argent disponible pour financer vos études.
 
     Ensuite vous devez fournir [un engagement écrit à quitter le Canada après la fin de vos études](/guides/canada/visa/exemple-lettre-engagement-quitter-canada-apres-etudes).
-    Cet engagement permet au Canada de s’assurer que vous n'essaierez pas de rester illégalement au Canada.
+    Cet engagement permet au Canada de s’assurer que vous n‘essaierez pas de rester illégalement au Canada.
 
     Si vous avez besoin d’aide pour rédiger ces documents, nous vous encourageons à souscrire à notre [service d’accompagnement](/accompagnement), plus spécifiquement le forfait Visa.
 
@@ -109,4 +109,4 @@ Ces frais se présentent comme suit:
 - **285 USD** pour les frais des examens médicaux.
 - **200 USD** pour les frais d’assistance RDC-Etudes.
 
-**NB**: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leur site web pour les montants actualisés.
+**NB**: Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leur site web pour les montants actualisés.

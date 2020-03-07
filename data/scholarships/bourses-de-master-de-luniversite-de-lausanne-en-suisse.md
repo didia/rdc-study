@@ -1,12 +1,12 @@
 ---
-title: Bourses de Master de l'Université de Lausanne en Suisse
+title: Bourses de Master de l’Université de Lausanne en Suisse
 excerpt: >-
-  L'université de Lausanne (UNIL) offre 10 bourses d'études partielles
-  d'excellence par année aux étudiants ayant un excellent dossier académique.
+  L’université de Lausanne (UNIL) offre 10 bourses d’études partielles
+  d’excellence par année aux étudiants ayant un excellent dossier académique.
 deadline: 2019-11-02T03:59:42.314Z
 tags:
   - >-
-    Bourses d'études pour étudiants africains;Bourses d'études pour étudiants
+    Bourses d’études pour étudiants africains;Bourses d’études pour étudiants
     congolais;Etudier en suisse;Université de Lausanne
 thumbnail: /images/uploads/ulausanne.jpeg
 levels:
@@ -21,7 +21,7 @@ targetCountries:
   durée complète du master (1 an et demi ou 2 ans selon le master choisi), sauf
   en cas d’échec définitif après la première année.
 
-- Une exemption de paiement des frais académiques à l'exception des taxes
+- Une exemption de paiement des frais académiques à l’exception des taxes
   semestrielles de **80 \$**.
 
 ## Quelles sont les critères de la bourse ?
@@ -37,15 +37,15 @@ targetCountries:
   globale du Portfolio européen des langues) en Français ou au minimum C1 en
   Anglais selon la langue d’enseignement du master choisi.
 
-- Ne pas être actuellement étudiant à l'UNIL.
+- Ne pas être actuellement étudiant à l’UNIL.
 
 - S’être acquitté de la taxe administrative de 200\$ qui constitue les frais de
-  demande d'admission à l'Université
+  demande d’admission à l’Université
 
 ## Comment postuler ?
 
 Vous devez envoyer votre dossier complet par courriel postal uniquement à
-l'adresse suivante:
+l’adresse suivante:
 
   <p style="margin-left: 10px;">
   <strong>Université de Lausanne</strong><br>
@@ -56,7 +56,7 @@ l'adresse suivante:
   <strong>Suisse</strong>
   </p>
 
-Vous devez remplir le formulaire de demande de bourse à l'ordinateur et le
+Vous devez remplir le formulaire de demande de bourse à l’ordinateur et le
 signer. Voici <a
   href="https://www.unil.ch/international/files/live/sites/international/files/-New_Website/Etudiants%20internationaux/Etudiants%20internationaux%20r%c3%a9guliers/Formulaire_candidature_boursesmaster.pdf"
   target="_blank" rel="noreferrer noopener">le lien où trouver le
@@ -71,9 +71,9 @@ votre demande soit traité, notamment les copies certifiées conformes des
 documents académiques.
 
 La date limite de dépôt de candidature est le **1er novembre** pour débuter un
-master au cours de l'année académique suivante.
+master au cours de l’année académique suivante.
 
-Pour consulter la liste des programmes disponibles ainsi qu'en savoir plus sur
+Pour consulter la liste des programmes disponibles ainsi qu’en savoir plus sur
 la bourse, nous vous invitons à consulter <a
   href="https://www.unil.ch/international/boursesdemasterunil" target="_blank"
-  rel="noreferrer noopener">le lien officiel de la bourse d'études.</a>
+  rel="noreferrer noopener">le lien officiel de la bourse d’études.</a>

@@ -11,10 +11,10 @@ related: ['canada/admission', 'canada/visa']
 
 ## Que faut-il pour étudier au Canada?
 
-Pour étudier au Canada, il faut commencer par obtenir une admission dans un établissement d'enseignement désigné au Canada.\
+Pour étudier au Canada, il faut commencer par obtenir une admission dans un établissement d’enseignement désigné au Canada.\
 Obtenir une admission dans un établissement d’enseignement au Canada est aussi simple que vous ne l’imaginez.
 Les demandes d’admissions dans la grande partie des établissements d’enseignement se font en ligne. Vous devez donc avoir une connexion internet et une dose de volonté.\
-Vous pouvez faire l'admission dans un collège pour obtenir l'équivalent du graduat en RDC, ou dans une université pour la licence, la maîtrise ou le doctorat.\
+Vous pouvez faire l’admission dans un collège pour obtenir l’équivalent du graduat en RDC, ou dans une université pour la licence, la maîtrise ou le doctorat.\
 Quelques établissements vous sont proposés dans [notre guide sur les démarches à suivre pour obtenir une admission dans une université canadienne.](/guides/canada/admission)
 \
 \
@@ -23,16 +23,16 @@ Vous devez également être en mesure de prouver financièrement que vous êtes 
 Les étudiants qui envisagent poursuivre leurs études dans un établissement dans la province du Québec devront avoir en leur possession non seulement une admission mais aussi le certificat d’acceptation du Québec (CAQ) avant d’amorcer la demande du permis d’études.
 \
 \
-Pour en savoir plus, [consultez notre guide sur les démarches à suivre pour obtenir un permis d'études pour le Canada.](/guides/canada/visa)
+Pour en savoir plus, [consultez notre guide sur les démarches à suivre pour obtenir un permis d’études pour le Canada.](/guides/canada/visa)
 
 ## Combien coûtent les études au Canada?
 
 En réalisant votre projet pour aller étudier au Canada, vous pensez premièrement aux droits de scolarité (frais académiques).
 Il est donc important pour vous d’avoir ne fut ce qu’une idée de combien coutent les études au Canada.\
 Les droits de scolarité varient d’un établissement à un autre, selon le niveau d’études et le programme d’études (facultés et départements).
-En termes des chiffres, vos études au Canada vous coûteront entre 4 000 USD et 13 000 USD par année, tandis qu'il faut prévoir entre 9 000 USD et 10 000 USD pour les frais de subsistance qui varieront selon votre train de vie.
+En termes des chiffres, vos études au Canada vous coûteront entre 4 000 USD et 13 000 USD par année, tandis qu’il faut prévoir entre 9 000 USD et 10 000 USD pour les frais de subsistance qui varieront selon votre train de vie.
 
-## Qu'en est-il de bourses d'études?
+## Qu’en est-il de bourses d’études?
 
 Il s’avère parfois que les droits de scolarités (frais académiques) soient très couteux pour les cycles supérieurs. Aucune inquiétude à ce sujet.
 Plusieurs organismes et universités offrent des bourses à des candidats aux cycles supérieurs.
@@ -51,4 +51,4 @@ Ces frais se présentent comme suit:
 - **490 USD à 610 USD** pour le processus de visa.
 - **400 USD à 600 USD** pour les frais d’assistance RDC Etudes. (Payable en trois tranches: Admission, CAQ (Québec seulement), Visa)
 
-**NB**: Ces montants ne sont qu'une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
+**NB**: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

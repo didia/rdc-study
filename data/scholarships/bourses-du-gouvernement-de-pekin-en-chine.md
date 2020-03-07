@@ -7,7 +7,7 @@ excerpt: >-
   des frais académiques partielle ou totale.
 tags:
   - >-
-    bourses de la chine;bourses pekin;bourses pour africains;bourses d'études
+    bourses de la chine;bourses pekin;bourses pour africains;bourses d’études
     gratuites
 thumbnail: /images/uploads/study-bejing.jpg
 startDate: 2019-12-02T03:22:14.724Z
@@ -23,15 +23,15 @@ La bourse du gouvernement de Pékin ne couvre uniquement que les frais académiq
 ## Quelles sont les critères de la bourse ?
 
 * Être en bonne santé;
-* Les candidats au doctorat doivent être titulaires d’un master et avoir moins de 40 ans; ceux au master doivent être titulaires d’un baccalauréat et avoir moins de 35 ans et enfin ceux en licence doivent être titulaire d’un diplôme d'études secondaires et avoir moins de 30 ans;
-* Répondre aux exigences linguistiques des établissements d'enseignement supérieur;
+* Les candidats au doctorat doivent être titulaires d’un master et avoir moins de 40 ans; ceux au master doivent être titulaires d’un baccalauréat et avoir moins de 35 ans et enfin ceux en licence doivent être titulaire d’un diplôme d’études secondaires et avoir moins de 30 ans;
+* Répondre aux exigences linguistiques des établissements d’enseignement supérieur;
 * Ne pas déjà avoir une autre bourse du gouvernement chinois en même temps.
 
 # Comment postuler ?
 
-Pour postuler, vous devez contacter l'ambassade ou le consulat chinois dans votre pays. Dites-leur que vous voulez des informations sur comment postuler sur la bourse du gouvernement de Pékin.
+Pour postuler, vous devez contacter l’ambassade ou le consulat chinois dans votre pays. Dites-leur que vous voulez des informations sur comment postuler sur la bourse du gouvernement de Pékin.
 
-Une autre manière de postuler, c'est de contacter directement <a href="http://www.ebeijing.gov.cn/Study/Scholarships/P020140318533697475392.pdf" target="_blank" rel="noreferrer noopener">les universités</a> pour postuler et leur demander de postuler pour vous à la bourse du gouvernement de Pékin.
+Une autre manière de postuler, c’est de contacter directement <a href="http://www.ebeijing.gov.cn/Study/Scholarships/P020140318533697475392.pdf" target="_blank" rel="noreferrer noopener">les universités</a> pour postuler et leur demander de postuler pour vous à la bourse du gouvernement de Pékin.
 
 Pour postuler, vous devez fournir les documents suivants:
 

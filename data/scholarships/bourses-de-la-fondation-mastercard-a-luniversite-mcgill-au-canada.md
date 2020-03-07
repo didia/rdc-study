@@ -1,13 +1,13 @@
 ---
-title: Bourses de la Fondation MasterCard à l'Université McGill au Canada
+title: Bourses de la Fondation MasterCard à l’Université McGill au Canada
 deadline: 2020-02-01T04:59:52.454Z
 excerpt: >-
   Le programme de bourses de la Fondation MasterCard identifie des jeunes doués
   ayant démontré leur engagement envers leur communauté, mais confrontés à des
   obstacles importants d’accès à des études de qualité. Les boursiers de ce
-  programme proviennent principalement de l'Afrique.
+  programme proviennent principalement de l’Afrique.
 tags:
-  - bourse d'études canada;McGill;Mastercard Fondation;bourses pour africains
+  - bourse d’études canada;McGill;Mastercard Fondation;bourses pour africains
 thumbnail: /images/uploads/mcgill-mastercard-foundation-scholarships.png
 levels:
   - graduate
@@ -20,7 +20,7 @@ targetCountries:
 Le programme est conçu pour procurer une assistance globale aux étudiants
 sélectionnés, notamment :
 
-- Bourses d'études complètes (frais universitaires, frais de subsistance,
+- Bourses d’études complètes (frais universitaires, frais de subsistance,
   achat de livres, frais de déplacement, allocations)
 
 - Curriculum approprié aux secteurs en croissance dans les pays d’origine.
@@ -36,28 +36,28 @@ sélectionnés, notamment :
 
 ## Quelles sont les critères de la bourse ?
 
-1. Être admissible à l'un des programmes d'études participants de l'Université
+1. Être admissible à l’un des programmes d’études participants de l’Université
    McGill (<a
    href="https://www.mcgill.ca/mastercardfdn-scholars/files/mastercardfdn-scholars/liste_des_programmes_detudes_participants_2020.pdf"
    target="_blank" rel="noopener noreferrer">voir la liste des programmes
    ici</a>) ;
 
-2. N'avoir jamais entrepris d'études aux cycles supérieurs ;
+2. N’avoir jamais entrepris d’études aux cycles supérieurs ;
 
 3. Être nominé par un professeur actuel de McGill ou un membre du personnel
    administratif du programme de votre choix;
 
-4. Être citoyen d'un pays subsaharien et y avoir résidé une grande partie de
+4. Être citoyen d’un pays subsaharien et y avoir résidé une grande partie de
    votre vie (<a
    href="https://www.mcgill.ca/mastercardfdn-scholars/files/mastercardfdn-scholars/liste_des_pays_admissibles_2020.pdf"
    target="_blank" rel="noopener noreferrer">voir la liste des pays admissibles
    ici</a>) ;
 
-5. Présenter un dossier exceptionnel d'activités et de services rendus dans le
+5. Présenter un dossier exceptionnel d’activités et de services rendus dans le
    milieu scolaire ou communautaire ;
 
-6. Avoir l'intention de retourner dans votre pays immédiatement après
-   l'obtention du diplôme avec l'objectif de transformer votre communauté en
+6. Avoir l’intention de retourner dans votre pays immédiatement après
+   l’obtention du diplôme avec l’objectif de transformer votre communauté en
    appuyant son développement socioéconomique ;
 
 7. Prouver que votre situation financière se trouve dans les deux quintiles
@@ -71,7 +71,7 @@ Pour en savoir plus sur les critères, consultez <a
 
 ## Comment postuler ?
 
-1. Vous devez commencer par identifier votre programme d'intérêts dans la
+1. Vous devez commencer par identifier votre programme d’intérêts dans la
    liste des programmes et vérifier que vous répondez aux exigences du
    département.
 
@@ -105,12 +105,12 @@ Pour en savoir plus sur les critères, consultez <a
    sélectionnés pour la cohorte 2020 du programme des boursiers de la Mastercard
    Foundation à l’université McGill.
 
-Pour en savoir plus sur la procédure d'admission, consultez <a
+Pour en savoir plus sur la procédure d’admission, consultez <a
   href="https://www.mcgill.ca/mastercardfdn-scholars/files/mastercardfdn-scholars/mastercard_foundation_scholars_program_-_etape_par_etape_instructions_2020.pdf"
   target="_blank" rel="noopener noreferrer">le site web de la bourse.</a>
 
 Notez que la date limite pour postuler à la bourse dépend de la date limite
-d'admission au programme que vous avez choisi. Toutefois, la date limite pour
+d’admission au programme que vous avez choisi. Toutefois, la date limite pour
 soumettre les pièces justificatives MCF par le système intermédiaire uApply
 est le 31 janvier 2020.
 

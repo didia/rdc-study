@@ -7,7 +7,7 @@ excerpt: >-
   maîtrise dans des universités japonaises dans le cadre du programme de bourses
   d’études du gouvernement japonais (MEXT).
 tags:
-  - Bourse d'études
+  - Bourse d’études
   - Japon
   - étudier gratuitement au Japon
   - Congo
@@ -50,15 +50,15 @@ Qui couvrent :
 
 * Allocation mensuelle: La valeur de la bourse d’études reste à déterminer, cependant elle est généralement aux alentours de **117 000 yen** soit **1080 $**.
 * Transport au Japon : Vous avez droit à un billet aller-retour vers et à partir du Japon;
-* Les frais pour l'examen d'entrée, l'inscription et les frais de scolarité.
+* Les frais pour l’examen d’entrée, l’inscription et les frais de scolarité.
 
 ## Quelles sont les critères de la bourse ?
 
-Chacune de ces bourses dispose de ses propres critères d'éligibilité; veuillez donc postuler pour la catégorie qui correspond le mieux à votre situation personnelle. Vous les trouverez sur <a href="https://www.studyjapan.go.jp/fr/index.html" target="_blank" rel="noreferrer noopener">le site du ministère.</a>
+Chacune de ces bourses dispose de ses propres critères d’éligibilité; veuillez donc postuler pour la catégorie qui correspond le mieux à votre situation personnelle. Vous les trouverez sur <a href="https://www.studyjapan.go.jp/fr/index.html" target="_blank" rel="noreferrer noopener">le site du ministère.</a>
 
 ## Comment postuler ?
 
-Concernant <a href="https://www.studyjapan.go.jp/fr/index.html" target="_blank" rel="noopener noreferrer">la procédure d’admission</a>, la sélection initiale (analyse des documents, examen écrit et entretien) est effectuée à l'ambassade du Japon entre juin et juillet, celle-ci recommande ensuite les candidats sélectionnés au ministère de l'Éducation, de la Culture, des Sports, de la Science et de la Technologie du Japon (MEXT) à la fin du mois d'août.
+Concernant <a href="https://www.studyjapan.go.jp/fr/index.html" target="_blank" rel="noopener noreferrer">la procédure d’admission</a>, la sélection initiale (analyse des documents, examen écrit et entretien) est effectuée à l’ambassade du Japon entre juin et juillet, celle-ci recommande ensuite les candidats sélectionnés au ministère de l’Éducation, de la Culture, des Sports, de la Science et de la Technologie du Japon (MEXT) à la fin du mois d’août.
 
 Les délais diffèrent selon les pays. De ce fait nous vous recommandons donc de contacter l’ambassade ou le consulat général du Japon dans votre pays. Si vous ne savez pas où se situe l’ambassade, vous la localiser à travers le <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank" rel="noopener noreferrer">site du ministère.</a>
 

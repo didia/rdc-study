@@ -4,10 +4,10 @@ deadline: 2019-09-19T03:59:44.449Z
 excerpt: >-
   Chaque année le gouvernement canadien offre 70 bourses d’une valeur de 70.000
   dollars canadiens par année pour une durée de 2 ans non renouvelable aux
-  étudiants postdoctoraux afin qu'ils contribuent à l'essor économique, social
+  étudiants postdoctoraux afin qu’ils contribuent à l’essor économique, social
   et scientifique du Canada. 
 tags:
-  - Bourses d'études
+  - Bourses d’études
   - Bourses banting
   - Congo
   - Canada
@@ -41,7 +41,7 @@ targetCountries:
 
 * Vous devez avoir obtenu ou vous obtiendrez votre diplôme de doctorat entre le 16 septembre 2016 et le 30 septembre 2020,
 * Votre programme de recherche vise soit les domaines de la santé, soit les sciences naturelles et/ou ingénierie ou soit les sciences sociales et humaines.
-* Vous devez avoir déjà été sélectionné par un établissement d'enseignement qui vous accueillera pour votre postdoc.
+* Vous devez avoir déjà été sélectionné par un établissement d’enseignement qui vous accueillera pour votre postdoc.
 
 Pour en savoir plus sur les critères d’admissibilité, consultez <a href="http://banting.fellowships-bourses.gc.ca/fr/app-dem_elig-adm.html" target="_blank" rel="nofollow noopener">la page de la bourse à ce sujet</a>.
 
@@ -49,7 +49,7 @@ Pour en savoir plus sur les critères d’admissibilité, consultez <a href="htt
 
 1. Votre excellence et leadership dans le domaine de la recherche.
 2. La qualité du programme de recherche que vous allez proposer.
-3. L'engagement de l’établissement d'enseignement à vous soutenir ainsi que la correspondance entre votre programme de recherche ainsi que les priorités de stratégiques du dit établissement d'enseignement.
+3. L’engagement de l’établissement d’enseignement à vous soutenir ainsi que la correspondance entre votre programme de recherche ainsi que les priorités de stratégiques du dit établissement d’enseignement.
 
 Pour en savoir plus sur les critères de sélection de cette bourse, consultez <a href="http://banting.fellowships-bourses.gc.ca/fr/rev-eval_overview-apercu.html" target="_blank" rel="nofollow noopener">la page de la bourse à ce sujet</a>.
 

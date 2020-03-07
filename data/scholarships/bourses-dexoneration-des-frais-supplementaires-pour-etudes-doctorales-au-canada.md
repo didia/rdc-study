@@ -1,6 +1,6 @@
 ---
 title: >-
-  Bourses d'exonération des frais supplémentaires pour études doctorales au
+  Bourses d’exonération des frais supplémentaires pour études doctorales au
   Canada
 deadline: ''
 excerpt: >-
@@ -10,7 +10,7 @@ excerpt: >-
 tags:
   - bourse
   - canada
-  - etudier à l'étranger
+  - etudier à l’étranger
   - congo
 thumbnail: /images/uploads/md-duran-628456-unsplash.jpg
 thumbnailCredits: >-
@@ -40,11 +40,11 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-Normalement les étudiants non canadiens paient des frais de scolarité supplémentaires comparés aux étudiants canadiens dans toutes les universités au Canada. Cependant, une bourse d'exonération partielle permet aux étudiants internationaux de payer des frais de scolarité semblable aux étudiants canadiens.
+Normalement les étudiants non canadiens paient des frais de scolarité supplémentaires comparés aux étudiants canadiens dans toutes les universités au Canada. Cependant, une bourse d’exonération partielle permet aux étudiants internationaux de payer des frais de scolarité semblable aux étudiants canadiens.
 
 ## Quelles sont les critères de la bourse ?
 
-Pour postuler, il faut avoir obtenu une admission dans un programme de doctorat dans une université canadienne qui offre cette bourse d'exonération. Les conditions d’admission diffèrent souvent d’une université à l’autre, cependant quelques éléments restent communs, notamment :
+Pour postuler, il faut avoir obtenu une admission dans un programme de doctorat dans une université canadienne qui offre cette bourse d’exonération. Les conditions d’admission diffèrent souvent d’une université à l’autre, cependant quelques éléments restent communs, notamment :
 
 * Avoir un bon dossier académique en termes de notes obtenues ;
 * Soumettre un projet de recherche convaincant et innovant ;
@@ -52,8 +52,8 @@ Pour postuler, il faut avoir obtenu une admission dans un programme de doctorat 
 
 ## Comment postuler ?
 
-La bourse est accordée automatiquement dès que vous êtes inscrit dans un programme de doctorat dans une université admissible. Pour postuler, vous devez donc [faire une demande d'admission](/guides/canada/admission) à l'Université. 
+La bourse est accordée automatiquement dès que vous êtes inscrit dans un programme de doctorat dans une université admissible. Pour postuler, vous devez donc [faire une demande d’admission](/guides/canada/admission) à l’Université. 
 
-Nos guides gratuits vous indiquent comment vous y prendre. Si vous avez besoin d'une assistance pour maximiser vos chances d'admission, vous pouvez toujours souscrire à notre [service d'accompagnement](/accompagnement).
+Nos guides gratuits vous indiquent comment vous y prendre. Si vous avez besoin d’une assistance pour maximiser vos chances d’admission, vous pouvez toujours souscrire à notre [service d’accompagnement](/accompagnement).
 
 Pour en savoir plus à ce sujet, consultez les liens suivant sur quelques universités offrant cette bourse: <a href="https://www.bbaf.ulaval.ca/bourses-detudes/etudiants-etrangers/exemption-droits-de-scolarite-supplementaires" target="_blank" rel="nofollow noopener">Université Laval</a>, <a href="https://vie-etudiante.uqam.ca/aide-financiere/bourses/concours-etudiants-etrangers.html#bourses-d-exoneration-des-droits-majores-pour-etudiants-etrangers-au-doctorat" target="_blank" rel="nofollow noopener">Université du Québec à Montréal</a>, <a href="https://fesp.umontreal.ca/ce-quil-faut-savoir/financement/bourses/bourses-dexemption-des-droits-supplementaires-de-scolarite-pour-etudiants-internationaux-c/" target="_blank" rel="nofollow noopener">Université de Montréal</a>

@@ -1,5 +1,5 @@
 ---
-title: Bourse d'études de l’initiative d’Ashinaga pour les orphelins d'Afrique.
+title: Bourse d’études de l’initiative d’Ashinaga pour les orphelins d’Afrique.
 deadline: 2019-12-13T02:00:00.000Z
 excerpt: >-
   Ashinaga est une organisation à but non lucratif basée au Japon, qui procure
@@ -64,4 +64,4 @@ Une fois que vous avez réuni les documents requis, vous pouvez choisir de postu
 2. Remplissez le formulaire de candidature puis numérisez-le ainsi que tous les documents requis ci-haut en format PDF ou JPEG
 3. Envoyer le formulaire et vos documents dans un seul email à <a href="mailto:**admissions.fr@ashinaga.org**">**admissions.fr@ashinaga.org**</a>. Utilisez votre nom et pays comme titre de votre adresse email.
 
-Pour plus d'informations sur la bourse, veuillez consulter <a href="https://en.ashinaga.org/candidatures/?lang=fr" target="_blank" rel="noopener noreferrer">le site web du programme.</a>
+Pour plus d’informations sur la bourse, veuillez consulter <a href="https://en.ashinaga.org/candidatures/?lang=fr" target="_blank" rel="noopener noreferrer">le site web du programme.</a>

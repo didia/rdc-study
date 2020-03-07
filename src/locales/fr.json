@@ -5,7 +5,7 @@
   "footer.copyright": "© RDC Etudes. Tous droits réservés",
 
   "footer.contact-form.error.title": "Oups!!",
-  "footer.contact-form.error.message-text": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer plutârd ou contactez nous à travers nos réseaux sociaux.",
+  "footer.contact-form.error.message-text": "Une erreur est survenue lors de l’envoi de votre message. Veuillez réessayer plutârd ou contactez nous à travers nos réseaux sociaux.",
   "footer.contact-form.email-label": "Email",
   "footer.contact-form.message-label": "Message",
   "footer.contact-form.name-label": "Nom",
@@ -13,7 +13,7 @@
   "footer.contact-form.success.title": "Message envoyé",
   "footer.contact-form.success.message-text": "Nous vous remercions de nous avoir contacté. Nous vous répondrons dans le plus bref délai. Merci!",
 
-  "footer.contact-us-text": "Avez-vous des questions ou besoin d'informations supplémentaires? N'hésitez donc pas de nous contacter, de préférence à travers nos médias sociaux.",
+  "footer.contact-us-text": "Avez-vous des questions ou besoin d’informations supplémentaires? N’hésitez donc pas de nous contacter, de préférence à travers nos médias sociaux.",
   "footer.privacy-policy": "Politique de confidentialité",
   "footer.title": "Contactez-nous",
 
@@ -28,7 +28,7 @@
   "menu.scholarships-link-label": "Bourses d'études",
   "menu.title": "Menu",
 
-  "not-found.message-text": "La page à laquelle vous essayez d‘accéder n'existe pas ou n'existe plus!",
+  "not-found.message-text": "La page à laquelle vous essayez d‘accéder n’existe pas ou n’existe plus!",
   "not-found.return-home-button-text": "Retourner à l‘accueil",
   "not-found.title": "Page non trouvée",
 
@@ -78,13 +78,13 @@
   "pages.assistance.questions.description": "Vous ne savez pas par où commencer? Nous sommes là pour vous aider.",
   "pages.assistance.questions.title": "Des questions?",
 
-  "pages.assistance.visa.warning": "NB: Le service d'assistance visa se fait dans le respect strict des lois des pays concernés et dépend donc de ce que ces pays nous autorisent à faire. ",
+  "pages.assistance.visa.warning": "NB: Le service d’assistance visa se fait dans le respect strict des lois des pays concernés et dépend donc de ce que ces pays nous autorisent à faire. ",
   "pages.assistance.visa.warning-learn-more": "Cliquez ici pour en savoir plus.",
 
   "pages.guides-show.assistance.description-1": "Bien que nos guides soient conçus pour vous permettre de faire vous-mêmes vos démarches, il se peut que vous ayez besoin d’un accompagnement particulier pour augmenter vos chances de réussite.",
   "pages.guides-show.assistance.description-2": "C’est ainsi que nous mettons à votre disponibilité un service d’accompagnement sur mesure basé sur la transparence, l’honnêteté et la serviabilité.",
   "pages.guides-show.assistance.link-text": "En savoir plus",
-  "pages.guides-show.assistance.title": "Avez-vous besoin d'assistance?",
+  "pages.guides-show.assistance.title": "Avez-vous besoin d’assistance?",
   "pages.guides-show.other-guides.title": "Autres guides qui pourraient vous intéresser",
   "pages.guides-show.related-guides.title": "Guides réliés",
 
@@ -110,17 +110,17 @@
   "pages.index.services.verification.contact-us-text": "Contactez nous",
   "pages.index.services.verification.title": "Un service de vérification Gratuit!!!",
 
-  "pages.scholarships.active-only-link-label": "Cliquez ici pour n'afficher que les offres en cours.",
+  "pages.scholarships.active-only-link-label": "Cliquez ici pour n’afficher que les offres en cours.",
   "pages.scholarships.all-disclaimer": "NB: Cette page affiche toutes les offres des bourses y compris celles expirées.",
   "pages.scholarships.all-scholarships-link-label": "Cliquez ici pour afficher les offres expirées.",
-  "pages.scholarships.active-only-disclaimer": "NB: Cette page n'affiche que les offres des bourses d'études actives.",
+  "pages.scholarships.active-only-disclaimer": "NB: Cette page n’affiche que les offres des bourses d'études actives.",
 
   "pages.scholarships-show.other-scholarships.title": "Autres bourses",
 
   "scholarship-deadline.expiration-date": "Expire le <time datetime=\"{date}\">{deadline}</time>",
   "scholarship-deadline.expired": "Clôturée le <time datetime=\"{date}\">{deadline}</time>",
   "scholarship-deadline.no-expiration": "Aucune date limite",
-  "scholarship-deadline.remaining-days": "<time datetime=\"{date}\">{days, plural,\n =0 {Dernier jour aujourd'hui}\n one {Dernier jour demain}\n other {# jours restants}}</time>",
+  "scholarship-deadline.remaining-days": "<time datetime=\"{date}\">{days, plural,\n =0 {Dernier jour aujourd’hui}\n one {Dernier jour demain}\n other {# jours restants}}</time>",
 
   "scholarship-levels.all": "Tous les niveaux académiques",
   "scholarship-levels.graduate": "Master",
@@ -150,9 +150,9 @@
   "shared.countries.tr": "Turquie",
   "shared.countries.us": "États-Unis",
 
-  "shared.newsletter.alert.error": "Une erreur inconnue est survenue lors de l'abonnement 😞",
+  "shared.newsletter.alert.error": "Une erreur inconnue est survenue lors de l’abonnement 😞",
   "shared.newsletter.alert.success": "Yay 🎉🎉 Vous avez été abonné avec succès!",
-  "shared.newsletter.button-label": "M'abonner",
+  "shared.newsletter.button-label": "M’abonner",
   "shared.newsletter.input-placeholder": "Votre adresse email",
   "shared.newsletter.title": "Abonnez-vous à notre infolettre",
   "shared.newsletter.subtitle": "Toutes les nouveautés sur les bourses et les études à l'étranger directement dans votre boîte email.",

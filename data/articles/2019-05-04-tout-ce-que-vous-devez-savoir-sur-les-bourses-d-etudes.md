@@ -23,9 +23,9 @@ thumbnailCredits: >-
   5h10v18H0V14h10v9h12v-9z"></path></svg></span><span
   style="display:inline-block;padding:2px 3px">Vasily Koloda</span></a>
 tags:
-  - Bourse d'études
+  - Bourse d’études
   - étudier gratuitement
-  - étudier à l'étranger
+  - étudier à l’étranger
 date: '2019-05-04T19:21:07-04:00'
 ---
 En effet, les étudiants cherchent souvent une bourse d’études pouvant prendre en charge toutes leurs dépenses, c’est-à-dire les frais de scolarité, le logement et les frais de subsistance dans leur pays de destination. Cependant, c’est très rare de tomber sur les bourses d’études qui offrent tous ces avantages.
@@ -38,12 +38,12 @@ Il existe trois types de bourses d’études en ce qui concerne la couverture de
 
 1. **_Les bourses d’études complètes_**\
    Les bourses complètes sont celles qui couvrent non seulement les frais de scolarité mais aussi tous les autres frais nécessaires à la survie de l’étudiant dans son pays de destination. Ces bourses sont les plus sollicitées des étudiants et en même temps les plus rares. Elles sont souvent offertes par des gouvernements ou des grands organismes internationaux.\
-   Par exemple, la Turquie via son [programme de bourse d'études pour les étudiants étrangers](https://www.rdcetudes.com/articles/2019-01-20-candidatures-ouvertes-pour-le-programme-de-bourses-d-etudes-2019-en-turquie) offre des bourses d'études complètes.
+   Par exemple, la Turquie via son [programme de bourse d’études pour les étudiants étrangers](https://www.rdcetudes.com/articles/2019-01-20-candidatures-ouvertes-pour-le-programme-de-bourses-d-etudes-2019-en-turquie) offre des bourses d’études complètes.
 2. _**Les bourses d’études partielles**_\
    Ces formes de bourses sont les plus populaires. Elles consistent souvent à une prise en charge partielle des frais de scolarité de l’étudiant ou tout autre frais nécessaire à son séjour dans son pays de destination. Ces bourses sont souvent offertes par les universités, des organismes de charité ou des bienfaiteurs.\
    Le gouvernement brésilien par exemple par son [programme PEC-G](https://www.rdcetudes.com/articles/2018-08-01-etudier-gratuitement-au-br%C3%A9sil-c-est-possible) permet aux étudiants sélectionnés d’étudier gratuitement mais la subsistance est assurée par l’étudiant (e). 
 3. _**Les ententes des réductions de frais académiques**_\
-   Généralement les étudiants étrangers paient des frais académiques supérieures à ceux des étudiants nationaux. Cependant certaines ententes entre pays permettent aux étudiants étrangers de payer comme les étudiants nationaux. Généralement, si ces ententes existent entre votre pays d’origine et celui de destination, vous devez faire la demande de cette réduction auprès de votre ministère de l’éducation ou auprès de l’ambassade de votre pays dans le pays de destination. L'Université d'Ottawa par exemple accorde [une exonération partielle des frais de scolarités](https://www.rdcetudes.com/articles/2018-07-30-%C3%A9tudier-%C3%A0-co%C3%BBts-r%C3%A9duits-%C3%A0-l-universit%C3%A9-d-ottawa) aux étudiants francophones.
+   Généralement les étudiants étrangers paient des frais académiques supérieures à ceux des étudiants nationaux. Cependant certaines ententes entre pays permettent aux étudiants étrangers de payer comme les étudiants nationaux. Généralement, si ces ententes existent entre votre pays d’origine et celui de destination, vous devez faire la demande de cette réduction auprès de votre ministère de l’éducation ou auprès de l’ambassade de votre pays dans le pays de destination. L’Université d’Ottawa par exemple accorde [une exonération partielle des frais de scolarités](https://www.rdcetudes.com/articles/2018-07-30-%C3%A9tudier-%C3%A0-co%C3%BBts-r%C3%A9duits-%C3%A0-l-universit%C3%A9-d-ottawa) aux étudiants francophones.
 
 ## Types de bourses d’études selon la source.
 
@@ -64,4 +64,4 @@ Ainsi dit, vous voyez qu’il y’a plusieurs types de bourses auxquelles vous p
 
 Nous savons aussi qu’il n’est pas évident de trouver les bourses disponibles et souvent l’information est juste partagée à un certain groupe de personnes. C’est pour cette raison que RDC Études existe. Notre objectif est de rendre cette information disponible à tout le monde et d’assister ceux qui en ont besoin dans leurs démarches d’obtention de bourse.
 
-Pour plus d'informations concernant les procédures pour étudier à l'étranger, consultez nos guides ( [Belgique](https://www.rdcetudes.com/guides/belgique), [Canada](https://www.rdcetudes.com/guides/canada), [Etats-Unis](https://www.rdcetudes.com/guides/usa)).
+Pour plus d’informations concernant les procédures pour étudier à l’étranger, consultez nos guides ( [Belgique](https://www.rdcetudes.com/guides/belgique), [Canada](https://www.rdcetudes.com/guides/canada), [Etats-Unis](https://www.rdcetudes.com/guides/usa)).

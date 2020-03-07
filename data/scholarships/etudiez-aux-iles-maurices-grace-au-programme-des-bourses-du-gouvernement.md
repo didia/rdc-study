@@ -4,7 +4,7 @@ title: 'ÉTUDIEZ AUX ÎLES MAURICES GRÂCE AU PROGRAMME DES BOURSES DU GOUVERNEM
 deadline: 2020-04-30T12:17:56.368Z
 excerpt: >-
   Le gouvernement de Maurice offre des bourses à des étudiants méritants qui
-  sont des citoyens résidents des membres des états de l'Union africaine ou des
+  sont des citoyens résidents des membres des états de l’Union africaine ou des
   pays africains du Commonwealth pour les trois cycles d’enseignement supérieur
   à savoir ; Licence, Master et Doctorat.
 thumbnail: >-
