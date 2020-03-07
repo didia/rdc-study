@@ -9,7 +9,7 @@ topic: 'admission'
 related: ['belgique/visa']
 ---
 
-Le processus d’admission restent sensiblement le même pour la majorité d’universités belges. Si vous êtes étudiants résidant hors de l’union européene comme c’est le cas pour les congolais, vous devez présenter votre demande d’admission entre le 15 février et le 30 avril de chaque année.
+Le processus d’admission reste sensiblement le même pour la majorité d’universités belges. Si vous êtes étudiants résidant hors de l’union européene comme c’est le cas pour les congolais, vous devez présenter votre demande d’admission entre le 15 février et le 30 avril de chaque année.
 \
 \
 Cependant les conditions d’admission, elles, dépendent du niveau et du domaine d’études que vous désirez poursuivre.\
