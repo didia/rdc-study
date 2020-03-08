@@ -24,7 +24,7 @@ targetCountries:
 - Une exemption de paiement des frais académiques à l’exception des taxes
   semestrielles de **80 \$**.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 - Obtenir un diplôme universitaire étranger (généralement une licence) jugé
   équivalent à un bachelor de l’UNIL avant le début du programme de master à

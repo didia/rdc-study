@@ -36,7 +36,7 @@ Au cas où vous n'êtes pas retenu comme boursier DYCLAM+, vous pouvez bénéfic
 
 Pour en savoir plus, veuillez consulter <a href="http://www.dyclam.eu/futurs-etudiants/bourse-et-aides-financieres/" target="_blank" rel="noopener noreferrer">cette page web sur les bourses et aides financières du consortium DYCLAM.</a>
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Détenir une licence dans n’importe quel domaine ou être en voie d’obtention d’une licence. Si vous êtes en voie d’obtention d’une licence, vous n’obtiendrez votre admission que si vous envoyez une preuve d’obtention de la licence avant la fin du mois de juillet de l’année du début des cours;
 * Qualité et cohérence de votre cursus;

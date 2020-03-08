@@ -26,7 +26,7 @@ targetCountries:
 
 **La bourse sera renouvelée chaque année sous réserve de résultats académiques satisfaisants.**
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 

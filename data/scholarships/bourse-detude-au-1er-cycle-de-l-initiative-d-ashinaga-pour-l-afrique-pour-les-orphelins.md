@@ -24,7 +24,7 @@ targetCountries:
 - Le transport;
 - Une allocation mensuelle.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 - Être orphelin de père ou de mère ou encore de deux ( fournir un document officiel en attestant).
 - Avoir terminé le cycle secondaire et avoir obtenu le baccalauréat (les baccalauréats techniques, technologiques ou professionnels ne sont pas acceptés) après le 1er septembre 2017 (2018 et 2019 inclus) ou l’obtiendront avant le 28 février 2020.

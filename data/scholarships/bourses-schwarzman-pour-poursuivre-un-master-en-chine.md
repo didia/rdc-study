@@ -35,7 +35,7 @@ couvre:
 
 - Une allocation de 4000 \$ pour les dépenses personnelles.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 - Avoir une license ou un diplôme équivalent.
 

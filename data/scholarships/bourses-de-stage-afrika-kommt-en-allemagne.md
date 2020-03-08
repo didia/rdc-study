@@ -28,7 +28,7 @@ Le programme de bourse AFRICA KOMMIT consiste à un stage d’une durée de 8 mo
 - d’accroître leurs compétences a la gestion internationale;
 - d’initier des réseaux de coopérations entre l’Afrique et les entreprises allemandes.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour participer au programme de stage AFRIKA KOMMT vous devez remplir les conditions suivantes:
 

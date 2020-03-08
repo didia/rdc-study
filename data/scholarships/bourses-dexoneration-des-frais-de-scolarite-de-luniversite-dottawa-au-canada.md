@@ -19,7 +19,7 @@ targetCountries:
 
 Normalement les étudiants non canadiens paient des frais de scolarité supplémentaires comparés aux étudiants canadiens dans toutes les universités au Canada. Cependant, une bourse d’exonération partielle permet aux étudiants internationaux de payer des frais de scolarité semblable aux étudiants canadiens. En moyenne, les frais pour étudiants sans exonérations s’élèvent à 25 554 dollars canadiens tandis que les étudiants avec exonérations ne paient que 6 376 dollars canadiens. Donc une réduction d’un peu plus de 19 000 dollars canadiens.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Pour bénéficier de la bourse, vous devez être admis dans un programme se donnant en français ou un programme offrant un régime d’immersion française.
 

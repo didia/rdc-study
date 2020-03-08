@@ -30,7 +30,7 @@ Cette bourse finance une année d’apprentissage de langue ainsi que 2 à 3 ans
 
 **NB: Pour pouvoir bénéficier d’une allocation complète, veuillez postuler jusqu’au plus tard le 15 décembre. Ceux qui postuleront après cette date recevront une demi-allocation.**
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour bénéficier de la bourse vous devez remplir les critères suivants:
 

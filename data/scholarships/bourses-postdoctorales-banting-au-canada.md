@@ -37,7 +37,7 @@ targetCountries:
 
 * Une bourse de 70 000 dollars canadiens par année pour une durée de deux ans non renouvelable.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Vous devez avoir obtenu ou vous obtiendrez votre diplôme de doctorat entre le 16 septembre 2016 et le 30 septembre 2020,
 * Votre programme de recherche vise soit les domaines de la santé, soit les sciences naturelles et/ou ingénierie ou soit les sciences sociales et humaines.

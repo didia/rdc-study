@@ -52,7 +52,7 @@ Qui couvrent :
 * Transport au Japon : Vous avez droit à un billet aller-retour vers et à partir du Japon;
 * Les frais pour l’examen d’entrée, l’inscription et les frais de scolarité.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Chacune de ces bourses dispose de ses propres critères d’éligibilité; veuillez donc postuler pour la catégorie qui correspond le mieux à votre situation personnelle. Vous les trouverez sur <a href="https://www.studyjapan.go.jp/fr/index.html" target="_blank" rel="noreferrer noopener">le site du ministère.</a>
 

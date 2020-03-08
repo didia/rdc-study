@@ -38,7 +38,7 @@ Pour les bourses de Stage, vous avez:
 - Frais d’assurance payés par ARES;
 - Des frais de déplacement dans le cadre de formations interuniversitaires sont aussi remboursées.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour que sa demande soit recevable, le candidat doit:
 

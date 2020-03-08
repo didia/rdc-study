@@ -18,7 +18,7 @@ La [Women Techmakers Scholars](https://www.womentechmakers.com/scholars) consist
 7 000 EUR (ou équivalent local) pour l’année universitaire (bourse WTM pour l’informatique et les jeux)\
 5 000 EUR (ou équivalent local) pour la durée de leurs études de premier cycle (bourse WTM Irish University)
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour être bénéficiaire de la Bourse vous devez remplir les conditions suivantes:
 

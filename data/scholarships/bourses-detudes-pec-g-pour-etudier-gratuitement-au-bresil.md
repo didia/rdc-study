@@ -25,7 +25,7 @@ targetCountries:
 
 La bourse PEC-G est une bourse partielle d’exonération des droits d’admissions ainsi que des frais académiques. C’est à dire que le gouvernement brésilien paiera vos frais d’admission à l’Université ainsi que les frais académiques. Toutefois vous devrez vous-même subvenir à vos besoins de logement et d’alimentation. 
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Vous devez avoir entre 18 et 23 ans;
 * Vous devez avoir obtenu une moyenne d’au moins 60 % aux examens d’état et pendant vos études secondaires;

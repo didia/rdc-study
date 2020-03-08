@@ -27,7 +27,7 @@ Plusieurs diplômés de l’Académie reçoivent des offres des bourses d’étu
 * Counselling universitaire - Naviguer dans le processus d’admission universitaire mondial.Équipez les chercheurs pour partager leurs histoires et servir d’ambassadeurs pour leur pays.Préparez les chercheurs aux défis de vivre et d’étudier dans un pays étranger.
 * Orientation professionnelle - Fournir des évaluations professionnelles personnelles, des visites dans l’industrie et des orientations professionnelles concernant les secteurs de croissance de l’Afrique, les employeurs et les opportunités professionnelles
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour bénéficier du programme des bourses B2R vous devez :
 

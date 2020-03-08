@@ -25,7 +25,7 @@ targetCountries:
 
 **NB: Vous pouvez peuvent également bénéficier à des fonds supplémentaires pour soutenir l’enrichissement académique et le bien-être (par exemple, les voyages de conférence). Pour plus d’informations, veuillez consulter le site web <https://financialaid.stanford.edu/grad/budget/index.html>**
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour être éligible à la bourse Knight-Hennessy  vous devez d’abord 
 

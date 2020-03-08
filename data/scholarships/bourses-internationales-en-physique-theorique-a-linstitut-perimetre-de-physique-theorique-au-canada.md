@@ -28,7 +28,7 @@ La bourse couvre:
 * Matériel informatique nécessaire
 * Supplément de voyage
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Si vous souhaitez postuler à la bourse, vous devez avoir suivi les cours suivants:
 

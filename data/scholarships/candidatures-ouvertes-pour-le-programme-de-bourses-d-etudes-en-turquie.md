@@ -31,7 +31,7 @@ targetCountries:
 - Une année de cours de langue turque;
 - Un billet d’avion pour retourner chez soi à la fin des études.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 - Vous devez avoir une moyenne académique au dessus du minimum attendu: **70 %** pour la license, **75 %** pour le master et le doctorat;
 - Pour les étudiants en sciences de la santé, le minimum requis est de **90 %;**

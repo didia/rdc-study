@@ -27,7 +27,7 @@ targetCountries:
 
 La bourse consiste en un montant total de **30 000 $**, soit **7 500 $** par année. Ce montant sera directement versé dans votre compte étudiant à partir de mi-juillet, le versement se fait en deux tranches au mois de  Septembre et pour finir au mois de Janvier, si vous aviez déjà payé vos droits de scolarité avant de recevoir la bourse vous pouvez faire une demande de remboursement en ligne.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Vous devez être admis à un programme de premier cycle à l’Université d’Ottawa;
 * Vous devez avoir obtenu une moyenne d’admission d’au moins 92 %, c’est à dire une moyenne de 92 % dans les cours prérequis dans votre programme d’admission;

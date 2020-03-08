@@ -42,7 +42,7 @@ targetCountries:
 
 Normalement les étudiants non canadiens paient des frais de scolarité supplémentaires comparés aux étudiants canadiens dans toutes les universités au Canada. Cependant, une bourse d’exonération partielle permet aux étudiants internationaux de payer des frais de scolarité semblable aux étudiants canadiens.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour postuler, il faut avoir obtenu une admission dans un programme de doctorat dans une université canadienne qui offre cette bourse d’exonération. Les conditions d’admission diffèrent souvent d’une université à l’autre, cependant quelques éléments restent communs, notamment :
 

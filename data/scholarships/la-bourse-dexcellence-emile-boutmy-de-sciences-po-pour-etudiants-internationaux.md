@@ -31,7 +31,7 @@ Pour le master, la bourse peut être:
 * Une subvention de 10 000 € par an pour couvrir les frais de scolarité pour les deux années du master.
 * Une bourse d’enseignement de 5 000 € par an pour les deux années du master.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour être éligibles à la bourse, vous devez être originaire d’un État non membre de l’union européenne et admis au programme de premier cycle ou à la maîtrise. Vous devez donc avoir obtenu votre diplôme d’études secondaires ou licence hors union européenne.
 

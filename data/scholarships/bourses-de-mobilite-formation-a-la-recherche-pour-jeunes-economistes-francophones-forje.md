@@ -38,7 +38,7 @@ targetCountries:
 * Allocation forfaitaire applicable aux frais d’installation dans le pays de séjour, aux frais de visa et aux frais de transport (montant variable en fonction du pays de séjour);
 * Allocation mensuelle de subsistance (montant variable en fonction du pays de séjour)
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Avoir 35 ans ou moins;
 * Être originaire d’un pays africain francophone;

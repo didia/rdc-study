@@ -39,7 +39,7 @@ les informations sur <a
   target="_blank" rel="noopener noreferrer">le site web de la bourse
 d’études.</a>
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 La CFBE examine les demandes de bourse selon les trois critères suivants:
 

@@ -16,7 +16,7 @@ targetCountries:
 
 Le programme dure deux ans et couvre presque la totalité (93%) des frais de scolarité et ses étudiants bénéficient d’une bourse d’environ $14,451 par an pour vivre.  Les services de l’université aident les étudiants étrangers à remplir les formalités en vue de l’obtention du visa nécessaire. 
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Candidats qui souhaitent enseigner la littérature au niveau secondaire ou universitaire
 * Avoir obtenu une licence + un an d’études en lettres françaises, en littérature comparée, en anglais, en philosophie, ou en tout autre domaine des « humanités »

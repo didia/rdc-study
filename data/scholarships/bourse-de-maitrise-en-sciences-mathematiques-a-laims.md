@@ -20,7 +20,7 @@ targetCountries:
 
 <a href="https://www.nexteinstein.org/" target="_blank" rel="noopener noreferrer">L’Institut Africain des Sciences Mathématiques</a> offre des bourses complètes de 3 semestres axées sur la résolution de problèmes informatiques et les compétences en programmation. Les boursiers auront la possibilité de rivaliser dans les domaines les plus avancés des sciences mathématiques. La bourse couvre l’hébergement, l’alimentation et les frais de voyage.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour bénéficier à la bourse de Master, vous devez remplir les conditions suivantes:
 

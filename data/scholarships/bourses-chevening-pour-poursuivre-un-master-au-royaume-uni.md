@@ -36,7 +36,7 @@ de l’étudiant sont pris en charge par le gouvernement britannique y compris:
 
 - Des frais de voyage pour participer aux événements Chevening une fois au UK
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 - Vous avez un diplôme de licence ou un équivalent.
 

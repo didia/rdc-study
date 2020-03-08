@@ -17,7 +17,7 @@ targetCountries:
 
 Le programme de stage consiste en une formation de 9 mois non renouvelable où les stagiaires collaboreront aux activités de recherche et de préparation des expositions, publications, initiatives éducationnelles, événements publics, et aux activités de communication et de collection. Les candidats retenus recevront une bourse de 2 500 CAD (dollars canadiens) par mois durant toute la période du stage pour couvrir les frais de logement et de séjour à Montréal (assujettie aux lois de l’impôt sur le revenu du Canada et du Québec, si applicables)
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour bénéficier du programme de stage, vous devez remplir les conditions suivantes:
 

@@ -32,7 +32,7 @@ NB: Les frais de voyage aller-retour tout comme votre équipement personnel pour
 
 Pour en savoir plus sur ce qu’offre cette bourse, consultez la section à ce sujet sur <a href="http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/financement/http://itk.spowi.uni-leipzig.de/fr/les-etudes-inscription/financement/" target="_blank" rel="noreferrer noopener">le site web de la bourse d’études</a>
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour bénéficier de la formation, vous devez remplir les conditions suivants:
 

@@ -23,7 +23,7 @@ targetCountries:
 3. Une assurance maladie, accident et responsabilité civile
 4. Frais de déplacement
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour bénéficier de la bourse EPOS DAAD, vous devez remplir les critères suivants:
 

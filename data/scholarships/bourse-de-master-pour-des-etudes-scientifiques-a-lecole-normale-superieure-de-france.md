@@ -24,7 +24,7 @@ Le concours de la sélection internationale s’adresse à des étudiants scient
 
 Les lauréats du concours sont normaliens étudiants. Ils perçoivent une bourse mensuelle d’un montant de **1000 euros** pendant 3 ans et disposent d’une chambre sur un des campus de l’École. Au terme de leurs études, ils obtiennent le diplôme de l’École normale supérieure ainsi qu’un master dans leur domaine de spécialité.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Postuler avant d’atteindre votre 26 ème anniversaire;
 * Candidater à la sélection internationale de l’ENS pour la première fois;

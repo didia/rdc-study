@@ -18,6 +18,6 @@ targetCountries:
 
 ## En quoi consiste la bourse ?
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 ## Comment postuler ?

@@ -26,7 +26,7 @@ Le gouvernement de la Roumanie offrent 85 bourses d’études de premier et aux 
 
 **NB: la bourse ne couvre pas l’alimentation, le transport international et local. Les candidats doivent être prêts à supporter personnellement toute autre dépense supplémentaire.**
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour bénéficier de la bourse, vous devez remplir les conditions suivantes:
 

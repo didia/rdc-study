@@ -34,7 +34,7 @@ La bourse consiste en une aide financière non renouvelable dont le montant dép
 * La maitrise (Deuxième cycle): 3 bourses de 5 000 $.
 * Le collège (Equivalent Graduat): 3 bourses de 3 500 $.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Vous devez avoir au moins 80 % comme moyenne d’admission.
 * Vous devez être à votre première année de votre programme.

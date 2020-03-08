@@ -27,7 +27,7 @@ Les bourses Fulbright font partie des rares bourses complètes disponibles aux a
 * Une allocation pour l’achat des livres et d’autres équipements
 * La participation aux séminaires et conférences professionnelles du programme Fulbright.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Être citoyen résidant du pays à partir duquel vous postulez;
 * Avoir un diplôme de licence;

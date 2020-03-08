@@ -17,7 +17,7 @@ targetCountries:
 
 La bourse ne couvre que les frais de scolarité. Vous devrez acquitter le montant correspondant aux frais d’inscription dans le délai fixé. Avant de participer au concours, nous vous recommandons de vérifier les frais [sur ce lien](https://iedbarcelona.es/wp-content/uploads/2019/12/Becas-IED-BCN-2020-2021-1.pdf). En plus des frais d’inscriptions, les différentes dépenses aussi sont à votre charge.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 

@@ -34,7 +34,7 @@ sélectionnés, notamment :
 - Orientation professionnelle et réseautage dans le marché de l’emploi des
   pays d’origine.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 1. Être admissible à l’un des programmes d’études participants de l’Université
    McGill (<a

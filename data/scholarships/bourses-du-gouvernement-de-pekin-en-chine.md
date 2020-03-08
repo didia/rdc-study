@@ -20,7 +20,7 @@ targetCountries:
 
 La bourse du gouvernement de Pékin ne couvre uniquement que les frais académiques. 40 000 RMB (**5685 $**)/an pour le doctorat, 30 000 RMB (**4264 $**)/an pour le master, 20 000 RMB (**2842 $**)/an pour la licence, 10 000 RMB (**1421 $**)/an pour les étudiants en langues.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Être en bonne santé;
 * Les candidats au doctorat doivent être titulaires d’un master et avoir moins de 40 ans; ceux au master doivent être titulaires d’un baccalauréat et avoir moins de 35 ans et enfin ceux en licence doivent être titulaire d’un diplôme d’études secondaires et avoir moins de 30 ans;

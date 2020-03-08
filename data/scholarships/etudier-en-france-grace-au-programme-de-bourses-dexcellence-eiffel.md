@@ -31,7 +31,7 @@ targetCountries:
 * Les activités culturelles;
 * Sous certaines conditions, vous pouvez aussi bénéficier de l’allocation supplémentaire de logement, dans les 3 mois qui suivent la signature du bail.
 
-## Quelles sont les critères de la bourse ?
+## Quels sont les critères de la bourse ?
 
 * Vous ne possédez pas la nationalité française.
 * Vous avez 30 ans ou moins pour le master et 35 ans ou moins pour le doctorat.
