@@ -59,14 +59,10 @@ Ensuite, vous devez rassembler les documents suivants:
 
 Le dossier des candidatures doit être envoyé par courrier (EMS/DHL/Fedex) à l’adresse suivante:
 
-**The Program Manager**
-
+**The Program Manager**\
 **Mastercard Foundation Scholars Program at KNUST Secretariat**
-
-**℅ Office of the Dean of Students**
-
-**Private Mail Bag**
-
+**℅ Office of the Dean of Students**\
+**Private Mail Bag**\
 **KNUST, Kumasi, Ghana**
 
 Pour plus d’informations sur cette bourse, consultez <a href="https://mcf.knust.edu.gh/announcements/general/call-applications-mastercard-foundation-scholarship-2020" target="_blank" rel="noreferrer noopener">le site de la bourse.</a>
