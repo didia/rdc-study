@@ -5,10 +5,15 @@ title: >-
   Ghana
 deadline: 2020-05-02T01:42:04.185Z
 excerpt: >-
-  La fondation Mastercard offre à 700 jeunes universitaires talentueux mais
-  économiquement défavorisés au Ghana et en Afrique un accès à une éducation de
-  qualité, tout en renforçant leurs compétences en leadership et leur capacité à
-  contribuer dans leurs communautés.
+  La fondation Mastercard offre aux jeunes universitaires talentueux mais
+  économiquement défavorisés d’Afrique un accès à une éducation de qualité, tout
+  en renforçant leurs compétences en leadership et leur capacité à contribuer
+  dans leurs communautés.
+tags:
+  - bourses mastercard
+  - Ghana
+  - bourses d’études
+  - bourses complètes
 thumbnail: /images/uploads/KNUST.jpg
 startDate: 2020-02-25T01:42:04.214Z
 levels:
@@ -35,7 +40,8 @@ Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 * Avoir des preuves d’engagement et de leadership dans votre communauté;
 * Démontrer que vous êtes économiquement dans le besoin;
 * Être prêt à contribuer en retour à votre communauté à travers des stages et formations;
-* La priorité sera accordée aux femmes, déplacés de guerre ou réfugiés et aux personnes avec handicaps;
+
+La priorité sera accordée aux femmes, déplacés de guerre ou réfugiés et aux personnes avec handicaps;
 
 ## Comment postuler ?
 
@@ -65,6 +71,4 @@ Le dossier des candidatures doit être envoyé par courrier (EMS/DHL/Fedex) à l
 
 Pour plus d’informations sur cette bourse, consultez <a href="https://mcf.knust.edu.gh/announcements/general/call-applications-mastercard-foundation-scholarship-2020" target="_blank" rel="noreferrer noopener">le site de la bourse.</a>
 
-Si vous avez besoin d’aide pour postuler et que vous pouvez communiquer en anglais, contactez directement le secrétariat de la bourse au 
-
-Pour plus d'informations et d'assistance sur la manière de postuler, veuillez contacter le Secrétariat au <a href="tel:+233206030790">+233-206-030-790</a> / <a href="+233322062975">+233-3220-62975</a> ou envoyez un courriel à <a href="mailto:mcfsecretariat@knust.edu.gh">mcfsecretariat@knust.edu.gh</a> ou <a href="mailto:mcfknust@gmail.com">mcfknust@gmail.com</a>.
+Si vous avez besoin d’aide pour postuler et que vous pouvez communiquer en anglais, contactez directement le secrétariat de la bourse au <a href="tel:+233206030790">+233-206-030-790</a> / <a href="+233322062975">+233-3220-62975</a> ou envoyez un courriel à <a href="mailto:mcfsecretariat@knust.edu.gh">mcfsecretariat@knust.edu.gh</a> ou <a href="mailto:mcfknust@gmail.com">mcfknust@gmail.com</a>.
