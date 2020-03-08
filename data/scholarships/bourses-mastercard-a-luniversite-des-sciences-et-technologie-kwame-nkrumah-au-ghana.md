@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: >-
   Bourses Mastercard à l'université des sciences et Technologie Kwame Nkrumah au
   Ghana
