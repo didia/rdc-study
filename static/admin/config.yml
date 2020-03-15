@@ -4,6 +4,7 @@ backend:
     - admin
     - editor
   branch: master
+  squash_merges: true
 slug:
   encoding: ascii
   clean_accents: true
