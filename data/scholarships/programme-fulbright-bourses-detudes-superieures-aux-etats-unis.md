@@ -1,17 +1,17 @@
 ---
+draft: false
 title: 'Programme Fulbright: Bourses d''études supérieures aux États-Unis'
-deadline: 2019-10-31T22:59:47.934Z
+deadline: 2020-06-05T22:59:47.934Z
 excerpt: >-
   Le programme Fulbright offre des bourses d’études basées sur le mérite
   permettant aux étudiants étrangers de poursuivre leurs études de Cycle
-  Supérieur aux Etats-unis. La sélection se fait à travers un concours ouvert
-  pendant lequel seront pris en considération la capacité de leadership, le
-  rendement académique ainsi que l’aptitude de survie dans un pays étranger.
+  Supérieur aux Etats-unis.
 tags:
   - >-
     fullbright;fullbright congo;bourses usa;bourses états-unis;bourses d’études
     pour congolais
 thumbnail: /images/uploads/fullbright-program.jpg
+startDate: 2020-03-17T10:39:55.159Z
 levels:
   - graduate
 targetCountries:
@@ -50,4 +50,4 @@ Vous devez avoir également fait des recherches sur les programmes offerts dans 
 
 Sachez que la date limite varie d’un pays à un autre. Généralement la période de dépôt des candidatures se situent entre février et octobre.
 
-Pour avoir plus des précisions, contactez l’ambassade des États-Unis dans votre pays ou consultez le site web <a href="https://foreign.fulbrightonline.org/applicants" target="_blank" rel="noopener noreferrer">https://foreign.fulbrightonline.org/applicants</a>
+Pour avoir plus des précisions, contactez l’ambassade des États-Unis dans votre pays ou consultez le site web <a href="https://apply.iie.org/ffsp2021" target="_blank" rel="noopener noreferrer">https://apply.iie.org/ffsp2021</a>
