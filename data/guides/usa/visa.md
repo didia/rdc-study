@@ -66,4 +66,7 @@ Ces frais se présentent comme suit:
 - **150 USD** pour les frais de VISA.
 - **200 USD** pour les frais d’assistance RDC-Etudes.
 
-**NB**: Ces prix sont juste là à titre d’estimé, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement américain. Veuillez toujours vous fier à leur site web pour les prix plus à jour.
+**NB**:
+- Il se peut que votre pays ait à payer des frais de réciprocité avec les États-Unis. Ces frais varient d’un pays à l’autre. Ces frais s’ajouteront à l’estimation faite ci-haut.
+- Ces prix ne sont là qu’à titre d’estimé, ils peuvent changer par rapport à votre pays de résidence ou encore s’ils sont changés par le gouvernement américain. Veuillez toujours vous fier au site web de l’ambassade des États-Unis dans votre pays pour les prix plus à jour.
+
