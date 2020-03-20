@@ -36,7 +36,7 @@
     "classnames": "^2.2.5",
     "date-fns": "^2.10.0",
     "gatsby": "^2.19.10",
-    "gatsby-image": "^2.2.39",
+    "gatsby-image": "^2.2.41",
     "gatsby-plugin-catch-links": "^2.1.21",
     "gatsby-plugin-feed": "^2.3.27",
     "gatsby-plugin-google-tagmanager": "^2.1.24",
