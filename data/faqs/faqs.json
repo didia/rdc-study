@@ -43,6 +43,10 @@
     {
       "question": "Les diplômes congolais sont – ils reconnus à l’étrangers ? ",
       "answer": "Oui les diplômes congolais sont bien reconnus partout dans le monde. Cependant, parfois les étudiants doivent faire quelques cours préparatoires pour être à jour et bien évoluer dans leurs cheminements."
+    },
+    {
+      "question": "Peux-je introduire ma demande de permis d’études avant l’obtention de mon CAQ ?",
+      "answer": "Non. Vous devez avoir au minimum la lettre d’approbation de votre CAQ avant d’introduire votre demande de permis d’études."
     }
   ]
 }

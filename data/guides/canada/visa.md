@@ -29,7 +29,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     Une fois le paiement effectué, vous recevrez dans votre compte, un document à remplir et une liste des documents additionnels à transmettre au ministère.\
     Rassemblez les documents exigés et renvoyez-les par DHL à l’adresse mentionée dans le document téléchargé.
 
-    Le délai de traitement de la demande du CAQ est de 4 semaines à compter de la date de réception des vos documents. Vous pouvez déjà commencer votre demande de permis d’études pendant que vous attendez votre CAQ.
+    Le délai de traitement de la demande du CAQ est de 4 semaines à compter de la date de réception des vos documents. Vous pouvez déjà commencer votre demande de permis d’études dès que vous aurez la lettre d’approbation de votre demande de CAQ. Vous n’avez pas besoin d’attendre le CAQ papier envoyé par la poste.
 
 2)  ## Choisissez le type de demande
 
