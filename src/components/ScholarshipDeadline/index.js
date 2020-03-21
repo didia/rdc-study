@@ -27,7 +27,7 @@ const getDeadlineMessage = (date, intl) => {
   if (remainingDays >= 0 && remainingDays < MAX_NUMBER_OF_DAYS_IN_MONTH) {
     return {
       color: 'yellow',
-      message: intl.formatHTMLMessage({id: 'scholarship-deadline.remaining-days'}, {date, days: remainingDays})
+      message: intl.formatMessage({id: 'scholarship-deadline.remaining-days'}, {date, days: remainingDays})
     };
   }
 
@@ -37,7 +37,7 @@ const getDeadlineMessage = (date, intl) => {
 
   return {
     color: remainingDays < 0 ? 'red' : 'green',
-    message: intl.formatHTMLMessage({id: messageKey}, {date, deadline: formattedDeadline})
+    message: intl.formatMessage({id: messageKey}, {date, deadline: formattedDeadline})
   };
 };
 
@@ -72,8 +72,7 @@ ScholarshipDeadline.propTypes = {
   date: T.string,
   intl: T.shape({
     formatDate: T.func,
-    formatMessage: T.func,
-    formatHTMLMessage: T.func
+    formatMessage: T.func
   })
 };
 

@@ -117,10 +117,10 @@
 
   "pages.scholarships-show.other-scholarships.title": "Autres bourses",
 
-  "scholarship-deadline.expiration-date": "Expire le <time datetime=\"{date}\">{deadline}</time>",
-  "scholarship-deadline.expired": "Clôturée le <time datetime=\"{date}\">{deadline}</time>",
+  "scholarship-deadline.expiration-date": "Expire le '<time datetime=\"{date}\">'{deadline}'</time>'",
+  "scholarship-deadline.expired": "Clôturée le '<time datetime=\"{date}\">'{deadline}'</time>'",
   "scholarship-deadline.no-expiration": "Aucune date limite",
-  "scholarship-deadline.remaining-days": "<time datetime=\"{date}\">{days, plural,\n =0 {Dernier jour aujourd’hui}\n one {Dernier jour demain}\n other {# jours restants}}</time>",
+  "scholarship-deadline.remaining-days": "'<time datetime=\"{date}\">'{days, plural,\n =0 {Dernier jour aujourd’hui}\n one {Dernier jour demain}\n other {# jours restants}}'</time>'",
 
   "scholarship-levels.all": "Tous les niveaux académiques",
   "scholarship-levels.graduate": "Master",
