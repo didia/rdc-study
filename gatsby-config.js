@@ -18,7 +18,8 @@ const plugins = [
   {
     resolve: 'gatsby-plugin-webpack-bundle-analyzer',
     options: {
-      production: process.env.WITH_BUNDLE_ANALYZER != null
+      production: process.env.WITH_BUNDLE_ANALYZER != null,
+      disable: !process.env.WITH_BUNDLE_ANALYZER
     }
   },
   {

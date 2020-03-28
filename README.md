@@ -13,7 +13,7 @@ npm install --global gatsby-cli
 Then you can run it by:
 
 ```sh
-nv .env npm run develop
+npm start
 ```
 
 ## Producing background images
