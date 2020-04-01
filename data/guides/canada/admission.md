@@ -10,7 +10,7 @@ related: ['canada/visa']
 ---
 
 Le processus d‘admission diffère d‘une institution à une autre. Toutefois les étapes générales sont sensiblement les mêmes dans toutes les institutions.\
-Voici donc les différentes étapes à suivre pour obtenir une admission dans une université américaine.
+Voici donc les différentes étapes à suivre pour obtenir une admission dans une université américaine:
 
 1.  ## Choisir un programme d‘études
 

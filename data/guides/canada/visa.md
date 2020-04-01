@@ -31,7 +31,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
     Le délai de traitement de la demande du CAQ est de 4 semaines à compter de la date de réception des vos documents. Vous pouvez déjà commencer votre demande de permis d’études dès que vous aurez la lettre d’approbation de votre demande de CAQ. Vous n’avez pas besoin d’attendre le CAQ papier envoyé par la poste.
 
-2)  ## Choisissez le type de demande
+2.  ## Choisissez le type de demande
 
     Vous pouvez faire votre demande de permis d’études deux manières: en ligne ou au centre de réception des demandes de visa (CRDV).
 
@@ -40,20 +40,20 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
     Si vous choisissez de faire la demande en ligne, vous devez commencer par créer votre compte sur <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/compte.html" target="_blank" rel="nofollow noopener">le site web de l‘immigration.</a>
 
-3)  ## Obtenir les formulaires exigés pour la demande
+3.  ## Obtenir les formulaires exigés pour la demande
 
     Une liste de formulaires à remplir sont exigés lorsque vous présentez votre demande de permis d’études.\
     Ces formulaires sont disponibles au CRDV ou encore gratuitement en ligne sur <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html" target="_blank" rel="nofollow noopener">le site web de immigration et citoyenneté Canada.</a>
 
     Pour la demande en ligne, les formulaires seront déjà disponible pour téléchargement à travers votre compte.
 
-4)  ## Remplir les formulaires
+4.  ## Remplir les formulaires
 
     Vous devez remplir complètement et avec précision tous les formulaires demandés.\
     Fiez-vous donc au <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html" target="_blank" rel="nofollow noopener">guide en ligne</a> sur le site d‘Immigration Canada pour savoir quoi mettre dans chaque case.\
     Si vous avez toujours des doutes, contactez-nous! Nous offrons des services pour vous accompagner dans ce processus.
 
-5)  ## Rassembler tous les documents exigés
+5.  ## Rassembler tous les documents exigés
 
     Parmi les formulaires obtenus au point 3, vous trouverez un formulaire nommé liste de contrôle.\
     Cette list énumère tous les documents supplémentaires que vous devrez joindre à votre demande y compris vos photos passeport. Assurez-vous de n’oublier aucun document.
@@ -64,7 +64,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
     Si vous faites la demande en ligne, vous n’aurez pas besoin de fournir une bonne partie de ces documents. Toutefois, vous devez founir tous les documents exigés dans la liste de contrôle.
 
-6)  ## Le plan d’études et l’engagement à quitter le Canada après ses études
+6.  ## Le plan d’études et l’engagement à quitter le Canada après ses études
 
     Nous avons créé une section à part pour ces deux documents au vu de leur importance pour la demande de permis d’études.
 
@@ -76,20 +76,20 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
     Si vous avez besoin d’aide pour rédiger ces documents, nous vous encourageons à souscrire à notre [service d’accompagnement](/accompagnement), plus spécifiquement le forfait Visa.
 
-7)  ## Vérifiez que vous avez tous les documents
+7.  ## Vérifiez que vous avez tous les documents
 
     Assurez vous de bien remplir vos formulaires et de présenter tous les documents demandés pour pouvoir compléter votre demande.\
     Un grand nombre d’étudiants se voit refusé la demande par manque d’attention. Un formulaire mal rempli, un document oublié, un document de trop qui n’a pas sa place,
     des preuves financières jugées insuffisantes, une demande jugée incomplète, un manque de plan d’étude, ne pas avoir convaincu l’agent du visa, sont quelques raisons de refus de la plus part des demandes de permis d’études.
 
-8)  ## Déposez votre demande
+8.  ## Déposez votre demande
 
     Vous devez ensuite vous rendre au CRDV pour déposer vos documents. Au dépôt de votre demande, vous allez payer les frais de traitement, les frais du CRDV ainsi que les frais pour les données biométriques.
 
     Si vous avez fait votre demande en ligne, vous allez juste téléverser vos documents en ligne et payer les frais de traitement.\
     Une fois que le bureau aura réçu votre demande, vous serez invité à aller déposer vos données biométriques au CRDV.
 
-9)  ## Examen médicale et réponse à la demande
+9.  ## Examen médicale et réponse à la demande
 
     Le délai de traitement est varie selon votre location et la période de demande. En moyenne, le délai de demande à Kinshasa est de 6 semaines en moyenne sans compter le délai de transit entre le CRDV de Kinshasa et le bureau de visa de Dakar où les demandes sont acheminées et traitées.\
     Pour savoir quel sera votre délai exact, veuillez consulter le <a href="http://www.cic.gc.ca/francais/information/delais/index.asp" target="_blank" rel="nofollow noopener">site d’Immigration Canada à cet effet.</a>
@@ -98,9 +98,9 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
     La réponse finale dépendra ainsi des résultats de ces examens médicaux.\
     Dans le cas d’un rejet, vous recevrez une lettre vous expliquant pourquoi votre demande a été rejetée.
 
-## Combien ça coûte?
+## Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **690 USD et 810 USD** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **690 USD et 810 USD** pour vos démarches de visa.
 Ces frais se présentent comme suit:
 
 - **20 USD à 50 USD** pour les documents administratifs à obtenir du gouvernement congolais.
