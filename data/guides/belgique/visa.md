@@ -3,7 +3,7 @@ draft: false
 slug: 'belgique/visa'
 date: '2018-11-19'
 title: 'Obtenir un visa pour étudier en Belgique'
-excerpt: 'Si vous êtes admis aux études  supérieures dans un établissement d’enseignement public ou privé en Belgique, vous pouvez introduire une demande pour immigrer en Belgique en tant qu’étudiant.'
+excerpt: 'Si vous êtes admis aux études supérieures dans un établissement d’enseignement public ou privé en Belgique, vous pouvez introduire une demande pour immigrer en Belgique en tant qu’étudiant.'
 thumbnail: 'images/belgique-visa.jpg'
 topic: 'visa'
 related: ['belgique/visa']

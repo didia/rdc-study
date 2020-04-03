@@ -30,7 +30,7 @@ Pour en savoir plus, [consultez notre guide sur les démarches à suivre pour ob
 En réalisant votre projet pour aller étudier au Canada, vous pensez premièrement aux droits de scolarité (frais académiques).
 Il est donc important pour vous d’avoir ne fut ce qu’une idée de combien coutent les études au Canada.\
 Les droits de scolarité varient d’un établissement à un autre, selon le niveau d’études et le programme d’études (facultés et départements).
-En termes des chiffres, vos études au Canada vous coûteront entre 4 000 USD et 13 000 USD par année, tandis qu’il faut prévoir entre 9 000 USD et 10 000 USD pour les frais de subsistance qui varieront selon votre train de vie.
+En termes des chiffres, vos études au Canada vous coûteront entre 5 000 USD et 16 500 USD par année, tandis qu’il faut prévoir entre 9 000 USD et 10 000 USD pour les frais de subsistance qui varieront selon votre train de vie.
 
 ## Qu’en est-il de bourses d’études?
 

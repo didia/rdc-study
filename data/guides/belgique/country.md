@@ -16,7 +16,7 @@ Pour étudier en Belgique, il faut généralement commencer par obtenir une équ
 \
 Ensuite, vous devez déposer une demande d’admission auprès d’une université belge.\
 Les demandes d’admission doivent être généralement faites entre le 15 février et le 30 avril de chaque année mais certaines universités permettent de le faire plus tôt.\
-La majeure partie d’universités permettent de faire la demande d’admission en ligne. Vous devez donc avoir une connexion internet et une dose de volonté.\
+La majeure partie d’universités permet de faire la demande d’admission en ligne. Vous devez donc avoir une connexion internet et une dose de volonté.\
 Quelques universités vous sont proposées dans [notre guide sur les démarches à suivre pour obtenir une admission dans une université belge.](/guides/belgique/admission)
 \
 \
