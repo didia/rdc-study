@@ -1,18 +1,18 @@
 ---
-draft: true
+draft: false
 slug: 'france/admission'
-date: '2020-04-01'
+date: '2020-04-12'
 title: 'Obtenir une admission dans un établissement d’enseignement Français'
 excerpt: 'Pour vous rendre en France pour études, vous devez au préalable obtenir une admission dans un établissement d’enseignement en France. Ce guide vous présente les différentes étapes à suivre pour obtenir une admission dans n’importe quel établissement d’enseignement français.'
 thumbnail: 'images/france-admission.jpg'
 topic: 'admission'
 related: ['france/visa']
 ---
-Le processus d’admission dans un établissement d’enseignement Français est très simple lorsqu’elle est effectuée via la plateforme Études en France.
+Le processus d’admission en France peut se faire soit directement auprès de l’université de votre choix ou en utilisant la plateforme <a href="https://pastel.diplomatie.gouv.fr/etudesenfrance/dyn/public/authentification/login.html" target="_blank" rel="noreferrer noopener">Études en France</a>.
 À l’exception des candidats pour le Doctorat qui doivent s’inscrire directement à travers leurs universités, tous les candidats peuvent utiliser la plateforme Etudes en France pour leurs démarches d’admission.
 \
 \
-Voici donc les 5 étapes que vous devez suivre pour obtenir votre admission:
+Notre guide est basé sur le processus avec Etudes en France. Voici donc les 5 étapes que vous devez suivre pour obtenir votre admission:
 
 1. ## Elaborer votre projet d’études
 

@@ -1,7 +1,7 @@
 ---
-draft: true
+draft: false
 slug: 'france/visa'
-date: '2020-04-01'
+date: '2020-04-12'
 title: 'Obtenir un visa pour étudier en France'
 excerpt: 'Avec votre accord d’acceptation préalable en main, vous devez maintenant faire une demande de visa auprès du consulat français dans votre pays. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour l’obtention du visa.'
 thumbnail: 'images/france-visa.jpg'
@@ -15,7 +15,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches vi
 
 1. ## Remplir le formulaire de demande de visa
    
-   Vous devez créer un compte sur le site officiel des visas pour la France, France-Visas, pour remplir votre formulaire de demande en attendant votre rendez-vous à l’ambassade. Vous imprimerez ensuite ce formulaire à présenter au consulat lors de votre rendez-vous.
+   Vous devez créer un compte sur le site officiel des visas pour la France, <a href="https://france-visas.gouv.fr/web/france-visas/ai-je-besoin-d-un-visa" target="_blank" rel="noopener noreferrer">France-Visas</a>, pour remplir votre formulaire de demande en attendant votre rendez-vous à l’ambassade. Vous imprimerez ensuite ce formulaire à présenter au consulat lors de votre rendez-vous.
 
 2. ## Rassemblez les pièces justificatifs
 

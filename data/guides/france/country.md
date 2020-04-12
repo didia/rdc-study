@@ -1,7 +1,7 @@
 ---
-draft: true
+draft: false
 slug: 'france'
-date: '2020-04-01'
+date: '2020-04-12'
 title: 'Étudier en France'
 excerpt: 'La France est reconnue pour la qualité et la diversité des études proposées par ses écoles et universités et pour sa richesse culturelle. Etudier en France vous permettra de découvrir un pays très varié au patrimoine riche et multi-culturel.'
 thumbnail: 'images/france.jpg'
@@ -17,6 +17,7 @@ Les demandes d’admission sont généralement faites entre mi-novembre et fin j
 \
 Pour vous assister dans vos démarches d’admission, le gouvernement français a créé un organisme public, <a href="https://www.campusfrance.org/fr/espaces" target="_blank" rel="noreferrer noopener">Campus France</a> qui pourra vous accompagner.
 À travers Campus France, vous utiliserez la plateforme en ligne, <a href="https://pastel.diplomatie.gouv.fr/etudesenfrance/dyn/public/authentification/login.html" target="_blank" rel="noreferrer noopener">Études en France</a>, pour préparer et déposer votre demande d’admission.
+Toutefois, vous n’êtes pas obligé de passer par Etudes en France pour obtenir votre admission, vous pouvez déposer directement votre demande d’admission auprès d’une institution d’enseignement en France et ensuite la faire valider auprès de Campus France.
 Une fois votre demande admission obtenue, la plateforme se chargera elle-même d’envoyer votre dossier de visa au consulat de France où vous serez convoqué pour un rendez-vous.
 \
 \
@@ -25,7 +26,10 @@ Les étudiants au doctorat ne peuvent donc pas utiliser la plateforme Etudes en 
 
 ## Combien coûtent les études en France ?
 
-Depuis 2019, les frais d’inscription annuels s’élèvent à 2 770 € pour la licence et 3 770 € pour le master dans les établissements publics.\
+Depuis 2019, les frais académiques annuels s’élèvent à 2 770 € pour la licence et 3 770 € pour le master dans les établissements publics.\
+Cependant, plusieurs universités accordent des exemptions des frais supplémentaires aux étudiants originaires des pays sous développés.
+\
+\
 Pour vivre en France, il est souhaitable de disposer d’un budget mensuel compris entre 600 € et 800 € pour couvrir vos frais d’alimentation, de transport et d’hébergement.
 \
 \
