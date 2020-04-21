@@ -3,8 +3,8 @@ draft: false
 title: Nous passerons à travers la Covid-19 ensemble.
 excerpt: >-
   La pandémie du Covid-19 nous affecte tous sans exception. Nous savons que
-  plusieurs d'entre vous s'inquiètent concernant leur projet d'études. Voici
-  donc ce que nous faisons pour vous assister dans cette situation.
+  plusieurs d'entre vous s'inquiètent de l’avenir de leurs projets d'études.
+  Voici donc ce que nous faisons pour vous assister dans cette situation.
 thumbnail: /images/uploads/perry-grone-lblgffladry-unsplash.jpg
 thumbnailCredits: >-
   <a style="background-color:black;color:white;text-decoration:none;padding:4px
