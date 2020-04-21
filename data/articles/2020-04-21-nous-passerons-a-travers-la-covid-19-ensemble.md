@@ -44,7 +44,7 @@ Actuellement, nos bureaux sont fermés. Toutefois, notre équipe reste disponibl
 
 Nous savons que cette situation est incertaine, que le monde ne sera plus comme avant la crise de la Covid-19 une fois tout ceci derrière nous, mais vous pouvez être certains d’une chose: Toute notre équipe sera toujours là pour vous accompagner dans la réussite de votre projet d'études et nous allons vous servir avec transparence, honnêteté et le sens de service qui a toujours été notre.
 
-Restez en sécurité chez vous, soyez serein, respectez les consignes des autorités en santé publique et nous avons très hâte de recommencer à travailler avec vous sur vos projets d'études.
+Restez en sécurité chez vous, soyez serein, respectez les consignes des autorités en santé publique et nous avons très hâte de recommencer à travailler avec vous pour la <u>réussite</u> de vos projets d'études.
 
 Au nom de toute l’équipe RDC Etudes,\
 Aristote Diasonama\
