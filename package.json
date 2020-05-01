@@ -89,7 +89,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
     "prettier": "^2.0.5",
-    "stylelint": "^13.2.1",
+    "stylelint": "^13.3.3",
     "stylelint-mirego": "^0.2.2",
     "stylelint-order": "^4.0.0"
   },
