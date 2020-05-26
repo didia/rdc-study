@@ -24,19 +24,19 @@ const handleSubscribe = async (event, email, setFormState) => {
   event.preventDefault();
 
   const payload = {
-    email
+    email,
   };
 
   setFormState({
     isSubmitting: true,
     showError: false,
-    showSuccess: false
+    showSuccess: false,
   });
 
   analyticsPushEvent({
     category: 'Newsletter',
     action: 'Subscribe',
-    label: window.location.pathname
+    label: window.location.pathname,
   });
 
   try {
@@ -45,25 +45,25 @@ const handleSubscribe = async (event, email, setFormState) => {
     setFormState({
       isSubmitting: false,
       showError: false,
-      showSuccess: true
+      showSuccess: true,
     });
 
     analyticsPushEvent({
       category: 'Newsletter',
       action: 'SubscribeSuccess',
-      label: window.location.pathname
+      label: window.location.pathname,
     });
   } catch (error) {
     setFormState({
       isSubmitting: false,
       showError: true,
-      showSuccess: false
+      showSuccess: false,
     });
 
     analyticsPushEvent({
       category: 'Newsletter',
       action: 'SubscribeError',
-      label: window.location.pathname
+      label: window.location.pathname,
     });
 
     window.console.error('An error occured', error);
@@ -141,7 +141,7 @@ const Newsletter = ({className}) => {
 };
 
 Newsletter.propTypes = {
-  className: T.string
+  className: T.string,
 };
 
 export default Newsletter;

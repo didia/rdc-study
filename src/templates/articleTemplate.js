@@ -15,7 +15,7 @@ const articleMarkdownRemark = ({html, timeToRead, frontmatter, fields}) => ({
   thumbnail: frontmatter.thumbnail ? {fluid: frontmatter.thumbnail.childImageSharp.contentImage} : null,
   thumbnailCredits: frontmatter.thumbnailCredits,
   title: frontmatter.title,
-  timeToRead
+  timeToRead,
 });
 
 const articlePreviewMarkdownRemark = ({frontmatter, fields, timeToRead}) => ({
@@ -24,11 +24,11 @@ const articlePreviewMarkdownRemark = ({frontmatter, fields, timeToRead}) => ({
   path: fields.path,
   thumbnail: frontmatter.thumbnail ? frontmatter.thumbnail.childImageSharp : null,
   title: frontmatter.title,
-  timeToRead
+  timeToRead,
 });
 
 export default function Template({
-  data // this prop will be injected by the GraphQL query below.
+  data, // this prop will be injected by the GraphQL query below.
 }) {
   const {markdownRemark, allMarkdownRemark} = data; // data.markdownRemark holds our post data
   const article = articleMarkdownRemark(markdownRemark);
@@ -43,8 +43,8 @@ export default function Template({
 Template.propTypes = {
   data: T.shape({
     allMarkdownRemark: T.object.isRequired,
-    markdownRemark: T.object.isRequired
-  })
+    markdownRemark: T.object.isRequired,
+  }),
 };
 
 export const pageQuery = graphql`

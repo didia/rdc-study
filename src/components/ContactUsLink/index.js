@@ -13,7 +13,7 @@ const ContactUsButton = ({className}) => (
 );
 
 ContactUsButton.propTypes = {
-  className: T.string
+  className: T.string,
 };
 
 export default ContactUsButton;

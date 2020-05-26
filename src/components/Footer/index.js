@@ -62,10 +62,10 @@ ContactForm.propTypes = {
   values: T.shape({
     email: T.string,
     message: T.string,
-    name: T.string
+    name: T.string,
   }).isRequired,
   onUpdate: T.func.isRequired,
-  onSubmit: T.func.isRequired
+  onSubmit: T.func.isRequired,
 };
 
 const Alert = ({className, messageTranslationId, titleTranslationId, onDiscardAlert}) => (
@@ -84,7 +84,7 @@ Alert.propTypes = {
   className: T.string,
   titleTranslationId: T.string.isRequired,
   messageTranslationId: T.string.isRequired,
-  onDiscardAlert: T.func.isRequired
+  onDiscardAlert: T.func.isRequired,
 };
 
 const SuccessAlert = ({className, ...props}) => (
@@ -97,7 +97,7 @@ const SuccessAlert = ({className, ...props}) => (
 );
 
 SuccessAlert.propTypes = {
-  className: T.string
+  className: T.string,
 };
 
 const ErrorAlert = ({className, ...props}) => (
@@ -110,7 +110,7 @@ const ErrorAlert = ({className, ...props}) => (
 );
 
 ErrorAlert.propTypes = {
-  className: T.string
+  className: T.string,
 };
 
 class Footer extends Component {
@@ -122,7 +122,7 @@ class Footer extends Component {
       message: '',
       name: '',
       showError: false,
-      showSuccess: false
+      showSuccess: false,
     };
 
     this.discardErrorAlert = this.discardErrorAlert.bind(this);
@@ -144,7 +144,7 @@ class Footer extends Component {
   discardErrorAlert() {
     this.setState({
       showError: false,
-      showSuccess: false
+      showSuccess: false,
     });
   }
 
@@ -155,14 +155,14 @@ class Footer extends Component {
       name: '',
       isSubmitting: false,
       showError: false,
-      showSuccess: false
+      showSuccess: false,
     });
   }
 
   handleChange(event) {
     this.setState({
       ...this.state,
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   }
 
@@ -174,18 +174,18 @@ class Footer extends Component {
       email,
       message,
       name,
-      link: getCurrentUrl()
+      link: getCurrentUrl(),
     };
 
     this.setState({
       ...this.state,
-      isSubmitting: true
+      isSubmitting: true,
     });
 
     analyticsPushEvent({
       category: 'ContactForm',
       action: 'Submit',
-      label: window.location.pathname
+      label: window.location.pathname,
     });
 
     try {
@@ -195,26 +195,26 @@ class Footer extends Component {
         ...this.state,
         isSubmitting: false,
         showError: false,
-        showSuccess: true
+        showSuccess: true,
       });
 
       analyticsPushEvent({
         category: 'ContactForm',
         action: 'SubmitSuccess',
-        label: window.location.pathname
+        label: window.location.pathname,
       });
     } catch (error) {
       this.setState({
         ...this.state,
         isSubmitting: false,
         showError: true,
-        showSuccess: false
+        showSuccess: false,
       });
 
       analyticsPushEvent({
         category: 'ContactForm',
         action: 'SubmitError',
-        label: window.location.pathname
+        label: window.location.pathname,
       });
 
       window.console.error('An error occured: ', error);
@@ -309,7 +309,7 @@ class Footer extends Component {
 }
 
 Footer.propTypes = {
-  className: T.string
+  className: T.string,
 };
 
 export default Footer;

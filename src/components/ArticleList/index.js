@@ -37,9 +37,9 @@ Article.propTypes = {
     title: T.string.isRequired,
     thumbnail: T.shape({
       fluid: T.object.isRequired,
-      sizes: T.object
-    }).isRequired
-  })
+      sizes: T.object,
+    }).isRequired,
+  }),
 };
 
 const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, titleKey}) => {
@@ -76,15 +76,15 @@ ArticleList.propTypes = {
   articles: T.arrayOf(
     T.shape({
       thumbnal: T.shape({
-        fluid: T.object
-      })
+        fluid: T.object,
+      }),
     })
   ),
   className: T.string,
   descriptionKey: T.string,
   hasMoreArticles: T.bool,
   id: T.string,
-  titleKey: T.string
+  titleKey: T.string,
 };
 
 export default ArticleList;
