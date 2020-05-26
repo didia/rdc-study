@@ -4,7 +4,7 @@ import T from 'prop-types';
 
 const ContactUsButton = ({className}) => (
   <FormattedMessage id="shared.contact-us-text">
-    {text => (
+    {(text) => (
       <a href="#contact" className={className}>
         {text}
       </a>
@@ -13,7 +13,7 @@ const ContactUsButton = ({className}) => (
 );
 
 ContactUsButton.propTypes = {
-  className: T.string
+  className: T.string,
 };
 
 export default ContactUsButton;

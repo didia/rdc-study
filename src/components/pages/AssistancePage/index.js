@@ -16,7 +16,7 @@ const FeatureList = ({featureLabelKeys, className}) => (
   <ul className={classnames(styles['feature-list'], className)}>
     {featureLabelKeys.map((featureLabelKey, i) => (
       <FormattedMessage key={`feature-${i}`} id={featureLabelKey}>
-        {text => <li className={classnames('icon fa-check-circle', styles['feature-item'])}>{text}</li>}
+        {(text) => <li className={classnames('icon fa-check-circle', styles['feature-item'])}>{text}</li>}
       </FormattedMessage>
     ))}
   </ul>
@@ -24,21 +24,21 @@ const FeatureList = ({featureLabelKeys, className}) => (
 
 FeatureList.propTypes = {
   className: T.string,
-  featureLabelKeys: T.arrayOf(T.string).isRequired
+  featureLabelKeys: T.arrayOf(T.string).isRequired,
 };
 
 const page = {
   description:
     'Ce qui nous rend différents des autres c’est que nous ne transigeons pas avec nos valeurs de serviabilité, de transparence et d’honnêteté. Nous vous offrons un service d’assistance qui correspond à vos besoins.',
   title: 'Nous vous assistons dans vos démarches',
-  path: '/accompagnement'
+  path: '/accompagnement',
 };
 
 const freeTierFeatureLabelKeys = [
   'pages.assistance.free.features.admission-guide',
   'pages.assistance.free.features.visa-guide',
   'pages.assistance.free.features.countries-guide',
-  'pages.assistance.free.features.protection-guide'
+  'pages.assistance.free.features.protection-guide',
 ];
 
 const packages = [
@@ -49,8 +49,8 @@ const packages = [
       'pages.assistance.packages.admission.features.program-choice',
       'pages.assistance.packages.admission.features.university-choice',
       'pages.assistance.packages.admission.features.application',
-      'pages.assistance.packages.admission.features.application-documents'
-    ]
+      'pages.assistance.packages.admission.features.application-documents',
+    ],
   },
   {
     titleKey: 'pages.assistance.packages.visa.title',
@@ -59,8 +59,8 @@ const packages = [
       'pages.assistance.packages.visa.features.application-documents',
       'pages.assistance.packages.visa.features.application-proof',
       'pages.assistance.packages.visa.features.fill-forms',
-      'pages.assistance.packages.visa.features.interview'
-    ]
+      'pages.assistance.packages.visa.features.interview',
+    ],
   },
   {
     titleKey: 'pages.assistance.packages.after-visa.title',
@@ -69,9 +69,9 @@ const packages = [
       'pages.assistance.packages.after-visa.features.travel',
       'pages.assistance.packages.after-visa.features.housing',
       'pages.assistance.packages.after-visa.features.on-arrival',
-      'pages.assistance.packages.after-visa.features.first-year'
-    ]
-  }
+      'pages.assistance.packages.after-visa.features.first-year',
+    ],
+  },
 ];
 
 const AssistancePage = () => {
@@ -80,13 +80,13 @@ const AssistancePage = () => {
       <Card className={styles['main-card']}>
         <header className={styles['column--left']}>
           <FormattedMessage id="pages.assistance.free.title" tagName="p">
-            {text => <p className={styles.pricing}>{text}</p>}
+            {(text) => <p className={styles.pricing}>{text}</p>}
           </FormattedMessage>
 
           <FormattedMessage id="pages.assistance.free.description" tagName="p" />
 
           <FormattedMessage id="pages.assistance.free.guide-link-text">
-            {text => (
+            {(text) => (
               <Link to="/#guides" className={classnames(styles.button, 'button special')}>
                 {text}
               </Link>
@@ -107,7 +107,7 @@ const AssistancePage = () => {
           tagName="p"
           values={{
             pricePerPackage: <b>200$</b>,
-            priceForAllPackages: <b>500$</b>
+            priceForAllPackages: <b>500$</b>,
           }}
         />
 
@@ -116,7 +116,7 @@ const AssistancePage = () => {
             <li key={`feature-${i}`} className={styles['offer-list__item']}>
               <Card className={styles['offer-card']}>
                 <FormattedMessage id={ratePackage.titleKey}>
-                  {text => <h3 className={styles['offer-title']}>{text}</h3>}
+                  {(text) => <h3 className={styles['offer-title']}>{text}</h3>}
                 </FormattedMessage>
 
                 <FeatureList featureLabelKeys={ratePackage.featureLabelKeys} />
@@ -126,7 +126,7 @@ const AssistancePage = () => {
         </ul>
 
         <FormattedMessage id="pages.assistance.personal.about-us-link">
-          {text => (
+          {(text) => (
             <Link to="/a-propos" className={classnames(styles.button, styles['button--about-us'], 'button special')}>
               {text}
             </Link>
@@ -136,7 +136,7 @@ const AssistancePage = () => {
         <p style={{marginTop: '20px'}}>
           <FormattedMessage id="pages.assistance.visa.warning" />
           <FormattedMessage id="pages.assistance.visa.warning-learn-more">
-            {text => <Link to="/assistance-visa">{text}</Link>}
+            {(text) => <Link to="/assistance-visa">{text}</Link>}
           </FormattedMessage>
         </p>
       </section>

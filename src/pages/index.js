@@ -11,14 +11,14 @@ const Index = ({data}) => {
   const countries = data.guides.edges.map(({node}) => ({
     ...node.frontmatter,
     ...node.fields,
-    thumbnail: node.frontmatter.thumbnail.childImageSharp
+    thumbnail: node.frontmatter.flag.childImageSharp,
   }));
 
   const articles = data.articles.edges.map(({node}) => ({
     ...node.frontmatter,
     ...node.fields,
     timeToRead: node.timeToRead,
-    thumbnail: node.frontmatter.thumbnail.childImageSharp
+    thumbnail: node.frontmatter.thumbnail.childImageSharp,
   }));
 
   const currentTimestamp = Date.now();
@@ -29,7 +29,7 @@ const Index = ({data}) => {
     .map(({node}) => ({
       ...node.frontmatter,
       ...node.fields,
-      thumbnail: node.frontmatter.thumbnail.childImageSharp
+      thumbnail: node.frontmatter.thumbnail.childImageSharp,
     }));
 
   return (
@@ -45,12 +45,9 @@ const Index = ({data}) => {
 Index.propTypes = {
   data: T.shape({
     articles: T.object.isRequired,
-    consultingServiceImage: T.object.isRequired,
-    freeGuideImage: T.object.isRequired,
     guides: T.object.isRequired,
     scholarships: T.object.isRequired,
-    verificationServiceImage: T.object.isRequired
-  })
+  }),
 };
 
 export default Index;
@@ -59,7 +56,7 @@ export const pageQuery = graphql`
   query PageQuery($currentTimestamp: Float) {
     guides: allMarkdownRemark(
       limit: 10
-      sort: {fields: [frontmatter___title], order: ASC}
+      sort: {fields: [frontmatter___name], order: ASC}
       filter: {frontmatter: {topic: {eq: "country"}}, fields: {draft: {eq: false}}}
     ) {
       edges {
@@ -71,7 +68,8 @@ export const pageQuery = graphql`
             excerpt
             slug
             title
-            thumbnail {
+            name
+            flag {
               childImageSharp {
                 fluid(maxWidth: 450, maxHeight: 304, cropFocus: CENTER) {
                   ...GatsbyImageSharpFluid

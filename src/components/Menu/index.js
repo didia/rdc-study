@@ -12,28 +12,28 @@ import styles from './styles.module.scss';
 const MENU_ITEMS = [
   {
     labelKey: 'menu.home-link-label',
-    to: '/'
+    to: '/',
   },
   {
     labelKey: 'menu.scholarships-link-label',
-    to: '/bourses'
+    to: '/bourses',
   },
   {
     labelKey: 'menu.assistance-link-label',
-    to: '/accompagnement'
+    to: '/accompagnement',
   },
   {
     labelKey: 'menu.about-us-link-label',
-    to: '/a-propos'
+    to: '/a-propos',
   },
   {
     labelKey: 'menu.faq-label',
-    to: '/questions-populaires'
+    to: '/questions-populaires',
   },
   {
     labelKey: 'menu.privacy-policy-link-label',
-    to: '/politique-de-confidentialite'
-  }
+    to: '/politique-de-confidentialite',
+  },
 ];
 
 class InnerMenu extends React.Component {
@@ -48,13 +48,13 @@ class InnerMenu extends React.Component {
 
     return (
       <div className={styles.inner}>
-        <FormattedMessage id="menu.title">{text => <h2 className={styles.title}>{text}</h2>}</FormattedMessage>
+        <FormattedMessage id="menu.title">{(text) => <h2 className={styles.title}>{text}</h2>}</FormattedMessage>
 
         <ul className={styles.links}>
           {MENU_ITEMS.map((item, index) => (
             <li key={`menu-item-${index}`} className={styles.links__item}>
               <FormattedMessage id={item.labelKey}>
-                {text => (
+                {(text) => (
                   <Link onClick={onToggleMenu} className={styles['links-item__link']} to={item.to}>
                     {text}
                   </Link>
@@ -65,7 +65,7 @@ class InnerMenu extends React.Component {
         </ul>
 
         <FormattedMessage id="menu.close-button-label">
-          {text => (
+          {(text) => (
             <a className={styles['close-button']} href="#" onClick={onToggleMenu}>
               {text}
             </a>
@@ -80,7 +80,7 @@ const InnerMenuWithClickOutside = enhanceWithClickOutside(InnerMenu);
 
 InnerMenu.propTypes = {
   isVisible: T.bool,
-  onToggleMenu: T.func.isRequired
+  onToggleMenu: T.func.isRequired,
 };
 
 const Menu = ({isVisible, onToggleMenu}) => {
@@ -95,7 +95,7 @@ const Menu = ({isVisible, onToggleMenu}) => {
 
 Menu.propTypes = {
   isVisible: T.bool,
-  onToggleMenu: T.func.isRequired
+  onToggleMenu: T.func.isRequired,
 };
 
 export default Menu;

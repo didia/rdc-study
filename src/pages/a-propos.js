@@ -6,15 +6,15 @@ import {graphql} from 'gatsby';
 import AboutUsPage from '../components/pages/AboutUsPage';
 
 const Page = ({data}) => {
-  const team = data.allTeamJson.edges.map(edge => edge.node);
+  const team = data.allTeamJson.edges.map((edge) => edge.node);
 
   return <AboutUsPage team={team} />;
 };
 
 Page.propTypes = {
   data: T.shape({
-    allTeamJson: T.object.isRequired
-  })
+    allTeamJson: T.object.isRequired,
+  }),
 };
 
 export default Page;

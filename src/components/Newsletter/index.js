@@ -24,19 +24,19 @@ const handleSubscribe = async (event, email, setFormState) => {
   event.preventDefault();
 
   const payload = {
-    email
+    email,
   };
 
   setFormState({
     isSubmitting: true,
     showError: false,
-    showSuccess: false
+    showSuccess: false,
   });
 
   analyticsPushEvent({
     category: 'Newsletter',
     action: 'Subscribe',
-    label: window.location.pathname
+    label: window.location.pathname,
   });
 
   try {
@@ -45,25 +45,25 @@ const handleSubscribe = async (event, email, setFormState) => {
     setFormState({
       isSubmitting: false,
       showError: false,
-      showSuccess: true
+      showSuccess: true,
     });
 
     analyticsPushEvent({
       category: 'Newsletter',
       action: 'SubscribeSuccess',
-      label: window.location.pathname
+      label: window.location.pathname,
     });
   } catch (error) {
     setFormState({
       isSubmitting: false,
       showError: true,
-      showSuccess: false
+      showSuccess: false,
     });
 
     analyticsPushEvent({
       category: 'Newsletter',
       action: 'SubscribeError',
-      label: window.location.pathname
+      label: window.location.pathname,
     });
 
     window.console.error('An error occured', error);
@@ -91,37 +91,37 @@ const Newsletter = ({className}) => {
       <ActivityIndicator isActive={formState.isSubmitting} />
 
       <div className={styles['title-wrapper']}>
-        <i className={classnames('fa fa-envelope-o', styles.icon)} />
+        <i className={classnames('far fa-envelope', styles.icon)} />
         <div className={styles['title-container']}>
           <FormattedMessage id="shared.newsletter.title">
-            {title => <h6 className={styles.title}>{title}</h6>}
+            {(title) => <h6 className={styles.title}>{title}</h6>}
           </FormattedMessage>
 
           <FormattedMessage id="shared.newsletter.subtitle">
-            {subtitle => <p className={styles.subtitle}>{subtitle}</p>}
+            {(subtitle) => <p className={styles.subtitle}>{subtitle}</p>}
           </FormattedMessage>
         </div>
       </div>
       <div className={classnames(styles['form-wrapper'], styles[formClassModifier(formState)])}>
-        <form className={styles.form} onSubmit={event => handleSubscribe(event, email, setFormState)}>
+        <form className={styles.form} onSubmit={(event) => handleSubscribe(event, email, setFormState)}>
           <FormattedMessage id="shared.newsletter.input-placeholder">
-            {text => (
+            {(text) => (
               <input
                 className={styles.input}
                 placeholder={text}
                 type="email"
                 name="email"
-                onChange={e => setEmail(e.currentTarget.value)}
+                onChange={(e) => setEmail(e.currentTarget.value)}
                 value={email}
               />
             )}
           </FormattedMessage>
 
           {formState.showSuccess ? (
-            <i className={classnames('fa fa-check-circle-o', styles['form-success-icon'])} />
+            <i className={classnames('far fa-check-circle', styles['form-success-icon'])} />
           ) : (
             <FormattedMessage id="shared.newsletter.button-label">
-              {text => (
+              {(text) => (
                 <Button type="submit" className={styles.button} outlined disabled={disabledState}>
                   {text}
                 </Button>
@@ -132,7 +132,7 @@ const Newsletter = ({className}) => {
 
         {showAlert(formState) && (
           <FormattedMessage id={alertMessageKey(formState)}>
-            {message => <p className={styles.alert}>{message}</p>}
+            {(message) => <p className={styles.alert}>{message}</p>}
           </FormattedMessage>
         )}
       </div>
@@ -141,7 +141,7 @@ const Newsletter = ({className}) => {
 };
 
 Newsletter.propTypes = {
-  className: T.string
+  className: T.string,
 };
 
 export default Newsletter;

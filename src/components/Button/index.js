@@ -22,7 +22,7 @@ Button.propTypes = {
   children: T.oneOfType([T.arrayOf(T.element), T.element, T.string]).isRequired,
   disabled: T.string,
   outlined: T.bool,
-  tag: T.elementType
+  tag: T.elementType,
 };
 
 export default Button;

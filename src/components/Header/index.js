@@ -15,7 +15,7 @@ const Header = ({withTitle, onToggleMenu}) => {
     <header className={className}>
       <h1 className={styles.title}>
         <FormattedMessage id="header.title">
-          {text => (
+          {(text) => (
             <Link to="/" className={styles.title__link}>
               {text}
             </Link>
@@ -25,9 +25,10 @@ const Header = ({withTitle, onToggleMenu}) => {
 
       <nav className={styles.nav}>
         <FormattedMessage id="header.menu-toggle-label">
-          {text => (
+          {(text) => (
             <a className={styles.nav__link} onClick={onToggleMenu} href="#">
               {text}
+              <i className={classnames('fas fa-bars', styles['nav-link__icon'])} />
             </a>
           )}
         </FormattedMessage>
@@ -38,7 +39,7 @@ const Header = ({withTitle, onToggleMenu}) => {
 
 Header.propTypes = {
   onToggleMenu: T.func.isRequired,
-  withTitle: T.bool
+  withTitle: T.bool,
 };
 
 export default Header;

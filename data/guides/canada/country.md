@@ -5,6 +5,8 @@ date: '2018-05-28'
 title: 'Étudier au Canada'
 excerpt: 'Le Canada reconnu, pour sa diversité, ses valeurs inclusives et sa qualité de vie élevée, est considéré à l’international comme un de meilleurs pays au monde où vivre et étudier. Etudier au Canada constitue non seulement un énorme privilège mais aussi une opportunité à saisir avec grand coeur.'
 thumbnail: 'images/canada.jpg'
+flag: 'images/flag.png'
+name: 'Canada'
 topic: 'country'
 related: ['canada/admission', 'canada/visa']
 ---

@@ -14,17 +14,17 @@ const guideMarkdownRemark = ({html, frontmatter, fields}) => ({
   slug: frontmatter.slug,
   thumbnail: frontmatter.thumbnail ? frontmatter.thumbnail.childImageSharp : null,
   title: frontmatter.title,
-  topic: frontmatter.topic
+  topic: frontmatter.topic,
 });
 
 const splitRelatedAndOthers = (guides, mainGuide) => {
   if (!mainGuide.related)
-    return {relatedGuides: [], otherGuides: guides.filter(guide => guide.topic === mainGuide.topic)};
+    return {relatedGuides: [], otherGuides: guides.filter((guide) => guide.topic === mainGuide.topic)};
 
   const relatedGuides = [];
   const otherGuides = [];
 
-  guides.forEach(guide => {
+  guides.forEach((guide) => {
     if (mainGuide.related.indexOf(guide.slug) !== -1) return relatedGuides.push(guide);
 
     if (guide.topic !== mainGuide.topic) return;
@@ -36,11 +36,11 @@ const splitRelatedAndOthers = (guides, mainGuide) => {
 };
 
 export default function Template({
-  data // this prop will be injected by the GraphQL query below.
+  data, // this prop will be injected by the GraphQL query below.
 }) {
   const {markdownRemark, allMarkdownRemark} = data; // data.markdownRemark holds our post data
   const guide = guideMarkdownRemark(markdownRemark);
-  const allGuides = allMarkdownRemark.edges.map(edge => guideMarkdownRemark(edge.node));
+  const allGuides = allMarkdownRemark.edges.map((edge) => guideMarkdownRemark(edge.node));
 
   const {relatedGuides, otherGuides} = splitRelatedAndOthers(allGuides, guide);
 
@@ -50,8 +50,8 @@ export default function Template({
 Template.propTypes = {
   data: T.shape({
     allMarkdownRemark: T.object.isRequired,
-    markdownRemark: T.object.isRequired
-  })
+    markdownRemark: T.object.isRequired,
+  }),
 };
 
 export const pageQuery = graphql`

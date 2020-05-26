@@ -14,7 +14,7 @@ const PostMeta = ({className, post}) => {
   return (
     <span className={classnames(styles.meta, className)}>
       <FormattedDate value={postDate} month="long" day="2-digit" year={year}>
-        {time => <time>{time}</time>}
+        {(time) => <time>{time}</time>}
       </FormattedDate>
       <span className={styles.separator} />
       <FormattedMessage id="shared.read-time" values={{time: post.timeToRead}} />
@@ -26,8 +26,8 @@ PostMeta.propTypes = {
   className: T.string,
   post: T.shape({
     date: T.string.isRequired,
-    timeToRead: T.number.isRequired
-  })
+    timeToRead: T.number.isRequired,
+  }),
 };
 
 export default PostMeta;

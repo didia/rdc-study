@@ -42,7 +42,7 @@
   "pages.about-us.values.transparency.description": "Nous serons toujours transparents avec vous. À la différence des autres, chez nous vous savez exactement à quoi sert votre argent. Vous avez le choix de faire le paiement vous-même. Si nous payons pour vous, nous vous donnerons toujours les preuves de paiement.",
   "pages.about-us.values.transparency.title": "La transparence",
 
-  "pages.articles-show.other-articles.title": "Articles récents",
+  "pages.articles-show.other-articles.title": "Les dernières nouvelles",
 
   "pages.assistance.free.description": "Toute l’information dont vous avez besoin pour réaliser votre projet d’études est disponible via nos guides en ligne. Ils sont gratuits et le resteront toujours.",
   "pages.assistance.free.features.admission-guide": "Guide pour l’admission",
@@ -88,27 +88,26 @@
   "pages.guides-show.other-guides.title": "Autres guides qui pourraient vous intéresser",
   "pages.guides-show.related-guides.title": "Guides réliés",
 
-  "pages.index.banner.title": "Bienvenue sur RDC Etudes",
-  "pages.index.banner.description": "Nous vous accompagnons dans la réalisation de votre projet d'études!",
+  "pages.index.banner.title": "Une éducation de qualité pour tous!",
+  "pages.index.banner.description": "Nous vous accompagnons dans la réussite de votre projet d’études, de l’admission à l’obtention de votre diplôme!",
+  "pages.index.banner.call-to-action-button-text": "Je veux une assistance",
 
-  "pages.index.article-list.title": "Articles récents",
+  "pages.index.article-list.title": "Les dernières nouvelles",
 
-  "pages.index.country-list.title": "Guides 100% gratuits!!!",
-  "pages.index.country-list.description": "Nos guides ci-dessous vous expliquent en détails les étapes nécessaires pour mener à bien vos démarches d‘études dans les pays concernés.",
+  "pages.index.competitive-advantages.call-to-action": "Découvrez notre équipe",
+  "pages.index.competitive-advantages.title": "Pourquoi choisir RDC Études?",
+  "pages.index.competitive-advantages.first-item.description": "Nous prenons à coeur la fiabilité des informations que nous vous donnons. C’est pourquoi chacun de nos guides gratuits est accompagné des sources officielles d’où vous pouvez vérifier les informations par vous-mêmes les informations qui vous sont offertes.",
+  "pages.index.competitive-advantages.first-item.title": "Notre fiabilité",
+  "pages.index.competitive-advantages.second-item.description": "S’il y’a une chose que nous pouvons vous garantir, c’est que nous vous servirons toujours avec transparence et honnêteté. Cela fait partie de l’ADN sur lequel est bati toute notre entreprise et nous en sommes très fiers.",
+  "pages.index.competitive-advantages.second-item.title": "Nos valeurs",
+  "pages.index.competitive-advantages.third-item.description": "Nous savons combien c’est important pour les étudiants qui débutent d’avoir des bons repères sur lesquels se basaient.",
+  "pages.index.competitive-advantages.third-item.title": "Notre communauté",
+
+
+  "pages.index.country-list.title": "Nos guides des démarches",
+  "pages.index.country-list.description": "Ne laissez plus des personnes mal intentionnées vous induire en erreur. Nos guides de démarches vous donnent gratuitement accès à toute l'information dont vous avez besoin pour poursuivre vos études au pays de votre choix.",
 
   "pages.index.scholarship-list.title": "Bourses d'études en cours",
-
-  "pages.index.services.assistance.description": "Nous pouvons vous accompagner dans vos démarches si vous en avez besoin, que ce soit pour faire une inscription ou pour produire des documents par rapport à votre demande de visa.",
-  "pages.index.services.assistance.learn-more-text": "En savoir plus",
-  "pages.index.services.assistance.title": "Un accompagnement honnête et transparent!!!",
-
-  "pages.index.services.study-guide.description": "Nos guides gratuis ci-dessus vous permettent de faire vos démarches vous-mêmes sans avoir besoin d’une aide quelconque.",
-  "pages.index.services.study-guide.explore-text": "Explorez les guides",
-  "pages.index.services.study-guide.title": "Des guides 100% Gratuits!!!",
-
-  "pages.index.services.verification.description": "Enfin de vous protéger de charlatans ou escrocs, nous pouvons vérifier des informations qui vous sont données par des personnes ou des entreprises qui vous aident dans vos démarches.",
-  "pages.index.services.verification.contact-us-text": "Contactez nous",
-  "pages.index.services.verification.title": "Un service de vérification Gratuit!!!",
 
   "pages.scholarships.active-only-link-label": "Cliquez ici pour n’afficher que les offres en cours.",
   "pages.scholarships.all-disclaimer": "NB: Cette page affiche toutes les offres des bourses y compris celles expirées.",
@@ -131,6 +130,7 @@
   "scholarship-levels.undergraduate": "Licence",
 
   "scholarship-list.see-all": "Afficher toutes les bourses",
+  "scholarship-list.see-details": "Voir les détails",
 
   "shared.contact-us-text": "Contactez-nous",
 
@@ -155,7 +155,7 @@
   "shared.newsletter.alert.error": "Une erreur inconnue est survenue lors de l’abonnement 😞",
   "shared.newsletter.alert.success": "Yay 🎉🎉 Vous avez été abonné avec succès!",
   "shared.newsletter.button-label": "M’abonner",
-  "shared.newsletter.input-placeholder": "Votre adresse email",
+  "shared.newsletter.input-placeholder": "Entrez votre adresse email",
   "shared.newsletter.title": "Abonnez-vous à notre infolettre",
   "shared.newsletter.subtitle": "Toutes les nouveautés sur les bourses et les études à l'étranger directement dans votre boîte email.",
 

@@ -19,8 +19,8 @@ import Button from '../Button';
 const NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER = 6;
 const MOBILE_MAX_INNER_WIDTH = 640;
 
-const median = values => {
-  values.sort(function(a, b) {
+const median = (values) => {
+  values.sort(function (a, b) {
     return a - b;
   });
 
@@ -31,20 +31,20 @@ const median = values => {
   return (values[half - 1] + values[half]) / 2.0;
 };
 
-const normalizeThumbnailAspectRatio = scholarships => {
+const normalizeThumbnailAspectRatio = (scholarships) => {
   if (!scholarships.length) return scholarships;
 
-  const minAspectRatio = median(scholarships.map(scholarship => scholarship.thumbnail.fluid.aspectRatio));
+  const minAspectRatio = median(scholarships.map((scholarship) => scholarship.thumbnail.fluid.aspectRatio));
 
-  return scholarships.map(scholarship => ({
+  return scholarships.map((scholarship) => ({
     ...scholarship,
     thumbnail: {
       ...scholarship.thumbnail,
       fluid: {
         ...scholarship.thumbnail.fluid,
-        aspectRatio: minAspectRatio
-      }
-    }
+        aspectRatio: minAspectRatio,
+      },
+    },
   }));
 };
 
@@ -71,9 +71,13 @@ const Scholarship = ({scholarship}) => {
       </Link>
       <div className={styles.card__actions}>
         <div className={styles['card__actions-buttons']}>
-          <Button tag={Link} to={scholarship.path}>
-            Voir les détails
-          </Button>
+          <FormattedMessage id="scholarship-list.see-details">
+            {(text) => (
+              <Button tag={Link} to={scholarship.path}>
+                {text}
+              </Button>
+            )}
+          </FormattedMessage>
         </div>
       </div>
     </article>
@@ -89,9 +93,9 @@ Scholarship.propTypes = {
     title: T.string.isRequired,
     thumbnail: T.shape({
       fluid: T.object.isRequired,
-      sizes: T.object
-    }).isRequired
-  })
+      sizes: T.object,
+    }).isRequired,
+  }),
 };
 
 const ScholarshipList = ({
@@ -100,7 +104,7 @@ const ScholarshipList = ({
   scholarships,
   showAllScholarshipsLink,
   showNewsletter,
-  titleKey
+  titleKey,
 }) => {
   const [isMobile, setIsMobile] = useState(true);
   const [normalizedScholarships, setNormalizedScholarships] = useState(scholarships);
@@ -121,7 +125,7 @@ const ScholarshipList = ({
   const scholarships2 = normalizedScholarships.slice(NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER);
   return (
     <div className={className}>
-      {titleKey && <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>}
+      {titleKey && <FormattedMessage id={titleKey}>{(text) => <h2 className="major">{text}</h2>}</FormattedMessage>}
 
       <ul className={styles.list}>
         {scholarships1.map((scholarship, i) => (
@@ -143,7 +147,7 @@ const ScholarshipList = ({
 
       {showAllScholarshipsLink && (
         <FormattedMessage id="scholarship-list.see-all">
-          {text => (
+          {(text) => (
             <div className={styles['see-more-button-wrapper']}>
               <Link
                 to={allScholarshipsLink || '/toutes-les-bourses'}
@@ -165,7 +169,7 @@ ScholarshipList.propTypes = {
   scholarships: T.arrayOf(T.shape({})),
   showAllScholarshipsLink: T.bool,
   showNewsletter: T.bool,
-  titleKey: T.string
+  titleKey: T.string,
 };
 
 export default ScholarshipList;

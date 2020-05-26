@@ -37,17 +37,17 @@ Article.propTypes = {
     title: T.string.isRequired,
     thumbnail: T.shape({
       fluid: T.object.isRequired,
-      sizes: T.object
-    }).isRequired
-  })
+      sizes: T.object,
+    }).isRequired,
+  }),
 };
 
 const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, titleKey}) => {
   return (
     <div id={id} className={className}>
-      {titleKey && <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>}
+      {titleKey && <FormattedMessage id={titleKey}>{(text) => <h2 className="major">{text}</h2>}</FormattedMessage>}
 
-      {descriptionKey && <FormattedMessage id={descriptionKey}>{text => <p>{text}</p>}</FormattedMessage>}
+      {descriptionKey && <FormattedMessage id={descriptionKey}>{(text) => <p>{text}</p>}</FormattedMessage>}
 
       <ul className={styles['articles-wrapper']}>
         {articles.map((article, i) => (
@@ -59,7 +59,7 @@ const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, 
 
       {hasMoreArticles && (
         <FormattedMessage id="shared.see-more-text">
-          {text => (
+          {(text) => (
             <div className={styles['see-more-button-wrapper']}>
               <Link to="/articles" className={classnames('button', styles['see-more-button'])}>
                 {text}
@@ -76,15 +76,15 @@ ArticleList.propTypes = {
   articles: T.arrayOf(
     T.shape({
       thumbnal: T.shape({
-        fluid: T.object
-      })
+        fluid: T.object,
+      }),
     })
   ),
   className: T.string,
   descriptionKey: T.string,
   hasMoreArticles: T.bool,
   id: T.string,
-  titleKey: T.string
+  titleKey: T.string,
 };
 
 export default ArticleList;

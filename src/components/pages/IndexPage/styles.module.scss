@@ -25,6 +25,26 @@
     left: 0;
     transform: scaleY(-1);
   }
+
+  @for $i from 1 through _misc(max-wrapper-styles) {
+    $j: 3 * ($i - 1);
+    $color: saturate(darken(_palette(bg), $j), $j * 0.5);
+
+    &.wrapper--at-position-#{$i} {
+      @include wrapper-edges-color($color);
+      background-color: $color;
+
+      @if $i % 2 == 1 {
+        &::before {
+          transform: scaleX(-1);
+        }
+
+        &::after {
+          transform: scaleY(-1) scaleX(-1);
+        }
+      }
+    }
+  }
 }
 
 .image-wrapper {
@@ -62,25 +82,7 @@
     }
   }
 
-  @for $i from 1 through _misc(max-wrapper-styles) {
-    $j: 3 * ($i - 1);
-    $color: saturate(darken(_palette(accent), $j), $j * 0.5);
 
-    &.wrapper--at-position-#{$i} {
-      @include wrapper-edges-color($color);
-      background-color: $color;
-
-      @if $i % 2 == 1 {
-        &::before {
-          transform: scaleX(-1);
-        }
-
-        &::after {
-          transform: scaleY(-1) scaleX(-1);
-        }
-      }
-    }
-  }
 }
 
 .wrapper--article-list {
@@ -163,31 +165,6 @@
 
   .inner {
     @include padding(2em, 2em);
-  }
-
-  .wrapper--service {
-    .inner {
-      align-items: flex-start;
-    }
-
-    .image-wrapper {
-      width: 19em;
-      margin: 0 _size(section-spacing, small) _size(element-margin) 0;
-    }
-  }
-}
-
-@include breakpoint(xsmall) {
-  .wrapper--service {
-    .inner {
-      display: block;
-    }
-
-    .image-wrapper {
-      width: 12em;
-      max-width: 85%;
-      margin: 0 0 (_size(element-margin) * 0.5) 0 !important;
-    }
   }
 }
 

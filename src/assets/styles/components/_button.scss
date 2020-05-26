@@ -80,4 +80,10 @@ button,
   @include breakpoint(xsmall) {
     padding: 0;
   }
+
+  @include breakpoint(small) {
+    &.call-to-action {
+      padding: 0 2.25em;
+    }
+  }
 }

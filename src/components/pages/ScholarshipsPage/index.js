@@ -30,7 +30,7 @@ const ScholarshipPage = ({activeOnly, page, scholarships}) => {
       <p className={styles.disclaimer}>
         <FormattedMessage id={disclaimerTranslationId} />
         <FormattedMessage id={linkLabelTranslationId}>
-          {linkLabel => (
+          {(linkLabel) => (
             <Link className={styles.link} to={link}>
               {linkLabel}
             </Link>
@@ -45,7 +45,7 @@ const ScholarshipPage = ({activeOnly, page, scholarships}) => {
 ScholarshipPage.propTypes = {
   page: T.object.isRequired,
   activeOnly: T.bool,
-  scholarships: T.arrayOf(T.object)
+  scholarships: T.arrayOf(T.object),
 };
 
 export default ScholarshipPage;

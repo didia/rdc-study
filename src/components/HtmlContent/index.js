@@ -14,7 +14,7 @@ const HtmlContent = ({className, content}) => {
 
 HtmlContent.propTypes = {
   content: T.string.isRequired,
-  className: T.string
+  className: T.string,
 };
 
 export default HtmlContent;
