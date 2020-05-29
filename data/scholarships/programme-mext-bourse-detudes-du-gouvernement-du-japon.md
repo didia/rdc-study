@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Programme MEXT: Bourse d'études du gouvernement du Japon."
-deadline: 2019-07-31T23:59:16.131Z
+deadline: 2020-07-31T04:00:00.000Z
 excerpt: Chaque année le gouvernement japonais octroie des bourses complètes aux
   étudiants étrangers souhaitant poursuivre leurs études de premier cycle ou de
   maîtrise dans des universités japonaises dans le cadre du programme de bourses
