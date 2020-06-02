@@ -45,6 +45,12 @@ Pour postuler à la bourse MEXT, vous devez envoyer les documents suivants au pr
 
 [Un certificat de santé](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
 
+Bulletins scolaires 
+
+Diplôme de fin d'études secondaires
+
+Une photo passeport  4.5 x 3.5 cm
+
 Pour bien vous préparer à l’examen, il est fortement conseillé de consulter [les épreuves des années antérieures.](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
 
 NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
