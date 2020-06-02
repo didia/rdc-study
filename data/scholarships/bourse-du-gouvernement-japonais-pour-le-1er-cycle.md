@@ -15,14 +15,22 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-[La bourse du gouvernement japonais](https://www.studyinjapan.go.jp/en/links/) consiste en:
+[La bourse du gouvernement japonais](https://www.studyinjapan.go.jp/en/links/) couvre:
+
+Les frais de scolarité (100%)
+
+Les billets aller-retour en classe économique
+
+Allocation de 117 000 yens / mois soit 1076,59$
+
+**Une allocation régionale supplémentaire de 2 000 yens ou 3 000 yens par mois sera ajoutée au montant mensuel de la bourse pour les boursiers étudiant ou menant des recherches régions désignées. En raison de la situation du budget du gouvernement japonais, le montant du paiement peut être sujet à changement. Au cas d'absence ou d'indisponibilité de l'université ou de la formation préparatoire pour une période prolongée, la bourse est suspendue pour cette période.**
 
 ## Quels sont les critères de la bourse ?
 
 Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
 1. Ne pas avoir la nationalité japonaise
-2. Etre né le 2 avril 1995 ou après
+2. Etre né le 2 avril 1996 ou après
 3. Avoir un diplôme de fin d'études secondaires 
 
 ## Comment postuler ?
