@@ -21,7 +21,7 @@ Les frais de scolarité (100%)
 
 Les billets aller-retour en classe économique
 
-Allocation de 117 000 yens / mois soit 1076,59$
+Allocation de 117 000 yens / mois soit 1080$
 
 **Une allocation régionale supplémentaire de 2 000 yens ou 3 000 yens par mois sera ajoutée au montant mensuel de la bourse pour les boursiers étudiant ou menant des recherches régions désignées. En raison de la situation du budget du gouvernement japonais, le montant du paiement peut être sujet à changement. Au cas d'absence ou d'indisponibilité de l'université ou de la formation préparatoire pour une période prolongée, la bourse est suspendue pour cette période.**
 
@@ -44,6 +44,8 @@ Pour postuler à la bourse MEXT, vous devez envoyer les documents suivants au pr
 [Une lettre de recommandation ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_SampleRecommendation.pdf)
 
 [Un certificat de santé](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
+
+Pour bien vous préparer à l’examen, il est fortement conseillé de consulter [les épreuves des années antérieures.](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
 
 NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
 
