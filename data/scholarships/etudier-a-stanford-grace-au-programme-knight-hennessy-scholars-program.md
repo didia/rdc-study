@@ -1,10 +1,9 @@
 ---
 draft: true
 title: Etudier à Stanford grâce au programme Knight-Hennessy Scholars program
-deadline: 2020-06-01T21:12:43.429Z
-excerpt: >-
-  Les boursiers Knight-Hennessy reçoivent un financement pour poursuivre des
-  études supérieures en tant que chercheurs à Stanford. Cela comprend les
+deadline: 2020-10-14T21:12:43.429Z
+excerpt: Les boursiers Knight-Hennessy reçoivent un financement pour poursuivre
+  des études supérieures en tant que chercheurs à Stanford. Cela comprend les
   programmes JD, MA, MBA, MD, MFA, MS, DMA et PhD, ainsi que les diplômes
   conjoints et doubles.
 thumbnail: /images/uploads/stanford.jpg
