@@ -35,4 +35,20 @@ Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
 ## Comment postuler ?
 
+Pour postuler à la bourse MEXT, vous devez envoyer les documents suivants au près de l'ambassade du Japon de votre pays:
+
+[Le formulaire de demande](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Application_Undergraduate.pdf) [](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Application_Undergraduate.pdf)
+
+[Le formulaire de demande de préférence de placement direct](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_DirectPlacement_Undergraduate.pdf)
+
+[Une lettre de recommandation ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_SampleRecommendation.pdf)
+
+[Un certificat de santé](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
+
 NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
+
+Pour la présélection, les candidats sont priés de n’envoyer que les copies de leurs documents académiques, les originaux ne seront demandés qu’à ceux qui auront satisfait au Test écrit et à l’Interview à l’Ambassade.
+
+Pour plus d'informations, veuillez consulter le guide la bourse <https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Guidelines_Undergraduate_E.pdf>
+
+Nous vous encourageons à postuler et  bonne chance.
