@@ -21,6 +21,10 @@ targetCountries:
 
 Frais de scolarité (100%)
 
+Un billet d'avion aller-retour en classe économique
+
+Une allocation de 2 000 à 3 000 yens soit 
+
 
 
 ## Quels sont les critères de la bourse ?
