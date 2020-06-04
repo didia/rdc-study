@@ -32,6 +32,19 @@ Autres bénéfices:
 
 ## Quels sont les critères de la bourse ?
 
+Pour bénéficier de la bourse, vous devez remplir les critères suivants:
+
+* Ne pas avoir la nationalité japonaise
+* Être né(e) à partir du 2 Avril 1986
+
+**Pour le master**
+
+Avoir effectué 16 ans d'études
+
+Avoir un diplôme de fin d'études universitaires (licence)
+
+
+
 ## Comment postuler ?
 
 NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
