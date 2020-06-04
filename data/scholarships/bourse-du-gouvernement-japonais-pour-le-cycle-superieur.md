@@ -59,31 +59,19 @@ impliqué dans des études de recherche dans des universités ou des centres de 
 
 Pour postuler au programme des bourses MEXT, vous déposer votre candidature auprès de l'ambassade du Japon de votre pays, avec les documents suivants:
 
-[Formulaire de demande](https://www.studyinjapan.go.jp/en/assets/xlsx/2021_Application_Research.xlsx)
+1. [Formulaire de demande](https://www.studyinjapan.go.jp/en/assets/xlsx/2021_Application_Research.xlsx)
+2. [Formulaire de demande de préférence](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Placement_Research.pdf)(pour ceux qui maîtrisent déjà le japonais)
+3. [Domaine d'études et Un plan de recherche](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_FieldStudy_Research.docx)
+4. Relevé des notes universitaires
+5. Diplôme universitaire
+6. [Lettre de recommandation](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_SampleRecommendation.pdf)
+7. [Un certificat de santé ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)[](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
+8. Résumé des thèses (si le candidat en a déjà rédigé)
+9. Certificat de maîtrise de langue (Uniquement si le demandeur possède des documents attestant ses compétences en japonais ou en anglais ; soumettez-en 3 copies);
+10. Lettre de recommandation de l’employeur actuel (à soumettre si le demandeur est actuellement employé.);
+11. Photographie montrant les œuvres d’art du demandeur ou un support musical d’enregistrement numérique (à soumettre si le demandeur postule pour les beaux-arts ou la musique)
 
-[Formulaire de demande de préférence](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Placement_Research.pdf)(pour ceux qui maîtrisent déjà le japonais)
-
-[Domaine d'études et Un plan de recherche](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_FieldStudy_Research.docx)
-
-Relevé des notes universitaires
-
-Diplôme universitaire
-
-[Lettre de recommandation](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_SampleRecommendation.pdf)
-
-[Un certificat de santé ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)[](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
-
-Résumé des thèses (si le candidat en a déjà rédigé)
-
-
-
-
-
-
-
-
-
-NB: les documents doivent être rédigés en japonais ou en anglais, ou une traduction dans l’une de ces langues doit être jointe. De plus, les candidats doivent soumettre 3 dossiers de candidature: l’un est un ensemble complet de documents originaux plus les deux autres (Deux copies du dossier original). Écrivez le numéro du document, de ① à ⑪ dans le coin supérieur droit de la première page pour tous les documents
+**NB: les documents doivent être rédigés en japonais ou en anglais, ou une traduction dans l’une de ces langues doit être jointe. De plus, les candidats doivent soumettre 3 dossiers de candidature: l’un est un ensemble complet de documents originaux plus les deux autres (Deux copies du dossier original). Écrivez le numéro du document, de ① à ⑪ dans le coin supérieur droit de la première page pour tous les documents**
 
 Pour bien vous préparer à l’examen, il est fortement conseillé de consulter [les épreuves des années antérieures.](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
 
