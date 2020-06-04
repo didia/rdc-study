@@ -34,8 +34,13 @@ Autres bénéfices:
 
 Pour bénéficier de la bourse, vous devez remplir les critères suivants:
 
-* Ne pas avoir la nationalité japonaise
-* Être né(e) à partir du 2 Avril 1986
+Ne pas avoir la nationalité japonaise
+
+Être né(e) à partir du 2 Avril 1986
+
+Avoir un sujet de recherche dans la même spécialité ou une spécialité en relation avec celle étudiée auparavant 
+
+Être en bonne santé physique et mentale.
 
 **Pour le master**
 
@@ -45,8 +50,17 @@ Avoir un diplôme de fin d'études universitaires (licence).
 
 Les candidats qui ont obtenu un diplôme universitaire et qui ont participé à des études de recherche dans des universités ou des centres de recherche (y compris des universités et des centres de recherche à l'étranger) pendant deux ans ou plus, et reconnus comme ayant une compétence académique équivalente à celle des titulaires d'un diplôme de master de l'école doctorale.
 
+**Cours de doctorat (facultés de médecine, de médecine dentaire, de sciences vétérinaires et certaines parties de l'industrie pharmaceutique)**
 
+① Les candidats qui ont terminé 18 ans d'études dans des pays autres que le Japon.
+② Les candidats qui ont terminé un programme avec la période d'étude standard de cinq ans ou plus dans les universités ou des établissements d'enseignement équivalents dans des pays autres que le Japon et ont reçu un diplôme équivalent à une licence.
+③ Les candidats qui ont achevé 16 années de scolarité dans des pays autres que le Japon et qui ont été
+impliqué dans des études de recherche dans des universités ou des centres de recherche (y compris des universités et des centres) pendant deux ans ou plus, et reconnus comme ayant des compétences académiques équivalentes à diplômés en médecine, dentisterie, sciences vétérinaires ou certaines parties dans les domaines pharmaceutiques.
 
 ## Comment postuler ?
+
+Pour postuler au programme des bourses MEXT, vous deposer votre candidature auprès de l'ambassade du Japon de votre pays, avec les documents suivants:
+
+Un certificat de santé <https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf>
 
 NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
