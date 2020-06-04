@@ -65,8 +65,28 @@ Pour postuler au programme des bourses MEXT, vous déposer votre candidature aup
 
 [Domaine d'études et Un plan de recherche](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_FieldStudy_Research.docx)
 
+Relevé des notes universitaires
+
+Diplôme universitaire
+
+[Lettre de recommandation](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_SampleRecommendation.pdf)
+
 [Un certificat de santé ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)[](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
+
+Résumé des thèses (si le candidat en a déjà rédigé)
+
+
+
+
+
+
+
+
+
+NB: les documents doivent être rédigés en japonais ou en anglais, ou une traduction dans l’une de ces langues doit être jointe. De plus, les candidats doivent soumettre 3 dossiers de candidature: l’un est un ensemble complet de documents originaux plus les deux autres (Deux copies du dossier original). Écrivez le numéro du document, de ① à ⑪ dans le coin supérieur droit de la première page pour tous les documents
 
 Pour bien vous préparer à l’examen, il est fortement conseillé de consulter [les épreuves des années antérieures.](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
 
 NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
+
+Nous vous encourageons à postuler et bonne chance !
