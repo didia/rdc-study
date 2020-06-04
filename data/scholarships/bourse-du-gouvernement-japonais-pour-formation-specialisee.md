@@ -50,7 +50,9 @@ Pour postuler à la bourse pour une formation spécialisée au Japon, vous devez
 7. Certificat d’examen de qualification d’inscription universitaire (uniquement pour ceux qui ont réussi l’université examens de qualification d’inscription)
 8. Certificat de compétence linguistique (uniquement dans le cas où le demandeur possède des documents attestant de la compétence en japonais ou en anglais; soumettre 2 copies)
 
-Les documents doivent être rédigés en japonais ou en anglais, ou une traduction dans l’une de ces langues doit être jointe. Les candidats doivent soumettre deux dossiers de candidature : l’un est un ensemble complet de documents originaux et l’autre est un ensemble complet de leurs copies. Écrivez le numéro du document de ① à ⑧ dans le coin supérieur droit de la première page.
+**Les documents doivent être rédigés en japonais ou en anglais, ou une traduction dans l’une de ces langues doit être jointe. Les candidats doivent soumettre deux dossiers de candidature : l’un est un ensemble complet de documents originaux et l’autre est un ensemble complet de leurs copies. Écrivez le numéro du document de ① à ⑧ dans le coin supérieur droit de la première page.**
+
+Pour bien vous préparer à l’examen, il est fortement conseillé de consulter [les épreuves des années antérieures](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
 
 NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
 
