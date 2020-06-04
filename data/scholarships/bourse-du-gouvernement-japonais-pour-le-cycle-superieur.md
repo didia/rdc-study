@@ -19,16 +19,14 @@ targetCountries:
 
 [La bourse du gouvernement japonais](https://www.studyinjapan.go.jp/en/links/) couvre:
 
-Frais de scolarité (100%)
+* Frais de scolarité (100%)
+* Un billet d'avion aller-retour en classe économique
+* Une allocation payée en fonction du cours auquel vous êtes inscrit.
 
-Un billet d'avion aller-retour en classe économique
+Un supplément régional de 2 000 yens ou 3 000 yens par mois sera ajoutée au montant mensuel de la bourse pour les boursiers qui mènent des recherches dans des régions spécialement désignées. En raison de la situation du budget du gouvernement  Japonais, le montant du paiement peut être sujet à changement à chaque instant. En cas d’absence de l'université pour une période prolongée, la bourse est suspendue pour cette période.
 
-Une allocation payée en fonction du cours auquel vous êtes inscrit.
-
-Un supplément régional de 2 000 yens ou 3 000 yens par mois sera ajoutée au montant mensuel de la bourse pour les boursiers qui mènent des recherches dans des régions spécialement désignées. En raison de la situation du budget du gouvernement  Japonais
-Budget du gouvernement, le montant du paiement peut être sujet à changement à chaque exercice. Si un bénéficiaire est absent
-de l'université pour une période prolongée, la bourse est suspendue pour cette période.
-① Élèves recevant l'enseignement préparatoire et élèves non réguliers: 143 000 yens par mois
+Autres bénéfices: 
+① Étudiants recevant l'enseignement préparatoire et élèves non réguliers: 143 000 yens par mois
 ② Étudiants réguliers inscrits à des cours de master ou de diplôme professionnel: 144 000 yens par mois
 ③ Étudiants réguliers inscrits en doctorat: 145 000 yens par mois.
 
