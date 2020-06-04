@@ -37,26 +37,22 @@ Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
 Pour postuler à la bourse MEXT, vous devez envoyer les documents suivants au près de l'ambassade du Japon de votre pays:
 
-[Le formulaire de demande](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Application_Undergraduate.pdf) [](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Application_Undergraduate.pdf)
+1. [Le formulaire de demande](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Application_Undergraduate.pdf) [](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Application_Undergraduate.pdf)
+2. [Le formulaire de demande de préférence de placement direct](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_DirectPlacement_Undergraduate.pdf) (uniquement pour ceux qui parlent déjà japonais)
+3. Bulletins scolaires
+4. Diplôme de fin d'études secondaires 
+5. [Une lettre de recommandation ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_SampleRecommendation.pdf) du directeur ou d’un enseignant de la dernière école fréquentée
+6. Certificat d’inscription (uniquement pour les étudiants actuellement inscrits dans une université)
+7. [Un certificat de santé](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
+8. Certificat d’examen de qualification de l’université (Uniquement pour ceux qui ont réussi les examens de qualification)
+9. Certificat de compétence linguistique (Uniquement si le demandeur possède des documents attestant ses compétences en japonais ou en anglais); soumettez-en 2 copies.
 
-[Le formulaire de demande de préférence de placement direct](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_DirectPlacement_Undergraduate.pdf)
-
-[Une lettre de recommandation ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_SampleRecommendation.pdf)
-
-[Un certificat de santé](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
-
-Bulletins scolaires 
-
-Diplôme de fin d'études secondaires
-
-Une photo passeport  4.5 x 3.5 cm
+**NB: Les documents doivent être rédigés en japonais ou en anglais, ou une traduction dans l’une de ces langues doit être jointe. En outre, les candidats doivent soumettre deux dossiers de candidature : l’un est un ensemble complet de documents originaux et l’autre est un ensemble complet de leurs copies. Écrivez le numéro du document, de ① à ⑨ dans le coin supérieur droit de la première page pour tous les documents.**
 
 Pour bien vous préparer à l’examen, il est fortement conseillé de consulter [les épreuves des années antérieures.](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
 
 NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
 
-Pour la présélection, les candidats sont priés de n’envoyer que les copies de leurs documents académiques, les originaux ne seront demandés qu’à ceux qui auront satisfait au Test écrit et à l’Interview à l’Ambassade.
-
 Pour plus d'informations, veuillez consulter le guide la bourse <https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Guidelines_Undergraduate_E.pdf>
 
-Nous vous encourageons à postuler et  bonne chance.
+Nous vous encourageons à postuler et  bonne chance!
