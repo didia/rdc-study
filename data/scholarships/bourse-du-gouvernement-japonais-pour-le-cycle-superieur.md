@@ -39,9 +39,11 @@ Pour bénéficier de la bourse, vous devez remplir les critères suivants:
 
 **Pour le master**
 
-Avoir effectué 16 ans d'études
+Avoir un diplôme de fin d'études universitaires (licence).
 
-Avoir un diplôme de fin d'études universitaires (licence)
+**Pour le Doctorat** 
+
+Les candidats qui ont obtenu un diplôme universitaire et qui ont participé à des études de recherche dans des universités ou des centres de recherche (y compris des universités et des centres de recherche à l'étranger) pendant deux ans ou plus, et reconnus comme ayant une compétence académique équivalente à celle des titulaires d'un diplôme de master de l'école doctorale.
 
 
 
