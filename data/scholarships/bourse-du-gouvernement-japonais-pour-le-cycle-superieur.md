@@ -25,8 +25,7 @@ targetCountries:
 
 Un supplément régional de 2 000 yens ou 3 000 yens par mois sera ajoutée au montant mensuel de la bourse pour les boursiers qui mènent des recherches dans des régions spécialement désignées. En raison de la situation du budget du gouvernement  Japonais, le montant du paiement peut être sujet à changement à chaque instant. En cas d’absence de l'université pour une période prolongée, la bourse est suspendue pour cette période.
 
-Autres bénéfices: 
-① Étudiants recevant l'enseignement préparatoire et élèves non réguliers: 143 000 yens par mois
+Autres bénéfices:  ① Étudiants recevant l'enseignement préparatoire et élèves non réguliers: 143 000 yens par mois
 ② Étudiants réguliers inscrits à des cours de master ou de diplôme professionnel: 144 000 yens par mois
 ③ Étudiants réguliers inscrits en doctorat: 145 000 yens par mois.
 
@@ -52,8 +51,7 @@ Les candidats qui ont obtenu un diplôme universitaire et qui ont participé à 
 
 **Cours de doctorat (facultés de médecine, de médecine dentaire, de sciences vétérinaires et certaines parties de l'industrie pharmaceutique)**
 
-① Les candidats qui ont terminé 18 ans d'études dans des pays autres que le Japon.
-② Les candidats qui ont terminé un programme avec la période d'étude standard de cinq ans ou plus dans les universités ou des établissements d'enseignement équivalents dans des pays autres que le Japon et ont reçu un diplôme équivalent à une licence.
+① Les candidats qui ont terminé 18 ans d'études dans des pays autres que le Japon. ② Les candidats qui ont terminé un programme avec la période d'étude standard de cinq ans ou plus dans les universités ou des établissements d'enseignement équivalents dans des pays autres que le Japon et ont reçu un diplôme équivalent à une licence.
 ③ Les candidats qui ont achevé 16 années de scolarité dans des pays autres que le Japon et qui ont été
 impliqué dans des études de recherche dans des universités ou des centres de recherche (y compris des universités et des centres) pendant deux ans ou plus, et reconnus comme ayant des compétences académiques équivalentes à diplômés en médecine, dentisterie, sciences vétérinaires ou certaines parties dans les domaines pharmaceutiques.
 
@@ -61,10 +59,14 @@ impliqué dans des études de recherche dans des universités ou des centres de 
 
 Pour postuler au programme des bourses MEXT, vous déposer votre candidature auprès de l'ambassade du Japon de votre pays, avec les documents suivants:
 
-Un certificat de santé <https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf>
+[Formulaire de demande](https://www.studyinjapan.go.jp/en/assets/xlsx/2021_Application_Research.xlsx)
 
+[Formulaire de demande de préférence](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Placement_Research.pdf)(pour ceux qui maîtrisent déjà le japonais)
 
+[Domaine d'études et Un plan de recherche](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_FieldStudy_Research.docx)
 
-Pour bien vous préparer à l’examen, il est fortement conseillé de consulter[les épreuves des années antérieures.](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
+[Un certificat de santé ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)[](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
+
+Pour bien vous préparer à l’examen, il est fortement conseillé de consulter [les épreuves des années antérieures.](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
 
 NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
