@@ -1,9 +1,9 @@
 {
   "assistance-form.about-candidate.description": "Ces informations serviront à l’élaboration de votre contrat de service.",
-  "assistance-form.about-candidate.email": "Votre adresse email",
-  "assistance-form.about-candidate.first-name": "Votre prénom",
-  "assistance-form.about-candidate.last-name": "Votre nom",
-  "assistance-form.about-candidate.origin-country": "À partir de quel pays ferez-vous vos démarches?",
+  "assistance-form.about-candidate.email": "Adresse email",
+  "assistance-form.about-candidate.first-name": "Prénom",
+  "assistance-form.about-candidate.last-name": "Nom",
+  "assistance-form.about-candidate.origin-country": "Pays de résidence",
   "assistance-form.about-candidate.title": "Quelques informations sur vous",
 
   "assistance-form.controls.next": "Suivant",

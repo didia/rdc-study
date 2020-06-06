@@ -10,3 +10,15 @@ select.input {
 .step-title {
   color: _palette(bg);
 }
+
+.fields {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+}
+
+@include breakpoint(xsmall) {
+  .fields {
+    display: block;
+  }
+}
