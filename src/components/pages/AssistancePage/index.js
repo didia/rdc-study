@@ -8,9 +8,11 @@ import {FormattedMessage} from 'react-intl';
 // Styles
 import styles from './styles.module.scss';
 
+// Components
 import GenericPage from '../GenericPage';
 import ContactUsLink from '../../ContactUsLink';
 import Card from '../../Card';
+import AssistanceForm from '../../AssistanceForm';
 
 const FeatureList = ({featureLabelKeys, className}) => (
   <ul className={classnames(styles['feature-list'], className)}>
@@ -78,23 +80,7 @@ const AssistancePage = () => {
   return (
     <GenericPage page={page} bannerClassName={styles.banner}>
       <Card className={styles['main-card']}>
-        <header className={styles['column--left']}>
-          <FormattedMessage id="pages.assistance.free.title" tagName="p">
-            {(text) => <p className={styles.pricing}>{text}</p>}
-          </FormattedMessage>
-
-          <FormattedMessage id="pages.assistance.free.description" tagName="p" />
-
-          <FormattedMessage id="pages.assistance.free.guide-link-text">
-            {(text) => (
-              <Link to="/#guides" className={classnames(styles.button, 'button special')}>
-                {text}
-              </Link>
-            )}
-          </FormattedMessage>
-        </header>
-
-        <FeatureList className={styles['column--right']} featureLabelKeys={freeTierFeatureLabelKeys} />
+        <AssistanceForm />
       </Card>
 
       <section className={styles['offer-block']}>

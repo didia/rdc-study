@@ -1,6 +1,13 @@
 {
-  "header.menu-toggle-label": "Menu",
-  "header.title": "RDC ETUDES",
+  "assistance-form.about-candidate.description": "Ces informations serviront à l’élaboration de votre contrat de service.",
+  "assistance-form.about-candidate.email": "Votre adresse email",
+  "assistance-form.about-candidate.first-name": "Votre prénom",
+  "assistance-form.about-candidate.last-name": "Votre nom",
+  "assistance-form.about-candidate.origin-country": "À partir de quel pays ferez-vous vos démarches?",
+  "assistance-form.about-candidate.title": "Quelques informations sur vous",
+
+  "assistance-form.controls.next": "Suivant",
+  "assistance-form.controls.previous": "Précedent",
 
   "footer.copyright": "© RDC Etudes. Tous droits réservés",
 
@@ -18,6 +25,9 @@
   "footer.title": "Contactez-nous",
 
   "guide-list.guide.learn-more-text": "En savoir plus",
+
+  "header.menu-toggle-label": "Menu",
+  "header.title": "RDC ETUDES",
 
   "menu.about-us-link-label": "Qui sommes-nous?",
   "menu.assistance-link-label": "Besoin d’aide?",
@@ -135,20 +145,33 @@
 
   "shared.countries.africa": "Afrique",
   "shared.countries.be": "Belgique",
+  "shared.countries.bf": "Burkina Faso",
+  "shared.countries.bj": "Bénin",
   "shared.countries.br": "Brésil",
   "shared.countries.ca": "Canada",
   "shared.countries.cd": "République Démocratique du Congo",
+  "shared.countries.cg": "République du Congo",
   "shared.countries.ch": "Suisse",
+  "shared.countries.ci": "Côte d'Ivoire",
   "shared.countries.cn": "Chine",
   "shared.countries.cytr": "Chypre du Nord",
   "shared.countries.de": "Allemagne",
   "shared.countries.fr": "France",
+  "shared.countries.ga": "Gabon",
   "shared.countries.gb": "Royaume-Uni",
   "shared.countries.gh": "Ghana",
+  "shared.countries.gn": "Guinée",
+  "shared.countries.ht": "Haïti",
+  "shared.countries.in": "Inde",
   "shared.countries.jp": "Japon",
+  "shared.countries.ml": "Mali",
+  "shared.countries.ne": "Niger",
   "shared.countries.ro": "Roumanie",
+  "shared.countries.ru": "Russie",
   "shared.countries.rw": "Rwanda",
   "shared.countries.sa": "Afrique du Sud",
+  "shared.countries.sn": "Sénégal",
+  "shared.countries.tg": "Togo",
   "shared.countries.tr": "Turquie",
   "shared.countries.us": "États-Unis",
 
@@ -161,8 +184,9 @@
 
   "shared.social-share.email.message": "{excerpt} \n\n Pour en savoir plus, vas sur {link}",
 
-  "shared.see-more-text": "Voir plus",
+  "shared.other-text": "Autre",
   "shared.read-time": "{time} {time, plural, one {minute de lecture}\n other {minutes de lecture}}",
+  "shared.see-more-text": "Voir plus",
   "shared.share-on-facebook": "Partagez sur facebook",
   "shared.share-on-whatsapp": "Partagez sur whatsapp"
 }

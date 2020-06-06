@@ -12,7 +12,7 @@ import SocialShareButtons from '../../../SocialShareButtons';
 const Banner = ({className, page}) => (
   <header className={classnames(styles.banner, className)}>
     <div className={styles.wrapper}>
-      <h2 className={styles.title}>{page.title}</h2>
+      <h1 className={styles.title}>{page.title}</h1>
       <p className={styles.description}>{page.description}</p>
       {page.socialShareEnabled && (
         <div className={styles.social}>
