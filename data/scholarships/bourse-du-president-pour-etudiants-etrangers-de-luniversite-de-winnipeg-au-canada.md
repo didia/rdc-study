@@ -1,12 +1,10 @@
 ---
 draft: true
-title: >-
-  Bourse du président pour étudiants étrangers à l’Université de Winnipeg au
-  Canada
+title: Bourse du président pour étudiants étrangers à l’Université de Winnipeg
+  au Canada
 deadline: 2020-06-01T03:59:00.000Z
-excerpt: >-
-  La bourse d’études du président de l’Université de Winnipeg au Canada est
-  offerte aux nouveaux étudiants étrangers qui démontrent un esprit de
+excerpt: La bourse d’études du président de l’Université de Winnipeg au Canada
+  est offerte aux nouveaux étudiants étrangers qui démontrent un esprit de
   leadership.
 tags:
   - bourse d’études
@@ -21,6 +19,7 @@ startDate: 2020-02-20T14:32:45.874Z
 levels:
   - undergraduate
   - graduate
+  - internship
 targetCountries:
   - ca
 ---
@@ -30,7 +29,7 @@ La bourse consiste en une aide financière non renouvelable dont le montant dép
 
 * Programme de Langue anglaise: 3 bourses de 3 500 $.
 * La formation professionnelle: 3 bourses de 3 500 $.
-* La license (Premier cycle): 3 bourses de 5 000 $.
+* La licence (Premier cycle): 3 bourses de 5 000 $.
 * La maitrise (Deuxième cycle): 3 bourses de 5 000 $.
 * Le collège (Equivalent Graduat): 3 bourses de 3 500 $.
 
@@ -49,7 +48,6 @@ Une fois l’admission obtenue, vous devez remplir <a href="https://www.uwinnipe
 
 * Une déclaration personnelle de 250 à 500 mots Un curriculum vitae
 * Deux références qui peuvent parler de vos activités parascolaires / bénévoles
-
 
 La date limite pour le programme de langue anglaise, la formation professionnelle ainsi que la licence est le 30 septembre 2019. Pour le collège et la maîtrise, la date limite est le 1er juin 2020.
 
