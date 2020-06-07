@@ -40,7 +40,7 @@ targetCountries:
 
 ## Quels sont les critères de la bourse ?
 
-* Vous devez avoir obtenu ou vous obtiendrez votre diplôme de doctorat entre le 16 septembre 2016 et le 30 septembre 2020,
+* Vous devez avoir obtenu ou vous obtiendrez votre diplôme de doctorat entre le 15 septembre 2017 et le 30 septembre 2021,
 * Votre programme de recherche vise soit les domaines de la santé, soit les sciences naturelles et/ou ingénierie ou soit les sciences sociales et humaines.
 * Vous devez avoir déjà été sélectionné par un établissement d’enseignement qui vous accueillera pour votre postdoc.
 
@@ -56,4 +56,32 @@ Pour en savoir plus sur les critères de sélection de cette bourse, consultez <
 
 ## Comment postuler ?
 
-Pour savoir comment postuler, consultez <a href="http://banting.fellowships-bourses.gc.ca/fr/app-dem_guide.html" rel="nofollow noopener">le guide détaillé</a> mis à votre disposition par le gouvernement du Canada.
+Pour postuler à la bourse, veuillez suivre les étapes suivantes:
+
+[Confirmer l’admissibilité](https://banting.fellowships-bourses.gc.ca/fr/app-dem_elig-adm.html)
+
+Communiquer avec [l’établissement d’accueil](https://www.univcan.ca/) souhaité
+
+S’inscrire pour obtenir un compte [CV commun canadien  (CVC)](https://ccv-cvc.ca/indexresearcher-fra.frm)et un compte [RechercheNet](https://www.researchnet-recherchenet.ca/rnr16/LoginServlet?language=F);
+
+Créer un CVC[ (modèle du programme Banting)](https://ccv-cvc.ca/indexresearcher-fra.frm) et un lien à la demande dans RechercheNet;
+
+Commencer à remplir une demande dans RechercheNet;
+
+Préciser le domaine de recherche;
+
+Identifier les participants;
+
+Identifier les répondants;
+
+Entrer les renseignements sur les diplômes;
+
+Entrer les renseignements sur la proposition et les documents à l’appui;
+
+Revoir les documents relatifs à la demande;
+
+Donner son consentement et présenter la demande;
+
+Pour savoir plus sur comment postuler, consultez <https://banting.fellowships-bourses.gc.ca/fr/app-dem_guide.html> mis à votre disposition par le gouvernement du Canada.
+
+Nous vous encourageons  postuler et bonne chance !
