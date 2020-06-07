@@ -1,11 +1,11 @@
 ---
+draft: true
 title: Bourses de recherche postdoctorales Banting au Canada
-deadline: 2019-09-19T03:59:44.449Z
-excerpt: >-
-  Chaque année le gouvernement canadien offre 70 bourses d’une valeur de 70.000
-  dollars canadiens par année pour une durée de 2 ans non renouvelable aux
-  étudiants postdoctoraux afin qu’ils contribuent à l’essor économique, social
-  et scientifique du Canada. 
+deadline: 2020-10-01T03:59:44.449Z
+excerpt: "Chaque année le gouvernement canadien offre 70 bourses d’une valeur de
+  70.000 dollars canadiens par année pour une durée de 2 ans non renouvelable
+  aux étudiants postdoctoraux afin qu’ils contribuent à l’essor économique,
+  social et scientifique du Canada. "
 tags:
   - Bourses d’études
   - Bourses banting
@@ -13,8 +13,8 @@ tags:
   - Canada
   - Bourses de recherche
 thumbnail: /images/uploads/good-free-photos-773344-unsplash.jpg
-thumbnailCredits: >-
-  <a style="background-color:black;color:white;text-decoration:none;padding:4px
+thumbnailCredits: <a
+  style="background-color:black;color:white;text-decoration:none;padding:4px
   6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;,
   &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe
   UI&quot;, Arial,
@@ -28,6 +28,7 @@ thumbnailCredits: >-
   viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12
   5h10v18H0V14h10v9h12v-9z"></path></svg></span><span
   style="display:inline-block;padding:2px 3px">Good Free Photos</span></a>
+startDate: 2020-06-01T18:02:40.315Z
 levels:
   - research
 targetCountries:
