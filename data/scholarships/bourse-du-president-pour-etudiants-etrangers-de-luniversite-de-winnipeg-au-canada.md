@@ -30,8 +30,8 @@ La bourse consiste en une aide financière non renouvelable dont le montant dép
 * Programme de Langue anglaise: 3 bourses de 3 500 $.
 * La formation professionnelle: 3 bourses de 3 500 $.
 * La licence (Premier cycle): 3 bourses de 5 000 $.
-* La maitrise (Deuxième cycle): 3 bourses de 5 000 $.
-* Le collège (Equivalent Graduat): 3 bourses de 3 500 $.
+* La maîtrise (Deuxième cycle): 3 bourses de 5 000 $.
+* Le collège (Équivalent Graduat): 3 bourses de 3 500 $.
 
 ## Quels sont les critères de la bourse ?
 
