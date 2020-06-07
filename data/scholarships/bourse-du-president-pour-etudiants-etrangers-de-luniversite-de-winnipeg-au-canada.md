@@ -49,7 +49,25 @@ Une fois l’admission obtenue, vous devez remplir <a href="https://www.uwinnipe
 * Une déclaration personnelle de 250 à 500 mots Un curriculum vitae
 * Deux références qui peuvent parler de vos activités parascolaires / bénévoles
 
-La date limite pour le programme de langue anglaise, la formation professionnelle ainsi que la licence est le 30 septembre 2019. Pour le collège et la maîtrise, la date limite est le 1er juin 2020.
+**Les dates limites:**
+
+Licence (rentrée printemps/été/automne 2020) : 2 mars 2020
+
+Master (rentrée automne 2020/hiver 2021): 1 juin 2020
+
+Le collège (graduat): 1 er juin 2020
+
+Formation professionnelle continue et appliquée:
+
+Rentrée automne 2020: 1 er juin
+
+Rentrée hiver 2021: 1 er octobre 2020
+
+Programme de langue anglaise:
+
+Rentrée automne 2020: 1 er juin 2020
+
+Rentrée hiver: 1 er oct 2020
 
 Pour plus de renseignements sur la bourse, consultez <a href="<https://www.uwinnipeg.ca/graduate-studies/funding/masters-and-doctoral-awards/presidents-scholarship/index.html>
 
