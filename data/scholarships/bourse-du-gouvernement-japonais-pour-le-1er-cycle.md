@@ -1,6 +1,6 @@
 ---
 draft: true
-title: Bourse du gouvernement Japonais pour le 1er cycle
+title: Bourses d'études du gouvernement Japonais pour étudiants du 1er cycle
 deadline: 2020-07-31T20:10:23.163Z
 excerpt: Chaque année le gouvernement japonais octroie des bourses complètes aux
   étudiants étrangers souhaitant poursuivre leurs études de premier cycle dans
@@ -15,15 +15,12 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-[La bourse du gouvernement japonais](https://www.studyinjapan.go.jp/en/links/) couvre:
+La bourse du gouvernement japonais offre:
 
-Les frais de scolarité (100%)
-
-Les billets aller-retour en classe économique
-
-Allocation de 117 000 yens / mois soit 1080$
-
-**Une allocation régionale supplémentaire de 2 000 yens ou 3 000 yens par mois sera ajoutée au montant mensuel de la bourse pour les boursiers étudiant ou menant des recherches régions désignées. En raison de la situation du budget du gouvernement japonais, le montant du paiement peut être sujet à changement. Au cas d'absence ou d'indisponibilité de l'université ou de la formation préparatoire pour une période prolongée, la bourse est suspendue pour cette période.**
+* Les frais académiques totalement payés;
+* Une allocation de 117 000 yen par mois soit 1 080$ par mois;
+* Billet aller-retour entre votre pays de résidence et le Japon;
+* Une allocation supplémentaire de 2 000 ou 3 000 yen par mois pour les personnes qui poursuivront leurs études dans certaines régions spécialement désignées par le gouvernement japonais. Ce montant variera selon le budget du gouvernement.
 
 ## Quels sont les critères de la bourse ?
 
