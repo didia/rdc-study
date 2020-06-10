@@ -19,29 +19,28 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-[La bourse du gouvernement japonais](https://www.studyinjapan.go.jp/en/links/) couvre:
+La bourse du gouvernement japonais offre:
 
-* Frais de scolarité (100%)
-* Un billet d'avion aller-retour en classe économique
-* Une allocation payée en fonction du cours auquel vous êtes inscrit.
+* Les frais académiques totalement payés;
+* Billet aller-retour entre votre pays de résidence et le Japon;
+* Une allocation payée en fonction du cours auquel vous êtes inscrit:
+  * 143 000 yen par mois pour étudiants inscrits en préparatoire ou étudiants non réguliers;
+  * 144 000 yen par mois pour étudiants inscrits en master ou dans un programme menant à un diplôme professionnel;
+  * 145 000 yen par mois pour étudiants inscrits au doctorat.
+* Une allocation supplémentaire de 2 000 ou 3 000 yen par mois pour les personnes qui poursuivront leurs études dans certaines régions spécialement désignées par le gouvernement japonais. Ce montant variera selon le budget du gouvernement.
 
-Un supplément régional de 2 000 yens ou 3 000 yens par mois sera ajoutée au montant mensuel de la bourse pour les boursiers qui mènent des recherches dans des régions spécialement désignées. En raison de la situation du budget du gouvernement  Japonais, le montant du paiement peut être sujet à changement à chaque instant. En cas d’absence de l'université pour une période prolongée, la bourse est suspendue pour cette période.
-
-Autres bénéfices:  ① Étudiants recevant l'enseignement préparatoire et élèves non réguliers: 143 000 yens par mois
-② Étudiants réguliers inscrits à des cours de master ou de diplôme professionnel: 144 000 yens par mois
-③ Étudiants réguliers inscrits en doctorat: 145 000 yens par mois.
 
 ## Quels sont les critères de la bourse ?
 
-Pour bénéficier de la bourse, vous devez remplir les critères suivants:
+Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
-Ne pas avoir la nationalité japonaise
+1. Ne pas avoir la nationalité japonaise;
+2. Être né(e) à partir du 2 Avril 1986;
+3. Avoir un sujet de recherche dans la même spécialité ou une spécialité connexe à vos études précédentes;
+4. Être en bonne santé physique et mentale.
 
-Être né(e) à partir du 2 Avril 1986
+En plus de ces conditions générales, vous devez répondre à des conditions particulières selon le niveau ou domaine d’études visée:
 
-Avoir un sujet de recherche dans la même spécialité ou une spécialité en relation avec celle étudiée auparavant 
-
-Être en bonne santé physique et mentale.
 
 **Pour le master**
 
