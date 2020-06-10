@@ -34,13 +34,13 @@ Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
 Pour postuler à la bourse MEXT, vous devez envoyer les documents suivants au près de l'ambassade du Japon de votre pays:
 
-1. [Le formulaire de demande](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Application_Undergraduate.pdf) [](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Application_Undergraduate.pdf)
-2. [Le formulaire de demande de préférence de placement direct](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_DirectPlacement_Undergraduate.pdf) (uniquement pour ceux qui parlent déjà japonais)
+1. <a href="" target="_blank" rel="noopener noreferrer"></a>[Le formulaire de demande](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Application_Undergraduate.pdf) [](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Application_Undergraduate.pdf)
+2. <a href="" target="_blank" rel="noopener noreferrer"></a>[Le formulaire de demande de préférence de placement direct](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_DirectPlacement_Undergraduate.pdf) (uniquement pour ceux qui parlent déjà japonais)
 3. Bulletins scolaires
 4. Diplôme de fin d'études secondaires 
-5. [Une lettre de recommandation ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_SampleRecommendation.pdf) du directeur ou d’un enseignant de la dernière école fréquentée
+5. <a href="" target="_blank" rel="noopener noreferrer"></a>[Une lettre de recommandation ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_SampleRecommendation.pdf) du directeur ou d’un enseignant de la dernière école fréquentée
 6. Certificat d’inscription (uniquement pour les étudiants actuellement inscrits dans une université)
-7. [Un certificat de santé](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
+7. <a href="" target="_blank" rel="noopener noreferrer"></a>[Un certificat de santé](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
 8. Certificat d’examen de qualification de l’université (Uniquement pour ceux qui ont réussi les examens de qualification)
 9. Certificat de compétence linguistique (Uniquement si le demandeur possède des documents attestant ses compétences en japonais ou en anglais); soumettez-en 2 copies.
 
