@@ -6,6 +6,13 @@ excerpt: Chaque année le gouvernement japonais octroie des bourses complètes a
   étudiants étrangers souhaitant poursuivre leurs études de premier cycle dans
   des universités japonaises dans le cadre du programme de bourses d’études du
   gouvernement japonais (MEXT).
+tags:
+  - Bourse d’études
+  - Japon
+  - étudier gratuitement au Japon
+  - Congo
+  - RDC Congo
+  - Afrique
 thumbnail: /images/uploads/good-free-photos-773344-unsplash.jpg
 startDate: 2020-05-31T20:10:23.195Z
 levels:
