@@ -1,6 +1,9 @@
 // Vendor
 import React from 'react';
 import {useIntl} from 'react-intl';
+import classnames from 'classnames';
+import {Formik, Form, Field, ErrorMessage} from 'formik';
+import {string, object} from 'yup';
 
 // Styles
 import styles from './styles.module.scss';
@@ -8,54 +11,101 @@ import styles from './styles.module.scss';
 // Components
 import CountrySelector from '../CountrySelector';
 
+const aboutCandidateSchema = (intl) =>
+  object().shape({
+    firstName: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
+    lastName: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
+    email: string().email(intl.formatMessage({id: 'shared.forms.validation.email'})).required(intl.formatMessage({id: 'shared.forms.validation.required'})),
+    originCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
+  });
+
 const AboutCandidateStep = () => {
   const intl = useIntl();
 
   return (
-    <form>
-      <h2 className={styles['step-title']}>{intl.formatMessage({id: 'assistance-form.about-candidate.title'})}</h2>
-      <p>{intl.formatMessage({id: 'assistance-form.about-candidate.description'})}</p>
+    <div>
+      <h2 className={styles.title}>{intl.formatMessage({id: 'assistance-form.about-candidate.title'})}</h2>
+      <p className={styles.description}>{intl.formatMessage({id: 'assistance-form.about-candidate.description'})}</p>
 
-      <div className={styles.fields}>
-        <div className="field">
-          <label htmlFor="firstName" className={styles.label}>
-            {intl.formatMessage({id: 'assistance-form.about-candidate.first-name'})}
-          </label>
+      <Formik
+        initialValues={{firstName: '', lastName: '', email: '', originCountry: ''}}
+        validationSchema={aboutCandidateSchema(intl)}
+        onSubmit={(values) => {
+          window.console.log(values);
+        }}
+      >
+        {({isSubmitting}) => (
+          <Form>
+            <div className={styles.fields}>
+              <div className={classnames('field', styles.field)}>
+                <label htmlFor="firstName" className={styles.label}>
+                  {intl.formatMessage({id: 'assistance-form.about-candidate.labels.first-name'})}
+                </label>
 
-          <input type="text" name="firstName" className={styles.input} />
-        </div>
+                <Field
+                  type="text"
+                  name="firstName"
+                  className={styles.input}
+                  placeholder={intl.formatMessage({id: 'assistance-form.about-candidate.placeholders.first-name'})}
+                />
 
-        <div className="field">
-          <label htmlFor="lastName" className={styles.label}>
-            {intl.formatMessage({id: 'assistance-form.about-candidate.last-name'})}
-          </label>
+                <ErrorMessage name="firstName" />
+              </div>
 
-          <input type="text" name="lastName" className={styles.input} />
-        </div>
+              <div className={classnames('field', styles.field)}>
+                <label htmlFor="lastName" className={styles.label}>
+                  {intl.formatMessage({id: 'assistance-form.about-candidate.labels.last-name'})}
+                </label>
 
-        <div className="field">
-          <label htmlFor="email" className={styles.label}>
-            {intl.formatMessage({id: 'assistance-form.about-candidate.email'})}
-          </label>
+                <Field
+                  type="text"
+                  name="lastName"
+                  className={styles.input}
+                  placeholder={intl.formatMessage({id: 'assistance-form.about-candidate.placeholders.last-name'})}
+                />
 
-          <input type="email" name="email" className={styles.input} />
-        </div>
+                <ErrorMessage name="lastName" />
+              </div>
 
-        <div className="field">
-          <label htmlFor="originCountry" className={styles.label}>
-            {intl.formatMessage({id: 'assistance-form.about-candidate.origin-country'})}
-          </label>
+              <div className={classnames('field', styles.field)}>
+                <label htmlFor="email" className={styles.label}>
+                  {intl.formatMessage({id: 'assistance-form.about-candidate.labels.email'})}
+                </label>
 
-          <CountrySelector className={styles.input} name="originCountry" />
-        </div>
-      </div>
+                <Field
+                  type="email"
+                  name="email"
+                  className={styles.input}
+                  placeholder={intl.formatMessage({id: 'assistance-form.about-candidate.placeholders.email'})}
+                />
 
-      <ul className="actions">
-        <li>
-          <input type="submit" className="special" value={intl.formatMessage({id: 'assistance-form.controls.next'})} />
-        </li>
-      </ul>
-    </form>
+                <ErrorMessage name="email" />
+              </div>
+
+              <div className={classnames('field', styles.field)}>
+                <label htmlFor="originCountry" className={styles.label}>
+                  {intl.formatMessage({id: 'assistance-form.about-candidate.labels.origin-country'})}
+                </label>
+
+                <Field name="originCountry">
+                  {({field}) => <CountrySelector className={styles.input} {...field} />}
+                </Field>
+
+                <ErrorMessage name="originCountry" />
+              </div>
+            </div>
+
+            <ul className={classnames('actions', styles.actions)}>
+              <li>
+                <button type="submit" className="special" disabled={isSubmitting}>
+                  {intl.formatMessage({id: 'assistance-form.controls.next'})}
+                </button>
+              </li>
+            </ul>
+          </Form>
+        )}
+      </Formik>
+    </div>
   );
 };
 

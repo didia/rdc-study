@@ -36,13 +36,6 @@ const page = {
   path: '/accompagnement',
 };
 
-const freeTierFeatureLabelKeys = [
-  'pages.assistance.free.features.admission-guide',
-  'pages.assistance.free.features.visa-guide',
-  'pages.assistance.free.features.countries-guide',
-  'pages.assistance.free.features.protection-guide',
-];
-
 const packages = [
   {
     titleKey: 'pages.assistance.packages.admission.title',

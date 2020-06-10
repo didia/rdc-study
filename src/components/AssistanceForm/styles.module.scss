@@ -1,5 +1,21 @@
-.label {
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+:global(.field) label.label {
+  margin-top: 0;
   color: _palette(bg);
+}
+
+form .field {
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2em;
 }
 
 input.input,
@@ -7,8 +23,13 @@ select.input {
   border-color: #d3d3d3;
 }
 
-.step-title {
+.title {
+  text-align: center;
   color: _palette(bg);
+}
+
+.description {
+  text-align: center;
 }
 
 .fields {
@@ -20,5 +41,9 @@ select.input {
 @include breakpoint(xsmall) {
   .fields {
     display: block;
+  }
+
+  form .field {
+    margin: 0 0 2em;
   }
 }
