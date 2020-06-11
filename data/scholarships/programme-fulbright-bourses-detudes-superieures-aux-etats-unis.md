@@ -1,14 +1,12 @@
 ---
 draft: false
-title: 'Programme Fulbright: Bourses d''études supérieures aux États-Unis'
-deadline: 2020-06-05T22:59:47.934Z
-excerpt: >-
-  Le programme Fulbright offre des bourses d’études basées sur le mérite
+title: "Programme Fulbright: Bourses d'études supérieures aux États-Unis"
+deadline: 2020-07-01T22:59:47.934Z
+excerpt: Le programme Fulbright offre des bourses d’études basées sur le mérite
   permettant aux étudiants étrangers de poursuivre leurs études de master aux
   Etats-unis.
 tags:
-  - >-
-    fullbright;fullbright congo;bourses usa;bourses états-unis;bourses d’études
+  - fullbright;fullbright congo;bourses usa;bourses états-unis;bourses d’études
     pour congolais
 thumbnail: /images/uploads/fullbright-program.jpg
 startDate: 2020-03-17T10:39:55.159Z
