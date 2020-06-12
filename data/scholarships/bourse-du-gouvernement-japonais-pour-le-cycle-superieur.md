@@ -42,18 +42,19 @@ Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 En plus de ces conditions générales, vous devez répondre à des conditions particulières selon le niveau ou domaine d’études visée:
 
 
-**Pour le master**
+### Pour le master
 
-Avoir un diplôme de fin d'études universitaires (licence).
+Avoir un diplôme de premier cycle (licence) ou un diplôme équivalent à la licence.
+
+### Pour le Doctorat 
 
-**Pour le Doctorat** 
+* Avoir obtenu un diplôme de master;
+* Ou avoir obtenu n'importe quel autre diplôme universitaire, avoir participé pendant deux ans ou plus à des études de recherche dans des universités ou centres de recherche et être reconnu comme ayant des compétences académiques équivalentes à celles des titulaires d'un diplôme de master.
 
-Les candidats qui ont obtenu un diplôme universitaire et qui ont participé à des études de recherche dans des universités ou des centres de recherche (y compris des universités et des centres de recherche à l'étranger) pendant deux ans ou plus, et reconnus comme ayant une compétence académique équivalente à celle des titulaires d'un diplôme de master de l'école doctorale.
+### Pour les étudiants visant le domaine de la santé
 
-**Cours de doctorat (facultés de médecine, de médecine dentaire, de sciences vétérinaires et certaines parties de l'industrie pharmaceutique)**
-
-① Les candidats qui ont terminé 18 ans d'études dans des pays autres que le Japon. ② Les candidats qui ont terminé un programme avec la période d'étude standard de cinq ans ou plus dans les universités ou des établissements d'enseignement équivalents dans des pays autres que le Japon et ont reçu un diplôme équivalent à une licence.
-③ Les candidats qui ont achevé 16 années de scolarité dans des pays autres que le Japon et qui ont été
+1. Les candidats qui ont terminé 18 ans d'études dans des pays autres que le Japon. ② Les candidats qui ont terminé un programme avec la période d'étude standard de cinq ans ou plus dans les universités ou des établissements d'enseignement équivalents dans des pays autres que le Japon et ont reçu un diplôme équivalent à une licence.
+③ Les candidats qui ont terminé 16 années de scolarité dans des pays autres que le Japon et qui ont été
 impliqué dans des études de recherche dans des universités ou des centres de recherche (y compris des universités et des centres) pendant deux ans ou plus, et reconnus comme ayant des compétences académiques équivalentes à diplômés en médecine, dentisterie, sciences vétérinaires ou certaines parties dans les domaines pharmaceutiques.
 
 ## Comment postuler ?
