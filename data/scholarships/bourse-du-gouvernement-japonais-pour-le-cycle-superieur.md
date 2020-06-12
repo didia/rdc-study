@@ -1,11 +1,18 @@
 ---
 draft: true
-title: "Bourse du gouvernement Japonais pour le cycle supérieur "
+title: Bourses de master et doctorat du gouvernement Japonais
 deadline: 2020-07-31T20:10:23.163Z
 excerpt: Chaque année le gouvernement japonais octroie des bourses complètes aux
-  étudiants étrangers souhaitant poursuivre leurs études de master et doctorat
-  dans des universités japonaises dans le cadre du programme de bourses d’études
-  du gouvernement japonais (MEXT).
+  étudiants étrangers souhaitant poursuivre leurs études de master et de
+  doctorat au Japon dans le cadre du programme de bourses d’études du
+  gouvernement japonais (MEXT).
+tags:
+  - Bourse d’études
+  - Japon
+  - étudier gratuitement au Japon
+  - Congo
+  - RDC Congo
+  - Afrique
 thumbnail: /images/uploads/good-free-photos-773344-unsplash.jpg
 startDate: 2020-05-31T20:10:23.195Z
 levels:
@@ -17,64 +24,66 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-[La bourse du gouvernement japonais](https://www.studyinjapan.go.jp/en/links/) couvre:
+La bourse du gouvernement japonais offre:
 
-* Frais de scolarité (100%)
-* Un billet d'avion aller-retour en classe économique
-* Une allocation payée en fonction du cours auquel vous êtes inscrit.
+* Les frais académiques totalement payés;
+* Billet aller-retour entre votre pays de résidence et le Japon;
+* Une allocation payée en fonction du cours auquel vous êtes inscrit:
+  * 143 000 yen par mois pour étudiants inscrits en préparatoire ou étudiants non réguliers;
+  * 144 000 yen par mois pour étudiants inscrits en master ou dans un programme menant à un diplôme professionnel;
+  * 145 000 yen par mois pour étudiants inscrits au doctorat.
+* Une allocation supplémentaire de 2 000 ou 3 000 yen par mois pour les personnes qui poursuivront leurs études dans certaines régions spécialement désignées par le gouvernement japonais. Ce montant variera selon le budget du gouvernement.
 
-Un supplément régional de 2 000 yens ou 3 000 yens par mois sera ajoutée au montant mensuel de la bourse pour les boursiers qui mènent des recherches dans des régions spécialement désignées. En raison de la situation du budget du gouvernement  Japonais, le montant du paiement peut être sujet à changement à chaque instant. En cas d’absence de l'université pour une période prolongée, la bourse est suspendue pour cette période.
-
-Autres bénéfices:  ① Étudiants recevant l'enseignement préparatoire et élèves non réguliers: 143 000 yens par mois
-② Étudiants réguliers inscrits à des cours de master ou de diplôme professionnel: 144 000 yens par mois
-③ Étudiants réguliers inscrits en doctorat: 145 000 yens par mois.
 
 ## Quels sont les critères de la bourse ?
 
-Pour bénéficier de la bourse, vous devez remplir les critères suivants:
+Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
-Ne pas avoir la nationalité japonaise
+1. Ne pas avoir la nationalité japonaise;
+2. Être né(e) à partir du 2 Avril 1986;
+3. Avoir un sujet de recherche dans la même spécialité ou une spécialité connexe à vos études précédentes;
+4. Être en bonne santé physique et mentale.
 
-Être né(e) à partir du 2 Avril 1986
+En plus de ces conditions générales, vous devez répondre à des conditions particulières selon le niveau ou domaine d’études visée:
 
-Avoir un sujet de recherche dans la même spécialité ou une spécialité en relation avec celle étudiée auparavant 
 
-Être en bonne santé physique et mentale.
+### Pour le master
 
-**Pour le master**
+Avoir un diplôme de premier cycle (licence) ou un diplôme équivalent à la licence.
+
+### Pour le Doctorat 
 
-Avoir un diplôme de fin d'études universitaires (licence).
+* Avoir obtenu un diplôme de master;
+* Ou avoir obtenu n'importe quel autre diplôme universitaire, avoir participé pendant deux ans ou plus à des études de recherche dans des universités ou centres de recherche et être reconnu comme ayant des compétences académiques équivalentes à celles des titulaires d'un diplôme de master.
 
-**Pour le Doctorat** 
+### Pour les étudiants visant le domaine de la santé
 
-Les candidats qui ont obtenu un diplôme universitaire et qui ont participé à des études de recherche dans des universités ou des centres de recherche (y compris des universités et des centres de recherche à l'étranger) pendant deux ans ou plus, et reconnus comme ayant une compétence académique équivalente à celle des titulaires d'un diplôme de master de l'école doctorale.
-
-**Cours de doctorat (facultés de médecine, de médecine dentaire, de sciences vétérinaires et certaines parties de l'industrie pharmaceutique)**
-
-① Les candidats qui ont terminé 18 ans d'études dans des pays autres que le Japon. ② Les candidats qui ont terminé un programme avec la période d'étude standard de cinq ans ou plus dans les universités ou des établissements d'enseignement équivalents dans des pays autres que le Japon et ont reçu un diplôme équivalent à une licence.
-③ Les candidats qui ont achevé 16 années de scolarité dans des pays autres que le Japon et qui ont été
+1. Les candidats qui ont terminé 18 ans d'études dans des pays autres que le Japon. ② Les candidats qui ont terminé un programme avec la période d'étude standard de cinq ans ou plus dans les universités ou des établissements d'enseignement équivalents dans des pays autres que le Japon et ont reçu un diplôme équivalent à une licence.
+③ Les candidats qui ont terminé 16 années de scolarité dans des pays autres que le Japon et qui ont été
 impliqué dans des études de recherche dans des universités ou des centres de recherche (y compris des universités et des centres) pendant deux ans ou plus, et reconnus comme ayant des compétences académiques équivalentes à diplômés en médecine, dentisterie, sciences vétérinaires ou certaines parties dans les domaines pharmaceutiques.
 
 ## Comment postuler ?
 
 Pour postuler au programme des bourses MEXT, vous déposer votre candidature auprès de l'ambassade du Japon de votre pays, avec les documents suivants:
 
-1. [Formulaire de demande](https://www.studyinjapan.go.jp/en/assets/xlsx/2021_Application_Research.xlsx)
-2. [Formulaire de demande de préférence](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Placement_Research.pdf)(pour ceux qui maîtrisent déjà le japonais)
-3. [Domaine d'études et Un plan de recherche](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_FieldStudy_Research.docx)
+1. <a href="https://www.studyinjapan.go.jp/en/assets/xlsx/2021_Application_Research.xlsx" target="_blank" rel="noopener noreferrer">Formulaire de demande</a>
+2. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Placement_Research.pdf" target="_blank" rel="noopener noreferrer>Formulaire de demande de préférence</a>(pour ceux qui maîtrisent déjà le japonais)
+3. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_FieldStudy_Research.docx" target="_blank" rel="noopener noreferrer">Domaine d'études et un plan de recherche</a>
 4. Relevé des notes universitaires
 5. Diplôme universitaire
-6. [Lettre de recommandation](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_SampleRecommendation.pdf)
-7. [Un certificat de santé ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)[](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
+6. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_SampleRecommendation.pdf" target="_blank" rel="noopener noreferrer">Lettre de recommandation du doyen de votre faculté ou de votre directeur de thèse ou travail de fin d'études</a>
+7. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf" target="_blank" rel="noopener noreferrer">Un certificat de santé</a>
 8. Résumé des thèses (si le candidat en a déjà rédigé)
 9. Certificat de maîtrise de langue (Uniquement si le demandeur possède des documents attestant ses compétences en japonais ou en anglais ; soumettez-en 3 copies);
-10. Lettre de recommandation de l’employeur actuel (à soumettre si le demandeur est actuellement employé.);
+10. Lettre de recommandation de votre employeur actuel (à soumettre si le demandeur est actuellement employé.);
 11. Photographie montrant les œuvres d’art du demandeur ou un support musical d’enregistrement numérique (à soumettre si le demandeur postule pour les beaux-arts ou la musique)
 
-**NB: les documents doivent être rédigés en japonais ou en anglais, ou une traduction dans l’une de ces langues doit être jointe. De plus, les candidats doivent soumettre 3 dossiers de candidature: l’un est un ensemble complet de documents originaux plus les deux autres (Deux copies du dossier original). Écrivez le numéro du document, de ① à ⑪ dans le coin supérieur droit de la première page pour tous les documents**
+**NB: Les documents doivent être rédigés en japonais ou en anglais. Si ce n’est pas le cas, vous devez joindre une traduction de vos documents dans l’une de ces langues. En outre, les candidats doivent soumettre 3 dossiers de candidature: l’un est un ensemble complet de documents originaux plus les deux autres (Deux copies du dossier original). Écrivez le numéro du document, de ① à ⑪ dans le coin supérieur droit de la première page pour tous les documents**
 
-Pour bien vous préparer à l’examen, il est fortement conseillé de consulter [les épreuves des années antérieures.](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
+Pour bien vous préparer à l’examen, il est fortement conseillé de consulter <a href="https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html" target="_blank" rel="noopener noreferrer">les épreuves des années antérieures.</a>
 
-NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
+NB: Le processus de demande et les dates limites pour postuler varient d’un pays à un autre. Nous vous recommandons de vous renseigner à ce sujet auprès de <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank" rel="noopener noreferrer">l'ambassade du Japon dans votre pays.</a>
+
+Pour plus d'informations sur la bourse, veuillez consulter <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Guidelines_Research_E.pdf" target="_blank" rel="noopener noreferrer">le guide officiel du gouvernement Japonais.</a>
 
 Nous vous encourageons à postuler et bonne chance !
