@@ -7,7 +7,12 @@ excerpt: Chaque année le gouvernement japonais octroie des bourses complètes a
   doctorat au Japon dans le cadre du programme de bourses d’études du
   gouvernement japonais (MEXT).
 tags:
-  - ""
+  - Bourse d’études
+  - Japon
+  - étudier gratuitement au Japon
+  - Congo
+  - RDC Congo
+  - Afrique
 thumbnail: /images/uploads/good-free-photos-773344-unsplash.jpg
 startDate: 2020-05-31T20:10:23.195Z
 levels:
@@ -61,22 +66,24 @@ impliqué dans des études de recherche dans des universités ou des centres de 
 
 Pour postuler au programme des bourses MEXT, vous déposer votre candidature auprès de l'ambassade du Japon de votre pays, avec les documents suivants:
 
-1. [Formulaire de demande](https://www.studyinjapan.go.jp/en/assets/xlsx/2021_Application_Research.xlsx)
-2. [Formulaire de demande de préférence](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Placement_Research.pdf)(pour ceux qui maîtrisent déjà le japonais)
-3. [Domaine d'études et Un plan de recherche](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_FieldStudy_Research.docx)
+1. <a href="https://www.studyinjapan.go.jp/en/assets/xlsx/2021_Application_Research.xlsx" target="_blank" rel="noopener noreferrer">Formulaire de demande</a>
+2. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Placement_Research.pdf" target="_blank" rel="noopener noreferrer>Formulaire de demande de préférence</a>(pour ceux qui maîtrisent déjà le japonais)
+3. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_FieldStudy_Research.docx" target="_blank" rel="noopener noreferrer">Domaine d'études et un plan de recherche</a>
 4. Relevé des notes universitaires
 5. Diplôme universitaire
-6. [Lettre de recommandation](https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_SampleRecommendation.pdf)
-7. [Un certificat de santé ](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)[](https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf)
+6. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_SampleRecommendation.pdf" target="_blank" rel="noopener noreferrer">Lettre de recommandation du doyen de votre faculté ou de votre directeur de thèse ou travail de fin d'études</a>
+7. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_HealthCertificate.pdf" target="_blank" rel="noopener noreferrer">Un certificat de santé</a>
 8. Résumé des thèses (si le candidat en a déjà rédigé)
 9. Certificat de maîtrise de langue (Uniquement si le demandeur possède des documents attestant ses compétences en japonais ou en anglais ; soumettez-en 3 copies);
-10. Lettre de recommandation de l’employeur actuel (à soumettre si le demandeur est actuellement employé.);
+10. Lettre de recommandation de votre employeur actuel (à soumettre si le demandeur est actuellement employé.);
 11. Photographie montrant les œuvres d’art du demandeur ou un support musical d’enregistrement numérique (à soumettre si le demandeur postule pour les beaux-arts ou la musique)
 
-**NB: les documents doivent être rédigés en japonais ou en anglais, ou une traduction dans l’une de ces langues doit être jointe. De plus, les candidats doivent soumettre 3 dossiers de candidature: l’un est un ensemble complet de documents originaux plus les deux autres (Deux copies du dossier original). Écrivez le numéro du document, de ① à ⑪ dans le coin supérieur droit de la première page pour tous les documents**
+**NB: Les documents doivent être rédigés en japonais ou en anglais. Si ce n’est pas le cas, vous devez joindre une traduction de vos documents dans l’une de ces langues. En outre, les candidats doivent soumettre 3 dossiers de candidature: l’un est un ensemble complet de documents originaux plus les deux autres (Deux copies du dossier original). Écrivez le numéro du document, de ① à ⑪ dans le coin supérieur droit de la première page pour tous les documents**
 
-Pour bien vous préparer à l’examen, il est fortement conseillé de consulter [les épreuves des années antérieures.](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
+Pour bien vous préparer à l’examen, il est fortement conseillé de consulter <a href="https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html" target="_blank" rel="noopener noreferrer">les épreuves des années antérieures.</a>
 
-NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
+NB: Le processus de demande et les dates limites pour postuler varient d’un pays à un autre. Nous vous recommandons de vous renseigner à ce sujet auprès de <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank" rel="noopener noreferrer">l'ambassade du Japon dans votre pays.</a>
+
+Pour plus d'informations sur la bourse, veuillez consulter <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Guidelines_Research_E.pdf" target="_blank" rel="noopener noreferrer">le guide officiel du gouvernement Japonais.</a>
 
 Nous vous encourageons à postuler et bonne chance !
