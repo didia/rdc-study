@@ -34,8 +34,9 @@ La bourse du gouvernement japonais offre:
 Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
 1. Ne pas avoir la nationalité japonaise;
-2. Etre né le 2 avril 1996 ou après cette date;
-3. Avoir un diplôme de fin d'études secondaires
+2. Être né le 2 avril 1996 ou après cette date;
+3. Avoir un diplôme de fin d'études secondaires;
+4. Être en bonne santé physique et mentale.
 
 ## Comment postuler ?
 
@@ -53,7 +54,7 @@ Pour postuler à la bourse MEXT, vous devez envoyer les documents suivants à l'
 
 **NB: Les documents doivent être rédigés en japonais ou en anglais. Si ce n’est pas le cas, vous devez joindre une traduction de vos documents dans l’une de ces langues. En outre, les candidats doivent soumettre deux dossiers de candidature : l’un est un ensemble complet de documents originaux et l’autre est un ensemble complet de leurs copies. Écrivez le numéro du document, de ① à ⑨ dans le coin supérieur droit de la première page pour tous les documents.**
 
-Pour bien vous préparer à l’examen, il est fortement conseillé de consulter [les épreuves des années antérieures.](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
+Pour bien vous préparer à l’examen, il est fortement conseillé de consulter <a href="https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html" target="_blank" rel="noopener noreferrer">les épreuves des années antérieures.</a>
 
 NB: Le processus de demande et les dates limites pour postuler varient d’un pays à un autre. Nous vous recommandons de vous renseigner à ce sujet auprès de <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank" rel="noopener noreferrer">l'ambassade du Japon dans votre pays.</a>
 
