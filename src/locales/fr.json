@@ -4,14 +4,16 @@
   "assistance-form.about-candidate.labels.first-name": "Prénom",
   "assistance-form.about-candidate.labels.last-name": "Nom",
   "assistance-form.about-candidate.labels.origin-country": "Pays de résidence",
-  "assistance-form.about-candidate.placeholders.email": "Entrez votre adresse email",
-  "assistance-form.about-candidate.placeholders.first-name": "Entrez votre prénom",
-  "assistance-form.about-candidate.placeholders.last-name": "Entrez votre nom",
+  "assistance-form.about-candidate.placeholders.email": "Entrez votre adresse email…",
+  "assistance-form.about-candidate.placeholders.first-name": "Entrez votre prénom…",
+  "assistance-form.about-candidate.placeholders.last-name": "Entrez votre nom…",
   "assistance-form.about-candidate.placeholders.origin-country": "Choisissez votre pays de résidence",
   "assistance-form.about-candidate.title": "Quelques informations sur vous",
 
   "assistance-form.controls.next": "Suivant",
   "assistance-form.controls.previous": "Précedent",
+
+  "assistance-form.destination-country.title": "Dans quel pays visez-vous étudier ?",
 
   "footer.copyright": "© RDC Etudes. Tous droits réservés",
 
@@ -178,6 +180,11 @@
   "shared.countries.tg": "Togo",
   "shared.countries.tr": "Turquie",
   "shared.countries.us": "États-Unis",
+
+  "shared.country-selector.placeholder": "Choisissez un pays…",
+
+  "shared.forms.validation.email": "Cet email n’est pas valide",
+  "shared.forms.validation.required": "Ce champ est requis",
 
   "shared.newsletter.alert.error": "Une erreur inconnue est survenue lors de l’abonnement 😞",
   "shared.newsletter.alert.success": "Yay 🎉🎉 Vous avez été abonné avec succès!",

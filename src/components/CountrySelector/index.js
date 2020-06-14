@@ -35,11 +35,23 @@ const SUPPORTED_COUNTRIES = [
   'shared.countries.us',
 ];
 
-const CountrySelector = ({className, name}) => (
-  <select className={className} name={name ? name : 'country'}>
+const CountrySelector = ({className, ...props}) => (
+  <select className={className} name={name ? name : 'country'} {...props}>
+    <FormattedMessage id="shared.country-selector.placeholder">
+      {(placeholder) => (
+        <option value="" disabled>
+          {placeholder}
+        </option>
+      )}
+    </FormattedMessage>
+
     {SUPPORTED_COUNTRIES.map((code) => (
       <FormattedMessage id={code} key={code}>
-        {(countryName) => <option key={code}>{countryName}</option>}
+        {(countryName) => (
+          <option key={code} value={countryName}>
+            {countryName}
+          </option>
+        )}
       </FormattedMessage>
     ))}
     <FormattedMessage id="shared.other-text">{(text) => <option key={text}>{text}</option>}</FormattedMessage>
@@ -49,6 +61,8 @@ const CountrySelector = ({className, name}) => (
 CountrySelector.propTypes = {
   className: T.string,
   name: T.string,
+  value: T.string,
+  onChange: T.func.isRequired,
 };
 
 export default CountrySelector;
