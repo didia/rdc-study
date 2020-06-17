@@ -4,6 +4,7 @@ import T from 'prop-types';
 import classnames from 'classnames';
 import {Link} from 'gatsby';
 import {FormattedMessage} from 'react-intl';
+import {RecoilRoot} from 'recoil';
 
 // Styles
 import styles from './styles.module.scss';
@@ -71,63 +72,65 @@ const packages = [
 
 const AssistancePage = () => {
   return (
-    <GenericPage page={page} bannerClassName={styles.banner}>
-      <Card className={styles['main-card']}>
-        <AssistanceForm />
-      </Card>
+    <RecoilRoot>
+      <GenericPage page={page} bannerClassName={styles.banner}>
+        <Card className={styles['main-card']}>
+          <AssistanceForm />
+        </Card>
 
-      <section className={styles['offer-block']}>
-        <FormattedMessage id="pages.assistance.personal.title" tagName="h2" />
+        <section className={styles['offer-block']}>
+          <FormattedMessage id="pages.assistance.personal.title" tagName="h2" />
 
-        <FormattedMessage id="pages.assistance.personal.description" tagName="p" />
+          <FormattedMessage id="pages.assistance.personal.description" tagName="p" />
 
-        <FormattedMessage
-          id="pages.assistance.personal.pricing"
-          tagName="p"
-          values={{
-            pricePerPackage: <b>200$</b>,
-            priceForAllPackages: <b>500$</b>,
-          }}
-        />
+          <FormattedMessage
+            id="pages.assistance.personal.pricing"
+            tagName="p"
+            values={{
+              pricePerPackage: <b>200$</b>,
+              priceForAllPackages: <b>500$</b>,
+            }}
+          />
 
-        <ul className={styles['offer-list']}>
-          {packages.map((ratePackage, i) => (
-            <li key={`feature-${i}`} className={styles['offer-list__item']}>
-              <Card className={styles['offer-card']}>
-                <FormattedMessage id={ratePackage.titleKey}>
-                  {(text) => <h3 className={styles['offer-title']}>{text}</h3>}
-                </FormattedMessage>
+          <ul className={styles['offer-list']}>
+            {packages.map((ratePackage, i) => (
+              <li key={`feature-${i}`} className={styles['offer-list__item']}>
+                <Card className={styles['offer-card']}>
+                  <FormattedMessage id={ratePackage.titleKey}>
+                    {(text) => <h3 className={styles['offer-title']}>{text}</h3>}
+                  </FormattedMessage>
 
-                <FeatureList featureLabelKeys={ratePackage.featureLabelKeys} />
-              </Card>
-            </li>
-          ))}
-        </ul>
+                  <FeatureList featureLabelKeys={ratePackage.featureLabelKeys} />
+                </Card>
+              </li>
+            ))}
+          </ul>
 
-        <FormattedMessage id="pages.assistance.personal.about-us-link">
-          {(text) => (
-            <Link to="/a-propos" className={classnames(styles.button, styles['button--about-us'], 'button special')}>
-              {text}
-            </Link>
-          )}
-        </FormattedMessage>
-
-        <p style={{marginTop: '20px'}}>
-          <FormattedMessage id="pages.assistance.visa.warning" />
-          <FormattedMessage id="pages.assistance.visa.warning-learn-more">
-            {(text) => <Link to="/assistance-visa">{text}</Link>}
+          <FormattedMessage id="pages.assistance.personal.about-us-link">
+            {(text) => (
+              <Link to="/a-propos" className={classnames(styles.button, styles['button--about-us'], 'button special')}>
+                {text}
+              </Link>
+            )}
           </FormattedMessage>
-        </p>
-      </section>
 
-      <section className={styles['offer-block']}>
-        <FormattedMessage id="pages.assistance.questions.title" tagName="h2" />
+          <p style={{marginTop: '20px'}}>
+            <FormattedMessage id="pages.assistance.visa.warning" />
+            <FormattedMessage id="pages.assistance.visa.warning-learn-more">
+              {(text) => <Link to="/assistance-visa">{text}</Link>}
+            </FormattedMessage>
+          </p>
+        </section>
 
-        <FormattedMessage id="pages.assistance.questions.description" tagName="p" />
+        <section className={styles['offer-block']}>
+          <FormattedMessage id="pages.assistance.questions.title" tagName="h2" />
 
-        <ContactUsLink className={classnames(styles.button, 'button special')} />
-      </section>
-    </GenericPage>
+          <FormattedMessage id="pages.assistance.questions.description" tagName="p" />
+
+          <ContactUsLink className={classnames(styles.button, 'button special')} />
+        </section>
+      </GenericPage>
+    </RecoilRoot>
   );
 };
 

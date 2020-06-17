@@ -1,19 +1,24 @@
 {
-  "assistance-form.about-candidate.description": "Ces informations serviront à l’élaboration de votre contrat de service.",
-  "assistance-form.about-candidate.labels.email": "Adresse email",
-  "assistance-form.about-candidate.labels.first-name": "Prénom",
-  "assistance-form.about-candidate.labels.last-name": "Nom",
-  "assistance-form.about-candidate.labels.origin-country": "Pays de résidence",
-  "assistance-form.about-candidate.placeholders.email": "Entrez votre adresse email…",
-  "assistance-form.about-candidate.placeholders.first-name": "Entrez votre prénom…",
-  "assistance-form.about-candidate.placeholders.last-name": "Entrez votre nom…",
-  "assistance-form.about-candidate.placeholders.origin-country": "Choisissez votre pays de résidence",
-  "assistance-form.about-candidate.title": "Quelques informations sur vous",
-
   "assistance-form.controls.next": "Suivant",
   "assistance-form.controls.previous": "Précedent",
 
-  "assistance-form.destination-country.title": "Dans quel pays visez-vous étudier ?",
+  "assistance-form.steps.about-candidate.description": "Ces informations serviront à l’élaboration de votre contrat de service.",
+  "assistance-form.steps.about-candidate.labels.email": "Adresse email",
+  "assistance-form.steps.about-candidate.labels.first-name": "Prénom",
+  "assistance-form.steps.about-candidate.labels.last-name": "Nom",
+  "assistance-form.steps.about-candidate.labels.origin-country": "Pays de résidence",
+  "assistance-form.steps.about-candidate.placeholders.email": "Entrez votre adresse email…",
+  "assistance-form.steps.about-candidate.placeholders.first-name": "Entrez votre prénom…",
+  "assistance-form.steps.about-candidate.placeholders.last-name": "Entrez votre nom…",
+  "assistance-form.steps.about-candidate.placeholders.origin-country": "Choisissez votre pays de résidence",
+  "assistance-form.steps.about-candidate.title": "Quelques informations sur vous",
+
+  "assistance-form.steps.destination-country.title": "Dans quel pays visez-vous étudier ?",
+
+  "assistance-form.steps.form-submitted.description": "Votre demande d’assistance a été réçu par un membre de notre équipe. Nous vous répondrons dans les trois prochains jours ouvrables à travers l’email que vous avez réçu. Nous vous remercions pour la confiance que vous nous accordez.",
+  "assistance-form.steps.form-submitted.guide-call-to-action": "Si ce n’est pas déjà fait, nous vous recommandons de lire attentivement le guide des démarches concernant votre pays de destination pour savoir à quoi vous attendre pour la suite.",
+  "assistance-form.steps.form-submitted.read-guide-button": "Lire le guide",
+  "assistance-form.steps.form-submitted.title": "Demande d’assistance envoyée",
 
   "footer.copyright": "© RDC Etudes. Tous droits réservés",
 

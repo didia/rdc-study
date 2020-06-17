@@ -4,6 +4,8 @@ import {useIntl} from 'react-intl';
 import {Formik, Form, Field, ErrorMessage} from 'formik';
 import {string, object} from 'yup';
 import classnames from 'classnames';
+import {useRecoilState} from 'recoil';
+import T from 'prop-types';
 
 // Styles
 import styles from './styles.module.scss';
@@ -15,23 +17,29 @@ import {formikFieldErrorClass} from './utils';
 import CountrySelector from '../CountrySelector';
 import PreviousNextActions from './PreviousNextActions';
 
+// States
+import {destinationCountryState} from './state';
+
 const destinationCountrySchema = (intl) =>
   object().shape({
     destinationCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
   });
 
-const DestinationCountryStep = () => {
+const DestinationCountryStep = ({onNextStep, onPreviousStep}) => {
   const intl = useIntl();
+
+  const [destinationCountry, setDestinationCountry] = useRecoilState(destinationCountryState);
 
   return (
     <div>
-      <h2 className={styles.title}>{intl.formatMessage({id: 'assistance-form.destination-country.title'})}</h2>
+      <h2 className={styles.title}>{intl.formatMessage({id: 'assistance-form.steps.destination-country.title'})}</h2>
 
       <Formik
-        initialValues={{destinationCountry: ''}}
+        initialValues={{destinationCountry}}
         validationSchema={destinationCountrySchema(intl)}
         onSubmit={(values) => {
-          window.console.log(values);
+          setDestinationCountry(values.destinationCountry);
+          onNextStep();
         }}
       >
         {({isSubmitting}) => (
@@ -46,12 +54,17 @@ const DestinationCountryStep = () => {
               <ErrorMessage name="destinationCountry" className={styles['error-message']} component="div" />
             </div>
 
-            <PreviousNextActions disabled={isSubmitting} />
+            <PreviousNextActions disabled={isSubmitting} onNext={onNextStep} onPrevious={onPreviousStep} />
           </Form>
         )}
       </Formik>
     </div>
   );
+};
+
+DestinationCountryStep.propTypes = {
+  onNextStep: T.func.isRequired,
+  onPreviousStep: T.func,
 };
 
 export default DestinationCountryStep;

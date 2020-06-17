@@ -4,6 +4,8 @@ import {useIntl} from 'react-intl';
 import classnames from 'classnames';
 import {Formik, Form, Field, ErrorMessage} from 'formik';
 import {string, object} from 'yup';
+import T from 'prop-types';
+import {useRecoilState} from 'recoil';
 
 // Styles
 import styles from './styles.module.scss';
@@ -15,6 +17,9 @@ import {formikFieldErrorClass} from './utils';
 import CountrySelector from '../CountrySelector';
 import PreviousNextActions from './PreviousNextActions';
 
+// States
+import {aboutCandidateState} from './state';
+
 const aboutCandidateSchema = (intl) =>
   object().shape({
     firstName: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
@@ -25,19 +30,23 @@ const aboutCandidateSchema = (intl) =>
     originCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
   });
 
-const AboutCandidateStep = () => {
+const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
   const intl = useIntl();
+  const [aboutCandidateData, setAboutCandidateData] = useRecoilState(aboutCandidateState);
 
   return (
     <div>
-      <h2 className={styles.title}>{intl.formatMessage({id: 'assistance-form.about-candidate.title'})}</h2>
-      <p className={styles.description}>{intl.formatMessage({id: 'assistance-form.about-candidate.description'})}</p>
+      <h2 className={styles.title}>{intl.formatMessage({id: 'assistance-form.steps.about-candidate.title'})}</h2>
+      <p className={styles.description}>
+        {intl.formatMessage({id: 'assistance-form.steps.about-candidate.description'})}
+      </p>
 
       <Formik
-        initialValues={{firstName: '', lastName: '', email: '', originCountry: ''}}
+        initialValues={aboutCandidateData}
         validationSchema={aboutCandidateSchema(intl)}
         onSubmit={(values) => {
-          window.console.log(values);
+          setAboutCandidateData(values);
+          onNextStep();
         }}
       >
         {({isSubmitting}) => (
@@ -45,7 +54,7 @@ const AboutCandidateStep = () => {
             <div className={styles.fields}>
               <div className={classnames('field', styles.field)}>
                 <label htmlFor="firstName" className={styles.label}>
-                  {intl.formatMessage({id: 'assistance-form.about-candidate.labels.first-name'})}
+                  {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.first-name'})}
                 </label>
 
                 <Field name="firstName">
@@ -53,7 +62,9 @@ const AboutCandidateStep = () => {
                     <input
                       type="text"
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      placeholder={intl.formatMessage({id: 'assistance-form.about-candidate.placeholders.first-name'})}
+                      placeholder={intl.formatMessage({
+                        id: 'assistance-form.steps.about-candidate.placeholders.first-name',
+                      })}
                       {...field}
                     />
                   )}
@@ -64,7 +75,7 @@ const AboutCandidateStep = () => {
 
               <div className={classnames('field', styles.field)}>
                 <label htmlFor="lastName" className={styles.label}>
-                  {intl.formatMessage({id: 'assistance-form.about-candidate.labels.last-name'})}
+                  {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.last-name'})}
                 </label>
 
                 <Field name="lastName">
@@ -72,7 +83,9 @@ const AboutCandidateStep = () => {
                     <input
                       type="text"
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      placeholder={intl.formatMessage({id: 'assistance-form.about-candidate.placeholders.last-name'})}
+                      placeholder={intl.formatMessage({
+                        id: 'assistance-form.steps.about-candidate.placeholders.last-name',
+                      })}
                       {...field}
                     />
                   )}
@@ -83,7 +96,7 @@ const AboutCandidateStep = () => {
 
               <div className={classnames('field', styles.field)}>
                 <label htmlFor="email" className={styles.label}>
-                  {intl.formatMessage({id: 'assistance-form.about-candidate.labels.email'})}
+                  {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.email'})}
                 </label>
 
                 <Field name="email">
@@ -91,7 +104,7 @@ const AboutCandidateStep = () => {
                     <input
                       type="email"
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      placeholder={intl.formatMessage({id: 'assistance-form.about-candidate.placeholders.email'})}
+                      placeholder={intl.formatMessage({id: 'assistance-form.steps.about-candidate.placeholders.email'})}
                       {...field}
                     />
                   )}
@@ -102,7 +115,7 @@ const AboutCandidateStep = () => {
 
               <div className={classnames('field', styles.field)}>
                 <label htmlFor="originCountry" className={styles.label}>
-                  {intl.formatMessage({id: 'assistance-form.about-candidate.labels.origin-country'})}
+                  {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.origin-country'})}
                 </label>
 
                 <Field name="originCountry">
@@ -115,12 +128,17 @@ const AboutCandidateStep = () => {
               </div>
             </div>
 
-            <PreviousNextActions disabled={isSubmitting} />
+            <PreviousNextActions disabled={isSubmitting} onPrevious={onPreviousStep} />
           </Form>
         )}
       </Formik>
     </div>
   );
+};
+
+AboutCandidateStep.propTypes = {
+  onNextStep: T.func.isRequired,
+  onPreviousStep: T.func,
 };
 
 export default AboutCandidateStep;
