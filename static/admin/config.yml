@@ -51,6 +51,8 @@ collections:
         options:
           - label: Doctorat
             value: postgraduate
+          - label: Formation
+            value: formation
           - label: Licence
             value: undergraduate
           - label: Master
