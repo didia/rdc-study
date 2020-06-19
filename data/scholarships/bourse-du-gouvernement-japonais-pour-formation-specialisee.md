@@ -1,6 +1,6 @@
 ---
 draft: true
-title: Bourse du gouvernement Japonais pour formation spécialisée
+title: Bourse du gouvernement Japonais pour formations spécialisées
 deadline: 2020-07-31T20:10:23.163Z
 excerpt: Chaque année le gouvernement japonais octroie des bourses complètes aux
   étudiants étrangers souhaitant poursuivre leurs études pour une formation
