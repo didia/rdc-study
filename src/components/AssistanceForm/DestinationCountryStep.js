@@ -20,6 +20,26 @@ import PreviousNextActions from './PreviousNextActions';
 // States
 import {destinationCountryState} from './state';
 
+// Const
+const SUPPORTED_DESTINATION_COUNTRIES = [
+  {
+    labelKey: 'shared.countries.be',
+    value: 'belgique',
+  },
+  {
+    labelKey: 'shared.countries.ca',
+    value: 'canada',
+  },
+  {
+    labelKey: 'shared.countries.fr',
+    value: 'france',
+  },
+  {
+    labelKey: 'shared.countries.us',
+    value: 'usa',
+  },
+];
+
 const destinationCountrySchema = (intl) =>
   object().shape({
     destinationCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
@@ -47,14 +67,18 @@ const DestinationCountryStep = ({onNextStep, onPreviousStep}) => {
             <div className={classnames('field', styles.field)}>
               <Field name="destinationCountry">
                 {({field, meta}) => (
-                  <CountrySelector className={classnames(styles.input, formikFieldErrorClass(meta))} {...field} />
+                  <CountrySelector
+                    countryOptions={SUPPORTED_DESTINATION_COUNTRIES}
+                    className={classnames(styles.input, formikFieldErrorClass(meta))}
+                    {...field}
+                  />
                 )}
               </Field>
 
               <ErrorMessage name="destinationCountry" className={styles['error-message']} component="div" />
             </div>
 
-            <PreviousNextActions disabled={isSubmitting} onNext={onNextStep} onPrevious={onPreviousStep} />
+            <PreviousNextActions disabled={isSubmitting} onPrevious={onPreviousStep} />
           </Form>
         )}
       </Formik>

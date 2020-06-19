@@ -3,39 +3,7 @@ import React from 'react';
 import T from 'prop-types';
 import {FormattedMessage} from 'react-intl';
 
-const SUPPORTED_COUNTRIES = [
-  'shared.countries.be',
-  'shared.countries.bf',
-  'shared.countries.bj',
-  'shared.countries.br',
-  'shared.countries.ca',
-  'shared.countries.cd',
-  'shared.countries.cg',
-  'shared.countries.ch',
-  'shared.countries.ci',
-  'shared.countries.cn',
-  'shared.countries.de',
-  'shared.countries.fr',
-  'shared.countries.ga',
-  'shared.countries.gb',
-  'shared.countries.gh',
-  'shared.countries.gn',
-  'shared.countries.ht',
-  'shared.countries.in',
-  'shared.countries.jp',
-  'shared.countries.ml',
-  'shared.countries.ne',
-  'shared.countries.ro',
-  'shared.countries.ru',
-  'shared.countries.rw',
-  'shared.countries.sa',
-  'shared.countries.sn',
-  'shared.countries.tg',
-  'shared.countries.tr',
-  'shared.countries.us',
-];
-
-const CountrySelector = ({className, ...props}) => (
+const CountrySelector = ({className, countryOptions, ...props}) => (
   <select className={className} name={name ? name : 'country'} {...props}>
     <FormattedMessage id="shared.country-selector.placeholder">
       {(placeholder) => (
@@ -45,16 +13,15 @@ const CountrySelector = ({className, ...props}) => (
       )}
     </FormattedMessage>
 
-    {SUPPORTED_COUNTRIES.map((code) => (
-      <FormattedMessage id={code} key={code}>
+    {countryOptions.map((option) => (
+      <FormattedMessage id={option.labelKey} key={option.labelKey}>
         {(countryName) => (
-          <option key={code} value={countryName}>
+          <option key={option.labelKey} value={option.value || countryName}>
             {countryName}
           </option>
         )}
       </FormattedMessage>
     ))}
-    <FormattedMessage id="shared.other-text">{(text) => <option key={text}>{text}</option>}</FormattedMessage>
   </select>
 );
 
@@ -63,6 +30,12 @@ CountrySelector.propTypes = {
   name: T.string,
   value: T.string,
   onChange: T.func.isRequired,
+  countryOptions: T.arrayOf(
+    T.shape({
+      labelKey: T.string.isRequired,
+      value: T.string,
+    }).isRequired
+  ).isRequired,
 };
 
 export default CountrySelector;

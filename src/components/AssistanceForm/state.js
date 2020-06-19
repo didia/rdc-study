@@ -53,3 +53,16 @@ export const destinationCountryState = atom({
   key: 'destinationCountry',
   default: '',
 });
+
+export const assistanceFormAggregateValuesState = selector({
+  key: 'assistanceFormAggregateValuesState',
+  get: ({get}) => {
+    const aboutCandidate = get(aboutCandidateState);
+    const destinationCountry = get(destinationCountryState);
+
+    return {
+      [Steps.AboutCandidate]: aboutCandidate,
+      [Steps.DestinationCountry]: destinationCountry,
+    };
+  },
+});

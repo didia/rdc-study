@@ -20,6 +20,40 @@ import PreviousNextActions from './PreviousNextActions';
 // States
 import {aboutCandidateState} from './state';
 
+// Const
+const SUPPORTED_ORIGIN_COUNTRIES = [
+  {labelKey: 'shared.countries.be'},
+  {labelKey: 'shared.countries.bf'},
+  {labelKey: 'shared.countries.bj'},
+  {labelKey: 'shared.countries.br'},
+  {labelKey: 'shared.countries.ca'},
+  {labelKey: 'shared.countries.cd'},
+  {labelKey: 'shared.countries.cg'},
+  {labelKey: 'shared.countries.ch'},
+  {labelKey: 'shared.countries.ci'},
+  {labelKey: 'shared.countries.cn'},
+  {labelKey: 'shared.countries.de'},
+  {labelKey: 'shared.countries.fr'},
+  {labelKey: 'shared.countries.ga'},
+  {labelKey: 'shared.countries.gb'},
+  {labelKey: 'shared.countries.gh'},
+  {labelKey: 'shared.countries.gn'},
+  {labelKey: 'shared.countries.ht'},
+  {labelKey: 'shared.countries.in'},
+  {labelKey: 'shared.countries.jp'},
+  {labelKey: 'shared.countries.ml'},
+  {labelKey: 'shared.countries.ne'},
+  {labelKey: 'shared.countries.ro'},
+  {labelKey: 'shared.countries.ru'},
+  {labelKey: 'shared.countries.rw'},
+  {labelKey: 'shared.countries.sa'},
+  {labelKey: 'shared.countries.sn'},
+  {labelKey: 'shared.countries.tg'},
+  {labelKey: 'shared.countries.tr'},
+  {labelKey: 'shared.countries.us'},
+  {labelKey: 'shared.other-text'},
+];
+
 const aboutCandidateSchema = (intl) =>
   object().shape({
     firstName: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
@@ -120,7 +154,11 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
 
                 <Field name="originCountry">
                   {({field, meta}) => (
-                    <CountrySelector className={classnames(styles.input, formikFieldErrorClass(meta))} {...field} />
+                    <CountrySelector
+                      countryOptions={SUPPORTED_ORIGIN_COUNTRIES}
+                      className={classnames(styles.input, formikFieldErrorClass(meta))}
+                      {...field}
+                    />
                   )}
                 </Field>
 
