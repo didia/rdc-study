@@ -16,7 +16,7 @@ tags:
 thumbnail: /images/uploads/good-free-photos-773344-unsplash.jpg
 startDate: 2020-05-31T20:10:23.195Z
 levels:
-  - undergraduate
+  - formation
 targetCountries:
   - jp
 ---
