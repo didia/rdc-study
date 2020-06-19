@@ -6,54 +6,60 @@ excerpt: Chaque année le gouvernement japonais octroie des bourses complètes a
   étudiants étrangers souhaitant poursuivre leurs études pour une formation
   spécialisée dans des universités japonaises dans le cadre du programme de
   bourses d’études du gouvernement japonais (MEXT).
+tags:
+  - Bourse d’études
+  - Japon
+  - étudier gratuitement au Japon
+  - Congo
+  - RDC Congo
+  - Afrique
 thumbnail: /images/uploads/good-free-photos-773344-unsplash.jpg
 startDate: 2020-05-31T20:10:23.195Z
 levels:
-  - graduate
-  - postgraduate
-  - research
+  - undergraduate
 targetCountries:
   - jp
 ---
 ## En quoi consiste la bourse ?
 
-[La bourse du gouvernement japonais](https://www.studyinjapan.go.jp/en/links/) couvre:
+La bourse du gouvernement japonais offre:
 
-Frais de scolarité (100%)
-
-Une allocation de 117 000 yens par mois ou soit 1080$
-
-Un billet aller-retour en classe économique
+* Les frais académiques totalement payés;
+* Une allocation de 117 000 yen par mois soit 1 080$ par mois;
+* Billet aller-retour entre votre pays de résidence et le Japon;
+* Une allocation supplémentaire de 2 000 ou 3 000 yen par mois pour les personnes qui poursuivront leurs études dans certaines régions spécialement désignées par le gouvernement japonais. Ce montant variera selon le budget du gouvernement. 
 
 ## Quels sont les critères de la bourse ?
 
-Pour bénéficier de la bourse pour une formation spécialisée au Japon, vous devez remplir les conditions suivantes:
+Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
-Ne pas avoir une nationalité Japonaise
+1. Ne pas avoir la nationalité japonaise;
+2. Être né le 2 avril 1995 ou après cette date;
+3. Avoir un diplôme de fin d'études secondaires ou avoir effectué 12 années de scolarité;
+4. Être en bonne santé physique et mentale.
 
-Être né le 2 avril 1995
-
-Les candidats ayant terminé 12 années de scolarité dans un pays autre que le Japon.
-
-Candidats ayant achevé leurs études dans une école équivalente à un lycée japonais dans un pays autre que le japon
 
 ## Comment postuler ?
 
-Pour postuler à la bourse pour une formation spécialisée au Japon, vous devez déposer votre candidature auprès de [l'ambassade du Japon de votre pays](https://www.mofa.go.jp/about/emb_cons/mofaserv.html), avec les documents suivants:
+Avant de postuler, assurez-vous que la formation que vous désirez poursuivre fait partie de la <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/specialized/2021_Majors_SpecializedTraining.pdf" target="_blank" rel="noopener noreferrer">liste des formations disponibles pour cette bourse.</a>
 
-1. [Formulaire de demande](https://www.studyinjapan.go.jp/en/assets/pdf/app/specialized/2021_Application_SpecializedTraining.pdf)
-2. Relevé (s) académique (s) pour toutes les années scolaires de la dernière école / université fréquentée (si le candidat n’a pas encore obtenu son diplôme, soumettre un certificat d’obtention du diplôme)
-3. Certificat (s) d’obtention du diplôme de l’école / université fréquentée (si le demandeur n’a pas encore obtenu son diplôme, soumettre un certificat d’obtention du diplôme potentiel de l’école / université)
-4. [Lettre de recommandation](https://www.studyinjapan.go.jp/en/assets/pdf/app/specialized/2021_SampleRecommendation.pdf) du président / doyen ou du conseiller pédagogique de l’université actuelle ou de la dernière université fréquentée
-5. [Certificat médical](https://www.studyinjapan.go.jp/en/assets/pdf/app/specialized/2021_HealthCertificate.pdf)
-6. Certificat d’inscription (uniquement pour ceux actuellement inscrits dans une université)
-7. Certificat d’examen de qualification d’inscription universitaire (uniquement pour ceux qui ont réussi l’université examens de qualification d’inscription)
-8. Certificat de compétence linguistique (uniquement dans le cas où le demandeur possède des documents attestant de la compétence en japonais ou en anglais; soumettre 2 copies)
+Ensuite, vous devez envoyer les documents suivants à l'ambassade du Japon de votre pays:
 
-**Les documents doivent être rédigés en japonais ou en anglais, ou une traduction dans l’une de ces langues doit être jointe. Les candidats doivent soumettre deux dossiers de candidature : l’un est un ensemble complet de documents originaux et l’autre est un ensemble complet de leurs copies. Écrivez le numéro du document de ① à ⑧ dans le coin supérieur droit de la première page.**
+1. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/specialized/2021_Application_SpecializedTraining.pdf" target="_blank" rel="noopener noreferrer">Le formulaire de demande;</a>
+2. Relevé(s) académique (s) pour toutes les années scolaires de la dernière école / université fréquentée (si le candidat n’a pas encore obtenu son diplôme, soumettre un certificat d’obtention du diplôme)
+3. Certificat(s) d’obtention du diplôme de l’école / université fréquentée (si le demandeur n’a pas encore obtenu son diplôme, soumettre un certificat d’obtention du diplôme potentiel de l’école / université)
+4. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/specialized/2021_SampleRecommendation.pdf" target="_blank" rel="noopener noreferrer">Une lettre de recommandation du directeur ou d’un enseignant de la dernière école fréquentée</a>
+5. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/specialized/2021_HealthCertificate.pdf" target="_blank" rel="noopener noreferrer">Un certificat de santé</a>
+6. Preuve officielle d’inscription à l’Université (uniquement pour les étudiants actuellement inscrits dans une université);
+7. Preuve officielle de réussite à un examen d’entrée à l’Université (Uniquement pour ceux qui ont réussi un examen d’entrée à l’Université);
+8. Certificat de compétence linguistique (Uniquement si le demandeur possède des documents attestant ses compétences en japonais ou en anglais); soumettez-en 2 copies.
 
-Pour bien vous préparer à l’examen, il est fortement conseillé de consulter [les épreuves des années antérieures](https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html)
+**NB: Les documents doivent être rédigés en japonais ou en anglais. Si ce n’est pas le cas, vous devez joindre une traduction de vos documents dans l’une de ces langues. En outre, les candidats doivent soumettre deux dossiers de candidature : l’un est un ensemble complet de documents originaux et l’autre est un ensemble complet de leurs copies. Écrivez le numéro du document, de ① à ⑨ dans le coin supérieur droit de la première page pour tous les documents.**
 
-NB: Comme le processus de demande et le calendrier spécifique diffèrent selon le pays de votre nationalité, veuillez vous renseigner auprès de l'ambassade ou du consulat général du Japon dans votre pays <https://www.mofa.go.jp/about/emb_cons/mofaserv.html> pour plus de détails. N'ENVOYEZ PAS de documents de candidature directement à MEXT au Japon.
+Pour bien vous préparer à l’examen, il est fortement conseillé de consulter <a href="https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html" target="_blank" rel="noopener noreferrer">les épreuves des années antérieures.</a>
+
+NB: Le processus de demande et les dates limites pour postuler varient d’un pays à un autre. Nous vous recommandons de vous renseigner à ce sujet auprès de <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank" rel="noopener noreferrer">l'ambassade du Japon dans votre pays.</a>
+
+Pour plus d'informations sur la bourse, veuillez consulter <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/specialized/2021_Guidelines_SpecializedTraining_E.pdf" target="_blank" rel="noopener noreferrer">le guide officiel du gouvernement Japonais.</a>
 
 Nous vous encourageons à postuler et bonne chance !
