@@ -63,3 +63,32 @@ select.input {
     margin: 0 0 2em;
   }
 }
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.edit-button {
+  height: inherit;
+  padding: 0;
+  margin: 0 0 1em 1em;
+  color: _palette(accent);
+}
+
+.recap-mode {
+  border-bottom: 2px solid #d3d3d3;
+  margin-bottom: 2em;
+
+  .description {
+    display: none;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .title--recap-mode-underlined {
+    border-bottom: 1px solid _palette(bg);
+  }
+}

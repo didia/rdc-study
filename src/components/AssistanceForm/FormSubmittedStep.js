@@ -2,7 +2,7 @@
 import React from 'react';
 import {useIntl} from 'react-intl';
 import {Link} from 'gatsby';
-import {useRecoilState} from 'recoil';
+import {useRecoilValue} from 'recoil';
 
 // Styles
 import styles from './styles.module.scss';
@@ -12,7 +12,7 @@ import {destinationCountryState} from './state';
 
 const FormSubmittedStep = () => {
   const intl = useIntl();
-  const [destinationCountry] = useRecoilState(destinationCountryState);
+  const [destinationCountry] = useRecoilValue(destinationCountryState);
 
   const guidePath = `/guides/${destinationCountry}`;
 

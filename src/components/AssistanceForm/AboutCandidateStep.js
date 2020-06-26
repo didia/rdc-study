@@ -15,7 +15,7 @@ import {formikFieldErrorClass} from './utils';
 
 // Components
 import CountrySelector from '../CountrySelector';
-import PreviousNextActions from './PreviousNextActions';
+import StepActions from './StepActions';
 
 // States
 import {aboutCandidateState} from './state';
@@ -51,7 +51,7 @@ const SUPPORTED_ORIGIN_COUNTRIES = [
   {labelKey: 'shared.countries.tg'},
   {labelKey: 'shared.countries.tr'},
   {labelKey: 'shared.countries.us'},
-  {labelKey: 'shared.other-text'},
+  {labelKey: 'shared.other-text'}
 ];
 
 const aboutCandidateSchema = (intl) =>
@@ -61,16 +61,23 @@ const aboutCandidateSchema = (intl) =>
     email: string()
       .email(intl.formatMessage({id: 'shared.forms.validation.email'}))
       .required(intl.formatMessage({id: 'shared.forms.validation.required'})),
-    originCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
+    originCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'}))
   });
 
-const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
+const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode}) => {
   const intl = useIntl();
   const [aboutCandidateData, setAboutCandidateData] = useRecoilState(aboutCandidateState);
+  const recapClassName = recapMode ? styles['recap-mode'] : null;
+
+  const TitleTag = recapMode ? 'h3' : 'h2';
 
   return (
-    <div>
-      <h2 className={styles.title}>{intl.formatMessage({id: 'assistance-form.steps.about-candidate.title'})}</h2>
+    <div className={recapClassName}>
+      <div className={styles['title-wrapper']}>
+        <TitleTag className={classnames(styles.title, styles['title--recap-mode-underlined'])}>
+          {intl.formatMessage({id: 'assistance-form.steps.about-candidate.title'})}
+        </TitleTag>
+      </div>
       <p className={styles.description}>
         {intl.formatMessage({id: 'assistance-form.steps.about-candidate.description'})}
       </p>
@@ -83,7 +90,7 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
           onNextStep();
         }}
       >
-        {({isSubmitting}) => (
+        {({isSubmitting, handleSubmit}) => (
           <Form>
             <div className={styles.fields}>
               <div className={classnames('field', styles.field)}>
@@ -96,8 +103,9 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
                     <input
                       type="text"
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
+                      disabled={recapMode}
                       placeholder={intl.formatMessage({
-                        id: 'assistance-form.steps.about-candidate.placeholders.first-name',
+                        id: 'assistance-form.steps.about-candidate.placeholders.first-name'
                       })}
                       {...field}
                     />
@@ -117,8 +125,9 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
                     <input
                       type="text"
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
+                      disabled={recapMode}
                       placeholder={intl.formatMessage({
-                        id: 'assistance-form.steps.about-candidate.placeholders.last-name',
+                        id: 'assistance-form.steps.about-candidate.placeholders.last-name'
                       })}
                       {...field}
                     />
@@ -138,6 +147,7 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
                     <input
                       type="email"
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
+                      disabled={recapMode}
                       placeholder={intl.formatMessage({id: 'assistance-form.steps.about-candidate.placeholders.email'})}
                       {...field}
                     />
@@ -157,6 +167,7 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
                     <CountrySelector
                       countryOptions={SUPPORTED_ORIGIN_COUNTRIES}
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
+                      disabled={recapMode}
                       {...field}
                     />
                   )}
@@ -166,7 +177,12 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
               </div>
             </div>
 
-            <PreviousNextActions disabled={isSubmitting} onPrevious={onPreviousStep} />
+            <StepActions
+              disabled={isSubmitting}
+              onEdit={onEditStep}
+              onNext={handleSubmit}
+              onPrevious={onPreviousStep}
+            />
           </Form>
         )}
       </Formik>
@@ -175,8 +191,10 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
 };
 
 AboutCandidateStep.propTypes = {
-  onNextStep: T.func.isRequired,
+  onEditStep: T.func,
+  onNextStep: T.func,
   onPreviousStep: T.func,
+  recapMode: T.bool
 };
 
 export default AboutCandidateStep;

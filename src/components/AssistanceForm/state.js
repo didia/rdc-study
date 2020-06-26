@@ -4,12 +4,12 @@ import Steps from './steps';
 
 export const currentStepState = atom({
   key: 'currentStep',
-  default: Steps.AboutCandidate,
+  default: Steps.SubmitForm
 });
 
 export const previousStepsState = atom({
   key: 'previousSteps',
-  default: [],
+  default: []
 });
 
 export const nextStepState = selector({
@@ -22,11 +22,13 @@ export const nextStepState = selector({
       case Steps.AboutCandidate:
         return Steps.DestinationCountry;
       case Steps.DestinationCountry:
+        return Steps.SubmitForm;
+      case Steps.SubmitForm:
         return Steps.FormSubmitted;
       default:
         return Steps.AboutCandidate;
     }
-  },
+  }
 });
 
 export const previousStepState = selector({
@@ -36,7 +38,7 @@ export const previousStepState = selector({
     const previousSteps = get(previousStepsState);
 
     return previousSteps.length < 1 ? null : previousSteps[previousSteps.length - 1];
-  },
+  }
 });
 
 export const aboutCandidateState = atom({
@@ -45,16 +47,16 @@ export const aboutCandidateState = atom({
     firstName: '',
     lastName: '',
     email: '',
-    originCountry: '',
-  },
+    originCountry: ''
+  }
 });
 
 export const destinationCountryState = atom({
   key: 'destinationCountry',
-  default: '',
+  default: ''
 });
 
-export const assistanceFormAggregateValuesState = selector({
+export const assistanceFormState = selector({
   key: 'assistanceFormAggregateValuesState',
   get: ({get}) => {
     const aboutCandidate = get(aboutCandidateState);
@@ -62,7 +64,7 @@ export const assistanceFormAggregateValuesState = selector({
 
     return {
       [Steps.AboutCandidate]: aboutCandidate,
-      [Steps.DestinationCountry]: destinationCountry,
+      [Steps.DestinationCountry]: destinationCountry
     };
-  },
+  }
 });
