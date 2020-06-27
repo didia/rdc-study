@@ -63,8 +63,8 @@ export const assistanceFormState = selector({
     const destinationCountry = get(destinationCountryState);
 
     return {
-      [Steps.AboutCandidate]: aboutCandidate,
-      [Steps.DestinationCountry]: destinationCountry
+      aboutCandidate,
+      destinationCountry
     };
   }
 });

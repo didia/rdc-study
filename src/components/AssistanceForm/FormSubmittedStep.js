@@ -12,13 +12,15 @@ import {destinationCountryState} from './state';
 
 const FormSubmittedStep = () => {
   const intl = useIntl();
-  const [destinationCountry] = useRecoilValue(destinationCountryState);
+  const destinationCountry = useRecoilValue(destinationCountryState);
 
   const guidePath = `/guides/${destinationCountry}`;
 
   return (
     <div>
-      <h2 className={styles.title}>{intl.formatMessage({id: 'assistance-form.steps.form-submitted.title'})}</h2>
+      <h2 className={styles.title} style={{textAlign: 'center'}}>
+        {intl.formatMessage({id: 'assistance-form.steps.form-submitted.title'})}
+      </h2>
 
       <p>{intl.formatMessage({id: 'assistance-form.steps.form-submitted.description'})}</p>
 

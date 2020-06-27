@@ -15,7 +15,7 @@ const StepRegistry = {
   [Steps.AboutCandidate]: AboutCandidateStep,
   [Steps.DestinationCountry]: DestinationCountryStep,
   [Steps.FormSubmitted]: FormSubmittedStep,
-  [Steps.SubmitForm]: SubmitFormStep,
+  [Steps.SubmitForm]: SubmitFormStep
 };
 
 export const getStepComponent = (key) => {
