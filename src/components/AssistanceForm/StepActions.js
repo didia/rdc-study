@@ -7,7 +7,7 @@ import T from 'prop-types';
 // Styles
 import styles from './styles.module.scss';
 
-const StepActions = ({disabled, onNext, onPrevious, onEdit}) => {
+const StepActions = ({disabled, onPrevious}) => {
   const intl = useIntl();
 
   return (
@@ -20,29 +20,17 @@ const StepActions = ({disabled, onNext, onPrevious, onEdit}) => {
         </li>
       )}
 
-      {onEdit && (
-        <li>
-          <button type="button" className={styles['edit-button']} onClick={onEdit}>
-            {intl.formatMessage({id: 'assistance-form.controls.edit'})}
-          </button>
-        </li>
-      )}
-
-      {onNext && (
-        <li>
-          <button type="button" className="special" disabled={disabled} onClick={onNext}>
-            {intl.formatMessage({id: 'assistance-form.controls.next'})}
-          </button>
-        </li>
-      )}
+      <li>
+        <button type="submit" className="special" disabled={disabled}>
+          {intl.formatMessage({id: 'assistance-form.controls.next'})}
+        </button>
+      </li>
     </ul>
   );
 };
 
 StepActions.propTypes = {
   disabled: T.bool,
-  onEdit: T.func,
-  onNext: T.func,
   onPrevious: T.func
 };
 

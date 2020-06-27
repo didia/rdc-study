@@ -16,6 +16,7 @@ import {formikFieldErrorClass} from './utils';
 // Components
 import CountrySelector from '../CountrySelector';
 import StepActions from './StepActions';
+import StepForm from './StepForm';
 
 // States
 import {aboutCandidateState} from './state';
@@ -67,21 +68,14 @@ const aboutCandidateSchema = (intl) =>
 const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode}) => {
   const intl = useIntl();
   const [aboutCandidateData, setAboutCandidateData] = useRecoilState(aboutCandidateState);
-  const recapClassName = recapMode ? styles['recap-mode'] : null;
-
-  const TitleTag = recapMode ? 'h3' : 'h2';
 
   return (
-    <div className={recapClassName}>
-      <div className={styles['title-wrapper']}>
-        <TitleTag className={classnames(styles.title, styles['title--recap-mode-underlined'])}>
-          {intl.formatMessage({id: 'assistance-form.steps.about-candidate.title'})}
-        </TitleTag>
-      </div>
-      <p className={styles.description}>
-        {intl.formatMessage({id: 'assistance-form.steps.about-candidate.description'})}
-      </p>
-
+    <StepForm
+      recapMode={recapMode}
+      title={intl.formatMessage({id: 'assistance-form.steps.about-candidate.title'})}
+      description={intl.formatMessage({id: 'assistance-form.steps.about-candidate.description'})}
+      onEditStep={onEditStep}
+    >
       <Formik
         initialValues={aboutCandidateData}
         validationSchema={aboutCandidateSchema(intl)}
@@ -90,7 +84,7 @@ const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode})
           onNextStep();
         }}
       >
-        {({isSubmitting, handleSubmit}) => (
+        {({isSubmitting}) => (
           <Form>
             <div className={styles.fields}>
               <div className={classnames('field', styles.field)}>
@@ -177,16 +171,11 @@ const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode})
               </div>
             </div>
 
-            <StepActions
-              disabled={isSubmitting}
-              onEdit={onEditStep}
-              onNext={handleSubmit}
-              onPrevious={onPreviousStep}
-            />
+            <StepActions disabled={isSubmitting} onPrevious={onPreviousStep} />
           </Form>
         )}
       </Formik>
-    </div>
+    </StepForm>
   );
 };
 

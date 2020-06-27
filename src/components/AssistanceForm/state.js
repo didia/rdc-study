@@ -4,7 +4,7 @@ import Steps from './steps';
 
 export const currentStepState = atom({
   key: 'currentStep',
-  default: Steps.SubmitForm
+  default: Steps.AboutCandidate
 });
 
 export const previousStepsState = atom({

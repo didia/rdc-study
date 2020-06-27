@@ -23,9 +23,15 @@ const SubmitFormStep = () => {
 
       <p>{intl.formatMessage({id: 'assistance-form.steps.submit-form.description'})}</p>
 
-      {stepComponents.map(({key, component: Component}) => (
-        <Component key={key} recapMode={true} onEdit={() => goToStep({step: key, setCurrentStep, setPreviousSteps})} />
-      ))}
+      <div>
+        {stepComponents.map(({key, component: Component}) => (
+          <Component
+            key={key}
+            recapMode={true}
+            onEditStep={() => goToStep({step: key, setCurrentStep, setPreviousSteps})}
+          />
+        ))}
+      </div>
 
       <div className={styles['centralized-button-wrapper']}>
         <button className="special">

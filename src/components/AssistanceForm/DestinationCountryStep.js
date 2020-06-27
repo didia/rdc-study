@@ -16,6 +16,7 @@ import {formikFieldErrorClass} from './utils';
 // Components
 import CountrySelector from '../CountrySelector';
 import StepActions from './StepActions';
+import StepForm from './StepForm';
 
 // States
 import {destinationCountryState} from './state';
@@ -24,40 +25,37 @@ import {destinationCountryState} from './state';
 const SUPPORTED_DESTINATION_COUNTRIES = [
   {
     labelKey: 'shared.countries.be',
-    value: 'belgique',
+    value: 'belgique'
   },
   {
     labelKey: 'shared.countries.ca',
-    value: 'canada',
+    value: 'canada'
   },
   {
     labelKey: 'shared.countries.fr',
-    value: 'france',
+    value: 'france'
   },
   {
     labelKey: 'shared.countries.us',
-    value: 'usa',
-  },
+    value: 'usa'
+  }
 ];
 
 const destinationCountrySchema = (intl) =>
   object().shape({
-    destinationCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
+    destinationCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'}))
   });
 
 const DestinationCountryStep = ({onEditStep, onNextStep, onPreviousStep, recapMode}) => {
   const intl = useIntl();
   const [destinationCountry, setDestinationCountry] = useRecoilState(destinationCountryState);
-  const recapClassName = recapMode ? styles['recap-mode'] : null;
-
-  const TitleTag = recapMode ? 'h3' : 'h2';
 
   return (
-    <div className={recapClassName}>
-      <TitleTag className={styles.title}>
-        {intl.formatMessage({id: 'assistance-form.steps.destination-country.title'})}
-      </TitleTag>
-
+    <StepForm
+      recapMode={recapMode}
+      title={intl.formatMessage({id: 'assistance-form.steps.destination-country.title'})}
+      onEditStep={onEditStep}
+    >
       <Formik
         initialValues={{destinationCountry}}
         validationSchema={destinationCountrySchema(intl)}
@@ -66,7 +64,7 @@ const DestinationCountryStep = ({onEditStep, onNextStep, onPreviousStep, recapMo
           onNextStep();
         }}
       >
-        {({isSubmitting, handleSubmit}) => (
+        {({isSubmitting}) => (
           <Form>
             <div className={classnames('field', styles.field)}>
               <Field name="destinationCountry">
@@ -83,11 +81,11 @@ const DestinationCountryStep = ({onEditStep, onNextStep, onPreviousStep, recapMo
               <ErrorMessage name="destinationCountry" className={styles['error-message']} component="div" />
             </div>
 
-            <StepActions disabled={isSubmitting} onEdit={onEditStep} onNext={handleSubmit} onPrevious={onPreviousStep}  />
+            <StepActions disabled={isSubmitting} onPrevious={onPreviousStep} />
           </Form>
         )}
       </Formik>
-    </div>
+    </StepForm>
   );
 };
 

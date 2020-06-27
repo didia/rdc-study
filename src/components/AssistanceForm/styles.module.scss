@@ -28,8 +28,11 @@ select.input {
   }
 }
 
+.title-wrapper {
+  justify-content: center;
+}
+
 .title {
-  text-align: center;
   color: _palette(bg);
 }
 
@@ -70,9 +73,13 @@ select.input {
 }
 
 .edit-button {
-  height: inherit;
+  display: none;
+  height: auto;
   padding: 0;
-  margin: 0 0 1em 1em;
+  margin: 0 0 1.2em 0.5em;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 0.7em;
   color: _palette(accent);
 }
 
@@ -80,15 +87,24 @@ select.input {
   border-bottom: 2px solid #d3d3d3;
   margin-bottom: 2em;
 
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  .edit-button {
+    display: block;
+  }
+
+  .actions,
   .description {
     display: none;
   }
 
-  .title {
-    text-align: left;
+  .title-wrapper {
+    justify-content: flex-start;
   }
 
-  .title--recap-mode-underlined {
-    border-bottom: 1px solid _palette(bg);
+  .title {
+    text-align: left;
   }
 }
