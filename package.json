@@ -45,7 +45,7 @@
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-netlify-cms": "^4.3.3",
     "gatsby-plugin-netlify-cms-paths": "^1.3.0",
-    "gatsby-plugin-postcss": "^2.3.2",
+    "gatsby-plugin-postcss": "^2.3.8",
     "gatsby-plugin-react-helmet": "^3.3.2",
     "gatsby-plugin-remove-trailing-slashes": "^2.3.3",
     "gatsby-plugin-sass": "^2.3.2",
