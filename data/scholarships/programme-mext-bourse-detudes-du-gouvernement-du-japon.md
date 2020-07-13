@@ -57,6 +57,6 @@ Concernant la procédure d’admission, la sélection initiale (analyse des docu
 
 La disponibilité des bourses et les délais de traitement diffèrent d’un pays à un autre. Il est donc très important de contacter l’ambassade ou le consulat général du Japon dans votre pays pour obtenir plus d’informations. Si vous ne savez pas où se situe l’ambassade, vous la localiser à travers le <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank" rel="noopener noreferrer">site du ministère.</a>
 
-Pour savoir quels documents présenter, nous vous invitons à consulter les liens des bourses ci-haut.
+Les documents à présenter et les dates limites pour postuler varient d’une bourse à une autre, nous vous invitons donc à consulter les liens des bourses ci-haut pour obtenir ces informations.
 
 Un examen peut-être requis pour postuler à une bourse offerte par le gourvenement japonais. Pour bien vous préparer à l’examen, il est fortement conseillé de consulter <a href="https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html" target="_blank" rel="noopener noreferrer">les épreuves des années antérieures.</a>
