@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Programme MEXT: Bourse d'études du gouvernement du Japon."
-deadline: 2020-07-31T04:00:00.000Z
+deadline: ""
 excerpt: Chaque année le gouvernement japonais octroie des bourses complètes aux
   étudiants étrangers souhaitant poursuivre leurs études de premier cycle ou de
   maîtrise dans des universités japonaises dans le cadre du programme de bourses
@@ -38,40 +38,25 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-Le gouvernement japonais (Monbukagakusho) offre six catégories de bourses:
+Le gouvernement japonais (Monbukagakusho) offre plusieurs bourses complètes dont :
 
-* Bourse de premier cycle/Licence (inscription en juin);
-* Bourse de recherche ou master (inscription en mai);
-* Écoles Techniques supérieures (inscription en juin);
-* Cours de profession et spécialisation (inscription en juin);
-* Bourse pour les professeurs des études primaires et secondaires (inscription en janvier/février);
-* JET programme pour les coordonnateurs de relations internationales (inscription en décembre)
+* [Bourse de premier cycle/Licence](/bourses/bourse-du-gouvernement-japonais-pour-le-1er-cycle);
+* [Bourses de master ou doctorat](/bourses/bourse-du-gouvernement-japonais-pour-le-cycle-superieur);
+* [Cours de profession et spécialisation](/bourses/bourse-du-gouvernement-japonais-pour-formation-specialisee);
 
-Qui couvrent :
+Vous pouvez retrouver une liste exhaustive des bourses offertes par le Japon en consultant <a href="https://www.jasso.go.jp/en/study_j/scholarships/brochure.html" target="_blank" rel="noreferrer noopener">la brochure à ce sujet</a>.
 
-* Allocation mensuelle: La valeur de la bourse d’études reste à déterminer, cependant elle est généralement aux alentours de **117 000 yen** soit **1080 $**.
-* Transport au Japon : Vous avez droit à un billet aller-retour vers et à partir du Japon;
-* Les frais pour l’examen d’entrée, l’inscription et les frais de scolarité.
 
 ## Quels sont les critères de la bourse ?
 
-Chacune de ces bourses dispose de ses propres critères d’éligibilité; veuillez donc postuler pour la catégorie qui correspond le mieux à votre situation personnelle.  Voici les liens vers les documents d'informations sur les critères des bourses:
-
-* <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_Guidelines_Undergraduate_E.pdf" target="_blank" rel="noreferrer noopener">Critères pour le premier cycle (Anglais);</a>
-* <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Guidelines_Research_E.pdf" target="_blank" rel="noreferrer noopener">Critères pour le deuxième et troisième cycle (Anglais).</a>
+Chacune de ces bourses dispose de ses propres critères d’éligibilité; Veuillez cliquer sur les liens des bourses ci-haut pour accéder aux critères d'éligibilité.
 
 ## Comment postuler ?
 
-Concernant la procédure d’admission, la sélection initiale (analyse des documents, examen écrit et entretien) est effectuée à l’ambassade du Japon entre juin et juillet, celle-ci recommande ensuite les candidats sélectionnés au ministère de l’Éducation, de la Culture, des Sports, de la Science et de la Technologie du Japon (MEXT) à la fin du mois d’août.
+Concernant la procédure d’admission, la sélection initiale (analyse des documents, examen écrit et entretien) est effectuée à l’ambassade du Japon et celle-ci recommande ensuite les candidats sélectionnés au ministère de l’Éducation, de la Culture, des Sports, de la Science et de la Technologie du Japon (MEXT)
 
-Les délais diffèrent selon les pays. De ce fait nous vous recommandons donc de contacter l’ambassade ou le consulat général du Japon dans votre pays. Si vous ne savez pas où se situe l’ambassade, vous la localiser à travers le <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank" rel="noopener noreferrer">site du ministère.</a>
+La disponibilité des bourses et les délais de traitement diffèrent d’un pays à un autre. Il est donc très important de contacter l’ambassade ou le consulat général du Japon dans votre pays pour obtenir plus d’informations. Si vous ne savez pas où se situe l’ambassade, vous la localiser à travers le <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank" rel="noopener noreferrer">site du ministère.</a>
 
-Vous pouvez consulter les documents suivants pour la procédure d'admission et les documents à préparer:
+Pour savoir quels documents présenter, nous vous invitons à consulter les liens des bourses ci-haut.
 
-* <a href="https://www.studyinjapan.go.jp/en/smap-stopj-applications-undergraduate.html" target="_blank" rel="noreferrer noopener">Procédure et documents pour le premier cycle (Anglais);</a>
-* <a href="https://www.studyinjapan.go.jp/en/smap-stopj-applications-research.html" target="_blank" rel="noreferrer noopener">Procédure et documents pour le deuxième et troisième cycle (Anglais).</a>
-
-
-Pour bien vous préparer à l’examen, il est fortement conseillé de consulter <a href="https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html" target="_blank" rel="noopener noreferrer">les épreuves des années antérieures.</a>
-
-Au cas où vous ne serez pas intéressés par la bourse du gouvernement, il existe d’autres programmes des bourses pour le Japon tels que <a href="https://www.jasso.go.jp/en/study_j/scholarships/brochure.html" target="_blank" rel="noreferrer noopener">Pamphlet "Scholarships for International Students in Japan 2019-2020"</a>, <a href="https://www.jasso.go.jp/en/study_j/scholarships/short_term.html" target="_blank" rel="noreferrer noopener">Student Exchange Support Program</a> (Scholarship for Short-term Study in Japan) et <a href="https://www.jasso.go.jp/en/study_j/scholarships/index.html" target="_blank" rel="noreferrer noopener">Scholarships for Study in Japan.</a>
+Un examen peut-être requis pour postuler à une bourse offerte par le gourvenement japonais. Pour bien vous préparer à l’examen, il est fortement conseillé de consulter <a href="https://www.studyinjapan.go.jp/en/planning/scholarship/application/examination/index.html" target="_blank" rel="noopener noreferrer">les épreuves des années antérieures.</a>
