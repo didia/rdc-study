@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourses d'études du gouvernement Japonais pour étudiants du 1er cycle
 deadline: 2020-07-31T20:10:23.163Z
 excerpt: Chaque année le gouvernement japonais octroie des bourses complètes aux
