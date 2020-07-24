@@ -1,12 +1,11 @@
 // Vendor
-import React, {useEffect} from 'react';
+import React from 'react';
 import T from 'prop-types';
 import {StickyShareButtons} from 'sharethis-reactjs';
 import {injectIntl} from 'react-intl';
 
 // Utils
 import getCanonicalLink from '../../utils/get-canonical-link';
-import {pushCurrentBranch} from '../../utils/push-analytics-event';
 
 // Config
 import config from '../../../config';
@@ -18,9 +17,6 @@ const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
   const link = `${canonicalLink}?utm_source=rdcetudes.com&utm_medium=email&campaign=user_share`;
   const emailMessage = intl.formatMessage({id: 'shared.social-share.email.message'}, {excerpt, link});
 
-  useEffect(() => {
-    pushCurrentBranch();
-  }, [path]);
   return (
     /* eslint-disable camelcase */
     <StickyShareButtons
