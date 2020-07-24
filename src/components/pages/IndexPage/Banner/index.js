@@ -1,11 +1,24 @@
 // Vendor
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
-import {useStaticQuery, graphql} from 'gatsby';
+import {useStaticQuery, graphql, navigate} from 'gatsby';
 import Img from 'gatsby-image';
 
 // Styles
 import styles from './styles.module.scss';
+
+// Utils
+import analyticsPushEvent from '../../../../utils/push-analytics-event';
+
+const onCallToActionClick = () => {
+  analyticsPushEvent({
+    category: 'Assistance CTA',
+    action: 'Click',
+    label: 'Home Page Banner Button',
+  });
+
+  navigate('#contact');
+};
 
 const Banner = () => {
   const data = useStaticQuery(graphql`
@@ -44,9 +57,9 @@ const Banner = () => {
         <div className={styles['call-to-action-wrapper']}>
           <FormattedMessage id="pages.index.banner.call-to-action-button-text">
             {(text) => (
-              <a href="#contact" className="button special call-to-action">
+              <button onClick={onCallToActionClick} className="button special call-to-action">
                 {text}
-              </a>
+              </button>
             )}
           </FormattedMessage>
         </div>
