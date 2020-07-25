@@ -18,6 +18,7 @@ const {contact, contactFormEndpoint} = config;
 import getCurrentUrl from '../../utils/get-current-url';
 
 import ActivityIndicator from '../ActivityIndicator';
+import analyticsPushEvent from "../../utils/push-analytics-event";
 
 const ContactForm = ({className, submitDisabledState, values, onUpdate, onSubmit}) => (
   <form className={classnames(styles.form, className)} onSubmit={onSubmit}>
@@ -165,7 +166,7 @@ class Footer extends Component {
     });
   }
 
-  handleSubmit(event) {
+  async handleSubmit(event) {
     event.preventDefault();
     const {email, message, name} = this.state;
 
@@ -181,26 +182,43 @@ class Footer extends Component {
       isSubmitting: true
     });
 
-    axios
-      .post(contactFormEndpoint, payload)
-      .then(() => {
-        this.setState({
-          ...this.state,
-          isSubmitting: false,
-          showError: false,
-          showSuccess: true
-        });
-      })
-      .catch(error => {
-        this.setState({
-          ...this.state,
-          isSubmitting: false,
-          showError: true,
-          showSuccess: false
-        });
+    analyticsPushEvent({
+      category: 'ContactForm',
+      action: 'Submit',
+      label: window.location.pathname
+    });
 
-        window.console.error('An error occured: ', error);
+    try {
+      await axios.post(contactFormEndpoint, payload);
+
+      this.setState({
+        ...this.state,
+        isSubmitting: false,
+        showError: false,
+        showSuccess: true
       });
+
+      analyticsPushEvent({
+        category: 'ContactForm',
+        action: 'SubmitSuccess',
+        label: window.location.pathname
+      });
+    } catch (error) {
+      this.setState({
+        ...this.state,
+        isSubmitting: false,
+        showError: true,
+        showSuccess: false
+      });
+
+      analyticsPushEvent({
+        category: 'ContactForm',
+        action: 'SubmitError',
+        label: window.location.pathname
+      });
+
+      window.console.error('An error occured: ', error);
+    }
   }
 
   render() {

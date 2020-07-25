@@ -33,13 +33,13 @@ const handleSubscribe = async (event, email, setFormState) => {
     showSuccess: false
   });
 
-  try {
-    analyticsPushEvent({
-      category: 'Newsletter',
-      action: 'Subscribe',
-      label: window.location.pathname
-    });
+  analyticsPushEvent({
+    category: 'Newsletter',
+    action: 'Subscribe',
+    label: window.location.pathname
+  });
 
+  try {
     await axios.post(newsletterEndpoint, payload);
 
     setFormState({
