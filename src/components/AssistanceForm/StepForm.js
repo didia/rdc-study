@@ -21,7 +21,7 @@ const StepForm = ({children, title, description, recapMode, onEditStep}) => {
         </button>
       </div>
 
-      <p className={styles.description}>{description}</p>
+      {description && <p className={styles.description}>{description}</p>}
 
       {children}
     </div>

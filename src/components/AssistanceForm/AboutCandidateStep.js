@@ -14,7 +14,7 @@ import styles from './styles.module.scss';
 import {formikFieldErrorClass} from './utils';
 
 // Components
-import CountrySelector from '../CountrySelector';
+import Selector from '../Selector';
 import StepActions from './StepActions';
 import StepForm from './StepForm';
 
@@ -86,7 +86,7 @@ const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode})
       >
         {({isSubmitting}) => (
           <Form>
-            <div className={styles.fields}>
+            <div className={classnames(styles.fields, styles['fields--2-by-2'])}>
               <div className={classnames('field', styles.field)}>
                 <label htmlFor="firstName" className={styles.label}>
                   {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.first-name'})}
@@ -158,10 +158,11 @@ const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode})
 
                 <Field name="originCountry">
                   {({field, meta}) => (
-                    <CountrySelector
-                      countryOptions={SUPPORTED_ORIGIN_COUNTRIES}
+                    <Selector
+                      options={SUPPORTED_ORIGIN_COUNTRIES}
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
                       disabled={recapMode}
+                      placeholderKey="shared.country-selector.placeholder"
                       {...field}
                     />
                   )}

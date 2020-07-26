@@ -43,7 +43,14 @@ select.input {
 .fields {
   display: grid;
   grid-gap: 2em;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+
+  & {
+    .fields--2-by-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
 }
 
 .error-message {
@@ -55,16 +62,6 @@ select.input {
 .centralized-button-wrapper {
   display: flex;
   justify-content: center;
-}
-
-@include breakpoint(xsmall) {
-  .fields {
-    display: block;
-  }
-
-  form .field {
-    margin: 0 0 2em;
-  }
 }
 
 .title-wrapper {
@@ -106,5 +103,26 @@ select.input {
 
   .title {
     text-align: left;
+  }
+}
+
+:global(.fade-enter) {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+:global(.fade-enter-active) {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 200ms, transform 200ms;
+}
+
+@include breakpoint(xsmall) {
+  .fields {
+    display: block;
+  }
+
+  form .field {
+    margin: 0 0 2em;
   }
 }

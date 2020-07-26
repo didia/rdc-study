@@ -14,6 +14,9 @@
   "assistance-form.steps.about-candidate.placeholders.origin-country": "Choisissez votre pays de résidence",
   "assistance-form.steps.about-candidate.title": "À propos de vous",
 
+  "assistance-form.steps.destination-country.labels.has-admission": "Avez-vous déjà obtenu votre admission ?",
+  "assistance-form.steps.destination-country.labels.has-admission-negative-option": "Non, je n’ai pas d’admission",
+  "assistance-form.steps.destination-country.labels.has-admission-positive-option": "Oui, j’ai déjà mon admission",
   "assistance-form.steps.destination-country.title": "Dans quel pays visez-vous étudier ?",
 
   "assistance-form.steps.form-submitted.description": "Votre demande d’assistance a été reçue par notre équipe. Nous vous répondrons dans un délai de deux jours ouvrables. Nous vous remercions pour la confiance que vous nous accordez.",

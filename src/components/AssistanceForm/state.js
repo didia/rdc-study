@@ -56,14 +56,31 @@ export const destinationCountryState = atom({
   default: ''
 });
 
+export const hasAdmissionState = atom({
+  key: 'hasAdmission',
+  default: false
+});
+
+const ASSISTANCE_PACKAGE = {
+  ADMISSION: 'ADMISSION',
+  CAQ: 'CAQ',
+  EQUIVALENCE: 'EQUIVALENCE',
+  TRAVEL: 'TRAVEL',
+  VISA: 'VISA'
+};
+
 export const assistanceFormState = selector({
   key: 'assistanceFormAggregateValuesState',
   get: ({get}) => {
     const aboutCandidate = get(aboutCandidateState);
     const destinationCountry = get(destinationCountryState);
+    const hasAdmissionState = get(hasAdmissionState);
+
+    const assistancePackage = hasAdmissionState ? ASSISTANCE_PACKAGE.VISA : ASSISTANCE_PACKAGE.ADMISSION;
 
     return {
       aboutCandidate,
+      assistancePackage,
       destinationCountry
     };
   }
