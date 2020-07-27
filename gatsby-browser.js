@@ -9,8 +9,7 @@ exports.onClientEntry = () => {
     const features = [];
 
     if (!('Intl' in window)) {
-      const locale = window.location.pathname.split('/')[1];
-      features.push(`Intl.~locale.${locale}`);
+      features.push(`Intl.~locale.fr`);
     }
 
     if (!('Set' in window)) {
