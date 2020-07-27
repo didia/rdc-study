@@ -19,7 +19,7 @@ const Guide = ({guide}) => {
         <h3 className="major">{guide.title}</h3>
         <p>{guide.excerpt}</p>
         <FormattedMessage id="guide-list.guide.learn-more-text">
-          {text => <span className="as-anchor special">{text}</span>}
+          {(text) => <span className="as-anchor special">{text}</span>}
         </FormattedMessage>
       </article>
     </Link>
@@ -40,9 +40,9 @@ Guide.propTypes = {
 const GuideList = ({className, descriptionKey, guides, id, titleKey}) => {
   return (
     <div id={id} className={className}>
-      {titleKey && <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>}
+      {titleKey && <FormattedMessage id={titleKey}>{(text) => <h2 className="major">{text}</h2>}</FormattedMessage>}
 
-      {descriptionKey && <FormattedMessage id={descriptionKey}>{text => <p>{text}</p>}</FormattedMessage>}
+      {descriptionKey && <FormattedMessage id={descriptionKey}>{(text) => <p>{text}</p>}</FormattedMessage>}
 
       <section className={styles['guides-wrapper']}>
         {guides.map((guide, i) => (

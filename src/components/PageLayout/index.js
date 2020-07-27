@@ -17,9 +17,6 @@ import Header from '../../components/Header';
 import Menu from '../../components/Menu';
 import SEO from '../../components/SEO';
 
-// Utils
-import analyticsPushEvent from '../../utils/push-analytics-event';
-
 class TemplateWrapper extends React.Component {
   constructor(props) {
     super(props);
@@ -48,14 +45,6 @@ class TemplateWrapper extends React.Component {
   }
 
   handleToggleMenu() {
-    if (!this.state.isMenuVisible) {
-      analyticsPushEvent({
-        category: 'Menu Button',
-        action: 'Open',
-        label: window.location.pathname
-      });
-    }
-
     this.setState({
       isMenuVisible: !this.state.isMenuVisible
     });

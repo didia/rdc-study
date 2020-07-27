@@ -12,12 +12,12 @@ const NotFoundPage = () => (
   <PageLayout>
     <div className={styles.wrapper}>
       <div className={styles.inner}>
-        <FormattedMessage id="not-found.title">{text => <h1 className="major">{text}</h1>}</FormattedMessage>
+        <FormattedMessage id="not-found.title">{(text) => <h1 className="major">{text}</h1>}</FormattedMessage>
 
-        <FormattedMessage id="not-found.message-text">{text => <p>{text}</p>}</FormattedMessage>
+        <FormattedMessage id="not-found.message-text">{(text) => <p>{text}</p>}</FormattedMessage>
 
         <FormattedMessage id="not-found.return-home-button-text">
-          {text => (
+          {(text) => (
             <Link to="/" className="button special">
               {text}
             </Link>

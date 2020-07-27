@@ -5,6 +5,8 @@ date: '2020-04-12'
 title: 'Étudier en France'
 excerpt: 'La France est reconnue pour la qualité et la diversité des études proposées par ses écoles et universités et pour sa richesse culturelle. Etudier en France vous permettra de découvrir un pays très varié au patrimoine riche et multi-culturel.'
 thumbnail: 'images/france.jpg'
+flag: 'images/flag.png'
+name: 'France'
 topic: 'country'
 related: ['france/admission', 'france/visa']
 ---

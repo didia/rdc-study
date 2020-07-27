@@ -42,12 +42,6 @@
   box-shadow: inset 0 0 2px _palette(border);
   transition: background-color #{_duration(transition)} ease-in-out;
 
-  &::before {
-    content: '\f0c9';
-    margin-left: 0.75em;
-    float: right;
-  }
-
   &:hover {
     background-color: _palette(border-bg);
   }
@@ -55,6 +49,10 @@
   &:active {
     background-color: _palette(border2-bg);
   }
+}
+
+.nav-link__icon {
+  margin-left: 0.75em;
 }
 
 .title {

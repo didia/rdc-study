@@ -45,9 +45,9 @@ Article.propTypes = {
 const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, titleKey}) => {
   return (
     <div id={id} className={className}>
-      {titleKey && <FormattedMessage id={titleKey}>{text => <h2 className="major">{text}</h2>}</FormattedMessage>}
+      {titleKey && <FormattedMessage id={titleKey}>{(text) => <h2 className="major">{text}</h2>}</FormattedMessage>}
 
-      {descriptionKey && <FormattedMessage id={descriptionKey}>{text => <p>{text}</p>}</FormattedMessage>}
+      {descriptionKey && <FormattedMessage id={descriptionKey}>{(text) => <p>{text}</p>}</FormattedMessage>}
 
       <ul className={styles['articles-wrapper']}>
         {articles.map((article, i) => (
@@ -59,7 +59,7 @@ const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, 
 
       {hasMoreArticles && (
         <FormattedMessage id="shared.see-more-text">
-          {text => (
+          {(text) => (
             <div className={styles['see-more-button-wrapper']}>
               <Link to="/articles" className={classnames('button', styles['see-more-button'])}>
                 {text}

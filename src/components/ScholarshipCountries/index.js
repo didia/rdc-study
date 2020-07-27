@@ -10,11 +10,11 @@ import styles from './styles.module.scss';
 const ScholarshipCountries = injectIntl(({className, countries, tag, intl}) => {
   const Tag = tag || 'div';
 
-  const levelsText = countries.map(level => intl.formatMessage({id: `shared.countries.${level}`})).join(', ');
+  const levelsText = countries.map((level) => intl.formatMessage({id: `shared.countries.${level}`})).join(', ');
 
   return (
     <Tag className={className}>
-      <span className={classnames('fa fa-globe', styles.text)}>{levelsText}</span>
+      <span className={classnames('fas fa-globe-africa', styles.text)}>{levelsText}</span>
     </Tag>
   );
 });

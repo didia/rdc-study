@@ -5,6 +5,8 @@ date: '2018-11-18'
 title: 'Étudier en Belgique'
 excerpt: 'La Belgique offre un enseignement de qualité qui possède plusieurs ressemblances avec le système congolais. Étudier en Belgique vous permettra d’élargir vos horizons et augmenter vos chances pour un très bon emploi dans le futur et ce  à un coût très raisonnable.'
 thumbnail: 'images/belgique.jpg'
+flag: 'images/flag.png'
+name: 'Belgique'
 topic: 'country'
 related: ['belgique/admission', 'belgique/visa']
 ---

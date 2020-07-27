@@ -48,13 +48,13 @@ class InnerMenu extends React.Component {
 
     return (
       <div className={styles.inner}>
-        <FormattedMessage id="menu.title">{text => <h2 className={styles.title}>{text}</h2>}</FormattedMessage>
+        <FormattedMessage id="menu.title">{(text) => <h2 className={styles.title}>{text}</h2>}</FormattedMessage>
 
         <ul className={styles.links}>
           {MENU_ITEMS.map((item, index) => (
             <li key={`menu-item-${index}`} className={styles.links__item}>
               <FormattedMessage id={item.labelKey}>
-                {text => (
+                {(text) => (
                   <Link onClick={onToggleMenu} className={styles['links-item__link']} to={item.to}>
                     {text}
                   </Link>
@@ -65,7 +65,7 @@ class InnerMenu extends React.Component {
         </ul>
 
         <FormattedMessage id="menu.close-button-label">
-          {text => (
+          {(text) => (
             <a className={styles['close-button']} href="#" onClick={onToggleMenu}>
               {text}
             </a>

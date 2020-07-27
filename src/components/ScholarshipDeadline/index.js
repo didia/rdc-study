@@ -58,7 +58,7 @@ class ScholarshipDeadline extends Component {
     return (
       <Tag className={className}>
         <span
-          className={classnames('fa fa-clock-o', styles.text, styles[this.state.color])}
+          className={classnames('far fa-clock', styles.text, styles[this.state.color])}
           dangerouslySetInnerHTML={{__html: this.state.message}}
         />
       </Tag>

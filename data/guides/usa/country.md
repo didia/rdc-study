@@ -5,6 +5,8 @@ date: '2018-03-30'
 title: 'Étudier aux États-Unis'
 excerpt: 'Les États-Unis d‘Amérique est le pays qui accueille le plus d’étudiants étrangers au monde. Étudier aux États-Unis vous donne accès aux meilleures universités du monde et vous offrent des très bonnes opportunités de carrière.'
 thumbnail: 'images/usa.jpg'
+flag: 'images/flag.png'
+name: 'États-Unis'
 topic: 'country'
 related: ['usa/admission', 'usa/visa']
 ---

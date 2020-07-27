@@ -19,12 +19,12 @@ const guideMarkdownRemark = ({html, frontmatter, fields}) => ({
 
 const splitRelatedAndOthers = (guides, mainGuide) => {
   if (!mainGuide.related)
-    return {relatedGuides: [], otherGuides: guides.filter(guide => guide.topic === mainGuide.topic)};
+    return {relatedGuides: [], otherGuides: guides.filter((guide) => guide.topic === mainGuide.topic)};
 
   const relatedGuides = [];
   const otherGuides = [];
 
-  guides.forEach(guide => {
+  guides.forEach((guide) => {
     if (mainGuide.related.indexOf(guide.slug) !== -1) return relatedGuides.push(guide);
 
     if (guide.topic !== mainGuide.topic) return;
@@ -40,7 +40,7 @@ export default function Template({
 }) {
   const {markdownRemark, allMarkdownRemark} = data; // data.markdownRemark holds our post data
   const guide = guideMarkdownRemark(markdownRemark);
-  const allGuides = allMarkdownRemark.edges.map(edge => guideMarkdownRemark(edge.node));
+  const allGuides = allMarkdownRemark.edges.map((edge) => guideMarkdownRemark(edge.node));
 
   const {relatedGuides, otherGuides} = splitRelatedAndOthers(allGuides, guide);
 

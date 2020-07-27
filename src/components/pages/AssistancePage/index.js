@@ -16,7 +16,7 @@ const FeatureList = ({featureLabelKeys, className}) => (
   <ul className={classnames(styles['feature-list'], className)}>
     {featureLabelKeys.map((featureLabelKey, i) => (
       <FormattedMessage key={`feature-${i}`} id={featureLabelKey}>
-        {text => <li className={classnames('icon fa-check-circle', styles['feature-item'])}>{text}</li>}
+        {(text) => <li className={classnames('icon fa-check-circle', styles['feature-item'])}>{text}</li>}
       </FormattedMessage>
     ))}
   </ul>
@@ -80,13 +80,13 @@ const AssistancePage = () => {
       <Card className={styles['main-card']}>
         <header className={styles['column--left']}>
           <FormattedMessage id="pages.assistance.free.title" tagName="p">
-            {text => <p className={styles.pricing}>{text}</p>}
+            {(text) => <p className={styles.pricing}>{text}</p>}
           </FormattedMessage>
 
           <FormattedMessage id="pages.assistance.free.description" tagName="p" />
 
           <FormattedMessage id="pages.assistance.free.guide-link-text">
-            {text => (
+            {(text) => (
               <Link to="/#guides" className={classnames(styles.button, 'button special')}>
                 {text}
               </Link>
@@ -116,7 +116,7 @@ const AssistancePage = () => {
             <li key={`feature-${i}`} className={styles['offer-list__item']}>
               <Card className={styles['offer-card']}>
                 <FormattedMessage id={ratePackage.titleKey}>
-                  {text => <h3 className={styles['offer-title']}>{text}</h3>}
+                  {(text) => <h3 className={styles['offer-title']}>{text}</h3>}
                 </FormattedMessage>
 
                 <FeatureList featureLabelKeys={ratePackage.featureLabelKeys} />
@@ -126,7 +126,7 @@ const AssistancePage = () => {
         </ul>
 
         <FormattedMessage id="pages.assistance.personal.about-us-link">
-          {text => (
+          {(text) => (
             <Link to="/a-propos" className={classnames(styles.button, styles['button--about-us'], 'button special')}>
               {text}
             </Link>
@@ -136,7 +136,7 @@ const AssistancePage = () => {
         <p style={{marginTop: '20px'}}>
           <FormattedMessage id="pages.assistance.visa.warning" />
           <FormattedMessage id="pages.assistance.visa.warning-learn-more">
-            {text => <Link to="/assistance-visa">{text}</Link>}
+            {(text) => <Link to="/assistance-visa">{text}</Link>}
           </FormattedMessage>
         </p>
       </section>

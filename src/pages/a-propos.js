@@ -6,7 +6,7 @@ import {graphql} from 'gatsby';
 import AboutUsPage from '../components/pages/AboutUsPage';
 
 const Page = ({data}) => {
-  const team = data.allTeamJson.edges.map(edge => edge.node);
+  const team = data.allTeamJson.edges.map((edge) => edge.node);
 
   return <AboutUsPage team={team} />;
 };

@@ -14,7 +14,7 @@ import HtmlContent from '../../HtmlContent';
 const Assistance = () => (
   <div>
     <FormattedMessage id="pages.guides-show.assistance.title">
-      {text => <h2 className="major">{text}</h2>}
+      {(text) => <h2 className="major">{text}</h2>}
     </FormattedMessage>
 
     <div>
@@ -23,7 +23,7 @@ const Assistance = () => (
       <FormattedMessage id="pages.guides-show.assistance.description-2" tagName="div" />
 
       <FormattedMessage id="pages.guides-show.assistance.link-text">
-        {text => (
+        {(text) => (
           <Link to="/accompagnement" className={styles['guide-learn-more-link']}>
             {text}
           </Link>

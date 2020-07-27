@@ -30,7 +30,7 @@ const ScholarshipPage = ({activeOnly, page, scholarships}) => {
       <p className={styles.disclaimer}>
         <FormattedMessage id={disclaimerTranslationId} />
         <FormattedMessage id={linkLabelTranslationId}>
-          {linkLabel => (
+          {(linkLabel) => (
             <Link className={styles.link} to={link}>
               {linkLabel}
             </Link>

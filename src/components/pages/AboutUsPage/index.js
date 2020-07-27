@@ -11,7 +11,7 @@ import styles from './styles.module.scss';
 import GenericPage from '../GenericPage';
 import Card from '../../Card';
 
-const imageClassPerIndex = index => (index % 2 === 0 ? 'image left' : 'image right');
+const imageClassPerIndex = (index) => (index % 2 === 0 ? 'image left' : 'image right');
 
 const page = {
   description: 'Nous voulons que tout le monde ait facilement accès à une éducation de qualité.',
@@ -39,14 +39,14 @@ const AboutUsPage = ({team}) => {
     <GenericPage page={page}>
       <section className={styles.section}>
         <FormattedMessage id="pages.about-us.values.title">
-          {text => <h2 className={styles['text-center']}>{text}</h2>}
+          {(text) => <h2 className={styles['text-center']}>{text}</h2>}
         </FormattedMessage>
 
         <div className={styles['value-list']}>
           {values.map((value, i) => (
             <Card key={`value-${i}`} className={styles['value-list__item']}>
               <FormattedMessage id={value.titleKey}>
-                {text => <h3 className={styles['value-title']}>{text}</h3>}
+                {(text) => <h3 className={styles['value-title']}>{text}</h3>}
               </FormattedMessage>
 
               <FormattedMessage id={value.descriptionKey} tagName="p" />
@@ -57,7 +57,7 @@ const AboutUsPage = ({team}) => {
 
       <section className={styles.section}>
         <FormattedMessage id="pages.about-us.mentors.title">
-          {text => <h2 className={styles['text-center']}>{text}</h2>}
+          {(text) => <h2 className={styles['text-center']}>{text}</h2>}
         </FormattedMessage>
 
         <div className={styles['team-member-list']}>

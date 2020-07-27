@@ -8,10 +8,11 @@ import styles from './styles.module.scss';
 
 import PageLayout from '../../PageLayout';
 import Banner from './Banner';
-import GuideList from '../../GuideList';
+import GuideList from './GuideList';
 import ArticleList from '../../ArticleList';
 import ScholarshipList from '../../ScholarshipList';
 import Newsletter from '../../Newsletter';
+import CompetitiveAdvantages from './CompetitiveAdvantages';
 
 const IndexPage = ({articles, countries, scholarships, hasMoreArticles}) => {
   return (
@@ -19,16 +20,19 @@ const IndexPage = ({articles, countries, scholarships, hasMoreArticles}) => {
       <Banner />
 
       <section>
-        <section className={classnames(styles.wrapper, styles['wrapper--country-list'])}>
-          <GuideList
-            id="guides"
-            className={styles.inner}
-            guides={countries}
-            titleKey="pages.index.country-list.title"
-          />
+        <section className={classnames(styles.wrapper, styles['wrapper--at-position-1'])}>
+          <CompetitiveAdvantages className={styles.inner} />
         </section>
 
-        <section className={classnames(styles.wrapper, styles['wrapper--article-list'])}>
+        <section className={classnames(styles.wrapper, styles['wrapper--at-position-2'])}>
+          <GuideList id="guides" className={styles.inner} guides={countries} />
+        </section>
+
+        <section className={classnames(styles.wrapper, styles['wrapper--at-position-3'])}>
+          <Newsletter className={classnames(styles.inner, styles.newsletter)} />
+        </section>
+
+        <section className={classnames(styles.wrapper, styles['wrapper--at-position-4'])}>
           <ArticleList
             className={styles.inner}
             articles={articles}
@@ -37,9 +41,7 @@ const IndexPage = ({articles, countries, scholarships, hasMoreArticles}) => {
           />
         </section>
 
-        <section className={classnames(styles.wrapper, styles['wrapper--scholarship-list'])}>
-          <Newsletter className={classnames(styles.inner, styles.newsletter)} />
-
+        <section className={classnames(styles.wrapper, styles['wrapper--at-position-5'])}>
           <ScholarshipList
             allScholarshipsLink="/bourses"
             showAllScholarshipsLink

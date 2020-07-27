@@ -15,12 +15,14 @@ const ScholarshipLevels = injectIntl(({className, levels, tag, intl}) => {
 
   const levelsText = levels
     .sort((level1, level2) => LEVEL_ORDERS.indexOf(level1) - LEVEL_ORDERS.indexOf(level2))
-    .map(level => intl.formatMessage({id: `scholarship-levels.${level}`}))
+    .map((level) => intl.formatMessage({id: `scholarship-levels.${level}`}))
     .join(', ');
 
   return (
     <Tag className={className}>
-      <span className={classnames('fa fa-graduation-cap', styles.text)}>{levelsText}</span>
+      <span className="fas fa-graduation-cap">
+        <span className={styles.text}> {levelsText}</span>
+      </span>
     </Tag>
   );
 });

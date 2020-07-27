@@ -33,7 +33,7 @@ export default function Template({
   const {markdownRemark, allMarkdownRemark} = data; // data.markdownRemark holds our post data
   const article = articleMarkdownRemark(markdownRemark);
   const allArticles = allMarkdownRemark
-    ? allMarkdownRemark.edges.map(edge => articlePreviewMarkdownRemark(edge.node))
+    ? allMarkdownRemark.edges.map((edge) => articlePreviewMarkdownRemark(edge.node))
     : [];
   const hasMoreArticles = allMarkdownRemark ? allMarkdownRemark.pageInfo.hasNextPage : false;
 

@@ -30,7 +30,7 @@ export default class Template extends Component {
     const {allMarkdownRemark} = this.props.data;
     const otherScholarships = allMarkdownRemark.edges
       .filter(({node}) => node.fields.timestamp - currentTimestamp > 0)
-      .map(edge => scholarshipPreviewFromMarkdownRemark(edge.node));
+      .map((edge) => scholarshipPreviewFromMarkdownRemark(edge.node));
 
     this.setState({
       otherScholarships

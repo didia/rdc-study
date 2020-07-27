@@ -18,13 +18,13 @@ const {contact, contactFormEndpoint} = config;
 import getCurrentUrl from '../../utils/get-current-url';
 
 import ActivityIndicator from '../ActivityIndicator';
-import analyticsPushEvent from "../../utils/push-analytics-event";
+import analyticsPushEvent from '../../utils/push-analytics-event';
 
 const ContactForm = ({className, submitDisabledState, values, onUpdate, onSubmit}) => (
   <form className={classnames(styles.form, className)} onSubmit={onSubmit}>
     <div className="field">
       <FormattedMessage id="footer.contact-form.name-label">
-        {text => <label htmlFor="name">{text}</label>}
+        {(text) => <label htmlFor="name">{text}</label>}
       </FormattedMessage>
 
       <input type="text" name="name" onChange={onUpdate} value={values.name} />
@@ -32,7 +32,7 @@ const ContactForm = ({className, submitDisabledState, values, onUpdate, onSubmit
 
     <div className="field">
       <FormattedMessage id="footer.contact-form.email-label">
-        {text => <label htmlFor="email">{text}</label>}
+        {(text) => <label htmlFor="email">{text}</label>}
       </FormattedMessage>
 
       <input type="email" name="email" onChange={onUpdate} value={values.email} />
@@ -40,7 +40,7 @@ const ContactForm = ({className, submitDisabledState, values, onUpdate, onSubmit
 
     <div className="field">
       <FormattedMessage id="footer.contact-form.message-label">
-        {text => <label htmlFor="message">{text}</label>}
+        {(text) => <label htmlFor="message">{text}</label>}
       </FormattedMessage>
 
       <textarea name="message" rows="4" onChange={onUpdate} value={values.message} />
@@ -49,7 +49,7 @@ const ContactForm = ({className, submitDisabledState, values, onUpdate, onSubmit
     <ul className="actions">
       <li>
         <FormattedMessage id="footer.contact-form.send-message-button-label">
-          {text => <input type="submit" className="special" disabled={submitDisabledState} value={text} />}
+          {(text) => <input type="submit" className="special" disabled={submitDisabledState} value={text} />}
         </FormattedMessage>
       </li>
     </ul>
@@ -76,7 +76,7 @@ const Alert = ({className, messageTranslationId, titleTranslationId, onDiscardAl
       <a onClick={onDiscardAlert} className="icon fa-close" />
     </h4>
 
-    <FormattedMessage id={messageTranslationId}>{text => <div>{text}</div>}</FormattedMessage>
+    <FormattedMessage id={messageTranslationId}>{(text) => <div>{text}</div>}</FormattedMessage>
   </div>
 );
 
@@ -227,9 +227,9 @@ class Footer extends Component {
         <ActivityIndicator isActive={this.state.isSubmitting} />
 
         <div className={styles.inner}>
-          <FormattedMessage id="footer.title">{text => <h2 className="major">{text}</h2>}</FormattedMessage>
+          <FormattedMessage id="footer.title">{(text) => <h2 className="major">{text}</h2>}</FormattedMessage>
 
-          <FormattedMessage id="footer.contact-us-text">{text => <p>{text}</p>}</FormattedMessage>
+          <FormattedMessage id="footer.contact-us-text">{(text) => <p>{text}</p>}</FormattedMessage>
 
           <div className={styles['contact-form']}>
             <ContactForm
@@ -252,39 +252,47 @@ class Footer extends Component {
           </div>
 
           <ul className={styles.contact}>
-            <li className={classnames(styles.contact__item, 'fa-facebook')}>
+            <li className={styles.contact__item}>
+              <i className={classnames(styles['contact-item__icon'], 'fab fa-facebook-f')} />
               <a href={contact.facebook.link} target="_blank" rel="noopener noreferrer">
                 {contact.facebook.label}
               </a>
             </li>
 
-            <li className={classnames(styles.contact__item, 'fa-envelope')}>
+            <li className={styles.contact__item}>
+              <i className={classnames(styles['contact-item__icon'], 'far fa-envelope')} />
               <a href={contact.email.link}>{contact.email.label}</a>
             </li>
 
-            <li className={classnames(styles.contact__item, 'fa-phone')}>
-              {contact.phones.map(phone => (
-                <div key={phone.label}>
-                  <a href={phone.link}>
-                    {phone.countryFlag} {phone.label}
-                  </a>
-                </div>
-              ))}
+            <li className={styles.contact__item}>
+              <i className={classnames(styles['contact-item__icon'], 'fas fa-phone')} />
+              <div>
+                {contact.phones.map((phone) => (
+                  <div key={phone.label}>
+                    <a href={phone.link}>
+                      {phone.countryFlag} {phone.label}
+                    </a>
+                  </div>
+                ))}
+              </div>
             </li>
 
-            <li className={classnames(styles.contact__item, 'fa-home')}>
-              {contact.address.name} <br />
-              {contact.address.streetAddress} <br />
-              {contact.address.locality} <br />
-              {contact.address.country}
+            <li className={styles.contact__item}>
+              <i className={classnames(styles['contact-item__icon'], 'fas fa-home')} />
+              <div>
+                {contact.address.name} <br />
+                {contact.address.streetAddress} <br />
+                {contact.address.locality} <br />
+                {contact.address.country}
+              </div>
             </li>
           </ul>
 
           <ul className={styles.copyright}>
-            <FormattedMessage id="footer.copyright">{text => <li>{text}</li>}</FormattedMessage>
+            <FormattedMessage id="footer.copyright">{(text) => <li>{text}</li>}</FormattedMessage>
 
             <FormattedMessage id="footer.privacy-policy">
-              {text => (
+              {(text) => (
                 <li>
                   <Link to="/politique-de-confidentialite">{text}</Link>
                 </li>
