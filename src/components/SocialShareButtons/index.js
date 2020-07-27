@@ -36,7 +36,7 @@ const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
         message: emailMessage,
         subject: title,
         username: '@rdcetudes',
-        url: canonicalLink,
+        url: canonicalLink
       }}
     />
     /* eslint-enable camelcase */
@@ -48,8 +48,8 @@ SocialShareButtons.propTypes = {
   path: T.string.isRequired,
   title: T.string.isRequired,
   intl: T.shape({
-    formatMessage: T.func,
-  }),
+    formatMessage: T.func
+  })
 };
 
 export default SocialShareButtons;

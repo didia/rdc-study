@@ -43,8 +43,8 @@ const SEO = ({meta}) => {
       '@context': 'http://schema.org',
       '@type': 'WebSite',
       url: blogURL,
-      name: title,
-    },
+      name: title
+    }
   ];
   if (meta) {
     schemaOrgJSONLD = schemaOrgJSONLD.concat([
@@ -58,10 +58,10 @@ const SEO = ({meta}) => {
             item: {
               '@id': postURL,
               name: title,
-              image: imageURL,
-            },
-          },
-        ],
+              image: imageURL
+            }
+          }
+        ]
       },
       {
         '@context': 'http://schema.org',
@@ -71,10 +71,10 @@ const SEO = ({meta}) => {
         headline: title,
         image: {
           '@type': 'ImageObject',
-          url: imageURL,
+          url: imageURL
         },
-        description,
-      },
+        description
+      }
     ]);
   }
   return (
@@ -115,12 +115,12 @@ SEO.propTypes = {
     image: T.shape({
       src: T.string,
       width: T.number,
-      height: T.number,
+      height: T.number
     }),
     keywords: T.arrayOf(T.string),
     path: T.string,
-    title: T.string,
-  }),
+    title: T.string
+  })
 };
 
 export default SEO;

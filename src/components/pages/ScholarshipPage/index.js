@@ -24,7 +24,7 @@ const ScholarshipPage = ({scholarship, otherScholarships}) => {
     image: scholarship.metaImage,
     keywords: scholarship.tags,
     path: scholarship.path,
-    title: scholarship.title,
+    title: scholarship.title
   };
 
   return (
@@ -86,9 +86,9 @@ ScholarshipPage.propTypes = {
     targetCountries: T.arrayOf(T.string),
     thumbnail: T.object.isRequired,
     thumbnailCredits: T.string,
-    title: T.string.isRequired,
+    title: T.string.isRequired
   }).isRequired,
-  otherScholarships: T.arrayOf(T.object).isRequired,
+  otherScholarships: T.arrayOf(T.object).isRequired
 };
 
 export default ScholarshipPage;

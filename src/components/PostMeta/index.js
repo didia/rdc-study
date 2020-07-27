@@ -26,8 +26,8 @@ PostMeta.propTypes = {
   className: T.string,
   post: T.shape({
     date: T.string.isRequired,
-    timeToRead: T.number.isRequired,
-  }),
+    timeToRead: T.number.isRequired
+  })
 };
 
 export default PostMeta;

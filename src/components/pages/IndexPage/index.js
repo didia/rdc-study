@@ -59,7 +59,7 @@ IndexPage.propTypes = {
   articles: T.arrayOf(T.object).isRequired,
   countries: T.arrayOf(T.object).isRequired,
   scholarships: T.arrayOf(T.object).isRequired,
-  hasMoreArticles: T.bool,
+  hasMoreArticles: T.bool
 };
 
 export default IndexPage;

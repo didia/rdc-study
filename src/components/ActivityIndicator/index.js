@@ -16,5 +16,5 @@ export default function ActivityIndicator({isActive}) {
 }
 
 ActivityIndicator.propTypes = {
-  isActive: T.bool,
+  isActive: T.bool
 };

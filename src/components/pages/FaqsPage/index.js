@@ -8,7 +8,7 @@ import GenericPage from '../GenericPage';
 const page = {
   description: 'Voici les réponses aux questions les plus souvent posées.',
   title: 'Questions populaires',
-  path: '/questions-populaires',
+  path: '/questions-populaires'
 };
 
 const QuestionEntry = ({entry: {question, answer}}) => (
@@ -23,8 +23,8 @@ const QuestionEntry = ({entry: {question, answer}}) => (
 QuestionEntry.propTypes = {
   entry: T.shape({
     question: T.string.isRequired,
-    answer: T.string.isRequired,
-  }),
+    answer: T.string.isRequired
+  })
 };
 
 const FaqsPage = ({questions}) => {
@@ -40,7 +40,7 @@ const FaqsPage = ({questions}) => {
 };
 
 FaqsPage.propTypes = {
-  questions: T.arrayOf(T.object),
+  questions: T.arrayOf(T.object)
 };
 
 export default FaqsPage;

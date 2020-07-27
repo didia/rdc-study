@@ -39,7 +39,7 @@ const Header = ({withTitle, onToggleMenu}) => {
 
 Header.propTypes = {
   onToggleMenu: T.func.isRequired,
-  withTitle: T.bool,
+  withTitle: T.bool
 };
 
 export default Header;

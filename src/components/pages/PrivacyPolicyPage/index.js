@@ -5,7 +5,7 @@ import GenericPage from '../GenericPage';
 const page = {
   description: 'La politique de confidentialité de RDC Etudes.',
   title: 'Politique de confidentialité',
-  path: '/politique-de-confidentialite',
+  path: '/politique-de-confidentialite'
 };
 
 const PrivacyPolicyPage = () => (

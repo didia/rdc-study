@@ -42,9 +42,9 @@ const normalizeThumbnailAspectRatio = (scholarships) => {
       ...scholarship.thumbnail,
       fluid: {
         ...scholarship.thumbnail.fluid,
-        aspectRatio: minAspectRatio,
-      },
-    },
+        aspectRatio: minAspectRatio
+      }
+    }
   }));
 };
 
@@ -93,9 +93,9 @@ Scholarship.propTypes = {
     title: T.string.isRequired,
     thumbnail: T.shape({
       fluid: T.object.isRequired,
-      sizes: T.object,
-    }).isRequired,
-  }),
+      sizes: T.object
+    }).isRequired
+  })
 };
 
 const ScholarshipList = ({
@@ -104,7 +104,7 @@ const ScholarshipList = ({
   scholarships,
   showAllScholarshipsLink,
   showNewsletter,
-  titleKey,
+  titleKey
 }) => {
   const [isMobile, setIsMobile] = useState(true);
   const [normalizedScholarships, setNormalizedScholarships] = useState(scholarships);
@@ -169,7 +169,7 @@ ScholarshipList.propTypes = {
   scholarships: T.arrayOf(T.shape({})),
   showAllScholarshipsLink: T.bool,
   showNewsletter: T.bool,
-  titleKey: T.string,
+  titleKey: T.string
 };
 
 export default ScholarshipList;

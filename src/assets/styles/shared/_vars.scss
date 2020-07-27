@@ -1,13 +1,13 @@
 // Misc.
 $misc: (
   z-index-base: 10000,
-  max-wrapper-styles: 6,
+  max-wrapper-styles: 6
 );
 
 // Duration.
 $duration: (
   menu: 0.35s,
-  transition: 0.2s,
+  transition: 0.2s
 );
 // Size.
 $size: (
@@ -18,35 +18,35 @@ $size: (
   section-spacing: (
     large: 3em,
     medium: 2em,
-    small: 1.75em,
+    small: 1.75em
   ),
   wrapper-edges: (
     large: 6.5em,
     medium: 4.75em,
-    small: 2.5em,
-  ),
+    small: 2.5em
+  )
 );
 // Font.
 $font: (
   family: (
     'Source Sans Pro',
     Helvetica,
-    sans-serif,
+    sans-serif
   ),
   family-fixed: (
     'Courier New',
-    monospace,
+    monospace
   ),
   family-heading: (
     Raleway,
     Helvetica,
-    sans-serif,
+    sans-serif
   ),
   weight: 300,
   weight-bold: 600,
   weight-heading: 200,
   weight-heading-bold: 700,
-  kern-heading: 0.1em,
+  kern-heading: 0.1em
 );
 // Palette.
 $palette: (
@@ -62,5 +62,5 @@ $palette: (
   logo-blue: #007fff,
   logo-red: #ce0e19,
   logo-yellow: #fde541,
-  link-blue: #118aec,
+  link-blue: #118aec
 );

@@ -8,7 +8,7 @@ import ArticleList from '../../ArticleList';
 const page = {
   description: 'Découvrez les derniers articles postés sur RDC-Etudes.',
   title: 'Articles récents',
-  path: '/articles',
+  path: '/articles'
 };
 
 const ArticlesPage = ({articles}) => {
@@ -20,7 +20,7 @@ const ArticlesPage = ({articles}) => {
 };
 
 ArticlesPage.propTypes = {
-  articles: T.arrayOf(T.object),
+  articles: T.arrayOf(T.object)
 };
 
 export default ArticlesPage;

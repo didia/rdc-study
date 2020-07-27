@@ -6,7 +6,7 @@ const page = {
   description:
     'RDC Etudes offre un service d’assistance dans le strict respect des lois des pays concernés. En plus des guides gratuits que nous mettons à votre disposition, nous vous offrons un service d’assistance dont l’objectif n’est pas l’argent mais la réalisation de votre projet d’études.',
   title: 'Service d’assistance visa',
-  path: '/assistance-visa',
+  path: '/assistance-visa'
 };
 
 const AssistanceVisaPage = () => (

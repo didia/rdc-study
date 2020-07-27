@@ -11,8 +11,8 @@ const Page = ({data}) => {
 
 Page.propTypes = {
   data: T.shape({
-    allFaqsJson: T.object.isRequired,
-  }),
+    allFaqsJson: T.object.isRequired
+  })
 };
 
 export default Page;

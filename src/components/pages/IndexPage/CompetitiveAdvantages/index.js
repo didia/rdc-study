@@ -14,18 +14,18 @@ const competitiveAdvantages = [
   {
     iconClassName: 'fas fa-handshake',
     title: 'pages.index.competitive-advantages.first-item.title',
-    description: 'pages.index.competitive-advantages.first-item.description',
+    description: 'pages.index.competitive-advantages.first-item.description'
   },
   {
     iconClassName: 'fas fa-hand-holding-heart',
     title: 'pages.index.competitive-advantages.second-item.title',
-    description: 'pages.index.competitive-advantages.second-item.description',
+    description: 'pages.index.competitive-advantages.second-item.description'
   },
   {
     iconClassName: 'fas fa-users',
     title: 'pages.index.competitive-advantages.third-item.title',
-    description: 'pages.index.competitive-advantages.third-item.description',
-  },
+    description: 'pages.index.competitive-advantages.third-item.description'
+  }
 ];
 
 const CompetitiveAdvantages = ({className}) => (
@@ -65,7 +65,7 @@ const CompetitiveAdvantages = ({className}) => (
 );
 
 CompetitiveAdvantages.propTypes = {
-  className: T.string,
+  className: T.string
 };
 
 export default CompetitiveAdvantages;

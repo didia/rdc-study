@@ -32,8 +32,8 @@ GenericPage.propTypes = {
     facebookShareButtonLabelKey: T.string,
     image: T.object,
     path: T.string.isRequired,
-    title: T.string.isRequired,
-  }),
+    title: T.string.isRequired
+  })
 };
 
 export default GenericPage;

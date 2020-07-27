@@ -35,9 +35,9 @@ GuideList.propTypes = {
   guides: T.arrayOf(
     T.shape({
       name: T.string.isRequired,
-      path: T.string.isRequired,
+      path: T.string.isRequired
     })
-  ),
+  )
 };
 
 export default GuideList;

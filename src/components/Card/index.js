@@ -9,7 +9,7 @@ const Card = ({className, children}) => <div className={classnames(styles.card, 
 
 Card.propTypes = {
   className: T.string,
-  children: T.oneOfType([T.arrayOf(T.element), T.element]),
+  children: T.oneOfType([T.arrayOf(T.element), T.element])
 };
 
 export default Card;

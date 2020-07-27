@@ -3,15 +3,15 @@
     reset: 'full',
     boxModel: 'border',
     grid: (
-      gutters: 1.75em,
+      gutters: 1.75em
     ),
     breakpoints: (
       small: (
         grid: (
-          gutters: 1.25em,
-        ),
-      ),
-    ),
+          gutters: 1.25em
+        )
+      )
+    )
   )
 );
 @import 'font-awesome.min.css';

@@ -43,7 +43,7 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
     image: guide.metaImage,
     path: guide.path,
     title: guide.title,
-    socialShareEnabled: true,
+    socialShareEnabled: true
   };
 
   return (
@@ -75,10 +75,10 @@ GuidePage.propTypes = {
     excerpt: T.string.isRequired,
     path: T.string.isRequired,
     slug: T.string.isRequired,
-    title: T.string.isRequired,
+    title: T.string.isRequired
   }).isRequired,
   otherGuides: T.arrayOf(T.object),
-  relatedGuides: T.arrayOf(T.object),
+  relatedGuides: T.arrayOf(T.object)
 };
 
 export default GuidePage;

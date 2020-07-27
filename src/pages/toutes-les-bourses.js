@@ -11,7 +11,7 @@ const Scholarships = ({data}) => {
     image: data.metaImage.fixed,
     title: "Bourses d'études",
     path: '/toutes-les-bourses',
-    socialShareEnabled: true,
+    socialShareEnabled: true
   };
 
   const scholarships = data.scholarships.edges.map(({node}) => ({
@@ -21,7 +21,7 @@ const Scholarships = ({data}) => {
     path: node.fields.path,
     targetCountries: node.frontmatter.targetCountries,
     thumbnail: node.frontmatter.thumbnail.childImageSharp,
-    title: node.frontmatter.title,
+    title: node.frontmatter.title
   }));
 
   return <ScholarshipsPage page={page} scholarships={scholarships} />;
@@ -30,8 +30,8 @@ const Scholarships = ({data}) => {
 Scholarships.propTypes = {
   data: T.shape({
     metaImage: T.object,
-    scholarships: T.object.isRequired,
-  }),
+    scholarships: T.object.isRequired
+  })
 };
 
 export default Scholarships;

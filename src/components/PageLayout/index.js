@@ -23,7 +23,7 @@ class TemplateWrapper extends React.Component {
 
     this.state = {
       isMenuVisible: false,
-      isLoading: true,
+      isLoading: true
     };
 
     this.handleToggleMenu = this.handleToggleMenu.bind(this);
@@ -33,7 +33,7 @@ class TemplateWrapper extends React.Component {
     this.timeoutId = setTimeout(() => {
       this.setState({
         ...this.state,
-        isLoading: false,
+        isLoading: false
       });
     }, 100);
   }
@@ -46,7 +46,7 @@ class TemplateWrapper extends React.Component {
 
   handleToggleMenu() {
     this.setState({
-      isMenuVisible: !this.state.isMenuVisible,
+      isMenuVisible: !this.state.isMenuVisible
     });
   }
 
@@ -83,7 +83,7 @@ TemplateWrapper.propTypes = {
   children: T.oneOfType([T.arrayOf(T.element), T.element]).isRequired,
   footerClassName: T.string,
   headerWithTitle: T.bool,
-  pageWrapperClassName: T.string,
+  pageWrapperClassName: T.string
 };
 
 export default TemplateWrapper;

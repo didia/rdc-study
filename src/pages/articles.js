@@ -12,7 +12,7 @@ const Articles = ({data}) => {
     path: node.fields.path,
     thumbnail: node.frontmatter.thumbnail ? node.frontmatter.thumbnail.childImageSharp : null,
     title: node.frontmatter.title,
-    timeToRead: node.timeToRead,
+    timeToRead: node.timeToRead
   }));
 
   return <ArticlesPage articles={articles} />;
@@ -20,8 +20,8 @@ const Articles = ({data}) => {
 
 Articles.propTypes = {
   data: T.shape({
-    articles: T.object.isRequired,
-  }),
+    articles: T.object.isRequired
+  })
 };
 
 export default Articles;

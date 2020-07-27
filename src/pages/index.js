@@ -11,14 +11,14 @@ const Index = ({data}) => {
   const countries = data.guides.edges.map(({node}) => ({
     ...node.frontmatter,
     ...node.fields,
-    thumbnail: node.frontmatter.flag.childImageSharp,
+    thumbnail: node.frontmatter.flag.childImageSharp
   }));
 
   const articles = data.articles.edges.map(({node}) => ({
     ...node.frontmatter,
     ...node.fields,
     timeToRead: node.timeToRead,
-    thumbnail: node.frontmatter.thumbnail.childImageSharp,
+    thumbnail: node.frontmatter.thumbnail.childImageSharp
   }));
 
   const currentTimestamp = Date.now();
@@ -29,7 +29,7 @@ const Index = ({data}) => {
     .map(({node}) => ({
       ...node.frontmatter,
       ...node.fields,
-      thumbnail: node.frontmatter.thumbnail.childImageSharp,
+      thumbnail: node.frontmatter.thumbnail.childImageSharp
     }));
 
   return (
@@ -46,8 +46,8 @@ Index.propTypes = {
   data: T.shape({
     articles: T.object.isRequired,
     guides: T.object.isRequired,
-    scholarships: T.object.isRequired,
-  }),
+    scholarships: T.object.isRequired
+  })
 };
 
 export default Index;

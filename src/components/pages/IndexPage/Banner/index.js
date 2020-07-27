@@ -14,7 +14,7 @@ const onCallToActionClick = () => {
   analyticsPushEvent({
     category: 'Assistance CTA',
     action: 'Click',
-    label: 'Home Page Banner Button',
+    label: 'Home Page Banner Button'
   });
 
   navigate('#contact');
