@@ -16,6 +16,10 @@ exports.onClientEntry = () => {
       features.push('Set');
     }
 
+    if (!('SVGAnimatedString' in window)) {
+      window.SVGAnimatedString = function () {};
+    }
+
     if (features.length) {
       const s = document.createElement('script');
       s.src = `https://cdn.polyfill.io/v2/polyfill.min.js?features=${features.join(
