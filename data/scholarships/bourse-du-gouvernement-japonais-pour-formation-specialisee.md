@@ -13,7 +13,7 @@ tags:
   - Congo
   - RDC Congo
   - Afrique
-thumbnail: /images/uploads/good-free-photos-773344-unsplash.jpg
+thumbnail: /images/uploads/thomas-marban-ehk-eh1srzq-unsplash.jpg
 startDate: 2020-05-31T20:10:23.195Z
 levels:
   - formation
