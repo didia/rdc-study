@@ -7,7 +7,7 @@
     "title": "Associé, Directeur général, Mentor"
   },
   {
-    "about": "Diplômée au collège Mwanga de Goma en Latin-Philo en 2014, Nadia est aujourd’hui étudiante en communication sociale avec habilité en propagande et publicité à l’Université Catholique Pontificale de Minas Gerais au Brésil. Son soucis majeur est de voir les congolais s’offrir des études de qualité digne de ce nom, car nous disposons des personnes habiles et compétentes, capables de reconstruir notre cher et beau pays, et ceci n’est possible qu’à travers une éducation de qualité!",
+    "about": "Diplômée au collège Mwanga de Goma en Latin-Philo en 2014, Nadia détient une licence en communication sociale avec habilité en propagande et publicité de l’Université Catholique Pontificale de Minas Gerais au Brésil. Elle y poursuit actuellement ses études en maîtrise dans le même domaine académique. Son soucis majeur est de voir les congolais s’offrir des études de qualité digne de ce nom, car nous disposons des personnes habiles et compétentes, capables de reconstruir notre cher et beau pays, et ceci n’est possible qu’à travers une éducation de qualité!",
     "image": "images/nadia.jpg",
     "name": "Nadia Nkuba",
     "role": "Chez RDC Etudes, Nadia est chargée de faire parvenir l’information de façon amusante, subtile et clair à tous les congolais répartis à travers le monde.",
@@ -21,7 +21,7 @@
     "title": "Associé, Gérant RDC Etudes Congo, Mentor"
   },
   {
-    "about": "Jonathan est diplômé en sciences économiques de l’Université de Brasilia (UnB) au Brésil. Après avoir mené ses recherches au sein de l’Université Fédérale de Minas Gerais (UFMG), il a rejoint l’Université d’Ottawa au Canada où il poursuit une maîtrise en Sciences Economiques. Ayant oeuvré depuis plus d’une décennie pour l’implication des jeunes dans leur communauté, il a pour son compte aidé plus d’une personne dans le cadre des démarches pour étudier à l’étranger, notamment au Brésil et au Canada.",
+    "about": "Jonathan détient une licence en sciences économiques de l’Université de Brasilia (UnB) au Brésil et une maîtrise en Sciences économiques de l’Université d’Ottawa. Ayant oeuvré depuis plus d’une décennie pour l’implication des jeunes dans leur communauté, il a pour son compte aidé plus d’une personne dans le cadre des démarches pour étudier à l’étranger, notamment au Brésil et au Canada.",
     "image": "images/jonathan.jpg",
     "name": "Jonathan Mpoto",
     "role": "Chez RDC Etudes, Jonathan est chargé de s’assurer que nous maitrisons bien les démarches de personnes qui habitent à l’extérieur du Congo",
@@ -53,6 +53,13 @@
     "image": "images/jacques.jpg",
     "name": "Jacques Ibee Massa",
     "role": "Chez RDC Etudes, Jacques est chargé de s’assurer que nous maitrisons bien les démarches de personnes qui habitent à l’extérieur du Congo",
+    "title": "Mentor"
+  },
+  {
+    "about": "Israël Kabangu est diplômé de l'Université de kinshasa dans la Faculté de droit en 2017. Actuellement, il est en dernière année de master en Droit économique et social de l'Université Libre de Bruxelles. \nSon souhait en tant que mentor au sein de RDC Études, c'est de voir des milliers des congolais accéder à des études de qualité et les accompagner dans leurs différents projets d’études en vue de garantir la réussite.",
+    "image": "images/israel.jpg",
+    "name": "Israël Kabangu",
+    "role": "Chez RDC Etudes, Israël est chargé d’accompagner les étudiants dans leurs projets d’études pour la Belgique",
     "title": "Mentor"
   }
 ]

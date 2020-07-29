@@ -27,6 +27,13 @@
   font-size: 2em;
   line-height: 2.25em;
   cursor: default;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.5);
+    border-color: _palette(accent);
+    cursor: pointer;
+  }
 }
 
 .title {
