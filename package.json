@@ -75,7 +75,7 @@
     "react-click-outside": "^3.0.1",
     "react-dom": "^16.13.0",
     "react-helmet": "^6.1.0",
-    "react-intl": "^4.7.6",
+    "react-intl": "^5.4.5",
     "s3-deploy": "^1.4.0",
     "sass-loader": "^8.0.2",
     "sass-resources-loader": "^2.0.3",
