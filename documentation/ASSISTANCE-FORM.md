@@ -78,3 +78,24 @@
 - Adresse
 - Plateforme de communication préférée ()
 - Si whatsapp, numéro de téléphone
+
+## Texte Choix Forfait Admission Canada
+   Selon les informations que vous avez entrées, vous devez commencer par obtenir une admission dans un établissement d'enseignement du pays choisi (Canada).
+
+   Pour obtenir une assistance de , vous devez souscrire à notre forfait Admission qui comprend un accompagnement pour:
+    - Choisir un programme d'études,
+    - Choisir une université,
+    - Préparer et soumettre la demande d'admission.
+
+   Le forfait admission revient à 200$ payable en deux tranches de 100$. Une fois le paiement de l'accompte effectué, un contrat de service vous sera remis.
+   Nous vous mettrons ensuite en contact avec l'un des nos mentors pour le début de l'accompagnement.
+
+   Le paiement des frais d'accompagnement peut être effectué via un transfert Mobile Money au numéro  ou en personne à nos bureaux sise...
+
+
+
+## Texte choix Forfait Visa Canada
+   Selon les informations que vous avez entrées, vous avez maintenant besoin d'obtenir un visa d'études pour le pays choisi (Canada)
+
+   Pour ce faire, vous devez souscrire à notre forfait Visa qui comprend un accompagnement pour:
+     - Rassembler les

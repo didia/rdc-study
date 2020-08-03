@@ -4,7 +4,7 @@ import Steps from './steps';
 
 export const currentStepState = atom({
   key: 'currentStep',
-  default: Steps.AboutCandidate
+  default: Steps.DestinationCountry
 });
 
 export const previousStepsState = atom({
@@ -74,9 +74,9 @@ export const assistanceFormState = selector({
   get: ({get}) => {
     const aboutCandidate = get(aboutCandidateState);
     const destinationCountry = get(destinationCountryState);
-    const hasAdmissionState = get(hasAdmissionState);
 
-    const assistancePackage = hasAdmissionState ? ASSISTANCE_PACKAGE.VISA : ASSISTANCE_PACKAGE.ADMISSION;
+    const hasAdmission = get(hasAdmissionState);
+    const assistancePackage = hasAdmission ? ASSISTANCE_PACKAGE.VISA : ASSISTANCE_PACKAGE.ADMISSION;
 
     return {
       aboutCandidate,
