@@ -15,7 +15,7 @@ const {shareThisProperty} = config;
 const SOCIAL_SHARE_BUTTONS_DELAY = 2000;
 
 const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
-  const [showShareButtons, setShowShareButtons] = useState(Boolean(window.__sharethis__));
+  const [showShareButtons, setShowShareButtons] = useState(false);
 
   useEffect(() => {
     // eslint-disable-next-line max-nested-callbacks
