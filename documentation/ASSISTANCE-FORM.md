@@ -82,20 +82,91 @@
 ## Texte Choix Forfait Admission Canada
    Selon les informations que vous avez entrées, vous devez commencer par obtenir une admission dans un établissement d'enseignement du pays choisi (Canada).
 
-   Pour obtenir une assistance de , vous devez souscrire à notre forfait Admission qui comprend un accompagnement pour:
+   Pour ce faire , vous devez souscrire à notre forfait Admission qui comprend un accompagnement pour:
     - Choisir un programme d'études,
     - Choisir une université,
     - Préparer et soumettre la demande d'admission.
 
-   Le forfait admission revient à 200$ payable en deux tranches de 100$. Une fois le paiement de l'accompte effectué, un contrat de service vous sera remis.
-   Nous vous mettrons ensuite en contact avec l'un des nos mentors pour le début de l'accompagnement.
+   Le forfait coûte 200 $ payables en deux tranches de 100 $. Une fois le paiement de la première tranche effectuée, un contrat de service vous sera remis et un mentor entrera ensuite en contact avec vous pour commencer l'accompagnement.
 
-   Le paiement des frais d'accompagnement peut être effectué via un transfert Mobile Money au numéro  ou en personne à nos bureaux sise...
+   Le paiement des frais d'accompagnement peut être effectué soit par transfert Mobile Money au numéro .... ou soit en personne à nos bureaux sise...
+
+## Texte Choix Forfait CAQ
+   Puisque vous étudierez au Québec, vous avez besoin devez commencer par obtenir un Certificat d'Acceptation du Québec avant de faire votre demande de permis d'études.
+
+   Pour ce faire, vous devez souscrire à notre forfait d'assistance CAQ qui consiste en un accompagnement pour:
+     - Rassembler les documents réquis
+     - Préparer et soumettre la demande de CAQ
+
+   Le forfait coûte 200 $ payables en deux tranches de 100 $. Une fois le paiement de la première tranche effectuée, un contrat de service vous sera remis et un mentor entrera ensuite en contact avec vous pour commencer l'accompagnement.
+
+   Le paiement des frais d'accompagnement peut être effectué soit par transfert Mobile Money au numéro .... ou soit en personne à nos bureaux sise...
 
 
-
-## Texte choix Forfait Visa Canada
+## Texte choix Forfait Permis d'études Canada
    Selon les informations que vous avez entrées, vous avez maintenant besoin d'obtenir un visa d'études pour le pays choisi (Canada)
 
-   Pour ce faire, vous devez souscrire à notre forfait Visa qui comprend un accompagnement pour:
-     - Rassembler les
+   Pour ce faire, vous devez souscrire à notre forfait Visa qui consiste à vous assister à :
+     - Rassembler les documents réquis
+     - Elaborer votre projet d'études
+     - Remplir les formulaires
+     - Soumettre la demande
+
+
+## Texte Choix Forfait Equivalence Belgique
+   Puisque vous étudierez au premier cycle, vous aurez d'abord besoin d'obtenir une équivalence de diplôme pour pouvoir poursuivre vos études en Belgique.
+
+   Pour ce faire, vous devez souscrire à notre forfait Equivalence qui consiste à vous assister à :
+     - Rassembler les documents réquis
+     - Préparer et soumettre la demande d'équivalence.
+
+## Texte Choix Forfait Admission Belgique
+   Selon les informations entrées, vous devez commencer par obtenir une admission d'une université ou haute école pour poursuivre vos études en Belgique.
+
+   Pour ce faire, vous devez souscrire à notre forfait Admission qui consiste à vous assister à :
+    - Choisir un programme d'études,
+    - Choisir une université,
+    - Préparer et soumettre la demande d’admission
+
+## Texte Choix Forfait Visa Belgique
+   Selon les informations entrées, vous devez maintenant soumettre votre demande de visa d'études pour la Belgique.
+
+   Pour ce faire, vous devez souscrire à notre forfait Visa qui consiste à:
+    - Rassembler les documents nécessaires
+    - Remplir les formulaires
+    - Soumettre la demande
+
+
+## Texte Choix Forfait Admission France
+   Selon les informations entrées, vous devez d'abord obtenir une admission d'une université ou institution d'enseignement français pour poursuivre vos études en France.
+
+   Pour ce faire, vous devez souscrire à notre forfait Admission qui consiste à vous assister à:
+      - Elaborer votre projet d'études
+      - Choisir une université ou institut d'enseignement
+      - Naviguer le processus Campus France
+      - Préparer votre interview académique
+
+## Texte Choix Forfait Visa France
+   Selon les informations entrées, vous devez maintenant déposer votre demande de visa à l'ambassade de France.
+
+   Pour ce faire, vous devez souscrire à notre forfait Visa qui consiste à vous assister à:
+     - Rassembler les documents réquis
+     - Trouver une preuve de logement
+     - Préparer votre interview, le cas échéant
+
+## Texte Choix Forfait Admission USA
+   Selon les informations entrées, vous devez commencer par obtenir une admission d'une université ou d'un collège des États-Unis.
+
+   Pour ce faire, vous devez souscrire à notre forfait Admission qui consiste à vous assister à:
+    - Choisir un programme d'études
+    - Choisir un collège ou une université
+    - Rassembler les documents
+    - Soumettre  la demande
+
+## Texte choix Forfait Visa USA
+   Selon les informations entrées, vous devez maintenant obtenir un visa d'études pour les États-Unis
+
+   Pour ce faire, vous devez souscrire à notre forfait Visa qui consiste à vous assister à:
+     - Rassembler vos documents
+     - Prendre Rendez-vous pour votre entrevue
+     - Préparer l'entrevue
