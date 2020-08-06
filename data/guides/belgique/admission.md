@@ -44,7 +44,7 @@ La liste des documents à envoyer varie selon l’université et le programme vi
 \
 \
 Une fois le dossier réçu, l’université passera à l’analyse de votre dossier. Le temps d’analyse varie d’une université à une autre.\  
-Une fois l’analyse terminée, vous obtiendrez ensuite votre lettre d’admission, en ca``s d’une réponse favorable, soit par email ou par la poste selon l’université.\
+Une fois l’analyse terminée, vous obtiendrez ensuite votre lettre d’admission, en cas d’une réponse favorable, soit par email ou par la poste selon l’université.\
 Si l’université répond par la poste, il est important de mentionner comme adresse postale, une adresse d’une personne vivant dans un pays où la poste est efficace sinon vous attendrez des siècles pour recevoir vos documents.
 
 Une fois admis, vous devrez maintenant faire une demande visa long séjour pour études. Pour cela, [consultez notre guide sur les étapes à suivre pour obtenir un visa d’études pour la Belgique.](/guides/belgique/visa)
