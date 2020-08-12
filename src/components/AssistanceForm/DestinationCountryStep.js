@@ -81,7 +81,7 @@ const DestinationCountryStep = ({onEditStep, onNextStep, onPreviousStep, recapMo
         validationSchema={destinationCountrySchema(intl)}
         onSubmit={(values) => {
           setDestinationCountry(values.destinationCountry);
-          setHasAdmission(Boolean(values.hasAdmission));
+          setHasAdmission(values.hasAdmission === 'true');
           onNextStep();
         }}
       >

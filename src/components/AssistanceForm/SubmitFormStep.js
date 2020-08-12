@@ -2,23 +2,24 @@
 import React from 'react';
 import {useIntl} from 'react-intl';
 import T from 'prop-types';
-import {useRecoilState, useSetRecoilState, useRecoilValue} from 'recoil';
+import {useRecoilValue} from 'recoil';
 
 // Styles
 import styles from './styles.module.scss';
 
-// State
-import {previousStepsState, currentStepState, assistanceFormState} from './state';
-import {getStepComponent, goToStep} from './steps';
+// Components
+import HtmlContent from '../HtmlContent';
 
-const SubmitFormStep = ({onNextStep}) => {
+// State
+import {assistanceFormState, assistancePackageState} from './state';
+
+const SubmitFormStep = ({onNextStep, assistancePackages}) => {
   const intl = useIntl();
 
   const assistanceFormValues = useRecoilValue(assistanceFormState);
-  const [previousSteps, setPreviousSteps] = useRecoilState(previousStepsState);
-  const setCurrentStep = useSetRecoilState(currentStepState);
+  const assistancePackageSlug = useRecoilValue(assistancePackageState);
 
-  const stepComponents = previousSteps.map((stepKey) => ({key: stepKey, component: getStepComponent(stepKey)}));
+  const assistancePackage = assistancePackages[assistancePackageSlug];
 
   const onSubmit = () => {
     window.console.log(assistanceFormValues);
@@ -27,19 +28,9 @@ const SubmitFormStep = ({onNextStep}) => {
 
   return (
     <div>
-      <h2 className={styles.title}>{intl.formatMessage({id: 'assistance-form.steps.submit-form.title'})}</h2>
+      <h2 className={styles.title}>{assistancePackage.title}</h2>
 
-      <p>{intl.formatMessage({id: 'assistance-form.steps.submit-form.description'})}</p>
-
-      <div>
-        {stepComponents.map(({key, component: Component}) => (
-          <Component
-            key={key}
-            recapMode={true}
-            onEditStep={() => goToStep({step: key, setCurrentStep, setPreviousSteps})}
-          />
-        ))}
-      </div>
+      <HtmlContent content={assistancePackage.content} />
 
       <div className={styles['centralized-button-wrapper']}>
         <button className="special" onClick={onSubmit}>
@@ -51,6 +42,13 @@ const SubmitFormStep = ({onNextStep}) => {
 };
 
 SubmitFormStep.propTypes = {
+  assistancePackages: T.objectOf(
+    T.shape({
+      content: T.string.isRequired,
+      slug: T.string.isRequired,
+      title: T.string.isRequired
+    })
+  ),
   onNextStep: T.func
 };
 

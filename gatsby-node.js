@@ -39,6 +39,8 @@ exports.onCreateNode = ({node, actions, getNode}) => {
         : Number.MAX_SAFE_INTEGER;
 
       createNodeField({node, name: 'timestamp', value: deadlineTimestamp});
+    } else if (fileNode.dir.indexOf('assistance-packages') !== -1) {
+      createNodeField({node, name: 'type', value: 'assistance-package'});
     }
   }
 };
@@ -79,13 +81,14 @@ exports.createPages = ({actions, graphql}) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }
 
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
       if (node.draft) return;
+      if (!guideMapping[node.fields.type]) return;
 
       createPage({
         path: node.fields.path,

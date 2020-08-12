@@ -27,14 +27,14 @@ const FeatureList = ({featureLabelKeys, className}) => (
 
 FeatureList.propTypes = {
   className: T.string,
-  featureLabelKeys: T.arrayOf(T.string).isRequired,
+  featureLabelKeys: T.arrayOf(T.string).isRequired
 };
 
 const page = {
   description:
     'Ce qui nous rend différents des autres c’est que nous ne transigeons pas avec nos valeurs de serviabilité, de transparence et d’honnêteté. Nous vous offrons un service d’assistance qui correspond à vos besoins.',
   title: 'Nous vous assistons dans vos démarches',
-  path: '/accompagnement',
+  path: '/accompagnement'
 };
 
 const packages = [
@@ -45,8 +45,8 @@ const packages = [
       'pages.assistance.packages.admission.features.program-choice',
       'pages.assistance.packages.admission.features.university-choice',
       'pages.assistance.packages.admission.features.application',
-      'pages.assistance.packages.admission.features.application-documents',
-    ],
+      'pages.assistance.packages.admission.features.application-documents'
+    ]
   },
   {
     titleKey: 'pages.assistance.packages.visa.title',
@@ -55,8 +55,8 @@ const packages = [
       'pages.assistance.packages.visa.features.application-documents',
       'pages.assistance.packages.visa.features.application-proof',
       'pages.assistance.packages.visa.features.fill-forms',
-      'pages.assistance.packages.visa.features.interview',
-    ],
+      'pages.assistance.packages.visa.features.interview'
+    ]
   },
   {
     titleKey: 'pages.assistance.packages.after-visa.title',
@@ -65,17 +65,17 @@ const packages = [
       'pages.assistance.packages.after-visa.features.travel',
       'pages.assistance.packages.after-visa.features.housing',
       'pages.assistance.packages.after-visa.features.on-arrival',
-      'pages.assistance.packages.after-visa.features.first-year',
-    ],
-  },
+      'pages.assistance.packages.after-visa.features.first-year'
+    ]
+  }
 ];
 
-const AssistancePage = () => {
+const AssistancePage = ({assistancePackages}) => {
   return (
     <RecoilRoot>
       <GenericPage page={page} bannerClassName={styles.banner}>
         <Card className={styles['main-card']}>
-          <AssistanceForm />
+          <AssistanceForm assistancePackages={assistancePackages} />
         </Card>
 
         <section className={styles['offer-block']}>
@@ -88,7 +88,7 @@ const AssistancePage = () => {
             tagName="p"
             values={{
               pricePerPackage: <b>200$</b>,
-              priceForAllPackages: <b>500$</b>,
+              priceForAllPackages: <b>500$</b>
             }}
           />
 
@@ -132,6 +132,10 @@ const AssistancePage = () => {
       </GenericPage>
     </RecoilRoot>
   );
+};
+
+AssistancePage.propTypes = {
+  assistancePackages: T.object.isRequired
 };
 
 export default AssistancePage;

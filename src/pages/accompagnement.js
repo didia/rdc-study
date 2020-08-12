@@ -1,10 +1,44 @@
 // Vendor
 import React from 'react';
+import {graphql} from 'gatsby';
+import T from 'prop-types';
 
-import ConsultingPage from '../components/pages/AssistancePage';
+import AssistancePage from '../components/pages/AssistancePage';
 
-const Page = () => {
-  return <ConsultingPage />;
+const Assistance = ({data}) => {
+  const assistancePackages = data.assistancePackages.edges.reduce((accumulator, {node}) => {
+    accumulator[node.frontmatter.slug] = {
+      content: node.html,
+      title: node.frontmatter.title,
+      slug: node.frontmatter.slug
+    };
+
+    return accumulator;
+  }, {});
+
+  return <AssistancePage assistancePackages={assistancePackages} />;
 };
 
-export default Page;
+Assistance.propTypes = {
+  data: T.shape({
+    assistancePackages: T.object.isRequired
+  })
+};
+
+export default Assistance;
+
+export const pageQuery = graphql`
+  query AssistancePageQuery {
+    assistancePackages: allMarkdownRemark(filter: {fields: {type: {eq: "assistance-package"}}}) {
+      edges {
+        node {
+          html
+          frontmatter {
+            slug
+            title
+          }
+        }
+      }
+    }
+  }
+`;

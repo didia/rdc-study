@@ -8,13 +8,13 @@ import {useRecoilValue} from 'recoil';
 import styles from './styles.module.scss';
 
 // States
-import {destinationCountryState} from './state';
+import {assistancePackageState} from './state';
 
 const FormSubmittedStep = () => {
   const intl = useIntl();
-  const destinationCountry = useRecoilValue(destinationCountryState);
+  const assistancePackage = useRecoilValue(assistancePackageState);
 
-  const guidePath = `/guides/${destinationCountry}`;
+  const guidePath = `/guides/${assistancePackage}`;
 
   return (
     <div>

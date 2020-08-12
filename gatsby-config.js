@@ -120,6 +120,13 @@ const plugins = [
     }
   },
   {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: `${__dirname}/data/assistance-packages`,
+      name: 'scholarships'
+    }
+  },
+  {
     resolve: 'gatsby-transformer-remark',
     options: {
       plugins: [

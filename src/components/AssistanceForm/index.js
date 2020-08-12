@@ -1,12 +1,13 @@
 // Vendor
 import React from 'react';
 import {useRecoilState, useRecoilValue, useSetRecoilState} from 'recoil';
+import T from 'prop-types';
 
 // State
 import {currentStepState, nextStepState, previousStepState, previousStepsState} from './state';
 import {getStepComponent, goToNextStep, goToPreviousStep} from './steps';
 
-const MasterForm = () => {
+const MasterForm = ({assistancePackages}) => {
   const setPreviousSteps = useSetRecoilState(previousStepsState);
   const [currentStep, setCurrentStep] = useRecoilState(currentStepState);
   const nextStep = useRecoilValue(nextStepState);
@@ -19,9 +20,17 @@ const MasterForm = () => {
 
   return (
     <div>
-      <CurrentStepComponent onNextStep={onNextStep} onPreviousStep={onPreviousStep} />
+      <CurrentStepComponent
+        onNextStep={onNextStep}
+        onPreviousStep={onPreviousStep}
+        assistancePackages={assistancePackages}
+      />
     </div>
   );
+};
+
+MasterForm.propTypes = {
+  assistancePackages: T.object.isRequired
 };
 
 export default MasterForm;
