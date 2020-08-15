@@ -28,7 +28,10 @@ const SUPPORTED_ORIGIN_COUNTRIES = [
   {labelKey: 'shared.countries.bj'},
   {labelKey: 'shared.countries.br'},
   {labelKey: 'shared.countries.ca'},
-  {labelKey: 'shared.countries.cd'},
+  {
+    labelKey: 'shared.countries.cd',
+    value: 'congo-kinshasa'
+  },
   {labelKey: 'shared.countries.cg'},
   {labelKey: 'shared.countries.ch'},
   {labelKey: 'shared.countries.ci'},

@@ -11,11 +11,12 @@ import styles from './styles.module.scss';
 import HtmlContent from '../HtmlContent';
 
 // State
-import {assistanceFormState, assistancePackageState} from './state';
+import {assistanceFormState, assistancePackageState, aboutCandidateState} from './state';
 
 const SubmitFormStep = ({onNextStep, assistancePackages}) => {
   const intl = useIntl();
 
+  const aboutCandidate = useRecoilValue(aboutCandidateState);
   const assistanceFormValues = useRecoilValue(assistanceFormState);
   const assistancePackageSlug = useRecoilValue(assistancePackageState);
 
@@ -30,7 +31,19 @@ const SubmitFormStep = ({onNextStep, assistancePackages}) => {
     <div>
       <h2 className={styles.title}>{assistancePackage.title}</h2>
 
+      <p>{intl.formatMessage({id: 'assistance-form.steps.submit-form.greetings'}, {name: aboutCandidate.firstName})}</p>
+
       <HtmlContent content={assistancePackage.content} />
+
+      <p>
+        {intl.formatMessage(
+          {id: 'assistance-form.steps.submit-form.pricing-paragraph1'},
+          {email: aboutCandidate.email}
+        )}
+      </p>
+      <p>{intl.formatMessage({id: 'assistance-form.steps.submit-form.pricing-paragraph2'})}</p>
+
+      <p>{intl.formatMessage({id: 'assistance-form.steps.submit-form.call-to-action'})}</p>
 
       <div className={styles['centralized-button-wrapper']}>
         <button className="special" onClick={onSubmit}>
