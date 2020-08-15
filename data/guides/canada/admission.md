@@ -14,8 +14,8 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
 
 1.  ## Choisir un programme d‘études
 
-    Dans quelle domaine allez-vous étudier? Quel programme d‘études? Il est important d‘avoir au minimum deux choix potentiels de domaine ou sujet d‘études que vous voulez poursuivre car vous pouvez ne pas obtenir une admission dans votre programme de choix.\
-    Nous vous conseillons donc de baser votre choix sur 3 facteurs principaux: Votre niveau de confort avec le sujet, votre passion pour le sujet ainsi que les opportunités d‘emplois au Canada tout comme en RDC.
+    Dans quel domaine allez-vous étudier? Quel programme d‘études? Il est important d‘avoir au minimum deux choix potentiels de domaine ou sujet d‘études que vous voulez poursuivre au cas où vous n'obtenez pas d’admission dans votre programme de choix.\
+    Nous vous conseillons donc de baser votre choix sur 3 facteurs principaux: Votre niveau de confort avec le sujet, votre passion pour le sujet ainsi que les opportunités d‘emplois au Canada dans votre pays d’origine.
 
 2.  ## Choisir un collège ou une université
 
@@ -23,7 +23,7 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
     L’avantage d‘étudier en Anglais est que cela vous offre plus d’opportunités puisque le Canada est majoritairement anglophone.
 
     Au Canada, vous avez la possibilité de poursuivre vos études soit à l‘Université ou au Collège (Cégép au Québec).
-    Au Collège, vous obtiendrez après deux ans d‘études, l‘équivalent d‘un diplôme de graduat en RDC. Vous pouvez ensuite vous inscrire à l‘Université pour compléter votre licence.
+    Au Collège, vous obtiendrez après deux ans d‘études soit un diplôme professionnel ou un diplôme pré-universitaire selon le programme d’études poursuivi. Vous pouvez ensuite vous inscrire à l‘Université pour compléter votre licence.
     L‘avantage du collège est que la durée et les coûts des études sont géneralement inférieurs à ceux des universités.
     \
     \
@@ -52,9 +52,9 @@ Voici donc les différentes étapes à suivre pour obtenir une admission dans un
 
 Une fois admis, vous devrez maintenant faire une demande de permis d’études. Pour cela, [consultez notre guide sur les étapes à suivre pour obtenir un visa d‘études pour le Canada.](/guides/canada/visa)
 
-## Combien ça coûte?
+## Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC Etudes](/accompagnement), vous devrez prévoir entre **280 USD et 600 USD** pour toutes vos démarches d’admission.
+En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **280 USD et 600 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
 - **80 USD à 250 USD** pour la demande d’admission.
