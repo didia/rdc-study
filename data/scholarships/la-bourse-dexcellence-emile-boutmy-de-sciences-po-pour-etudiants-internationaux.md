@@ -1,13 +1,16 @@
 ---
+draft: true
 title: Bourse d’excellence Emile Boutmy de SciencesPo en France
-deadline: 2019-12-15T12:22:29.466Z
-excerpt: "La bourse Émile Boutmy est une bourse d’excellence, attribuée aux meilleurs étudiants en fonction des priorités de recrutement et en accord avec le profil recherché pour chacun des programmes de l’Institut d’Études Politiques de Paris\_(SciencesPo)."
+deadline: 2021-02-28T12:22:29.466Z
+excerpt: La bourse Émile Boutmy est une bourse d’excellence, attribuée aux
+  meilleurs étudiants en fonction des priorités de recrutement et en accord avec
+  le profil recherché pour chacun des programmes de l’Institut d’Études
+  Politiques de Paris (SciencesPo).
 tags:
-  - >-
-    Bourses d’études;france;rdc etudes;sciencesPo;Bourses Emile Bootmy pour
+  - Bourses d’études;france;rdc etudes;sciencesPo;Bourses Emile Bootmy pour
     congolais
 thumbnail: /images/uploads/372013-pba7rs-434.jpg
-startDate: 2019-09-15T12:22:29.489Z
+startDate: 2020-08-06T12:22:29.489Z
 levels:
   - undergraduate
   - graduate
