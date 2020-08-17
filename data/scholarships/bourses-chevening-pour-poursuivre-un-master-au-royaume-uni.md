@@ -1,10 +1,10 @@
 ---
+draft: true
 title: Bourses Chevening pour poursuivre un master au Royaume-Uni
-deadline: 2019-11-06T04:59:45.245Z
-excerpt: >-
-  La bourse Chevening est une bourse complète et gratuite qui permet aux futurs
-  leaders à travers le monde de se perfectionner en poursuivant un master d’une
-  année au Royaume-Uni (UK).
+deadline: 2020-09-03T03:59:45.245Z
+excerpt: La bourse Chevening est une bourse complète et gratuite qui permet aux
+  futurs leaders à travers le monde de se perfectionner en poursuivant un master
+  d’une année au Royaume-Uni (UK).
 tags:
   - bourses d’études pour les congolais
   - bourses d’études gratuites
@@ -12,6 +12,7 @@ tags:
   - royaume-uni
   - bourses d’études 2020
 thumbnail: /images/uploads/bourse-chevening.jpg
+startDate: 2020-11-03T07:52:54.973Z
 levels:
   - graduate
 targetCountries:
