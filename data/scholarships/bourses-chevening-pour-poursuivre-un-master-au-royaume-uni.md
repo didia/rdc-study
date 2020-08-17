@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourses Chevening pour poursuivre un master au Royaume-Uni
 deadline: 2020-09-03T03:59:45.245Z
 excerpt: La bourse Chevening est une bourse complète et gratuite qui permet aux

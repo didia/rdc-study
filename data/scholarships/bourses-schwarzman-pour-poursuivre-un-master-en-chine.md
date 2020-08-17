@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourses Schwarzman pour poursuivre un master en Chine
 deadline: 2020-09-22T03:59:48.082Z
 excerpt: Le programme des bourses Schwarzman offre une bourse complète aux plus

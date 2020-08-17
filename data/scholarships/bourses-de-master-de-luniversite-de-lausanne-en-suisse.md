@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourses de Master de l’Université de Lausanne en Suisse
 deadline: 2020-11-01T03:59:42.314Z
 excerpt: L’université de Lausanne (UNIL) offre 10 bourses d’études partielles
