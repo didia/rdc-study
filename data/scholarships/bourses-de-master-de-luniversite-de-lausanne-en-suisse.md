@@ -1,14 +1,14 @@
 ---
+draft: true
 title: Bourses de Master de l’Université de Lausanne en Suisse
-excerpt: >-
-  L’université de Lausanne (UNIL) offre 10 bourses d’études partielles
+deadline: 2020-11-01T03:59:42.314Z
+excerpt: L’université de Lausanne (UNIL) offre 10 bourses d’études partielles
   d’excellence par année aux étudiants ayant un excellent dossier académique.
-deadline: 2019-11-02T03:59:42.314Z
 tags:
-  - >-
-    Bourses d’études pour étudiants africains;Bourses d’études pour étudiants
+  - Bourses d’études pour étudiants africains;Bourses d’études pour étudiants
     congolais;Etudier en suisse;Université de Lausanne
 thumbnail: /images/uploads/ulausanne.jpeg
+startDate: 2020-08-15T07:48:34.991Z
 levels:
   - graduate
 targetCountries:
