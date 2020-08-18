@@ -3,7 +3,7 @@ draft: false
 slug: 'canada/visa'
 date: '2018-03-30'
 title: "Obtenir un permis d‘études pour le Canada"
-excerpt: "Avec votre admission dans une établissement d‘enseignement canadien en main, vous devez maintenant faire une demande de visa à Immigration Canada. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le permis d‘études pour le Canada."
+excerpt: "Avec votre admission dans une établissement d‘enseignement canadien en mains, vous devez maintenant faire une demande de visa à Immigration Canada. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le permis d‘études pour le Canada."
 thumbnail: 'images/canada-visa.jpg'
 topic: 'visa'
 related: ['canada/visa/exemple-lettre-engagement-quitter-canada-apres-etudes', 'canada/admission']
@@ -100,7 +100,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
 ## Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **690 USD et 810 USD** pour vos démarches de visa.
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **690 USD et 810 USD** pour vos démarches de visa.
 Ces frais se présentent comme suit:
 
 - **20 USD à 50 USD** pour les documents administratifs à obtenir du gouvernement congolais.
