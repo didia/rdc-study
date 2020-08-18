@@ -82,6 +82,8 @@ collections:
             value: ca
           - label: Chine
             value: cn
+          - label: Chypre du Nord
+            value: cytr
           - label: Etats-Unis
             value: us
           - label: France
