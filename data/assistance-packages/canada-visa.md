@@ -2,7 +2,7 @@
 title: Assistance pour demande de permis d’études au Canada
 slug: canada/visa
 ---
-Selon les informations que vous avez entrées, vous avez maintenant besoin d’obtenir un permis et un visa d’études pour le Canada.
+Selon les informations que vous nous avez fournies, vous devez maintenant obtenir un permis et visa d’études pour poursuivre vos études au Canada.
 
 Pour ce faire, vous devez souscrire à notre forfait Visa qui comprend un accompagnement pour:
 - Rassembler les documents réquis pour votre demande;

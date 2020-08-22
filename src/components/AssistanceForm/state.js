@@ -1,6 +1,7 @@
 import {atom, selector} from 'recoil';
 
 import Steps from './steps';
+import DestinationCountries from './destination-countries';
 
 const ASSISTANCE_PACKAGE = {
   ADMISSION: 'admission',
@@ -40,23 +41,24 @@ export const hasAdmissionState = atom({
   default: false
 });
 
-export const nextStepState = selector({
-  key: 'nextFormStep',
+export const isGoingToQuebecState = atom({
+  key: 'isGoingToQuebec',
+  default: false
+});
 
-  get: ({get}) => {
-    const currentState = get(currentStepState);
+export const hasCAQState = atom({
+  key: 'hasCAQ',
+  default: false
+});
 
-    switch (currentState) {
-      case Steps.AboutCandidate:
-        return Steps.DestinationCountry;
-      case Steps.DestinationCountry:
-        return Steps.SubmitForm;
-      case Steps.SubmitForm:
-        return Steps.FormSubmitted;
-      default:
-        return Steps.AboutCandidate;
-    }
-  }
+export const hasGraduateStudiesDiplomaState = atom({
+  key: 'hasGraduateStudiesDiploma',
+  default: true
+});
+
+export const hasHighSchoolDiplomaEquivalenceState = atom({
+  key: 'hasHighSchoolDiplomaEquivalence',
+  default: false
 });
 
 export const previousStepState = selector({
@@ -74,11 +76,9 @@ export const assistancePackageState = selector({
 
   get: ({get}) => {
     const destinationCountry = get(destinationCountryState);
-    const hasAdmission = get(hasAdmissionState);
+    const selectedPackage = getSelectedPackage(get);
 
-    return hasAdmission
-      ? `${destinationCountry}/${ASSISTANCE_PACKAGE.VISA}`
-      : `${destinationCountry}/${ASSISTANCE_PACKAGE.ADMISSION}`;
+    return `${destinationCountry}/${selectedPackage}`;
   }
 });
 
@@ -95,3 +95,40 @@ export const assistanceFormState = selector({
     };
   }
 });
+
+const getSelectedPackage = (get) => {
+  const destinationCountry = get(destinationCountryState);
+  const hasAdmission = get(hasAdmissionState);
+
+  if (destinationCountry === DestinationCountries.CANADA.value) {
+    if (!hasAdmission) {
+      return ASSISTANCE_PACKAGE.ADMISSION;
+    }
+
+    const isGoingToQuebec = get(isGoingToQuebecState);
+
+    if (!isGoingToQuebec) {
+      return ASSISTANCE_PACKAGE.VISA;
+    }
+
+    const hasCAQ = get(hasCAQState);
+
+    return hasCAQ ? ASSISTANCE_PACKAGE.VISA : ASSISTANCE_PACKAGE.CAQ;
+  } else if (destinationCountry === DestinationCountries.BELGIUM.value) {
+    if (hasAdmission) {
+      return ASSISTANCE_PACKAGE.VISA;
+    }
+
+    const hasGraduateStudiesDiploma = get(hasGraduateStudiesDiplomaState);
+
+    if (hasGraduateStudiesDiploma) {
+      return ASSISTANCE_PACKAGE.ADMISSION;
+    }
+
+    const hasHighSchoolDiplomaEquivalence = get(hasHighSchoolDiplomaEquivalenceState);
+
+    return hasHighSchoolDiplomaEquivalence ? ASSISTANCE_PACKAGE.ADMISSION : ASSISTANCE_PACKAGE.EQUIVALENCE;
+  } else {
+    return hasAdmission ? ASSISTANCE_PACKAGE.VISA : ASSISTANCE_PACKAGE.ADMISSION;
+  }
+};

@@ -14,6 +14,12 @@
   "assistance-form.steps.about-candidate.placeholders.origin-country": "Choisissez votre pays de résidence",
   "assistance-form.steps.about-candidate.title": "À propos de vous",
 
+  "assistance-form.steps.belgium-equivalence-check.has-equivalence": "Avez-vous déjà obtenu votre équivalence de diplôme d’études sécondaires auprès du service des équivalences de la fédération Wallonie-Bruxelles ?",
+  "assistance-form.steps.belgium-equivalence-check.title": "Êtes-vous déjà en possession d’un diplôme d’études supérieures ou universitaires ?",
+
+  "assistance-form.steps.canada-caq-check.has-caq": "Avez-vous déjà obtenu votre Certificat d'Acceptation du Québec (CAQ) ?",
+  "assistance-form.steps.canada-caq-check.title": "Est-ce que l’université dans laquelle vous êtes admis se situe dans la province du Québec ?",
+
   "assistance-form.steps.destination-country.labels.has-admission": "Avez-vous déjà obtenu votre admission ?",
   "assistance-form.steps.destination-country.labels.has-admission-negative-option": "Non, je n’ai pas d’admission",
   "assistance-form.steps.destination-country.labels.has-admission-positive-option": "Oui, j’ai déjà mon admission",
@@ -212,9 +218,11 @@
 
   "shared.social-share.email.message": "{excerpt} \n\n Pour en savoir plus, vas sur {link}",
 
+  "shared.no": "Non",
   "shared.other-text": "Autre",
   "shared.read-time": "{time} {time, plural, one {minute de lecture}\n other {minutes de lecture}}",
   "shared.see-more-text": "Voir plus",
   "shared.share-on-facebook": "Partagez sur facebook",
-  "shared.share-on-whatsapp": "Partagez sur whatsapp"
+  "shared.share-on-whatsapp": "Partagez sur whatsapp",
+  "shared.yes": "Oui"
 }

@@ -18,38 +18,30 @@ import {formikFieldErrorClass} from './utils';
 import Selector from '../Selector';
 import StepActions from './StepActions';
 import StepForm from './StepForm';
+import {YesNoField} from './YesNoStepForm';
 
 // States
 import {destinationCountryState, hasAdmissionState} from './state';
 
 // Constants
+import DestinationCountries from './destination-countries';
+import Steps from './steps';
+
 const SUPPORTED_DESTINATION_COUNTRIES = [
-  {
-    labelKey: 'shared.countries.be',
-    value: 'belgique'
-  },
-  {
-    labelKey: 'shared.countries.ca',
-    value: 'canada'
-  },
-  {
-    labelKey: 'shared.countries.fr',
-    value: 'france'
-  },
-  {
-    labelKey: 'shared.countries.us',
-    value: 'usa'
-  }
+  DestinationCountries.BELGIUM,
+  DestinationCountries.CANADA,
+  DestinationCountries.FRANCE,
+  DestinationCountries.USA
 ];
 
 const HAS_ADMISSION_OPTIONS = [
   {
-    labelKey: 'assistance-form.steps.destination-country.labels.has-admission-positive-option',
-    value: 'true'
-  },
-  {
     labelKey: 'assistance-form.steps.destination-country.labels.has-admission-negative-option',
     value: 'false'
+  },
+  {
+    labelKey: 'assistance-form.steps.destination-country.labels.has-admission-positive-option',
+    value: 'true'
   }
 ];
 
@@ -63,12 +55,22 @@ const onChangeDestinationCountry = (field, setShowHasAdmission) => (event) => {
   field.onChange(event);
 };
 
+const getNextStep = ({destinationCountry, hasAdmission}) => {
+  if (destinationCountry === DestinationCountries.CANADA.value && hasAdmission) {
+    return Steps.CanadaCAQCheck;
+  } else if (destinationCountry === DestinationCountries.BELGIUM.value && !hasAdmission) {
+    return Steps.BelgiumEquivalenceCheck;
+  }
+
+  return Steps.SubmitForm;
+};
+
 const DestinationCountryStep = ({onEditStep, onNextStep, onPreviousStep, recapMode}) => {
   const intl = useIntl();
   const [destinationCountry, setDestinationCountry] = useRecoilState(destinationCountryState);
   const [hasAdmission, setHasAdmission] = useRecoilState(hasAdmissionState);
 
-  const [showHasAdmission, setShowHasAdmission] = useState(hasAdmission);
+  const [showHasAdmission, setShowHasAdmission] = useState(!!destinationCountry);
 
   return (
     <StepForm
@@ -80,9 +82,14 @@ const DestinationCountryStep = ({onEditStep, onNextStep, onPreviousStep, recapMo
         initialValues={{destinationCountry, hasAdmission: hasAdmission ? 'true' : 'false'}}
         validationSchema={destinationCountrySchema(intl)}
         onSubmit={(values) => {
+          const hasAdmission = values.hasAdmission === 'true';
+
           setDestinationCountry(values.destinationCountry);
-          setHasAdmission(values.hasAdmission === 'true');
-          onNextStep();
+          setHasAdmission(hasAdmission);
+
+          const nextStep = getNextStep({hasAdmission, destinationCountry: values.destinationCountry});
+
+          onNextStep(nextStep);
         }}
       >
         {({isSubmitting}) => (
@@ -106,22 +113,11 @@ const DestinationCountryStep = ({onEditStep, onNextStep, onPreviousStep, recapMo
               </div>
 
               <CSSTransition in={showHasAdmission} timeout={200} classNames="fade" unmountOnExit>
-                <div className={classnames('field', styles.field)}>
-                  <label htmlFor="hasAdmission" className={styles.label}>
-                    {intl.formatMessage({id: 'assistance-form.steps.destination-country.labels.has-admission'})}
-                  </label>
-
-                  <Field name="hasAdmission">
-                    {({field}) => (
-                      <Selector
-                        options={HAS_ADMISSION_OPTIONS}
-                        className={styles.input}
-                        disabled={recapMode}
-                        {...field}
-                      />
-                    )}
-                  </Field>
-                </div>
+                <YesNoField
+                  label={intl.formatMessage({id: 'assistance-form.steps.destination-country.labels.has-admission'})}
+                  name="hasAdmission"
+                  options={HAS_ADMISSION_OPTIONS}
+                />
               </CSSTransition>
             </div>
 

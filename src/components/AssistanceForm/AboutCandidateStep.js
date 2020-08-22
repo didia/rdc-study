@@ -22,6 +22,8 @@ import StepForm from './StepForm';
 import {aboutCandidateState} from './state';
 
 // Const
+import {Steps} from './steps';
+
 const SUPPORTED_ORIGIN_COUNTRIES = [
   {labelKey: 'shared.countries.be'},
   {labelKey: 'shared.countries.bf'},
@@ -84,7 +86,7 @@ const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode})
         validationSchema={aboutCandidateSchema(intl)}
         onSubmit={(values) => {
           setAboutCandidateData(values);
-          onNextStep();
+          onNextStep(Steps.DestinationCountry);
         }}
       >
         {({isSubmitting}) => (

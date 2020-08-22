@@ -3,7 +3,7 @@ import React from 'react';
 import T from 'prop-types';
 import {FormattedMessage} from 'react-intl';
 
-const CountrySelector = ({className, options, placeholderKey, ...props}) => (
+const Selector = ({className, options, placeholderKey, ...props}) => (
   <select className={className} name={name} {...props}>
     {placeholderKey && (
       <FormattedMessage id={placeholderKey}>
@@ -27,7 +27,7 @@ const CountrySelector = ({className, options, placeholderKey, ...props}) => (
   </select>
 );
 
-CountrySelector.propTypes = {
+Selector.propTypes = {
   className: T.string,
   name: T.string.isRequired,
   value: T.string,
@@ -41,4 +41,4 @@ CountrySelector.propTypes = {
   ).isRequired
 };
 
-export default CountrySelector;
+export default Selector;

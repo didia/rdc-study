@@ -1,18 +1,24 @@
 // Components
 import AboutCandidateStep from './AboutCandidateStep';
+import BelgiumEquivalenceCheckStep from './BelgiumEquivalenceCheckStep';
+import CanadaCAQCheckStep from './CanadaCAQCheckStep';
 import DestinationCountryStep from './DestinationCountryStep';
 import FormSubmittedStep from './FormSubmittedStep';
 import SubmitFormStep from './SubmitFormStep';
 
-const Steps = {
+export const Steps = {
   AboutCandidate: 'AboutCandidate',
+  BelgiumEquivalenceCheck: 'BelgiumEquivalenceCheck',
+  CanadaCAQCheck: 'CanadaCAQCheck',
   DestinationCountry: 'DestinationCountry',
   FormSubmitted: 'FormSubmitted',
-  SubmitForm: 'SubmitForm',
+  SubmitForm: 'SubmitForm'
 };
 
 const StepRegistry = {
   [Steps.AboutCandidate]: AboutCandidateStep,
+  [Steps.BelgiumEquivalenceCheck]: BelgiumEquivalenceCheckStep,
+  [Steps.CanadaCAQCheck]: CanadaCAQCheckStep,
   [Steps.DestinationCountry]: DestinationCountryStep,
   [Steps.FormSubmitted]: FormSubmittedStep,
   [Steps.SubmitForm]: SubmitFormStep
@@ -22,7 +28,7 @@ export const getStepComponent = (key) => {
   return StepRegistry[key];
 };
 
-export const goToNextStep = ({currentStep, nextStep, setCurrentStep, setPreviousSteps}) => () => {
+export const goToNextStep = ({currentStep, setCurrentStep, setPreviousSteps}) => (nextStep) => {
   setPreviousSteps((oldPreviousSteps) => [...oldPreviousSteps, currentStep]);
   setCurrentStep(nextStep);
 };

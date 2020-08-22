@@ -13,6 +13,9 @@ import HtmlContent from '../HtmlContent';
 // State
 import {assistanceFormState, assistancePackageState, aboutCandidateState} from './state';
 
+// Constants
+import Steps from './steps';
+
 const SubmitFormStep = ({onNextStep, assistancePackages}) => {
   const intl = useIntl();
 
@@ -24,7 +27,7 @@ const SubmitFormStep = ({onNextStep, assistancePackages}) => {
 
   const onSubmit = () => {
     window.console.log(assistanceFormValues);
-    onNextStep();
+    onNextStep(Steps.FormSubmitted);
   };
 
   return (
