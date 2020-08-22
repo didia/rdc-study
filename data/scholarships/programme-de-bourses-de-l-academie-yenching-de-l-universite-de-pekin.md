@@ -14,8 +14,20 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
+La bourse de l'Academie Yenching couvre:
 
+1. Frais de scolarité;
+2. Hébergement;
+3. Allocation mensuelle
 
 ## Quels sont les critères de la bourse ?
+
+Pour beneficier de la bourse vous devez repondre aux criteres suivants 
+
+* Avoir au minimum un baccalauréat (licence) dans n'importe quel domaine; programme d'études actuellement inscrit décerné au plus tard le 31 août 2021;
+* Un dossier académique exceptionnel;
+* Intérêt marqué pour l'étude interdisciplinaire de la Chine;
+* Un dossier de réalisations parascolaires, d'engagement communautaire, de responsabilité sociale et de potentiel de leadership;
+* Maîtrise de l'anglais
 
 ## Comment postuler ?
