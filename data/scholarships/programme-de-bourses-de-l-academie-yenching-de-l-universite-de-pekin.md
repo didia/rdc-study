@@ -32,23 +32,16 @@ Pour bénéficier de la bourse vous devez répondre aux critères suivants :
 
 ## Comment postuler ?
 
-Pour postuler au programme des  bourses de l'Academie Yenching, vous devez créer un compte via [le portail de candidature en ligne](http://101.200.29.232/YENCHING/login.html) et y  inserer les documents suivants : 
+Pour postuler au programme des  bourses de l'Academie Yenching, vous devez créer un compte via [le portail de candidature en ligne](http://101.200.29.232/YENCHING/login.html) et y  insérer les documents suivants : 
 
-Formulaire de demande en ligne rempli;
-
-Déclaration personnelle (750 mots ou moins);
-
-Proposition de recherche (maximum une page);
-
-Curriculum vitae;
-
-Transcriptions officielles);
-
-Diplôme (s) ou certificat (s) d'inscription;
-
-Deux lettres de recommandation;
-
-Exigences en anglais et notes minimales:
+* Formulaire de demande en ligne rempli;
+* Déclaration personnelle (750 mots ou moins);
+* Proposition de recherche (maximum une page);
+* Curriculum vitae;
+* Transcriptions officielles);
+* Diplôme (s) ou certificat (s) d'inscription;
+* Deux lettres de recommandation;
+* Exigences en anglais et notes minimales:
 
 ○ IELTS (Académique): Globalement 7,0
 
