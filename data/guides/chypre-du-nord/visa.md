@@ -1,6 +1,6 @@
 ---
 draft: false
-slug: chypre-du-nord/admission
+slug: chypre-du-nord/visa
 date: 2020-08-14
 title: Obtenir un visa d’études pour la Chypre du Nord
 excerpt: Vous n’avez pas besoin d’un visa pour vous rendre à Chypre du Nord pour études. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour vous rendre à Chypre du Nord après l’obtention de votre lettre d’admission  

@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   grid-gap: 1.5em;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .grid-item-title {
@@ -9,13 +9,14 @@
   transition: scale 0.3s ease-in-out;
 }
 
-.grid-item {
+.grid-item-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .image {
+  margin-bottom: 10px;
   width: 150px;
   transition: width 0.3s ease-in-out;
 }
@@ -28,6 +29,12 @@
 .grid-item:active {
   .image {
     width: 180px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
