@@ -1,8 +1,9 @@
 // Vendor
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {useIntl} from 'react-intl';
 import T from 'prop-types';
 import {useRecoilValue} from 'recoil';
+import axios from 'axios';
 
 // Styles
 import styles from './styles.module.scss';
@@ -11,23 +12,77 @@ import styles from './styles.module.scss';
 import HtmlContent from '../HtmlContent';
 
 // State
-import {assistanceFormState, assistancePackageState, aboutCandidateState} from './state';
+import {assistancePackageState, aboutCandidateState} from './state';
+
+// Config
+import config from '../../../config';
+
+const {contactFormEndpoint} = config;
 
 // Constants
 import Steps from './steps';
 
+// Utils
+import getCurrentUrl from '../../utils/get-current-url';
+import analyticsPushEvent from '../../utils/push-analytics-event';
+
 const SubmitFormStep = ({onNextStep, assistancePackages}) => {
   const intl = useIntl();
+  const [isSubmitting, setSubmitting] = useState(false);
+  const [showError, setShowError] = useState(false);
 
   const aboutCandidate = useRecoilValue(aboutCandidateState);
-  const assistanceFormValues = useRecoilValue(assistanceFormState);
   const assistancePackageSlug = useRecoilValue(assistancePackageState);
 
   const assistancePackage = assistancePackages[assistancePackageSlug];
 
-  const onSubmit = () => {
-    window.console.log(assistanceFormValues);
-    onNextStep(Steps.FormSubmitted);
+  const name = `${aboutCandidate.firstName} ${aboutCandidate.lastName}`;
+  const message = intl.formatMessage(
+    {id: 'assistance-form.steps.submit-form.assistance-request-message'},
+    {name, assistancePackage: assistancePackage.title, originCountry: aboutCandidate.originCountry}
+  );
+
+  useEffect(() => {
+    analyticsPushEvent({
+      category: 'AssistanceForm',
+      action: 'ShowAssistancePackage',
+      label: assistancePackageSlug
+    });
+  }, []);
+
+  const onSubmit = async () => {
+    setSubmitting(true);
+    setShowError(false);
+
+    const payload = {
+      message,
+      name,
+      email: aboutCandidate.email,
+      link: getCurrentUrl()
+    };
+
+    try {
+      await axios.post(contactFormEndpoint, payload);
+      onNextStep(Steps.FormSubmitted);
+
+      analyticsPushEvent({
+        category: 'AssistanceForm',
+        action: 'SubmitSuccess',
+        label: assistancePackageSlug,
+      });
+    } catch (error) {
+      setShowError(true);
+      setSubmitting(false);
+
+      analyticsPushEvent({
+        category: 'AssistanceForm',
+        action: 'SubmitError',
+        label: assistancePackageSlug,
+        value: error
+      });
+
+      window.console.error('An error occured: ', error);
+    }
   };
 
   return (
@@ -48,8 +103,20 @@ const SubmitFormStep = ({onNextStep, assistancePackages}) => {
 
       <p>{intl.formatMessage({id: 'assistance-form.steps.submit-form.call-to-action'})}</p>
 
+      {showError && (
+        <p
+          className={styles['error-message']}
+          dangerouslySetInnerHTML={{
+            __html: intl.formatMessage(
+              {id: 'assistance-form.steps.submit-form.error-message'},
+              {message, assistancePackage: assistancePackage.title}
+            )
+          }}
+        />
+      )}
+
       <div className={styles['centralized-button-wrapper']}>
-        <button className="special" onClick={onSubmit}>
+        <button className="special" onClick={onSubmit} disabled={isSubmitting}>
           {intl.formatMessage({id: 'assistance-form.steps.submit-form.button-label'})}
         </button>
       </div>

@@ -37,6 +37,8 @@
   "assistance-form.steps.submit-form.pricing-paragraph2": "Une fois que vous aurez effectué le paiment de l’acompte, nous vous enverrons un contrat de service et un mentor prendra contact avec vous pour débuter l’accompagnement.",
   "assistance-form.steps.submit-form.call-to-action": "Voulez-vous soumettre cette demande d’assistance ?",
   "assistance-form.steps.submit-form.greetings": "{name}, nous vous remercions d’avoir utilisé notre formulaire de demande d’assistance.",
+  "assistance-form.steps.submit-form.assistance-request-message": "Je suis {name}, originaire de {originCountry}. Je veux une {assistancePackage}.",
+  "assistance-form.steps.submit-form.error-message": "Une erreur inconnue est survenue lors de la soumission de votre formulaire. Nous vous suggérons d’envoyer votre demande par email à '<a' href=\"mailto:assistance@rdcetudes.com?html=true&subject=Demande d’assistance&body={message}\"'>'assistance@rdcetudes.com'</a>' avec comme message: '<br/>' «{message}»",
 
   "footer.copyright": "© RDC Etudes. Tous droits réservés",
 

@@ -26,6 +26,7 @@ import {destinationCountryState, hasAdmissionState} from './state';
 // Constants
 import DestinationCountries from './destination-countries';
 import Steps from './steps';
+import analyticsPushEvent from "../../utils/push-analytics-event";
 
 const SUPPORTED_DESTINATION_COUNTRIES = [
   DestinationCountries.BELGIUM,
@@ -90,6 +91,13 @@ const DestinationCountryStep = ({onEditStep, onNextStep, onPreviousStep, recapMo
           const nextStep = getNextStep({hasAdmission, destinationCountry: values.destinationCountry});
 
           onNextStep(nextStep);
+
+          analyticsPushEvent({
+            category: 'AssistanceForm',
+            action: 'next',
+            label: Steps.DestinationCountry,
+            value: values.destinationCountry
+          });
         }}
       >
         {({isSubmitting}) => (

@@ -57,6 +57,17 @@ select.input {
   margin-top: 5px;
   font-size: 0.9em;
   color: #721c24;
+
+  a {
+    color: #721c24;
+    border-bottom-color: #721c24;
+
+    &:hover,
+    &:active {
+      color: lighten(#721c24, 20%);
+      border-bottom-color: lighten(#721c24, 20%);
+    }
+  }
 }
 
 .centralized-button-wrapper {

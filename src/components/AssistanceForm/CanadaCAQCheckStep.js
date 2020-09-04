@@ -19,6 +19,7 @@ import styles from './styles.module.scss';
 
 // Constants
 import {Steps} from './steps';
+import analyticsPushEvent from '../../utils/push-analytics-event';
 
 const CanadaCAQCheckStep = ({onNextStep, onPreviousStep}) => {
   const intl = useIntl();
@@ -44,6 +45,12 @@ const CanadaCAQCheckStep = ({onNextStep, onPreviousStep}) => {
           setHasCAQ(hasCAQ);
 
           onNextStep(Steps.SubmitForm);
+
+          analyticsPushEvent({
+            category: 'AssistanceForm',
+            action: 'next',
+            label: Steps.CanadaCAQCheck
+          });
         }}
       >
         {({isSubmitting}) => (

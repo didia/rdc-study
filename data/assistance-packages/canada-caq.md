@@ -1,6 +1,6 @@
 ---
 title: Assistance pour demande de certificat d’acceptation du Québec
-slug: canada/caq
+slug: canada/visa
 ---
 Puisque vous étudierez au Québec, vous devez commencer par obtenir un certificat d’acceptation du Québec (CAQ).
 
