@@ -28,12 +28,12 @@ export const getStepComponent = (key) => {
   return StepRegistry[key];
 };
 
-export const goToNextStep = ({currentStep, setCurrentStep, setPreviousSteps}) => (nextStep) => {
+export const goToNextStep = ({currentStep, nextStep, setCurrentStep, setPreviousSteps}) => {
   setPreviousSteps((oldPreviousSteps) => [...oldPreviousSteps, currentStep]);
   setCurrentStep(nextStep);
 };
 
-export const goToPreviousStep = ({previousStep, setCurrentStep, setPreviousSteps}) => () => {
+export const goToPreviousStep = ({previousStep, setCurrentStep, setPreviousSteps}) => {
   setPreviousSteps((previousSteps) => {
     return [...previousSteps.slice(0, previousSteps.length - 1)];
   });
