@@ -6,7 +6,7 @@ title: "Obtenir un permis d‘études pour le Canada"
 excerpt: "Avec votre admission dans une établissement d‘enseignement canadien en mains, vous devez maintenant faire une demande de visa à Immigration Canada. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le permis d‘études pour le Canada."
 thumbnail: 'images/canada-visa.jpg'
 topic: 'visa'
-related: ['canada/visa/exemple-lettre-engagement-quitter-canada-apres-etudes', 'canada/admission']
+related: ['canada/caq', 'canada/visa/exemple-lettre-engagement-quitter-canada-apres-etudes', 'canada/admission']
 ---
 
 Une fois admis dans un établissement d’enseignement au Canada, vous pouvez commencer votre demande de permis d’études pour immigrer au Canada.\
@@ -14,24 +14,12 @@ Pour entrer au Canada vous avez besoin d’un visa de résident temporaire et un
 
 Nous vous recommandons de commencer vos démarches de permis d’études au moins 3 mois avant la date de début de la session pour laquelle vous vous êtes inscrit.
 
+Si votre établissement d’enseignement au Canada se trouve dans la province du Québec, vous devez au préalable obtenir un Certificat d’Acceptation du Québec (CAQ) avant de faire une demande de permis d’études.
+Pour savoir comment vous y prendre, consultez notre [guide gratuit sur l’obtention d’un CAQ.](/guides/canada/caq)
+
 Voici donc les différentes étapes générales à suivre pour vos démarches de visa:
 
-1.  ## Faire la demande du Certificat d’Acceptation du Québec (CAQ) (Québec seulement)
-
-    Cette étape ne concerne que les étudiants qui étudieront dans la province du Québec.
-    Si vous étudierez dans une autre province, vous pouvez passer à l’étape suivante.
-
-    Les étudiants admis dans un établissement d’enseignement de la province du Québec ont besoin d’un Certificat d’acceptation du Québec (CAQ) pour pouvoir présenter une demande de permis d’études.
-    La demande du CAQ se fait uniquement en ligne sur <a href="http://www.immigration-quebec.gouv.qc.ca/fr/services/caq-electronique/nouvelle-demande.html" target="_blank" rel="nofollow noopener">le site Web du gouvernement du Québec.</a>
-
-    Une fois sur le site, commencez votre demande en créant un compte et en remplissant les champs demandés.\
-    Complétez votre demande en payant les frais de demande au moyen d’une carte Visa ou Mastercard uniquement.\
-    Une fois le paiement effectué, vous recevrez dans votre compte, un document à remplir et une liste des documents additionnels à transmettre au ministère.\
-    Rassemblez les documents exigés et renvoyez-les par DHL à l’adresse mentionée dans le document téléchargé.
-
-    Le délai de traitement de la demande du CAQ est de 4 semaines à compter de la date de réception des vos documents. Vous pouvez déjà commencer votre demande de permis d’études dès que vous aurez la lettre d’approbation de votre demande de CAQ. Vous n’avez pas besoin d’attendre le CAQ papier envoyé par la poste.
-
-2.  ## Choisissez le type de demande
+1.  ## Choisissez le type de demande
 
     Vous pouvez faire votre demande de permis d’études deux manières: en ligne ou au centre de réception des demandes de visa (CRDV).
 
@@ -40,20 +28,20 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
     Si vous choisissez de faire la demande en ligne, vous devez commencer par créer votre compte sur <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/compte.html" target="_blank" rel="nofollow noopener">le site web de l‘immigration.</a>
 
-3.  ## Obtenir les formulaires exigés pour la demande
+2.  ## Obtenir les formulaires exigés pour la demande
 
     Une liste de formulaires à remplir sont exigés lorsque vous présentez votre demande de permis d’études.\
     Ces formulaires sont disponibles au CRDV ou encore gratuitement en ligne sur <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html" target="_blank" rel="nofollow noopener">le site web de immigration et citoyenneté Canada.</a>
 
     Pour la demande en ligne, les formulaires seront déjà disponible pour téléchargement à travers votre compte.
 
-4.  ## Remplir les formulaires
+3.  ## Remplir les formulaires
 
     Vous devez remplir complètement et avec précision tous les formulaires demandés.\
     Fiez-vous donc au <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html" target="_blank" rel="nofollow noopener">guide en ligne</a> sur le site d‘Immigration Canada pour savoir quoi mettre dans chaque case.\
     Si vous avez toujours des doutes, contactez-nous! Nous offrons des services pour vous accompagner dans ce processus.
 
-5.  ## Rassembler tous les documents exigés
+4.  ## Rassembler tous les documents exigés
 
     Parmi les formulaires obtenus au point 3, vous trouverez un formulaire nommé liste de contrôle.\
     Cette list énumère tous les documents supplémentaires que vous devrez joindre à votre demande y compris vos photos passeport. Assurez-vous de n’oublier aucun document.
@@ -64,7 +52,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
     Si vous faites la demande en ligne, vous n’aurez pas besoin de fournir une bonne partie de ces documents. Toutefois, vous devez founir tous les documents exigés dans la liste de contrôle.
 
-6.  ## Le plan d’études et l’engagement à quitter le Canada après ses études
+5.  ## Le plan d’études et l’engagement à quitter le Canada après ses études
 
     Nous avons créé une section à part pour ces deux documents au vu de leur importance pour la demande de permis d’études.
 
@@ -76,20 +64,20 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
     Si vous avez besoin d’aide pour rédiger ces documents, nous vous encourageons à souscrire à notre [service d’accompagnement](/accompagnement), plus spécifiquement le forfait Visa.
 
-7.  ## Vérifiez que vous avez tous les documents
+6.  ## Vérifiez que vous avez tous les documents
 
     Assurez vous de bien remplir vos formulaires et de présenter tous les documents demandés pour pouvoir compléter votre demande.\
     Un grand nombre d’étudiants se voit refusé la demande par manque d’attention. Un formulaire mal rempli, un document oublié, un document de trop qui n’a pas sa place,
     des preuves financières jugées insuffisantes, une demande jugée incomplète, un manque de plan d’étude, ne pas avoir convaincu l’agent du visa, sont quelques raisons de refus de la plus part des demandes de permis d’études.
 
-8.  ## Déposez votre demande
+7.  ## Déposez votre demande
 
     Vous devez ensuite vous rendre au CRDV pour déposer vos documents. Au dépôt de votre demande, vous allez payer les frais de traitement, les frais du CRDV ainsi que les frais pour les données biométriques.
 
     Si vous avez fait votre demande en ligne, vous allez juste téléverser vos documents en ligne et payer les frais de traitement.\
     Une fois que le bureau aura réçu votre demande, vous serez invité à aller déposer vos données biométriques au CRDV.
 
-9.  ## Examen médicale et réponse à la demande
+8.  ## Examen médicale et réponse à la demande
 
     Le délai de traitement est varie selon votre location et la période de demande. En moyenne, le délai de demande à Kinshasa est de 6 semaines en moyenne sans compter le délai de transit entre le CRDV de Kinshasa et le bureau de visa de Dakar où les demandes sont acheminées et traitées.\
     Pour savoir quel sera votre délai exact, veuillez consulter le <a href="http://www.cic.gc.ca/francais/information/delais/index.asp" target="_blank" rel="nofollow noopener">site d’Immigration Canada à cet effet.</a>

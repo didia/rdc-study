@@ -8,7 +8,7 @@ thumbnail: 'images/belgique.jpg'
 flag: 'images/flag.png'
 name: 'Belgique'
 topic: 'country'
-related: ['belgique/admission', 'belgique/visa']
+related: ['belgique/equivalence', 'belgique/admission', 'belgique/visa']
 ---
 
 ## Que faut-il pour étudier en Belgique?

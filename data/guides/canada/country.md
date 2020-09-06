@@ -8,7 +8,7 @@ thumbnail: 'images/canada.jpg'
 flag: 'images/flag.png'
 name: 'Canada'
 topic: 'country'
-related: ['canada/admission', 'canada/visa']
+related: ['canada/admission', 'canada/visa', 'canada/caq']
 ---
 
 ## Que faut-il pour étudier au Canada?

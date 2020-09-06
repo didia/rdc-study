@@ -6,7 +6,7 @@ title: 'Obtenir une admission dans une université canadienne'
 excerpt: "Pour vous rendre au Canada pour études, vous devez au préalable obtenir une admission d‘un établissement d‘enseignement désigné au Canada. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n‘importe quel établissement d‘enseignement au Canada."
 thumbnail: 'images/canada-admission.jpg'
 topic: 'admission'
-related: ['canada/visa']
+related: ['canada/visa', 'canada/caq']
 ---
 
 Le processus d‘admission diffère d‘une institution à une autre. Toutefois les étapes générales sont sensiblement les mêmes dans toutes les institutions.\

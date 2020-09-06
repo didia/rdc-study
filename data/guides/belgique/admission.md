@@ -6,18 +6,20 @@ title: 'Obtenir une admission dans une université belge'
 excerpt: "Pour vous rendre en Belgique pour études, vous devez au préalable obtenir une admission d’une université en Belgique. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n’importe quelle université belge."
 thumbnail: 'images/belgique-admission.jpg'
 topic: 'admission'
-related: ['belgique/visa']
+related: ['belgique/equivalence', 'belgique/visa']
 ---
 
 Le processus d’admission reste sensiblement le même pour la majorité d’universités belges. Si vous êtes étudiants résidant hors de l’union européene comme c’est le cas pour les congolais, vous devez présenter votre demande d’admission entre le 15 février et le 30 avril de chaque année.
 \
 \
 Cependant les conditions d’admission, elles, dépendent du niveau et du domaine d’études que vous désirez poursuivre.\
-Si vous visez le premier cycle (Bachelier ou Licence), vous devez être titulaire d’un diplome d’études secondaires reconnu équivalent au certificat d’enseignement supérieur délivré en Belgique.
-Vous devez obtenir une équivalence de votre diplôme d’études secondaires auprès du <a href="http://www.equivalences.cfwb.be/" target="_blank" rel="nofollow noopener">Service des Équivalences du Ministère de la Fédération Wallonie-Bruxelles.</a>\
+Si vous visez le premier cycle (Bachelier ou Licence), vous devez être titulaire d’un diplôme d’études secondaires reconnu équivalent au certificat d’enseignement secondaire supérieur (CESS) délivré en Belgique.
 Aussi il est important de noter que certains domaines d’études (école d’arts, sciences de l’ingénieur) exigent aux étudiants de réussir un examen d’admission ou un concours à l’issue d’une première année d’études (études de médecine et de dentisterie).\
 Si vous visez le bachelier de spécialisation, vous devez être titulaire d’un diplôme d’études supérieurs. Tandis que si vous visez le deuxième cycle (master) vous devez détenir une license.\
 Toutefois pour connaître toutes les modalités d’admission précises de l’établissement d’enseignement supérieur de votre choix, nous vous conseillons fortement de contacter son service admission.
+
+Comme mentionné ci-haut, si vous souhaitez vous inscrire au premier cycle, vous devez être titulaire d’un diplôme d’études secondaires reconnu équivalent au CESS. Pour ce faire, vous devez obtenir une équivalence de votre diplôme d’études secondaires auprès du <a href="http://www.equivalences.cfwb.be/" target="_blank" rel="nofollow noopener">Service des Équivalences du Ministère de la Fédération Wallonie-Bruxelles.</a>\
+Pour savoir comment vous y prendre, consultez notre [guide gratuit sur l’obtention d’une équivalence de diplôme pour étudier en Belgique.](/guides/belgique/equivalence)
 \
 \
 Voici donc les différentes étapes que vous devez suivre pour obtenir votre admission:

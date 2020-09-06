@@ -6,7 +6,7 @@ title: 'Obtenir un visa pour étudier en Belgique'
 excerpt: 'Si vous êtes admis aux études supérieures dans un établissement d’enseignement public ou privé en Belgique, vous pouvez introduire une demande pour immigrer en Belgique en tant qu’étudiant.'
 thumbnail: 'images/belgique-visa.jpg'
 topic: 'visa'
-related: ['belgique/visa']
+related: ['belgique/equivalence','belgique/admission']
 ---
 
 Pour séjourner en qualité d’étudiant étranger en Belgique, vous avez besoin d’un visa national de long séjour (Visa type D).\
