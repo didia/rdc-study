@@ -78,7 +78,7 @@
     "react-intl": "^5.8.0",
     "s3-deploy": "^1.4.0",
     "sass-loader": "^10.0.2",
-    "sass-resources-loader": "^2.0.3",
+    "sass-resources-loader": "^2.1.0",
     "sharethis-reactjs": "^1.6.0"
   },
   "devDependencies": {
