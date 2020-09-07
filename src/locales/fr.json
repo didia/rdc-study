@@ -3,7 +3,7 @@
   "assistance-form.controls.next": "Suivant",
   "assistance-form.controls.previous": "Précedent",
 
-  "assistance-form.steps.about-candidate.description": "Ces informations serviront à l’élaboration de votre contrat de service.",
+  "assistance-form.steps.about-candidate.description": "Dites-nous en un peu plus sur vous. Ces informations serviront à l’élaboration du contrat d’assistance.",
   "assistance-form.steps.about-candidate.labels.email": "Adresse email",
   "assistance-form.steps.about-candidate.labels.first-name": "Prénom",
   "assistance-form.steps.about-candidate.labels.last-name": "Nom",
