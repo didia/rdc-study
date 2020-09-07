@@ -3,7 +3,7 @@ import React from 'react';
 import T from 'prop-types';
 import {FormattedMessage} from 'react-intl';
 
-const Selector = ({className, options, placeholderKey, ...props}) => (
+const Selector = ({className, name, options, placeholderKey, ...props}) => (
   <select className={className} name={name} {...props}>
     {placeholderKey && (
       <FormattedMessage id={placeholderKey}>
