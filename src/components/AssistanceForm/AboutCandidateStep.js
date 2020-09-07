@@ -71,23 +71,21 @@ const aboutCandidateSchema = (intl) =>
     originCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'}))
   });
 
-const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode}) => {
+const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
   const intl = useIntl();
   const [aboutCandidateData, setAboutCandidateData] = useRecoilState(aboutCandidateState);
 
   return (
     <StepForm
-      recapMode={recapMode}
       title={intl.formatMessage({id: 'assistance-form.steps.about-candidate.title'})}
       description={intl.formatMessage({id: 'assistance-form.steps.about-candidate.description'})}
-      onEditStep={onEditStep}
     >
       <Formik
         initialValues={aboutCandidateData}
         validationSchema={aboutCandidateSchema(intl)}
         onSubmit={(values) => {
           setAboutCandidateData(values);
-          onNextStep(Steps.DestinationCountry);
+          onNextStep(Steps.SubmitForm);
           analyticsPushEvent({
             category: 'AssistanceForm',
             action: 'next',
@@ -109,7 +107,6 @@ const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode})
                     <input
                       type="text"
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      disabled={recapMode}
                       placeholder={intl.formatMessage({
                         id: 'assistance-form.steps.about-candidate.placeholders.first-name'
                       })}
@@ -131,7 +128,6 @@ const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode})
                     <input
                       type="text"
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      disabled={recapMode}
                       placeholder={intl.formatMessage({
                         id: 'assistance-form.steps.about-candidate.placeholders.last-name'
                       })}
@@ -153,7 +149,6 @@ const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode})
                     <input
                       type="email"
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      disabled={recapMode}
                       placeholder={intl.formatMessage({id: 'assistance-form.steps.about-candidate.placeholders.email'})}
                       {...field}
                     />
@@ -173,7 +168,6 @@ const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode})
                     <Selector
                       options={SUPPORTED_ORIGIN_COUNTRIES}
                       className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      disabled={recapMode}
                       placeholderKey="shared.country-selector.placeholder"
                       {...field}
                     />
@@ -193,10 +187,8 @@ const AboutCandidateStep = ({onEditStep, onNextStep, onPreviousStep, recapMode})
 };
 
 AboutCandidateStep.propTypes = {
-  onEditStep: T.func,
   onNextStep: T.func,
-  onPreviousStep: T.func,
-  recapMode: T.bool
+  onPreviousStep: T.func
 };
 
 export default AboutCandidateStep;

@@ -13,7 +13,7 @@ const ASSISTANCE_PACKAGE = {
 
 export const currentStepState = atom({
   key: 'currentStep',
-  default: Steps.AboutCandidate
+  default: Steps.DestinationCountry
 });
 
 export const previousStepsState = atom({

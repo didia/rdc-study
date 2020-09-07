@@ -48,7 +48,7 @@ const BelgiumEquivalenceCheckStep = ({onNextStep, onPreviousStep}) => {
           setHasGraduateStudiesDiploma(hasGraduateStudiesDiploma);
           setHasHighSchoolDiplomaEquivalence(hasHighSchoolDiplomaEquivalence);
 
-          onNextStep(Steps.SubmitForm);
+          onNextStep(Steps.AboutCandidate);
           analyticsPushEvent({
             category: 'AssistanceForm',
             action: 'next',

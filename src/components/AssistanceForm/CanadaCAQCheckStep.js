@@ -44,7 +44,7 @@ const CanadaCAQCheckStep = ({onNextStep, onPreviousStep}) => {
           setIsGoingToQuebec(isGoingToQuebec);
           setHasCAQ(hasCAQ);
 
-          onNextStep(Steps.SubmitForm);
+          onNextStep(Steps.AboutCandidate);
 
           analyticsPushEvent({
             category: 'AssistanceForm',

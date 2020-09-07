@@ -41,6 +41,11 @@ select.input {
   }
 }
 
+.centralized-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .title-wrapper {
   justify-content: center;
 }
@@ -49,19 +54,13 @@ select.input {
   color: _palette(bg);
 }
 
-.description {
-  text-align: center;
-}
-
 .fields {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: 1fr;
 
-  & {
-    .fields--2-by-2 {
-      grid-template-columns: 1fr 1fr;
-    }
+  &.fields--2-by-2 {
+    grid-template-columns: 1fr 1fr;
   }
 
 }
@@ -108,6 +107,15 @@ select.input {
   opacity: 1;
   transform: translateX(0);
   transition: opacity 200ms, transform 200ms;
+}
+
+.submit-step p {
+  margin-bottom: 1em;
+}
+
+.assistance-package ul {
+  margin-top: -1em !important;
+  margin-bottom: 1em;
 }
 
 @include breakpoint(small) {

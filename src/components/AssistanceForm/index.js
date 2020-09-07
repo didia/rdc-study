@@ -29,20 +29,18 @@ const MasterForm = ({assistancePackages}) => {
     }
   };
 
-  const onPreviousStep = () => {
-    if (!previousStep) {
-      return;
-    }
+  const onPreviousStep = previousStep
+    ? () => {
+        goToPreviousStep({currentStep, previousStep, setCurrentStep, setPreviousSteps});
+        scrollIntoViewIfNecessary();
 
-    goToPreviousStep({currentStep, previousStep, setCurrentStep, setPreviousSteps});
-    scrollIntoViewIfNecessary();
-
-    analyticsPushEvent({
-      category: 'AssistanceForm',
-      action: 'previous',
-      label: currentStep
-    });
-  };
+        analyticsPushEvent({
+          category: 'AssistanceForm',
+          action: 'previous',
+          label: currentStep
+        });
+      }
+    : null;
 
   const onNextStep = (nextStep) => {
     goToNextStep({currentStep, nextStep, setCurrentStep, setPreviousSteps});

@@ -87,19 +87,21 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
   };
 
   return (
-    <div>
+    <div className={styles['submit-step']}>
       <h2 className={styles.title}>{assistancePackage.title}</h2>
 
       <p>{intl.formatMessage({id: 'assistance-form.steps.submit-form.greetings'}, {name: aboutCandidate.firstName})}</p>
 
-      <HtmlContent content={assistancePackage.content} />
+      <HtmlContent content={assistancePackage.content} className={styles['assistance-package']} />
 
-      <p>
-        {intl.formatMessage(
-          {id: 'assistance-form.steps.submit-form.pricing-paragraph1'},
-          {email: aboutCandidate.email}
-        )}
-      </p>
+      <p
+        dangerouslySetInnerHTML={{
+          __html: intl.formatMessage(
+            {id: 'assistance-form.steps.submit-form.pricing-paragraph1'},
+            {email: aboutCandidate.email}
+          )
+        }}
+      />
       <p>{intl.formatMessage({id: 'assistance-form.steps.submit-form.pricing-paragraph2'})}</p>
 
       <p>{intl.formatMessage({id: 'assistance-form.steps.submit-form.call-to-action'})}</p>

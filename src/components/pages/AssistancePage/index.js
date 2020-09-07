@@ -32,7 +32,7 @@ FeatureList.propTypes = {
 
 const page = {
   description:
-    'Ce qui nous rend différents des autres c’est que nous ne transigeons pas avec nos valeurs de serviabilité, de transparence et d’honnêteté. Nous vous offrons un service d’assistance qui correspond à vos besoins.',
+    'Faites vos démarches en étant accompagné par un mentor qui a déjà eu à faire les mêmes démarches que vous et augmentez ainsi vos chances de réussir votre projet d’études.',
   title: 'Nous vous assistons dans vos démarches',
   path: '/accompagnement'
 };
