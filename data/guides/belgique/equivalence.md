@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 slug: 'belgique/equivalence'
 date: '2020-09-05'
 title: 'Obtenir une équivalence de diplôme pour étudier en Belgique'

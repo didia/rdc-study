@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 slug: 'canada/caq'
 date: '2020-09-04'
 title: "Obtenir un certificat d’acceptation du Québec (CAQ)"
