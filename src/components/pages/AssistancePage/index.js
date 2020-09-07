@@ -74,9 +74,7 @@ const AssistancePage = ({assistancePackages}) => {
   return (
     <RecoilRoot>
       <GenericPage page={page} bannerClassName={styles.banner}>
-        <Card className={styles['main-card']}>
-          <AssistanceForm assistancePackages={assistancePackages} />
-        </Card>
+        <AssistanceForm assistancePackages={assistancePackages} />
 
         <section className={styles['offer-block']}>
           <FormattedMessage id="pages.assistance.personal.title" tagName="h2" />

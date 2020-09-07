@@ -25,8 +25,9 @@ import Steps from './steps';
 // Utils
 import getCurrentUrl from '../../utils/get-current-url';
 import analyticsPushEvent from '../../utils/push-analytics-event';
+import StepActions from './StepActions';
 
-const SubmitFormStep = ({onNextStep, assistancePackages}) => {
+const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
   const intl = useIntl();
   const [isSubmitting, setSubmitting] = useState(false);
   const [showError, setShowError] = useState(false);
@@ -68,7 +69,7 @@ const SubmitFormStep = ({onNextStep, assistancePackages}) => {
       analyticsPushEvent({
         category: 'AssistanceForm',
         action: 'SubmitSuccess',
-        label: assistancePackageSlug,
+        label: assistancePackageSlug
       });
     } catch (error) {
       setShowError(true);
@@ -115,11 +116,13 @@ const SubmitFormStep = ({onNextStep, assistancePackages}) => {
         />
       )}
 
-      <div className={styles['centralized-button-wrapper']}>
-        <button className="special" onClick={onSubmit} disabled={isSubmitting}>
-          {intl.formatMessage({id: 'assistance-form.steps.submit-form.button-label'})}
-        </button>
-      </div>
+      <StepActions
+        disabled={isSubmitting}
+        nextButtonLabelKey="assistance-form.steps.submit-form.next-button-label"
+        previousButtonLabelKey="assistance-form.steps.submit-form.restart-button-label"
+        onPrevious={onRestart}
+        onNext={onSubmit}
+      />
     </div>
   );
 };
@@ -132,7 +135,8 @@ SubmitFormStep.propTypes = {
       title: T.string.isRequired
     })
   ),
-  onNextStep: T.func
+  onNextStep: T.func,
+  onRestart: T.func
 };
 
 export default SubmitFormStep;

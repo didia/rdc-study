@@ -32,7 +32,8 @@
 
   "assistance-form.steps.submit-form.title": "Soumettre votre demande",
   "assistance-form.steps.submit-form.description": "Voici le résumé de votre demande d’assistance. Assurez-vous qu’elle ne contienne aucune erreur avant de soumettre.",
-  "assistance-form.steps.submit-form.button-label": "Oui, je veux un accompagnement",
+  "assistance-form.steps.submit-form.next-button-label": "Soumettre",
+  "assistance-form.steps.submit-form.restart-button-label": "Recommencer",
   "assistance-form.steps.submit-form.pricing-paragraph1": "Les frais d’accompagnement sont de 200 USD, payables en deux tranches de 100 USD. La première tranche tenant lieu d’acompte devra être payée avant le début de l’accompagnement. Les modalités de paiement vous seront transmises par courriel à l’adresse {email}.",
   "assistance-form.steps.submit-form.pricing-paragraph2": "Une fois que vous aurez effectué le paiment de l’acompte, nous vous enverrons un contrat de service et un mentor prendra contact avec vous pour débuter l’accompagnement.",
   "assistance-form.steps.submit-form.call-to-action": "Voulez-vous soumettre cette demande d’assistance ?",

@@ -1,3 +1,16 @@
+.card-wrapper {
+  padding-top: _size(header-height, large);
+  margin-top: calc(-#{_size(header-height, large)} - 180px);
+}
+
+.card {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  justify-content: center;
+  padding: 25px;
+}
+
 :global(.field) label.label {
   margin-top: 0;
   color: _palette(bg);
@@ -70,11 +83,6 @@ select.input {
   }
 }
 
-.centralized-button-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .title-wrapper {
   display: flex;
   align-items: center;
@@ -91,32 +99,6 @@ select.input {
   color: _palette(accent);
 }
 
-.recap-mode {
-  border-bottom: 2px solid #d3d3d3;
-  margin-bottom: 2em;
-
-  &:last-child {
-    border-bottom: 0;
-  }
-
-  .edit-button {
-    display: block;
-  }
-
-  .actions,
-  .description {
-    display: none;
-  }
-
-  .title-wrapper {
-    justify-content: flex-start;
-  }
-
-  .title {
-    text-align: left;
-  }
-}
-
 :global(.fade-enter) {
   opacity: 0;
   transform: scale(0.9);
@@ -128,6 +110,13 @@ select.input {
   transition: opacity 200ms, transform 200ms;
 }
 
+@include breakpoint(small) {
+  .card-wrapper {
+    padding-top: _size(header-height, small);
+    margin-top: calc(-#{_size(header-height, small)} - 180px);
+  }
+}
+
 @include breakpoint(xsmall) {
   .fields {
     display: block;
@@ -135,5 +124,9 @@ select.input {
 
   form .field {
     margin: 0 0 2em;
+  }
+
+  ul.actions li.actions__item {
+    padding: 0;
   }
 }

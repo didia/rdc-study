@@ -7,22 +7,22 @@ import T from 'prop-types';
 // Styles
 import styles from './styles.module.scss';
 
-const StepActions = ({disabled, onPrevious}) => {
+const StepActions = ({disabled, nextButtonLabelKey, previousButtonLabelKey, onPrevious, onNext}) => {
   const intl = useIntl();
 
   return (
     <ul className={classnames('actions', styles.actions)}>
       {onPrevious && (
-        <li>
-          <button type="button" className="special" disabled={disabled} onClick={onPrevious}>
-            {intl.formatMessage({id: 'assistance-form.controls.previous'})}
+        <li className={classnames(styles.actions__item)}>
+          <button type="button" className="special-text" disabled={disabled} onClick={onPrevious}>
+            {intl.formatMessage({id: previousButtonLabelKey || 'assistance-form.controls.previous'})}
           </button>
         </li>
       )}
 
-      <li>
-        <button type="submit" className="special" disabled={disabled}>
-          {intl.formatMessage({id: 'assistance-form.controls.next'})}
+      <li className={styles.actions__item}>
+        <button type="submit" className="special" disabled={disabled} onClick={onNext}>
+          {intl.formatMessage({id: nextButtonLabelKey || 'assistance-form.controls.next'})}
         </button>
       </li>
     </ul>
@@ -31,6 +31,9 @@ const StepActions = ({disabled, onPrevious}) => {
 
 StepActions.propTypes = {
   disabled: T.bool,
+  nextButtonLabelKey: T.string,
+  previousButtonLabelKey: T.string,
+  onNext: T.func,
   onPrevious: T.func
 };
 

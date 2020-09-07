@@ -26,7 +26,7 @@ import {destinationCountryState, hasAdmissionState} from './state';
 // Constants
 import DestinationCountries from './destination-countries';
 import Steps from './steps';
-import analyticsPushEvent from "../../utils/push-analytics-event";
+import analyticsPushEvent from '../../utils/push-analytics-event';
 
 const SUPPORTED_DESTINATION_COUNTRIES = [
   DestinationCountries.BELGIUM,
@@ -66,7 +66,7 @@ const getNextStep = ({destinationCountry, hasAdmission}) => {
   return Steps.SubmitForm;
 };
 
-const DestinationCountryStep = ({onEditStep, onNextStep, onPreviousStep, recapMode}) => {
+const DestinationCountryStep = ({onNextStep, onPreviousStep, recapMode}) => {
   const intl = useIntl();
   const [destinationCountry, setDestinationCountry] = useRecoilState(destinationCountryState);
   const [hasAdmission, setHasAdmission] = useRecoilState(hasAdmissionState);
@@ -77,7 +77,6 @@ const DestinationCountryStep = ({onEditStep, onNextStep, onPreviousStep, recapMo
     <StepForm
       recapMode={recapMode}
       title={intl.formatMessage({id: 'assistance-form.steps.destination-country.title'})}
-      onEditStep={onEditStep}
     >
       <Formik
         initialValues={{destinationCountry, hasAdmission: hasAdmission ? 'true' : 'false'}}
@@ -138,7 +137,6 @@ const DestinationCountryStep = ({onEditStep, onNextStep, onPreviousStep, recapMo
 };
 
 DestinationCountryStep.propTypes = {
-  onEditStep: T.func,
   onNextStep: T.func,
   onPreviousStep: T.func,
   recapMode: T.bool
