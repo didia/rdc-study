@@ -4,13 +4,16 @@ import T from 'prop-types';
 import classnames from 'classnames';
 import {Link} from 'gatsby';
 import {FormattedMessage} from 'react-intl';
+import {RecoilRoot} from 'recoil';
 
 // Styles
 import styles from './styles.module.scss';
 
+// Components
 import GenericPage from '../GenericPage';
 import ContactUsLink from '../../ContactUsLink';
 import Card from '../../Card';
+import AssistanceForm from '../../AssistanceForm';
 
 const FeatureList = ({featureLabelKeys, className}) => (
   <ul className={classnames(styles['feature-list'], className)}>
@@ -29,17 +32,10 @@ FeatureList.propTypes = {
 
 const page = {
   description:
-    'Ce qui nous rend différents des autres c’est que nous ne transigeons pas avec nos valeurs de serviabilité, de transparence et d’honnêteté. Nous vous offrons un service d’assistance qui correspond à vos besoins.',
+    'Faites vos démarches en étant accompagné par un mentor qui a déjà eu à faire les mêmes démarches que vous et augmentez ainsi vos chances de réussir votre projet d’études.',
   title: 'Nous vous assistons dans vos démarches',
   path: '/accompagnement'
 };
-
-const freeTierFeatureLabelKeys = [
-  'pages.assistance.free.features.admission-guide',
-  'pages.assistance.free.features.visa-guide',
-  'pages.assistance.free.features.countries-guide',
-  'pages.assistance.free.features.protection-guide'
-];
 
 const packages = [
   {
@@ -74,82 +70,70 @@ const packages = [
   }
 ];
 
-const AssistancePage = () => {
+const AssistancePage = ({assistancePackages}) => {
   return (
-    <GenericPage page={page} bannerClassName={styles.banner}>
-      <Card className={styles['main-card']}>
-        <header className={styles['column--left']}>
-          <FormattedMessage id="pages.assistance.free.title" tagName="p">
-            {(text) => <p className={styles.pricing}>{text}</p>}
-          </FormattedMessage>
+    <RecoilRoot>
+      <GenericPage page={page} bannerClassName={styles.banner}>
+        <AssistanceForm assistancePackages={assistancePackages} />
 
-          <FormattedMessage id="pages.assistance.free.description" tagName="p" />
+        <section className={styles['offer-block']}>
+          <FormattedMessage id="pages.assistance.personal.title" tagName="h2" />
 
-          <FormattedMessage id="pages.assistance.free.guide-link-text">
+          <FormattedMessage id="pages.assistance.personal.description" tagName="p" />
+
+          <FormattedMessage
+            id="pages.assistance.personal.pricing"
+            tagName="p"
+            values={{
+              pricePerPackage: <b>200$</b>,
+              priceForAllPackages: <b>500$</b>
+            }}
+          />
+
+          <ul className={styles['offer-list']}>
+            {packages.map((ratePackage, i) => (
+              <li key={`feature-${i}`} className={styles['offer-list__item']}>
+                <Card className={styles['offer-card']}>
+                  <FormattedMessage id={ratePackage.titleKey}>
+                    {(text) => <h3 className={styles['offer-title']}>{text}</h3>}
+                  </FormattedMessage>
+
+                  <FeatureList featureLabelKeys={ratePackage.featureLabelKeys} />
+                </Card>
+              </li>
+            ))}
+          </ul>
+
+          <FormattedMessage id="pages.assistance.personal.about-us-link">
             {(text) => (
-              <Link to="/#guides" className={classnames(styles.button, 'button special')}>
+              <Link to="/a-propos" className={classnames(styles.button, styles['button--about-us'], 'button special')}>
                 {text}
               </Link>
             )}
           </FormattedMessage>
-        </header>
 
-        <FeatureList className={styles['column--right']} featureLabelKeys={freeTierFeatureLabelKeys} />
-      </Card>
+          <p style={{marginTop: '20px'}}>
+            <FormattedMessage id="pages.assistance.visa.warning" />
+            <FormattedMessage id="pages.assistance.visa.warning-learn-more">
+              {(text) => <Link to="/assistance-visa">{text}</Link>}
+            </FormattedMessage>
+          </p>
+        </section>
 
-      <section className={styles['offer-block']}>
-        <FormattedMessage id="pages.assistance.personal.title" tagName="h2" />
+        <section className={styles['offer-block']}>
+          <FormattedMessage id="pages.assistance.questions.title" tagName="h2" />
 
-        <FormattedMessage id="pages.assistance.personal.description" tagName="p" />
+          <FormattedMessage id="pages.assistance.questions.description" tagName="p" />
 
-        <FormattedMessage
-          id="pages.assistance.personal.pricing"
-          tagName="p"
-          values={{
-            pricePerPackage: <b>200$</b>,
-            priceForAllPackages: <b>500$</b>
-          }}
-        />
-
-        <ul className={styles['offer-list']}>
-          {packages.map((ratePackage, i) => (
-            <li key={`feature-${i}`} className={styles['offer-list__item']}>
-              <Card className={styles['offer-card']}>
-                <FormattedMessage id={ratePackage.titleKey}>
-                  {(text) => <h3 className={styles['offer-title']}>{text}</h3>}
-                </FormattedMessage>
-
-                <FeatureList featureLabelKeys={ratePackage.featureLabelKeys} />
-              </Card>
-            </li>
-          ))}
-        </ul>
-
-        <FormattedMessage id="pages.assistance.personal.about-us-link">
-          {(text) => (
-            <Link to="/a-propos" className={classnames(styles.button, styles['button--about-us'], 'button special')}>
-              {text}
-            </Link>
-          )}
-        </FormattedMessage>
-
-        <p style={{marginTop: '20px'}}>
-          <FormattedMessage id="pages.assistance.visa.warning" />
-          <FormattedMessage id="pages.assistance.visa.warning-learn-more">
-            {(text) => <Link to="/assistance-visa">{text}</Link>}
-          </FormattedMessage>
-        </p>
-      </section>
-
-      <section className={styles['offer-block']}>
-        <FormattedMessage id="pages.assistance.questions.title" tagName="h2" />
-
-        <FormattedMessage id="pages.assistance.questions.description" tagName="p" />
-
-        <ContactUsLink className={classnames(styles.button, 'button special')} />
-      </section>
-    </GenericPage>
+          <ContactUsLink className={classnames(styles.button, 'button special')} />
+        </section>
+      </GenericPage>
+    </RecoilRoot>
   );
+};
+
+AssistancePage.propTypes = {
+  assistancePackages: T.object.isRequired
 };
 
 export default AssistancePage;

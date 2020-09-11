@@ -7,7 +7,7 @@ import ScholarshipsPage from '../components/pages/ScholarshipsPage';
 
 export default class Scholarships extends Component {
   state = {
-    scholarships: []
+    scholarships: [],
   };
 
   componentDidMount() {
@@ -22,7 +22,7 @@ export default class Scholarships extends Component {
         path: node.fields.path,
         targetCountries: node.frontmatter.targetCountries,
         thumbnail: node.frontmatter.thumbnail.childImageSharp,
-        title: node.frontmatter.title
+        title: node.frontmatter.title,
       }));
 
     this.setState({scholarships});
@@ -34,7 +34,7 @@ export default class Scholarships extends Component {
       image: this.props.data.metaImage.fixed,
       title: "Trouver une bourse d'études",
       path: '/bourses',
-      socialShareEnabled: true
+      socialShareEnabled: true,
     };
 
     return <ScholarshipsPage activeOnly={true} page={page} scholarships={this.state.scholarships} />;
@@ -44,8 +44,8 @@ export default class Scholarships extends Component {
 Scholarships.propTypes = {
   data: T.shape({
     metaImage: T.object,
-    scholarships: T.object.isRequired
-  })
+    scholarships: T.object.isRequired,
+  }),
 };
 
 export const scholarshipFragment = graphql`

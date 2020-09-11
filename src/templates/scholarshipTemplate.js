@@ -11,18 +11,18 @@ const scholarshipFromMarkdownRemark = ({fields, html, frontmatter}) => ({
   ...frontmatter,
   ...fields,
   metaImage: frontmatter.thumbnail ? frontmatter.thumbnail.childImageSharp.metaImage : null,
-  thumbnail: frontmatter.thumbnail ? {fluid: frontmatter.thumbnail.childImageSharp.contentImage} : null
+  thumbnail: frontmatter.thumbnail ? {fluid: frontmatter.thumbnail.childImageSharp.contentImage} : null,
 });
 
 const scholarshipPreviewFromMarkdownRemark = ({fields, frontmatter}) => ({
   ...frontmatter,
   ...fields,
-  thumbnail: frontmatter.thumbnail.childImageSharp
+  thumbnail: frontmatter.thumbnail.childImageSharp,
 });
 
 export default class Template extends Component {
   state = {
-    otherScholarships: []
+    otherScholarships: [],
   };
 
   componentDidMount() {
@@ -33,7 +33,7 @@ export default class Template extends Component {
       .map((edge) => scholarshipPreviewFromMarkdownRemark(edge.node));
 
     this.setState({
-      otherScholarships
+      otherScholarships,
     });
   }
 
@@ -47,8 +47,8 @@ export default class Template extends Component {
 Template.propTypes = {
   data: T.shape({
     allMarkdownRemark: T.object.isRequired,
-    markdownRemark: T.object.isRequired
-  })
+    markdownRemark: T.object.isRequired,
+  }),
 };
 
 export const pageQuery = graphql`

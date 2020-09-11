@@ -4,10 +4,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 3.5em;
+  height: _size(header-height, large);
   padding: 0 1.25em;
   background-color: transparentize(desaturate(lighten(_palette(bg), 3), 1.5), 0.05);
-  line-height: 3.5em;
+  line-height: _size(header-height, large);
   transition: background-color #{_duration(transition)} ease-in-out;
 }
 
@@ -71,7 +71,7 @@
 
 @include breakpoint(small) {
   .header {
-    height: 2.75em;
-    line-height: 2.75em;
+    height: _size(header-height, small);
+    line-height: _size(header-height, small);
   }
 }

@@ -58,6 +58,20 @@ button,
     }
   }
 
+  &.special-text {
+    padding: 0;
+    color: _palette(accent);
+    outline: none;
+
+    &:hover {
+      color: desaturate(lighten(_palette(accent), 10), 1.5);
+    }
+
+    &:active {
+      color: saturate(darken(_palette(accent), 10), 1.5);
+    }
+  }
+
   &.fit {
     display: block;
     width: 100%;

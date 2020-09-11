@@ -32,9 +32,9 @@ Guide.propTypes = {
     path: T.string.isRequired,
     title: T.string.isRequired,
     thumbnail: T.shape({
-      fluid: T.object
-    }).isRequired
-  })
+      fluid: T.object,
+    }).isRequired,
+  }),
 };
 
 const GuideList = ({className, descriptionKey, guides, id, titleKey}) => {
@@ -58,7 +58,7 @@ GuideList.propTypes = {
   descriptionKey: T.string,
   guides: T.arrayOf(T.object),
   id: T.string,
-  titleKey: T.string
+  titleKey: T.string,
 };
 
 export default GuideList;

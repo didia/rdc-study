@@ -21,7 +21,7 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
     image: article.metaImage,
     keywords: article.tags,
     path: article.path,
-    title: article.title
+    title: article.title,
   };
 
   return (
@@ -76,10 +76,10 @@ ArticlePage.propTypes = {
     thumbnail: T.object.isRequired,
     thumbnailCredits: T.string,
     timeToRead: T.number.isRequired,
-    title: T.string.isRequired
+    title: T.string.isRequired,
   }).isRequired,
   hasMoreArticles: T.bool,
-  otherArticles: T.arrayOf(T.object)
+  otherArticles: T.arrayOf(T.object),
 };
 
 export default ArticlePage;

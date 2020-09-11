@@ -104,6 +104,15 @@ collections:
             value: ch
           - label: Turquie
             value: tr
+  - label: Forfaits d'accompagnement
+    name: assistancePackages
+    folder: data/assistance-packages
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - {label: "Identifiant", name: "{{slug}}", widget: "string"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Description", name: "body", widget: "markdown"}
   - label: Pages
     name: pages
     files:

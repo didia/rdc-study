@@ -1,6 +1,45 @@
 {
-  "header.menu-toggle-label": "Menu",
-  "header.title": "RDC ETUDES",
+  "assistance-form.controls.edit": "Modifier",
+  "assistance-form.controls.next": "Suivant",
+  "assistance-form.controls.previous": "Précedent",
+
+  "assistance-form.steps.about-candidate.description": "Dites-nous en un peu plus sur vous. Ces informations serviront à l’élaboration du contrat d’assistance.",
+  "assistance-form.steps.about-candidate.labels.email": "Adresse email",
+  "assistance-form.steps.about-candidate.labels.first-name": "Prénom",
+  "assistance-form.steps.about-candidate.labels.last-name": "Nom",
+  "assistance-form.steps.about-candidate.labels.origin-country": "Pays de résidence",
+  "assistance-form.steps.about-candidate.placeholders.email": "Entrez votre adresse email…",
+  "assistance-form.steps.about-candidate.placeholders.first-name": "Entrez votre prénom…",
+  "assistance-form.steps.about-candidate.placeholders.last-name": "Entrez votre nom…",
+  "assistance-form.steps.about-candidate.placeholders.origin-country": "Choisissez votre pays de résidence",
+  "assistance-form.steps.about-candidate.title": "À propos de vous",
+
+  "assistance-form.steps.belgium-equivalence-check.has-equivalence": "Avez-vous déjà obtenu votre équivalence de diplôme d’études sécondaires auprès du service des équivalences de la fédération Wallonie-Bruxelles ?",
+  "assistance-form.steps.belgium-equivalence-check.title": "Êtes-vous déjà en possession d’un diplôme d’études supérieures ou universitaires ?",
+
+  "assistance-form.steps.canada-caq-check.has-caq": "Avez-vous déjà obtenu votre Certificat d'Acceptation du Québec (CAQ) ?",
+  "assistance-form.steps.canada-caq-check.title": "Est-ce que l’université dans laquelle vous êtes admis se situe dans la province du Québec ?",
+
+  "assistance-form.steps.destination-country.labels.has-admission": "Avez-vous déjà obtenu votre admission ?",
+  "assistance-form.steps.destination-country.labels.has-admission-negative-option": "Non, je n’ai pas d’admission",
+  "assistance-form.steps.destination-country.labels.has-admission-positive-option": "Oui, j’ai déjà mon admission",
+  "assistance-form.steps.destination-country.title": "Dans quel pays voulez-vous étudier ?",
+
+  "assistance-form.steps.form-submitted.description": "Votre demande d’assistance a été reçue par notre équipe. Nous vous répondrons dans un délai de deux jours ouvrables. Nous vous remercions pour la confiance que vous nous accordez.",
+  "assistance-form.steps.form-submitted.guide-call-to-action": "Si ce n’est pas déjà fait, nous vous recommandons de lire attentivement le guide gratuit concernant vos futures démarches pour vous faire une idée de l’assistance que vous recevrez.",
+  "assistance-form.steps.form-submitted.read-guide-button": "Lire le guide",
+  "assistance-form.steps.form-submitted.title": "🎉 Demande d’assistance reçue 🎉",
+
+  "assistance-form.steps.submit-form.title": "Soumettre votre demande",
+  "assistance-form.steps.submit-form.description": "Voici le résumé de votre demande d’assistance. Assurez-vous qu’elle ne contienne aucune erreur avant de soumettre.",
+  "assistance-form.steps.submit-form.next-button-label": "Soumettre",
+  "assistance-form.steps.submit-form.restart-button-label": "Recommencer",
+  "assistance-form.steps.submit-form.pricing-paragraph1": "Les frais d’accompagnement s’élèvent à '<strong>'200 USD'</strong>', payables en deux tranches de 100 USD. La première tranche, tenant lieu d’acompte, devra être payée '<strong>'avant'</strong>' le début de l’accompagnement. Les modalités de paiement vous seront transmises à votre adresse courriel '<strong>'{email}'</strong>'.",
+  "assistance-form.steps.submit-form.pricing-paragraph2": "Une fois que vous aurez effectué le paiment de l’acompte, nous vous enverrons un contrat de service puis un de nos mentors prendra contact avec vous pour débuter l’accompagnement.",
+  "assistance-form.steps.submit-form.call-to-action": "Cliquez maintenant sur le button SOUMETTRE ci-bas pour finaliser votre demande d’assistance",
+  "assistance-form.steps.submit-form.greetings": "Merci {name} d’avoir utilisé notre formulaire de demande d’assistance.",
+  "assistance-form.steps.submit-form.assistance-request-message": "Je suis {name}, originaire de {originCountry}. Je veux une {assistancePackage}.",
+  "assistance-form.steps.submit-form.error-message": "Une erreur inconnue est survenue lors de la soumission de votre formulaire. Nous vous suggérons d’envoyer votre demande par email à '<a' href=\"mailto:assistance@rdcetudes.com?html=true&subject=Demande d’assistance&body={message}\"'>'assistance@rdcetudes.com'</a>' avec comme message: '<br/>' «{message}»",
 
   "footer.copyright": "© RDC Etudes. Tous droits réservés",
 
@@ -18,6 +57,9 @@
   "footer.title": "Contactez-nous",
 
   "guide-list.guide.learn-more-text": "En savoir plus",
+
+  "header.menu-toggle-label": "Menu",
+  "header.title": "RDC ETUDES",
 
   "menu.about-us-link-label": "Qui sommes-nous?",
   "menu.assistance-link-label": "Besoin d’aide?",
@@ -135,34 +177,55 @@
 
   "shared.countries.africa": "Afrique",
   "shared.countries.be": "Belgique",
+  "shared.countries.bf": "Burkina Faso",
+  "shared.countries.bj": "Bénin",
   "shared.countries.br": "Brésil",
   "shared.countries.ca": "Canada",
   "shared.countries.cd": "République Démocratique du Congo",
+  "shared.countries.cg": "République du Congo",
   "shared.countries.ch": "Suisse",
+  "shared.countries.ci": "Côte d'Ivoire",
   "shared.countries.cn": "Chine",
   "shared.countries.cytr": "Chypre du Nord",
   "shared.countries.de": "Allemagne",
   "shared.countries.fr": "France",
+  "shared.countries.ga": "Gabon",
   "shared.countries.gb": "Royaume-Uni",
   "shared.countries.gh": "Ghana",
+  "shared.countries.gn": "Guinée",
+  "shared.countries.ht": "Haïti",
+  "shared.countries.in": "Inde",
   "shared.countries.jp": "Japon",
+  "shared.countries.ml": "Mali",
+  "shared.countries.ne": "Niger",
   "shared.countries.ro": "Roumanie",
+  "shared.countries.ru": "Russie",
   "shared.countries.rw": "Rwanda",
   "shared.countries.sa": "Afrique du Sud",
+  "shared.countries.sn": "Sénégal",
+  "shared.countries.tg": "Togo",
   "shared.countries.tr": "Turquie",
   "shared.countries.us": "États-Unis",
+
+  "shared.country-selector.placeholder": "Choisissez un pays…",
+
+  "shared.forms.validation.email": "Cet email n’est pas valide",
+  "shared.forms.validation.required": "Ce champ est requis",
 
   "shared.newsletter.alert.error": "Une erreur inconnue est survenue lors de l’abonnement 😞",
   "shared.newsletter.alert.success": "Yay 🎉🎉 Vous avez été abonné avec succès!",
   "shared.newsletter.button-label": "M’abonner",
   "shared.newsletter.input-placeholder": "Entrez votre adresse email",
-  "shared.newsletter.title": "Abonnez-vous à notre infolettre",
-  "shared.newsletter.subtitle": "Toutes les nouveautés sur les bourses et les études à l'étranger directement dans votre boîte email.",
+  "shared.newsletter.title": "Abonnez-vous à notre infolettre Réussir",
+  "shared.newsletter.subtitle": "Réussir vous apporte toutes les nouveautés sur les bourses et l’éducation de qualité directement dans votre boîte email.",
 
   "shared.social-share.email.message": "{excerpt} \n\n Pour en savoir plus, vas sur {link}",
 
-  "shared.see-more-text": "Voir plus",
+  "shared.no": "Non",
+  "shared.other-text": "Autre",
   "shared.read-time": "{time} {time, plural, one {minute de lecture}\n other {minutes de lecture}}",
+  "shared.see-more-text": "Voir plus",
   "shared.share-on-facebook": "Partagez sur facebook",
-  "shared.share-on-whatsapp": "Partagez sur whatsapp"
+  "shared.share-on-whatsapp": "Partagez sur whatsapp",
+  "shared.yes": "Oui"
 }
