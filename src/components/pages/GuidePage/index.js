@@ -22,13 +22,18 @@ const Assistance = () => (
 
       <FormattedMessage id="pages.guides-show.assistance.description-2" tagName="div" />
 
-      <FormattedMessage id="pages.guides-show.assistance.link-text">
-        {(text) => (
-          <Link to="/accompagnement" className={styles['guide-learn-more-link']}>
-            {text}
-          </Link>
-        )}
-      </FormattedMessage>
+      <div className={styles['call-to-action-wrapper']}>
+        <FormattedMessage id="pages.index.banner.call-to-action-button-text">
+          {(text) => (
+            <Link
+              to="/accompagnement?utm_source=rdcetudes&utm_content=guide-page"
+              className="button special call-to-action"
+            >
+              {text}
+            </Link>
+          )}
+        </FormattedMessage>
+      </div>
     </div>
   </div>
 );

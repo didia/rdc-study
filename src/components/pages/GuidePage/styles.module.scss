@@ -31,3 +31,9 @@
     color: saturate(darken(_palette(accent), 3), 1.5) !important;
   }
 }
+
+.call-to-action-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0;
+}
