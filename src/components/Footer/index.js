@@ -174,6 +174,7 @@ class Footer extends Component {
       email,
       message,
       name,
+      form: 'contact',
       link: getCurrentUrl(),
     };
 

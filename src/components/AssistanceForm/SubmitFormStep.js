@@ -58,6 +58,7 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
     const payload = {
       message,
       name,
+      form: 'assistance',
       email: aboutCandidate.email,
       link: getCurrentUrl()
     };
