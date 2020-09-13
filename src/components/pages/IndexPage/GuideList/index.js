@@ -16,7 +16,12 @@ const GuideList = ({className, guides, id}) => (
 
     <div className={styles.grid}>
       {guides.map((guide) => (
-        <Link key={guide.path} to={guide.path} className={styles['grid-item']} aria-label={guide.name}>
+        <Link
+          key={`${guide.path}?utm_source=rdcetudes&utm_content=home-page`}
+          to={guide.path}
+          className={styles['grid-item']}
+          aria-label={guide.name}
+        >
           <article className={styles['grid-item-wrapper']}>
             <div className="image">
               <Img className={styles.image} fluid={guide.thumbnail.fluid} alt={guide.title} />
