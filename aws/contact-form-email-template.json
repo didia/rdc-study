@@ -1,7 +1,7 @@
 {
   "Template": {
     "TemplateName": "RDC-Etudes-Contact-Form",
-    "SubjectPart": "Nouveau message RDC-Etudes de {{name}}!",
+    "SubjectPart": "{{title}}",
     "HtmlPart": "<dl><dt>Lien:</dt><dd>{{link}}</dd><dt>Nom:</dt><dd>{{name}}</dd><dt>Email:</dt><dd>{{email}}</dd><dt>Message:</dt><dd>{{message}}</dd></dl>",
     "TextPart": "Lien: {{link}},\r\nNom: {{name}},\r\nEmail: {{email}},\r\nMessage: {{message}}."
   }
