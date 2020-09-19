@@ -35,11 +35,15 @@ const SUPPORTED_ORIGIN_COUNTRIES = [
     labelKey: 'shared.countries.cd',
     value: 'congo-kinshasa'
   },
-  {labelKey: 'shared.countries.cg'},
+  {
+    labelKey: 'shared.countries.cg',
+    value: 'congo-brazza'
+  },
   {labelKey: 'shared.countries.ch'},
   {labelKey: 'shared.countries.ci'},
   {labelKey: 'shared.countries.cn'},
   {labelKey: 'shared.countries.de'},
+  {labelKey: 'shared.countries.dz'},
   {labelKey: 'shared.countries.fr'},
   {labelKey: 'shared.countries.ga'},
   {labelKey: 'shared.countries.gb'},
@@ -48,6 +52,7 @@ const SUPPORTED_ORIGIN_COUNTRIES = [
   {labelKey: 'shared.countries.ht'},
   {labelKey: 'shared.countries.in'},
   {labelKey: 'shared.countries.jp'},
+  {labelKey: 'shared.countries.ma'},
   {labelKey: 'shared.countries.ml'},
   {labelKey: 'shared.countries.ne'},
   {labelKey: 'shared.countries.ro'},
@@ -56,6 +61,7 @@ const SUPPORTED_ORIGIN_COUNTRIES = [
   {labelKey: 'shared.countries.sa'},
   {labelKey: 'shared.countries.sn'},
   {labelKey: 'shared.countries.tg'},
+  {labelKey: 'shared.countries.tn'},
   {labelKey: 'shared.countries.tr'},
   {labelKey: 'shared.countries.us'},
   {labelKey: 'shared.other-text'}
