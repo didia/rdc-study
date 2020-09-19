@@ -48,7 +48,7 @@ exports.handler = (event, _, callback) => {
     Source: getSourceEmail(isAssistance),
     Template: process.env.TEMPLATE_NAME /* required */,
     TemplateData: `{ "email":"${body.email}", "link":"${body.link}", "message":"${body.message}", "name":"${body.name}", "title": "${title}" }`,
-    ReplyToAddresses: [body.email]
+    ReplyToAddresses: [`"${body.name}" <${body.email}>`]
   };
 
   const sendPromise = new AWS.SES().sendTemplatedEmail(params).promise();

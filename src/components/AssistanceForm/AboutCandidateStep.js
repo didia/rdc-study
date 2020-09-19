@@ -159,6 +159,23 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
               </div>
 
               <div className={classnames('field', styles.field)}>
+                <label htmlFor="phone" className={styles.label}>
+                  {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.phone'})}
+                </label>
+
+                <Field name="phone">
+                  {({field}) => (
+                    <input
+                      type="tel"
+                      className={classnames(styles.input)}
+                      placeholder={intl.formatMessage({id: 'assistance-form.steps.about-candidate.placeholders.phone'})}
+                      {...field}
+                    />
+                  )}
+                </Field>
+              </div>
+
+              <div className={classnames('field', styles.field)}>
                 <label htmlFor="originCountry" className={styles.label}>
                   {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.origin-country'})}
                 </label>

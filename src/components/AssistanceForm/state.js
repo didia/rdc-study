@@ -27,6 +27,7 @@ export const aboutCandidateState = atom({
     firstName: '',
     lastName: '',
     email: '',
+    phone: '',
     originCountry: ''
   }
 });

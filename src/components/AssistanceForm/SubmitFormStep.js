@@ -38,9 +38,10 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
   const assistancePackage = assistancePackages[assistancePackageSlug];
 
   const name = `${aboutCandidate.firstName} ${aboutCandidate.lastName}`;
+  const messageTranslationKey = aboutCandidate.phone ? 'assistance-form.steps.submit-form.assistance-request-message-with-phone' : 'assistance-form.steps.submit-form.assistance-request-message';
   const message = intl.formatMessage(
-    {id: 'assistance-form.steps.submit-form.assistance-request-message'},
-    {name, assistancePackage: assistancePackage.title, originCountry: aboutCandidate.originCountry}
+    {id: messageTranslationKey},
+    {name, assistancePackage: assistancePackage.title, originCountry: aboutCandidate.originCountry, phone: aboutCandidate.phone}
   );
 
   useEffect(() => {

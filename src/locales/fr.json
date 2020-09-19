@@ -8,10 +8,12 @@
   "assistance-form.steps.about-candidate.labels.first-name": "Prénom",
   "assistance-form.steps.about-candidate.labels.last-name": "Nom",
   "assistance-form.steps.about-candidate.labels.origin-country": "Pays de résidence",
+  "assistance-form.steps.about-candidate.labels.phone": "Numéro WhatsApp (facultatif)",
   "assistance-form.steps.about-candidate.placeholders.email": "Entrez votre adresse email…",
   "assistance-form.steps.about-candidate.placeholders.first-name": "Entrez votre prénom…",
   "assistance-form.steps.about-candidate.placeholders.last-name": "Entrez votre nom…",
   "assistance-form.steps.about-candidate.placeholders.origin-country": "Choisissez votre pays de résidence",
+  "assistance-form.steps.about-candidate.placeholders.phone": "Entrez votre numéro WhatsApp…",
   "assistance-form.steps.about-candidate.title": "À propos de vous",
 
   "assistance-form.steps.belgium-equivalence-check.has-equivalence": "Avez-vous déjà obtenu votre équivalence de diplôme d’études sécondaires auprès du service des équivalences de la fédération Wallonie-Bruxelles ?",
@@ -39,6 +41,7 @@
   "assistance-form.steps.submit-form.call-to-action": "Cliquez maintenant sur le button SOUMETTRE ci-bas pour finaliser votre demande d’assistance",
   "assistance-form.steps.submit-form.greetings": "Merci {name} d’avoir utilisé notre formulaire de demande d’assistance.",
   "assistance-form.steps.submit-form.assistance-request-message": "Je suis {name}, originaire de {originCountry}. Je veux une {assistancePackage}.",
+  "assistance-form.steps.submit-form.assistance-request-message-with-phone": "Je suis {name}, originaire de {originCountry}. Je veux une {assistancePackage}. Mon numéro WhatsApp est {phone}.",
   "assistance-form.steps.submit-form.error-message": "Une erreur inconnue est survenue lors de la soumission de votre formulaire. Nous vous suggérons d’envoyer votre demande par email à '<a' href=\"mailto:assistance@rdcetudes.com?html=true&subject=Demande d’assistance&body={message}\"'>'assistance@rdcetudes.com'</a>' avec comme message: '<br/>' «{message}»",
 
   "footer.copyright": "© RDC Etudes. Tous droits réservés",
