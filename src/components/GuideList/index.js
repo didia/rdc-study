@@ -11,7 +11,7 @@ import styles from './styles.module.scss';
 
 const Guide = ({guide}) => {
   return (
-    <Link to={`${guide.path}?utm_source=rdcetudes&utm_content=guide-page`} className={styles.article}>
+    <Link to={guide.path} className={styles.article}>
       <article>
         <div className={classnames(styles['image-wrapper'], 'image')}>
           <Img className={styles.image} fluid={guide.thumbnail.fluid} alt={guide.title} />

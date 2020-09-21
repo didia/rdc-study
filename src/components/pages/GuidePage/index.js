@@ -25,10 +25,7 @@ const Assistance = () => (
       <div className={styles['call-to-action-wrapper']}>
         <FormattedMessage id="pages.index.banner.call-to-action-button-text">
           {(text) => (
-            <Link
-              to="/accompagnement?utm_source=rdcetudes&utm_content=guide-page"
-              className="button special call-to-action"
-            >
+            <Link to="/accompagnement" className="button special call-to-action">
               {text}
             </Link>
           )}
@@ -48,7 +45,7 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
     image: guide.metaImage,
     path: guide.path,
     title: guide.title,
-    socialShareEnabled: true,
+    socialShareEnabled: true
   };
 
   return (
@@ -80,10 +77,10 @@ GuidePage.propTypes = {
     excerpt: T.string.isRequired,
     path: T.string.isRequired,
     slug: T.string.isRequired,
-    title: T.string.isRequired,
+    title: T.string.isRequired
   }).isRequired,
   otherGuides: T.arrayOf(T.object),
-  relatedGuides: T.arrayOf(T.object),
+  relatedGuides: T.arrayOf(T.object)
 };
 
 export default GuidePage;

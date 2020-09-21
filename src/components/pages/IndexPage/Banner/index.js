@@ -44,10 +44,7 @@ const Banner = () => {
         <div className={styles['call-to-action-wrapper']}>
           <FormattedMessage id="pages.index.banner.call-to-action-button-text">
             {(text) => (
-              <Link
-                to="/accompagnement?utm_source=rdcetudes&utm_content=banner-button"
-                className="button special call-to-action"
-              >
+              <Link to="/accompagnement" className="button special call-to-action">
                 {text}
               </Link>
             )}
