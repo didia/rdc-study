@@ -29,11 +29,11 @@ import Steps from './steps';
 import analyticsPushEvent from '../../utils/push-analytics-event';
 
 const SUPPORTED_DESTINATION_COUNTRIES = [
-  DestinationCountries.BELGIUM,
   DestinationCountries.CANADA,
-  DestinationCountries.NORTH_CYPRUS,
+  DestinationCountries.BELGIUM,
+  DestinationCountries.USA,
   DestinationCountries.FRANCE,
-  DestinationCountries.USA
+  DestinationCountries.NORTH_CYPRUS
 ];
 
 const HAS_ADMISSION_OPTIONS = [

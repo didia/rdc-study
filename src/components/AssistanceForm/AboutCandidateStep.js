@@ -26,11 +26,6 @@ import {aboutCandidateState} from './state';
 import {Steps} from './steps';
 
 const SUPPORTED_ORIGIN_COUNTRIES = [
-  {labelKey: 'shared.countries.be'},
-  {labelKey: 'shared.countries.bf'},
-  {labelKey: 'shared.countries.bj'},
-  {labelKey: 'shared.countries.br'},
-  {labelKey: 'shared.countries.ca'},
   {
     labelKey: 'shared.countries.cd',
     value: 'congo-kinshasa'
@@ -39,17 +34,24 @@ const SUPPORTED_ORIGIN_COUNTRIES = [
     labelKey: 'shared.countries.cg',
     value: 'congo-brazza'
   },
-  {labelKey: 'shared.countries.ch'},
+  {labelKey: 'shared.countries.gn'},
+  {labelKey: 'shared.countries.ga'},
   {labelKey: 'shared.countries.ci'},
+  {labelKey: 'shared.countries.ne'},
+  {labelKey: 'shared.countries.tg'}, // Alphabetical order after here
+  {labelKey: 'shared.countries.be'},
+  {labelKey: 'shared.countries.bf'},
+  {labelKey: 'shared.countries.bj'},
+  {labelKey: 'shared.countries.br'},
+  {labelKey: 'shared.countries.ca'},
+  {labelKey: 'shared.countries.ch'},
   {labelKey: 'shared.countries.cn'},
   {labelKey: 'shared.countries.de'},
   {labelKey: 'shared.countries.dj'},
   {labelKey: 'shared.countries.dz'},
   {labelKey: 'shared.countries.fr'},
-  {labelKey: 'shared.countries.ga'},
   {labelKey: 'shared.countries.gb'},
   {labelKey: 'shared.countries.gh'},
-  {labelKey: 'shared.countries.gn'},
   {labelKey: 'shared.countries.ht'},
   {labelKey: 'shared.countries.in'},
   {labelKey: 'shared.countries.jp'},
@@ -58,7 +60,6 @@ const SUPPORTED_ORIGIN_COUNTRIES = [
   {labelKey: 'shared.countries.mg'},
   {labelKey: 'shared.countries.ml'},
   {labelKey: 'shared.countries.mu'},
-  {labelKey: 'shared.countries.ne'},
   {labelKey: 'shared.countries.ro'},
   {labelKey: 'shared.countries.ru'},
   {labelKey: 'shared.countries.rw'},
@@ -66,7 +67,6 @@ const SUPPORTED_ORIGIN_COUNTRIES = [
   {labelKey: 'shared.countries.sc'},
   {labelKey: 'shared.countries.sn'},
   {labelKey: 'shared.countries.td'},
-  {labelKey: 'shared.countries.tg'},
   {labelKey: 'shared.countries.tn'},
   {labelKey: 'shared.countries.tr'},
   {labelKey: 'shared.countries.us'},
