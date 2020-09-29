@@ -31,6 +31,7 @@ import analyticsPushEvent from '../../utils/push-analytics-event';
 const SUPPORTED_DESTINATION_COUNTRIES = [
   DestinationCountries.BELGIUM,
   DestinationCountries.CANADA,
+  DestinationCountries.NORTH_CYPRUS,
   DestinationCountries.FRANCE,
   DestinationCountries.USA
 ];
