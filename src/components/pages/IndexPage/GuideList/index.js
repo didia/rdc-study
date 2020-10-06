@@ -10,9 +10,9 @@ import styles from './styles.module.scss';
 
 const GuideList = ({className, guides, id}) => (
   <div id={id} className={className}>
-    <FormattedMessage id="pages.index.country-list.title">{(text) => <h2>{text}</h2>}</FormattedMessage>
-
-    <FormattedMessage id="pages.index.country-list.description">{(text) => <p>{text}</p>}</FormattedMessage>
+    <FormattedMessage id="pages.index.country-list.title">
+      {(text) => <h2 className={styles.title}>{text}</h2>}
+    </FormattedMessage>
 
     <div className={styles.grid}>
       {guides.map((guide) => (

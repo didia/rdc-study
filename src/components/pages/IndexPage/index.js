@@ -21,11 +21,11 @@ const IndexPage = ({articles, countries, scholarships, hasMoreArticles}) => {
 
       <section>
         <section className={classnames(styles.wrapper, styles['wrapper--at-position-1'])}>
-          <CompetitiveAdvantages className={styles.inner} />
+          <GuideList id="guides" className={styles.inner} guides={countries} />
         </section>
 
         <section className={classnames(styles.wrapper, styles['wrapper--at-position-2'])}>
-          <GuideList id="guides" className={styles.inner} guides={countries} />
+          <CompetitiveAdvantages className={styles.inner} />
         </section>
 
         <section className={classnames(styles.wrapper, styles['wrapper--at-position-3'])}>
