@@ -12,7 +12,6 @@ import GuideList from './GuideList';
 import ArticleList from '../../ArticleList';
 import ScholarshipList from '../../ScholarshipList';
 import Newsletter from '../../Newsletter';
-import CompetitiveAdvantages from './CompetitiveAdvantages';
 
 const IndexPage = ({articles, countries, scholarships, hasMoreArticles}) => {
   return (
@@ -25,14 +24,10 @@ const IndexPage = ({articles, countries, scholarships, hasMoreArticles}) => {
         </section>
 
         <section className={classnames(styles.wrapper, styles['wrapper--at-position-2'])}>
-          <CompetitiveAdvantages className={styles.inner} />
-        </section>
-
-        <section className={classnames(styles.wrapper, styles['wrapper--at-position-3'])}>
           <Newsletter className={classnames(styles.inner, styles.newsletter)} />
         </section>
 
-        <section className={classnames(styles.wrapper, styles['wrapper--at-position-4'])}>
+        <section className={classnames(styles.wrapper, styles['wrapper--at-position-3'])}>
           <ArticleList
             className={styles.inner}
             articles={articles}
@@ -41,7 +36,7 @@ const IndexPage = ({articles, countries, scholarships, hasMoreArticles}) => {
           />
         </section>
 
-        <section className={classnames(styles.wrapper, styles['wrapper--at-position-5'])}>
+        <section className={classnames(styles.wrapper, styles['wrapper--at-position-4'])}>
           <ScholarshipList
             allScholarshipsLink="/bourses"
             showAllScholarshipsLink
