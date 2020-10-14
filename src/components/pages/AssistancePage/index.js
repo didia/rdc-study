@@ -14,6 +14,7 @@ import GenericPage from '../GenericPage';
 import ContactUsLink from '../../ContactUsLink';
 import Card from '../../Card';
 import AssistanceForm from '../../AssistanceForm';
+import CompetitiveAdvantages from '../IndexPage/CompetitiveAdvantages';
 
 const FeatureList = ({featureLabelKeys, className}) => (
   <ul className={classnames(styles['feature-list'], className)}>
@@ -77,40 +78,7 @@ const AssistancePage = ({assistancePackages}) => {
         <AssistanceForm assistancePackages={assistancePackages} />
 
         <section className={styles['offer-block']}>
-          <FormattedMessage id="pages.assistance.personal.title" tagName="h2" />
-
-          <FormattedMessage id="pages.assistance.personal.description" tagName="p" />
-
-          <FormattedMessage
-            id="pages.assistance.personal.pricing"
-            tagName="p"
-            values={{
-              pricePerPackage: <b>200$</b>,
-              priceForAllPackages: <b>500$</b>
-            }}
-          />
-
-          <ul className={styles['offer-list']}>
-            {packages.map((ratePackage, i) => (
-              <li key={`feature-${i}`} className={styles['offer-list__item']}>
-                <Card className={styles['offer-card']}>
-                  <FormattedMessage id={ratePackage.titleKey}>
-                    {(text) => <h3 className={styles['offer-title']}>{text}</h3>}
-                  </FormattedMessage>
-
-                  <FeatureList featureLabelKeys={ratePackage.featureLabelKeys} />
-                </Card>
-              </li>
-            ))}
-          </ul>
-
-          <FormattedMessage id="pages.assistance.personal.about-us-link">
-            {(text) => (
-              <Link to="/a-propos" className={classnames(styles.button, styles['button--about-us'], 'button special')}>
-                {text}
-              </Link>
-            )}
-          </FormattedMessage>
+          <CompetitiveAdvantages />
 
           <p style={{marginTop: '20px'}}>
             <FormattedMessage id="pages.assistance.visa.warning" />
@@ -118,14 +86,6 @@ const AssistancePage = ({assistancePackages}) => {
               {(text) => <Link to="/assistance-visa">{text}</Link>}
             </FormattedMessage>
           </p>
-        </section>
-
-        <section className={styles['offer-block']}>
-          <FormattedMessage id="pages.assistance.questions.title" tagName="h2" />
-
-          <FormattedMessage id="pages.assistance.questions.description" tagName="p" />
-
-          <ContactUsLink className={classnames(styles.button, 'button special')} />
         </section>
       </GenericPage>
     </RecoilRoot>
