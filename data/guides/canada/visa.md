@@ -91,7 +91,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **690 USD et 810 USD** pour vos démarches de visa.
 Ces frais se présentent comme suit:
 
-- **20 USD à 50 USD** pour les documents administratifs à obtenir du gouvernement congolais.
+- **20 USD à 50 USD** pour les documents administratifs à obtenir de votre gouvernement.
 - **90 USD** pour le CAQ (Seulement pour Québec)
 - **185 USD** pour le frais des visas (Y compris les empreintes)
 - **285 USD** pour les frais des examens médicaux.

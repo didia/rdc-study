@@ -41,7 +41,7 @@ Plusieurs organismes et universités offrent des bourses à des candidats aux cy
 Le programme Canadien des bourses de la francophonie (PCBF) par exemple, offrent des bourses de recherches aux étudiants internationaux qui envisagent entamer des études de cycle supérieur.  
 L’université d’Ottawa par exemple, a instauré un régime d’immersion en français dans le but de promouvoir la langue française ainsi que les études en français au Canada.
 Ce régime offre des bourses d’exonération partielle des droits de scolarités aux étudiants étrangers qui souhaitent étudier dans un programme uniquement en Français.
-Vous pouvez également contacter l’Ambassade de la République Démocratique du Congo au Canada pour la demande de la bourse d’exonération offerte aux étudiants congolais par le Ministère de l’éducation loisir et sport du Québec.
+Vous pouvez également contacter l’Ambassade de votre pays au Canada ou votre ministère de l’éducation pour la demande de la bourse d’exonération offerte aux étudiants congolais par le Ministère de l’éducation loisir et sport du Québec.
 Cette dernière ne s’applique que pour les étudiants ayant été admis dans un établissement d’enseignement de la province du Québec.
 
 ## Combien coûtent les démarches?

@@ -50,7 +50,7 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **970 USD et 1200 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-- **40 USD à 100 USD** pour les documents administratifs à obtenir du gouvernement congolais.
+- **40 USD à 100 USD** pour les documents administratifs à obtenir de votre gouvernement.
 - **230 USD à 400 USD** pour le frais de redevance.
 - **200 USD** pour l’introduction de la demande à l’Ambassade.
 - **300 USD** pour les frais des examens médicaux.

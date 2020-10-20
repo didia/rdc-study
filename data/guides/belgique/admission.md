@@ -27,7 +27,7 @@ Voici donc les différentes étapes que vous devez suivre pour obtenir votre adm
 1.  ## Trouver un programme d’études et une université
 
 Dans quelle université comptez-vous étudier? Quel niveau d’études (bachelier, master, doctorat)? En quelle langue comptez-vous étudier (français, anglais ou partiellement en anglais et en français)? Dans quelle domaine allez-vous étudier (droit, sciences, etc) ?, le type d’institution (université, haute école, école supérieure des arts).
-Il est important d’avoir au moins deux choix potentiels de domaine d’études que vous voulez poursuivre. Nous vous conseillons de baser votre choix sur 3 facteurs principaux: Votre niveau de confort avec le sujet, votre passion pour le sujet ainsi que les opportunités d’emplois en Belgique tout comme au Congo.
+Il est important d’avoir au moins deux choix potentiels de domaine d’études que vous voulez poursuivre. Nous vous conseillons de baser votre choix sur 3 facteurs principaux: Votre niveau de confort avec le sujet, votre passion pour le sujet ainsi que les opportunités d’emplois en Belgique tout comme dans votre pays d’origine.
 \
 \
 Voici une liste non-exhaustive des universités que vous pouvez explorer: <a href="https://uclouvain.be/fr/etudier/accueil-international.html" target="_blank" rel="nofollow noopener">Université catholique de Louvain</a> -
