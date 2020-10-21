@@ -40,6 +40,7 @@ const SUPPORTED_ORIGIN_COUNTRIES = [
   {labelKey: 'shared.countries.ne'},
   {labelKey: 'shared.countries.tg'}, // Alphabetical order after here
   {labelKey: 'shared.countries.bf'},
+  {labelKey: 'shared.countries.bi'},
   {labelKey: 'shared.countries.bj'},
   {labelKey: 'shared.countries.cf'},
   {labelKey: 'shared.countries.cm'},
