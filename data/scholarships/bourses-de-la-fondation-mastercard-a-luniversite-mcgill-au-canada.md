@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourses de la Fondation MasterCard à l’Université McGill au Canada
 deadline: 2021-01-15T04:59:52.454Z
 excerpt: Le programme de bourses de la Fondation MasterCard identifie des jeunes
