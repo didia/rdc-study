@@ -1,11 +1,11 @@
 ---
-draft: true
+draft: false
 title: Programme des bourses EPOS DAAD en Allemagne
 deadline: 2021-09-30T23:25:27.845Z
-excerpt: >-
-  Le programme des bourses EPOS DAAD offre des bourses totalement financées aux
-  ressortissants des pays en voie de développement afin de poursuivre des études
-  supérieures (master et doctorat) dans des universités allemandes.
+excerpt: Le programme des bourses EPOS DAAD offre des bourses totalement
+  financées aux ressortissants des pays en voie de développement afin de
+  poursuivre des études supérieures (master et doctorat) dans des universités
+  allemandes.
 thumbnail: /images/uploads/DAAD.jpg
 startDate: 2020-02-13T23:25:27.895Z
 levels:
