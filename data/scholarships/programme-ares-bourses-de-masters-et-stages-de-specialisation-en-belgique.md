@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "Programme ARES: Bourses de masters et stages de spécialisation en Belgique"
 deadline: 2021-02-10T04:59:34.000Z
 excerpt: Vous êtes titulaires d’un diplôme de master et d’une expérience
