@@ -1,16 +1,16 @@
 ---
-title: 'Programme ARES: Bourses de masters et stages de spécialisation en Belgique'
-excerpt: >-
-  Vous êtes titulaires d’un diplôme de master et d’une expérience
+draft: false
+title: "Programme ARES: Bourses de masters et stages de spécialisation en Belgique"
+deadline: 2021-02-10T04:59:34.000Z
+excerpt: Vous êtes titulaires d’un diplôme de master et d’une expérience
   professionnelle? Vous avez la possibilité de suivre un master de
   spécialisation d’un an ou un stage de perfectionnement entre 4 et 6 mois au
   sein d’un établissement de la Fédération Wallonie-Bruxelles en Belgique.
-deadline: '2020-02-07T23:59:34-05:00'
 tags:
-  - >-
-    bourses;belgique;ares;kinshasa;congo;rdc;etudes;rdcetudes;bourses d’études
+  - bourses;belgique;ares;kinshasa;congo;rdc;etudes;rdcetudes;bourses d’études
     belgique;bourses gratuites;bourses d’études pour étudiants africains
 thumbnail: /images/uploads/actu-appel-bourses-2019-2020_fr.jpg
+startDate: 2020-10-28T00:31:40.583Z
 levels:
   - graduate
   - internship
