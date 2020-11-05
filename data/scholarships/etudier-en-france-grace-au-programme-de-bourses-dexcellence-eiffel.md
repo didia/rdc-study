@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourses d’Excellence Eiffel en France
 deadline: 2021-01-08T02:00:00.000Z
 excerpt: La bourse Eiffel permet aux établissements français d’enseignement
