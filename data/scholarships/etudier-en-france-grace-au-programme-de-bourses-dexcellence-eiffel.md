@@ -1,13 +1,10 @@
 ---
+draft: true
 title: Bourses d’Excellence Eiffel en France
-deadline: 2020-01-01T02:00:00.000Z
-excerpt: >-
-  Le programme de bourses Eiffel permet de former les futurs décideurs
-  étrangers, des secteurs privé et public, dans des domaines d’études
-  prioritaires, et de stimuler les candidatures d’étudiants originaires de
-
-  pays émergents pour le niveau master et de pays émergents et industrialisés
-  pour le niveau doctorat.
+deadline: 2021-01-08T02:00:00.000Z
+excerpt: La bourse Eiffel permet aux établissements français d’enseignement
+  supérieur d’attirer les meilleurs étudiants étrangers dans des formations
+  diplômantes de niveau master et en doctorat
 tags:
   - bourse excellence eiffel
   - bourse d’etudes
@@ -15,6 +12,7 @@ tags:
   - bourse d’études
   - campus france
 thumbnail: /images/uploads/bourses-détudes-eiffel-excellence-program.png
+startDate: 2020-11-05T23:21:16.021Z
 levels:
   - graduate
   - postgraduate
