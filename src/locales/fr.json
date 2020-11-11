@@ -89,32 +89,6 @@
 
   "pages.articles-show.other-articles.title": "Les dernières nouvelles",
 
-  "pages.assistance.free.description": "Toute l’information dont vous avez besoin pour réaliser votre projet d’études est disponible via nos guides en ligne. Ils sont gratuits et le resteront toujours.",
-  "pages.assistance.free.features.admission-guide": "Guide pour l’admission",
-  "pages.assistance.free.features.visa-guide": "Guide pour le visa",
-  "pages.assistance.free.features.countries-guide": "Belgique, Canada et États-Unis",
-  "pages.assistance.free.features.protection-guide": "Prévention anti-fraude",
-  "pages.assistance.free.guide-link-text": "Explorez nos guides",
-  "pages.assistance.free.title": "GRATIS!",
-
-  "pages.assistance.packages.description": "Nos coûts sont transparents et honnêtes. Vous savez exactement ce pourquoi vous payez avec fatures à l’appui.",
-  "pages.assistance.packages.admission.features.application": "Demande d’admission",
-  "pages.assistance.packages.admission.features.application-documents": "Envoi et reception des documents",
-  "pages.assistance.packages.admission.features.program-choice": "Choix de programme",
-  "pages.assistance.packages.admission.features.university-choice": "Choix de l’université",
-  "pages.assistance.packages.admission.title": "L’Admission",
-  "pages.assistance.packages.after-visa.features.first-year": "Assistance pour s’installer",
-  "pages.assistance.packages.after-visa.features.housing": "Recherche de logement",
-  "pages.assistance.packages.after-visa.features.on-arrival": "Accueil à l’arrivée",
-  "pages.assistance.packages.after-visa.features.travel": "Préparation au voyage",
-  "pages.assistance.packages.after-visa.title": "Le Voyage",
-  "pages.assistance.packages.title": "Des coûts transparents et honnêtes!",
-  "pages.assistance.packages.visa.features.application-documents": "Rassembler les documents",
-  "pages.assistance.packages.visa.features.application-proof": "Rassembler les preuves",
-  "pages.assistance.packages.visa.features.fill-forms": "Remplir les formulaires",
-  "pages.assistance.packages.visa.features.interview": "Préparation à l‘interview",
-  "pages.assistance.packages.visa.title": "Le Visa",
-
   "pages.assistance.personal.about-us-link": "Découvrez qui nous sommes",
   "pages.assistance.personal.description": "Donnez-vous plus de chances de réussir vos démarches en vous faisant accompagner par un mentor personnel qui sera là pour vous tout le long de vos démarches. Nous travaillons en mode forfait et vous ne payez que pour ceux dont vous avez besoin.",
   "pages.assistance.personal.pricing": "{pricePerPackage} seulement par forfait.",
@@ -175,6 +149,13 @@
 
   "scholarship-list.see-all": "Afficher toutes les bourses",
   "scholarship-list.see-details": "Voir les détails",
+
+  "shared.assistance-types.information.description": "",
+  "shared.assistance-types.information.title": "Informations générales (gratuit)",
+  "shared.assistance-types.consultation.description": "",
+  "shared.assistance-types.consultation.title": "Consultation avec un conseiller RDC Études (20 USD)",
+  "shared.assistance-types.assistance.description": "",
+  "shared.assistance-types.assistance.title": "Assistance pour vos démarches (200 USD)",
 
   "shared.contact-us-text": "Contactez-nous",
 
