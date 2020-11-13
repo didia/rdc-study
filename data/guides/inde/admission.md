@@ -4,7 +4,7 @@ slug: inde/admission
 date: 2020-11-12
 title: Obtenir une admission dans une université indienne.
 excerpt: Pour vous rendre en Inde pour études, vous devez au préalable obtenir une admission d‘un établissement d‘enseignement désigné en Inde. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n‘importe quel établissement d‘enseignement en Inde.  
-thumbnail: images/inde.jpg
+thumbnail: images/admission.jpg
 topic: admission
 related: ['inde/visa']
 ---

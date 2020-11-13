@@ -4,7 +4,7 @@ slug: inde/visa
 date: 2020-11-13
 title: Obtenir un visa d’études pour l’Inde.
 excerpt: Avec votre admission dans un établissement d‘enseignement indien en main, vous devez maintenant faire une demande de visa au consulat de l’Inde dans votre pays. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le visa d‘études pour l’Inde.  
-thumbnail: images/inde.jpg
+thumbnail: images/visa.jpg
 topic: visa
 related: ['inde/admission']
 ---
