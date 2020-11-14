@@ -11,7 +11,7 @@ topic: 'country'
 related: ['canada/admission', 'canada/visa', 'canada/caq']
 ---
 
-## Que faut-il pour étudier au Canada?
+## Que faut-il pour étudier au Canada ?
 
 Pour étudier au Canada, il faut commencer par obtenir une admission dans un établissement d’enseignement désigné au Canada.\
 Obtenir une admission dans un établissement d’enseignement au Canada est aussi simple que vous ne l’imaginez.
@@ -27,14 +27,14 @@ Les étudiants qui envisagent poursuivre leurs études dans un établissement da
 \
 Pour en savoir plus, [consultez notre guide sur les démarches à suivre pour obtenir un permis d’études pour le Canada.](/guides/canada/visa)
 
-## Combien coûtent les études au Canada?
+## Combien coûtent les études au Canada ?
 
 En réalisant votre projet pour aller étudier au Canada, vous pensez premièrement aux droits de scolarité (frais académiques).
 Il est donc important pour vous d’avoir ne fut ce qu’une idée de combien coutent les études au Canada.\
 Les droits de scolarité varient d’un établissement à un autre, selon le niveau d’études et le programme d’études (facultés et départements).
-En termes des chiffres, vos études au Canada vous coûteront entre 5 000 USD et 16 500 USD par année, tandis qu’il faut prévoir entre 9 000 USD et 10 000 USD pour les frais de subsistance qui varieront selon votre train de vie.
+En termes des chiffres, vos études au Canada vous coûteront entre 5 000 USD et 16 500 USD par année, tandis qu’il faut prévoir au moins 9 300 USD pour les frais de subsistance qui varieront selon votre train de vie.
 
-## Qu’en est-il de bourses d’études?
+## Qu’en est-il de bourses d’études ?
 
 Il s’avère parfois que les droits de scolarités (frais académiques) soient très couteux pour les cycles supérieurs. Aucune inquiétude à ce sujet.
 Plusieurs organismes et universités offrent des bourses à des candidats aux cycles supérieurs.
@@ -44,7 +44,7 @@ Ce régime offre des bourses d’exonération partielle des droits de scolarité
 Vous pouvez également contacter l’Ambassade de votre pays au Canada ou votre ministère de l’éducation pour la demande de la bourse d’exonération offerte aux étudiants congolais par le Ministère de l’éducation loisir et sport du Québec.
 Cette dernière ne s’applique que pour les étudiants ayant été admis dans un établissement d’enseignement de la province du Québec.
 
-## Combien coûtent les démarches?
+## Combien coûtent les démarches ?
 
 En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir entre **1 070 USD et 1 310 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:

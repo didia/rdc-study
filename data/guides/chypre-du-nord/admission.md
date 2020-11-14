@@ -2,7 +2,7 @@
 draft: false
 slug: chypre-du-nord/admission
 date: 2020-08-14
-title: Obtenir une admission dans une université dans une université nord-chypriote
+title: Obtenir une admission dans une université nord-chypriote
 excerpt: Pour vous rendre à Chypre du Nord pour études, vous devez au préalable obtenir une admission d‘un établissement d‘enseignement désigné à Chypre du Nord. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n‘importe quel établissement d‘enseignement à Chypre du Nord. 
 thumbnail: images/chypre-du-nord-admission.jpg
 name: Chypre du Nord
@@ -32,7 +32,7 @@ Le processus d’admission est à quelques exceptions près identique pour l’e
    
    Les délais de traitement de demande d’admission varient d’une université à une autre et selon la période à laquelle vous soumettez votre admission. Toutefois, Il ne dépasse généralement pas 30 jours.
    
-   Une fois admis, votre université vous demandera de payer un acompte des frais académiques pour vous remettre la lettre d’admission qui tient lieu de visa de voyage pour la Chypre du Nord. Pour savoir comment procéder une fois votre admission obtenue, [consultez notre guide sur les étapes à suivre pour un voyage d’études à Chypre du Nord](/guides/chypre-du-nord/visa)
+   Une fois admis, votre université vous demandera de payer une avance des frais académiques pour vous remettre la lettre d’admission qui tient lieu de visa de voyage pour la Chypre du Nord. Pour savoir comment procéder une fois votre admission obtenue, [consultez notre guide sur les étapes à suivre pour un voyage d’études à Chypre du Nord](/guides/chypre-du-nord/visa)
 
 ## Combien ça coûte ?
 En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **200 USD et 250 USD** pour toutes vos démarches d’admission.
