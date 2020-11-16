@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 slug: inde/visa
 date: 2020-11-13
 title: Obtenir un visa d’études pour l’Inde.

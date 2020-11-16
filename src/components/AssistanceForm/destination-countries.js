@@ -11,6 +11,10 @@ export default {
     labelKey: 'shared.countries.fr',
     value: 'france'
   },
+  INDIA: {
+    labelKey: 'shared.countries.in',
+    value: 'inde'
+  },
   NORTH_CYPRUS: {
     labelKey: 'shared.countries.cytr',
     value: 'chypre-du-nord'

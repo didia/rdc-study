@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 slug: inde/admission
 date: 2020-11-12
 title: Obtenir une admission dans une université indienne.

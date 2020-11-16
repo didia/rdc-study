@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 slug: inde
 date: 2020-11-12
 title: Étudier en Inde
