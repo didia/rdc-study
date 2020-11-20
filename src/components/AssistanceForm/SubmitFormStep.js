@@ -70,7 +70,7 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
   const assistancePackageSlug = useRecoilValue(assistancePackageState);
   const setAssistanceType = useSetRecoilState(assistanceTypeState);
 
-  const assistancePackage = assistancePackages[assistancePackageSlug] || assistancePackages['canada/admission'];
+  const assistancePackage = assistancePackages[assistancePackageSlug];
 
   const name = `${aboutCandidate.firstName} ${aboutCandidate.lastName}`;
   const messageTranslationKey = aboutCandidate.phone

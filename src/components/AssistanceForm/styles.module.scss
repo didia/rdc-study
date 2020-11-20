@@ -52,6 +52,7 @@ select.input {
 
 .radio-button-label--checked {
   &::before {
+    content: '✓';
     border-color: _palette(accent);
     background: _palette(bg);
     color: _palette(fg-bold);
