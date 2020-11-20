@@ -76,10 +76,7 @@ const DestinationCountryStep = ({onNextStep, onPreviousStep, recapMode}) => {
   const [showHasAdmission, setShowHasAdmission] = useState(!!destinationCountry);
 
   return (
-    <StepForm
-      recapMode={recapMode}
-      title={intl.formatMessage({id: 'assistance-form.steps.destination-country.title'})}
-    >
+    <StepForm recapMode={recapMode} title={intl.formatMessage({id: 'assistance-form.steps.destination-country.title'})}>
       <Formik
         initialValues={{destinationCountry, hasAdmission: hasAdmission ? 'true' : 'false'}}
         validationSchema={destinationCountrySchema(intl)}
@@ -92,13 +89,6 @@ const DestinationCountryStep = ({onNextStep, onPreviousStep, recapMode}) => {
           const nextStep = getNextStep({hasAdmission, destinationCountry: values.destinationCountry});
 
           onNextStep(nextStep);
-
-          analyticsPushEvent({
-            category: 'AssistanceForm',
-            action: 'next',
-            label: Steps.DestinationCountry,
-            value: values.destinationCountry
-          });
         }}
       >
         {({isSubmitting}) => (

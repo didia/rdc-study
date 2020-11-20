@@ -19,7 +19,6 @@ import styles from './styles.module.scss';
 
 // Constants
 import {Steps} from './steps';
-import analyticsPushEvent from '../../utils/push-analytics-event';
 
 const BelgiumEquivalenceCheckStep = ({onNextStep, onPreviousStep}) => {
   const intl = useIntl();
@@ -49,11 +48,6 @@ const BelgiumEquivalenceCheckStep = ({onNextStep, onPreviousStep}) => {
           setHasHighSchoolDiplomaEquivalence(hasHighSchoolDiplomaEquivalence);
 
           onNextStep(Steps.AboutCandidate);
-          analyticsPushEvent({
-            category: 'AssistanceForm',
-            action: 'next',
-            label: Steps.BelgiumEquivalenceCheck
-          });
         }}
       >
         {({isSubmitting}) => (

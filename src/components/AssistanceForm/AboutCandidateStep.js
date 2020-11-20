@@ -12,7 +12,6 @@ import styles from './styles.module.scss';
 
 // Utils
 import {formikFieldErrorClass} from './utils';
-import analyticsPushEvent from '../../utils/push-analytics-event';
 
 // Components
 import Selector from '../Selector';
@@ -102,12 +101,6 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
         onSubmit={(values) => {
           setAboutCandidateData(values);
           onNextStep(Steps.SubmitForm);
-          analyticsPushEvent({
-            category: 'AssistanceForm',
-            action: 'next',
-            label: Steps.AboutCandidate,
-            value: values.originCountry
-          });
         }}
       >
         {({isSubmitting}) => (
