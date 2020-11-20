@@ -106,7 +106,7 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
   const onSubmit = async (assistanceType) => {
     setShowError(false);
 
-    const assistanceLabel = `${assistancePackageSlug}/${assistanceType}`;
+    const assistanceLabel = `${assistanceType}/${assistancePackageSlug}`;
     const assistancePackageTitle = assistancePackage.title.replace(/Assistance/gi, assistanceType);
 
     const message = intl.formatMessage(
