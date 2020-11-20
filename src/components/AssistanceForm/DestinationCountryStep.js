@@ -33,7 +33,8 @@ const SUPPORTED_DESTINATION_COUNTRIES = [
   DestinationCountries.BELGIUM,
   DestinationCountries.USA,
   DestinationCountries.FRANCE,
-  DestinationCountries.NORTH_CYPRUS
+  DestinationCountries.NORTH_CYPRUS,
+  DestinationCountries.INDIA
 ];
 
 const HAS_ADMISSION_OPTIONS = [
