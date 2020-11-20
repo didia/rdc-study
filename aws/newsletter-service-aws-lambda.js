@@ -23,7 +23,7 @@ const handleResponse = ({callback, statusCode, responseBody, error}) => {
   callback(error, response);
 };
 
-const addEmail = email => {
+const addEmail = (email, firstName, lastName) => {
   if (!/^[\w\.+_-]+@([\w\n_-]+\.)+[\w]{2,}$/.test(email)) {
     return Promise.reject('The email format is invalid');
   }
@@ -33,6 +33,8 @@ const addEmail = email => {
       TableName: process.env.NEWSLETTER_TABLE_NAME,
       Item: {
         email,
+        firstName,
+        lastName,
         subscribedAt: new Date().toISOString()
       },
       Expected: {
@@ -68,7 +70,7 @@ exports.handler = (event, _, callback) => {
 
   const operation = body.unsubscribe ? removeEmail : addEmail;
 
-  operation(body.email)
+  operation(body.email, body.firstName, body.lastName)
     .then(() =>
       handleResponse({callback, statusCode: SUCCESS_CODE, responseBody: {message: 'Operation successful'}, error: null})
     )
@@ -84,7 +86,7 @@ exports.handler = (event, _, callback) => {
 
       const errorMessage = body.unsubscribe
         ? `Le désabonnement a échoué. Raison: ${error}`
-        : `L'abonnement a échoué. Raison: ${error}`;
+        : `L'abonnement a échoué. Raison: ${error}. Prénom: ${body.firstName}, Nom: ${body.lastName}`;
 
       const params = {
         Destination: {
