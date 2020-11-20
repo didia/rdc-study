@@ -62,6 +62,11 @@ export const hasHighSchoolDiplomaEquivalenceState = atom({
   default: false
 });
 
+export const assistanceTypeState = atom({
+  key: 'assistanceType',
+  default: ''
+});
+
 export const previousStepState = selector({
   key: 'previousFormStep',
 

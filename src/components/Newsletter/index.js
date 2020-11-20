@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 import classnames from 'classnames';
 import T from 'prop-types';
 import {FormattedMessage} from 'react-intl';
-import axios from 'axios';
 
 // Styles
 import styles from './styles.module.scss';
@@ -13,19 +12,10 @@ import ActivityIndicator from '../ActivityIndicator';
 import Button from '../Button';
 
 // Utils
-import analyticsPushEvent from '../../utils/push-analytics-event';
-
-// Config
-import config from '../../../config';
-
-const {newsletterEndpoint} = config;
+import subscribeToNewsletter from '../../utils/subscribe-to-newsletter';
 
 const handleSubscribe = async (event, email, setFormState) => {
   event.preventDefault();
-
-  const payload = {
-    email,
-  };
 
   setFormState({
     isSubmitting: true,
@@ -33,25 +23,13 @@ const handleSubscribe = async (event, email, setFormState) => {
     showSuccess: false,
   });
 
-  analyticsPushEvent({
-    category: 'Newsletter',
-    action: 'Subscribe',
-    label: window.location.pathname,
-  });
-
   try {
-    await axios.post(newsletterEndpoint, payload);
+    await subscribeToNewsletter({email});
 
     setFormState({
       isSubmitting: false,
       showError: false,
       showSuccess: true,
-    });
-
-    analyticsPushEvent({
-      category: 'Newsletter',
-      action: 'SubscribeSuccess',
-      label: window.location.pathname,
     });
   } catch (error) {
     setFormState({
@@ -59,14 +37,6 @@ const handleSubscribe = async (event, email, setFormState) => {
       showError: true,
       showSuccess: false,
     });
-
-    analyticsPushEvent({
-      category: 'Newsletter',
-      action: 'SubscribeError',
-      label: window.location.pathname,
-    });
-
-    window.console.error('An error occured', error);
   }
 };
 
