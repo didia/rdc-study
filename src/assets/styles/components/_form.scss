@@ -109,50 +109,56 @@ input[type='radio'] {
   margin-right: -2em;
   appearance: none;
   float: left;
+}
 
-  & + label {
-    @include icon;
+input[type='checkbox'] + label,
+input[type='radio'] + label,
+.radio-button-label {
+  @include icon;
+  display: inline-block;
+  position: relative;
+  padding-right: 0.75em;
+  padding-left: (_size(element-height) * 0.6) + 0.75em;
+  text-transform: none;
+  font-family: _font(family);
+  font-size: 1em;
+  font-weight: _font(weight);
+  letter-spacing: 0;
+  color: _palette(fg);
+  cursor: pointer;
+
+  &::before {
     display: inline-block;
-    position: relative;
-    padding-right: 0.75em;
-    padding-left: (_size(element-height) * 0.6) + 0.75em;
-    text-transform: none;
-    font-family: _font(family);
-    font-size: 1em;
-    font-weight: _font(weight);
-    letter-spacing: 0;
-    color: _palette(fg);
-    cursor: pointer;
-
-    &::before {
-      display: inline-block;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: (_size(element-height) * 0.6);
-      height: (_size(element-height) * 0.6);
-      border: solid 2px _palette(border);
-      border-radius: _size(border-radius);
-      background: _palette(border-bg);
-      text-align: center;
-      line-height: (_size(element-height) * 0.575);
-    }
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: (_size(element-height) * 0.6);
+    height: (_size(element-height) * 0.6);
+    border: solid 2px _palette(border);
+    border-radius: _size(border-radius);
+    background: _palette(border-bg);
+    text-align: center;
+    line-height: (_size(element-height) * 0.575);
   }
+}
 
-  &:checked + label {
-    &::before {
-      content: '\f00c';
-      border-color: _palette(fg-bold);
-      background: _palette(fg-bold);
-      color: _palette(bg);
-    }
+input[type='checkbox']:checked + label,
+input[type='radio']:checked + label,
+.radio-button-label--checked {
+  &::before {
+    content: '\f00c';
+    border-color: _palette(fg-bold);
+    background: _palette(fg-bold);
+    color: _palette(bg);
   }
+}
 
-  &:focus + label {
-    &::before {
-      border-color: _palette(accent);
-    }
+input[type='checkbox']:focus + label,
+input[type='radio']:focus + label,
+.radio-button-label:focus {
+  &::before {
+    border-color: _palette(accent);
   }
 }
 
@@ -164,11 +170,10 @@ input[type='checkbox'] {
   }
 }
 
-input[type='radio'] {
-  & + label {
-    &::before {
-      border-radius: 100%;
-    }
+input[type='radio'] + label,
+.radio-button-label {
+  &::before {
+    border-radius: 100%;
   }
 }
 

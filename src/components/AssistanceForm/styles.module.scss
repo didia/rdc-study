@@ -41,6 +41,35 @@ select.input {
   }
 }
 
+.radio-button-label {
+  color: _palette(bg);
+
+  &::before {
+    border-color: #d3d3d3;
+    background: _palette(border-bg);
+  }
+}
+
+.radio-button-label--checked {
+  &::before {
+    border-color: _palette(accent);
+    background: _palette(bg);
+    color: _palette(fg-bold);
+  }
+}
+
+.radio-button-group {
+  padding: 10px;
+}
+
+.radio-button-group--invalid {
+  border: 1px solid #f5c6cb;
+}
+
+.form-submitted-paragraph {
+  margin-bottom: 1em;
+}
+
 .centralized-button-wrapper {
   display: flex;
   justify-content: center;
@@ -52,6 +81,11 @@ select.input {
 
 .title {
   color: _palette(bg);
+}
+
+.subtitle {
+  color: _palette(bg);
+  text-transform: none;
 }
 
 .fields {
