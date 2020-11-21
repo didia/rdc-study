@@ -13,6 +13,7 @@ import Button from '../Button';
 
 // Utils
 import subscribeToNewsletter from '../../utils/subscribe-to-newsletter';
+import analyticsPushEvent from '../../utils/push-analytics-event';
 
 const handleSubscribe = async (event, email, setFormState) => {
   event.preventDefault();
@@ -25,6 +26,12 @@ const handleSubscribe = async (event, email, setFormState) => {
 
   try {
     await subscribeToNewsletter({email});
+
+    analyticsPushEvent({
+      category: 'Newsletter',
+      action: 'SubscribeSuccess',
+      label: window.location.pathname
+    });
 
     setFormState({
       isSubmitting: false,
@@ -111,7 +118,7 @@ const Newsletter = ({className}) => {
 };
 
 Newsletter.propTypes = {
-  className: T.string,
+  className: T.string
 };
 
 export default Newsletter;

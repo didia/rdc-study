@@ -85,7 +85,7 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
     });
   }, []);
 
-  const submitAssistance = async (message, assistanceLabel) => {
+  const submitAssistance = async (message) => {
     const payload = {
       message,
       name,
@@ -95,12 +95,6 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
     };
 
     await axios.post(contactFormEndpoint, payload);
-
-    analyticsPushEvent({
-      category: 'AssistanceForm',
-      action: 'SubmitSuccess',
-      label: assistanceLabel
-    });
   };
 
   const onSubmit = async (assistanceType) => {
@@ -132,6 +126,12 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
       } else {
         await submitAssistance(message, assistanceLabel);
       }
+
+      analyticsPushEvent({
+        category: 'AssistanceForm',
+        action: 'SubmitSuccess',
+        label: assistanceLabel
+      });
 
       onNextStep(Steps.FormSubmitted);
     } catch (error) {
