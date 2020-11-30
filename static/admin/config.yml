@@ -27,6 +27,7 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}
       - {label: "Mots clés", name: "tags", widget: "list", required: false}
       - {label: "Date de publication", name: "date", widget: "datetime"}
+      - {label: "Auteur", name: "author", widget: "relation", collection: "authors", search_fields: ["name.*"], value_field: "{{slug}}", display_fields: ["name"], required: false}
   - label: Bourse d'études
     name: scholarships
     folder: data/scholarships
@@ -126,3 +127,20 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Réponse", name: "answer", widget: "markdown"}
+  - label: Auteurs
+    name: authors
+    folder: data/authors
+    slug: "{{slug}}"
+    create: true
+    identifier_field: name
+    fields:
+      - {label: "Profil twitter", name: "twitterHandle", widget: "string", required: false}
+      - {label: "À propos", name: "about", widget: "string", required: true}
+      - {label: "Photo", name: "thumbnail", widget: "image"}
+      - label: "Nom"
+        name: "name"
+        widget: "object"
+        summary: '{{fields.firstName}} {{fields.lastName}}'
+        fields:
+          - {label: "Prénom", name: "firstName", widget: "string", required: true}
+          - {label: "Nom", name: "lastName", widget: "string", required: true}
