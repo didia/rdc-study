@@ -52,7 +52,7 @@
     "gatsby-plugin-remove-trailing-slashes": "^2.3.13",
     "gatsby-plugin-sass": "^2.3.22",
     "gatsby-plugin-sentry": "^1.0.1",
-    "gatsby-plugin-sharp": "^2.6.43",
+    "gatsby-plugin-sharp": "^2.9.1",
     "gatsby-plugin-sitemap": "^2.4.17",
     "gatsby-plugin-webpack-bundle-analyzer": "^1.0.5",
     "gatsby-react-router-scroll": "^3.0.15",
