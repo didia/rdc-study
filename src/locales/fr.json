@@ -214,8 +214,9 @@
 
   "shared.newsletter.alert.error": "Une erreur inconnue est survenue lors de l’abonnement 😞",
   "shared.newsletter.alert.success": "Yay 🎉🎉 Vous avez été abonné avec succès!",
-  "shared.newsletter.button-label": "M’abonner",
-  "shared.newsletter.input-placeholder": "Entrez votre adresse email",
+  "shared.newsletter.button-label": "S’abonner",
+  "shared.newsletter.first-name-placeholder": "Votre prénom",
+  "shared.newsletter.input-placeholder": "Votre adresse email",
   "shared.newsletter.title": "Abonnez-vous à notre infolettre Réussir",
   "shared.newsletter.subtitle": "Réussir vous apporte toutes les nouveautés sur les bourses et l’éducation de qualité directement dans votre boîte email.",
 

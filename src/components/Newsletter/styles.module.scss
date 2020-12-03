@@ -32,7 +32,7 @@
   }
 }
 
-input[type='email'].input {
+input[type='email'].input, input[type='text'].input {
   width: 100%;
   padding: 0;
   border-width: 0 0 2px;
