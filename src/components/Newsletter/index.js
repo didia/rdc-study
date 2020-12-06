@@ -21,7 +21,7 @@ const handleSubscribe = async (event, firstName, email, setFormState) => {
   setFormState({
     isSubmitting: true,
     showError: false,
-    showSuccess: false,
+    showSuccess: false
   });
 
   try {
@@ -36,13 +36,13 @@ const handleSubscribe = async (event, firstName, email, setFormState) => {
     setFormState({
       isSubmitting: false,
       showError: false,
-      showSuccess: true,
+      showSuccess: true
     });
   } catch (error) {
     setFormState({
       isSubmitting: false,
       showError: true,
-      showSuccess: false,
+      showSuccess: false
     });
   }
 };
@@ -85,7 +85,7 @@ const Newsletter = ({className}) => {
           <FormattedMessage id="shared.newsletter.first-name-placeholder">
             {(text) => (
               <input
-                className={styles.input}
+                className={classnames(styles.input, styles['input--first-name'])}
                 placeholder={text}
                 type="text"
                 name="firstName"
@@ -97,7 +97,7 @@ const Newsletter = ({className}) => {
           <FormattedMessage id="shared.newsletter.input-placeholder">
             {(text) => (
               <input
-                className={styles.input}
+                className={classnames(styles.input, styles['input--email'])}
                 placeholder={text}
                 type="email"
                 name="email"
