@@ -71,7 +71,6 @@
   "menu.close-button-label": "Fermer",
   "menu.faq-label": "Questions populaires",
   "menu.home-link-label": "Accueil",
-  "menu.jobs-link-label": "Jobs étudiants en France",
   "menu.privacy-policy-link-label": "Politique de confidentialité",
   "menu.scholarships-link-label": "Bourses d'études",
   "menu.title": "Menu",
@@ -214,7 +213,8 @@
 
   "shared.newsletter.alert.error": "Une erreur inconnue est survenue lors de l’abonnement 😞",
   "shared.newsletter.alert.success": "Yay 🎉🎉 Vous avez été abonné avec succès!",
-  "shared.newsletter.button-label": "M’abonner",
+  "shared.newsletter.button-label": "S’abonner",
+  "shared.newsletter.first-name-placeholder": "Entrez votre prénom",
   "shared.newsletter.input-placeholder": "Entrez votre adresse email",
   "shared.newsletter.title": "Abonnez-vous à notre infolettre Réussir",
   "shared.newsletter.subtitle": "Réussir vous apporte toutes les nouveautés sur les bourses et l’éducation de qualité directement dans votre boîte email.",

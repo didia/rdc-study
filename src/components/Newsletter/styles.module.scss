@@ -11,6 +11,7 @@
 
 .form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -32,14 +33,19 @@
   }
 }
 
-input[type='email'].input {
+input[type='email'].input, input[type='text'].input {
   width: 100%;
+  max-width: 500px;
   padding: 0;
   border-width: 0 0 2px;
   border-radius: 0;
-  margin: 0 10px 0 0;
+  margin: 0 0 20px 0;
   background: transparent;
   transition: 1s border-color ease-out;
+}
+
+.input--first-name {
+  max-width: 250px;
 }
 
 .button {
@@ -54,7 +60,7 @@ input[type='email'].input {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 460px;
+  max-width: 480px;
 }
 
 .title-container {

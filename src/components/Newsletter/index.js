@@ -15,17 +15,17 @@ import Button from '../Button';
 import subscribeToNewsletter from '../../utils/subscribe-to-newsletter';
 import analyticsPushEvent from '../../utils/push-analytics-event';
 
-const handleSubscribe = async (event, email, setFormState) => {
+const handleSubscribe = async (event, firstName, email, setFormState) => {
   event.preventDefault();
 
   setFormState({
     isSubmitting: true,
     showError: false,
-    showSuccess: false,
+    showSuccess: false
   });
 
   try {
-    await subscribeToNewsletter({email});
+    await subscribeToNewsletter({firstName, email});
 
     analyticsPushEvent({
       category: 'Newsletter',
@@ -36,13 +36,13 @@ const handleSubscribe = async (event, email, setFormState) => {
     setFormState({
       isSubmitting: false,
       showError: false,
-      showSuccess: true,
+      showSuccess: true
     });
   } catch (error) {
     setFormState({
       isSubmitting: false,
       showError: true,
-      showSuccess: false,
+      showSuccess: false
     });
   }
 };
@@ -59,6 +59,7 @@ const alertMessageKey = ({showSuccess}) =>
 
 const Newsletter = ({className}) => {
   const [email, setEmail] = useState('');
+  const [firstName, setFirstName] = useState('');
   const [formState, setFormState] = useState({isSubmitting: false, showError: false, showSuccess: false});
 
   const disabledState = email && !formState.isSubmitting ? '' : 'disabled';
@@ -80,11 +81,23 @@ const Newsletter = ({className}) => {
         </div>
       </div>
       <div className={classnames(styles['form-wrapper'], styles[formClassModifier(formState)])}>
-        <form className={styles.form} onSubmit={(event) => handleSubscribe(event, email, setFormState)}>
+        <form className={styles.form} onSubmit={(event) => handleSubscribe(event, firstName, email, setFormState)}>
+          <FormattedMessage id="shared.newsletter.first-name-placeholder">
+            {(text) => (
+              <input
+                className={classnames(styles.input, styles['input--first-name'])}
+                placeholder={text}
+                type="text"
+                name="firstName"
+                onChange={(e) => setFirstName(e.currentTarget.value)}
+                value={firstName}
+              />
+            )}
+          </FormattedMessage>
           <FormattedMessage id="shared.newsletter.input-placeholder">
             {(text) => (
               <input
-                className={styles.input}
+                className={classnames(styles.input, styles['input--email'])}
                 placeholder={text}
                 type="email"
                 name="email"

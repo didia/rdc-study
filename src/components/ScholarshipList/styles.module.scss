@@ -132,6 +132,10 @@
 }
 
 @include breakpoint(medium) {
+  .newsletter {
+    padding: 30px 30px;
+  }
+
   .list {
     grid-template-columns: 1fr 1fr;
   }
@@ -162,5 +166,9 @@
 
   .list__item {
     margin-bottom: 1.5em;
+  }
+
+  .newsletter {
+    padding: 30px 10px;
   }
 }

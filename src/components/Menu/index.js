@@ -62,20 +62,6 @@ class InnerMenu extends React.Component {
               </FormattedMessage>
             </li>
           ))}
-          <li key="menu-item-jobs">
-            <FormattedMessage id="menu.jobs-link-label">
-              {(text) => (
-                <a
-                  href="https://bit.ly/36jwGhd"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className={styles['links-item__link']}
-                >
-                  {text}
-                </a>
-              )}
-            </FormattedMessage>
-          </li>
         </ul>
 
         <FormattedMessage id="menu.close-button-label">

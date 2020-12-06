@@ -100,7 +100,6 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
   const onSubmit = async (assistanceType) => {
     setShowError(false);
 
-    const assistanceLabel = `${assistanceType}/${assistancePackageSlug}`;
     const assistancePackageTitle = assistancePackage.title.replace(/Assistance/gi, assistanceType);
 
     const message = intl.formatMessage(
@@ -120,17 +119,16 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
         await subscribeToNewsletter({
           email: aboutCandidate.email,
           firstName: aboutCandidate.firstName,
-          lastName: aboutCandidate.lastName,
-          analyticsLabel: assistanceLabel
+          lastName: aboutCandidate.lastName
         });
       } else {
-        await submitAssistance(message, assistanceLabel);
+        await submitAssistance(message);
       }
 
       analyticsPushEvent({
         category: 'AssistanceForm',
-        action: 'SubmitSuccess',
-        label: assistanceLabel
+        action: assistanceType,
+        label: assistancePackageSlug
       });
 
       onNextStep(Steps.FormSubmitted);
