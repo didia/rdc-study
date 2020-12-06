@@ -50,7 +50,7 @@
     "gatsby-plugin-postcss": "^2.3.13",
     "gatsby-plugin-react-helmet": "^3.5.0",
     "gatsby-plugin-remove-trailing-slashes": "^2.6.0",
-    "gatsby-plugin-sass": "^2.3.22",
+    "gatsby-plugin-sass": "^2.7.0",
     "gatsby-plugin-sentry": "^1.0.1",
     "gatsby-plugin-sharp": "^2.10.0",
     "gatsby-plugin-sitemap": "^2.8.0",
