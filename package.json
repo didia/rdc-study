@@ -83,7 +83,7 @@
     "sass-loader": "^10.1.0",
     "sass-resources-loader": "^2.1.1",
     "sharethis-reactjs": "^1.6.0",
-    "yup": "^0.31.1"
+    "yup": "^0.32.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
