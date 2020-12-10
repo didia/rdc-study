@@ -1,11 +1,11 @@
 ---
-title: Bourse du gouvernement roumain pour étudiants Internationaux
-deadline: 2020-03-16T14:07:41.207Z
-excerpt: >-
-  Le gouvernement roumain offre des bourses d’études aux étudiants
+draft: true
+title: Bourse du gouvernement Roumain pour étudiants Internationaux
+deadline: 2020-04-30T13:07:41.207Z
+excerpt: Le gouvernement roumain offre des bourses d’études aux étudiants
   internationaux souhaitant poursuivre leurs études en Roumanie.
 thumbnail: /images/uploads/bourse-tss-24-news.jpg
-startDate: 2019-12-19T14:07:41.220Z
+startDate: 2020-12-10T14:07:41.220Z
 levels:
   - undergraduate
   - all
