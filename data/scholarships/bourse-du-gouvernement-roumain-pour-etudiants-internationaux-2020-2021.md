@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourse du gouvernement Roumain pour étudiants Internationaux
 deadline: 2020-04-30T13:07:41.207Z
 excerpt: Le gouvernement roumain offre des bourses d’études aux étudiants
