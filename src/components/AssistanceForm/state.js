@@ -1,7 +1,7 @@
 import {atom, selector} from 'recoil';
 
 import Steps from './steps';
-import DestinationCountries from './destination-countries';
+import DestinationCountries, {destinationCountrySlugs} from './destination-countries';
 
 const ASSISTANCE_PACKAGE = {
   ADMISSION: 'admission',
@@ -65,6 +65,11 @@ export const hasHighSchoolDiplomaEquivalenceState = atom({
 export const assistanceTypeState = atom({
   key: 'assistanceType',
   default: ''
+});
+
+export const hasReadGuideState = atom({
+  key: 'hasReadGuide',
+  default: false
 });
 
 export const previousStepState = selector({
@@ -134,4 +139,50 @@ const getSelectedPackageForBelgium = (get) => {
   const hasHighSchoolDiplomaEquivalence = get(hasHighSchoolDiplomaEquivalenceState);
 
   return hasHighSchoolDiplomaEquivalence ? ASSISTANCE_PACKAGE.ADMISSION : ASSISTANCE_PACKAGE.EQUIVALENCE;
+};
+
+export const initializeState = ({fromGuide}) => {
+  if (!fromGuide) {
+    return null;
+  }
+
+  const [destinationCountry, guideType] = fromGuide.split('/');
+
+  if (destinationCountrySlugs.indexOf(destinationCountry) === -1) {
+    return null;
+  }
+
+  // eslint-disable-next-line complexity
+  return ({set}) => {
+    set(hasReadGuideState, true);
+    set(destinationCountryState, destinationCountry);
+    set(currentStepState, Steps.AboutCandidate);
+
+    switch (guideType) {
+      case ASSISTANCE_PACKAGE.ADMISSION:
+        set(hasAdmissionState, false);
+
+        if (destinationCountry === DestinationCountries.BELGIUM.value) {
+          set(currentStepState, Steps.BelgiumEquivalenceCheck);
+        }
+        break;
+      case ASSISTANCE_PACKAGE.EQUIVALENCE:
+        set(hasAdmissionState, false);
+        set(hasHighSchoolDiplomaEquivalenceState, false);
+        break;
+      case ASSISTANCE_PACKAGE.CAQ:
+        set(hasAdmissionState, true);
+        set(hasCAQState, false);
+        break;
+      case ASSISTANCE_PACKAGE.VISA:
+        set(hasAdmissionState, true);
+
+        if (destinationCountry === DestinationCountries.CANADA.value) {
+          set(currentStepState, Steps.CanadaCAQCheck);
+        }
+        break;
+      default:
+        set(currentStepState, Steps.DestinationCountry);
+    }
+  };
 };

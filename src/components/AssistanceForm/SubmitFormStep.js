@@ -1,5 +1,5 @@
 // Vendor
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {useIntl} from 'react-intl';
 import T from 'prop-types';
 import {useRecoilValue, useSetRecoilState} from 'recoil';
@@ -15,7 +15,7 @@ import styles from './styles.module.scss';
 import HtmlContent from '../HtmlContent';
 
 // State
-import {assistancePackageState, aboutCandidateState, assistanceTypeState} from './state';
+import {assistancePackageState, aboutCandidateState, assistanceTypeState, hasReadGuideState} from './state';
 
 // Config
 import config from '../../../config';
@@ -43,7 +43,7 @@ const assistanceTypeSchema = (intl) =>
     assistanceType: string().required(intl.formatMessage({id: 'shared.assistance-types.required'}))
   });
 
-const assistanceTypeList = [
+const allAssistanceTypesList = [
   {
     type: AssistanceTypes.INFORMATION,
     title: 'shared.assistance-types.information.title',
@@ -61,16 +61,32 @@ const assistanceTypeList = [
   }
 ];
 
+const assistanceTypesListFromGuide = [
+  {
+    type: AssistanceTypes.CONSULTATION,
+    title: 'shared.assistance-types.consultation-from-guide.title',
+    price: 'shared.assistance-types.consultation.price'
+  },
+  {
+    type: AssistanceTypes.ASSISTANCE,
+    title: 'shared.assistance-types.assistance.title',
+    price: 'shared.assistance-types.assistance.price'
+  }
+];
+
 const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
   const intl = useIntl();
   const [showError, setShowError] = useState(false);
   const [message, setMessage] = useState(null);
 
+  const hasReadGuide = useRecoilValue(hasReadGuideState);
   const aboutCandidate = useRecoilValue(aboutCandidateState);
   const assistancePackageSlug = useRecoilValue(assistancePackageState);
   const setAssistanceType = useSetRecoilState(assistanceTypeState);
 
   const assistancePackage = assistancePackages[assistancePackageSlug];
+
+  const assistanceTypeList = hasReadGuide ? assistanceTypesListFromGuide : allAssistanceTypesList;
 
   const name = `${aboutCandidate.firstName} ${aboutCandidate.lastName}`;
   const messageTranslationKey = aboutCandidate.phone

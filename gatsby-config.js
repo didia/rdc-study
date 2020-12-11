@@ -15,6 +15,7 @@ const plugins = [
   'gatsby-plugin-sharp',
   'gatsby-plugin-remove-trailing-slashes',
   'gatsby-plugin-catch-links',
+  'gatsby-plugin-use-query-params',
   {
     resolve: 'gatsby-plugin-webpack-bundle-analyzer',
     options: {
@@ -53,7 +54,7 @@ const plugins = [
         `,
       output: '/sitemap.xml',
       serialize: ({site, allSitePage}) =>
-        allSitePage.edges.map(edge => ({
+        allSitePage.edges.map((edge) => ({
           url: `${site.siteMetadata.siteUrl + edge.node.path}/`,
           changefreq: 'daily',
           priority: 0.7

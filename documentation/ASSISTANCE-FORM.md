@@ -170,3 +170,18 @@
      - Rassembler vos documents
      - Prendre Rendez-vous pour votre entrevue
      - Préparer l'entrevue
+
+
+# Parcours à partir d'un guide pays
+
+  Quelqu'un clique sur un guide, on ajoute dans le query param from=country/package. Et puis on check ça au render pour setter le state initial.
+  
+  country: destinationCountry
+  package: isGoingToQuebec, hasCAQ, hasGraduateStudiesDiplomaState, hasHighSchoolDiplomaEquivalenceState
+  
+  comingFromGuide: true
+  
+  Vous désirez une assistance pour obtention de permis d'études au Canada, pouve
+  
+  Option: Je n'ai pas d'admission
+  
