@@ -11,7 +11,7 @@ import GenericPage from '../GenericPage';
 import GuideList from '../../GuideList';
 import HtmlContent from '../../HtmlContent';
 
-const Assistance = () => (
+const Assistance = ({guideSlug}) => (
   <div>
     <FormattedMessage id="pages.guides-show.assistance.title">
       {(text) => <h2 className="major">{text}</h2>}
@@ -25,7 +25,7 @@ const Assistance = () => (
       <div className={styles['call-to-action-wrapper']}>
         <FormattedMessage id="pages.index.banner.call-to-action-button-text">
           {(text) => (
-            <Link to="/accompagnement" className="button special call-to-action">
+            <Link to={`/accompagnement?guide=${guideSlug}`} className="button special call-to-action">
               {text}
             </Link>
           )}
@@ -34,6 +34,10 @@ const Assistance = () => (
     </div>
   </div>
 );
+
+Assistance.propTypes = {
+  guideSlug: T.string.isRequired
+};
 
 const GuidePage = ({guide, otherGuides, relatedGuides}) => {
   const pageWrapperClassName = styles[`page-wrapper--${guide.slug}`];
@@ -57,7 +61,7 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
     >
       <HtmlContent content={guide.content} />
 
-      <Assistance />
+      <Assistance guideSlug={guide.slug} />
 
       {relatedGuides && relatedGuides.length > 0 && (
         <GuideList guides={relatedGuides} titleKey="pages.guides-show.related-guides.title" />

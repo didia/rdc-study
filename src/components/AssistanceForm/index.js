@@ -10,8 +10,10 @@ import Card from '../Card';
 import styles from './styles.module.scss';
 
 // State
-import {currentStepState, previousStepState, previousStepsState} from './state';
+import {currentStepState, previousStepState, previousStepsState, initializeState} from './state';
 import Steps, {getStepComponent, goToNextStep, goToPreviousStep, goToStep} from './steps';
+
+export {initializeState};
 
 // Utils
 import isScrolledIntoView from '../../utils/is-scrolled-into-view';

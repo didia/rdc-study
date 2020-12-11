@@ -1,4 +1,4 @@
-export default {
+const DestinationCountries = {
   BELGIUM: {
     labelKey: 'shared.countries.be',
     value: 'belgique'
@@ -24,3 +24,7 @@ export default {
     value: 'usa'
   }
 };
+
+export const destinationCountrySlugs = Object.keys(DestinationCountries).map(key => DestinationCountries[key].value)
+
+export default DestinationCountries;

@@ -44,7 +44,7 @@
   "assistance-form.steps.submit-form.assistance-request-message": "Je suis {name}, originaire de {originCountry}. Je veux une {assistancePackage}.",
   "assistance-form.steps.submit-form.assistance-request-message-with-phone": "Je suis {name}, originaire de {originCountry}. Je veux une {assistancePackage}. Mon numéro WhatsApp est {phone}.",
   "assistance-form.steps.submit-form.error-message": "Une erreur inconnue est survenue lors de la soumission de votre formulaire. Nous vous suggérons d’envoyer votre demande par email à '<a' href=\"mailto:assistance@rdcetudes.com?html=true&subject=Demande d’assistance&body={message}\"'>'assistance@rdcetudes.com'</a>' avec comme message: '<br/>' «{message}»",
-  "assistance-form.steps.submit-form.assistance-types-prompt": "Comment voulez-vous que l’on vous assiste cela ?",
+  "assistance-form.steps.submit-form.assistance-types-prompt": "Comment voulez-vous que l’on vous assiste ?",
 
   "footer.copyright": "© RDC Etudes. Tous droits réservés",
 
@@ -156,6 +156,7 @@
   "shared.assistance-types.information.title": "Je veux accéder au guide gratuit de démarches afin de faire moi-même mes démarches.",
   "shared.assistance-types.consultation.price": "Prix: 19.99 $ US",
   "shared.assistance-types.consultation.title": "J'ai déjà lu le guide gratuit et je veux maintenant parler à un conseiller RDC Études qui m’orientera pour la suite de mes démarches.",
+  "shared.assistance-types.consultation-from-guide.title": "Je veux parler à un conseiller RDC Études qui m’orientera pour la suite de mes démarches.",
   "shared.assistance-types.assistance.price": "Prix: 200 $ US",
   "shared.assistance-types.assistance.title": "Je suis prêt à commencer mes démarches et je veux qu’un mentor RDC Études m’aide à les réaliser afin d’augmenter mes chances de succès.",
   "shared.assistance-types.required": "Vous devez choisir le type d’assistance désiré avant de soumettre votre demande.",
