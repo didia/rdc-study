@@ -77,14 +77,6 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
     ? 'assistance-form.steps.submit-form.assistance-request-message-with-phone'
     : 'assistance-form.steps.submit-form.assistance-request-message';
 
-  useEffect(() => {
-    analyticsPushEvent({
-      category: 'AssistanceForm',
-      action: 'ShowAssistancePackage',
-      label: assistancePackageSlug
-    });
-  }, []);
-
   const submitAssistance = async (message) => {
     const payload = {
       message,

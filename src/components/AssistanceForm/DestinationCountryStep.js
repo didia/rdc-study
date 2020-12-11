@@ -26,7 +26,6 @@ import {destinationCountryState, hasAdmissionState} from './state';
 // Constants
 import DestinationCountries from './destination-countries';
 import Steps from './steps';
-import analyticsPushEvent from '../../utils/push-analytics-event';
 
 const SUPPORTED_DESTINATION_COUNTRIES = [
   DestinationCountries.CANADA,

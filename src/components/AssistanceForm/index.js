@@ -14,7 +14,6 @@ import {currentStepState, previousStepState, previousStepsState} from './state';
 import Steps, {getStepComponent, goToNextStep, goToPreviousStep, goToStep} from './steps';
 
 // Utils
-import analyticsPushEvent from '../../utils/push-analytics-event';
 import isScrolledIntoView from '../../utils/is-scrolled-into-view';
 
 const MasterForm = ({assistancePackages}) => {
@@ -33,12 +32,6 @@ const MasterForm = ({assistancePackages}) => {
     ? () => {
         goToPreviousStep({currentStep, previousStep, setCurrentStep, setPreviousSteps});
         scrollIntoViewIfNecessary();
-
-        analyticsPushEvent({
-          category: 'AssistanceForm',
-          action: 'previous',
-          label: currentStep
-        });
       }
     : null;
 
@@ -50,12 +43,6 @@ const MasterForm = ({assistancePackages}) => {
   const onRestart = () => {
     goToStep({setCurrentStep, setPreviousSteps, step: Steps.DestinationCountry});
     scrollIntoViewIfNecessary();
-
-    analyticsPushEvent({
-      category: 'AssistanceForm',
-      action: 'restart',
-      label: currentStep
-    });
   };
 
   const CurrentStepComponent = getStepComponent(currentStep);
