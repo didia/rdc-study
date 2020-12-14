@@ -6,7 +6,7 @@ title: "Exemple de lettre d’engagement à quitter le Canada après ses études
 excerpt: "Au moment de déposer votre demande de permis d’études, vous aurez besoin de fournir une lettre d’engagement à quitter le Canada après vos études. Ce guide vous offre un exemple que vous pouvez adapter à votre propre situation."
 thumbnail: 'images/engagement-quitter-canada.jpg'
 topic: 'visa/documents'
-related: ['canada/visa']
+related: ['canada/visa/lettre-explication', 'canada/visa']
 ---
 
 ## Pourquoi faut-il écrire une lettre d’engagement à quitter le Canada ?
