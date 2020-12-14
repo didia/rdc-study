@@ -25,7 +25,7 @@ const Assistance = ({guideSlug}) => (
       <div className={styles['call-to-action-wrapper']}>
         <FormattedMessage id="pages.index.banner.call-to-action-button-text">
           {(text) => (
-            <Link to={`/accompagnement?guide=${guideSlug}`} className="button special call-to-action">
+            <Link to={`/accompagnement?pour=${guideSlug}`} className="button special call-to-action">
               {text}
             </Link>
           )}

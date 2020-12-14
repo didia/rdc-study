@@ -146,7 +146,7 @@ export const initializeState = ({fromGuide}) => {
     return null;
   }
 
-  const [destinationCountry, guideType] = fromGuide.split('/');
+  const [destinationCountry, guideType, _] = fromGuide.split('/');
 
   if (destinationCountrySlugs.indexOf(destinationCountry) === -1) {
     return null;

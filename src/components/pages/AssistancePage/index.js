@@ -22,7 +22,7 @@ const page = {
 };
 
 const AssistancePage = ({assistancePackages}) => {
-  const [fromGuide] = useQueryParam('guide', StringParam);
+  const [fromGuide] = useQueryParam('pour', StringParam);
 
   return (
     <GenericPage page={page} bannerClassName={styles.banner}>
