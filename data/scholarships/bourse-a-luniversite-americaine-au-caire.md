@@ -1,7 +1,7 @@
 ---
 draft: true
 title: Bourse à l'Université Américaine au Caire
-deadline: 2020-12-15T10:18:21.050Z
+deadline: 2021-01-11T10:18:21.050Z
 excerpt: Chaque année, des bourses complètes sont offertes aux ressortissants
   des pays africains pour des études supérieures à l'Université Américaine au
   Caire .
