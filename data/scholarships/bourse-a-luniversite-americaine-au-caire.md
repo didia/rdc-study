@@ -10,7 +10,7 @@ startDate: 2020-12-07T10:18:21.255Z
 levels:
   - graduate
 targetCountries:
-  - africa
+  - eg
 ---
 ## En quoi consiste la bourse ?
 

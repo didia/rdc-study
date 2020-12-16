@@ -85,6 +85,8 @@ collections:
             value: cn
           - label: Chypre du Nord
             value: cytr
+          - label: Égypte
+            value: eg
           - label: Etats-Unis
             value: us
           - label: France

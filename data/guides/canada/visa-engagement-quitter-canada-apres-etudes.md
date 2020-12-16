@@ -38,3 +38,10 @@ Vous pouvez vous en inspirer pour faire votre demande personnelle.
 > <p style="text-align: right">Fait à Kinshasa, le 30 Juin 1960 <br/>
 > Patrice Emery Lumumba <br/>
 > (Signature)</p>
+
+## Convaincre l’agent de visa que vous respecterez votre engagement.
+
+La lettre d’engagement à elle seule n’est pas suffisante pour démontrer que votre voyage d’études n’est pas qu’un prétexte pour immigrer au Canada.
+En plus de la lettre, vous devez convaincre l’agent de visa que vous respecterez l’engagement que vous avez pris.
+Vous devez le faire à travers la lettre d’explication que vous inclurez dans votre demande de permis de visa d’études.
+Pour ce faire, nous vous invitons à lire [notre guide sur comment écrire une lettre d'explication pour une demande de visa d’études au Canada](/guides/canada/visa/lettre-explication).
