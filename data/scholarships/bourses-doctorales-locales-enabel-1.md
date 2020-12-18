@@ -45,4 +45,6 @@ Pour postuler vous devez :
 
 ## Comment postuler ?
 
-Pour postuler, vous devez remplir [le formulaire](https://ee.humanitarianresponse.info/x/a3m6MBVA) imprimez-le ; apposez-y, au point 13 « Déclaration sur l’honneur », votre signature manuscrite précédée de la mention manuscrite « lu et approuvé » et transmettez-le scanné par voie électronique accompagné des scan de tous les documents -, aux adresses suivantes :**[sgcoopinter@gmail.com](mailto:sgcoopinter@gmail.com)** et **[precob.cod@enabel.be](mailto:precob.cod@enabel.be) .**
+Pour postuler, vous devez remplir [le formulaire](https://ee.humanitarianresponse.info/x/a3m6MBVA) imprimez-le ; apposez-y, au point 13 « Déclaration sur l’honneur », votre signature manuscrite précédée de la mention manuscrite « lu et approuvé » et transmettez-le scanné par voie électronique accompagné des scan de tous les documents -, aux adresses suivantes :**[sgcoopinter@gmail.com](mailto:sgcoopinter@gmail.com)** et **[precob.cod@enabel.be](mailto:precob.cod@enabel.be) .** 
+
+**Bonne chance !**
