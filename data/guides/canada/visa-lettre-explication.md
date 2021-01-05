@@ -9,7 +9,7 @@ topic: 'visa/documents'
 related: ['canada/visa/exemple-lettre-engagement-quitter-canada-apres-etudes', 'canada/visa']
 ---
 
-## Pourquoi faut-il écrire une lettre d'explication pour votre demande de de visa d’études ?
+## Pourquoi faut-il écrire une lettre d'explication pour votre demande de visa d’études ?
 
 Lorsque vous présentez votre demande de visa, vous devez *convaincre* l’agent de visa que votre projet d’études au Canada est cohérent et que ce dernier n'est pas seulement un prétexte pour rejoindre le Canada.
 
@@ -24,9 +24,9 @@ Votre lettre d'explication doit contenir 4 sections principales:
 2. ### Vos perspectives de retour au pays
    L'objectif de cette section est d'exposer à l'agent de visa tous les facteurs qui pourraient vous inciter à retourner dans votre pays à la fin de vos études.
    Cette section vient appuyer votre [lettre d’engagement à quitter le Canada à la fin de vos études](/canada/visa/exemple-lettre-engagement-quitter-canada-apres-etudes) avec des preuves à l'appui si possible.
-3. ### Votre historique de voyage et famille à l’étranger
+3. ### Votre historique de voyage et famille à l’étranger si applicable
    Vous devez démontrer que vous ou les membres de votre famille aviez déjà eu à voyager vers les pays occidentaux et retourner dans votre pays d’origine.
-   Il faudrait aussi mentionner les membres de votre famille qui habite au Canada ou États-Unis et convaincre l’agent de visa que votre objectif n'est pas simplement d’aller les rejoindre.
+   Il faudrait aussi mentionner les membres de votre famille qui habitent au Canada ou États-Unis et convaincre l’agent de visa que votre objectif n'est pas simplement d’aller les rejoindre.
 4. ### Votre capacité financière
    Il faut convaincre l’agent de visa que vous aurez assez de fonds pour mener votre projet d'études à terme. Cela inclut les frais de subsistances ainsi que vos frais de scolarité.
    C’est l’occasion pour vous d’expliquer les preuves financières que vous avez fournies.
