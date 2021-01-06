@@ -82,11 +82,11 @@ Voici les documents que vous devez inclure dans votre dossier de demande d’éq
    
 ## Combien ça coûte?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC Etudes](/accompagnement), vous devrez prévoir entre **378 USD et 528 USD** pour toutes vos démarches d’admission.
+En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC Etudes](/accompagnement), vous devrez prévoir entre **478 USD et 628 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
 - **150 € (≈ 178 USD)** pour la demande d’admission.
 - **0 à 150 USD** pour l’envoi et reception des documents.
-- **200 USD** pour les frais d’assistance RDC Etudes
+- **299.99 USD** pour les frais d’assistance RDC Etudes
  
 _NB_: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer selon les taux d’échange ou les coûts d’envois des documents.

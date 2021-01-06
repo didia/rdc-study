@@ -33,10 +33,10 @@ Voici donc les différentes étapes à suivre pour y arriver:
 
 ## Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **287 USD** pour vos démarches de CAQ.
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **387 USD** pour vos démarches de CAQ.
 Ces frais se présentent comme suit:
 
 - **87 USD** pour le CAQ
-- **200 USD** pour les frais d’assistance RDC-Etudes.
+- **299.99 USD** pour les frais d’assistance RDC-Etudes.
 
 **NB**: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement du Québec. Veuillez toujours vous fier à leur site web pour les montants actualisés.

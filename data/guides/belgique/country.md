@@ -45,11 +45,11 @@ Vous devrez vérifier si c’est le cas avec l’université que vous aurez choi
 
 ## Combien coûtent les démarches?
 
-En supposant que vous choisissez [d'être accompagné dans vos démarches par un mentor de RDC-Etudes](/accompagnement), vous devez prévoir entre **1370 USD et 2180 USD** pour toutes vos démarches.
+En supposant que vous choisissez [d'être accompagné dans vos démarches par un mentor de RDC-Etudes](/accompagnement), vous devez prévoir entre **1570 USD et 2480 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
 - **0 à 380 USD** pour le processus d’admission.
 - **970 USD à 1200 USD** pour le processus de visa.
-- **400 USD à 600 USD** pour les frais d’assistance RDC Etudes. (Payable en trois tranches de **200 USD**: Equivalence, Admission et Visa)
+- **599.98 USD à 899.97 USD** pour les frais d’assistance RDC Etudes. (**299.99 USD** pour chaque service: Equivalence, Admission et Visa)
 
 **NB**: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement belge. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

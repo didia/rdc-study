@@ -32,12 +32,12 @@ Le gouvernement indien a aussi établi une plateforme d’admission officielle e
 
 ## Combien coûtent les démarches ?
 
-En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir entre **530 USD et 780 USD** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir entre **730 USD et 980 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
 - **50 USD à 300 USD** pour le processus d’admission.
 - **80 USD** pour le processus de visa.
-- **400 USD à 600 USD** pour les frais d’assistance RDC Etudes. (Payable en deux tranches: Admission et Visa)
+- **599.98 USD** pour les frais d’assistance RDC Etudes. (**299.99 USD** pour chaque service: Admission et Visa)
 
 **NB**: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement indien. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
 

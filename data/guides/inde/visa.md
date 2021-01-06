@@ -40,11 +40,11 @@ Si votre demande est approuvée, il vous sera demandé de revenir après 48 heur
 
 5. ## Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir **280 USD** pour toutes vos démarches de visa.
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir **380 USD** pour toutes vos démarches de visa.
 Ces frais se présentent comme suit:
 
 - **80 USD** pour les frais de visa.
-- **200 USD** pour les frais d’assistance RDC Études.
+- **299.99 USD** pour les frais d’assistance RDC Études.
 
 _NB_: 
 - Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement indien. Veuillez toujours vous fier à leur site web pour les montants actualisés.

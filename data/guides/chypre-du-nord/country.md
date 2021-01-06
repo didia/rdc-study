@@ -33,10 +33,10 @@ Il n’est donc pas rare que des étudiants ayant un dossier académique excepti
 
 ## Combien coûtent les démarches ?
 
-En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir entre **400 USD et 450 USD** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir entre **600 USD et 650 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
 - **0 à 50 USD** pour les frais de demande d’admission.
-- **400 USD** pour les frais d'assistance RDC Etudes. (Payable en deux tranches: Admission, Voyage)
+- **599.98 USD** pour les frais d'assistance RDC Etudes. (**299.99 USD** pour chaque service: Admission, Voyage)
 
 **NB**: Ces montants ne sont qu’une estimation des coûts réels. Ils peuvent changer par rapport à votre location, aux universités choisies ou encore s’ils sont changés par le gouvernement de Chypre du Nord. Veuillez toujours vous fier à leurs sites web respectifs pour les montants actualisés.

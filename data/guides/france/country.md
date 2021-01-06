@@ -46,12 +46,12 @@ Toutefois, vous pouvez obtenir une liste complète des bourses offertes par la F
 
 ## Combien coûtent les démarches ?
 
-En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir **500 USD + 50 euros** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir **700 USD + 50 euros** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
 - **100 USD** pour les frais de dossier.
 - **50 EUROS** pour les frais de visa.
-- **400 USD** pour les frais d’assistance RDC Etudes. (Payable en deux tranches de **200 USD**: Admission et Visa)
+- **599.98 USD** pour les frais d’assistance RDC Etudes. (**299.99 USD** pour chaque service: Admission et Visa)
 
 **NB**: Ces montants sont basés sur les informations que nous avons consultés au moment de la rédaction de ce guide.
 Pour avoir les montants à jour, nous vous conseillons de vous informer auprès de votre espace Campus France ou un consulat de France dans votre pays.

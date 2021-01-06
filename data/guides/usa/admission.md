@@ -56,11 +56,11 @@ Une fois admis, vous devrez maintenant faire une demande de visa d’études à 
 
 ## Combien ça coûte?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **300 USD et 550 USD** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **400 USD et 650 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
 - **100 USD à 200 USD** pour la demande d’admission.
 - **0 à 150 USD** pour l’envoi et reception des documents.
-- **200 USD** pour les frais d’assistance RDC-Etudes.
+- **299.99 USD** pour les frais d’assistance RDC-Etudes.
 
 **NB**: Ces prix sont juste là à titre d’estimé, ils peuvent changer par rapport aux universités. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.

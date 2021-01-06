@@ -39,10 +39,10 @@ Une fois admis, certaines universités vous demandront de payer une avance des f
 Une fois votre lettre d’admission obtenue, vous devrez maintenant faire une demande de visa d’études. Pour savoir comment procéder, [consultez notre guide sur les étapes à suivre pour obtenir un visa d’études pour l’Inde](/guides/inde/visa)
 
 4. ## Combien ça coûte ?
-En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **250 USD et 500 USD** pour toutes vos démarches d’admission.
+En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **350 USD et 500 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
 - **50 USD à 300 USD** pour la demande d’admission.
-- **200 USD** pour les frais d’assistance RDC Études.
+- **299.99 USD** pour les frais d’assistance RDC Études.
 
 _NB_: Le montant de demande d’admission n'est qu’une estimation de ce que les universités demandent généralement. Il peut donc changer à n’importe quel moment selon l’université concernée. Veuillez toujours vous fier au site web de l’université pour le montant actualisé.

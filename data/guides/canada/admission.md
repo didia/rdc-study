@@ -54,11 +54,11 @@ Une fois admis, vous devrez maintenant faire une demande de permis d’études. 
 
 ## Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **280 USD et 600 USD** pour toutes vos démarches d’admission.
+En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **380 USD et 700 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
 - **80 USD à 250 USD** pour la demande d’admission.
 - **0 à 150 USD** pour l’envoi et reception des documents.
-- **200 USD** pour les frais d’assistance RDC Etudes.
+- **299.99 USD** pour les frais d’assistance RDC Etudes.
 
 _NB_: Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

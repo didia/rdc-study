@@ -35,11 +35,11 @@ Le processus d’admission est à quelques exceptions près identique pour l’e
    Une fois admis, votre université vous demandera de payer une avance des frais académiques pour vous remettre la lettre d’admission qui tient lieu de visa de voyage pour la Chypre du Nord. Pour savoir comment procéder une fois votre admission obtenue, [consultez notre guide sur les étapes à suivre pour un voyage d’études à Chypre du Nord](/guides/chypre-du-nord/visa)
 
 ## Combien ça coûte ?
-En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **200 USD et 250 USD** pour toutes vos démarches d’admission.
+En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **300 USD et 350 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
 - **0 à 50 USD** pour la demande d’admission.
-- **200 USD** pour les frais d’assistance RDC Etudes.
+- **299.99 USD** pour les frais d’assistance RDC Etudes.
 
 _NB_: Le montant de demande d’admission n'est qu’une estimation de ce que les universités demandent généralement. Il peut donc changer à n’importe quel moment selon l’université concernée. Veuillez toujours vous fier au site web de l’université pour le montant actualisé.
    
