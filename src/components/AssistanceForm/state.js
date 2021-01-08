@@ -72,6 +72,11 @@ export const hasReadGuideState = atom({
   default: false
 });
 
+export const isAlreadyAdvancedState = atom({
+  key: 'isAlreadyAdvanced',
+  default: false
+});
+
 export const previousStepState = selector({
   key: 'previousFormStep',
 

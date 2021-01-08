@@ -3,11 +3,13 @@ import AboutCandidateStep from './AboutCandidateStep';
 import BelgiumEquivalenceCheckStep from './BelgiumEquivalenceCheckStep';
 import CanadaCAQCheckStep from './CanadaCAQCheckStep';
 import DestinationCountryStep from './DestinationCountryStep';
+import AssistanceLevelCheckStep from './AssistanceLevelCheckStep';
 import FormSubmittedStep from './FormSubmittedStep';
 import SubmitFormStep from './SubmitFormStep';
 
 export const Steps = {
   AboutCandidate: 'AboutCandidate',
+  AssistanceLevelCheck: 'AssistanceLevelCheck',
   BelgiumEquivalenceCheck: 'BelgiumEquivalenceCheck',
   CanadaCAQCheck: 'CanadaCAQCheck',
   DestinationCountry: 'DestinationCountry',
@@ -17,6 +19,7 @@ export const Steps = {
 
 const StepRegistry = {
   [Steps.AboutCandidate]: AboutCandidateStep,
+  [Steps.AssistanceLevelCheck]: AssistanceLevelCheckStep,
   [Steps.BelgiumEquivalenceCheck]: BelgiumEquivalenceCheckStep,
   [Steps.CanadaCAQCheck]: CanadaCAQCheckStep,
   [Steps.DestinationCountry]: DestinationCountryStep,

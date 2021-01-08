@@ -43,7 +43,7 @@ const CanadaCAQCheckStep = ({onNextStep, onPreviousStep}) => {
           setIsGoingToQuebec(isGoingToQuebec);
           setHasCAQ(hasCAQ);
 
-          onNextStep(Steps.AboutCandidate);
+          onNextStep(hasCAQ ? Steps.AssistanceLevelCheck : Steps.AboutCandidate);
         }}
       >
         {({isSubmitting}) => (

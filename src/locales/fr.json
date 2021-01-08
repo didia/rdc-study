@@ -46,6 +46,10 @@
   "assistance-form.steps.submit-form.error-message": "Une erreur inconnue est survenue lors de la soumission de votre formulaire. Nous vous suggérons d’envoyer votre demande par email à '<a' href=\"mailto:assistance@rdcetudes.com?html=true&subject=Demande d’assistance&body={message}\"'>'assistance@rdcetudes.com'</a>' avec comme message: '<br/>' «{message}»",
   "assistance-form.steps.submit-form.assistance-types-prompt": "Comment voulez-vous que l’on vous assiste ?",
 
+  "assistance-form.steps.assistance-level-check.title": "Avez-vous dejà commencé à remplir votre demande et à rassembler les documents nécessaires ?",
+  "assistance-form.steps.assistance-level-check.negative-option": "Non, je veux que vous m’aidiez à le faire.",
+  "assistance-form.steps.assistance-level-check.positive-option": "Oui, j’ai presque fini de préparer la demande.",
+
   "footer.copyright": "© RDC Etudes. Tous droits réservés",
 
   "footer.contact-form.error.title": "Oups!!",
@@ -154,6 +158,10 @@
   "scholarship-list.see-all": "Afficher toutes les bourses",
   "scholarship-list.see-details": "Voir les détails",
 
+  "shared.assistance-types.verification.price": "79.99 $ US",
+  "shared.assistance-types.verification.title": "Je veux que vous vérifiez ma demande pour m’assurer que je l’ai bien faite et que je n’ai rien oublié.",
+  "shared.assistance-types.verification-et-lettre.price": "99.99 $ US",
+  "shared.assistance-types.verification-et-lettre.title": "En plus de vérifier ma demande, je vais que vous m’aidiez à écrire une lettre d’explication afin d’augmenter mes chances de succès.",
   "shared.assistance-types.information.price": "Prix: Gratuit",
   "shared.assistance-types.information.title": "Je veux accéder au guide gratuit de démarches afin de faire moi-même mes démarches.",
   "shared.assistance-types.consultation.price": "Prix: 29.99 $ US",
