@@ -24,7 +24,7 @@ const {contactFormEndpoint} = config;
 
 // Constants
 import Steps from './steps';
-import {AssistanceTypes} from './constants';
+import {AssistanceTypes, AssistancePrices} from './constants';
 
 // Utils
 import getCurrentUrl from '../../utils/get-current-url';
@@ -42,6 +42,11 @@ const assistanceTypeSchema = (intl) =>
   object().shape({
     assistanceType: string().required(intl.formatMessage({id: 'shared.assistance-types.required'}))
   });
+
+const formattedAssistancePrice = (intl, price) => {
+  const translationKey = price ? 'shared.assistance-types.price' : 'shared.assistance-types.price-free';
+  return intl.formatMessage({id: translationKey}, {price});
+};
 
 const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
   const intl = useIntl();
@@ -103,7 +108,8 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
       analyticsPushEvent({
         category: 'AssistanceForm',
         action: assistanceType,
-        label: assistancePackageSlug
+        label: assistancePackageSlug,
+        value: AssistancePrices[assistanceType]
       });
 
       onNextStep(Steps.FormSubmitted);
@@ -156,7 +162,7 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
                   <Field type="radio" name="assistanceType" value={assistanceType.type} className={styles.input} />
                   <div>
                     {intl.formatMessage({id: assistanceType.title})}
-                    <p className="bold">{intl.formatMessage({id: assistanceType.price})}</p>
+                    <p className="bold">{formattedAssistancePrice(intl, assistanceType.price)}</p>
                   </div>
                 </label>
               ))}
