@@ -28,6 +28,16 @@ const translationKeysMap = {
     title: 'assistance-form.steps.form-submitted.information.title',
     firstParagraph: 'assistance-form.steps.form-submitted.information.first-paragraph',
     secondParagraph: 'assistance-form.steps.form-submitted.information.second-paragraph'
+  },
+  [AssistanceTypes.VERIFICATION]: {
+    title: 'assistance-form.steps.form-submitted.verification.title',
+    firstParagraph: 'assistance-form.steps.form-submitted.verification.first-paragraph',
+    secondParagraph: 'assistance-form.steps.form-submitted.verification.second-paragraph'
+  },
+  [AssistanceTypes.VERIFICATION_ET_LETTRE]: {
+    title: 'assistance-form.steps.form-submitted.verification.title',
+    firstParagraph: 'assistance-form.steps.form-submitted.verification.first-paragraph',
+    secondParagraph: 'assistance-form.steps.form-submitted.verification.second-paragraph'
   }
 };
 
@@ -48,7 +58,7 @@ const FormSubmittedStep = () => {
 
       <p className={styles['form-submitted-paragraph']}>{intl.formatMessage({id: translations.firstParagraph})}</p>
 
-      <p>{intl.formatMessage({id: translations.secondParagraph})}</p>
+      <p dangerouslySetInnerHTML={{__html: intl.formatMessage({id: translations.secondParagraph})}} className={styles['form-submitted-paragraph']} />
 
       <div className={styles['centralized-button-wrapper']}>
         <Link to={guidePath} className="button special call-to-action">

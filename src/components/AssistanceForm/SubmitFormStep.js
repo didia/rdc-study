@@ -15,7 +15,7 @@ import styles from './styles.module.scss';
 import HtmlContent from '../HtmlContent';
 
 // State
-import {assistancePackageState, aboutCandidateState, assistanceTypeState, hasReadGuideState, isAlreadyAdvancedState} from './state';
+import {availableAssistanceTypesState, assistancePackageState, aboutCandidateState, assistanceTypeState} from './state';
 
 // Config
 import config from '../../../config';
@@ -43,68 +43,17 @@ const assistanceTypeSchema = (intl) =>
     assistanceType: string().required(intl.formatMessage({id: 'shared.assistance-types.required'}))
   });
 
-const buildAssistanceTypeList = ({hasReadGuide, isAlreadyAdvanced}) => {
-  const assistanceTypesList = [];
-
-  if (hasReadGuide) {
-    assistanceTypesList.push({
-      type: AssistanceTypes.CONSULTATION,
-      title: 'shared.assistance-types.consultation-from-guide.title',
-      price: 'shared.assistance-types.consultation.price'
-    });
-  } else {
-    assistanceTypesList.push(
-      {
-        type: AssistanceTypes.INFORMATION,
-        title: 'shared.assistance-types.information.title',
-        price: 'shared.assistance-types.information.price'
-      },
-      {
-        type: AssistanceTypes.CONSULTATION,
-        title: 'shared.assistance-types.consultation.title',
-        price: 'shared.assistance-types.consultation.price'
-      }
-    );
-  }
-
-  if (isAlreadyAdvanced) {
-    assistanceTypesList.push(
-      {
-        type: AssistanceTypes.ASSISTANCE,
-        title: 'shared.assistance-types.verification.title',
-        price: 'shared.assistance-types.verification.price'
-      },
-      {
-        type: AssistanceTypes.ASSISTANCE,
-        title: 'shared.assistance-types.verification-et-lettre.title',
-        price: 'shared.assistance-types.verification-et-lettre.price'
-      }
-    );
-  } else {
-    assistanceTypesList.push({
-      type: AssistanceTypes.ASSISTANCE,
-      title: 'shared.assistance-types.assistance.title',
-      price: 'shared.assistance-types.assistance.price'
-    });
-  }
-
-  return assistanceTypesList;
-};
-
 const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
   const intl = useIntl();
   const [showError, setShowError] = useState(false);
   const [message, setMessage] = useState(null);
 
-  const hasReadGuide = useRecoilValue(hasReadGuideState);
-  const isAlreadyAdvanced = useRecoilValue(isAlreadyAdvancedState);
   const aboutCandidate = useRecoilValue(aboutCandidateState);
   const assistancePackageSlug = useRecoilValue(assistancePackageState);
+  const availableAssistanceTypes = useRecoilValue(availableAssistanceTypesState);
   const setAssistanceType = useSetRecoilState(assistanceTypeState);
 
   const assistancePackage = assistancePackages[assistancePackageSlug];
-
-  const assistanceTypeList = buildAssistanceTypeList({hasReadGuide, isAlreadyAdvanced});
 
   const name = `${aboutCandidate.firstName} ${aboutCandidate.lastName}`;
   const messageTranslationKey = aboutCandidate.phone
@@ -195,7 +144,7 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
                 !isValid ? styles['radio-button-group--invalid'] : null
               )}
             >
-              {assistanceTypeList.map((assistanceType) => (
+              {availableAssistanceTypes.map((assistanceType) => (
                 <label
                   key={assistanceType.type}
                   className={classnames(

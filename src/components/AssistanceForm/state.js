@@ -2,6 +2,7 @@ import {atom, selector} from 'recoil';
 
 import Steps from './steps';
 import DestinationCountries, {destinationCountrySlugs} from './destination-countries';
+import {AssistanceTypes} from './constants';
 
 const ASSISTANCE_PACKAGE = {
   ADMISSION: 'admission',
@@ -95,6 +96,63 @@ export const assistancePackageState = selector({
     const selectedPackage = getSelectedPackage(get);
 
     return `${destinationCountry}/${selectedPackage}`;
+  }
+});
+
+export const availableAssistanceTypesState = selector({
+  key: 'availableAssistanceTypes',
+
+  get: ({get}) => {
+    const hasReadGuide = get(hasReadGuideState);
+    const isAlreadyAdvanced = get(isAlreadyAdvancedState);
+    const country = get(destinationCountryState);
+
+    const assistanceTypesList = [];
+
+    if (hasReadGuide) {
+      assistanceTypesList.push({
+        type: AssistanceTypes.CONSULTATION,
+        title: 'shared.assistance-types.consultation-from-guide.title',
+        price: 'shared.assistance-types.consultation.price'
+      });
+    } else {
+      assistanceTypesList.push(
+        {
+          type: AssistanceTypes.INFORMATION,
+          title: 'shared.assistance-types.information.title',
+          price: 'shared.assistance-types.information.price'
+        },
+        {
+          type: AssistanceTypes.CONSULTATION,
+          title: 'shared.assistance-types.consultation.title',
+          price: 'shared.assistance-types.consultation.price'
+        }
+      );
+    }
+
+    if (isAlreadyAdvanced) {
+      assistanceTypesList.push({
+        type: AssistanceTypes.VERIFICATION,
+        title: 'shared.assistance-types.verification.title',
+        price: 'shared.assistance-types.verification.price'
+      });
+
+      if (country === DestinationCountries.CANADA.value) {
+        assistanceTypesList.push({
+          type: AssistanceTypes.VERIFICATION_ET_LETTRE,
+          title: 'shared.assistance-types.verification-et-lettre.title',
+          price: 'shared.assistance-types.verification-et-lettre.price'
+        });
+      }
+    } else {
+      assistanceTypesList.push({
+        type: AssistanceTypes.ASSISTANCE,
+        title: 'shared.assistance-types.assistance.title',
+        price: 'shared.assistance-types.assistance.price'
+      });
+    }
+
+    return assistanceTypesList;
   }
 });
 

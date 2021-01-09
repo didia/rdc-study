@@ -57,6 +57,7 @@ const onChangeDestinationCountry = (field, setShowHasAdmission) => (event) => {
   field.onChange(event);
 };
 
+// eslint-disable-next-line complexity
 const getNextStep = ({destinationCountry, hasAdmission}) => {
   if (destinationCountry === DestinationCountries.CANADA.value && hasAdmission) {
     return Steps.CanadaCAQCheck;
@@ -64,7 +65,7 @@ const getNextStep = ({destinationCountry, hasAdmission}) => {
     return Steps.BelgiumEquivalenceCheck;
   }
 
-  return Steps.AboutCandidate;
+  return hasAdmission ? Steps.AboutCandidate : Steps.AssistanceLevelCheck;
 };
 
 const DestinationCountryStep = ({onNextStep, onPreviousStep, recapMode}) => {
