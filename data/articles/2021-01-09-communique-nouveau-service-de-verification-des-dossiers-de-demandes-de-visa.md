@@ -1,10 +1,11 @@
 ---
 draft: true
-title: "Communiqué: Nouveau service de verification des dossiers de demandes de Visa"
+title: "Communiqué: RDC Études lance un nouveau service pour les demandeurs de
+  visa d'études"
 excerpt: Dans le but de mieux répondre aux besoins de notre clientèle, nous
-  lançons un nouveau service de vérification des dossiers de demandes de visa
-  pour les clients qui font eux-mêmes leurs démarches ou se font aider par
-  d'autres personnes que RDC Études.
+  lançons un nouveau service de validation et recommandation aux les clients qui
+  font eux-mêmes leurs démarches de visa d’études ou se font aider par d'autres
+  personnes que RDC Études.
 thumbnail: /images/uploads/adulto-ajuda-ajudar-1181622.jpg
 date: 2021-01-11T12:57:24.011Z
 ---
