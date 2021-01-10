@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: "Communiqué: RDC Études lance un nouveau service pour les demandeurs de
   visa d'études"
 excerpt: Dans le but de mieux répondre aux besoins de notre clientèle, nous
