@@ -34,9 +34,12 @@
   "assistance-form.steps.form-submitted.information.first-paragraph": "Vous avez demandé d’obtenir des informations pour vous aider dans vos démarches!",
   "assistance-form.steps.form-submitted.information.second-paragraph": "Vous pouvez trouver le guide des démarches qui contient toutes les informations générales dont vous avez besoin en cliquant sur le button «Lire le guide» ci-dessous!",
   "assistance-form.steps.form-submitted.consultation.title": "🎉 Demande de consultation bien reçue 🎉",
-  "assistance-form.steps.form-submitted.consultation.first-paragraph": "Votre demande de consultation a été reçue par notre équipe. Un membre de l’équipe vous contactera dans un délai de trois jours ouvrables pour vous expliquer comment procéder au paiement de frais de consultations. Nous vous remercions pour la confiance que vous nous accordez.",
+  "assistance-form.steps.form-submitted.consultation.first-paragraph": "Votre demande de consultation a été reçue par notre équipe. Un membre de l’équipe vous contactera dans un délai de trois jours ouvrables pour vous expliquer comment procéder au paiement de frais de consultation. Nous vous remercions pour la confiance que vous nous accordez.",
   "assistance-form.steps.form-submitted.assistance.title": "🎉 Demande d’assistance reçue 🎉",
   "assistance-form.steps.form-submitted.assistance.first-paragraph": "Votre demande d’assistance a été reçue par notre équipe. Un membre de l’équipe vous contactera dans un délai de trois jours ouvrables pour vous expliquer comment procéder au paiement de frais d’assistance. Nous vous remercions pour la confiance que vous nous accordez.",
+  "assistance-form.steps.form-submitted.verification.title": "🎉 Demande d'assistance reçue 🎉",
+  "assistance-form.steps.form-submitted.verification.first-paragraph": "Votre demande d’analyses et recommandations concernant vos documents de demande de visa a été reçue par notre équipe. Un membre de l’équipe vous contactera dans un délai de trois jours ouvrables pour vous expliquer comment procéder au paiement de frais de vérification.",
+  "assistance-form.steps.form-submitted.verification.second-paragraph": "Vous pouvez déjà envoyer vos documents à l’adresse courriel <a href=\"mailto:assistance@rdcetudes.com?html=true&subject=Documents pour demande de vérification\">assistance@rdcetudes.com</a> en attendant d’effectuer votre paiement. Nous vous remercions pour la confiance que vous nous accordez.",
 
   "assistance-form.steps.submit-form.next-button-label": "Soumettre",
   "assistance-form.steps.submit-form.restart-button-label": "Recommencer",
@@ -45,6 +48,10 @@
   "assistance-form.steps.submit-form.assistance-request-message-with-phone": "Je suis {name}, originaire de {originCountry}. Je veux une {assistancePackage}. Mon numéro WhatsApp est {phone}.",
   "assistance-form.steps.submit-form.error-message": "Une erreur inconnue est survenue lors de la soumission de votre formulaire. Nous vous suggérons d’envoyer votre demande par email à '<a' href=\"mailto:assistance@rdcetudes.com?html=true&subject=Demande d’assistance&body={message}\"'>'assistance@rdcetudes.com'</a>' avec comme message: '<br/>' «{message}»",
   "assistance-form.steps.submit-form.assistance-types-prompt": "Comment voulez-vous que l’on vous assiste ?",
+
+  "assistance-form.steps.assistance-level-check.title": "Avez-vous dejà rempli les formulaires et rassemblé tous les documents pour votre demande de visa ?",
+  "assistance-form.steps.assistance-level-check.negative-option": "Non, je veux justement que vous m’aidiez à le faire.",
+  "assistance-form.steps.assistance-level-check.positive-option": "Oui, il ne me reste qu’à finaliser la demande.",
 
   "footer.copyright": "© RDC Etudes. Tous droits réservés",
 
@@ -154,14 +161,16 @@
   "scholarship-list.see-all": "Afficher toutes les bourses",
   "scholarship-list.see-details": "Voir les détails",
 
+  "shared.assistance-types.verification.title": "Je veux que vous analysiez ma demande pour m'indiquer comment l’améliorer et augmenter mes chances d’obtention du visa.",
+  "shared.assistance-types.verification-et-lettre.title": "En plus de vérifier ma demande, je veux que vous m’aidiez à écrire une lettre d’explication afin de maximiser mes chances d’obtention du visa.",
   "shared.assistance-types.information.price": "Prix: Gratuit",
   "shared.assistance-types.information.title": "Je veux accéder au guide gratuit de démarches afin de faire moi-même mes démarches.",
-  "shared.assistance-types.consultation.price": "Prix: 29.99 $ US",
   "shared.assistance-types.consultation.title": "J'ai déjà lu le guide gratuit et je veux maintenant parler à un conseiller RDC Études qui m’orientera pour la suite de mes démarches.",
   "shared.assistance-types.consultation-from-guide.title": "Je veux parler à un conseiller RDC Études qui m’orientera pour la suite de mes démarches.",
-  "shared.assistance-types.assistance.price": "Prix: 299.99 $ US",
   "shared.assistance-types.assistance.title": "Je suis prêt à commencer mes démarches et je veux qu’un mentor RDC Études m’aide à les réaliser afin d’augmenter mes chances de succès.",
   "shared.assistance-types.required": "Vous devez choisir le type d’assistance désiré avant de soumettre votre demande.",
+  "shared.assistance-types.price": "Prix: {price} $ US",
+  "shared.assistance-types.price-free": "Prix: Gratuit",
 
   "shared.contact-us-text": "Contactez-nous",
 

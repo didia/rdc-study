@@ -15,7 +15,7 @@ import styles from './styles.module.scss';
 import HtmlContent from '../HtmlContent';
 
 // State
-import {assistancePackageState, aboutCandidateState, assistanceTypeState, hasReadGuideState} from './state';
+import {availableAssistanceTypesState, assistancePackageState, aboutCandidateState, assistanceTypeState} from './state';
 
 // Config
 import config from '../../../config';
@@ -24,7 +24,7 @@ const {contactFormEndpoint} = config;
 
 // Constants
 import Steps from './steps';
-import {AssistanceTypes} from './constants';
+import {AssistanceTypes, AssistancePrices} from './constants';
 
 // Utils
 import getCurrentUrl from '../../utils/get-current-url';
@@ -43,50 +43,22 @@ const assistanceTypeSchema = (intl) =>
     assistanceType: string().required(intl.formatMessage({id: 'shared.assistance-types.required'}))
   });
 
-const allAssistanceTypesList = [
-  {
-    type: AssistanceTypes.INFORMATION,
-    title: 'shared.assistance-types.information.title',
-    price: 'shared.assistance-types.information.price'
-  },
-  {
-    type: AssistanceTypes.CONSULTATION,
-    title: 'shared.assistance-types.consultation.title',
-    price: 'shared.assistance-types.consultation.price'
-  },
-  {
-    type: AssistanceTypes.ASSISTANCE,
-    title: 'shared.assistance-types.assistance.title',
-    price: 'shared.assistance-types.assistance.price'
-  }
-];
-
-const assistanceTypesListFromGuide = [
-  {
-    type: AssistanceTypes.CONSULTATION,
-    title: 'shared.assistance-types.consultation-from-guide.title',
-    price: 'shared.assistance-types.consultation.price'
-  },
-  {
-    type: AssistanceTypes.ASSISTANCE,
-    title: 'shared.assistance-types.assistance.title',
-    price: 'shared.assistance-types.assistance.price'
-  }
-];
+const formattedAssistancePrice = (intl, price) => {
+  const translationKey = price ? 'shared.assistance-types.price' : 'shared.assistance-types.price-free';
+  return intl.formatMessage({id: translationKey}, {price});
+};
 
 const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
   const intl = useIntl();
   const [showError, setShowError] = useState(false);
   const [message, setMessage] = useState(null);
 
-  const hasReadGuide = useRecoilValue(hasReadGuideState);
   const aboutCandidate = useRecoilValue(aboutCandidateState);
   const assistancePackageSlug = useRecoilValue(assistancePackageState);
+  const availableAssistanceTypes = useRecoilValue(availableAssistanceTypesState);
   const setAssistanceType = useSetRecoilState(assistanceTypeState);
 
   const assistancePackage = assistancePackages[assistancePackageSlug];
-
-  const assistanceTypeList = hasReadGuide ? assistanceTypesListFromGuide : allAssistanceTypesList;
 
   const name = `${aboutCandidate.firstName} ${aboutCandidate.lastName}`;
   const messageTranslationKey = aboutCandidate.phone
@@ -136,7 +108,8 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
       analyticsPushEvent({
         category: 'AssistanceForm',
         action: assistanceType,
-        label: assistancePackageSlug
+        label: assistancePackageSlug,
+        value: AssistancePrices[assistanceType]
       });
 
       onNextStep(Steps.FormSubmitted);
@@ -177,7 +150,7 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
                 !isValid ? styles['radio-button-group--invalid'] : null
               )}
             >
-              {assistanceTypeList.map((assistanceType) => (
+              {availableAssistanceTypes.map((assistanceType) => (
                 <label
                   key={assistanceType.type}
                   className={classnames(
@@ -189,7 +162,7 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
                   <Field type="radio" name="assistanceType" value={assistanceType.type} className={styles.input} />
                   <div>
                     {intl.formatMessage({id: assistanceType.title})}
-                    <p className="bold">{intl.formatMessage({id: assistanceType.price})}</p>
+                    <p className="bold">{formattedAssistancePrice(intl, assistanceType.price)}</p>
                   </div>
                 </label>
               ))}

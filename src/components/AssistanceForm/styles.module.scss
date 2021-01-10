@@ -104,7 +104,10 @@ select.input {
   margin-top: 5px;
   font-size: 0.9em;
   color: #721c24;
+}
 
+.error-message,
+.form-submitted-paragraph {
   a {
     color: #721c24;
     border-bottom-color: #721c24;
