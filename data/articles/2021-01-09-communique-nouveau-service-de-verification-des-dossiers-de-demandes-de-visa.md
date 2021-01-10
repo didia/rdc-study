@@ -6,7 +6,7 @@ excerpt: Dans le but de mieux répondre aux besoins de notre clientèle, nous
   lançons un nouveau service de validation et recommandation aux les clients qui
   font eux-mêmes leurs démarches de visa d’études ou se font aider par d'autres
   personnes que RDC Études.
-thumbnail: /images/uploads/screen-shot-2021-01-09-at-10.42.05-pm.png
+thumbnail: /images/uploads/screen-shot-2021-01-09-at-11.10.26-pm.png
 tags:
   - visa
   - rdcetudes
@@ -27,8 +27,6 @@ Cependant, bien que nos guides gratuits permettent à plusieurs de nos clients d
 
 C'est donc pour cette raison que nous avons décidé d’offrir ce nouveau service de validation et recommandation qui permettra à tout le monde qui fait ses demandes seules ou avec une autre agence de faire vérifier sa demande une fois qu'elle est prête à être soumise.
 
-Pour accéder à ce service, vous pouvez utiliser [le formulaire de demande d'assistance](/accompagnement) et choisir l'option **Oui, il ne me reste reste qu’à finaliser la demande** lorsqu'on vous demandera si vous avez déjà rempli les formulaires et rassemblé tous les documents pour votre demande de visa comme indiqué à l’image ci-dessous.
-
-![Une image montrant un formulaire et des champs du formulaire pr´´e-rempli](/images/uploads/screen-shot-2021-01-09-at-6.03.12-pm.png "Étape pour service de validation et recommandation")
+Pour accéder à ce service, vous pouvez utiliser [le formulaire de demande d'assistance](/accompagnement) et choisir l'option **Oui, il ne me reste reste qu’à finaliser la demande** lorsqu'on vous demandera si vous avez déjà rempli les formulaires et rassemblé tous les documents pour votre demande de visa comme indiqué à l’image ci-dessus.
 
 Si vous avez des questions au sujet de ce nouveau service, n'hésitez surtout pas à communiquer avec nous afin d'obtenir des plus amples informations.
