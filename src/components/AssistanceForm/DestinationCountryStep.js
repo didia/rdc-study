@@ -65,7 +65,7 @@ const getNextStep = ({destinationCountry, hasAdmission}) => {
     return Steps.BelgiumEquivalenceCheck;
   }
 
-  return hasAdmission ? Steps.AboutCandidate : Steps.AssistanceLevelCheck;
+  return hasAdmission ? Steps.AssistanceLevelCheck : Steps.AboutCandidate;
 };
 
 const DestinationCountryStep = ({onNextStep, onPreviousStep, recapMode}) => {
