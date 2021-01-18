@@ -1,9 +1,9 @@
 ---
+draft: false
 title: Bourse de Maîtrise en sciences mathématiques à l’AIMS
-deadline: 2020-03-31T12:08:46.889Z
-excerpt: >-
-  Le programme de maîtrise de l’AIMS est un réseau universitaire qui vise à
-  former des scientifiques bien formés, dotés d’excellentes compétences en
+deadline: 2021-03-31T12:08:46.889Z
+excerpt: Le programme de maîtrise de l’AIMS est un réseau universitaire qui vise
+  à former des scientifiques bien formés, dotés d’excellentes compétences en
   résolution de problèmes, capables de penser de manière créative et d’innover
   véritablement.
 tags:
