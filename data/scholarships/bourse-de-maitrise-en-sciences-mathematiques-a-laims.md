@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourse de Maîtrise en sciences mathématiques à l’AIMS
 deadline: 2021-03-31T12:08:46.889Z
 excerpt: Le programme de maîtrise de l’AIMS est un réseau universitaire qui vise
