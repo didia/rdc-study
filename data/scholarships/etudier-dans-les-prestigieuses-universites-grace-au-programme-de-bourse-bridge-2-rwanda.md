@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Programme des bourses d’études Bridge 2 Rwanda
-deadline: 2020-04-18T13:24:23.474Z
+deadline: 2021-04-18T13:24:23.474Z
 excerpt: "Le programme des bourses d’études Bridge 2 Rwanda préparent les
   étudiants africains à être compétitifs afin de postuler pour des bourses
   d’études dans les plus prestigieuses universités du monde. "
