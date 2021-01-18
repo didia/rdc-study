@@ -1,13 +1,12 @@
 ---
 draft: false
 title: Programme des bourses d’études Bridge 2 Rwanda
-deadline: 2020-01-31T14:24:23.474Z
-excerpt: >-
-  Le programme des bourses d’études Bridge 2 Rwanda préparent les étudiants
-  africains à être compétitifs afin de postuler pour des bourses d’études dans
-  les plus prestigieuses universités du monde. 
+deadline: 2020-04-18T13:24:23.474Z
+excerpt: "Le programme des bourses d’études Bridge 2 Rwanda préparent les
+  étudiants africains à être compétitifs afin de postuler pour des bourses
+  d’études dans les plus prestigieuses universités du monde. "
 thumbnail: /images/uploads/bridge2rwanda.jpg
-startDate: 2019-12-15T14:24:23.523Z
+startDate: 2021-02-01T14:24:23.523Z
 levels:
   - undergraduate
 targetCountries:
@@ -35,7 +34,7 @@ Pour bénéficier du programme des bourses B2R vous devez :
 
 \- Être âgé d’au moins 21 ans
 
-\- Être récemment diplômé d’état (années 2018 et 2019)
+\- Être récemment diplômé d’état
 
 \- Avoir été parmi les 10 premiers de la classe.
 
