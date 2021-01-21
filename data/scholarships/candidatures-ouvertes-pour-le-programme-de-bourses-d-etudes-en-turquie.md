@@ -20,23 +20,22 @@ levels:
 targetCountries:
   - tr
 ---
-
 ## En quoi consiste la bourse ?
 
-- La garantie d’une admission dans une université turque c’est à dire vous n’avez pas à faire l’admission vous-mêmes, ce sera fait pour vous une fois la bourse approuvée;
-- Allocation mensuelle: **700 TL** (**121 \$**) pour la license, **950 TL** (**164 \$**) pour le master et **1400 TL** (**242 \$**) pour le doctorat;
-- Les frais académiques;
-- L’assurance santé;
-- Le logement;
-- Une année de cours de langue turque;
-- Un billet d’avion pour retourner chez soi à la fin des études.
+* La garantie d’une admission dans une université turque c’est à dire vous n’avez pas à faire l’admission vous-mêmes, ce sera fait pour vous une fois la bourse approuvée;
+* Allocation mensuelle: **700 TL** (**121 $**) pour la license, **950 TL** (**164 $**) pour le master et **1400 TL** (**242 $**) pour le doctorat;
+* Les frais académiques;
+* L’assurance santé;
+* Le logement;
+* Une année de cours de langue turque;
+* Un billet d’avion pour retourner chez soi à la fin des études.
 
 ## Quels sont les critères de la bourse ?
 
-- Vous devez avoir une moyenne académique au dessus du minimum attendu: **70 %** pour la license, **75 %** pour le master et le doctorat;
-- Pour les étudiants en sciences de la santé, le minimum requis est de **90 %;**
-- Vous devez avoir moins de **21 ans** pour la licence, moins de **30 an**s pour le master et moins de **35 ans** pour le doctorat;
-- Cette bourse est ouverte aux citoyens de tous les pays du monde exceptés ceux qui ont la nationalité turque.
+* Vous devez avoir une moyenne académique au dessus du minimum attendu: **70 %** pour la license, **75 %** pour le master et le doctorat;
+* Pour les étudiants en sciences de la santé, le minimum requis est de **90 %;**
+* Vous devez avoir moins de **21 ans** pour la licence, moins de **30 an**s pour le master et moins de **35 ans** pour le doctorat;
+* Cette bourse est ouverte aux citoyens de tous les pays du monde exceptés ceux qui ont la nationalité turque.
 
 ## Comment postuler ?
 
@@ -51,4 +50,8 @@ Voici les documents que vous devez prévoir:
 5. Certaines universités peuvent demander des examens internationaux ou de langue anglaise. Cela dépendra des universités que vous choisirez;
 6. Une proposition de projet de recherche et des exemples de publications si vous postulez pour le doctorat.
 
-Pour plus d’informations sur cette bourse d’études, consultez l’article à ce sujet sur [le site du gouvernement turc.](https://turkiyeburslari.gov.tr/en/announcement/turkiye-scholarships-2019-applications)
+Pour plus d’informations sur cette bourse d’études, consultez l’article à ce sujet sur [le site du gouvernement turc.](https://turkiyeburslari.gov.tr/en/announcement/turkiye-scholarships-2019-applications) 
+
+En cas des difficultés pour postuler, veuillez vous servir [notre tutoriel](https://www.youtube.com/watch?v=RXUGzNhnFIU&t=435s&ab_channel=EquipeRDCEtudes) .
+
+Bonne chance !
