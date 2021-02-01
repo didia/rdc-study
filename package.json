@@ -56,7 +56,7 @@
     "gatsby-plugin-sitemap": "^2.9.0",
     "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-plugin-webpack-bundle-analyzer": "^1.0.5",
-    "gatsby-react-router-scroll": "^3.5.0",
+    "gatsby-react-router-scroll": "^3.6.0",
     "gatsby-remark-copy-linked-files": "^2.8.0",
     "gatsby-remark-images": "^3.8.1",
     "gatsby-remark-prismjs": "^3.11.0",
