@@ -3,7 +3,7 @@ export default {
     address: {
       country: 'R.D. Congo',
       locality: 'Kinshasa',
-      name: 'Local 1M4, Anciennes Galeries Présidentielles',
+      name: 'Local 1M3, Nouvelles Galeries Présidentielles',
       streetAddress: 'Boulevard du 30 Juin'
     },
     email: {
