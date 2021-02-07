@@ -81,7 +81,7 @@
     "react-transition-group": "^4.4.1",
     "recoil": "0.1.2",
     "s3-deploy": "^1.4.0",
-    "sass-loader": "^10.1.0",
+    "sass-loader": "^10.1.1",
     "sass-resources-loader": "^2.1.1",
     "sharethis-reactjs": "^1.6.0",
     "use-query-params": "^1.1.9",
