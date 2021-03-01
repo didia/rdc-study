@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourses de Master en lettres françaises à Miami University
 deadline: 2021-03-01T14:07:52.601Z
 excerpt: "Le département de Français et Italien de l’Université de Miami
