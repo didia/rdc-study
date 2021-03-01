@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses Schwarzman pour poursuivre un master en Chine
-deadline: 2021-05-31T03:59:48.082Z
+deadline: 2021-09-21T03:59:48.082Z
 excerpt: Le programme des bourses Schwarzman offre une bourse complète aux plus
   brillants étudiants internationaux afin d'effectuer un master d’un an à
   l’université Tsinghua de Pékin, une de plus prestigieuse université de Chine.
