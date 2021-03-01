@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: Bourse d’études de l’initiative d’Ashinaga pour les orphelins d’Afrique.
 deadline: 2021-03-02T02:00:00.000Z
 excerpt: Ashinaga est une organisation à but non lucratif basée au Japon, qui
