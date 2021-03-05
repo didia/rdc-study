@@ -80,6 +80,7 @@ const aboutCandidateSchema = (intl) =>
   object().shape({
     firstName: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
     lastName: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
+    phone: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
     email: string()
       .email(intl.formatMessage({id: 'shared.forms.validation.email'}))
       .required(intl.formatMessage({id: 'shared.forms.validation.required'})),
