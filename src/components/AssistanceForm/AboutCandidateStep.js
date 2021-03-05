@@ -174,15 +174,17 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
                 </label>
 
                 <Field name="phone">
-                  {({field}) => (
+                  {({field, meta}) => (
                     <input
                       type="tel"
-                      className={classnames(styles.input)}
+                      className={classnames(styles.input, formikFieldErrorClass(meta))}
                       placeholder={intl.formatMessage({id: 'assistance-form.steps.about-candidate.placeholders.phone'})}
                       {...field}
                     />
                   )}
                 </Field>
+
+                <ErrorMessage name="phone" className={styles['error-message']} component="div" />
               </div>
 
               <div className={classnames('field', styles.field)}>
