@@ -106,14 +106,17 @@ export const availableAssistanceTypesState = selector({
     const hasReadGuide = get(hasReadGuideState);
     const isAlreadyAdvanced = get(isAlreadyAdvancedState);
     const country = get(destinationCountryState);
+    const {originCountry} = get(aboutCandidateState);
 
     const assistanceTypesList = [];
+
+    const consultationPrice = originCountry === 'congo-kinshasa' ? AssistancePrices[AssistanceTypes.CONSULTATION_LOCALE] : AssistancePrices[AssistanceTypes.CONSULTATION];
 
     if (hasReadGuide) {
       assistanceTypesList.push({
         type: AssistanceTypes.CONSULTATION,
         title: 'shared.assistance-types.consultation-from-guide.title',
-        price: AssistancePrices[AssistanceTypes.CONSULTATION]
+        price: consultationPrice
       });
     } else {
       assistanceTypesList.push(
@@ -125,7 +128,7 @@ export const availableAssistanceTypesState = selector({
         {
           type: AssistanceTypes.CONSULTATION,
           title: 'shared.assistance-types.consultation.title',
-          price: AssistancePrices[AssistanceTypes.CONSULTATION]
+          price: consultationPrice
         }
       );
     }
