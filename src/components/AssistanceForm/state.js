@@ -110,7 +110,10 @@ export const availableAssistanceTypesState = selector({
 
     const assistanceTypesList = [];
 
-    const consultationPrice = originCountry === 'congo-kinshasa' ? AssistancePrices[AssistanceTypes.CONSULTATION_LOCALE] : AssistancePrices[AssistanceTypes.CONSULTATION];
+    const consultationPrice =
+      originCountry === 'congo-kinshasa'
+        ? AssistancePrices[AssistanceTypes.CONSULTATION_LOCALE]
+        : AssistancePrices[AssistanceTypes.CONSULTATION];
 
     if (hasReadGuide) {
       assistanceTypesList.push({

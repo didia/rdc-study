@@ -75,26 +75,66 @@ collections:
             value: sa
           - label: Allemagne
             value: de
+          - label: Australie
+            value: au
           - label: Belgique
             value: be
           - label: Brésil
             value: br
+          - label: Burundi
+            value: bi
+          - label: Cameroun
+            value: cm
           - label: Canada
             value: ca
+          - label: RCA
+            value: cf
           - label: Chine
             value: cn
           - label: Chypre du Nord
             value: cytr
+          - label: Congo - Brazza
+            value: cg
+          - label: Corée du sud
+            value: kr
+          - label: Côte d'Ivoire
+            value: ci
           - label: Égypte
             value: eg
+          - label: Emirats Arabes Unis
+            value: ae
+          - label: Espagne
+            value: es
           - label: Etats-Unis
             value: us
           - label: France
             value: fr
           - label: Ghana
             value: gh
+          - label: Grèce
+            value: gr
+          - label: Hongrie
+            value: hu
+          - label: Inde
+            value: in
+          - label: Irlande
+            value: ie
+          - label: Israël
+            value: il
           - label: Japon
             value: jp
+          - label: Madagascar
+            value: mg
+          - label: Maroc
+            value: ma
+          - label: Maurice
+            value: mu
+          - label: Mauritanie
+            value: mr
+          - label: Nigeria
+            value: ng
+          - label: Portugal
+            value: pt
           - label: RDC
             value: cd
           - label: Roumanie
@@ -103,8 +143,18 @@ collections:
             value: gb
           - label: Rwanda
             value: rw
+          - label: Sénégal
+            value: sn
+          - label: Singapour
+            value: sg
+          - label: Suède
+            value: se
           - label: Suisse
             value: ch
+          - label: Taiwan
+            value: tw
+          - label: Tunisie
+            value: tn
           - label: Turquie
             value: tr
   - label: Forfaits d'accompagnement
