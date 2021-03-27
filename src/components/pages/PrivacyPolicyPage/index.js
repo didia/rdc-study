@@ -68,10 +68,10 @@ const PrivacyPolicyPage = () => (
       <br />
     </p>
     <p>
-      Pour pouvoir exercer ces droits, vous pouvez : <br />
-      Code postal : 3214 Chemin Sainte-Foy, 301, Quebec City G1X 1R4
+      Pour pouvoir exercer ces droits, vous pouvez contacter: <br />
+      Code postal: Local 1M3, Nouvelles Galéries Présidentielles, Kinshasa, R.D. Congo
       <br /> Courriel : salut@rdcetudes.com
-      <br /> Téléphone : 5819988051
+      <br /> Téléphone : +243 822 313 039
       <br /> Section du site web : https://www.rdcetudes.com/
       <br />{' '}
     </p>
@@ -82,10 +82,10 @@ const PrivacyPolicyPage = () => (
       consulter, modifier, voire radier les informations les concernant.
       <br />
       L‘exercice de ce droit se fera :<br />
-      Code postal : 3214 Chemin Sainte-Foy, 301, Quebec City G1X 1R4
+      Code postal : Local 1M3, Nouvelles Galéries Présidentielles, Kinshasa, R.D. Congo
       <br /> Courriel : salut@rdcetudes.com
       <br />
-      Téléphone : 5819988051
+      Téléphone : +243 822 313 039
       <br /> Section du site web : https://www.rdcetudes.com/
       <br />
     </p>
