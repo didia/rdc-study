@@ -79,7 +79,7 @@
     "react-helmet": "^6.1.0",
     "react-intl": "^5.13.2",
     "react-transition-group": "^4.4.1",
-    "recoil": "0.1.2",
+    "recoil": "0.2.0",
     "s3-deploy": "^1.4.0",
     "sass-loader": "^10.1.1",
     "sass-resources-loader": "^2.1.1",
