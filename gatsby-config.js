@@ -62,6 +62,18 @@ const plugins = [
     }
   },
   {
+    resolve: 'gatsby-plugin-manifest',
+    options: {
+      name: 'RDC Etudes - Votre source d’informations sur les études à l’étranger!',
+      short_name: 'RDC Études',
+      start_url: '/',
+      background_color: '#ffffff',
+      theme_color: '#ffffff',
+      display: 'standalone',
+      icon: 'static/logo.png'
+    }
+  },
+  {
     resolve: 'gatsby-plugin-sass',
     options: {
       cssLoaderOptions: {
@@ -164,7 +176,8 @@ const plugins = [
       environment: process.env.NODE_ENV,
       enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)()
     }
-  }
+  },
+  'gatsby-plugin-offline'
 ];
 
 module.exports = {
