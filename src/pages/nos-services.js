@@ -31,7 +31,7 @@ export const pageQuery = graphql`
   query ServicesPageQuery {
     allMarkdownRemark(
       limit: 1000
-      sort: {fields: [frontmatter___price], order: DESC}
+      sort: {fields: [frontmatter___rank], order: ASC}
       filter: {fields: {type: {eq: "service"}}}
     ) {
       edges {
@@ -41,7 +41,6 @@ export const pageQuery = graphql`
             title
             price
             excerpt
-            callToActionLabel
           }
         }
       }
