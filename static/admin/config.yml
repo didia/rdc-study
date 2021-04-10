@@ -157,15 +157,22 @@ collections:
             value: tn
           - label: Turquie
             value: tr
-  - label: Forfaits d'accompagnement
-    name: assistancePackages
-    folder: data/assistance-packages
+  - label: Services
+    name: services
+    folder: data/services
     slug: "{{slug}}"
     create: true
     fields:
       - {label: "Identifiant", name: "{{slug}}", widget: "string"}
       - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Description", name: "body", widget: "markdown"}
+      - {label: "Prix", name: "price", widget: "number", default: 0}
+      - {label: "Courte description", name: "excerpt", widget: "string"}
+      - {label: "Titre du lien pour souscrire", name: "callToActionLabel", widget: "string"}
+      - {label: "Titre du choix dans le formulaire d’assistance", name: "assistanceFormServiceChoiceLabel", widget: "string"}
+      - {label: "Titre du message de confirmation de la demande", name: "assistanceFormConfirmationTitle"}
+      - {label: "Premier paragraphe du message de confirmation de la demande", name: "assistanceFormConfirmationFirstParagraph"}
+      - {label: "Second paragraphe du message de confirmation de la demande", name: "assistanceFormConfirmationSecondParagraph"}
+      - {label: "Contenu", name: "body", widget: "markdown", required: false}
   - label: Pages
     name: pages
     files:
