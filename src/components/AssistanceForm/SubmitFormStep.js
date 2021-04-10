@@ -24,7 +24,7 @@ const {contactFormEndpoint} = config;
 
 // Constants
 import Steps from './steps';
-import {AssistanceTypes, AssistancePrices} from './constants';
+import {AssistanceTypes, AssistancePrices} from '../../constants/assistance';
 
 // Utils
 import getCurrentUrl from '../../utils/get-current-url';

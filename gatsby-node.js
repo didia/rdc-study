@@ -12,7 +12,8 @@ const path = require('path');
 const CONTENT_TYPE = {
   ARTICLE: 'article',
   GUIDE: 'guide',
-  SCHOLARSHIP: 'scholarship'
+  SCHOLARSHIP: 'scholarship',
+  SERVICE: 'service'
 };
 
 const showDraft = process.env.SHOW_DRAFT;
@@ -39,8 +40,8 @@ exports.onCreateNode = ({node, actions, getNode}) => {
         : Number.MAX_SAFE_INTEGER;
 
       createNodeField({node, name: 'timestamp', value: deadlineTimestamp});
-    } else if (fileNode.dir.indexOf('assistance-packages') !== -1) {
-      createNodeField({node, name: 'type', value: 'assistance-package'});
+    } else if (fileNode.dir.indexOf('services') !== -1) {
+      createNodeField({node, name: 'type', value: 'service'});
     }
   }
 };

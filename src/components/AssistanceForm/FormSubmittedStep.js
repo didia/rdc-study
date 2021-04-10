@@ -11,7 +11,7 @@ import styles from './styles.module.scss';
 import {assistancePackageState, assistanceTypeState} from './state';
 
 // Constants
-import {AssistanceTypes} from './constants';
+import {AssistanceTypes} from '../../constants/assistance';
 
 const translationKeysMap = {
   [AssistanceTypes.ASSISTANCE]: {

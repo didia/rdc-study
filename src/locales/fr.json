@@ -161,6 +161,13 @@
   "scholarship-list.see-all": "Afficher toutes les bourses",
   "scholarship-list.see-details": "Voir les détails",
 
+  "service-list.assistance.title": "Assistance",
+  "service-list.consultation.title": "Consultation",
+  "service-list.mentorship.title": "Mentorat continu",
+  "service-list.translation.title": "Traduction des documents",
+  "service-list.verification.title": "Vérification des demandes",
+  "service-list.verification-et-lettre": "Élaboration du projet d’études",
+
   "shared.assistance-types.verification.title": "Je veux que vous analysiez ma demande pour m'indiquer comment l’améliorer et augmenter mes chances d’obtention du visa.",
   "shared.assistance-types.verification-et-lettre.title": "En plus de vérifier ma demande, je veux que vous m’aidiez à écrire une lettre d’explication afin de maximiser mes chances d’obtention du visa.",
   "shared.assistance-types.information.price": "Prix: Gratuit",

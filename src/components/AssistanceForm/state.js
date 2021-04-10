@@ -2,7 +2,7 @@ import {atom, selector} from 'recoil';
 
 import Steps from './steps';
 import DestinationCountries, {destinationCountrySlugs} from './destination-countries';
-import {AssistanceTypes, AssistancePrices} from './constants';
+import {AssistanceTypes, AssistancePrices} from '../../constants/assistance';
 
 const ASSISTANCE_PACKAGE = {
   ADMISSION: 'admission',
