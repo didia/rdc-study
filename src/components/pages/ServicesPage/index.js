@@ -41,11 +41,10 @@ ServiceList.propTypes = {
       slug: T.string.isRequired,
       title: T.string.isRequired,
       price: T.number.isRequired,
-      excerpt: T.string.isRequired,
-      callToActionLabel: T.string.isRequired
+      excerpt: T.string.isRequired
     })
   ).isRequired
-}
+};
 
 ServicesPage.propTypes = {
   page: T.object.isRequired,
