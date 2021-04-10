@@ -25,11 +25,15 @@ Page.propTypes = {
   data: T.shape({
     allMarkdownRemark: T.object.isRequired
   })
-}
+};
 
 export const pageQuery = graphql`
   query ServicesPageQuery {
-    allMarkdownRemark(limit: 1000, filter: {fields: {type: {eq: "service"}}}) {
+    allMarkdownRemark(
+      limit: 1000
+      sort: {fields: [frontmatter___price], order: DESC}
+      filter: {fields: {type: {eq: "service"}}}
+    ) {
       edges {
         node {
           frontmatter {
