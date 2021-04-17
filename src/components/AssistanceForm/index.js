@@ -18,7 +18,7 @@ export {initializeState};
 // Utils
 import isScrolledIntoView from '../../utils/is-scrolled-into-view';
 
-const MasterForm = ({assistancePackages}) => {
+const MasterForm = () => {
   const currentStepRef = useRef(null);
   const setPreviousSteps = useSetRecoilState(previousStepsState);
   const [currentStep, setCurrentStep] = useRecoilState(currentStepState);
@@ -56,7 +56,6 @@ const MasterForm = ({assistancePackages}) => {
           onNextStep={onNextStep}
           onPreviousStep={onPreviousStep}
           onRestart={onRestart}
-          assistancePackages={assistancePackages}
         />
       </Card>
     </div>

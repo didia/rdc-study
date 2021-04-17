@@ -1,6 +1,6 @@
 ---
 slug: information
-title: Guides des démarches
+title: Information
 price: 0
 excerpt: Nos guides gratuits vous offrent toute l’information sur comment effectuer vous-mêmes vos démarches.
 rank: 5

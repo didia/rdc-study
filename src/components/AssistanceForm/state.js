@@ -12,6 +12,16 @@ const ASSISTANCE_PACKAGE = {
   VISA: 'visa'
 };
 
+const assistancePackagesState = atom({
+  key: 'assistancePackages',
+  default: []
+});
+
+const servicesState = atom({
+  key: 'services',
+  default: []
+})
+
 export const currentStepState = atom({
   key: 'currentStep',
   default: Steps.DestinationCountry
@@ -63,7 +73,7 @@ export const hasHighSchoolDiplomaEquivalenceState = atom({
   default: false
 });
 
-export const assistanceTypeState = atom({
+export const serviceState = atom({
   key: 'assistanceType',
   default: ''
 });
@@ -93,9 +103,11 @@ export const assistancePackageState = selector({
 
   get: ({get}) => {
     const destinationCountry = get(destinationCountryState);
+    const selectedPackages = get(assistancePackagesState);
     const selectedPackage = getSelectedPackage(get);
+    const assistancePackageSlug = `${destinationCountry}/${selectedPackage}`;
 
-    return `${destinationCountry}/${selectedPackage}`;
+    return selectedPackages[assistancePackageSlug];
   }
 });
 
@@ -210,7 +222,16 @@ const getSelectedPackageForBelgium = (get) => {
   return hasHighSchoolDiplomaEquivalence ? ASSISTANCE_PACKAGE.ADMISSION : ASSISTANCE_PACKAGE.EQUIVALENCE;
 };
 
-export const initializeState = ({fromGuide}) => {
+export const initializeState = ({fromGuide, assistancePackages, services}) => {
+  // eslint-disable-next-line complexity
+  return ({set}) => {
+    set(assistancePackagesState, assistancePackages);
+    set(servicesState, services);
+    preselectAssistancePackage(set, fromGuide);
+  };
+};
+
+const preselectAssistancePackage = (set, fromGuide) => {
   if (!fromGuide) {
     return null;
   }
@@ -221,37 +242,30 @@ export const initializeState = ({fromGuide}) => {
     return null;
   }
 
-  // eslint-disable-next-line complexity
-  return ({set}) => {
-    set(hasReadGuideState, true);
-    set(destinationCountryState, destinationCountry);
-    set(currentStepState, Steps.AboutCandidate);
+  switch (guideType) {
+    case ASSISTANCE_PACKAGE.ADMISSION:
+      set(hasAdmissionState, false);
 
-    switch (guideType) {
-      case ASSISTANCE_PACKAGE.ADMISSION:
-        set(hasAdmissionState, false);
+      if (destinationCountry === DestinationCountries.BELGIUM.value) {
+        set(currentStepState, Steps.BelgiumEquivalenceCheck);
+      }
+      break;
+    case ASSISTANCE_PACKAGE.EQUIVALENCE:
+      set(hasAdmissionState, false);
+      set(hasHighSchoolDiplomaEquivalenceState, false);
+      break;
+    case ASSISTANCE_PACKAGE.CAQ:
+      set(hasAdmissionState, true);
+      set(hasCAQState, false);
+      break;
+    case ASSISTANCE_PACKAGE.VISA:
+      set(hasAdmissionState, true);
 
-        if (destinationCountry === DestinationCountries.BELGIUM.value) {
-          set(currentStepState, Steps.BelgiumEquivalenceCheck);
-        }
-        break;
-      case ASSISTANCE_PACKAGE.EQUIVALENCE:
-        set(hasAdmissionState, false);
-        set(hasHighSchoolDiplomaEquivalenceState, false);
-        break;
-      case ASSISTANCE_PACKAGE.CAQ:
-        set(hasAdmissionState, true);
-        set(hasCAQState, false);
-        break;
-      case ASSISTANCE_PACKAGE.VISA:
-        set(hasAdmissionState, true);
-
-        if (destinationCountry === DestinationCountries.CANADA.value) {
-          set(currentStepState, Steps.CanadaCAQCheck);
-        }
-        break;
-      default:
-        set(currentStepState, Steps.DestinationCountry);
-    }
-  };
+      if (destinationCountry === DestinationCountries.CANADA.value) {
+        set(currentStepState, Steps.CanadaCAQCheck);
+      }
+      break;
+    default:
+      set(currentStepState, Steps.DestinationCountry);
+  }
 };

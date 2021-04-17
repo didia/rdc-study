@@ -161,16 +161,8 @@
   "scholarship-list.see-all": "Afficher toutes les bourses",
   "scholarship-list.see-details": "Voir les détails",
 
-  "service-list.assistance.title": "Assistance",
-  "service-list.consultation.title": "Consultation",
-  "service-list.mentorship.title": "Mentorat continu",
-  "service-list.translation.title": "Traduction des documents",
-  "service-list.verification.title": "Vérification des demandes",
-  "service-list.verification-et-lettre": "Élaboration du projet d’études",
-
   "shared.assistance-types.verification.title": "Je veux que vous analysiez ma demande pour m'indiquer comment l’améliorer et augmenter mes chances d’obtention du visa.",
   "shared.assistance-types.verification-et-lettre.title": "En plus de vérifier ma demande, je veux que vous m’aidiez à écrire une lettre d’explication afin de maximiser mes chances d’obtention du visa.",
-  "shared.assistance-types.information.price": "Prix: Gratuit",
   "shared.assistance-types.information.title": "Je veux accéder au guide gratuit de démarches afin de faire moi-même mes démarches.",
   "shared.assistance-types.consultation.title": "J'ai déjà lu le guide gratuit et je veux maintenant parler à un conseiller RDC Études qui m’orientera pour la suite de mes démarches.",
   "shared.assistance-types.consultation-from-guide.title": "Je veux parler à un conseiller RDC Études qui m’orientera pour la suite de mes démarches.",
@@ -257,8 +249,10 @@
 
   "shared.no": "Non",
   "shared.other-text": "Autre",
+  "shared.price": "Prix: {price, plural, \n =0 {Gratuit}\n other {# $ US}}",
   "shared.read-time": "{time} {time, plural, one {minute de lecture}\n other {minutes de lecture}}",
   "shared.see-more-text": "Voir plus",
+  "shared.service-call-to-action": "Je veux ce service",
   "shared.share-on-facebook": "Partagez sur facebook",
   "shared.share-on-whatsapp": "Partagez sur whatsapp",
   "shared.yes": "Oui"

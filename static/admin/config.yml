@@ -157,6 +157,16 @@ collections:
             value: tn
           - label: Turquie
             value: tr
+  - label: Forfaits d'accompagnement
+    name: assistancePackages
+    folder: data/assistance-packages
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - {label: "Identifiant", name: "{{slug}}", widget: "string"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Description", name: "body", widget: "markdown"}
+      - {label: "Services offerts", name: "services", widget: "list", field: {label: "Service", name: "Service", widget: "relation", collection: "services", value_field: "{{slug}}", search_fields: ["slug", "title"], display_fields: ["title"]}}
   - label: Services
     name: services
     folder: data/services

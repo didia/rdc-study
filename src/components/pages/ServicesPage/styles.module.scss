@@ -11,6 +11,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  height: 370px;
   padding: 16px;
   align-items: center;
 }
@@ -26,12 +27,24 @@
 }
 
 .card__price {
+  margin-bottom: 1rem;
   font-size: 0.9em;
+}
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
 }
 
 @include breakpoint(medium) {
   .list {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    height: 350px;
   }
 }
 
@@ -39,5 +52,9 @@
   .list {
     display: flex;
     flex-direction: column;
+  }
+
+  .card {
+    height: auto;
   }
 }
