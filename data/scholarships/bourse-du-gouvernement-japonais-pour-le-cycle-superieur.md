@@ -69,7 +69,7 @@ Pour postuler au programme des bourses MEXT, vous déposer votre candidature aup
 
 1. [Formulaire de demande](https://www.studyinjapan.go.jp/en/_mt/2021/04/2022_Application_Research.pdf)
 2. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Placement_Research.pdf" target="_blank" rel="noopener noreferrer>Formulaire de demande de préférence</a>(pour ceux qui maîtrisent déjà le japonais)
-3.  [Domaine d'études et un plan de recherche](https://www.studyinjapan.go.jp/en/_mt/2021/04/2022_Majors_SpecializedTraining.pdf)
+3. [Domaine d'études et un plan de recherche](https://www.studyinjapan.go.jp/en/_mt/2021/04/2022_Majors_SpecializedTraining.pdf)
 4. Relevé des notes universitaires
 5. Diplôme universitaire
 6. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_SampleRecommendation.pdf" target="_blank" rel="noopener noreferrer">Lettre de recommandation du doyen de votre faculté ou de votre directeur de thèse ou travail de fin d'études</a>
@@ -85,6 +85,6 @@ Pour bien vous préparer à l’examen, il est fortement conseillé de consulter
 
 NB: Le processus de demande et les dates limites pour postuler varient d’un pays à un autre. Nous vous recommandons de vous renseigner à ce sujet auprès de <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank" rel="noopener noreferrer">l'ambassade du Japon dans votre pays.</a>
 
-Pour plus d'informations sur la bourse, veuillez consulter <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/research/2021_Guidelines_Research_E.pdf" target="_blank" rel="noopener noreferrer">le guide officiel du gouvernement Japonais.</a>
+Pour plus d'informations sur la bourse, veuillez consulter <a href="https://www.studyinjapan.go.jp/en/_mt/2021/04/2022_Guidelines_SpecializedTraining_E.pdf" target="_blank" rel="noopener noreferrer">le guide officiel du gouvernement Japonais.</a>
 
 Nous vous encourageons à postuler et bonne chance !
