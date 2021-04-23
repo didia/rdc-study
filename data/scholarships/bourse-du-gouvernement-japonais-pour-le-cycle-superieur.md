@@ -24,7 +24,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-La bourse du gouvernement japonais offre:
+[La bourse du gouvernement japonais](https://www.studyinjapan.go.jp/en/smap-stopj-applications-research.html) offre:
 
 * Les frais académiques totalement payés;
 * Billet aller-retour entre votre pays de résidence et le Japon;
@@ -85,6 +85,6 @@ Pour bien vous préparer à l’examen, il est fortement conseillé de consulter
 
 NB: Le processus de demande et les dates limites pour postuler varient d’un pays à un autre. Nous vous recommandons de vous renseigner à ce sujet auprès de <a href="https://www.mofa.go.jp/about/emb_cons/mofaserv.html" target="_blank" rel="noopener noreferrer">l'ambassade du Japon dans votre pays.</a>
 
-Pour plus d'informations sur la bourse, veuillez consulter <a href="https://www.studyinjapan.go.jp/en/_mt/2021/04/2022_Guidelines_SpecializedTraining_E.pdf" target="_blank" rel="noopener noreferrer">le guide officiel du gouvernement Japonais.</a>
+Pour plus d'informations sur la bourse, veuillez consulter <a href="https://www.studyinjapan.go.jp/en/_mt/2021/04/2022_Guidelines_Research_E.pdf" target="_blank" rel="noopener noreferrer">le guide officiel du gouvernement Japonais.</a>
 
 Nous vous encourageons à postuler et bonne chance !
