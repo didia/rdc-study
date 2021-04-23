@@ -40,7 +40,7 @@ La bourse du gouvernement japonais offre:
 Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
 1. Ne pas avoir la nationalité japonaise;
-2. Être né(e) à partir du 2 Avril 1986;
+2. Être né(e) à partir du 2 Avril 1987;
 3. Avoir un sujet de recherche dans la même spécialité ou une spécialité connexe à vos études précédentes;
 4. Être en bonne santé physique et mentale.
 
