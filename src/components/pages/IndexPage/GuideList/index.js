@@ -2,7 +2,7 @@
 import React from 'react';
 import T from 'prop-types';
 import {FormattedMessage} from 'react-intl';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import {Link} from 'gatsby';
 
 // Styles
@@ -24,7 +24,10 @@ const GuideList = ({className, guides, id}) => (
         >
           <article className={styles['grid-item-wrapper']}>
             <div className="image">
-              <Img className={styles.image} fluid={guide.thumbnail.fluid} alt={guide.title} />
+              <GatsbyImage
+                image={guide.childImageSharp.gatsbyImageData}
+                className={styles.image}
+                alt={guide.title} />
             </div>
             <h3 className={styles['grid-item-title']}>{guide.name}</h3>
           </article>

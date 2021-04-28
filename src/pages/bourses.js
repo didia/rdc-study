@@ -48,31 +48,32 @@ Scholarships.propTypes = {
   }),
 };
 
-export const scholarshipFragment = graphql`
-  fragment ScholarshipListItemFragment on MarkdownRemarkConnection {
-    edges {
-      node {
-        fields {
-          path
-          timestamp
-        }
-        frontmatter {
-          deadline
-          excerpt
-          levels
-          targetCountries
-          title
-          thumbnail {
-            childImageSharp {
-              fluid(maxHeight: 300, cropFocus: CENTER, fit: COVER) {
-                ...GatsbyImageSharpFluid
-              }
-            }
+export const scholarshipFragment = graphql`fragment ScholarshipListItemFragment on MarkdownRemarkConnection {
+  edges {
+    node {
+      fields {
+        path
+        timestamp
+      }
+      frontmatter {
+        deadline
+        excerpt
+        levels
+        targetCountries
+        title
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(
+              height: 300
+              transformOptions: {cropFocus: CENTER, fit: COVER}
+              layout: FULL_WIDTH
+            )
           }
         }
       }
     }
   }
+}
 `;
 
 export const pageQuery = graphql`

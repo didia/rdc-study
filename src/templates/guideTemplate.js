@@ -7,7 +7,7 @@ import GuidePage from '../components/pages/GuidePage';
 
 const guideMarkdownRemark = ({html, frontmatter, fields}) => ({
   content: html,
-  metaImage: frontmatter.metaImage ? frontmatter.metaImage.childImageSharp.fixed : null,
+  metaImage: frontmatter.metaImage ? frontmatter.metaImage.childImageSharp.gatsbyImageData : null,
   excerpt: frontmatter.excerpt,
   path: fields.path,
   related: frontmatter.related,
@@ -58,53 +58,59 @@ Template.propTypes = {
   })
 };
 
-export const pageQuery = graphql`
-  query GuideByPath($path: String!, $type: String!) {
-    markdownRemark(fields: {path: {eq: $path}}) {
-      html
-      fields {
-        path
-      }
-      frontmatter {
-        excerpt
-        slug
-        title
-        topic
-        related
-        metaImage: thumbnail {
-          childImageSharp {
-            fixed(width: 1200, height: 630, cropFocus: CENTER) {
-              ...GatsbyImageSharpFixed_noBase64
-            }
-          }
+export const pageQuery = graphql`query GuideByPath($path: String!, $type: String!) {
+  markdownRemark(fields: {path: {eq: $path}}) {
+    html
+    fields {
+      path
+    }
+    frontmatter {
+      excerpt
+      slug
+      title
+      topic
+      related
+      metaImage: thumbnail {
+        childImageSharp {
+          gatsbyImageData(
+            width: 1200
+            height: 630
+            placeholder: NONE
+            transformOptions: {cropFocus: CENTER}
+            layout: FIXED
+          )
         }
       }
     }
-    allMarkdownRemark(
-      limit: 2000
-      sort: {fields: [frontmatter___title], order: ASC}
-      filter: {fields: {path: {ne: $path}, type: {eq: $type}, draft: {eq: false}}}
-    ) {
-      edges {
-        node {
-          fields {
-            path
-          }
-          frontmatter {
-            excerpt
-            slug
-            title
-            topic
-            thumbnail {
-              childImageSharp {
-                fluid(maxWidth: 584, maxHeight: 394, cropFocus: CENTER) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+  }
+  allMarkdownRemark(
+    limit: 2000
+    sort: {fields: [frontmatter___title], order: ASC}
+    filter: {fields: {path: {ne: $path}, type: {eq: $type}, draft: {eq: false}}}
+  ) {
+    edges {
+      node {
+        fields {
+          path
+        }
+        frontmatter {
+          excerpt
+          slug
+          title
+          topic
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(
+                width: 584
+                height: 394
+                transformOptions: {cropFocus: CENTER}
+                layout: CONSTRAINED
+              )
             }
           }
         }
       }
     }
   }
+}
 `;

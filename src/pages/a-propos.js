@@ -13,8 +13,8 @@ const Page = ({data}) => {
 
 Page.propTypes = {
   data: T.shape({
-    allTeamJson: T.object.isRequired,
-  }),
+    allTeamJson: T.object.isRequired
+  })
 };
 
 export default Page;
@@ -30,9 +30,7 @@ export const pageQuery = graphql`
           title
           image {
             childImageSharp {
-              fluid(maxWidth: 350) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(width: 350, layout: CONSTRAINED)
             }
           }
         }

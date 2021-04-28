@@ -51,39 +51,39 @@ Template.propTypes = {
   }),
 };
 
-export const pageQuery = graphql`
-  query ScholarshipByPath($path: String!, $type: String!, $currentTimestamp: Float) {
-    markdownRemark(fields: {path: {eq: $path}}) {
-      html
-      fields {
-        path
-      }
-      frontmatter {
-        deadline
-        excerpt
-        levels
-        tags
-        targetCountries
-        thumbnailCredits
-        title
-        thumbnail {
-          childImageSharp {
-            contentImage: fluid(maxWidth: 1200, cropFocus: CENTER) {
-              ...GatsbyImageSharpFluid
-            }
-            metaImage: fixed(width: 1200, height: 630, cropFocus: CENTER) {
-              ...GatsbyImageSharpFixed_noBase64
-            }
+export const pageQuery = graphql`query ScholarshipByPath($path: String!, $type: String!, $currentTimestamp: Float) {
+  markdownRemark(fields: {path: {eq: $path}}) {
+    html
+    fields {
+      path
+    }
+    frontmatter {
+      deadline
+      excerpt
+      levels
+      tags
+      targetCountries
+      thumbnailCredits
+      title
+      thumbnail {
+        childImageSharp {
+          contentImage: gatsbyImageData(
+            transformOptions: {cropFocus: CENTER}
+            layout: FULL_WIDTH
+          )
+          metaImage: fixed(width: 1200, height: 630, cropFocus: CENTER) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
     }
-    allMarkdownRemark(
-      limit: 12
-      sort: {fields: [fields___timestamp], order: ASC}
-      filter: {fields: {type: {eq: $type}, timestamp: {gt: $currentTimestamp}, path: {ne: $path}, draft: {eq: false}}}
-    ) {
-      ...ScholarshipListItemFragment
-    }
   }
+  allMarkdownRemark(
+    limit: 12
+    sort: {fields: [fields___timestamp], order: ASC}
+    filter: {fields: {type: {eq: $type}, timestamp: {gt: $currentTimestamp}, path: {ne: $path}, draft: {eq: false}}}
+  ) {
+    ...ScholarshipListItemFragment
+  }
+}
 `;

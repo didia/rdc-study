@@ -2,7 +2,7 @@
 import React from 'react';
 import T from 'prop-types';
 import classnames from 'classnames';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 // Styles
 import styles from './styles.module.scss';
@@ -31,7 +31,7 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
         <div className={styles.inner}>
           <div className={styles.cover}>
             <div className={styles['cover__image-wrapper']}>
-              <Img fluid={article.thumbnail.fluid} alt={article.title} />
+              <GatsbyImage image={article.childImageSharp.gatsbyImageData} alt={article.title} />
             </div>
 
             {article.thumbnailCredits && (

@@ -26,33 +26,34 @@ Articles.propTypes = {
 
 export default Articles;
 
-export const pageQuery = graphql`
-  query ArticlesPageQuery {
-    articles: allMarkdownRemark(
-      limit: 1000
-      sort: {fields: [frontmatter___date], order: DESC}
-      filter: {fields: {type: {eq: "article"}, draft: {eq: false}}}
-    ) {
-      edges {
-        node {
-          timeToRead
-          fields {
-            path
-          }
-          frontmatter {
-            date
-            excerpt
-            title
-            thumbnail {
-              childImageSharp {
-                fluid(maxHeight: 500, cropFocus: CENTER) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+export const pageQuery = graphql`query ArticlesPageQuery {
+  articles: allMarkdownRemark(
+    limit: 1000
+    sort: {fields: [frontmatter___date], order: DESC}
+    filter: {fields: {type: {eq: "article"}, draft: {eq: false}}}
+  ) {
+    edges {
+      node {
+        timeToRead
+        fields {
+          path
+        }
+        frontmatter {
+          date
+          excerpt
+          title
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(
+                height: 500
+                transformOptions: {cropFocus: CENTER}
+                layout: FULL_WIDTH
+              )
             }
           }
         }
       }
     }
   }
+}
 `;

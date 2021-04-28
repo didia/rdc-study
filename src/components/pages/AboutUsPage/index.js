@@ -2,7 +2,7 @@
 import React from 'react';
 import T from 'prop-types';
 import classnames from 'classnames';
-import Img from 'gatsby-image';
+import {GatsbyImage} from 'gatsby-plugin-image';
 import {FormattedMessage} from 'react-intl';
 
 // Styles
@@ -16,22 +16,22 @@ const imageClassPerIndex = (index) => (index % 2 === 0 ? 'image left' : 'image r
 const page = {
   description: 'Nous voulons que tout le monde ait facilement accès à une éducation de qualité.',
   title: 'Pourquoi RDC-Etudes?',
-  path: '/a-propos',
+  path: '/a-propos'
 };
 
 const values = [
   {
     titleKey: 'pages.about-us.values.honesty.title',
-    descriptionKey: 'pages.about-us.values.honesty.description',
+    descriptionKey: 'pages.about-us.values.honesty.description'
   },
   {
     titleKey: 'pages.about-us.values.helpfulness.title',
-    descriptionKey: 'pages.about-us.values.helpfulness.description',
+    descriptionKey: 'pages.about-us.values.helpfulness.description'
   },
   {
     titleKey: 'pages.about-us.values.transparency.title',
-    descriptionKey: 'pages.about-us.values.transparency.description',
-  },
+    descriptionKey: 'pages.about-us.values.transparency.description'
+  }
 ];
 
 const AboutUsPage = ({team}) => {
@@ -64,7 +64,7 @@ const AboutUsPage = ({team}) => {
           {team.map((member, index) => (
             <Card key={member.name} className={styles['team-member-list__item']}>
               <div className={classnames(styles['team-member-photo-outer'], imageClassPerIndex(index))}>
-                <Img fluid={member.image.childImageSharp.fluid} alt={member.name} />
+                <GatsbyImage image={member.image.childImageSharp.gatsbyImageData} alt={member.name} />
               </div>
 
               <div className={styles['team-member-info']}>
@@ -92,9 +92,9 @@ AboutUsPage.propTypes = {
       image: T.object.isRequired,
       name: T.string.isRequired,
       role: T.string.isRequired,
-      title: T.string.isRequired,
+      title: T.string.isRequired
     }).isRequired
-  ).isRequired,
+  ).isRequired
 };
 
 export default AboutUsPage;

@@ -11,6 +11,7 @@ const plugins = [
   'gatsby-plugin-react-helmet',
   'gatsby-transformer-json',
   netlifyCmsPaths,
+  'gatsby-plugin-image',
   'gatsby-transformer-sharp',
   'gatsby-plugin-sharp',
   'gatsby-plugin-remove-trailing-slashes',
@@ -78,10 +79,16 @@ const plugins = [
     resolve: 'gatsby-plugin-sass',
     options: {
       cssLoaderOptions: {
-        camelCase: false
+        camelCase: false,
+        esModule: false,
+        modules: {
+          namedExport: false
+        }
       },
-      data: '@import "shared.scss";',
-      includePaths: ['src/assets/styles', 'node_modules']
+      sassOptions: {
+        includePaths: ['src/assets/styles', 'node_modules']
+      },
+      additionalData: '@import "shared.scss";',
     }
   },
   {

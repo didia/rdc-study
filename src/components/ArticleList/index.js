@@ -3,7 +3,7 @@ import React from 'react';
 import T from 'prop-types';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import {Link} from 'gatsby';
 
 // Styles
@@ -15,7 +15,10 @@ const Article = ({article}) => {
     <Link to={article.path} className={styles.article}>
       <article className={styles.article__inner}>
         <div className={classnames(styles['image-wrapper'])}>
-          <Img className={styles.image} fluid={article.thumbnail.fluid} alt={article.title} />
+          <GatsbyImage
+            image={article.childImageSharp.gatsbyImageData}
+            className={styles.image}
+            alt={article.title} />
         </div>
 
         <div className={styles.content}>

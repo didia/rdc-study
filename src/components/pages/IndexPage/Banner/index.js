@@ -2,7 +2,7 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 import {useStaticQuery, graphql, Link} from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 // Styles
 import styles from './styles.module.scss';
@@ -25,11 +25,10 @@ const Banner = () => {
       <div className={styles.wrapper}>
         <div className={styles.logo}>
           <div className={styles.logo__icon}>
-            <Img
-              fluid={data.imageSharp.fluid}
+            <GatsbyImage
+              image={data.childImageSharp.gatsbyImageData}
               style={{width: data.imageSharp.fluid.presentationWidth, height: data.imageSharp.fluid.presentationHeight}}
-              alt="RDC Etudes Logo"
-            />
+              alt="RDC Etudes Logo" />
           </div>
         </div>
 

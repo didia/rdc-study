@@ -47,60 +47,62 @@ Template.propTypes = {
   }),
 };
 
-export const pageQuery = graphql`
-  query ArticleByPath($path: String!, $type: String) {
-    markdownRemark(fields: {path: {eq: $path}}) {
-      html
-      timeToRead
-      fields {
-        path
-      }
-      frontmatter {
-        date
-        excerpt
-        tags
-        title
-        thumbnailCredits
-        thumbnail {
-          childImageSharp {
-            contentImage: fluid(maxWidth: 1200, cropFocus: CENTER) {
-              ...GatsbyImageSharpFluid
-            }
-            metaImage: fixed(width: 1200, height: 630, cropFocus: CENTER) {
-              ...GatsbyImageSharpFixed_noBase64
-            }
-          }
-        }
-      }
+export const pageQuery = graphql`query ArticleByPath($path: String!, $type: String) {
+  markdownRemark(fields: {path: {eq: $path}}) {
+    html
+    timeToRead
+    fields {
+      path
     }
-    allMarkdownRemark(
-      limit: 10
-      sort: {fields: [frontmatter___date], order: DESC}
-      filter: {fields: {path: {ne: $path}, type: {eq: $type}, draft: {eq: false}}}
-    ) {
-      edges {
-        node {
-          timeToRead
-          fields {
-            path
-          }
-          frontmatter {
-            date
-            excerpt
-            title
-            thumbnail {
-              childImageSharp {
-                fluid(maxHeight: 500, cropFocus: CENTER) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
+    frontmatter {
+      date
+      excerpt
+      tags
+      title
+      thumbnailCredits
+      thumbnail {
+        childImageSharp {
+          contentImage: gatsbyImageData(
+            transformOptions: {cropFocus: CENTER}
+            layout: FULL_WIDTH
+          )
+          metaImage: fixed(width: 1200, height: 630, cropFocus: CENTER) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
-      }
-      pageInfo {
-        hasNextPage
       }
     }
   }
+  allMarkdownRemark(
+    limit: 10
+    sort: {fields: [frontmatter___date], order: DESC}
+    filter: {fields: {path: {ne: $path}, type: {eq: $type}, draft: {eq: false}}}
+  ) {
+    edges {
+      node {
+        timeToRead
+        fields {
+          path
+        }
+        frontmatter {
+          date
+          excerpt
+          title
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(
+                height: 500
+                transformOptions: {cropFocus: CENTER}
+                layout: FULL_WIDTH
+              )
+            }
+          }
+        }
+      }
+    }
+    pageInfo {
+      hasNextPage
+    }
+  }
+}
 `;

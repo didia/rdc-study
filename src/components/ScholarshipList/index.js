@@ -4,7 +4,7 @@ import T from 'prop-types';
 import {Link} from 'gatsby';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 // Styles
 import styles from './styles.module.scss';
@@ -60,7 +60,10 @@ const Scholarship = ({scholarship}) => {
     <article className={styles.card}>
       <Link to={scholarship.path} className={styles.card__body} tabIndex="0">
         <div className={styles['image-wrapper']}>
-          <Img className={styles.image} fluid={scholarship.thumbnail.fluid} alt={scholarship.title} />
+          <GatsbyImage
+            image={scholarship.childImageSharp.gatsbyImageData}
+            className={styles.image}
+            alt={scholarship.title} />
         </div>
         <div className={styles.card__header}>
           <h6 className={styles.card__title}>{scholarship.title}</h6>
