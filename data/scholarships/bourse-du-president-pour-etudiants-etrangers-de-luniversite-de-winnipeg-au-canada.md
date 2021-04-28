@@ -29,7 +29,7 @@ La bourse consiste en une aide financière non renouvelable dont le montant dép
 
 * Programme de Langue anglaise: 3 bourses de 3 500 $.
 * La formation professionnelle: 3 bourses de 3 500 $.
-* La licence (Premier cycle): 3 bourses de 5 000 $.
+* La licence (Premier cycle): 6 bourses de 5 000 $.
 * La maîtrise (Deuxième cycle): 3 bourses de 5 000 $.
 * Le collège (Équivalent Graduat): 3 bourses de 3 500 $.
 
@@ -51,23 +51,23 @@ Une fois l’admission obtenue, vous devez remplir <a href="https://www.uwinnipe
 
 **Les dates limites:**
 
-Licence (rentrée printemps/été/automne 2020) : 2 mars 2020
+Licence (rentrée printemps/été/automne 2021) : 1er avril 2021
 
-Master (rentrée automne 2020/hiver 2021): 1 juin 2020
+Master (rentrée automne 2021/hiver 2022): 1 juin 2021
 
-Le collège (graduat): 1 er juin 2020
+Le collège (graduat): 1 er juin 2021
 
-Formation professionnelle continue et appliquée:
+**Formation professionnelle continue et appliquée:**
 
-Rentrée automne 2020: 1 er juin
+Rentrée automne 2021: 1 er juin 2021
 
-Rentrée hiver 2021: 1 er octobre 2020
+Rentrée hiver 2022: 1er octobre 2021
 
-Programme de langue anglaise:
+**Programme de langue anglaise:**
 
-Rentrée automne 2020: 1 er juin 2020
+Rentrée automne 2021: 1 er juin 2021
 
-Rentrée hiver: 1 er oct 2020
+Rentrée hiver 2022: 1er octobre 2021
 
 Pour plus de renseignements sur la bourse, consultez <a href="<https://www.uwinnipeg.ca/graduate-studies/funding/masters-and-doctoral-awards/presidents-scholarship/index.html>
 
