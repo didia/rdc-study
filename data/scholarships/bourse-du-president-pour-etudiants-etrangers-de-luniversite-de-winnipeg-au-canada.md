@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourse du président pour étudiants étrangers à l’Université de Winnipeg
   au Canada
 deadline: 2021-10-01T03:59:00.000Z
