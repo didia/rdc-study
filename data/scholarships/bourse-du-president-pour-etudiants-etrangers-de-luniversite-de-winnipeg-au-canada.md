@@ -2,7 +2,7 @@
 draft: true
 title: Bourse du président pour étudiants étrangers à l’Université de Winnipeg
   au Canada
-deadline: 2020-06-01T03:59:00.000Z
+deadline: 2021-10-01T03:59:00.000Z
 excerpt: La bourse d’études du président de l’Université de Winnipeg au Canada
   est offerte aux nouveaux étudiants étrangers qui démontrent un esprit de
   leadership.
