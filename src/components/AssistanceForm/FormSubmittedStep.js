@@ -8,7 +8,7 @@ import {useRecoilValue} from 'recoil';
 import styles from './styles.module.scss';
 
 // States
-import {assistancePackageState, serviceState} from './state';
+import {assistancePackageState, serviceState} from './states';
 
 // Constants
 import {AssistanceTypes} from '../../constants/assistance';

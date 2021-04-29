@@ -10,7 +10,7 @@ import Card from '../Card';
 import styles from './styles.module.scss';
 
 // State
-import {currentStepState, previousStepState, previousStepsState, initializeState} from './state';
+import {currentStepState, previousStepState, previousStepsState, initializeState} from './states';
 import Steps, {getStepComponent, goToNextStep, goToPreviousStep, goToStep} from './steps';
 
 export {initializeState};

@@ -8,7 +8,7 @@ import {useRecoilState} from 'recoil';
 import YesNoStepForm from './YesNoStepForm';
 
 // States
-import {isAlreadyAdvancedState} from './state';
+import {isAlreadyAdvancedState} from './states';
 
 // Constants
 import {Steps} from './steps';

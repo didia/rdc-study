@@ -21,7 +21,7 @@ import StepForm from './StepForm';
 import {YesNoField} from './YesNoStepForm';
 
 // States
-import {destinationCountryState, hasAdmissionState} from './state';
+import {destinationCountryState, hasAdmissionState} from './states';
 
 // Constants
 import DestinationCountries from './destination-countries';

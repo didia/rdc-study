@@ -15,7 +15,7 @@ import styles from './styles.module.scss';
 import HtmlContent from '../HtmlContent';
 
 // State
-import {availableAssistanceTypesState, assistancePackageState, aboutCandidateState, serviceState} from './state';
+import {availableAssistanceTypesState, assistancePackageState, aboutCandidateState, serviceState} from './states';
 
 // Config
 import config from '../../../config';
