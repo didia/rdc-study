@@ -1,17 +1,16 @@
-import {atom, selector} from 'recoil';
+import {atom, GetRecoilValue, selector} from 'recoil';
 
 import DestinationCountries, {destinationCountrySlugs} from '../destination-countries';
 import Steps from '../steps';
 
 import {currentStepState, destinationCountryState} from './common-state';
 
-const ASSISTANCE_PACKAGE = {
-  ADMISSION: 'admission',
-  CAQ: 'caq',
-  EQUIVALENCE: 'equivalence',
-  TRAVEL: 'voyage',
-  VISA: 'visa'
-};
+enum AssistancePackageType {
+  Admission = 'admission',
+  CAQ = 'caq',
+  Equivalence = 'equivalence',
+  Visa = 'visa'
+}
 
 const assistancePackagesState = atom({
   key: 'assistancePackages',
@@ -56,7 +55,7 @@ export const assistancePackageState = selector({
   }
 });
 
-const getSelectedPackage = (get) => {
+const getSelectedPackage: (GetRecoilValue) => AssistancePackageType = (get) => {
   const destinationCountry = get(destinationCountryState);
 
   if (destinationCountry === DestinationCountries.CANADA.value) {
@@ -64,44 +63,44 @@ const getSelectedPackage = (get) => {
   } else if (destinationCountry === DestinationCountries.BELGIUM.value) {
     return getSelectedPackageForBelgium(get);
   } else {
-    return get(hasAdmissionState) ? ASSISTANCE_PACKAGE.VISA : ASSISTANCE_PACKAGE.ADMISSION;
+    return get(hasAdmissionState) ? AssistancePackageType.Visa : AssistancePackageType.Admission;
   }
 };
 
-const getSelectedPackageForCanada = (get) => {
+const getSelectedPackageForCanada: (GetRecoilValue) => AssistancePackageType = (get) => {
   const hasAdmission = get(hasAdmissionState);
 
   if (!hasAdmission) {
-    return ASSISTANCE_PACKAGE.ADMISSION;
+    return AssistancePackageType.Admission;
   }
 
   const isGoingToQuebec = get(isGoingToQuebecState);
 
   if (!isGoingToQuebec) {
-    return ASSISTANCE_PACKAGE.VISA;
+    return AssistancePackageType.Visa;
   }
 
   const hasCAQ = get(hasCAQState);
 
-  return hasCAQ ? ASSISTANCE_PACKAGE.VISA : ASSISTANCE_PACKAGE.CAQ;
+  return hasCAQ ? AssistancePackageType.Visa : AssistancePackageType.CAQ;
 };
 
 const getSelectedPackageForBelgium = (get) => {
   const hasAdmission = get(hasAdmissionState);
 
   if (hasAdmission) {
-    return ASSISTANCE_PACKAGE.VISA;
+    return AssistancePackageType.Visa;
   }
 
   const hasGraduateStudiesDiploma = get(hasGraduateStudiesDiplomaState);
 
   if (hasGraduateStudiesDiploma) {
-    return ASSISTANCE_PACKAGE.ADMISSION;
+    return AssistancePackageType.Admission;
   }
 
   const hasHighSchoolDiplomaEquivalence = get(hasHighSchoolDiplomaEquivalenceState);
 
-  return hasHighSchoolDiplomaEquivalence ? ASSISTANCE_PACKAGE.ADMISSION : ASSISTANCE_PACKAGE.EQUIVALENCE;
+  return hasHighSchoolDiplomaEquivalence ? AssistancePackageType.Admission : AssistancePackageType.Equivalence;
 };
 
 // eslint-disable-next-line complexity
@@ -110,29 +109,29 @@ const preselectAssistancePackage = (set, fromGuide) => {
     return null;
   }
 
-  const [destinationCountry, guideType, _] = fromGuide.split('/');
+  const [destinationCountry, guideType] = fromGuide.split('/');
 
   if (destinationCountrySlugs.indexOf(destinationCountry) === -1) {
     return null;
   }
 
   switch (guideType) {
-    case ASSISTANCE_PACKAGE.ADMISSION:
+    case AssistancePackageType.Admission:
       set(hasAdmissionState, false);
 
       if (destinationCountry === DestinationCountries.BELGIUM.value) {
         set(currentStepState, Steps.BelgiumEquivalenceCheck);
       }
       break;
-    case ASSISTANCE_PACKAGE.EQUIVALENCE:
+    case AssistancePackageType.Equivalence:
       set(hasAdmissionState, false);
       set(hasHighSchoolDiplomaEquivalenceState, false);
       break;
-    case ASSISTANCE_PACKAGE.CAQ:
+    case AssistancePackageType.CAQ:
       set(hasAdmissionState, true);
       set(hasCAQState, false);
       break;
-    case ASSISTANCE_PACKAGE.VISA:
+    case AssistancePackageType.Visa:
       set(hasAdmissionState, true);
 
       if (destinationCountry === DestinationCountries.CANADA.value) {
@@ -144,7 +143,7 @@ const preselectAssistancePackage = (set, fromGuide) => {
   }
 };
 
-export const initializeState = ({fromGuide, assistancePackages}) => {
+export const initializeState: (MutableSnapshot) => void = ({fromGuide, assistancePackages}) => {
   // eslint-disable-next-line complexity
   return ({set}) => {
     set(assistancePackagesState, assistancePackages);

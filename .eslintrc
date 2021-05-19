@@ -28,7 +28,8 @@
     "plugin:mirego/recommended",
     "plugin:react/recommended",
     "prettier",
-    "plugin:jest/recommended"
+    "plugin:jest/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "globals": {
     "Promise": true,

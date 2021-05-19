@@ -88,7 +88,7 @@ export const availableAssistanceTypesState = selector({
   }
 });
 
-export const initializeState = ({services}) => {
+export const initializeState: (MutableSnapshot) => void = ({services}) => {
   // eslint-disable-next-line complexity
   return ({set}) => {
     set(servicesState, services);
