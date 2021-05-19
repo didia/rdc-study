@@ -178,7 +178,7 @@ collections:
     files:
       - label: Foire aux questions
         name: faqs
-        file: data/faqs.json
+        file: data/pages/faqs.json
         fields:
           - name: entries
             label: Entrées

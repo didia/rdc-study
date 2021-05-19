@@ -121,8 +121,8 @@ const plugins = [
   {
     resolve: 'gatsby-source-filesystem',
     options: {
-      path: `${__dirname}/data/faqs`,
-      name: 'faqs'
+      path: `${__dirname}/data/pages`,
+      name: 'pages'
     }
   },
   {
