@@ -16,7 +16,7 @@ tags:
   - inscription
   - pecg
 thumbnail: /images/uploads/study-brazil.jpg
-startDate: 2020-07-31T23:46:26.618Z
+startDate: 2021-04-15T23:46:26.618Z
 levels:
   - undergraduate
 targetCountries:
