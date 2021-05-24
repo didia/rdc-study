@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses d’études PEC-G pour étudier gratuitement au Brésil
-deadline: 2020-09-30T02:59:08.072Z
+deadline: 2021-07-21T02:59:08.072Z
 excerpt: Chaque année le gouvernement du Brésil octroie des bourses d’études aux
   étudiants étrangers leur permettant d’étudier gratuitement dans différentes
   facultés des institutions d’enseignement supérieur brésiliennes
@@ -16,7 +16,7 @@ tags:
   - inscription
   - pecg
 thumbnail: /images/uploads/study-brazil.jpg
-startDate: 2020-07-31T23:46:26.618Z
+startDate: 2021-04-15T23:46:26.618Z
 levels:
   - undergraduate
 targetCountries:
