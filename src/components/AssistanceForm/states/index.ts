@@ -1,13 +1,17 @@
-import {initializeState as initializeAssistancePackageState} from './assistance-package-state';
-import {initializeState as initializeServiceState} from './service-state';
+import {MutableSnapshot} from 'recoil';
+import {
+  AssistancePackageStateInitialData,
+  initializeState as initializeAssistancePackageState
+} from './assistance-package-state';
+import {initializeState as initializeServiceState, ServiceStateInitialData} from './service-state';
 
 export * from './common-state';
 export * from './assistance-package-state';
 export * from './service-state';
 
-export const initializeState = (initialData) => {
-  return ({set}) => {
-    initializeAssistancePackageState(initialData)(set);
-    initializeServiceState(initialData)(set);
+export const initializeState = (initialData: ServiceStateInitialData & AssistancePackageStateInitialData) => {
+  return ({set}: MutableSnapshot): void => {
+    initializeAssistancePackageState(set, initialData);
+    initializeServiceState(set, initialData);
   };
 };

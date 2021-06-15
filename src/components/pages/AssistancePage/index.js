@@ -23,7 +23,7 @@ const page = {
 
 const AssistancePage = ({assistancePackages, services}) => {
   const [fromGuide] = useQueryParam('pour', StringParam);
-  const [service] = useQueryParam('service', StringParam)
+  const [service] = useQueryParam('service', StringParam);
 
   return (
     <GenericPage page={page} bannerClassName={styles.banner}>
@@ -47,7 +47,7 @@ const AssistancePage = ({assistancePackages, services}) => {
 
 AssistancePage.propTypes = {
   assistancePackages: T.object.isRequired,
-  services: T.object.isRequired
+  services: T.array.isRequired
 };
 
 export default AssistancePage;

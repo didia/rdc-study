@@ -11,6 +11,9 @@ import styles from './styles.module.scss';
 import GenericPage from '../GenericPage';
 import Card from '../../Card';
 
+const getAssistanceRequestLink = ({slug, assistanceRequestLink}) =>
+  assistanceRequestLink ? assistanceRequestLink : `/accompagnement?service=${slug}`;
+
 const ServiceList = ({services}) => (
   <ul className={styles.list}>
     {services.map((service, i) => (
@@ -25,7 +28,7 @@ const ServiceList = ({services}) => (
             </FormattedMessage>
             <FormattedMessage id="shared.service-call-to-action">
               {(label) => (
-                <Link to={`/accompagnement?service=${service.slug}`} className="button special call-to-action">
+                <Link to={getAssistanceRequestLink(service)} className="button special call-to-action">
                   {label}
                 </Link>
               )}

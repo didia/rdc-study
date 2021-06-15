@@ -62,8 +62,4 @@ const MasterForm = () => {
   );
 };
 
-MasterForm.propTypes = {
-  assistancePackages: T.object.isRequired
-};
-
 export default MasterForm;

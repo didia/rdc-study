@@ -1,9 +1,10 @@
-import {atom, selector} from 'recoil';
+import {atom, selector, SetRecoilState} from 'recoil';
 
 import DestinationCountries from '../destination-countries';
 import {AssistanceTypes, AssistancePrices} from '../../../constants/assistance';
 
 import {aboutCandidateState, destinationCountryState} from './common-state';
+import {Service} from "../../../types/services";
 
 export const hasReadGuideState = atom({
   key: 'hasReadGuide',
@@ -88,9 +89,10 @@ export const availableAssistanceTypesState = selector({
   }
 });
 
-export const initializeState: (MutableSnapshot) => void = ({services}) => {
-  // eslint-disable-next-line complexity
-  return ({set}) => {
-    set(servicesState, services);
-  };
+export type ServiceStateInitialData = {
+  services: Service[];
+};
+
+export const initializeState: (set: SetRecoilState, initialData: ServiceStateInitialData) => void = (set, {services}) => {
+  set(servicesState, services);
 };

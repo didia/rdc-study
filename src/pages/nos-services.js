@@ -41,6 +41,7 @@ export const pageQuery = graphql`
             title
             price
             excerpt
+            assistanceRequestLink
           }
         }
       }

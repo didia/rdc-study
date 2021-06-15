@@ -16,7 +16,10 @@ const Assistance = ({data}) => {
     return accumulator;
   }, {});
 
-  const services = data.services.edges.reduce((accumulator, {node}) => accumulator.push(node.frontmatter), []);
+  const services = data.services.edges.reduce((accumulator, {node}) => {
+    accumulator.push(node.frontmatter);
+    return accumulator;
+  }, []);
 
   return <AssistancePage assistancePackages={assistancePackages} services={services} />;
 };

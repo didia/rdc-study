@@ -1,9 +1,10 @@
-import {atom, GetRecoilValue, selector} from 'recoil';
+import {atom, GetRecoilValue, selector, SetRecoilState} from 'recoil';
 
 import DestinationCountries, {destinationCountrySlugs} from '../destination-countries';
 import Steps from '../steps';
 
 import {currentStepState, destinationCountryState} from './common-state';
+import {AssistancePackageDictionary} from '../../../types/assistance-packages';
 
 enum AssistancePackageType {
   Admission = 'admission',
@@ -14,7 +15,7 @@ enum AssistancePackageType {
 
 const assistancePackagesState = atom({
   key: 'assistancePackages',
-  default: []
+  default: {}
 });
 
 export const hasAdmissionState = atom({
@@ -47,11 +48,11 @@ export const assistancePackageState = selector({
 
   get: ({get}) => {
     const destinationCountry = get(destinationCountryState);
-    const selectedPackages = get(assistancePackagesState);
+    const assistancePackages = get(assistancePackagesState);
     const selectedPackage = getSelectedPackage(get);
     const assistancePackageSlug = `${destinationCountry}/${selectedPackage}`;
 
-    return selectedPackages[assistancePackageSlug];
+    return assistancePackages[assistancePackageSlug];
   }
 });
 
@@ -143,10 +144,15 @@ const preselectAssistancePackage = (set, fromGuide) => {
   }
 };
 
-export const initializeState: (MutableSnapshot) => void = ({fromGuide, assistancePackages}) => {
-  // eslint-disable-next-line complexity
-  return ({set}) => {
-    set(assistancePackagesState, assistancePackages);
-    preselectAssistancePackage(set, fromGuide);
-  };
+export type AssistancePackageStateInitialData = {
+  fromGuide: string | null;
+  assistancePackages: AssistancePackageDictionary;
+};
+
+export const initializeState: (set: SetRecoilState, initialData: AssistancePackageStateInitialData) => void = (
+  set,
+  {fromGuide, assistancePackages}
+) => {
+  set(assistancePackagesState, assistancePackages);
+  preselectAssistancePackage(set, fromGuide);
 };
