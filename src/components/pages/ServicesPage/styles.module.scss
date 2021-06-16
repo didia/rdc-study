@@ -11,15 +11,15 @@
 .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 370px;
   padding: 16px;
-  align-items: center;
 }
 
 .card__title {
+  text-align: center;
   font-size: 1.4rem;
   color: #000;
-  text-align: center;
 }
 
 .card__description {
@@ -28,7 +28,7 @@
 
 .card__price {
   margin-bottom: 1rem;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .card__bottom {
