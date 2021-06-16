@@ -135,8 +135,8 @@ const plugins = [
   {
     resolve: 'gatsby-source-filesystem',
     options: {
-      path: `${__dirname}/data/assistance-packages`,
-      name: 'scholarships'
+      path: `${__dirname}/data/services`,
+      name: 'services'
     }
   },
   {

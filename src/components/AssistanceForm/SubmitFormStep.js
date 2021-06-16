@@ -15,7 +15,7 @@ import styles from './styles.module.scss';
 import HtmlContent from '../HtmlContent';
 
 // State
-import {availableAssistanceTypesState, assistancePackageState, aboutCandidateState, assistanceTypeState} from './state';
+import {availableAssistanceTypesState, assistancePackageState, aboutCandidateState, serviceState} from './states';
 
 // Config
 import config from '../../../config';
@@ -24,7 +24,7 @@ const {contactFormEndpoint} = config;
 
 // Constants
 import Steps from './steps';
-import {AssistanceTypes, AssistancePrices} from './constants';
+import {AssistanceTypes, AssistancePrices} from '../../constants/assistance';
 
 // Utils
 import getCurrentUrl from '../../utils/get-current-url';
@@ -38,9 +38,9 @@ const getCheckedClassName = (currentValue, expectedValue) =>
     ? classnames('radio-button-label--checked', styles['radio-button-label--checked'])
     : null;
 
-const assistanceTypeSchema = (intl) =>
+const serviceSchema = (intl) =>
   object().shape({
-    assistanceType: string().required(intl.formatMessage({id: 'shared.assistance-types.required'}))
+    service: string().required(intl.formatMessage({id: 'shared.assistance-types.required'}))
   });
 
 const formattedAssistancePrice = (intl, price) => {
@@ -48,17 +48,15 @@ const formattedAssistancePrice = (intl, price) => {
   return intl.formatMessage({id: translationKey}, {price});
 };
 
-const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
+const SubmitFormStep = ({onNextStep, onRestart}) => {
   const intl = useIntl();
   const [showError, setShowError] = useState(false);
   const [message, setMessage] = useState(null);
 
   const aboutCandidate = useRecoilValue(aboutCandidateState);
-  const assistancePackageSlug = useRecoilValue(assistancePackageState);
+  const assistancePackage = useRecoilValue(assistancePackageState);
   const availableAssistanceTypes = useRecoilValue(availableAssistanceTypesState);
-  const setAssistanceType = useSetRecoilState(assistanceTypeState);
-
-  const assistancePackage = assistancePackages[assistancePackageSlug];
+  const setServiceState = useSetRecoilState(serviceState);
 
   const name = `${aboutCandidate.firstName} ${aboutCandidate.lastName}`;
   const messageTranslationKey = aboutCandidate.phone
@@ -77,10 +75,10 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
     await axios.post(contactFormEndpoint, payload);
   };
 
-  const onSubmit = async (assistanceType) => {
+  const onSubmit = async (service) => {
     setShowError(false);
 
-    const assistancePackageTitle = assistancePackage.title.replace(/Assistance/gi, assistanceType);
+    const assistancePackageTitle = assistancePackage.title.replace(/Assistance/gi, service);
 
     const message = intl.formatMessage(
       {id: messageTranslationKey},
@@ -95,7 +93,7 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
     setMessage(message);
 
     try {
-      if (assistanceType === AssistanceTypes.INFORMATION) {
+      if (service === AssistanceTypes.INFORMATION) {
         await subscribeToNewsletter({
           email: aboutCandidate.email,
           firstName: aboutCandidate.firstName,
@@ -107,9 +105,9 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
 
       analyticsPushEvent({
         category: 'AssistanceForm',
-        action: assistanceType,
-        label: assistancePackageSlug,
-        value: AssistancePrices[assistanceType]
+        action: service,
+        label: assistancePackage.slug,
+        value: AssistancePrices[service]
       });
 
       onNextStep(Steps.FormSubmitted);
@@ -135,11 +133,11 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
       </h3>
 
       <Formik
-        initialValues={{assistanceType: ''}}
-        validationSchema={assistanceTypeSchema(intl)}
+        initialValues={{service: ''}}
+        validationSchema={serviceSchema(intl)}
         onSubmit={(values) => {
-          setAssistanceType(values.assistanceType);
-          return onSubmit(values.assistanceType);
+          setServiceState(values.service);
+          return onSubmit(values.service);
         }}
       >
         {({isSubmitting, isValid, values}) => (
@@ -156,10 +154,10 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
                   className={classnames(
                     'radio-button-label',
                     styles['radio-button-label'],
-                    getCheckedClassName(values.assistanceType, assistanceType.type)
+                    getCheckedClassName(values.service, assistanceType.type)
                   )}
                 >
-                  <Field type="radio" name="assistanceType" value={assistanceType.type} className={styles.input} />
+                  <Field type="radio" name="service" value={assistanceType.type} className={styles.input} />
                   <div>
                     {intl.formatMessage({id: assistanceType.title})}
                     <p className="bold">{formattedAssistancePrice(intl, assistanceType.price)}</p>
@@ -168,7 +166,7 @@ const SubmitFormStep = ({onNextStep, onRestart, assistancePackages}) => {
               ))}
             </div>
 
-            <ErrorMessage name="assistanceType" className={styles['error-message']} component="p" />
+            <ErrorMessage name="service" className={styles['error-message']} component="p" />
 
             {showError && (
               <p

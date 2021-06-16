@@ -16,12 +16,18 @@ const Assistance = ({data}) => {
     return accumulator;
   }, {});
 
-  return <AssistancePage assistancePackages={assistancePackages} />;
+  const services = data.services.edges.reduce((accumulator, {node}) => {
+    accumulator.push(node.frontmatter);
+    return accumulator;
+  }, []);
+
+  return <AssistancePage assistancePackages={assistancePackages} services={services} />;
 };
 
 Assistance.propTypes = {
   data: T.shape({
-    assistancePackages: T.object.isRequired
+    assistancePackages: T.object.isRequired,
+    services: T.object.isRequired
   })
 };
 
@@ -36,6 +42,21 @@ export const pageQuery = graphql`
           frontmatter {
             slug
             title
+          }
+        }
+      }
+    }
+
+    services: allMarkdownRemark(filter: {fields: {type: {eq: "service"}}}) {
+      edges {
+        node {
+          frontmatter {
+            slug
+            price
+            assistanceFormServiceChoiceLabel
+            assistanceFormConfirmationTitle
+            assistanceFormConfirmationFirstParagraph
+            assistanceFormConfirmationSecondParagraph
           }
         }
       }

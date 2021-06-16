@@ -1,0 +1,60 @@
+.list {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  grid-column-gap: 5px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 370px;
+  padding: 16px;
+}
+
+.card__title {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.card__description {
+  font-size: 1rem;
+}
+
+.card__price {
+  margin-bottom: 1rem;
+  font-size: 0.8em;
+}
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+@include breakpoint(medium) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    height: 350px;
+  }
+}
+
+@include breakpoint(xsmall) {
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    height: auto;
+  }
+}

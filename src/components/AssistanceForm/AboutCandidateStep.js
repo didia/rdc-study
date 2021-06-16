@@ -19,7 +19,7 @@ import StepActions from './StepActions';
 import StepForm from './StepForm';
 
 // States
-import {aboutCandidateState} from './state';
+import {aboutCandidateState} from './states';
 
 // Const
 import {Steps} from './steps';

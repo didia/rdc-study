@@ -12,7 +12,7 @@ import StepActions from './StepActions';
 import {YesNoField} from './YesNoStepForm';
 
 // States
-import {hasGraduateStudiesDiplomaState, hasHighSchoolDiplomaEquivalenceState} from './state';
+import {hasGraduateStudiesDiplomaState, hasHighSchoolDiplomaEquivalenceState} from './states';
 
 // Styles
 import styles from './styles.module.scss';

@@ -12,7 +12,7 @@ import StepActions from './StepActions';
 import {YesNoField} from './YesNoStepForm';
 
 // States
-import {isGoingToQuebecState, hasCAQState} from './state';
+import {isGoingToQuebecState, hasCAQState} from './states';
 
 // Styles
 import styles from './styles.module.scss';

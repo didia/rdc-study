@@ -8,10 +8,10 @@ import {useRecoilValue} from 'recoil';
 import styles from './styles.module.scss';
 
 // States
-import {assistancePackageState, assistanceTypeState} from './state';
+import {assistancePackageState, serviceState} from './states';
 
 // Constants
-import {AssistanceTypes} from './constants';
+import {AssistanceTypes} from '../../constants/assistance';
 
 const translationKeysMap = {
   [AssistanceTypes.ASSISTANCE]: {
@@ -44,11 +44,11 @@ const translationKeysMap = {
 const FormSubmittedStep = () => {
   const intl = useIntl();
   const assistancePackage = useRecoilValue(assistancePackageState);
-  const assistanceType = useRecoilValue(assistanceTypeState);
+  const assistanceType = useRecoilValue(serviceState);
 
   const translations = translationKeysMap[assistanceType];
 
-  const guidePath = `/guides/${assistancePackage}`;
+  const guidePath = `/guides/${assistancePackage.slug}`;
 
   return (
     <div>
@@ -58,7 +58,10 @@ const FormSubmittedStep = () => {
 
       <p className={styles['form-submitted-paragraph']}>{intl.formatMessage({id: translations.firstParagraph})}</p>
 
-      <p dangerouslySetInnerHTML={{__html: intl.formatMessage({id: translations.secondParagraph})}} className={styles['form-submitted-paragraph']} />
+      <p
+        dangerouslySetInnerHTML={{__html: intl.formatMessage({id: translations.secondParagraph})}}
+        className={styles['form-submitted-paragraph']}
+      />
 
       <div className={styles['centralized-button-wrapper']}>
         <Link to={guidePath} className="button special call-to-action">

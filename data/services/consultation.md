@@ -1,7 +1,7 @@
 ---
 slug: consultation
 title: Consultation
-price: 10
+price: 30
 excerpt: Un conseiller RDC Études vous orientera pour la suite de vos démarches. 
 rank: 4
 assistanceFormServiceChoiceLabel: Je veux parler à un conseiller RDC Études qui m’orientera pour la suite de mes démarches.

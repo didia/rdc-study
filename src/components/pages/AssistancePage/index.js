@@ -21,13 +21,14 @@ const page = {
   path: '/accompagnement'
 };
 
-const AssistancePage = ({assistancePackages}) => {
+const AssistancePage = ({assistancePackages, services}) => {
   const [fromGuide] = useQueryParam('pour', StringParam);
+  const [service] = useQueryParam('service', StringParam);
 
   return (
     <GenericPage page={page} bannerClassName={styles.banner}>
-      <RecoilRoot initializeState={initializeState({fromGuide})}>
-        <AssistanceForm assistancePackages={assistancePackages} />
+      <RecoilRoot initializeState={initializeState({assistancePackages, services, fromGuide, service})}>
+        <AssistanceForm />
 
         <section className={styles['offer-block']}>
           <CompetitiveAdvantages />
@@ -45,7 +46,8 @@ const AssistancePage = ({assistancePackages}) => {
 };
 
 AssistancePage.propTypes = {
-  assistancePackages: T.object.isRequired
+  assistancePackages: T.object.isRequired,
+  services: T.array.isRequired
 };
 
 export default AssistancePage;

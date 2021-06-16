@@ -157,6 +157,16 @@ collections:
             value: tn
           - label: Turquie
             value: tr
+  - label: Forfaits d'accompagnement
+    name: assistancePackages
+    folder: data/assistance-packages
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - {label: "Identifiant", name: "{{slug}}", widget: "string"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Description", name: "body", widget: "markdown"}
+      - {label: "Services offerts", name: "services", widget: "list", field: {label: "Service", name: "Service", widget: "relation", collection: "services", value_field: "{{slug}}", search_fields: ["slug", "title"], display_fields: ["title"]}}
   - label: Services
     name: services
     folder: data/services
@@ -166,12 +176,13 @@ collections:
       - {label: "Identifiant", name: "{{slug}}", widget: "string"}
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Prix", name: "price", widget: "number", default: 0}
-      - {label: "Courte description", name: "excerpt", widget: "string"}
-      - {label: "Ordre d'apparution dans la page des services", name: "rank", required: false}
+      - {label: "Courte description", name: "excerpt", widget: "string", pattern: ['^.{1,250}.$', "Le resumé de l'article doit avoir moins de 250 caractères"]}
       - {label: "Titre du choix dans le formulaire d’assistance", name: "assistanceFormServiceChoiceLabel", widget: "string"}
       - {label: "Titre du message de confirmation de la demande", name: "assistanceFormConfirmationTitle"}
       - {label: "Premier paragraphe du message de confirmation de la demande", name: "assistanceFormConfirmationFirstParagraph"}
       - {label: "Second paragraphe du message de confirmation de la demande", name: "assistanceFormConfirmationSecondParagraph"}
+      - {label: "Lien vers la page de demande de service", name: "assistanceRequestLink", required: false}
+      - {label: "Ordre d'apparution dans la page des services", name: "rank", required: false}
       - {label: "Contenu", name: "body", widget: "markdown", required: false}
   - label: Pages
     name: pages
