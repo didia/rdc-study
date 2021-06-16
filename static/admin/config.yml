@@ -175,14 +175,14 @@ collections:
     fields:
       - {label: "Identifiant", name: "{{slug}}", widget: "string"}
       - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Prix", name: "price", widget: "number", default: 0}
-      - {label: "Courte description", name: "excerpt", widget: "string", pattern: ['^.{1,250}.$', "Le resumé de l'article doit avoir moins de 250 caractères"]}
+      - {label: "Prix", name: "price", widget: "number", value_type: "int", default: 0}
+      - {label: "Courte description", name: "excerpt", widget: "text", pattern: ['^.{1,250}.$', "Le resumé de l'article doit avoir moins de 250 caractères"]}
       - {label: "Titre du choix dans le formulaire d’assistance", name: "assistanceFormServiceChoiceLabel", widget: "string"}
-      - {label: "Titre du message de confirmation de la demande", name: "assistanceFormConfirmationTitle"}
-      - {label: "Premier paragraphe du message de confirmation de la demande", name: "assistanceFormConfirmationFirstParagraph"}
-      - {label: "Second paragraphe du message de confirmation de la demande", name: "assistanceFormConfirmationSecondParagraph"}
-      - {label: "Lien vers la page de demande de service", name: "assistanceRequestLink", required: false}
-      - {label: "Ordre d'apparution dans la page des services", name: "rank", required: false}
+      - {label: "Titre du message de confirmation de la demande", name: "assistanceFormConfirmationTitle", widget: "string"}
+      - {label: "Premier paragraphe du message de confirmation de la demande", name: "assistanceFormConfirmationFirstParagraph", widget: "text"}
+      - {label: "Second paragraphe du message de confirmation de la demande", name: "assistanceFormConfirmationSecondParagraph", widget: "text"}
+      - {label: "Lien vers la page de demande de service", name: "assistanceRequestLink", widget: "string", required: false}
+      - {label: "Ordre d'apparution dans la page des services", name: "rank", widget: "number", value_type: "int", required: false}
       - {label: "Contenu", name: "body", widget: "markdown", required: false}
   - label: Pages
     name: pages
