@@ -15,10 +15,6 @@ const MENU_ITEMS = [
     to: '/'
   },
   {
-    labelKey: 'menu.our-services-link-label',
-    to: '/nos-services'
-  },
-  {
     labelKey: 'menu.scholarships-link-label',
     to: '/bourses'
   },
