@@ -42,6 +42,8 @@ exports.onCreateNode = ({node, actions, getNode}) => {
       createNodeField({node, name: 'timestamp', value: deadlineTimestamp});
     } else if (fileNode.dir.indexOf('services') !== -1) {
       createNodeField({node, name: 'type', value: 'service'});
+    } else if (fileNode.dir.indexOf('assistance-packages') !== -1) {
+      createNodeField({node, name: 'type', value: 'assistance-package'});
     }
   }
 };

@@ -140,6 +140,13 @@ const plugins = [
     }
   },
   {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: `${__dirname}/data/assistance-packages`,
+      name: 'assistance-packages'
+    }
+  },
+  {
     resolve: 'gatsby-transformer-remark',
     options: {
       plugins: [
