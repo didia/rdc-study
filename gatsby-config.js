@@ -70,7 +70,8 @@ const plugins = [
       background_color: '#ffffff',
       theme_color: '#ffffff',
       display: 'standalone',
-      icon: 'static/logo.png'
+      icon: 'static/logo.png',
+      cache_busting_mode: 'none'
     }
   },
   {
@@ -184,7 +185,14 @@ const plugins = [
       enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)()
     }
   },
-  'gatsby-plugin-offline'
+  {
+    resolve: 'gatsby-plugin-offline',
+    options: {
+      workboxConfig: {
+        globPatterns: ['**/logo*']
+      }
+    }
+  }
 ];
 
 module.exports = {
