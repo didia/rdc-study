@@ -88,7 +88,7 @@ const plugins = [
       sassOptions: {
         includePaths: ['src/assets/styles', 'node_modules']
       },
-      additionalData: '@import "shared.scss";',
+      additionalData: '@import "shared.scss";'
     }
   },
   {
