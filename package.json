@@ -99,7 +99,7 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-jest": "^24.3.5",
-    "eslint-plugin-mirego": "0.0.1",
+    "eslint-plugin-mirego": "1.0.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "husky": "^6.0.0",
