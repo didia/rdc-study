@@ -7,7 +7,6 @@ const netlifyCmsPaths = {
 };
 
 const plugins = [
-  'gatsby-plugin-netlify-cache',
   'gatsby-plugin-react-helmet',
   'gatsby-transformer-json',
   netlifyCmsPaths,

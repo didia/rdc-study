@@ -1,34 +1,26 @@
 // Vendor
-import React from 'react';
+import React, {FunctionComponent} from 'react';
 import {FormattedMessage} from 'react-intl';
-import {useStaticQuery, graphql, Link} from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
+import {Link} from 'gatsby';
+import {StaticImage} from 'gatsby-plugin-image';
 
 // Styles
 import styles from './styles.module.scss';
 
-const Banner = () => {
-  const data = useStaticQuery(graphql`
-    query LogoQuery {
-      imageSharp(fluid: {originalName: {regex: "/logo.png/"}}) {
-        fluid(maxWidth: 60) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-          presentationHeight
-        }
-      }
-    }
-  `);
-
+const Banner: FunctionComponent = () => {
   return (
     <section className={styles.banner}>
       <div className={styles.wrapper}>
         <div className={styles.logo}>
           <div className={styles.logo__icon}>
-            <GatsbyImage
-              image={data.childImageSharp.gatsbyImageData}
-              style={{width: data.imageSharp.fluid.presentationWidth, height: data.imageSharp.fluid.presentationHeight}}
-              alt="RDC Etudes Logo" />
+            <StaticImage
+              src="../static/logo.png"
+              placeholder="blurred"
+              layout="fixed"
+              width={60}
+              height={56}
+              alt="RDC Etudes Logo"
+            />
           </div>
         </div>
 

@@ -52,73 +52,65 @@ Index.propTypes = {
 
 export default Index;
 
-export const pageQuery = graphql`query PageQuery($currentTimestamp: Float) {
-  guides: allMarkdownRemark(
-    limit: 10
-    sort: {fields: [frontmatter___name], order: ASC}
-    filter: {frontmatter: {topic: {eq: "country"}}, fields: {draft: {eq: false}}}
-  ) {
-    edges {
-      node {
-        fields {
-          path
-        }
-        frontmatter {
-          excerpt
-          slug
-          title
-          name
-          flag {
-            childImageSharp {
-              gatsbyImageData(
-                width: 450
-                height: 304
-                transformOptions: {cropFocus: CENTER}
-                layout: CONSTRAINED
-              )
+export const pageQuery = graphql`
+  query PageQuery($currentTimestamp: Float) {
+    guides: allMarkdownRemark(
+      limit: 10
+      sort: {fields: [frontmatter___name], order: ASC}
+      filter: {frontmatter: {topic: {eq: "country"}}, fields: {draft: {eq: false}}}
+    ) {
+      edges {
+        node {
+          fields {
+            path
+          }
+          frontmatter {
+            excerpt
+            slug
+            title
+            name
+            flag {
+              childImageSharp {
+                gatsbyImageData(width: 450, height: 304, transformOptions: {cropFocus: CENTER}, layout: CONSTRAINED)
+              }
             }
           }
         }
       }
     }
-  }
-  articles: allMarkdownRemark(
-    limit: 2
-    sort: {fields: [frontmatter___date], order: DESC}
-    filter: {fields: {type: {eq: "article"}, draft: {eq: false}}}
-  ) {
-    edges {
-      node {
-        timeToRead
-        fields {
-          path
-        }
-        frontmatter {
-          date
-          excerpt
-          title
-          thumbnail {
-            childImageSharp {
-              gatsbyImageData(
-                width: 300
-                transformOptions: {cropFocus: CENTER}
-                layout: CONSTRAINED
-              )
+    articles: allMarkdownRemark(
+      limit: 2
+      sort: {fields: [frontmatter___date], order: DESC}
+      filter: {fields: {type: {eq: "article"}, draft: {eq: false}}}
+    ) {
+      edges {
+        node {
+          timeToRead
+          fields {
+            path
+          }
+          frontmatter {
+            date
+            excerpt
+            title
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(width: 300, transformOptions: {cropFocus: CENTER}, layout: CONSTRAINED)
+              }
             }
           }
         }
       }
+      pageInfo {
+        hasNextPage
+      }
     }
-    pageInfo {
-      hasNextPage
+    scholarships: allMarkdownRemark(
+      limit: 12
+      sort: {fields: [fields___timestamp], order: ASC}
+      filter: {fields: {type: {eq: "scholarship"}, timestamp: {gt: $currentTimestamp}, draft: {eq: false}}}
+    ) {
+      ...ScholarshipListItemFragment
     }
   }
-  scholarships: allMarkdownRemark(
-    limit: 12
-    sort: {fields: [fields___timestamp], order: ASC}
-    filter: {fields: {type: {eq: "scholarship"}, timestamp: {gt: $currentTimestamp}, draft: {eq: false}}}
-  ) {
-    ...ScholarshipListItemFragment
-  }
-}
 `;

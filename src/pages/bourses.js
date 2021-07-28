@@ -2,12 +2,13 @@
 import React, {Component} from 'react';
 import T from 'prop-types';
 import {graphql} from 'gatsby';
+import {getImage} from 'gatsby-plugin-image';
 
 import ScholarshipsPage from '../components/pages/ScholarshipsPage';
 
 export default class Scholarships extends Component {
   state = {
-    scholarships: [],
+    scholarships: []
   };
 
   componentDidMount() {
@@ -21,8 +22,8 @@ export default class Scholarships extends Component {
         levels: node.frontmatter.levels,
         path: node.fields.path,
         targetCountries: node.frontmatter.targetCountries,
-        thumbnail: node.frontmatter.thumbnail.childImageSharp,
-        title: node.frontmatter.title,
+        thumbnail: getImage(node.frontmatter.thumbnail.childImageSharp),
+        title: node.frontmatter.title
       }));
 
     this.setState({scholarships});
@@ -31,10 +32,10 @@ export default class Scholarships extends Component {
   render() {
     const page = {
       description: "Voici les offres de bourses en cours trouvées pour vous avec ❤️ par l'équipe RDC Etudes.",
-      image: this.props.data.metaImage.fixed,
+      image: getImage(this.props.data.metaImage),
       title: "Trouver une bourse d'études",
       path: '/bourses',
-      socialShareEnabled: true,
+      socialShareEnabled: true
     };
 
     return <ScholarshipsPage activeOnly={true} page={page} scholarships={this.state.scholarships} />;
@@ -44,36 +45,33 @@ export default class Scholarships extends Component {
 Scholarships.propTypes = {
   data: T.shape({
     metaImage: T.object,
-    scholarships: T.object.isRequired,
-  }),
+    scholarships: T.object.isRequired
+  })
 };
 
-export const scholarshipFragment = graphql`fragment ScholarshipListItemFragment on MarkdownRemarkConnection {
-  edges {
-    node {
-      fields {
-        path
-        timestamp
-      }
-      frontmatter {
-        deadline
-        excerpt
-        levels
-        targetCountries
-        title
-        thumbnail {
-          childImageSharp {
-            gatsbyImageData(
-              height: 300
-              transformOptions: {cropFocus: CENTER, fit: COVER}
-              layout: FULL_WIDTH
-            )
+export const scholarshipFragment = graphql`
+  fragment ScholarshipListItemFragment on MarkdownRemarkConnection {
+    edges {
+      node {
+        fields {
+          path
+          timestamp
+        }
+        frontmatter {
+          deadline
+          excerpt
+          levels
+          targetCountries
+          title
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(height: 300, transformOptions: {cropFocus: CENTER, fit: COVER}, layout: FULL_WIDTH)
+            }
           }
         }
       }
     }
   }
-}
 `;
 
 export const pageQuery = graphql`
@@ -86,9 +84,7 @@ export const pageQuery = graphql`
       ...ScholarshipListItemFragment
     }
     metaImage: imageSharp(fluid: {originalName: {regex: "/bourses-courantes-cover.jpg/"}}) {
-      fixed(width: 1200, height: 630, cropFocus: NORTH) {
-        ...GatsbyImageSharpFixed_noBase64
-      }
+      gatsbyImageData(width: 1200, height: 630, transformOptions: {cropFocus: CENTER, fit: COVER}, layout: FULL_WIDTH)
     }
   }
 `;
