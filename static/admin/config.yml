@@ -5,6 +5,7 @@ backend:
     - editor
   branch: master
   squash_merges: true
+local_backend: true
 slug:
   encoding: ascii
   clean_accents: true
@@ -12,6 +13,44 @@ media_folder: static/images/uploads
 public_folder: /images/uploads
 publish_mode: editorial_workflow
 collections:
+  - name: guide
+    label: Guide
+    folder: data/guides
+    create: false
+    nested:
+      depth: 100
+      summary: '{{title}}'
+    fields:
+      - label: Brouillon
+        name: draft
+        widget: boolean
+        default: true
+      - label: Titre
+        name: title
+        widget: string
+      - label: Introduction
+        name: excerpt
+        widget: text
+      - label: Contenu
+        name: body
+        widget: markdown
+      - label: Slug
+        name: slug
+        widget: hidden
+      - label: Thumbnail
+        name: thumbnail
+        widget: hidden
+      - label: Flag
+        name: flag
+        widget: hidden
+        required: false
+      - label: Topic
+        name: topic
+        widget: hidden
+      - label: Guides liés
+        name: related
+        widget: hidden
+
   - name: article
     label: Article
     folder: data/articles

@@ -1,15 +1,19 @@
 ---
 draft: false
-slug: 'belgique/admission'
-date: '2018-11-19'
-title: 'Obtenir une admission dans une université belge'
-excerpt: "Pour vous rendre en Belgique pour études, vous devez au préalable obtenir une admission d’une université en Belgique. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n’importe quelle université belge."
-thumbnail: 'images/belgique-admission.jpg'
-topic: 'admission'
-related: ['belgique/equivalence', 'belgique/visa']
+title: Obtenir une admission dans une université belge
+excerpt: Pour vous rendre en Belgique pour études, vous devez au préalable
+  obtenir une admission d’une université en Belgique. Ce guide vous explique les
+  différentes étapes à suivre pour obtenir une admission dans n’importe quelle
+  université belge.
+slug: belgique/admission
+thumbnail: images/belgique-admission.jpg
+related:
+  - belgique/equivalence
+  - belgique/visa
+date: 2018-11-19
+topic: admission
 ---
-
-Le processus d’admission reste sensiblement le même pour la majorité d’universités belges. Si vous êtes étudiants résidant hors de l’union européene, vous devez présenter votre demande d’admission entre le 15 février et le 30 avril de chaque année.
+Le processus d’admission reste sensiblement le même pour la majorité d’universités belges. Si vous êtes étudiants résidant hors de l’union européenne, vous devez présenter votre demande d’admission entre le 15 février et le 30 avril de chaque année.
 \
 \
 Cependant les conditions d’admission, elles, dépendent du niveau et du domaine d’études que vous désirez poursuivre.\
@@ -24,7 +28,7 @@ Pour savoir comment vous y prendre, consultez notre [guide gratuit sur l’obten
 \
 Voici donc les différentes étapes que vous devez suivre pour obtenir votre admission:
 
-1.  ## Trouver un programme d’études et une université
+1. ## Trouver un programme d’études et une université
 
 Dans quelle université comptez-vous étudier? Quel niveau d’études (bachelier, master, doctorat)? En quelle langue comptez-vous étudier (français, anglais ou partiellement en anglais et en français)? Dans quelle domaine allez-vous étudier (droit, sciences, etc) ?, le type d’institution (université, haute école, école supérieure des arts).
 Il est important d’avoir au moins deux choix potentiels de domaine d’études que vous voulez poursuivre. Nous vous conseillons de baser votre choix sur 3 facteurs principaux: Votre niveau de confort avec le sujet, votre passion pour le sujet ainsi que les opportunités d’emplois en Belgique tout comme dans votre pays d’origine.
@@ -34,7 +38,7 @@ Voici une liste non-exhaustive des universités que vous pouvez explorer: <a hre
 <a href="https://www.ulb.ac.be/enseignements/inscriptions/info-05.html" target="_blank" rel="nofollow noopener">Université Libre de Bruxelles</a> - <a href="https://www.unamur.be/etudes/inscription/droits-inscription/etudiants-etrangers" target="_blank" rel="nofollow noopener">Université de Namur</a> -
 <a href="https://www.ulb.ac.be/enseignements/inscriptions/info-05.html" target="_blank" rel="nofollow noopener">Université de Mons</a>
 
-2.  ## Faire la demande d’admission
+2. ## Faire la demande d’admission
 
 De manière générale, la demande d’admission est faite en ligne sur le site de l’université. Vous aurez donc à remplir un formulaire en ligne et payer les frais d’admission.\
 Les frais d’admission peuvent être payés par carte Visa, carte MasterCard ou encore via Western Union si l’université l’accepte. La période du dépôt des candidatures varie selon les calendriers académiques de chaque universités, néanmoins la grande majorité opte pour la période du 15 février au 30 Avril.
@@ -45,7 +49,7 @@ Certaines universités acceptent l’envoi des documents (diplôme, copie du pas
 La liste des documents à envoyer varie selon l’université et le programme visé. Généralement, vous aurez la liste des documents une fois que vous avez complété le formulaire de demande en ligne.
 \
 \
-Une fois le dossier réçu, l’université passera à l’analyse de votre dossier. Le temps d’analyse varie d’une université à une autre.\  
+Une fois le dossier réçu, l’université passera à l’analyse de votre dossier. Le temps d’analyse varie d’une université à une autre.\\
 Une fois l’analyse terminée, vous obtiendrez ensuite votre lettre d’admission, en cas d’une réponse favorable, soit par email ou par la poste selon l’université.\
 Si l’université répond par la poste, il est important de mentionner comme adresse postale, une adresse d’une personne vivant dans un pays où la poste est efficace sinon vous attendrez des siècles pour recevoir vos documents.
 
@@ -56,8 +60,8 @@ Une fois admis, vous devrez maintenant faire une demande visa long séjour pour 
 En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC Etudes](/accompagnement), vous devrez prévoir entre **300 USD et 680 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
-- **0 à 230 USD** pour la demande d’admission.
-- **0 à 150 USD** pour l’envoi et reception des documents.
-- **299.99 USD** pour les frais d’assistance RDC Etudes.
+* **0 à 230 USD** pour la demande d’admission.
+* **0 à 150 USD** pour l’envoi et reception des documents.
+* **299.99 USD** pour les frais d’assistance RDC Etudes.
 
-_NB_: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
+*NB*: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
