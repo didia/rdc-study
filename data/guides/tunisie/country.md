@@ -31,7 +31,7 @@ Pour en savoir plus, [consultez notre guide sur les démarches à suivre pour ob
 
 ## Qu'en est-il de bourses d'études ?
 
-Le gouvernement tunisien offre de bourses partielles  de premier cycle et de second cycle aux étudiants de certains pays d’Afrique francophone via le ministère de l’enseignement supérieur et de la recherche scientifique. Ces offres sont disponibles sur le site du ministère <http://www.mes.tn/> quand elles sont en cours.
+Le gouvernement tunisien offre de bourses partielles  de premier cycle et de second cycle aux étudiants de certains pays d’Afrique francophone via le ministère de l’enseignement supérieur et de la recherche scientifique. Ces offres sont disponibles sur [le site du ministère](http://www.mes.tn/) [](http://www.mes.tn/)quand elles sont en cours.
 
 ## Qu'en est-il du travail ?
 
