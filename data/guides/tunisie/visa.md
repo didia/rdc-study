@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: Obtenir un visa d’études pour la Tunisie
 excerpt: Ce guide gratuit vous donne les informations nécessaires et vous
   explique les différentes étapes à suivre pour obtenir un visa d’études pour la
@@ -34,7 +34,7 @@ Un grand nombre d’étudiants se voit refuser la demande par manque d’attenti
 
 Vous pouvez souscrire à notre service de vérification des documents, en cas de doute, pour mettre toutes les chances de votre côté.
 
-4. **DÉPOSEZ VOTRE DEMANDE**
+**4. DÉPOSEZ VOTRE DEMANDE**
 
 Vous devez ensuite vous rendre à l’ambassade de la Tunisie pour déposer votre dossier. Au dépôt de votre demande, vous allez payer les frais de Visa. Le traitement de la demande peut prendre en moyenne 3 semaines. Nous vous recommandons de faire votre demande au moins 1 mois avant la rentrée académique en fin de mois de juillet.
 
@@ -69,8 +69,6 @@ En plus de ça, le groupe ATUA JUNIOR offre des services de logistique à savoir
 \- Paiement des frais de location du 1er mois 
 
 \- Achat d’un lit et matelas neufs à 5 ans de garantie et  aménagement. 
-
-
 
 * **PACK SILVER - 1 400 euros** qui comprend les services suivants :
 
