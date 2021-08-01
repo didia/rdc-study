@@ -15,17 +15,16 @@ Pour vous rendre en Tunisie pour études, vous devez au préalable obtenir une a
 
 Le système d’enseignement supérieur tunisien regroupe deux types d'établissements: publics et privés. Les études universitaires sont réparties en :
 
-Le système LMD qui est une formation en 3 grades (licence, master et doctorat).
+* Le système LMD qui est une formation en 3 grades (licence, master et doctorat).
+* Les formations selon les normes internationales (5 ans ou plus) : études en architecture, médecine, ingénierie, pharmacie, etc.
 
-Les formations selon les normes internationales (5 ans ou plus) : études en architecture, médecine, ingénierie, pharmacie, etc.
+**CHOISIR UN PROGRAMME D‘ÉTUDES**
 
-CHOISIR UN PROGRAMME D‘ÉTUDES
-
-Dans quel domaine allez-vous étudier? Quel programme d‘études? Il est important d‘avoir au minimum deux choix potentiels de domaine ou sujet d‘études que vous voulez poursuivre au cas où vous n'obteniez pas d’admission dans votre programme de choix.
+Il est important d‘avoir au minimum deux choix potentiels de domaine ou sujet d‘études que vous voulez poursuivre au cas où vous n'obteniez pas d’admission dans votre programme de choix.
 
 Nous vous conseillons donc de baser votre choix sur 3 facteurs principaux: Votre niveau de confort avec le sujet, votre passion pour le sujet ainsi que les opportunités d‘emplois dans votre pays d’origine.
 
-FAIRE LA DEMANDE D‘ADMISSION
+**FAIRE LA DEMANDE D‘ADMISSION**
 
 Généralement les inscriptions pour les établissements publics en Tunisie se font via le ministère de l’enseignement supérieur et de la recherche scientifique. Chaque année, le gouvernement tunisien offre des quotas de places pédagogiques limités dans les établissements d’enseignement publics. Cependant, vous devez être ressortissant d’un pays partenaire de la coopération internationale et être détenteur d’au moins un diplôme de baccalauréat (diplôme d'Etat).
 
@@ -39,14 +38,14 @@ C'est ainsi que pour vous permettre l'accès aux universités tunisiennes, nous 
 
 **Conditions générales d'admission**
 
-1. Premier cycle 
+**a. Premier cycle** 
 
 * Avoir un dossier académique de qualité (bons %)
 * Avoir au moins un diplôme de baccalauréat (diplôme d'état)
 
 Documents à fournir:
 
-CYCLE PRÉPARATOIRE 
+**CYCLE PRÉPARATOIRE** 
 
 1. L’attestation d’inscription ; 
 
@@ -60,7 +59,7 @@ CYCLE PRÉPARATOIRE 
 
 6. Reçue du virement bancaire des frais académiques (Au minimum la  première tranche). 
 
-CYCLE DE LICENCE 
+**CYCLE DE LICENCE** 
 
 1. L’attestation d’inscription ; 
 
@@ -74,9 +73,7 @@ CYCLE DE LICENCE 
 
 6. Reçue du virement bancaire des frais académiques (Au minimum la  première tranche). 
 
-<!--StartFragment-->
-
-1. Cycle supérieur (master et doctorat) 
+**b. Cycle supérieur (master et doctorat)** 
 
 Les candidats pour le Master et le doctorat doivent être titulaires d'un diplôme d'études supérieures (licence et master).
 
@@ -98,18 +95,14 @@ Documents à fournir :
 
 8. Reçue du virement bancaire des frais académiques (Au minimum la  première tranche).
 
-<!--StartFragment-->
-
 NB: 
-
-
 
 * L'année académique en Tunisie commence à la deuxième semaine du mois de Septembre de chaque année sauf pour les facultés de médecine et pharmacie qui débutent à la première semaine du mois. Nous vous recommandons alors de commencer vos démarches au moins 2 mois avant cette date.
 * Les frais académiques sont payés par virement bancaire directement  vers le compte bancaire de l’établissement que nous allons joindre à votre  attestation de préinscription. 
 
-COMBIEN ÇA COÛTE ?
+**COMBIEN ÇA COÛTE ?**
 
-En supposant que vous choisissez d’être accompagné dans vos démarches par le partenaire de RDC Etudes, le groupe ATUA JUNIOR, vous devez prévoir entre 500 euros pour toutes vos démarches et accueil en Tunisie. Ces frais couvriront les services suivants:
+En supposant que vous choisissez d’être accompagné dans vos démarches par le partenaire de RDC Etudes, le groupe ATUA JUNIOR, vous devez prévoir entre **500 euros** pour toutes vos démarches et accueil en Tunisie. Ces frais couvriront les services suivants:
 
 \- Préparation de dossier  
 
@@ -121,7 +114,7 @@ En supposant que vous choisissez d’être accompagné dans vos démarches par l
 
 \- Accueil en Tunisie 
 
-NOUS SOMMES LÀ POUR VOUS!
+**NOUS SOMMES LÀ POUR VOUS!**
 
 Nous savons combien votre projet d’études est important pour vous, que vous voulez certainement mettre toutes les chances de votre côté pour que votre rêve d’étudier à l’étranger s’accomplisse.
 
