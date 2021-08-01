@@ -35,8 +35,94 @@ Pour être admis(e) dans un établissement d'enseignement privé, vous devez ent
 
 En 2018, l'association des étudiants et Stagiaires Africains en Tunisie a signé avec le ministère de l'enseignement supérieur de la Recherche et Scientifique une convention qui permet aux étudiants non boursiers d'accéder aux établissements étatiques à titre privé. 
 
-<!--StartFragment-->
-
 C'est ainsi que pour vous permettre l'accès aux universités tunisiennes, nous avons mis en place un partenariat avec le groupe ATUA JUNIOR qui est une société de droit de services administratifs et logistique spécialisée dans le Tourisme Estudiantin en Tunisie et qui est principalement basée en Tunisie. Aujourd'hui partenaire des établissements d'enseignement supérieur de grand renom en Tunisie dont  [ESPIN](https://www.espin.ens.tn/), [IPSAS](https://ipsas-ens.net/), [ESEAC](http://www.eseac.ens.tn/), [ESPS](https://www.esps.tn/etudier-en-tunisie/) et [AMTA ACADEMY](https://amta.academy/).
 
-Conditions générales d'admission
+**Conditions générales d'admission**
+
+1. Premier cycle 
+
+* Avoir un dossier académique de qualité (bons %)
+* Avoir au moins un diplôme de baccalauréat (diplôme d'état)
+
+Documents à fournir:
+
+CYCLE PRÉPARATOIRE 
+
+1. L’attestation d’inscription ; 
+
+2. Copie du passeport ; 
+
+3. Copie de l’extrait de naissance ; 
+
+4. Copie du diplôme de baccalauréat ; 
+
+5. Copie du relevé de note du baccalauréat ; 
+
+6. Reçue du virement bancaire des frais académiques (Au minimum la  première tranche). 
+
+CYCLE DE LICENCE 
+
+1. L’attestation d’inscription ; 
+
+2. Copie du passeport ; 
+
+3. Copie de l’extrait de naissance ; 
+
+4. Copie du diplôme de baccalauréat ; 
+
+5. Copie du relevé de note du baccalauréat ; 
+
+6. Reçue du virement bancaire des frais académiques (Au minimum la  première tranche). 
+
+<!--StartFragment-->
+
+1. Cycle supérieur (master et doctorat) 
+
+Les candidats pour le Master et le doctorat doivent être titulaires d'un diplôme d'études supérieures (licence et master).
+
+Documents à fournir :
+
+1. L’attestation d’inscription ; 
+
+2. Copie du passeport ; 
+
+3. Copie de l’extrait de naissance ; 
+
+4. Copie du diplôme de baccalauréat ou licence ; 
+
+5. Copie du relevé de note du baccalauréat ou licence ; 
+
+6. Copie de tous les diplômes obtenus ou attestation de réussite
+
+7. Copie de tous les relevés de note obtenus après le baccalauréat 
+
+8. Reçue du virement bancaire des frais académiques (Au minimum la  première tranche).
+
+<!--StartFragment-->
+
+NB: 
+
+
+
+* L'année académique en Tunisie commence à la deuxième semaine du mois de Septembre de chaque année sauf pour les facultés de médecine et pharmacie qui débutent à la première semaine du mois. Nous vous recommandons alors de commencer vos démarches au moins 2 mois avant cette date.
+* Les frais académiques sont payés par virement bancaire directement  vers le compte bancaire de l’établissement que nous allons joindre à votre  attestation de préinscription. 
+
+COMBIEN ÇA COÛTE ?
+
+En supposant que vous choisissez d’être accompagné dans vos démarches par le partenaire de RDC Etudes, le groupe ATUA JUNIOR, vous devez prévoir entre 500 euros pour toutes vos démarches et accueil en Tunisie. Ces frais couvriront les services suivants:
+
+\- Préparation de dossier  
+
+\- Démarche Préinscription  
+
+\- Démarche Inscription  
+
+\- Suivi pour le visa  
+
+\- Accueil en Tunisie 
+
+NOUS SOMMES LÀ POUR VOUS!
+
+Nous savons combien votre projet d’études est important pour vous, que vous voulez certainement mettre toutes les chances de votre côté pour que votre rêve d’étudier à l’étranger s’accomplisse.
+
+C’est pour cette raison qu’en plus de ces informations, nous vous offrons un service d’assistance dont l’objectif est de vous aider à monter le meilleur dossier possible pour vos démarches.
