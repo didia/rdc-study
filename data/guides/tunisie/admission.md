@@ -18,13 +18,13 @@ Le système d’enseignement supérieur tunisien regroupe deux types d'établiss
 * Le système LMD qui est une formation en 3 grades (licence, master et doctorat).
 * Les formations selon les normes internationales (5 ans ou plus) : études en architecture, médecine, ingénierie, pharmacie, etc.
 
-**CHOISIR UN PROGRAMME D‘ÉTUDES**
+**1. CHOISIR UN PROGRAMME D‘ÉTUDES**
 
 Il est important d‘avoir au minimum deux choix potentiels de domaine ou sujet d‘études que vous voulez poursuivre au cas où vous n'obteniez pas d’admission dans votre programme de choix.
 
 Nous vous conseillons donc de baser votre choix sur 3 facteurs principaux: Votre niveau de confort avec le sujet, votre passion pour le sujet ainsi que les opportunités d‘emplois dans votre pays d’origine.
 
-**FAIRE LA DEMANDE D‘ADMISSION**
+**2. FAIRE LA DEMANDE D‘ADMISSION**
 
 Généralement les inscriptions pour les établissements publics en Tunisie se font via le ministère de l’enseignement supérieur et de la recherche scientifique. Chaque année, le gouvernement tunisien offre des quotas de places pédagogiques limités dans les établissements d’enseignement publics. Cependant, vous devez être ressortissant d’un pays partenaire de la coopération internationale et être détenteur d’au moins un diplôme de baccalauréat (diplôme d'Etat).
 
@@ -36,7 +36,7 @@ En 2018, l'association des étudiants et Stagiaires Africains en Tunisie a sign�
 
 C'est ainsi que pour vous permettre l'accès aux universités tunisiennes, nous avons mis en place un partenariat avec le groupe ATUA JUNIOR qui est une société de droit de services administratifs et logistique spécialisée dans le Tourisme Estudiantin en Tunisie et qui est principalement basée en Tunisie. Aujourd'hui partenaire des établissements d'enseignement supérieur de grand renom en Tunisie dont  [ESPIN](https://www.espin.ens.tn/), [IPSAS](https://ipsas-ens.net/), [ESEAC](http://www.eseac.ens.tn/), [ESPS](https://www.esps.tn/etudier-en-tunisie/) et [AMTA ACADEMY](https://amta.academy/).
 
-**Conditions générales d'admission**
+**3. CONDITIONS GÉNÉRALES** 
 
 **a. Premier cycle** 
 
@@ -48,29 +48,19 @@ Documents à fournir:
 **CYCLE PRÉPARATOIRE** 
 
 1. L’attestation d’inscription ; 
-
 2. Copie du passeport ; 
-
 3. Copie de l’extrait de naissance ; 
-
 4. Copie du diplôme de baccalauréat ; 
-
 5. Copie du relevé de note du baccalauréat ; 
-
 6. Reçue du virement bancaire des frais académiques (Au minimum la  première tranche). 
 
 **CYCLE DE LICENCE** 
 
 1. L’attestation d’inscription ; 
-
 2. Copie du passeport ; 
-
 3. Copie de l’extrait de naissance ; 
-
 4. Copie du diplôme de baccalauréat ; 
-
 5. Copie du relevé de note du baccalauréat ; 
-
 6. Reçue du virement bancaire des frais académiques (Au minimum la  première tranche). 
 
 **b. Cycle supérieur (master et doctorat)** 
@@ -80,19 +70,12 @@ Les candidats pour le Master et le doctorat doivent être titulaires d'un diplô
 Documents à fournir :
 
 1. L’attestation d’inscription ; 
-
 2. Copie du passeport ; 
-
 3. Copie de l’extrait de naissance ; 
-
 4. Copie du diplôme de baccalauréat ou licence ; 
-
 5. Copie du relevé de note du baccalauréat ou licence ; 
-
 6. Copie de tous les diplômes obtenus ou attestation de réussite
-
 7. Copie de tous les relevés de note obtenus après le baccalauréat 
-
 8. Reçue du virement bancaire des frais académiques (Au minimum la  première tranche).
 
 NB: 
