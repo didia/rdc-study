@@ -5,7 +5,7 @@ excerpt: "Le groupe ATUA JUNIOR est une société de service administratif et
   logistique spécialisée dans le tourisme Estudiantin en Tunisie. Basée en
   Tunisie dans la ville de Sfax qui est la capitale économique et éducative du
   pays. "
-thumbnail: /images/uploads/logo-groupe-atua-junior-format-png-1-.png
+thumbnail: /images/uploads/whatsapp-image-2021-06-27-at-15.07.10.jpeg
 tags: []
 date: 2021-08-01T20:02:23.910Z
 ---
