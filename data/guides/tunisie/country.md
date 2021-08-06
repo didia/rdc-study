@@ -17,7 +17,7 @@ date: 2021-07-30
 ---
 ## Que faut-il pour étudier en Tunisie ?
 
-Pour étudier en Tunisie, il faut commencer par obtenir une admission dans un établissement d’enseignement désigné en Tunisie. Un établissement d'enseignement public ou privé est désigné lorsque ce dernier est sous la tutelle du ministère de l'enseignement supérieur et de la recherche scientifique. Néanmoins, il faut être vigilant lors de votre choix d'université car bien que désigné certains établissements proposent des formations dont le diplôme n'est pas reconnu au niveau international.
+Pour étudier en Tunisie, il faut commencer par obtenir une admission dans un établissement d’enseignement désigné en Tunisie. Un établissement d'enseignement public ou privé est désigné lorsque ce dernier est sous la tutelle du ministère de l'enseignement supérieur et de la recherche scientifique. Néanmoins, il faut être vigilant lors de votre choix d'université car bien que désigné, certains établissements proposent des formations dont le diplôme n'est pas reconnu au niveau international.
 
 ## Combien coûtent les études en Tunisie ?
 
