@@ -12,7 +12,7 @@ tags:
   - royaume-uni
   - bourses d’études 2020
 thumbnail: /images/uploads/bourse-chevening.jpg
-startDate: 2020-09-03T06:52:54.973Z
+startDate: 2021-08-03T06:52:54.973Z
 levels:
   - graduate
   - research
