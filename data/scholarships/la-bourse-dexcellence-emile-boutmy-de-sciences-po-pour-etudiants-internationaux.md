@@ -10,7 +10,7 @@ tags:
   - Bourses d’études;france;rdc etudes;sciencesPo;Bourses Emile Bootmy pour
     congolais
 thumbnail: /images/uploads/372013-pba7rs-434.jpg
-startDate: 2020-08-06T12:22:29.489Z
+startDate: 2021-08-01T12:22:29.489Z
 levels:
   - undergraduate
   - graduate
