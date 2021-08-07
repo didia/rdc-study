@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourse d’excellence Emile Boutmy de SciencesPo en France
-deadline: 2021-02-28T12:22:29.466Z
+deadline: 2022-06-15T12:22:29.466Z
 excerpt: La bourse Émile Boutmy est une bourse d’excellence, attribuée aux
   meilleurs étudiants en fonction des priorités de recrutement et en accord avec
   le profil recherché pour chacun des programmes de l’Institut d’Études
@@ -23,24 +23,27 @@ La bourse peut prendre plusieurs formes selon la décision du Jury basé notamme
 
 Pour la licence, la bourse peut être:
 
-* Une bourse d’enseignement de 7 300 € par an pour les trois années du programme de premier cycle, ainsi qu’une subvention pour couvrir une partie du coût de la vie de 5 000 € par an.
-* Une bourse d’enseignement de 7 300 € par an pour les trois années du programme de premier cycle.
-* Une bourse d’enseignement de 5 000 € par an pour les trois années du programme de premier cycle.
-* Une bourse de 3 000 € par an pour les trois années du programme de premier cycle.
-* À titre exceptionnel, une bourse de 19 000 € pour couvrir les trois années du collège. 
+* Une bourse de scolarité de 13 000 € par an pour les trois années du programme de premier cycle.
+* Une bourse de 8 800 € par an pour les trois années du programme de premier cycle.
+* Une bourse de 6 000 € par an pour les trois années du programme de premier cycle.
+* Une bourse de 3 600 € par an pour les trois années du programme de premier cycle. 
 
 Pour le master, la bourse peut être:
 
-* Une subvention de 10 000 € par an pour couvrir les frais de scolarité pour les deux années du master.
-* Une bourse d’enseignement de 5 000 € par an pour les deux années du master.
+* Une subvention de 12 200 € par an pour couvrir les frais de scolarité pour les deux années du master.
 
 ## Quels sont les critères de la bourse ?
 
 Pour être éligibles à la bourse, vous devez être originaire d’un État non membre de l’union européenne et admis au programme de premier cycle ou à la maîtrise. Vous devez donc avoir obtenu votre diplôme d’études secondaires ou licence hors union européenne.
 
-Cette bourse n’est donc pas automatiquement attribuée, vous devez premièrement vous inscrire à un programme offert par l’université et indiquer votre souhait de postuler directement dans votre formulaire de candidature dans la section _**Informations financières**_ au baccalauréat ou à la maîtrise. 
+Cette bourse n’est donc pas automatiquement attribuée, vous devez premièrement vous inscrire à un programme offert par l’université et indiquer votre souhait de postuler directement dans votre formulaire de candidature dans la section ***Informations financières*** au baccalauréat ou à la maîtrise. 
 
-En cas de redoublement, vous perdrez définitivement votre bourse. De même si vous reportez votre admission à une autre année.
+NB: 
+
+* En cas de redoublement, vous perdrez définitivement votre bourse. De même si vous reportez votre admission à une autre année.
+* Si vous ne validez pas votre année académique, votre bourse sera perdue.
+* Si vous avez obtenu une bourse et décidez de reporter votre admission, votre bourse sera perdue.
+* Si la bourse Émile Boutmy vous a déjà été refusée, il ne vous est pas possible de postuler à nouveau.
 
 ## Comment postuler ?
 
@@ -71,6 +74,14 @@ Pour votre demande de bourse, il est possible que les documents suivants vous so
 
 **NB: Ne présentez que les documents que vous possédez et qui répondent à votre situation !**
 
-Pour plus d’informations sur la bourse Emile Boutmy, nous vous invitons à consulter <a href="https://www.sciencespo.fr/students/fr/financer/bourses-aides-financieres/boutmy.html" target="_blank" rel="noreferrer noopener">le site internet de la bourse.</a>
+**Délais:**
+
+* Date limite pour le **programme de premier cycle (candidats des écoles secondaires étrangères)** : mi-février 2022.
+* Date limite pour le **programme de premier cycle (candidats des écoles secondaires françaises)** : mi-juin 2022.
+* Date limite pour le **programme de master** : 30 novembre 2021.
+
+**Aucune demande de candidature ne sera acceptée après la date limite.**
+
+Pour plus d’informations sur la bourse Emile Boutmy, nous vous invitons à consulter <a href="https://www.sciencespo.fr/students/fr/financer/bourses-aides-financieres/boutmy.html" target="_blank" rel="noreferrer noopener">le site internet de la bourse.</a> soit par téléphone au +33 (0)1 45 49 50 82.
 
 En ce qui concerne l’admission en général, vous pouvez consulter <a href="https://www.sciencespo.fr/com/sciencespo-guide-candidat-fr.pd" target="_blank" rel="noreferrer noopener">le guide du candidat à SciencesPo.</a>
