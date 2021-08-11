@@ -40,21 +40,18 @@ Vous devez ensuite vous rendre à l’ambassade de la Tunisie pour déposer votr
 
 **Contacts de l'ambassade de la Tunisie en RDC**
 
-**Tél : +243 700 78 78**
-
-**Mail : Ambatukinshasa@yahoo.fr/at.kinshsasa@diplomatie.gov.tn**
-
-**Adresse: 67-69 avenue du cercle, Gombe, Kinshasa/RD Congo**
-
-**Heure de fonctionnement du lundi au vendredi de 8h30 à 15h30**
+* **Tél : +243 700 78 78**
+* **Mail : Ambatukinshasa@yahoo.fr/at.kinshsasa@diplomatie.gov.tn**
+* **Adresse: 67-69 avenue du cercle, Gombe, Kinshasa/RD Congo**
+* **Heure de fonctionnement du lundi au vendredi de 8h30 à 15h30**
 
 **COMBIEN ÇA COÛTE ?**
 
-En supposant que vous choisissez d’être accompagné dans votre demande de visa par le partenaire de RDC-Etudes, le groupe ATUA JUNIOR, vous devrez prévoir **90 euros** pour vos démarches de visa. Ces frais se présentent comme suit:
+En supposant que vous choisissez d’être accompagné dans votre demande de visa par le partenaire de RDC-Etudes, [le groupe ATUA JUNIOR](https://www.rdcetudes.com/articles/2021-08-01-groupe-atua-junior), vous devrez prévoir **90 euros** pour vos démarches de visa. Ces frais se présentent comme suit:
 
 * **90 euros** pour le frais des visas
 
-En plus de ça, le groupe ATUA JUNIOR offre des services de logistique à savoir :
+En plus de ça, [le groupe ATUA JUNIOR](https://www.rdcetudes.com/articles/2021-08-01-groupe-atua-junior) offre des services de logistique à savoir :
 
 * **PACK BRONZE - 900 euros** qui comprend les services suivants :
 
