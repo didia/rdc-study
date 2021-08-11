@@ -34,7 +34,7 @@ Pour être admis(e) dans un établissement d'enseignement privé, vous devez ent
 
 En 2018, l'association des étudiants et Stagiaires Africains en Tunisie a signé avec le ministère de l'enseignement supérieur de la Recherche et Scientifique une convention qui permet aux étudiants non boursiers d'accéder aux établissements étatiques à titre privé. 
 
-C'est ainsi que pour vous permettre l'accès aux universités tunisiennes, nous avons mis en place un partenariat avec le groupe ATUA JUNIOR qui est une société de droit de services administratifs et logistique spécialisée dans le Tourisme Estudiantin en Tunisie et qui est principalement basée en Tunisie. Aujourd'hui partenaire des établissements d'enseignement supérieur de grand renom en Tunisie dont  [ESPIN](https://www.espin.ens.tn/), [IPSAS](https://ipsas-ens.net/), [ESEAC](http://www.eseac.ens.tn/), [ESPS](https://www.esps.tn/etudier-en-tunisie/) et [AMTA ACADEMY](https://amta.academy/).
+C'est ainsi que pour vous permettre l'accès aux universités tunisiennes, nous avons mis en place un partenariat avec[ le groupe ATUA JUNIOR](https://www.rdcetudes.com/articles/2021-08-01-groupe-atua-junior) qui est une société de droit de services administratifs et logistique spécialisée dans le Tourisme Estudiantin en Tunisie et qui est principalement basée en Tunisie. Aujourd'hui partenaire des établissements d'enseignement supérieur de grand renom en Tunisie dont  [ESPIN](https://www.espin.ens.tn/), [IPSAS](https://ipsas-ens.net/), [ESEAC](http://www.eseac.ens.tn/), [ESPS](https://www.esps.tn/etudier-en-tunisie/) et [AMTA ACADEMY](https://amta.academy/).
 
 **3. CONDITIONS GÉNÉRALES** 
 
@@ -85,7 +85,7 @@ NB: 
 
 **COMBIEN ÇA COÛTE ?**
 
-En supposant que vous choisissez d’être accompagné dans vos démarches par le partenaire de RDC Etudes, le groupe ATUA JUNIOR, vous devez prévoir entre **500 euros** pour toutes vos démarches et accueil en Tunisie. Ces frais couvriront les services suivants:
+En supposant que vous choisissez d’être accompagné dans vos démarches par le partenaire de RDC Etudes, [le groupe ATUA JUNIOR](https://www.rdcetudes.com/articles/2021-08-01-groupe-atua-junior), vous devez prévoir entre **500 euros** pour toutes vos démarches et accueil en Tunisie. Ces frais couvriront les services suivants:
 
 \- Préparation de dossier  
 
