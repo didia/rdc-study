@@ -17,7 +17,7 @@ date: 2021-07-30
 ---
 ## Que faut-il pour étudier en Tunisie ?
 
-Pour étudier en Tunisie, il faut commencer par obtenir une admission dans un établissement d’enseignement désigné en Tunisie. Un établissement d'enseignement public ou privé est désigné lorsque ce dernier est sous la tutelle du ministère de l'enseignement supérieur et de la recherche scientifique. Néanmoins, il faut être vigilant lors de votre choix d'université car bien que désigné, certains établissements proposent des formations dont le diplôme n'est pas reconnu au niveau international.
+Pour étudier en Tunisie, il faut commencer par obtenir une admission dans un établissement d’enseignement désigné en Tunisie. Un établissement d'enseignement public ou privé est désigné lorsque ce dernier est sous la tutelle du ministère de l'enseignement supérieur et de la recherche scientifique. Néanmoins, il faut être vigilant lors de votre choix d'université car bien que désigné, certains établissements proposent des formations dont le diplôme n'est pas reconnu au niveau international. Vous trouverez plus des détails sur les differentes démarches dans [notre guide pour obtenir une admission dans une université tunisienne.](https://www.rdcetudes.com/guides/tunisie/admission)
 
 ## Combien coûtent les études en Tunisie ?
 
@@ -27,7 +27,7 @@ Les frais de scolarité en Tunisie varient en fonction de l’université, nonob
 
 Pour entamer les démarches de visa d’études, vous devez avoir été accepté/admis dans un établissement d’enseignement en Tunisie. Vous devez avoir un passeport valide.
 
-Pour en savoir plus, [consultez notre guide sur les démarches à suivre pour obtenir un visa d’études pour la Tunisie](https://dev.rdcetudes.com/guides/tunisie/visa).
+Pour en savoir plus, consultez [notre guide sur les démarches à suivre pour obtenir un visa d’études pour la Tunisie.](https://rdcetudes.com/guides/tunisie/visa)
 
 ## Qu'en est-il de bourses d'études ?
 
@@ -41,7 +41,7 @@ La culture entrepreneuriale est de plus en plus croissante en Tunisie chez les i
 
 ## Combien coûtent les démarches ?
 
-Pour vous aider et faciliter vos démarches, RDC ÉTUDES a mis en place un partenariat avec le groupe ATUA JUNIOR  qui est une société de droit tunisien de service administratif et logistique spécialisée dans le Tourisme Estudiantin en Tunisie et qui est principalement basée en Tunisie. En supposant que vous choisissez d’être accompagné dans vos démarches par un mentor de RDC Études via son partenaire le groupe ATUA JUNIOR vous devez prévoir entre **1 490**  et **2 390 euros** pour toutes vos démarches. Ces frais se présentent comme suit:
+Pour vous aider et faciliter vos démarches, RDC ÉTUDES a mis en place un partenariat avec [le groupe ATUA JUNIOR](https://www.rdcetudes.com/articles/2021-08-01-groupe-atua-junior)  qui est une société de droit tunisien de service administratif et logistique spécialisée dans le Tourisme Estudiantin en Tunisie et qui est principalement basée en Tunisie. En supposant que vous choisissez d’être accompagné dans vos démarches par un mentor de RDC Études via son partenaire le groupe ATUA JUNIOR vous devez prévoir entre **1 490**  et **2 390 euros** pour toutes vos démarches. Ces frais se présentent comme suit:
 
 * **500 euros** pour le processus d’admission.
 * **90 euros** pour le frais de visa
