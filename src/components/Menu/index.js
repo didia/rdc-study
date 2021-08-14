@@ -31,6 +31,10 @@ const MENU_ITEMS = [
     to: '/questions-populaires'
   },
   {
+    labelKey: 'menu.legal-notes-label',
+    to: '/assistance-visa'
+  },
+  {
     labelKey: 'menu.privacy-policy-link-label',
     to: '/politique-de-confidentialite'
   }
