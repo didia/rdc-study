@@ -45,7 +45,7 @@ C'est ainsi que pour vous permettre l'accès aux universités tunisiennes, nous 
 
 Documents à fournir:
 
-**CYCLE PRÉPARATOIRE** 
+* **CYCLE PRÉPARATOIRE** 
 
 1. L’attestation d’inscription ; 
 2. Copie du passeport ; 
@@ -54,7 +54,7 @@ Documents à fournir:
 5. Copie du relevé de note du baccalauréat ; 
 6. Reçue du virement bancaire des frais académiques (Au minimum la  première tranche). 
 
-**CYCLE DE LICENCE** 
+* **CYCLE DE LICENCE** 
 
 1. L’attestation d’inscription ; 
 2. Copie du passeport ; 
@@ -67,7 +67,7 @@ Documents à fournir:
 
 Les candidats pour le Master et le doctorat doivent être titulaires d'un diplôme d'études supérieures (licence et master).
 
-Documents à fournir :
+**Documents à fournir** :
 
 1. L’attestation d’inscription ; 
 2. Copie du passeport ; 
@@ -95,10 +95,4 @@ En supposant que vous choisissez d’être accompagné dans vos démarches par l
 
 \- Suivi pour le visa  
 
-\- Accueil en Tunisie 
-
-**NOUS SOMMES LÀ POUR VOUS!**
-
-Nous savons combien votre projet d’études est important pour vous, que vous voulez certainement mettre toutes les chances de votre côté pour que votre rêve d’étudier à l’étranger s’accomplisse.
-
-C’est pour cette raison qu’en plus de ces informations, nous vous offrons un service d’assistance dont l’objectif est de vous aider à monter le meilleur dossier possible pour vos démarches.
+\- Accueil en Tunisie
