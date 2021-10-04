@@ -15,7 +15,7 @@ topic: visa
 ---
 Une fois que vous avez obtenu votre admission et votre formulaire I—20, il ne vous reste plus qu’à faire vos démarches pour obtenir le visa d’études.
 
-Nous vous recommandons de commencer vos démarches de visa 2 mois avant la date de début de vos cours tel que mentionnée dans votre *I—20.*\
+Nous vous recommandons de commencer vos démarches de visa 2 mois avant la date de début de vos cours tel que mentionnée dans votre *I—20.*
 
 Vous ne pouvez pas entrer aux États-Unis plus de 30 jours avant la date de début de vos cours et le visa que vous obtiendrez à l’ambassade n’est valide que pour 30 jours.
 Vous devez donc en tenir compte lors de vos préparatifs.
