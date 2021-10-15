@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses d’Excellence Eiffel en France
-deadline: 2021-01-08T02:00:00.000Z
+deadline: 2022-01-07T02:00:00.000Z
 excerpt: La bourse Eiffel permet aux établissements français d’enseignement
   supérieur d’attirer les meilleurs étudiants étrangers dans des formations
   diplômantes de niveau master et en doctorat
@@ -12,7 +12,7 @@ tags:
   - bourse d’études
   - campus france
 thumbnail: /images/uploads/bourses-détudes-eiffel-excellence-program.png
-startDate: 2020-11-05T23:21:16.021Z
+startDate: 2021-09-26T23:21:16.021Z
 levels:
   - graduate
   - postgraduate
@@ -32,7 +32,7 @@ targetCountries:
 ## Quels sont les critères de la bourse ?
 
 * Vous ne possédez pas la nationalité française.
-* Vous avez 30 ans ou moins pour le master et 35 ans ou moins pour le doctorat.
+* Vous avez 25 ans ou moins pour le master et 30 ans ou moins pour le doctorat.
 * Vous visez un un diplôme de niveau master, y compris en école d’ingénieurs ou un diplôme en doctorat, conjointement avec une université étrangère.
 
 En plus des critères ci-dessus, seuls les domaines d’études suivants sont acceptés:
