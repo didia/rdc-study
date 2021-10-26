@@ -120,9 +120,3 @@ En plus de ça, [le groupe ATUA JUNIOR](https://www.rdcetudes.com/articles/2021-
 \- Assurance frais de connexion du premier mois
 
 NB: Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore par rapport à notre partenaire. 
-
-**NOUS SOMMES LÀ POUR VOUS!**
-
-Nous savons combien votre projet d’études est important pour vous, que vous voulez certainement mettre toutes les chances de votre côté pour que votre rêve d’étudier à l’étranger s’accomplisse.
-
-C’est pour cette raison qu’en plus de ces informations, nous vous offrons un service d’assistance dont l’objectif est de vous aider à monter le meilleur dossier possible pour vos démarches.

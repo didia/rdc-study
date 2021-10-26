@@ -48,9 +48,3 @@ Pour vous aider et faciliter vos démarches, RDC ÉTUDES a mis en place un parte
 * **900 à 1800 euros** pour l’assistance voyage .
 
 NB: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore aux universités de votre choix.
-
-**NOUS SOMMES LÀ POUR VOUS!**
-
-Nous savons combien votre projet d’études est important pour vous, que vous voulez certainement mettre toutes les chances de votre côté pour que votre rêve d’étudier à l’étranger s’accomplisse.
-
-C’est pour cette raison qu’en plus de ces informations, nous vous offrons un service d’assistance dont l’objectif est de vous aider à monter le meilleur dossier possible pour vos démarches.

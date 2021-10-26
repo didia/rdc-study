@@ -96,9 +96,3 @@ En supposant que vous choisissez d’être accompagné dans vos démarches par l
 \- Suivi pour le visa  
 
 \- Accueil en Tunisie 
-
-**NOUS SOMMES LÀ POUR VOUS!**
-
-Nous savons combien votre projet d’études est important pour vous, que vous voulez certainement mettre toutes les chances de votre côté pour que votre rêve d’étudier à l’étranger s’accomplisse.
-
-C’est pour cette raison qu’en plus de ces informations, nous vous offrons un service d’assistance dont l’objectif est de vous aider à monter le meilleur dossier possible pour vos démarches.
