@@ -38,7 +38,7 @@
     "date-fns": "^2.24.0",
     "formik": "^2.2.9",
     "gatsby": "^2.32.13",
-    "gatsby-image": "^3.10.0",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^2.10.0",
     "gatsby-plugin-feed": "^2.13.1",
     "gatsby-plugin-google-tagmanager": "^2.11.0",
