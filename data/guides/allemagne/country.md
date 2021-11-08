@@ -40,11 +40,11 @@ Une fois diplômé, vous avez la possibilité de demander un permis de séjour d
 
 ## Combien coûtent les démarches ?
 
-En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir entre **1 270 USD et 1 610 USD** pour toutes vos démarches.
-Ces frais se présentent comme suit:
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir entre 688$ et 980$ pour toutes vos démarches. Ces frais se présentent comme suit:
 
-* **80 USD à 200 USD** pour le processus d’admission.
-* **490 USD à 610 USD** pour le processus de visa.
-* **599.98 USD à 899.97 USD** pour les frais d’assistance RDC Etudes. (**299.99 USD** pour chaque service: Admission, CAQ (Québec seulement), Visa)
+* **0 euros** pour le processus d’admission pour les universités publiques
+* **250 euros** pour le processus d’admission pour les universités publiques
+* **75 euros** pour le processeur de visa
+* **599.99$** pour les frais d’assistance RDC ETUDES (admission et visa).
 
 **NB**: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
