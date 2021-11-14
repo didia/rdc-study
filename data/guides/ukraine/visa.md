@@ -1,15 +1,14 @@
 ---
 draft: true
-title: Obtenir un visa d’études pour la Sample
+title: Obtenir un visa d’études pour la Ukraine
 excerpt: Ce guide gratuit vous donne les informations nécessaires et vous
-  explique les différentes étapes à suivre pour obtenir un visa d’études pour la
-  Sample
-slug: sample/visa
+  explique les différentes étapes à suivre pour obtenir un visa d’études pour l’Ukraine
+slug: ukraine/visa
 topic: visa
 related:
-  - sample/admission
-name: Sample
-thumbnail: images/sample-visa.jpg
+  - ukraine/admission
+name: Ukraine
+thumbnail: images/ukraine-visa.jpg
 date: 2021-10-26
 ---
 

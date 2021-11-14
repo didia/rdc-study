@@ -1,20 +1,20 @@
 ---
 draft: true
-title: Étudier au Sample
-excerpt: Le Sample reconnu, pour sa diversité, ses valeurs inclusives et sa qualité de vie élevée, est considéré à l’international comme un de meilleurs pays au monde où vivre et étudier. Etudier au Sample constitue non seulement un énorme privilège mais aussi une opportunité à saisir avec grand coeur.
-slug: sample
+title: Étudier au Ukraine
+excerpt: Grâce à ses faibles coûts d’enseignement, l’Ukraine attire plus de 70 000 étudiants internationaux qui y poursuivent des études en russe ou ukrainien. Elle est une excellente option pour ceux qui désirent poursuivre facilement des études en médecine en Europe.
+slug: ukraine
 flag: images/flag.png
 topic: country
 related:
-  - sample/admission
-  - sample/visa
-thumbnail: images/sample.jpg
-name: Sample
+  - ukraine/admission
+  - ukraine/visa
+thumbnail: images/ukraine.jpg
+name: Ukraine
 date: 2021-10-26
 ---
-## Que faut-il pour étudier en Tunisie ?
+## Que faut-il pour étudier en Ukraine ?
 
-## Combien coûtent les études en Tunisie ?
+## Combien coûtent les études en Ukraine ?
 
 ## Qu'en est-il de bourses d'études ?
 
