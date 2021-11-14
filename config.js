@@ -17,12 +17,12 @@ export default {
     phones: [
       {
         countryFlag: '🇨🇩',
-        label: '+243 822 313 039',
-        link: 'tel:+243-822-313-039'
+        label: '+243 99 994 9712',
+        link: 'tel:+243999949712'
       },
       {
         countryFlag: '🌏',
-        label: '+1 (581) 318-0180',
+        label: '+1 (581) 318-0180 (WhatsApp)',
         link: 'tel:+1-581-318-0180'
       }
     ]
