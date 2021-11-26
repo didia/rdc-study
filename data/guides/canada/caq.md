@@ -42,4 +42,4 @@ Ces frais se présentent comme suit:
 * **87 USD** pour le CAQ
 * **300 USD** pour les frais d’assistance RDC-Etudes.
 
-**NB**: RDC n’a pas le droit de faire votre demande de CAQ à votre place, vous représenter au près du gouvernement du Québec ou vous conseiller en ce qui concerne l'immigration au Canada. Notre assistance en ce qui concerne le CAQ se limite au niveau logistique. Pour en savoir plus, consultez les [limitations légales de notre assistance Visa.](/assistance-visa)
+**NB**: RDC n’a pas le droit de faire votre demande de CAQ à votre place, vous représenter au près du gouvernement du Québec ou vous conseiller en ce qui concerne l'immigration au Québec. Notre assistance en ce qui concerne le CAQ se limite au niveau logistique. Pour en savoir plus, consultez les [limitations légales de notre assistance Visa.](/assistance-visa)
