@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Programme ARES: Bourses de masters et stages de spécialisation en Belgique"
-deadline: 2021-02-10T04:59:34.000Z
+deadline: 2022-01-28T04:59:34.000Z
 excerpt: Vous êtes titulaires d’un diplôme de master et d’une expérience
   professionnelle? Vous avez la possibilité de suivre un master de
   spécialisation d’un an ou un stage de perfectionnement entre 4 et 6 mois au
