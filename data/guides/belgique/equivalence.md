@@ -14,7 +14,7 @@ topic: admission
 ---
 ## Devrais-je demande une équivalence ?
 
-<a href="http://www.equivalences.cfwb.be/index.php?id=1760" target="_blank" rel="noreferrer noopener">L’équivalence des diplômes</a> n’est réquise que si vous souhaitez poursuivre vos études au premier cycle qet que vous n’avez pas fait vos études secondaires dans une école belge à l’étranger.
+<a href="http://www.equivalences.cfwb.be/index.php?id=1760" target="_blank" rel="noreferrer noopener">L’équivalence des diplômes</a> n’est requise que si vous souhaitez poursuivre vos études au premier cycle et que vous n’avez pas fait vos études secondaires dans une école belge à l’étranger.
 \
 \
 Ce ne sont pas tous les diplômes d’études secondaires qui donnent accès à une équivalence. Il est donc préférable de contacter le service d’équivalence si vous vous trouvez dans l’un de cas suivant:
@@ -58,7 +58,7 @@ Voici les documents que vous devez inclure dans votre dossier de demande d’éq
    Si vous êtes originaire de la RD Congo et que vous avez obtenu votre diplôme d’Etat en 2014 ou avant, vous devez plutôt fournir votre diplôme accompagné de vos bulletins de 5ème et 6ème années secondaires.
    \
    \
-   Si vous êtes originaire du Cameroun et que vous n’avez pas encore reçu votre diplôme de Baccalauréat, votre relevé de notes et/ou votre attestation de non-délivrance émanant de l'Office du Baccalauréat Camerounais pourrait suffir pour introduire votre dossier. Pour en savoir, consultez <a href="http://www.equivalences.cfwb.be/index.php?id=830" target="_blank" rel="noopener noreferrer">l’article à ce sujet sur le site web du Services des équivalences.</a>
+   Si vous êtes originaire du Cameroun et que vous n’avez pas encore reçu votre diplôme de Baccalauréat, votre relevé de notes et/ou votre attestation de non-délivrance émanant de l'Office du Baccalauréat Camerounais pourrait suffire pour introduire votre dossier. Pour en savoir, consultez <a href="http://www.equivalences.cfwb.be/index.php?id=830" target="_blank" rel="noopener noreferrer">l’article à ce sujet sur le site web du Services des équivalences.</a>
 3. ## Preuve d’accès au études supérieures
 
    Il est fortement conseillé de fournir un document prouvant que vous avez eu accès à des études supérieures dans le pays dans lequel vous avez obtenu votre diplôme d’études secondaires.
@@ -75,10 +75,10 @@ Voici les documents que vous devez inclure dans votre dossier de demande d’éq
    Ce formulaire servira également de procuration lors de la restitution des originaux.
 5. ## La preuve originale de l’exécution du paiement des frais administratifs
 
-   Les frais administrifs pour une demande d’équivalence s’élèvent à 150 €. Ce montant doit être versé avant le 15 juillet 2020.
+   Les frais administratifs pour une demande d’équivalence s’élèvent à 150 €. Ce montant doit être versé avant le 15 juillet 2020.
    \
    \
-   Vous pouvez effectuer le reglèment des frais administratifs en <a href="https://www.enseignement.cfwb.be/paiement_equiv/" target="_blank" rel="noopener noreferrer">payant en ligne</a>. Veuillez à imprimer la preuve de cette transaction et à la joindre à votre courrier de demande d’équivalence.
+   Vous pouvez effectuer le règlement des frais administratifs en <a href="https://www.enseignement.cfwb.be/paiement_equiv/" target="_blank" rel="noopener noreferrer">payant en ligne</a>. Veuillez à imprimer la preuve de cette transaction et à la joindre à votre courrier de demande d’équivalence.
    \
    Pour en savoir plus sur les autres options de paiement, veuillez consulter <a href="http://www.equivalences.cfwb.be/index.php?id=2782" target="_blank" rel="noopener noreferrer">l’article à ce sujet sur le site web du Services des équivalences.</a>
 
@@ -90,14 +90,14 @@ Voici les documents que vous devez inclure dans votre dossier de demande d’éq
 
    La duré maximum de traitement d’une demande d’équivalence varie entre 3 et 4 mois au maximum. Les équivalences sont souvent délivrées à partir du mois de mars.
    \
-   Une fois que vous avez introduit votre demande d’équivalence, vous pouvez déja commencer à préparer votre demande d’admission dans une université ou haute école de Belgique. Pour cela, [consultez notre guide sur les étapes à suivre pour obtenir une admission dans une université belge.](/guides/belgique/admission)
+   Une fois que vous avez introduit votre demande d’équivalence, vous pouvez déjà commencer à préparer votre demande d’admission dans une université ou haute école de Belgique. Pour cela, [consultez notre guide sur les étapes à suivre pour obtenir une admission dans une université belge.](/guides/belgique/admission)
 
 ## Combien ça coûte?
 
 En supposant que vous choisissez [d’être accompagné dans votre demande d’équivalence par un assistant de RDC Etudes](/accompagnement), vous devrez prévoir entre **478 USD et 628 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
-* **150 € (≈ 178 USD)** pour la demande d’admission.
+* **150 € (≈ 178 USD)** pour la demande d’équivalence.
 * **0 à 150 USD** pour l’envoi et réception des documents.
 * **299.99 USD** pour les frais d’assistance RDC Etudes
 
