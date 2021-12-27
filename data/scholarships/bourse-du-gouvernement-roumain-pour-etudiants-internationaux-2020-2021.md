@@ -58,4 +58,4 @@ Les candidats qui seront retenus à la bourse d’études peuvent obtenir des in
 
 Les résultats seront annoncés le 15 juillet 2022, dans chaque ambassade/consulat de la Roumanie, où vous aurez soumis les candidatures.
 
-Pour en savoir plus, veuillez télécharger et lire <a href="https://www.mae.ro/sites/default/files/file/anul_2019/burse_2019/metodologie_burse_mae_2020-2021_en.pdf" rel="noreferrer noopener" target="_blank">le guide de la bourse.</a>
+Pour en savoir plus, veuillez consulter [le site du ministère](https://scholarships.studyinromania.gov.ro/scholarship-about#prog).
