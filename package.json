@@ -98,7 +98,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-jest": "^25.2.2",
+    "eslint-plugin-jest": "^25.3.3",
     "eslint-plugin-mirego": "1.0.0",
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-react": "^7.26.1",
