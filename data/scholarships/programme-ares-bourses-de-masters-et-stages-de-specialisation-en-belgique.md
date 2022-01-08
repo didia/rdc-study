@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: "Programme ARES: Bourses de masters et stages de spécialisation en Belgique"
 deadline: 2022-01-28T04:59:34.000Z
 excerpt: Cette année, 200 bourses de bacheliers de spécialisation, masters de
