@@ -20,19 +20,25 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
+Dans le cadre du programme de coopération 2022-2027 de l’ARES, trois types de formations sont proposés via les bourses de formations internationales :
+
+Les **bacheliers** (spécialisation en [Business Data Analysis](https://www.ares-ac.be/fr/cooperation-au-developpement/bourses/ressortissants-sud/bacheliers/810-bachelier-de-specialisation-en-business-data-analysis#01-objectif-s-de-la-formation) et [pédiatrie et néonatologie](https://www.ares-ac.be/fr/cooperation-au-developpement/bourses/ressortissants-sud/bacheliers/811-bachelier-international-de-specialisation-en-pediatrie-et-neonatalogie)) et **masters** **de spécialisation** sont des programmes de formation inter-établissements organisés en une année académique et à l'issue desquels un grade académique est délivré.
+
+* Les **formations continues** sont, quant à elles, des formations davantage pratiques et de plus courte durée (2 à 6 mois). Elles délivrent un certificat.
+
 Pour les bourses de Bachelier et Master, vous avez:
 
 * Un billet aller-retour par année académique;
 * Une allocation mensuelle de subsistance pour une durée de 12 mois;
-*  Des frais de mission Indirects;
+*  Des frais des missions Indirects;
 * Une réduction des frais d’inscription;
 * Frais d’assurance payés par ARES;
 
 Pour les bourses de Stage, vous avez:
 
 * Un billet aller-retour année académique;
-* Une allocation mensuelle qui varie selon la durée de votre séjour; **83 €/jour** pour des durées de 8 à 17 jour ou **1400 €/mois** pour le reste;
-* **150 €** à l’arrivée du boursier comme frais de mission;
+* Une allocation mensuelle 
+*  Frais de mission;
 * Frais d’assurance payés par ARES;
 
 ## Quels sont les critères de la bourse ?
