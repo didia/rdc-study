@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses d’études du gouvernement de la République de Turquie.
-deadline: 2021-02-20T21:59:34.114Z
+deadline: 2022-02-20T21:59:34.114Z
 excerpt: La Turquie ouvre les portes de ses universités aux étudiants
   internationaux à travers le programme des bourses turques qui permet d’étudier
   gratuitement dans les meilleurs universités de la Turquie.
@@ -14,7 +14,7 @@ tags:
   - kinshasa
   - congo
 thumbnail: /images/uploads/bourses-turquie-2.png
-startDate: 2020-01-10T10:50:47.201Z
+startDate: 2022-01-10T10:50:47.201Z
 levels:
   - all
 targetCountries:
@@ -50,7 +50,7 @@ Voici les documents que vous devez prévoir:
 5. Certaines universités peuvent demander des examens internationaux ou de langue anglaise. Cela dépendra des universités que vous choisirez;
 6. Une proposition de projet de recherche et des exemples de publications si vous postulez pour le doctorat.
 
-Pour plus d’informations sur cette bourse d’études, consultez l’article à ce sujet sur [le site du gouvernement turc.](https://turkiyeburslari.gov.tr/en/announcement/turkiye-scholarships-2019-applications) 
+Pour plus d’informations sur cette bourse d’études, consultez l’article à ce sujet sur [le site du gouvernement turc](https://www.turkiyeburslari.gov.tr/whyturkiyescholarships). 
 
 En cas des difficultés pour postuler, veuillez vous servir [notre tutoriel](https://www.youtube.com/watch?v=RXUGzNhnFIU&t=435s&ab_channel=EquipeRDCEtudes) .
 
