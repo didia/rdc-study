@@ -9,7 +9,7 @@ tags:
   - fullbright;fullbright congo;bourses usa;bourses états-unis;bourses d’études
     pour congolais
 thumbnail: /images/uploads/fullbright-program.jpg
-startDate: 2021-01-25T10:39:55.159Z
+startDate: 2022-03-09T10:39:55.159Z
 levels:
   - graduate
 targetCountries:
@@ -30,7 +30,7 @@ Les bourses Fulbright font partie des rares bourses complètes disponibles aux a
 * Être citoyen résidant du pays à partir duquel vous postulez;
 * Avoir un diplôme de licence;
 * Être en bonne santé;
-* Avoir une bonne connaissance de l’anglais.
+* Avoir une bonne connaissance de l’anglais ou être en mesure de suivre un programme d'anglais à long terme (LTE) avant le début du programme d'études
 
 Le programme Fulbright est très compétitif et ne prend pas seulement en compte vos résultats scolaires. Les avantages potentiels de votre projet d’études pour votre pays d’origine ainsi que votre capacité et volonté à aider votre communauté et à contribuer à une meilleure collaboration entre le peuple américain et votre peuple seront pris en considération.
 
@@ -41,7 +41,7 @@ Pour postuler, vous pouvez contacter l’ambassade des états-unis dans votre pa
 Vous aurez à fournir les documents suivants:
 
 * Relevés de notes des études universitaires et copies certifiées conformes de tous les diplômes. Si ces documents ne sont pas en anglais, la traduction officielle pour chacun doit être jointe.
-* Trois lettres de référence/recommandation (témoignages). Au moins une des lettres de références devra être d’un professeur universitaire qui peut attester votre qualité et potentiel académique et les deux autres de vos employeurs actuels ainsi que de l’employeur précèdent.
+* Au moins une lettre de recommandation doit provenir d'un ancien professeur ou universitaire, et une d'un employeur actuel ou ancien. Des traductions officielles sont requises pour les diplômes et relevés de notes non anglophones
 * Les scores du TOEFL et GRE (ou GMAT pour les candidats MBA) ou une date pour les examens si vous comptez passer les tests après la date de clôture. Vous devez passer votre test TOEFL pour démontrer votre connaissance de l’anglais et le test GRE pour avoir accès aux études supérieures aux Etats-Unis.
 
 Vous devez avoir également fait des recherches sur les programmes offerts dans votre domaine par les universités américaines et avoir clairement à l’esprit le type de programme d’étude désiré. Si vous êtes sélectionnés, vous passerez une entrevue pour parler de votre programme ainsi que votre motivation dans le choix de votre projet d’études.
