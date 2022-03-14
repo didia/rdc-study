@@ -27,6 +27,6 @@ Ces frais se présentent comme suit:
 - **90 USD** pour le CAQ (Seulement pour Québec)
 - **185 USD** pour le frais des visas (Y compris les empreintes)
 - **285 USD** pour les frais des examens médicaux.
-- **299.99 USD** pour les frais d’assistance RDC-Etudes.
+- **400 USD** pour les frais d’assistance RDC-Etudes.
 
 **NB**: Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leur site web pour les montants actualisés.

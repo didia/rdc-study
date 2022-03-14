@@ -39,7 +39,7 @@ En supposant que vous choisissez [d’être accompagné dans votre demande d’a
 Ces frais se présentent comme suit:
 
 - **0 à 50 USD** pour la demande d’admission.
-- **299.99 USD** pour les frais d’assistance RDC Etudes.
+- **400 USD** pour les frais d’assistance RDC Etudes.
 
 _NB_: Le montant de demande d’admission n'est qu’une estimation de ce que les universités demandent généralement. Il peut donc changer à n’importe quel moment selon l’université concernée. Veuillez toujours vous fier au site web de l’université pour le montant actualisé.
    

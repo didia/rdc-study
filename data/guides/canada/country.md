@@ -51,6 +51,6 @@ Ces frais se présentent comme suit:
 
 - **80 USD à 200 USD** pour le processus d’admission.
 - **490 USD à 610 USD** pour le processus de visa.
-- **599.98 USD à 899.97 USD** pour les frais d’assistance RDC Etudes. (**299.99 USD** pour chaque service: Admission, CAQ (Québec seulement), Visa)
+- **800 USD à 1200 USD** pour les frais d’assistance RDC Etudes.
 
 **NB**: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

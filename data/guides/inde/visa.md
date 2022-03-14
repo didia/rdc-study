@@ -44,7 +44,7 @@ En supposant que vous choisissez [d’être accompagné dans votre demande de vi
 Ces frais se présentent comme suit:
 
 - **80 USD** pour les frais de visa.
-- **299.99 USD** pour les frais d’assistance RDC Études.
+- **400 USD** pour les frais d’assistance RDC Études.
 
 _NB_: 
 - Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement indien. Veuillez toujours vous fier à leur site web pour les montants actualisés.

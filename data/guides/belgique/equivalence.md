@@ -99,6 +99,6 @@ Ces frais se présentent comme suit:
 
 * **150 € (≈ 178 USD)** pour la demande d’équivalence.
 * **0 à 150 USD** pour l’envoi et réception des documents.
-* **299.99 USD** pour les frais d’assistance RDC Etudes
+* **400 USD** pour les frais d’assistance RDC Etudes
 
 *NB*: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer selon les taux d’échange ou les coûts d’envois des documents.

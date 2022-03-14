@@ -71,9 +71,9 @@ Pour ce faire, vous pouvez introduire l’un ou l’autre des documents suivants
 
 ## Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir 299.99 $ + 50 € pour vos démarches de visa.
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir 400 $ + 50 € pour vos démarches de visa.
 Ces frais se présentent comme suit:
 
 - **50 €** payable en dollars américains pour les frais de dossier non-remboursables à payer au consulat.
-- **299.99 USD** pour les frais d’assistance RDC-Études.
+- **400 USD** pour les frais d’assistance RDC-Études.
    

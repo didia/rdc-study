@@ -54,6 +54,6 @@ Ces frais se présentent comme suit:
 * **230 USD à 400 USD** pour le frais de redevance.
 * **200 USD** pour l’introduction de la demande à l’Ambassade.
 * **300 USD** pour les frais des examens médicaux.
-* **299.99 USD** pour les frais d’assistance RDC-Etudes.
+* **400 USD** pour les frais d’assistance RDC-Etudes.
 
 **NB**: Ces prix ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement belge. Veuillez toujours vous fier à leur site web pour les montants actualisés.

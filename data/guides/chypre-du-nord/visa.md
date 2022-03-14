@@ -33,4 +33,4 @@ Une fois que vous traversez la frontière, vous aurez 60 jours pour obtenir votr
 
 ## Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devez prévoir **299.99 USD** pour la procédure. 
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devez prévoir **400 USD** pour la procédure. 

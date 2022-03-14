@@ -51,7 +51,7 @@ Ces frais se présentent comme suit:
 
 - **100 USD** pour les frais de dossier.
 - **50 EUROS** pour les frais de visa.
-- **599.98 USD** pour les frais d’assistance RDC Etudes. (**299.99 USD** pour chaque service: Admission et Visa)
+- **599.98 USD** pour les frais d’assistance RDC Etudes. (**400 USD** pour chaque service: Admission et Visa)
 
 **NB**: Ces montants sont basés sur les informations que nous avons consultés au moment de la rédaction de ce guide.
 Pour avoir les montants à jour, nous vous conseillons de vous informer auprès de votre espace Campus France ou un consulat de France dans votre pays.

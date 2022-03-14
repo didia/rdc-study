@@ -37,7 +37,7 @@ Ces frais se présentent comme suit:
 
 - **50 USD à 300 USD** pour le processus d’admission.
 - **80 USD** pour le processus de visa.
-- **599.98 USD** pour les frais d’assistance RDC Etudes. (**299.99 USD** pour chaque service: Admission et Visa)
+- **599.98 USD** pour les frais d’assistance RDC Etudes. (**400 USD** pour chaque service: Admission et Visa)
 
 **NB**: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement indien. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
 

@@ -8,8 +8,8 @@ export const AssistanceTypes = {
 
 export const AssistancePrices = {
   [AssistanceTypes.INFORMATION]: 0,
-  [AssistanceTypes.ASSISTANCE]: 300,
+  [AssistanceTypes.ASSISTANCE]: 400,
   [AssistanceTypes.CONSULTATION]: 30,
-  [AssistanceTypes.VERIFICATION]: 100,
-  [AssistanceTypes.VERIFICATION_ET_LETTRE]: 150
+  [AssistanceTypes.VERIFICATION]: 150,
+  [AssistanceTypes.VERIFICATION_ET_LETTRE]: 200
 };

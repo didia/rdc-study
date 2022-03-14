@@ -48,6 +48,6 @@ Ces frais se présentent comme suit:
 
 - **100 USD à 350 USD** pour le processus d’admission.
 - **510 USD à 600 USD** pour le processus de Visa.
-- **599.98 USD** pour les frais d’assistance RDC-Etudes. (**299.99 USD** pour chaque service: Admission et Visa)
+- **599.98 USD** pour les frais d’assistance RDC-Etudes. (**400 USD** pour chaque service: Admission et Visa)
 
 **NB**: Ces prix sont juste là à titre d’estimé, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement américain. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.

@@ -37,6 +37,6 @@ En supposant que vous choisissez [d’être accompagné dans vos démarches par 
 Ces frais se présentent comme suit:
 
 - **0 à 50 USD** pour les frais de demande d’admission.
-- **599.98 USD** pour les frais d'assistance RDC Etudes. (**299.99 USD** pour chaque service: Admission, Voyage)
+- **599.98 USD** pour les frais d'assistance RDC Etudes. (**400 USD** pour chaque service: Admission, Voyage)
 
 **NB**: Ces montants ne sont qu’une estimation des coûts réels. Ils peuvent changer par rapport à votre location, aux universités choisies ou encore s’ils sont changés par le gouvernement de Chypre du Nord. Veuillez toujours vous fier à leurs sites web respectifs pour les montants actualisés.
