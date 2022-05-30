@@ -88,9 +88,20 @@ Réseau et sécurité informatique
 
 * Copie de passeport 
 * Copie de diplôme de Bac ou bien d`attestation de réussite Bac pour le BTS et pour le BTP attestation scolaire.
+* Photo Passeport
 
 **COMBIEN COÛTENT LES ETUDES A IAFH?**
 
 Les formations de BTS et BTP reviennent respectivement à **600 euros**.
 
 NB: L`institut Africain de haute formation  vous donne la possibilité de payer en 3 tranches, les frais d'inscription sont inclus dans le paiement. Vous aurez une assurance maladie, logement, locaux spacieux, wifi, simulateurs, pause café, nombres des participants limités à 8 personnes, programme de formation élaboré et certifié, des ateliers 100 pourcents pratiques et assurés par des experts seniors dotés d'une solide expérience.
+
+**COMBIEN COÛTENT LES DÉMARCHES?**
+
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC-Etudes](https://www.rdcetudes.com/accompagnement), vous devez prévoir entre **1450$** pour toutes vos démarches. Ces frais se présentent comme suit:
+
+*  400 euros Frais d'inscription 
+*  400$ Assistance admission  
+* 90 euros Frais de visa
+* 85 dollars Frais de logement à l'Université 
+* 400$ Assistance Visa
