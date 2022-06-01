@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Faire une formation Professionnelle Institut à l'Institut Africain de
   Haute Formation
 excerpt: " Créé en 2016 l'institut africain de haute formation est l`un de plus
