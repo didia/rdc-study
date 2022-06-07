@@ -19,3 +19,5 @@ Une école numérique  (Excelia Digital School )
 Une école préparatoire  (Excelia academy) 
 
 Une école d'éducation  (Excelia Executive Education )
+
+Vous trouverez touts les filières proposées par Excelia et leurs critères de sélection [en cliquant sur ce lien](https://www.excelia-group.fr/nos-formations).
