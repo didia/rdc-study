@@ -20,4 +20,26 @@ Une école préparatoire  (Excelia academy) 
 
 Une école d'éducation  (Excelia Executive Education )
 
-Vous trouverez touts les filières proposées par Excelia et leurs critères de sélection [en cliquant sur ce lien](https://www.excelia-group.fr/nos-formations).
+Vous trouverez touts les filières proposées par Excelia et leurs critères de sélection [en cliquant sur ce lien](https://www.excelia-group.fr/nos-formations). 
+
+POURQUOI CHOISIR EXCELIA ?
+
+QUE FAUT-IL POUR ETUDIER A EXCELIA ?
+
+COMBIEN COUTENT LES ETUDES A EXCELIA ?
+
+**COMMENT RDC ETUDES PEUT VOUS AIDER ?**
+
+RDC ETUDES est en partenariat avec Excelia en ce qui concerne les démarches administratives de tout étudiant désirant intégrer l'une des écoles pour une formation de courte durée. Nous vous assistons dans le choix de la filière, la préparation à l'interview, la réservation et le paiement du logement, la validation Campus France et tout autre besoin jusqu'à votre arrivée en France. 
+
+**COMBIEN ÇA COUTE?**
+
+En supposant que vous choisissez d’être accompagné dans vos démarches par un mentor de RDC Etudes, vous devez prévoir entre  pour toutes vos démarches. Ces frais se présentent comme suit:
+
+* 100 USD pour le processus d’admission.
+* 3500 USD Acompte Université.
+* 105 USD Contribution de vies estudiantines et de campus.
+* 100 USD validité Campus France 
+* 50 EUR demande de Visa.
+* 7380 EUR par an ou 615 EUR par mois de virement irrévocable.
+* 800 USD pour les frais d'assistance RDC ETUDES
