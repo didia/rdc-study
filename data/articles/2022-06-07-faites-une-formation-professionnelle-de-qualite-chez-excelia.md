@@ -16,11 +16,13 @@ date: 2022-06-07T23:07:13.706Z
 * [Une école préparatoire  (Excelia academy) ](https://www.excelia-group.fr/a-propos-dexcelia/nos-ecoles/excelia-academy)
 * [Une école d'éducation  (Excelia Executive Education )](https://www.excelia-group.fr/a-propos-dexcelia/nos-ecoles/excelia-executive-education)
 
-Vous trouverez touts les filières proposées par Excelia et leurs critères de sélection [en cliquant sur ce lien](https://www.excelia-group.fr/nos-formations). 
-
 POURQUOI CHOISIR EXCELIA ?
 
+Il y a plusieurs raisons pour lesquelles vous devez choisir Excelia pour vos études universitaires.  En plus de l'utilisation de l''innovation et la technologie comme moteur d'enseignement, Excelia offre une éducation de qualité axée sur les enseignements académiques, l’expérimentation sur le terrain, en France et à l’international, et le développement personnel (culture générale, connaissance de soi et projection vers l’avenir). A travers des stages et missions en entreprise mais également un ensemble d’expériences à caractère humanitaire, social ou citoyen. 
+
 QUE FAUT-IL POUR ETUDIER A EXCELIA ?
+
+Pour être admis a Excelia vous devez au préalable choisir une filière et répondre aux critères de celle-ci. Vous trouverez touts les filières proposées par Excelia et leurs critères de sélection [en cliquant sur ce lien](https://www.excelia-group.fr/nos-formations). D'une manière générale vous devez présenter :
 
 COMBIEN COUTENT LES ETUDES A EXCELIA ?
 
