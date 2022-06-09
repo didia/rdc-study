@@ -36,7 +36,7 @@ Pour être admis(e) à Excelia vous devez au préalable choisir une filière et 
 
 Ces documents doivent être déposer sur [le site de Excelia](https://www.excelia-group.fr/admission-aux-formations). Une fois les documents vous devez payer le traitement de la demande et aussi tôt l'université vous enverra une admission provisoire . Pour confirmer que vous êtes bel et bien le futur étudiant de Excelia, vous passez à un test oral sous forme d'interview pour défendre votre projet d'études. Après l'interview vous devez payer un acompte de frais de scolarité qui vous donnera accès à une lettre d'admission définitive. 
 
-L'admission confirmée, vous passez à l'enregistrement administratif auprès de l'université ainsi que le paiement de l[a contribution a la vie estudiantine et de campus de France](https://cvec.etudiant.gouv.fr/).
+L'admission confirmée, vous passez à l'enregistrement administratif auprès de l'université ainsi que le paiement de [la contribution a la vie estudiantine et de campus de France](https://cvec.etudiant.gouv.fr/).
 
 Il ne vous reste qu'à valider votre inscription via Campus France de votre pays et entamer les démarches pour [la demande de visa Français](https://www.rdcetudes.com/guides/france/visa).
 
