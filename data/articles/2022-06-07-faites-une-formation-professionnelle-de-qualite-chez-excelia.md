@@ -5,7 +5,7 @@ excerpt: Excelia Groupe est une école privée de commerce en France qui a cré�
   nouveau modèle destiné à répondre aux ambitions professionnelles des étudiants
   et à la forte demande des entreprises en matière de compétences sur les
   métiers actuels et futurs
-thumbnail: /images/uploads/cover-r4x3w400-5bb35f65a6e83-excelia.jpg
+thumbnail: /images/uploads/excelia-1.jpg
 date: 2022-06-07T23:07:13.706Z
 ---
 [Excelia](https://www.excelia-group.fr/) est un groupe d'enseignement supérieur qui regroupe 5 écoles dans différentes  province de la France notamment [La Rochelle](https://www.excelia-group.fr/a-propos-dexcelia/nos-campus/la-rochelle), [Tours](https://www.excelia-group.fr/a-propos-dexcelia/nos-campus/tours), [Orleans](https://www.excelia-group.fr/a-propos-dexcelia/nos-campus/orleans), [Paris-cachan](https://www.excelia-group.fr/a-propos-dexcelia/nos-campus/paris-cachan). On y trouve différents programmes de qualité comme :
@@ -36,17 +36,17 @@ Pour être admis(e) à Excelia vous devez au préalable choisir une filière et 
 
 Ces documents doivent être déposer sur [le site de Excelia](https://www.excelia-group.fr/admission-aux-formations). Une fois les documents vous devez payer le traitement de la demande et aussi tôt l'université vous enverra une admission provisoire . Pour confirmer que vous êtes bel et bien le futur étudiant de Excelia, vous passez à un test oral sous forme d'interview pour défendre votre projet d'études. Après l'interview vous devez payer un acompte de frais de scolarité qui vous donnera accès à une lettre d'admission définitive. 
 
-L'admission confirmée, vous passez à l'enregistrement administratif auprès de l'université ainsi que le paiement de l[a contribution a la vie estudiantine et de campus de France](https://cvec.etudiant.gouv.fr/).
+L'admission confirmée, vous passez à l'enregistrement administratif auprès de l'université ainsi que le paiement de [la contribution a la vie estudiantine et de campus de France](https://cvec.etudiant.gouv.fr/).
 
 Il ne vous reste qu'à valider votre inscription via Campus France de votre pays et entamer les démarches pour [la demande de visa Français](https://www.rdcetudes.com/guides/france/visa).
 
 Excelia via ses partenaires offre [un service de logement et d'accueil](file:///C:/Users/lenovo/Downloads/WelcomePackage2022_FR+EN.pdf) pour toute personne le désirant.
 
-**3. COMBIEN COUTENT LES ETUDES A EXCELIA ?**
+**3. COMBIEN COUTENT LES ETUDES A EXCELIA?**
 
 Les frais académiques chez Excelia varient sur base des programmes des cours. Vous trouverez les différents frais sur [ce document](https://docs.google.com/spreadsheets/u/1/d/1_zK7VoKAoc_LzwTzxO5sAaOsxWw5nfGM/edit?dls=true&usp=gmail_attachment_preview).
 
-**4. COMMENT RDC ETUDES PEUT VOUS AIDER ?**
+**4. COMMENT RDC ETUDES PEUT VOUS AIDER?**
 
 RDC ETUDES est en partenariat avec Excelia en ce qui concerne les démarches administratives de tout étudiant désirant intégrer l'une des écoles pour une formation de courte ou longue durée. Nous vous assistons dans le choix de la filière, la préparation à l'interview, la réservation et le paiement du logement, la validation Campus France et tout autre besoin jusqu'à votre arrivée en France. 
 
