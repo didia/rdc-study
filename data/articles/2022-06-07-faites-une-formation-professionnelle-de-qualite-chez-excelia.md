@@ -42,11 +42,11 @@ Il ne vous reste qu'à valider votre inscription via Campus France de votre pays
 
 Excelia via ses partenaires offre [un service de logement et d'accueil](file:///C:/Users/lenovo/Downloads/WelcomePackage2022_FR+EN.pdf) pour toute personne le désirant.
 
-**3. COMBIEN COUTENT LES ETUDES A EXCELIA ?**
+**3. COMBIEN COUTENT LES ETUDES A EXCELIA?**
 
 Les frais académiques chez Excelia varient sur base des programmes des cours. Vous trouverez les différents frais sur [ce document](https://docs.google.com/spreadsheets/u/1/d/1_zK7VoKAoc_LzwTzxO5sAaOsxWw5nfGM/edit?dls=true&usp=gmail_attachment_preview).
 
-**4. COMMENT RDC ETUDES PEUT VOUS AIDER ?**
+**4. COMMENT RDC ETUDES PEUT VOUS AIDER?**
 
 RDC ETUDES est en partenariat avec Excelia en ce qui concerne les démarches administratives de tout étudiant désirant intégrer l'une des écoles pour une formation de courte ou longue durée. Nous vous assistons dans le choix de la filière, la préparation à l'interview, la réservation et le paiement du logement, la validation Campus France et tout autre besoin jusqu'à votre arrivée en France. 
 
