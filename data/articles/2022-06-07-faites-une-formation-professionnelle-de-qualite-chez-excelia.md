@@ -24,7 +24,7 @@ En plus de l'utilisation de l''innovation et la technologie comme moteur d'ensei
 
 **2. QUE FAUT-IL POUR ETUDIER A EXCELIA ?**
 
-Pour être admis a Excelia vous devez au préalable choisir une filière et répondre aux critères de celle-ci. Vous trouverez touts les filières proposées par Excelia et leurs critères de sélection [en cliquant sur ce lien](https://www.excelia-group.fr/nos-formations). D'une manière générale vous devez présenter :
+Pour être admis(e) à Excelia vous devez au préalable choisir une filière et répondre aux critères de celle-ci. Vous trouverez touts les filières proposées par Excelia et leurs critères de sélection [en cliquant sur ce lien](https://www.excelia-group.fr/nos-formations). D'une manière générale vous devez présenter :
 
 \- Diplôme ou attestation de réussite
 
