@@ -40,9 +40,11 @@ L'admission confirmée, vous passez a l'enregistrement administratif au près de
 
 Il ne vous reste qu'a valider votre inscription via Campus France de votre pays et entamer les démarches pour [la demande de visa Français](https://www.rdcetudes.com/guides/france/visa).
 
-Excelia offre un service d'accueil pour toute personne le désirant 
+Excelia via ses partenaires offre [un service de logement et d'accueil](file:///C:/Users/lenovo/Downloads/WelcomePackage2022_FR+EN.pdf) pour toute personne le désirant.
 
 3. COMBIEN COUTENT LES ETUDES A EXCELIA ?
+
+
 
 **4. COMMENT RDC ETUDES PEUT VOUS AIDER ?**
 
