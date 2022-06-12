@@ -44,7 +44,7 @@ Excelia via ses partenaires offre [un service de logement et d'accueil](file:///
 
 **3. COMBIEN COUTENT LES ETUDES A EXCELIA?**
 
-Les frais académiques chez Excelia varient sur base des programmes des cours. Vous trouverez les différents frais sur [ce document](https://docs.google.com/spreadsheets/u/1/d/1_zK7VoKAoc_LzwTzxO5sAaOsxWw5nfGM/edit?dls=true&usp=gmail_attachment_preview).
+Les frais académiques chez Excelia varient sur base des programmes des cours. Vous trouverez les différents frais sur [le site de l'université](https://www.excelia-group.fr/services-aux-etudiants/etudiants-internationaux/candidater/frais-detudes).
 
 **4. COMMENT RDC ETUDES PEUT VOUS AIDER?**
 
