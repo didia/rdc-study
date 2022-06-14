@@ -21,13 +21,14 @@ La bourse consiste a l'obtention d'une convention **14 000 $** et **26 600 $**
 
 ## Quels sont les critères de la bourse ?
 
-1. Pour bénéficier de la bourse d'excellence et l'exemption des frais académiques pour une formation au Québec vous devez remplir les critères suivants
-2. Être de nationalité **autre que française ou canadienne**. Les candidatures des pays membres de la Francophonie (outre la France, incluant les DOM-TOM) et des pays des marchés porteurs de l’Asie (Chine, Inde, Japon) et des Amériques (Mexique, Brésil) seront priorisées.
-3. Ne pas avoir la citoyenneté canadienne ni le statut de résident permanent du Canada, ou être en démarche d’obtention de la résidence permanente en vertu des lois canadiennes de l'immigration.
-4. Être à **l’extérieur du Canada** au moment de soumettre sa demande et jusqu’à l'annonce des candidatures sélectionnées.
-5. Être âgé(e) de **18 ans ou plus**. Il n’y a pas de limite supérieure d’âge.
-6. Ne **pas** avoir bénéficié antérieurement d’une bourse pour effectuer des études d’un niveau égal ou supérieur au Québec. De plus, le cumul de bourses durant une même année scolaire n’est pas autorisé.
-7. Avoir la capacité financière demandée. (**3 000$** pour la bourse et **15 000$** pour l'exemption).
+Pour bénéficier de la bourse d'excellence et l'exemption des frais académiques pour une formation au Québec vous devez remplir les critères suivants :
+
+1. Être de nationalité **autre que française ou canadienne**. Les candidatures des pays membres de la Francophonie (outre la France, incluant les DOM-TOM) et des pays des marchés porteurs de l’Asie (Chine, Inde, Japon) et des Amériques (Mexique, Brésil) seront priorisées.
+2. Ne pas avoir la citoyenneté canadienne ni le statut de résident permanent du Canada, ou être en démarche d’obtention de la résidence permanente en vertu des lois canadiennes de l'immigration.
+3. Être à **l’extérieur du Canada** au moment de soumettre sa demande et jusqu’à l'annonce des candidatures sélectionnées.
+4. Être âgé(e) de **18 ans ou plus**. Il n’y a pas de limite supérieure d’âge.
+5. Ne **pas** avoir bénéficié antérieurement d’une bourse pour effectuer des études d’un niveau égal ou supérieur au Québec. De plus, le cumul de bourses durant une même année scolaire n’est pas autorisé.
+6. Avoir la capacité financière demandée. (**3 000$** pour la bourse et **15 000$** pour l'exemption).
 
 ## Comment postuler ?
 
