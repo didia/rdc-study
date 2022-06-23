@@ -36,4 +36,40 @@ Les programmes universitaires dispensés sur le campus de Kavacık
 
 École professionnelle des services de santé
 
-Le programme préparatoire d'anglais
+Le programme préparatoire d'anglais.
+
+Ces cours sont dispenses en Anglais et/ou en Turc.
+
+**POURQUOI CHOISIR MEDIPOL UNIVERSITY?**
+
+L'Universte d'Istanbul Medipol s'est classé dans de nombreux classements universitaires tels que Times Higher Education (THE), University Ranking by Academic Performance (URAP), Scimago, Round University Ranking (RUR), Webometrics et U -Multigrade.
+
+L'université compte des campus dans deux continents différents vous avez le choix entre l'Asie ou l'Europe.
+
+En plus de la formation théorique de qualité, l'université compte des laboratoires pour une formation pratique centrée sur l a technologie.
+
+**QUE FAUT-IL POUR ETUDIER À MEDIPOL UNIVERSITY?**
+
+Pour être admis(e) á l'Université d'Istanbul Medipol vous devez au préalable 
+
+Remplir [les critères de notation de l'université](https://www.medipol.edu.tr/en/prospective-students/grading-system).
+
+Avoir une nationalité autre que Turque
+
+Avoir un diplôme de fin d'études secondaires ou universitaires
+
+Avoir une maitrise de l'anglais. Pour ceux qui ne maitrisent pas la langue, l'université dispose d'un [programme préparatoire d'anglais](https://www.medipol.edu.tr/en/prospective-students/the-english-program).
+
+Avoir un passeport valide
+
+Relevés de notes scolaires ou académiques
+
+4 photos passeports
+
+Preuves financières.
+
+Certificat d'équivalence délivré par l'ambassade ou le consulat de Turquie.
+
+Ces documents doivent être traduits en anglais et notaries par l'ambassade ou le consulat de la Turquie. 
+
+ Le candidat qui applique la faculté de médecine et de médecine dentaire, si disponible, doit prouver sa maîtrise de l'anglais. (TOEFL DI:3619).
