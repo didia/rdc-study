@@ -54,9 +54,9 @@ Pour être admis(e) á l'Université d'Istanbul Medipol vous devez au préalable
 8. Preuves financières.
 9. Certificat d'équivalence délivré par l'ambassade ou le consulat de Turquie.
 
-NB: Ces documents doivent être traduits en anglais et notaries par l'ambassade ou le consulat de la Turquie. 
+NB: - Ces documents doivent être traduits en anglais et notaries par l'ambassade ou le consulat de la Turquie. 
 
- Le candidat qui applique la faculté de médecine et de médecine dentaire, si disponible, doit prouver sa maîtrise de l'anglais. (TOEFL DI:3619).
+\- Le candidat qui applique la faculté de médecine et de médecine dentaire, si disponible, doit prouver sa maîtrise de l'anglais. (TOEFL DI:3619).
 
 **COMBIEN COÛTENT LES ÉTUDES A MEDIPOL UNIVERSITY?**
 
