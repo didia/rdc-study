@@ -76,14 +76,18 @@ Ces documents doivent être traduits en anglais et notaries par l'ambassade ou l
 
 COMBIEN COÛTENT LES ÉTUDES A MEDIPOL UNIVERSITY?
 
+Vos études à L'Universite d'Instanbul Medipol peuvent vous couter entre **1000** à **5000$** l'année, université dispose des dortoirs qui reviennent à **1200$** l'an et d'un restaurant universitaire ou le repas revient à **0,5$**.
+
+NB: Avant de recevoir la lettre d'admission définitive, vous devez payer l'acompte qui est une avance sur les frais académiques. L'acompte est définit selon le prix des frais académiques de votre choix. Vous pouvez vérifier les prix de chaque programme sur [le site de l'université](https://www.medipol.edu.tr/ogrenci/aday-ogrenci/puanlar-kontenjanlar-ve-ucretler/lisans).
+
 **QU'EN EST-IL DES BOURSES?**
 
 L'Universite d'Instanbul Medipol offre une réduction de 50% des frais académiques à tout étudiant étranger nouvellement inscrit à l'un des programmes qu'elle offre. Vous pouvez trouver différentes offres différentes opportunités des bourses d'études sur[ le site web de l'institution](https://www.medipol.edu.tr/ogrenci/aday-ogrenci/egitim-firsatlari/burs-firsatlari). 
 
-**COMMENT RDC ETUDES PEUT VOUS AIDER?**
+COMMENT RDC ETUDES PEUT VOUS AIDER?
 
 RDC ETUDES est en partenariat avec Medipol University en ce qui concerne les démarches administratives de tout étudiant désirant poursuivre ses études supérieures au sein de l'établissement. Nous vous assistons dans le choix de la filière, la demande d'admission, la préparation au visa, la réservation et le paiement du logement ainsi que le suivi de votre évolution académique au sein de l'université si vous le souhaitez.
 
-**COMBIEN COÛTENT LES DÉMARCHES?**
+COMBIEN COÛTENT LES DÉMARCHES?
 
 En supposant que vous [choisissez d’être accompagné dans vos démarches par un mentor de RDC Etudes](https://www.rdcetudes.com/accompagnement), vous devez prévoir 5 280 USD pour toutes vos démarches. Ces frais se présentent comme suit:
