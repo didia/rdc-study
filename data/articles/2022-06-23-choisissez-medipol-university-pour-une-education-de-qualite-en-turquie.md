@@ -42,7 +42,7 @@ Ces cours sont dispenses en Anglais et/ou en Turc.
 
 **POURQUOI CHOISIR MEDIPOL UNIVERSITY?**
 
-L'Universte d'Istanbul Medipol s'est classé dans de nombreux classements universitaires tels que Times Higher Education (THE), University Ranking by Academic Performance (URAP), Scimago, Round University Ranking (RUR), Webometrics et U -Multigrade.
+L'Universte d'Istanbul Medipol s'est classé dans de nombreux classements universitaires tels que Times Higher Education (THE), University Ranking by Academic Performance (URAP), Scimago, Round University Ranking (RUR), Webometrics et U-Multigrade.
 
 L'université compte des campus dans deux continents différents vous avez le choix entre l'Asie ou l'Europe.
 
@@ -73,3 +73,19 @@ Certificat d'équivalence délivré par l'ambassade ou le consulat de Turquie.
 Ces documents doivent être traduits en anglais et notaries par l'ambassade ou le consulat de la Turquie. 
 
  Le candidat qui applique la faculté de médecine et de médecine dentaire, si disponible, doit prouver sa maîtrise de l'anglais. (TOEFL DI:3619).
+
+COMBIEN COÛTENT LES ÉTUDES A MEDIPOL UNIVERSITY?
+
+
+
+**QU'EN EST-IL DES BOURSES?**
+
+L'Universite d'Instanbul Medipol offre une réduction de 50% des frais académiques à tout étudiant étranger nouvellement inscrit à l'un des programmes qu'elle offre. Vous pouvez trouver différentes offres différentes opportunités des bourses d'études sur[ le site web de l'institution](https://www.medipol.edu.tr/ogrenci/aday-ogrenci/egitim-firsatlari/burs-firsatlari). 
+
+COMMENT RDC ETUDES PEUT VOUS AIDER?
+
+RDC ETUDES est en partenariat avec Medipol University en ce qui concerne les démarches administratives de tout étudiant désirant poursuivre ses études supérieures au sein de l'établissement. Nous vous assistons dans le choix de la filière, la demande d'admission, la préparation au visa, la réservation et le paiement du logement ainsi que le suivi de votre évolution académique au sein de l'université si vous le souhaitez.
+
+COMBIEN COÛTENT LES DÉMARCHES?
+
+En supposant que vous [choisissez d’être accompagné dans vos démarches par un mentor de RDC Etudes](https://www.rdcetudes.com/accompagnement), vous devez prévoir 5 280 USD pour toutes vos démarches. Ces frais se présentent comme suit:
