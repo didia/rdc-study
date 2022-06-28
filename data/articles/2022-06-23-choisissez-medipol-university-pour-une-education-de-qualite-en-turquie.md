@@ -76,14 +76,10 @@ RDC ETUDES est en partenariat avec Medipol University en ce qui concerne les dé
 
 En supposant que vous [choisissez d’être accompagné dans vos démarches par un mentor de RDC Etudes](https://www.rdcetudes.com/accompagnement), vous devez prévoir entre 2600 - 3100 USD pour toutes vos démarches. Ces frais se présentent comme suit:
 
-**100$** Frais d'admission
-
-**50$** Traduction des documents
-
-**1500 - 2000$** Acompte des frais académiques
-
-**100$** Frais de visa
-
-**799,99$** Frais d'assistance RDC EUDES (admission et visa).
+* **100$** Frais d'admission
+* **50$** Traduction des documents
+* **1500 - 2000$** Acompte des frais académiques
+* **100$** Frais de visa
+* **799,99$** Frais d'assistance RDC EUDES (admission et visa).
 
 NB: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement belge. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
