@@ -74,7 +74,7 @@ RDC ETUDES est en partenariat avec Medipol University en ce qui concerne les dé
 
 **COMBIEN COÛTENT LES DÉMARCHES?**
 
-En supposant que vous [choisissez d’être accompagné dans vos démarches par un mentor de RDC Etudes](https://www.rdcetudes.com/accompagnement), vous devez prévoir 5 280 USD pour toutes vos démarches. Ces frais se présentent comme suit:
+En supposant que vous [choisissez d’être accompagné dans vos démarches par un mentor de RDC Etudes](https://www.rdcetudes.com/accompagnement), vous devez prévoir entre 2600 - 3100 USD pour toutes vos démarches. Ces frais se présentent comme suit:
 
 * **100$** Frais d'admission
 * **50$** Traduction des documents
