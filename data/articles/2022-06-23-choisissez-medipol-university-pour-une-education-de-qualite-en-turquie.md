@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Choisissez Medipol University pour une éducation de qualité en Turquie
 excerpt: "Medipol est une université privée d’Istanbul qui est classée parmi les
   cinq meilleures institutions du pays dont le fondateur est l'actuel ministre
