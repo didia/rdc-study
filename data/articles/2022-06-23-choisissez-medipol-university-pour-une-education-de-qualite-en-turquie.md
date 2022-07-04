@@ -30,13 +30,13 @@ Ces cours sont dispenses en Anglais et/ou en Turc.
 
 **1. POURQUOI CHOISIR MEDIPOL UNIVERSITY?**
 
-L'Universte d'Istanbul Medipol s'est classé dans de nombreux classements universitaires tels que Times Higher Education (THE), University Ranking by Academic Performance (URAP), Scimago, Round University Ranking (RUR), Webometrics et U-Multigrade.
+\- L'Universte d'Istanbul Medipol s'est classé dans de nombreux classements universitaires tels que Times Higher Education (THE), University Ranking by Academic Performance (URAP), Scimago, Round University Ranking (RUR), Webometrics et U-Multigrade.
 
-L'université offre une éducation de qualité à moindre coût.
+\- L'université offre une éducation de qualité à moindre coût.
 
-Tout étudiant de Medipol University bénéficie d'une couverture de soins de sante gratuitement. 
+\- Tout étudiant de Medipol University bénéficie d'une couverture de soins de sante gratuitement. 
 
-L'université compte des campus dans deux continents différents vous avez le choix entre l'Asie ou l'Europe.
+\- L'université compte des campus dans deux continents différents vous avez le choix entre l'Asie ou l'Europe.
 
 En plus de la formation théorique de qualité, l'université compte des laboratoires pour une formation pratique centrée sur l a technologie.
 
