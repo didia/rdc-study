@@ -38,7 +38,7 @@ Ces cours sont dispenses en Anglais et/ou en Turc.
 
 \- L'université compte des campus dans deux continents différents vous avez le choix entre l'Asie ou l'Europe.
 
-\- En plus de la formation théorique de qualité, l'université compte des laboratoires pour une formation pratique centrée sur l a technologie.
+\- En plus de la formation théorique de qualité, l'université compte des laboratoires pour une formation pratique centrée sur la technologie.
 
 **2. QUE FAUT-IL POUR ETUDIER À MEDIPOL UNIVERSITY?**
 
@@ -60,7 +60,7 @@ NB: - Ces documents doivent être traduits en anglais et notaries par l'ambassad
 
 **3. COMBIEN COÛTENT LES ÉTUDES A MEDIPOL UNIVERSITY?**
 
-Vos études à L'Universite d'Istanbul Medipol peuvent vous couter entre **1000** à **5000$** l'année, université dispose des dortoirs qui reviennent à **1200$** l'an et d'un restaurant universitaire ou le repas revient à **0,5$**.
+Vos études à l'Université d'Istanbul Medipol peuvent vous couter entre **1000** à **5000$** l'année, université dispose des dortoirs qui reviennent à **1200$** l'an et d'un restaurant universitaire ou le repas revient à **0,5$**.
 
 NB: Avant de recevoir la lettre d'admission définitive, vous devez payer l'acompte qui est une avance sur les frais académiques. L'acompte est définit selon le prix des frais académiques de votre choix. Vous pouvez vérifier les prix de chaque programme sur [le site de l'université](https://www.medipol.edu.tr/ogrenci/aday-ogrenci/puanlar-kontenjanlar-ve-ucretler/lisans).
 
