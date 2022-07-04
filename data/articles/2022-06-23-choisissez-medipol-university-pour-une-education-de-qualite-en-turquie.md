@@ -32,9 +32,9 @@ Ces cours sont dispenses en Anglais et/ou en Turc.
 
 L'Universte d'Istanbul Medipol s'est classé dans de nombreux classements universitaires tels que Times Higher Education (THE), University Ranking by Academic Performance (URAP), Scimago, Round University Ranking (RUR), Webometrics et U-Multigrade.
 
-L'université offre une education de qualite a moindre cout.
+L'université offre une éducation de qualité à moindre coût.
 
-Tout étudiant de Medipol University beneficie d'une couverture de soins de sante gratuitement. 
+Tout étudiant de Medipol University bénéficie d'une couverture de soins de sante gratuitement. 
 
 L'université compte des campus dans deux continents différents vous avez le choix entre l'Asie ou l'Europe.
 
