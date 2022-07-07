@@ -23,10 +23,11 @@ Le gouvernement québécois met un accent particulier sur les secteurs où l’o
 
 **3. COMBIEN COÛTENT LES DÉMARCHES**
 
-En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](https://www.rdcetudes.com/accompagnement), vous devez prévoir entre **1 270 USD** et **1 610 USD** pour toutes vos démarches. Ces frais se présentent comme suit:
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](https://www.rdcetudes.com/accompagnement), vous devez prévoir entre **2230 USD** et **2350 USD** pour toutes vos démarches. Ces frais se présentent comme suit:
 
 * 80 USD à 200 USD pour le processus d’admission.
-* 490 USD à 610 USD pour le processus de visa.
-* 800 USD à 1200 USD pour les frais d’assistance RDC Etudes.
+* 400 USD  pour le processus du CAQ.
+* 950 USD pour le processus de visa. 
+* 800 USD pour les frais d’assistance RDC Etudes.
 
 **NB**: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
