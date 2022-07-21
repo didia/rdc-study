@@ -11,11 +11,15 @@ date: 2022-07-21T11:59:04.968Z
 ---
 Vous pouvez avoir toutes les bonnes intentions pour immigrer au Canada et les moyens nécessaires pour y parvenir cependant il revient totalement de l'autonomie et du jugement de l'agent de l'immigration de vous accorder ou pas le visa. Nombreuses sont les différentes raisons qui entrainent un refus, nous en avons lister celles qui reviennent le plus souvent afin de vous permettre de mieux vous préparer ou encore de mieux faire votre recours en cas des refus précédents. 
 
-1. **Raison de visite** : la raison de votre venue au canada doit être explicite, l'agent de l`immigration veut comprendre pourquoi  vous aimeriez étudier au canada ? Quelles sont vos motivations ? L'agent attend de vous une explication brève, nette et claire sur le choix de votre domaine d'études. 
+1. **Raison de visite** : la raison de votre venue au canada doit être explicite, l'agent de l`immigration veut comprendre pourquoi  vous aimeriez étudier au canada ? Quelles sont vos motivations ? L'agent attend de vous une explication brève, nette et claire sur le choix de votre domaine d'études, cela doit correspondre aussi à votre niveau et domaine d'études antérieurs.
+
+**EX: Un licencié n'est pas demander un visa d'études pour des études collégiales.** 
 
 2. **Capacité financière insuffisante** : les fonds financiers doivent démontrer que vous êtes en mesure de couvrir  vos frais de scolarité et vos frais de subsistance pendant votre période d'études un minimum de 2000 dollars sur votre compte courant suivi des extraits de banque de 6 derniers mois. 
 
-**NB : Les documents falsifiés  ou des faux documents peuvent entraîner une interdiction du territoire pendant 5 ans.**                   
+**NB : - Vous pouvez avoir plusieurs garants financiers**
+
+**\- Les documents falsifiés ou des faux documents peuvent entraîner une interdiction du territoire pendant 5 ans.**                   
 
 3. **Les biens immobiliers et bien les familiaux** : l'agent de l`immigration veut s'assurer que vous avez de la famille ou des entreprises qui vous attachent à votre pays d'origine , des liens qui feront en sorte que vous puissiez revenir au pays, ça peut être une parcelle, une  famille restreinte, une entreprise.  
 
