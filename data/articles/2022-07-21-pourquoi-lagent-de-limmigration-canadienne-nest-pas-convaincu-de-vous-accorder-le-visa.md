@@ -2,10 +2,10 @@
 draft: true
 title: Pourquoi l'agent de l'immigration canadienne n'est pas convaincu de vous
   accorder le visa?
-excerpt: Si vous avez déjà obtenu un refus de visa canadien, vous êtes surement
-  familiarisés avec cette phrase ¨ votre demande ne satisfait pas aux exigences
-  de la loi de l'immigration et la protection des refugies et de son
-  règlements¨  pour diverses raisons.
+excerpt: Si vous avez déjà obtenu un refus de visa canadien, vous avez sûrement
+  déjà lu cette phrase ¨ votre demande ne satisfait pas aux exigences de la loi
+  de l'immigration et la protection des refugiés et de son règlements¨  pour
+  diverses raisons.
 thumbnail: /images/uploads/visa-refusal.jpg
 date: 2022-07-21T11:59:04.968Z
 ---
