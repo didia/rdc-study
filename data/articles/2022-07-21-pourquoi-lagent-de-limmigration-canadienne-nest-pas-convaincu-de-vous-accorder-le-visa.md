@@ -33,6 +33,6 @@ Vous pouvez avoir toutes les bonnes intentions pour immigrer au Canada et les mo
 
 8. **Documents inadéquats** : Les documents doivent être au complet, clairs et faciles à lire, les pièces d'identité, antécédents de voyages, d'étude ou d'emploi doivent être justifiées, les pièces justificatives inadéquates sont l'une de raison de rejet de visa d'étudiant canadien. 
 
-9. **La lettre explicative** : Il faudrait au préalable apprendre à écrire un projet d'étude précis et concis. 
+9. **La lettre explicative** : Il faudrait rédiger un projet d'études précis et concis dans lequel vous exposez votre situation actuelle, pourquoi vous avez choisi le canada, quelles sont vos réelles intentions, comment vos études seront financées et quelles sont vos perspectives d'avenir. 
 
 Pour réduire les risques de visa pour le canada il serait judicieux de tenir compte de tous ces éléments.
