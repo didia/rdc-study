@@ -59,6 +59,8 @@ L'EUL offre des logements aux futurs étudiants qui souhaitent rester dans l'enc
 
 En plus du logement, l'EUL offre aussi une restauration, qui revient à **2060 euros** par an pour 3 repas/jour.  
 
+Pour toute autre question concernant les dortoirs, vous pouvez consulter [le site web de l'université](https://www.eul.edu.tr/en/frequently-asked-questions/).
+
 **5. COMMENT RDC ETUDES PEUT VOUS AIDER ?**
 
 RDC ETUDES est en partenariat avec EUL en ce qui concerne les démarches administratives de tout étudiant désirant intégrer l’un des programmes offerts pour des études supérieures de qualité. Nous vous assistons dans le choix de la filière, la traduction des documents, la réservation et le paiement du logement et tout autre besoin jusqu’à votre arrivée en Chypre du Nord.
