@@ -25,7 +25,7 @@ date: 2022-07-27T11:13:25.209Z
 
 **1. QUE FAUT-IL POUR ETUDIER À L'EUL ?**
 
-Pour étudier à l'EUL vous devez au préalable avoir un diplôme d'état (baccalauréat). Pour être admis(e) vous devez au préalable choisir une filière et répondre [aux critères de sélection](https://www.eul.edu.tr/en/student-affairs/admissions-requirements/undergraduate-and-graduate-students/) . Vous devez présenter les documents suivants:
+Pour étudier à l'EUL vous devez avoir un diplôme d'état (baccalauréat). Pour être admis(e) vous devez au préalable choisir une filière et répondre [aux critères de sélection](https://www.eul.edu.tr/en/student-affairs/admissions-requirements/undergraduate-and-graduate-students/) . Vous devez présenter les documents suivants:
 
 1. Passeport
 2. Diplôme d'état ou attestation de réussite
