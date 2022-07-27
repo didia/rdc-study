@@ -23,13 +23,29 @@ date: 2022-07-27T11:13:25.209Z
 
 [](https://www.eul.edu.tr/en/academic/faculties/faculty-of-dentistry/)Pour plus d'informations sur les programmes offerts par l'EUL, veuillez consulter le site web de l'université.
 
-**POURQUOI ETUDIER À L'EUL ?**
-
 **QUE FAUT-IL POUR ETUDIER À L'EUL ?**
+
+Pour étudier à l'EUL vous devez au préalable avoir un diplôme d'état (baccalauréat). Pour être admis(e) vous devez au préalable choisir une filière et répondre [aux critères de sélection](https://www.eul.edu.tr/en/student-affairs/admissions-requirements/undergraduate-and-graduate-students/) . Vous devez présenter les documents suivants:
+
+Passeport
+
+Diplôme d'état ou attestation de réussite
+
+Photo Passeport
+
+Bulletins 5em et 6em
+
+Une fois le choix de la filière faite, vous devez transposez vos documents sur le site de l'université qui vous enverra une admission provisoire à votre demande.
+
+NB: Pour être définitivement admis(e) à l'EUL, vous devez payer l'acompte des frais qui s'élèvent à 1000 euros pour le niveau licence et 1500 euros au niveau master et doctorat.
+
+Vous devez avoir au moins une moyenne de 60% pour un cycle universitaire de 4 ans. Ceux qui ont moins de 60% seront admis pour un programme de 2 ans.
+
+Les cours sont dispenses en anglais. Si vous n'avez pas le niveau requis, vous serez tenu de faire une année préparatoire en anglais avant le début de votre programme afin de vous mettre à niveau.
 
 **COMBIEN COÛTENT LES ETUDES À L'EUL ?**
 
-Les études à l'EUL reviennent à **1725 euros** par an pour le 1er cycle et **2400 euros** pour le niveau master et **6000 euros** pour le niveau Doctorat.  
+Les études à l'EUL reviennent à **1725 euros** par an pour le 1er cycle et **2400 euros** pour le niveau master et **6000 euros** pour le niveau Doctorat.  En plus de cela, vous devez prévoir **150 euros** par an pour les frais de visa et d'assurance maladie.
 
 **QU'EN EST-IL DES BOURSES ?**
 
@@ -39,13 +55,10 @@ L'EUL offre des bourses de 60%, 70% et 80% aux étudiants internationaux qui dé
 
 L'EUL offre des logements aux futurs étudiants qui souhaitent rester dans l'enceinte de l'Université. Le dortoir doit être réservé à **600 euros** avant de le début des cours. Les chambres universitaires reviennent à:
 
-1020 euros/an pour un dortoir à 3 chambres
-
-1220 euros/an pour un dortoir à 2 chambres
-
-1620 euros/an pour un dortoir à 1 chambre
-
-1420 euros/an pour un appartement privé. 
+* **1020 euros**/an pour un dortoir à 3 chambres.
+* **1220 euros**/an pour un dortoir à 2 chambres.
+* **1620 euros**/an pour un dortoir à 1 chambre.
+* **1420 euros**/an pour un appartement privé. 
 
 En plus du logement, l'EUL offre aussi une restauration, qui revient à **2060 euros** par an pour 3 repas/jour.  
 
