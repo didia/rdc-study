@@ -35,6 +35,20 @@ Les études à l'EUL reviennent à **1725 euros** par an pour le 1er cycle et **
 
 L'EUL offre des bourses de 60%, 70% et 80% aux étudiants internationaux qui désirent poursuivre leurs études universitaires en son sein.  En plus de ces exemptions des frais de scolarité, l'université offre aussi [un large éventail de possibilités de bourses](https://www.eul.edu.tr/en/student-affairs/scholarships-and-tuition-fee-reductions/scholarships-and-tuition-fees/) qui sont devenues une grande incitation pour les étudiants.
 
+**QU'EN EST-IL DU LOGEMENT ?**
+
+L'EUL offre des logements aux futurs étudiants qui souhaitent rester dans l'enceinte de l'Université. Le dortoir doit être réservé à **600 euros** avant de le début des cours. Les chambres universitaires reviennent à:
+
+1020 euros/an pour un dortoir à 3 chambres
+
+1220 euros/an pour un dortoir à 2 chambres
+
+1620 euros/an pour un dortoir à 1 chambre
+
+1420 euros/an pour un appartement privé. 
+
+En plus du logement, l'EUL offre aussi une restauration, qui revient à **2060 euros** par an pour 3 repas/jour.  
+
 **COMMENT RDC ETUDES PEUT VOUS AIDER ?**
 
 RDC ETUDES est en partenariat avec EUL en ce qui concerne les démarches administratives de tout étudiant désirant intégrer l’un des programmes offerts pour des études supérieures de qualité. Nous vous assistons dans le choix de la filière, la traduction des documents, la réservation et le paiement du logement, tout autre besoin jusqu’à votre arrivée en Chypre du Nord.
