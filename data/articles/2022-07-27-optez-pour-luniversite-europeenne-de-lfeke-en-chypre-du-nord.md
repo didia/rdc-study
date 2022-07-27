@@ -1,6 +1,6 @@
 ---
 draft: true
-title: OPTEZ POUR L'UNIVERSITE EUROPEENNE DE LFEKE EN CHYPRE DU NORD
+title: Optez pour l'Université Européenne Lefke en Chypre du Nord
 excerpt: "L'Université Européenne de Lefke offre aux étudiants un environnement
   d'apprentissage multiculturel ainsi qu'une vaste expérience idéal pour
   poursuivre leurs études universitaires. "
