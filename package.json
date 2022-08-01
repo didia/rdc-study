@@ -79,7 +79,7 @@
     "react-click-outside": "^3.0.1",
     "react-dom": "^16.13.0",
     "react-helmet": "^6.1.0",
-    "react-intl": "^5.25.1",
+    "react-intl": "^6.0.5",
     "react-transition-group": "^4.4.2",
     "recoil": "0.5.2",
     "s3-deploy": "^1.4.0",
