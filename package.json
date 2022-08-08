@@ -72,7 +72,7 @@
     "node-sass": "^4.14.1",
     "postcss-browser-reporter": "^0.6.0",
     "postcss-import": "^12.0.1",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-preset-env": "^6.7.1",
     "postcss-reporter": "^6.0.1",
     "prismjs": "^1.28.0",
     "react": "^16.13.1",
