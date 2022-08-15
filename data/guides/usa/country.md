@@ -1,16 +1,19 @@
 ---
 draft: false
-slug: 'usa'
-date: '2018-03-30'
-title: 'Étudier aux États-Unis'
-excerpt: 'Les États-Unis d‘Amérique est le pays qui accueille le plus d’étudiants étrangers au monde. Étudier aux États-Unis vous donne accès aux meilleures universités du monde et vous offrent des très bonnes opportunités de carrière.'
-thumbnail: 'images/usa.jpg'
-flag: 'images/flag.png'
-name: 'États-Unis'
-topic: 'country'
-related: ['usa/admission', 'usa/visa']
+title: Étudier aux États-Unis
+excerpt: Les États-Unis d‘Amérique est le pays qui accueille le plus d’étudiants
+  étrangers au monde. Étudier aux États-Unis vous donne accès aux meilleures
+  universités du monde et vous offrent des très bonnes opportunités de carrière.
+slug: usa
+flag: images/flag.png
+topic: country
+related:
+  - usa/admission
+  - usa/visa
+name: États-Unis
+thumbnail: images/usa.jpg
+date: 2018-03-30
 ---
-
 ## Que faut-il pour étudier aux États-Unis?
 
 Pour étudier aux États-Unis, il faut commencer par obtenir une admission dans une institution d’enseignement américaine reconnue par le gouvernement américain.\
@@ -33,7 +36,7 @@ Pour en savoir plus, [consultez notre guide sur la démarche à suivre pour obte
 
 En réalisant votre projet pour aller étudier aux Etats-Unis, vous pensez premièrement aux frais académiques.
 Il est donc important pour vous d’avoir ne fut ce qu’une idée de combien coutent les études aux Etats-Unis.\
-Les frais académiques aux États-Unis varient entre 10 000$ et 55 000$ par année tandis qu’il faut prévoir entre 8 000 et 16 000\$ pour les frais de subsistance selon votre train de vie.
+Les frais académiques aux États-Unis varient entre 10 000$ et 55 000$ par année tandis qu’il faut prévoir entre 8 000 et 16 000$ pour les frais de subsistance selon votre train de vie.
 
 ## Qu’en est-il de bourses d’études?
 
@@ -43,11 +46,11 @@ Toutefois certaines universités offrent des bourses d’excellence aux étudian
 
 ## Combien coûtent les démarches?
 
-En supposant que vous choisissez [d’être accompagné dans vos démarches par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1010 USD et 1350 USD** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1410 USD et 1750 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-- **100 USD à 350 USD** pour le processus d’admission.
-- **510 USD à 600 USD** pour le processus de Visa.
-- **599.98 USD** pour les frais d’assistance RDC-Etudes. (**400 USD** pour chaque service: Admission et Visa)
+* **100 USD à 350 USD** pour le processus d’admission.
+* **510 USD à 600 USD** pour le processus de Visa.
+* **799.99 USD** pour les frais d’assistance RDC-Etudes. (**400 USD** pour chaque service: Admission et Visa)
 
 **NB**: Ces prix sont juste là à titre d’estimé, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement américain. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.
