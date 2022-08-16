@@ -1,0 +1,110 @@
+.feature-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .feature-item {
+    padding-left: 0;
+    font-size: 1.3em;
+  
+    &::before {
+      padding-right: 0.5em;
+      color: _palette(accent);
+    }
+  }
+  
+  .offer-block {
+    margin-top: 80px;
+    text-align: center;
+  
+    &:last-child {
+      margin-bottom: 80px;
+    }
+  }
+  
+  .offer-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+  }
+  
+  .offer-list__item {
+    flex: 0 1 32%;
+    padding: 0;
+  
+    .feature-item {
+      font-size: 0.95em;
+    }
+  
+    .pricing {
+      margin-bottom: 10px;
+      font-weight: 700;
+      color: transparentize(_palette(bg), 0.6);
+    }
+  }
+  
+  .offer-card {
+    padding: 25px;
+  }
+  
+  .offer-title {
+    margin-bottom: 5px;
+    color: _palette(bg);
+  }
+  
+  .button--about-us {
+    margin-top: 20px;
+  }
+  
+  @include breakpoint(large) {
+    .banner {
+      padding-bottom: 150px;
+    }
+  }
+  
+  @include breakpoint(small) {
+    .offer-list {
+      flex-wrap: wrap;
+    }
+  
+    .offer-list__item {
+      flex: 0 0 49%;
+      margin-bottom: 25px;
+  
+      &:last-child {
+        flex: 0 0 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  @include breakpoint(xsmall) {
+    .offer-block {
+      text-align: left;
+    }
+  
+    .button {
+      width: 100%;
+      padding: 0 2.25em;
+    }
+  
+    .offer-list {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  
+    .offer-list__item {
+      flex: auto;
+      width: 100%;
+  
+      &:last-child {
+        flex: auto;
+        width: 100%;
+      }
+    }
+  }
+  

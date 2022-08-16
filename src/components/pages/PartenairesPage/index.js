@@ -3,7 +3,6 @@ import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
 import GenericPage from '../GenericPage';
-import styles from './styles.module.scss';
 
 const page = {
   title: 'Nos Partenaires',
