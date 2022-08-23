@@ -80,8 +80,8 @@ En supposant que vous [choisissez d’être accompagné dans vos démarches par 
 * **50$** Traduction des documents
 * **1500 - 2000$** Acompte des frais académiques
 * **100$** Frais de visa
-* **75$** Frais de visa
-* **65$** Frais de service consulaire
+* **75$** Frais de service consulaire
+* **65$** Frais d'assurance maladie.
 * **799,99$** Frais d'assistance RDC EUDES (admission et visa).
 
-NB: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement belge. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
+NB: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement Turc. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
