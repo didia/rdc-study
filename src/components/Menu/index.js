@@ -27,6 +27,10 @@ const MENU_ITEMS = [
     to: '/a-propos'
   },
   {
+    labelKey: 'menu.partner-link-label',
+    to: '/nos-partenaires'
+  },
+  {
     labelKey: 'menu.faq-label',
     to: '/questions-populaires'
   },

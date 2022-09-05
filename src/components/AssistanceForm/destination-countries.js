@@ -22,7 +22,15 @@ const DestinationCountries = {
   USA: {
     labelKey: 'shared.countries.us',
     value: 'usa'
-  }
+  },
+  TUNISIE: {
+    labelKey: 'shared.countries.tn',
+    value: 'Tunisie'
+  },
+  TURQUIE: {
+    labelKey: 'shared.countries.tr',
+    value: 'Turquie'
+  },
 };
 
 export const destinationCountrySlugs = Object.keys(DestinationCountries).map(key => DestinationCountries[key].value)

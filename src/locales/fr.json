@@ -74,6 +74,7 @@
   "header.title": "RDC ETUDES",
 
   "menu.about-us-link-label": "Qui sommes-nous?",
+  "menu.partner-link-label": "Nos partenaires",
   "menu.assistance-link-label": "Besoin d’aide?",
   "menu.close-button-label": "Fermer",
   "menu.faq-label": "Questions populaires",
@@ -257,5 +258,14 @@
   "shared.service-call-to-action": "Je veux ce service",
   "shared.share-on-facebook": "Partagez sur facebook",
   "shared.share-on-whatsapp": "Partagez sur whatsapp",
-  "shared.yes": "Oui"
+  "shared.yes": "Oui",
+
+  "partner.chypre": "1. UNIVERSITE EUROPEENNE DE LEFKE EN CHYPRE DU NORD",
+  "partner.turkish": "2. UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)",
+  "partner.france": "3. EXCELIA GROUP (FRANCE)",
+  "partner.tunisia": "4. INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)",
+  "partner.atua-junior": "5. GROUPE ATUA JUNIOR",
+  "pages.assistance.call-to-action-button-text": "Je veux une bourse d'études",
+  "pages.accompanied.call-to-action-button-text": "Je veux etre accompagné",
+  "shared.link.site":" rdcetudes.com/bourses"
 }

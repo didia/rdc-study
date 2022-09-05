@@ -33,7 +33,9 @@ const SUPPORTED_DESTINATION_COUNTRIES = [
   DestinationCountries.BELGIUM,
   DestinationCountries.FRANCE,
   DestinationCountries.USA,
-  DestinationCountries.INDIA
+  DestinationCountries.INDIA,
+  DestinationCountries.TUNISIE,
+  DestinationCountries.TURQUIE
 ];
 
 const HAS_ADMISSION_OPTIONS = [
