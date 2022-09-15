@@ -14,3 +14,19 @@ Chez RDC ETUDES, nous sommes conscients de l'importance d'une bonne orientation,
 Il existe une liste non exhaustive des raisons pour lesquelles vous devez  faire consulter par un mentor RDC ETUDES, parmi lesquelles :
 
 J'aimerais étudier à l'étranger mais je ne sais pas par où commencer ?
+
+Est-ce possible pour moi de faire le programme de mon choix ?
+
+Comment faire le choix de l'université ?
+
+J'aimerais étudier à l'étranger mais je ne sais pas quels documents présentés ?
+
+Quels sont les documents que je dois présenter pour la demande de visa ?
+
+Je suis entrain de remplir ma demande mais je suis bloqué à un niveau ?
+
+Je dois faire l'interview mais je ne sais pas quoi dire à l'agent consulaire ?
+
+J'ai obtenu un refus de visa mais je ne comprend pas les raisons ?
+
+J'ai obtenu un refus mais j'aimerais refaire la demande de visa, est-ce possible ?
