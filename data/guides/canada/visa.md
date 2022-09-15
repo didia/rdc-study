@@ -87,13 +87,13 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
 ## Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **790 USD et 910 USD** pour vos démarches de visa.
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1 170 USD et 1200 USD** pour vos démarches de visa.
 Ces frais se présentent comme suit:
 
 * **20 USD à 50 USD** pour les documents administratifs à obtenir de votre gouvernement.
-* **90 USD** pour le CAQ (Seulement pour Québec)
-* **185 USD** pour le frais des visas (Y compris les empreintes)
-* **285 USD** pour les frais des examens médicaux.
-* **300 USD** pour les frais d’assistance RDC-Etudes.
+* **200 USD** pour le frais des visas (Y compris les empreintes)
+* **320 USD** pour les frais des examens médicaux.
+* **30 USD** pour l'envie du passeport 
+* **600 USD** pour les frais d’assistance RDC-Etudes.
 
 **NB**: RDC n’a pas le droit de faire votre demande de permis d‘études à votre place, vous représenter au près du gouvernement canadien ou vous conseiller en ce qui concerne l'immigration au Canada. Notre assistance en ce qui concerne le permis d‘études se limite au niveau de l‘élaboration de votre projet d‘études, votre stratégie financière pour prendre en charges vos études ainsi que dans l'assistance logistique autour de votre demande. Pour en savoir plus, consultez les [limitations légales de notre assistance Visa.](/assistance-visa)
