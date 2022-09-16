@@ -13,21 +13,25 @@ Chez RDC ETUDES, nous sommes conscients de l'importance d'une bonne orientation,
 
 Il existe une liste non exhaustive des raisons pour lesquelles vous devez  faire consulter par un mentor RDC ETUDES, parmi lesquelles :
 
-J'aimerais étudier à l'étranger mais je ne sais pas par où commencer?
+**J'aimerais étudier à l'étranger mais je ne sais pas par où commencer?**
 
 Le premier pas a toujours été le pus difficile à faire. Beaucoup préfèrent être rassurés avant de s'engager. La plus grande peur reste celle ressentie par les parents qui sont les acteurs principaux dans la réussite des démarches et du projet d'études. Connaitre les différentes étapes des démarches et ce à quoi s'attendre une fois au pays d'accueil vous permettra de mieux vous préparer et éviter les différents pièges auxquels beaucoup font face.
 
-Est-ce possible pour moi de faire le programme de mon choix?
+**Est-ce possible pour moi de faire le programme de mon choix?**
 
-
+Pour être inscrit (e) dans un programme donné vous devez répondre aux critères demandés. Chaque faculté requiert des conditions bien précises d'admissibilité. Vous devez donc les connaître avant de vous lancer.
 
 **Comment faire le choix de l'université?**
 
 Toutes les universités n'offrent forcement pas le programme des cours que vous souhaitez faire ou encore ne sont certainement pas appropries pour votre projet d'études. Il est donc nécessaire d'étudier minutieusement le choix de l'université.
 
-J'aimerais étudier à l'étranger mais je ne sais pas quels documents présentés?
+**J'aimerais étudier à l'étranger mais je ne sais pas quels documents présentés?**
 
-Quels sont les documents que je dois présenter pour la demande de visa?
+Étant étudiant international vous devez présenter des documents bien précis pour votre demande d'admission comme preuves de votre citoyenneté ainsi que de votre niveau académique.
+
+**Quels sont les documents que je dois présenter pour la demande de visa?**
+
+Les ambassades/immigrations ont des exigences à ce qui concerne les documents à présenter pour justifier le motif de votre mobilité.
 
 Je suis entrain de remplir ma demande mais je suis bloqué à un niveau?
 
@@ -36,8 +40,6 @@ Je dois faire l'interview mais je ne sais pas quoi dire à l'agent consulaire?
 J'ai obtenu un refus de visa mais je ne comprend pas les raisons?
 
 J'ai obtenu un refus mais j'aimerais refaire la demande de visa, est-ce possible?
-
-J'aimerais introduire ma demande de permis mais je ne suis pas sûr(e) d'avoir tous les documents ?
 
 **COMBIEN ÇA COÛTE?**
 
