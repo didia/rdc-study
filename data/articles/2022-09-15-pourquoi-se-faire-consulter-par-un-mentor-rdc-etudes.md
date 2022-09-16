@@ -35,11 +35,15 @@ Les ambassades/immigrations ont des exigences à ce qui concerne les documents �
 
 Je suis entrain de remplir ma demande mais je suis bloqué à un niveau?
 
+
+
 Je dois faire l'interview mais je ne sais pas quoi dire à l'agent consulaire?
 
-J'ai obtenu un refus de visa mais je ne comprend pas les raisons?
+Pour certains pays, vous devez passer par un interview pour convaincre l'agent consulaire sur vos réelles intentions d'immigration. Vous pouvez rater votre interview par stresse  C'est une étape cruciale qui doit être préparée. 
 
-J'ai obtenu un refus mais j'aimerais refaire la demande de visa, est-ce possible?
+**J'ai obtenu un refus mais j'aimerais refaire la demande de visa, est-ce possible?**
+
+Diverses sont les raisons pour lesquelles vous pouvez obtenir un refus. Certaines sont irrévocables et d'autres non. Il est préférable de connaître l'état de son refus afin de mieux se préparer.
 
 **COMBIEN ÇA COÛTE?**
 
