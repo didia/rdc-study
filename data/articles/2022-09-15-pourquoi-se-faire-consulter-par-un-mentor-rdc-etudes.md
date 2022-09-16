@@ -17,7 +17,9 @@ J'aimerais étudier à l'étranger mais je ne sais pas par où commencer?
 
 Est-ce possible pour moi de faire le programme de mon choix?
 
-Comment faire le choix de l'université?
+**Comment faire le choix de l'université?**
+
+Toutes les universités n'offrent forcement pas le programme des cours que vous souhaitez faire ou encore ne sont certainement pas appropries pour votre projet d'études. Il est donc nécessaire d'étudier minutieusement le choix de l'université.
 
 J'aimerais étudier à l'étranger mais je ne sais pas quels documents présentés?
 
