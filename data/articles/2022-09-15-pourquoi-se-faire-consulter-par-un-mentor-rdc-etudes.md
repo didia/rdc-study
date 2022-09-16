@@ -32,3 +32,5 @@ J'ai obtenu un refus de visa mais je ne comprend pas les raisons?
 J'ai obtenu un refus mais j'aimerais refaire la demande de visa, est-ce possible?
 
 COMBIEN ÇA COÛTE?
+
+En supposant que vous [choisissez d’être consulté(e)](https://www.rdcetudes.com/assistance-process) pour la réussite de votre projet d'études par un mentor de RDC-Etudes, vous devez prévoir **50$**.
