@@ -15,9 +15,11 @@ Il existe une liste non exhaustive des raisons pour lesquelles vous devez  faire
 
 J'aimerais étudier à l'étranger mais je ne sais pas par où commencer?
 
-
+Le premier pas a toujours été le pus difficile à faire. Beaucoup préfèrent être rassurés avant de s'engager. La plus grande peur reste celle ressentie par les parents qui sont les acteurs principaux dans la réussite des démarches et du projet d'études. Connaitre les différentes étapes des démarches et ce à quoi s'attendre une fois au pays d'accueil vous permettra de mieux vous préparer et éviter les différents pièges auxquels beaucoup font face.
 
 Est-ce possible pour moi de faire le programme de mon choix?
+
+
 
 **Comment faire le choix de l'université?**
 
@@ -34,6 +36,8 @@ Je dois faire l'interview mais je ne sais pas quoi dire à l'agent consulaire?
 J'ai obtenu un refus de visa mais je ne comprend pas les raisons?
 
 J'ai obtenu un refus mais j'aimerais refaire la demande de visa, est-ce possible?
+
+J'aimerais introduire ma demande de permis mais je ne suis pas sûr(e) d'avoir tous les documents ?
 
 **COMBIEN ÇA COÛTE?**
 
