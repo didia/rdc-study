@@ -3,7 +3,7 @@ draft: true
 title: Vous aimerez étudier à l'étranger mais ne savez pas par où commencer ?
   Voici comment s'y prendre.
 excerpt: Étudier à l'étranger est très souvent le rêve des milliers d'étudiants
-  africains ainsi que leurs parents. Cependant, par manque d'information,
+  africains ainsi que leurs parents. Cependant, par manque d'informations,
   beaucoup voient leurs rêves se transformer rapidement en cauchemars. Voici
   comment faire pour que cela ne soit pas votre cas.
 thumbnail: /images/uploads/consultant.jpeg
