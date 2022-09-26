@@ -2,9 +2,10 @@
 draft: true
 title: Vous aimerez étudier à l'étranger mais ne savez pas par où commencer ?
   Voici comment s'y prendre.
-excerpt: Les études à l'étranger demandent une préparation particulière tant
-  financière, morale qu'académique. Beaucoup ratent leurs démarches ou encore
-  leurs projets d'études  par manque d'informations fiables.
+excerpt: Étudier à l'étranger est très souvent le rêve des milliers d'étudiants
+  africains ainsi que leurs parents. Cependant, par manque d'information,
+  beaucoup voient leurs rêves se transformer rapidement en cauchemars. Voici
+  comment faire pour que cela ne soit pas votre cas.
 thumbnail: /images/uploads/consultant.jpeg
 date: 2022-09-15T11:00:43.799Z
 ---
