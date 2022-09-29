@@ -9,7 +9,7 @@ excerpt: Étudier à l'étranger est très souvent le rêve des milliers d'étud
 thumbnail: /images/uploads/consultant.jpeg
 date: 2022-09-15T11:00:43.799Z
 ---
-Q﻿uand j'ai fini mes téudes secondaires en 2010 en Republique Democratique du Congo, ma m\`ere etait convaincu que pour me construire un meilleur avenir, je devrais poursuivre mes etudes a l'etranger. Pour moi, ça n'a pris que quelques semaines des cours \`a l'universit é de Kinshasa pour etre convaincu que je devrais sortir du pays. Je savais deja ce que je voulais faire comme etudes a l'universite ? Mais les plus grandes questions qui restaient pour ma mere et moi, c'etait de savoir dans quel pays aller etudier et comment faire pour s'y rendre ?
+Quand j'ai fini mes études secondaires en 2010 en République Démocratique du Congo, ma mère était convaincu que pour me construire un meilleur avenir, je devrais poursuivre mes études a l'étranger. Pour moi, ça n'a pris que quelques semaines des cours `a l'université de Kinshasa pour être convaincu que je devrais sortir du pays. Je savais déjà ce que je voulais faire comme études a l'université ? Mais les plus grandes questions qui restaient pour ma mère et moi, c'était de savoir dans quel pays aller étudier et comment faire pour s'y rendre ?
 
 La décision de poursuivre les études supérieures a l'étranger ne doit être pris à la légère. Plus qu'une destination ou un programme des cours, c'est une carrière que vous choisissez. D'où il est nécessaire de se faire orienter par un expert afin d'atteindre les objectifs que vous vous êtes fixés.
 
