@@ -3,12 +3,14 @@ draft: true
 title: Vous aimerez étudier à l'étranger mais ne savez pas par où commencer ?
   Voici comment s'y prendre.
 excerpt: Étudier à l'étranger est très souvent le rêve des milliers d'étudiants
-  africains ainsi que leurs parents. Cependant, par manque d'informations,
-  beaucoup voient leurs rêves se transformer rapidement en cauchemars. Voici
-  comment faire pour que cela ne soit pas votre cas.
+  africains. Cependant, bien souvent, plusieurs de ces rêves ne se réalisent
+  jamais ou finissent par se transformer en cauchemars car plusieurs ne savent
+  pas comment s'y prendre. Voici quoi faire pour que cela ne soit pas votre cas.
 thumbnail: /images/uploads/consultant.jpeg
 date: 2022-09-15T11:00:43.799Z
 ---
+Q﻿uand j'ai fini mes téudes secondaires en 2010 en Republique Democratique du Congo, ma m\`ere etait convaincu que pour me construire un meilleur avenir, je devrais poursuivre mes etudes a l'etranger. Pour moi, ça n'a pris que quelques semaines des cours \`a l'universit é de Kinshasa pour etre convaincu que je devrais sortir du pays. Je savais deja ce que je voulais faire comme etudes a l'universite ? Mais les plus grandes questions qui restaient pour ma mere et moi, c'etait de savoir dans quel pays aller etudier et comment faire pour s'y rendre ?
+
 La décision de poursuivre les études supérieures a l'étranger ne doit être pris à la légère. Plus qu'une destination ou un programme des cours, c'est une carrière que vous choisissez. D'où il est nécessaire de se faire orienter par un expert afin d'atteindre les objectifs que vous vous êtes fixés.
 
 Chez RDC ETUDES, nous sommes conscients de l'importance d'une bonne orientation, d'une éducation de qualité et des études réussies. Voilà pourquoi nous avons mis en place un service de consultation qui a pour but de vous guider en tout ce qui concerne votre projet d'études à l'étranger.
@@ -36,8 +38,6 @@ Toutes les universités n'offrent forcement pas le programme des cours que vous 
 Les ambassades/immigrations ont des exigences à ce qui concerne les documents à présenter pour justifier le motif de votre mobilité.
 
 Je suis entrain de remplir ma demande mais je suis bloqué à un niveau?
-
-
 
 Je dois faire l'interview mais je ne sais pas quoi dire à l'agent consulaire?
 
