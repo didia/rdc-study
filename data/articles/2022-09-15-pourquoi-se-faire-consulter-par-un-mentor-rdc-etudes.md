@@ -9,9 +9,9 @@ excerpt: Étudier à l'étranger est très souvent le rêve des milliers d'étud
 thumbnail: /images/uploads/consultant.jpeg
 date: 2022-09-15T11:00:43.799Z
 ---
-Comme beaucoup d'entre vous, quand j'ai fini mes études secondaires en 2010 en République Démocratique du Congo, ma mère était convaincu que pour me construire un meilleur avenir, je devrais poursuivre mes études a l'étranger. Pour moi, ça n'a pris que quelques semaines des cours à l'université de Kinshasa pour être convaincu que je devrais sortir du pays. Je savais déjà ce que je voulais faire comme études a l'université ? Mais les plus grandes questions qui restaient pour ma mère et moi, c'était de savoir dans quel pays aller étudier et comment faire pour s'y rendre ?
+Comme beaucoup d'entre vous, quand j'ai fini mes études secondaires en 2010 en République Démocratique du Congo, ma mère était convaincu que pour me construire un meilleur avenir, je devrais poursuivre mes études a l'étranger. Pour moi, ça n'a pris que quelques semaines des cours à l'université de Kinshasa pour être convaincu que je devrais sortir du pays. Je savais déjà ce que je voulais faire comme études à l'université ? Mais les plus grandes questions qui restaient pour ma mère et moi, c'était de savoir dans quel pays aller étudier et comment faire pour s'y rendre ?
 
-La décision de poursuivre les études supérieures a l'étranger ne doit être pris à la légère. Plus qu'une destination ou un programme des cours, c'est une carrière que vous choisissez. D'où il est nécessaire de se faire orienter par un expert afin d'atteindre les objectifs que vous vous êtes fixés.
+La décision de poursuivre les études supérieures à l'étranger ne doit être pris à la légère. Plus qu'une destination ou un programme des cours, c'est une carrière que vous choisissez. D'où il est nécessaire de se faire orienter par un expert afin d'atteindre les objectifs que vous vous êtes fixés.
 
 Chez RDC ETUDES, nous sommes conscients de l'importance d'une bonne orientation, d'une éducation de qualité et des études réussies. Voilà pourquoi nous avons mis en place un service de consultation qui a pour but de vous guider en tout ce qui concerne votre projet d'études à l'étranger.
 
@@ -37,9 +37,11 @@ Toutes les universités n'offrent forcement pas le programme des cours que vous 
 
 Les ambassades/immigrations ont des exigences à ce qui concerne les documents à présenter pour justifier le motif de votre mobilité.
 
-Je suis entrain de remplir ma demande mais je suis bloqué à un niveau?
+**Je suis entrain de remplir ma demande mais je suis bloqué à un niveau?**
 
-Je dois faire l'interview mais je ne sais pas quoi dire à l'agent consulaire?
+Pour des raisons de manque d'informations, il arrive très souvent d'être bloqué pendant les démarches. Il y a des étapes pré requises parfois jugées sans importance qu'il ne faut en aucun cas ignorer ou faire avec empressement.
+
+**Je dois faire l'interview mais je ne sais pas quoi dire à l'agent consulaire?**
 
 Pour certains pays, vous devez passer par un interview pour convaincre l'agent consulaire sur vos réelles intentions d'immigration. Vous pouvez rater votre interview par stresse  C'est une étape cruciale qui doit être préparée. 
 
