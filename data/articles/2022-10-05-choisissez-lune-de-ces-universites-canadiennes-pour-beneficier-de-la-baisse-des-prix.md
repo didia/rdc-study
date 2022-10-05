@@ -19,8 +19,22 @@ Pour plus d'informations sur les conditions d'admissibilité a la baisse des pri
 
 Voici une liste non exhaustive des établissements Québécois :
 
-1. [Université du Québec à Rimouski (UQAR)](https://www.uqar.ca/)
+[Université du Québec à Rimouski (UQAR)](https://www.uqar.ca/)
 
-
+l'UQAR offre connue pour la qualité de son enseignement et le faible coût de frais d'admission (81 CAD).
 
 Pour savoir, quels sont les programmes pour lesquels vous pouvez bénéficier de la baisse des prix a l'UQAR, veuillez consulter [le site de l'université](https://futursetudiants.uqar.ca/bourses_perspective_quebec).
+
+[Université de Sherbrooke (UDES)](https://www.usherbrooke.ca/)
+
+[Université du Québec a Chicoutimi (UQAC)](https://www.uqac.ca/)
+
+Université du Québec à Trois Rivières (UQTR)
+
+
+
+[](https://www.uqac.ca/)
+
+[](https://www.usherbrooke.ca/)
+
+[](https://www.usherbrooke.ca/)
