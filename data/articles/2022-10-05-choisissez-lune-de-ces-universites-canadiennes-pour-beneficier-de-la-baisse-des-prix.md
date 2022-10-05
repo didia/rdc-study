@@ -10,3 +10,9 @@ thumbnail: /images/uploads/universites-du-quebec.png
 date: 2022-10-05T15:03:08.333Z
 ---
 Le programme vise les étudiants internationaux qui étudieront dans des domaines précis, où l’on observe un manque de main-d’œuvre comme **les technologies de l’information**, **le génie**, **la santé et les services sociaux**, et **le domaine de l’éducation**, incluant **la formation d’éducatrices à la petite enfance**. Alors que le coût annuel moyen des étudiants internationaux s’élève à **17 000 $** au collège et **24 000 $** à l’université, le gouvernement propose de rendre les études gratuites pour le niveau collégial et à **3000 $** pour le niveau universitaire.
+
+Pour bénéficier de cette baisse des prix, il vous suffit d'être inscrit(e) dans l'un des programmes cites ci-haut et dans l'une des institutions Québécoises.
+
+**Il est important de savoir que cette baisse des prix ne concerne que les universités qui se trouvent dans la Région Québécoise c'est-à-dire en dehors de la ville de Montréal.** 
+
+Voici une liste non exhaustive des établissements Québécois :
