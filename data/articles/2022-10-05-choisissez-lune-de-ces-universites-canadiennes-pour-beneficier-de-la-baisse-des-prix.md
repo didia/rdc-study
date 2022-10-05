@@ -13,6 +13,14 @@ Le programme vise les étudiants internationaux qui étudieront dans des domaine
 
 Pour bénéficier de cette baisse des prix, il vous suffit d'être inscrit(e) dans l'un des programmes cites ci-haut et dans l'une des institutions Québécoises.
 
+Pour plus d'informations sur les conditions d'admissibilité a la baisse des prix, vous pouvez consulter [le site du gouvernement Québécois](https://www.quebec.ca/education/aide-financiere-aux-etudes/bourses-perspective/conditions-admissibilite).
+
 **Il est important de savoir que cette baisse des prix ne concerne que les universités qui se trouvent dans la Région Québécoise c'est-à-dire en dehors de la ville de Montréal.** 
 
 Voici une liste non exhaustive des établissements Québécois :
+
+1. [Université du Québec à Rimouski (UQAR)](https://www.uqar.ca/)
+
+
+
+Pour savoir, quels sont les programmes pour lesquels vous pouvez bénéficier de la baisse des prix a l'UQAR, veuillez consulter [le site de l'université](https://futursetudiants.uqar.ca/bourses_perspective_quebec).
