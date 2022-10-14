@@ -2,14 +2,14 @@
 draft: false
 title: Vous aimerez étudier à l'étranger mais ne savez pas par où commencer ?
   Voici comment s'y prendre.
-excerpt: Étudier à l'étranger est très souvent le rêve des milliers d'étudiants
-  africains. Cependant, bien souvent, plusieurs de ces rêves ne se réalisent
-  jamais ou finissent par se transformer en cauchemars car plusieurs ne savent
-  pas comment s'y prendre. Voici quoi faire pour que cela ne soit pas votre cas.
+excerpt: Étudier à l'étranger est le rêve des milliers d'étudiants africains.
+  Cependant, bien souvent, plusieurs de ces rêves ne se réalisent jamais ou
+  finissent par se transformer en cauchemars car plusieurs ne savent pas comment
+  s'y prendre. Voici quoi faire pour que cela ne soit pas votre cas.
 thumbnail: /images/uploads/consultant.jpeg
 date: 2022-09-15T11:00:43.799Z
 ---
-Comme beaucoup d'entre vous, quand j'ai fini mes études secondaires en 2010 en République Démocratique du Congo, ma mère était convaincu que pour me construire un meilleur avenir, je devrais poursuivre mes études a l'étranger. Pour moi, ça n'a pris que quelques semaines des cours à l'université de Kinshasa pour être convaincu que je devrais sortir du pays. Je savais déjà ce que je voulais faire comme études à l'université ? Mais les plus grandes questions qui restaient pour ma mère et moi, c'était de savoir dans quel pays aller étudier et comment faire pour s'y rendre ?
+Comme beaucoup d'entre vous, quand j'ai fini mes études secondaires en 2010 en République Démocratique du Congo, ma mère était convaincu que pour me construire un meilleur avenir, je devrais poursuivre mes études a l'étranger. Pour moi, ça n'a pris que quelques semaines des cours à l'université de Kinshasa pour être convaincu que je devrais sortir du pays. Je savais déjà ce que je voulais faire comme études à l'université. Cep les plus grandes questions qui restaient pour ma mère et moi, c'était de savoir dans quel pays aller étudier et comment faire pour s'y rendre ?
 
 La décision de poursuivre les études supérieures à l'étranger ne doit être pris à la légère. Plus qu'une destination ou un programme des cours, c'est une carrière que vous choisissez. D'où il est nécessaire de se faire orienter par un expert afin d'atteindre les objectifs que vous vous êtes fixés.
 
