@@ -31,7 +31,13 @@ Choisir l'UDES, c'est opter pour l'innovation. Sans compter qu'elle est parmi le
 
 [Université du Québec a Chicoutimi (UQAC)](https://www.uqac.ca/)
 
-Université du Québec à Trois Rivières (UQTR)
+
+
+[Université du Québec à Trois Rivières (UQTR)](https://www.uqtr.ca/)
+
+[](https://www.uqtr.ca/)Avec plus de 50 ans d'existence, l'UQTR se distingue par la qualité, la pertinence et la rigueur de sa formation et de sa production scientifique.
+
+
 
 [](https://www.uqac.ca/)
 
