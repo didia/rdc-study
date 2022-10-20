@@ -41,7 +41,11 @@ l'UQAC se distingue des autres universités grâce à l’expertise de ses profe
 
 l'UQO est un établissement public francophone d’enseignement universitaire et de recherche. Elle favorise un environnement d'interactions humaines, du savoir et forme des diplômés qualifiés à tous les cycles.
 
+[Université du Québec en Abitibi-Témiscamingue (UQAT)](https://www.uqat.ca/)
 
+
+
+[](https://www.uqat.ca/)
 
 [](https://www.uqac.ca/)
 
