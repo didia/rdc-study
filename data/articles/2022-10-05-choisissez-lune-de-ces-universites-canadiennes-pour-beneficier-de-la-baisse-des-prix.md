@@ -19,35 +19,39 @@ Pour plus d'informations sur les conditions d'admissibilité a la baisse des pri
 
 Voici une liste non exhaustive des établissements Québécois :
 
-[Université du Québec à Rimouski (UQAR)](https://www.uqar.ca/)
+1. [Université du Québec à Rimouski (UQAR)](https://www.uqar.ca/)
 
 l'UQAR offre connue pour la qualité de son enseignement et le faible coût de frais d'admission (81 CAD).
 
 Pour savoir, quels sont les programmes pour lesquels vous pouvez bénéficier de la baisse des prix a l'UQAR, veuillez consulter [le site de l'université](https://futursetudiants.uqar.ca/bourses_perspective_quebec).
 
-[Université de Sherbrooke (UDES)](https://www.usherbrooke.ca/)
+2. [Université de Sherbrooke (UDES)](https://www.usherbrooke.ca/)
 
 Choisir l'UDES, c'est opter pour l'innovation. Sans compter qu'elle est parmi les universités québécoises les plus sollicitées par les étudiants internationaux. Pour plus d'informations sur l'université, vous pouvez [consulter son site web](https://www.usherbrooke.ca/). 
 
-[Université du Québec a Chicoutimi (UQAC)](https://www.uqac.ca/)
+3. [Université du Québec a Chicoutimi (UQAC)](https://www.uqac.ca/)
 
 l'UQAC se distingue des autres universités grâce à l’expertise de ses professeurs-chercheurs, à l’excellence de ses étudiants et à l’innovation dont elle fait preuve tant en enseignement qu’en recherche. Elle contribue, notamment par l’entremise de ses créneaux d’excellence, à l’avancement de la recherche.
 
-[Université du Québec à Trois Rivières (UQTR)](https://www.uqtr.ca/)
+4. [Université du Québec à Trois Rivières (UQTR)](https://www.uqtr.ca/)
 
 [](https://www.uqtr.ca/)Avec plus de 50 ans d'existence, l'UQTR se distingue par la qualité, la pertinence et la rigueur de sa formation et de sa production scientifique.
 
-[Université du Québec en Outaouais (UQO)](https://uqo.ca/)
+5. [Université du Québec en Outaouais (UQO)](https://uqo.ca/)
 
 l'UQO est un établissement public francophone d’enseignement universitaire et de recherche. Elle favorise un environnement d'interactions humaines, du savoir et forme des diplômés qualifiés à tous les cycles.
 
-[Université du Québec en Abitibi-Témiscamingue (UQAT)](https://www.uqat.ca/)
+6. [Université du Québec en Abitibi-Témiscamingue (UQAT)](https://www.uqat.ca/)
 
 l'UQAT est présente dans 7 villes et offre [des formations dans différents domaines](https://www.uqat.ca/etudes/) qui font de l'établissement un lieu d’enseignement et de recherche à dimension humaine qui se distingue par son modèle unique de développement.
 
-[Université Bishop's](https://www.ubishops.ca/fr/)
+7. [Université Bishop's](https://www.ubishops.ca/fr/)
 
 l'Université Bishop’s offre aux étudiants des expériences et occasions d’apprentissage uniques. Les poussant à élargir leurs horizons en les préparant pour affronter la complexité, la diversité et le changement. 
+
+NB: Il n' y a encore aucune information officielle de la part de l'immigration Québécoise sur l'effectivité de la baisse de prix en date du 20.10.2022. Pour plus d'informations, vous devez entrer en contact avec l'université de votre choix. 
+
+Vous souhaitez postuler pour l'un de ces établissements ci-haut, vous 
 
 
 
