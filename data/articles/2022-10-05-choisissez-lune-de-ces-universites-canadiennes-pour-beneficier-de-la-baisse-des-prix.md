@@ -43,7 +43,7 @@ l'UQO est un établissement public francophone d’enseignement universitaire et
 
 [Université du Québec en Abitibi-Témiscamingue (UQAT)](https://www.uqat.ca/)
 
-
+l'UQAT est présente dans 7 villes et offre [des formations dans différents domaines](https://www.uqat.ca/etudes/) qui font de l'établissement un lieu d’enseignement et de recherche à dimension humaine qui se distingue par son modèle unique de développement.
 
 [](https://www.uqat.ca/)
 
