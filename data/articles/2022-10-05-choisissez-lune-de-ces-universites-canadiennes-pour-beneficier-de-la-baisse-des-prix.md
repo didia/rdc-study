@@ -27,11 +27,11 @@ Pour savoir, quels sont les programmes pour lesquels vous pouvez bénéficier de
 
 [Université de Sherbrooke (UDES)](https://www.usherbrooke.ca/)
 
+Choisir l'UDES, c'est opter pour l'innovation. Sans compter qu'elle est parmi les universités québécoises les plus sollicitées par les étudiants internationaux. Pour plus d'informations sur l'université, vous pouvez [consulter son site web](https://www.usherbrooke.ca/). 
+
 [Université du Québec a Chicoutimi (UQAC)](https://www.uqac.ca/)
 
 Université du Québec à Trois Rivières (UQTR)
-
-
 
 [](https://www.uqac.ca/)
 
