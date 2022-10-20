@@ -51,12 +51,4 @@ l'Université Bishop’s offre aux étudiants des expériences et occasions d’
 
 NB: Il n' y a encore aucune information officielle de la part de l'immigration Québécoise sur l'effectivité de la baisse de prix en date du 20.10.2022. Pour plus d'informations, vous devez entrer en contact avec l'université de votre choix. 
 
-Vous souhaitez postuler pour l'un de ces établissements ci-haut, vous 
-
-
-
-[](https://www.uqac.ca/)
-
-[](https://www.usherbrooke.ca/)
-
-[](https://www.usherbrooke.ca/)
+Vous souhaitez postuler pour l'un de ces établissements ci-haut, mais ne savez pas comment vous y prendre ? vous pouvez [solliciter l'assistance d'un mentor RDC ETUDES](https://www.rdcetudes.com/accompagnement).
