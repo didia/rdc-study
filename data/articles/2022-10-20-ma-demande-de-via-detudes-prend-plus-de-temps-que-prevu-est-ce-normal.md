@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Ma demande de via d'études prend plus de temps que prévu?, est-ce normal
+title: Ma demande de via d'études prend plus de temps que prévu, est-ce normal?
 excerpt: "Les demandeurs du visa d'études canadien font souvent face au problème
   du délai de traitement qui souvent prennent beaucoup plus de temps que prévu.
   "
