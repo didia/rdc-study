@@ -37,6 +37,10 @@ l'UQAC se distingue des autres universités grâce à l’expertise de ses profe
 
 [](https://www.uqtr.ca/)Avec plus de 50 ans d'existence, l'UQTR se distingue par la qualité, la pertinence et la rigueur de sa formation et de sa production scientifique.
 
+[Université du Québec en Outaouais (UQO)](https://uqo.ca/)
+
+l'UQO est un établissement public francophone d’enseignement universitaire et de recherche. Elle favorise un environnement d'interactions humaines, du savoir et forme des diplômés qualifiés à tous les cycles.
+
 
 
 [](https://www.uqac.ca/)
