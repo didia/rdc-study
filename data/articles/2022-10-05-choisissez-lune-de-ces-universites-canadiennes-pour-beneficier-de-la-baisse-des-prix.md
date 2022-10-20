@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Choisissez l'une de ces universités canadiennes pour bénéficier de la
   baisse des prix.
 excerpt: Le gouvernement canadien a décidé de baisser les frais académiques des
