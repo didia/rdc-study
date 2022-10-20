@@ -14,3 +14,7 @@ Vous trouverez pus d'informations [sur la demande du permis d'études dans notre
 Selon les dernières actualisations, le délai de traitement du permis d'études prend au moins **13 semaines ou 3 mois et demi** à partir du dépôt des données biométriques.
 
 Ce délai n'est qu'une estimation prévue par l'immigration, ce qui veut dire que cela peut déborder suivant différentes raisons  : un antécédent refus, un manque des preuves justificatives, une incohérence dans la demande ou encore la lenteur de l'agent de l'immigration à traiter votre dossier.
+
+Vous devez donc tenir compte de tout ceci avant de vous engager dans les démarches. Un retard de votre part peut demander une nouvelle sollicitation d'admission ou encore du CAQ qui nécessite des coûts supplémentaires.
+
+Pour plus d'informations sur les délais de traitement, vous pouvez consulter [le site web de l'immigration](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/verifier-delais-traitement.html).
