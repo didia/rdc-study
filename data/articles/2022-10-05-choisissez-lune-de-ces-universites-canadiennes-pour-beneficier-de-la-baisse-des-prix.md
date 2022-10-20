@@ -45,7 +45,11 @@ l'UQO est un établissement public francophone d’enseignement universitaire et
 
 l'UQAT est présente dans 7 villes et offre [des formations dans différents domaines](https://www.uqat.ca/etudes/) qui font de l'établissement un lieu d’enseignement et de recherche à dimension humaine qui se distingue par son modèle unique de développement.
 
-[](https://www.uqat.ca/)
+[Université Bishop's](https://www.ubishops.ca/fr/)
+
+l'Université Bishop’s offre aux étudiants des expériences et occasions d’apprentissage uniques. Les poussant à élargir leurs horizons en les préparant pour affronter la complexité, la diversité et le changement. 
+
+
 
 [](https://www.uqac.ca/)
 
