@@ -17,4 +17,8 @@ Ce délai n'est qu'une estimation prévue par l'immigration, ce qui veut dire qu
 
 Vous devez donc tenir compte de tout ceci avant de vous engager dans les démarches. Un retard de votre part peut demander une nouvelle sollicitation d'admission ou encore du CAQ qui nécessite des coûts supplémentaires.
 
-Pour plus d'informations sur les délais de traitement, vous pouvez consulter [le site web de l'immigration](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/verifier-delais-traitement.html).
+Pour plus d'informations sur les délais de traitement, vous pouvez consulter [le site web de l'immigration](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/verifier-delais-traitement.html). 
+
+En cas de besoin de plus d'éclaircissements sur votre demande de permis d'études, vous pouvez solliciter [notre service de consultation](https://www.rdcetudes.com/assistance-process). 
+
+NB: RDC n’a pas le droit de faire votre demande de permis d‘études à votre place, vous représenter au près du gouvernement canadien ou vous conseiller en ce qui concerne l’immigration au Canada. Notre assistance en ce qui concerne le permis d‘études se limite au niveau de l‘élaboration de votre projet d‘études, votre stratégie financière pour prendre en charges vos études ainsi que dans l’assistance logistique autour de votre demande. Pour en savoir plus, [consultez les limitations légales de notre assistance Visa](https://www.rdcetudes.com/assistance-visa).
