@@ -38,6 +38,17 @@ Payer en espèces dans un bureau de poste 
 
 Attendre de recevoir, sous deux jours ouvrés, un e-mail avec une attestation de paiement à télécharger et à garder précieusement pour la donner au moment de votre inscription.
 
+**Est-il possible d'être remboursé(e)?**
+
+Vous pouvez demander un rembourser si vous avez payé votre CVEC alors que :
+
+vous êtes boursier
+vous entrez dans un cas d'exonération
+vous êtes inscrit dans une formation ne nécessitant pas le paiement de la CVEC
+La campagne de demande de remboursement de la CVEC pour l'année 2022-2023 est ouverte jusqu'au 31 mai 2023.
+
+Pour plus d’information vous pouvez contacter votre Crous en utilisant [ce formulaire de contact](https://www.messervices.etudiant.gouv.fr/envole/message/new).
+
 **NB:** 
 
 Tout le monde n'est pas appelé a payer la CVEC, il existe un groupe des personnes qui sont exonérées selon les conditions de leurs admissions. Pour plus d'informations sur l'exonération au paiement de la CVEC veuillez consulter [le site  web](https://cvec.etudiant.gouv.fr/).
