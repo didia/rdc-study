@@ -35,10 +35,10 @@ Pur vous acquitter de la CVEC vous devez :
 
 Vous pouvez demander un rembourser si vous avez payé votre CVEC alors que :
 
-\- Vous êtes boursier
-- Vous entrez dans un cas d'exonération
-- Vous êtes inscrit dans une formation ne nécessitant pas le paiement de la CVEC
-Pour plus d’information vous pouvez contacter votre Crous en utilisant [ce formulaire de contact](https://www.messervices.etudiant.gouv.fr/envole/message/new).
+* Vous êtes boursier
+* Vous entrez dans un cas d'exonération
+* Vous êtes inscrit dans une formation ne nécessitant pas le paiement de la CVEC
+  Pour plus d’information vous pouvez contacter votre Crous en utilisant [ce formulaire de contact](https://www.messervices.etudiant.gouv.fr/envole/message/new).
 
 **NB:** 
 
