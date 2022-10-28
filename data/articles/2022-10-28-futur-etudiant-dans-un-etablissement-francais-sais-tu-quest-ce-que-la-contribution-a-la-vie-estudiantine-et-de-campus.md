@@ -38,6 +38,10 @@ Payer en espèces dans un bureau de poste 
 
 Attendre de recevoir, sous deux jours ouvrés, un e-mail avec une attestation de paiement à télécharger et à garder précieusement pour la donner au moment de votre inscription.
 
+**NB:** 
 
+Tout le monde n'est pas appelé a payer la CVEC, il existe un groupe des personnes qui sont exonérées selon les conditions de leurs admissions. Pour plus d'informations sur l'exonération au paiement de la CVEC veuillez consulter [le site  web](https://cvec.etudiant.gouv.fr/).
 
-<!--EndFragment-->
+Votre établissement ne pourra pas finaliser votre inscription sans l'attestation du paiement.
+
+Si vous vous inscrivez au cours d’une même année universitaire à plusieurs universités, le paiement n’est considéré que pour la première inscription.
