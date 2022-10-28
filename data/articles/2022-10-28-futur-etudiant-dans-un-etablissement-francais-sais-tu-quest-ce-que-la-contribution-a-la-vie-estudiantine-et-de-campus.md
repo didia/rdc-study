@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Futur étudiant dans un établissement Français, sais-tu qu'est-ce que la
   contribution à la vie estudiantine et de campus
 excerpt: "La CVEC est une taxe fixée par la loi française, elle concerne tout
@@ -50,4 +50,4 @@ Pour plus d’information vous pouvez contacter votre Crous en utilisant [ce for
 
 **Combien ça coûte ?**
 
-La CVEC coûte 95 euros. En cas de besoin d'aide ou plus d'informations sur le paiement ou toutes démarches administratives pour votre projet d'études en France, vous pouvez solliciter d'être [consulté(e) ou assisté(e) par un Mentor RDC ETUDES](https://www.rdcetudes.com/assistance-process).
+La CVEC coûte **95 euros**. En cas de besoin d'aide ou plus d'informations sur le paiement ou toutes démarches administratives pour votre projet d'études en France, vous pouvez solliciter d'être [consulté(e) ou assisté(e) par un Mentor RDC ETUDES](https://www.rdcetudes.com/assistance-process).
