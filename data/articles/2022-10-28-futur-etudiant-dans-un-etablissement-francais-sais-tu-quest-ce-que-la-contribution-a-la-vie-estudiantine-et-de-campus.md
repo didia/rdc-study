@@ -1,10 +1,10 @@
 ---
 draft: false
-title: Futur étudiant dans un établissement Français, sais-tu qu'est-ce que la
+title: ?Futur étudiant dans un établissement Français, sais-tu qu'est-ce que la
   contribution à la vie estudiantine et de campus
 excerpt: "La CVEC est une taxe fixée par la loi française, elle concerne tout
   futur étudiant qui désire poursuivre ses études supérieures dans les
-  établissements Français tant publiques que privées.  "
+  établissements Français tant publiques que privés.  "
 thumbnail: /images/uploads/cvec.jpg
 date: 2022-10-28T14:05:45.267Z
 ---
@@ -12,15 +12,15 @@ Il est important de savoir que le paiement de [la contribution a la vie estudian
 
 Le paiement de la taxe consiste à améliorer les conditions de vie académique, à créer, consolider et renforcer différents services, dans votre université. 
 
-Vous payez la CVEC pour assurer votre santé, favoriser l'action social, améliorer l'accueil des futurs étudiants, promouvoir la culture et l'art au sein de l'université et développer les activités sportives.
+Vous payez la CVEC pour assurer votre santé, favoriser l'action sociale, améliorer l'accueil des futurs étudiants, promouvoir la culture et l'art au sein de l'université et développer les activités sportives.
 
 **Comment l'obtenir :**
 
-Pur vous acquitter de la CVEC vous devez :
+Pour vous acquitter de la CVEC vous devez :
 
 1. Créer un compte dans le site [MesServices.etudiant.gouv.fr](https://www.messervices.etudiant.gouv.fr/envole/enregistrement)
-2. Se connecter ensuite au site dédié : [cvec.etudiant.gouv.fr](https://cvec.etudiant.gouv.fr/)
-3. Déclarer sa ville d'études et payer la CVEC avec sa carte bancaire 
+2. Vous connecter ensuite au site dédié : [cvec.etudiant.gouv.fr](https://cvec.etudiant.gouv.fr/)
+3. Déclarer votre ville d'études et payer la CVEC avec votre carte bancaire 
 4. Télécharger une attestation de paiement, à garder précieusement pour le donner au moment de votre inscription.
 
 **Au cas ou vous optez pour un paiement en espèces dans un bureau de poste :**
