@@ -31,7 +31,7 @@ Choisir l'UDES, c'est opter pour l'innovation. Sans compter qu'elle est parmi le
 
 3. [Université du Québec a Chicoutimi (UQAC)](https://www.uqac.ca/)
 
-l'UQAC se distingue des autres universités grâce à l’expertise de ses professeurs-chercheurs, à l’excellence de ses étudiants et à l’innovation dont elle fait preuve tant en enseignement qu’en recherche. Elle contribue, notamment par l’entremise de ses créneaux d’excellence, à l’avancement de la recherche.
+l'UQAC se distingue des autres universités grâce à l’expertise de ses professeurs-chercheurs, à l’excellence de ses étudiants et à l’innovation dont elle fait preuve tant en enseignement qu’en recherche.
 
 4. [Université du Québec à Trois Rivières (UQTR)](https://www.uqtr.ca/)
 
