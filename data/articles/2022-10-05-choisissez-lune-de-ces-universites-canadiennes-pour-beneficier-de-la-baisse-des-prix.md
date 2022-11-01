@@ -11,7 +11,7 @@ date: 2022-10-05T15:03:08.333Z
 ---
 Le programme vise les étudiants internationaux qui étudieront dans des domaines précis, où l’on observe un manque de main-d’œuvre comme **les technologies de l’information**, **le génie**, **la santé et les services sociaux**, et **le domaine de l’éducation**, incluant **la formation d’éducatrices à la petite enfance**. Alors que le coût annuel moyen des étudiants internationaux s’élève à **17 000 $** au collège et **24 000 $** à l’université, le gouvernement propose de rendre les études gratuites pour le niveau collégial et à **3000 $** pour le niveau universitaire.
 
-Pour bénéficier de cette baisse des prix, il vous suffit d'être inscrit(e) dans l'un des programmes cites ci-haut et dans l'une des institutions Québécoises.
+Pour bénéficier de cette baisse des prix, il vous suffit d'être inscrit(e) dans l'un des programmes cités ci-haut et dans l'une des institutions Québécoises.
 
 Pour plus d'informations sur les conditions d'admissibilité a la baisse des prix, vous pouvez consulter [le site du gouvernement Québécois](https://www.quebec.ca/education/aide-financiere-aux-etudes/bourses-perspective/conditions-admissibilite).
 
@@ -21,9 +21,9 @@ Voici une liste non exhaustive des établissements Québécois :
 
 1. [Université du Québec à Rimouski (UQAR)](https://www.uqar.ca/)
 
-l'UQAR offre connue pour la qualité de son enseignement et le faible coût de frais d'admission (81 CAD).
+l'UQAR est connue pour la qualité de son enseignement et le faible coût de frais d'admission (81 CAD).
 
-Pour savoir, quels sont les programmes pour lesquels vous pouvez bénéficier de la baisse des prix a l'UQAR, veuillez consulter [le site de l'université](https://futursetudiants.uqar.ca/bourses_perspective_quebec).
+Pour savoir, quels sont les programmes pour lesquels vous pouvez bénéficier de la baisse des prix à l'UQAR, veuillez consulter [le site de l'université](https://futursetudiants.uqar.ca/bourses_perspective_quebec).
 
 2. [Université de Sherbrooke (UDES)](https://www.usherbrooke.ca/)
 
@@ -31,7 +31,7 @@ Choisir l'UDES, c'est opter pour l'innovation. Sans compter qu'elle est parmi le
 
 3. [Université du Québec a Chicoutimi (UQAC)](https://www.uqac.ca/)
 
-l'UQAC se distingue des autres universités grâce à l’expertise de ses professeurs-chercheurs, à l’excellence de ses étudiants et à l’innovation dont elle fait preuve tant en enseignement qu’en recherche. Elle contribue, notamment par l’entremise de ses créneaux d’excellence, à l’avancement de la recherche.
+l'UQAC se distingue des autres universités grâce à l’expertise de ses professeurs-chercheurs, à l’excellence de ses étudiants et à l’innovation dont elle fait preuve tant en enseignement qu’en recherche.
 
 4. [Université du Québec à Trois Rivières (UQTR)](https://www.uqtr.ca/)
 
