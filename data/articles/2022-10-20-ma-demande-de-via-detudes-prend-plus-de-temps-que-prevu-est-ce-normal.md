@@ -1,15 +1,14 @@
 ---
 draft: false
-title: Ma demande de via d'études prend plus de temps que prévu, est-ce normal?
+title: Ma demande de visa d'études prend plus de temps que prévu, est-ce normal?
 excerpt: "Les demandeurs du visa d'études canadien font souvent face au problème
-  du délai de traitement qui souvent prennent beaucoup plus de temps que prévu.
-  "
+  du délai de traitement qui prend beaucoup plus de temps que prévu. "
 thumbnail: /images/uploads/immigrer-au-canada-1.jpg
 date: 2022-10-20T14:08:41.072Z
 ---
 Il est important de savoir que le délai de traitement varie chaque année et selon diffèrent pays et cas. Si vous avez un ami qui n'a pas eu des problèmes lors de sa demande, cela ne sera peut-être pas le cas pour vous. Mais cela n'empêche que vous soyez bien préparés et mettiez toutes les chances de votre côté. 
 
-Vous trouverez pus d'informations [sur la demande du permis d'études dans notre guide](https://www.rdcetudes.com/guides/canada/visa).
+Vous trouverez plus d'informations [sur la demande du permis d'études dans notre guide](https://www.rdcetudes.com/guides/canada/visa).
 
 Selon les dernières actualisations, le délai de traitement du permis d'études prend au moins **13 semaines ou 3 mois et demi** à partir du dépôt des données biométriques.
 
@@ -21,4 +20,4 @@ Pour plus d'informations sur les délais de traitement, vous pouvez consulter [l
 
 En cas de besoin de plus d'éclaircissements sur votre demande de permis d'études, vous pouvez solliciter [notre service de consultation](https://www.rdcetudes.com/assistance-process). 
 
-NB: RDC n’a pas le droit de faire votre demande de permis d‘études à votre place, vous représenter au près du gouvernement canadien ou vous conseiller en ce qui concerne l’immigration au Canada. Notre assistance en ce qui concerne le permis d‘études se limite au niveau de l‘élaboration de votre projet d‘études, votre stratégie financière pour prendre en charges vos études ainsi que dans l’assistance logistique autour de votre demande. Pour en savoir plus, [consultez les limitations légales de notre assistance Visa](https://www.rdcetudes.com/assistance-visa).
+NB: RDC ETUDES n’a pas le droit de faire votre demande de permis d‘études à votre place ou vous représenter au près du gouvernement canadien ou encore vous conseiller en ce qui concerne l’immigration au Canada. Notre assistance en ce qui concerne le permis d‘études se limite au niveau de l‘élaboration de votre projet d‘études, votre stratégie financière pour prendre en charges vos études ainsi que dans l’assistance logistique autour de votre demande. Pour en savoir plus, [consultez les limitations légales de notre assistance Visa](https://www.rdcetudes.com/assistance-visa).
