@@ -13,13 +13,23 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-Le gouvernement chinois offre un total de 30 bourses complètes àa
+La bourse du gouvernement chinois couvre :
+
+* Le billet d'avion
+* Les frais académiques
+* Logement
+
+Une allocation mensuelle de :
+
+* 350$ pour la Licence
+* 450$ pour le Master 
+* 700$ pour le doctorat
 
 ## Quels sont les critères de la bourse ?
 
 Pour postuler a la bourse, vous devez remplir les critères suivants:
 
-**Diplômés d'État pour le Bachelor/Licence** 
+**Diplômés d'État pour Licence** 
 
 Diplôme d'État ou Attestation de réussite (traduit en anglais et légalisé)
 
@@ -93,4 +103,6 @@ Copie du casier judiciaire traduit en anglais et notarié
 
 ## Comment postuler ?
 
-Pour postuler a la bourse du gouvernement chinois, vous devez au préalable remplir les critères exiges selon votre profil
+Pour postuler a la bourse du gouvernement chinois, vous devez au préalable remplir les critères exiges selon votre profil. Le dépôt de candidature doit être déposé auprès de la coopération Internationale et Régionale de l'Enseignement Supérieur  et Universitaire situé dans l'enceinte du secrétariat général du Ministère au Sis Boulevard Tshatshi n* 67.
+
+**Toutes les copies doivent être légalisées essentiellement à l'hôtel de ville de Kinshasa.**
