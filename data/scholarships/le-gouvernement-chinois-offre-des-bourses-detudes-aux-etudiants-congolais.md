@@ -105,7 +105,7 @@ Pour postuler a la bourse, vous devez remplir les critères suivants:
 
 Pour postuler a la bourse du gouvernement chinois, vous devez au préalable remplir les critères exiges selon votre profil. Le dépôt de candidature doit être déposé auprès de la coopération Internationale et Régionale de l'Enseignement Supérieur  et Universitaire situé dans l'enceinte du secrétariat général du Ministère au Sis Boulevard Tshatshi n* 67.
 
-**Toutes les copies doivent être légalisées essentiellement à l'hôtel de ville de Kinshasa.**
+**NB: Toutes les copies doivent être légalisées essentiellement à l'hôtel de ville de Kinshasa.**
 
 ## **Comment pouvons-nous vous aider ?**
 
