@@ -29,7 +29,7 @@ Une allocation mensuelle de :
 
 Pour postuler a la bourse, vous devez remplir les critères suivants:
 
-**Diplômés d'État pour Licence** 
+**a. Diplômés d'État pour Licence** 
 
 Diplôme d'État ou Attestation de réussite (traduit en anglais et légalisé)
 
@@ -53,7 +53,7 @@ Copie du casier judiciaire traduit en anglais et notarié
 
 **NB: Ne pas dépasser 25 ans.** 
 
- **Licenciés pour le Master** 
+ **b. Licenciés pour le Master** 
 
 Attestation de réussite de licence (traduite en anglais et légalisée)
 
@@ -77,7 +77,7 @@ Copie du casier judiciaire traduit en anglais et notarié
 
 **NB: Ne pas dépasser 35 ans.** 
 
- **Les master pour le PhD ou Doctorat** 
+ **c. Le master pour le PhD ou Doctorat** 
 
 Diplôme de master 
 
