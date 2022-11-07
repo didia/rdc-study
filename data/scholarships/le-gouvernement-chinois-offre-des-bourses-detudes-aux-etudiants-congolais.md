@@ -113,4 +113,7 @@ Faites-vous consulter ou assister par un mentor RDC ETUDES afin de postuler à l
 
 ## Combien ça coûte?
 
-En supposant que vous souhaiter [être assisté(e) par un mentor RDC ETUDES](https://www.rdcetudes.com/accompagnement), vous devez prévoir **400$** pour toutes vos démarches. Ces frais se présentent comme suit :
+En supposant que vous souhaiter [être assisté(e) par un mentor RDC ETUDES](https://www.rdcetudes.com/accompagnement), vous devez prévoir **410$** pour toutes vos démarches. Ces frais se présentent comme suit : 
+
+* 110$ pour les frais des examens médicaux à l'hôpital sino-congolais.
+* 300$ pour l'assistance RDC ETUDES.
