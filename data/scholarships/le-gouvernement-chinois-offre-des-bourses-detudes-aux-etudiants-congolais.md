@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Le gouvernement Chinois offre des bourses d'études aux étudiants congolais.
 deadline: 2022-11-07T16:10:43.277Z
 excerpt: Le gouvernement Chinois offre 30 bourses d'études complètes pour toute
