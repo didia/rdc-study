@@ -31,73 +31,73 @@ Pour postuler a la bourse, vous devez remplir les critères suivants:
 
 **a. Diplômés d'État pour Licence** 
 
-Diplôme d'État ou Attestation de réussite (traduit en anglais et légalisé)
+1. Diplôme d'État ou Attestation de réussite (traduit en anglais et légalisé)
 
-Bulletins 5è et 6è des humanités (traduit en anglais et légalisé)
+2. Bulletins 5è et 6è des humanités (traduit en anglais et légalisé)
 
-Copie du Passeport
+3. Copie du Passeport
 
-[Examen médical ](file:///C:/Users/lenovo/Downloads/Formulaire%20Medical.pdf)( Hôpital sino-congolais de N'djili)
+4. [Examen médical ](file:///C:/Users/lenovo/Downloads/Formulaire%20Medical.pdf)( Hôpital sino-congolais de N'djili)
 
-[Formulaire de demande de bourse](file:///C:/Users/lenovo/Downloads/Application%20form.pdf)
+5. [Formulaire de demande de bourse](file:///C:/Users/lenovo/Downloads/Application%20form.pdf)
 
-Deux lettres de recommandation (par 2 anciens Profs de l'élève)
+6. Deux lettres de recommandation (par 2 anciens Profs de l'élève)
 
-Projet d'études en anglais ( entre 300 et 500 mots) 
+7. Projet d'études en anglais ( entre 300 et 500 mots) 
 
-Quatre photos passeports
+8. Quatre photos passeports
 
-CV en anglais
+9. CV en anglais
 
-Copie du casier judiciaire traduit en anglais et notarié
+10. Copie du casier judiciaire traduit en anglais et notarié
 
 **NB: Ne pas dépasser 25 ans.** 
 
  **b. Licenciés pour le Master** 
 
-Attestation de réussite de licence (traduite en anglais et légalisée)
+1. Attestation de réussite de licence (traduite en anglais et légalisée)
 
-Relevés des cotes L1 et L2 (traduits en anglais et légalisés)
+2. Relevés des cotes L1 et L2 (traduits en anglais et légalisés)
 
-Copie du Passeport
+3. Copie du Passeport
 
-[Examen médical](file:///C:/Users/lenovo/Downloads/Formulaire%20Medical.pdf) ( Hôpital sino-congolais de N'djili)
+4 [Examen médical](file:///C:/Users/lenovo/Downloads/Formulaire%20Medical.pdf) ( Hôpital sino-congolais de N'djili)
 
-[Formulaire de demande de bourse](file:///C:/Users/lenovo/Downloads/Application%20form.pdf)
+5. [Formulaire de demande de bourse](file:///C:/Users/lenovo/Downloads/Application%20form.pdf)
 
-Deux lettres de recommandation en anglais (par 2 anciens Profs de l'étudiant)
+6. Deux lettres de recommandation en anglais (par 2 anciens Profs de l'étudiant)
 
-Projet d'études en anglais ( entre 500 et 800 mots) 
+7. Projet d'études en anglais ( entre 500 et 800 mots) 
 
-Quatre photos passeports
+8. Quatre photos passeports
 
-CV en anglais
+9. CV en anglais
 
-Copie du casier judiciaire traduit en anglais et notarié
+10. Copie du casier judiciaire traduit en anglais et notarié
 
 **NB: Ne pas dépasser 35 ans.** 
 
  **c. Le master pour le PhD ou Doctorat** 
 
-Diplôme de master 
+1. Diplôme de master 
 
-Relevés des cotes
+2. Relevés des cotes
 
-Copie du Passeport
+3. Copie du Passeport
 
-[Examen médical ](file:///C:/Users/lenovo/Downloads/Formulaire%20Medical.pdf)( Hôpital sino-congolais de N'djili)
+4. [Examen médical ](file:///C:/Users/lenovo/Downloads/Formulaire%20Medical.pdf)( Hôpital sino-congolais de N'djili)
 
-[Formulaire de demande de bourse](file:///C:/Users/lenovo/Downloads/Application%20form.pdf)
+5. [Formulaire de demande de bourse](file:///C:/Users/lenovo/Downloads/Application%20form.pdf)
 
-Deux lettres de recommandation en anglais (par 2 anciens Profs de l'étudiant)
+6. Deux lettres de recommandation en anglais (par 2 anciens Profs de l'étudiant)
 
-Projet d'études en anglais ( Plus de 800 mots) 
+7. Projet d'études en anglais ( Plus de 800 mots) 
 
-Quatre photos passeports
+8. Quatre photos passeports
 
-CV en anglais
+9. CV en anglais
 
-Copie du casier judiciaire traduit en anglais et notarié
+10. Copie du casier judiciaire traduit en anglais et notarié
 
 **NB: Ne pas dépasser 45 ans.**
 
@@ -113,4 +113,4 @@ Faites-vous consulter ou assister par un mentor RDC ETUDES afin de postuler à l
 
 ## Combien ça coûte?
 
-En supposant que vous souhaiter être assisté(e) par un mentor RDC ETUDES, vous devez prévoir 400$
+En supposant que vous souhaiter [être assisté(e) par un mentor RDC ETUDES](https://www.rdcetudes.com/accompagnement), vous devez prévoir **400$** pour toutes vos démarches. Ces frais se présentent comme suit :
