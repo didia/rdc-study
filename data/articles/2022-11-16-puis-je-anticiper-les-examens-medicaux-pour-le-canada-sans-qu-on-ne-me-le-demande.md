@@ -46,14 +46,11 @@ Pour les autres, vous pouvez vérifier les médecins de votre pays sur [le site 
 
 **Pour la prise de rendez-vous :**
 
-Votre passeport
+* Votre passeport
+* Votre lettre d'instruction
+* Votre reçu de paiement 
+* 2 photos passeports 4x4
 
-Votre lettre d'instruction
+## **Combien ça coûte?**
 
-Votre reçu de paiement 
-
-2 photos passeports 4x4
-
-**Combien ça coûte?**
-
-Les examens médicaux reviennent à **320$** (veuillez vous informer sur le cout selon votre pays) à payer à CITY BANQ la seule banque accréditée pour le paiement
+Les examens médicaux reviennent à **320$** (veuillez vous informer sur le coût et le moyen de paiement selon votre pays) à payer à CITY BANK la seule banque accréditée pour le paiement à Kinshasa.
