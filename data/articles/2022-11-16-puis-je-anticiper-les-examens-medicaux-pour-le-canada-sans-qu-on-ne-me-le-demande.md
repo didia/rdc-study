@@ -51,6 +51,10 @@ Pour les autres, vous pouvez vérifier les médecins de votre pays sur [le site 
 * Votre reçu de paiement 
 * 2 photos passeports 4x4
 
+## Puis-je avoir un refus après avoir effectué des examens médicaux?
+
+Bien que cela soit rare, il est possible après  plusieurs vérifications que l'agent de l'immigration rencontre des irrégularités dans votre dossier, après vous avoir instruit aux examens médicaux.  Cela peut susciter un refus ou encore une interdiction du territoire si les causes des irrégularités sont graves.
+
 ## **Combien ça coûte?**
 
 Les examens médicaux reviennent à **320$** (veuillez vous informer sur le coût et le moyen de paiement selon votre pays) à payer à CITY BANK la seule banque accréditée pour le paiement à Kinshasa. 
