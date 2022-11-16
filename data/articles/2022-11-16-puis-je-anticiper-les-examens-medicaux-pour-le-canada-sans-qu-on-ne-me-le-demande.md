@@ -46,11 +46,10 @@ Pour les autres, vous pouvez vérifier les médecins de votre pays sur [le site 
 
 **Pour la prise de rendez-vous :**
 
-Votre passeport
-
-Votre lettre d'intruction
-
-Votre reçu de paiement 
+* Votre passeport
+* Votre lettre d'instruction
+* Votre reçu de paiement 
+* 2 photos passeports 4x4
 
 
 
