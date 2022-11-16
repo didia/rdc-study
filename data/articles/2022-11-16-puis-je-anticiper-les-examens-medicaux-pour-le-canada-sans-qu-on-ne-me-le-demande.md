@@ -37,7 +37,7 @@ Tout demande du visa canadien se trouvant en provinces de la RDC ou encore à Br
 
 Pour les autres, vous pouvez vérifier les médecins de votre pays sur [le site web de l'immigration](https://secure.cic.gc.ca/pp-md/liste-md.aspx).
 
-**Quels documents apportés?**
+## **Quels documents apportés?**
 
 **Pour le paiement des examens :**
 
@@ -46,11 +46,14 @@ Pour les autres, vous pouvez vérifier les médecins de votre pays sur [le site 
 
 **Pour la prise de rendez-vous :**
 
-* Votre passeport
-* Votre lettre d'instruction
-* Votre reçu de paiement 
-* 2 photos passeports 4x4
+Votre passeport
 
+Votre lettre d'instruction
 
+Votre reçu de paiement 
+
+2 photos passeports 4x4
 
 **Combien ça coûte?**
+
+Les examens médicaux reviennent à **320$** (veuillez vous informer sur le cout selon votre pays) à payer à CITY BANQ la seule banque accréditée pour le paiement
