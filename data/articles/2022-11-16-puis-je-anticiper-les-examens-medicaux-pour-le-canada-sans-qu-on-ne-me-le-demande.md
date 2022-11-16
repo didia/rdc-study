@@ -3,8 +3,8 @@ draft: true
 title: "Puis-je anticiper les examens médicaux pour le canada sans qu’on ne me
   le demande? "
 excerpt: "Les examens médicaux constituent une étape cruciale pour les
-  demandeurs du visa canadien de plus de 6 mois (études, travail ou encore
-  regroupement familial.  "
+  demandeurs du visa canadien de plus de 6 mois (visiteur, études, travail ou
+  encore regroupement familial).  "
 thumbnail: /images/uploads/pexels-mikhail-nilov-8670204.jpg
 tags:
   - Canada
