@@ -17,7 +17,7 @@ date: 2022-11-16T12:07:05.265Z
 ---
 Après avoir obtenu une instruction pour la collecte des données biométriques, tout demandeur du visa canadien est anxieux de recevoir une réponse de la part de l'immigration qui peut prendre 4 mois ou moins en cas de refus. **Mais cela ne veut pas dire que la durée du traitement entraine nécessairement une réponse favorable.**
 
-Cependant l'instruction aux examens médicaux est un bon signal pour la bonne marche du processus de demande de visa, si bien que certains demandeurs,  par anxiété, peur ou anticipation décident de passer leurs examens médicaux avant l'instruction de l'immigration. Pour plus d'informations, veuillez consulter [le site de l'immigration](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/medical-police/examens-medicaux/exigences-residents-permanents.html).
+Cependant l'instruction aux examens médicaux est un bon signal pour la bonne marche du processus de demande de visa, si bien que certains demandeurs,  par anxiété, peur ou anticipation décident de passer leurs examens médicaux avant l'instruction de l'immigration. Pour plus d'informations, sur les examens médicaux pour un long séjour, veuillez consulter [le site de l'immigration](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/medical-police/examens-medicaux/exigences-residents-permanents.html).
 
 ## **Passer l'examen médical avant l'instruction.**
 
