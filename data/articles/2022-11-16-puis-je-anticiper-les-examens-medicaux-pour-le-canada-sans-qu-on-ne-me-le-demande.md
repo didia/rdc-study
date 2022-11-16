@@ -21,7 +21,9 @@ Cependant l'instruction aux examens médicaux est un bon signal pour la bonne ma
 
 ## **Passer l'examen médical avant l'instruction.**
 
-Il est possible de passer des examens médicaux avant l'instruction de l'immigration ou encore la soumission de votre demande par prévention. Cependant cela revient à votre entière responsabilité et n'engage ni l'immigration ni le médecin ou l'entité où vous passeriez les examens en cas de refus de visa ou de rejet des examens effectués. **Passer l'examen médical après instruction.**
+Il est possible de passer des examens médicaux avant l'instruction de l'immigration ou encore la soumission de votre demande par prévention. Cependant cela revient à votre entière responsabilité et n'engage ni l'immigration ni le médecin ou l'entité où vous passeriez vos examens en cas de refus de visa ou de rejet des examens effectués. Dans ce cas vous auriez perdu du temps et de l'argent qui vous auriez certainement servi autrement.
+
+## **Passer l'examen médical après instruction.**
 
 Il est préférable et prudent de passer l'examen médical après instruction de l'immigration. Cela prouve que, vous êtes sur la bonne voie et que vous pouvez vous attendre a une suite favorable de votre demande. Vous trouverez plus d'informations sur les exigences en matière d'examens médicaux sur [le site web de l'immigration](https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/avis/2022-dispensant-etrangers-emi.html).
 
