@@ -25,9 +25,11 @@ Il est possible de passer des examens médicaux avant l'instruction de l'immigra
 
 **Passer l'examen médical après instruction.**
 
-Il est préférable et prudent de passer l'examen médical après instruction de l'immigration. Cela prouve que, vous êtes sur la bonne voie et que vous pouvez vous attendre a une suite favorable de votre demande.
+Il est préférable et prudent de passer l'examen médical après instruction de l'immigration. Cela prouve que, vous êtes sur la bonne voie et que vous pouvez vous attendre a une suite favorable de votre demande. Vous trouverez plus d'informations sur les exigences en matière d'examens médicaux sur [le site web de l'immigration](https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/avis/2022-dispensant-etrangers-emi.html).
 
 **Où passez l'examen médical?**
+
+Il existe une liste des médecins désignés dans chaque pays qui sont les seuls autorisés à procéder aux examens. En Republique Democratique du Congo, les examens meedicaux se font à kinshasa
 
 **Quels documents apportés?**
 
