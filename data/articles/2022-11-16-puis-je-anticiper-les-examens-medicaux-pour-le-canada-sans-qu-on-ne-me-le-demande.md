@@ -29,7 +29,9 @@ Il est préférable et prudent de passer l'examen médical après instruction de
 
 **Où passez l'examen médical?**
 
-Il existe une liste des médecins désignés dans chaque pays qui sont les seuls autorisés à procéder aux examens. En Republique Democratique du Congo, les examens meedicaux se font à kinshasa
+Il existe une liste des médecins désignés dans chaque pays qui sont les seuls autorisés à procéder aux examens. En République Démocratique du Congo, les examens médicaux se font à Kinshasa au sein de l'OIM qui se trouve dans l'enceinte de la concession de UTEX AFRICA au **372 Avenue Colonel Mondjiba, Bâtiment 58 /Immotex, Commune Ngaliema, Kinshasa- République Démocratique du Congo.**
+
+Téléphone: +243 827076321
 
 **Quels documents apportés?**
 
