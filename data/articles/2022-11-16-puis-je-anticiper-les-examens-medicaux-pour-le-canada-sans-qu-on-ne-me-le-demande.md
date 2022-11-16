@@ -25,17 +25,17 @@ Il est possible de passer des examens médicaux avant l'instruction de l'immigra
 
 ## **Passer l'examen médical après instruction.**
 
-Il est préférable et prudent de passer l'examen médical après instruction de l'immigration. Cela prouve que, vous êtes sur la bonne voie et que vous pouvez vous attendre a une suite favorable de votre demande. Vous trouverez plus d'informations sur les exigences en matière d'examens médicaux sur [le site web de l'immigration](https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/avis/2022-dispensant-etrangers-emi.html).
+Il est préférable et prudent de passer l'examen médical après instruction de l'immigration. Cela prouve que, vous êtes sur la bonne voie et que vous pouvez vous attendre à une suite favorable de votre demande. Vous trouverez plus d'informations sur les exigences en matière d'examens médicaux sur [le site web de l'immigration](https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/avis/2022-dispensant-etrangers-emi.html).
 
 ## **Où passer l'examen médical?**
 
-Il existe une liste des médecins désignés dans chaque pays qui sont les seuls autorisés à procéder aux examens. En République Démocratique du Congo, les examens médicaux se font à Kinshasa au sein de l'OIM qui se trouve dans l'enceinte de la concession de UTEX AFRICA au **372 Avenue Colonel Mondjiba, Bâtiment 58 /Immotex, Commune Ngaliema, Kinshasa- République Démocratique du Congo.** Pour tout contact, veuillez les contacter au **+243 827076321**.
+Il existe une liste des médecins désignés dans chaque pays qui sont les seuls autorisés à procéder aux examens. En République Démocratique du Congo, les examens médicaux se font à Kinshasa au sein de l'OIM qui se trouve dans l'enceinte de la concession de **UTEX AFRICA** au **372 Avenue Colonel Mondjiba, Bâtiment 58 /Immotex, Commune Ngaliema, Kinshasa- République Démocratique du Congo.** Pour tout contact, veuillez les contacter au **+243 827076321**.
 
-NB : Avant de passer vos examens médicaux, vous devez au préalable prendre rendez-vous.
+**NB :** 
 
-Tout demande du visa canadien se trouvant en provinces de la RDC ou encore à Brazzaville ou certains pas d'Afrique centrale limitrophes au pays, doivent se faire examiner à Kinshasa.
-
-Pour les autres, vous pouvez vérifier les médecins de votre pays sur [le site web de l'immigration](https://secure.cic.gc.ca/pp-md/liste-md.aspx).
+1. Avant de passer vos examens médicaux, vous devez au préalable prendre rendez-vous.
+2. Tout demandeur du visa canadien se trouvant en provinces de la RDC ou encore à Brazzaville ou certains pas d'Afrique centrale limitrophes au pays, doivent se faire examiner à Kinshasa.
+3. Pour les autres, vous pouvez vérifier les médecins de votre pays sur [le site web de l'immigration](https://secure.cic.gc.ca/pp-md/liste-md.aspx).
 
 ## **Quels documents apportés?**
 
