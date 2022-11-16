@@ -53,7 +53,7 @@ Il existe une liste des médecins désignés dans chaque pays qui sont les seuls
 
 ## Puis-je avoir un refus après avoir effectué des examens médicaux?
 
-Bien que cela soit rare, il est possible après  plusieurs vérifications que l'agent de l'immigration rencontre des irrégularités dans votre dossier, après vous avoir instruit aux examens médicaux.  Cela peut susciter un refus ou encore une interdiction du territoire si les causes des irrégularités sont graves.
+Bien que cela soit rare, il est possible qu'après plusieurs vérifications, que l'agent de l'immigration rencontre des irrégularités dans votre dossier après vous avoir instruit aux examens médicaux.  Cela peut susciter un refus ou encore une interdiction du territoire si les causes des irrégularités sont graves.
 
 ## **Combien ça coûte?**
 
