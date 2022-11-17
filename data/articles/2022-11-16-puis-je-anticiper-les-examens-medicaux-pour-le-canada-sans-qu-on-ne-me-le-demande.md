@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: "Puis-je passer les examens médicaux pour le canada sans que
   l'immigration ne me le demande? "
 excerpt: "Les examens médicaux constituent une étape cruciale pour les
