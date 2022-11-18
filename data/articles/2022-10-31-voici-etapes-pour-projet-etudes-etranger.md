@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Voici les étapes à suivre pour lancer efficacement son projet d’études à
   l’étranger.
 excerpt: C’est fait! Vous vous êtes décidés que pour vos études supérieures,
