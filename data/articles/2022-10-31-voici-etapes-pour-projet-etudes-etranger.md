@@ -1,8 +1,13 @@
 ---
-draft: true
-title: Voici les étapes à suivre pour lancer efficacement son projet d’études à l’étranger.
-excerpt: C’est fait! Vous vous êtes décidés que pour vos études supérieures, c’est à l’étranger que ça se passera. Maintenant, vous vous demandez comment me lancer ? Dans cet article, notre mentor Aristote Diasonama vous partage le conseil qu’il aurait donné à lui-même en 2010 au moment de se lancer dans son projet d’études à l’étranger.
-thumbnail: /images/uploads/consultant.jpeg
+draft: false
+title: Voici les étapes à suivre pour lancer efficacement son projet d’études à
+  l’étranger.
+excerpt: C’est fait! Vous vous êtes décidés que pour vos études supérieures,
+  c’est à l’étranger que ça se passera. Maintenant, vous vous demandez comment
+  me lancer ? Dans cet article, notre mentor Aristote Diasonama vous partage le
+  conseil qu’il aurait donné à lui-même en 2010 au moment de se lancer dans son
+  projet d’études à l’étranger.
+thumbnail: /images/uploads/pexels-thoni-huang-2865219.jpg
 date: 2022-10-31T11:00:43.799Z
 ---
 Comme beaucoup d'entre vous, quand j'ai fini mes études secondaires en 2010 en République Démocratique du Congo, ma mère était convaincue que pour me construire un meilleur avenir, je devrais poursuivre mes études à l'étranger. Il ne m‘a fallu que quelques semaines de cours à l'Université de Kinshasa pour que je ne m’en rende compte moi-même. Je savais déjà ce que je voulais faire comme études à l’niversité. Cependant, il nous restait encore deux questions auxquelles nous n'avions pas des réponses:  Dans quel pays aller étudier et surtout comment s'y prendre ?
