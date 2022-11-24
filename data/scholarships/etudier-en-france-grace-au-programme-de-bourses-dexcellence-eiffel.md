@@ -49,11 +49,26 @@ En plus des critères ci-dessus, seuls les domaines d’études suivants sont ac
 
 **NB: Seuls les établissements français d’enseignement supérieur et de recherche peuvent déposer des dossiers de candidatures.**
 
-1. Contacter le service des Relations internationales de l’établissement français en visitant leur
-   site web, par courriel ou par téléphone, pour connaître la date limite de dépôt auprès de leur
-   service. C’est à vous de choisir l’école ou l’université en lien avec votre projet d’études en France. Tous les établissements d’enseignement supérieur français peuvent déposer des candidatures. 
-2. Si l’établissement accepte et soutient votre dossier de candidature à la bourse EIFFEL, il vous transmettra un formulaire que vous devez compléter en lien avec le service des Relations internationales.
-3. L’établissement va ensuite faire le dépôt en ligne de votre candidature.
+Contacter le service des Relations internationales de l’établissement français de votre choix en visitant leur site web, par courriel ou par téléphone, pour connaître la date limite de dépôt auprès de leur
+service. C’est à vous de choisir l’école ou l’université en lien avec votre projet d’études en France. Tous les établissements d’enseignement supérieur français peuvent déposer des candidatures. 
+
+Si l’établissement accepte et soutient votre dossier de candidature à la bourse EIFFEL, il vous transmettra un formulaire que vous devez compléter en lien avec le service des Relations internationales.
+
+L’établissement va ensuite faire le dépôt en ligne de votre candidature.
+
+Vous pouvez également créer un compte en ligne :
+
+Le dossier de candidature du volet Master est à remplir en ligne, à l’adresse :
+
+https://campusfrance.smapply.io/prog/appel_candidature\_eiffel\_-_master/
+
+Le dossier de candidature du volet Doctorat est à remplir en ligne, à l’adresse :
+
+https://campusfrance.smapply.io/prog/appel_candidature\_eiffel\_-_doctorat/
+
+La nouvelle plateforme de candidature Eiffel vous permet de compléter le dossier de candidature simplement, de suivre la progression de votre saisie et de contrôler le nombre de dossiers déposés ou restant à finaliser.
+
+
 
 Postuler à une bourse d’excellence Eiffel est simple. Vous devez choisir une bonne université qui correspond vraiment à vos projets d’études. Si vous avez besoin de plus d’informations, nous vous encourageons à:
 
