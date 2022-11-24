@@ -68,6 +68,8 @@ https://campusfrance.smapply.io/prog/appel_candidature\_eiffel\_-_doctorat/
 
 La nouvelle plateforme de candidature Eiffel vous permet de compléter le dossier de candidature simplement, de suivre la progression de votre saisie et de contrôler le nombre de dossiers déposés ou restant à finaliser.
 
+Pour savoir si vous êtes retenus à la bourse, la liste des lauréats sera mise en ligne la 1ère semaine d’avril 2023 sur [le site de Campus France](www.campusfrance.org/fr/eiffel).
+
 
 
 Postuler à une bourse d’excellence Eiffel est simple. Vous devez choisir une bonne université qui correspond vraiment à vos projets d’études. Si vous avez besoin de plus d’informations, nous vous encourageons à:
