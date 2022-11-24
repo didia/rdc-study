@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses d’Excellence Eiffel en France
-deadline: 2022-01-07T02:00:00.000Z
+deadline: 2023-01-10T02:00:00.000Z
 excerpt: La bourse Eiffel permet aux établissements français d’enseignement
   supérieur d’attirer les meilleurs étudiants étrangers dans des formations
   diplômantes de niveau master et en doctorat
@@ -12,7 +12,7 @@ tags:
   - bourse d’études
   - campus france
 thumbnail: /images/uploads/bourses-détudes-eiffel-excellence-program.png
-startDate: 2021-09-26T23:21:16.021Z
+startDate: 2022-10-02T23:21:16.021Z
 levels:
   - graduate
   - postgraduate
@@ -21,7 +21,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-* Allocation mensuelle: **1.181 €** (1.031 €d’allocation d’entretien + 150 € d’indemnité mensuelle) pour le master et **1.400 €** pour le doctorat;
+* Allocation mensuelle: **1.181 €** (1.031 €d’allocation d’entretien + 150 € d’indemnité mensuelle) pour le master et **1.700 €** pour le doctorat;
 * Billet d’avion aller-retour Pays d’origine - France;
 * Les frais de transport national et local  le jour de votre arrivée et votre départ de la France;
 * La protection sociale Campus France, le temps de s’affilier à la sécurité sociale française;
@@ -37,25 +37,29 @@ targetCountries:
 
 En plus des critères ci-dessus, seuls les domaines d’études suivants sont acceptés:
 
-* Le droit
+* Le droit et les sciences politiques
 * L’économie et la gestion
-* les sciences de l’ingénieur pour le niveau Master, les sciences au sens large pour le niveau
-  Doctorat (sciences pour l’ingénieur, sciences exactes : mathématiques, physique, chimie et
-  sciences de la vie, nano et biotechnologies, sciences de la terre, de l’univers et de
-  l’environnement, sciences et technologies de l’information et de la communication) 
-* Les sciences politiques
+* Histoire, langues et civilisations françaises.
+* Biologie et Santé
+* Mathématiques et Numérique
+* Transition écologique
 
 ## Comment postuler ?
 
-1. Contacter le service des Relations internationales de l’établissement français en visitant leur
-   site web, par courriel ou par téléphone, pour connaître la date limite de dépôt auprès de leur
-   service. C’est à vous de choisir l’école ou l’université en lien avec votre projet d’études en France. Tous les établissements d’enseignement supérieur français peuvent déposer des candidatures. 
-2. Si l’établissement accepte et soutient votre dossier de candidature à la bourse EIFFEL, il vous transmettra un formulaire que vous devez compléter en lien avec le service des Relations internationales.
-3. L’établissement va ensuite faire le dépôt en ligne de votre candidature.
+**NB: Seuls les établissements français d’enseignement supérieur et de recherche peuvent déposer des dossiers de candidatures.**
+
+Contacter le service des Relations internationales de l’établissement français de votre choix en visitant leur site web, par courriel ou par téléphone, pour connaître la date limite de dépôt auprès de leur
+service. C’est à vous de choisir l’école ou l’université en lien avec votre projet d’études en France. Tous les établissements d’enseignement supérieur français peuvent déposer des candidatures. 
+
+Si l’établissement accepte et soutient votre dossier de candidature à la bourse EIFFEL, il vous transmettra un formulaire que vous devez compléter en lien avec le service des Relations internationales. L’établissement va ensuite faire le dépôt en ligne de votre candidature.
 
 Postuler à une bourse d’excellence Eiffel est simple. Vous devez choisir une bonne université qui correspond vraiment à vos projets d’études. Si vous avez besoin de plus d’informations, nous vous encourageons à:
 
-* Prendre attache auprès de l’espace Campus France dans votre pays d’origine.
-* Contacter l’Ambassade de France (Service de Coopération et d’Action Culturelle) de votre pays d’origine qui pourra vous orienter.
+* Contactez l’espace Campus France dans votre pays d’origine.
+* Contactez l’Ambassade de France (Service de Coopération et d’Action Culturelle) de votre pays d’origine qui pourra vous orienter.
 
-Pour en savoir plus sur les modalités du programme de la bourse Eiffel 2020, <a href="https://www.campusfrance.org/system/files/medias/documents/2019-10/vademecum_eiffel_2020.pdf" target="_blank" rel="noreferrer noopener">cliquez ici.</a>
+Pour en savoir plus sur les modalités du programme de la bourse Eiffel 2023, vous pouvez consulter [le guide de candidature](https://www.campusfrance.org/system/files/medias/documents/2022-10/REGLEMENTATION_LAUREATS%20Eiffel_2023_fr_VF.pdf).
+
+## Comment pouvons-nous vous aider ?
+
+Vous souhaitez postuler à la bourse EIFFEL, mais ne savez pas comment faire? [Solliciter une assistance RDC ETUDES](https://www.rdcetudes.com/accompagnement) ! Nous pouvons vous aider à identifier un établissement français qui correspond à ce que vous souhaitez faire,  vous orienter dans votre choix de programme d'études et à constituer votre dossier académique à déposer au sein de Campus France.
