@@ -1,16 +1,14 @@
 ---
-title: >-
-  Bourses de master et doctorat du gouvernement chinois à l’Institut de
+draft: true
+title: Bourses de master et doctorat du gouvernement chinois à l’Institut de
   technologie de Harbin
-deadline: 2019-12-25T05:00:00.000Z
-excerpt: >-
-  La bourse du gouvernement chinois à l’Institut de Technologie de Harbin (HIT)
-  pour les étudiants étrangers est un programme entièrement financé, ouvert aux
-  étudiants étrangers qui souhaitent faire des études de master ou doctorat au
-  HIT.
+deadline: 2022-12-20T05:00:00.000Z
+excerpt: La bourse du gouvernement chinois à l’Institut de Technologie de Harbin
+  (HIT) pour les étudiants étrangers est un programme entièrement financé,
+  ouvert aux étudiants étrangers qui souhaitent faire des études de master ou
+  doctorat au HIT.
 tags:
-  - >-
-    bourses d’études chine;bourses pour étudiants africains;bourses gouvernement
+  - bourses d’études chine;bourses pour étudiants africains;bourses gouvernement
     chinois;institut technologique de Harbin
 thumbnail: /images/uploads/chinese-students.jpg
 startDate: 2019-10-16T02:39:52.160Z
@@ -24,9 +22,12 @@ targetCountries:
 
 Cette bourse finance une année d’apprentissage de langue ainsi que 2 à 3 ans d’études pour le master et 4 ans pour le doctorat. La bourse inclut:
 
-1. Les frais d’inscription, les frais de scolarité ainsi les frais d’hébergement;
-2. **800 RMB** (≈ 115 USD) par an pour l’assurance médicale complète;
-3. Une allocation mensuelle de **3 000 RMB** ( ≈ 430 USD) par mois pour le master et **3 500 RMB** (≈ 500 USD) pour le doctorat.
+1. Frais de scolarité ;
+2. Dortoir universitaire;
+3. Allocation : Aucune allocation n'est accordée avant l'arrivée à l'université.
+   Étudiants en master : **3 000 CNY** soit **400$** par mois ;
+   Doctorants : **3 500 CNY** soit **450$** par mois.
+4. Assurance médicale complète : 800 CNY/an.
 
 **NB: Pour pouvoir bénéficier d’une allocation complète, veuillez postuler jusqu’au plus tard le 15 décembre. Ceux qui postuleront après cette date recevront une demi-allocation.**
 
@@ -82,6 +83,10 @@ Envoyer votre paiement de 60 USD par transfert bancaire aux coordonnées bancair
 
 Pour plus d’informations, veuillez <a href="http://studyathit.hit.edu.cn/en/academic/program/view?id=17" target="_blank" rel="nofollow noreferrer">consulter le site web</a>, ou encore contacter l’université au:
 
-Mme ZHAO Lin (anglais): Tél.: + 86-451-86402455 Courriel: <a href="mailto:StudyatHIT@hit.edu.cn">StudyatHIT@hit.edu.cn</a>
+Tel:+86-451-86412647  +86-451-86402455
 
-Mme LI Dongmei (Anglais): Tél.: + 86-451-86402455 Courriel: <a href="mailto:lidongmei@hit.edu.cn">lidongmei@hit.edu.cn</a>
+E-mail:StudyatHIT@hit.edu.cn
+
+Website:<http://studyathit.hit.edu.cn/>
+
+Address:No. 11 Siling Street, Nangang District, Harbin 150001 P.R. China
