@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses d’Excellence Eiffel en France
-deadline: 2022-01-07T02:00:00.000Z
+deadline: 2023-01-10T02:00:00.000Z
 excerpt: La bourse Eiffel permet aux établissements français d’enseignement
   supérieur d’attirer les meilleurs étudiants étrangers dans des formations
   diplômantes de niveau master et en doctorat
@@ -12,7 +12,7 @@ tags:
   - bourse d’études
   - campus france
 thumbnail: /images/uploads/bourses-détudes-eiffel-excellence-program.png
-startDate: 2021-09-26T23:21:16.021Z
+startDate: 2022-10-02T23:21:16.021Z
 levels:
   - graduate
   - postgraduate
@@ -46,6 +46,8 @@ En plus des critères ci-dessus, seuls les domaines d’études suivants sont ac
 * Les sciences politiques
 
 ## Comment postuler ?
+
+**NB: Seuls les établissements français d’enseignement supérieur et de recherche peuvent déposer des dossiers de candidatures.**
 
 1. Contacter le service des Relations internationales de l’établissement français en visitant leur
    site web, par courriel ou par téléphone, pour connaître la date limite de dépôt auprès de leur
