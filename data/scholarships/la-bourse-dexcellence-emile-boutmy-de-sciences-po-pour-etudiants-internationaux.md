@@ -23,14 +23,14 @@ La bourse peut prendre plusieurs formes selon la décision du Jury basé notamme
 
 Pour la licence, la bourse peut être:
 
-* Une bourse de scolarité de 13 000 € par an pour les trois années du programme de premier cycle.
-* Une bourse de 8 800 € par an pour les trois années du programme de premier cycle.
-* Une bourse de 6 000 € par an pour les trois années du programme de premier cycle.
-* Une bourse de 3 600 € par an pour les trois années du programme de premier cycle. 
+* Une bourse de scolarité de **13 000 €** par an pour les trois années du programme de premier cycle.
+* Une bourse de **8 800 €** par an pour les trois années du programme de premier cycle.
+* Une bourse de **6 000 €** par an pour les trois années du programme de premier cycle.
+* Une bourse de **3 600 €** par an pour les trois années du programme de premier cycle. 
 
 Pour le master, la bourse peut être:
 
-* Une subvention de 12 200 € par an pour couvrir les frais de scolarité pour les deux années du master.
+* Une subvention de **12 200 €** par an pour couvrir les frais de scolarité pour les deux années du master.
 
 ## Quels sont les critères de la bourse ?
 
@@ -85,3 +85,7 @@ Pour votre demande de bourse, il est possible que les documents suivants vous so
 Pour plus d’informations sur la bourse Emile Boutmy, nous vous invitons à consulter <a href="https://www.sciencespo.fr/students/fr/financer/bourses-aides-financieres/boutmy.html" target="_blank" rel="noreferrer noopener">le site internet de la bourse.</a> soit par téléphone au +33 (0)1 45 49 50 82.
 
 En ce qui concerne l’admission en général, vous pouvez consulter <a href="https://www.sciencespo.fr/com/sciencespo-guide-candidat-fr.pd" target="_blank" rel="noreferrer noopener">le guide du candidat à SciencesPo.</a>
+
+**Comment pouvons-nous vous aider ?**
+
+Si vous souhaitez bénéficier de la bourse d’excellence Emile Boutmy de SciencesPo en France mais ne savez pas comment faire, vous pouvez [solliciter être accompagné(e) par un mentor RDC ETUDES](https://www.rdcetudes.com/assistance-process). Nous pouvons vous aider à vous inscrire à l'Université et à postuler pour la Bourse.
