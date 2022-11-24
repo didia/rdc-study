@@ -58,11 +58,11 @@ L’établissement va ensuite faire le dépôt en ligne de votre candidature.
 
 Vous pouvez également créer un compte en ligne :
 
-Le dossier de candidature du volet Master est à remplir en ligne, à l’adresse :
+* Le dossier de candidature du volet Master est à remplir en ligne, à l’adresse :
 
 https://campusfrance.smapply.io/prog/appel_candidature\_eiffel\_-_master/
 
-Le dossier de candidature du volet Doctorat est à remplir en ligne, à l’adresse :
+* Le dossier de candidature du volet Doctorat est à remplir en ligne, à l’adresse :
 
 https://campusfrance.smapply.io/prog/appel_candidature\_eiffel\_-_doctorat/
 
@@ -70,11 +70,9 @@ La nouvelle plateforme de candidature Eiffel vous permet de compléter le dossie
 
 Pour savoir si vous êtes retenus à la bourse, la liste des lauréats sera mise en ligne la 1ère semaine d’avril 2023 sur [le site de Campus France](www.campusfrance.org/fr/eiffel).
 
-
-
 Postuler à une bourse d’excellence Eiffel est simple. Vous devez choisir une bonne université qui correspond vraiment à vos projets d’études. Si vous avez besoin de plus d’informations, nous vous encourageons à:
 
-* Prendre attache auprès de l’espace Campus France dans votre pays d’origine.
-* Contacter l’Ambassade de France (Service de Coopération et d’Action Culturelle) de votre pays d’origine qui pourra vous orienter.
+* Contactez l’espace Campus France dans votre pays d’origine.
+* Contactez l’Ambassade de France (Service de Coopération et d’Action Culturelle) de votre pays d’origine qui pourra vous orienter.
 
-Pour en savoir plus sur les modalités du programme de la bourse Eiffel 2020, <a href="https://www.campusfrance.org/system/files/medias/documents/2019-10/vademecum_eiffel_2020.pdf" target="_blank" rel="noreferrer noopener">cliquez ici.</a>
+Pour en savoir plus sur les modalités du programme de la bourse Eiffel 2023, vous pouvez consulter [le guide de candidature](https://www.campusfrance.org/system/files/medias/documents/2022-10/REGLEMENTATION_LAUREATS%20Eiffel_2023_fr_VF.pdf).
