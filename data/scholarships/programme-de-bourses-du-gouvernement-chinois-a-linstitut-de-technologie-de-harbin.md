@@ -26,7 +26,7 @@ Cette bourse finance une année d’apprentissage de langue ainsi que 2 à 3 ans
 2. Dortoir universitaire;
 3. Allocation : Aucune allocation n'est accordée avant l'arrivée à l'université.
    Étudiants en master : **3 000 CNY** soit **400$** par mois ;
-   Doctorants : **3 500 CNY** soit **450$** par mois.
+   Doctorants : **3 500 CNY** soit **490$** par mois.
 4. Assurance médicale complète : 800 CNY/an.
 
 **NB: Pour pouvoir bénéficier d’une allocation complète, veuillez postuler jusqu’au plus tard le 15 décembre. Ceux qui postuleront après cette date recevront une demi-allocation.**
