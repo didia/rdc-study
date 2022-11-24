@@ -26,6 +26,8 @@ Les **bacheliers** (spécialisation en [Business Data Analysis](https://www.are
 
 Les **masters** **de spécialisation** sont des programmes de formation inter-établissements organisés en une année académique et à l'issue desquels un grade académique est délivré.
 
+Voici les programmes disponibles:
+
 * Master de spécialisation en droits humains
 * Master de spécialisation en gestion des risques et des catastrophes à l'ère de l'anthropocène
 * Master de spécialisation en gestion intégrée des risques sanitaires
@@ -38,6 +40,17 @@ Les **masters** **de spécialisation** sont des programmes de formation inter-
 * Master de spécialisation en Nexus Eau-Énergie-Alimentation
 
 Les **formations continues** sont, quant à elles, des formations davantage pratiques et de plus courte durée (2 à 6 mois). Elles délivrent un certificat.
+
+Voici les programmes disponibles:
+
+* Formation continue en science des données pour la santé mondiale
+* Formation continue en pédagogie universitaire numérique
+* Certificat interuniversitaire et interdisciplinaire en justices transitionnelles
+* Formation continue - Comprendre et gérer les dimensions humaines des projets de changement en développement durable
+
+Formations continues en assurance qualité et contrôle en qualité des médicaments et produits de santé
+
+Formation continue en système d'information géographique libre
 
 Pour les bourses de Bachelier et Master, vous avez:
 
