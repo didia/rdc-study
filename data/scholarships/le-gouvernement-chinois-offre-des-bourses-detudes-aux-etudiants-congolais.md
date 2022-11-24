@@ -7,7 +7,8 @@ excerpt: Le gouvernement Chinois offre 30 bourses d'études complètes pour tout
   établissements pour l'année académique 2023-2024.
 thumbnail: /images/uploads/etudier-en-chine.jpg
 startDate: 2022-11-07T16:10:43.343Z
-levels: all
+levels: 
+  - all
 targetCountries:
   - cn
 ---
