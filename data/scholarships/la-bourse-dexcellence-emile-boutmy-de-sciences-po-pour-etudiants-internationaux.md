@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourse d’excellence Emile Boutmy de SciencesPo en France
-deadline: 2022-06-15T12:22:29.466Z
+deadline: 2023-03-10T12:22:29.466Z
 excerpt: La bourse Émile Boutmy est une bourse d’excellence, attribuée aux
   meilleurs étudiants en fonction des priorités de recrutement et en accord avec
   le profil recherché pour chacun des programmes de l’Institut d’Études
@@ -23,14 +23,14 @@ La bourse peut prendre plusieurs formes selon la décision du Jury basé notamme
 
 Pour la licence, la bourse peut être:
 
-* Une bourse de scolarité de 13 000 € par an pour les trois années du programme de premier cycle.
-* Une bourse de 8 800 € par an pour les trois années du programme de premier cycle.
-* Une bourse de 6 000 € par an pour les trois années du programme de premier cycle.
-* Une bourse de 3 600 € par an pour les trois années du programme de premier cycle. 
+* Une bourse de scolarité de **13 000 €** par an pour les trois années du programme de premier cycle.
+* Une bourse de **8 800 €** par an pour les trois années du programme de premier cycle.
+* Une bourse de **6 000 €** par an pour les trois années du programme de premier cycle.
+* Une bourse de **3 600 €** par an pour les trois années du programme de premier cycle. 
 
 Pour le master, la bourse peut être:
 
-* Une subvention de 12 200 € par an pour couvrir les frais de scolarité pour les deux années du master.
+* Une subvention de **12 200 €** par an pour couvrir les frais de scolarité pour les deux années du master.
 
 ## Quels sont les critères de la bourse ?
 
@@ -74,14 +74,18 @@ Pour votre demande de bourse, il est possible que les documents suivants vous so
 
 **NB: Ne présentez que les documents que vous possédez et qui répondent à votre situation !**
 
-**Délais:**
+**Délais**
 
-* Date limite pour le **programme de premier cycle (candidats des écoles secondaires étrangères)** : mi-février 2022.
-* Date limite pour le **programme de premier cycle (candidats des écoles secondaires françaises)** : mi-juin 2022.
-* Date limite pour le **programme de master** : 30 novembre 2021.
+* Date limite pour **le programme de premier cycle (candidats des écoles secondaires étrangères)** : 22 février 2023.
+* Date limite pour **le programme de premier cycle (candidats des écoles secondaires françaises)** : 10 avril 2023.
+* Date limite pour le **programme de master** : 30 novembre 2022.
 
 **Aucune demande de candidature ne sera acceptée après la date limite.**
 
 Pour plus d’informations sur la bourse Emile Boutmy, nous vous invitons à consulter <a href="https://www.sciencespo.fr/students/fr/financer/bourses-aides-financieres/boutmy.html" target="_blank" rel="noreferrer noopener">le site internet de la bourse.</a> soit par téléphone au +33 (0)1 45 49 50 82.
 
 En ce qui concerne l’admission en général, vous pouvez consulter <a href="https://www.sciencespo.fr/com/sciencespo-guide-candidat-fr.pd" target="_blank" rel="noreferrer noopener">le guide du candidat à SciencesPo.</a>
+
+**Comment pouvons-nous vous aider ?**
+
+Si vous souhaitez bénéficier de la bourse d’excellence Emile Boutmy de SciencesPo en France mais ne savez pas comment faire, vous pouvez [solliciter être accompagné(e) par un mentor RDC ETUDES](https://www.rdcetudes.com/assistance-process). Nous pouvons vous aider à vous inscrire à l'Université et à postuler pour la Bourse.
