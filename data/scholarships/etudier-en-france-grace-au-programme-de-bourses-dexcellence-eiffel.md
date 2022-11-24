@@ -59,3 +59,7 @@ Postuler à une bourse d’excellence Eiffel est simple. Vous devez choisir une 
 * Contactez l’Ambassade de France (Service de Coopération et d’Action Culturelle) de votre pays d’origine qui pourra vous orienter.
 
 Pour en savoir plus sur les modalités du programme de la bourse Eiffel 2023, vous pouvez consulter [le guide de candidature](https://www.campusfrance.org/system/files/medias/documents/2022-10/REGLEMENTATION_LAUREATS%20Eiffel_2023_fr_VF.pdf).
+
+## Comment pouvons-nous vous aider ?
+
+Vous souhaitez postuler à la bourse EIFFEL, mais ne savez pas comment faire? [Solliciter une assistance RDC ETUDES](https://www.rdcetudes.com/accompagnement) ! Nous pouvons vous aider à identifier un établissement français qui correspond à ce que vous souhaitez faire,  vous orienter dans votre choix de programme d'études et à constituer votre dossier académique à déposer au sein de Campus France.
