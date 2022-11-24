@@ -26,25 +26,16 @@ Les **bacheliers** (spécialisation en [Business Data Analysis](https://www.are
 
 Les **masters** **de spécialisation** sont des programmes de formation inter-établissements organisés en une année académique et à l'issue desquels un grade académique est délivré.
 
-Master de spécialisation en droits humains
-
-Master de spécialisation en gestion des risques et des catastrophes à l'ère de l'anthropocène
-
-Master de spécialisation en gestion intégrée des risques sanitaires
-
-Specialized Master in International and Development Economics
-
-Specialized Master in Microfinance
-
-Specialized Master in Public Health Methodology
-
-Master de spécialisation en sciences de la santé publique - analyse et évaluation des politiques programmes et systèmes de santé internationale
-
-Master de spécialisation en transport et logistique
-
-Master de spécialisation - Design d'innovation sociale
-
-Master de spécialisation en Nexus Eau-Énergie-Alimentation
+* Master de spécialisation en droits humains
+* Master de spécialisation en gestion des risques et des catastrophes à l'ère de l'anthropocène
+* Master de spécialisation en gestion intégrée des risques sanitaires
+* Specialized Master in International and Development Economics
+* Specialized Master in Microfinance
+* Specialized Master in Public Health Methodology
+* Master de spécialisation en sciences de la santé publique - analyse et évaluation des politiques programmes et systèmes de santé internationale
+* Master de spécialisation en transport et logistique
+* Master de spécialisation - Design d'innovation sociale
+* Master de spécialisation en Nexus Eau-Énergie-Alimentation
 
 Les **formations continues** sont, quant à elles, des formations davantage pratiques et de plus courte durée (2 à 6 mois). Elles délivrent un certificat.
 
