@@ -45,7 +45,11 @@ La CFBE examine les demandes de bourse selon les trois critères suivants:
 Les critères précis auxquels vous devez répondre variant d’une bourse à une
 autre:
 
-## Comment postuler ?
+1. [Pour la bourse de Recherche](file:///C:/Users/lenovo/Downloads/scholarship-research-fellowship.pdf)
+2. [Pour la bourse doctorale](file:///C:/Users/lenovo/Downloads/scholarship-type-phd.pdf)
+3. [](file:///C:/Users/lenovo/Downloads/scholarship-type-phd.pdf)[Pour la bourse Postdoctorale](file:///C:/Users/lenovo/Downloads/scholarship-type-postdoctoral.pdf)
+
+## [](file:///C:/Users/lenovo/Downloads/scholarship-type-postdoctoral.pdf)Comment postuler ?
 
 ![Procédure de demande de la bourse d’excellence
   suisse.](/images/uploads/procedure-bourse-suisse.jpg)
