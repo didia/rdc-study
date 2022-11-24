@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourses de master et doctorat du gouvernement chinois à l’Institut de
   technologie de Harbin
 deadline: 2022-12-20T05:00:00.000Z
@@ -39,6 +39,7 @@ Pour bénéficier de la bourse vous devez remplir les critères suivants:
 * Être étudiants internationaux hors de Chine ou anciens diplômés des universités chinoises.
 * Les candidats à la maîtrise doivent être titulaires d’un baccalauréat et avoir moins de 35 ans. Les candidats aux études de doctorat doivent être titulaires d’une maîtrise et avoir moins de 40 ans.
 * Excellente performance en étude.
+* Avoir la maitrise du chinois pour les programmes des cours dispensés en chinois.
 * Avoir de bonnes compétences en recherche scientifique.
 
 **NB: la bourse ne peut être combinée à aucune autre bourse.**
