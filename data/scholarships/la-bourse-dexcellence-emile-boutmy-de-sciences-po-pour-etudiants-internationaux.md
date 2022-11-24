@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourse d’excellence Emile Boutmy de SciencesPo en France
-deadline: 2022-06-15T12:22:29.466Z
+deadline: 2023-03-10T12:22:29.466Z
 excerpt: La bourse Émile Boutmy est une bourse d’excellence, attribuée aux
   meilleurs étudiants en fonction des priorités de recrutement et en accord avec
   le profil recherché pour chacun des programmes de l’Institut d’Études
@@ -74,11 +74,11 @@ Pour votre demande de bourse, il est possible que les documents suivants vous so
 
 **NB: Ne présentez que les documents que vous possédez et qui répondent à votre situation !**
 
-**Délais:**
+**Délais**
 
-* Date limite pour le **programme de premier cycle (candidats des écoles secondaires étrangères)** : mi-février 2022.
-* Date limite pour le **programme de premier cycle (candidats des écoles secondaires françaises)** : mi-juin 2022.
-* Date limite pour le **programme de master** : 30 novembre 2021.
+* Date limite pour **le programme de premier cycle (candidats des écoles secondaires étrangères)** : 22 février 2023.
+* Date limite pour **le programme de premier cycle (candidats des écoles secondaires françaises)** : 10 avril 2023.
+* Date limite pour le **programme de master** : 30 novembre 2022.
 
 **Aucune demande de candidature ne sera acceptée après la date limite.**
 
