@@ -21,7 +21,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-* Allocation mensuelle: **1.181 €** (1.031 €d’allocation d’entretien + 150 € d’indemnité mensuelle) pour le master et **1.400 €** pour le doctorat;
+* Allocation mensuelle: **1.181 €** (1.031 €d’allocation d’entretien + 150 € d’indemnité mensuelle) pour le master et **1.700 €** pour le doctorat;
 * Billet d’avion aller-retour Pays d’origine - France;
 * Les frais de transport national et local  le jour de votre arrivée et votre départ de la France;
 * La protection sociale Campus France, le temps de s’affilier à la sécurité sociale française;
@@ -52,23 +52,7 @@ En plus des critères ci-dessus, seuls les domaines d’études suivants sont ac
 Contacter le service des Relations internationales de l’établissement français de votre choix en visitant leur site web, par courriel ou par téléphone, pour connaître la date limite de dépôt auprès de leur
 service. C’est à vous de choisir l’école ou l’université en lien avec votre projet d’études en France. Tous les établissements d’enseignement supérieur français peuvent déposer des candidatures. 
 
-Si l’établissement accepte et soutient votre dossier de candidature à la bourse EIFFEL, il vous transmettra un formulaire que vous devez compléter en lien avec le service des Relations internationales.
-
-L’établissement va ensuite faire le dépôt en ligne de votre candidature.
-
-Vous pouvez également créer un compte en ligne :
-
-* Le dossier de candidature du volet Master est à remplir en ligne, à l’adresse :
-
-https://campusfrance.smapply.io/prog/appel_candidature\_eiffel\_-_master/
-
-* Le dossier de candidature du volet Doctorat est à remplir en ligne, à l’adresse :
-
-https://campusfrance.smapply.io/prog/appel_candidature\_eiffel\_-_doctorat/
-
-La nouvelle plateforme de candidature Eiffel vous permet de compléter le dossier de candidature simplement, de suivre la progression de votre saisie et de contrôler le nombre de dossiers déposés ou restant à finaliser.
-
-Pour savoir si vous êtes retenus à la bourse, la liste des lauréats sera mise en ligne la 1ère semaine d’avril 2023 sur [le site de Campus France](www.campusfrance.org/fr/eiffel).
+Si l’établissement accepte et soutient votre dossier de candidature à la bourse EIFFEL, il vous transmettra un formulaire que vous devez compléter en lien avec le service des Relations internationales. L’établissement va ensuite faire le dépôt en ligne de votre candidature.
 
 Postuler à une bourse d’excellence Eiffel est simple. Vous devez choisir une bonne université qui correspond vraiment à vos projets d’études. Si vous avez besoin de plus d’informations, nous vous encourageons à:
 
