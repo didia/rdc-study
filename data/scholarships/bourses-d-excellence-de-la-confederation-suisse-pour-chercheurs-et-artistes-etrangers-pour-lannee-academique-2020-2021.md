@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Bourses d’excellence pour chercheurs et artistes étrangers en Suisse
 deadline: 2022-12-15T04:59:54.743Z
 excerpt: La Confédération suisse offre chaque année des bourses d’excellence
