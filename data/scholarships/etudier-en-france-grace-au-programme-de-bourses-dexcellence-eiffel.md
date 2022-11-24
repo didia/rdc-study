@@ -37,13 +37,12 @@ targetCountries:
 
 En plus des critères ci-dessus, seuls les domaines d’études suivants sont acceptés:
 
-* Le droit
+* Le droit et les sciences politiques
 * L’économie et la gestion
-* les sciences de l’ingénieur pour le niveau Master, les sciences au sens large pour le niveau
-  Doctorat (sciences pour l’ingénieur, sciences exactes : mathématiques, physique, chimie et
-  sciences de la vie, nano et biotechnologies, sciences de la terre, de l’univers et de
-  l’environnement, sciences et technologies de l’information et de la communication) 
-* Les sciences politiques
+* Histoire, langues et civilisations françaises.
+* Biologie et Santé
+* Mathématiques et Numérique
+* Transition écologique
 
 ## Comment postuler ?
 
