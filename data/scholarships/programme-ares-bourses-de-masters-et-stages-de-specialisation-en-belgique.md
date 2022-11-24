@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Programme ARES: Bourses de masters et stages de spécialisation en Belgique"
-deadline: 2022-01-28T04:59:34.000Z
+deadline: 2023-01-27T04:59:34.000Z
 excerpt: Cette année, 200 bourses de bacheliers de spécialisation, masters de
   spécialisation et de formations continues offertes à de jeunes professionnels
   des pays partenaires de l'ARES dans le cadre des Formations internationales au
@@ -20,17 +20,43 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-Dans le cadre du programme de coopération 2022-2027 de l’ARES, trois types de formations sont proposés via les bourses de formations internationales :
+Dans le cadre du programme de coopération 2022-2027, chaque année l'ARES octroie en moyenne 130 bourses dans le cadre des bacheliers et masters et 70 bourses dans le cadre des formations continues aux ressortissants des pays partenaires.
 
-Les **bacheliers** (spécialisation en [Business Data Analysis](https://www.ares-ac.be/fr/cooperation-au-developpement/bourses/ressortissants-sud/bacheliers/810-bachelier-de-specialisation-en-business-data-analysis#01-objectif-s-de-la-formation) et [pédiatrie et néonatologie](https://www.ares-ac.be/fr/cooperation-au-developpement/bourses/ressortissants-sud/bacheliers/811-bachelier-international-de-specialisation-en-pediatrie-et-neonatalogie)) et **masters** **de spécialisation** sont des programmes de formation inter-établissements organisés en une année académique et à l'issue desquels un grade académique est délivré.
+Les **bacheliers** (spécialisation en [Business Data Analysis](https://www.ares-ac.be/fr/cooperation-au-developpement/bourses/ressortissants-sud/bacheliers/810-bachelier-de-specialisation-en-business-data-analysis#01-objectif-s-de-la-formation) et [pédiatrie et néonatologie](https://www.ares-ac.be/fr/cooperation-au-developpement/bourses/ressortissants-sud/bacheliers/811-bachelier-international-de-specialisation-en-pediatrie-et-neonatalogie)).
 
-* Les **formations continues** sont, quant à elles, des formations davantage pratiques et de plus courte durée (2 à 6 mois). Elles délivrent un certificat.
+Les **masters** **de spécialisation** sont des programmes de formation inter-établissements organisés en une année académique et à l'issue desquels un grade académique est délivré.
+
+Voici les programmes disponibles:
+
+* Master de spécialisation en droits humains
+* Master de spécialisation en gestion des risques et des catastrophes à l'ère de l'anthropocène
+* Master de spécialisation en gestion intégrée des risques sanitaires
+* Specialized Master in International and Development Economics
+* Specialized Master in Microfinance
+* Specialized Master in Public Health Methodology
+* Master de spécialisation en sciences de la santé publique - analyse et évaluation des politiques programmes et systèmes de santé internationale
+* Master de spécialisation en transport et logistique
+* Master de spécialisation - Design d'innovation sociale
+* Master de spécialisation en Nexus Eau-Énergie-Alimentation
+
+Les **formations continues** sont, quant à elles, des formations davantage pratiques et de plus courte durée (2 à 6 mois). Elles délivrent un certificat.
+
+Voici les programmes disponibles:
+
+* Formation continue en science des données pour la santé mondiale
+* Formation continue en pédagogie universitaire numérique
+* Certificat interuniversitaire et interdisciplinaire en justices transitionnelles
+* Formation continue - Comprendre et gérer les dimensions humaines des projets de changement en développement durable
+
+Formations continues en assurance qualité et contrôle en qualité des médicaments et produits de santé
+
+Formation continue en système d'information géographique libre
 
 Pour les bourses de Bachelier et Master, vous avez:
 
 * Un billet aller-retour par année académique;
 * Une allocation mensuelle de subsistance pour une durée de 12 mois;
-*  Des frais des missions Indirects;
+* Des frais des missions Indirects;
 * Une réduction des frais d’inscription;
 * Frais d’assurance payés par ARES;
 
@@ -38,7 +64,7 @@ Pour les bourses de Stage, vous avez:
 
 * Un billet aller-retour année académique;
 * Une allocation mensuelle 
-*  Frais de mission;
+* Frais de mission;
 * Frais d’assurance payés par ARES;
 
 ## Quels sont les critères de la bourse ?
@@ -49,6 +75,7 @@ Pour que sa demande soit recevable, le candidat doit:
 2. Avoir un diplôme de 1er ou deuxième cycle (DES, DEA, Master) au moins et avoir au
    moins deux ans d’occupation professionnelle pertinente.
 3. Bonne connaissance du français écrit et parlé.
+4. Avoir une expérience professionnelle pertinente, d'au moins deux ans après la fin du Bac+3 pour les bacheliers de spécialisation, du Bac +5 pour les masters de spécialisation et formations continues.
 
 ## Comment postuler ?
 
@@ -59,7 +86,7 @@ suivre:
    bourse et d’admission à l’une des universités francophones de Belgique.
 2. Réunir tous les documents demandés.
 3. Si vous respectez tous les critères d’admissibilité mentionnés ci-haut,
-   vous recevrez d’ici juin 2020 un courriel qui vous informe si votre
+   vous recevrez  un courriel qui vous informe si votre
    candidature est retenue ou pas.
 
 **NB: Vous devez postuler pour une seule formation.**
