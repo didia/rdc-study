@@ -19,6 +19,8 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
+[La bourse de la conférence suisse ](https://www.sbfi.admin.ch/sbfi/fr/home/formation/bourses/bourses-d-excellence-de-la-confederation.html) offre:
+
 * Un paiement de 1920 Francs suisses (à peu près 1920 $) par mois.
 * Les frais académiques sont payés.
 * Un billet d’avion retour vers votre pays d’origine payé à la fin de votre
