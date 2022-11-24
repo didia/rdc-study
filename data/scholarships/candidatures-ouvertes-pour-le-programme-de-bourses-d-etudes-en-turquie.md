@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses d’études du gouvernement de la République de Turquie.
-deadline: 2022-02-20T21:59:34.114Z
+deadline: 2023-02-20T21:59:34.114Z
 excerpt: La Turquie ouvre les portes de ses universités aux étudiants
   internationaux à travers le programme des bourses turques qui permet d’étudier
   gratuitement dans les meilleurs universités de la Turquie.
@@ -14,7 +14,7 @@ tags:
   - kinshasa
   - congo
 thumbnail: /images/uploads/bourses-turquie-2.png
-startDate: 2022-01-10T10:50:47.201Z
+startDate: 2023-01-10T10:50:47.201Z
 levels:
   - all
 targetCountries:
