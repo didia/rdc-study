@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourse d’excellence Emile Boutmy de SciencesPo en France
-deadline: 2023-03-10T12:22:29.466Z
+deadline: 2023-04-10T12:22:29.466Z
 excerpt: La bourse Émile Boutmy est une bourse d’excellence, attribuée aux
   meilleurs étudiants en fonction des priorités de recrutement et en accord avec
   le profil recherché pour chacun des programmes de l’Institut d’Études
