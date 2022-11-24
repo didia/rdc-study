@@ -27,12 +27,8 @@ targetCountries:
   arrivée pour aider avec le logement.
 * La moitié de votre carte de transport.
 
-Les détails de la bourse varient d’un pays à l’autre et d’une bourse à une
-autre. Pour avoir les détails précis pour votre cas, nous vous invitons à lire
-les informations sur <a
-  href="https://www.sbfi.admin.ch/sbfi/fr/home/formation/bourses/bourses-d-excellence-de-la-confederation.html"
-  target="_blank" rel="noopener noreferrer">le site web de la bourse
-d’études.</a>
+Le délai de la bourse varie d’un pays à l’autre et d’une bourse à une
+autre. Pour d'informations, vous pouvez vous renseigner auprès de [l'ambassade de Suisse de votre pays](file:///C:/Users/lenovo/Downloads/eskas-africa.pdf).
 
 ## Quels sont les critères de la bourse ?
 
