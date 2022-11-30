@@ -260,12 +260,17 @@
   "shared.share-on-whatsapp": "Partagez sur whatsapp",
   "shared.yes": "Oui",
 
-  "partner.chypre": "1. UNIVERSITE EUROPEENNE DE LEFKE EN CHYPRE DU NORD",
-  "partner.turkish": "2. UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)",
-  "partner.france": "3. EXCELIA GROUP (FRANCE)",
-  "partner.tunisia": "4. INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)",
-  "partner.atua-junior": "5. GROUPE ATUA JUNIOR",
-  "pages.assistance.call-to-action-button-text": "Je veux une bourse d'études",
-  "pages.accompanied.call-to-action-button-text": "Je veux etre accompagné",
+  "partner.chypre": "UNIVERSITE EUROPEENNE DE LEFKE EN CHYPRE DU NORD",
+  "partner.turkish": "UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)",
+  "partner.france": "EXCELIA GROUP (FRANCE)",
+  "partner.tunisia": "INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)",
+  "partner.atua-junior": "GROUPE ATUA JUNIOR",
+  "pages.assistance.call-to-action-button-text": "une bourse d'études",
+  "pages.consultance.call-to-action-button-text": "une consultation",
+  "pages.accompanied.call-to-action-button-text": "une assistance",
+  "pages.buyticket.call-to-action-button-text": "un achat de billet",
+  "pages.souhait.call-to-action-button-text":"J’ai compris, j’aimerais quand même être assisté(e) pour la bourse ",
+
+
   "shared.link.site":" rdcetudes.com/bourses"
 }

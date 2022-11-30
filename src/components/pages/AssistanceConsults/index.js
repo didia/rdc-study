@@ -8,6 +8,7 @@ import {useQueryParam, StringParam} from 'use-query-params';
 // Styles
 import styles from './styles.module.scss';
 
+
 // Components
 import GenericPage from '../GenericPage';
 import AssistanceForm, {initializeState} from '../../AssistanceForm';
@@ -15,8 +16,8 @@ import CompetitiveAdvantages from '../IndexPage/CompetitiveAdvantages';
 
 
 const page = {
-  description:"L'accampagnement RDC ETUDES consiste à vous orienter dans votre projet d'études du choix de l'université jusqu'à l'obtention de votre visa.",
-  title: 'JE SOUHAITE ETRE ASSISTE PAR UN MENTOR RDC ETUDES.',
+  description:"L'assistance de RDC ETUDES consiste à vous orienter dans votre projet d'études du choix de l'université jusqu'à l'obtention de votre visa.",
+  title: 'JE SOUHAITE CONSULTER UN MENTOR RDC ETUDES.',
   path: '/accompagnement'
 };
 
