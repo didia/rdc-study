@@ -4,6 +4,7 @@ import T from 'prop-types';
 import {FormattedMessage} from 'react-intl';
 import {RecoilRoot} from 'recoil';
 import {useQueryParam, StringParam} from 'use-query-params';
+import {Steps, StepRegistry} from "./steps";
 
 // Styles
 import styles from './styles.module.scss';
@@ -11,16 +12,15 @@ import styles from './styles.module.scss';
 // Components
 import GenericPage from '../GenericPage';
 import AssistanceForm, {initializeState} from '../../AssistanceForm';
+
 import CompetitiveAdvantages from '../IndexPage/CompetitiveAdvantages';
 
 
 const page = {
-  description:"L'accaompagnement RDC ETUDES consiste à vous orienter dans votre projet d'études du choix de l'université jusqu'à l'obtention de votre visa.",
+  description:"L'accampagnement RDC ETUDES consiste à vous orienter dans votre projet d'études du choix de l'université jusqu'à l'obtention de votre visa.",
   title: 'JE SOUHAITE ETRE ASSISTE PAR UN MENTOR RDC ETUDES.',
   path: '/accompagnement'
 };
-
-
 
 const AssistanceProcess = ({assistancePackages, services}) => {
   const [fromGuide] = useQueryParam('pour', StringParam);
@@ -29,7 +29,11 @@ const AssistanceProcess = ({assistancePackages, services}) => {
   return (
     <GenericPage page={page} bannerClassName={styles.banner}>
       <RecoilRoot initializeState={initializeState({assistancePackages, services, fromGuide, service})}>
-        <AssistanceForm />
+        <AssistanceForm 
+          steps={Steps} 
+          initialStep={Steps.DestinationCountry} 
+          stepRegistry={StepRegistry}
+          />
 
         <section className={styles['offer-block']}>
           <CompetitiveAdvantages />

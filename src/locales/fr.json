@@ -3,6 +3,8 @@
   "assistance-form.controls.next": "Suivant",
   "assistance-form.controls.previous": "Précedent",
 
+  
+
   "assistance-form.steps.about-candidate.description": "Dites-nous en un peu plus sur vous. Ces informations serviront à l’élaboration du contrat d’assistance.",
   "assistance-form.steps.about-candidate.labels.email": "Adresse email",
   "assistance-form.steps.about-candidate.labels.first-name": "Prénom",
@@ -12,9 +14,19 @@
   "assistance-form.steps.about-candidate.placeholders.email": "Entrez votre adresse email…",
   "assistance-form.steps.about-candidate.placeholders.first-name": "Entrez votre prénom…",
   "assistance-form.steps.about-candidate.placeholders.last-name": "Entrez votre nom…",
+  "assistance-form.steps.about-candidate.placeholders.city": "Ville",
   "assistance-form.steps.about-candidate.placeholders.origin-country": "Choisissez votre pays de résidence",
   "assistance-form.steps.about-candidate.placeholders.phone": "Entrez votre numéro WhatsApp…",
   "assistance-form.steps.about-candidate.title": "À propos de vous",
+
+  
+  "assistance-form.steps.buy-ticket.title": "Pour quelle destination ?",
+  "assistance-form.submit.buy-ticket.title": "Achat billet",
+  "assistance-form.steps.buy-ticket.description": " ",
+  "assistance-form.steps.buy-ticket.placeholders.city": "Ville",
+  "assistance-form.steps.buy-ticket.labels.city": "Ville",
+  "assistance-form.steps.buy-ticket.placeholders.country": "Pays",
+  "assistance-form.steps.buy-ticket.labels.country": "Pays",
 
   "assistance-form.steps.belgium-equivalence-check.has-equivalence": "Avez-vous déjà obtenu votre équivalence de diplôme d’études sécondaires auprès du service des équivalences de la fédération Wallonie-Bruxelles ?",
   "assistance-form.steps.belgium-equivalence-check.title": "Êtes-vous déjà en possession d’un diplôme d’études supérieures ou universitaires ?",
@@ -26,7 +38,7 @@
   "assistance-form.steps.destination-country.labels.has-admission-negative-option": "Non, je n’ai pas d’admission",
   "assistance-form.steps.destination-country.labels.has-admission-positive-option": "Oui, j’ai déjà mon admission",
   "assistance-form.steps.destination-country.title": "Dans quel pays voulez-vous étudier ?",
-
+ 
   "assistance-form.steps.form-submitted.description": "Votre demande d’assistance a été reçue par notre équipe. Un membre de l’équipe vous contactera dans un délai de trois jours ouvrables. Nous vous remercions pour la confiance que vous nous accordez.",
   "assistance-form.steps.form-submitted.guide-call-to-action": "Si ce n’est pas déjà fait, nous vous recommandons de lire attentivement le guide gratuit concernant vos futures démarches pour vous faire une idée de l’assistance que vous recevrez.",
   "assistance-form.steps.form-submitted.read-guide-button": "Lire le guide",
@@ -168,6 +180,7 @@
   "shared.assistance-types.verification-et-lettre.title": "En plus de vérifier ma demande, je veux que vous m’aidiez à écrire une lettre d’explication afin de maximiser mes chances d’obtention du visa.",
   "shared.assistance-types.information.title": "Je veux accéder au guide gratuit de démarches afin de faire moi-même mes démarches.",
   "shared.assistance-types.consultation.title": "J'ai déjà lu le guide gratuit et je veux maintenant parler à un conseiller RDC Études qui m’orientera pour la suite de mes démarches.",
+  "shared.assistance-types.buy-ticket.consultation.title": "Je veux  parler à un conseiller RDC Études qui m’orientera pour la suite de mes démarches.",
   "shared.assistance-types.consultation-from-guide.title": "Je veux parler à un conseiller RDC Études qui m’orientera pour la suite de mes démarches.",
   "shared.assistance-types.assistance.title": "Je suis prêt à commencer mes démarches et je veux qu’un mentor RDC Études m’aide à les réaliser afin d’augmenter mes chances de succès.",
   "shared.assistance-types.required": "Vous devez choisir le type d’assistance désiré avant de soumettre votre demande.",
@@ -235,7 +248,33 @@
   "shared.countries.tw": "Taiwan",
   "shared.countries.us": "États-Unis",
 
+  "shared.options.equivalence": "Equivalence des diplômes",
+  "shared.options.proposition": "Proposition des universités",
+  "shared.options.admission": "Admissions",
+  "shared.options.motivation": "Lettre de motivation",
+  "shared.options.formfill": "Remplissage des formulaires",
+  "shared.options.visa": "Visa",
+  "shared.options.consult": "Constitution des documents",
+  "shared.options.meet-embassy": "Prise de rendez-vous à l'ambassad",
+  "shared.options.interview": "Interview à l’ambassade",
+  "shared.options.housing": "Logement",
+  "shared.options.buyticket": "Achat Billet",
+  "shared.options.caq": "CAQ",
+  "shared.options.study-permit": "Permis d'études et visa",
+  "shared.options.expl-letr": "Lettre explicative",
+  "shared.options.engagement-letr": "Lettre d’engagement",
+  "shared.options.admission-rejected": "Refus admission",
+  "shared.options.visa-refused": "Refus visa",
+  "shared.options.translate-doc": "Traduction des documents",
+  "shared.options.first-payment": "Paiement Acompte",
+  "shared.options.french-campus": "Campus France",
+  "shared.options.study-project": "Projet d'études",
+  "shared.options.cvec": "CVEC",
+  "shared.options.medical": "Examens medicaux",
+
+
   "shared.country-selector.placeholder": "Choisissez un pays…",
+  "shared.country-option-selector.placeholder": "Pour quel service souhaitez-vous être assisté(e)",
 
   "shared.forms.validation.email": "Cet email n’est pas valide",
   "shared.forms.validation.required": "Ce champ est requis",
@@ -260,12 +299,17 @@
   "shared.share-on-whatsapp": "Partagez sur whatsapp",
   "shared.yes": "Oui",
 
-  "partner.chypre": "1. UNIVERSITE EUROPEENNE DE LEFKE EN CHYPRE DU NORD",
-  "partner.turkish": "2. UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)",
-  "partner.france": "3. EXCELIA GROUP (FRANCE)",
-  "partner.tunisia": "4. INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)",
-  "partner.atua-junior": "5. GROUPE ATUA JUNIOR",
-  "pages.assistance.call-to-action-button-text": "Je veux une bourse d'études",
-  "pages.accompanied.call-to-action-button-text": "Je veux etre accompagné",
+  "partner.chypre": "UNIVERSITE EUROPEENNE DE LEFKE EN CHYPRE DU NORD",
+  "partner.turkish": "UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)",
+  "partner.france": "EXCELIA GROUP (FRANCE)",
+  "partner.tunisia": "INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)",
+  "partner.atua-junior": "GROUPE ATUA JUNIOR",
+  "pages.assistance.call-to-action-button-text": "une bourse d'études",
+  "pages.consultance.call-to-action-button-text": "une consultation",
+  "pages.accompanied.call-to-action-button-text": "une assistance",
+  "pages.buyticket.call-to-action-button-text": "un achat de billet",
+  "pages.souhait.call-to-action-button-text":"J’ai compris, j’aimerais quand même être assisté(e) pour la bourse ",
+
+
   "shared.link.site":" rdcetudes.com/bourses"
 }

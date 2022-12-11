@@ -6,7 +6,7 @@ import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
 import Img from 'gatsby-image';
 
-// Styles
+// Styles 
 import styles from './styles.module.scss';
 
 // Components

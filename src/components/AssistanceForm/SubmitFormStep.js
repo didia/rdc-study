@@ -23,7 +23,7 @@ import config from '../../../config';
 const {contactFormEndpoint} = config;
 
 // Constants
-import Steps from './steps';
+//import Steps from './steps';
 import {AssistanceTypes, AssistancePrices} from '../../constants/assistance';
 
 // Utils
@@ -48,7 +48,7 @@ const formattedAssistancePrice = (intl, price) => {
   return intl.formatMessage({id: translationKey}, {price});
 };
 
-const SubmitFormStep = ({onNextStep, onRestart}) => {
+const SubmitFormStep = ({onNextStep, onRestart, steps}) => {
   const intl = useIntl();
   const [showError, setShowError] = useState(false);
   const [message, setMessage] = useState(null);
@@ -110,7 +110,7 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
         value: AssistancePrices[service]
       });
 
-      onNextStep(Steps.FormSubmitted);
+      onNextStep(steps.FormSubmitted);
     } catch (error) {
       setShowError(true);
 

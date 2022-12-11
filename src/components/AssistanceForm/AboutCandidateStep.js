@@ -22,7 +22,7 @@ import StepForm from './StepForm';
 import {aboutCandidateState} from './states';
 
 // Const
-import {Steps} from './steps';
+//import {steps} from './steps';
 
 const SUPPORTED_ORIGIN_COUNTRIES = [
   {
@@ -87,7 +87,7 @@ const aboutCandidateSchema = (intl) =>
     originCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'}))
   });
 
-const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
+const AboutCandidateStep = ({onNextStep, onPreviousStep, steps}) => {
   const intl = useIntl();
   const [aboutCandidateData, setAboutCandidateData] = useRecoilState(aboutCandidateState);
 
@@ -101,7 +101,7 @@ const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
         validationSchema={aboutCandidateSchema(intl)}
         onSubmit={(values) => {
           setAboutCandidateData(values);
-          onNextStep(Steps.SubmitForm);
+          onNextStep(steps.SubmitForm);
         }}
       >
         {({isSubmitting}) => (

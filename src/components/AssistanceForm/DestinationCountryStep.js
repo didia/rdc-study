@@ -25,7 +25,7 @@ import {destinationCountryState, hasAdmissionState} from './states';
 
 // Constants
 import DestinationCountries from './destination-countries';
-import Steps from './steps';
+//import steps from './steps';
 
 const SUPPORTED_DESTINATION_COUNTRIES = [
   DestinationCountries.CANADA,
@@ -60,22 +60,24 @@ const onChangeDestinationCountry = (field, setShowHasAdmission) => (event) => {
 };
 
 // eslint-disable-next-line complexity
-const getNextStep = ({destinationCountry, hasAdmission}) => {
-  if (destinationCountry === DestinationCountries.CANADA.value && hasAdmission) {
-    return Steps.CanadaCAQCheck;
-  } else if (destinationCountry === DestinationCountries.BELGIUM.value && !hasAdmission) {
-    return Steps.BelgiumEquivalenceCheck;
-  }
 
-  return hasAdmission ? Steps.AssistanceLevelCheck : Steps.AboutCandidate;
-};
 
-const DestinationCountryStep = ({onNextStep, onPreviousStep, recapMode}) => {
+const DestinationCountryStep = ({onNextStep, onPreviousStep, recapMode, steps}) => {
   const intl = useIntl();
   const [destinationCountry, setDestinationCountry] = useRecoilState(destinationCountryState);
   const [hasAdmission, setHasAdmission] = useRecoilState(hasAdmissionState);
 
   const [showHasAdmission, setShowHasAdmission] = useState(!!destinationCountry);
+
+  const getNextStep = ({destinationCountry, hasAdmission}) => {
+    if (destinationCountry === DestinationCountries.CANADA.value && hasAdmission) {
+      return steps.CanadaCAQCheck;
+    } else if (destinationCountry === DestinationCountries.BELGIUM.value && !hasAdmission) {
+      return steps.BelgiumEquivalenceCheck;
+    }
+  
+    return hasAdmission ? steps.AssistanceLevelCheck : steps.AboutCandidate;
+  };
 
   return (
     <StepForm recapMode={recapMode} title={intl.formatMessage({id: 'assistance-form.steps.destination-country.title'})}>

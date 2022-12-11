@@ -11,7 +11,7 @@ import YesNoStepForm from './YesNoStepForm';
 import {isAlreadyAdvancedState} from './states';
 
 // Constants
-import {Steps} from './steps';
+//import {Steps} from './steps';
 
 const ASSISTANCE_LEVEL_OPTIONS = [
   {
@@ -24,7 +24,7 @@ const ASSISTANCE_LEVEL_OPTIONS = [
   }
 ];
 
-const AssistanceLevelCheckStep = ({onNextStep, onPreviousStep}) => {
+const AssistanceLevelCheckStep = ({onNextStep, onPreviousStep, steps}) => {
   const intl = useIntl();
   const [isAlreadyAdvanced, setIsAlreadyAdvanced] = useRecoilState(isAlreadyAdvancedState);
 
@@ -36,7 +36,7 @@ const AssistanceLevelCheckStep = ({onNextStep, onPreviousStep}) => {
       options={ASSISTANCE_LEVEL_OPTIONS}
       onSubmit={(isAlreadyAdvanced) => {
         setIsAlreadyAdvanced(isAlreadyAdvanced);
-        onNextStep(Steps.AboutCandidate);
+        onNextStep(steps.AboutCandidate);
       }}
     />
   );

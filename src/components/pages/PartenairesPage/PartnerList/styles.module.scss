@@ -1,0 +1,98 @@
+.grid {
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.4rem;
+}
+
+.grid-item {
+    grid-column: 1 / 2;
+}
+
+.grid-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 130px;
+}
+
+.items-wrapper{
+    padding: 0;
+}
+
+.grid-item-title {
+    text-align: center;
+    transition: scale 0.3s ease-in-out;
+}
+
+.image-wrapper{
+    /* Commentaire */
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.5rem;
+    background-color: #FFF;
+}
+
+.image {
+    margin-bottom: auto;
+    width: 130px;
+    height: auto;
+    margin-top: auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 980px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-item {
+        border: 0;
+        grid-column: 1 / 2;
+    }
+}
+
+@include breakpoint(small) {
+    .image {
+        width: 100px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image {
+        width: 130px;
+    }
+}
+
+@include breakpoint(xsmall) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image {
+        width: 130px;
+    }
+
+    .grid-item {
+        border: 0;
+        grid-column: 1 / 2;
+    }
+
+}
+
+@include breakpoint(xxsmall) {
+    .image {
+        width: 100px;
+    }
+    .grid-item {
+        border: 0;
+        grid-column: 1;
+    }
+}

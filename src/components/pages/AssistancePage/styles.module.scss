@@ -6,13 +6,32 @@
 
 .feature-item {
   padding-left: 0;
-  font-size: 1.3em;
+  font-size: 1.0em;
 
   &::before {
     padding-right: 0.5em;
     color: _palette(accent);
   }
 }
+
+.grid {
+  display: grid;
+  grid-gap: 0.4em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 980px) {
+  .grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@include breakpoint(xsmall) {
+  .grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 .offer-block {
   margin-top: 80px;
@@ -37,7 +56,7 @@
   padding: 0;
 
   .feature-item {
-    font-size: 0.95em;
+    font-size: 0.85em;
   }
 
   .pricing {

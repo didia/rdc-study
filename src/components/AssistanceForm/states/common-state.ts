@@ -2,6 +2,13 @@ import {atom, selector} from 'recoil';
 
 import Steps from '../steps';
 
+export const setInitialStep = (initialStep : string) => {
+  return atom({
+    key: 'currentStep',
+    default: initialStep
+  });
+}
+
 export const currentStepState = atom({
   key: 'currentStep',
   default: Steps.DestinationCountry

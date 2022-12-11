@@ -11,6 +11,7 @@ const path = require('path');
 
 const CONTENT_TYPE = {
   ARTICLE: 'article',
+  PARTNER: 'partner',
   GUIDE: 'guide',
   SCHOLARSHIP: 'scholarship',
   SERVICE: 'service'
@@ -45,7 +46,11 @@ exports.onCreateNode = ({node, actions, getNode}) => {
     } else if (fileNode.dir.indexOf('assistance-packages') !== -1) {
       createNodeField({node, name: 'type', value: 'assistance-package'});
     }
-  }
+    else if (fileNode.dir.indexOf('partners') !== -1) {
+      createNodeField({node, name: 'path', value: `${fileNode.to}`});
+      createNodeField({node, name: 'type', value: CONTENT_TYPE.PARTNER});
+    }
+  } 
 };
 
 exports.onCreatePage = ({page, actions}) => {

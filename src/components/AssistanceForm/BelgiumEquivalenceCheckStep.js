@@ -18,9 +18,9 @@ import {hasGraduateStudiesDiplomaState, hasHighSchoolDiplomaEquivalenceState} fr
 import styles from './styles.module.scss';
 
 // Constants
-import {Steps} from './steps';
+//import {steps} from './steps';
 
-const BelgiumEquivalenceCheckStep = ({onNextStep, onPreviousStep}) => {
+const BelgiumEquivalenceCheckStep = ({onNextStep, onPreviousStep, steps}) => {
   const intl = useIntl();
   const [hasGraduateStudiesDiploma, setHasGraduateStudiesDiploma] = useRecoilState(hasGraduateStudiesDiplomaState);
   const [hasHighSchoolDiplomaEquivalence, setHasHighSchoolDiplomaEquivalence] = useRecoilState(
@@ -47,7 +47,7 @@ const BelgiumEquivalenceCheckStep = ({onNextStep, onPreviousStep}) => {
           setHasGraduateStudiesDiploma(hasGraduateStudiesDiploma);
           setHasHighSchoolDiplomaEquivalence(hasHighSchoolDiplomaEquivalence);
 
-          onNextStep(Steps.AboutCandidate);
+          onNextStep(steps.AboutCandidate);
         }}
       >
         {({isSubmitting}) => (

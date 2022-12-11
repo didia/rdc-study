@@ -101,6 +101,13 @@ const plugins = [
   {
     resolve: 'gatsby-source-filesystem',
     options: {
+      name: 'partners',
+      path: `${__dirname}/data/partners`
+    }
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
       path: `${__dirname}/data/guides`,
       name: 'guides'
     }

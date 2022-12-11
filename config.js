@@ -4,7 +4,9 @@ export default {
       country: 'R.D. Congo',
       locality: 'Kinshasa',
       name: 'Local 1M3, Nouvelles Galeries Présidentielles',
-      streetAddress: 'Boulevard du 30 Juin'
+      streetAddress: 'Boulevard du 30 Juin',
+      jour : 'Nos jours de service',
+      
     },
     email: {
       label: 'salut@rdcetudes.com',
@@ -25,7 +27,15 @@ export default {
         label: '+1 (581) 318-0180 (WhatsApp)',
         link: 'tel:+1-581-318-0180'
       }
-    ]
+    ],
+    serviceDay: 
+      {
+        workDay: 'Lundi - Vendredi',
+        workHour: '08h30 à 16h30'
+      }
+      
+    
+
   },
   contactFormEndpoint: `${process.env.GATSBY_API_ENDPOINT}/contact-form`,
   newsletterEndpoint: `${process.env.GATSBY_API_ENDPOINT}/newsletter`,
