@@ -1,0 +1,7 @@
+.call-to-action-wrapper {
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: 1s;
+  }

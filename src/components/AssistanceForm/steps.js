@@ -27,10 +27,6 @@ const StepRegistry = {
   [Steps.SubmitForm]: SubmitFormStep
 };
 
-export const getStepComponent = (key) => {
-  return StepRegistry[key];
-};
-
 export const goToNextStep = ({currentStep, nextStep, setCurrentStep, setPreviousSteps}) => {
   setPreviousSteps((oldPreviousSteps) => [...oldPreviousSteps, currentStep]);
   setCurrentStep(nextStep);

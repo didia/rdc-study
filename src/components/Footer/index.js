@@ -284,7 +284,15 @@ class Footer extends Component {
                 {contact.address.name} <br />
                 {contact.address.streetAddress} <br />
                 {contact.address.locality} <br />
-                {contact.address.country}
+                {contact.address.country} <br />
+              </div>
+            </li>
+
+            <li className={styles.contact__item}>
+              <i className={classnames(styles['contact-item__icon'], 'fas fa-calendar-day')}/>
+              <div>
+                {contact.serviceDay.workDay} <br />
+                {contact.serviceDay.workHour} <br />
               </div>
             </li>
           </ul>

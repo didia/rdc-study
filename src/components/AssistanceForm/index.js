@@ -10,18 +10,18 @@ import Card from '../Card';
 import styles from './styles.module.scss';
 
 // State
-import {currentStepState, previousStepState, previousStepsState, initializeState} from './states';
-import Steps, {getStepComponent, goToNextStep, goToPreviousStep, goToStep} from './steps';
+import { setInitialStep ,previousStepState, previousStepsState, initializeState} from './states';
+import { goToNextStep, goToPreviousStep, goToStep} from './steps';
 
 export {initializeState};
 
 // Utils
 import isScrolledIntoView from '../../utils/is-scrolled-into-view';
 
-const MasterForm = () => {
+const MasterForm = ({initialStep, steps, stepRegistry}) => {
   const currentStepRef = useRef(null);
   const setPreviousSteps = useSetRecoilState(previousStepsState);
-  const [currentStep, setCurrentStep] = useRecoilState(currentStepState);
+  const [currentStep, setCurrentStep] = useRecoilState(setInitialStep(initialStep));
   const previousStep = useRecoilValue(previousStepState);
 
   const scrollIntoViewIfNecessary = () => {
@@ -43,8 +43,12 @@ const MasterForm = () => {
   };
 
   const onRestart = () => {
-    goToStep({setCurrentStep, setPreviousSteps, step: Steps.DestinationCountry});
+    goToStep({setCurrentStep, setPreviousSteps, step: steps.DestinationCountry});
     scrollIntoViewIfNecessary();
+  };
+
+  const getStepComponent = (key) => {
+    return stepRegistry[key];
   };
 
   const CurrentStepComponent = getStepComponent(currentStep);
@@ -53,6 +57,7 @@ const MasterForm = () => {
     <div ref={currentStepRef} className={styles['card-wrapper']}>
       <Card className={styles.card}>
         <CurrentStepComponent
+          steps={steps}
           onNextStep={onNextStep}
           onPreviousStep={onPreviousStep}
           onRestart={onRestart}
@@ -60,6 +65,12 @@ const MasterForm = () => {
       </Card>
     </div>
   );
+};
+
+MasterForm.proptype = {
+  initialStep: T.string.isRequired, 
+  steps: T.object.isRequired, 
+  stepRegistry: T.object.isRequired
 };
 
 export default MasterForm;
