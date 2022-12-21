@@ -12,7 +12,7 @@ Ce programme tel que lancé deviendra effectif à partir de la session d’autom
 
 **1. AVANTAGES**
 
-* Les  frais de scolarité qui coûtaient entre 17 000 à 24 000$, réduit à zéro pour le niveau collégial (pour les études pré-universitaires) à **3000$** (pour les études universitaires).
+* Les  frais de scolarité qui coûtaient entre 17 000 à 24 000$, réduit à **zéro** pour le niveau collégial (pour les études pré-universitaires) à **3000$** (pour les études universitaires).
 * Une facilité pour décrocher un emploi
 * Le logement des étudiants est pris en compte, tout sera aménagé pour l’accueil.
 * Vous pouvez demander une permanence après vo études.
