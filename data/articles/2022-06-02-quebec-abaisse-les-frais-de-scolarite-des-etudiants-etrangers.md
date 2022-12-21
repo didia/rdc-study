@@ -21,6 +21,8 @@ Ce programme tel que lancé deviendra effectif à partir de la session d’autom
 
 Le gouvernement québécois met un accent particulier sur les secteurs où l’on observe un manque criant de main-d’œuvre comme les technologies de l’information, le génie, la santé et les services sociaux, et le domaine de l’éducation, incluant la formation d’éducatrices à la petite enfance.
 
+Vous trouverez la liste des établissements québécois concernés par la baisse des prix sur [notre site web](https://www.rdcetudes.com/articles/2022-10-05-choisissez-lune-de-ces-universites-canadiennes-pour-beneficier-de-la-baisse-des-prix).
+
 **3. COMBIEN COÛTENT LES DÉMARCHES**
 
 En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](https://www.rdcetudes.com/accompagnement), vous devez prévoir entre **2230 USD** et **2350 USD** pour toutes vos démarches. Ces frais se présentent comme suit:
