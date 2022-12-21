@@ -17,6 +17,8 @@ Pour plus d'informations sur les conditions d'admissibilité a la baisse des pri
 
 **Il est important de savoir que cette baisse des prix ne concerne que les universités qui se trouvent dans la Région Québécoise c'est-à-dire en dehors de la ville de Montréal.** 
 
+## Critères d'admissibilité
+
 Voici une liste non exhaustive des établissements Québécois :
 
 1. [Université du Québec à Rimouski (UQAR)](https://www.uqar.ca/)
@@ -45,9 +47,9 @@ l'UQO est un établissement public francophone d’enseignement universitaire et
 
 l'UQAT est présente dans 7 villes et offre [des formations dans différents domaines](https://www.uqat.ca/etudes/) qui font de l'établissement un lieu d’enseignement et de recherche à dimension humaine qui se distingue par son modèle unique de développement.
 
-7. [Université Bishop's](https://www.ubishops.ca/fr/)
+7. [](https://www.ubishops.ca/fr/)[Université Laval](https://www.ulaval.ca/)
 
-l'Université Bishop’s offre aux étudiants des expériences et occasions d’apprentissage uniques. Les poussant à élargir leurs horizons en les préparant pour affronter la complexité, la diversité et le changement. 
+l'Université Laval occupe la 36ème position au Ranking mondial 2022 selon le [classement de *Times Higher Education*](https://www.timeshighereducation.com/rankings/impact/2022/overall#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/undefined)*.* Par sa qualité d'enseignement, elle est parmi les universités les plus convoitées du Canada par les étudiants internationaux.  
 
 NB: Il n' y a encore aucune information officielle de la part de l'immigration Québécoise sur l'effectivité de la baisse de prix en date du 20.10.2022. Pour plus d'informations, vous devez entrer en contact avec l'université de votre choix. 
 
