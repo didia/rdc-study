@@ -57,6 +57,6 @@ l'UQAT est présente dans 7 villes et offre [des formations dans différents dom
 
 l'Université Laval occupe la 36ème position au Ranking mondial 2022 selon le [classement de *Times Higher Education*](https://www.timeshighereducation.com/rankings/impact/2022/overall#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/undefined)*.* Par sa qualité d'enseignement, elle est parmi les universités les plus convoitées du Canada par les étudiants internationaux.  
 
-NB: Il n' y a encore aucune information officielle de la part de l'immigration Québécoise sur l'effectivité de la baisse de prix en date du 20.10.2022. Pour plus d'informations, vous devez entrer en contact avec l'université de votre choix. 
+NB: Cette liste ne reprend que les universités, il y aussi des collèges publiques et privées qui ont adhérés a la baisse des prix. Vous trouverez la liste complète des institutions sur [le site web du gouvernement québécois](https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/exemption-droits-scolarite-supplementaires-selon-programme-region#:~:text=Gr%C3%A2ce%20%C3%A0%20cette%20exemption%2C%20les,la%20session%20d'automne%202023).
 
 Vous souhaitez postuler pour l'un de ces établissements ci-haut, mais ne savez pas comment vous y prendre ? vous pouvez [solliciter l'assistance d'un mentor RDC ETUDES](https://www.rdcetudes.com/accompagnement).
