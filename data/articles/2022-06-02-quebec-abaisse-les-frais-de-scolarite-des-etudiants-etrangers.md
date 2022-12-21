@@ -12,7 +12,7 @@ Ce programme tel que lancé deviendra effectif à partir de la session d’autom
 
 **1. AVANTAGES**
 
-* Les  frais de scolarité qui coûtaient entre 17 000 à 24 000$, réduit à zéro pour le niveau collégial (pour les études pré-universitaires) à **3000$** (pour les études universitaires).
+* Les  frais de scolarité qui coûtaient entre 17 000 à 24 000$, réduit à **zéro** pour le niveau collégial (pour les études pré-universitaires) à **3000$** (pour les études universitaires).
 * Une facilité pour décrocher un emploi
 * Le logement des étudiants est pris en compte, tout sera aménagé pour l’accueil.
 * Vous pouvez demander une permanence après vo études.
@@ -20,6 +20,8 @@ Ce programme tel que lancé deviendra effectif à partir de la session d’autom
 **2. LES PROGRAMMES**
 
 Le gouvernement québécois met un accent particulier sur les secteurs où l’on observe un manque criant de main-d’œuvre comme les technologies de l’information, le génie, la santé et les services sociaux, et le domaine de l’éducation, incluant la formation d’éducatrices à la petite enfance.
+
+Vous trouverez la liste des établissements québécois concernés par la baisse des prix sur [notre site web](https://www.rdcetudes.com/articles/2022-10-05-choisissez-lune-de-ces-universites-canadiennes-pour-beneficier-de-la-baisse-des-prix).
 
 **3. COMBIEN COÛTENT LES DÉMARCHES**
 
