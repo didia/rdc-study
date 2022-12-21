@@ -19,6 +19,12 @@ Pour plus d'informations sur les conditions d'admissibilité a la baisse des pri
 
 ## Critères d'admissibilité
 
+Pour être admissible a la baisse des prix, vous devez :
+
+* Etre une étudiante ou un étudiant international inscrit dans un établissement d’enseignement admissible;
+* Etre inscrite ou inscrit à temps plein dans un programme d’études en français déterminé par l’établissement d’enseignement et lié à l’un des domaines identifiés comme prioritaires par le gouvernement du Québec;
+* Vos lieux d’apprentissage (Campus) et de résidence doivent se trouver au Québec et être situés à l’extérieur du territoire de la Communauté métropolitaine de Montréal Cet hyperlien s'ouvrira dans une nouvelle fenêtre. durant vos études.
+
 Voici une liste non exhaustive des établissements Québécois :
 
 1. [Université du Québec à Rimouski (UQAR)](https://www.uqar.ca/)
