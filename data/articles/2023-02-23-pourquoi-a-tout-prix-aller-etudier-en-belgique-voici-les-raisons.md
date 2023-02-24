@@ -23,13 +23,9 @@ Située au cœur de l’Europe avec Bruxelles comme capitale, la Belgique est un
 
 **C’est la dernière et peut-être la plus importante des raisons d’aller étudier en Belgique. Cela vous ouvrira la porte à de nombreuses opportunités. Vous pouvez vous inscrire comme étudiant régulier ou faire partie d’un système d’échange universitaire. La Belgique offre également différents types d’établissements ou universités entre autres : L'université de Mons, L'université de Namur, L'université de Louvain pour ne citer que celles-là. nombreux prestigieux établissements**
 
-Voici à quoi ressemble un auditoire Belge.
-
 En Belgique, vous vous sentirez en sécurité et bien pris en charge. Vous pouvez déjà en voir le côté positif : l’assurance et la sécurité vous offrira une expérience inoubliable en Belgique et augmenteront vos chances de réussite dans vos études. Et voici une autre opportunité qu’offre la belgique a ne pas sous-estimé !
 
 Des étudiants étrangers qui veulent poursuivre leurs études supérieures en Belgique et qui obtiennent un bachelier ou un master peuvent travailler pour n’importe quelle entreprise belge. Les étudiants étrangers qui rentrent dans leur pays d’origine n’auront aucun mal à trouver du travail en raison de la qualité de l’enseignement supérieur belge, mondialement reconnu. Après l’obtention de leur diplôme de master, les étudiants étrangers peuvent également, comme les étudiants belges, continuer leurs études et passer des concours, ou encore être admis dans un programme de recherche pour y décrocher un doctorat après défense d’une thèse devant un jury.
-
-  
 
 Il est aussi important de fournir la preuve que vous avez suffisamment de ressources financières pour faire vos études en Belgique. Par exemple, vous pouvez ajouter les documents relatifs à un prêt étudiant ou à une bourse d’études pour couvrir vos frais de subsistance, votre assurance maladie et un billet retour vers votre pays d’origine..
 
@@ -38,15 +34,5 @@ En définitive , étudier en Belgique reste à la portée de tout étudiant quel
 Beaucoup hésitent par information et manque d'accompagnement, trouvez vous un accompagnateur qui vous aidera dans toutes les démarches possibles pour vos études dans ce beau pays.    
 
 Si toutes ces raisons vous ont convaincu, n'hésitez pas à vous lancer, les études en belgique ne sont plus un rêve et elles sont à votre portée ! 
-
-
-
-
-
-
-
-
-
-
 
 ### Les possibilités de travail après ses études dans le pays !
