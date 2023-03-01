@@ -86,7 +86,7 @@
     "sass-loader": "^10.1.1",
     "sass-resources-loader": "^2.2.5",
     "sharethis-reactjs": "^1.6.0",
-    "use-query-params": "^1.2.3",
+    "use-query-params": "^2.2.0",
     "yup": "^0.32.11"
   },
   "devDependencies": {
