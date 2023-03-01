@@ -101,7 +101,7 @@
     "eslint-plugin-jest": "^26.7.0",
     "eslint-plugin-mirego": "1.0.0",
     "eslint-plugin-prettier": "^3.4.1",
-    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react": "^7.32.2",
     "husky": "^8.0.1",
     "jest": "^29.2.2",
     "lint-staged": "^13.0.3",
