@@ -1,6 +1,6 @@
 ---
 draft: true
-title: "Pourquoi à tout prix aller étudier en Belgique ? voici les raisons. "
+title: "Pourquoi à tout prix faire vos études en Belgique ? voici les raisons. "
 excerpt: Nous p résentons l’avantage  du choix des études en Belgique.Nous p
   résentons l’avantage  du choix des études en Belgique.Nous p résentons
   l’avantage  du choix des études en Belgique.Nous p résentons l’avantage  du
