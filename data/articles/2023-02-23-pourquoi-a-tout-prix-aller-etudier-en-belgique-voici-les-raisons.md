@@ -35,4 +35,14 @@ Beaucoup hésitent par information et manque d'accompagnement, trouvez vous un a
 
 Si toutes ces raisons vous ont convaincu, n'hésitez pas à vous lancer, les études en belgique ne sont plus un rêve et elles sont à votre portée ! 
 
-### Les possibilités de travail après ses études dans le pays !
+### Les opportunites  de travail après ses études 
+
+Des étudiants étrangers qui veulent poursuivre leurs études supérieures en Belgique et qui obtiennent un bachelier ou un master peuvent travailler pour n’importe quelle entreprise belge. Les étudiants étrangers qui rentrent dans leur pays d’origine n’auront aucun mal à trouver du travail en raison de la qualité de l’enseignement supérieur belge, mondialement reconnu. Après l’obtention de leur diplôme de master, les étudiants étrangers peuvent également, comme les étudiants belges, continuer leurs études et passer des concours, ou encore être admis dans un programme de recherche pour y décrocher un doctorat après défense d’une thèse devant un jury.
+
+Il est aussi important de fournir la preuve que vous avez suffisamment de ressources financières pour faire vos études en Belgique. Par exemple, vous pouvez ajouter les documents relatifs à un prêt étudiant ou à une bourse d’études pour couvrir vos frais de subsistance, votre assurance maladie et un billet retour vers votre pays d’origine..
+
+En définitive , étudier en Belgique reste à la portée de tout étudiant quel que soit son niveau d’éducation ou son origine . De plus, la diversité de langues, de religions et de connaissances dans ce pays en font une destination de choix pour les étudiants du monde entier. 
+
+Beaucoup hésitent par information et manque d'accompagnement, trouvez vous un accompagnateur qui vous aidera dans toutes les démarches possibles pour vos études dans ce beau pays.    
+
+Si toutes ces raisons vous ont convaincu, n'hésitez pas à vous lancer, les études en belgique ne sont plus un rêve et elles sont à votre portée !
