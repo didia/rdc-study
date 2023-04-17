@@ -6,7 +6,7 @@ excerpt: Le désir de tout étudiant nouvellement formé est de travailler dans 
 thumbnail: /images/uploads/canadian-flag-gad05831e0_1920.jpg
 date: 2023-04-17T10:42:22.882Z
 ---
-En 5 ans d’orientation académique et professionnelle, le choix de nos candidats se base sur les coûts des frais, la durée des démarches mais surtout la possibilité de trouver un statut permanent dans le pays de destination.
+En 5 ans d’orientation académique et professionnelle, nous avons remarqué que le choix de nos candidats se base sur les coûts des frais, la durée des démarches mais surtout la possibilité de trouver un statut permanent dans le pays de destination.
 
 Qu’en est-il du Canada? Qui aujourd’hui est l’un des pays les plus convoités  par les étudiants et travailleurs internationaux.
 
