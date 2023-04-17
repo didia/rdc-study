@@ -12,15 +12,15 @@ Qu’en est-il du Canada? Qui aujourd’hui est l’un des pays les plus convoit
 
 Vous pouvez rester sur le sol canadien après vos études, cependant vous devez avoir un projet bien défini. Après votre diplôme, vous devez solliciter un permis de travail Post Diplôme qui vous donnera accès à une résidence permanente au Canada.
 
-Permis de travail Post Diplômes (PTPD) : 
+**Permis de travail Post Diplômes (PTPD) :** 
 
 Après vos études dans [un établissement reconnu au Canada](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/etudier-canada/permis-etudes/preparer/liste-etablissements-enseignement-designes.html), vous pouvez solliciter un permis de travail temporaire. Cependant la durée de ce permis de travail dépend de la durée de vos études. Néanmoins vous n’avez pas droit à un permis de travail Post Diplôme si vos études ont durée moins de 8 mois. Plus d'informations sur le PTPD, veuillez consulter [le site web de l’immigration canadienne](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/etudier-canada/travail/apres-obtention-diplome/au-sujet.html).
 
-Qui peut présenter une demande du PTPD?
+**Qui peut présenter une demande du PTPD?**
 
 Toute personne ayant effectué ses études supérieures dans un établissement canadien physique ou à distance (pendant la COVID).
 
-Comment présenter sa demande du PTPD?
+**Comment présenter sa demande du PTPD?**
 
 Après l’obtention de votre diplôme universitaire, vous avez jusqu'à 180 jours pour présenter votre demande de Permis de Travail. La demande doit être constituée de : 
 
