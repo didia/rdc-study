@@ -30,7 +30,7 @@ Après l’obtention de votre diplôme universitaire, vous avez jusqu'à 180 jou
 
 Le délai de traitement du PTPD prend 144 jours pour une demande en ligne et 15 jours pour une demande sur Papier.
 
-NB : N’attendez pas d'épuiser le délai de 180 jours pour faire votre demande cela pourrait entraîner une irrégularité.
+**NB : N’attendez pas d'épuiser le délai de 180 jours pour faire votre demande cela pourrait entraîner une irrégularité.**
 
 Si cela arrive, vous avez jusqu'à 90 jours pour rétablir votre statut étudiant avant de changer votre statut. Pour plus d’informations, [veuillez consulter le site de l’immirgation](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/etudier-canada/travail/apres-obtention-diplome/presenter-demande.html).
 
