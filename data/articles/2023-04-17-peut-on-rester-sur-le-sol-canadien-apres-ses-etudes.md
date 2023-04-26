@@ -12,15 +12,15 @@ Qu’en est-il du Canada? Qui aujourd’hui est l’un des pays les plus convoit
 
 Vous pouvez rester sur le sol canadien après vos études, cependant vous devez avoir un projet bien défini. Après votre diplôme, vous devez solliciter un permis de travail Post Diplôme qui vous donnera accès à une résidence permanente au Canada.
 
-**Permis de travail Post Diplômes (PTPD) :** 
+### **Permis de travail Post Diplômes (PTPD) :** 
 
 Après vos études dans [un établissement reconnu au Canada](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/etudier-canada/permis-etudes/preparer/liste-etablissements-enseignement-designes.html), vous pouvez solliciter un permis de travail temporaire. Cependant la durée de ce permis de travail dépend de la durée de vos études. Néanmoins vous n’avez pas droit à un permis de travail Post Diplôme si vos études ont durée moins de 8 mois. Plus d'informations sur le PTPD, veuillez consulter [le site web de l’immigration canadienne](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/etudier-canada/travail/apres-obtention-diplome/au-sujet.html).
 
-**Qui peut présenter une demande du PTPD?**
+### **Qui peut présenter une demande du PTPD?**
 
 Toute personne ayant effectué ses études supérieures dans un établissement canadien physique ou à distance (pendant la COVID).
 
-**Comment présenter sa demande du PTPD?**
+### **Comment présenter sa demande du PTPD?**
 
 Après l’obtention de votre diplôme universitaire, vous avez jusqu'à 180 jours pour présenter votre demande de Permis de Travail. La demande doit être constituée de : 
 
@@ -34,7 +34,7 @@ Le délai de traitement du PTPD prend 144 jours pour une demande en ligne et 15 
 
 Si cela arrive, vous avez jusqu'à 90 jours pour rétablir votre statut étudiant avant de changer votre statut. Pour plus d’informations, [veuillez consulter le site de l’immirgation](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/etudier-canada/travail/apres-obtention-diplome/presenter-demande.html).
 
-##### Mes relevés ne sont pas encore prêts dans le délai, que dois-je faire ?
+### Mes relevés ne sont pas encore prêts dans le délai, que dois-je faire ?
 
 L’université peut commettre un retard pour vous délivrer vos relevés dans le délai établi par l’immigration.  Dans ce cas, vous pouvez : 
 
@@ -46,10 +46,10 @@ Vous pouvez demander une fiche de visiteur qui est différent d’un visa qui vo
 
 En cas d’expiration de votre statut d'étudiant avant la demande du permis de travail, vous pouvez quitter le sol canadien, aller dans un pays limitrophe puis revenir avec une autorisation d'entrée valide (rassurez-vous d’avoir ce document avant votre sortie). 
 
-##### Mon passeport a expiré avant le délai, que dois-je faire ?
+### Mon passeport a expiré avant le délai, que dois-je faire ?
 
 Avant la demande de votre PTPD assurez-vous que vous ayez un passeport valide pendant le nombre d'années de votre permis de travail.Au cas contraire, vous risquez d’avoir un PTPD d’une validité de moins de temps.
 
-##### Mon permis de travail expiré, que dois-je faire?
+### Mon permis de travail expiré, que dois-je faire?
 
 Vous pourriez être admissible à un permis de travail ouvert d’une durée maximale de 18 mois selon les nouvelles actualisations de l’immigration canadienne. Pour plus d’informations sur le permis de travail ouvert, veuillez consulter [le site web de l’immigration](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/travailler-canada/permis/detenteur-permis-travail-postdiplome.html).
