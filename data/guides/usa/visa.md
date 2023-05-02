@@ -68,7 +68,7 @@ Ces frais se présentent comme suit:
 * **200 USD** pour les frais de SEVIS.
 * **160 USD** pour les frais d’interview.
 * **150 USD** pour les frais de VISA.
-* **400 USD** pour les frais d’assistance RDC-Etudes.
+* **600 USD** pour les frais d’assistance RDC-Etudes.
 
 **NB**:
 
