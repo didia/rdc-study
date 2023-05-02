@@ -47,13 +47,13 @@ Voici donc les différentes étapes générales à suivre pour vos démarches de
 
 ## Combien ça coute?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1070 USD et 1300 USD** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1370 USD et 1 600 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
 * **40 USD à 100 USD** pour les documents administratifs à obtenir de votre gouvernement.
 * **230 USD à 400 USD** pour le frais de redevance.
 * **200 USD** pour l’introduction de la demande à l’Ambassade.
 * **300 USD** pour les frais des examens médicaux.
-* **400 USD** pour les frais d’assistance RDC-Etudes.
+* **600 USD** pour les frais d’assistance RDC-Etudes.
 
 **NB**: Ces prix ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement belge. Veuillez toujours vous fier à leur site web pour les montants actualisés.
