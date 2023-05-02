@@ -1,16 +1,20 @@
 ---
 draft: false
-slug: 'france'
-date: '2020-04-12'
-title: 'Étudier en France'
-excerpt: 'La France est reconnue pour la qualité et la diversité des études proposées par ses écoles et universités et pour sa richesse culturelle. Etudier en France vous permettra de découvrir un pays très varié au patrimoine riche et multi-culturel.'
-thumbnail: 'images/france.jpg'
-flag: 'images/flag.png'
-name: 'France'
-topic: 'country'
-related: ['france/admission', 'france/visa']
+title: Étudier en France
+excerpt: La France est reconnue pour la qualité et la diversité des études
+  proposées par ses écoles et universités et pour sa richesse culturelle.
+  Etudier en France vous permettra de découvrir un pays très varié au patrimoine
+  riche et multi-culturel.
+slug: france
+flag: images/flag.png
+topic: country
+related:
+  - france/admission
+  - france/visa
+name: France
+thumbnail: images/france.jpg
+date: 2020-04-12
 ---
-
 ## Que faut-il pour étudier en France ?
 
 Pour étudier en France, il faut au préalable avoir obtenu une admission dans un établissement d’études supérieures français.
@@ -49,9 +53,9 @@ Toutefois, vous pouvez obtenir une liste complète des bourses offertes par la F
 En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir **700 USD + 50 euros** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-- **100 USD** pour les frais de dossier.
-- **50 EUROS** pour les frais de visa.
-- **599.98 USD** pour les frais d’assistance RDC Etudes. (**400 USD** pour chaque service: Admission et Visa)
+* **100 USD** pour les frais de dossier.
+* **50 EUROS** pour les frais de visa.
+* **1 000 USD** pour les frais d'assistance RDC Etudes. (**400 USD** pour l'admission et **600 USD** pour le Visa).
 
 **NB**: Ces montants sont basés sur les informations que nous avons consultés au moment de la rédaction de ce guide.
 Pour avoir les montants à jour, nous vous conseillons de vous informer auprès de votre espace Campus France ou un consulat de France dans votre pays.
