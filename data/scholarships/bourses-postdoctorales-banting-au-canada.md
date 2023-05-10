@@ -38,13 +38,13 @@ targetCountries:
 
 Une bourse de 70 000 dollars canadiens par année pour une durée de deux ans non renouvelable dans les domaines suivants : 
 
-\- Recherche en santé
-- Sciences humaines
-- Sciences naturelles ou génie  
+* Recherche en santé
+* Sciences humaines
+* Sciences naturelles ou génie  
 
 ## Quels sont les critères de la bourse ?
 
-* Vous devez avoir obtenu ou vous obtiendrez votre diplôme de doctorat entre le 15 septembre 2017 et le 30 septembre 2021,
+* Vous devez avoir obtenu ou vous obtiendrez votre diplôme de doctorat entre le 15 septembre 2020 et le 30 septembre 2024
 * Votre programme de recherche vise soit les domaines de la santé, soit les sciences naturelles et/ou ingénierie ou soit les sciences sociales et humaines.
 * Vous devez avoir déjà été sélectionné par un établissement d’enseignement qui vous accueillera pour votre postdoc.
 
