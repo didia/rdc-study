@@ -48,6 +48,8 @@ Une bourse de 70 000 dollars canadiens par année pour une durée de deux ans 
 * Votre programme de recherche vise soit les domaines de la santé, soit les sciences naturelles et/ou ingénierie ou soit les sciences sociales et humaines.
 * Vous devez avoir déjà été sélectionné par un établissement d’enseignement qui vous accueillera pour votre postdoc.
 
+Les candidats qui n'ont pas rempli toutes les exigences relatives à leur diplôme au moment de la présentation de la demande devront fournir une preuve du respect de ces exigences avant le 15 octobre 2024.
+
 Pour en savoir plus sur les critères d’admissibilité, consultez <a href="http://banting.fellowships-bourses.gc.ca/fr/app-dem_elig-adm.html" target="_blank" rel="nofollow noopener">la page de la bourse à ce sujet</a>.
 
 **En postulant pour cette bourse, votre candidature sera évaluée selon les critères suivants:**
@@ -56,7 +58,7 @@ Pour en savoir plus sur les critères d’admissibilité, consultez <a href="htt
 2. La qualité du programme de recherche que vous allez proposer.
 3. L’engagement de l’établissement d’enseignement à vous soutenir ainsi que la correspondance entre votre programme de recherche ainsi que les priorités de stratégiques du dit établissement d’enseignement.
 
-Pour en savoir plus sur les critères de sélection de cette bourse, consultez <a href="http://banting.fellowships-bourses.gc.ca/fr/rev-eval_overview-apercu.html" target="_blank" rel="nofollow noopener">la page de la bourse à ce sujet</a>.
+Pour en savoir plus sur les critères de sélection de cette bourse, consultez [la page de la bourse à ce sujet](https://banting.fellowships-bourses.gc.ca/fr/app-dem_elig-adm.html).
 
 ## Comment postuler ?
 
