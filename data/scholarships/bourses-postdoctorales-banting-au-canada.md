@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses de recherche postdoctorales Banting au Canada
-deadline: 2021-09-22T03:59:44.449Z
+deadline: 2023-09-20T03:59:44.449Z
 excerpt: "Chaque année le gouvernement canadien offre 70 bourses d’une valeur de
   70.000 dollars canadiens par année pour une durée de 2 ans non renouvelable
   aux étudiants postdoctoraux afin qu’ils contribuent à l’essor économique,
@@ -36,7 +36,11 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-* Une bourse de 70 000 dollars canadiens par année pour une durée de deux ans non renouvelable.
+Une bourse de 70 000 dollars canadiens par année pour une durée de deux ans non renouvelable dans les domaines suivants : 
+
+\- Recherche en santé
+- Sciences humaines
+- Sciences naturelles ou génie  
 
 ## Quels sont les critères de la bourse ?
 
