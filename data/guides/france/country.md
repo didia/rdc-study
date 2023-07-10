@@ -50,7 +50,7 @@ Toutefois, vous pouvez obtenir une liste complète des bourses offertes par la F
 
 ## Combien coûtent les démarches ?
 
-En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir **700 USD + 50 euros** pour toutes vos démarches.
+En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir **1 000 USD + 50 euros** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
 * **100 USD** pour les frais de dossier.
