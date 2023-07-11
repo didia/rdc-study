@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Bourse d'excellence pour une formation professionnelle au Québec. "
-deadline: 2022-08-05T13:37:56.252Z
+deadline: 2023-07-28T13:37:56.252Z
 excerpt: "Le ministère de l'Education au Québec par le biais de Etude
   internationale offre un programme des bourses d'excellence et d'exemption des
   frais de scolarité pour tout étudiant international qui souhaite faire une
