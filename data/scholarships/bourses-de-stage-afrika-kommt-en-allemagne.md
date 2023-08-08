@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Bourses des stages AFRIKA KOMMT! "
-deadline: 2021-04-02T13:54:30.009Z
+deadline: 2023-08-31T13:54:30.009Z
 excerpt: Le programme de bourses s’adresse à de jeunes professionnels hautement
   qualifiés et à des cadres débutants originaires d’Afrique subsaharienne, dotés
   de plusieurs années d’expérience professionnelle, de fortes qualités de
@@ -10,7 +10,7 @@ tags:
   - bourses de stage;travailler en allemagne;allemagne;bourses afrika kommt
 thumbnail: /images/uploads/gern.png
 thumbnailCredits: ""
-startDate: 2019-11-25T13:54:30.032Z
+startDate: ""
 levels:
   - research
   - internship
