@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses d’excellence pour chercheurs et artistes étrangers en Suisse
-deadline: 2022-12-15T04:59:54.743Z
+deadline: 2023-12-15T04:59:54.743Z
 excerpt: La Confédération suisse offre chaque année des bourses d’excellence
   dans le domaine de la recherche et des arts. Ces bourses gouvernementales
   encouragent les échanges internationaux et promeuvent la collaboration entre
@@ -10,7 +10,7 @@ tags:
   - Bourses d’études gratuites;Bourses d’études suisse; Bourses d’études pour
     congolais; Bourses d’études;Suisse
 thumbnail: /images/uploads/switzerland-students.jpg
-startDate: 2022-08-02T13:18:13.054Z
+startDate: 2023-08-02T13:18:13.054Z
 levels:
   - research
   - postgraduate
