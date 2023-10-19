@@ -1,255 +1,246 @@
 backend:
   name: git-gateway
-  accept_roles:
-    - admin
-    - editor
-  branch: master
-  squash_merges: true
-local_backend: true
-slug:
-  encoding: ascii
-  clean_accents: true
-media_folder: static/images/uploads
-public_folder: /images/uploads
-publish_mode: editorial_workflow
-collections:
-  - name: guide
-    label: Guide
-    folder: data/guides
-    create: false
-    nested:
-      depth: 100
-      summary: '{{title}}'
-    fields:
-      - label: Brouillon
-        name: draft
-        widget: boolean
-        default: true
-      - label: Titre
-        name: title
-        widget: string
-      - label: Introduction
-        name: excerpt
-        widget: text
-      - label: Contenu
-        name: body
-        widget: markdown
-      - label: Slug
-        name: slug
-        widget: hidden
-      - label: Thumbnail
-        name: thumbnail
-        widget: hidden
-      - label: Flag
-        name: flag
-        widget: hidden
-        required: false
-      - label: Topic
-        name: topic
-        widget: hidden
-      - label: Guides liés
-        name: related
-        widget: hidden
+  branch: main
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
 
-  - name: article
-    label: Article
-    folder: data/articles
+local_backend: true
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/blog"
     create: true
-    sort: date:desc
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Brouillon", name: "draft", widget: "boolean", default: true}
-      - {label: "Titre", name: "title", widget: "string", pattern: ['^.{1,120}.$', "Le titre de l'article doit avoir moins de 120 caractères"]}
-      - {label: "Brève", name: "excerpt", widget: "text", pattern: ['^.{1,1000}.$', "Le resumé de l'article doit avoir moins de 1000 caractères"]}
-      - {label: "Image principale de l’article", name: "thumbnail", widget: "image"}
-      - {label: "Crédits de l’image principale", name: "thumbnailCredits", widget: "text", required: false}
-      - {label: "Contenu", name: "body", widget: "markdown"}
-      - {label: "Mots clés", name: "tags", widget: "list", required: false}
-      - {label: "Date de publication", name: "date", widget: "datetime"}
-      - {label: "Auteur", name: "author", widget: "relation", collection: "authors", search_fields: ["name.*"], value_field: "{{slug}}", display_fields: ["name"], required: false}
-  - label: Bourse d'études
-    name: scholarships
-    folder: data/scholarships
-    create: true
-    sort: date:desc
-    slug: "{{slug}}"
-    fields:
-      - {label: "Brouillon", name: "draft", widget: "boolean", default: true}
-      - {label: "Nom de la bourse", name: "title", widget: "string", pattern: ['^.{1,120}.$', "Le nom de la bourse doit avoir moins de 120 caractères"]}
-      - {label: "Date limite", name: "deadline", widget: "date", required: false}
-      - {label: "Brève", name: "excerpt", widget: "text", pattern: ['^.{1,1000}.$', "Le resumé de la bourse doit avoir moins de 600 caractères"]}
-      - {label: "Contenu", name: "body", widget: "markdown", default: "## En quoi consiste la bourse ?\n## Quels sont les critères de la bourse ?\n## Comment postuler ?\n"}
-      - {label: "Mots clés", name: "tags", widget: "list", required: false}
-      - {label: "Image principale de l’article", name: "thumbnail", widget: "image"}
-      - {label: "Crédits de l’image principale", name: "thumbnailCredits", widget: "text", required: false}
-      - {label: "Date d'ouverture de candidature", name: "startDate", widget: "date", required: false}
-      - label: Cycles visées
-        name: levels
-        widget: select
-        multiple: true
-        default: all
-        options:
-          - label: Doctorat
-            value: postgraduate
-          - label: Formation
-            value: formation
-          - label: Licence
-            value: undergraduate
-          - label: Master
-            value: graduate
-          - label: Recherches
-            value: research
-          - label: Stages
-            value: internship
-          - label: Tous les cycles
-            value: all
-      - label: Pays de destination
-        name: targetCountries
-        widget: select
-        multiple: true
-        options:
-          - label: Afrique
-            value: africa
-          - label: Afrique du Sud
-            value: sa
-          - label: Allemagne
-            value: de
-          - label: Australie
-            value: au
-          - label: Belgique
-            value: be
-          - label: Brésil
-            value: br
-          - label: Burundi
-            value: bi
-          - label: Cameroun
-            value: cm
-          - label: Canada
-            value: ca
-          - label: RCA
-            value: cf
-          - label: Chine
-            value: cn
-          - label: Chypre du Nord
-            value: cytr
-          - label: Congo - Brazza
-            value: cg
-          - label: Corée du sud
-            value: kr
-          - label: Côte d'Ivoire
-            value: ci
-          - label: Égypte
-            value: eg
-          - label: Emirats Arabes Unis
-            value: ae
-          - label: Espagne
-            value: es
-          - label: Etats-Unis
-            value: us
-          - label: France
-            value: fr
-          - label: Ghana
-            value: gh
-          - label: Grèce
-            value: gr
-          - label: Hongrie
-            value: hu
-          - label: Inde
-            value: in
-          - label: Irlande
-            value: ie
-          - label: Israël
-            value: il
-          - label: Japon
-            value: jp
-          - label: Madagascar
-            value: mg
-          - label: Maroc
-            value: ma
-          - label: Maurice
-            value: mu
-          - label: Mauritanie
-            value: mr
-          - label: Nigeria
-            value: ng
-          - label: Portugal
-            value: pt
-          - label: RDC
-            value: cd
-          - label: Roumanie
-            value: ro
-          - label: Royaume-Uni
-            value: gb
-          - label: Rwanda
-            value: rw
-          - label: Sénégal
-            value: sn
-          - label: Singapour
-            value: sg
-          - label: Suède
-            value: se
-          - label: Suisse
-            value: ch
-          - label: Taiwan
-            value: tw
-          - label: Tunisie
-            value: tn
-          - label: Turquie
-            value: tr
-  - label: Forfaits d'accompagnement
-    name: assistancePackages
-    folder: data/assistance-packages
-    slug: "{{slug}}"
-    create: true
-    fields:
-      - {label: "Identifiant", name: "{{slug}}", widget: "string"}
-      - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Description", name: "body", widget: "markdown"}
-      - {label: "Services offerts", name: "services", widget: "list", field: {label: "Service", name: "Service", widget: "relation", collection: "services", value_field: "{{slug}}", search_fields: ["slug", "title"], display_fields: ["title"]}}
-  - label: Services
-    name: services
-    folder: data/services
-    slug: "{{slug}}"
-    create: true
-    fields:
-      - {label: "Identifiant", name: "slug", widget: "string"}
-      - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Prix", name: "price", widget: "number", value_type: "int", default: 0}
-      - {label: "Courte description", name: "excerpt", widget: "text", pattern: ['^.{1,250}.$', "Le resumé de l'article doit avoir moins de 250 caractères"]}
-      - {label: "Titre du choix dans le formulaire d’assistance", name: "assistanceFormServiceChoiceLabel", widget: "string"}
-      - {label: "Titre du message de confirmation de la demande", name: "assistanceFormConfirmationTitle", widget: "string"}
-      - {label: "Premier paragraphe du message de confirmation de la demande", name: "assistanceFormConfirmationFirstParagraph", widget: "text"}
-      - {label: "Second paragraphe du message de confirmation de la demande", name: "assistanceFormConfirmationSecondParagraph", widget: "text", required: false}
-      - {label: "Lien vers la page de demande de service", name: "assistanceRequestLink", widget: "string", required: false}
-      - {label: "Ordre d'apparution dans la page des services", name: "rank", widget: "number", value_type: "int", required: false}
-      - {label: "Contenu", name: "body", widget: "markdown", required: false}
-  - label: Pages
-    name: pages
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "blog-post",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list" }
+
+  - name: "pages"
+    label: "Pages"
     files:
-      - label: Foire aux questions
-        name: faqs
-        file: data/pages/faqs.json
+      - file: "src/pages/index.md"
+        label: "Landing Page"
+        name: "index"
         fields:
-          - name: entries
-            label: Entrées
-            widget: list
-            fields:
-              - {label: "Question", name: "question", widget: "string"}
-              - {label: "Réponse", name: "answer", widget: "markdown"}
-  - label: Auteurs
-    name: authors
-    folder: data/authors
-    slug: "{{slug}}"
-    create: true
-    identifier_field: name
-    fields:
-      - {label: "Profil twitter", name: "twitterHandle", widget: "string", required: false}
-      - {label: "À propos", name: "about", widget: "string", required: true}
-      - {label: "Photo", name: "thumbnail", widget: "image"}
-      - label: "Nom"
-        name: "name"
-        widget: "object"
-        summary: '{{fields.firstName}} {{fields.lastName}}'
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: image }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+          - {
+              label: Mainpitch,
+              name: mainpitch,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+          - { label: Description, name: description, widget: string }
+          - {
+              label: Intro,
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  {
+                    label: Blurbs,
+                    name: blurbs,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Main,
+              name: main,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  {
+                    label: Image1,
+                    name: image1,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                  {
+                    label: Image2,
+                    name: image2,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                  {
+                    label: Image3,
+                    name: image3,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                ],
+            }
+      - file: "src/pages/about/index.md"
+        label: "About"
+        name: "about"
         fields:
-          - {label: "Prénom", name: "firstName", widget: "string", required: true}
-          - {label: "Nom", name: "lastName", widget: "string", required: true}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/products/index.md"
+        label: "Products Page"
+        name: "products"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "product-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: image }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Description, name: description, widget: string }
+          - {
+              label: Intro,
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  {
+                    label: Blurbs,
+                    name: blurbs,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Main,
+              name: main,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  {
+                    label: Image1,
+                    name: image1,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                  {
+                    label: Image2,
+                    name: image2,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                  {
+                    label: Image3,
+                    name: image3,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Testimonials,
+              name: testimonials,
+              widget: list,
+              fields:
+                [
+                  { label: Quote, name: quote, widget: string },
+                  { label: Author, name: author, widget: string },
+                ],
+            }
+          - { label: Full_image, name: full_image, widget: image }
+          - {
+              label: Pricing,
+              name: pricing,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: string },
+                  {
+                    label: Plans,
+                    name: plans,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Plan, name: plan, widget: string },
+                        { label: Price, name: price, widget: string },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: string,
+                        },
+                        { label: Items, name: items, widget: list },
+                      ],
+                  },
+                ],
+            }

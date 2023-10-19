@@ -1,84 +1,22 @@
-/* eslint-disable complexity */
-/* eslint-env node */
+const _ = require('lodash')
+const path = require('path')
+const { createFilePath } = require('gatsby-source-filesystem')
 
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-const path = require('path');
-
-const CONTENT_TYPE = {
-  ARTICLE: 'article',
-  GUIDE: 'guide',
-  SCHOLARSHIP: 'scholarship',
-  SERVICE: 'service'
-};
-
-const showDraft = process.env.SHOW_DRAFT;
-
-exports.onCreateNode = ({node, actions, getNode}) => {
-  const {createNodeField} = actions;
-
-  if (node.internal.type === 'MarkdownRemark') {
-    const fileNode = getNode(node.parent);
-    createNodeField({node, name: 'draft', value: showDraft ? false : Boolean(node.frontmatter.draft)});
-
-    if (fileNode.dir.indexOf('guides') !== -1 && node.frontmatter && node.frontmatter.slug) {
-      createNodeField({node, name: 'path', value: `/guides/${node.frontmatter.slug}`});
-      createNodeField({node, name: 'type', value: CONTENT_TYPE.GUIDE});
-    } else if (fileNode.dir.indexOf('articles') !== -1) {
-      createNodeField({node, name: 'path', value: `/articles/${fileNode.name}`});
-      createNodeField({node, name: 'type', value: CONTENT_TYPE.ARTICLE});
-    } else if (fileNode.dir.indexOf('scholarships') !== -1) {
-      createNodeField({node, name: 'path', value: `/bourses/${fileNode.name}`});
-      createNodeField({node, name: 'type', value: CONTENT_TYPE.SCHOLARSHIP});
-
-      const deadlineTimestamp = node.frontmatter.deadline
-        ? new Date(node.frontmatter.deadline).getTime()
-        : Number.MAX_SAFE_INTEGER;
-
-      createNodeField({node, name: 'timestamp', value: deadlineTimestamp});
-    } else if (fileNode.dir.indexOf('services') !== -1) {
-      createNodeField({node, name: 'type', value: 'service'});
-    } else if (fileNode.dir.indexOf('assistance-packages') !== -1) {
-      createNodeField({node, name: 'type', value: 'assistance-package'});
-    }
-  }
-};
-
-exports.onCreatePage = ({page, actions}) => {
-  const {createPage, deletePage} = actions;
-
-  deletePage(page);
-  createPage({
-    ...page,
-    context: {
-      ...page.context,
-      currentTimestamp: Date.now()
-    }
-  });
-};
-
-exports.createPages = ({actions, graphql}) => {
-  const {createPage} = actions;
-
-  const guideMapping = {
-    [CONTENT_TYPE.ARTICLE]: path.resolve('src/templates/articleTemplate.js'),
-    [CONTENT_TYPE.GUIDE]: path.resolve('src/templates/guideTemplate.js'),
-    [CONTENT_TYPE.SCHOLARSHIP]: path.resolve('src/templates/scholarshipTemplate.js')
-  };
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
 
   return graphql(`
     {
-      allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+      allMarkdownRemark(limit: 1000) {
         edges {
           node {
+            id
             fields {
-              draft
-              path
-              type
+              slug
+            }
+            frontmatter {
+              tags
+              templateKey
             }
           }
         }
@@ -86,21 +24,62 @@ exports.createPages = ({actions, graphql}) => {
     }
   `).then((result) => {
     if (result.errors) {
-      return Promise.reject(result.errors);
+      result.errors.forEach((e) => console.error(e.toString()))
+      return Promise.reject(result.errors)
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({node}) => {
-      if (node.draft) return;
-      if (!guideMapping[node.fields.type]) return;
+    const posts = result.data.allMarkdownRemark.edges
+
+    posts.forEach((edge) => {
+      const id = edge.node.id
+      createPage({
+        path: edge.node.fields.slug,
+        tags: edge.node.frontmatter.tags,
+        component: path.resolve(
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+        ),
+        // additional data can be passed via context
+        context: {
+          id,
+        },
+      })
+    })
+
+    // Tag pages:
+    let tags = []
+    // Iterate through each post, putting all found tags into `tags`
+    posts.forEach((edge) => {
+      if (_.get(edge, `node.frontmatter.tags`)) {
+        tags = tags.concat(edge.node.frontmatter.tags)
+      }
+    })
+    // Eliminate duplicate tags
+    tags = _.uniq(tags)
+
+    // Make tag pages
+    tags.forEach((tag) => {
+      const tagPath = `/tags/${_.kebabCase(tag)}/`
 
       createPage({
-        path: node.fields.path,
-        component: guideMapping[node.fields.type],
+        path: tagPath,
+        component: path.resolve(`src/templates/tags.js`),
         context: {
-          currentTimestamp: Date.now(),
-          type: node.fields.type
-        }
-      });
-    });
-  });
-};
+          tag,
+        },
+      })
+    })
+  })
+}
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+}
