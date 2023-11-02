@@ -1,0 +1,644 @@
+.container {
+    width: 100%;
+}
+
+.container__md {
+    width: 90%;
+    margin: auto;
+}
+
+.row__center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+
+    @media only screen and (max-width: 768px) {
+        margin: 2rem 0;
+
+        .typography3 {
+            text-align: center;
+            margin: 1rem;
+            font-size: 26px;
+        }
+
+        .typography6 {
+            font-size: 16px;
+            margin: 0;
+            width: 100%;
+            line-height: 1.5rem !important;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: initial;
+        }
+    }
+}
+
+.typography3 {
+    font-family: "GothamMedium";
+    font-size: 30px;
+    line-height: 3rem !important;
+}
+
+.typography6 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.6rem !important;
+}
+
+.sitename {
+    margin-left: 0.3rem;
+    font-weight: 800;
+    color: #e9ab3e;
+    text-transform: uppercase;
+}
+
+/* COURSE SECTION */
+
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+.overflow_auto {
+    overflow: auto;
+}
+
+.courselist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+
+    column-gap: 1rem;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+/*firstsection SECTION*/
+.firstsection__section {
+    display: flex;
+    font-family: "GothamMedium";
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 4rem 0;
+    background-color: #fff;
+
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 1rem;
+    }
+}
+
+.modalContentText {
+    text-align: center;
+    line-height: 1.1rem !important;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.modalContentTextWrapper {
+    padding-top: 6%;
+}
+
+.overlayTitle {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+    .modalContentText {
+        font-size: 11px;
+        line-height: 0.9rem !important;
+    }
+
+    .overlayTitle {
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modalContentTextWrapper {
+        padding-top: 0;
+    }
+}
+
+.customRoundedBtn {
+    //padding: 0.8rem 1rem;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #e9ab3e;
+    color: #fff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    border: 2px solid #fff;
+    font-weight: 700;
+    width: fit-content;
+    border-radius: 3em;
+    display: inline-block;
+    line-height: 1;
+    box-shadow: 0 0 0.3rem 0 rgb(0 0 0 / 35%);
+    height: 48px;
+    margin-bottom: 30px;
+}
+
+.customRoundedBtn:hover {
+    //padding: 0.8rem 1rem;
+    background-color: #fff;
+    color: #e9ab3e;
+    border: 2px solid #e9ab3e;
+    cursor: pointer;
+}
+
+.mac_btnTxt {
+    margin-top: 2%;
+}
+
+.modal figure {
+    height: 280px;
+}
+
+.modalImgContainer {
+    height: 100%;
+    width: 100%;
+    background-color: #046059;
+}
+
+.modalContentBloc {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(236, 238, 242);
+    padding-top: -20%;
+}
+
+.about__container_mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .about__container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: none;
+    }
+
+    .about__container_mobile {
+        width: 90%;
+        margin: 0 auto;
+        padding: 4rem 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+
+    .modal {
+        width: 300px;
+        min-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .modal figure {
+        height: 0px;
+    }
+
+    .modal figure img {
+        height: 100px;
+        display: none;
+    }
+
+    .modalImgContainer {
+        height: 202px;
+        width: 30%;
+        margin-top: -43%;
+        margin-left: -14%;
+    }
+
+    .modalContentBloc {
+        width: 80%;
+        float: right;
+        background-color: transparent;
+    }
+
+    .modalContentTextWrapper {
+        margin-top: -180px;
+    }
+
+    .modalParagraphe2,
+    .modalParagraphe3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+
+    .about__container_mobile {
+        width: 90%;
+        margin: 20px auto;
+        padding: 2rem 2rem;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .about__container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 7rem 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+
+    .about__container .courseCard {
+        height: 220px;
+        width: 100%;
+    }
+
+    .longCardText {
+        font-size: 0.7rem !important;
+        margin-top: -18% !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .about__container .courseCard {
+        width: 100%;
+    }
+}
+
+.mobileModalText {
+    line-height: 1.2rem !important;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.parent {
+    width: 100%;
+    position: relative;
+}
+
+.parent>img {
+    height: 100%;
+    width: 100%;
+}
+
+.inner {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.inner>img {
+    height: 100%;
+    width: 100%;
+    opacity: 90%;
+}
+
+
+.contact_content {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+.contact_btn {
+    height: 50px;
+    width: 200px;
+    color: black;
+    background-color: #fbc403;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.8s;
+}
+
+.contact_btn:hover {
+    background-color: #78a6a2;
+    color: white;
+}
+
+.courseCard {
+    height: 240px;
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px 5px rgba(215, 205, 205, 0.3);
+    border-radius: 20px;
+}
+
+.courseCard h5 img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.courseCard p {
+    line-height: 1.2rem !important;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.cardback {
+    transform: rotateY(180deg);
+}
+
+.courseCard .longCardText {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .courseCard {
+        height: 200px;
+        width: 270px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px 2px rgba(215, 205, 205, 0.3);
+        border-radius: 20px;
+    }
+
+    .courseCard .longCardText {
+        font-size: 13px;
+        margin-top: -12%;
+    }
+}
+
+.mobile_courseCard {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile_courseCard {
+        display: block;
+    }
+
+    .mobile_courseCard .courseCard {
+        display: block;
+        box-shadow: 0px 0px 35px 10px rgba(215, 205, 205, 0.3);
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 70%;
+    }
+}
+
+.newsletter {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 33rem;
+        margin-bottom: 1.3rem;
+
+        @media only screen and (max-width: 992px) {
+            width: 100%;
+            margin-top: 35rem;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            width: 100%;
+            margin-top: 35rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            margin-top: 33rem;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 20px;
+        width: 90%;
+        line-height: 1.6rem !important;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 380px) {
+            font-size: 9px;
+        }
+    }
+
+    &__desc {
+        margin-top: 18px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.2rem !important;
+        width: 100%;
+
+        @media only screen and (max-width: 768px) {
+            width: 150%;
+            margin-left: -25%;
+        }
+    }
+
+    &__button:hover {
+        color: #d4d4d4;
+        cursor: pointer;
+    }
+
+    &__field {
+        width: 400px;
+        height: 50px;
+        border-radius: 25px 0px 0px 25px;
+
+        @media only screen and (max-width: 520px) {
+            width: 280px;
+        }
+
+        @media only screen and (max-width: 380px) {
+            width: 200px;
+        }
+    }
+}
+
+.firstsection {
+    &__container {
+        @media only screen and (max-width: 640px) {
+            margin-left: -13rem;
+        }
+
+        @media only screen and (max-width: 440px) {
+            width: 100px;
+            margin-top: 5rem;
+        }
+
+        @media only screen and (min-width: 533px) and (max-width: 640px) {
+            margin-left: -15rem;
+        }
+    }
+
+    &__title {
+        color: white;
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    &__desc {
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+
+        @media only screen and (max-width: 362px) {
+            margin-left: 3.5rem;
+        }
+
+        @media only screen and (max-width: 440px) {
+            margin-left: 3.4rem;
+        }
+    }
+
+    &__form {
+        text-align: start;
+        color: white;
+        display: grid;
+        justify-content: center;
+
+        @media only screen and (max-width: 440px) {
+            margin-left: 2rem;
+        }
+
+        @media only screen and (max-width: 362px) {
+            margin-left: 3.5rem;
+        }
+    }
+
+    &__field {
+        padding-left: 30px;
+        padding-top: 30px;
+        background-color: rgba(255, 255, 255, 0.35);
+        color: #ffffff;
+        border-radius: 20px;
+        height: 148px;
+        width: 418px;
+
+        @media only screen and (max-width: 440px) {
+            width: 350px;
+            height: 90px;
+        }
+
+        @media only screen and (max-width: 362px) {
+            width: 300px;
+        }
+
+        @media only screen and (min-width: 640px) and (max-width: 992px) {
+            width: 350px;
+        }
+    }
+
+    &__email {
+        padding-left: 30px;
+        background-color: rgba(255, 255, 255, 0.35);
+        color: #ffffff;
+        border-radius: 20px;
+        height: 46px;
+        width: 418px;
+
+        @media only screen and (max-width: 440px) {
+            width: 350px;
+            height: 40px;
+        }
+
+        @media only screen and (max-width: 362px) {
+            width: 300px;
+        }
+
+        @media only screen and (min-width: 640px) and (max-width: 992px) {
+            width: 350px;
+        }
+    }
+
+    &__btn {
+        @media only screen and (max-width: 440px) {
+            width: 350px;
+        }
+
+        @media only screen and (max-width: 362px) {
+            width: 300px;
+        }
+
+        @media only screen and (min-width: 640px) and (max-width: 992px) {
+            width: 350px;
+        }
+    }
+
+    &__btn:hover {
+        svg {
+            color: white;
+        }
+    }
+
+    &__btn:focus {
+        svg {
+            color: white;
+        }
+    }
+}
+
+.contactTile {
+    color: #fccc25;
+    font-weight: 800;
+    font-size: 35px;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 854px) {
+
+    .contactTile {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 769px) {
+
+    .contactTile {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 690px) {
+    .contactTile {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 649px) {
+    .contactUs {
+        visibility: hidden;
+    }
+
+    .firstsection__container {
+        margin-left: -16rem;
+    }
+}

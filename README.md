@@ -1,36 +1,49 @@
-# rdc-study project
+<p align="center">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby Minimal Starter
+</h1>
 
-This the repository for the rdc-study project.
+## 🚀 Quick start
 
-## Running
+1.  **Create a Gatsby site.**
 
-Make sure that you have the Gatsby CLI program installed:
+    Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
-```sh
-npm install --global gatsby-cli
-```
+    ```shell
+    # create a new Gatsby site using the minimal starter
+    npm init gatsby
+    ```
 
-Then you can run it by:
+2.  **Start developing.**
 
-```sh
-npm start
-```
+    Navigate into your new site’s directory and start it up.
 
-## Producing background images
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
 
-For background images, our styling structure right now does not allow us to use `gatsby-images`. So what we do is we run the image through the graphql query and copy the image produced to use it as background.
+3.  **Open the code and start customizing!**
 
-## Environment Variables
+    Your site is now running at http://localhost:8000!
 
-We use `nv` to inject our environment variables when running locally.
-All environment variables prefixed by `GATSBY_` will be exposed to the browser.
+    Edit `src/pages/index.js` to see your site update in real-time!
 
-```
-AWS_BUCKET_NAME=The AWS Bucket name where the app is deployed #required for deploiement
-CLOUDFRONT_ID=The cloud front id for the app #required for deploiement
-GATSBY_GOOGLE_AD_CLIENT=The Google Ad Client #required
-GATSBY_CONTACT_FORM_ENDPOINT=The endpoint to send contact information #required
-GOOGLE_TAG_MANAGER_ID=The Google Tag Manager Id #require in production
-GATSBY_SENTRY_DSN=The DSN for Sentry #required in production
-SURGE_DOMAIN=The domain name for the surge app
-```
+4.  **Learn more**
+
+    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+## 🚀 Quick start (Netlify)
+
+Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)

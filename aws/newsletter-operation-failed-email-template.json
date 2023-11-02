@@ -1,8 +1,0 @@
-{
-  "Template": {
-    "TemplateName": "RDC-Etudes-Newsletter-Operation-Failed",
-    "SubjectPart": "Echec d'une opération liée à l'infolettre!",
-    "HtmlPart": "Une opération concernant <strong>{{email}}</strong> a échouée. {{reason}}",
-    "TextPart": "Une opération concernant {{email}} a échouée. {{reason}}."
-  }
-}

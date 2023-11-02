@@ -1,316 +1,160 @@
-// Vendor
-import React, {Component} from 'react';
-import classnames from 'classnames';
-import {FormattedMessage} from 'react-intl';
-import axios from 'axios';
-import T from 'prop-types';
-import {Link} from 'gatsby';
+import React from "react";
+import logo from "../../images/Logo_white.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faPhone,
+  faMagnifyingGlassLocation,
+} from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faLinkedin, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-// Styles
-import styles from './styles.module.scss';
-
-// Config
-import config from '../../../config';
-
-const {contact, contactFormEndpoint} = config;
-
-// Utils
-import getCurrentUrl from '../../utils/get-current-url';
-
-import ActivityIndicator from '../ActivityIndicator';
-import analyticsPushEvent from '../../utils/push-analytics-event';
-
-const ContactForm = ({className, submitDisabledState, values, onUpdate, onSubmit}) => (
-  <form className={classnames(styles.form, className)} onSubmit={onSubmit}>
-    <div className="field">
-      <FormattedMessage id="footer.contact-form.name-label">
-        {(text) => <label htmlFor="name">{text}</label>}
-      </FormattedMessage>
-
-      <input type="text" name="name" onChange={onUpdate} value={values.name} />
-    </div>
-
-    <div className="field">
-      <FormattedMessage id="footer.contact-form.email-label">
-        {(text) => <label htmlFor="email">{text}</label>}
-      </FormattedMessage>
-
-      <input type="email" name="email" onChange={onUpdate} value={values.email} />
-    </div>
-
-    <div className="field">
-      <FormattedMessage id="footer.contact-form.message-label">
-        {(text) => <label htmlFor="message">{text}</label>}
-      </FormattedMessage>
-
-      <textarea name="message" rows="4" onChange={onUpdate} value={values.message} />
-    </div>
-
-    <ul className="actions">
-      <li>
-        <FormattedMessage id="footer.contact-form.send-message-button-label">
-          {(text) => <input type="submit" className="special" disabled={submitDisabledState} value={text} />}
-        </FormattedMessage>
-      </li>
-    </ul>
-  </form>
-);
-
-ContactForm.propTypes = {
-  className: T.string,
-  submitDisabledState: T.string.isRequired,
-  values: T.shape({
-    email: T.string,
-    message: T.string,
-    name: T.string,
-  }).isRequired,
-  onUpdate: T.func.isRequired,
-  onSubmit: T.func.isRequired,
-};
-
-const Alert = ({className, messageTranslationId, titleTranslationId, onDiscardAlert}) => (
-  <div className={classnames(styles.alert, className)}>
-    <h4 className={styles.alert__title}>
-      <FormattedMessage id={titleTranslationId} />
-
-      <a onClick={onDiscardAlert} className="icon fa-close" />
-    </h4>
-
-    <FormattedMessage id={messageTranslationId}>{(text) => <div>{text}</div>}</FormattedMessage>
-  </div>
-);
-
-Alert.propTypes = {
-  className: T.string,
-  titleTranslationId: T.string.isRequired,
-  messageTranslationId: T.string.isRequired,
-  onDiscardAlert: T.func.isRequired,
-};
-
-const SuccessAlert = ({className, ...props}) => (
-  <Alert
-    className={classnames(styles['alert--success'], className)}
-    messageTranslationId="footer.contact-form.success.message-text"
-    titleTranslationId="footer.contact-form.success.title"
-    {...props}
-  />
-);
-
-SuccessAlert.propTypes = {
-  className: T.string,
-};
-
-const ErrorAlert = ({className, ...props}) => (
-  <Alert
-    className={classnames(styles['alert--error'], className)}
-    messageTranslationId="footer.contact-form.error.message-text"
-    titleTranslationId="footer.contact-form.error.title"
-    {...props}
-  />
-);
-
-ErrorAlert.propTypes = {
-  className: T.string,
-};
-
-class Footer extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      email: '',
-      message: '',
-      name: '',
-      showError: false,
-      showSuccess: false,
-    };
-
-    this.discardErrorAlert = this.discardErrorAlert.bind(this);
-    this.discardSuccessAlert = this.discardSuccessAlert.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  _submitDisabledState() {
-    const {email, message, name, isSubmitting} = this.state;
-
-    return email && message && name && !isSubmitting ? '' : 'disabled';
-  }
-
-  _shouldShowContactForm() {
-    return this.state.showSuccess || this.state.showError;
-  }
-
-  discardErrorAlert() {
-    this.setState({
-      showError: false,
-      showSuccess: false,
-    });
-  }
-
-  discardSuccessAlert() {
-    this.setState({
-      email: '',
-      message: '',
-      name: '',
-      isSubmitting: false,
-      showError: false,
-      showSuccess: false,
-    });
-  }
-
-  handleChange(event) {
-    this.setState({
-      ...this.state,
-      [event.target.name]: event.target.value,
-    });
-  }
-
-  async handleSubmit(event) {
-    event.preventDefault();
-    const {email, message, name} = this.state;
-
-    const payload = {
-      email,
-      message,
-      name,
-      form: 'contact',
-      link: getCurrentUrl(),
-    };
-
-    this.setState({
-      ...this.state,
-      isSubmitting: true,
-    });
-
-    analyticsPushEvent({
-      category: 'ContactForm',
-      action: 'Submit',
-      label: window.location.pathname,
-    });
-
-    try {
-      await axios.post(contactFormEndpoint, payload);
-
-      this.setState({
-        ...this.state,
-        isSubmitting: false,
-        showError: false,
-        showSuccess: true,
-      });
-
-      analyticsPushEvent({
-        category: 'ContactForm',
-        action: 'SubmitSuccess',
-        label: window.location.pathname,
-      });
-    } catch (error) {
-      this.setState({
-        ...this.state,
-        isSubmitting: false,
-        showError: true,
-        showSuccess: false,
-      });
-
-      analyticsPushEvent({
-        category: 'ContactForm',
-        action: 'SubmitError',
-        label: window.location.pathname,
-      });
-
-      window.console.error('An error occured: ', error);
-    }
-  }
-
-  render() {
-    return (
-      <section id="contact" className={classnames(styles.footer, this.props.className)}>
-        <ActivityIndicator isActive={this.state.isSubmitting} />
-
-        <div className={styles.inner}>
-          <FormattedMessage id="footer.title">{(text) => <h2 className="major">{text}</h2>}</FormattedMessage>
-
-          <FormattedMessage id="footer.contact-us-text">{(text) => <p>{text}</p>}</FormattedMessage>
-
-          <div className={styles['contact-form']}>
-            <ContactForm
-              className={this._shouldShowContactForm() ? styles['form--hidden'] : null}
-              submitDisabledState={this._submitDisabledState()}
-              values={this.state}
-              onUpdate={this.handleChange}
-              onSubmit={this.handleSubmit}
-            />
-
-            <SuccessAlert
-              className={this.state.showSuccess ? null : styles['alert--hidden']}
-              onDiscardAlert={this.discardSuccessAlert}
-            />
-
-            <ErrorAlert
-              className={this.state.showError ? null : styles['alert--hidden']}
-              onDiscardAlert={this.discardErrorAlert}
-            />
+export const Footer = () => {
+  return (
+    <div>
+      <footer class="bg-sky-600 text-center text-white lg:text-left">
+        <div class="bg-white flex items-center justify-center border-t-2 border-sky-600 p-6 lg:justify-between">
+          <div class="flex justify-start">
+            <span
+              style={{ color: "#862304", fontWeight: "700", fontSize: "20px" }}
+            >
+              Avez-vous des question ?
+            </span>
           </div>
-
-          <ul className={styles.contact}>
-            <li className={styles.contact__item}>
-              <i className={classnames(styles['contact-item__icon'], 'fab fa-facebook-f')} />
-              <a href={contact.facebook.link} target="_blank" rel="noopener noreferrer">
-                {contact.facebook.label}
-              </a>
-            </li>
-
-            <li className={styles.contact__item}>
-              <i className={classnames(styles['contact-item__icon'], 'far fa-envelope')} />
-              <a href={contact.email.link}>{contact.email.label}</a>
-            </li>
-
-            <li className={styles.contact__item}>
-              <i className={classnames(styles['contact-item__icon'], 'fas fa-phone')} />
-              <div>
-                {contact.phones.map((phone) => (
-                  <div key={phone.label}>
-                    <a href={phone.link}>
-                      {phone.countryFlag} {phone.label}
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </li>
-
-            <li className={styles.contact__item}>
-              <i className={classnames(styles['contact-item__icon'], 'fas fa-home')} />
-              <div>
-                {contact.address.name} <br />
-                {contact.address.streetAddress} <br />
-                {contact.address.locality} <br />
-                {contact.address.country}
-              </div>
-            </li>
-          </ul>
-
-          <ul className={styles.copyright}>
-            <FormattedMessage id="footer.copyright">{(text) => <li>{text}</li>}</FormattedMessage>
-
-            <FormattedMessage id="footer.privacy-policy">
-              {(text) => (
-                <li>
-                  <Link to="/politique-de-confidentialite">{text}</Link>
-                </li>
-              )}
-            </FormattedMessage>
-            <li>
-              Design: <a href="https://html5up.net">HTML5 UP</a>
-            </li>
-          </ul>
         </div>
-      </section>
-    );
-  }
-}
 
-Footer.propTypes = {
-  className: T.string,
+        <div class="mx-6 py-10 text-center md:text-left">
+          <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div class="">
+              <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+                <img src={logo} />
+              </h6>
+              <p className="mx-10">
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <div class="">
+              <h2
+                style={{ fontSize: "25px" }}
+                class="mb-4 flex justify-center font-bold uppercase md:justify-start"
+              >
+                CONTACTS
+              </h2>
+              <p class="mb-4 justify-center">
+                <a href="#!" class="text-white text-xl">
+                  <FontAwesomeIcon icon={faPhone} />
+                  &nbsp;&nbsp; +243 800 000 00
+                </a>
+              </p>
+              <p class="mb-4">
+                <a href="#!" class="text-white text-xl">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                  &nbsp;&nbsp; rdcetudes@gmail.com
+                </a>
+              </p>
+              <p class="mb-4">
+                <a href="#!" class="text-white text-xl">
+                  <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
+                  &nbsp;&nbsp; N°283 Tabora Gombe
+                </a>
+              </p>
+            </div>
+
+            <div class="mb-4 flex justify-center ml-16">
+              <div className="grid grid-cols-4 gap-8">
+                <div>
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    style={{ fontSize: "30px" }}
+                  />
+                </div>
+                <div>
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    style={{ fontSize: "30px" }}
+                  />
+                </div>
+                <div className="">
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    style={{ fontSize: "30px" }}
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+                Acceuil
+              </h6>
+
+              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+                Bourses
+              </h6>
+              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+                Qui sommes-nous ?
+              </h6>
+              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+                Questions populaires
+              </h6>
+              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+                Limitations légales
+              </h6>
+              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+                Politiques de confidentialité
+              </h6>
+              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+                Besoin d'aide ?
+              </h6>
+              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+                Nos Partenaires
+              </h6>
+
+              <div class="hero bg-gredient-dark h-400px flex flex-col px-2">
+                <p className="mb-5 mt-5 font-semibold" style={{ fontSize: "20px" }}>
+                  Abonnez-vous à notre newsLetter
+                </p>
+                <div class="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
+                  <form class="flex flex-row">
+                    <input
+                      class="h-16 text-grey-darker py-2 font-normal text-grey-darkest border border-gray-100 font-bold w-full py-1 px-2 outline-none text-lg text-gray-600"
+                      type="text"
+                      placeholder="Entrer votre adresse E-mail"
+                      style={{
+                        borderRadius: "20px",
+                        backgroundColor: "#D9D9D9",
+                      }}
+                    />
+                    <span
+                      style={{
+                        borderRadius: "20px",
+                        marginLeft: "-30px",
+                        backgroundColor: "#D9D9D9",
+                      }}
+                      class="flex items-center bg-gray-100 rounded rounded-l-none border-0 px-1 font-bold text-grey-100"
+                    >
+                      <button
+                        class="border-2 border-sky-600 hover:bg-gredient-light text-lg text-sky-600 font-bold py-3 px-6 rounded"
+                        style={{
+                          borderRadius: "10px",
+                          backgroundColor: "#D9D9D9",
+                        }}
+                      >
+                        Send
+                      </button>
+                    </span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-sky-600 p-6 text-center">
+          <span className="text-xl">© 2023 All rigth reserved RDC Etudes</span>
+          
+        </div>
+      </footer>
+    </div>
+  );
 };
-
-export default Footer;

@@ -1,0 +1,73 @@
+.ellipse1 {
+    position: absolute;
+   // width: 156.35px;
+   // height: 156.35px;
+    //left: 233px;
+    top: 88px;
+//    border: 10px solid #0490DF;
+}
+
+.ellipse2 {
+    position: absolute;
+  //  width: 156.35px;
+  //  height: 156.35px;
+    //left: 245px;
+    top: 89px;
+   // border: 10px solid #FBC403;
+}
+
+.ellipse3 {
+    position: absolute;
+    // width: 156.35px;
+    // height: 156.35px;
+    right: 0;
+    top: 88px;
+}
+
+.ellipse4 {
+    position: absolute;
+   // width: 156.35px;
+   // height: 156.35px;
+    right: 0;
+    top: 88px;
+}
+
+.student_img {
+    position: absolute;
+    // width: 156.35px;
+    // height: 156.35px;
+    right: 0;
+    top: 175px;
+}
+.student_img img {
+    height: 210px;
+}
+
+.img1 {
+    position: absolute;
+    width: 111px;
+    height: 167px;
+    left: 249px;
+    top: 45px;
+    //background: url(Young-Girl-Student-HD-Free-PNG-Image.png);
+}
+
+.bourse {
+    &__title {
+        color: #0490DF;
+        font-weight: 900;
+        font-size: 25px;
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 0;
+    }
+    &__btn {
+        font-size: 15px;
+        height: 45px;
+        font-weight: 500;
+    }
+    &__text {
+        color: red;
+    }
+}

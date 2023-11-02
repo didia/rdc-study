@@ -1,8 +1,0 @@
-{
-  "Template": {
-    "TemplateName": "RDC-Etudes-Contact-Form",
-    "SubjectPart": "{{title}}",
-    "HtmlPart": "<dl><dt>Lien:</dt><dd>{{link}}</dd><dt>Nom:</dt><dd>{{name}}</dd><dt>Email:</dt><dd>{{email}}</dd><dt>Message:</dt><dd>{{message}}</dd></dl>",
-    "TextPart": "{{message}}."
-  }
-}
