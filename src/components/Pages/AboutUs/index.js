@@ -6,6 +6,10 @@ import img1 from "../../../images/World_Of_Empires.png";
 import img_yellowEllipse from "../../../images/Ellipse8.png";
 import img_airline from "../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png";
 import img_planearth from "../../../images/earth-with-plane-drawing-png.png";
+import img_team1 from "../../../images/team1.png";
+import img_team2 from "../../../images/team2.png";
+import img_team3 from "../../../images/team3.png";
+
 import * as styles from "./styles.module.scss";
 
 const AboutUs = () => {
@@ -61,9 +65,63 @@ const AboutUs = () => {
           </span>
         </div>
 
-        <ValueCard title={"L'HONETETE"} />
-        <ValueCard title={"LA SERVIABILITE"} />
-        <ValueCard title={"LA TRANSPARENCE"} />
+        <ValueCard
+          title={"L'HONETETE"}
+          section1={
+            "Some quick example text to build on the card title and make up the bulk of the card's content."
+          }
+        />
+        <ValueCard
+          title={"LA SERVIABILITE"}
+          section1={
+            "Some quick example text to build on the card title and make up the bulk of the card's content."
+          }
+        />
+        <ValueCard
+          title={"LA TRANSPARENCE"}
+          section1={
+            "Some quick example text to build on the card title and make up the bulk of the card's content."
+          }
+        />
+      </section>
+
+      <section>
+        <div className="flex items-center justify-center">
+          <span
+            className={
+              "text-center font-bold uppercase mb-6 mt-6 " +
+              styles.about__values_title
+            }
+          >
+            Une équipe sérieuse et passionée à votre service
+          </span>
+        </div>
+
+        <div className="grid grid-cols-3 mx-10">
+          <div className="col-span-3">
+            <img
+              alt="gallery"
+              class="block h-full w-full rounded-lg object-cover object-center"
+              src={img_team1}
+            />
+          </div>
+
+          <div className="col-span-3 pt-5">
+            <img
+              alt="gallery"
+              class="block h-full w-full rounded-lg object-cover object-center"
+              src={img_team2}
+            />
+          </div>
+
+          <div className="col-span-3 pt-5 pb-5">
+            <img
+              alt="gallery"
+              class="block h-full w-full rounded-lg object-cover object-center"
+              src={img_team3}
+            />
+          </div>
+        </div>
       </section>
     </Layout>
   );
