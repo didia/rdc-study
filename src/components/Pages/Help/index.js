@@ -10,7 +10,7 @@ import img_earthplane from "../../../images/earth-with-plane-drawing-png.png";
 const Help = () => {
   return (
     <Layout pageTitle={"Bourse d'études"}>
-      <section className="mb-80">
+      <section className="mb-12">
         <div className="grid grid-cols-12 gap-2">
           <div className="col-span-5">
             <div className={styles.ellipse1}>
@@ -21,7 +21,7 @@ const Help = () => {
             </div>
           </div>
           <div className="col-span-5 text-sky-600 text-3xl font-extrabold z-10 mt-10">
-            Dites-nous en quoi pouvons-vous aider ?
+            Dites-nous en quoi pouvons-nous vous aider ?
             <p>
               <img src={img_earth} style={{ height: "50px", float: "right" }} />
             </p>
@@ -39,10 +39,53 @@ const Help = () => {
           qui souhaitent poursuivre leurs études supérieures à l'étranger par
           leurs propres moyens. Vous trouverez toutes les offres des bourses
           dont nous avons connaissance sur notre site web rdcetudes.com/bourses
-
-          <p>
-            <button className={ styles.help__btn }>En savoir plus</button>
+          <p className="mt-5">
+            <button className={styles.help__btn}>En savoir plus</button>
           </p>
+        </div>
+
+        <div className="py-10 mx-7 text-center">
+          L'accaompagnement RDC ETUDES consiste à vous orienter dans votre
+          projet d'études du choix de l'université jusqu'à l'obtention de votre
+          visa.
+        </div>
+
+        <div className="border rounded-lg px-10 py-7 mx-4 shadow-md">
+          <p className="uppercase text-center">
+            Dans quel pays voulez-vous étudier ?{" "}
+          </p>
+
+          <div class="inline-block relative w-full py-5">
+            <select class="block appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline">
+              <option disabled selected hidden className="text-gray-300">
+                Choisissez un pays
+              </option>
+              <option>Canada</option>
+              <option>USA</option>
+              <option></option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg
+                class="fill-current h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </div>
+          </div>
+
+          <p className="uppercase text-center">
+            Avez-vous déjà obtenu votre admission ?{" "}
+          </p>
+
+          <input
+            type="text"
+            placeholder="Oui ou Non"
+            class="mt-5 block appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
+          />
+
+          <p className="text-sky-600 font-extrabold text-2xl my-5">Suivant </p>
         </div>
       </section>
     </Layout>
