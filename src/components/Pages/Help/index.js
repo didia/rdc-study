@@ -9,7 +9,7 @@ import img_earthplane from "../../../images/earth-with-plane-drawing-png.png";
 
 const Help = () => {
   return (
-    <Layout pageTitle={"Bourse d'études"}>
+    <Layout pageTitle={"Page d'aide"}>
       <section className="mb-12">
         <div className="grid grid-cols-12 gap-2">
           <div className="col-span-5">
