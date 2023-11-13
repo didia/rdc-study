@@ -1,7 +1,11 @@
 import React from "react";
 import Layout from "../../Layout";
+import BourseCard from "../../BourseCard";
 import * as styles from "./style.module.scss";
 import img_young_gril from "../../../images/800x600_FE_WEB_equivalence 2.png";
+import img_bourseProcedure from "../../../images/procedure-bourse-suisse1.png";
+import img_women from "../../../images/800x600_FE_WEB_equivalence 2.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faGlobe, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,148 +22,124 @@ const BourseDetails = () => {
             />
           </div>
         </div>
-
-        <div className="mx-10 text-justify">
-          <p className="text-sky-600 text-xl font-bold">
+        <div className="mx-10">
+          <p className="text-sky-600 text-xl font-bold text-justify">
             Bourses d’excellence pour chercheurs et artistes étrangers en Suisse
           </p>
-
           <p className="py-3 text-sm">
             La Confédération suisse offre chaque année des bourses d’excellence
             dans le domaine de la recherche et des arts.
           </p>
           <div className="grid grid-cols-3">
-            <div>
+            <div className="text-sm">
               {" "}
               <FontAwesomeIcon icon={faGlobe} /> Canada
             </div>
-            <div>
+            <div className="inline text-sm">
               {" "}
               <FontAwesomeIcon icon={faClock} />
-              <span className="px-2 inline">Doctorat, Recherche</span>
+              <span className="px-2">Doctorat, Recherche</span>
             </div>
-            <div>
+            <div className="text-sm">
               {" "}
               <FontAwesomeIcon icon={faGraduationCap} />
               <span className="px-2 text-red-600">Expire en Décembre</span>
             </div>
           </div>
-
-          <p className="py-2">
-            Après avoir obtenu une instruction pour la collecte des données
-            biométriques, tout demandeur du visa canadien est anxieux de
-            recevoir une réponse de la part de l’immigration qui peut prendre 4
-            mois ou moins en cas de refus. &nbsp;
+          <p className="py-2 font-bold text-sm">
+            En quoi consiste la bourse d'étude ?
+          </p>
+          <p className="py-4 text-sm">
             <span className="font-bold">
-              Mais cela ne veut pas dire que la durée du traitement entraine
-              nécessairement une réponse favorable.
+              La bourse de la conférence suisse offre :
+            </span>
+
+            <ul className="list-disc ml-5">
+              <li className="py-2">
+                Un paiement de 1920 Francs suisses (à peu près 1920 $) par mois
+              </li>
+              <li className="py-2">Les frais académiques sont payés.</li>
+              <li className="py-2">
+                Un billet d’avion retour vers votre pays d’origine payé à la fin
+                de votre séjour d’études.
+              </li>
+              <li>
+                Un paiement de 300 Francs suisses (à peu près 300 $) payé une
+                fois à votre arrivée pour aider avec le logement
+              </li>
+              <li>La moitié de votre carte de transport.</li>
+            </ul>
+          </p>{" "}
+          <p className="text-sm font-bold">
+            Le délai de la bourse varie d’un pays à l’autre et d’une bourse à
+            une autre. Pour d’informations, vous pouvez vous renseigner auprès
+            <span className="underline">
+              de l’ambassade de Suisse de votre pays.
             </span>
           </p>
-
-          <p className="py-2">
-            Cependant l’instruction aux examens médicaux est un bon signal pour
-            la bonne marche du processus de demande de visa, si bien que
-            certains demandeurs, par anxiété, peur ou anticipation décident de
-            passer leurs examens médicaux avant l’instruction de l’immigration.
-            Pour plus d’informations, sur les examens médicaux pour un long
-            séjour, veuillez consulter le site de l’immigration.
-          </p>
-
-          <p className="py-2 font-bold text-lg">
-            Passer l’examen médical avant l’instruction.
-          </p>
-          <p className="py-2">
-            Il est possible de passer des examens médicaux avant l’instruction
-            de l’immigration ou encore la soumission de votre demande par
-            prévention. Cependant cela revient à votre entière responsabilité et
-            n’engage ni l’immigration ni le médecin ou l’entité où vous
-            passeriez vos examens en cas de refus de visa ou de rejet des
-            examens effectués. Dans ce cas vous auriez perdu du temps et de
-            l’argent qui vous auriez certainement servi autrement.
-          </p>
-
-          <p className="py-2 font-bold text-lg">
-            Passer l’examen médical avant l’instruction.
-          </p>
-
-          <p className="py-2">
-            Il est préférable et prudent de passer l’examen médical après
-            instruction de l’immigration. Cela prouve que, vous êtes sur la
-            bonne voie et que vous pouvez vous attendre à une suite favorable de
-            votre demande. Vous trouverez plus d’informations sur les exigences
-            en matière d’examens médicaux sur le site web de l’immigration.
-          </p>
-
-          <p className="py-2 font-bold text-lg">Où passer l'examen médical ?</p>
-
-          <p className="py-2">
-            Il existe une liste des médecins désignés dans chaque pays qui sont
-            les seuls autorisés à procéder aux examens. En République
-            Démocratique du Congo, les examens médicaux se font à Kinshasa au
-            sein de l’OIM qui se trouve dans l’enceinte de la concession de UTEX
-            AFRICA au 372 Avenue Colonel Mondjiba, Bâtiment 58 /Immotex, Commune
-            Ngaliema, Kinshasa- République Démocratique du Congo. Pour tout
-            contact, veuillez les contacter au +243 827076321.
-          </p>
-
-          <p className="py-2">
-            NB :
-            <ul className="list-decimal ml-7">
-              <li className="py-2">
-                Avant de passer vos examens médicaux, vous devez au préalable
-                prendre rendez-vous.
-              </li>
-              <li className="py-2">
-                Tout demandeur du visa canadien se trouvant en provinces de la
-                RDC ou encore à Brazzaville ou certains pas d’Afrique centrale
-                limitrophes au pays, doivent se faire examiner à Kinshasa.
-              </li>
-              <li className="py-2">
-                Pour les autres, vous pouvez vérifier les médecins de votre pays
-                sur le site web de l’immigration.
-              </li>
-            </ul>
-          </p>
-
-          <p className="py-2 font-bold text-lg">Quels documents apporter ?</p>
-
-          <p className="py-2 font-bold text-sm">Pour le paiement des examens</p>
-          <ul className="list-disc py-1 ml-7">
-            <li>Votre passport</li>
-            <li>Votre lettre d'insciption aux examens médicaux</li>
-          </ul>
-
           <p className="py-2 font-bold text-sm">
-            Pour la prise de rendez-vous :
+            Quels sont les critères de la bourse ?
           </p>
-          <ul className="list-disc py-1 ml-7">
-            <li>Votre passport</li>
-            <li>Votre lettre d'insciption</li>
-            <li>Votre reçu de paiement</li>
-            <li>2 photos passeports 4x4</li>
+          <p className="py-4">
+            La CFBE examine les demandes de bourse selon les trois critères
+            suivants:
+          </p>
+          <ul className="list-decimal ml-5">
+            <li className="">Le profil du candidat;</li>
+            <li className="">
+              La qualité du projet de recherche ou travail artistique;
+            </li>
+            <li className="">
+              les synergies et le potentiel pour une future collaboration.
+            </li>
           </ul>
+          <p className="py-4">
+            Les critères précis auxquels vous devez répondre variant d’une
+            bourse à une autre:
+          </p>
+          <ul className="list-decimal ml-5">
+            <li className="">Pour la bourse de Recherche</li>
+            <li className="">Pour la bourse doctorale</li>
+            <li className="">Pour la bourse Postdoctorale</li>
+          </ul>
+          <p className="text-sm py-2 font-bold">Comment postuler ?</p>
+          <p className="text-lg py-2 font-bold">Edure de demande</p>
+        </div>
 
-          <p className="py-2 font-bold text-lg">
-            Puis-je avoir un refus après avoir effectué des examens médicaux ?
+        <div className="mx-10 mb-10">
+          <img src={img_bourseProcedure} className="w-full" />
+        </div>
+
+        <div className="mx-10 mb-10 text-sm text-justify">
+          L’information sur les bourses disponibles pour votre pays, comment
+          postuler et quels documents envoyer sont disponibles dans un dossier
+          préparée pour votre pays. Nous vous invitons à télécharger le dossier
+          sur le site web de la bourse d’études.
+          <p className="py-2">
+            Si la première lettre du nom de votre pays est comprise entre A et
+            L: Allez sur
+            <a href="#" className="font-bold">
+              https://www.sbfi.admin.ch/sbfi/en/home/education/scholarships-and-grants/swiss-government-excellence-scholarships/countrys-a---l.html
+            </a>
           </p>
           <p className="py-2">
-            Bien que cela soit rare, il est possible qu’après plusieurs
-            vérifications, que l’agent de l’immigration rencontre des
-            irrégularités dans votre dossier après vous avoir instruit aux
-            examens médicaux. Cela peut susciter un refus ou encore une
-            interdiction du territoire si les causes des irrégularités sont
-            graves.
+            Si la première lette du nom de votre pays est comprise entre M et Z:
+            Allez sur
+            <a href="#" className="font-bold">
+              https://www.sbfi.admin.ch/sbfi/en/home/education/scholarships-and-grants/swiss-government-excellence-scholarships/countrys-m---z.html.
+            </a>
           </p>
+          Pour plus d’informations sur la bourse, vous pouvez consulter le guide
+          de candidature.
+        </div>
+      </section>
 
-          <p className="py-2 font-bold text-lg">Combien ça coûte ?</p>
-          <p className="py-2">
-            Les examens médicaux reviennent à 320$ (veuillez vous informer sur
-            le coût et le moyen de paiement selon votre pays) à payer à CITY
-            BANK la seule banque accréditée pour le paiement à Kinshasa. NB:
-            Vous avez des préoccupations concernant votre projet d’études au
-            Canada, optez pour une consultation chez RDC ETUDES et profitez de
-            l’expertise de nos mentors.
-          </p>
+      <section>
+        <div className="grid grid-cols-2 mx-4 mb-10 gap-4">
+          <BourseCard img={img_women} />
+          <BourseCard img={img_women} />
+          <BourseCard img={img_women} />
+          <BourseCard img={img_women} />
         </div>
       </section>
     </Layout>
