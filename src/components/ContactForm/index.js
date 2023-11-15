@@ -1,10 +1,10 @@
 import React from 'react';
 import overlay4 from "../../images/png-clipart-black-airway.png";
 
-const ContactForm = () => {
+const ContactForm = ({ title, bgImg, marginBottom }) => {
     return (
       <>
-        <section className="mb-40">
+        <section className={marginBottom}>
           <div className="text-center mx-10">
             <span
               style={{
@@ -78,7 +78,7 @@ const ContactForm = () => {
               </div>
             </div>
             <div class="w-full h-full mt-10">
-              <img src={overlay4} />
+              <img src={bgImg ? bgImg : overlay4} />
             </div>
           </div>
         </section>

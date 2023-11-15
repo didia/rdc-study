@@ -202,7 +202,7 @@ const Home = () => {
         </div>
       </section>
 
-      <ContactForm />
+      <ContactForm marginBottom={"mb-40"} />
     </Layout>
   );
 };

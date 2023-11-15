@@ -1,0 +1,37 @@
+.privacy {
+    &__title {
+        color: #0490DF;
+        font-weight: 900;
+        font-size: 19px;
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 900;
+    }
+
+    &__btn {
+        font-size: 12px;
+        height: 45px;
+        font-weight: 500;
+    }
+
+    &__values_title {
+        color: #0490DF;
+        font-size: 19px;
+    }
+}
+
+.ellipse3 {
+    position: absolute;
+    right: 0;
+    top: 88px;
+    z-index: -10;
+}
+
+.ellipse4 {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    z-index: -10;
+}

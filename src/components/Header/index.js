@@ -24,28 +24,70 @@ const Header = () => {
             </div>
             <div class="hidden md:flex items-center space-x-1">
               <a
-                href=""
-                class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold "
+                href="/"
+                class="py-4 px-2 hover:text-white text-sky-600 border-b-4 border-sky-600 font-semibold "
               >
                 Home
               </a>
               <a
-                href=""
-                class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                href="/bourse"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-sky-600 transition duration-300"
               >
-                Services
+                Bourse
               </a>
               <a
-                href=""
-                class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                href="/aboutUs"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-sky-600 transition duration-300"
               >
-                About
+                A propos
               </a>
               <a
-                href=""
-                class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                href="/contactUs"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-sky-600 transition duration-300"
               >
                 Contact Us
+              </a>
+              <a
+                href="/healthcare"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-sky-600 transition duration-300"
+              >
+                Examen médicaux
+              </a>
+              <a
+                href="/help"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-sky-600 transition duration-300"
+              >
+                Aide
+              </a>
+              <a
+                href="/country"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-sky-600 transition duration-300"
+              >
+                Pays
+              </a>
+              <a
+                href="/privacy"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-sky-600 transition duration-300"
+              >
+                Politique de confidentialité
+              </a>
+              <a
+                href="/bourseDetails"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-sky-600 transition duration-300"
+              >
+                Détails Bourse
+              </a>
+              <a
+                href="/partenership"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-sky-600 transition duration-300"
+              >
+                Partenariat
+              </a>
+              <a
+                href="/faq"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-sky-600 transition duration-300"
+              >
+                FAQ
               </a>
             </div>
           </div>
@@ -53,13 +95,13 @@ const Header = () => {
           <div class="hidden md:flex items-center space-x-3 ">
             <a
               href=""
-              class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300"
+              class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-sky-600 hover:text-white transition duration-300"
             >
               Log In
             </a>
             <a
               href=""
-              class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"
+              class="py-2 px-2 font-medium text-white bg-sky-600 rounded hover:bg-sky-500 transition duration-300"
             >
               Sign Up
             </a>
@@ -86,34 +128,90 @@ const Header = () => {
             <ul class="">
               <li class="active">
                 <a
-                  href="index.html"
-                  class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
+                  href="/"
+                  class="block text-sm px-2 py-4 text-white bg-sky-600 font-semibold"
                 >
                   Home
                 </a>
               </li>
               <li>
                 <a
-                  href="#services"
-                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                  href="/bourse"
+                  class="block text-sm px-2 py-4 hover:bg-sky-600 transition duration-300"
                 >
-                  Services
+                  Bourse
                 </a>
               </li>
               <li>
                 <a
-                  href="#about"
-                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                  href="/aboutUs"
+                  class="block text-sm px-2 py-4 hover:bg-sky-600 transition duration-300"
                 >
-                  About
+                  A propos
                 </a>
               </li>
               <li>
                 <a
-                  href="#contact"
-                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                  href="/contactUs"
+                  class="block text-sm px-2 py-4 hover:bg-sky-600 transition duration-300"
                 >
-                  Contact Us
+                  Contactez-nous
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/healthcare"
+                  class="block text-sm px-2 py-4 hover:bg-sky-600 transition duration-300"
+                >
+                  Examens médicaux
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/help"
+                  class="block text-sm px-2 py-4 hover:bg-sky-600 transition duration-300"
+                >
+                  Aide
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/country"
+                  class="block text-sm px-2 py-4 hover:bg-sky-600 transition duration-300"
+                >
+                  Etudier en France
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/privacy"
+                  class="block text-sm px-2 py-4 hover:bg-sky-600 transition duration-300"
+                >
+                  Confidentialité
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/bourseDetails"
+                  class="block text-sm px-2 py-4 hover:bg-sky-600 transition duration-300"
+                >
+                  Bourses
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/partenership"
+                  class="block text-sm px-2 py-4 hover:bg-sky-600 transition duration-300"
+                >
+                  Partenariat
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/faq"
+                  class="block text-sm px-2 py-4 hover:bg-sky-600 transition duration-300"
+                >
+                  FAQ
                 </a>
               </li>
             </ul>
