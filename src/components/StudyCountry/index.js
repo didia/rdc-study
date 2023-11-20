@@ -14,7 +14,7 @@ const StudyCountry = () => {
   return (
     <>
       <section className="mb-10" id="studycountry">
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid grid-cols-4 gap-2">
           <div className="">&nbsp;</div>
           <div className="">&nbsp;</div>
           <div className="">&nbsp;</div>
@@ -25,10 +25,10 @@ const StudyCountry = () => {
 
         <div class="grid grid-cols-8">
           <div className="col-span-3">
-            <img src={img3} style={{ height: "200px", width: "100%" }} />
+            <img src={img3} />
           </div>
 
-          <div className="col-span-5 px-3">
+          <div className="col-span-5 px-1">
             <span
               style={{
                 color: "#0490DF",
@@ -53,7 +53,7 @@ const StudyCountry = () => {
           <div className="">&nbsp;</div>
           <div className="">&nbsp;</div>
           <div className="">
-            <img src={img5} style={{ height: "2.5rem", marginTop: "-20px" }} />
+            <img src={img5} style={{ height: "2.2rem" }} />
           </div>
         </div>
       </section>
@@ -101,7 +101,6 @@ const StudyCountry = () => {
                           class="rounded-t-lg"
                           src={img8}
                           alt=""
-                          style={{ height: "150px" }}
                         />
                       </div>
                       <div class="p-6">
@@ -120,9 +119,8 @@ const StudyCountry = () => {
                       <div class="relative overflow-hidden bg-cover bg-no-repeat">
                         <img
                           class="rounded-t-lg"
-                          src={img9}
+                          src={img8}
                           alt=""
-                          style={{ height: "150px" }}
                         />
                       </div>
                       <div class="p-6">

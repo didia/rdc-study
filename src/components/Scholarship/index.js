@@ -5,6 +5,8 @@ import img8 from "../../images/tour_effeil.png";
 import img9 from "../../images/flatten.png";
 import img10 from "../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png";
 import overlay3 from "../../images/Rectangle10.png";
+import img6 from "../../images/800x600_FE_WEB_equivalence 2.png";
+import BourseCard from '../BourseCard';
 
 const Scholarship = () => {
     return (
@@ -19,7 +21,7 @@ const Scholarship = () => {
                 lineHeight: "27px",
               }}
             >
-              Bourse d'études
+              Bourses d'études
             </span>{" "}
             <p>
               Lorem ispum dolor fortuna simpre cresis, out decresis vita
@@ -32,7 +34,7 @@ const Scholarship = () => {
             <div className={style.scholarship_inner}>
               <img src={overlay3} />
 
-              <div className={style.scholarship_content}>
+              <div className={style.scholarship__content}>
                 <div className="flex justify-center">
                   <div class="grid grid-cols-16 gap-4">
                     <div>
@@ -63,71 +65,10 @@ const Scholarship = () => {
                     </div>
 
                     <div className="col-span-7">
-                      <div class="block max-w-[18rem] rounded-lg bg-slate-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                        <div class="relative overflow-hidden bg-cover bg-no-repeat">
-                          <img
-                            class="rounded-t-lg"
-                            src={img8}
-                            alt=""
-                            style={{ height: "120px" }}
-                          />
-                        </div>
-                        <div class="p-2">
-                          <p
-                            class="text-base text-neutral-600"
-                            style={{ color: "#0490DF", fontWeight: "800" }}
-                          >
-                            BOURSE D'&Eacute;TUDE
-                          </p>
-                          <p style={{ fontSize: "14px" }}>
-                            Lorem ispum dolor fortuna simpre cresis, out
-                            decresis
-                          </p>
-                        </div>
-
-                        <div className="text-left px-4">
-                          <a
-                            href="#"
-                            style={{ color: "#0490DF", fontWeight: "800" }}
-                          >
-                            Détails
-                          </a>
-                        </div>
-                      </div>
+                      <BourseCard img={img6} setDescription={false} textSize={"sm"} />
                     </div>
-
                     <div className="col-span-7">
-                      <div class="block max-w-[18rem] rounded-lg bg-slate-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                        <div class="relative overflow-hidden bg-cover bg-no-repeat">
-                          <img
-                            class="rounded-t-lg"
-                            src={img9}
-                            alt=""
-                            style={{ height: "120px" }}
-                          />
-                        </div>
-                        <div class="p-2">
-                          <p
-                            class="text-base text-neutral-600"
-                            style={{ color: "#0490DF", fontWeight: "800" }}
-                          >
-                            BOURSE D'&Eacute;TUDE
-                          </p>
-                          <p style={{ fontSize: "14px" }}>
-                            Lorem ispum dolor fortuna simpre cresis, out
-                            decresis
-                          </p>
-                        </div>
-
-                        <div className="text-left px-4">
-                          <a
-                            href="#"
-                            style={{ color: "#0490DF", fontWeight: "800" }}
-                          >
-                            Détails
-                          </a>
-                        </div>
-                      </div>
+                      <BourseCard img={img6} setDescription={false} textSize={"sm"} />
                     </div>
 
                     <div>
@@ -162,7 +103,6 @@ const Scholarship = () => {
             </div>
           </div>
         </section>
-
       </>
     );
 }

@@ -13,12 +13,16 @@ export const Footer = () => {
     <div>
       <footer class="bg-sky-600 text-center text-white lg:text-left">
         <div class="bg-white flex items-center justify-center border-t-2 border-sky-600 p-6 lg:justify-between">
-          <div class="flex justify-start">
-            <span
-              style={{ color: "#862304", fontWeight: "700", fontSize: "20px" }}
-            >
-              Avez-vous des question ?
-            </span>
+          <div className="grid grid-cols-12">
+            <div className="col-span-7">
+              <span className="text-red-900 font-extrabold text-xl">
+                Avez-vous des question ?
+              </span>
+            </div>
+            <div></div>
+            <div className="col-span-2">
+              <button className="bg-sky-600 text-lg rounded-lg px-3 py-2">Faq</button>
+            </div>
           </div>
         </div>
 
@@ -111,7 +115,10 @@ export const Footer = () => {
               </h6>
 
               <div class="hero bg-gredient-dark h-400px flex flex-col px-2">
-                <p className="mb-5 mt-5 font-semibold" style={{ fontSize: "20px" }}>
+                <p
+                  className="mb-5 mt-5 font-semibold"
+                  style={{ fontSize: "20px" }}
+                >
                   Abonnez-vous à notre newsLetter
                 </p>
                 <div class="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
@@ -152,7 +159,6 @@ export const Footer = () => {
 
         <div class="bg-sky-600 p-6 text-center">
           <span className="text-xl">© 2023 All rigth reserved RDC Etudes</span>
-          
         </div>
       </footer>
     </div>

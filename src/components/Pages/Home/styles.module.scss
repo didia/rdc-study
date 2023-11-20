@@ -332,16 +332,6 @@
     padding-top: 5%;
 }
 
-.contact_btn {
-    height: 50px;
-    width: 200px;
-    color: black;
-    background-color: #fbc403;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    transition: background-color 0.8s;
-}
-
 .contact_btn:hover {
     background-color: #78a6a2;
     color: white;
@@ -640,5 +630,38 @@
 
     .firstsection__container {
         margin-left: -16rem;
+    }
+}
+
+.header {
+    &__title {
+    font-weight: bolder !important;
+    text-shadow: 1px 1px 2px white !important;
+        @media only screen and (max-width: 380px) {
+            margin-top: -1rem !important;   
+        }
+    }
+    &__desc {
+        @media only screen and (max-width: 380px) {
+            margin-top: -2rem;
+            font-size:small;
+        }
+    }
+    &__btn {
+               height: 50px;
+               width: 200px;
+               color: black;
+               font-size: 12px;
+               background-color: #fbc403;
+               border: 1px solid #ffffff;
+               border-radius: 18px;
+               transition: background-color 0.8s;
+               text-transform: uppercase;
+
+                @media only screen and (max-width: 380px) {
+                        height: 40px;
+                        width: 150px;
+                        font-size: 10px;
+                }
     }
 }
