@@ -12,16 +12,17 @@ export const Footer = () => {
   return (
     <div>
       <footer class="bg-sky-600 text-center text-white lg:text-left">
-        <div class="bg-white flex items-center justify-center border-t-2 border-sky-600 p-6 lg:justify-between">
+        <div class="bg-white flex items-center justify-center border-t-2 border-sky-600 p-3 lg:justify-between">
           <div className="grid grid-cols-12">
-            <div className="col-span-7">
+            <div className="col-span-10">
               <span className="text-red-900 font-extrabold text-xl">
                 Avez-vous des question ?
               </span>
             </div>
-            <div></div>
             <div className="col-span-2">
-              <button className="bg-sky-600 text-lg rounded-lg px-3 py-2">Faq</button>
+              <button className="bg-sky-600 text-sm rounded-lg px-2 py-2">
+                Faq
+              </button>
             </div>
           </div>
         </div>
@@ -65,7 +66,7 @@ export const Footer = () => {
               </p>
             </div>
 
-            <div class="mb-4 flex justify-center ml-16">
+            <div class="mb-4 flex justify-center">
               <div className="grid grid-cols-4 gap-8">
                 <div>
                   <FontAwesomeIcon
@@ -76,6 +77,12 @@ export const Footer = () => {
                 <div>
                   <FontAwesomeIcon
                     icon={faInstagram}
+                    style={{ fontSize: "30px" }}
+                  />
+                </div>
+                <div>
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
                     style={{ fontSize: "30px" }}
                   />
                 </div>

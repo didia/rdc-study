@@ -14,6 +14,9 @@ import StudyCountry from "../../../components/StudyCountry";
 import Scholarship from "../../../components/Scholarship";
 import ContactForm from "../../../components/ContactForm";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+
 const Home = () => {
   return (
     <Layout pageTitle="Page d'acceuil">
@@ -28,7 +31,7 @@ const Home = () => {
                 <div>
                   <h1
                     className={
-                      "text-3xl text-white font-black " + style.header__title
+                      "text-4xl text-white font-black " + style.header__title
                     }
                   >
                     RDC &Eacute;tudes
@@ -70,16 +73,10 @@ const Home = () => {
             <img src={img2} className="object-contain" />
           </div>
           <div className="col-span-7">
-            <span
-              style={{
-                color: "#0490DF",
-                fontWeight: "900",
-                fontSize: "18px",
-              }}
-            >
+            <span className="text-sky-600 text-lg font-extrabold">
               Titre de l'article
             </span>{" "}
-            <p style={{ fontSize: "17px", lineHeight: "17px" }}>
+            <p className="text-sm mr-7 text-justify">
               Lorem ispum dolor fortuna simpre cresis, out decresis vita
               detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
             </p>
@@ -91,16 +88,10 @@ const Home = () => {
             <img src={img3} className="object-contain" />
           </div>
           <div className="col-span-7">
-            <span
-              style={{
-                color: "#0490DF",
-                fontWeight: "900",
-                fontSize: "18px",
-              }}
-            >
+            <span className="text-sky-600 text-lg font-extrabold">
               Titre de l'article
             </span>{" "}
-            <p style={{ fontSize: "17px", lineHeight: "17px" }}>
+            <p className="text-sm mr-7 text-justify">
               Lorem ispum dolor fortuna simpre cresis, out decresis vita
               detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
             </p>
@@ -112,16 +103,10 @@ const Home = () => {
             <img src={img4} className="object-contain" />
           </div>
           <div className="col-span-7">
-            <span
-              style={{
-                color: "#0490DF",
-                fontWeight: "900",
-                fontSize: "18px",
-              }}
-            >
+            <span className="text-sky-600 text-lg font-extrabold">
               Titre de l'article
             </span>{" "}
-            <p style={{ fontSize: "17px", lineHeight: "17px" }}>
+            <p className="text-sm mr-7 text-justify">
               Lorem ispum dolor fortuna simpre cresis, out decresis vita
               detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
             </p>
@@ -131,19 +116,12 @@ const Home = () => {
 
       <section className="mb-10">
         <div className="text-center">
-          <span
-            style={{
-              color: "#0490DF",
-              fontWeight: "900",
-              fontSize: "28px",
-              lineHeight: "27px",
-            }}
-          >
+          <span className="text-sky-600 text-3xl font-black">
             Nos partenaires
           </span>{" "}
         </div>
 
-        <div class="container relative z-40 mx-auto ">
+        <div class="container relative z-40 mx-auto px-5 ">
           <div class="flex flex-wrap justify-center mx-auto lg:w-full md:w-5/6 xl:shadow-small-blue">
             <a href="#" class="block w-1/3 py-10 text-center lg:w-1/4">
               <div>
@@ -174,6 +152,29 @@ const Home = () => {
                 </p>
               </div>
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-10">
+        <div className="text-center">
+          <span className="text-sky-600 text-3xl font-black">Témoignages</span>{" "}
+        </div>
+
+        <div class="mx-6 mt-5 rounded-2xl px-5 py-7 bg-sky-600">
+          <div className="z-10">
+            <FontAwesomeIcon
+              icon={faQuoteLeft}
+              color="white"
+              className="text-6xl opacity-25"
+            />
+          </div>
+          <div className="z-20 -mt-7">
+            <p className="text-center text-sm text-white">
+              Lorem ispum dolor fortuna simpre cresis, out decresis vita
+              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
+            </p>
+            <p className="text-start text-white mt-4">Candidat X</p>
           </div>
         </div>
       </section>
