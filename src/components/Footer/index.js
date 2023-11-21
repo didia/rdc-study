@@ -131,7 +131,7 @@ export const Footer = () => {
                 <div class="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
                   <form class="flex flex-row">
                     <input
-                      class="h-16 text-grey-darker py-2 font-normal text-grey-darkest border border-gray-100 font-bold w-full py-1 px-2 outline-none text-lg text-gray-600"
+                      class="h-16 text-grey-darker text-grey-darkest border border-gray-100 font-bold w-full py-1 px-2 outline-none text-lg text-gray-600"
                       type="text"
                       placeholder="Entrer votre adresse E-mail"
                       style={{

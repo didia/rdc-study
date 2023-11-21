@@ -4,14 +4,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as styles from "./styles.module.scss";
 
 const BourseCard = ({ img, setDescription=true, textSize }) => {
+  const titleClass = setDescription
+    ? "font-bold mb-2 text-sky-600 text-xl"
+    : "font-bold mb-2 text-sky-600 text-lg";
+
   return (
     <>
       <div class="max-w-sm rounded-md overflow-hidden shadow-lg bg-gray-200">
         <img class="w-full" src={img} alt="Sunset in the mountains" />
         <div class="mx-2 py-2">
-          <div class={"font-bold mb-2 text-sky-600 text-xl"}>
-            Bourse d'études
-          </div>
+          <div class={titleClass}>Bourse d'études</div>
           {setDescription && (
             <p class="text-gray-700 text-sm">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.

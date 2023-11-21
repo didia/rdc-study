@@ -36,7 +36,7 @@ const Scholarship = () => {
 
               <div className={style.scholarship__content}>
                 <div className="flex justify-center">
-                  <div class="grid grid-cols-16 gap-4">
+                  <div class={"grid grid-cols-16 gap-4 " + style.scholarship__bourse_card}>
                     <div>
                       <button
                         class="absolute left-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full"
@@ -65,10 +65,18 @@ const Scholarship = () => {
                     </div>
 
                     <div className="col-span-7">
-                      <BourseCard img={img6} setDescription={false} textSize={"sm"} />
+                      <BourseCard
+                        img={img6}
+                        setDescription={false}
+                        textSize={"sm"}
+                      />
                     </div>
                     <div className="col-span-7">
-                      <BourseCard img={img6} setDescription={false} textSize={"sm"} />
+                      <BourseCard
+                        img={img6}
+                        setDescription={false}
+                        textSize={"sm"}
+                      />
                     </div>
 
                     <div>
