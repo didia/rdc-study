@@ -17,12 +17,11 @@ const Bourse = () => {
       <section className="mb-16">
         <div class="flex justify-start w-full z-10 absolute">
           <div className="text-start mx-20">
-            <span className={styles.bourse__title}>Bourse d'études</span>{" "}
+            <span className={styles.bourse__title}>Bourses d'études</span>{" "}
             <p>
               <span className={styles.bourse__description}>
                 Lorem ispum dolor fortuna simpre cresis, out decresis vita Lorem
                 ispum dolor fortuna simpre cresis, out decresis vita Lorem ispum
-                dolor fortuna simpre cresis, out decresis vita
               </span>
               <br />
               <br />
@@ -39,11 +38,11 @@ const Bourse = () => {
         </div>
         <div class="w-full h-full mt-10">
           <div style={{ marginTop: "20px" }}>
-            <div className={styles.ellipse1}>
-              <img src={img1} style={{ height: "220px" }} />
+            <div className={styles.ellipse__first}>
+              <img src={img1} />
             </div>
-            <div className={styles.ellipse2}>
-              <img src={img2} style={{ height: "230px" }} />
+            <div className={styles.ellipse__second}>
+              <img src={img2} />
             </div>
           </div>
 
@@ -51,14 +50,14 @@ const Bourse = () => {
             <img src={overlay4} style={{ height: "280px" }} />
           </div>
 
-          <div className={styles.ellipse3}>
-            <img src={img4} style={{ height: "280px" }} />
+          <div className={styles.ellipse__third}>
+            <img src={img4} />
           </div>
-          <div className={styles.ellipse4}>
-            <img src={img3} style={{ height: "280px" }} />
+          <div className={styles.ellipse__fourth}>
+            <img src={img3} />
           </div>
 
-          <div className={styles.student_img}>
+          <div className={styles.bourse__img_container}>
             <img src={img5} />
           </div>
         </div>

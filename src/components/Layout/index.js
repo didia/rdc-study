@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as styles from "./styles.module.scss";
 import Header from "../Header";
+import Menu from "../Menu";
 import { Footer } from "../Footer";
 
 const Layout = ({ pageTitle, children }) => {
@@ -22,8 +23,8 @@ const Layout = ({ pageTitle, children }) => {
         name="instagram:url"
         content="https://www.instagram.com/243_technologies/"
       />
-      <Header />
-      <main>{children}</main>
+        <Header />
+        <main>{children}</main>
       <Footer />
     </>
   );

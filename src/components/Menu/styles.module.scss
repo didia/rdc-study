@@ -1,0 +1,208 @@
+.menu {
+        position: absolute;
+        background-color: #4bb4d4;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+
+    &__container {
+        height: 3rem;
+        box-shadow: 0 0 0.3rem 0 rgb(0 0 0 / 35%);
+        width: 100%;
+        @media (max-width: 798px) {
+                height: fit-content;
+            }
+    }
+}
+
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+.navlinks li a:hover {
+    color: #fff;
+}
+
+/* NAVBAR MENU */
+
+.menu {
+    display: flex;
+    gap: 0.1em;
+    font-size: 14px;
+    z-index: 2;
+}
+
+.active,
+.menugroup__active {
+    background-color: #046059;
+    color: #fff !important;
+    border-radius: 0;
+    transition: 0.3s ease;
+}
+
+.menugroup__active a {
+    color: #fff !important;
+}
+
+.menugroup__active {
+    position: relative;
+}
+
+.menu li:hover {
+    background-color: #046059;
+    border-radius: 0;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 0.4rem 0.8rem;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DROPDOWN MENU */
+
+.menugroup {
+    position: relative;
+}
+
+.dropdown {
+    background-color: #fff;
+    box-shadow: 0 0 0.3rem 0 rgb(0 0 0 / 20%);
+    padding: 1em 0rem;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    top: 1.5rem;
+    z-index: 2;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 10em;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+.menugroup:hover .dropdown {
+    display: block;
+}
+
+.menugroup__active:hover .dropdown {
+    display: block;
+
+    a {
+        color: #000 !important;
+    }
+}
+
+.checkbox {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+   
+
+    a {
+        font-size: 16px !important;
+    }
+
+    .menu li {
+        text-align: left;
+        margin-bottom: 1rem;
+        padding: 0.6rem 1rem;
+        display: block;
+    }
+
+    .menu li+li {
+        border-top: 1px solid #046059;
+        text-align: left;
+    }
+
+    .menu li:hover {
+        background-color: #fff;
+
+        a {
+            color: #046059;
+        }
+    }
+
+    .checkbox:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        position: relative !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        top: 0 !important;
+
+        li {
+            width: 100% !important;
+            border: 0 !important;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    .navlinks {
+        padding-left: 0.6rem;
+        margin-bottom: 0.2rem;
+        margin-top: 1.2rem !important;
+    }
+
+    .menu__logo {
+        margin-left: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .menu {
+        margin-left: 60px;
+    }
+}

@@ -1,16 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as styles from "./header.module.scss";
 import logo from "../../images/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  const humbugerRef = useRef();
+  const navBarRef = useRef();
+  const [toggleNav, setToggleNav] = useState(false);
   useEffect(() => {
-    const btn = document.querySelector("button.mobile-menu-button");
-    const menu = document.querySelector(".mobile-menu");
-
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
-  });
+    
+    if(toggleNav) {
+      navBarRef.current.classList.remove("hidden");
+      navBarRef.current.classList.add("visible");
+    }
+    else{
+      navBarRef.current.classList.remove("visible");
+      navBarRef.current.classList.add("hidden");
+    }
+  }, [toggleNav]);
 
   return (
     <nav class="bg-white shadow-lg">
@@ -108,19 +116,30 @@ const Header = () => {
           </div>
 
           <div class="md:hidden flex items-center">
-            <button class="outline-none mobile-menu-button">
-              <svg
-                class="w-10 h-10 text-cyan-500"
-                x-show="!showMenu"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
+            <button
+              class="outline-none flex"
+              ref={humbugerRef}
+              onClick={(e) => setToggleNav(!toggleNav)}
+            >
+              {toggleNav ? (
+                <FontAwesomeIcon
+                  className="text-4xl text-cyan-500"
+                  icon={faXmark}
+                />
+              ) : (
+                <svg
+                  class="w-10 h-10 text-cyan-500"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              )}
             </button>
           </div>
 
@@ -216,6 +235,56 @@ const Header = () => {
               </li>
             </ul>
           </div>
+        </div>
+
+        <div
+          className={
+            "hidden z-10 absolute w-full left-0 text-center text-white uppercase text-xs " +
+            styles.navbar__container
+          }
+          ref={navBarRef}
+        >
+          <ul className="w-full">
+            <li className="border py-2 border-white border-opacity-60 opacity-60">
+              <a href="/">Accueil</a>
+            </li>
+            <li className="border py-2 border-white border-opacity-60 opacity-60">
+              {" "}
+              <a href="/bourse">Bourses d'études</a>
+            </li>
+            <li className="border py-2 border-white border-opacity-60 opacity-60">
+              {" "}
+              <a href="/bourseDetails">Détails Bourses</a>
+            </li>
+            <li className="border py-2 border-white border-opacity-60 opacity-60">
+              {" "}
+              <a href="/healthcare">Examens Médicaux</a>
+            </li>
+            <li className="border py-2 border-white border-opacity-60 opacity-60">
+              {" "}
+              <a href="/country">&Eacute;tudier en France</a>
+            </li>
+            <li className="border py-2 border-white border-opacity-60 opacity-60">
+              {" "}
+              <a href="/partenership">Partenariat</a>
+            </li>
+            <li className="border py-2 border-white border-opacity-60 opacity-60">
+              {" "}
+              <a href="/privacy">Confidentialité</a>
+            </li>
+            <li className="border py-2 border-white border-opacity-60 opacity-60">
+              {" "}
+              <a href="/aboutUs">&Agrave; propos</a>
+            </li>
+            <li className="border py-2 border-white border-opacity-60 opacity-60">
+              {" "}
+              <a href="/help">Aide</a>
+            </li>
+            <li className="border py-2 border-white border-opacity-60 opacity-60">
+              {" "}
+              <a href="/faq">FAQ</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
