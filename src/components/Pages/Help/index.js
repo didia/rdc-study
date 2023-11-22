@@ -10,17 +10,17 @@ import img_earthplane from "../../../images/earth-with-plane-drawing-png.png";
 const Help = () => {
   return (
     <Layout pageTitle={"Page d'aide"}>
-      <section className="mb-12">
+      <section className="mb-7">
         <div className="grid grid-cols-12 gap-2">
           <div className="col-span-5">
-            <div className={styles.ellipse1}>
-              <img src={img_boy_running} style={{ height: "220px" }} />
+            <div className={styles.ellipse__first}>
+              <img src={img_boy_running} />
             </div>
-            <div className={styles.ellipse2}>
-              <img src={overlay4} style={{ height: "230px" }} />
+            <div className={styles.ellipse__second}>
+              <img src={overlay4} />
             </div>
           </div>
-          <div className="col-span-5 text-sky-600 text-3xl font-extrabold z-10 mt-10">
+          <div className="col-span-5 text-sky-600 text-2xl font-extrabold z-10 mt-10">
             Dites-nous en quoi pouvons-nous vous aider ?
             <p>
               <img src={img_earth} style={{ height: "50px", float: "right" }} />
@@ -32,14 +32,14 @@ const Help = () => {
         </div>
 
         <div
-          className="h-60 w-full mt-20 text-center text-white text-sm px-12 py-10"
+          className="h-60 w-full mt-7 text-center text-white text-sm px-12 py-3"
           style={{ backgroundColor: "#862304" }}
         >
           Nous n'offrons malheureusement pas des bourses! Nous accompagnons ceux
           qui souhaitent poursuivre leurs études supérieures à l'étranger par
           leurs propres moyens. Vous trouverez toutes les offres des bourses
           dont nous avons connaissance sur notre site web rdcetudes.com/bourses
-          <p className="mt-5">
+          <p className="mt-2">
             <button className={styles.help__btn}>En savoir plus</button>
           </p>
         </div>
@@ -85,7 +85,7 @@ const Help = () => {
             class="mt-5 block appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
           />
 
-          <p className="text-sky-600 font-extrabold text-2xl my-5">Suivant </p>
+          <p className="text-sky-600 font-extrabold text-lg my-5">Suivant </p>
         </div>
       </section>
     </Layout>

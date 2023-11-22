@@ -239,7 +239,7 @@ const Header = () => {
 
         <div
           className={
-            "hidden z-10 absolute w-full left-0 text-center text-white uppercase text-xs " +
+            "hidden z-30 absolute w-full left-0 text-center text-white uppercase text-xs " +
             styles.navbar__container
           }
           ref={navBarRef}
