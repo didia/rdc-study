@@ -1,27 +1,26 @@
 import React from "react";
 import Layout from "../../Layout";
-import img_student from "../../../images/iStock-1201429665-scaled-p8d527vaag9nez64eb4yun06jz963plbww2kuwdfdc-removebg-preview2.png";
-import img_computer from "../../../images/Blog_PrivacyGenerator_042120_WP-2-removebg-preview.png";
 import * as styles from "./styles.module.scss";
-import overlay4 from "../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png";
-
-import img_franceFlag from "../../../images/580b585b2edbce24c47b27ff.png";
-import img_graduated from "../../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png";
 import img_question from "../../../images/question.png"
+import { StaticImage } from "gatsby-plugin-image";
 
 const FAQ = () => {
   return (
     <Layout pageTitle="FAQ">
       <section>
-        <div class="relative -mt-4 h-60 w-full bg-sky-600">
+        <div class="relative h-60 w-full bg-sky-600">
           <div className="absolute">
             <img src={img_question} />
           </div>
-          <div className="absolute py-20 px-20 text-center text-white text-xl font-bold uppercase z-20">
+          <div className="absolute py-20 pl-10 text-center text-white text-xl font-bold uppercase z-20">
             Questions populaires
           </div>
-          <div class="absolute bottom-0 right-0 z-10">
-            <img src={img_student} alt="img student" className="h-48" />
+          <div class="absolute bottom-0 right-0">
+            <StaticImage
+              src="../../../images/iStock-1201429665-scaled-p8d527vaag9nez64eb4yun06jz963plbww2kuwdfdc-removebg-preview2.png"
+              alt="img student"
+              className="h-56"
+            />
           </div>
         </div>
       </section>
