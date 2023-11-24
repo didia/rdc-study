@@ -13,6 +13,7 @@ import logo from "../../../images/logo.png";
 import StudyCountry from "../../../components/StudyCountry";
 import Scholarship from "../../../components/Scholarship";
 import ContactForm from "../../../components/ContactForm";
+import NewsCard from "../../NewsCard";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
@@ -60,7 +61,7 @@ const Home = () => {
       <StudyCountry />
       <Scholarship />
 
-      <section className="mb-10">
+      <section className="mb-5">
         <div className="text-left px-8 mb-5">
           <span className="text-sky-600 text-xl font-black uppercase">
             Les dernières nouvelles
@@ -68,55 +69,32 @@ const Home = () => {
           <div class="h-4 w-full border-b-2 border-sky-600"></div>
         </div>
 
-        <div class="grid grid-cols-12 gap-4">
-          <div className="col-span-5 px-4">
-            <img src={img2} className="object-contain" />
-          </div>
-          <div className="col-span-7">
-            <span className="text-sky-600 text-lg font-extrabold">
-              Titre de l'article
-            </span>{" "}
-            <p className="text-sm mr-7 text-justify">
-              Lorem ispum dolor fortuna simpre cresis, out decresis vita
-              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
-            </p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-12 gap-4 py-4">
-          <div className="col-span-5 px-4">
-            <img src={img3} className="object-contain" />
-          </div>
-          <div className="col-span-7">
-            <span className="text-sky-600 text-lg font-extrabold">
-              Titre de l'article
-            </span>{" "}
-            <p className="text-sm mr-7 text-justify">
-              Lorem ispum dolor fortuna simpre cresis, out decresis vita
-              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
-            </p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-12 gap-4 py-4">
-          <div className="col-span-5 px-4">
-            <img src={img4} className="object-contain" />
-          </div>
-          <div className="col-span-7">
-            <span className="text-sky-600 text-lg font-extrabold">
-              Titre de l'article
-            </span>{" "}
-            <p className="text-sm mr-7 text-justify">
-              Lorem ispum dolor fortuna simpre cresis, out decresis vita
-              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
-            </p>
-          </div>
-        </div>
+        <NewsCard
+          image={img2}
+          title={"Titre de l'article"}
+          desc={
+            "Lorem ispum dolor fortuna simpre cresis, out decresis vita detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis"
+          }
+        />
+        <NewsCard
+          image={img3}
+          title={"Titre de l'article"}
+          desc={
+            "Lorem ispum dolor fortuna simpre cresis, out decresis vita detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis"
+          }
+        />
+        <NewsCard
+          image={img4}
+          title={"Titre de l'article"}
+          desc={
+            "Lorem ispum dolor fortuna simpre cresis, out decresis vita detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis"
+          }
+        />
       </section>
 
-      <section className="mb-10">
+      <section className="mb-5">
         <div className="text-center">
-          <span className="text-sky-600 text-3xl font-black">
+          <span className="text-sky-600 text-2xl font-black">
             Nos partenaires
           </span>{" "}
         </div>
@@ -156,9 +134,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="mb-10">
+      <section className="mb-5">
         <div className="text-center">
-          <span className="text-sky-600 text-3xl font-black">Témoignages</span>{" "}
+          <span className="text-sky-600 text-2xl font-black">Témoignages</span>{" "}
         </div>
 
         <div class="mx-6 mt-5 rounded-2xl px-5 py-7 bg-sky-600">

@@ -1,22 +1,19 @@
 import React from 'react';
-import overlay4 from "../../images/png-clipart-black-airway.png";
+import overlay1 from "../../images/png-clipart-black-airway.png";
+import overlay2 from "../../images/smiley-femme-bagage-rouge-coup-moyen-removebg-preview 1.png";
+import * as styles from "./styles.module.scss";
 
 const ContactForm = ({ title, bgImg, marginBottom }) => {
     return (
       <>
         <section className={marginBottom}>
-          <div className="text-center mx-10">
-            <span
-              style={{
-                color: "#0490DF",
-                fontWeight: "900",
-                fontSize: "28px",
-                lineHeight: "27px",
-              }}
-            >
+          <div className="text-center mx-10 z-10">
+            <span className="text-sky-600 text-2xl font-black">
               Besoin d'un service ?
             </span>{" "}
-            <p>Lorem ispum dolor fortuna simpre cresis, out decresis vita</p>
+            <p className="py-7">
+              Lorem ispum dolor fortuna simpre cresis, out decresis vita
+            </p>
           </div>
 
           <div>
@@ -25,15 +22,7 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
                 <div>
                   <input
                     type="text"
-                    className=""
-                    style={{
-                      width: "300px",
-                      height: "40px",
-                      border: "1.5px solid #0490DF",
-                      borderRadius: "5px",
-                      backgroundColor: "#ECEAEA",
-                      paddingLeft: "20px",
-                    }}
+                    className={styles.form__input}
                     placeholder="Nom"
                   />
                 </div>
@@ -41,33 +30,13 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
                 <div className="py-4">
                   <input
                     type="text"
-                    className=""
-                    style={{
-                      width: "300px",
-                      height: "40px",
-                      border: "1.5px solid #0490DF",
-                      borderRadius: "5px",
-                      backgroundColor: "#ECEAEA",
-                      paddingLeft: "20px",
-                    }}
+                    className={styles.form__input}
                     placeholder="Adresse E-mail"
                   />
                 </div>
 
                 <div>
-                  <textarea
-                    style={{
-                      width: "300px",
-                      height: "120px",
-                      border: "1.5px solid #0490DF",
-                      borderRadius: "5px",
-                      backgroundColor: "#ECEAEA",
-                      paddingLeft: "20px",
-                      paddingTop: "20px",
-                    }}
-                  >
-                    Message
-                  </textarea>
+                  <textarea className={styles.form__textarea}>Message</textarea>
                 </div>
 
                 <div className="py-4">
@@ -77,8 +46,8 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
                 </div>
               </div>
             </div>
-            <div class="w-full h-full mt-10">
-              <img src={bgImg ? bgImg : overlay4} />
+            <div className={styles.form__overlayImg}>
+              <img src={bgImg ? bgImg : overlay1} />
             </div>
           </div>
         </section>

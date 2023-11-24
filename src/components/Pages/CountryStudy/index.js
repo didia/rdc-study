@@ -9,18 +9,18 @@ import img_graduated from "../../../images/depositphotos_42487119-stock-photo-go
 const CountryStudy = () => {
   return (
     <Layout pageTitle={"Etudier en France"}>
-      <section className="mb-12">
+      <section className="mb-10">
         <div className="grid grid-cols-12 text-center">
           <div className="col-span-1">
             <div className={styles.ellipse2}>
               <img src={overlay4} style={{ height: "170px" }} />
             </div>
           </div>
-          <div className="col-span-8 ml-20 z-10 mt-5">
-            <p className="text-sky-600 text-xl font-extrabold text-center">
+          <div className="col-span-8 ml-5 z-10 mt-5">
+            <p className="text-sky-600 text-xl font-extrabold text-start">
               Etudier en France
             </p>
-            <p className="text-justify text-xs">
+            <p className="text-start text-xs">
               La France offre un enseignement de qualité qui possède plusieurs
               ressemblances avec plusieurs systèmes d’enseignement africains.
             </p>

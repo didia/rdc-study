@@ -21,7 +21,7 @@ const PartenerShip = () => {
           </div>
         </div>
 
-        <div className="mx-10 text-justify">
+        <div className="mx-10 text-start">
           <p className="text-sky-600 text-xl font-bold">
             Optez pour l'Université Européenne Lefke en Chypre du Nord
           </p>
@@ -153,7 +153,7 @@ const PartenerShip = () => {
         </div>
       </section>
 
-      <section className="mx-10 py-10">
+      <section className="py-10 px-2">
         <NewsCard image={img1} />
         <NewsCard image={img2} />
         <NewsCard image={img3} />

@@ -11,16 +11,9 @@ import BourseCard from '../BourseCard';
 const Scholarship = () => {
     return (
       <>
-        <section className="mb-10">
+        <section className="mb-5">
           <div className="text-center mx-10 mb-3">
-            <span
-              style={{
-                color: "#0490DF",
-                fontWeight: "900",
-                fontSize: "28px",
-                lineHeight: "27px",
-              }}
-            >
+            <span className="text-sky-600 text-2xl font-black">
               Bourses d'études
             </span>{" "}
             <p>
@@ -36,7 +29,12 @@ const Scholarship = () => {
 
               <div className={style.scholarship__content}>
                 <div className="flex justify-center">
-                  <div class={"grid grid-cols-16 gap-4 " + style.scholarship__bourse_card}>
+                  <div
+                    class={
+                      "grid grid-cols-16 gap-4 " +
+                      style.scholarship__bourse_card
+                    }
+                  >
                     <div>
                       <button
                         class="absolute left-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full"

@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import * as styles from "./header.module.scss";
+import * as styles from "./styles.module.scss";
 import logo from "../../images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import NavLink from "./Link";
 
 const Header = () => {
   const humbugerRef = useRef();
@@ -245,45 +246,17 @@ const Header = () => {
           ref={navBarRef}
         >
           <ul className="w-full">
-            <li className="border py-2 border-white border-opacity-60 opacity-60">
-              <a href="/">Accueil</a>
-            </li>
-            <li className="border py-2 border-white border-opacity-60 opacity-60">
-              {" "}
-              <a href="/bourse">Bourses d'études</a>
-            </li>
-            <li className="border py-2 border-white border-opacity-60 opacity-60">
-              {" "}
-              <a href="/bourseDetails">Détails Bourses</a>
-            </li>
-            <li className="border py-2 border-white border-opacity-60 opacity-60">
-              {" "}
-              <a href="/healthcare">Examens Médicaux</a>
-            </li>
-            <li className="border py-2 border-white border-opacity-60 opacity-60">
-              {" "}
-              <a href="/country">&Eacute;tudier en France</a>
-            </li>
-            <li className="border py-2 border-white border-opacity-60 opacity-60">
-              {" "}
-              <a href="/partenership">Partenariat</a>
-            </li>
-            <li className="border py-2 border-white border-opacity-60 opacity-60">
-              {" "}
-              <a href="/privacy">Confidentialité</a>
-            </li>
-            <li className="border py-2 border-white border-opacity-60 opacity-60">
-              {" "}
-              <a href="/aboutUs">&Agrave; propos</a>
-            </li>
-            <li className="border py-2 border-white border-opacity-60 opacity-60">
-              {" "}
-              <a href="/help">Aide</a>
-            </li>
-            <li className="border py-2 border-white border-opacity-60 opacity-60">
-              {" "}
-              <a href="/faq">FAQ</a>
-            </li>
+            <NavLink title={"accueil"} url={"/"} />
+            <NavLink title={"bourses d'études"} url={"/bourse"} />
+            <NavLink title={"détails bourses"} url={"/bourseDetails"} />
+            <NavLink title={"examens médicaux"} url={"/healthcare"} />
+            <NavLink title={"étudier en france"} url={"/country"} />
+            <NavLink title={"partenariat"} url={"/partenership"} />
+            <NavLink title={"Politique de Confidentialité"} url={"/privacy"} />
+            <NavLink title={"à propos"} url={"/aboutUs"} />
+            <NavLink title={"aide"} url={"/help"} />
+            <NavLink title={"faq"} url={"/faq"} />
+            <NavLink title={"nous contacter"} url={"/contactUs"} />
           </ul>
         </div>
       </div>

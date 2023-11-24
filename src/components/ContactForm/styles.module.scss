@@ -1,0 +1,43 @@
+.form {
+    &__overlayImg {
+    }
+    &__overlayImg > img {
+        height: 150px;
+        margin-left: -1.2rem;
+        
+    }
+    &__overlayImg2 > img {
+        height: 100px;
+        margin-left: auto;
+        padding-left: 18.6rem;
+    }
+    &__input {
+        width: 300px;
+        height: 40px;
+        border: 1.5px solid #0490DF;
+        border-radius: 5px;
+        background-color: #ECEAEA;
+        padding-left: 20px;
+        @media only screen and (max-width: 415px) {
+                width: 260px;
+            }
+        @media only screen and (max-width: 365px) {
+                width: 240px;
+            }
+    }
+    &__textarea {
+        width: 300px;
+        height: 120px;
+        border: 1.5px solid #0490DF;
+        border-radius: 5px;
+        background-color: #ECEAEA;
+        padding-left: 20px;
+        padding-top: 20px;
+        @media only screen and (max-width: 415px) {
+                width: 260px;
+            }
+        @media only screen and (max-width: 365px) {
+                width: 240px;
+            }
+    }
+}

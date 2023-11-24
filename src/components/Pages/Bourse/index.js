@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../Layout";
 import BourseCard from "../../BourseCard";
+import SecondaryBtn from "../../Button/Secondary"
 import * as styles from "./styles.module.scss";
 
 import overlay4 from "../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png";
@@ -14,9 +15,9 @@ import img6 from "../../../images/800x600_FE_WEB_equivalence 2.png";
 const Bourse = () => {
   return (
     <Layout pageTitle={"Bourse d'études"}>
-      <section className="mb-16">
-        <div class="flex justify-start w-full z-10 absolute">
-          <div className="text-start mx-20">
+      <section className="mb-7">
+        <div class="flex justify-start w-full z-5 absolute">
+          <div className="text-start mx-10 z-10">
             <span className={styles.bourse__title}>Bourses d'études</span>{" "}
             <p>
               <span className={styles.bourse__description}>
@@ -25,14 +26,8 @@ const Bourse = () => {
               </span>
               <br />
               <br />
-              <button
-                class={
-                  "bg-yellow-500 hover:bg-sky-600 hover:text-white font-bold py-2 px-4 rounded-md " +
-                  styles.bourse__btn
-                }
-              >
-                Demander une assistance
-              </button>
+              
+              <SecondaryBtn text={"Demander une assistance"} />
             </p>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../Layout";
 import ValueCard from "../../ValueCard";
+import SecondaryBtn from "../../Button/Secondary";
 
 import img1 from "../../../images/World_Of_Empires.png";
 import img_yellowEllipse from "../../../images/Ellipse8.png";
@@ -20,8 +21,8 @@ const AboutUs = () => {
           <div className="col-span-3">
             <img src={img1} alt="plans" />
           </div>
-          <div className="col-span-6 z-10">
-            <div className="text-start mx-4">
+          <div className="col-span-7 z-10">
+            <div className="text-start ml-4">
               <span className={styles.about__title}>Pourquoi RDC-Etudes ?</span>{" "}
               <p>
                 <span className={styles.about__description}>
@@ -30,18 +31,11 @@ const AboutUs = () => {
                 </span>
                 <br />
                 <br />
-                <button
-                  class={
-                    "bg-yellow-500 hover:bg-sky-600 hover:text-white font-bold py-2 px-4 rounded-md " +
-                    styles.about__btn
-                  }
-                >
-                  Demander une assistance
-                </button>
+                <SecondaryBtn text={"Demander une assistance"} />
               </p>
             </div>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1">
             <div className={styles.ellipse3}>
               <img src={img_yellowEllipse} style={{ height: "200px" }} />
             </div>
@@ -59,7 +53,7 @@ const AboutUs = () => {
       <section>
         <div className="flex items-center justify-center">
           <span
-            className={"text-center font-bold " + styles.about__values_title}
+            className={"text-center font-extrabold " + styles.about__values_title}
           >
             TROIS VALEURS QUI GUIDENT NOS ACTIONS
           </span>

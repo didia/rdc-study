@@ -23,7 +23,7 @@ const BourseDetails = () => {
           </div>
         </div>
         <div className="mx-10">
-          <p className="text-sky-600 text-xl font-bold text-justify">
+          <p className="text-sky-600 text-xl font-bold text-start">
             Bourses d’excellence pour chercheurs et artistes étrangers en Suisse
           </p>
           <p className="py-3 text-sm">

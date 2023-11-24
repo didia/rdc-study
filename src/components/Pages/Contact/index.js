@@ -11,7 +11,6 @@ import img_envelope from "../../../images/envelope.png";
 import img_overlay from "../../../images/Ellipse9.png";
 import * as styles from "./style.module.scss";
 
-
 const Contact = () => {
     return (
       <Layout pageTitle={"Contactez-nous"}>
@@ -20,8 +19,8 @@ const Contact = () => {
             <div className="col-span-3">
               <img src={img1} alt="plans" />
             </div>
-            <div className="col-span-6 z-10">
-              <div className="text-start mx-4">
+            <div className="col-span-7 z-10">
+              <div className="text-start ml-4">
                 <span className={styles.about__title}>
                   Contactez RDC Etudes
                 </span>{" "}
@@ -34,7 +33,7 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <div className="col-span-2">
+            <div className="col-span-1">
               <div className={styles.ellipse4}>
                 <img src={img_airline} style={{ height: "300px" }} />
               </div>

@@ -133,7 +133,7 @@ export const Footer = () => {
                     <input
                       class="h-16 text-grey-darker text-grey-darkest border border-gray-100 font-bold w-full py-1 px-2 outline-none text-lg text-gray-600"
                       type="text"
-                      placeholder="Entrer votre adresse E-mail"
+                      placeholder="Entrer votre email"
                       style={{
                         borderRadius: "20px",
                         backgroundColor: "#D9D9D9",

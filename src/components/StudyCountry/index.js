@@ -13,7 +13,7 @@ import img9 from "../../images/flatten.png";
 const StudyCountry = () => {
   return (
     <>
-      <section className="mb-10" id="studycountry">
+      <section className="mb-2" id="studycountry">
         <div class="grid grid-cols-4 gap-2">
           <div className="">&nbsp;</div>
           <div className="">&nbsp;</div>
@@ -29,14 +29,7 @@ const StudyCountry = () => {
           </div>
 
           <div className="col-span-5 px-1">
-            <span
-              style={{
-                color: "#0490DF",
-                fontWeight: "900",
-                fontSize: "25px",
-                lineHeight: "27px",
-              }}
-            >
+            <span className="text-sky-600 text-2xl font-black">
               Où souhaitez-vous étudier ?
             </span>{" "}
             <p>
@@ -69,11 +62,10 @@ const StudyCountry = () => {
                 <div class="grid grid-cols-12 gap-4">
                   <div>
                     <button
-                      class="absolute left-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full"
+                      class="absolute left-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full top-16"
                       type="button"
                       data-te-target="#carouselExampleIndicators"
                       data-te-slide="prev"
-                      style={{ top: "90px" }}
                     >
                       <span class="inline-block h-8 w-8">
                         <svg
@@ -97,11 +89,7 @@ const StudyCountry = () => {
                   <div className="col-span-5">
                     <div class="block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                       <div class="relative overflow-hidden bg-cover bg-no-repeat">
-                        <img
-                          class="rounded-t-lg"
-                          src={img8}
-                          alt=""
-                        />
+                        <img class="rounded-t-lg" src={img8} alt="" />
                       </div>
                       <div class="p-6">
                         <p
@@ -117,11 +105,7 @@ const StudyCountry = () => {
                   <div className="col-span-5">
                     <div class="block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                       <div class="relative overflow-hidden bg-cover bg-no-repeat">
-                        <img
-                          class="rounded-t-lg"
-                          src={img8}
-                          alt=""
-                        />
+                        <img class="rounded-t-lg" src={img8} alt="" />
                       </div>
                       <div class="p-6">
                         <p
@@ -136,11 +120,10 @@ const StudyCountry = () => {
 
                   <div>
                     <button
-                      class="absolute right-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full"
+                      class="absolute right-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full top-16"
                       type="button"
                       data-te-target="#carouselExampleIndicators"
                       data-te-slide="prev"
-                      style={{ top: "90px" }}
                     >
                       <span class="inline-block h-8 w-8">
                         <svg
