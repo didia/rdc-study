@@ -3,7 +3,6 @@ import Layout from "../../../components/Layout";
 import * as style from "./styles.module.scss";
 
 import overlay1 from "../../../images/Rectangle 47.png";
-import img1 from "../../../images/equipe-etudes.png";
 import img2 from "../../../images/jeune-femme-entree-ecole-lit-livre.png";
 import img3 from "../../../images/beau-routard-homme.png";
 import img4 from "../../../images/etudiante-africaine-posee.png";
@@ -17,13 +16,18 @@ import NewsCard from "../../NewsCard";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { StaticImage } from "gatsby-plugin-image";
+import SecondaryBtn from "../../Button/Secondary";
 
 const Home = () => {
   return (
     <Layout pageTitle="Page d'acceuil">
-      <div className={style.parent} id="contact_section">
-        <img src={img1} />
-        <div className={style.inner}>
+      <div className={style.firstSection}>
+        <StaticImage
+          class={style.firstSection__imgStudent}
+          src="../../../images/equipe-etudes.png"
+        />
+        <div className={style.firstSection__inner}>
           <img src={overlay1} />
 
           <div className={style.contact_content}>
@@ -32,7 +36,8 @@ const Home = () => {
                 <div>
                   <h1
                     className={
-                      "text-4xl text-white font-black " + style.header__title
+                      "text-4xl text-white font-black " +
+                      style.firstSection__title
                     }
                   >
                     RDC &Eacute;tudes
@@ -40,7 +45,7 @@ const Home = () => {
                 </div>
                 <div
                   className={
-                    "text-sm text-white mb-3 -mt-6 " + style.header__desc
+                    "text-sm text-white mb-3 -mt-6 " + style.firstSection__desc
                   }
                 >
                   Lorem ispum dolor Lorem ispum dolor Lorem ispum dolor Lorem
@@ -48,9 +53,7 @@ const Home = () => {
                   dolor Lorem ispum dolor Lorem ispum dolor
                 </div>
                 <div>
-                  <button type="submit" className={style.header__btn}>
-                    Demander une assistance
-                  </button>
+                  <SecondaryBtn text={"Demander une assistance"} />
                 </div>
               </div>
             </div>

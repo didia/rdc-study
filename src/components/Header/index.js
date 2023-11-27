@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as styles from "./styles.module.scss";
-import logo from "../../images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import NavLink from "./Link";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Header = () => {
   const humbugerRef = useRef();
@@ -27,8 +27,12 @@ const Header = () => {
         <div class="flex justify-between">
           <div class="flex space-x-7">
             <div>
-              <a href="#" class="flex items-center py-4 px-2">
-                <img src={logo} alt="Logo" class="h-14 w-14 mr-2" />
+              <a href="/" class="flex items-center py-4 px-2">
+                <StaticImage
+                  src="../../images/logo.png"
+                  alt="Logo"
+                  class="h-14 w-14 mr-2"
+                />
               </a>
             </div>
             <div class="hidden md:flex items-center space-x-1">

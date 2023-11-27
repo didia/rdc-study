@@ -1,5 +1,6 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
+import { StaticImage } from "gatsby-plugin-image";
 
 import overlay2 from "../../images/Rectangle5.png";
 import img3 from "../../images/4564198_2400445 1.png";
@@ -19,13 +20,16 @@ const StudyCountry = () => {
           <div className="">&nbsp;</div>
           <div className="">&nbsp;</div>
           <div className="">
-            <img src={img4} style={{ height: "60px" }} />
+            <StaticImage
+              height={60}
+              src="../../images/earth-with-plane-drawing-png.png"
+            />
           </div>
         </div>
 
         <div class="grid grid-cols-8">
           <div className="col-span-3">
-            <img src={img3} />
+            <StaticImage src="../../images/4564198_2400445 1.png" />
           </div>
 
           <div className="col-span-5 px-1">
@@ -41,12 +45,18 @@ const StudyCountry = () => {
 
         <div class="grid grid-cols-4 gap-4">
           <div className="">
-            <img src={img6} style={{ height: "80px" }} />
+            <StaticImage
+              height={80}
+              src="../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
+            />
           </div>
           <div className="">&nbsp;</div>
           <div className="">&nbsp;</div>
           <div className="">
-            <img src={img5} style={{ height: "2.2rem" }} />
+            <StaticImage
+              height={80}
+              src="../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
+            />
           </div>
         </div>
       </section>

@@ -1,3 +1,67 @@
+.firstSection {
+    width: 100%;
+    position: relative;
+
+    &__imgStudent {
+        height: 100%;
+        width: 100%;
+    }
+    &__inner {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+        }
+    
+    &__inner > img {
+            height: 100%;
+            width: 100%;
+            opacity: 90%;
+        }
+
+    &__title {
+        font-weight: bolder !important;
+
+        @media only screen and (max-width: 380px) {
+            margin-top: -1rem !important;
+        }
+        @media only screen and (min-width: 380px) and (max-width: 460px) {
+            margin-top: -1.3rem !important;
+        }
+    }
+
+    &__desc {
+        @media only screen and (max-width: 380px) {
+            margin-top: -2rem;
+            font-size: small;
+        }
+        @media only screen and (min-width: 380px) and (max-width: 460px) {
+            margin-top: -2.3rem !important;
+        }
+    }
+
+    &__btn {
+        height: 50px;
+        width: 200px;
+        color: black;
+        font-size: 12px;
+        background-color: #fbc403;
+        border: 1px solid #ffffff;
+        border-radius: 18px;
+        transition: background-color 0.8s;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: 380px) {
+            height: 40px;
+            width: 150px;
+            font-size: 10px;
+        }
+    }
+
+}
+
 .container {
     width: 100%;
 }
@@ -290,31 +354,6 @@
 .mobileModalText {
     line-height: 1.2rem !important;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.parent {
-    width: 100%;
-    position: relative;
-}
-
-.parent>img {
-    height: 100%;
-    width: 100%;
-}
-
-.inner {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.inner>img {
-    height: 100%;
-    width: 100%;
-    opacity: 90%;
 }
 
 
@@ -630,37 +669,5 @@
 
     .firstsection__container {
         margin-left: -16rem;
-    }
-}
-
-.header {
-    &__title {
-    font-weight: bolder !important;
-        @media only screen and (max-width: 380px) {
-            margin-top: -1rem !important;   
-        }
-    }
-    &__desc {
-        @media only screen and (max-width: 380px) {
-            margin-top: -2rem;
-            font-size:small;
-        }
-    }
-    &__btn {
-               height: 50px;
-               width: 200px;
-               color: black;
-               font-size: 12px;
-               background-color: #fbc403;
-               border: 1px solid #ffffff;
-               border-radius: 18px;
-               transition: background-color 0.8s;
-               text-transform: uppercase;
-
-                @media only screen and (max-width: 380px) {
-                        height: 40px;
-                        width: 150px;
-                        font-size: 10px;
-                }
     }
 }
