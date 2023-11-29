@@ -3,14 +3,8 @@ import Layout from "../../Layout";
 import BourseCard from "../../BourseCard";
 import SecondaryBtn from "../../Button/Secondary"
 import * as styles from "./styles.module.scss";
-
-import overlay4 from "../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png";
-import img1 from "../../../images/Ellipse7.png";
-import img2 from "../../../images/Ellipse6.png";
-import img3 from "../../../images/Ellipse8.png";
-import img4 from "../../../images/Ellipse_blue6.png";
-import img5 from "../../../images/Young-Girl-Student-HD.png"
-import img6 from "../../../images/800x600_FE_WEB_equivalence 2.png";
+import { StaticImage } from "gatsby-plugin-image";
+import img6 from "../../../images/800x600_FE_WEB_equivalence 2.jpg";
 
 const Bourse = () => {
   return (
@@ -26,7 +20,7 @@ const Bourse = () => {
               </span>
               <br />
               <br />
-              
+
               <SecondaryBtn text={"Demander une assistance"} />
             </p>
           </div>
@@ -34,26 +28,46 @@ const Bourse = () => {
         <div class="w-full h-full mt-10">
           <div style={{ marginTop: "20px" }}>
             <div className={styles.ellipse__first}>
-              <img src={img1} />
+              <StaticImage
+                height={150}
+                alt="Ellipse 7"
+                src="../../../images/Ellipse7.png"
+              />
             </div>
             <div className={styles.ellipse__second}>
-              <img src={img2} />
+              <StaticImage
+                alt="Ellipse 6"
+                height={160}
+                src="../../../images/Ellipse6.png"
+              />
             </div>
           </div>
 
           <div>
-            <img src={overlay4} style={{ height: "280px" }} />
+            <StaticImage
+              alt="plane"
+              height={280}
+              src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
+            />
           </div>
 
           <div className={styles.ellipse__third}>
-            <img src={img4} />
+            <StaticImage
+              alt="Ellipse blue 6"
+              height={180}
+              src="../../../images/Ellipse_blue6.png"
+            />
           </div>
           <div className={styles.ellipse__fourth}>
-            <img src={img3} />
+            <StaticImage alt="Ellipse" src="../../../images/Ellipse8.png" />
           </div>
 
           <div className={styles.bourse__img_container}>
-            <img src={img5} />
+            <StaticImage
+              alt="Ellipse"
+              height={130}
+              src="../../../images/Young-Girl-Student-HD.png"
+            />
           </div>
         </div>
       </section>

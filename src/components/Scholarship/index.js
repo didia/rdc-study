@@ -1,12 +1,9 @@
 import React from 'react';
 import * as style from "./styles.module.scss";
 
-import img8 from "../../images/tour_effeil.png";
-import img9 from "../../images/flatten.png";
-import img10 from "../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png";
-import overlay3 from "../../images/Rectangle10.png";
-import img6 from "../../images/800x600_FE_WEB_equivalence 2.png";
+import img6 from "../../images/800x600_FE_WEB_equivalence 2.jpg";
 import BourseCard from '../BourseCard';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Scholarship = () => {
     return (
@@ -22,11 +19,18 @@ const Scholarship = () => {
             </p>
           </div>
 
-          <div className={style.scholarship} id="contact_section">
-            <img src={img10} />
+          <div className={style.scholarship}>
+            <StaticImage
+              className={style.scholarship__overlay}
+              alt='plane'
+              src="../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png"
+            />
             <div className={style.scholarship_inner}>
-              <img src={overlay3} />
-
+              <StaticImage
+                className={style.scholarship_inner__overlay}
+                alt='overlay'
+                src="../../images/Rectangle10.png"
+              />
               <div className={style.scholarship__content}>
                 <div className="flex justify-center">
                   <div

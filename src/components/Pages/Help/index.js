@@ -1,11 +1,7 @@
 import React from "react";
 import Layout from "../../Layout";
 import * as styles from "./styles.module.scss";
-import overlay4 from "../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png";
-import img_earth from "../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png";
-
-import img_boy_running from "../../../images/Free-Photo-Tourist-runningfast.png";
-import img_earthplane from "../../../images/earth-with-plane-drawing-png.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Help = () => {
   return (
@@ -14,20 +10,29 @@ const Help = () => {
         <div className="grid grid-cols-12 gap-2">
           <div className="col-span-5">
             <div className={styles.ellipse__first}>
-              <img src={img_boy_running} />
+              <StaticImage alt="tourist" height={150} src="../../../images/Free-Photo-Tourist-runningfast.png" />
             </div>
             <div className={styles.ellipse__second}>
-              <img src={overlay4} />
+              <StaticImage
+                height={160}
+                alt="plane"
+                src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
+              />
             </div>
           </div>
           <div className="col-span-5 text-sky-600 text-2xl font-extrabold z-10 mt-10">
             Dites-nous en quoi pouvons-nous vous aider ?
             <p>
-              <img src={img_earth} style={{ height: "50px", float: "right" }} />
+              <StaticImage
+                height={50}
+                alt="world"
+                class="float-right"
+                src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
+              />
             </p>
           </div>
           <div className="col-span-2">
-            <img src={img_earthplane} />
+            <StaticImage alt="plane" src="../../../images/earth-with-plane-drawing-png.png" />
           </div>
         </div>
 

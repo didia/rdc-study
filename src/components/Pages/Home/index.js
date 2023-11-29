@@ -2,12 +2,9 @@ import * as React from "react";
 import Layout from "../../../components/Layout";
 import * as style from "./styles.module.scss";
 
-import overlay1 from "../../../images/Rectangle 47.png";
-import img2 from "../../../images/jeune-femme-entree-ecole-lit-livre.png";
-import img3 from "../../../images/beau-routard-homme.png";
-import img4 from "../../../images/etudiante-africaine-posee.png";
-import img5 from "../../../images/logo_243.png";
-import logo from "../../../images/logo.png";
+import news_img2 from "../../../images/jeune-femme-entree-ecole-lit-livre.jpg";
+import news_img3 from "../../../images/beau-routard-homme.jpg";
+import news_img4 from "../../../images/etudiante-africaine-posee.jpg";
 
 import StudyCountry from "../../../components/StudyCountry";
 import Scholarship from "../../../components/Scholarship";
@@ -18,17 +15,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 import SecondaryBtn from "../../Button/Secondary";
+import PrimaryBtn from "../../Button/Primary";
 
 const Home = () => {
   return (
     <Layout pageTitle="Page d'acceuil">
-      <div className={style.firstSection}>
+      <div className={"md:hidden " + style.firstSection}>
         <StaticImage
           class={style.firstSection__imgStudent}
           src="../../../images/equipe-etudes.png"
+          alt="Equipe etudes"
         />
         <div className={style.firstSection__inner}>
-          <img src={overlay1} />
+          <StaticImage
+            className={style.firstSection__overlay}
+            src="../../../images/Rectangle 47.png"
+            alt="Overlay"
+          />
 
           <div className={style.contact_content}>
             <div className="flex text-start">
@@ -61,6 +64,62 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="max-md:hidden flex">
+        <div>
+          <StaticImage
+            alt="plane"
+            height={300}
+            src="../../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview 2.png"
+          />
+        </div>
+
+        <div className="mt-20">
+          <StaticImage
+            alt="plane"
+            height={80}
+            src="../../../images/kisspng-canada-international-student-travel-visa-f-visa-books-5aa189efac2496.png"
+          />
+        </div>
+      </div>
+
+      <div className="max-md:hidden flex -mt-32 mx-28">
+        <div className="z-10">
+          <div className="text-start">
+            <p className="text-5xl text-sky-600 font-black">
+              Pourquoi RDC-Etudes ?
+            </p>
+            <p className="text-2xl my-4">
+              Lorem ipsum dolor sit amet consectetur. Facilisis ipsum velit urna
+              velit mauris in eget nisl. Porttitor ipsum eu auctor arcu. Urna
+              scelerisque aliquam augue aliquam non ultrices mauris et.
+            </p>
+            <PrimaryBtn text={"Demander une assistance"} />
+          </div>
+        </div>
+        <div className="-mt-28">
+          <StaticImage
+            height={1600}
+            width={1800}
+            alt="Agence"
+            src="../../../images/Agence-M-Com-Marseille-AppartStudy-Marne-Montpellier-Residence.png"
+          />
+        </div>
+      </div>
+
+      <div className="max-md:hidden bloc -mt-96">
+        <StaticImage
+          alt="plane"
+          class=""
+          height={400}
+          src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
+        />
+        <StaticImage
+          alt="plane"
+          height={150}
+          src="../../../images/Travel-PNG-File-Download-Free 1.png"
+        />
+      </div>
+
       <StudyCountry />
       <Scholarship />
 
@@ -73,21 +132,21 @@ const Home = () => {
         </div>
 
         <NewsCard
-          image={img2}
+          image={news_img2}
           title={"Titre de l'article"}
           desc={
             "Lorem ispum dolor fortuna simpre cresis, out decresis vita detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis"
           }
         />
         <NewsCard
-          image={img3}
+          image={news_img3}
           title={"Titre de l'article"}
           desc={
             "Lorem ispum dolor fortuna simpre cresis, out decresis vita detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis"
           }
         />
         <NewsCard
-          image={img4}
+          image={news_img4}
           title={"Titre de l'article"}
           desc={
             "Lorem ispum dolor fortuna simpre cresis, out decresis vita detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis"
@@ -106,8 +165,11 @@ const Home = () => {
           <div class="flex flex-wrap justify-center mx-auto lg:w-full md:w-5/6 xl:shadow-small-blue">
             <a href="#" class="block w-1/3 py-10 text-center lg:w-1/4">
               <div>
-                <img src={img5} class="block mx-auto" />
-
+                <StaticImage
+                  src="../../../images/logo_243.png"
+                  class="block mx-auto"
+                  alt="Logo"
+                />
                 <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
                   243 technologies
                 </p>
@@ -116,7 +178,11 @@ const Home = () => {
 
             <a href="#" class="block w-1/3 py-10 text-center lg:w-1/4">
               <div>
-                <img src={logo} class="block mx-auto" />
+                <StaticImage
+                  src="../../../images/logo.png"
+                  class="block mx-auto"
+                  alt="logo"
+                />
 
                 <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
                   RDC Etudes
@@ -126,7 +192,11 @@ const Home = () => {
 
             <a href="#" class="block w-1/3 py-10 text-center lg:w-1/4">
               <div>
-                <img src={img5} class="block mx-auto" />
+                <StaticImage
+                  src="../../../images/logo_243.png"
+                  class="block mx-auto"
+                  alt="logo"
+                />
 
                 <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
                   243 technologies

@@ -1,10 +1,8 @@
 import React from "react";
 import Layout from "../../Layout";
 import BourseCard from "../../BourseCard";
-import * as styles from "./style.module.scss";
-import img_young_gril from "../../../images/800x600_FE_WEB_equivalence 2.png";
-import img_bourseProcedure from "../../../images/procedure-bourse-suisse1.png";
-import img_women from "../../../images/800x600_FE_WEB_equivalence 2.png";
+import { StaticImage } from "gatsby-plugin-image";
+import img_women from "../../../images/800x600_FE_WEB_equivalence 2.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faGlobe, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
@@ -15,10 +13,10 @@ const BourseDetails = () => {
       <section>
         <div className="grid grid-cols-1 mx-10 py-10">
           <div>
-            <img
+            <StaticImage
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center"
-              src={img_young_gril}
+              src="../../../images/800x600_FE_WEB_equivalence 2.jpg"
             />
           </div>
         </div>
@@ -107,7 +105,11 @@ const BourseDetails = () => {
         </div>
 
         <div className="mx-10 mb-10">
-          <img src={img_bourseProcedure} className="w-full" />
+          <StaticImage
+            className="w-full"
+            alt="bourse"
+            src="../../../images/procedure-bourse-suisse1.png"
+          />
         </div>
 
         <div className="mx-10 mb-10 text-sm text-justify">

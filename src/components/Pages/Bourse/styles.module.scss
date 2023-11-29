@@ -3,24 +3,15 @@
         position: absolute;
         top: 88px;
     }
-        &__first > img {
-            height: 150px;
-        }
     &__second {
         position: absolute;
         top: 89px;
     }
-        &__second > img {
-            height: 160px;
-        }
     &__third {
         position: absolute;
         right: 0;
         top: 88px;
     }
-        &__third > img {
-            height: 180px;
-        }
     &__fourth {
         position: absolute;
         right: 0;
@@ -55,7 +46,4 @@
         right: 0;
         top: 145px;
     }
-        &__img_container > img {
-            height: 130px;
-        }
 }

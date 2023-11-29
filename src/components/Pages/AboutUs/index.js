@@ -2,15 +2,7 @@ import React from "react";
 import Layout from "../../Layout";
 import ValueCard from "../../ValueCard";
 import SecondaryBtn from "../../Button/Secondary";
-
-import img1 from "../../../images/World_Of_Empires.png";
-import img_yellowEllipse from "../../../images/Ellipse8.png";
-import img_airline from "../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png";
-import img_planearth from "../../../images/earth-with-plane-drawing-png.png";
-import img_team1 from "../../../images/team1.png";
-import img_team2 from "../../../images/team2.png";
-import img_team3 from "../../../images/team3.png";
-
+import { StaticImage } from "gatsby-plugin-image";
 import * as styles from "./styles.module.scss";
 
 const AboutUs = () => {
@@ -19,7 +11,10 @@ const AboutUs = () => {
       <section>
         <div className="grid grid-cols-12 mb-8 mt-4 z-999">
           <div className="col-span-3">
-            <img src={img1} alt="plans" />
+            <StaticImage
+              alt="plans"
+              src="../../../images/World_Of_Empires.png"
+            />
           </div>
           <div className="col-span-7 z-10">
             <div className="text-start ml-4">
@@ -37,15 +32,22 @@ const AboutUs = () => {
           </div>
           <div className="col-span-1">
             <div className={styles.ellipse3}>
-              <img src={img_yellowEllipse} style={{ height: "200px" }} />
+              <StaticImage src="../../../images/Ellipse8.png" alt="Ellipse" />
             </div>
             <div className={styles.ellipse4}>
-              <img src={img_airline} style={{ height: "200px" }} />
+              <StaticImage
+                alt="plane"
+                height={180}
+                src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
+              />
             </div>
           </div>
 
           <div>
-            <img src={img_planearth} alt="plan on earth" />
+            <StaticImage
+              alt="plan on earth"
+              src="../../../images/earth-with-plane-drawing-png.png"
+            />
           </div>
         </div>
       </section>
@@ -53,7 +55,9 @@ const AboutUs = () => {
       <section>
         <div className="flex items-center justify-center">
           <span
-            className={"text-center font-extrabold " + styles.about__values_title}
+            className={
+              "text-center font-extrabold " + styles.about__values_title
+            }
           >
             TROIS VALEURS QUI GUIDENT NOS ACTIONS
           </span>
@@ -93,26 +97,26 @@ const AboutUs = () => {
 
         <div className="grid grid-cols-3 mx-10">
           <div className="col-span-3">
-            <img
+            <StaticImage
               alt="gallery"
               class="block h-full w-full rounded-lg object-cover object-center"
-              src={img_team1}
+              src="../../../images/team1.png"
             />
           </div>
 
           <div className="col-span-3 pt-5">
-            <img
+            <StaticImage
               alt="gallery"
               class="block h-full w-full rounded-lg object-cover object-center"
-              src={img_team2}
+              src="../../../images/team2.png"
             />
           </div>
 
           <div className="col-span-3 pt-5 pb-5">
-            <img
+            <StaticImage
               alt="gallery"
               class="block h-full w-full rounded-lg object-cover object-center"
-              src={img_team3}
+              src="../../../images/team3.png"
             />
           </div>
         </div>

@@ -1,7 +1,5 @@
 import React from "react";
 import Layout from "../../Layout";
-import * as styles from "./styles.module.scss";
-import img_question from "../../../images/question.png"
 import { StaticImage } from "gatsby-plugin-image";
 
 const FAQ = () => {
@@ -10,17 +8,17 @@ const FAQ = () => {
       <section>
         <div class="relative h-60 w-full bg-sky-600">
           <div className="absolute">
-            <img src={img_question} />
+            <StaticImage alt="question" src="../../../images/question.png" />
           </div>
           <div className="absolute py-20 pl-10 text-center text-white text-xl font-bold uppercase z-20">
             Questions populaires
           </div>
           <div class="absolute bottom-0 right-0">
             <StaticImage
-              src="../../../images/iStock-1201429665-scaled-p8d527vaag9nez64eb4yun06jz963plbww2kuwdfdc-removebg-preview2.png"
+              src="../../../images/faq.png"
               alt="img student"
-              width={300}
-              />
+              width={150}
+            />
           </div>
         </div>
       </section>

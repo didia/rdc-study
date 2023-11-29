@@ -22,11 +22,11 @@ const NewsCard = ({ image, title, desc }) => {
           </div>
         </div>
 
-        <div class="sm:hidden max-sm:visible grid grid-cols-12 gap-4">
+        <div class="sm:hidden max-sm:visible grid grid-cols-12 gap-4 py-2">
           <div className="col-span-5 px-4">
             <img src={image} className="object-contain" />
           </div>
-          <div className="col-span-7">
+          <div className="col-span-7 -mt-2">
             <span className="text-sky-600 text-lg font-extrabold">
               { title || "Titre de l'article" }
             </span>{" "}

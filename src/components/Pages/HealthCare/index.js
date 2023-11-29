@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../Layout";
-import * as styles from "./style.module.scss";
-import img_young_gril from "../../../images/jeune-femme-entree-ecole-lit.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const HealthCare = () => {
   return (
@@ -9,10 +8,10 @@ const HealthCare = () => {
       <section>
         <div className="grid grid-cols-1 mx-10 py-10">
           <div>
-            <img
+            <StaticImage
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center"
-              src={img_young_gril}
+              src="../../../images/jeune-femme-entree-ecole-lit-livre.jpg"
             />
           </div>
         </div>

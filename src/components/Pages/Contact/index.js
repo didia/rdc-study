@@ -3,11 +3,8 @@ import Layout from '../../Layout';
 import ValueCard from '../../ValueCard';
 import ContactForm from '../../ContactForm';
 import GoogleMapFrame from '../GoogleMap';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import img1 from "../../../images/Earth-Travel-World-Transparent-PNG.png";
-import img_phone from "../../../images/phone.png";
-import img_airline from "../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview6.png";
-import img_envelope from "../../../images/envelope.png";
 import img_overlay from "../../../images/Ellipse9.png";
 import * as styles from "./style.module.scss";
 
@@ -17,7 +14,10 @@ const Contact = () => {
         <section>
           <div className="grid grid-cols-12 mb-8 mt-4 z-999">
             <div className="col-span-3">
-              <img src={img1} alt="plans" />
+              <StaticImage
+                alt="plans"
+                src="../../../images/Earth-Travel-World-Transparent-PNG.png"
+              />
             </div>
             <div className="col-span-7 z-10">
               <div className="text-start ml-4">
@@ -29,18 +29,22 @@ const Contact = () => {
                     Lorem ispum dolor fortuna simpre cresis, out decresis vita
                     Lorem
                   </span>
-                  <img src={img_phone} />
+                  <StaticImage alt='phone' src="../../../images/phone.png" />
                 </p>
               </div>
             </div>
             <div className="col-span-1">
               <div className={styles.ellipse4}>
-                <img src={img_airline} style={{ height: "300px" }} />
+                <StaticImage
+                  height={300}
+                  alt='airplane'
+                  src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview6.png"
+                />
               </div>
             </div>
 
             <div>
-              <img src={img_envelope} alt="plan on earth" />
+              <StaticImage alt='envelope' src="../../../images/envelope.png" />
             </div>
           </div>
         </section>
@@ -70,7 +74,7 @@ const Contact = () => {
           <ContactForm bgImg={img_overlay} />
         </section>
 
-        <section className='-mt-48'>
+        <section className="-mt-48">
           <GoogleMapFrame />
         </section>
       </Layout>
