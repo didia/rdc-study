@@ -36,7 +36,10 @@
     }
     &__bourse_card {
         @media only screen and (max-width: 350px) {
-                margin-top: 0.5rem;
+                margin-top: -0.8rem;
+            }
+        @media only screen and (max-width: 415px) {
+                margin-top: -1.5rem;
             }
     }
 }

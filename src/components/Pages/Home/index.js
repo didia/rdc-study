@@ -100,6 +100,7 @@ const Home = () => {
           <StaticImage
             height={1600}
             width={1800}
+            placeholder="blurred"
             alt="Agence"
             src="../../../images/Agence-M-Com-Marseille-AppartStudy-Marne-Montpellier-Residence.png"
           />
@@ -162,47 +163,47 @@ const Home = () => {
         </div>
 
         <div class="container relative z-40 mx-auto px-5 ">
-          <div class="flex flex-wrap justify-center mx-auto lg:w-full md:w-5/6 xl:shadow-small-blue">
-            <a href="#" class="block w-1/3 py-10 text-center lg:w-1/4">
-              <div>
-                <StaticImage
-                  src="../../../images/logo_243.png"
-                  class="block mx-auto"
-                  alt="Logo"
-                />
-                <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                  243 technologies
-                </p>
-              </div>
-            </a>
+          <div className="grid grid-cols-3 py-10 text-center">
+            <div>
+              <StaticImage
+                src="../../../images/logo_243.png"
+                class="block mx-auto"
+                placeholder="blurred"
+                alt="logo"
+                objectFit="contain"
+              />
 
-            <a href="#" class="block w-1/3 py-10 text-center lg:w-1/4">
-              <div>
-                <StaticImage
-                  src="../../../images/logo.png"
-                  class="block mx-auto"
-                  alt="logo"
-                />
+              <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                243 technologies
+              </p>
+            </div>
 
-                <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                  RDC Etudes
-                </p>
-              </div>
-            </a>
+            <div>
+              <StaticImage
+                src="../../../images/logo.png"
+                class="block mx-auto"
+                placeholder="blurred"
+                alt="logo"
+                objectFit="contain"
+              />
 
-            <a href="#" class="block w-1/3 py-10 text-center lg:w-1/4">
-              <div>
-                <StaticImage
-                  src="../../../images/logo_243.png"
-                  class="block mx-auto"
-                  alt="logo"
-                />
+              <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                RDC Etudes
+              </p>
+            </div>
 
-                <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                  243 technologies
-                </p>
-              </div>
-            </a>
+            <div>
+              <StaticImage
+                src="../../../images/logo_243.png"
+                class="block mx-auto"
+                placeholder="blurred"
+                alt="Logo"
+                objectFit="contain"
+              />
+              <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                243 technologies
+              </p>
+            </div>
           </div>
         </div>
       </section>

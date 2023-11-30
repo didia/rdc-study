@@ -14,6 +14,7 @@ const StudyCountry = () => {
             <StaticImage
               height={60}
               alt="plane"
+              placeholder="blurred"
               src="../../images/earth-with-plane-drawing-png.png"
             />
           </div>
@@ -23,6 +24,7 @@ const StudyCountry = () => {
           <div className="col-span-3">
             <StaticImage
               alt="travelers"
+              placeholder="blurred"
               src="../../images/4564198_2400445 1.png"
             />
           </div>
@@ -42,6 +44,7 @@ const StudyCountry = () => {
           <div className="">
             <StaticImage
               height={80}
+              placeholder="blurred"
               alt="plane"
               src="../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
             />
@@ -52,6 +55,7 @@ const StudyCountry = () => {
             <StaticImage
               height={80}
               alt="tourist"
+              placeholder="blurred"
               src="../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
             />
           </div>
@@ -64,12 +68,14 @@ const StudyCountry = () => {
             className={styles.travel_countries__img}
             alt="travel"
             src="../../images/World_Of_Empires.png"
+            placeholder="blurred"
           />
           <div className={styles.travel_countries_inner}>
             <StaticImage
               alt="Overlay"
               className={styles.travel_countries_inner__img}
               src="../../images/Rectangle5.png"
+              placeholder="blurred"
             />
 
             <div className={styles.travel_countries_content}>
@@ -107,6 +113,7 @@ const StudyCountry = () => {
                         <StaticImage
                           class="rounded-t-lg"
                           alt="tour"
+                          placeholder="blurred"
                           src="../../images/tour_effeil.jpg"
                         />
                       </div>
@@ -127,6 +134,7 @@ const StudyCountry = () => {
                         <StaticImage
                           class="rounded-t-lg"
                           alt="tour"
+                          placeholder="blurred"
                           src="../../images/flatten.jpg"
                         />
                       </div>
