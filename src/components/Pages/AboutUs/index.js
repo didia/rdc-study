@@ -100,7 +100,7 @@ const AboutUs = () => {
           <div className="col-span-3">
             <StaticImage
               alt="gallery"
-              class="block h-full w-full rounded-lg object-cover object-center"
+              className="block h-full w-full rounded-lg object-cover object-center"
               src="../../../images/team1.png"
             />
           </div>
@@ -108,7 +108,7 @@ const AboutUs = () => {
           <div className="col-span-3 pt-5">
             <StaticImage
               alt="gallery"
-              class="block h-full w-full rounded-lg object-cover object-center"
+              className="block h-full w-full rounded-lg object-cover object-center"
               src="../../../images/team2.png"
             />
           </div>
@@ -116,7 +116,7 @@ const AboutUs = () => {
           <div className="col-span-3 pt-5 pb-5">
             <StaticImage
               alt="gallery"
-              class="block h-full w-full rounded-lg object-cover object-center"
+              className="block h-full w-full rounded-lg object-cover object-center"
               src="../../../images/team3.png"
             />
           </div>

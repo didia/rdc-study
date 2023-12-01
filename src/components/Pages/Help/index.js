@@ -26,7 +26,7 @@ const Help = () => {
               <StaticImage
                 height={50}
                 alt="world"
-                class="float-right"
+                className="float-right"
                 src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
               />
             </p>
@@ -60,8 +60,8 @@ const Help = () => {
             Dans quel pays voulez-vous étudier ?{" "}
           </p>
 
-          <div class="inline-block relative w-full py-5">
-            <select class="block appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline">
+          <div className="inline-block relative w-full py-5">
+            <select className="block appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline">
               <option disabled selected hidden className="text-gray-300">
                 Choisissez un pays
               </option>
@@ -69,9 +69,9 @@ const Help = () => {
               <option>USA</option>
               <option></option>
             </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
               <svg
-                class="fill-current h-4 w-4"
+                className="fill-current h-4 w-4"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
               >
@@ -87,7 +87,7 @@ const Help = () => {
           <input
             type="text"
             placeholder="Oui ou Non"
-            class="mt-5 block appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
+            className="mt-5 block appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
           />
 
           <p className="text-sky-600 font-extrabold text-lg my-5">Suivant </p>

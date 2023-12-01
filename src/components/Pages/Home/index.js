@@ -18,7 +18,7 @@ const Home = ({ newsCardItems }) => {
     <Layout pageTitle="Page d'acceuil">
       <div className={"md:hidden " + style.firstSection}>
         <StaticImage
-          class={style.firstSection__imgStudent}
+          className={style.firstSection__imgStudent}
           src="../../../images/equipe-etudes.png"
           alt="Equipe etudes"
         />
@@ -105,7 +105,7 @@ const Home = ({ newsCardItems }) => {
       <div className="max-md:hidden bloc -mt-96">
         <StaticImage
           alt="plane"
-          class=""
+          className=""
           height={400}
           src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
         />
@@ -124,7 +124,7 @@ const Home = ({ newsCardItems }) => {
           <span className="text-sky-600 text-xl font-black uppercase">
             Les dernières nouvelles
           </span>{" "}
-          <div class="h-4 w-full border-b-2 border-sky-600"></div>
+          <div className="h-4 w-full border-b-2 border-sky-600"></div>
         </div>
 
         {newsCardItems.map((newsCardItem) => {
@@ -144,18 +144,18 @@ const Home = ({ newsCardItems }) => {
           </span>{" "}
         </div>
 
-        <div class="container relative z-40 mx-auto px-5 ">
+        <div className="container relative z-40 mx-auto px-5 ">
           <div className="grid grid-cols-3 py-10 text-center">
             <div>
               <StaticImage
                 src="../../../images/logo_243.png"
-                class="block mx-auto"
+                className="block mx-auto"
                 placeholder="blurred"
                 alt="logo"
                 objectFit="contain"
               />
 
-              <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+              <p className="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
                 243 technologies
               </p>
             </div>
@@ -163,13 +163,13 @@ const Home = ({ newsCardItems }) => {
             <div>
               <StaticImage
                 src="../../../images/logo.png"
-                class="block mx-auto"
+                className="block mx-auto"
                 placeholder="blurred"
                 alt="logo"
                 objectFit="contain"
               />
 
-              <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+              <p className="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
                 RDC Etudes
               </p>
             </div>
@@ -177,12 +177,12 @@ const Home = ({ newsCardItems }) => {
             <div>
               <StaticImage
                 src="../../../images/logo_243.png"
-                class="block mx-auto"
+                className="block mx-auto"
                 placeholder="blurred"
                 alt="Logo"
                 objectFit="contain"
               />
-              <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+              <p className="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
                 243 technologies
               </p>
             </div>
@@ -195,7 +195,7 @@ const Home = ({ newsCardItems }) => {
           <span className="text-sky-600 text-2xl font-black">Témoignages</span>{" "}
         </div>
 
-        <div class="mx-6 mt-5 rounded-2xl px-5 py-7 bg-sky-600">
+        <div className="mx-6 mt-5 rounded-2xl px-5 py-7 bg-sky-600">
           <div className="z-10">
             <FontAwesomeIcon
               icon={faQuoteLeft}

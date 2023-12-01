@@ -50,13 +50,13 @@ const Header = () => {
 
             <div className="hidden md:flex items-center space-x-3 ">
               <a
-                href="#"
+                href="/"
                 className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-sky-600 hover:text-white transition duration-300"
               >
                 Log In
               </a>
               <a
-                href="#"
+                href="/"
                 className="py-2 px-2 font-medium text-white bg-sky-600 rounded hover:bg-sky-500 transition duration-300"
               >
                 Sign Up

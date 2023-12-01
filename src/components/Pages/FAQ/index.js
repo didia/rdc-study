@@ -6,14 +6,14 @@ const FAQ = () => {
   return (
     <Layout pageTitle="FAQ">
       <section>
-        <div class="relative h-60 w-full bg-sky-600">
+        <div className="relative h-60 w-full bg-sky-600">
           <div className="absolute">
             <StaticImage alt="question" src="../../../images/question.png" />
           </div>
           <div className="absolute py-20 pl-10 text-center text-white text-xl font-bold uppercase z-20">
             Questions populaires
           </div>
-          <div class="absolute bottom-0 right-0">
+          <div className="absolute bottom-0 right-0">
             <StaticImage
               src="../../../images/faq.png"
               alt="img student"

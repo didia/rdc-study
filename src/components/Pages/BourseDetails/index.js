@@ -14,7 +14,7 @@ const BourseDetails = () => {
           <div>
             <StaticImage
               alt="gallery"
-              class="block h-full w-full rounded-sm object-cover object-center"
+              className="block h-full w-full rounded-sm object-cover object-center"
               src="../../../images/800x600_FE_WEB_equivalence 2.jpg"
             />
           </div>

@@ -9,7 +9,7 @@ const Bourse = () => {
   return (
     <Layout pageTitle={"Bourse d'études"}>
       <section className="mb-7">
-        <div class="flex justify-start w-full z-5 absolute">
+        <div className="flex justify-start w-full z-5 absolute">
           <div className="text-start mx-10 z-10">
             <span className={styles.bourse__title}>Bourses d'études</span>{" "}
             <p>
@@ -24,7 +24,7 @@ const Bourse = () => {
             </p>
           </div>
         </div>
-        <div class="w-full h-full mt-10">
+        <div className="w-full h-full mt-10">
           <div style={{ marginTop: "20px" }}>
             <div className={styles.ellipse__first}>
               <StaticImage

@@ -33,14 +33,14 @@ const Scholarship = () => {
               <div className={style.scholarship__content}>
                 <div className="flex justify-center">
                   <div
-                    class={
+                    className={
                       "grid grid-cols-16 gap-4 " +
                       style.scholarship__bourse_card
                     }
                   >
                     <div>
                       <button
-                        class="absolute left-2 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full"
+                        className="absolute left-2 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full"
                         type="button"
                         data-te-target="#carouselExampleIndicators"
                         data-te-slide="prev"
@@ -48,18 +48,18 @@ const Scholarship = () => {
                         id="scholarshipPrevBtn"
                         aria-label="scholarshipPrevBtn"
                       >
-                        <span class="inline-block h-8 w-8">
+                        <span className="inline-block h-8 w-8">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
-                            stroke-width="4.5"
+                            strokeWidth="4.5"
                             stroke="currentColor"
-                            class="h-6 w-6"
+                            className="h-6 w-6"
                           >
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               d="M15.75 19.5L8.25 12l7.5-7.5"
                             />
                           </svg>
@@ -84,7 +84,7 @@ const Scholarship = () => {
 
                     <div>
                       <button
-                        class="absolute right-2 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full"
+                        className="absolute right-2 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full"
                         type="button"
                         data-te-target="#carouselExampleIndicators"
                         data-te-slide="prev"
@@ -92,18 +92,18 @@ const Scholarship = () => {
                         id="scholarshipNextBtn"
                         aria-label="scholarshipNextBtn"
                       >
-                        <span class="inline-block h-8 w-8">
+                        <span className="inline-block h-8 w-8">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
-                            stroke-width="4.5"
+                            strokeWidth="4.5"
                             stroke="currentColor"
-                            class="h-6 w-6"
+                            className="h-6 w-6"
                           >
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               d="M8.25 4.5l7.5 7.5-7.5 7.5"
                             />
                           </svg>

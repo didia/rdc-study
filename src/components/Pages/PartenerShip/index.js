@@ -11,7 +11,7 @@ const PartenerShip = ({ newsCardItems }) => {
           <StaticImage
             src="../../../images/2VJHRB2PIZDLTHHCJITZPFTISU1.png"
             alt="gallery"
-            class="block h-60 w-full rounded-sm object-cover object-center"
+            className="block h-60 w-full rounded-sm object-cover object-center"
           />
         </div>
 

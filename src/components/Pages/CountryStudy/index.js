@@ -135,7 +135,7 @@ const CountryStudy = () => {
             <div>
               <StaticImage
                 alt="gallery"
-                class="block h-full w-full rounded-sm object-cover object-center"
+                className="block h-full w-full rounded-sm object-cover object-center"
                 src="../../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png"
               />
             </div>
@@ -160,7 +160,7 @@ const CountryStudy = () => {
             <div>
               <StaticImage
                 alt="gallery"
-                class="block h-full w-full rounded-sm object-cover object-center"
+                className="block h-full w-full rounded-sm object-cover object-center"
                 src="../../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png"
               />
             </div>

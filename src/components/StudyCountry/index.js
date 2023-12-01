@@ -6,7 +6,7 @@ const StudyCountry = () => {
   return (
     <>
       <section className="mb-2" id="studycountry">
-        <div class="grid grid-cols-4 gap-2">
+        <div className="grid grid-cols-4 gap-2">
           <div className="">&nbsp;</div>
           <div className="">&nbsp;</div>
           <div className="">&nbsp;</div>
@@ -20,7 +20,7 @@ const StudyCountry = () => {
           </div>
         </div>
 
-        <div class="grid grid-cols-8">
+        <div className="grid grid-cols-8">
           <div className="col-span-3">
             <StaticImage
               alt="travelers"
@@ -39,7 +39,7 @@ const StudyCountry = () => {
           </div>
         </div>
 
-        <div class="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-4">
           <div className="">
             <StaticImage
               height={80}
@@ -79,28 +79,28 @@ const StudyCountry = () => {
 
             <div className={styles.travel_countries_content}>
               <div className="flex justify-center">
-                <div class="grid grid-cols-12 gap-4">
+                <div className="grid grid-cols-12 gap-4">
                   <div>
                     <button
-                      class="absolute left-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full top-16"
+                      className="absolute left-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full top-16"
                       type="button"
                       id="travelPrevBtn"
                       aria-label="travelPrevBtn"
                       data-te-target="#carouselExampleIndicators"
                       data-te-slide="prev"
                     >
-                      <span class="inline-block h-8 w-8">
+                      <span className="inline-block h-8 w-8">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
-                          stroke-width="4.5"
+                          strokeWidth="4.5"
                           stroke="currentColor"
-                          class="h-6 w-6"
+                          className="h-6 w-6"
                         >
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                             d="M15.75 19.5L8.25 12l7.5-7.5"
                           />
                         </svg>
@@ -109,17 +109,17 @@ const StudyCountry = () => {
                   </div>
 
                   <div className="col-span-5">
-                    <div class="block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                      <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                    <div className="block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+                      <div className="relative overflow-hidden bg-cover bg-no-repeat">
                         <StaticImage
-                          class="rounded-t-lg"
+                          className="rounded-t-lg"
                           alt="tour"
                           placeholder="blurred"
                           src="../../images/tour_effeil.jpg"
                         />
                       </div>
-                      <div class="p-6">
-                        <p class="text-base text-sky-600 font-extrabold"
+                      <div className="p-6">
+                        <p className="text-base text-sky-600 font-extrabold"
                         >
                           FRANCE
                         </p>
@@ -128,18 +128,18 @@ const StudyCountry = () => {
                   </div>
 
                   <div className="col-span-5">
-                    <div class="block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                      <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                    <div className="block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+                      <div className="relative overflow-hidden bg-cover bg-no-repeat">
                         <StaticImage
-                          class="rounded-t-lg"
+                          className="rounded-t-lg"
                           alt="tour"
                           placeholder="blurred"
                           src="../../images/flatten.jpg"
                         />
                       </div>
-                      <div class="p-6">
+                      <div className="p-6">
                         <p
-                          class="text-base text-sky-600 font-extrabold"
+                          className="text-base text-sky-600 font-extrabold"
                         >
                           CANADA
                         </p>
@@ -149,25 +149,25 @@ const StudyCountry = () => {
 
                   <div>
                     <button
-                      class="absolute right-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full top-16"
+                      className="absolute right-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full top-16"
                       type="button"
                       data-te-target="#carouselExampleIndicators"
                       data-te-slide="prev"
                       id="travelNextbtn"
                       aria-label="travelNextbtn"
                     >
-                      <span class="inline-block h-8 w-8">
+                      <span className="inline-block h-8 w-8">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
-                          stroke-width="4.5"
+                          strokeWidth="4.5"
                           stroke="currentColor"
-                          class="h-6 w-6"
+                          className="h-6 w-6"
                         >
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                             d="M8.25 4.5l7.5 7.5-7.5 7.5"
                           />
                         </svg>
