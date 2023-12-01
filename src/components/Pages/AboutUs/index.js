@@ -14,6 +14,7 @@ const AboutUs = () => {
             <StaticImage
               alt="plans"
               src="../../../images/World_Of_Empires.png"
+              height={100}
             />
           </div>
           <div className="col-span-7 z-10">

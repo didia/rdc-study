@@ -66,6 +66,8 @@ const Header = () => {
             <div class="md:hidden flex items-center">
               <button
                 class="outline-none flex"
+                id="humburgerBtn"
+                aria-label="humburgerBtn"
                 ref={humbugerRef}
                 onClick={(e) => setToggleNav(!toggleNav)}
               >

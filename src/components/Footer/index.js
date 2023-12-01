@@ -31,7 +31,7 @@ export const Footer = () => {
           <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div class="">
               <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
-                <StaticImage src="../../images/Logo_white.png" />
+                <StaticImage alt="logo" src="../../images/Logo_white.png" />
               </h6>
               <p className="mx-10">
                 Here you can use rows and columns to organize your footer

@@ -17,7 +17,8 @@ import { StaticImage } from "gatsby-plugin-image";
 import SecondaryBtn from "../../Button/Secondary";
 import PrimaryBtn from "../../Button/Primary";
 
-const Home = () => {
+const Home = ({ newsCardItems }) => {
+  console.log("home news card : ", newsCardItems);
   return (
     <Layout pageTitle="Page d'acceuil">
       <div className={"md:hidden " + style.firstSection}>
@@ -132,27 +133,14 @@ const Home = () => {
           <div class="h-4 w-full border-b-2 border-sky-600"></div>
         </div>
 
-        <NewsCard
-          image={news_img2}
-          title={"Titre de l'article"}
-          desc={
-            "Lorem ispum dolor fortuna simpre cresis, out decresis vita detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis"
-          }
-        />
-        <NewsCard
-          image={news_img3}
-          title={"Titre de l'article"}
-          desc={
-            "Lorem ispum dolor fortuna simpre cresis, out decresis vita detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis"
-          }
-        />
-        <NewsCard
-          image={news_img4}
-          title={"Titre de l'article"}
-          desc={
-            "Lorem ispum dolor fortuna simpre cresis, out decresis vita detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis"
-          }
-        />
+        {newsCardItems.map((newsCardItem) => {
+          console.log("Mapping ", newsCardItem);
+            return (
+              <NewsCard
+                ItemData={newsCardItem.frontmatter}
+              />
+            );
+        })}
       </section>
 
       <section className="mb-5">
