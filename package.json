@@ -20,6 +20,8 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mdx-js/react": "^3.0.0",
     "autoprefixer": "^10.4.16",
+    "flowbite": "^2.2.0",
+    "flowbite-react": "^0.7.0",
     "gatsby": "^5.12.4",
     "gatsby-plugin-image": "^3.12.2",
     "gatsby-plugin-postcss": "^6.12.0",

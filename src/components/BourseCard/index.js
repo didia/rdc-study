@@ -15,7 +15,7 @@ const BourseCard = ({ setDescription=true, textSize }) => {
         <StaticImage
           src="../../images/800x600_FE_WEB_equivalence 2.jpg"
           alt="Sunset in the mountains"
-          className="w-full"
+          className="w-full h-full"
         />
         <div className="mx-2 py-2">
           <div className={titleClass}>Bourse d'études</div>
