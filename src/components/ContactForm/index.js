@@ -35,7 +35,7 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
                 </div>
 
                 <div>
-                  <textarea className={styles.form__textarea}>Message</textarea>
+                  <textarea className={styles.form__textarea} aria-label='Message' defaultValue={"Message"} />
                 </div>
 
                 <div className="py-4">

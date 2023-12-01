@@ -23,21 +23,21 @@ const Header = () => {
 
   return (
     <>
-      <nav class="bg-white shadow-lg">
-        <div class="mx-auto px-4 md:px-28">
-          <div class="flex justify-between">
-            <div class="flex space-x-20">
+      <nav className="bg-white shadow-lg">
+        <div className="mx-auto px-4 md:px-28">
+          <div className="flex justify-between">
+            <div className="flex space-x-20">
               <div>
-                <a href="/" class="flex items-center py-4 px-2">
+                <a href="/" className="flex items-center py-4 px-2">
                   <StaticImage
                     src="../../images/logo.png"
                     alt="Logo"
-                    class="h-14 w-14 mr-2"
+                    className="h-14 w-14 mr-2"
                   />
                 </a>
               </div>
 
-              <div class="hidden md:flex md:space-x-5 items-center uppercase">
+              <div className="hidden md:flex md:space-x-5 items-center uppercase">
                 <NavLink title={"accueil"} url={"/"} />
                 <NavLink title={"bourses d'études"} url={"/bourse"} />
                 <NavLink title={"détails bourses"} url={"/bourseDetails"} />
@@ -48,24 +48,24 @@ const Header = () => {
               </div>
             </div>
 
-            <div class="hidden md:flex items-center space-x-3 ">
+            <div className="hidden md:flex items-center space-x-3 ">
               <a
                 href="#"
-                class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-sky-600 hover:text-white transition duration-300"
+                className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-sky-600 hover:text-white transition duration-300"
               >
                 Log In
               </a>
               <a
                 href="#"
-                class="py-2 px-2 font-medium text-white bg-sky-600 rounded hover:bg-sky-500 transition duration-300"
+                className="py-2 px-2 font-medium text-white bg-sky-600 rounded hover:bg-sky-500 transition duration-300"
               >
                 Sign Up
               </a>
             </div>
 
-            <div class="md:hidden flex items-center">
+            <div className="md:hidden flex items-center">
               <button
-                class="outline-none flex"
+                className="outline-none flex"
                 id="humburgerBtn"
                 aria-label="humburgerBtn"
                 ref={humbugerRef}
@@ -78,12 +78,12 @@ const Header = () => {
                   />
                 ) : (
                   <svg
-                    class="w-10 h-10 text-cyan-500"
+                    className="w-10 h-10 text-cyan-500"
                     x-show="!showMenu"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >

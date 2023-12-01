@@ -11,8 +11,8 @@ import { faFacebook, faLinkedin, faInstagram, faTwitter } from "@fortawesome/fre
 export const Footer = () => {
   return (
     <div>
-      <footer class="bg-sky-600 text-center text-white lg:text-left">
-        <div class="bg-white flex items-center justify-center border-t-2 border-sky-600 p-3 lg:justify-between">
+      <footer className="bg-sky-600 text-center text-white lg:text-left">
+        <div className="bg-white flex items-center justify-center border-t-2 border-sky-600 p-3 lg:justify-between">
           <div className="grid grid-cols-12">
             <div className="col-span-10">
               <span className="text-red-900 font-extrabold text-xl">
@@ -27,19 +27,19 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div class="mx-6 py-10 text-center md:text-left">
-          <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div class="">
-              <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+        <div className="mx-6 py-10 text-center md:text-left">
+          <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div>
+              <div className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
                 <StaticImage alt="logo" src="../../images/Logo_white.png" />
-              </h6>
+              </div>
               <p className="mx-10">
                 Here you can use rows and columns to organize your footer
                 content. Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit.
               </p>
             </div>
-            <div class="">
+            <div>
               <h2
                 style={{ fontSize: "25px" }}
                 class="mb-4 flex justify-center font-bold uppercase md:justify-start"
@@ -95,31 +95,61 @@ export const Footer = () => {
               </div>
             </div>
             <div>
-              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+              <a
+                href="/"
+                class="mb-4 flex justify-center uppercase md:justify-start"
+              >
                 Acceuil
-              </h6>
+              </a>
 
-              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+              <a
+                href="/bourse"
+                class="mb-4 flex justify-center uppercase md:justify-start"
+              >
                 Bourses
-              </h6>
-              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+              </a>
+              <a
+                href="/bourseDetails"
+                class="mb-4 flex justify-center uppercase md:justify-start"
+              >
+                Détails Bourses
+              </a>
+              <a
+                href="/aboutUs"
+                class="mb-4 flex justify-center uppercase md:justify-start"
+              >
                 Qui sommes-nous ?
-              </h6>
-              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+              </a>
+              <a
+                href="/faq"
+                class="mb-4 flex justify-center uppercase md:justify-start"
+              >
                 Questions populaires
-              </h6>
-              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
-                Limitations légales
-              </h6>
-              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+              </a>
+              <a
+                href="/healthcare"
+                class="mb-4 flex justify-center uppercase md:justify-start"
+              >
+                Examens médicaux
+              </a>
+              <a
+                href="/privacy"
+                class="mb-4 flex justify-center uppercase md:justify-start"
+              >
                 Politiques de confidentialité
-              </h6>
-              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+              </a>
+              <a
+                href="/help"
+                class="mb-4 flex justify-center uppercase md:justify-start"
+              >
                 Besoin d'aide ?
-              </h6>
-              <h6 class="mb-4 flex justify-center uppercase md:justify-start">
+              </a>
+              <a
+                href="/partenership"
+                class="mb-4 flex justify-center uppercase md:justify-start"
+              >
                 Nos Partenaires
-              </h6>
+              </a>
 
               <div class="hero bg-gredient-dark h-400px flex flex-col px-2">
                 <p
