@@ -2,8 +2,9 @@ import React from "react";
 import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as styles from "./styles.module.scss";
+import { StaticImage } from "gatsby-plugin-image";
 
-const BourseCard = ({ img, setDescription=true, textSize }) => {
+const BourseCard = ({ setDescription=true, textSize }) => {
   const titleClass = setDescription
     ? "font-bold mb-2 text-sky-600 text-xl"
     : "font-bold mb-2 text-sky-600 text-lg";
@@ -11,7 +12,11 @@ const BourseCard = ({ img, setDescription=true, textSize }) => {
   return (
     <>
       <div class="max-w-sm rounded-md overflow-hidden shadow-lg bg-gray-200">
-        <img class="w-full" src={img} alt="Sunset in the mountains" />
+        <StaticImage
+          src="../../images/800x600_FE_WEB_equivalence 2.jpg"
+          alt="Sunset in the mountains"
+          class="w-full"
+        />
         <div class="mx-2 py-2">
           <div class={titleClass}>Bourse d'études</div>
           {setDescription && (

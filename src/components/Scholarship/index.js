@@ -22,13 +22,13 @@ const Scholarship = () => {
           <div className={style.scholarship}>
             <StaticImage
               className={style.scholarship__overlay}
-              alt='plane'
+              alt="plane"
               src="../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png"
             />
             <div className={style.scholarship_inner}>
               <StaticImage
                 className={style.scholarship_inner__overlay}
-                alt='overlay'
+                alt="overlay"
                 src="../../images/Rectangle10.png"
               />
               <div className={style.scholarship__content}>
@@ -46,6 +46,8 @@ const Scholarship = () => {
                         data-te-target="#carouselExampleIndicators"
                         data-te-slide="prev"
                         style={{ top: "90px" }}
+                        id="scholarshipPrevBtn"
+                        aria-label="scholarshipPrevBtn"
                       >
                         <span class="inline-block h-8 w-8">
                           <svg
@@ -88,6 +90,8 @@ const Scholarship = () => {
                         data-te-target="#carouselExampleIndicators"
                         data-te-slide="prev"
                         style={{ top: "90px" }}
+                        id="scholarshipNextBtn"
+                        aria-label="scholarshipNextBtn"
                       >
                         <span class="inline-block h-8 w-8">
                           <svg

@@ -2,10 +2,6 @@ import * as React from "react";
 import Layout from "../../../components/Layout";
 import * as style from "./styles.module.scss";
 
-import news_img2 from "../../../images/jeune-femme-entree-ecole-lit-livre.jpg";
-import news_img3 from "../../../images/beau-routard-homme.jpg";
-import news_img4 from "../../../images/etudiante-africaine-posee.jpg";
-
 import StudyCountry from "../../../components/StudyCountry";
 import Scholarship from "../../../components/Scholarship";
 import ContactForm from "../../../components/ContactForm";
@@ -18,7 +14,6 @@ import SecondaryBtn from "../../Button/Secondary";
 import PrimaryBtn from "../../Button/Primary";
 
 const Home = ({ newsCardItems }) => {
-  console.log("home news card : ", newsCardItems);
   return (
     <Layout pageTitle="Page d'acceuil">
       <div className={"md:hidden " + style.firstSection}>
@@ -134,12 +129,12 @@ const Home = ({ newsCardItems }) => {
         </div>
 
         {newsCardItems.map((newsCardItem) => {
-          console.log("Mapping ", newsCardItem);
-            return (
-              <NewsCard
-                ItemData={newsCardItem.frontmatter}
-              />
-            );
+          return (
+            <NewsCard
+              key={newsCardItem.frontmatter.title}
+              ItemData={newsCardItem.frontmatter}
+            />
+          );
         })}
       </section>
 

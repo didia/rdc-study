@@ -3,8 +3,11 @@
  */
 module.exports = {
   siteMetadata: {
+    keywords: `Une éducation de qualité pour tous`,
     title: `rdcetudes`,
+    author: `@rdcetudes`,
     siteUrl: `https://www.rdcetudes.com/`,
+    description: `Nous vous accompagnons dans la réussite de votre projet d’études, de l’admission à l’obtention de votre diplôme!`,
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -14,6 +17,7 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-transformer-sharp",
     `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

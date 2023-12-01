@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../../Layout";
 import BourseCard from "../../BourseCard";
 import { StaticImage } from "gatsby-plugin-image";
-import img_women from "../../../images/800x600_FE_WEB_equivalence 2.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faGlobe, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
@@ -138,10 +137,10 @@ const BourseDetails = () => {
 
       <section>
         <div className="grid grid-cols-2 mx-4 mb-10 gap-4">
-          <BourseCard img={img_women} />
-          <BourseCard img={img_women} />
-          <BourseCard img={img_women} />
-          <BourseCard img={img_women} />
+          <BourseCard/>
+          <BourseCard/>
+          <BourseCard/>
+          <BourseCard/>
         </div>
       </section>
     </Layout>

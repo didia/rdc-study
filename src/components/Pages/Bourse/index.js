@@ -4,7 +4,6 @@ import BourseCard from "../../BourseCard";
 import SecondaryBtn from "../../Button/Secondary"
 import * as styles from "./styles.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
-import img6 from "../../../images/800x600_FE_WEB_equivalence 2.jpg";
 
 const Bourse = () => {
   return (
@@ -74,10 +73,10 @@ const Bourse = () => {
 
       <section>
         <div className="grid grid-cols-2 mx-4 mb-10 gap-4">
-          <BourseCard img={img6} />
-          <BourseCard img={img6} />
-          <BourseCard img={img6} />
-          <BourseCard img={img6} />
+          <BourseCard/>
+          <BourseCard/>
+          <BourseCard/>
+          <BourseCard/>
         </div>
       </section>
     </Layout>

@@ -85,6 +85,8 @@ const StudyCountry = () => {
                     <button
                       class="absolute left-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full top-16"
                       type="button"
+                      id="travelPrevBtn"
+                      aria-label="travelPrevBtn"
                       data-te-target="#carouselExampleIndicators"
                       data-te-slide="prev"
                     >
@@ -118,9 +120,7 @@ const StudyCountry = () => {
                         />
                       </div>
                       <div class="p-6">
-                        <p
-                          class="text-base text-neutral-600"
-                          style={{ color: "#0490DF", fontWeight: "800" }}
+                        <p class="text-base text-sky-600 font-extrabold"
                         >
                           FRANCE
                         </p>
@@ -140,8 +140,7 @@ const StudyCountry = () => {
                       </div>
                       <div class="p-6">
                         <p
-                          class="text-base text-neutral-600"
-                          style={{ color: "#0490DF", fontWeight: "800" }}
+                          class="text-base text-sky-600 font-extrabold"
                         >
                           CANADA
                         </p>
@@ -155,6 +154,8 @@ const StudyCountry = () => {
                       type="button"
                       data-te-target="#carouselExampleIndicators"
                       data-te-slide="prev"
+                      id="travelNextbtn"
+                      aria-label="travelNextbtn"
                     >
                       <span class="inline-block h-8 w-8">
                         <svg

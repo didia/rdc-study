@@ -1,6 +1,5 @@
 import React from 'react';
-import overlay1 from "../../images/png-clipart-black-airway.png";
-import overlay2 from "../../images/smiley-femme-bagage-rouge-coup-moyen-removebg-preview 1.png";
+import { StaticImage } from 'gatsby-plugin-image';
 import * as styles from "./styles.module.scss";
 
 const ContactForm = ({ title, bgImg, marginBottom }) => {
@@ -47,7 +46,7 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
               </div>
             </div>
             <div className={styles.form__overlayImg}>
-              <img src={bgImg ? bgImg : overlay1} />
+              <StaticImage alt='airway' src="../../images/png-clipart-black-airway.png" />
             </div>
           </div>
         </section>

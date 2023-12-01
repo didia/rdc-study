@@ -1,21 +1,18 @@
 import React from "react";
 import Layout from "../../Layout";
 import { StaticImage } from "gatsby-plugin-image";
-import img1 from "../../../images/etudiante-africaine-posee.jpg";
-import img2 from "../../../images/jeune-femme-entree-ecole-lit-livre.jpg";
-import img3 from "../../../images/beau-routard-homme.jpg";
 import NewsCard from "../../NewsCard";
 
-const PartenerShip = () => {
+const PartenerShip = ({ newsCardItems }) => {
   return (
     <Layout pageTitle={"Détails sur les partenaires"}>
       <section>
         <div className="mx-10 py-10">
           <StaticImage
-              src="../../../images/2VJHRB2PIZDLTHHCJITZPFTISU1.png"
-              alt="gallery"
-              class="block h-60 w-full rounded-sm object-cover object-center"
-            />
+            src="../../../images/2VJHRB2PIZDLTHHCJITZPFTISU1.png"
+            alt="gallery"
+            class="block h-60 w-full rounded-sm object-cover object-center"
+          />
         </div>
 
         <div className="mx-10 text-start">
@@ -151,12 +148,17 @@ const PartenerShip = () => {
       </section>
 
       <section className="py-10 px-2">
-        <NewsCard image={img1} />
-        <NewsCard image={img2} />
-        <NewsCard image={img3} />
+        {newsCardItems.map((newsCardItem) => {
+          return (
+            <NewsCard
+              key={newsCardItem.frontmatter.title}
+              ItemData={newsCardItem.frontmatter}
+            />
+          );
+        })}
       </section>
     </Layout>
-  ); 
+  );
 };
 
 export default PartenerShip;
