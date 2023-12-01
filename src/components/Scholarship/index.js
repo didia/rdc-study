@@ -14,8 +14,7 @@ const Scholarship = () => {
               Bourses d'études
             </span>{" "}
             <p>
-              Lorem ispum dolor fortuna simpre cresis, out decresis vita
-              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
+              Découvrez nos meilleurs programmes de bourse qui vous assure un voyage réussi
             </p>
           </div>
 

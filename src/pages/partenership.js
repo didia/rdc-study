@@ -11,12 +11,6 @@ export default PartenerShipPage;
 
 export const pageQuery = graphql`
   query NewsCardQuery {
-    sitePage(children: {}) {
-      id
-    }
-    staticImage {
-      id
-    }
     allMarkdownRemark {
       edges {
         node {

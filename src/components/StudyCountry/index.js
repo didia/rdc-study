@@ -34,8 +34,7 @@ const StudyCountry = () => {
               Où souhaitez-vous étudier ?
             </span>{" "}
             <p>
-              Lorem ispum dolor fortuna simpre cresis, out decresis vita
-              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
+              Choisissez le pays de votre destination pour votre projet de voyage.
             </p>
           </div>
         </div>

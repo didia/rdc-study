@@ -35,21 +35,20 @@ const Home = ({ newsCardItems }) => {
                 <div>
                   <h1
                     className={
-                      "text-4xl text-white font-black " +
+                      "text-4xl text-white font-black uppercase " +
                       style.firstSection__title
                     }
                   >
-                    RDC &Eacute;tudes
+                    Rdc études
                   </h1>
                 </div>
                 <div
                   className={
-                    "text-sm text-white mb-3 -mt-6 " + style.firstSection__desc
+                    "text-sm text-white mb-3 " + style.firstSection__desc
                   }
                 >
-                  Lorem ispum dolor Lorem ispum dolor Lorem ispum dolor Lorem
-                  ispum dolor Lorem ispum dolor Lorem ispum dolor Lorem ispum
-                  dolor Lorem ispum dolor Lorem ispum dolor
+                  Nous vous accompagnons dans la réussite de votre projet
+                  d’études, de l’admission à l’obtention de votre diplôme !
                 </div>
                 <div>
                   <SecondaryBtn text={"Demander une assistance"} />

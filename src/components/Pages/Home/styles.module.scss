@@ -34,11 +34,11 @@
 
     &__desc {
         @media only screen and (max-width: 380px) {
-            margin-top: -2rem;
+            margin-top: -1rem;
             font-size: small;
         }
         @media only screen and (min-width: 380px) and (max-width: 460px) {
-            margin-top: -2.3rem !important;
+            margin-top: -1.5rem !important;
         }
     }
 
