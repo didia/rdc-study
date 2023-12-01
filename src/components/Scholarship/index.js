@@ -1,8 +1,6 @@
 import React from 'react';
 import * as style from "./styles.module.scss";
 import { Carousel } from 'flowbite-react';
-import img6 from "../../images/800x600_FE_WEB_equivalence 2.jpg";
-import BourseCard from '../BourseCard';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const Scholarship = () => {
