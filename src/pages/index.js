@@ -2,14 +2,14 @@ import * as React from "react"
 import Home from "../components/Pages/Home";
 import { graphql } from "gatsby";
 
-const IndexPage = ({ data }) => {
-  const newsCardItems = data.allMarkdownRemark.edges.map((edge) => edge.node);
-  return <Home newsCardItems={newsCardItems} />;
+const IndexPage = () => {
+  //const newsCardItems = data.allMarkdownRemark.edges.map((edge) => edge.node);
+  return <Home />;
 };
 
 export default IndexPage
 
-export const pageQuery = graphql`
+/* export const pageQuery = graphql`
   query NewsCardQuery {
     allMarkdownRemark {
       edges {
@@ -34,4 +34,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`; */

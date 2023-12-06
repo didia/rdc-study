@@ -3,7 +3,7 @@ import Layout from "../../Layout";
 import { StaticImage } from "gatsby-plugin-image";
 import NewsCard from "../../NewsCard";
 
-const PartenerShip = ({ newsCardItems }) => {
+const PartenerShip = () => {
   return (
     <Layout pageTitle={"Détails sur les partenaires"}>
       <section>
@@ -148,14 +148,14 @@ const PartenerShip = ({ newsCardItems }) => {
       </section>
 
       <section className="py-10 px-2">
-        {newsCardItems.map((newsCardItem) => {
+        {/* {newsCardItems.map((newsCardItem) => {
           return (
             <NewsCard
               key={newsCardItem.frontmatter.title}
               ItemData={newsCardItem.frontmatter}
             />
           );
-        })}
+        })} */}
       </section>
     </Layout>
   );

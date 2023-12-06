@@ -1,7 +1,7 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  const template = require.resolve(`./src/templates/`);
+  const template = require.resolve(`./src/templates/guideTemplate.js`);
 
   const result = await graphql(`
     {
@@ -34,7 +34,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         slug: node.frontmatter.slug,
       },
     });
+
   });
+
 };
 
 exports.createSchemaCustomization = ({ actions }) => {

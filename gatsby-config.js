@@ -27,12 +27,11 @@ module.exports = {
       __key: `images`,
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `news`,
-        path: `${__dirname}/src/data/news`,
+        path: `${__dirname}/src/data/guides/`,
+        name: `guides`,
       },
-      __key: `news`,
     },
     {
       resolve: `gatsby-source-filesystem`,

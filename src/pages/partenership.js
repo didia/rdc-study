@@ -2,14 +2,14 @@ import React from 'react';
 import PartenerShip from '../components/Pages/PartenerShip';
 import { graphql } from 'gatsby';
 
-const PartenerShipPage = ({ data }) => {
-  const newsCardItems = data.allMarkdownRemark.edges.map((edge) => edge.node);
-  return <PartenerShip newsCardItems={newsCardItems} />;
+const PartenerShipPage = () => {
+  //const newsCardItems = data.allMarkdownRemark.edges.map((edge) => edge.node);
+  return <PartenerShip/>;
 };
  
 export default PartenerShipPage;
 
-export const pageQuery = graphql`
+/* export const pageQuery = graphql`
   query NewsCardQuery {
     allMarkdownRemark {
       edges {
@@ -34,4 +34,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`; */

@@ -30,7 +30,6 @@ const Scholarship = () => {
                 src="../../images/Rectangle10.png"
               />
               <div className={style.scholarship__content}>
-
                 <Carousel slide={true} indicators={false}>
                   <div className="block max-w-[15rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat">
@@ -41,9 +40,18 @@ const Scholarship = () => {
                         src="../../images/800x600_FE_WEB_equivalence 2.jpg"
                       />
                     </div>
-                    <div className="p-6">
-                      <p className="text-base text-sky-600 font-extrabold capitalize">
+                    <div className="">
+                      <p className="px-6 py-1 text-sm text-sky-600 font-extrabold uppercase">
                         Bourse d'études
+                      </p>
+
+                      <p className="text-xs">
+                        Lorem ipsum dolor sit amet consectetur. Neque duis cras
+                        lectus non habitant et.
+                      </p>
+
+                      <p className="text-sky-600 text-left ml-3 py-2">
+                        Détails
                       </p>
                     </div>
                   </div>
@@ -57,13 +65,21 @@ const Scholarship = () => {
                         src="../../images/800x600_FE_WEB_equivalence 2.jpg"
                       />
                     </div>
-                    <div className="p-6">
-                      <p className="text-base text-sky-600 font-extrabold capitalize">
+                    <div className="">
+                      <p className="px-6 py-1 text-sm text-sky-600 font-extrabold uppercase">
                         Bourse d'études
+                      </p>
+
+                      <p className="text-xs">
+                        Lorem ipsum dolor sit amet consectetur. Neque duis cras
+                        lectus non habitant et.
+                      </p>
+
+                      <p className="text-sky-600 text-left ml-3 py-2">
+                        Détails
                       </p>
                     </div>
                   </div>
-
                 </Carousel>
               </div>
             </div>
