@@ -1,5 +1,6 @@
 ---
 title: Les bourses de la fondation Mastercard
+slug: "les-bourses-de-la-fondation-mastercard"
 excerpt: >-
   La Fondation MasterCard a pour mission de faire progresser l’éducation et
   l’inclusion financière en aidant la jeunesse africaine économiquement

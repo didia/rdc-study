@@ -1,9 +1,10 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Carousel } from "flowbite-react";
 
-const StudyCountry = () => {
+const StudyCountry = ({ guideCountries }) => {
+  
   return (
     <>
       <section className="mb-2" id="studycountry">
@@ -81,37 +82,30 @@ const StudyCountry = () => {
 
             <div className={styles.travel_countries_content}>
               <Carousel slide={true} indicators={false}>
-                <div className="block max-w-[15rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat">
-                    <StaticImage
-                      className="rounded-t-lg"
-                      alt="tour"
-                      placeholder="blurred"
-                      src="../../images/flatten.jpg"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <p className="text-base text-sky-600 font-extrabold">
-                      CANADA
-                    </p>
-                  </div>
-                </div>
 
-                <div className="block max-w-[15rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat">
-                    <StaticImage
-                      className="rounded-t-lg"
-                      alt="tour"
-                      placeholder="blurred"
-                      src="../../images/tour_effeil.jpg"
-                    />
+              {guideCountries.map((guideCountry) => {
+                const image = getImage(guideCountry.frontmatter.thumbnail);
+                return (
+                  <div className="block max-w-[15rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+                    <div className="relative overflow-hidden bg-cover bg-no-repeat">
+                      <GatsbyImage
+                        image={image}
+                        alt={guideCountry.frontmatter.title}
+                        className="rounded-t-lg"
+                        style={{ height: "200px" }}
+                      />
+                    </div>
+                    <div className="p-6">
+                      <a
+                        href={`/${guideCountry.frontmatter.slug}`}
+                        className="text-lg text-sky-600 font-extrabold uppercase"
+                      >
+                        {guideCountry.frontmatter.name}
+                      </a>
+                    </div>
                   </div>
-                  <div className="p-6">
-                    <p className="text-base text-sky-600 font-extrabold">
-                      FRANCE
-                    </p>
-                  </div>
-                </div>
+                );
+              })}
               </Carousel>
             </div>
           </div>

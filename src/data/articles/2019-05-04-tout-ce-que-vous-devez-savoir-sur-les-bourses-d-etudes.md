@@ -1,5 +1,6 @@
 ---
 title: Tout ce que vous devez savoir sur les bourses d’études
+slug: "tout-ce-que-vous-devez-savoir-sur-les-bourses-d-etudes"
 excerpt: >
   La recherche des bourses d’études est un passage obligé pour la grande
   majorité des étudiants. Nous recevons au moins 200 messages par mois des

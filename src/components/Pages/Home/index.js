@@ -13,7 +13,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import SecondaryBtn from "../../Button/Secondary";
 import PrimaryBtn from "../../Button/Primary";
 
-const Home = () => {
+const Home = ({ guideCountries }) => {
   return (
     <Layout pageTitle="Page d'acceuil">
       <div className={"md:hidden " + style.firstSection}>
@@ -103,7 +103,7 @@ const Home = () => {
         />
       </div>
 
-      <StudyCountry />
+      <StudyCountry guideCountries={guideCountries} />
       <Scholarship />
 
       <section className="mb-5">
@@ -114,7 +114,7 @@ const Home = () => {
           <div className="h-4 w-full border-b-2 border-sky-600"></div>
         </div>
 
-       {/*  {newsCardItems.map((newsCardItem) => {
+        {/*  {newsCardItems.map((newsCardItem) => {
           return (
             <NewsCard
               key={newsCardItem.frontmatter.title}

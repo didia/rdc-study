@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Nous passerons à travers la Covid-19 ensemble.
+slug: "nous-passerons-a-travers-la-covid-19-ensemble"
 excerpt: >-
   La pandémie du Covid-19 nous affecte tous sans exception. Nous savons que
   plusieurs d'entre vous s'inquiètent de l’avenir de leurs projets d'études.

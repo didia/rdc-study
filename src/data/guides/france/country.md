@@ -6,16 +6,16 @@ excerpt: La France est reconnue pour la qualité et la diversité des études
   Etudier en France vous permettra de découvrir un pays très varié au patrimoine
   riche et multi-culturel.
 slug: france
-flag: images/flag.png
+flag: ./images/flag.png
 topic: country
 related:
   - france/admission
   - france/visa
 name: France
-thumbnail: images/france.jpg
+thumbnail: ./images/france.jpg
 date: 2020-04-12
 ---
-## Que faut-il pour étudier en France ?
+**Que faut-il pour étudier en France ?**
 
 Pour étudier en France, il faut au préalable avoir obtenu une admission dans un établissement d’études supérieures français.
 Les demandes d’admission sont généralement faites entre mi-novembre et fin janvier.
@@ -30,7 +30,7 @@ Une fois votre demande admission obtenue, la plateforme se chargera elle-même d
 Pour les candidats au doctorat, la procédure consiste à contacter directement votre établissement d’enseignement pour l’admission et ensuite déposer une démande de visa, une fois l’admission obtenue.
 Les étudiants au doctorat ne peuvent donc pas utiliser la plateforme Etudes en France.
 
-## Combien coûtent les études en France ?
+**Combien coûtent les études en France ?**
 
 Depuis 2019, les frais académiques annuels s’élèvent à 2 770 € pour la licence et 3 770 € pour le master dans les établissements publics.\
 Cependant, plusieurs universités accordent des exemptions des frais supplémentaires aux étudiants originaires des pays sous développés.
@@ -41,14 +41,14 @@ Pour vivre en France, il est souhaitable de disposer d’un budget mensuel compr
 \
 Pour en savoir plus sur les droits d’inscription, consultez le <a href="https://www.etudiant.gouv.fr/cid96721/droits-d-inscription.html" target="_blank" rel="noreferrer noopener">site web du gouvernement français à ce sujet.</a>
 
-## Qu’en est-il des bourses d’études ?
+**Qu’en est-il des bourses d’études ?**
 
 La France offre environ 600 programmes des bourses d’études qui visent les études supérieures, des stages ou la recherche. Nous publions certaines dans la section [bourses](/bourses) de ce site web.
 \
 \
 Toutefois, vous pouvez obtenir une liste complète des bourses offertes par la France sur <a href="http://campusbourses.campusfrance.org/fria/bourse/#/catalog" target="_blank" rel="noopener noreferrer">le site web de Campus France.</a>
 
-## Combien coûtent les démarches ?
+**Combien coûtent les démarches ?**
 
 En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir **1 100 USD + 50 euros** pour toutes vos démarches.
 Ces frais se présentent comme suit:
@@ -60,7 +60,7 @@ Ces frais se présentent comme suit:
 **NB**: Ces montants sont basés sur les informations que nous avons consultés au moment de la rédaction de ce guide.
 Pour avoir les montants à jour, nous vous conseillons de vous informer auprès de votre espace Campus France ou un consulat de France dans votre pays.
 
-## Est-ce que notre service d’accompagnement est nécessaire pour la France ?
+**Est-ce que notre service d’accompagnement est nécessaire pour la France ?**
 
 À travers Campus France et la plateforme Études en France, le gouvernement français a simplifié toute la procédure pour les études en France.
 Vous pouvez donc entièrement faire ces démarches vous-mêmes.
