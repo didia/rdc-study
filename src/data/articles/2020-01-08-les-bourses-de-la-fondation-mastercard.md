@@ -6,7 +6,7 @@ excerpt: >-
   l’inclusion financière en aidant la jeunesse africaine économiquement
   défavorisés à trouver des opportunités pour sortir eux-mêmes, leurs familles
   et leurs communautés de la pauvreté vers une vie meilleure.
-thumbnail: /images/uploads/mastercard-foundation.jpeg
+thumbnail: ../../static//images/uploads/mastercard-foundation.jpeg
 tags:
   - bourses;mastercard foundation;africa;afrique;bourses d’études
 date: 2020-01-08T12:13:58.933Z

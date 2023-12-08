@@ -4,7 +4,7 @@ slug: "30-juin-2019-30-juin-2018-30-juin-2019-rdc-etudes-souffle-sa-premiere-bou
 excerpt: >-
   Alors que RDC Etudes fête son premier anniversaire, revenons ensemble sur ce
   qu’a été sa première année, ce qui a été accompli et ce qui reste à améliorer.
-thumbnail: /images/uploads/annie-spratt-m20ylqczszw-unsplash.jpg
+thumbnail: ../../static/images/uploads/annie-spratt-m20ylqczszw-unsplash.jpg
 thumbnailCredits: >-
   <a style="background-color:black;color:white;text-decoration:none;padding:4px
   6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;,

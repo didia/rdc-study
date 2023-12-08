@@ -6,7 +6,7 @@ excerpt: >
   J’aimerais postuler pour la bourse du Brésil mais étudier en portugais me
   décourage un peu » sont le genre des préoccupations que nous soumettent
   régulièrement ceux qui nous contactent. 
-thumbnail: /images/uploads/article-sur-les-langues.png
+thumbnail: ../../static/images/uploads/article-sur-les-langues.png
 tags:
   - portugais
   - français

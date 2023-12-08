@@ -5,7 +5,7 @@ slug: "etudier-a-l-universite-internationale-de-makerere-a-kampala"
 excerpt: Kampala est la capitale nationale et économique de l’OUGANDA. Connue
   pour sa diversité culturelle, elle est l’une de meilleures villes cosmopolites
   qu’on retrouve dans la communauté des pays de l’Afrique de l’Est.
-thumbnail: /images/uploads/makerere-university.jpg
+thumbnail: ../../static/images/uploads/makerere-university.jpg
 date: 2020-01-15T11:17:13.267Z
 ---
 Souhaitez-vous étudier en Ouganda ? Notre guide participatif vous offre des conseils utiles sur les visas d’étudiant, les conditions d’inscription ainsi que sur la vie estudiantine en Uganda. Dans ce guide nous nous sommes basé sur les procédures d’admission à <a href="https://www.mak.ac.ug/application-procedures/international" target="_blank" rel="noreferrer noopener">l’université Internationale de Makerere</a>. Le processus reste quasiment le même dans toutes les meilleures universités de la ville de Kampala.

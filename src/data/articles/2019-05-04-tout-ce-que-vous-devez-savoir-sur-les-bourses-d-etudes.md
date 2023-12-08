@@ -7,7 +7,7 @@ excerpt: >
   étudiants voulant s’informer sur les différentes opportunités de bourses.
   Malheureusement nous avons constaté que plusieurs ne savent pas où chercher et
   à quoi s’attendre en ce qui concerne les bourses.
-thumbnail: /images/uploads/vasily-koloda-620886-unsplash.jpg
+thumbnail: ../../static/images/uploads/vasily-koloda-620886-unsplash.jpg
 thumbnailCredits: >-
   <a style="background-color:black;color:white;text-decoration:none;padding:4px
   6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;,
