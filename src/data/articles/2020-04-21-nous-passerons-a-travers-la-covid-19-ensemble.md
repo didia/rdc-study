@@ -6,7 +6,6 @@ excerpt: >-
   La pandémie du Covid-19 nous affecte tous sans exception. Nous savons que
   plusieurs d'entre vous s'inquiètent de l’avenir de leurs projets d'études.
   Voici donc ce que nous faisons pour vous assister dans cette situation.
-thumbnail: /images/uploads/perry-grone-lblgffladry-unsplash.jpg
 thumbnailCredits: >-
   <a style="background-color:black;color:white;text-decoration:none;padding:4px
   6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;,
