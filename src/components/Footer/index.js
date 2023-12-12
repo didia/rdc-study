@@ -6,7 +6,7 @@ import {
   faPhone,
   faMagnifyingGlassLocation,
 } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faLinkedin, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faLinkedin, faInstagram, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
   return (
@@ -34,9 +34,8 @@ export const Footer = () => {
                 <StaticImage alt="logo" src="../../images/Logo_white.png" />
               </div>
               <p className="mx-10">
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                Réussir vous apporte toutes les nouveautés sur les bourses et
+                l’éducation de qualité directement dans votre boîte email.
               </p>
             </div>
             <div>
@@ -49,9 +48,16 @@ export const Footer = () => {
               <p className="mb-4 justify-center">
                 <a href="#!" className="text-white text-xl">
                   <FontAwesomeIcon icon={faPhone} />
-                  &nbsp;&nbsp; +243 800 000 00
+                  &nbsp;&nbsp; +243 99 994 9712
                 </a>
               </p>
+              <p className="mb-4 justify-center">
+                <a href="#!" className="text-white text-xl">
+                  <FontAwesomeIcon icon={faWhatsapp} className="text-2xl" />
+                  &nbsp;&nbsp; +1 (581) 318-0180
+                </a>
+              </p>
+
               <p className="mb-4">
                 <a href="#!" className="text-white text-xl">
                   <FontAwesomeIcon icon={faEnvelope} />
@@ -107,12 +113,6 @@ export const Footer = () => {
                 className="mb-4 flex justify-center uppercase md:justify-start"
               >
                 Bourses
-              </a>
-              <a
-                href="/bourseDetails"
-                className="mb-4 flex justify-center uppercase md:justify-start"
-              >
-                Détails Bourses
               </a>
               <a
                 href="/aboutUs"

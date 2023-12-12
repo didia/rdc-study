@@ -8,12 +8,12 @@ import ContactForm from "../../../components/ContactForm";
 import NewsCard from "../../NewsCard";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 import SecondaryBtn from "../../Button/Secondary";
 import PrimaryBtn from "../../Button/Primary";
 
-const Home = ({ guideCountries, articles }) => {
+const Home = ({ guideCountries, articles, scholarships }) => {
   console.log("articles : ", articles);
   return (
     <Layout pageTitle="Page d'acceuil">
@@ -105,7 +105,15 @@ const Home = ({ guideCountries, articles }) => {
       </div>
 
       <StudyCountry guideCountries={guideCountries} />
-      <Scholarship />
+      <Scholarship scholarships={scholarships} />
+
+      <p className="text-center mb-10">
+        <PrimaryBtn fontSize={"text-sm"} text={"Afficher toutes les bourses"}>
+          <i className="px-2">
+            <FontAwesomeIcon icon={faArrowRight} />
+          </i>
+        </PrimaryBtn>
+      </p>
 
       <section className="mb-5">
         <div className="text-left px-8 mb-5">
@@ -123,6 +131,13 @@ const Home = ({ guideCountries, articles }) => {
             />
           );
         })}
+        <p className="text-center py-3">
+          <PrimaryBtn fontSize={"text-sm"} text={"Voir plus"}>
+            <i className="px-2">
+              <FontAwesomeIcon icon={faArrowRight} />
+            </i>
+          </PrimaryBtn>
+        </p>
       </section>
 
       <section className="mb-5">

@@ -48,6 +48,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/data/scholarships/`,
+        name: `scholarships`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "pages",

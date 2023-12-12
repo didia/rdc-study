@@ -40,7 +40,6 @@ const Header = () => {
               <div className="hidden md:flex md:space-x-5 items-center uppercase">
                 <NavLink title={"accueil"} url={"/"} />
                 <NavLink title={"bourses d'études"} url={"/bourse"} />
-                <NavLink title={"détails bourses"} url={"/bourseDetails"} />
                 <NavLink title={"examens médicaux"} url={"/healthcare"} />
                 <NavLink title={"étudier en france"} url={"/country"} />
                 <NavLink title={"partenariat"} url={"/partenership"} />
@@ -104,7 +103,6 @@ const Header = () => {
             <ul className="w-full">
               <NavLink title={"accueil"} url={"/"} />
               <NavLink title={"bourses d'études"} url={"/bourse"} />
-              <NavLink title={"détails bourses"} url={"/bourseDetails"} />
               <NavLink title={"examens médicaux"} url={"/healthcare"} />
               <NavLink title={"étudier en france"} url={"/country"} />
               <NavLink title={"partenariat"} url={"/partenership"} />

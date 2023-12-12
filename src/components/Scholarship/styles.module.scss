@@ -2,7 +2,6 @@
     position: absolute;
     z-index: 1;
     bottom: 0;
-    right: 0;
     height: 100%;
     width: 100%;
     &__overlay {
@@ -16,11 +15,11 @@
         width: 100%;
         position: relative;
     &__overlay {
-            height: 20rem;
+            height: 27rem;
             width: 100%;
     }
     &__content {
-position: absolute;
+    position: absolute;
     z-index: 1;
     height: 100%;
     width: 100%;
@@ -28,8 +27,6 @@ position: absolute;
     align-items: center;
     top: 0.3rem;
     bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     }
     &__bourse_card {
         @media only screen and (max-width: 350px) {

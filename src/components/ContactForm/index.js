@@ -10,8 +10,10 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
             <span className="text-sky-600 text-2xl font-black">
               Besoin d'un service ?
             </span>{" "}
-            <p className="py-7">
-              Lorem ispum dolor fortuna simpre cresis, out decresis vita
+            <p className="py-4">
+              Avez-vous des questions ou besoin d’informations supplémentaires?
+              N’hésitez donc pas de nous contacter, de préférence à travers nos
+              médias sociaux.
             </p>
           </div>
 
@@ -35,7 +37,11 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
                 </div>
 
                 <div>
-                  <textarea className={styles.form__textarea} aria-label='Message' defaultValue={"Message"} />
+                  <textarea
+                    className={styles.form__textarea}
+                    aria-label="Message"
+                    defaultValue={"Message"}
+                  />
                 </div>
 
                 <div className="py-4">
@@ -46,7 +52,10 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
               </div>
             </div>
             <div className={styles.form__overlayImg}>
-              <StaticImage alt='airway' src="../../images/png-clipart-black-airway.png" />
+              <StaticImage
+                alt="airway"
+                src="../../images/png-clipart-black-airway.png"
+              />
             </div>
           </div>
         </section>

@@ -3,13 +3,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const guideTemplate = require.resolve(`./src/templates/guideTemplate.js`);
   const articleTemplate = require.resolve(`./src/templates/articleTemplate.js`);
+  const scholarShipTemplate = require.resolve(
+    `./src/templates/scholarshipTemplate.js`
+  );
 
   // Guide Query
   const guideQuery = await graphql(`
     query GuideCountryPagesQuery {
-      allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/guides/" } }
-      ) {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/guides/" } }) {
         edges {
           node {
             frontmatter {
@@ -35,34 +36,62 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   });
 
   // Article Query
-    const articleQuery = await graphql(`
-      query ArticleQuery {
-        allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/articles/" } }
-        ) {
-          edges {
-            node {
-              frontmatter {
-                slug
-              }
+  const articleQuery = await graphql(`
+    query ArticleQuery {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/articles/" } }) {
+        edges {
+          node {
+            frontmatter {
+              slug
             }
           }
         }
       }
-    `);
-    if (articleQuery.errors) {
-      reporter.panicOnBuild(`Error while running GraphQL query.`);
-      return;
     }
-    articleQuery.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.slug,
-        component: articleTemplate,
-        context: {
-          slug: node.frontmatter.slug,
-        },
-      });
+  `);
+  if (articleQuery.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
+  }
+  articleQuery.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: articleTemplate,
+      context: {
+        slug: node.frontmatter.slug,
+      },
     });
+  });
+
+  // SchloarShip Query
+  const scholarShipQuery = await graphql(`
+    query ArticleQuery {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/scholarships/" } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `);
+  if (scholarShipQuery.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
+  }
+  scholarShipQuery.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: scholarShipTemplate,
+      context: {
+        slug: node.frontmatter.slug,
+      },
+    });
+  });
 };
 
 exports.createSchemaCustomization = ({ actions }) => {

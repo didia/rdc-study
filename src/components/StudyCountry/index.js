@@ -4,7 +4,6 @@ import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Carousel } from "flowbite-react";
 
 const StudyCountry = ({ guideCountries }) => {
-  console.log("related guides : ", guideCountries);
   
   return (
     <>

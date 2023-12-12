@@ -3,7 +3,7 @@ import Home from "../components/Pages/Home";
 import { graphql, useStaticQuery } from "gatsby";
 
 const IndexPage = () => {
-  const { guides, articles } = useStaticQuery(
+  const { guides, articles, scholarships } = useStaticQuery(
     graphql`
       query MainQuery {
         guides: allMarkdownRemark(
@@ -34,6 +34,31 @@ const IndexPage = () => {
                 }
                 related
                 name
+              }
+            }
+          }
+        }
+        scholarships: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/scholarships/" } }
+        ) {
+          edges {
+            node {
+              frontmatter {
+                slug
+                title
+                excerpt
+                thumbnail {
+                  childImageSharp {
+                    gatsbyImageData(
+                      placeholder: BLURRED
+                      formats: [AUTO, WEBP, AVIF]
+                    )
+                  }
+                }
+                deadline
+                startDate
+                levels
+                targetCountries
               }
             }
           }
@@ -69,7 +94,14 @@ const IndexPage = () => {
 
   const guideCountries = guides.edges.map((edge) => edge.node);
   const allArticles = articles.edges.map((edge) => edge.node);
-  return <Home guideCountries={guideCountries} articles={allArticles} />;
+  const allScholarships = scholarships.edges.map((edge) => edge.node);
+  return (
+    <Home
+      guideCountries={guideCountries}
+      articles={allArticles}
+      scholarships={allScholarships}
+    />
+  );
 };
 
 export default IndexPage;
