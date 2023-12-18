@@ -14,7 +14,6 @@ import SecondaryBtn from "../../Button/Secondary";
 import PrimaryBtn from "../../Button/Primary";
 
 const Home = ({ guideCountries, articles, scholarships }) => {
-  console.log("articles : ", articles);
   return (
     <Layout pageTitle="Page d'acceuil">
       <div className={"md:hidden " + style.firstSection}>
@@ -32,7 +31,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
           <div className={style.contact_content}>
             <div className="text-start">
-              <div className="text-4xl text-white font-black uppercase mt-2 mb-4">
+              <div className="text-3xl text-white font-black uppercase mt-2 mb-4">
                 Rdc études
               </div>
               <div className="text-lg text-white mb-4">
@@ -108,7 +107,11 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <Scholarship scholarships={scholarships} />
 
       <p className="text-center mb-10">
-        <PrimaryBtn fontSize={"text-sm"} text={"Afficher toutes les bourses"}>
+        <PrimaryBtn
+          href={"/bourse"}
+          fontSize={"text-sm"}
+          text={"Voir plus de bourses"}
+        >
           <i className="px-2">
             <FontAwesomeIcon icon={faArrowRight} />
           </i>
@@ -131,13 +134,6 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             />
           );
         })}
-        <p className="text-center py-3">
-          <PrimaryBtn fontSize={"text-sm"} text={"Voir plus"}>
-            <i className="px-2">
-              <FontAwesomeIcon icon={faArrowRight} />
-            </i>
-          </PrimaryBtn>
-        </p>
       </section>
 
       <section className="mb-5">

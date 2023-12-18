@@ -64,7 +64,9 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
       </section>
 
       <section className="mx-6">
-        <div className="text-sky-600 text-2xl font-black absolute mt-10">Guides reliés</div>
+        <div className="text-sky-600 text-xl font-black absolute mt-10 uppercase">
+          Guides reliés
+        </div>
         <div className="h-20 border-b-2 border-sky-600"></div>
         {relatedGuides.map((relatedGuide) => {
           return (
@@ -82,12 +84,47 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
               <div className="text-start">
                 <a
                   href={`/${relatedGuide.slug}`}
-                  className="text-sky-600 text-lg font-bold uppercase"
+                  className="text-sky-600 text-md font-bold uppercase"
                 >
                   {relatedGuide.title}
                 </a>
                 <p className="py-2 text-justify">{relatedGuide.excerpt}</p>
                 <a href={`/${relatedGuide.slug}`}>
+                  <PrimaryBtn text="Lire le guide" />
+                </a>
+              </div>
+            </div>
+          );
+        })}
+      </section>
+
+      <section className="mx-6">
+        <div className="text-sky-600 text-md font-black absolute mt-10 uppercase">
+          Autres guides qui pourraient vous intéresser
+        </div>
+        <div className="h-20 border-b-2 py-12 border-sky-600"></div>
+        {otherGuides.map((otherGuide) => {
+          return (
+            <div className="py-4">
+              <div className="grid grid-cols-1">
+                <div>
+                  <GatsbyImage
+                    className="block h-full w-full rounded-sm object-cover object-center"
+                    image={getImage(otherGuide.thumbnail)}
+                    alt="flag"
+                  />
+                </div>
+              </div>
+
+              <div className="text-start">
+                <a
+                  href={`/${otherGuide.slug}`}
+                  className="text-sky-600 text-md font-bold uppercase"
+                >
+                  {otherGuide.title}
+                </a>
+                <p className="py-2 text-justify">{otherGuide.excerpt}</p>
+                <a href={`/${otherGuide.slug}`}>
                   <PrimaryBtn text="Lire le guide" />
                 </a>
               </div>

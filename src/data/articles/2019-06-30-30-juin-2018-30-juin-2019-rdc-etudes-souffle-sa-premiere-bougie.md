@@ -1,6 +1,6 @@
 ---
 title: "30 juin 2018 - 30 juin 2019: RDC Etudes souffle sa première bougie \U0001F382\U0001F382"
-slug: "30-juin-2019-30-juin-2018-30-juin-2019-rdc-etudes-souffle-sa-premiere-bougie"
+slug: "article/30-juin-2019-30-juin-2018-30-juin-2019-rdc-etudes-souffle-sa-premiere-bougie"
 excerpt: >-
   Alors que RDC Etudes fête son premier anniversaire, revenons ensemble sur ce
   qu’a été sa première année, ce qui a été accompli et ce qui reste à améliorer.

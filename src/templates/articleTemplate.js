@@ -1,21 +1,14 @@
 import React from "react";
 import { graphql } from "gatsby";
-import _ from "lodash";
-//import { useEffect } from "react";
+import ArticleDetails from "../components/Pages/ArticleDetails";
 
 export default function ArticleTemplate({ data }) {
-  const { markdownRemark } = data;
+  const { markdownRemark, articles } = data;
   const { frontmatter, html } = markdownRemark;
-
-  /*  useEffect(() => {
-        console.log("Guide Page markdownRemark : ", markdownRemark);
-    });
-     */
+  const allArticles = articles.edges.map((edge) => edge.node);
 
   return (
-    <div className="h-56">
-      <h1>Article : {frontmatter.title}</h1>
-    </div>
+    <ArticleDetails article={frontmatter} content={html} otherArticles={allArticles} />
   );
 }
 
@@ -29,6 +22,37 @@ export const articleQuery = graphql`
         excerpt
         tags
         date
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
+      }
+    }
+
+    articles: allMarkdownRemark(
+      limit: 5
+      filter: { fileAbsolutePath: { regex: "/article/" } }
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            slug
+            title
+            excerpt
+            tags
+            date
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                )
+              }
+            }
+          }
+        }
       }
     }
   }

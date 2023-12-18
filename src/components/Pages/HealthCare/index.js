@@ -6,7 +6,7 @@ const HealthCare = () => {
   return (
     <Layout pageTitle={"Examens médicaux et soins de santé"}>
       <section>
-        <div className="grid grid-cols-1 mx-10 py-10">
+        <div className="grid grid-cols-1 mx-4 py-5">
           <div>
             <StaticImage
               alt="gallery"
@@ -16,7 +16,7 @@ const HealthCare = () => {
           </div>
         </div>
 
-        <div className="mx-10 text-justify">
+        <div className="mx-4 text-start">
           <p className="text-sky-600 text-xl font-bold">
             Puis-je passer les examens médicaux pour le canada sans que
             l'immigration ne me le demande ?
