@@ -143,47 +143,56 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </span>{" "}
         </div>
 
-        <div className="container relative z-40 mx-auto px-5 ">
-          <div className="grid grid-cols-3 py-10 text-center">
+        <div className="container relative z-40 mx-auto px-2 ">
+          <div className="grid grid-cols-3 py-6 text-center">
             <div>
-              <StaticImage
-                src="../../../images/logo_243.png"
-                className="block mx-auto"
-                placeholder="blurred"
-                alt="logo"
-                objectFit="contain"
-              />
+              <a href="/articles/2022-05-30-faire-une-formation-professionnelle-institut-a-linstitut-africain-de-haute-formation">
+                <StaticImage
+                  src="../../../images/iahf.png"
+                  className="block mx-auto"
+                  placeholder="blurred"
+                  alt="logo"
+                  height={90}
+                  objectFit="contain"
+                />
 
-              <p className="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                243 technologies
-              </p>
+                <p className=" text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)
+                </p>
+              </a>
             </div>
 
-            <div>
-              <StaticImage
-                src="../../../images/logo.png"
-                className="block mx-auto"
-                placeholder="blurred"
-                alt="logo"
-                objectFit="contain"
-              />
-
-              <p className="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                RDC Etudes
-              </p>
+            <div className="mt-4">
+              <a href="/articles/2022-06-07-faites-une-formation-professionnelle-de-qualite-chez-excelia">
+                <StaticImage
+                  src="../../../images/excelia.png"
+                  className="block mx-auto"
+                  placeholder="blurred"
+                  alt="Logo"
+                  height={90}
+                  objectFit="contain"
+                />
+                <p className="pt-10 text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  EXCELIA GROUP (FRANCE)
+                </p>
+              </a>
             </div>
-
+            
             <div>
-              <StaticImage
-                src="../../../images/logo_243.png"
-                className="block mx-auto"
-                placeholder="blurred"
-                alt="Logo"
-                objectFit="contain"
-              />
-              <p className="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                243 technologies
-              </p>
+              <a href="/articles/2022-06-23-choisissez-medipol-university-pour-une-education-de-qualite-en-turquie">
+                <StaticImage
+                  src="../../../images/medipol.jpg"
+                  className="block mx-auto"
+                  placeholder="blurred"
+                  alt="logo"
+                  height={90}
+                  objectFit="contain"
+                />
+
+                <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)
+                </p>
+              </a>
             </div>
           </div>
         </div>
