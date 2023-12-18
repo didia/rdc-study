@@ -1,0 +1,21 @@
+.scoped h2 {
+        font-weight: bold;
+        font-size: 18px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+
+.scoped a {
+        color: #1085c9;
+        font-weight: 600;
+    }
+
+.scoped ul {
+        padding-left: 30px;
+        list-style-type: disc;
+    }
+
+.scoped ol {
+        padding-left: 10px;
+        list-style-type: decimal;
+    }

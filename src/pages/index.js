@@ -3,10 +3,10 @@ import Home from "../components/Pages/Home";
 import { graphql, useStaticQuery } from "gatsby";
 
 const IndexPage = () => {
-  const { allMarkdownRemark } = useStaticQuery(
+  const { guides, articles, scholarships } = useStaticQuery(
     graphql`
-      query MyQuery {
-        allMarkdownRemark(
+      query MainQuery {
+        guides: allMarkdownRemark(
           filter: { fileAbsolutePath: { regex: "/country.md/" } }
         ) {
           edges {
@@ -38,12 +38,70 @@ const IndexPage = () => {
             }
           }
         }
+        scholarships: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/scholarships/" } }
+        ) {
+          edges {
+            node {
+              frontmatter {
+                slug
+                title
+                excerpt
+                thumbnail {
+                  childImageSharp {
+                    gatsbyImageData(
+                      placeholder: BLURRED
+                      formats: [AUTO, WEBP, AVIF]
+                    )
+                  }
+                }
+                deadline
+                startDate
+                levels
+                targetCountries
+              }
+            }
+          }
+        }
+        articles: allMarkdownRemark(
+          limit: 3
+          filter: { fileAbsolutePath: { regex: "/article/" } }
+        ) {
+          edges {
+            node {
+              frontmatter {
+                slug
+                title
+                excerpt
+                thumbnail {
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 300
+                      placeholder: BLURRED
+                      formats: [AUTO, WEBP, AVIF]
+                    )
+                  }
+                }
+                thumbnailCredits
+                date
+              }
+            }
+          }
+        }
       }
     `
   );
 
-  const guideCountries = allMarkdownRemark.edges.map((edge) => edge.node);
-  return <Home guideCountries={guideCountries} />;
+  const guideCountries = guides.edges.map((edge) => edge.node);
+  const allArticles = articles.edges.map((edge) => edge.node);
+  const allScholarships = scholarships.edges.map((edge) => edge.node);
+  return (
+    <Home
+      guideCountries={guideCountries}
+      articles={allArticles}
+      scholarships={allScholarships}
+    />
+  );
 };
 
 export default IndexPage;

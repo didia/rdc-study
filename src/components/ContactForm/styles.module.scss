@@ -12,21 +12,21 @@
         padding-left: 18.6rem;
     }
     &__input {
-        width: 300px;
+        width: 340px;
         height: 40px;
         border: 1.5px solid #0490DF;
         border-radius: 5px;
         background-color: #ECEAEA;
         padding-left: 20px;
         @media only screen and (max-width: 415px) {
-                width: 260px;
+                width: 280px;
             }
         @media only screen and (max-width: 365px) {
-                width: 240px;
+                width: 260px;
             }
     }
     &__textarea {
-        width: 300px;
+        width: 340px;
         height: 120px;
         border: 1.5px solid #0490DF;
         border-radius: 5px;
@@ -34,10 +34,10 @@
         padding-left: 20px;
         padding-top: 20px;
         @media only screen and (max-width: 415px) {
-                width: 260px;
+                width: 280px;
             }
         @media only screen and (max-width: 365px) {
-                width: 240px;
+                width: 260px;
             }
     }
 }
