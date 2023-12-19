@@ -153,7 +153,7 @@ export const Footer = () => {
 
               <div className="hero bg-gredient-dark h-400px flex flex-col px-2">
                 <p
-                  className="mb-5 mt-5 font-semibold"
+                  className="mb-5 mt-5"
                   style={{ fontSize: "20px" }}
                 >
                   Abonnez-vous à notre newsLetter
@@ -195,7 +195,7 @@ export const Footer = () => {
         </div>
 
         <div className="bg-sky-600 p-6 text-center">
-          <span className="text-xl">© 2023 All rigth reserved RDC Etudes</span>
+          <span className="text-xl">© 2023 RDC Etudes. Tous droits réservés</span>
         </div>
       </footer>
     </div>

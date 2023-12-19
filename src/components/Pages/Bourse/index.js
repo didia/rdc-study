@@ -1,11 +1,18 @@
 import React from "react";
 import Layout from "../../Layout";
-import BourseCard from "../../BourseCard";
 import SecondaryBtn from "../../Button/Secondary"
 import * as styles from "./styles.module.scss";
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
+import ScholarShipCard from "../../Scholarship/ScholarShipCard";
 
-const Bourse = () => {
+const Bourse = ({ scholarships }) => {
+  const LEVEL_ORDERS = [
+    "undergraduate",
+    "graduate",
+    "postgraduate",
+    "research",
+    "internship",
+  ];
   return (
     <Layout pageTitle={"Bourse d'études"}>
       <section className="mb-7">
@@ -71,13 +78,15 @@ const Bourse = () => {
         </div>
       </section>
 
-      <section>
-        <div className="grid grid-cols-2 mx-4 mb-10 gap-4">
-          <BourseCard/>
-          <BourseCard/>
-          <BourseCard/>
-          <BourseCard/>
-        </div>
+      <section className="px-4 mb-10">
+        {scholarships.map((scholarship) => {
+          return (
+            <div className="py-3">
+              {" "}
+              <ScholarShipCard scholarship={scholarship} />
+            </div>
+          );
+        })}
       </section>
     </Layout>
   );

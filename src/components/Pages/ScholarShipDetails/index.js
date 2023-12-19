@@ -1,16 +1,16 @@
 import React from "react";
 import Layout from "../../Layout";
-import BourseCard from "../../BourseCard";
-import { StaticImage } from "gatsby-plugin-image";
 import HtmlContent from "../../HtmlContent"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Carousel } from "flowbite-react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faGlobe, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import ScholarShipCard from "../../Scholarship/ScholarShipCard";
 
-const BourseDetails = ({ bourse, content }) => {
-   const image = getImage(bourse.thumbnail);
- 
+const ScholarShipDetails = ({ bourse, content, otherScholarShips }) => {
+  const image = getImage(bourse.thumbnail);
+
   return (
     <Layout pageTitle={"Détails sur la bourse d'études"}>
       <section>
@@ -46,8 +46,20 @@ const BourseDetails = ({ bourse, content }) => {
           <HtmlContent content={content} />
         </div>
       </section>
+
+      <section className="mx-6 mb-10">
+        <div className="text-sky-600 text-lg font-black absolute mt-10 uppercase">
+          Autres Bourses
+        </div>
+        <div className="h-20 border-b-2 border-sky-600"></div>
+        <div className="">
+            {otherScholarShips.map((otherScholarShip) => {
+              return <ScholarShipCard scholarship={otherScholarShip} />;
+            })}
+        </div>
+      </section>
     </Layout>
   );
 };
 
-export default BourseDetails;
+export default ScholarShipDetails;

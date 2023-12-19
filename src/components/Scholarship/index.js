@@ -2,7 +2,6 @@ import React from 'react';
 import * as style from "./styles.module.scss";
 import { Carousel } from 'flowbite-react';
 import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image';
-import ScholarshipDeadline from './ScholarshipDeadline/ScholarshipDeadline';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 

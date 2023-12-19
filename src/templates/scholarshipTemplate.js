@@ -1,16 +1,23 @@
 import React from "react";
 import { graphql } from "gatsby";
-import BourseDetails from "../components/Pages/BourseDetails";
+import ScholarShipDetails from "../components/Pages/ScholarShipDetails";
 
-export default function ArticleTemplate({ data }) {
-  const { markdownRemark } = data;
+export default function ScholarshipTemplate({ data }) {
+  const { markdownRemark, scholarships } = data;
   const { frontmatter, html } = markdownRemark;
+  const allScholarships = scholarships.edges.map((edge) => edge.node);
 
-  return <BourseDetails bourse={frontmatter} content={html} />;
+  return (
+    <ScholarShipDetails
+      bourse={frontmatter}
+      content={html}
+      otherScholarShips={allScholarships}
+    />
+  );
 }
 
-export const articleQuery = graphql`
-  query articleQuery($slug: String!) {
+export const scholarshipQuery = graphql`
+  query scholarshipQuery($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -26,6 +33,32 @@ export const articleQuery = graphql`
         startDate
         levels
         targetCountries
+      }
+    }
+
+    scholarships: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/scholarships/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            slug
+            title
+            excerpt
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                )
+              }
+            }
+            deadline
+            startDate
+            levels
+            targetCountries
+          }
+        }
       }
     }
   }

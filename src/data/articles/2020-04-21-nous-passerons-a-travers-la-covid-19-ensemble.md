@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Nous passerons à travers la Covid-19 ensemble.
-slug: "nous-passerons-a-travers-la-covid-19-ensemble"
+slug: "article/nous-passerons-a-travers-la-covid-19-ensemble"
 thumbnail: ../../static/images/uploads/perry-grone-lblgffladry-unsplash.jpg
 excerpt: >-
   La pandémie du Covid-19 nous affecte tous sans exception. Nous savons que

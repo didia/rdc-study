@@ -14,7 +14,6 @@ import SecondaryBtn from "../../Button/Secondary";
 import PrimaryBtn from "../../Button/Primary";
 
 const Home = ({ guideCountries, articles, scholarships }) => {
-  console.log("articles : ", articles);
   return (
     <Layout pageTitle="Page d'acceuil">
       <div className={"md:hidden " + style.firstSection}>
@@ -32,7 +31,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
           <div className={style.contact_content}>
             <div className="text-start">
-              <div className="text-4xl text-white font-black uppercase mt-2 mb-4">
+              <div className="text-3xl text-white font-black uppercase mt-2 mb-4">
                 Rdc études
               </div>
               <div className="text-lg text-white mb-4">
@@ -108,7 +107,11 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <Scholarship scholarships={scholarships} />
 
       <p className="text-center mb-10">
-        <PrimaryBtn fontSize={"text-sm"} text={"Afficher toutes les bourses"}>
+        <PrimaryBtn
+          href={"/bourse"}
+          fontSize={"text-sm"}
+          text={"Voir plus de bourses"}
+        >
           <i className="px-2">
             <FontAwesomeIcon icon={faArrowRight} />
           </i>
@@ -131,13 +134,6 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             />
           );
         })}
-        <p className="text-center py-3">
-          <PrimaryBtn fontSize={"text-sm"} text={"Voir plus"}>
-            <i className="px-2">
-              <FontAwesomeIcon icon={faArrowRight} />
-            </i>
-          </PrimaryBtn>
-        </p>
       </section>
 
       <section className="mb-5">
@@ -147,47 +143,56 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </span>{" "}
         </div>
 
-        <div className="container relative z-40 mx-auto px-5 ">
-          <div className="grid grid-cols-3 py-10 text-center">
+        <div className="container relative z-40 mx-auto px-2 ">
+          <div className="grid grid-cols-3 py-6 text-center">
             <div>
-              <StaticImage
-                src="../../../images/logo_243.png"
-                className="block mx-auto"
-                placeholder="blurred"
-                alt="logo"
-                objectFit="contain"
-              />
+              <a href="/articles/2022-05-30-faire-une-formation-professionnelle-institut-a-linstitut-africain-de-haute-formation">
+                <StaticImage
+                  src="../../../images/iahf.png"
+                  className="block mx-auto"
+                  placeholder="blurred"
+                  alt="logo"
+                  height={90}
+                  objectFit="contain"
+                />
 
-              <p className="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                243 technologies
-              </p>
+                <p className=" text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)
+                </p>
+              </a>
             </div>
 
-            <div>
-              <StaticImage
-                src="../../../images/logo.png"
-                className="block mx-auto"
-                placeholder="blurred"
-                alt="logo"
-                objectFit="contain"
-              />
-
-              <p className="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                RDC Etudes
-              </p>
+            <div className="mt-4">
+              <a href="/articles/2022-06-07-faites-une-formation-professionnelle-de-qualite-chez-excelia">
+                <StaticImage
+                  src="../../../images/excelia.png"
+                  className="block mx-auto"
+                  placeholder="blurred"
+                  alt="Logo"
+                  height={90}
+                  objectFit="contain"
+                />
+                <p className="pt-10 text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  EXCELIA GROUP (FRANCE)
+                </p>
+              </a>
             </div>
-
+            
             <div>
-              <StaticImage
-                src="../../../images/logo_243.png"
-                className="block mx-auto"
-                placeholder="blurred"
-                alt="Logo"
-                objectFit="contain"
-              />
-              <p className="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                243 technologies
-              </p>
+              <a href="/articles/2022-06-23-choisissez-medipol-university-pour-une-education-de-qualite-en-turquie">
+                <StaticImage
+                  src="../../../images/medipol.jpg"
+                  className="block mx-auto"
+                  placeholder="blurred"
+                  alt="logo"
+                  height={90}
+                  objectFit="contain"
+                />
+
+                <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)
+                </p>
+              </a>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Étudier à l’Université Internationale de Makerere à Kampala
-slug: "etudier-a-l-universite-internationale-de-makerere-a-kampala"
+slug: "article/etudier-a-l-universite-internationale-de-makerere-a-kampala"
 excerpt: Kampala est la capitale nationale et économique de l’OUGANDA. Connue
   pour sa diversité culturelle, elle est l’une de meilleures villes cosmopolites
   qu’on retrouve dans la communauté des pays de l’Afrique de l’Est.

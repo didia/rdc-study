@@ -7,7 +7,7 @@ const PartenerShip = () => {
   return (
     <Layout pageTitle={"Détails sur les partenaires"}>
       <section>
-        <div className="mx-10 py-10">
+        <div className="mx-4 py-5">
           <StaticImage
             src="../../../images/2VJHRB2PIZDLTHHCJITZPFTISU1.png"
             alt="gallery"
@@ -15,7 +15,7 @@ const PartenerShip = () => {
           />
         </div>
 
-        <div className="mx-10 text-start">
+        <div className="mx-4 text-start">
           <p className="text-sky-600 text-xl font-bold">
             Optez pour l'Université Européenne Lefke en Chypre du Nord
           </p>
@@ -145,17 +145,6 @@ const PartenerShip = () => {
             l’expertise de nos mentors.
           </p>
         </div>
-      </section>
-
-      <section className="py-10 px-2">
-        {/* {newsCardItems.map((newsCardItem) => {
-          return (
-            <NewsCard
-              key={newsCardItem.frontmatter.title}
-              ItemData={newsCardItem.frontmatter}
-            />
-          );
-        })} */}
       </section>
     </Layout>
   );
