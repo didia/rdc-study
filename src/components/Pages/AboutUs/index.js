@@ -4,8 +4,10 @@ import ValueCard from "../../ValueCard";
 import SecondaryBtn from "../../Button/Secondary";
 import { StaticImage } from "gatsby-plugin-image";
 import * as styles from "./styles.module.scss";
+import TeamCard from "../../TeamCard";
 
-const AboutUs = () => {
+const AboutUs = ({ teammMembers }) => {
+
   return (
     <Layout pageTitle="Pourquoi RDC-&Eacute;tudes">
       <section>
@@ -22,8 +24,7 @@ const AboutUs = () => {
               <span className={styles.about__title}>Pourquoi RDC-Etudes ?</span>{" "}
               <p>
                 <span className={styles.about__description}>
-                  Lorem ispum dolor fortuna simpre cresis, out decresis vita
-                  Lorem
+                Nous voulons que tout le monde ait facilement accès à une éducation de qualité
                 </span>
                 <br />
                 <br />
@@ -67,24 +68,24 @@ const AboutUs = () => {
         <ValueCard
           title={"L'HONETETE"}
           section1={
-            "Some quick example text to build on the card title and make up the bulk of the card's content."
+            "Nous vous dirons toujours la vérité par rapport à vos démarches. L’important pour nous c’est que vous ayez la vraie information. La réussite de vos démarches est et restera toujours notre première priorité."
           }
         />
         <ValueCard
           title={"LA SERVIABILITE"}
           section1={
-            "Some quick example text to build on the card title and make up the bulk of the card's content."
+            "Le plus important pour nous c’est vous rendre service. Voilà pourquoi nous offrons des guides gratuits. Nous savons que c’est en vous rendant le meilleur service possible, que vous parlerez de nous aux autres personnes et que nous aurons plus de clients."
           }
         />
         <ValueCard
           title={"LA TRANSPARENCE"}
           section1={
-            "Some quick example text to build on the card title and make up the bulk of the card's content."
+            "Nous serons toujours transparents avec vous. À la différence des autres, chez nous vous savez exactement à quoi sert votre argent. Vous avez le choix de faire le paiement vous-même. Si nous payons pour vous, nous vous donnerons toujours les preuves de paiement."
           }
         />
       </section>
 
-      <section>
+      <section className="mb-10">
         <div className="flex items-center justify-center">
           <span
             className={
@@ -95,33 +96,14 @@ const AboutUs = () => {
             Une équipe sérieuse et passionée à votre service
           </span>
         </div>
-
-        <div className="grid grid-cols-3 mx-10">
-          <div className="col-span-3">
-            <StaticImage
-              alt="gallery"
-              className="block h-full w-full rounded-lg object-cover object-center"
-              src="../../../images/team1.png"
-            />
-          </div>
-
-          <div className="col-span-3 pt-5">
-            <StaticImage
-              alt="gallery"
-              className="block h-full w-full rounded-lg object-cover object-center"
-              src="../../../images/team2.png"
-            />
-          </div>
-
-          <div className="col-span-3 pt-5 pb-5">
-            <StaticImage
-              alt="gallery"
-              className="block h-full w-full rounded-lg object-cover object-center"
-              src="../../../images/team3.png"
-            />
-          </div>
-        </div>
       </section>
+
+      {
+        teammMembers.map(member => {
+          return <TeamCard member={member.frontmatter} />
+            })
+      }
+      
     </Layout>
   );
 };

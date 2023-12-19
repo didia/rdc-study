@@ -15,14 +15,13 @@ const Bourse = ({ scholarships }) => {
   ];
   return (
     <Layout pageTitle={"Bourse d'études"}>
-      <section className="mb-7">
+      <section>
         <div className="flex justify-start w-full z-5 absolute">
           <div className="text-start mx-10 z-10">
             <span className={styles.bourse__title}>Bourses d'études</span>{" "}
             <p>
-              <span className={styles.bourse__description}>
-                Lorem ispum dolor fortuna simpre cresis, out decresis vita Lorem
-                ispum dolor fortuna simpre cresis, out decresis vita Lorem ispum
+              <span className="text-md">
+                Voici les offres de bourses en cours trouvées pour vous avec ❤️ par l'équipe RDC Etudes
               </span>
               <br />
               <br />
