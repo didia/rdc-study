@@ -80,7 +80,12 @@ const Bourse = ({ scholarships }) => {
 
       <section className="px-4 mb-10">
         {scholarships.map((scholarship) => {
-          return <ScholarShipCard scholarship={scholarship} />;
+          return (
+            <div className="py-3">
+              {" "}
+              <ScholarShipCard scholarship={scholarship} />
+            </div>
+          );
         })}
       </section>
     </Layout>
