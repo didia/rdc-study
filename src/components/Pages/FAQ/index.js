@@ -23,7 +23,7 @@ const FAQ = () => {
         </div>
       </section>
 
-      <section className="mx-10 mt-4 mb-20">
+      <section className="mx-4 mt-4 mb-20">
         <div className="text-justify">
           <span className="text-lg font-bold">
             Voici les réponses aux questions les plus souvent posées.
@@ -47,13 +47,13 @@ const FAQ = () => {
           d‘être accompagné dans vos démarches, RDC Etudes vous offre un service
           d‘accompagnement qui est payant. Pour en savoir plus sur notre service
           d’accompagnement, consultez notre page sur l’accompagnement.
-          <p className="uppercase text-lg font-bold py-2">
+          <p className="uppercase text-lg font-bold py-2 text-start">
             Quels sont les pays pour lesquels vous offrez votre service
             d’accompagnement ?{" "}
           </p>
           Actuellement, nous pouvons vous aider à faire les démarches pour le
           Canada, les États-Unis et la Belgique.
-          <p className="uppercase text-lg font-bold py-2">
+          <p className="uppercase text-lg font-bold py-2 text-start">
             Que dois-je faire pour obtenir une admission et un visa pour étudier
             à l’étranger ?
           </p>{" "}
@@ -63,7 +63,7 @@ const FAQ = () => {
           la demande d’admission obtenue, vous pouvez faire une demande de Visa.
           Pour savoir comment faire une demande d’admission ou de visa,
           consultez nos guides gratuits à ce sujet.
-          <p className="uppercase text-lg font-bold py-2">
+          <p className="uppercase text-lg font-bold py-2 text-start">
             Quels sont les critères d’admissions ?
           </p>
           Les critères dépendent souvent de chaque université et/ou du programme
@@ -72,7 +72,7 @@ const FAQ = () => {
           programme choisi. Par exemple, une personne ayant fait la sociologie
           aura des difficultés de se faire accepter dans la faculté
           d’informatique.
-          <p className="uppercase text-lg font-bold py-2">
+          <p className="uppercase text-lg font-bold py-2 text-start">
             Combien coûtent les études à l’étranger?
           </p>
           Les frais académiques dépendent du pays, de l’université ainsi que du
@@ -87,7 +87,7 @@ const FAQ = () => {
           des frais académiques.\ Toutefois ces bourses sont beaucoup plus
           accessibles aux étudiants qui visent les études supérieures, soit la
           maitrise ou le doctorat.
-          <p className="uppercase text-lg font-bold py-2">
+          <p className="uppercase text-lg font-bold py-2 text-start">
             Comment trouver des bourses ?
           </p>
           Généralement les bourses complètes sont données par des organismes
@@ -97,7 +97,7 @@ const FAQ = () => {
           bourses d’études dont nous sommes au courant sur notre page facebook.
           N’hésitez donc pas de vous abonner pour recevoir les dernières
           opportunités.
-          <p className="uppercase text-lg font-bold py-2">
+          <p className="uppercase text-lg font-bold py-2 text-start">
             Est-ce qu’on peut étudier la médecine ou le droit au Canada ?
           </p>
           Oui mais il est extrêmement difficile d’obtenir une inscription en
@@ -110,7 +110,7 @@ const FAQ = () => {
           Cependant, parfois les étudiants doivent faire quelques cours
           préparatoires pour être à jour et bien évoluer dans leurs
           cheminements.
-          <p className="uppercase text-lg font-bold py-2">
+          <p className="uppercase text-lg font-bold py-2 text-start">
             Peux-je introduire ma demande de permis d’études avant l’obtention
             de mon CAQ ?{" "}
           </p>

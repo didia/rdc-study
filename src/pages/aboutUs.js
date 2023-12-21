@@ -6,7 +6,10 @@ const AboutUsPage = () => {
   const { members } = useStaticQuery(
     graphql`
       query MyQuery {
-        members: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/team/" } }) {
+        members: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/team/" } }
+          sort: { id: ASC }
+        ) {
           edges {
             node {
               id
@@ -17,14 +20,14 @@ const AboutUsPage = () => {
                 draft
                 role
                 image {
-                    childImageSharp {
-                      gatsbyImageData(
-                        width: 300
-                        placeholder: BLURRED
-                        formats: [AUTO, WEBP, AVIF]
-                      )
-                    }
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 300
+                      placeholder: BLURRED
+                      formats: [AUTO, WEBP, AVIF]
+                    )
                   }
+                }
               }
             }
           }

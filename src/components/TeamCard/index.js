@@ -93,11 +93,11 @@ const TeamCard = ({ member}) => {
             </div>
             <div className="relative h-6 overflow-hidden translate-y-6 rounded-b-xl">
               <div className="absolute flex -space-x-12 rounded-b-2xl">
-                <div className="w-36 h-8 transition-colors duration-200 delay-75 transform skew-x-[35deg] bg-amber-400/90 group-hover:bg-amber-600/90 z-10"></div>
-                <div className="w-28 h-8 transition-colors duration-200 delay-100 transform skew-x-[35deg] bg-amber-300/90 group-hover:bg-amber-500/90 z-20"></div>
-                <div className="w-28 h-8 transition-colors duration-200 delay-150 transform skew-x-[35deg] bg-amber-200/90 group-hover:bg-amber-400/90 z-30"></div>
-                <div className="w-28 h-8 transition-colors duration-200 delay-200 transform skew-x-[35deg] bg-amber-100/90 group-hover:bg-amber-300/90 z-40"></div>
-                <div className="w-28 h-8 transition-colors duration-200 delay-300 transform skew-x-[35deg] bg-amber-50/90 group-hover:bg-amber-200/90 z-50"></div>
+                <div className="w-36 h-8 transition-colors duration-200 delay-75 transform skew-x-[35deg] bg-sky-400/90 group-hover:bg-sky-600/90 z-10"></div>
+                <div className="w-28 h-8 transition-colors duration-200 delay-100 transform skew-x-[35deg] bg-sky-300/90 group-hover:bg-sky-500/90 z-20"></div>
+                <div className="w-28 h-8 transition-colors duration-200 delay-150 transform skew-x-[35deg] bg-sky-200/90 group-hover:bg-sky-400/90 z-30"></div>
+                <div className="w-28 h-8 transition-colors duration-200 delay-200 transform skew-x-[35deg] bg-sky-100/90 group-hover:bg-sky-300/90 z-40"></div>
+                <div className="w-28 h-8 transition-colors duration-200 delay-300 transform skew-x-[35deg] bg-sky-50/90 group-hover:bg-sky-200/90 z-50"></div>
               </div>
             </div>
           </div>

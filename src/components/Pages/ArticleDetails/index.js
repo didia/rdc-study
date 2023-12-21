@@ -12,12 +12,12 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
   return (
     <Layout pageTitle={"Détails sur la article d'études"}>
       <section>
-        <div className="grid grid-cols-1 mx-6 py-3">
+        <div className="grid grid-cols-1 mx-4 py-3">
           <div>
             <GatsbyImage image={image} alt={article.title} />
           </div>
         </div>
-        <div className="mx-6">
+        <div className="mx-4">
           <p className="text-sky-600 text-xl font-bold text-start">
             {article.title}
           </p>
@@ -26,7 +26,7 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
           <p className="text-lg text-yellow-500">Date : {article.date}</p>
         </div>
 
-        <div className="mx-6">
+        <div className="mx-4">
           <HtmlContent content={content} />
         </div>
       </section>

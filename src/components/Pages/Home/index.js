@@ -146,7 +146,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         <div className="container relative z-40 mx-auto px-2 ">
           <div className="grid grid-cols-3 py-6 text-center">
             <div>
-              <a href="/articles/2022-05-30-faire-une-formation-professionnelle-institut-a-linstitut-africain-de-haute-formation">
+              <a href="/article/faire-une-formation-professionnelle-institut-a-l-institut-africain-de-haute-formation">
                 <StaticImage
                   src="../../../images/iahf.png"
                   className="block mx-auto"
@@ -163,7 +163,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             </div>
 
             <div className="mt-4">
-              <a href="/articles/2022-06-07-faites-une-formation-professionnelle-de-qualite-chez-excelia">
+              <a href="/article/faites-une-formation-professionnelle-de-qualite-chez-excelia">
                 <StaticImage
                   src="../../../images/excelia.png"
                   className="block mx-auto"
@@ -177,9 +177,9 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 </p>
               </a>
             </div>
-            
+
             <div>
-              <a href="/articles/2022-06-23-choisissez-medipol-university-pour-une-education-de-qualite-en-turquie">
+              <a href="/article/choisissez-medipol-university-pour-une-education-de-qualite-en-turquie">
                 <StaticImage
                   src="../../../images/medipol.jpg"
                   className="block mx-auto"
