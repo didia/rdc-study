@@ -1,27 +1,21 @@
 import React from "react";
 import Layout from "../../Layout";
-import * as styles from "./style.module.scss";
-import img_room from "../../../images/2VJHRB2PIZDLTHHCJITZPFTISU1.png";
-import img1 from "../../../images/etudiante-africaine-posee.png";
-import img2 from "../../../images/jeune-femme-entree-ecole-lit-livre.png";
-import img3 from "../../../images/beau-routard-homme.png";
+import { StaticImage } from "gatsby-plugin-image";
 import NewsCard from "../../NewsCard";
 
 const PartenerShip = () => {
   return (
     <Layout pageTitle={"Détails sur les partenaires"}>
       <section>
-        <div className="grid grid-cols-1 mx-10 py-10">
-          <div>
-            <img
-              alt="gallery"
-              class="block h-full w-full rounded-sm object-cover object-center"
-              src={img_room}
-            />
-          </div>
+        <div className="mx-4 py-5">
+          <StaticImage
+            src="../../../images/2VJHRB2PIZDLTHHCJITZPFTISU1.png"
+            alt="gallery"
+            className="block h-60 w-full rounded-sm object-cover object-center"
+          />
         </div>
 
-        <div className="mx-10 text-justify">
+        <div className="mx-4 text-start">
           <p className="text-sky-600 text-xl font-bold">
             Optez pour l'Université Européenne Lefke en Chypre du Nord
           </p>
@@ -152,14 +146,8 @@ const PartenerShip = () => {
           </p>
         </div>
       </section>
-
-      <section className="mx-10 py-10">
-        <NewsCard image={img1} />
-        <NewsCard image={img2} />
-        <NewsCard image={img3} />
-      </section>
     </Layout>
-  ); 
+  );
 };
 
 export default PartenerShip;

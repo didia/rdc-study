@@ -1,18 +1,17 @@
 import React from "react";
 import Layout from "../../Layout";
-import img_yellowEllipse from "../../../images/Ellipse11.png";
-import img_computer from "../../../images/Blog_PrivacyGenerator_042120_WP-2-removebg-preview.png"
+import { StaticImage } from "gatsby-plugin-image";
 import * as styles from "./styles.module.scss";
 
 const PrivacyPolicy = () => {
   return (
     <Layout pageTitle="Pourquoi RDC-&Eacute;tudes">
       <section className="bg-sky-600 -mt-4">
-        <div className="grid grid-cols-12 mb-8 mt-4 ">
+        <div className="grid grid-cols-12 mb-5 mt-4 ">
           <div className="col-span-2"></div>
           <div className="col-span-8 z-20">
             <div className="text-center mx-4 mb-7">
-              <img src={img_computer} />
+              <StaticImage alt="privacy" src="../../../images/Blog_PrivacyGenerator_042120_WP-2-removebg-preview.png" />
               <span className="text-white text-lg text-center font-extrabold uppercase">
                 Politique de confidentialité
               </span>
@@ -20,13 +19,13 @@ const PrivacyPolicy = () => {
           </div>
           <div className="col-span-2 z-10">
             <div className={styles.ellipse3}>
-              <img src={img_yellowEllipse} style={{ height: "180px" }} />
+              <StaticImage alt="overlay" height={180} src="../../../images/Ellipse11.png" />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="mx-10 mt-4 mb-20">
+      <section className="mx-4 mt-4 mb-10">
         <div>
           <span className="text-lg font-bold">
             La politique de confidentialité de RDC Etudes.

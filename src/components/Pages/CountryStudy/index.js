@@ -1,32 +1,33 @@
 import React from "react";
 import Layout from "../../Layout";
 import * as styles from "./styles.module.scss";
-import overlay4 from "../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png";
-
-import img_franceFlag from "../../../images/580b585b2edbce24c47b27ff.png";
-import img_graduated from "../../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const CountryStudy = () => {
   return (
     <Layout pageTitle={"Etudier en France"}>
-      <section className="mb-12">
+      <section className="mb-10">
         <div className="grid grid-cols-12 text-center">
           <div className="col-span-1">
             <div className={styles.ellipse2}>
-              <img src={overlay4} style={{ height: "170px" }} />
+              <StaticImage
+                height={170}
+                alt="aiplane"
+                src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
+              />
             </div>
           </div>
-          <div className="col-span-8 ml-20 z-10 mt-5">
-            <p className="text-sky-600 text-xl font-extrabold text-center">
+          <div className="col-span-8 ml-5 z-10 mt-5">
+            <p className="text-sky-600 text-xl font-extrabold text-start">
               Etudier en France
             </p>
-            <p className="text-justify text-xs">
+            <p className="text-start text-xs">
               La France offre un enseignement de qualité qui possède plusieurs
               ressemblances avec plusieurs systèmes d’enseignement africains.
             </p>
           </div>
           <div className="col-span-3 mt-7">
-            <img src={img_franceFlag} />
+            <StaticImage alt="flag" src="../../../images/580b585b2edbce24c47b27ff.png" />
           </div>
         </div>
 
@@ -132,10 +133,10 @@ const CountryStudy = () => {
         <div>
           <div className="grid grid-cols-1 mx-10 py-7">
             <div>
-              <img
+              <StaticImage
                 alt="gallery"
-                class="block h-full w-full rounded-sm object-cover object-center"
-                src={img_graduated}
+                className="block h-full w-full rounded-sm object-cover object-center"
+                src="../../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png"
               />
             </div>
           </div>
@@ -157,10 +158,10 @@ const CountryStudy = () => {
         <div>
           <div className="grid grid-cols-1 mx-10 py-7">
             <div>
-              <img
+              <StaticImage
                 alt="gallery"
-                class="block h-full w-full rounded-sm object-cover object-center"
-                src={img_graduated}
+                className="block h-full w-full rounded-sm object-cover object-center"
+                src="../../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png"
               />
             </div>
           </div>
@@ -178,7 +179,6 @@ const CountryStudy = () => {
             </p>
           </div>
         </div>
-        
       </section>
     </Layout>
   );

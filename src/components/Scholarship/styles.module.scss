@@ -1,37 +1,39 @@
-.scholarship {
-    width: 100%;
-    position: relative;
-}
-
-.scholarship>img {
-    height: 100%;
-    width: 100%;
-}
-
 .scholarship_inner {
     position: absolute;
     z-index: 1;
     bottom: 0;
-    right: 0;
     height: 100%;
     width: 100%;
+    &__overlay {
+        height: 100%;
+        width: 100%;
+        opacity: 90%;
+    }
 }
 
-.scholarship_inner>img {
-    height: 100%;
-    width: 100%;
-    opacity: 90%;
-}
-
-.scholarship_content {
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    top: 4rem;
-    bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+.scholarship {
+        width: 100%;
+        position: relative;
+    &__overlay {
+            height: 27rem;
+            width: 100%;
+    }
+    &__content {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        top: 0.3rem;
+        bottom: 2rem;
+    }
+    &__bourse_card {
+        @media only screen and (max-width: 350px) {
+                margin-top: -0.8rem;
+            }
+        @media only screen and (max-width: 415px) {
+                margin-top: -1.5rem;
+            }
+    }
 }

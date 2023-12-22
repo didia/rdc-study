@@ -1,170 +1,99 @@
 import React from 'react';
 import * as style from "./styles.module.scss";
+import { Carousel } from 'flowbite-react';
+import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
-import img8 from "../../images/tour_effeil.png";
-import img9 from "../../images/flatten.png";
-import img10 from "../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png";
-import overlay3 from "../../images/Rectangle10.png";
+const Scholarship = ({ scholarships }) => {
+  const substring = (val) => {
+    return val.substring(0, 80) + "...";
+  };
+const LEVEL_ORDERS = [
+  "undergraduate",
+  "graduate",
+  "postgraduate",
+  "research",
+  "internship",
+];
 
-const Scholarship = () => {
-    return (
-      <>
-        <section className="mb-10">
-          <div className="text-center mx-10 mb-3">
-            <span
-              style={{
-                color: "#0490DF",
-                fontWeight: "900",
-                fontSize: "28px",
-                lineHeight: "27px",
-              }}
-            >
-              Bourse d'études
-            </span>{" "}
-            <p>
-              Lorem ispum dolor fortuna simpre cresis, out decresis vita
-              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
-            </p>
-          </div>
+  return (
+    <>
+      <section className="mb-5">
+        <div className="text-center mx-10 mb-3">
+          <span className="text-sky-600 text-2xl font-black">
+            Bourses d'études
+          </span>{" "}
+          <p>
+            Découvrez nos meilleurs programmes de bourse qui vous assure un
+            voyage réussi
+          </p>
+        </div>
 
-          <div className={style.scholarship} id="contact_section">
-            <img src={img10} />
-            <div className={style.scholarship_inner}>
-              <img src={overlay3} />
+        <div className={style.scholarship}>
+          <StaticImage
+            className={style.scholarship__overlay}
+            alt="plane"
+            src="../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png"
+          />
+          <div className={style.scholarship_inner}>
+            <StaticImage
+              className={style.scholarship_inner__overlay}
+              alt="overlay"
+              src="../../images/Rectangle10.png"
+            />
+            <div className={style.scholarship__content}>
+              <Carousel slide={true} indicators={false}>
+                {scholarships.map((scholarship) => {
+                      const levelsText = scholarship.frontmatter.levels
+                        .sort(
+                          (level1, level2) =>
+                            LEVEL_ORDERS.indexOf(level1) -
+                            LEVEL_ORDERS.indexOf(level2)
+                        )
+                        .map((level) => `${level}`)
+                        .join(", ");
 
-              <div className={style.scholarship_content}>
-                <div className="flex justify-center">
-                  <div class="grid grid-cols-16 gap-4">
-                    <div>
-                      <button
-                        class="absolute left-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full"
-                        type="button"
-                        data-te-target="#carouselExampleIndicators"
-                        data-te-slide="prev"
-                        style={{ top: "90px" }}
-                      >
-                        <span class="inline-block h-8 w-8">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="4.5"
-                            stroke="currentColor"
-                            class="h-6 w-6"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              d="M15.75 19.5L8.25 12l7.5-7.5"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                    </div>
-
-                    <div className="col-span-7">
-                      <div class="block max-w-[18rem] rounded-lg bg-slate-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                        <div class="relative overflow-hidden bg-cover bg-no-repeat">
-                          <img
-                            class="rounded-t-lg"
-                            src={img8}
-                            alt=""
-                            style={{ height: "120px" }}
+                  const image = getImage(scholarship.frontmatter.thumbnail);
+                  return (
+                    <div className="block max-w-[15rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+                      <div className="relative overflow-hidden bg-cover bg-no-repeat">
+                        <a href={`/${scholarship.frontmatter.slug}`}>
+                          <GatsbyImage
+                            image={image}
+                            alt={scholarship.frontmatter.title}
+                            className="rounded-t-lg"
+                            style={{ height: "200px" }}
                           />
-                        </div>
-                        <div class="p-2">
-                          <p
-                            class="text-base text-neutral-600"
-                            style={{ color: "#0490DF", fontWeight: "800" }}
-                          >
-                            BOURSE D'&Eacute;TUDE
+                        </a>
+                      </div>
+                      <div className="">
+                        <a href={`/${scholarship.frontmatter.slug}`}>
+                          <p className="px-3 py-1 text-sm text-sky-600 font-extrabold uppercase">
+                            {scholarship.frontmatter.title}
                           </p>
-                          <p style={{ fontSize: "14px" }}>
-                            Lorem ispum dolor fortuna simpre cresis, out
-                            decresis
-                          </p>
-                        </div>
+                        </a>
+                        <p className="text-yellow-500">
+                          <FontAwesomeIcon icon={faClock} />
+                          &nbsp;
+                          {scholarship.frontmatter.deadline}
+                        </p>
 
-                        <div className="text-left px-4">
-                          <a
-                            href="#"
-                            style={{ color: "#0490DF", fontWeight: "800" }}
-                          >
-                            Détails
-                          </a>
-                        </div>
+                        <p className="text-lg text-left ml-3 py-2">
+                          <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
+                          {levelsText}
+                        </p>
                       </div>
                     </div>
-
-                    <div className="col-span-7">
-                      <div class="block max-w-[18rem] rounded-lg bg-slate-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                        <div class="relative overflow-hidden bg-cover bg-no-repeat">
-                          <img
-                            class="rounded-t-lg"
-                            src={img9}
-                            alt=""
-                            style={{ height: "120px" }}
-                          />
-                        </div>
-                        <div class="p-2">
-                          <p
-                            class="text-base text-neutral-600"
-                            style={{ color: "#0490DF", fontWeight: "800" }}
-                          >
-                            BOURSE D'&Eacute;TUDE
-                          </p>
-                          <p style={{ fontSize: "14px" }}>
-                            Lorem ispum dolor fortuna simpre cresis, out
-                            decresis
-                          </p>
-                        </div>
-
-                        <div className="text-left px-4">
-                          <a
-                            href="#"
-                            style={{ color: "#0490DF", fontWeight: "800" }}
-                          >
-                            Détails
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <button
-                        class="absolute right-4 z-[1] flex h-10 w-10 items-center justify-center text-center bg-white hover:bg-blue-700 text-blue-500 font-bold py-2 px-4 rounded-full"
-                        type="button"
-                        data-te-target="#carouselExampleIndicators"
-                        data-te-slide="prev"
-                        style={{ top: "90px" }}
-                      >
-                        <span class="inline-block h-8 w-8">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="4.5"
-                            stroke="currentColor"
-                            class="h-6 w-6"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  );
+                })}
+              </Carousel>
             </div>
           </div>
-        </section>
-
-      </>
-    );
-}
+        </div>
+      </section>
+    </>
+  );
+};
  
 export default Scholarship;

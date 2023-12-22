@@ -1,76 +1,91 @@
 import React from "react";
 import Layout from "../../Layout";
-import BourseCard from "../../BourseCard";
+import SecondaryBtn from "../../Button/Secondary"
 import * as styles from "./styles.module.scss";
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
+import ScholarShipCard from "../../Scholarship/ScholarShipCard";
 
-import overlay4 from "../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png";
-import img1 from "../../../images/Ellipse7.png";
-import img2 from "../../../images/Ellipse6.png";
-import img3 from "../../../images/Ellipse8.png";
-import img4 from "../../../images/Ellipse_blue6.png";
-import img5 from "../../../images/Young-Girl-Student-HD.png"
-import img6 from "../../../images/800x600_FE_WEB_equivalence 2.png";
-
-const Bourse = () => {
+const Bourse = ({ scholarships }) => {
+  const LEVEL_ORDERS = [
+    "undergraduate",
+    "graduate",
+    "postgraduate",
+    "research",
+    "internship",
+  ];
   return (
     <Layout pageTitle={"Bourse d'études"}>
-      <section className="mb-16">
-        <div class="flex justify-start w-full z-10 absolute">
-          <div className="text-start mx-20">
-            <span className={styles.bourse__title}>Bourse d'études</span>{" "}
+      <section>
+        <div className="flex justify-start w-full z-5 absolute">
+          <div className="text-start mx-10 z-10">
+            <span className={styles.bourse__title}>Bourses d'études</span>{" "}
             <p>
-              <span className={styles.bourse__description}>
-                Lorem ispum dolor fortuna simpre cresis, out decresis vita Lorem
-                ispum dolor fortuna simpre cresis, out decresis vita Lorem ispum
-                dolor fortuna simpre cresis, out decresis vita
+              <span className="text-md">
+                Voici les offres de bourses en cours trouvées pour vous avec ❤️ par l'équipe RDC Etudes
               </span>
               <br />
               <br />
-              <button
-                class={
-                  "bg-yellow-500 hover:bg-sky-600 hover:text-white font-bold py-2 px-4 rounded-md " +
-                  styles.bourse__btn
-                }
-              >
-                Demander une assistance
-              </button>
+
+              <SecondaryBtn text={"Demander une assistance"} />
             </p>
           </div>
         </div>
-        <div class="w-full h-full mt-10">
+        <div className="w-full h-full mt-10">
           <div style={{ marginTop: "20px" }}>
-            <div className={styles.ellipse1}>
-              <img src={img1} style={{ height: "220px" }} />
+            <div className={styles.ellipse__first}>
+              <StaticImage
+                height={150}
+                alt="Ellipse 7"
+                src="../../../images/Ellipse7.png"
+              />
             </div>
-            <div className={styles.ellipse2}>
-              <img src={img2} style={{ height: "230px" }} />
+            <div className={styles.ellipse__second}>
+              <StaticImage
+                alt="Ellipse 6"
+                height={160}
+                src="../../../images/Ellipse6.png"
+              />
             </div>
           </div>
 
           <div>
-            <img src={overlay4} style={{ height: "280px" }} />
+            <StaticImage
+              alt="plane"
+              height={280}
+              src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
+            />
           </div>
 
-          <div className={styles.ellipse3}>
-            <img src={img4} style={{ height: "280px" }} />
+          <div className={styles.ellipse__third}>
+            <StaticImage
+              alt="Ellipse blue 6"
+              height={180}
+              src="../../../images/Ellipse_blue6.png"
+            />
           </div>
-          <div className={styles.ellipse4}>
-            <img src={img3} style={{ height: "280px" }} />
+          <div className={styles.ellipse__fourth}>
+            <StaticImage alt="Ellipse" src="../../../images/Ellipse8.png" />
           </div>
 
-          <div className={styles.student_img}>
-            <img src={img5} />
+          <div className={styles.bourse__img_container}>
+            <StaticImage
+              alt="Ellipse"
+              height={130}
+              src="../../../images/Young-Girl-Student-HD.png"
+            />
           </div>
         </div>
       </section>
 
-      <section>
-        <div className="grid grid-cols-2 mx-4 mb-10 gap-4">
-          <BourseCard img={img6} />
-          <BourseCard img={img6} />
-          <BourseCard img={img6} />
-          <BourseCard img={img6} />
-        </div>
+      <section className="px-4 mb-10">
+        {scholarships.map((scholarship) => {
+          return (
+            <div className="py-3">
+              {" "}
+              <ScholarShipCard scholarship={scholarship} />
+            </div>
+          );
+        })}
       </section>
     </Layout>
   );

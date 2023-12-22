@@ -1,0 +1,52 @@
+.ellipse1 {
+    position: absolute;
+    top: 130px;
+}
+
+.ellipse2 {
+    position: absolute;
+    top: 89px;
+}
+
+.ellipse3 {
+    position: absolute;
+    right: 0;
+    top: 88px;
+}
+
+.ellipse4 {
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+.student_img {
+    position: absolute;
+    right: 0;
+    top: 175px;
+}
+
+.student_img img {
+    height: 210px;
+}
+
+.img1 {
+    position: absolute;
+    width: 111px;
+    height: 167px;
+    left: 249px;
+    top: 45px;
+}
+
+.help {
+
+    &__btn {
+        height: 50px;
+        width: 200px;
+        color: #862304;
+        background-color: #fbc403;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        transition: background-color 0.8s;
+    }
+}

@@ -1,20 +1,14 @@
-.ellipse1 {
-    position: absolute;
-   // width: 156.35px;
-   // height: 156.35px;
-    //left: 233px;
-    top: 130px;
-//    border: 10px solid #0490DF;
+.ellipse {
+    &__first {
+        position: absolute;
+        top: 130px;
+    }
+    &__second {
+        position: absolute;
+        top: 89px;
+    }
 }
 
-.ellipse2 {
-    position: absolute;
-  //  width: 156.35px;
-  //  height: 156.35px;
-    //left: 245px;
-    top: 89px;
-   // border: 10px solid #FBC403;
-}
 
 .ellipse3 {
     position: absolute;

@@ -2,202 +2,221 @@ import * as React from "react";
 import Layout from "../../../components/Layout";
 import * as style from "./styles.module.scss";
 
-import overlay1 from "../../../images/Rectangle 47.png";
-import img1 from "../../../images/equipe-etudes.png";
-import img2 from "../../../images/jeune-femme-entree-ecole-lit-livre.png";
-import img3 from "../../../images/beau-routard-homme.png";
-import img4 from "../../../images/etudiante-africaine-posee.png";
-import img5 from "../../../images/logo_243.png";
-import logo from "../../../images/logo.png";
-
 import StudyCountry from "../../../components/StudyCountry";
 import Scholarship from "../../../components/Scholarship";
 import ContactForm from "../../../components/ContactForm";
+import NewsCard from "../../NewsCard";
 
-const Home = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { StaticImage } from "gatsby-plugin-image";
+import SecondaryBtn from "../../Button/Secondary";
+import PrimaryBtn from "../../Button/Primary";
+
+const Home = ({ guideCountries, articles, scholarships }) => {
   return (
     <Layout pageTitle="Page d'acceuil">
-      <div className={style.parent} id="contact_section">
-        <img src={img1} />
-        <div className={style.inner}>
-          <img src={overlay1} />
+      <div className={"md:hidden " + style.firstSection}>
+        <StaticImage
+          className={style.firstSection__imgStudent}
+          src="../../../images/equipe-etudes.png"
+          alt="Equipe etudes"
+        />
+        <div className={style.firstSection__inner}>
+          <StaticImage
+            className={style.firstSection__overlay}
+            src="../../../images/Rectangle 47.png"
+            alt="Overlay"
+          />
 
           <div className={style.contact_content}>
-            <div className="flex justify-center items-center">
-              <div class="grid grid-rows-2 grid-flow-col">
-                <div>
-                  <span className={style.firstsection__title}>RDC Etudes</span>
-                  <br />
-                  <p className="text-slate-50">
-                    Lorem ispum dolor Lorem ispum dolor Lorem ispum dolor Lorem
-                    ispum dolor Lorem ispum dolor Lorem ispum dolor Lorem ispum
-                    dolor Lorem ispum dolor Lorem ispum dolor
-                  </p>
-                  <div class="flex items-stretch">
-                    <div class="py-4 px-4">
-                      <button type="submit" className={style.contact_btn}>
-                        <svg
-                          aria-hidden="true"
-                          id="loader"
-                          role="status"
-                          class="hidden inline mr-2 w-7 h-7 text-gray-200 animate-spin text-gray-400"
-                          viewBox="0 0 100 101"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
-                            fill="currentColor"
-                          ></path>
-                          <path
-                            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
-                            fill="#046059"
-                          ></path>
-                        </svg>
-                        Demande une assistance
-                      </button>
-                    </div>
-                    <div class="py-4 px-4">&nbsp;</div>
-                    <div class="py-4 px-4">&nbsp;</div>
-                  </div>
-                </div>
-
-                <div style={{ marginTop: "-14%" }}>
-                  <ul className={style.firstsection__form}></ul>
-                </div>
+            <div className="text-start">
+              <div className="text-3xl text-white font-black uppercase mt-2 mb-4">
+                Rdc études
+              </div>
+              <div className="text-lg text-white mb-4">
+                Nous vous accompagnons dans la réussite de votre projet
+                d’études, de l’admission à l’obtention de votre diplôme !
+              </div>
+              <div>
+                <SecondaryBtn text={"Demander une assistance"} />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <StudyCountry />
-      <Scholarship />
+      <div className="max-md:hidden flex">
+        <div>
+          <StaticImage
+            alt="plane"
+            height={300}
+            src="../../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview 2.png"
+          />
+        </div>
 
-      <section className="mb-10">
+        <div className="mt-20">
+          <StaticImage
+            alt="plane"
+            height={80}
+            src="../../../images/kisspng-canada-international-student-travel-visa-f-visa-books-5aa189efac2496.png"
+          />
+        </div>
+      </div>
+
+      <div className="max-md:hidden flex -mt-32 mx-28">
+        <div className="z-10">
+          <div className="text-start">
+            <p className="text-5xl text-sky-600 font-black">
+              Pourquoi RDC-Etudes ?
+            </p>
+            <p className="text-2xl my-4">
+              Lorem ipsum dolor sit amet consectetur. Facilisis ipsum velit urna
+              velit mauris in eget nisl. Porttitor ipsum eu auctor arcu. Urna
+              scelerisque aliquam augue aliquam non ultrices mauris et.
+            </p>
+            <PrimaryBtn text={"Demander une assistance"} />
+          </div>
+        </div>
+        <div className="-mt-28">
+          <StaticImage
+            height={1600}
+            width={1800}
+            placeholder="blurred"
+            alt="Agence"
+            src="../../../images/Agence-M-Com-Marseille-AppartStudy-Marne-Montpellier-Residence.png"
+          />
+        </div>
+      </div>
+
+      <div className="max-md:hidden bloc -mt-96">
+        <StaticImage
+          alt="plane"
+          className=""
+          height={400}
+          src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
+        />
+        <StaticImage
+          alt="plane"
+          height={150}
+          src="../../../images/Travel-PNG-File-Download-Free 1.png"
+        />
+      </div>
+
+      <StudyCountry guideCountries={guideCountries} />
+      <Scholarship scholarships={scholarships} />
+
+      <p className="text-center mb-10">
+        <PrimaryBtn
+          href={"/bourse"}
+          fontSize={"text-sm"}
+          text={"Voir plus de bourses"}
+        >
+          <i className="px-2">
+            <FontAwesomeIcon icon={faArrowRight} />
+          </i>
+        </PrimaryBtn>
+      </p>
+
+      <section className="mb-5">
         <div className="text-left px-8 mb-5">
-          <span
-            style={{
-              color: "#0490DF",
-              fontWeight: "900",
-              fontSize: "28px",
-              lineHeight: "27px",
-            }}
-          >
+          <span className="text-sky-600 text-xl font-black uppercase">
             Les dernières nouvelles
           </span>{" "}
-          <div class="h-4 w-full border-b-2 border-sky-600"></div>
+          <div className="h-4 w-full border-b-2 border-sky-600"></div>
         </div>
 
-        <div class="grid grid-cols-12 gap-4">
-          <div className="col-span-5 px-4">
-            <img src={img2} className="object-contain" />
-          </div>
-          <div className="col-span-7">
-            <span
-              style={{
-                color: "#0490DF",
-                fontWeight: "900",
-                fontSize: "18px",
-              }}
-            >
-              Titre de l'article
-            </span>{" "}
-            <p style={{ fontSize: "17px", lineHeight: "17px" }}>
-              Lorem ispum dolor fortuna simpre cresis, out decresis vita
-              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
-            </p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-12 gap-4 py-4">
-          <div className="col-span-5 px-4">
-            <img src={img3} className="object-contain" />
-          </div>
-          <div className="col-span-7">
-            <span
-              style={{
-                color: "#0490DF",
-                fontWeight: "900",
-                fontSize: "18px",
-              }}
-            >
-              Titre de l'article
-            </span>{" "}
-            <p style={{ fontSize: "17px", lineHeight: "17px" }}>
-              Lorem ispum dolor fortuna simpre cresis, out decresis vita
-              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
-            </p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-12 gap-4 py-4">
-          <div className="col-span-5 px-4">
-            <img src={img4} className="object-contain" />
-          </div>
-          <div className="col-span-7">
-            <span
-              style={{
-                color: "#0490DF",
-                fontWeight: "900",
-                fontSize: "18px",
-              }}
-            >
-              Titre de l'article
-            </span>{" "}
-            <p style={{ fontSize: "17px", lineHeight: "17px" }}>
-              Lorem ispum dolor fortuna simpre cresis, out decresis vita
-              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
-            </p>
-          </div>
-        </div>
+        {articles.map((article) => {
+          return (
+            <NewsCard
+              key={article.frontmatter.title}
+              ItemData={article.frontmatter}
+            />
+          );
+        })}
       </section>
 
-      <section className="mb-10">
+      <section className="mb-5">
         <div className="text-center">
-          <span
-            style={{
-              color: "#0490DF",
-              fontWeight: "900",
-              fontSize: "28px",
-              lineHeight: "27px",
-            }}
-          >
+          <span className="text-sky-600 text-2xl font-black">
             Nos partenaires
           </span>{" "}
         </div>
 
-        <div class="container relative z-40 mx-auto ">
-          <div class="flex flex-wrap justify-center mx-auto lg:w-full md:w-5/6 xl:shadow-small-blue">
-            <a href="#" class="block w-1/3 py-10 text-center lg:w-1/4">
-              <div>
-                <img src={img5} class="block mx-auto" />
+        <div className="container relative z-40 mx-auto px-2 ">
+          <div className="grid grid-cols-3 py-6 text-center">
+            <div>
+              <a href="/article/faire-une-formation-professionnelle-institut-a-l-institut-africain-de-haute-formation">
+                <StaticImage
+                  src="../../../images/iahf.png"
+                  className="block mx-auto"
+                  placeholder="blurred"
+                  alt="logo"
+                  height={90}
+                  objectFit="contain"
+                />
 
-                <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                  243 technologies
+                <p className=" text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)
                 </p>
-              </div>
-            </a>
+              </a>
+            </div>
 
-            <a href="#" class="block w-1/3 py-10 text-center lg:w-1/4">
-              <div>
-                <img src={logo} class="block mx-auto" />
-
-                <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                  RDC Etudes
+            <div className="mt-4">
+              <a href="/article/faites-une-formation-professionnelle-de-qualite-chez-excelia">
+                <StaticImage
+                  src="../../../images/excelia.png"
+                  className="block mx-auto"
+                  placeholder="blurred"
+                  alt="Logo"
+                  height={90}
+                  objectFit="contain"
+                />
+                <p className="pt-10 text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  EXCELIA GROUP (FRANCE)
                 </p>
-              </div>
-            </a>
+              </a>
+            </div>
 
-            <a href="#" class="block w-1/3 py-10 text-center lg:w-1/4">
-              <div>
-                <img src={img5} class="block mx-auto" />
+            <div>
+              <a href="/article/choisissez-medipol-university-pour-une-education-de-qualite-en-turquie">
+                <StaticImage
+                  src="../../../images/medipol.jpg"
+                  className="block mx-auto"
+                  placeholder="blurred"
+                  alt="logo"
+                  height={90}
+                  objectFit="contain"
+                />
 
-                <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                  243 technologies
+                <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)
                 </p>
-              </div>
-            </a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-5">
+        <div className="text-center">
+          <span className="text-sky-600 text-2xl font-black">Témoignages</span>{" "}
+        </div>
+
+        <div className="mx-6 mt-5 rounded-2xl px-5 py-7 bg-sky-600">
+          <div className="z-10">
+            <FontAwesomeIcon
+              icon={faQuoteLeft}
+              color="white"
+              className="text-6xl opacity-25"
+            />
+          </div>
+          <div className="z-20 -mt-7">
+            <p className="text-center text-sm text-white">
+              Lorem ispum dolor fortuna simpre cresis, out decresis vita
+              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
+            </p>
+            <p className="text-start text-white mt-4">Candidat X</p>
           </div>
         </div>
       </section>

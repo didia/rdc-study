@@ -1,11 +1,11 @@
 .travel_countries {
     width: 100%;
+    height: 20rem;
     position: relative;
-}
-
-.travel_countries>img {
-    height: 100%;
-    width: 100%;
+    &__img {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .travel_countries_inner {
@@ -15,12 +15,11 @@
     right: 0;
     height: 100%;
     width: 100%;
-}
-
-.travel_countries_inner>img {
-    height: 100%;
-    width: 100%;
-    opacity: 90%;
+    &__img {
+        height: 100%;
+        width: 100%;
+        opacity: 90%;
+    }
 }
 
 .travel_countries_content {
@@ -30,7 +29,7 @@
     width: 100%;
     text-align: center;
     align-items: center;
-    top: 4rem;
+    top: 0.3rem;
     bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;

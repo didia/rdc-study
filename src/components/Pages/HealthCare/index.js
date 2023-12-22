@@ -1,23 +1,22 @@
 import React from "react";
 import Layout from "../../Layout";
-import * as styles from "./style.module.scss";
-import img_young_gril from "../../../images/jeune-femme-entree-ecole-lit.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const HealthCare = () => {
   return (
     <Layout pageTitle={"Examens médicaux et soins de santé"}>
       <section>
-        <div className="grid grid-cols-1 mx-10 py-10">
+        <div className="grid grid-cols-1 mx-4 py-5">
           <div>
-            <img
+            <StaticImage
               alt="gallery"
-              class="block h-full w-full rounded-sm object-cover object-center"
-              src={img_young_gril}
+              className="block h-full w-full rounded-sm object-cover object-center"
+              src="../../../images/jeune-femme-entree-ecole-lit-livre.jpg"
             />
           </div>
         </div>
 
-        <div className="mx-10 text-justify">
+        <div className="mx-4 text-start">
           <p className="text-sky-600 text-xl font-bold">
             Puis-je passer les examens médicaux pour le canada sans que
             l'immigration ne me le demande ?
