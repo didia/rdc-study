@@ -203,13 +203,39 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </div>
         </div>
 
-        <div className="col-span-7">
+        <div className="col-span-7 flex">
           <div>
             <p className="text-6xl font-black text-sky-600">Bourses d'études</p>
-            <p className="py-4 text-lg">
+            <p className="py-4 text-lg mr-[15rem]">
               Voici les offres de bourses en cours trouvées pour vous avec ❤️
               par l'équipe RDC Etudes.
+              <br />
+              Lorem ipsum dolor sit amet consectetur. Adipiscing habitant
+              consequat dolor dolor ornare eget. Non orci non urna scelerisque
+              non. Ridiculus diam tristique cursus vel. Platea facilisis eu urna
+              etiam. Nec mattis sed sed odio mattis. Sit vehicula molestie a
+              fringilla. In vestibulum enim id turpis feugiat at. In faucibus
+              duis odio aliquam. Orci condimentum venenatis cras vitae leo orci.
+              <br />
+              <br />
+              In vestibulum enim id turpis feugiat at. In faucibus duis odio
+              aliquam. Orci condimentum venenatis cras vitae leo orci.
             </p>
+          </div>
+          <div className=" mt-40">
+            <StaticImage
+              alt="plane"
+              className="absolute right-0"
+              height={300}
+              src="../../../images/Ellipse1.png"
+            />
+
+            <StaticImage
+              alt="plane"
+              className="absolute right-10"
+              height={280}
+              src="../../../images/Young-Girl-Student-HD-Free-PNG-Image 1.png"
+            />
           </div>
         </div>
       </div>
