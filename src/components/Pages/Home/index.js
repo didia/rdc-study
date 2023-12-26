@@ -242,7 +242,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
       <Scholarship scholarships={scholarships} />
 
-      <p className="text-center mb-10">
+      <p className="text-center mb-10 md:hidden">
         <PrimaryBtn
           href={"/bourse"}
           fontSize={"text-sm"}
@@ -254,9 +254,9 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </PrimaryBtn>
       </p>
 
-      <section className="mb-5">
+      <section className="mb-5 md:mx-32 md:mt-20">
         <div className="text-left px-8 mb-5">
-          <span className="text-sky-600 text-xl font-black uppercase">
+          <span className="text-sky-600 text-xl font-black uppercase md:text-2xl">
             Les dernières nouvelles
           </span>{" "}
           <div className="h-4 w-full border-b-2 border-sky-600"></div>
@@ -270,6 +270,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             />
           );
         })}
+        
       </section>
 
       <section className="mb-5">

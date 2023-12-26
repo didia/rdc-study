@@ -139,6 +139,11 @@ const LEVEL_ORDERS = [
                           {levelsText}
                         </p>
 
+                        <a href={`/${scholarship.frontmatter.slug}`}>
+                          <p className="text-sky-600 font-semibold text-lg py-4">
+                            Détails
+                          </p>
+                        </a>
                       </div>
                     </Card>
                   </div>
