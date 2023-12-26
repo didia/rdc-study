@@ -697,6 +697,12 @@
     }
 }
 
+.ellipse {
+    &__first {
+            position: absolute;
+            
+        }
+}
 .ellipse3 {
     position: absolute;
     right: 0;

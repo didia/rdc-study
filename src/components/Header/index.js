@@ -2,6 +2,14 @@ import React, { useEffect, useRef, useState } from "react";
 import * as styles from "./styles.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faLinkedin,
+  faInstagram,
+  faTwitter,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+
 import NavLink from "./Link";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -32,31 +40,54 @@ const Header = () => {
                   <StaticImage
                     src="../../images/logo.png"
                     alt="Logo"
-                    className="h-14 w-14 mr-2"
+                    className="h-14 w-14 mr-2 md:h-20 md:w-20"
                   />
                 </a>
               </div>
 
-              <div className="hidden md:flex md:space-x-5 items-center uppercase">
-                <NavLink title={"accueil"} url={"/"} />
+              <div className="hidden md:flex md:space-x-3 items-center uppercase">
                 <NavLink title={"bourses d'études"} url={"/bourse"} />
                 <NavLink title={"examens médicaux"} url={"/healthcare"} />
+                <NavLink
+                  title={"Politique de Confidentialité"}
+                  url={"/privacy"}
+                />
                 <NavLink title={"à propos"} url={"/aboutUs"} />
+                <NavLink title={"aide"} url={"/help"} />
+                <NavLink title={"faq"} url={"/faq"} />
+                <NavLink title={"nous contacter"} url={"/contactUs"} />
               </div>
             </div>
 
             <div className="hidden md:flex items-center space-x-3 ">
               <a
-                href="/"
-                className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-sky-600 hover:text-white transition duration-300"
+                href="#"
+                className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
               >
-                Log In
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  style={{ fontSize: "35px" }}
+                />
               </a>
+
               <a
-                href="/"
-                className="py-2 px-2 font-medium text-white bg-sky-600 rounded hover:bg-sky-500 transition duration-300"
+                href="#"
+                className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
               >
-                Sign Up
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  style={{ fontSize: "35px" }}
+                />
+              </a>
+
+              <a
+                href="#"
+                className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
+              >
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  style={{ fontSize: "35px" }}
+                />
               </a>
             </div>
 

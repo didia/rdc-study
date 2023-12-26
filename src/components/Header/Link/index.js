@@ -1,4 +1,5 @@
 import React from 'react';
+import * as styles from "./styles.module.scss";
 
 const NavLink = ({title, url}) => {
     return (
@@ -7,7 +8,10 @@ const NavLink = ({title, url}) => {
           {" "}
           <a href={url}>{title}</a>
         </li>
-        <a href={url} className="hidden md:flex px-2 text-sky-600 text-sm uppercase">
+        <a
+          href={url}
+          className={"hidden md:flex text-sky-600 uppercase " + styles.title}
+        >
           {" "}
           {title}
         </a>

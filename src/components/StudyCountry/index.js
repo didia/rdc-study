@@ -2,68 +2,21 @@ import React from "react";
 import * as styles from "./styles.module.scss";
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Carousel } from "flowbite-react";
+import { Card } from "flowbite-react";
+import _ from "lodash";
 
 const StudyCountry = ({ guideCountries }) => {
-  
+
+  const substring = (val) => {
+    return val.substring(0, 130) + "...";
+  };
+
+  const limitedGuides = _.filter(
+    guideCountries,
+    (guideCountry, index) => index <= 3
+  );
   return (
     <>
-      <section className="mb-2" id="studycountry">
-        <div className="grid grid-cols-4 gap-2">
-          <div className="">&nbsp;</div>
-          <div className="">&nbsp;</div>
-          <div className="">&nbsp;</div>
-          <div className="">
-            <StaticImage
-              height={60}
-              alt="plane"
-              placeholder="blurred"
-              src="../../images/earth-with-plane-drawing-png.png"
-            />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-8">
-          <div className="col-span-3">
-            <StaticImage
-              alt="travelers"
-              placeholder="blurred"
-              src="../../images/4564198_2400445 1.png"
-            />
-          </div>
-
-          <div className="col-span-5 px-1">
-            <span className="text-sky-600 text-2xl font-black">
-              Où souhaitez-vous étudier ?
-            </span>{" "}
-            <p>
-              Choisissez le pays de votre destination pour votre projet de
-              voyage.
-            </p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-4 gap-4">
-          <div className="">
-            <StaticImage
-              height={80}
-              placeholder="blurred"
-              alt="plane"
-              src="../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
-            />
-          </div>
-          <div className="">&nbsp;</div>
-          <div className="">&nbsp;</div>
-          <div className="">
-            <StaticImage
-              height={80}
-              alt="tourist"
-              placeholder="blurred"
-              src="../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
-            />
-          </div>
-        </div>
-      </section>
-
       <section className="mb-10">
         <div className={styles.travel_countries}>
           <StaticImage
@@ -80,35 +33,70 @@ const StudyCountry = ({ guideCountries }) => {
               placeholder="blurred"
             />
 
-            <div className={styles.travel_countries_content}>
+            <div
+              className={"md:hidden bloc " + styles.travel_countries_content}
+            >
               <Carousel slide={true} indicators={false}>
-
-              {guideCountries.map((guideCountry) => {
-                const image = getImage(guideCountry.frontmatter.thumbnail);
-                return (
-                  <div className="block max-w-[15rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                    <div className="relative overflow-hidden bg-cover bg-no-repeat">
-                      <a href={`/${guideCountry.frontmatter.slug}`}>
-                        <GatsbyImage
-                          image={image}
-                          alt={guideCountry.frontmatter.title}
-                          className="rounded-t-lg"
-                          style={{ height: "200px" }}
-                        />
-                      </a>
+                {guideCountries.map((guideCountry) => {
+                  const image = getImage(guideCountry.frontmatter.thumbnail);
+                  return (
+                    <div className="block max-w-[15rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+                      <div className="relative overflow-hidden bg-cover bg-no-repeat">
+                        <a href={`/${guideCountry.frontmatter.slug}`}>
+                          <GatsbyImage
+                            image={image}
+                            alt={guideCountry.frontmatter.title}
+                            className="rounded-t-lg"
+                            style={{ height: "200px" }}
+                          />
+                        </a>
+                      </div>
+                      <div className="p-6">
+                        <a
+                          href={`/${guideCountry.frontmatter.slug}`}
+                          className="text-lg text-sky-600 font-extrabold uppercase"
+                        >
+                          {guideCountry.frontmatter.name}
+                        </a>
+                      </div>
                     </div>
-                    <div className="p-6">
-                      <a
-                        href={`/${guideCountry.frontmatter.slug}`}
-                        className="text-lg text-sky-600 font-extrabold uppercase"
-                      >
-                        {guideCountry.frontmatter.name}
-                      </a>
-                    </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
               </Carousel>
+            </div>
+
+            <div
+              className={styles.travel_countries_content}
+            >
+              <div className="hidden md:grid md:grid-cols-4 py-[7rem]">
+                {limitedGuides.map((guideCountry) => {
+                  const image = getImage(guideCountry.frontmatter.thumbnail);
+                  return (
+                    <div className="">
+                      <Card
+                        className="max-w-sm mx-4"
+                        imgAlt="Meaningful alt text for an image that is not purely decorative"
+                        renderImage={() => (
+                          <GatsbyImage
+                            image={image}
+                            class="h-60 w-full"
+                            alt={guideCountry.frontmatter.title}
+                          />
+                        )}
+                      >
+                        <a href={ `/${guideCountry.frontmatter.slug}` }>
+                          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            {guideCountry.frontmatter.name}
+                          </h5>
+                        </a>
+                        <p className="font-normal text-gray-700 dark:text-gray-400 text-sm">
+                          {substring(guideCountry.frontmatter.excerpt)}
+                        </p>
+                      </Card>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

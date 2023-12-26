@@ -71,13 +71,25 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               Pourquoi RDC-Etudes ?
             </p>
             <p className="text-2xl my-4">
-              Lorem ipsum dolor sit amet consectetur. Facilisis ipsum velit urna
-              velit mauris in eget nisl. Porttitor ipsum eu auctor arcu. Urna
-              scelerisque aliquam augue aliquam non ultrices mauris et.
+              Nous vous accompagnons dans la réussite de votre projet d’études,
+              de l’admission à l’obtention de votre diplôme !
             </p>
             <PrimaryBtn text={"Demander une assistance"} />
+
+            <StaticImage
+              alt="plane"
+              className="-ml-32 -mt-20 -z-30"
+              height={400}
+              src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
+            />
+            <StaticImage
+              alt="plane"
+              height={200}
+              src="../../../images/Travel-PNG-File-Download-Free 1.png"
+            />
           </div>
         </div>
+
         <div className="-mt-28">
           <StaticImage
             height={1600}
@@ -89,21 +101,119 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </div>
       </div>
 
-      <div className="max-md:hidden bloc -mt-96">
-        <StaticImage
-          alt="plane"
-          className=""
-          height={400}
-          src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
-        />
-        <StaticImage
-          alt="plane"
-          height={150}
-          src="../../../images/Travel-PNG-File-Download-Free 1.png"
-        />
-      </div>
+      <section className="max-md:mb-2" id="studycountry">
+        <div className="grid grid-cols-4 gap-2">
+          <div className="">&nbsp;</div>
+          <div className="">&nbsp;</div>
+          <div className="">&nbsp;</div>
+          <div className="">
+            <StaticImage
+              height={60}
+              alt="plane"
+              placeholder="blurred"
+              src="../../../images/earth-with-plane-drawing-png.png"
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-12">
+          <div className="col-span-1"></div>
+          <div className="col-span-5">
+            <StaticImage
+              alt="travelers"
+              placeholder="blurred"
+              src="../../../images/student.png"
+              className="md:h-[26rem] md:w-[26rem]"
+            />
+          </div>
+
+          <div className="col-span-6 py-16 mr-10">
+            <span className="text-sky-600 text-2xl font-black md:text-5xl">
+              Où souhaitez-vous étudier ?
+            </span>{" "}
+            <p className="md:text-2xl md:py-6">
+              Choisissez le pays de votre destination pour votre projet de
+              voyage.
+              <p className="hidden md:flex text-2xl py-2">
+                RDC Etudes vous oriente dans votre projet d'études du choix de
+                l'université jusqu'à l'obtention de votre visa.
+              </p>
+            </p>
+            <StaticImage
+              className="hidden md:flex h-32 w-32 float-right"
+              alt="tourist"
+              placeholder="blurred"
+              src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-4">
+          <div className="">
+            <StaticImage
+              height={80}
+              className="md:h-32 md:w-32 md:z-20 md:-mt-48"
+              placeholder="blurred"
+              alt="plane"
+              src="../../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
+            />
+          </div>
+          <div className="">&nbsp;</div>
+          <div className="">&nbsp;</div>
+          <div className="">
+            <StaticImage
+              height={80}
+              className="md:hidden"
+              alt="tourist"
+              placeholder="blurred"
+              src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
+            />
+          </div>
+        </div>
+      </section>
 
       <StudyCountry guideCountries={guideCountries} />
+
+      <div className="hidden md:grid md:grid-cols-12">
+        <div className="col-span-5 flex w-full h-full mt-10">
+          <div className="-mt-28">
+            <div className={style.ellipse__second}>
+              <StaticImage
+                alt="Ellipse 6"
+                height={400}
+                src="../../../images/Ellipse2.png"
+              />
+            </div>
+          </div>
+
+          <div className="-ml-[17rem] -mt-10 z-30">
+            <StaticImage
+              alt="plane"
+              height={380}
+              src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
+            />
+          </div>
+
+          <div className="-ml-28">
+            <StaticImage
+              alt="plane"
+              height={400}
+              src="../../../images/lady_with_suitcase.png"
+            />
+          </div>
+        </div>
+
+        <div className="col-span-7">
+          <div>
+            <p className="text-6xl font-black text-sky-600">Bourses d'études</p>
+            <p className="py-4 text-lg">
+              Voici les offres de bourses en cours trouvées pour vous avec ❤️
+              par l'équipe RDC Etudes.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <Scholarship scholarships={scholarships} />
 
       <p className="text-center mb-10">

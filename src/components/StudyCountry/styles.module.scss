@@ -5,6 +5,14 @@
     &__img {
         height: 100%;
         width: 100%;
+        @media only screen and (min-width: 992px) {
+            height: 40rem;
+            width: 40rem;
+            float: right;
+        }
+    }
+     @media only screen and (min-width: 992px) {
+        height: 40rem;
     }
 }
 
