@@ -1,6 +1,5 @@
 .scholarship_inner {
     position: absolute;
-    z-index: 1;
     bottom: 0;
     height: 100%;
     width: 100%;
@@ -17,6 +16,9 @@
     &__overlay {
             height: 27rem;
             width: 100%;
+            @media only screen and (min-width: 992px) {
+                    height: 40rem;
+                }
     }
     &__content {
         position: absolute;
@@ -27,6 +29,7 @@
         align-items: center;
         top: 0.3rem;
         bottom: 2rem;
+        
     }
     &__bourse_card {
         @media only screen and (max-width: 350px) {

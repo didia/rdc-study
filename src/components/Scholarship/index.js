@@ -1,13 +1,19 @@
 import React from 'react';
 import * as style from "./styles.module.scss";
-import { Carousel } from 'flowbite-react';
+import { Carousel, Card } from 'flowbite-react';
 import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import _ from "lodash";
 
 const Scholarship = ({ scholarships }) => {
+    const limitedScholarShips = _.filter(
+      scholarships,
+      (guideCountry, index) => index <= 3
+    );
+
   const substring = (val) => {
-    return val.substring(0, 80) + "...";
+    return val.substring(0, 100) + "...";
   };
 const LEVEL_ORDERS = [
   "undergraduate",
@@ -20,7 +26,7 @@ const LEVEL_ORDERS = [
   return (
     <>
       <section className="mb-5">
-        <div className="text-center mx-10 mb-3">
+        <div className="text-center mx-10 mb-3 md:hidden">
           <span className="text-sky-600 text-2xl font-black">
             Bourses d'études
           </span>{" "}
@@ -42,17 +48,17 @@ const LEVEL_ORDERS = [
               alt="overlay"
               src="../../images/Rectangle10.png"
             />
-            <div className={style.scholarship__content}>
+            <div className={"md:hidden " + style.scholarship__content}>
               <Carousel slide={true} indicators={false}>
                 {scholarships.map((scholarship) => {
-                      const levelsText = scholarship.frontmatter.levels
-                        .sort(
-                          (level1, level2) =>
-                            LEVEL_ORDERS.indexOf(level1) -
-                            LEVEL_ORDERS.indexOf(level2)
-                        )
-                        .map((level) => `${level}`)
-                        .join(", ");
+                  const levelsText = scholarship.frontmatter.levels
+                    .sort(
+                      (level1, level2) =>
+                        LEVEL_ORDERS.indexOf(level1) -
+                        LEVEL_ORDERS.indexOf(level2)
+                    )
+                    .map((level) => `${level}`)
+                    .join(", ");
 
                   const image = getImage(scholarship.frontmatter.thumbnail);
                   return (
@@ -88,6 +94,56 @@ const LEVEL_ORDERS = [
                   );
                 })}
               </Carousel>
+            </div>
+
+            <div className="hidden md:grid md:grid-cols-4 -mt-[32rem] z-30 relative">
+              {limitedScholarShips.map((scholarship) => {
+                const levelsText = scholarship.frontmatter.levels
+                  .sort(
+                    (level1, level2) =>
+                      LEVEL_ORDERS.indexOf(level1) -
+                      LEVEL_ORDERS.indexOf(level2)
+                  )
+                  .map((level) => `${level}`)
+                  .join(", ");
+
+                const image = getImage(scholarship.frontmatter.thumbnail);
+                return (
+                  <div className="">
+                    <Card
+                      className="max-w-sm mx-4 bg-slate-200 h-[27rem]"
+                      imgAlt="Meaningful alt text for an image that is not purely decorative"
+                      renderImage={() => (
+                        <GatsbyImage
+                          image={image}
+                          class="h-60 w-full"
+                          alt={scholarship.frontmatter.title}
+                        />
+                      )}
+                    >
+                      <div>
+                        <a href={`/${scholarship.frontmatter.slug}`}>
+                          <h5 className="text-xl font-bold tracking-tight text-sky-600 dark:text-white">
+                            {scholarship.frontmatter.title}
+                          </h5>
+                        </a>
+
+                        <p className="text-yellow-500 my-2">
+                          <FontAwesomeIcon icon={faClock} />
+                          &nbsp;
+                          {scholarship.frontmatter.deadline}
+                        </p>
+
+                        <p className="text-lg text-left">
+                          <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
+                          {levelsText}
+                        </p>
+
+                      </div>
+                    </Card>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
