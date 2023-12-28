@@ -39,5 +39,48 @@
         @media only screen and (max-width: 365px) {
                 width: 260px;
             }
-    }
+        }
+
+
+        &__overlayImg3 {
+            margin-left: -5rem;
+            margin-top: -26rem;
+            z-index: -999;
+            position: relative;
+        }
+    
+        &__input2 {
+            width: 450px;
+            height: 50px;
+            border: 1.5px solid #0490DF;
+            border-radius: 5px;
+            background-color: #ECEAEA;
+            padding-left: 20px;
+    
+            @media only screen and (max-width: 415px) {
+                width: 280px;
+            }
+    
+            @media only screen and (max-width: 365px) {
+                width: 260px;
+            }
+        }
+    
+        &__textarea2 {
+            width: 450px;
+            height: 120px;
+            border: 1.5px solid #0490DF;
+            border-radius: 5px;
+            background-color: #ECEAEA;
+            padding-left: 20px;
+            padding-top: 20px;
+    
+            @media only screen and (max-width: 415px) {
+                width: 280px;
+            }
+    
+            @media only screen and (max-width: 365px) {
+                width: 260px;
+            }
+        }
 }

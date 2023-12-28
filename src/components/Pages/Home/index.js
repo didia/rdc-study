@@ -270,18 +270,17 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             />
           );
         })}
-        
       </section>
 
-      <section className="mb-5">
-        <div className="text-center">
-          <span className="text-sky-600 text-2xl font-black">
+      <section className="mb-5 md:mt-16">
+        <div className="text-center md:mb-10">
+          <span className="text-sky-600 text-2xl font-black md:text-4xl">
             Nos partenaires
           </span>{" "}
         </div>
 
-        <div className="container relative z-40 mx-auto px-2 ">
-          <div className="grid grid-cols-3 py-6 text-center">
+        <div className="container relative z-40 mx-auto ">
+          <div className="grid grid-cols-3 md:grid-cols-4 py-6 text-center md:mx-10">
             <div>
               <a href="/article/faire-une-formation-professionnelle-institut-a-l-institut-africain-de-haute-formation">
                 <StaticImage
@@ -331,16 +330,107 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 </p>
               </a>
             </div>
+
+            <div className="hidden md:flex">
+              <a href="/article/choisissez-medipol-university-pour-une-education-de-qualite-en-turquie">
+                <StaticImage
+                  src="../../../images/universite_de_lefke.webp"
+                  className="block mx-auto"
+                  placeholder="blurred"
+                  alt="logo"
+                  height={90}
+                  objectFit="contain"
+                />
+
+                <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  UNIVERSITE EUROPEENNE DE LEFKE EN CHYPRE DU NORD
+                </p>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="mb-5">
-        <div className="text-center">
-          <span className="text-sky-600 text-2xl font-black">Témoignages</span>{" "}
+      <section className="mb-5 md:mt-16">
+        <div className="text-center md:py-10">
+          <span className="text-sky-600 text-2xl font-black md:text-4xl">
+            Témoignages
+          </span>{" "}
         </div>
 
-        <div className="mx-6 mt-5 rounded-2xl px-5 py-7 bg-sky-600">
+        <div className="hidden md:grid md:grid-cols-4 gap-4 mx-10">
+          <div className="rounded-2xl px-5 py-7 bg-sky-600">
+            <div className="z-10">
+              <FontAwesomeIcon
+                icon={faQuoteLeft}
+                color="white"
+                className="text-6xl opacity-25"
+              />
+            </div>
+            <div className="z-20 -mt-7">
+              <p className="text-center text-sm md:text-lg text-white">
+                Lorem ispum dolor fortuna simpre cresis, out decresis vita
+                detastabilis Lorem ispum dolor fortuna simpre cresis, out
+                decresis
+              </p>
+              <p className="text-start text-white mt-4 md:text-lg">Candidat X</p>
+            </div>
+          </div>
+
+          <div className="rounded-2xl px-5 py-7 bg-sky-600">
+            <div className="z-10">
+              <FontAwesomeIcon
+                icon={faQuoteLeft}
+                color="white"
+                className="text-6xl opacity-25"
+              />
+            </div>
+            <div className="z-20 -mt-7">
+              <p className="text-center text-sm text-white md:text-lg">
+                Lorem ispum dolor fortuna simpre cresis, out decresis vita
+                detastabilis Lorem ispum dolor fortuna simpre cresis, out
+                decresis
+              </p>
+              <p className="text-start text-white mt-4 md:text-lg">Candidat X</p>
+            </div>
+          </div>
+          <div className="rounded-2xl px-5 py-7 bg-sky-600">
+            <div className="z-10">
+              <FontAwesomeIcon
+                icon={faQuoteLeft}
+                color="white"
+                className="text-6xl opacity-25"
+              />
+            </div>
+            <div className="z-20 -mt-7">
+              <p className="text-center text-sm text-white md:text-lg">
+                Lorem ispum dolor fortuna simpre cresis, out decresis vita
+                detastabilis Lorem ispum dolor fortuna simpre cresis, out
+                decresis
+              </p>
+              <p className="text-start text-white mt-4 md:text-lg">Candidat X</p>
+            </div>
+          </div>
+          <div className="rounded-2xl px-5 py-7 bg-sky-600">
+            <div className="z-10">
+              <FontAwesomeIcon
+                icon={faQuoteLeft}
+                color="white"
+                className="text-6xl opacity-25"
+              />
+            </div>
+            <div className="z-20 -mt-7">
+              <p className="text-center text-sm text-white md:text-lg">
+                Lorem ispum dolor fortuna simpre cresis, out decresis vita
+                detastabilis Lorem ispum dolor fortuna simpre cresis, out
+                decresis
+              </p>
+              <p className="text-start text-white mt-4 md:text-lg">Candidat X</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="md:hidden mx-6 mt-5 rounded-2xl px-5 py-7 bg-sky-600">
           <div className="z-10">
             <FontAwesomeIcon
               icon={faQuoteLeft}
