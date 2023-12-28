@@ -101,7 +101,64 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </div>
       </div>
 
-      <section className="max-md:mb-2" id="studycountry">
+      <section className="md:hidden mb-2" id="mobileStudycountry">
+        <div className="grid grid-cols-4 gap-2">
+          <div className="">&nbsp;</div>
+          <div className="">&nbsp;</div>
+          <div className="">&nbsp;</div>
+          <div className="">
+            <StaticImage
+              height={60}
+              alt="plane"
+              placeholder="blurred"
+              src="../../../images/earth-with-plane-drawing-png.png"
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-8">
+          <div className="col-span-3">
+            <StaticImage
+              alt="travelers"
+              placeholder="blurred"
+              src="../../../images/4564198_2400445 1.png"
+            />
+          </div>
+
+          <div className="col-span-5 px-1">
+            <span className="text-sky-600 text-2xl font-black">
+              Où souhaitez-vous étudier ?
+            </span>{" "}
+            <p>
+              Choisissez le pays de votre destination pour votre projet de
+              voyage.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-4">
+          <div className="">
+            <StaticImage
+              height={80}
+              placeholder="blurred"
+              alt="plane"
+              src="../../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
+            />
+          </div>
+          <div className="">&nbsp;</div>
+          <div className="">&nbsp;</div>
+          <div className="">
+            <StaticImage
+              height={80}
+              alt="tourist"
+              placeholder="blurred"
+              src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="hidden md:block" id="studycountry">
         <div className="grid grid-cols-4 gap-2">
           <div className="">&nbsp;</div>
           <div className="">&nbsp;</div>
@@ -123,24 +180,24 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               alt="travelers"
               placeholder="blurred"
               src="../../../images/student.png"
-              className="md:h-[26rem] md:w-[26rem]"
+              className="h-[26rem] w-[26rem]"
             />
           </div>
 
           <div className="col-span-6 py-16 mr-10">
-            <span className="text-sky-600 text-2xl font-black md:text-5xl">
+            <span className="text-sky-600 font-black text-5xl">
               Où souhaitez-vous étudier ?
             </span>{" "}
-            <p className="md:text-2xl md:py-6">
+            <p className="text-2xl py-6">
               Choisissez le pays de votre destination pour votre projet de
               voyage.
-              <p className="hidden md:flex text-2xl py-2">
+              <p className="text-2xl py-2">
                 RDC Etudes vous oriente dans votre projet d'études du choix de
                 l'université jusqu'à l'obtention de votre visa.
               </p>
             </p>
             <StaticImage
-              className="hidden md:flex h-32 w-32 float-right"
+              className="h-32 w-32 float-right"
               alt="tourist"
               placeholder="blurred"
               src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
@@ -152,7 +209,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           <div className="">
             <StaticImage
               height={80}
-              className="md:h-32 md:w-32 md:z-20 md:-mt-48"
+              className="h-32 w-32 z-20 -mt-48"
               placeholder="blurred"
               alt="plane"
               src="../../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
@@ -161,20 +218,13 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           <div className="">&nbsp;</div>
           <div className="">&nbsp;</div>
           <div className="">
-            <StaticImage
-              height={80}
-              className="md:hidden"
-              alt="tourist"
-              placeholder="blurred"
-              src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
-            />
           </div>
         </div>
       </section>
 
       <StudyCountry guideCountries={guideCountries} />
 
-      <div className="hidden md:grid md:grid-cols-12">
+      <div className="hidden md:grid md:grid-cols-12 mb-10">
         <div className="col-span-5 flex w-full h-full mt-10">
           <div className="-mt-28">
             <div className={style.ellipse__second}>
@@ -373,7 +423,9 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
               </p>
-              <p className="text-start text-white mt-4 md:text-lg">Candidat X</p>
+              <p className="text-start text-white mt-4 md:text-lg">
+                Candidat X
+              </p>
             </div>
           </div>
 
@@ -391,7 +443,9 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
               </p>
-              <p className="text-start text-white mt-4 md:text-lg">Candidat X</p>
+              <p className="text-start text-white mt-4 md:text-lg">
+                Candidat X
+              </p>
             </div>
           </div>
           <div className="rounded-2xl px-5 py-7 bg-sky-600">
@@ -408,7 +462,9 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
               </p>
-              <p className="text-start text-white mt-4 md:text-lg">Candidat X</p>
+              <p className="text-start text-white mt-4 md:text-lg">
+                Candidat X
+              </p>
             </div>
           </div>
           <div className="rounded-2xl px-5 py-7 bg-sky-600">
@@ -425,7 +481,9 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
               </p>
-              <p className="text-start text-white mt-4 md:text-lg">Candidat X</p>
+              <p className="text-start text-white mt-4 md:text-lg">
+                Candidat X
+              </p>
             </div>
           </div>
         </div>
