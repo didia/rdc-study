@@ -3,7 +3,7 @@ import Layout from "../../Layout";
 import SecondaryBtn from "../../Button/Secondary"
 import PrimaryBtn from "../../Button/Primary";
 import * as styles from "./styles.module.scss";
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 import ScholarShipCard from "../../Scholarship/ScholarShipCard";
 import _ from "lodash";
 
@@ -85,7 +85,7 @@ const Bourse = ({ scholarships }) => {
         </div>
       </section>
 
-      <section className="">
+      <section className="hidden md:block">
         <div className="hidden md:flex">
           <div className="flex w-full h-full mt-10">
             <div className="-mt-28">
@@ -173,7 +173,7 @@ const Bourse = ({ scholarships }) => {
         })}
       </section>
 
-      <section className="bg-gray-200 py-5">
+      <section className="bg-gray-200 py-5 hidden md:block">
         <div className="grid grid-cols-4 mx-8 py-10 gap-3">
           {limitedScholarShips.map((scholarship) => {
             return (

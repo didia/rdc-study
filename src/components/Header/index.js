@@ -53,8 +53,8 @@ const Header = () => {
                   url={"/privacy"}
                 />
                 <NavLink title={"à propos"} url={"/aboutUs"} />
-                <NavLink title={"aide"} url={"/help"} />
-                <NavLink title={"faq"} url={"/faq"} />
+                {/* <NavLink title={"aide"} url={"/help"} /> */}
+                {/* <NavLink title={"faq"} url={"/faq"} /> */}
                 <NavLink title={"nous contacter"} url={"/contactUs"} />
               </div>
             </div>
