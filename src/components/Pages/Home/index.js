@@ -12,6 +12,8 @@ import { faArrowRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 import SecondaryBtn from "../../Button/Secondary";
 import PrimaryBtn from "../../Button/Primary";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import 'animate.css';
 
 const Home = ({ guideCountries, articles, scholarships }) => {
   return (
@@ -101,126 +103,129 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </div>
       </div>
 
-      <section className="md:hidden mb-2" id="mobileStudycountry">
-        <div className="grid grid-cols-4 gap-2">
-          <div className="">&nbsp;</div>
-          <div className="">&nbsp;</div>
-          <div className="">&nbsp;</div>
-          <div className="">
-            <StaticImage
-              height={60}
-              alt="plane"
-              placeholder="blurred"
-              src="../../../images/earth-with-plane-drawing-png.png"
-            />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-8">
-          <div className="col-span-3">
-            <StaticImage
-              alt="travelers"
-              placeholder="blurred"
-              src="../../../images/4564198_2400445 1.png"
-            />
+      <AnimationOnScroll animateIn="animate__fadeInUp">
+        <section className="md:hidden mb-2" id="mobileStudycountry">
+          <div className="grid grid-cols-4 gap-2">
+            <div className="">&nbsp;</div>
+            <div className="">&nbsp;</div>
+            <div className="">&nbsp;</div>
+            <div className="">
+              <StaticImage
+                height={60}
+                alt="plane"
+                placeholder="blurred"
+                src="../../../images/earth-with-plane-drawing-png.png"
+              />
+            </div>
           </div>
 
-          <div className="col-span-5 px-1">
-            <span className="text-sky-600 text-2xl font-black">
-              Où souhaitez-vous étudier ?
-            </span>{" "}
-            <p>
-              Choisissez le pays de votre destination pour votre projet de
-              voyage.
-            </p>
-          </div>
-        </div>
+          <div className="grid grid-cols-8">
+            <div className="col-span-3">
+              <StaticImage
+                alt="travelers"
+                placeholder="blurred"
+                src="../../../images/4564198_2400445 1.png"
+              />
+            </div>
 
-        <div className="grid grid-cols-4 gap-4">
-          <div className="">
-            <StaticImage
-              height={80}
-              placeholder="blurred"
-              alt="plane"
-              src="../../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
-            />
-          </div>
-          <div className="">&nbsp;</div>
-          <div className="">&nbsp;</div>
-          <div className="">
-            <StaticImage
-              height={80}
-              alt="tourist"
-              placeholder="blurred"
-              src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="hidden md:block" id="studycountry">
-        <div className="grid grid-cols-4 gap-2">
-          <div className="">&nbsp;</div>
-          <div className="">&nbsp;</div>
-          <div className="">&nbsp;</div>
-          <div className="">
-            <StaticImage
-              height={60}
-              alt="plane"
-              placeholder="blurred"
-              src="../../../images/earth-with-plane-drawing-png.png"
-            />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-12">
-          <div className="col-span-1"></div>
-          <div className="col-span-5">
-            <StaticImage
-              alt="travelers"
-              placeholder="blurred"
-              src="../../../images/student.png"
-              className="h-[26rem] w-[26rem]"
-            />
-          </div>
-
-          <div className="col-span-6 py-16 mr-10">
-            <span className="text-sky-600 font-black text-5xl">
-              Où souhaitez-vous étudier ?
-            </span>{" "}
-            <p className="text-2xl py-6">
-              Choisissez le pays de votre destination pour votre projet de
-              voyage.
-              <p className="text-2xl py-2">
-                RDC Etudes vous oriente dans votre projet d'études du choix de
-                l'université jusqu'à l'obtention de votre visa.
+            <div className="col-span-5 px-1">
+              <span className="text-sky-600 text-2xl font-black">
+                Où souhaitez-vous étudier ?
+              </span>{" "}
+              <p>
+                Choisissez le pays de votre destination pour votre projet de
+                voyage.
               </p>
-            </p>
-            <StaticImage
-              className="h-32 w-32 float-right"
-              alt="tourist"
-              placeholder="blurred"
-              src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
-            />
+            </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-4 gap-4">
-          <div className="">
-            <StaticImage
-              height={80}
-              className="h-32 w-32 z-20 -mt-48"
-              placeholder="blurred"
-              alt="plane"
-              src="../../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
-            />
+          <div className="grid grid-cols-4 gap-4">
+            <div className="">
+              <StaticImage
+                height={80}
+                placeholder="blurred"
+                alt="plane"
+                src="../../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
+              />
+            </div>
+            <div className="">&nbsp;</div>
+            <div className="">&nbsp;</div>
+            <div className="">
+              <StaticImage
+                height={80}
+                alt="tourist"
+                placeholder="blurred"
+                src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
+              />
+            </div>
           </div>
-          <div className="">&nbsp;</div>
-          <div className="">&nbsp;</div>
-          <div className="">
+        </section>
+      </AnimationOnScroll>
+
+      <AnimationOnScroll animateIn="animate__fadeInUp">
+        <section className="hidden md:block" id="studycountry">
+          <div className="grid grid-cols-4 gap-2">
+            <div className="">&nbsp;</div>
+            <div className="">&nbsp;</div>
+            <div className="">&nbsp;</div>
+            <div className="">
+              <StaticImage
+                height={60}
+                alt="plane"
+                placeholder="blurred"
+                src="../../../images/earth-with-plane-drawing-png.png"
+              />
+            </div>
           </div>
-        </div>
-      </section>
+
+          <div className="grid grid-cols-12">
+            <div className="col-span-1"></div>
+            <div className="col-span-5">
+              <StaticImage
+                alt="travelers"
+                placeholder="blurred"
+                src="../../../images/student.png"
+                className="h-[26rem] w-[26rem]"
+              />
+            </div>
+
+            <div className="col-span-6 py-16 mr-10">
+              <span className="text-sky-600 font-black text-5xl">
+                Où souhaitez-vous étudier ?
+              </span>{" "}
+              <p className="text-2xl py-6">
+                Choisissez le pays de votre destination pour votre projet de
+                voyage.
+                <p className="text-2xl py-2">
+                  RDC Etudes vous oriente dans votre projet d'études du choix de
+                  l'université jusqu'à l'obtention de votre visa.
+                </p>
+              </p>
+              <StaticImage
+                className="h-32 w-32 float-right"
+                alt="tourist"
+                placeholder="blurred"
+                src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-4 gap-4">
+            <div className="">
+              <StaticImage
+                height={80}
+                className="h-32 w-32 z-20 -mt-48"
+                placeholder="blurred"
+                alt="plane"
+                src="../../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
+              />
+            </div>
+            <div className="">&nbsp;</div>
+            <div className="">&nbsp;</div>
+            <div className=""></div>
+          </div>
+        </section>
+      </AnimationOnScroll>
 
       <StudyCountry guideCountries={guideCountries} />
 
@@ -245,11 +250,13 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </div>
 
           <div className="-ml-28">
-            <StaticImage
-              alt="plane"
-              height={400}
-              src="../../../images/lady_with_suitcase.png"
-            />
+            <AnimationOnScroll animateIn="animate__bounceInLeft">
+              <StaticImage
+                alt="plane"
+                height={400}
+                src="../../../images/lady_with_suitcase.png"
+              />
+            </AnimationOnScroll>
           </div>
         </div>
 
@@ -280,12 +287,16 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               src="../../../images/Ellipse1.png"
             />
 
-            <StaticImage
-              alt="plane"
-              className="absolute right-10"
-              height={280}
-              src="../../../images/Young-Girl-Student-HD-Free-PNG-Image 1.png"
-            />
+            <div className="absolute right-10">
+              <AnimationOnScroll animateIn="animate__bounceInRight">
+                <StaticImage
+                  alt="plane"
+                  className=""
+                  height={280}
+                  src="../../../images/Young-Girl-Student-HD-Free-PNG-Image 1.png"
+                />
+              </AnimationOnScroll>
+            </div>
           </div>
         </div>
       </div>
@@ -304,23 +315,25 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </PrimaryBtn>
       </p>
 
-      <section className="mb-5 md:mx-32 md:mt-20">
-        <div className="text-left px-8 mb-5">
-          <span className="text-sky-600 text-xl font-black uppercase md:text-2xl">
-            Les dernières nouvelles
-          </span>{" "}
-          <div className="h-4 w-full border-b-2 border-sky-600"></div>
-        </div>
+      <AnimationOnScroll animateIn="animate__fadeInUp">
+        <section className="mb-5 md:mx-32 md:mt-20">
+          <div className="text-left px-8 mb-5">
+            <span className="text-sky-600 text-xl font-black uppercase md:text-2xl">
+              Les dernières nouvelles
+            </span>{" "}
+            <div className="h-4 w-full border-b-2 border-sky-600"></div>
+          </div>
 
-        {articles.map((article) => {
-          return (
-            <NewsCard
-              key={article.frontmatter.title}
-              ItemData={article.frontmatter}
-            />
-          );
-        })}
-      </section>
+          {articles.map((article) => {
+            return (
+              <NewsCard
+                key={article.frontmatter.title}
+                ItemData={article.frontmatter}
+              />
+            );
+          })}
+        </section>
+      </AnimationOnScroll>
 
       <section className="mb-5 md:mt-16">
         <div className="text-center md:mb-10">
@@ -329,76 +342,78 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </span>{" "}
         </div>
 
-        <div className="container relative z-40 mx-auto ">
-          <div className="grid grid-cols-3 md:grid-cols-4 py-6 text-center md:mx-10">
-            <div>
-              <a href="/article/faire-une-formation-professionnelle-institut-a-l-institut-africain-de-haute-formation">
-                <StaticImage
-                  src="../../../images/iahf.png"
-                  className="block mx-auto"
-                  placeholder="blurred"
-                  alt="logo"
-                  height={90}
-                  objectFit="contain"
-                />
+        <AnimationOnScroll animateIn="animate__fadeInRight">
+          <div className="container relative z-40 mx-auto ">
+            <div className="grid grid-cols-3 md:grid-cols-4 py-6 text-center md:mx-10">
+              <div>
+                <a href="/article/faire-une-formation-professionnelle-institut-a-l-institut-africain-de-haute-formation">
+                  <StaticImage
+                    src="../../../images/iahf.png"
+                    className="block mx-auto"
+                    placeholder="blurred"
+                    alt="logo"
+                    height={90}
+                    objectFit="contain"
+                  />
 
-                <p className=" text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                  INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)
-                </p>
-              </a>
-            </div>
+                  <p className=" text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                    INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)
+                  </p>
+                </a>
+              </div>
 
-            <div className="mt-4">
-              <a href="/article/faites-une-formation-professionnelle-de-qualite-chez-excelia">
-                <StaticImage
-                  src="../../../images/excelia.png"
-                  className="block mx-auto"
-                  placeholder="blurred"
-                  alt="Logo"
-                  height={90}
-                  objectFit="contain"
-                />
-                <p className="pt-10 text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                  EXCELIA GROUP (FRANCE)
-                </p>
-              </a>
-            </div>
+              <div className="mt-4">
+                <a href="/article/faites-une-formation-professionnelle-de-qualite-chez-excelia">
+                  <StaticImage
+                    src="../../../images/excelia.png"
+                    className="block mx-auto"
+                    placeholder="blurred"
+                    alt="Logo"
+                    height={90}
+                    objectFit="contain"
+                  />
+                  <p className="pt-10 text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                    EXCELIA GROUP (FRANCE)
+                  </p>
+                </a>
+              </div>
 
-            <div>
-              <a href="/article/choisissez-medipol-university-pour-une-education-de-qualite-en-turquie">
-                <StaticImage
-                  src="../../../images/medipol.jpg"
-                  className="block mx-auto"
-                  placeholder="blurred"
-                  alt="logo"
-                  height={90}
-                  objectFit="contain"
-                />
+              <div>
+                <a href="/article/choisissez-medipol-university-pour-une-education-de-qualite-en-turquie">
+                  <StaticImage
+                    src="../../../images/medipol.jpg"
+                    className="block mx-auto"
+                    placeholder="blurred"
+                    alt="logo"
+                    height={90}
+                    objectFit="contain"
+                  />
 
-                <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                  UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)
-                </p>
-              </a>
-            </div>
+                  <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                    UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)
+                  </p>
+                </a>
+              </div>
 
-            <div className="hidden md:flex">
-              <a href="/article/choisissez-medipol-university-pour-une-education-de-qualite-en-turquie">
-                <StaticImage
-                  src="../../../images/universite_de_lefke.webp"
-                  className="block mx-auto"
-                  placeholder="blurred"
-                  alt="logo"
-                  height={90}
-                  objectFit="contain"
-                />
+              <div className="hidden md:flex">
+                <a href="/article/choisissez-medipol-university-pour-une-education-de-qualite-en-turquie">
+                  <StaticImage
+                    src="../../../images/universite_de_lefke.webp"
+                    className="block mx-auto"
+                    placeholder="blurred"
+                    alt="logo"
+                    height={90}
+                    objectFit="contain"
+                  />
 
-                <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-                  UNIVERSITE EUROPEENNE DE LEFKE EN CHYPRE DU NORD
-                </p>
-              </a>
+                  <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                    UNIVERSITE EUROPEENNE DE LEFKE EN CHYPRE DU NORD
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </AnimationOnScroll>
       </section>
 
       <section className="mb-5 md:mt-16">

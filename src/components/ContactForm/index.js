@@ -2,6 +2,8 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import * as styles from "./styles.module.scss";
 import PrimaryBtn from '../Button/Primary';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import 'animate.css';
 
 const ContactForm = ({ title, bgImg, marginBottom }) => {
     return (
@@ -125,12 +127,14 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
                 width={300}
                 src="../../images/png-clipart-black-airway-aviation-aircraft.png"
               />
-
-              <StaticImage
-                className="absolute h-[35rem] w-[20rem] ml-40"
-                alt="airway"
-                src="../../images/smiley-femme-bagage-rouge-coup-moyen.png"
-              />
+              <div className="absolute h-[35rem] w-[20rem] ml-40">
+                <AnimationOnScroll animateIn="animate__bounceIn">
+                  <StaticImage
+                    alt="airway"
+                    src="../../images/smiley-femme-bagage-rouge-coup-moyen.png"
+                  />
+                </AnimationOnScroll>
+              </div>
               <StaticImage
                 className="relative float-right mt-40 -z-30"
                 alt="airway"

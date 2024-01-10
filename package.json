@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "rdcetudes",
-  "author": "philippembambi",
+  "author": "243technologies",
   "keywords": [
     "gatsby"
   ],
@@ -19,6 +19,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mdx-js/react": "^3.0.0",
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.16",
     "classnames": "^2.3.2",
     "date-fns": "^2.30.0",
@@ -38,6 +39,7 @@
     "postcss": "^8.4.31",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
+    "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-intl": "^6.5.5",
