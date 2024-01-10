@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const FAQ = () => {
   return (
     <Layout pageTitle="FAQ">
-      <section>
+      <section className="md:hidden">
         <div className="relative h-60 w-full bg-sky-600">
           <div className="absolute">
             <StaticImage alt="question" src="../../../images/question.png" />
@@ -23,12 +23,52 @@ const FAQ = () => {
         </div>
       </section>
 
-      <section className="mx-4 mt-4 mb-20">
-        <div className="text-justify">
-          <span className="text-lg font-bold">
+      <section className="hidden md:block">
+        <div className="relative h-[35rem] w-full bg-sky-600">
+          <div className="absolute">
+            <StaticImage
+              alt="question"
+              className="h-60"
+              src="../../../images/question.png"
+            />
+            <StaticImage
+              alt="question"
+              className="h-60"
+              src="../../../images/question.png"
+            />
+          </div>
+          <div className="absolute py-40 ml-[20rem] text-center text-white text-6xl font-black uppercase z-20">
+            Questions populaires
+          </div>
+
+          <StaticImage
+            alt="question"
+            className="h-60"
+            src="../../../images/question.png"
+          />
+
+          <StaticImage
+            alt="question"
+            className="h-72 w-80 mt-60"
+            src="../../../images/question.png"
+          />
+
+          <div className="absolute bottom-0 right-0">
+            <StaticImage
+              src="../../../images/faq.png"
+              alt="img student"
+              width={350}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-8 mt-10 mb-20">
+        <div className="text-justify text-xl">
+          <span className="text-3xl font-bold">
             Voici les réponses aux questions les plus souvent posées.
           </span>
-          <p className="uppercase text-lg font-bold py-2">
+          <p className="uppercase text-2xl font-bold py-6">
             Qu’est-ce que RDC Études ?{" "}
           </p>
           RDC Etudes est une plateforme qui met gratuitement à votre disposition

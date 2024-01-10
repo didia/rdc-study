@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="bg-white shadow-lg">
+      <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="mx-auto px-4 md:px-28">
           <div className="flex justify-between">
             <div className="flex space-x-20">
@@ -45,17 +45,18 @@ const Header = () => {
                 </a>
               </div>
 
-              <div className="hidden md:flex md:space-x-3 items-center uppercase">
+              <div className="hidden md:flex md:space-x-5 items-center uppercase">
+                <NavLink title={"acceuil"} url={"/"} />
                 <NavLink title={"bourses d'études"} url={"/bourse"} />
-                <NavLink title={"examens médicaux"} url={"/healthcare"} />
+                {/* <NavLink title={"examens médicaux"} url={"/healthcare"} /> */}
                 <NavLink
                   title={"Politique de Confidentialité"}
                   url={"/privacy"}
                 />
                 <NavLink title={"à propos"} url={"/aboutUs"} />
-                {/* <NavLink title={"aide"} url={"/help"} /> */}
+                <NavLink title={"aide"} url={"/help"} />
                 {/* <NavLink title={"faq"} url={"/faq"} /> */}
-                <NavLink title={"nous contacter"} url={"/contactUs"} />
+                <NavLink title={"Contacts"} url={"/contactUs"} />
               </div>
             </div>
 
@@ -130,7 +131,7 @@ const Header = () => {
             ref={navBarRef}
           >
             <ul className="w-full">
-              <NavLink title={"accueil"} url={"/"} />
+              <NavLink title={"acceuil"} url={"/"} />
               <NavLink title={"bourses d'études"} url={"/bourse"} />
               <NavLink title={"examens médicaux"} url={"/healthcare"} />
               <NavLink
