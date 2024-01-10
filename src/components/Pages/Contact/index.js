@@ -153,7 +153,7 @@ const Contact = () => {
           <ContactForm bgImg={img_overlay} />
         </section>
 
-        <section className="">
+        <section className="mt-24 md:-mt-16">
           <GoogleMapFrame />
         </section>
       </Layout>
