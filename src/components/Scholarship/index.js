@@ -27,10 +27,10 @@ const LEVEL_ORDERS = [
     <>
       <section className="mb-5">
         <div className="text-center mx-10 mb-3 md:hidden">
-          <span className="text-sky-600 text-2xl font-black">
+          <span className="text-sky-600 text-2xl font-black font-['monserrat-bold']">
             Bourses d'études
           </span>{" "}
-          <p>
+          <p className="font-['roboto']">
             Découvrez nos meilleurs programmes de bourse qui vous assure un
             voyage réussi
           </p>
@@ -75,17 +75,17 @@ const LEVEL_ORDERS = [
                       </div>
                       <div className="">
                         <a href={`/${scholarship.frontmatter.slug}`}>
-                          <p className="px-3 py-1 text-sm text-sky-600 font-extrabold uppercase">
+                          <p className="px-3 py-1 text-sm text-sky-600 font-extrabold uppercase font-['monserrat-bold']">
                             {scholarship.frontmatter.title}
                           </p>
                         </a>
-                        <p className="text-yellow-500">
+                        <p className="text-yellow-500 font-['roboto']">
                           <FontAwesomeIcon icon={faClock} />
                           &nbsp;
                           {scholarship.frontmatter.deadline}
                         </p>
 
-                        <p className="text-lg text-left ml-3 py-2">
+                        <p className="text-lg text-left ml-3 py-2 font-['roboto']">
                           <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
                           {levelsText}
                         </p>

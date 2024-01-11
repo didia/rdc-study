@@ -13,20 +13,22 @@ export const Footer = () => {
     <div>
       <footer className="bg-sky-600 text-center text-white lg:text-left">
         <div className="bg-white flex items-center justify-center border-t-2 border-sky-600 p-3 lg:justify-between">
-          <div className="flex justify-around md:w-full">
+          <div className="flex justify-between md:w-full">
             <div className="">
-              <span className="text-red-900 font-extrabold text-xl md:text-3xl">
+              <span className="text-red-900 font-extrabold text-xl md:text-3xl font-['roboto-bold']">
                 Avez-vous des questions ?
-                <p className="hidden md:block text-base">
+                <p className="hidden md:block text-base font-['roboto-bold']">
                   Consulter notre foire aux questions
                 </p>
               </span>
             </div>
-            <div className="">
-              <a href="/faq" className="bg-sky-600 text-sm md:text-xl md:px-8 md:py-2 rounded-lg px-2 py-2">
+            <div className="ml-5">
+              <a
+                href="/faq"
+                className="bg-sky-600 text-sm md:text-xl md:px-8 md:py-2 rounded-lg px-2 py-2"
+              >
                 Faq
               </a>
-
             </div>
 
             <div className="hidden md:flex col-span-2"></div>
@@ -39,7 +41,7 @@ export const Footer = () => {
               <div className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
                 <StaticImage alt="logo" src="../../images/Logo_white.png" />
               </div>
-              <p className="mx-10">
+              <p className="mx-10 font-['roboto-bold']">
                 Réussir vous apporte toutes les nouveautés sur les bourses et
                 l’éducation de qualité directement dans votre boîte email.
               </p>
@@ -47,31 +49,31 @@ export const Footer = () => {
             <div>
               <h2
                 style={{ fontSize: "25px" }}
-                className="mb-4 flex justify-center font-bold uppercase md:justify-start"
+                className="mb-4 flex justify-center font-bold uppercase md:justify-start font-['roboto-bold']"
               >
                 CONTACTS
               </h2>
               <p className="mb-4 justify-center">
-                <a href="#!" className="text-white text-xl">
+                <a href="#!" className="text-white text-xl font-['roboto']">
                   <FontAwesomeIcon icon={faPhone} />
                   &nbsp;&nbsp; +243 99 994 9712
                 </a>
               </p>
               <p className="mb-4 justify-center">
-                <a href="#!" className="text-white text-xl">
+                <a href="#!" className="text-white text-xl font-['roboto']">
                   <FontAwesomeIcon icon={faWhatsapp} className="text-2xl" />
                   &nbsp;&nbsp; +1 (581) 318-0180
                 </a>
               </p>
 
               <p className="mb-4">
-                <a href="#!" className="text-white text-xl">
+                <a href="#!" className="text-white text-xl font-['roboto']">
                   <FontAwesomeIcon icon={faEnvelope} />
                   &nbsp;&nbsp; rdcetudes@gmail.com
                 </a>
               </p>
               <p className="mb-4">
-                <a href="#!" className="text-white text-xl">
+                <a href="#!" className="text-white text-xl font-['roboto']">
                   <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
                   &nbsp;&nbsp; N°283 Tabora Gombe
                 </a>
@@ -109,62 +111,65 @@ export const Footer = () => {
             <div>
               <a
                 href="/"
-                className="mb-4 flex justify-center uppercase md:justify-start"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
               >
                 Acceuil
               </a>
 
               <a
                 href="/bourse"
-                className="mb-4 flex justify-center uppercase md:justify-start"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
               >
                 Bourses
               </a>
               <a
                 href="/aboutUs"
-                className="mb-4 flex justify-center uppercase md:justify-start"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
               >
                 Qui sommes-nous ?
               </a>
               <a
                 href="/faq"
-                className="mb-4 flex justify-center uppercase md:justify-start"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
               >
                 Questions populaires
               </a>
               <a
                 href="/healthcare"
-                className="mb-4 flex justify-center uppercase md:justify-start"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
               >
                 Examens médicaux
               </a>
               <a
                 href="/privacy"
-                className="mb-4 flex justify-center uppercase md:justify-start"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
               >
                 Politiques de confidentialité
               </a>
               <a
                 href="/help"
-                className="mb-4 flex justify-center uppercase md:justify-start"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
               >
                 Besoin d'aide ?
               </a>
               <a
                 href="/partenership"
-                className="mb-4 flex justify-center uppercase md:justify-start"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
               >
                 Nos Partenaires
               </a>
 
               <div className="hero bg-gredient-dark h-400px flex flex-col px-2">
-                <p className="mb-5 mt-5" style={{ fontSize: "20px" }}>
+                <p
+                  className="mb-5 mt-5 font-['roboto-bold']"
+                  style={{ fontSize: "20px" }}
+                >
                   Abonnez-vous à notre newsLetter
                 </p>
                 <div className="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
                   <form className="flex flex-row">
                     <input
-                      className="h-16 text-grey-darker text-grey-darkest border border-gray-100 font-bold w-full py-1 px-2 outline-none text-lg text-gray-600"
+                      className="h-16 text-grey-darker text-grey-darkest border border-gray-100 font-bold w-full py-1 px-2 outline-none text-lg text-gray-600 font-['roboto']"
                       type="text"
                       placeholder="Entrer votre email"
                       style={{
@@ -181,7 +186,7 @@ export const Footer = () => {
                       className="flex items-center bg-gray-100 rounded rounded-l-none border-0 px-1 font-bold text-grey-100"
                     >
                       <button
-                        className="border-2 border-sky-600 hover:bg-gredient-light text-lg text-sky-600 font-bold py-3 px-6 rounded"
+                        className="border-2 border-sky-600 hover:bg-gredient-light text-lg text-sky-600 font-bold py-3 px-6 rounded font-['roboto-bold']"
                         style={{
                           borderRadius: "10px",
                           backgroundColor: "#D9D9D9",
@@ -308,7 +313,7 @@ export const Footer = () => {
 
             <div className="py-8">
               <h2 className="mb-4 text-2xl font-bold uppercase text-start">
-               Autres Pages
+                Autres Pages
               </h2>
 
               <p className="mb-6 text-start">
@@ -333,7 +338,7 @@ export const Footer = () => {
         </div>
 
         <div className="bg-sky-600 p-6 text-center">
-          <span className="text-xl">
+          <span className="text-xl font-['roboto-bold']">
             © 2023 RDC Etudes. Tous droits réservés
           </span>
         </div>

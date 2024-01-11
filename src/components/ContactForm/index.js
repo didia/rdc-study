@@ -8,12 +8,12 @@ import 'animate.css';
 const ContactForm = ({ title, bgImg, marginBottom }) => {
     return (
       <>
-        <section className={marginBottom + " md:hidden"}>
+        <section className={marginBottom + " md:hidden mt-12"}>
           <div className="text-center mx-10 z-10">
-            <span className="text-sky-600 text-2xl font-black">
+            <span className="text-sky-600 text-2xl font-black font-['monserrat-bold']">
               Besoin d'un service ?
             </span>{" "}
-            <p className="py-4">
+            <p className="py-4 font-['roboto']">
               Avez-vous des questions ou besoin d’informations supplémentaires?
               N’hésitez donc pas de nous contacter, de préférence à travers nos
               médias sociaux.
@@ -67,10 +67,10 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
           <div className="grid grid-cols-2 my-16">
             <div>
               <div className="text-center z-10 ml-40">
-                <span className="text-sky-600 text-5xl font-black">
+                <span className="text-sky-600 text-5xl font-black font-['monserrat-bold']">
                   Besoin d'un service ?
                 </span>{" "}
-                <p className="py-4 text-xl">
+                <p className="py-4 text-xl font-['roboto']">
                   Avez-vous des questions ou besoin d’informations
                   supplémentaires? N’hésitez donc pas de nous contacter, de
                   préférence à travers nos médias sociaux.

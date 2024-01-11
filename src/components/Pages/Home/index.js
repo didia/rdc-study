@@ -33,10 +33,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
           <div className={style.contact_content}>
             <div className="text-start">
-              <div className="text-3xl text-white font-black uppercase mt-2 mb-4">
+              <div className="text-3xl text-white font-black uppercase mt-2 mb-4 font-['monserrat-bold']">
                 Rdc études
               </div>
-              <div className="text-lg text-white mb-4">
+              <div className="text-lg text-white mb-4 font-['roboto-bold']">
                 Nous vous accompagnons dans la réussite de votre projet
                 d’études, de l’admission à l’obtention de votre diplôme !
               </div>
@@ -69,10 +69,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <div className="max-md:hidden flex -mt-32 mx-28">
         <div className="z-10">
           <div className="text-start">
-            <p className="text-5xl text-sky-600 font-black">
+            <p className="text-5xl text-sky-600 font-black font-['monserrat-bold']">
               Pourquoi RDC-Etudes ?
             </p>
-            <p className="text-2xl my-4">
+            <p className="text-2xl my-4 font-['roboto']">
               Nous vous accompagnons dans la réussite de votre projet d’études,
               de l’admission à l’obtention de votre diplôme !
             </p>
@@ -129,10 +129,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             </div>
 
             <div className="col-span-5 px-1">
-              <span className="text-sky-600 text-2xl font-black">
+              <span className="text-sky-600 text-2xl font-black font-['monserrat-bold']">
                 Où souhaitez-vous étudier ?
               </span>{" "}
-              <p>
+              <p className="font-['roboto'] text-lg">
                 Choisissez le pays de votre destination pour votre projet de
                 voyage.
               </p>
@@ -318,7 +318,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <AnimationOnScroll animateIn="animate__fadeInUp">
         <section className="mb-5 md:mx-32 md:mt-20">
           <div className="text-left px-8 mb-5">
-            <span className="text-sky-600 text-xl font-black uppercase md:text-2xl">
+            <span className="text-sky-600 text-xl font-black uppercase md:text-2xl font-['monserrat-bold']">
               Les dernières nouvelles
             </span>{" "}
             <div className="h-4 w-full border-b-2 border-sky-600"></div>
@@ -335,9 +335,9 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </section>
       </AnimationOnScroll>
 
-      <section className="mb-5 md:mt-16">
+      <section className="mb-5 mt-12 md:mt-16">
         <div className="text-center md:mb-10">
-          <span className="text-sky-600 text-2xl font-black md:text-4xl">
+          <span className="text-sky-600 text-2xl font-black md:text-4xl font-['monserrat-bold']">
             Nos partenaires
           </span>{" "}
         </div>
@@ -356,7 +356,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                     objectFit="contain"
                   />
 
-                  <p className=" text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  <p className=" text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6 font-['roboto-bold']">
                     INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)
                   </p>
                 </a>
@@ -372,7 +372,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                     height={90}
                     objectFit="contain"
                   />
-                  <p className="pt-10 text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  <p className="pt-10 text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6 font-['roboto-bold']">
                     EXCELIA GROUP (FRANCE)
                   </p>
                 </a>
@@ -389,7 +389,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                     objectFit="contain"
                   />
 
-                  <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6 font-['roboto-bold']">
                     UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)
                   </p>
                 </a>
@@ -416,9 +416,9 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </AnimationOnScroll>
       </section>
 
-      <section className="mb-5 md:mt-16">
+      <section className="mb-5 mt-12 md:mt-16">
         <div className="text-center md:py-10">
-          <span className="text-sky-600 text-2xl font-black md:text-4xl">
+          <span className="text-sky-600 text-2xl font-black md:text-4xl font-['monserrat-bold']">
             Témoignages
           </span>{" "}
         </div>
@@ -433,12 +433,12 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               />
             </div>
             <div className="z-20 -mt-7">
-              <p className="text-center text-sm md:text-lg text-white">
+              <p className="text-center text-sm md:text-lg text-white font-['roboto']">
                 Lorem ispum dolor fortuna simpre cresis, out decresis vita
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
               </p>
-              <p className="text-start text-white mt-4 md:text-lg">
+              <p className="text-start text-white mt-4 md:text-lg font-['roboto-bold']">
                 Candidat X
               </p>
             </div>
@@ -512,11 +512,13 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             />
           </div>
           <div className="z-20 -mt-7">
-            <p className="text-center text-sm text-white">
+            <p className="text-center text-sm text-white font-['roboto-bold']">
               Lorem ispum dolor fortuna simpre cresis, out decresis vita
               detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
             </p>
-            <p className="text-start text-white mt-4">Candidat X</p>
+            <p className="text-start text-white mt-4 font-['roboto-bold']">
+              Candidat X
+            </p>
           </div>
         </div>
       </section>

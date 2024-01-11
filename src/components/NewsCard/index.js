@@ -21,12 +21,14 @@ const NewsCard = ({ ItemData }) => {
         <div className="col-span-7 -mt-2 md:-ml-[7rem]">
           <a
             href={`/${ItemData.slug}`}
-            className="text-sky-600 text-lg md:text-2xl font-extrabold"
+            className="text-sky-600 text-lg md:text-2xl font-extrabold font-['monserrat-bold']"
           >
             {ItemData.title}
           </a>
-          <p className="py-2 md:text-lg text-yellow-500">{ItemData.date}</p>
-          <p className="md:hidden text-sm md:text-xl mr-7 text-justify">
+          <p className="py-2 md:text-lg text-yellow-500 font-['roboto-bold']">
+            {ItemData.date}
+          </p>
+          <p className="md:hidden text-sm md:text-xl mr-7 text-justify font-['roboto']">
             {substring(ItemData.excerpt)}
           </p>
 
