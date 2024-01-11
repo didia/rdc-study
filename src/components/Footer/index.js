@@ -13,10 +13,8 @@ export const Footer = () => {
     <div>
       <footer className="bg-sky-600 text-center text-white lg:text-left">
         <div className="bg-white flex items-center justify-center border-t-2 border-sky-600 p-3 lg:justify-between">
-          <div className="grid grid-cols-12 md:w-full">
-            <div className="hidden md:flex col-span-2"></div>
-
-            <div className="col-span-10 md:col-span-6">
+          <div className="flex justify-around md:w-full">
+            <div className="">
               <span className="text-red-900 font-extrabold text-xl md:text-3xl">
                 Avez-vous des questions ?
                 <p className="hidden md:block text-base">
@@ -24,14 +22,11 @@ export const Footer = () => {
                 </p>
               </span>
             </div>
-            <div className="col-span-2 md:col-span-2">
-              <button className="md:hidden bg-sky-600 text-sm rounded-lg px-2 py-2">
+            <div className="">
+              <a href="/faq" className="bg-sky-600 text-sm md:text-xl md:px-8 md:py-2 rounded-lg px-2 py-2">
                 Faq
-              </button>
+              </a>
 
-              <button className="hidden md:flex bg-sky-600 text-xl px-8 py-2">
-                Faq
-              </button>
             </div>
 
             <div className="hidden md:flex col-span-2"></div>
@@ -255,26 +250,26 @@ export const Footer = () => {
                 CONTACTS
               </h2>
               <p className="mb-6 text-start">
-                <a href="#!" className="text-white text-2xl">
+                <a href="#!" className="text-white text-xl">
                   <FontAwesomeIcon icon={faPhone} />
                   &nbsp;&nbsp; +243 99 994 9712
                 </a>
               </p>
               <p className="mb-6 text-start">
                 <a href="#!" className="text-white text-2xl">
-                  <FontAwesomeIcon icon={faWhatsapp} className="text-2xl" />
+                  <FontAwesomeIcon icon={faWhatsapp} className="text-xl" />
                   &nbsp;&nbsp; +1 (581) 318-0180
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="#!" className="text-white text-2xl">
+                <a href="#!" className="text-white text-xl">
                   <FontAwesomeIcon icon={faEnvelope} />
                   &nbsp;&nbsp; rdcetudes@gmail.com
                 </a>
               </p>
               <p className="mb-6 text-start">
-                <a href="#!" className="text-white text-2xl">
+                <a href="#!" className="text-white text-xl">
                   <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
                   &nbsp;&nbsp; N°283 Tabora Gombe
                 </a>
@@ -287,25 +282,25 @@ export const Footer = () => {
               </h2>
 
               <p className="mb-6 text-start">
-                <a href="/" className="text-white text-2xl">
+                <a href="/" className="text-white text-xl">
                   Acceuil
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="/bourse" className="text-white text-2xl">
+                <a href="/bourse" className="text-white text-xl">
                   Bourses
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="/aboutUs" className="text-white text-2xl">
+                <a href="/aboutUs" className="text-white text-xl">
                   Qui sommes-nous ?
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="/faq" className="text-white text-2xl">
+                <a href="/faq" className="text-white text-xl">
                   Questions populaires
                 </a>
               </p>
@@ -313,30 +308,24 @@ export const Footer = () => {
 
             <div className="py-8">
               <h2 className="mb-4 text-2xl font-bold uppercase text-start">
-                Pages
+               Autres Pages
               </h2>
 
               <p className="mb-6 text-start">
-                <a href="/healthcare" className="text-white text-2xl">
+                <a href="/healthcare" className="text-white text-xl">
                   Examens médicaux
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="/privacy" className="text-white text-2xl">
+                <a href="/privacy" className="text-white text-xl">
                   Politiques de confidentialité
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="/help" className="text-white text-2xl">
+                <a href="/help" className="text-white text-xl">
                   Besoin d'aide ?
-                </a>
-              </p>
-
-              <p className="mb-6 text-start">
-                <a href="/partenership" className="text-white text-2xl">
-                  Nos Partenaires
                 </a>
               </p>
             </div>

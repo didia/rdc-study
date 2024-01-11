@@ -6,6 +6,8 @@ import * as styles from "./styles.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
 import ScholarShipCard from "../../Scholarship/ScholarShipCard";
 import _ from "lodash";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import 'animate.css'
 
 const Bourse = ({ scholarships }) => {
   const LEVEL_ORDERS = [
@@ -145,21 +147,26 @@ const Bourse = ({ scholarships }) => {
                 src="../../../images/Ellipse13.png"
               />
             </div>
-
-            <StaticImage
-              alt="plane"
-              className="absolute right-10 -mt-24"
-              height={500}
-              src="../../../images/Young-Girl-Student-HD-Free-PNG-Image 1.png"
-            />
+            <div className="absolute right-10 -mt-24">
+              <AnimationOnScroll animateIn="animate__bounceInRight">
+                <StaticImage
+                  alt="plane"
+                  height={500}
+                  src="../../../images/Young-Girl-Student-HD-Free-PNG-Image 1.png"
+                />
+              </AnimationOnScroll>
+            </div>
           </div>
         </div>
-        <StaticImage
-          alt="Ellipse 6"
-          height={300}
-          className="mt-10"
-          src="../../../images/Travel-Icon-Transparent-Background.png"
-        />
+        <div className="mt-10">
+          <AnimationOnScroll animateIn="animate__bounceInLeft">
+            <StaticImage
+              alt="Ellipse 6"
+              height={300}
+              src="../../../images/Travel-Icon-Transparent-Background.png"
+            />
+          </AnimationOnScroll>
+        </div>
       </section>
 
       <section className="px-4 mb-10 md:hidden">
@@ -174,16 +181,18 @@ const Bourse = ({ scholarships }) => {
       </section>
 
       <section className="bg-gray-200 py-5 hidden md:block">
-        <div className="grid grid-cols-4 mx-8 py-10 gap-3">
-          {limitedScholarShips.map((scholarship) => {
-            return (
-              <div className="">
-                {" "}
-                <ScholarShipCard scholarship={scholarship} />
-              </div>
-            );
-          })}
-        </div>
+        <AnimationOnScroll animateIn="animate__fadeInUp">
+          <div className="grid grid-cols-4 mx-8 py-10 gap-3">
+            {limitedScholarShips.map((scholarship) => {
+              return (
+                <div className="">
+                  {" "}
+                  <ScholarShipCard scholarship={scholarship} />
+                </div>
+              );
+            })}
+          </div>
+        </AnimationOnScroll>
 
         <a href="#" className="text-sky-600 text-2xl font-bold px-10">
           Voir plus

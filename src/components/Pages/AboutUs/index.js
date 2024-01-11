@@ -6,6 +6,8 @@ import PrimaryBtn from "../../Button/Primary";
 import { StaticImage } from "gatsby-plugin-image";
 import * as styles from "./styles.module.scss";
 import TeamCard from "../../TeamCard";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 
 const AboutUs = ({ teammMembers }) => {
 
@@ -59,10 +61,12 @@ const AboutUs = ({ teammMembers }) => {
       <section className="hidden md:block">
         <div className="grid grid-cols-12 mb-8 mt-4 z-999">
           <div className="col-span-3">
-            <StaticImage
-              alt="plans"
-              src="../../../images/World_Of_Empires.png"
-            />
+            <AnimationOnScroll animateIn="animate__bounceIn">
+              <StaticImage
+                alt="plans"
+                src="../../../images/World_Of_Empires.png"
+              />
+            </AnimationOnScroll>
           </div>
           <div className="col-span-7 z-10 mt-20">
             <div className="text-start ml-20">
@@ -176,12 +180,14 @@ const AboutUs = ({ teammMembers }) => {
           return <TeamCard member={member.frontmatter} />;
         })}
       </div>
-      
-      <div className="hidden md:grid grid-cols-3">
-        {teammMembers.map((member) => {
-          return <TeamCard member={member.frontmatter} />;
-        })}
-      </div>
+
+      <AnimationOnScroll animateIn="animate__fadeInUp">
+        <div className="hidden md:grid grid-cols-3">
+          {teammMembers.map((member) => {
+            return <TeamCard member={member.frontmatter} />;
+          })}
+        </div>
+      </AnimationOnScroll>
     </Layout>
   );
 };

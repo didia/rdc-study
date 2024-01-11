@@ -7,6 +7,8 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import img_overlay from "../../../images/Ellipse9.png";
 import * as styles from "./style.module.scss";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 
 const Contact = () => {
     return (
@@ -52,10 +54,12 @@ const Contact = () => {
         <section className="hidden md:block">
           <div className="grid grid-cols-12 mb-8 mt-4 z-999">
             <div className="col-span-3">
-              <StaticImage
-                alt="plans"
-                src="../../../images/Earth-Travel-World-Transparent-PNG.png"
-              />
+              <AnimationOnScroll animateIn="animate__bounceIn">
+                <StaticImage
+                  alt="plans"
+                  src="../../../images/Earth-Travel-World-Transparent-PNG.png"
+                />
+              </AnimationOnScroll>
             </div>
             <div className="col-span-7 z-10 mt-10">
               <StaticImage

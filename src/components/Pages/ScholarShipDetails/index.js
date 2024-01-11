@@ -6,6 +6,8 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faGlobe, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import ScholarShipCard from "../../Scholarship/ScholarShipCard";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 
 const ScholarShipDetails = ({ bourse, content, otherScholarShips }) => {
   const image = getImage(bourse.thumbnail);
@@ -55,7 +57,7 @@ const ScholarShipDetails = ({ bourse, content, otherScholarShips }) => {
             {bourse.title}
           </p>
           <p className="py-3 text-xl">{bourse.excerpt}</p>
-          <div className="grid grid-cols-3">
+          <div className="flex justify-around">
             <div className="text-xl">
               {" "}
               <FontAwesomeIcon icon={faGlobe} /> Canada
@@ -99,17 +101,18 @@ const ScholarShipDetails = ({ bourse, content, otherScholarShips }) => {
           Autres Bourses
         </div>
         <div className="h-20 border-b-2 border-sky-600"></div>
-        <div className="grid grid-cols-3 mt-10">
-          {otherScholarShips.map((otherScholarShip) => {
-            return (
-              <div className="mb-10">
-                <ScholarShipCard scholarship={otherScholarShip} />
-              </div>
-            );
-          })}
-        </div>
+        <AnimationOnScroll animateIn="animate__fadeInUp">
+          <div className="grid grid-cols-4 gap-5 mt-10">
+            {otherScholarShips.map((otherScholarShip) => {
+              return (
+                <div className="mb-10">
+                  <ScholarShipCard scholarship={otherScholarShip} />
+                </div>
+              );
+            })}
+          </div>
+        </AnimationOnScroll>
       </section>
-
     </Layout>
   );
 };

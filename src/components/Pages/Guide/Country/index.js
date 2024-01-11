@@ -4,6 +4,8 @@ import * as styles from "./styles.module.scss";
 import { StaticImage, getImage, GatsbyImage } from "gatsby-plugin-image";
 import HtmlContent from "../../../HtmlContent";
 import PrimaryBtn from "../../../Button/Primary";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 
 const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
   const image = getImage(guide.flag);
@@ -158,52 +160,54 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
           Guides reliés
         </div>
         <div className="h-20 border-b-2 border-sky-600"></div>
-        <div className="grid grid-cols-3 mt-5">
-          {relatedGuides.map((relatedGuide) => {
-            return (
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href={`/${relatedGuide.slug}`}>
-                  <GatsbyImage
-                    class="rounded-t-lg h-72"
-                    image={getImage(relatedGuide.thumbnail)}
-                    alt="flag"
-                  />
-                </a>
-                <div class="p-5">
+        <AnimationOnScroll animateIn="animate__fadeInUp">
+          <div className="grid grid-cols-3 mt-5">
+            {relatedGuides.map((relatedGuide) => {
+              return (
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                   <a href={`/${relatedGuide.slug}`}>
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      {relatedGuide.title}
-                    </h5>
+                    <GatsbyImage
+                      class="rounded-t-lg h-72"
+                      image={getImage(relatedGuide.thumbnail)}
+                      alt="flag"
+                    />
                   </a>
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    {relatedGuide.excerpt}
-                  </p>
-                  <a
-                    href={`/${relatedGuide.slug}`}
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  >
-                    Lire le guide
-                    <svg
-                      class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 14 10"
+                  <div class="p-5">
+                    <a href={`/${relatedGuide.slug}`}>
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        {relatedGuide.title}
+                      </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      {relatedGuide.excerpt}
+                    </p>
+                    <a
+                      href={`/${relatedGuide.slug}`}
+                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M1 5h12m0 0L9 1m4 4L9 9"
-                      />
-                    </svg>
-                  </a>
+                      Lire le guide
+                      <svg
+                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        </AnimationOnScroll>
       </section>
 
       <section className="mx-6 md:hidden">
@@ -242,56 +246,58 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
       </section>
 
       <section className="mx-6 hidden md:block">
-        <div className="text-sky-600 text-xl font-black absolute mt-10 uppercase">
+        <div className="text-sky-600 text-xl font-black absolute mt-20 uppercase">
           Autres guides qui pourraient vous intéresser
         </div>
-        <div className="h-20 border-b-2 py-12 border-sky-600"></div>
-        <div className="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-3 gap-3 mt-5">
-          {otherGuides.map((otherGuide) => {
-            return (
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow mb-7">
-                <a href={`/${otherGuide.slug}`}>
-                  <GatsbyImage
-                    class="rounded-t-lg h-72"
-                    image={getImage(otherGuide.thumbnail)}
-                    alt="flag"
-                  />
-                </a>
-                <div class="p-5">
+        <div className="h-20 border-b-2 py-16 border-sky-600"></div>
+        <AnimationOnScroll animateIn="animate__fadeInUp">
+          <div className="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-3 gap-3 mt-5">
+            {otherGuides.map((otherGuide) => {
+              return (
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow mb-7">
                   <a href={`/${otherGuide.slug}`}>
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      {otherGuide.title}
-                    </h5>
+                    <GatsbyImage
+                      class="rounded-t-lg h-72"
+                      image={getImage(otherGuide.thumbnail)}
+                      alt="flag"
+                    />
                   </a>
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    {otherGuide.excerpt}
-                  </p>
-                  <a
-                    href={`/${otherGuide.slug}`}
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-600 rounded-lg hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  >
-                    Lire le guide
-                    <svg
-                      class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 14 10"
+                  <div class="p-5">
+                    <a href={`/${otherGuide.slug}`}>
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        {otherGuide.title}
+                      </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      {otherGuide.excerpt}
+                    </p>
+                    <a
+                      href={`/${otherGuide.slug}`}
+                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-600 rounded-lg hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M1 5h12m0 0L9 1m4 4L9 9"
-                      />
-                    </svg>
-                  </a>
+                      Lire le guide
+                      <svg
+                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        </AnimationOnScroll>
       </section>
     </Layout>
   );

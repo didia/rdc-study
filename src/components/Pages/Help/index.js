@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../../Layout";
 import * as styles from "./styles.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 
 const Help = () => {
   return (
@@ -105,11 +107,13 @@ const Help = () => {
         <div className="grid grid-cols-12 mt-60">
           <div className="col-span-5">
             <div className={styles.ellipse__first}>
-              <StaticImage
-                alt="tourist"
-                height={450}
-                src="../../../images/Free-Photo-Tourist-runningfast.png"
-              />
+              <AnimationOnScroll animateIn="animate__bounceInLeft">
+                <StaticImage
+                  alt="tourist"
+                  height={450}
+                  src="../../../images/Free-Photo-Tourist-runningfast.png"
+                />
+              </AnimationOnScroll>
             </div>
             <div className={styles.ellipse__second}>
               <StaticImage

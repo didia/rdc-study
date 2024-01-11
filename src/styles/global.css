@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'monserrat';
+    src: local('monserrat'), url(../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+}
