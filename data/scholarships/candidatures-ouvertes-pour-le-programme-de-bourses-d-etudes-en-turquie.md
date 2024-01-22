@@ -34,7 +34,7 @@ targetCountries:
 
 * Vous devez avoir une moyenne académique au dessus du minimum attendu: **70 %** pour la licence, **75 %** pour le master et le doctorat;
 * Pour les étudiants en sciences de la santé, le minimum requis est de **90 %;**
-* Vous devez avoir moins de **21 ans** pour la licence, moins de **30 an**s pour le master et moins de **35 ans** pour le doctorat;
+* Vous devez avoir moins de **21 ans** pour la licence, moins de **30 an**s pour le master et moins de **35 ans** pour le doctorat et moins de 50 ans pour la Recherche;
 * Cette bourse est ouverte aux citoyens de tous les pays du monde exceptés ceux qui ont la nationalité turque.
 
 ## Comment postuler ?
