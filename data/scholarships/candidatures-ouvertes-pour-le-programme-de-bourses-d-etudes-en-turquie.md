@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses d’études du gouvernement de la République de Turquie.
-deadline: 2023-02-20T21:59:34.114Z
+deadline: 2024-02-20T21:59:34.114Z
 excerpt: La Turquie ouvre les portes de ses universités aux étudiants
   internationaux à travers le programme des bourses turques qui permet d’étudier
   gratuitement dans les meilleurs universités de la Turquie.
@@ -14,7 +14,7 @@ tags:
   - kinshasa
   - congo
 thumbnail: /images/uploads/bourses-turquie-2.png
-startDate: 2023-01-10T10:50:47.201Z
+startDate: 2024-01-10T10:50:47.201Z
 levels:
   - all
 targetCountries:
@@ -34,7 +34,7 @@ targetCountries:
 
 * Vous devez avoir une moyenne académique au dessus du minimum attendu: **70 %** pour la licence, **75 %** pour le master et le doctorat;
 * Pour les étudiants en sciences de la santé, le minimum requis est de **90 %;**
-* Vous devez avoir moins de **21 ans** pour la licence, moins de **30 an**s pour le master et moins de **35 ans** pour le doctorat;
+* Vous devez avoir moins de **21 ans** pour la licence, moins de **30 an**s pour le master et moins de **35 ans** pour le doctorat et moins de 50 ans pour la Recherche;
 * Cette bourse est ouverte aux citoyens de tous les pays du monde exceptés ceux qui ont la nationalité turque.
 
 ## Comment postuler ?
