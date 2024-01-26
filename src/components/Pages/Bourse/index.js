@@ -27,11 +27,20 @@ const Bourse = ({ scholarships }) => {
       <section className="md:hidden">
         <div className="flex justify-start w-full z-5 absolute">
           <div className="text-start mx-10 z-10">
-            <span className={styles.bourse__title}>Bourses d'études</span>{" "}
+            <span
+              className={
+                styles.bourse__title + " font-['monserrat-bold'] uppercase"
+              }
+            >
+              Bourses d'études
+            </span>{" "}
             <p>
-              <span className="text-md">
-                Voici les offres de bourses en cours trouvées pour vous avec ❤️
-                par l'équipe RDC Etudes
+              <span className="text-md font-['roboto']">
+                Chez RDC Etudes nous n'offrons malheuresement pas des bourses,
+                nous pouvons cependant vous assister à postuler pour la bourse
+                de votre choix sans pour autant garantir l'obtention de
+                celle-ci. Vous trouverez toutes les offres des bourses dont nous
+                avons connaissance sur notre site web rdcetudes.com/bourses
               </span>
               <br />
               <br />
@@ -40,6 +49,7 @@ const Bourse = ({ scholarships }) => {
             </p>
           </div>
         </div>
+
         <div className="w-full h-full mt-10">
           <div style={{ marginTop: "20px" }}>
             <div className={styles.ellipse__first}>
@@ -78,13 +88,20 @@ const Bourse = ({ scholarships }) => {
           </div>
 
           <div className={styles.bourse__img_container}>
-            <StaticImage
-              alt="Ellipse"
-              height={130}
-              src="../../../images/Young-Girl-Student-HD.png"
-            />
+            <AnimationOnScroll animateIn="animate__bounceInRight" animateOnce>
+              <StaticImage
+                alt="Ellipse"
+                height={130}
+                src="../../../images/Young-Girl-Student-HD.png"
+              />
+            </AnimationOnScroll>
           </div>
         </div>
+
+        <div className="text-sky-600 text-xl mx-10 text-center">
+          Pour quelle bourse souhaitez-vous être assisté (e) ?
+        </div>
+
       </section>
 
       <section className="hidden md:block">
@@ -120,8 +137,11 @@ const Bourse = ({ scholarships }) => {
                 Bourses d'études
               </p>
               <p className="py-4 text-lg mr-[35rem]">
-                Voici les offres de bourses en cours trouvées pour vous avec ❤️
-                par l'équipe RDC Etudes.
+                Chez RDC Etudes nous n'offrons malheuresement pas des bourses,
+                nous pouvons cependant vous assister à postuler pour la bourse
+                de votre choix sans pour autant garantir l'obtention de
+                celle-ci. Vous trouverez toutes les offres des bourses dont nous
+                avons connaissance sur notre site web rdcetudes.com/bourses
                 <br />
                 Lorem ipsum dolor sit amet consectetur. Adipiscing habitant
                 consequat dolor dolor ornare eget. Non orci non urna scelerisque
@@ -148,7 +168,7 @@ const Bourse = ({ scholarships }) => {
               />
             </div>
             <div className="absolute right-10 -mt-24">
-              <AnimationOnScroll animateIn="animate__bounceInRight">
+              <AnimationOnScroll animateIn="animate__bounceInRight" animateOnce>
                 <StaticImage
                   alt="plane"
                   height={500}
@@ -159,7 +179,7 @@ const Bourse = ({ scholarships }) => {
           </div>
         </div>
         <div className="mt-10">
-          <AnimationOnScroll animateIn="animate__bounceInLeft">
+          <AnimationOnScroll animateIn="animate__bounceInLeft" animateOnce>
             <StaticImage
               alt="Ellipse 6"
               height={300}
@@ -169,16 +189,18 @@ const Bourse = ({ scholarships }) => {
         </div>
       </section>
 
-      <section className="px-4 mb-10 md:hidden">
-        {scholarships.map((scholarship) => {
-          return (
-            <div className="py-3">
-              {" "}
-              <ScholarShipCard scholarship={scholarship} />
-            </div>
-          );
-        })}
-      </section>
+      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
+        <section className="px-4 mb-10 md:hidden">
+          {scholarships.map((scholarship) => {
+            return (
+              <div className="py-3 mx-4">
+                {" "}
+                <ScholarShipCard scholarship={scholarship} />
+              </div>
+            );
+          })}
+        </section>
+      </AnimationOnScroll>
 
       <section className="bg-gray-200 py-5 hidden md:block">
         <AnimationOnScroll animateIn="animate__fadeInUp">

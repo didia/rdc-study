@@ -37,12 +37,12 @@ const ScholarShipCard = ({ scholarship }) => {
       )}
     >
       <a href={`/${scholarshipItem.slug}`}>
-        <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+        <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white font-['roboto-bold']">
           {scholarshipItem.title}
         </h5>
       </a>
 
-      <p className="font-normal text-gray-700 dark:text-gray-400">
+      <p className="font-normal text-gray-700 dark:text-gray-400 font-['roboto']">
         {scholarshipItem.excerpt}
       </p>
 

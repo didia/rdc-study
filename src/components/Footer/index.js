@@ -42,7 +42,7 @@ export const Footer = () => {
                 <StaticImage alt="logo" src="../../images/Logo_white.png" />
               </div>
               <p className="mx-10 font-['roboto-bold']">
-                Réussir vous apporte toutes les nouveautés sur les bourses et
+                RDC ETUDES vous apporte toutes les nouveautés sur les bourses et
                 l’éducation de qualité directement dans votre boîte email.
               </p>
             </div>
@@ -75,7 +75,8 @@ export const Footer = () => {
               <p className="mb-4">
                 <a href="#!" className="text-white text-xl font-['roboto']">
                   <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
-                  &nbsp;&nbsp; N°283 Tabora Gombe
+                  &nbsp;&nbsp; Local 1m3 de la nouvelle galerie présidentielle,
+                  Kinshasa, Gombe
                 </a>
               </p>
             </div>
@@ -276,7 +277,8 @@ export const Footer = () => {
               <p className="mb-6 text-start">
                 <a href="#!" className="text-white text-xl">
                   <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
-                  &nbsp;&nbsp; N°283 Tabora Gombe
+                  &nbsp;&nbsp; Local 1m3 de la nouvelle galerie présidentielle,
+                  Kinshasa, Gombe
                 </a>
               </p>
             </div>

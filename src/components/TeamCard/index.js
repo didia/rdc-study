@@ -10,7 +10,11 @@ const TeamCard = ({ member}) => {
             <div className="flex flex-wrap justify-center">
               <div className="flex justify-center w-full">
                 <div className="relative">
-                  <GatsbyImage objectFit="cover" image={image} className="h-36 w-36 border-white rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
+                  <GatsbyImage
+                    objectFit="cover"
+                    image={image}
+                    className="h-36 w-36 border-white rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]"
+                  />
                 </div>
               </div>
             </div>
@@ -77,12 +81,11 @@ const TeamCard = ({ member}) => {
                         <path d="M23.4 44.59h-4.75a12.76 12.76 0 00-9.73 2.19 9.44 9.44 0 00-2.35 7.12V131a9.08 9.08 0 002.3 7 9.24 9.24 0 006.82 2c2.22 0 4.15-.21 8.24-.06a12 12 0 009.25-2 9.1 9.1 0 002.29-7V53.9a9.44 9.44 0 00-2.34-7.12 12.68 12.68 0 00-9.73-2.19zM21 0A16.19 16.19 0 005.09 15.6 16.52 16.52 0 0021 31.86 16.12 16.12 0 0037 15.6 16.18 16.18 0 0021 0zM99.74 43.63a31.09 31.09 0 00-20.93 6.3A7.25 7.25 0 0077 46.34a6.08 6.08 0 00-4.52-1.78 119.08 119.08 0 00-15 .3c-4.16.84-6.18 3.79-6.18 9V131a9.14 9.14 0 002.28 7 12.06 12.06 0 009.26 2c4.47-.17 5.74.06 8.22.06a9.26 9.26 0 006.83-2 9.12 9.12 0 002.3-7V89.88A12.48 12.48 0 0192.93 76 12.44 12.44 0 01106 89.88V131a9.1 9.1 0 002.29 7 12 12 0 009.24 2c1.83-.07 4-.07 5.8 0a12.09 12.09 0 009.26-2 9.14 9.14 0 002.28-7V78.32a33.07 33.07 0 00-35.13-34.69z"></path>
                       </svg>
                     </a>
-
                   </div>
                 </div>
               </div>
             </div>
-            <div className="pt-3 mt-3 text-center border-t border-gray-200 dark:border-gray-700/50">
+            <div className="md:h-[350px] pt-3 mt-3 text-center border-t border-gray-200 dark:border-gray-700/50">
               <div className="flex flex-wrap justify-center">
                 <div className="w-full px-4">
                   <p className="font-light leading-relaxed text-gray-600 dark:text-gray-400">
@@ -91,6 +94,7 @@ const TeamCard = ({ member}) => {
                 </div>
               </div>
             </div>
+
             <div className="relative h-6 overflow-hidden translate-y-6 rounded-b-xl">
               <div className="absolute flex -space-x-12 rounded-b-2xl">
                 <div className="w-36 h-8 transition-colors duration-200 delay-75 transform skew-x-[35deg] bg-sky-400/90 group-hover:bg-sky-600/90 z-10"></div>

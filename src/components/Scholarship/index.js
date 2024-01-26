@@ -26,13 +26,16 @@ const LEVEL_ORDERS = [
   return (
     <>
       <section className="mb-5">
-        <div className="text-center mx-10 mb-3 md:hidden">
+        <div className="text-center mx-3 mb-3 md:hidden">
           <span className="text-sky-600 text-2xl font-black font-['monserrat-bold']">
             Bourses d'études
           </span>{" "}
           <p className="font-['roboto']">
-            Découvrez nos meilleurs programmes de bourse qui vous assure un
-            voyage réussi
+            Chez RDC ÉTUDES nous n’offrons malheureusement pas des bourses nous
+            pouvons cependant vous assister à postuler pour la bourse de votre
+            choix sans pour autant garantir l’obtention de celle-ci. Vous
+            trouverez toutes les offres des bourses dont nous avons connaissance
+            sur notre <a href="/bourse" className='text-yellow-600'>site web</a>.
           </p>
         </div>
 

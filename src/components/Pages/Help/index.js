@@ -145,9 +145,10 @@ const Help = () => {
         </div>
 
         <div className="py-10 mx-60 text-center text-2xl">
-          L'accaompagnement RDC ETUDES consiste à vous orienter dans votre
-          projet d'études du choix de l'université jusqu'à l'obtention de votre
-          visa.
+          Nous savons comment l'achat du billet peut être un casse-tête pour
+          vous ! Trouvez le bon itinéraire qui correspond à vos besoins et vos
+          moyens n'est toujours pas évident ! Procurez-vous un billet à un prix
+          imbattable !
         </div>
 
         <div className="border rounded-lg px-10 mx-72 py-7 shadow-md">

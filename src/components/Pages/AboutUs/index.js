@@ -27,8 +27,10 @@ const AboutUs = ({ teammMembers }) => {
               <span className={styles.about__title}>Pourquoi RDC-Etudes ?</span>{" "}
               <p>
                 <span className={styles.about__description}>
-                  Nous voulons que tout le monde ait facilement accès à une
-                  éducation de qualité
+                  Nous réalisons cette mission chaque jour en guidant et
+                  soutenant les étudiants dans la réalisation de leurs projets
+                  d'études tout en les orientant sur le plan académique et
+                  professionnel
                 </span>
                 <br />
                 <br />
@@ -61,7 +63,7 @@ const AboutUs = ({ teammMembers }) => {
       <section className="hidden md:block">
         <div className="grid grid-cols-12 mb-8 mt-4 z-999">
           <div className="col-span-3">
-            <AnimationOnScroll animateIn="animate__bounceIn">
+            <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
               <StaticImage
                 alt="plans"
                 src="../../../images/World_Of_Empires.png"
@@ -75,8 +77,10 @@ const AboutUs = ({ teammMembers }) => {
               </span>{" "}
               <p className="py-5">
                 <span className="text-2xl">
-                  Nous voulons que tout le monde ait facilement accès à une
-                  éducation de qualité
+                  Nous réalisons cette mission chaque jour en guidant et
+                  soutenant les étudiants dans la réalisation de leurs projets
+                  d'études tout en les orientant sur le plan académique et
+                  professionnel
                 </span>
                 <br />
                 <br />
@@ -181,8 +185,8 @@ const AboutUs = ({ teammMembers }) => {
         })}
       </div>
 
-      <AnimationOnScroll animateIn="animate__fadeInUp">
-        <div className="hidden md:grid grid-cols-3">
+      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
+        <div className="hidden md:grid grid-cols-4 mx-10">
           {teammMembers.map((member) => {
             return <TeamCard member={member.frontmatter} />;
           })}

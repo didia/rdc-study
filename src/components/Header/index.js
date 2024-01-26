@@ -133,7 +133,7 @@ const Header = () => {
             <ul className="w-full">
               <NavLink title={"acceuil"} url={"/"} />
               <NavLink title={"bourses d'études"} url={"/bourse"} />
-              <NavLink title={"examens médicaux"} url={"/healthcare"} />
+              {/* <NavLink title={"examens médicaux"} url={"/healthcare"} /> */}
               <NavLink
                 title={"Politique de Confidentialité"}
                 url={"/privacy"}
