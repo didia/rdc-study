@@ -18,7 +18,7 @@ const NewsCard = ({ ItemData }) => {
             />
           </a>
         </div>
-        <div className="col-span-7 -mt-2 md:-ml-[7rem]">
+        <div className="col-span-7 -mt-2 md:-ml-[13rem]">
           <a
             href={`/${ItemData.slug}`}
             className="text-sky-600 text-lg md:text-2xl font-extrabold font-['monserrat-bold']"
@@ -32,7 +32,7 @@ const NewsCard = ({ ItemData }) => {
             {substring(ItemData.excerpt)}
           </p>
 
-          <p className="hidden md:flex text-sm md:text-xl mr-7 text-justify">
+          <p className="hidden md:flex text-lg md:text-xl mr-28 text-justify font-['roboto']">
             {ItemData.excerpt}
           </p>
         </div>

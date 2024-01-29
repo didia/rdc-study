@@ -74,7 +74,7 @@ const StudyCountry = ({ guideCountries }) => {
                   return (
                     <div className="">
                       <Card
-                        className="max-w-sm mx-4"
+                        className="max-w-sm mx-4 h-[420px]"
                         imgAlt="Meaningful alt text for an image that is not purely decorative"
                         renderImage={() => (
                           <GatsbyImage
@@ -84,13 +84,13 @@ const StudyCountry = ({ guideCountries }) => {
                           />
                         )}
                       >
-                        <a href={ `/${guideCountry.frontmatter.slug}` }>
-                          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href={`/${guideCountry.frontmatter.slug}`}>
+                          <h5 className="text-2xl font-['roboto'] font-bold tracking-tight text-gray-900 dark:text-white">
                             {guideCountry.frontmatter.name}
                           </h5>
                         </a>
-                        <p className="font-normal text-gray-700 dark:text-gray-400 text-sm">
-                          {substring(guideCountry.frontmatter.excerpt)}
+                        <p className="font-['roboto-bold'] font-normal text-gray-700 dark:text-gray-400 text-sm">
+                          {guideCountry.frontmatter.excerpt}
                         </p>
                       </Card>
                     </div>

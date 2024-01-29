@@ -44,7 +44,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               </div>
               <div>
                 <SecondaryBtn
-                  fontSize={"text-lg"}
+                  fontSize={"text-sm"}
                   text={"Je veux une assistance"}
                 />
               </div>
@@ -136,14 +136,14 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             </div>
 
             <div className="col-span-5">
-              <span className="text-sky-600 text-2xl -ml-4 font-black font-['monserrat-bold']">
+              <span className="text-sky-600 text-2xl font-black font-['monserrat-bold']">
                 Où souhaitez-vous étudier ?
               </span>{" "}
-              <p className="font-['roboto'] mx-1 -ml-4 text-lg">
+              <p className="font-['roboto'] mx-1 text-lg">
                 Nous vous accompagnons à réaliser votre projet d'études dans les
                 meilleurs universités du monde. L'accompgnement RDC Etudes
                 consiste à vous orienter dans votre projet d'études tout en les
-                orientant sur le plan académique et professionel
+                orientant sur le plan académique et professionel.
               </p>
             </div>
           </div>
@@ -202,13 +202,11 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               <span className="text-sky-600 font-black text-5xl">
                 Où souhaitez-vous étudier ?
               </span>{" "}
-              <p className="text-2xl py-6">
-                Choisissez le pays de votre destination pour votre projet de
-                voyage.
-                <p className="text-2xl py-2">
-                  RDC Etudes vous oriente dans votre projet d'études du choix de
-                  l'université jusqu'à l'obtention de votre visa.
-                </p>
+              <p className="text-2xl py-6 font-['roboto']">
+                Nous vous accompagnons à réaliser votre projet d'études dans les
+                meilleurs universités du monde. L'accompgnement RDC Etudes
+                consiste à vous orienter dans votre projet d'études tout en les
+                orientant sur le plan académique et professionel.
               </p>
               <StaticImage
                 className="h-32 w-32 float-right"
@@ -235,12 +233,18 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </div>
         </section>
       </AnimationOnScroll>
-      <p className="text-2xl font-black mx-10 text-sky-600 text-center py-4">
+      <p className="text-2xl md:text-4xl font-black mx-10 text-sky-600 text-center py-4">
         Nous vous emmenons partout au monde
+      </p>
+
+      <p className="md:mx-28 mx-10 text-center md:text-2xl text-xl font-['roboto'] mb-10">
+        Nous réalisons cette mission chaque jour en guidant et soutenant les
+        étudiants dans la réalisation de leurs projets d'études tout en les
+        orientant sur le plan académique et professionnel.
       </p>
       <StudyCountry guideCountries={guideCountries} />
 
-      <div className="hidden md:grid md:grid-cols-12 mb-10">
+      <div className="hidden md:grid md:grid-cols-12 mb-20">
         <div className="col-span-5 flex w-full h-full mt-10">
           <div className="-mt-28">
             <div className={style.ellipse__second}>
@@ -273,21 +277,15 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
         <div className="col-span-7 flex">
           <div>
-            <p className="text-6xl font-black text-sky-600">Bourses d'études</p>
-            <p className="py-4 text-lg mr-[15rem]">
-              Voici les offres de bourses en cours trouvées pour vous avec ❤️
-              par l'équipe RDC Etudes.
-              <br />
-              Lorem ipsum dolor sit amet consectetur. Adipiscing habitant
-              consequat dolor dolor ornare eget. Non orci non urna scelerisque
-              non. Ridiculus diam tristique cursus vel. Platea facilisis eu urna
-              etiam. Nec mattis sed sed odio mattis. Sit vehicula molestie a
-              fringilla. In vestibulum enim id turpis feugiat at. In faucibus
-              duis odio aliquam. Orci condimentum venenatis cras vitae leo orci.
-              <br />
-              <br />
-              In vestibulum enim id turpis feugiat at. In faucibus duis odio
-              aliquam. Orci condimentum venenatis cras vitae leo orci.
+            <p className="text-5xl font-black text-sky-600 font-['monserrat-bold']">
+              Bourses d'études
+            </p>
+            <p className="py-4 text-2xl mr-[15rem] font-['roboto']">
+              Chez RDC ÉTUDES nous n’offrons malheureusement pas des bourses
+              nous pouvons cependant vous assister à postuler pour la bourse de
+              votre choix sans pour autant garantir l’obtention de celle-ci.
+              Vous trouverez toutes les offres des bourses dont nous avons
+              connaissance sur notre site web rdcetudes.com/bourses.
             </p>
           </div>
           <div className=" mt-40">
@@ -350,7 +348,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
       <p className="text-center mb-10 md:hidden">
         <SecondaryBtn
-          href={"/bourse"}
+          link={"/bourse"}
           fontSize={"text-sm"}
           text={"Pour quelle bourse souhaitez-vous être assisté ?"}
         >
@@ -468,8 +466,8 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </span>{" "}
         </div>
 
-        <div className="hidden md:grid md:grid-cols-4 gap-4 mx-10">
-          <div className="rounded-2xl px-5 py-7 bg-sky-600">
+        <div className="hidden md:grid md:grid-cols-3 gap-4 mx-10">
+          <div className="rounded-2xl h-[300px] px-5 py-7 bg-sky-600">
             <div className="z-10">
               <FontAwesomeIcon
                 icon={faQuoteLeft}
@@ -478,18 +476,18 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               />
             </div>
             <div className="z-20 -mt-7">
-              <p className="text-center text-sm md:text-lg text-white font-['roboto']">
+              <p className="text-center text-sm md:text-xl text-white font-['roboto']">
                 Lorem ispum dolor fortuna simpre cresis, out decresis vita
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
               </p>
-              <p className="text-start text-white mt-4 md:text-lg font-['roboto-bold']">
+              <p className="text-start text-white mt-20 md:text-lg font-['roboto-bold']">
                 Candidat X
               </p>
             </div>
           </div>
 
-          <div className="rounded-2xl px-5 py-7 bg-sky-600">
+          <div className="rounded-2xl h-[300px] px-5 py-7 bg-sky-600">
             <div className="z-10">
               <FontAwesomeIcon
                 icon={faQuoteLeft}
@@ -498,17 +496,17 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               />
             </div>
             <div className="z-20 -mt-7">
-              <p className="text-center text-sm text-white md:text-lg">
+              <p className="text-center text-sm text-white md:text-xl font-['roboto']">
                 Lorem ispum dolor fortuna simpre cresis, out decresis vita
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
               </p>
-              <p className="text-start text-white mt-4 md:text-lg">
+              <p className="text-start text-white mt-20 md:text-lg">
                 Candidat X
               </p>
             </div>
           </div>
-          <div className="rounded-2xl px-5 py-7 bg-sky-600">
+          <div className="rounded-2xl h-[300px] px-5 py-7 bg-sky-600">
             <div className="z-10">
               <FontAwesomeIcon
                 icon={faQuoteLeft}
@@ -517,31 +515,12 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               />
             </div>
             <div className="z-20 -mt-7">
-              <p className="text-center text-sm text-white md:text-lg">
+              <p className="text-center text-sm text-white md:text-xl font-['roboto']">
                 Lorem ispum dolor fortuna simpre cresis, out decresis vita
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
               </p>
-              <p className="text-start text-white mt-4 md:text-lg">
-                Candidat X
-              </p>
-            </div>
-          </div>
-          <div className="rounded-2xl px-5 py-7 bg-sky-600">
-            <div className="z-10">
-              <FontAwesomeIcon
-                icon={faQuoteLeft}
-                color="white"
-                className="text-6xl opacity-25"
-              />
-            </div>
-            <div className="z-20 -mt-7">
-              <p className="text-center text-sm text-white md:text-lg">
-                Lorem ispum dolor fortuna simpre cresis, out decresis vita
-                detastabilis Lorem ispum dolor fortuna simpre cresis, out
-                decresis
-              </p>
-              <p className="text-start text-white mt-4 md:text-lg">
+              <p className="text-start text-white mt-20 md:text-lg">
                 Candidat X
               </p>
             </div>
