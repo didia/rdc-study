@@ -27,9 +27,14 @@ const Contact = () => {
                   Contactez RDC Etudes
                 </span>{" "}
                 <p>
-                  <span className={styles.about__description}>
-                    Lorem ispum dolor fortuna simpre cresis, out decresis vita
-                    Lorem
+                  <span
+                    className={`${styles.about__description} font-['roboto']`}
+                  >
+                    RDC ETUDES vous offre des services de consultation qui vous
+                    permet de discuter avec un mentor sur l'état de votre projet
+                    d'études. Vous êtes bloqué(e)? Vous ne savez par où
+                    commencer ? Nos mentors seront ravis de vous aider a y voir
+                    un peu plus clair
                   </span>
                   <StaticImage alt="phone" src="../../../images/phone.png" />
                 </p>
@@ -73,11 +78,12 @@ const Contact = () => {
                   Contactez RDC Etudes
                 </span>{" "}
                 <p className="mt-5">
-                  <span className="text-xl">
-                    Lorem ipsum dolor sit amet consectetur. Risus id pretium
-                    massa pharetra ullamcorper. Faucibus fusce eleifend iaculis
-                    lobortis suspendisse tortor faucibus nibh. Id ut ipsum vel
-                    porttitor
+                  <span className="text-2xl font-['roboto']">
+                    RDC ETUDES vous offre des services de consultation qui vous
+                    permet de discuter avec un mentor sur l'état de votre projet
+                    d'études. Vous êtes bloqué(e)? Vous ne savez par où
+                    commencer ? Nos mentors seront ravis de vous aider a y voir
+                    un peu plus clair
                   </span>
                 </p>
               </div>

@@ -148,7 +148,7 @@ const PrivacyPolicy = () => {
         </div>
       </section>
 
-      <section className="mx-8 mt-12 mb-10 hidden md:block">
+      <section className="mx-20 mt-12 mb-10 hidden md:block">
         <div>
           <span className="text-3xl font-bold">
             La politique de confidentialité de RDC Etudes.

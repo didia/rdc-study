@@ -13,7 +13,7 @@ export const Footer = () => {
     <div>
       <footer className="bg-sky-600 text-center text-white lg:text-left">
         <div className="bg-white flex items-center justify-center border-t-2 border-sky-600 p-3 lg:justify-between">
-          <div className="flex justify-between md:w-full">
+          <div className="flex justify-between md:w-full md:text-center md:ml-60">
             <div className="">
               <span className="text-red-900 font-extrabold text-xl md:text-3xl font-['roboto-bold']">
                 Avez-vous des questions ?

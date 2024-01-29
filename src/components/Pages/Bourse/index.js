@@ -101,7 +101,6 @@ const Bourse = ({ scholarships }) => {
         <div className="text-sky-600 text-xl mx-10 text-center">
           Pour quelle bourse souhaitez-vous être assisté (e) ?
         </div>
-
       </section>
 
       <section className="hidden md:block">
@@ -136,22 +135,15 @@ const Bourse = ({ scholarships }) => {
               <p className="text-6xl font-black text-sky-600">
                 Bourses d'études
               </p>
-              <p className="py-4 text-lg mr-[35rem]">
+              <p className="py-4 text-xl mr-[35rem] font-['roboto']">
                 Chez RDC Etudes nous n'offrons malheuresement pas des bourses,
                 nous pouvons cependant vous assister à postuler pour la bourse
                 de votre choix sans pour autant garantir l'obtention de
                 celle-ci. Vous trouverez toutes les offres des bourses dont nous
-                avons connaissance sur notre site web rdcetudes.com/bourses
-                <br />
-                Lorem ipsum dolor sit amet consectetur. Adipiscing habitant
-                consequat dolor dolor ornare eget. Non orci non urna scelerisque
-                non. Ridiculus diam tristique cursus vel. Platea facilisis eu
-                urna etiam. Nec mattis sed sed odio mattis. Sit vehicula
-                molestie a fringilla. In vestibulum enim id turpis feugiat at.
-                In faucibus duis odio aliquam. Orci condimentum venenatis cras
-                vitae leo orci.
+                avons connaissance sur notre <a href="/bourse" className="text-yellow-600">site web</a>
               </p>
               <PrimaryBtn
+                href={"/help"}
                 text={"Demander une assistance"}
                 fontSize={"text-2xl"}
               />

@@ -134,17 +134,19 @@ const Help = () => {
           </div>
         </div>
 
-        <div className="bg-[#862304] h-80 w-full mt-7 text-center text-white text-xl px-44 py-20">
+        <div className="bg-[#862304] h-80 w-full mt-7 text-center text-white text-2xl font-['roboto'] px-44 py-20">
           Nous n'offrons malheureusement pas des bourses! Nous accompagnons ceux
           qui souhaitent poursuivre leurs études supérieures à l'étranger par
-          leurs propres moyens. Vous trouverez toutes les offres des bourses
-          dont nous avons connaissance sur notre site web rdcetudes.com/bourses
+          leurs propres moyens.
+          <br />
+          Vous trouverez toutes les offres des bourses dont nous avons
+          connaissance sur notre site web rdcetudes.com/bourses
           <p className="mt-2">
             <button className={styles.help__btn}>En savoir plus</button>
           </p>
         </div>
 
-        <div className="py-10 mx-60 text-center text-2xl">
+        <div className="py-10 mx-60 text-center text-2xl font-['roboto']">
           Nous savons comment l'achat du billet peut être un casse-tête pour
           vous ! Trouvez le bon itinéraire qui correspond à vos besoins et vos
           moyens n'est toujours pas évident ! Procurez-vous un billet à un prix
@@ -157,24 +159,25 @@ const Help = () => {
           </p>
 
           <div className="inline-block relative w-full py-5">
-            <select className="block appearance-none w-full h-16 bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline">
-              <option disabled selected hidden className="text-gray-300">
-                Choisissez un pays
-              </option>
-              <option>Canada</option>
-              <option>USA</option>
-              <option></option>
-            </select>
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-              <svg
-                className="fill-current h-4 w-4"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </div>
+            <input
+              type="text"
+              placeholder="Mentionnez le pays"
+              className="mt-5 block h-16 appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
+            />
           </div>
+
+          <p className="uppercase text-center text-xl">
+            Dans quelle ville de ... ?{" "}
+          </p>
+
+          <div className="inline-block relative w-full py-5">
+            <input
+              type="text"
+              placeholder="Précisez la ville"
+              className="mt-5 block h-16 appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+
 
           <p className="uppercase text-center text-lg">
             Avez-vous déjà obtenu votre admission ?{" "}

@@ -5,9 +5,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faLinkedin,
-  faInstagram,
-  faTwitter,
-  faWhatsapp,
+  faXTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
 import NavLink from "./Link";
@@ -62,7 +60,7 @@ const Header = () => {
 
             <div className="hidden md:flex items-center space-x-3 ">
               <a
-                href="#"
+                href="https://www.facebook.com/rdcetudes"
                 className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon
@@ -72,7 +70,7 @@ const Header = () => {
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/company/rdcetudes/"
                 className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon
@@ -82,12 +80,12 @@ const Header = () => {
               </a>
 
               <a
-                href="#"
+                href="https://twitter.com/rdcetudes"
                 className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon
-                  icon={faTwitter}
-                  style={{ fontSize: "35px" }}
+                  icon={faXTwitter}
+                  style={{ fontSize: "30px" }}
                 />
               </a>
             </div>
