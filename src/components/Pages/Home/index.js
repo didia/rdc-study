@@ -21,7 +21,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <div className={"md:hidden " + style.firstSection}>
         <StaticImage
           className={style.firstSection__imgStudent}
-          src="../../../images/equipe-etudes.png"
+          src="../../../images/young-students-studying.jpg"
           alt="Equipe etudes"
         />
         <div className={style.firstSection__inner}>
@@ -36,7 +36,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               <div className="text-3xl text-white font-black uppercase mt-2 mb-4 font-['monserrat-bold']">
                 Rdc etudes
               </div>
-              <div className="text-lg text-white mb-2 font-['roboto-bold']">
+              <div className="text-base text-white mb-7 font-['roboto-bold']">
                 RDC ETUDES est une entreprise axée sur l'éducation qui a pour
                 mission de faciliter l'accès à une éducation de qualité pour les
                 étudiants africains francophones, que ce soit sur le continent
@@ -139,7 +139,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               <span className="text-sky-600 text-2xl font-black font-['monserrat-bold']">
                 Où souhaitez-vous étudier ?
               </span>{" "}
-              <p className="font-['roboto'] mx-1 text-lg">
+              <p className="font-['roboto'] mr-3 text-base">
                 Nous vous accompagnons à réaliser votre projet d'études dans les
                 meilleurs universités du monde. L'accompgnement RDC Etudes
                 consiste à vous orienter dans votre projet d'études tout en les
@@ -161,7 +161,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             <div className="">&nbsp;</div>
             <div className="">
               <StaticImage
-                height={80}
+                height={60}
                 alt="tourist"
                 placeholder="blurred"
                 src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
@@ -237,7 +237,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         Nous vous emmenons partout au monde
       </p>
 
-      <p className="md:mx-28 mx-10 text-center md:text-2xl text-xl font-['roboto'] mb-10">
+      <p className="md:mx-28 mx-6 text-center md:text-2xl text-lg font-['roboto'] mb-10">
         Nous réalisons cette mission chaque jour en guidant et soutenant les
         étudiants dans la réalisation de leurs projets d'études tout en les
         orientant sur le plan académique et professionnel.
@@ -310,11 +310,11 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </div>
       </div>
 
-      <div className="text-center mx-3 mb-7 md:hidden">
+      <div className="text-center ml-auto px-3 mr-auto mb-7 md:hidden">
         <div class="inline-flex rounded-md shadow-sm " role="group">
           <a
             href="/bourse"
-            class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-s-lg hover:bg-sky-600 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
+            class="inline-flex items-center py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-s-lg hover:bg-sky-600 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
           >
             <FontAwesomeIcon
               icon={faGraduationCap}
@@ -324,7 +324,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </a>
           <a
             href="/help"
-            class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-gray-900 hover:bg-sky-600 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
+            class="inline-flex items-center py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-gray-900 hover:bg-sky-600 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
           >
             <FontAwesomeIcon
               icon={faHandshake}
@@ -334,7 +334,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </a>
           <a
             href="/help"
-            class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-e-lg hover:bg-sky-600 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
+            class="inline-flex items-center py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-e-lg hover:bg-sky-600 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
           >
             <FontAwesomeIcon
               icon={faQuestion}
@@ -347,10 +347,13 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <Scholarship scholarships={scholarships} />
 
       <p className="text-center mb-10 md:hidden">
+        <p className="text-lg px-6 py-3">
+          Pour quelle bourse souhaitez-vous être assisté ?
+        </p>
         <SecondaryBtn
           link={"/bourse"}
           fontSize={"text-sm"}
-          text={"Pour quelle bourse souhaitez-vous être assisté ?"}
+          text={"je veux une bourse"}
         >
           <i className="px-2">
             <FontAwesomeIcon icon={faArrowRight} />
@@ -360,8 +363,8 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <section className="mb-5 md:mx-32 md:mt-20">
-          <div className="text-left px-8 mb-5">
-            <span className="text-sky-600 text-xl font-black uppercase md:text-2xl font-['monserrat-bold']">
+          <div className="text-left px-3 md:p-8 mb-5">
+            <span className="text-sky-600 text-lg font-black uppercase md:text-2xl font-['monserrat-bold']">
               Les dernières nouvelles
             </span>{" "}
             <div className="h-4 w-full border-b-2 border-sky-600"></div>

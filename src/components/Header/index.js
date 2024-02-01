@@ -34,11 +34,11 @@ const Header = () => {
           <div className="flex justify-between">
             <div className="flex space-x-20">
               <div>
-                <a href="/" className="flex items-center py-4 px-2">
+                <a href="/" className="flex items-center py-2 px-2">
                   <StaticImage
                     src="../../images/logo.png"
                     alt="Logo"
-                    className="h-14 w-14 mr-2 md:h-20 md:w-20"
+                    className="h-12 w-12 mr-2 md:h-20 md:w-20"
                   />
                 </a>
               </div>
@@ -105,7 +105,7 @@ const Header = () => {
                   />
                 ) : (
                   <svg
-                    className="w-10 h-10 text-cyan-500"
+                    className="w-8 h-8 text-cyan-500"
                     x-show="!showMenu"
                     fill="none"
                     strokeLinecap="round"

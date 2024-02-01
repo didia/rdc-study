@@ -8,6 +8,9 @@ import ScholarShipCard from "../../Scholarship/ScholarShipCard";
 import _ from "lodash";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import 'animate.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGraduationCap, faDollarSign, faEdit, faCalendarDay } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "flowbite-react";
 
 const Bourse = ({ scholarships }) => {
   const LEVEL_ORDERS = [
@@ -140,7 +143,10 @@ const Bourse = ({ scholarships }) => {
                 nous pouvons cependant vous assister à postuler pour la bourse
                 de votre choix sans pour autant garantir l'obtention de
                 celle-ci. Vous trouverez toutes les offres des bourses dont nous
-                avons connaissance sur notre <a href="/bourse" className="text-yellow-600">site web</a>
+                avons connaissance sur notre{" "}
+                <a href="/bourse" className="text-yellow-600">
+                  site web
+                </a>
               </p>
               <PrimaryBtn
                 href={"/help"}
@@ -193,6 +199,64 @@ const Bourse = ({ scholarships }) => {
           })}
         </section>
       </AnimationOnScroll>
+
+      <div className="mb-20 ml-20">
+        <div class="p-2 w-[700px] bg-white border flex border-gray-400 rounded-lg shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
+          <div className="">
+            <h5 class="mb-2 text-2xl font-bold font-['monserrat-bold']">
+              Titre de la bourse
+            </h5>
+            <p class="text-lg font-['roboto-bold']">
+              Stay up to date and move work forward with Flowbite on iOS &
+              Android. Download the app today.
+            </p>
+            <p className="text-yellow-600">West Point, United States</p>
+
+            <div className="py-4">
+              <ul className="ml-5">
+                <li>
+                  <FontAwesomeIcon icon={faGraduationCap} />
+                  &nbsp;&nbsp; Bachelor's{" "}
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faDollarSign} />
+                  &nbsp;&nbsp;&nbsp; Full Funding{" "}
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faEdit} />
+                  &nbsp;&nbsp; All Subjects
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCalendarDay} />
+                  &nbsp;&nbsp; Deadline: January 31, 2024{" "}
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="ml-16">
+            <p className="text-green-800 font-bold font-['roboto']">Aucune date limite</p>
+
+            <div className=" mt-40">
+              <Button href={`/`}>
+                Voir les détails
+                <svg
+                  className="-mr-1 ml-2 h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section className="bg-gray-200 py-5 hidden md:block">
         <AnimationOnScroll animateIn="animate__fadeInUp">
