@@ -22,7 +22,8 @@ const AboutUs = ({ teammMembers }) => {
               height={100}
             />
           </div>
-          <div className="col-span-7 z-10">
+
+          <div className="col-span-8 z-10">
             <div className="text-start ml-4">
               <span className='text-2xl font-bold text-sky-600'>Pourquoi RDC-Etudes ?</span>{" "}
               <p>
@@ -34,20 +35,8 @@ const AboutUs = ({ teammMembers }) => {
                 </span>
                 <br />
                 <br />
-                <SecondaryBtn fontSize={'text-base'} text={"Demander une assistance"} />
+                <SecondaryBtn fontSize={'text-sm'} text={"Demander une assistance"} />
               </p>
-            </div>
-          </div>
-          <div className="col-span-1">
-            <div className={styles.ellipse3}>
-              <StaticImage src="../../../images/Ellipse8.png" alt="Ellipse" />
-            </div>
-            <div className={styles.ellipse4}>
-              <StaticImage
-                alt="plane"
-                height={180}
-                src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
-              />
             </div>
           </div>
 
