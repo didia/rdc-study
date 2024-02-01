@@ -37,18 +37,20 @@ const Bourse = ({ scholarships }) => {
             >
               Bourses d'études
             </span>{" "}
-            <p>
-              <span className="text-md font-['roboto']">
+            <p className="mt-4">
+              <span className="text-base font-['roboto']">
                 Chez RDC Etudes nous n'offrons malheuresement pas des bourses,
                 nous pouvons cependant vous assister à postuler pour la bourse
                 de votre choix sans pour autant garantir l'obtention de
-                celle-ci. Vous trouverez toutes les offres des bourses dont nous
-                avons connaissance sur notre site web rdcetudes.com/bourses
+                celle-ci.
               </span>
               <br />
               <br />
 
-              <SecondaryBtn text={"Demander une assistance"} />
+              <SecondaryBtn
+                fontSize={"text-base"}
+                text={"Demander une assistance"}
+              />
             </p>
           </div>
         </div>
@@ -101,7 +103,7 @@ const Bourse = ({ scholarships }) => {
           </div>
         </div>
 
-        <div className="text-sky-600 text-xl mx-10 text-center">
+        <div className="text-sky-600 text-2xl font-['roboto-bold'] mx-10 mt-7 mb-5 text-center">
           Pour quelle bourse souhaitez-vous être assisté (e) ?
         </div>
       </section>
@@ -187,11 +189,14 @@ const Bourse = ({ scholarships }) => {
         </div>
       </section>
 
+      <section className="md:hidden px-4">
+        
+      </section>
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <section className="px-4 mb-10 md:hidden">
           {scholarships.map((scholarship) => {
             return (
-              <div className="py-3 mx-4">
+              <div className="">
                 {" "}
                 <ScholarShipCard scholarship={scholarship} />
               </div>
@@ -200,20 +205,22 @@ const Bourse = ({ scholarships }) => {
         </section>
       </AnimationOnScroll>
 
-      <div className="mb-20 ml-20">
-        <div class="p-2 w-[700px] bg-white border flex border-gray-400 rounded-lg shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
+      <div className="hidden md:block mb-20 ml-20">
+        <div class="p-2 w-[700px] bg-white border flex border-gray-400 rounded-3xl shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
           <div className="">
-            <h5 class="mb-2 text-2xl font-bold font-['monserrat-bold']">
+            <h5 class="mb-2 text-2xl font-bold font-['roboto-bold'] uppercase">
               Titre de la bourse
             </h5>
-            <p class="text-lg font-['roboto-bold']">
+            <p class="text-base font-['roboto-bold']">
               Stay up to date and move work forward with Flowbite on iOS &
               Android. Download the app today.
             </p>
-            <p className="text-yellow-600">West Point, United States</p>
+            <p className="text-yellow-600 text-base">
+              West Point, United States
+            </p>
 
             <div className="py-4">
-              <ul className="ml-5">
+              <ul className="ml-5 text-base">
                 <li>
                   <FontAwesomeIcon icon={faGraduationCap} />
                   &nbsp;&nbsp; Bachelor's{" "}
@@ -235,24 +242,12 @@ const Bourse = ({ scholarships }) => {
           </div>
 
           <div className="ml-16">
-            <p className="text-green-800 font-bold font-['roboto']">Aucune date limite</p>
+            <p className=" text-red-800 font-bold font-['roboto'] uppercase">
+              Aucune date limite
+            </p>
 
-            <div className=" mt-40">
-              <Button href={`/`}>
-                Voir les détails
-                <svg
-                  className="-mr-1 ml-2 h-4 w-4"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </Button>
+            <div className=" mt-40 uppercase">
+              <Button href={`/`}>Voir détails</Button>
             </div>
           </div>
         </div>

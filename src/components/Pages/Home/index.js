@@ -44,7 +44,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               </div>
               <div>
                 <SecondaryBtn
-                  fontSize={"text-sm"}
+                  fontSize={"text-base"}
                   text={"Je veux une assistance"}
                 />
               </div>
@@ -352,7 +352,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </p>
         <SecondaryBtn
           link={"/bourse"}
-          fontSize={"text-sm"}
+          fontSize={"text-base"}
           text={"je veux une bourse"}
         >
           <i className="px-2">
