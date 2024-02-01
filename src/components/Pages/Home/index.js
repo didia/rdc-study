@@ -110,7 +110,6 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </div>
       </div>
 
-      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <section className="md:hidden mb-2" id="mobileStudycountry">
           <div className="grid grid-cols-4 gap-2">
             <div className="">&nbsp;</div>
@@ -169,8 +168,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             </div>
           </div>
         </section>
-      </AnimationOnScroll>
-
+     
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <section className="hidden md:block" id="studycountry">
           <div className="grid grid-cols-4 gap-2">
