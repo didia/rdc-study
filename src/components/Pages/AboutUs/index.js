@@ -24,9 +24,9 @@ const AboutUs = ({ teammMembers }) => {
           </div>
           <div className="col-span-7 z-10">
             <div className="text-start ml-4">
-              <span className={styles.about__title}>Pourquoi RDC-Etudes ?</span>{" "}
+              <span className='text-2xl font-bold text-sky-600'>Pourquoi RDC-Etudes ?</span>{" "}
               <p>
-                <span className={styles.about__description}>
+                <span className="text-base font-['roboto']">
                   Nous réalisons cette mission chaque jour en guidant et
                   soutenant les étudiants dans la réalisation de leurs projets
                   d'études tout en les orientant sur le plan académique et
@@ -34,7 +34,7 @@ const AboutUs = ({ teammMembers }) => {
                 </span>
                 <br />
                 <br />
-                <SecondaryBtn text={"Demander une assistance"} />
+                <SecondaryBtn fontSize={'text-base'} text={"Demander une assistance"} />
               </p>
             </div>
           </div>
@@ -107,7 +107,7 @@ const AboutUs = ({ teammMembers }) => {
       </section>
 
       <section className="md:hidden">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center mx-8 font-['roboto-bold'] py-3">
           <span
             className={
               "text-center font-extrabold " + styles.about__values_title
