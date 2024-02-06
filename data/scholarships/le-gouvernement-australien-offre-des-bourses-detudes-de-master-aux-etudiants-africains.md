@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Le gouvernement Australien offre des bourses d'études de master aux
   étudiants africains.
 deadline: 2024-04-30T11:23:06.733Z
