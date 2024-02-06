@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Programme de bourses FAO-Gouvernement hongrois 2024-2025
 deadline: 2024-02-29T13:20:25.016Z
 excerpt: L’Organisation des Nations unies pour l’alimentation et l’agriculture
