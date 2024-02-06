@@ -22,7 +22,6 @@ Master en génie horticole – Université hongroise d'agriculture et des scienc
 
 Le programme de bourses est offert exclusivement aux ressortissant des pays suivants : Afghanistan, Albanie, Algérie, Angola, Azerbaïdjan, Arménie, Bangladesh, Biélorussie, Bosnie-Herzégovine, Burkina Faso, Cambodge, Tchad, République démocratique du Congo, Égypte, Éthiopie, Gambie, Géorgie, Ghana, Jordanie, Kazakhstan, Kenya, Kosovo 1 , Kirghizistan, Laos, Liban, Macédoine du Nord, Madagascar, Mali, Myanmar, République de Moldavie, Mongolie, Monténégro, Namibie, Nigéria, Corée du Nord, Palestine, Philippines, République du Cap-Vert, Serbie, Somalie, Soudan du Sud, Soudan, Tadjikistan, Turkménistan, Ouganda, Ukraine, Ouzbékistan, Vietnam, Yémen.
 
-
 Les cours seront offerts à condition que le nombre minimum d’étudiants soit atteint.
 
 La bourse couvrira :
@@ -34,4 +33,25 @@ assurance santé.
 
 ## Quels sont les critères de la bourse ?
 
+Pour postuler vous devez remplir les conditions suivantes : 
+
+* Citoyenneté et résidence de l'un des pays éligibles 
+* Excellents résultats scolaires
+* Maîtrise de l'anglais 
+* Lettre de Motivation
+* Bonne santé
+* Avoir 30 ans
+
 ## Comment postuler ?
+
+Pour postuler a la bourse, vous devez envoyer les documents complets et traduits en anglais via adresse e-mail **REU-Scholarship@fao.org**
+
+1. [Formulaire de candidature dûment complété](https://www.fao.org/docs/reulibraries/default-document-library/2024-applicationform-en.docx?sfvrsn=757c0b59_1)
+2. [](https://www.fao.org/docs/reulibraries/default-document-library/2024-applicationform-en.docx?sfvrsn=757c0b59_1)Un curriculum vitae récent
+3. Une copie du diplôme d'études supérieures/collégiales et du relevé de notes/rapport d'études ou une copie du pièce jointe au diplôme
+4. Une copie du certificat de compétence en anglais
+5. Des copies des pages pertinentes du passeport indiquant la date d'expiration et le numéro du passeport.
+6. Une lettre de recommandation
+7. Déclaration de motivation
+8. Certificat de santé délivré par un médecin
+9. Certificat de bonne conduite délivré par la police locale.
