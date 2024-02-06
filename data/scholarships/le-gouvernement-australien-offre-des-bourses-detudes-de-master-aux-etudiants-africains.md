@@ -43,12 +43,23 @@ Les candidats à la [bourse AWARDS](https://www.dfat.gov.au/publications/develop
 
 Pour postuler à la bourse, vous pouvez déposer vos documents en ligne ou par courrier. Pour plus d'informations sur les différents mode d'enregistrement, vous pouvez consulter [le site web du gouvernement ](https://www.dfat.gov.au/people-to-people/australia-awards/Pages/how-to-apply-for-an-australia-awards-scholarship)
 
-1. Passeport Preuve de citoyenneté
-2. Certificat de diplôme de premier cycle 
-3. Relevé de notes académique de premier cycle
-4. Curriculum Vitae 
-5. Lettre de motivation d'un employeur 
-6. Lettre de motivation d'un professeur
-7. Certificat de test IELTS/TOEFL/Pearson
-   (À l'exclusion des candidats si leur langue maternelle est l'anglais et s'ils ont
-   entrepris leurs études en anglais)
+Passeport Preuve de citoyenneté
+
+Certificat de diplôme de premier cycle 
+
+Relevé de notes académique de premier cycle
+
+Curriculum Vitae 
+
+Lettre de motivation d'un employeur 
+
+Lettre de motivation d'un professeur
+
+Certificat de test IELTS/TOEFL/Pearson (À l'exclusion des candidats si leur langue maternelle est l'anglais et s'ils ont entrepris leurs études en anglais)
+
+Les candidats seront évalués selon les critères suivants :
+
+* Compétence académique
+* Résultat potentiel, en particulier la contribution aux résultats de développement en Afrique
+* qualités de leadership professionnel et personnel, y compris une expérience de travail pertinente.
+*  Les candidats retenus seront informés fin 2024.
