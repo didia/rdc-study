@@ -54,10 +54,8 @@ Pour postuler à la bourse, vous pouvez déposer vos documents en ligne ou par c
 Les candidats seront évalués selon les critères suivants :
 
 * Compétence académique
-
-Résultat potentiel, en particulier la contribution aux résultats de développement en Afrique
-
-Qualités de leadership professionnel et personnel, y compris une expérience de travail pertinente.
+* Résultat potentiel, en particulier la contribution aux résultats de développement en Afrique
+* Qualités de leadership professionnel et personnel, y compris une expérience de travail pertinente.
 
 Pour plus d'informations sur le programme de bourses ou encore les études en Australie, veuillez consulter les sites suivants : 
 
