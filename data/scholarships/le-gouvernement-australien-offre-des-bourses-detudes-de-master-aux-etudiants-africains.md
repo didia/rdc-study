@@ -59,7 +59,17 @@ Certificat de test IELTS/TOEFL/Pearson (À l'exclusion des candidats si leur lan
 
 Les candidats seront évalués selon les critères suivants :
 
-* Compétence académique
-* Résultat potentiel, en particulier la contribution aux résultats de développement en Afrique
-* qualités de leadership professionnel et personnel, y compris une expérience de travail pertinente.
-*  Les candidats retenus seront informés fin 2024.
+Compétence académique
+
+Résultat potentiel, en particulier la contribution aux résultats de développement en Afrique
+
+Qualités de leadership professionnel et personnel, y compris une expérience de travail pertinente.
+
+Les candidats retenus seront informés fin 2024.
+
+Des informations plus générales sur les Australia Awards, le programme d’aide australien et les études en Australie sont disponibles sur le site liens suivants :
+https://australiaawardsafrica.org/
+dfat.gov.au/people-to-people/australia-awards/pages/australia-awards-scholarships
+https://www.studyaustralia.gov.au/
+Des informations sur les visas et les droits et conditions des bourses Australia Awards sont disponibles dans la section Bourses.
+Manuel de politique : dfat.gov.au/about-us/publications/Pages/australia-awards-scholarships-policy-handbook.aspx
