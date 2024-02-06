@@ -29,4 +29,14 @@ La bourse couvre :
 
 ## Quels sont les critères de la bourse ?
 
+Les candidats a la [bourse AWARDS](https://www.dfat.gov.au/publications/development/africa-australia-awards-intake-information) de l'Australie doivent remplir les conditions suivants : 
+
+* Être âgé de 25 ans minimum au 1er février 2025.
+* Au minimum, avoir 5 ans d'expérience professionnelle postuniversitaire, travaillant dans un domaine relatif à leur domaine d'études.
+* Ne pas déjà détenir ou entreprendre un master ou équivalent (équivalent à un master dans son pays d'origine).
+* Etre titulaire d'un diplôme de premier cycle (équivalent à un diplôme de premier cycle australien).
+* Ne pas avoir déjà reçu de prix australien à long terme.
+* Répondre à la maîtrise minimale de l'anglais d'au moins 6,5 à l'IELTS sans bande inférieure à 6,0 (un test basé sur Internet).
+  Score TOEFL d'au moins 84, avec un minimum de 21 dans tous les sous-tests, ou score global PTE Academic de 58 score de compétence en communication inférieur à 50). Les résultats doivent être valables au **1er janvier 2025**. (Hors candidats si leur premier  langue est l'anglais et ils ont suivi leurs études en anglais).
+
 ## Comment postuler ?
