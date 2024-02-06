@@ -14,7 +14,7 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-La bourse consiste a étudier à temps plein en master dans les universités australiennes dans les domaines suivant : le changement climatique, l’agriculture et sécurité alimentaire, l’exploitation minière et énergie, la politique étrangère et sécurité internationale, et les études sur le genre, le handicap et l'inclusion sociale.
+La bourse consiste à étudier à temps plein en master dans les universités australiennes dans les domaines suivant : le changement climatique, l’agriculture et sécurité alimentaire, l’exploitation minière et énergie, la politique étrangère et sécurité internationale, et les études sur le genre, le handicap et l'inclusion sociale.
 
 La bourse couvre : 
 
@@ -29,7 +29,7 @@ La bourse couvre :
 
 ## Quels sont les critères de la bourse ?
 
-Les candidats a la [bourse AWARDS](https://www.dfat.gov.au/publications/development/africa-australia-awards-intake-information) de l'Australie doivent remplir les conditions suivants : 
+Les candidats à la [bourse AWARDS](https://www.dfat.gov.au/publications/development/africa-australia-awards-intake-information) de l'Australie doivent remplir les conditions suivants : 
 
 * Être âgé de 25 ans minimum au 1er février 2025.
 * Au minimum, avoir 5 ans d'expérience professionnelle postuniversitaire, travaillant dans un domaine relatif à leur domaine d'études.
