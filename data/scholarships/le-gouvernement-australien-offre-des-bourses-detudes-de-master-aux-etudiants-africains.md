@@ -40,3 +40,15 @@ Les candidats à la [bourse AWARDS](https://www.dfat.gov.au/publications/develop
   Score TOEFL d'au moins 84, avec un minimum de 21 dans tous les sous-tests, ou score global PTE Academic de 58 score de compétence en communication inférieur à 50). Les résultats doivent être valables au **1er janvier 2025**. (Hors candidats si leur premier  langue est l'anglais et ils ont suivi leurs études en anglais).
 
 ## Comment postuler ?
+
+Pour postuler à la bourse, vous pouvez déposer vos documents en ligne ou par courrier. Pour plus d'informations sur les différents mode d'enregistrement, vous pouvez consulter [le site web du gouvernement ](https://www.dfat.gov.au/people-to-people/australia-awards/Pages/how-to-apply-for-an-australia-awards-scholarship)
+
+1. Passeport Preuve de citoyenneté
+2. Certificat de diplôme de premier cycle 
+3. Relevé de notes académique de premier cycle
+4. Curriculum Vitae 
+5. Lettre de motivation d'un employeur 
+6. Lettre de motivation d'un professeur
+7. Certificat de test IELTS/TOEFL/Pearson
+   (À l'exclusion des candidats si leur langue maternelle est l'anglais et s'ils ont
+   entrepris leurs études en anglais)
