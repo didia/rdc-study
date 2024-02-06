@@ -54,16 +54,15 @@ Pour postuler à la bourse, vous pouvez déposer vos documents en ligne ou par c
 Les candidats seront évalués selon les critères suivants :
 
 * Compétence académique
-* Résultat potentiel, en particulier la contribution aux résultats de développement en Afrique
-* Qualités de leadership professionnel et personnel, y compris une expérience de travail pertinente.
 
-P﻿our plus d'informations sur le programme de bourses ou encore les études en Australie, veuillez consulter les liens suivant[](https://australiaawardsafrica.org/)
+Résultat potentiel, en particulier la contribution aux résultats de développement en Afrique
 
-[](https://australiaawardsafrica.org/)dfat.gov.au/people-to-people/australia-awards/pages/australia-awards-scholarships
+Qualités de leadership professionnel et personnel, y compris une expérience de travail pertinente.
 
+Pour plus d'informations sur le programme de bourses ou encore les études en Australie, veuillez consulter les sites suivants : 
 
-https://www.studyaustralia.gov.au/
+1. [Programme des bourses pour les africains](https://australiaawardsafrica.org/)
+2. [](https://australiaawardsafrica.org/)[Programme des bourses australiennes ](https://www.dfat.gov.au/people-to-people/australia-awards/australia-awards-scholarships)
+3. [Étudier en Australie](https://www.studyaustralia.gov.au/)
 
-
-Des informations sur les visas et les droits et conditions des bourses Australia Awards sont disponibles dans la section Bourses.
-Manuel de politique : dfat.gov.au/about-us/publications/Pages/australia-awards-scholarships-policy-handbook.aspx
+En cas de besoin d'aide, vous pouvez solliciter une consultation d'un mentor RDC ETUDES.
