@@ -1,17 +1,17 @@
 [
-  {
-    "about": "Jonathan détient une licence en sciences économiques de l’Université de Brasilia (UnB) au Brésil et une maîtrise en Sciences économiques de l’Université d’Ottawa. Ayant oeuvré depuis plus d’une décennie pour l’implication des jeunes dans leur communauté, il a pour son compte aidé plus d’une personne dans le cadre des démarches pour étudier à l’étranger, notamment au Brésil et au Canada.",
-    "image": "images/jonathan.jpg",
-    "name": "Jonathan Mpoto",
-    "role": "Chez RDC Etudes, Jonathan est chargé de s’assurer que nous maitrisons bien les démarches de personnes qui habitent à l’extérieur du Congo",
-    "title": "Associé, Directeur général, Mentor"
+ {
+    "about": "Aimé est diplômé en communications sociales de l’Université Catholique du Congo. Convaincu du bien fondé de la mission de RDC Etudes, il a décidé de mettre à disposition son talent à l'entreprise au sein de laquelle il a progressivement gravi les échellons pour devenir gérant et directeur général en Avril 2023. Portée par sa passion pour notre mission, Aimé ne lésine pas sur les moyens pour voir nos étudiants et leurs parents réaliser leurs projets d'études à l'étranger.",
+    "image": "images/aime.jpg",
+    "name": "Jean Aimé Kikandi",
+    "role": "Chez RDC Etudes, Aimé travaille fort à l’installation effective de notre premier bureau physique en Afrique qui sera basé à Kinshasa, République Démocratique du Congo. Il est aussi chargé des projets qui visent à communiquer la vision de RDC Etudes aux élèves, étudiants et parents de ce pays.",
+    "title": "Associé, Gérant, Mentor"
   },
   {
-    "about": "Kevin a obtenu son diplôme d‘état en 2012 au Complexe Scolaire Cardinal Malula. Après une année passée en droit à l‘Université Catholique du Congo, il poursuivit ses études en sciences politiques à l‘Université Laval au Québec. Kevin est celui qui a assisté le plus grand nombre de personnes non seulement pendant leurs démarches mais aussi après leurs arrivées en les aidant à s‘installer.",
+    "about": "Kevin a obtenu son diplôme d‘état en 2012 au Complexe Scolaire Cardinal Malula. Après une année passée en droit à l‘Université Catholique du Congo, il poursuivit ses études en sciences politiques à l‘Université Laval au Québec. Kevin est celui qui a assisté le plus grand nombre de personnes non seulement pendant leurs démarches mais aussi après leur arrivée au Canada en les aidant à s‘installer.",
     "image": "images/kevin.jpg",
     "name": "Kevin Diasonama",
     "role": "Chez RDC Etudes, Kevin est chargé d’implanter une réprésentation de RDC Etudes au Congo et d’en assurer le développement. Il s’assure aussi que le guide du Canada est le plus complet et détaillé possible et assiste les étudiants dans leurs démarches pour le Canada.",
-    "title": "Associé, Gérant, Mentor"
+    "title": "Associé, Mentor"
   },
   {
     "about": "Diplômée au collège Mwanga de Goma en Latin-Philo en 2014, Nadia détient une licence en communication sociale avec habilité en propagande et publicité de l’Université Catholique Pontificale de Minas Gerais au Brésil. Elle y poursuit actuellement ses études en maîtrise dans le même domaine académique. Son soucis majeur est de voir les congolais s’offrir des études de qualité digne de ce nom, car nous disposons des personnes habiles et compétentes, capables de reconstruir notre cher et beau pays, et ceci n’est possible qu’à travers une éducation de qualité!",
@@ -21,39 +21,40 @@
     "title": "Associée, Directrice marketing et communications"
   },
   {
-    "about": "Didia Aristote a obtenu son diplôme d‘état au Complexe Scolaire Cardinal Malula en 2010 en tant que lauréat de la République avec 90%. Après un court passage en Inde, il obtint sa licence en génie logiciel en 2016 à l’Université Laval. Aristote travaille depuis comme développeur logiciel dans une entreprise de Québec. Son objectif personnel est de rendre disponible l’information à tout congolais pour que tout le monde ait accès aux mêmes opportunités.",
+    "about": "Didia Aristote a obtenu son diplôme d‘état au Complexe Scolaire Cardinal Malula en 2010 en tant que lauréat de la République avec 90%. Après un court passage en Inde, il obtint sa licence en génie logiciel en 2016 à l’Université Laval. En 2018, Il fonda RDC Etudes avec comme mission de donner la chance à tout les étudiants d'Afrique francophone d'avoir accès à une éducation de qualité comme ce fut le cas pour lui. Aujourd'hui, Aristote poursuit sa carrière professionnelle comme Directeur des technologies basé à Québec. Malgré son horaire super chargé, il trouve toujours du temps à accorder à nos étudiants pour les aider à tirer le plus profit de leur expérience d'études à l'étranger.",
     "image": "images/didia.jpg",
     "name": "Aristote Diasonama",
     "role": "Chez RDC Etudes, Aristote est le gardien de la mission et des objectifs. Il s’assure que tout le monde travaille dans la même direction pour offrir les meilleurs guides possible sur les études à l‘étranger aux congolais. Il est aussi en charge du développement de notre application web.",
-    "title": "Associé, Directeur des stratégies, Mentor"
+    "title": "Associé, Conseiller spécial du Directeur Général, Mentor"
   },
-  {
-    "about": "Aimé est diplômé en communications sociales de l’Université Catholique du Congo. Convaincu du bien fondé de la mission de RDC Etudes, il a décidé de mettre à disposition son talent de communicateur pour que tout élève, étudiant et parent au Congo soit au courant des informations et opportunités rendues disponibles par RDC Etudes.",
-    "image": "images/aime.jpg",
-    "name": "Jean Aimé Kikandi",
-    "role": "Chez RDC Etudes, Aimé travaille fort à l’installation effective de notre premier bureau physique en Afrique qui sera basé à Kinshasa, République Démocratique du Congo. Il est aussi chargé des projets qui visent à communiquer la vision de RDC Etudes aux élèves, étudiants et parents de ce pays.",
-    "title": "Associé, Directeur des opérations"
-  },
-  {
-    "about": "Ludovic détient une licence en finance de l’université Protestante du Congo et une maîtrise en administration des affaires de l’Université Laval. Président honoraire de l’Association des étudiants congolais inscrits à l’Université Laval (AECIUL), Ludovic s’est toujours impliqué pour la réussite des autres et veut continuer à le faire au sein de RDC Etudes.",
-    "image": "images/ludovic.jpg",
-    "name": "Ludovic Mpoto",
-    "role": "Chez RDC Etudes, Ludovic est en charge des affaires administratives de RDC Etudes et s’occupe aussi du projet de bureau de RDC Etudes au Canada.",
-    "title": "Associé, Directeur administratif, Mentor"
-  },
+  
   {
     "about": "Césaire est diplômé en droit de l’Université de Kinshasa et avocat au barreau de Kinshasa/Gombe. Déjà très actif dans la promotion de plusieurs causes sociales, Il a décidé de rejoindre RDC Etudes pour permettre un accès juste et équitable de tout le monde à une éducation de qualité.",
     "image": "images/cesaire.jpg",
     "name": "Césaire Odimba",
     "role": "Chez RDC Etudes, Césaire est non seulement chargé de toutes les affaires juridiques mais est aussi en charge des différents projets qui contribuent à l’atteinte des objectifs de l’entreprise.",
-    "title": "Associé, Chargé des affaires juridiques, Chargé des projets"
+    "title": "Associé, Chargé des affaires juridiques"
   },
   {
-    "about": "Théophile détient une licence en génie civil de l'Université de Manipal en Inde. Il poursuit actuellement ses études de maitrise en administration des affaires à la même Université. \nAu sein de RDC Études, Théo transmet sa passion pour l’éducation aux autres en mettant sur pied plusieurs projets avec pour objectif de rendre l’éducation de qualité accessible au plus grand nombre.",
+    "about": "Jonathan détient une licence en sciences économiques de l’Université de Brasilia (UnB) au Brésil et une maîtrise en Sciences économiques de l’Université d’Ottawa. Ayant oeuvré depuis plus d’une décennie pour l’implication des jeunes dans leur communauté, il a pour son compte aidé plus d’une personne dans le cadre des démarches pour étudier à l’étranger, notamment au Brésil et au Canada.",
+    "image": "images/jonathan.jpg",
+    "name": "Jonathan Mpoto",
+    "role": "Chez RDC Etudes, Jonathan est chargé de s’assurer que nous maitrisons bien les démarches de personnes qui habitent à l’extérieur du Congo",
+    "title": "Associé"
+  },
+  {
+    "about": "Ludovic détient une licence en finance de l’université Protestante du Congo et une maîtrise en administration des affaires de l’Université Laval. Président honoraire de l’Association des étudiants congolais inscrits à l’Université Laval (AECIUL), Ludovic s’est toujours impliqué pour la réussite des autres et veut continuer à le faire au sein de RDC Etudes.",
+    "image": "images/ludovic.jpg",
+    "name": "Ludovic Mpoto",
+    "role": "Chez RDC Etudes, Ludovic a été en charge des affaires administratives de RDC Etudes. Aujourd'hui, il conseille les étudiants sur le comportement à adopter pour la réussite de leurs études à l'étranger.",
+    "title": "Associé"
+  }
+  {
+    "about": "Théophile détient une licence en génie civil de l'Université de Manipal en Inde. Il poursuit actuellement ses études de maitrise en administration des affaires à la même Université. \nAu sein de RDC Études, Théo utilise sa maitrise de l'anglais et sa qualité de traducteur assermenté pour s'assurer que les documents de nos étudiants qui poursuivent des études dans des pays anglophones soient bien traduits.",
     "image": "images/theo.jpg",
     "name": "Théophile Mabiala",
     "role": "Chez RDC Etudes, Théo est chargé d’accompagner les étudiants dans leurs projets d’études pour la Belgique",
-    "title": "Chargé des projets, Mentor"
+    "title": "Traducteur"
   },
   {
     "about": "Jacques Ibee Massa est diplômé en informatique  de l’université internationale Manav Rachna en Inde et de l’Université de Houston aux États-Unis. Pour Jacques, son implication dans RDC Etudes est une façon de redonner à sa communauté en permettant à plusieurs autres personnes d’avoir aussi accès à une éducation.",
@@ -74,13 +75,6 @@
     "image": "images/christian.jpg",
     "name": "Christian Ndjobo",
     "role": "Chez RDC Etudes, Christian est chargé d’accompagner les étudiants dans leurs projets d’études pour la Belgique",
-    "title": "Mentor"
-  },
-  {
-    "about": "Maria poursuit actuellement une licence en administration des affaires à la Cyprus Science University. \nElle a décidé de s’impliquer au sein de RDC Études pour mieux guider et orienter les étudiants et étudiantes désirant poursuivre leurs études en Chypre du Nord.",
-    "image": "images/maria.jpg",
-    "name": "Maria Kinyoka",
-    "role": "Chez RDC Etudes, Maria est chargé d’accompagner les étudiants dans leurs projets d’études pour la Belgique",
     "title": "Mentor"
   }
 ]
