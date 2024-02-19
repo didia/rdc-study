@@ -60,7 +60,7 @@ Demandez votre carte bleue à votre bureau des étrangers local après votre arr
 
 # Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **675 USD** pour vos démarches de visa.
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **680 USD** pour vos démarches de visa.
 Ces frais se présentent comme suit:
 
 * **75 euros** (80,74$) pour le frais de visa
