@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Obtenir une admission dans une université allemande
 excerpt: Ce guide vous explique les différentes étapes à suivre pour obtenir une
   admission dans n’importe quel établissement d’enseignement allemand.
@@ -45,17 +45,13 @@ Après cela, vous devez immédiatement faire une demande de visa long séjour po
 
 ##### Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **380 USD et 700 USD** pour toutes vos démarches d’admission.
+En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **600 USD et 850 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
-**50$-90$** pour la traduction des documents
-
-**00$** pour le processus d’admission pour les universités publiques 
-
-**250 euros**  pour le processus d’admission pour les universités privées.
-
-**Xxx $** pour l’envoie des documents via DHL
-
-**299.99$ pour les frais d’assistance RDC ETUDES.**
+* **100$** pour la traduction des documents
+* **00$** pour le processus d’admission pour les universités publiques 
+* **250 euros**  pour le processus d’admission pour les universités privées.
+* **100 $** pour l’envoie des documents via DHL
+* **400$ pour les frais d’assistance RDC ETUDES.**
 
 *NB*: Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
