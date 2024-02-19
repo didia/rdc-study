@@ -56,7 +56,9 @@ Consultez le site de l'ambassade ou du consulat général d'Allemagne de votre p
 
 **Apportez votre formulaire de candidature ainsi que les pièces justificatives avec vous à votre rendez-vous**
 
-Demandez votre carte bleue à votre bureau des étrangers local après votre arrivée
+Demandez votre carte bleue à votre bureau des étrangers local après votre arrivée.
+
+P﻿our plus d'informations sur les etudes en Allemagne, veuillez consulter [le site du Ministère fédéral de l'Éducation et de la Recherche](https://www.study-in-germany.de/de/). 
 
 # Combien ça coûte ?
 
