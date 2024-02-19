@@ -62,8 +62,7 @@ P﻿our plus d'informations sur les etudes en Allemagne, veuillez consulter [le 
 
 # Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **680 USD** pour vos démarches de visa.
-Ces frais se présentent comme suit:
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **680 USD** pour vos démarches de visa. Ces frais se présentent comme suit:
 
 * **75 euros** (80,74$) pour le frais de visa
 * **600 USD** pour les frais d’assistance RDC-Etudes.
