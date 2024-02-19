@@ -46,7 +46,7 @@ Veuillez déposer tous les documents cités ci-haut dans [le site web du minist�
 
 Le traitement d’une demande de visa peut prendre jusqu’à 3 mois. Veuillez introduire votre demande à temps pour garantir un départ en temps voulu.
 
-• Les documents sont à présenter en original
+• Les documents sont à présenter en **original**
 
 • Cochez s.v.p. à gauche, si les documents se trouvent dans le dossier et présentez [cette feuille](https://kinshasa.diplo.de/blob/2086492/97be944746ea2ac14fc3cbc431888bf6/studienvisumfr-data.pdf) lors du dépôt de la demande
 
@@ -54,21 +54,16 @@ Le traitement d’une demande de visa peut prendre jusqu’à 3 mois. Veuillez i
 
 Consultez le site de l'ambassade ou du consulat général d'Allemagne de votre pays de résidence pour connaître les exigences supplémentaires dans votre pays, <https://www.diplo.de/addresses> , et prenez rendez-vous.
 
-Apportez votre formulaire de candidature ainsi que les pièces justificatives avec vous à votre rendez-vous
-
-Après approbation de l'ambassade ou du consulat général, récupérez votre vignette visa sur votre passeport.
+**Apportez votre formulaire de candidature ainsi que les pièces justificatives avec vous à votre rendez-vous**
 
 Demandez votre carte bleue à votre bureau des étrangers local après votre arrivée
 
-Combien ça coûte ?
+# Combien ça coûte ?
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **790 USD et 910 USD** pour vos démarches de visa.
+En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **675 USD** pour vos démarches de visa.
 Ces frais se présentent comme suit:
 
-* **20 USD à 50 USD** pour les documents administratifs à obtenir de votre gouvernement.
-* **90 USD** pour le CAQ (Seulement pour Québec)
-* **185 USD** pour le frais des visas (Y compris les empreintes)
-* **285 USD** pour les frais des examens médicaux.
+* **75 euros** (80,74$) pour le frais de visa
 * **600 USD** pour les frais d’assistance RDC-Etudes.
 
-**NB**: Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leur site web pour les montants actualisés.
+**NB**: Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement allemand. Veuillez toujours vous fier à leur site web pour les montants actualisés.
