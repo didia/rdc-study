@@ -20,7 +20,7 @@ Si vous avez une admission dans une université allemande, vous devez avoir :
 
 1. Lettre d'acceptation conditionnelle ou définitive de l'université
 2. Passeport (Valide de 6 mois) ainsi que les copies des pages avec de visas de précédents voyages dans des États Schengen 
-3. Formulaire de demande de visa
+3. [Formulaire de demande de visa](https://videx.diplo.de/videx/visum-erfassung/#/videx-langfristiger-aufenthalt)
 4. CV
 5. Deux photos passeports
 6. Assurance Maladie
@@ -38,11 +38,29 @@ Si vous avez une admission dans une université allemande, vous devez avoir :
    Preuves financières (Relevés bancaires, preuves d'activités commerciales ou financières, titres de propriété au cadastre, etc.)
 9. Preuve de connaissance de la langue allemande ou inscription au cours de langue en Allemagne.
 
-ATTENTION : Le cours de langue doit être un cours intensif : minimum 18 heures de cours par semaine; les cours du soir ou du week-end ne suffiront pas 
+**ATTENTION : Le cours de langue doit être un cours intensif : minimum 18 heures de cours par semaine; les cours du soir ou du week-end ne suffiront pas** 
 
 # DÉPOSEZ VOTRE DEMANDE
 
-# Combien ça coûte ?
+Veuillez déposer tous les documents cités ci-haut dans [le site web du ministère fédéral des affaires étrangères](https://videx.diplo.de/videx/visum-erfassung/#/videx-langfristiger-aufenthalt).
+
+Le traitement d’une demande de visa peut prendre jusqu’à 3 mois. Veuillez introduire votre demande à temps pour garantir un départ en temps voulu.
+
+• Les documents sont à présenter en original
+
+• Cochez s.v.p. à gauche, si les documents se trouvent dans le dossier et présentez [cette feuille](https://kinshasa.diplo.de/blob/2086492/97be944746ea2ac14fc3cbc431888bf6/studienvisumfr-data.pdf) lors du dépôt de la demande
+
+• Annexez deux copies du dossier complet
+
+Consultez le site de l'ambassade ou du consulat général d'Allemagne de votre pays de résidence pour connaître les exigences supplémentaires dans votre pays, <https://www.diplo.de/addresses> , et prenez rendez-vous.
+
+Apportez votre formulaire de candidature ainsi que les pièces justificatives avec vous à votre rendez-vous
+
+Après approbation de l'ambassade ou du consulat général, récupérez votre vignette visa sur votre passeport.
+
+Demandez votre carte bleue à votre bureau des étrangers local après votre arrivée
+
+Combien ça coûte ?
 
 En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **790 USD et 910 USD** pour vos démarches de visa.
 Ces frais se présentent comme suit:
