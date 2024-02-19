@@ -21,16 +21,16 @@ En cas de besoin d’aide, n’hésitez surtout pas à souscrire à notre servic
 
 Voici donc les différentes étapes que vous devez suivre pour obtenir votre admission: 
 
-#### **Obtenir un Certificat de langue Allemande ou Anglaise.**
+# **Obtenir un Certificat de langue Allemande ou Anglaise.**
 
 Les cours sont dispensés en allemand pour les universités publiques et en anglais pour certaines universités privées et au niveau master et doctorat. Voilà pourquoi vous devez suivre des cours de langue vous permettant d’être en mesure de lire, écrire, parler et comprendre à un niveau intermédiaire à votre arrivée en Allemagne. Nous vous suggérons de débuter vos cours de langue au moins 1 an avant votre demande d’admission.
 
-#### **Choisir un programme d‘études**
+# **Choisir un programme d‘études**
 
 Il existe des universités publiques gratuites et non gratuites, ainsi que des universités privées. La plupart des universités dispensent les cours en allemand et d’autres en anglais. Vous devez donc tenir compte de toutes ces réalités au moment de faire votre choix. Nous vous suggérons de baser votre choix sur votre situation économique, la maîtrise et la passion du sujet(cours) et les opportunités de travail en Allemagne et dans votre pays d’origine.**\
 Voici une liste non exhaustive des universités allemandes: [Université Libre de Berlin](https://www.fu-berlin.de/), [Université Ludwig Maximilian de Munich](https://www.lmu.de/de/index.html), [Université de Cologne](https://uni-koeln.de/), [Université Humboldt de Berlin](https://www.hu-berlin.de/de), [Université RWTH d'Aix-la-Chapelle](https://www.rwth-aachen.de/go/id/a/?lidx=1).**
 
-#### Faire la demande d‘admission
+# Faire la demande d‘admission
 
 Généralement, les demandes d’admission se font en ligne via le site web de l’université. Vous devez donc entrer en contact avec l’université de votre choix au minimum 6 mois avant la date de la rentrée. Vous devez donc remplir le formulaire de la demande d’admission en y joignant vos bulletins, votre attestation de réussite ou diplôme d’état (baccalauréat) ainsi que les scores de votre test de niveau de langue tous les documents traduits en allemand ou en anglais selon les exigences de l’université.
 
@@ -43,7 +43,7 @@ Une fois votre candidature, l’université peut prendre du temps pour l’exami
 
 Après cela, vous devez immédiatement faire une demande de visa long séjour pour études, consulter notre guide sur les étapes à suivre pour obtenir un visa d’études pour l’Allemagne.
 
-##### Combien ça coûte ?
+# Combien ça coûte ?
 
 En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **600 USD et 850 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
