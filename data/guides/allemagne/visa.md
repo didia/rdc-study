@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Obtenir un visa d’études pour l'Allemagne
 excerpt: Ce guide gratuit vous donne les informations nécessaires et vous
   explique les différentes étapes à suivre pour obtenir un visa d’études pour
