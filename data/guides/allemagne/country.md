@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Étudier en Allemagne
 excerpt: En plus d’être la plus grande puissance économique du continent
   européen, l’Allemagne est réputé pour son éducation de haute qualité qui est
