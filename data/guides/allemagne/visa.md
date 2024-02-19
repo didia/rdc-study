@@ -40,10 +40,9 @@ Si vous avez une admission dans une université allemande, vous devez avoir :
 
 ATTENTION : Le cours de langue doit être un cours intensif : minimum 18 heures de cours par semaine; les cours du soir ou du week-end ne suffiront pas 
 
-\
-DÉPOSEZ VOTRE DEMANDE
+# DÉPOSEZ VOTRE DEMANDE
 
-## Combien ça coûte ?
+# Combien ça coûte ?
 
 En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **790 USD et 910 USD** pour vos démarches de visa.
 Ces frais se présentent comme suit:
