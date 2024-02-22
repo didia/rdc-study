@@ -32,7 +32,7 @@ Les études universitaires en Allemagne sont généralement gratuites pour tous 
 
 Etant donné que les frais académiques sont gratuits dans la plupart des universités publiques, les bourses d’études sont limitées. Néanmoins, les universités privées peuvent offrir une exemption des frais de scolarité d’environ de 25%. Pour ceux du cycle supérieur (master et doctorat), il existe le [Programme des bourses EPOS DAAD](https://www.rdcetudes.com/bourses/programme-des-bourses-epos-daad-en-allemagne).
 
-## Peut-on travailler en étant en Allemagne ?
+## Peut-on travailler en étant étudiant en Allemagne ?
 
 Contrairement à d’autres pays, l’Allemagne permet aux étudiants internationaux de combiner leurs études avec une formation professionnelle. Cela peut-être en temps partiel dans une entreprise ou encore en tant que boursier de recherche scientifique.
 
