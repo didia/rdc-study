@@ -22,7 +22,7 @@ Pour étudier en Allemagne vous devez avoir au préalable une inscription dans u
 
 Une fois votre admission obtenue, vous pouvez entamer la procédure de demande de visa, pour cela vous devez avoir toutes les preuves requises pour convaincre l’agent consulaire de vos réelles intentions pour immigrer en Allemagne. La demande peut prendre plus de 6 mois nous vous recommandons donc de débuter vos démarches bien avant la date de la rentrée pour éviter tout désagrément, sachant que les cours débutent généralement du 1er octobre au 31 mars pour la session d’hivers et du 1er avril et se termine le 30 septembre pour la session d’été.
 
-Pour plus d’informations, veuillez consulter notre guide sur les démarches à suivre pour obtenir un visa d’étudiant pour l’Allemagne.
+Pour plus d’informations, veuillez consulter[ notre guide sur les démarches à suivre pour obtenir un visa d’étudiant pour l’Allemagne](https://www.rdcetudes.com/guides/allemagne/visa).
 
 ## Combien coûtent les études en Allemagne ?
 
