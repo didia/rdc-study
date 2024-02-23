@@ -14,11 +14,16 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
       <section>
         <div className="grid grid-cols-1 mx-4 py-3">
           <div>
-            <GatsbyImage image={image} alt={article.title} />
+            <GatsbyImage
+              image={image}
+              className="md:h-[30rem]"
+              objectFit="cover"
+              alt={article.title}
+            />
           </div>
         </div>
-        <div className="mx-4">
-          <p className="text-sky-600 text-xl font-bold text-start">
+        <div className="mx-4 md:mx-8">
+          <p className="text-sky-600 text-xl md:text-2xl md:uppercase font-bold text-start">
             {article.title}
           </p>
           <p className="py-2 text-md text-gray-600">{article.excerpt}</p>
@@ -26,12 +31,12 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
           <p className="text-lg text-yellow-500">Date : {article.date}</p>
         </div>
 
-        <div className="mx-4">
-          <HtmlContent content={content} />
+        <div className="mx-4 md:mx-8">
+          <HtmlContent content={content} htmlclassName="md:text-lg" />
         </div>
       </section>
 
-      <section className="mx-2 mb-10">
+      <section className="mx-2 mb-10 md:mx-16">
         <div className="text-sky-600 text-lg font-black absolute mt-10 uppercase">
           Autres articles
         </div>

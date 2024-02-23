@@ -13,7 +13,7 @@ const StudyCountry = ({ guideCountries }) => {
 
   const limitedGuides = _.filter(
     guideCountries,
-    (guideCountry, index) => index <= 3
+    (guideCountry, index) => index < 3
   );
   return (
     <>
@@ -68,7 +68,7 @@ const StudyCountry = ({ guideCountries }) => {
             <div
               className={styles.travel_countries_content}
             >
-              <div className="hidden md:grid md:grid-cols-4 py-[7rem]">
+              <div className="hidden md:grid md:grid-cols-3 py-[7rem]">
                 {limitedGuides.map((guideCountry) => {
                   const image = getImage(guideCountry.frontmatter.thumbnail);
                   return (

@@ -14,11 +14,11 @@ const NewsCard = ({ ItemData }) => {
             <GatsbyImage
               image={image}
               alt={ItemData.title}
-              className="h-48 md:h-60"
+              className="h-48 md:w-[22rem] md:h-60"
             />
           </a>
         </div>
-        <div className="col-span-7 -mt-2 md:-ml-[10rem]">
+        <div className="col-span-7 -mt-2 md:-ml-[4rem]">
           <a
             href={`/${ItemData.slug}`}
             className="text-sky-600 text-lg md:text-2xl font-extrabold font-['monserrat-bold']"

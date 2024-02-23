@@ -105,7 +105,6 @@ export const guideQuery = graphql`
             thumbnail {
               childImageSharp {
                 gatsbyImageData(
-                  width: 350
                   placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )

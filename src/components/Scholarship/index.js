@@ -9,7 +9,7 @@ import _ from "lodash";
 const Scholarship = ({ scholarships }) => {
     const limitedScholarShips = _.filter(
       scholarships,
-      (guideCountry, index) => index <= 3
+      (guideCountry, index) => index < 3
     );
 
   const substring = (val) => {
@@ -99,7 +99,7 @@ const LEVEL_ORDERS = [
               </Carousel>
             </div>
 
-            <div className="hidden md:grid md:grid-cols-4 -mt-[32rem] z-30 relative">
+            <div className="hidden md:grid md:grid-cols-4 -mt-[34rem] z-30 relative ml-80">
               {limitedScholarShips.map((scholarship) => {
                 const levelsText = scholarship.frontmatter.levels
                   .sort(
@@ -114,7 +114,7 @@ const LEVEL_ORDERS = [
                 return (
                   <div className="">
                     <Card
-                      className="max-w-sm mx-4 bg-slate-200 h-[27rem]"
+                      className="max-w-sm mx-4 bg-slate-200 h-[29rem]"
                       imgAlt="Meaningful alt text for an image that is not purely decorative"
                       renderImage={() => (
                         <GatsbyImage

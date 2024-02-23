@@ -113,9 +113,9 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
         <div className="h-20 border-b-2 border-sky-600 mx-10"></div>
         <HtmlContent
           content={guide.content}
-          htmlclassName={"py-2 mx-10 text-justify text-xl"}
+          htmlclassName={"py-2 mx-28 text-justify text-xl"}
         />
-        <div className="ml-6">
+        <div className="ml-28 mt-8">
           <PrimaryBtn text="Demander une Assistance" />
         </div>
       </section>
@@ -155,8 +155,8 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
         })}
       </section>
 
-      <section className="mx-10 hidden md:block">
-        <div className="text-sky-600 text-2xl font-black absolute mt-10 uppercase">
+      <section className="mx-20 hidden md:block">
+        <div className="text-sky-600 text-xl font-black absolute mt-10 uppercase">
           Guides reliés
         </div>
         <div className="h-20 border-b-2 border-sky-600"></div>
@@ -167,9 +167,10 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                   <a href={`/${relatedGuide.slug}`}>
                     <GatsbyImage
-                      class="rounded-t-lg h-72"
+                      class="rounded-t-lg"
                       image={getImage(relatedGuide.thumbnail)}
                       alt="flag"
+                      style={{ height: "200px" }}
                     />
                   </a>
                   <div class="p-5">
@@ -245,7 +246,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
         })}
       </section>
 
-      <section className="mx-6 hidden md:block">
+      <section className="mx-20 hidden md:block">
         <div className="text-sky-600 text-xl font-black absolute mt-20 uppercase">
           Autres guides qui pourraient vous intéresser
         </div>
@@ -257,9 +258,10 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow mb-7">
                   <a href={`/${otherGuide.slug}`}>
                     <GatsbyImage
-                      class="rounded-t-lg h-72"
+                      class="rounded-t-lg"
                       image={getImage(otherGuide.thumbnail)}
                       alt="flag"
+                      style={{ height: "200px" }}
                     />
                   </a>
                   <div class="p-5">

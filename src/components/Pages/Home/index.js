@@ -77,7 +77,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             <p className="text-5xl text-sky-600 font-black font-['monserrat-bold']">
               Pourquoi RDC-Etudes ?
             </p>
-            <p className="text-2xl my-4 font-['roboto']">
+            <p className="text-xl my-4 font-['roboto']">
               RDC ETUDES est une entreprise axée sur l'éducation qui a pour
               mission de faciliter l'accès à une éducation de qualité pour les
               étudiants africains francophones, que ce soit sur le continent ou
@@ -110,65 +110,65 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </div>
       </div>
 
-        <section className="md:hidden mb-2" id="mobileStudycountry">
-          <div className="grid grid-cols-4 gap-2">
-            <div className="">&nbsp;</div>
-            <div className="">&nbsp;</div>
-            <div className="">&nbsp;</div>
-            <div className="">
-              <StaticImage
-                height={60}
-                alt="plane"
-                placeholder="blurred"
-                src="../../../images/earth-with-plane-drawing-png.png"
-              />
-            </div>
+      <section className="md:hidden mb-2" id="mobileStudycountry">
+        <div className="grid grid-cols-4 gap-2">
+          <div className="">&nbsp;</div>
+          <div className="">&nbsp;</div>
+          <div className="">&nbsp;</div>
+          <div className="">
+            <StaticImage
+              height={60}
+              alt="plane"
+              placeholder="blurred"
+              src="../../../images/earth-with-plane-drawing-png.png"
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-8">
+          <div className="col-span-3">
+            <StaticImage
+              alt="travelers"
+              placeholder="blurred"
+              src="../../../images/4564198_2400445 1.png"
+            />
           </div>
 
-          <div className="grid grid-cols-8">
-            <div className="col-span-3">
-              <StaticImage
-                alt="travelers"
-                placeholder="blurred"
-                src="../../../images/4564198_2400445 1.png"
-              />
-            </div>
-
-            <div className="col-span-5">
-              <span className="text-sky-600 text-2xl font-black font-['monserrat-bold']">
-                Où souhaitez-vous étudier ?
-              </span>{" "}
-              <p className="font-['roboto'] mr-3 text-base">
-                Nous vous accompagnons à réaliser votre projet d'études dans les
-                meilleurs universités du monde. L'accompgnement RDC Etudes
-                consiste à vous orienter dans votre projet d'études tout en les
-                orientant sur le plan académique et professionel.
-              </p>
-            </div>
+          <div className="col-span-5">
+            <span className="text-sky-600 text-2xl font-black font-['monserrat-bold']">
+              Où souhaitez-vous étudier ?
+            </span>{" "}
+            <p className="font-['roboto'] mr-3 text-base">
+              Nous vous accompagnons à réaliser votre projet d'études dans les
+              meilleurs universités du monde. L'accompgnement RDC Etudes
+              consiste à vous orienter dans votre projet d'études tout en les
+              orientant sur le plan académique et professionel.
+            </p>
           </div>
+        </div>
 
-          <div className="grid grid-cols-4 gap-4">
-            <div className="">
-              <StaticImage
-                height={80}
-                placeholder="blurred"
-                alt="plane"
-                src="../../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
-              />
-            </div>
-            <div className="">&nbsp;</div>
-            <div className="">&nbsp;</div>
-            <div className="">
-              <StaticImage
-                height={60}
-                alt="tourist"
-                placeholder="blurred"
-                src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
-              />
-            </div>
+        <div className="grid grid-cols-4 gap-4">
+          <div className="">
+            <StaticImage
+              height={80}
+              placeholder="blurred"
+              alt="plane"
+              src="../../../images/pngtree-cartoon-paper-airplane-png-image_1195649-removebg-preview.png"
+            />
           </div>
-        </section>
-     
+          <div className="">&nbsp;</div>
+          <div className="">&nbsp;</div>
+          <div className="">
+            <StaticImage
+              height={60}
+              alt="tourist"
+              placeholder="blurred"
+              src="../../../images/Download_A_tourist_element_on_white_background_for_free-removebg-preview.png"
+            />
+          </div>
+        </div>
+      </section>
+
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <section className="hidden md:block" id="studycountry">
           <div className="grid grid-cols-4 gap-2">
@@ -197,10 +197,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             </div>
 
             <div className="col-span-6 py-16 mr-10">
-              <span className="text-sky-600 font-black text-5xl">
+              <span className="text-sky-600 font-black text-4xl">
                 Où souhaitez-vous étudier ?
               </span>{" "}
-              <p className="text-2xl py-6 font-['roboto']">
+              <p className="text-xl py-6 font-['roboto']">
                 Nous vous accompagnons à réaliser votre projet d'études dans les
                 meilleurs universités du monde. L'accompgnement RDC Etudes
                 consiste à vous orienter dans votre projet d'études tout en les
@@ -231,11 +231,11 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </div>
         </section>
       </AnimationOnScroll>
-      <p className="text-2xl md:text-4xl font-black mx-10 text-sky-600 text-center py-4">
+      <p className="text-2xl md:text-3xl font-black mx-10 text-sky-600 text-center py-4">
         Nous vous emmenons partout au monde
       </p>
 
-      <p className="md:mx-28 mx-6 text-center md:text-2xl text-lg font-['roboto'] mb-10">
+      <p className="mx-6 md:mx-52 text-center md:text-2xl text-lg font-['roboto'] mb-10">
         Nous réalisons cette mission chaque jour en guidant et soutenant les
         étudiants dans la réalisation de leurs projets d'études tout en les
         orientant sur le plan académique et professionnel.
@@ -467,7 +467,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </span>{" "}
         </div>
 
-        <div className="hidden md:grid md:grid-cols-3 gap-4 mx-10">
+        <div className="hidden md:grid md:grid-cols-3 gap-4 mx-48">
           <div className="rounded-2xl h-[300px] px-5 py-7 bg-sky-600">
             <div className="z-10">
               <FontAwesomeIcon
