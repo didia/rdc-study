@@ -71,10 +71,10 @@ const ScholarShipCard = ({ scholarship }) => {
       </Card> */}
 
       <div className="mb-6 ml-auto mr-auto">
-        <div class="p-4 bg-white border border-gray-400 rounded-3xl shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
+        <div class="h-[420px] p-4 bg-white border border-gray-400 rounded-3xl shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
           <div className="">
             <a href={`/${scholarshipItem.slug}`}>
-              <h5 class="mb-2 text-xl font-bold font-['roboto-bold'] uppercase">
+              <h5 class="mb-2 text-xl md:text-sm font-bold font-['roboto-bold'] uppercase">
                 {scholarshipItem.title}
               </h5>
             </a>
