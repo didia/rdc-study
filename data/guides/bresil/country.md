@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Etudier au Brésil
 excerpt: Ce guide vous explique les différentes étapes à suivre pour obtenir une
   admission dans n’importe quel établissement d’enseignement Brésilien.
@@ -43,7 +43,7 @@ Oui, les étudiants internationaux ont la possibilité de travailler ou faire de
 
 ## COMBIEN COÛTENT LES DÉMARCHES ?
 
-En supposant que vous choisissez d’être accompagné dans vos démarches par un mentor de RDC Études, vous devez prévoir entre 930$ et 2 230$ pour toutes vos démarches. Ces frais se présentent comme suit:
+En supposant que vous choisissez d’être accompagné dans vos démarches par un mentor de RDC Études, vous devez prévoir entre **930$** et **2 230$** pour toutes vos démarches. Ces frais se présentent comme suit:
 
 * 630 $ pour une inscription dans un cours de langue portugaise
 * 400$  pour le processus d’admission dans une université privée 
