@@ -10,7 +10,7 @@ related:
   - bresil/admission
   - bresil/visa
 name: Bresil
-thumbnail: images/bresil.webp
+thumbnail: images/brazil.webp
 date: 2024-02-27
 ---
 Nouveau guide

@@ -8,7 +8,7 @@ topic: visa
 related:
   - bresil/admission
 name: Bresil
-thumbnail: images/bresil-visa.webp
+thumbnail: images/brazil-visa.webp
 date: 2024-02-27
 ---
 Nouveau guide
