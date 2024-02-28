@@ -11,21 +11,15 @@ name: Bresil
 thumbnail: images/brazil-admission.webp
 date: 2024-02-27
 ---
-Nouveau guide<!--StartFragment-->
-
 Pour vous rendre au Brésil pour des raisons d’études, vous devez au préalable obtenir une admission d’une université publique ou privée. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n’importe quelle université brésilienne.
 
 Le moyen le plus facile pour accéder aux universités brésiliennes est au travers du  Programme [PEC-G](http://www.dce.mre.gov.br/en/PEC/G/processo_seletivo/inscricoes/2019.php) qui va vous épargner des frais de scolarité. Mais néanmoins, il est possible d’avoir une inscription dans une université privée ou publique par ses propres moyens .
 
 Les universités brésiliennes possèdent aujourd’hui toutes un portail internet où il est possible de télécharger les documents pour l’inscription. Il vous faudra chercher une université et initier le processus de demande d’inscription.
 
-
-
 Depuis le COVID-19 beaucoup d’institutions ont adopté un mode d’inscription simplifiée, appelée ENTRADA SIMPLIFICADA cette méthode, vous exempte du VESTIBULAR, ENEM, etc qui sont des tests de niveau obligatoires pour tout étudiant désirant intégrer une université brésilienne. Il vous suffit de remplir la demande en ligne via le site web de l'université de votre choix et de présenter une lettre de motivation écrite en portugais. 
 
 Il est important de souligner que pour bénéficier de cette méthode, vous devez être physiquement au Brésil et posséder les documents légaux qui vous permettront de vous identifier comme étant résident temporaire ou permanent. 
-
-
 
 Les étudiants qui souhaitent postuler  au sein d’une université brésilienne, pour une formation, que ce soit pour le premier, second ou troisième cycle universitaire doivent envoyer un dossier des documents complets dans un délais d’au moins 6 mois avant la rentrée académique qui tombe très souvent en Février ou Mars pour le premier semestre de l’année et en Août pour le deuxième semestre sauf imprévus.
 
