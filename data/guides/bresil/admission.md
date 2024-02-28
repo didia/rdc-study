@@ -2,7 +2,7 @@
 draft: true
 title: Obtenir une admission dans une université brésilienne
 excerpt: Ce guide vous explique les différentes étapes à suivre pour obtenir une
-  admission dans n’importe quel établissement d’enseignement Bresilien.
+  admission dans n’importe quel établissement d’enseignement Brésilien.
 slug: bresil/admission
 topic: admission
 related:
@@ -17,7 +17,7 @@ Le moyen le plus facile pour accéder aux universités brésiliennes est au trav
 
 Les universités brésiliennes possèdent aujourd’hui toutes un portail internet où il est possible de télécharger les documents pour l’inscription. Il vous faudra chercher une université et initier le processus de demande d’inscription.
 
-Depuis le COVID-19 beaucoup d’institutions ont adopté un mode d’inscription simplifiée, appelée ENTRADA SIMPLIFICADA cette méthode, vous exempte du VESTIBULAR, ENEM, etc qui sont des tests de niveau obligatoires pour tout étudiant désirant intégrer une université brésilienne. Il vous suffit de remplir la demande en ligne via le site web de l'université de votre choix et de présenter une lettre de motivation écrite en portugais. 
+Depuis le COVID-19 beaucoup d’institutions ont adopté un mode d’inscription simplifiée, appelée **ENTRADA SIMPLIFICADA** cette méthode, vous exempte du VESTIBULAR, ENEM, etc qui sont des tests de niveau obligatoires pour tout étudiant désirant intégrer une université brésilienne. Il vous suffit de remplir la demande en ligne via le site web de l'université de votre choix et de présenter une lettre de motivation écrite en portugais. 
 
 Il est important de souligner que pour bénéficier de cette méthode, vous devez être physiquement au Brésil et posséder les documents légaux qui vous permettront de vous identifier comme étant résident temporaire ou permanent. 
 
@@ -31,7 +31,7 @@ Les étudiants qui souhaitent postuler  au sein d’une université brésilienn
 * CPF (Cadastre de Personne Physique)
 * Carte d'identité (CRNM) 
 
-COMBIEN ÇA COÛTE ? 
+## COMBIEN ÇA COÛTE ? 
 
 En supposant que vous choisissez d’être accompagné dans vos démarches par un mentor de RDC Études, vous devez prévoir entre 550$ pour toutes vos démarches. Ces frais se présentent comme suit:
 
