@@ -35,44 +35,30 @@ Les étudiants qui ont besoin d'un visa doivent payer les frais de scolarité en
 
 ## QU’EN EST-IL DES BOURSES ?
 
-
-
 Oui, il existe des bourses d'études pour les étudiants internationaux en Roumanie. Vous trouverez plus d’informations sur la bourse offerte par le gouvernement Roumain, sur notre [site web](https://www.rdcetudes.com/bourses/bourse-du-gouvernement-roumain-pour-etudiants-internationaux-2020-2021). Vous trouverez toutes les opportunités de bourses offertes en Roumanie, sur le [site web du gouvernement](https://www.studyinginromania.com/scholarships.html). 
 
-
-
-PEUT-ON TRAVAILLER EN ROUMANIE ?
-
-
+## PEUT-ON TRAVAILLER EN ROUMANIE ?
 
 Oui, les étudiants internationaux peuvent travailler en Roumanie sous certaines conditions. Voici quelques points à prendre en compte :
 
-Limite de travail : Les étudiants internationaux peuvent travailler jusqu'à un maximum de 20 heures par semaine pendant l'année universitaire et à temps plein pendant les vacances d'été (juin, juillet, août et septembre) sans avoir besoin d'obtenir un permis de travail supplémentaire.
+**Limite de travail** : Les étudiants internationaux peuvent travailler jusqu'à un maximum de 20 heures par semaine pendant l'année universitaire et à temps plein pendant les vacances d'été (juin, juillet, août et septembre) sans avoir besoin d'obtenir un permis de travail supplémentaire.
 
-Permis de travail : Si un étudiant souhaite travailler plus de 20 heures par semaine pendant l'année universitaire ou pendant les vacances d'été, il doit obtenir un permis de travail. Les conditions d'obtention d'un permis de travail peuvent varier en fonction de la nationalité de l'étudiant et d'autres facteurs.
+**Permis de travail** : Si un étudiant souhaite travailler plus de 20 heures par semaine pendant l'année universitaire ou pendant les vacances d'été, il doit obtenir un permis de travail. Les conditions d'obtention d'un permis de travail peuvent varier en fonction de la nationalité de l'étudiant et d'autres facteurs.
 
-Types de travail : Les étudiants internationaux peuvent travailler dans différents secteurs, y compris le commerce, la restauration, les services, l'enseignement de langues étrangères, etc. Cependant, il est important de respecter les lois et réglementations du travail en Roumanie.
+**Types de travail** : Les étudiants internationaux peuvent travailler dans différents secteurs, y compris le commerce, la restauration, les services, l'enseignement de langues étrangères, etc. Cependant, il est important de respecter les lois et réglementations du travail en Roumanie.
 
-Langue : Dans de nombreux cas, la connaissance de la langue roumaine peut être nécessaire pour certains emplois, bien que dans les grandes villes et les zones touristiques, il soit possible de trouver des emplois où la maîtrise de l'anglais est suffisante.
+**Langue** : Dans de nombreux cas, la connaissance de la langue roumaine peut être nécessaire pour certains emplois, bien que dans les grandes villes et les zones touristiques, il soit possible de trouver des emplois où la maîtrise de l'anglais est suffisante.
 
 N.B: Il est recommandé aux étudiants internationaux de vérifier les règles et réglementations spécifiques concernant le travail des étudiants en Roumanie auprès des autorités compétentes ou des services aux étudiants de leur établissement d'enseignement.
 
-
-
 ## COMBIEN COÛTENT LES DÉMARCHES ?
-
-
 
 En supposant que vous choisissez d’être accompagné dans vos démarches par un mentor de RDC Etudes, vous devez prévoir entre 3 400$ et 6 350$ pour toutes vos démarches. Ces frais se présentent comme suit:
 
-50-150 EUR : Frais de dossier d’admission  
-
-50$ : Traduction des documents 
-
-120 euros : Frais de visa 
-
- 2 000-5 000 EUR par an : Versement frais académique  
-
-1000 $ : Assistance RDC ÉTUDES 
+* 50-150 EUR : Frais de dossier d’admission  
+* 50$ : Traduction des documents 
+* 120 euros : Frais de visa 
+*  2 000-5 000 EUR par an : Versement frais académique  
+* 1000 $ : Assistance RDC ÉTUDES 
 
 NB: Il est important de vérifier auprès de l'ambassade ou du consulat roumain de votre pays, ainsi qu'auprès des universités spécifiques pour les informations les plus précises et à jour concernant les frais et les exigences.
