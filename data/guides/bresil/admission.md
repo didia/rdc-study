@@ -2,7 +2,7 @@
 draft: true
 title: Obtenir une admission dans une université brésilienne
 excerpt: Ce guide vous explique les différentes étapes à suivre pour obtenir une
-  admission dans n’importe quel établissement d’enseignement allemand.
+  admission dans n’importe quel établissement d’enseignement Bresilien.
 slug: bresil/admission
 topic: admission
 related:
