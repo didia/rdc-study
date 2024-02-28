@@ -23,24 +23,18 @@ Il est important de souligner que pour bénéficier de cette méthode, vous deve
 
 Les étudiants qui souhaitent postuler  au sein d’une université brésilienne, pour une formation, que ce soit pour le premier, second ou troisième cycle universitaire doivent envoyer un dossier des documents complets dans un délais d’au moins 6 mois avant la rentrée académique qui tombe très souvent en Février ou Mars pour le premier semestre de l’année et en Août pour le deuxième semestre sauf imprévus.
 
-Quels sont les documents requis pour l’inscription ?
+## Quels sont les documents requis pour l’inscription ?
 
-Certificat de langue portugaise (le cas échéant) 
-
-Bulletins 3eme, 4eme, 5eme et 6eme (traduits en portugais)
-
-Diplôme (traduit en portugais)
-
-CPF (Cadastre de Personne Physique)
-
-Carte d'identité (CRNM) 
+* Certificat de langue portugaise (le cas échéant) 
+* Bulletins 3eme, 4eme, 5eme et 6eme (traduits en portugais)
+* Diplôme (traduit en portugais)
+* CPF (Cadastre de Personne Physique)
+* Carte d'identité (CRNM) 
 
 COMBIEN ÇA COÛTE ? 
 
 En supposant que vous choisissez d’être accompagné dans vos démarches par un mentor de RDC Études, vous devez prévoir entre 550$ pour toutes vos démarches. Ces frais se présentent comme suit:
 
-50$ :  Traduction des documents 
-
-100$ :  Frais d’inscription
-
-**400$ : Frais d’accompagnement RDC ETUDES**
+* 50$ :  Traduction des documents 
+* 100$ :  Frais d’inscription
+* 400$ : Frais d’accompagnement RDC ETUDES
