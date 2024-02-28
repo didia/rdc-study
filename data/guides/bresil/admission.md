@@ -21,6 +21,8 @@ Depuis le COVID-19 beaucoup d’institutions ont adopté un mode d’inscription
 
 Il est important de souligner que pour bénéficier de cette méthode, vous devez être physiquement au Brésil et posséder les documents légaux qui vous permettront de vous identifier comme étant résident temporaire ou permanent. 
 
+Vous pouvez aussi opter pour un programme de langue portugaise pour les étrangers avant de débuter vos études universitaires. Pour plus d’informations sur la procédure, veuillez consulter notre article Pourquoi apprendre le portugais au Brésil ?  
+
 Les étudiants qui souhaitent postuler  au sein d’une université brésilienne, pour une formation, que ce soit pour le premier, second ou troisième cycle universitaire doivent envoyer un dossier des documents complets dans un délais d’au moins 6 mois avant la rentrée académique qui tombe très souvent en Février ou Mars pour le premier semestre de l’année et en Août pour le deuxième semestre sauf imprévus.
 
 ## Quels sont les documents requis pour l’inscription ?
