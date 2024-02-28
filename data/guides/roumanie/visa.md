@@ -2,7 +2,7 @@
 draft: true
 title: Obtenir un visa d'études pour la Roumanie
 excerpt: Ce guide vous explique les différentes étapes à suivre pour obtenir une
-  admission dans n’importe quel établissement d’enseignement allemand.
+  admission dans n’importe quel établissement d’enseignement Roumain.
 slug: roumanie/visa
 topic: visa
 related:
