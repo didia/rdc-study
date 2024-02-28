@@ -23,15 +23,15 @@ L’ ambassade du Brésil dispose de 2 types de visa accordés aux étudiants é
 
 Informations pour l’Obtention de Visa d’études avant de se présenter au Service Consulaire:
 
-Remplir [le Formulaire de Demande de Visa en ligne](https://formulario-mre.serpro.gov.br/sci/pages/web/ui/#/requerimento), 
+1. Remplir [le Formulaire de Demande de Visa en ligne](https://formulario-mre.serpro.gov.br/sci/pages/web/ui/#/requerimento), 
 
- Télécharger une photo en couleur, récente de 3cm x 4cm ;
+ 2. Télécharger une photo en couleur, récente de 3cm x 4cm ;
 
-Télécharger tous les documents selon le visa demandé
+3. Télécharger tous les documents selon le visa demandé
 
- Imprimer le reçu de remplissage et le signer dans l’espace indiqué.   
+ 4. Imprimer le reçu de remplissage et le signer dans l’espace indiqué.   
 
-**Documents à présenter au Service Consulaire**
+* **Documents à présenter au Service Consulaire**
 
 1. Bulletins de 3ème, 4ème, 5ème et 6ème des humanités, diplôme d’état ou attestation de Réussite;
 2. Une photo récente du candidat en format 3 x 4 cm de face sur un fond clair (blanc de préférence);
@@ -40,9 +40,9 @@ Télécharger tous les documents selon le visa demandé
 5. Pour les étudiants inscrits dans le cours de portugais : il est exigé un minimum de 15 heures de cours hebdomadaires; 
 6. Pour les étudiants en post-graduation : il est exigé, en sus, une attestation d'immatriculation à l'Université ;
 7. Étudiant de 3ème année de thèse: lettre du directeur de thèse indiquant le sujet traité, la progression des recherches et la date probable de la soutenance ;
-8. Paiement d’un frais consulaire de USD 80,00 à la Rawbank ; le bordereau sera remis à l’Ambassade par les agents consulaires.
+8. Paiement d’un frais consulaire de **USD 80,00 à la Rawbank** ; le bordereau sera remis à l’Ambassade par les agents consulaires.
 
-Étudiant non boursier
+* **Étudiant non boursier**
 
 Justificatif de capacité de subvenir à ses besoins pendant toute la durée du séjour (par exemple : fiche de paie ou feuille d'impôt sur le revenu des ses parents) ;
 
@@ -52,7 +52,7 @@ Reçu du formulaire de visa signé et avec photo ;
 
 Réservation du billet d'avion aller-retour dont la date de départ est au moins 30 jours après la date de dépôt de demande de visa
 
-Prise en charge / Hébergement au Brésil 
+* **Prise en charge / Hébergement au Brésil** 
 
 L’ étudiant dont le sponsor est résident en Rdc, est prié de présenter l’original d’un relevé de compte bancaire cacheté et signé par le gérant de compte en raison des six derniers mois dudit sponsor. 
 
