@@ -8,7 +8,7 @@ topic: admission
 related:
   - angleterre/visa
 name: Angleterre
-thumbnail: images/angleterre-admission.webp
+thumbnail: images/angleterre-admission.jpg
 date: 2024-02-27
 ---
 Nouveau guide

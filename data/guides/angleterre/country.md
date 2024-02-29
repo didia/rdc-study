@@ -10,7 +10,7 @@ related:
   - angleterre/admission
   - angleterre/visa
 name: Angleterre
-thumbnail: images/angleterre.webp
+thumbnail: images/angleterre.jpg
 date: 2024-02-27
 ---
 Nouveau guide

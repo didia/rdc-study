@@ -8,7 +8,7 @@ topic: admission
 related:
   - bresil/visa
 name: Bresil
-thumbnail: images/brazil-admission.webp
+thumbnail: images/brazil-admission.jpg
 date: 2024-02-27
 ---
 Pour vous rendre au Brésil pour des raisons d’études, vous devez au préalable obtenir une admission d’une université publique ou privée. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n’importe quelle université brésilienne.
