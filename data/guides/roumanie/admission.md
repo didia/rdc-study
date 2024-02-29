@@ -8,7 +8,7 @@ topic: admission
 related:
   - roumanie/visa
 name: Roumanie
-thumbnail: images/romania-admission.webp
+thumbnail: images/romania-admission.jpg
 date: 2024-02-27
 ---
 Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n’importe quel établissement d’enseignement Roumain.

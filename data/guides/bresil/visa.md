@@ -8,7 +8,7 @@ topic: visa
 related:
   - bresil/admission
 name: Bresil
-thumbnail: images/brazil-visa.webp
+thumbnail: images/brazil-visa.jpg
 date: 2024-02-27
 ---
 Avec votre admission dans un établissement d‘enseignement Brésilien en mains, vous devez maintenant faire une demande de visa à l'ambassade Brésilienne. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir un visa étudiant pour le Brésil.

@@ -8,7 +8,7 @@ topic: visa
 related:
   - roumanie/admission
 name: Romanie
-thumbnail: images/romania-visa.webp
+thumbnail: images/romania-visa.jpg
 date: 2024-02-27
 ---
 Nouveau guide

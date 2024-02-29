@@ -10,7 +10,7 @@ related:
   - bresil/admission
   - bresil/visa
 name: Bresil
-thumbnail: images/bresil.webp
+thumbnail: images/bresil.jpg
 date: 2024-02-27
 ---
 Au-delà des plages sublimes, des fêtes nocturnes, le football, le carnaval et autres, le Brésil offre des formations de qualité dans tous les domaines. Considéré comme un pays  émergent, néanmoins son système universitaire est leader dans l’Amérique latine qui compte des universités prestigieuses reconnues mondialement, entre autres, Université de Sao Paulo (USP); l’Université Fédérale de Rio de Janeiro (UFRJ); l’Université de Brasília (UNB); l’Université Fédérale de Minas Gerais (UFMG). 

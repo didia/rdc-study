@@ -10,7 +10,7 @@ related:
   - roumanie/admission
   - roumanie/visa
 name: Roumanie
-thumbnail: images/romania.webp
+thumbnail: images/romania.jpg
 date: 2024-02-27
 ---
 Nouveau guide
