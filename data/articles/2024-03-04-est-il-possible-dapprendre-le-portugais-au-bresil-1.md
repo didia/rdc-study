@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: EST-IL POSSIBLE D'APPRENDRE LE PORTUGAIS AU BRESIL ?
 excerpt: >
   Pour ceux qui souhaitent étudier au Brésil et qui ne maîtrisent pas la langue,
