@@ -15,12 +15,14 @@ La langue officielle du Brésil est le portugais et non l’espagnol comme beauc
 
 Oui, vous pouvez faire une demande de visa d'études, avec une inscription dans une école de langue portugaise pour étudiants internationaux. Cependant les cours de langue doivent remplir le critère de 15 heures par semaine.
 
-Voici quelques écoles de langue portugaise pour étudiants internationaux au Brésil : Littera Brasil, Classe português para estrangeiros, etc… 
+Voici quelques écoles de langue portugaise pour étudiants internationaux au Brésil : **[Littera Brasil](https://www.litterabrasil.com/), [Classe português para estrangeiros](https://www.classeportugues.com.br/)**etc,...
 
 Une fois admis au sein du cursus, il est nécessaire de faire la demande d’un visa étudiant auprès de l’ambassade du Brésil. 
 
-En supposant que vous choisissez d’être accompagné dans vos démarches par un mentor de RDC Études, vous devez prévoir entre 920$ - 1 350$ pour toutes vos démarches. Ces frais se présentent comme suit:
+## COMBIEN ÇA COÛTE ? 
 
-20$ - 50$ :  Frais d’inscription 
-600$ - 1 000$ :  Frais de scolarité
-300$ : Frais d’accompagnement RDC ETUDES
+En supposant que vous choisissez d’être accompagné dans vos démarches par un mentor de RDC Études, vous devez prévoir entre **920$ - 1 350$** pour toutes vos démarches. Ces frais se présentent comme suit:
+
+* 20$ - 50$ :  Frais d’inscription 
+* 600$ - 1 000$ :  Frais de scolarité
+* 300$ : Frais d’accompagnement RDC ETUDES
