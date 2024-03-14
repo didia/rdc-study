@@ -36,7 +36,7 @@ Le programme Fulbright est très compétitif et ne prend pas seulement en compte
 
 ## Comment postuler ?
 
-Pour postuler, vous pouvez contacter l’ambassade des états-unis dans votre pays d’origine ou le faire en ligne sur ce lien <a href="https://apply.iie.org/account/register" target="_blank" rel="noopener noreferrer">https://apply.iie.org/account/register</a>
+Pour postuler, vous pouvez contacter l’ambassade des états-unis dans votre pays d’origine ou le faire [en ligne sur ce lien](https://apply.iie.org/ffsp2025).
 
 Vous aurez à fournir les documents suivants:
 
