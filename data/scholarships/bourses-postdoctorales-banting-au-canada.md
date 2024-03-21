@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses de recherche postdoctorales Banting au Canada
-deadline: 2021-09-22T03:59:44.449Z
+deadline: 2023-09-20T03:59:44.449Z
 excerpt: "Chaque année le gouvernement canadien offre 70 bourses d’une valeur de
   70.000 dollars canadiens par année pour une durée de 2 ans non renouvelable
   aux étudiants postdoctoraux afin qu’ils contribuent à l’essor économique,
@@ -28,7 +28,7 @@ thumbnailCredits: <a
   viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12
   5h10v18H0V14h10v9h12v-9z"></path></svg></span><span
   style="display:inline-block;padding:2px 3px">Good Free Photos</span></a>
-startDate: 2021-04-28T18:02:40.315Z
+startDate: 2023-04-26T18:02:40.315Z
 levels:
   - research
 targetCountries:
@@ -36,13 +36,19 @@ targetCountries:
 ---
 ## En quoi consiste la bourse ?
 
-* Une bourse de 70 000 dollars canadiens par année pour une durée de deux ans non renouvelable.
+Une bourse de 70 000 dollars canadiens par année pour une durée de deux ans non renouvelable dans les domaines suivants : 
+
+* Recherche en santé
+* Sciences humaines
+* Sciences naturelles ou génie  
 
 ## Quels sont les critères de la bourse ?
 
-* Vous devez avoir obtenu ou vous obtiendrez votre diplôme de doctorat entre le 15 septembre 2017 et le 30 septembre 2021,
+* Vous devez avoir obtenu ou vous obtiendrez votre diplôme de doctorat entre le 15 septembre 2020 et le 30 septembre 2024
 * Votre programme de recherche vise soit les domaines de la santé, soit les sciences naturelles et/ou ingénierie ou soit les sciences sociales et humaines.
 * Vous devez avoir déjà été sélectionné par un établissement d’enseignement qui vous accueillera pour votre postdoc.
+
+Les candidats qui n'ont pas rempli toutes les exigences relatives à leur diplôme au moment de la présentation de la demande devront fournir une preuve du respect de ces exigences avant le 15 octobre 2024.
 
 Pour en savoir plus sur les critères d’admissibilité, consultez <a href="http://banting.fellowships-bourses.gc.ca/fr/app-dem_elig-adm.html" target="_blank" rel="nofollow noopener">la page de la bourse à ce sujet</a>.
 
@@ -52,7 +58,7 @@ Pour en savoir plus sur les critères d’admissibilité, consultez <a href="htt
 2. La qualité du programme de recherche que vous allez proposer.
 3. L’engagement de l’établissement d’enseignement à vous soutenir ainsi que la correspondance entre votre programme de recherche ainsi que les priorités de stratégiques du dit établissement d’enseignement.
 
-Pour en savoir plus sur les critères de sélection de cette bourse, consultez <a href="http://banting.fellowships-bourses.gc.ca/fr/rev-eval_overview-apercu.html" target="_blank" rel="nofollow noopener">la page de la bourse à ce sujet</a>.
+Pour en savoir plus sur les critères de sélection de cette bourse, consultez [la page de la bourse à ce sujet](https://banting.fellowships-bourses.gc.ca/fr/app-dem_elig-adm.html).
 
 ## Comment postuler ?
 
