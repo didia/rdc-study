@@ -4,6 +4,9 @@ import * as styles from "./styles.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
+import PrimaryBtn from "../../Button/Primary";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReply } from "@fortawesome/free-solid-svg-icons";
 
 const Help = () => {
   return (
@@ -142,7 +145,7 @@ const Help = () => {
           </p>
         </div>
 
-        <div className="border rounded-lg px-10 mt-10 mx-[30rem] py-7 shadow-md">
+        <div className="mb-10 border rounded-lg px-10 mt-10 mx-[30rem] py-7 shadow-md">
           <div className="inline-block relative w-full py-5">
             <select
               placeholder="Mentionnez le pays"
@@ -420,11 +423,8 @@ const Help = () => {
             </select>
           </div>
 
-          <p className="uppercase text-center text-lg">
-            Avez-vous déjà obtenu votre admission ?{" "}
-          </p>
+          <PrimaryBtn text={"Soumettre"} />
 
-          <p className="text-sky-600 font-extrabold text-xl my-5">Suivant </p>
         </div>
       </section>
     </Layout>

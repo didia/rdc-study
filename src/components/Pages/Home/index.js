@@ -90,46 +90,56 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               label="Demander une assistance"
               placement="right-start"
             >
-              <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
-                {" "}
-                <Dropdown.Item
-                  href="/bourse"
-                  class="mx-4 py-2 text-md font-['monserrat']"
-                >
-                  <FontAwesomeIcon
-                    icon={faGraduationCap}
-                    className="mr-3 h-5"
-                  />
-                  Je veux une bourse
-                </Dropdown.Item>
-              </div>
-              <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
-                <Dropdown.Item href="/help" class="mx-4 py-2 text-md font-['monserrat']">
-                  <FontAwesomeIcon
-                    icon={faAssistiveListeningSystems}
-                    className="mr-3 h-5"
-                  />
-                  Je veux une consultation
-                </Dropdown.Item>
-              </div>
-              <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
-                <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
-                  <FontAwesomeIcon icon={faHandsHelping} className="mr-3 h-5" />
-                  Je veux une assistance
-                </Dropdown.Item>
-              </div>
-              <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
-                <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
-                  <FontAwesomeIcon icon={faFileEdit} className="mr-3 h-5" />
-                  Je veux une traduction des documents
-                </Dropdown.Item>
-              </div>
-              <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
-                <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
-                  <FontAwesomeIcon icon={faPassport} className="mr-3 h-5" /> Je
-                  veux acheter un billet
-                </Dropdown.Item>
-              </div>
+              <a href="/help">
+                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                  {" "}
+                  <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                    <FontAwesomeIcon
+                      icon={faGraduationCap}
+                      className="mr-3 h-5"
+                    />
+                    Je veux une bourse
+                  </Dropdown.Item>
+                </div>
+              </a>
+              <a href="/help">
+                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                  <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                    <FontAwesomeIcon
+                      icon={faAssistiveListeningSystems}
+                      className="mr-3 h-5"
+                    />
+                    Je veux une consultation
+                  </Dropdown.Item>
+                </div>
+              </a>
+              <a href="/bourse">
+                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                  <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                    <FontAwesomeIcon
+                      icon={faHandsHelping}
+                      className="mr-3 h-5"
+                    />
+                    Je veux une assistance
+                  </Dropdown.Item>
+                </div>
+              </a>
+              <a href="/bourse">
+                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
+                  <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                    <FontAwesomeIcon icon={faFileEdit} className="mr-3 h-5" />
+                    Je veux une traduction des documents
+                  </Dropdown.Item>
+                </div>
+              </a>
+              <a href="/bourse">
+                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                  <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                    <FontAwesomeIcon icon={faPassport} className="mr-3 h-5" />{" "}
+                    Je veux acheter un billet
+                  </Dropdown.Item>
+                </div>
+              </a>
             </Dropdown>
 
             {/* <PrimaryBtn text={"Demander une assistance"} /> */}
