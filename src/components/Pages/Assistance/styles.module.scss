@@ -1,0 +1,61 @@
+.ellipse {
+    &__first {
+        position: absolute;
+        top: 130px;
+    }
+    &__second {
+        position: absolute;
+        top: 89px;
+    }
+}
+
+
+.ellipse3 {
+    position: absolute;
+    // width: 156.35px;
+    // height: 156.35px;
+    right: 0;
+    top: 88px;
+}
+
+.ellipse4 {
+    position: absolute;
+   // width: 156.35px;
+   // height: 156.35px;
+    right: 0;
+    top: 60px;
+}
+
+.student_img {
+    position: absolute;
+    // width: 156.35px;
+    // height: 156.35px;
+    right: 0;
+    top: 175px;
+}
+.student_img img {
+    height: 210px;
+}
+
+.img1 {
+    position: absolute;
+    width: 111px;
+    height: 167px;
+    left: 249px;
+    top: 45px;
+    //background: url(Young-Girl-Student-HD-Free-PNG-Image.png);
+}
+
+.help {
+    
+    &__btn {
+                height: 50px;
+                width: 200px;
+                color: #862304;
+                background-color: #fbc403;
+                border: 1px solid #ffffff;
+                border-radius: 10px;
+                transition: background-color 0.8s;
+                font-size: 20px;
+            }
+}
