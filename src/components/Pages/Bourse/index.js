@@ -9,8 +9,8 @@ import _ from "lodash";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import 'animate.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap, faDollarSign, faEdit, faCalendarDay } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "flowbite-react";
+import { faGraduationCap, faDollarSign, faEdit, faCalendarDay, faInfoCircle, faCheck, faCheckCircle, faClose, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { Button, Banner, Carousel } from "flowbite-react";
 
 const Bourse = ({ scholarships }) => {
   const LEVEL_ORDERS = [
@@ -39,19 +39,37 @@ const Bourse = ({ scholarships }) => {
             </span>{" "}
             <p className="mt-4">
               <span className="text-base font-['roboto']">
-                Chez RDC Etudes nous n'offrons malheuresement pas des bourses,
-                nous pouvons cependant vous assister à postuler pour la bourse
-                de votre choix sans pour autant garantir l'obtention de
-                celle-ci.
+                Chez RDC ETUDES nous recherchons et mettons en votre
+                disponibilite des offres de bourses d'études auxquelles vous
+                pouvez postuler et bénéficier d’une éducation de qualité dans
+                les meilleures universités du monde. Voici les offres de bourses
+                en cours trouvées pour vous avec amour par l'équipe RDC Études.
               </span>
-              <br />
-              <br />
-
-              <SecondaryBtn
-                fontSize={"text-base"}
-                text={"Demander une assistance"}
-              />
             </p>
+            <Banner>
+              <div className="flex w-full justify-between border-b border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+                <div className="mx-auto flex items-center">
+                  <p className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
+                    {/* <MdAnnouncement className="mr-4 h-4 w-4" /> */}
+                    <span className="[&_p]:inline">
+                      New brand identity has been launched for the&nbsp;
+                      <a
+                        href="https://flowbite.com"
+                        className="inline font-medium text-cyan-600 underline decoration-solid underline-offset-2 hover:no-underline dark:text-cyan-500"
+                      >
+                        Flowbite Library
+                      </a>
+                    </span>
+                  </p>
+                </div>
+                <Banner.CollapseButton
+                  color="gray"
+                  className="border-0 bg-transparent text-gray-500 dark:text-gray-400"
+                >
+                  {/* <HiX className="h-4 w-4" /> */}
+                </Banner.CollapseButton>
+              </div>
+            </Banner>
           </div>
         </div>
 
@@ -137,24 +155,64 @@ const Bourse = ({ scholarships }) => {
 
           <div className="flex -ml-[23rem] mt-[5rem]">
             <div>
-              <p className="text-6xl font-black text-sky-600">
+              <p className="text-5xl font-black text-sky-600">
                 Bourses d'études
               </p>
-              <p className="py-4 text-xl mr-[35rem] font-['roboto']">
-                Chez RDC Etudes nous n'offrons malheuresement pas des bourses,
-                nous pouvons cependant vous assister à postuler pour la bourse
-                de votre choix sans pour autant garantir l'obtention de
-                celle-ci. Vous trouverez toutes les offres des bourses dont nous
-                avons connaissance sur notre{" "}
-                <a href="/bourse" className="text-yellow-600">
-                  site web
-                </a>
+              <p className="py-4 text-2xl mr-[35rem] font-['roboto']">
+                Chez RDC ETUDES nous recherchons et mettons en votre
+                disponibilite des offres de bourses d'études auxquelles vous
+                pouvez postuler et bénéficier d’une éducation de qualité dans
+                les meilleures universités du monde. Voici les offres de bourses
+                en cours trouvées pour vous avec amour par l'équipe RDC Études.
               </p>
-              <PrimaryBtn
-                href={"/help"}
-                text={"Demander une assistance"}
-                fontSize={"text-2xl"}
-              />
+              <div className="mt-20">
+                <Banner>
+                  <div className="flex w-[50rem] justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+                    <div className="mx-auto flex items-center">
+                      <p className="flex items-center text-lg font-['monserrat-bold'] font-normal text-red-700 dark:text-gray-400">
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          className="mr-4 h-8 w-8"
+                        />
+                        <span className="[&_p]:inline">
+                          J’ai compris, j’aimerais quand même être assisté(e)
+                          pour la bourse
+                        </span>
+                      </p>
+                    </div>
+                    <Banner.CollapseButton
+                      color="gray"
+                      className="border-0 bg-transparent text-gray-500 dark:text-gray-400"
+                    >
+                      <FontAwesomeIcon icon={faClose} className="h-5 w-5" />
+                    </Banner.CollapseButton>
+                  </div>
+                </Banner>
+
+                <a href="#bourses">
+                  <Banner class="mt-10">
+                    <div className="flex w-[50rem] justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+                      <div className="mx-auto flex items-center">
+                        <p className="flex items-center text-lg font-['monserrat-bold'] font-normal text-cyan-600 dark:text-gray-400">
+                          <FontAwesomeIcon
+                            icon={faQuestionCircle}
+                            className="mr-4 h-8 w-8"
+                          />
+                          <span className="[&_p]:inline">
+                            Pour quelle bourse souhaitez-vous être assisté(e) ?
+                          </span>
+                        </p>
+                      </div>
+                      <Banner.CollapseButton
+                        color="gray"
+                        className="border-0 bg-transparent text-gray-500 dark:text-gray-400"
+                      >
+                        <FontAwesomeIcon icon={faClose} className="h-5 w-5" />
+                      </Banner.CollapseButton>
+                    </div>
+                  </Banner>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -178,7 +236,8 @@ const Bourse = ({ scholarships }) => {
             </div>
           </div>
         </div>
-        <div className="mt-10">
+        <div id="bourses"></div>
+        <div className="-mt-5">
           <AnimationOnScroll animateIn="animate__bounceInLeft" animateOnce>
             <StaticImage
               alt="Ellipse 6"
@@ -189,23 +248,19 @@ const Bourse = ({ scholarships }) => {
         </div>
       </section>
 
-      <section className="md:hidden px-4">
-        
+      <section className="md:hidden px-4"></section>
+      <section className="px-4 mb-10 md:hidden">
+        {scholarships.map((scholarship) => {
+          return (
+            <div className="">
+              {" "}
+              <ScholarShipCard scholarship={scholarship} />
+            </div>
+          );
+        })}
       </section>
-      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-        <section className="px-4 mb-10 md:hidden">
-          {scholarships.map((scholarship) => {
-            return (
-              <div className="">
-                {" "}
-                <ScholarShipCard scholarship={scholarship} />
-              </div>
-            );
-          })}
-        </section>
-      </AnimationOnScroll>
 
-      <div className="hidden md:block mb-20 ml-20">
+      {/* <div className="hidden md:block mb-20 ml-20">
         <div class="p-2 w-[700px] bg-white border flex border-gray-400 rounded-3xl shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
           <div className="">
             <h5 class="mb-2 text-2xl font-bold font-['roboto-bold'] uppercase">
@@ -251,25 +306,31 @@ const Bourse = ({ scholarships }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <section className="bg-gray-200 py-5 hidden md:block">
-        <AnimationOnScroll animateIn="animate__fadeInUp">
-          <div className="grid grid-cols-4 mx-8 py-10 gap-3">
-            {limitedScholarShips.map((scholarship) => {
+      <section
+        className="bg-slate-50 hidden px-20 -mt-10 md:block h-[35rem]"
+        id="bourses"
+      >
+        
+          <Carousel slide={true} indicators={false}>
+            {scholarships.map((scholarship, index) => {
+              const fisrtItem = scholarships[index];
+              const secondItem = scholarships[index + 1];
+              const thirdItem = scholarships[index + 2];
+
               return (
-                <div className="">
-                  {" "}
-                  <ScholarShipCard scholarship={scholarship} />
-                </div>
+                <AnimationOnScroll animateIn="animate__bounceInLeft">
+                  <div className="flex">
+                    {fisrtItem && <ScholarShipCard scholarship={fisrtItem} />}
+                    {secondItem && <ScholarShipCard scholarship={secondItem} />}
+                    {thirdItem && <ScholarShipCard scholarship={thirdItem} />}
+                  </div>
+                </AnimationOnScroll>
               );
             })}
-          </div>
-        </AnimationOnScroll>
-
-        <a href="#" className="text-sky-600 text-2xl font-bold px-10">
-          Voir plus
-        </a>
+          </Carousel>
+        
       </section>
     </Layout>
   );

@@ -35,7 +35,11 @@ const LEVEL_ORDERS = [
             pouvons cependant vous assister à postuler pour la bourse de votre
             choix sans pour autant garantir l’obtention de celle-ci. Vous
             trouverez toutes les offres des bourses dont nous avons connaissance
-            sur notre <a href="/bourse" className='text-yellow-600'>site web</a>.
+            sur notre{" "}
+            <a href="/bourse" className="text-yellow-600">
+              site web
+            </a>
+            .
           </p>
         </div>
 
@@ -99,8 +103,12 @@ const LEVEL_ORDERS = [
               </Carousel>
             </div>
 
-            <div className="hidden md:grid md:grid-cols-4 -mt-[34rem] z-30 relative ml-80">
-              {limitedScholarShips.map((scholarship) => {
+            <Carousel
+              className="hidden md:grid -mt-[40rem] z-30 relative"
+              slide={true}
+              indicators={false}
+            >
+              {scholarships.map((scholarship, index) => {
                 const levelsText = scholarship.frontmatter.levels
                   .sort(
                     (level1, level2) =>
@@ -111,48 +119,131 @@ const LEVEL_ORDERS = [
                   .join(", ");
 
                 const image = getImage(scholarship.frontmatter.thumbnail);
+                const fisrtItem = scholarships[index];
+                const secondItem = scholarships[index + 1];
+                const thirdItem = scholarships[index + 2];
                 return (
-                  <div className="">
-                    <Card
-                      className="max-w-sm mx-4 bg-slate-200 h-[29rem]"
-                      imgAlt="Meaningful alt text for an image that is not purely decorative"
-                      renderImage={() => (
-                        <GatsbyImage
-                          image={image}
-                          class="h-60 w-full"
-                          alt={scholarship.frontmatter.title}
-                        />
-                      )}
-                    >
-                      <div>
-                        <a href={`/${scholarship.frontmatter.slug}`}>
-                          <h5 className="text-xl font-bold tracking-tight text-sky-600 dark:text-white">
-                            {scholarship.frontmatter.title}
-                          </h5>
-                        </a>
+                  <div className="flex mx-64">
+                    {fisrtItem && (
+                      <Card
+                        className="max-w-sm mx-4 bg-slate-200 h-[29rem]"
+                        imgAlt="Meaningful alt text for an image that is not purely decorative"
+                        renderImage={() => (
+                          <GatsbyImage
+                            image={getImage(fisrtItem.frontmatter.thumbnail)}
+                            class="h-60 w-full"
+                            alt={fisrtItem.frontmatter.title}
+                          />
+                        )}
+                      >
+                        <div>
+                          <a href={`/${fisrtItem.frontmatter.slug}`}>
+                            <h5 className="text-xl font-bold tracking-tight text-sky-600 dark:text-white">
+                              {fisrtItem.frontmatter.title}
+                            </h5>
+                          </a>
 
-                        <p className="text-yellow-500 my-2">
-                          <FontAwesomeIcon icon={faClock} />
-                          &nbsp;
-                          {scholarship.frontmatter.deadline}
-                        </p>
-
-                        <p className="text-lg text-left">
-                          <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
-                          {levelsText}
-                        </p>
-
-                        <a href={`/${scholarship.frontmatter.slug}`}>
-                          <p className="text-sky-600 font-semibold text-lg py-4">
-                            Détails
+                          <p className="text-yellow-500 my-2">
+                            <FontAwesomeIcon icon={faClock} />
+                            &nbsp;
+                            {fisrtItem.frontmatter.deadline}
                           </p>
-                        </a>
-                      </div>
-                    </Card>
+
+                          <p className="text-lg text-left">
+                            <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
+                            {levelsText}
+                          </p>
+
+                          <a href={`/${fisrtItem.frontmatter.slug}`}>
+                            <p className="text-sky-600 font-semibold text-lg py-4">
+                              Détails
+                            </p>
+                          </a>
+                        </div>
+                      </Card>
+                    )}
+
+                    {secondItem && (
+                      <Card
+                        className="max-w-sm mx-4 bg-slate-200 h-[29rem]"
+                        imgAlt="Meaningful alt text for an image that is not purely decorative"
+                        renderImage={() => (
+                          <GatsbyImage
+                            image={getImage(secondItem.frontmatter.thumbnail)}
+                            class="h-60 w-full"
+                            alt={secondItem.frontmatter.title}
+                          />
+                        )}
+                      >
+                        <div>
+                          <a href={`/${secondItem.frontmatter.slug}`}>
+                            <h5 className="text-xl font-bold tracking-tight text-sky-600 dark:text-white">
+                              {secondItem.frontmatter.title}
+                            </h5>
+                          </a>
+
+                          <p className="text-yellow-500 my-2">
+                            <FontAwesomeIcon icon={faClock} />
+                            &nbsp;
+                            {secondItem.frontmatter.deadline}
+                          </p>
+
+                          <p className="text-lg text-left">
+                            <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
+                            {levelsText}
+                          </p>
+
+                          <a href={`/${secondItem.frontmatter.slug}`}>
+                            <p className="text-sky-600 font-semibold text-lg py-4">
+                              Détails
+                            </p>
+                          </a>
+                        </div>
+                      </Card>
+                    )}
+
+                    {thirdItem && (
+                      <Card
+                        className="max-w-sm mx-4 bg-slate-200 h-[29rem]"
+                        imgAlt="Meaningful alt text for an image that is not purely decorative"
+                        renderImage={() => (
+                          <GatsbyImage
+                            image={getImage(thirdItem.frontmatter.thumbnail)}
+                            class="h-60 w-full"
+                            alt={thirdItem.frontmatter.title}
+                          />
+                        )}
+                      >
+                        <div>
+                          <a href={`/${thirdItem.frontmatter.slug}`}>
+                            <h5 className="text-xl font-bold tracking-tight text-sky-600 dark:text-white">
+                              {thirdItem.frontmatter.title}
+                            </h5>
+                          </a>
+
+                          <p className="text-yellow-500 my-2">
+                            <FontAwesomeIcon icon={faClock} />
+                            &nbsp;
+                            {thirdItem.frontmatter.deadline}
+                          </p>
+
+                          <p className="text-lg text-left">
+                            <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
+                            {levelsText}
+                          </p>
+
+                          <a href={`/${thirdItem.frontmatter.slug}`}>
+                            <p className="text-sky-600 font-semibold text-lg py-4">
+                              Détails
+                            </p>
+                          </a>
+                        </div>
+                      </Card>
+                    )}
                   </div>
                 );
               })}
-            </div>
+            </Carousel>
           </div>
         </div>
       </section>

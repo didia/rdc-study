@@ -8,12 +8,14 @@ import ContactForm from "../../../components/ContactForm";
 import NewsCard from "../../NewsCard";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faQuoteLeft, faGraduationCap, faHandshake, faQuestion } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faQuoteLeft, faGraduationCap, faFileEdit, faHandsHelping, faTicket, faHandshake, faQuestion, faLanguage, faTicketSimple, faPassport, faAssistiveListeningSystems } from "@fortawesome/free-solid-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 import SecondaryBtn from "../../Button/Secondary";
 import PrimaryBtn from "../../Button/Primary";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import 'animate.css';
+import { Dropdown } from "flowbite-react";
+import { faHireAHelper } from "@fortawesome/free-brands-svg-icons";
 
 const Home = ({ guideCountries, articles, scholarships }) => {
   return (
@@ -83,7 +85,54 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               étudiants africains francophones, que ce soit sur le continent ou
               à l'étranger
             </p>
-            <PrimaryBtn text={"Demander une assistance"} />
+            <Dropdown
+              class="hidden md:flex font-['monserrat-bold'] bg-sky-600 text-white text-xl font-bold py-4 px-4 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
+              label="Demander une assistance"
+              placement="right-start"
+            >
+              <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                {" "}
+                <Dropdown.Item
+                  href="/bourse"
+                  class="mx-4 py-2 text-md font-['monserrat']"
+                >
+                  <FontAwesomeIcon
+                    icon={faGraduationCap}
+                    className="mr-3 h-5"
+                  />
+                  Je veux une bourse
+                </Dropdown.Item>
+              </div>
+              <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                <Dropdown.Item href="/help" class="mx-4 py-2 text-md font-['monserrat']">
+                  <FontAwesomeIcon
+                    icon={faAssistiveListeningSystems}
+                    className="mr-3 h-5"
+                  />
+                  Je veux une consultation
+                </Dropdown.Item>
+              </div>
+              <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                  <FontAwesomeIcon icon={faHandsHelping} className="mr-3 h-5" />
+                  Je veux une assistance
+                </Dropdown.Item>
+              </div>
+              <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
+                <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                  <FontAwesomeIcon icon={faFileEdit} className="mr-3 h-5" />
+                  Je veux une traduction des documents
+                </Dropdown.Item>
+              </div>
+              <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                  <FontAwesomeIcon icon={faPassport} className="mr-3 h-5" /> Je
+                  veux acheter un billet
+                </Dropdown.Item>
+              </div>
+            </Dropdown>
+
+            {/* <PrimaryBtn text={"Demander une assistance"} /> */}
 
             <StaticImage
               alt="plane"
@@ -231,15 +280,6 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </div>
         </section>
       </AnimationOnScroll>
-      <p className="text-2xl md:text-3xl font-black mx-10 text-sky-600 text-center py-4">
-        Nous vous emmenons partout au monde
-      </p>
-
-      <p className="mx-6 md:mx-52 text-center md:text-2xl text-lg font-['roboto'] mb-10">
-        Nous réalisons cette mission chaque jour en guidant et soutenant les
-        étudiants dans la réalisation de leurs projets d'études tout en les
-        orientant sur le plan académique et professionnel.
-      </p>
       <StudyCountry guideCountries={guideCountries} />
 
       <div className="hidden md:grid md:grid-cols-12 mb-20">
