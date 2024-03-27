@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "Le choc culturel et comment y faire face en tant qu'étudiant africain à
   l'étranger : Conseils pour comprendre et surmonter le choc culturel"
 excerpt: >+
