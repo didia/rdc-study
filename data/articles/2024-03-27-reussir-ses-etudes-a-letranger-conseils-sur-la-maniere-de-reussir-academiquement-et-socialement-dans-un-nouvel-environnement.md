@@ -53,12 +53,12 @@ En suivant ces conseils, vous pourrez non seulement réussir académiquement mai
 
 RDC ETUDES offre un service de Mentorat continue qui consiste à aider le futur etudiant à réussir son projet d'études à l’etranger : 
 
-Assistance pour résolution des problèmes.
-Assistance pour la réussite aux études.
-Assistance pour stages et emplois.
-Assistance aux parents des étudiants.
+1. Assistance pour résolution des problèmes.
+2. Assistance pour la réussite aux études.
+3. Assistance pour stages et emplois.
+4. Assistance aux parents des étudiants.
 
-En supposant que vous choisissez d’être accompagné dans vos démarches par un mentor de RDC Etudes, vous devez prévoir entre 80 et 600$ pour toutes vos démarches. Ces frais se présentent comme suit:
+En supposant que [vous optez pour le mentorat continu](https://www.rdcetudes.com/accompagnement), vous devez prévoir entre 80 et 600$ pour toutes vos démarches. Ces frais se présentent comme suit:
 
 * **8﻿0$** : Paiement mensuel
 * **2﻿60$** : Paiement Quadrimenstriel
