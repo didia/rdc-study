@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "Comment choisir le bon programme et université à l'étranger : Conseils
   sur la recherche de programmes et la prise de décisions éclairées"
 excerpt: >
