@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Entre la Belgique, le Canada, la France et les USA, quelle destination
   choisir pour mes études à l'étranger ?
 excerpt: >+
@@ -56,3 +56,18 @@ V﻿ous trouverez plus d'informations sur les etudes au Canada [en consultant no
 **Considérations** : Les États-Unis sont parmi les destinations les plus chères en termes de frais de scolarité et de coût de la vie. De plus, les exigences d'admission peuvent être strictes, surtout pour les universités de haut rang.
 
 V﻿ous trouverez plus d'informations sur les etudes aux  USA [en consultant notre guide](https://www.rdcetudes.com/guides/usa).
+
+Le choix d'un pays pour des études supérieures est donc une décision qui doit être mûrement réfléchie, car elle influence non seulement le parcours académique, mais également l'expérience culturelle et professionnelle de l'étudiant. 
+
+Pour les étudiants africains, il est crucial de considérer non seulement les aspects académiques et financiers mais aussi les opportunités de croissance personnelle et professionnelle offertes par chaque pays. 
+
+Que ce soit la Belgique avec son environnement multilingue et ses frais d'études accessibles, la France avec ses prestigieuses institutions et sa proximité culturelle, le Canada avec son accueil chaleureux et ses politiques d'immigration favorables, ou encore les États-Unis avec leur diversité et leurs opportunités illimitées, chaque destination offre des avantages uniques. Nous espérons que cette comparaison vous aidera à choisir le lieu d'étude qui non seulement répond à vos aspirations académiques mais qui vous préparera également à devenir des citoyens du monde, armés de savoir, d'expérience et de perspectives globales.
+
+# B﻿esoin d'aide ?
+
+En cas de besoin d'aide pour vos études supérieures pour l'un des pays cités ci-haut, vous pouvez solliciter [un accompagnement d'un mentor RDC ETUDES](https://www.rdcetudes.com/accompagnement):﻿
+
+1. **B﻿elgique** : vous devez prévoir entre **1570 USD et 2480 USD** pour toutes vos démarches.
+2. **C﻿anada** : vous devez prévoir entre **1 570 USD et 2 310 USD** pour toutes vos démarches.
+3. **F﻿rance** :  vous devez prévoir **1 100 USD + 50 euros** pour toutes vos démarches.
+4. **U﻿SA** :  vous devrez prévoir entre **1410 USD et 1750 USD** pour toutes vos démarches.
