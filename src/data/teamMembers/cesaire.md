@@ -1,5 +1,6 @@
 ---
 draft: false
+id: 7
 name: Césaire Odimba
 title: Associé, Chargé des affaires juridiques et Chargé des projets
 role: Chez RDC Etudes, Césaire est non seulement chargé de toutes les affaires juridiques mais est aussi en charge des différents projets qui contribuent à l’atteinte des objectifs de l’entreprise.

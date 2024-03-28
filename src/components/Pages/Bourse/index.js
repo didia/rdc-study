@@ -38,7 +38,7 @@ const Bourse = ({ scholarships }) => {
               Bourses d'études
             </span>{" "}
             <p className="mt-4">
-              <span className="text-base font-['roboto']">
+              <span className="text-base font-['roboto-bold']">
                 Chez RDC ETUDES nous recherchons et mettons en votre
                 disponibilite des offres de bourses d'études auxquelles vous
                 pouvez postuler et bénéficier d’une éducation de qualité dans
@@ -46,30 +46,21 @@ const Bourse = ({ scholarships }) => {
                 en cours trouvées pour vous avec amour par l'équipe RDC Études.
               </span>
             </p>
-            <Banner>
-              <div className="flex w-full justify-between border-b border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
-                <div className="mx-auto flex items-center">
-                  <p className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
-                    {/* <MdAnnouncement className="mr-4 h-4 w-4" /> */}
-                    <span className="[&_p]:inline">
-                      New brand identity has been launched for the&nbsp;
-                      <a
-                        href="https://flowbite.com"
-                        className="inline font-medium text-cyan-600 underline decoration-solid underline-offset-2 hover:no-underline dark:text-cyan-500"
-                      >
-                        Flowbite Library
-                      </a>
-                    </span>
-                  </p>
+              <Banner class="mt-16">
+                <div className="flex justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+                  <div className="mx-auto flex items-center">
+                    <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-cyan-600 dark:text-gray-400">
+                      <FontAwesomeIcon
+                        icon={faQuestionCircle}
+                        className="mr-4 h-8 w-8"
+                      />
+                      <span className="[&_p]:inline">
+                        Pour quelle bourse souhaitez-vous être assisté(e) ?
+                      </span>
+                    </p>
+                  </div>
                 </div>
-                <Banner.CollapseButton
-                  color="gray"
-                  className="border-0 bg-transparent text-gray-500 dark:text-gray-400"
-                >
-                  {/* <HiX className="h-4 w-4" /> */}
-                </Banner.CollapseButton>
-              </div>
-            </Banner>
+              </Banner>
           </div>
         </div>
 
@@ -120,10 +111,6 @@ const Bourse = ({ scholarships }) => {
             </AnimationOnScroll>
           </div>
         </div>
-
-        <div className="text-sky-600 text-2xl font-['roboto-bold'] mx-10 mt-7 mb-5 text-center">
-          Pour quelle bourse souhaitez-vous être assisté (e) ?
-        </div>
       </section>
 
       <section className="hidden md:block">
@@ -166,29 +153,6 @@ const Bourse = ({ scholarships }) => {
                 en cours trouvées pour vous avec amour par l'équipe RDC Études.
               </p>
               <div className="mt-20">
-                <Banner>
-                  <div className="flex w-[50rem] justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
-                    <div className="mx-auto flex items-center">
-                      <p className="flex items-center text-lg font-['monserrat-bold'] font-normal text-red-700 dark:text-gray-400">
-                        <FontAwesomeIcon
-                          icon={faCheckCircle}
-                          className="mr-4 h-8 w-8"
-                        />
-                        <span className="[&_p]:inline">
-                          J’ai compris, j’aimerais quand même être assisté(e)
-                          pour la bourse
-                        </span>
-                      </p>
-                    </div>
-                    <Banner.CollapseButton
-                      color="gray"
-                      className="border-0 bg-transparent text-gray-500 dark:text-gray-400"
-                    >
-                      <FontAwesomeIcon icon={faClose} className="h-5 w-5" />
-                    </Banner.CollapseButton>
-                  </div>
-                </Banner>
-
                 <a href="#bourses">
                   <Banner class="mt-10">
                     <div className="flex w-[50rem] justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
@@ -203,12 +167,6 @@ const Bourse = ({ scholarships }) => {
                           </span>
                         </p>
                       </div>
-                      <Banner.CollapseButton
-                        color="gray"
-                        className="border-0 bg-transparent text-gray-500 dark:text-gray-400"
-                      >
-                        <FontAwesomeIcon icon={faClose} className="h-5 w-5" />
-                      </Banner.CollapseButton>
                     </div>
                   </Banner>
                 </a>
@@ -249,10 +207,10 @@ const Bourse = ({ scholarships }) => {
       </section>
 
       <section className="md:hidden px-4"></section>
-      <section className="px-4 mb-10 md:hidden">
-        {scholarships.map((scholarship) => {
+      <section className="px-4 mb-24 mt-24 md:hidden">
+        {scholarships.map((scholarship, index) => {
           return (
-            <div className="">
+            <div className="mb-10" key={index}>
               {" "}
               <ScholarShipCard scholarship={scholarship} />
             </div>
@@ -312,25 +270,23 @@ const Bourse = ({ scholarships }) => {
         className="bg-slate-50 hidden px-20 -mt-10 md:block h-[35rem]"
         id="bourses"
       >
-        
-          <Carousel slide={true} indicators={false}>
-            {scholarships.map((scholarship, index) => {
-              const fisrtItem = scholarships[index];
-              const secondItem = scholarships[index + 1];
-              const thirdItem = scholarships[index + 2];
+        <Carousel slide={true} indicators={false}>
+          {scholarships.map((scholarship, index) => {
+            const fisrtItem = scholarships[index];
+            const secondItem = scholarships[index + 1];
+            const thirdItem = scholarships[index + 2];
 
-              return (
-                <AnimationOnScroll animateIn="animate__bounceInLeft">
-                  <div className="flex">
-                    {fisrtItem && <ScholarShipCard scholarship={fisrtItem} />}
-                    {secondItem && <ScholarShipCard scholarship={secondItem} />}
-                    {thirdItem && <ScholarShipCard scholarship={thirdItem} />}
-                  </div>
-                </AnimationOnScroll>
-              );
-            })}
-          </Carousel>
-        
+            return (
+              <AnimationOnScroll animateIn="animate__bounceInLeft">
+                <div className="flex">
+                  {fisrtItem && <ScholarShipCard scholarship={fisrtItem} />}
+                  {secondItem && <ScholarShipCard scholarship={secondItem} />}
+                  {thirdItem && <ScholarShipCard scholarship={thirdItem} />}
+                </div>
+              </AnimationOnScroll>
+            );
+          })}
+        </Carousel>
       </section>
     </Layout>
   );

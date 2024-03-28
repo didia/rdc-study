@@ -25,17 +25,16 @@ const AboutUs = ({ teammMembers }) => {
 
           <div className="col-span-8 z-10">
             <div className="text-start ml-4">
-              <span className='text-2xl font-bold text-sky-600'>Pourquoi RDC-Etudes ?</span>{" "}
+              <span className="text-2xl font-bold text-sky-600">
+                Pourquoi choisir RDC ÉTUDES pour votre projet d'études?
+              </span>{" "}
               <p>
-                <span className="text-base font-['roboto']">
+                <span className="text-base font-['roboto-bold']">
                   Nous réalisons cette mission chaque jour en guidant et
                   soutenant les étudiants dans la réalisation de leurs projets
                   d'études tout en les orientant sur le plan académique et
                   professionnel
                 </span>
-                <br />
-                <br />
-                <SecondaryBtn fontSize={'text-sm'} text={"Demander une assistance"} />
               </p>
             </div>
           </div>
@@ -60,9 +59,9 @@ const AboutUs = ({ teammMembers }) => {
             </AnimationOnScroll>
           </div>
           <div className="col-span-7 z-10 mt-20">
-            <div className="text-start ml-20">
-              <span className="text-5xl text-sky-600 font-extrabold">
-                Pourquoi RDC-Etudes ?
+            <div className="text-start ml-20 pr-60">
+              <span className="text-4xl text-sky-600 font-extrabold">
+                Pourquoi choisir RDC ÉTUDES pour votre projet d'études?
               </span>{" "}
               <p className="py-5">
                 <span className="text-2xl">
@@ -99,7 +98,8 @@ const AboutUs = ({ teammMembers }) => {
         <div className="flex items-center justify-center mx-8 font-['roboto-bold'] py-3">
           <span
             className={
-              "text-center font-extrabold " + styles.about__values_title
+              "text-center font-extrabold text-2xl " +
+              styles.about__values_title
             }
           >
             TROIS VALEURS QUI GUIDENT NOS ACTIONS
@@ -107,47 +107,57 @@ const AboutUs = ({ teammMembers }) => {
         </div>
 
         <ValueCard
-          title={"L'HONETETE"}
+          title={"honnêteté"}
           section1={
             "Nous vous dirons toujours la vérité par rapport à vos démarches. L’important pour nous c’est que vous ayez la vraie information. La réussite de vos démarches est et restera toujours notre première priorité."
           }
         />
         <ValueCard
-          title={"LA SERVIABILITE"}
+          title={"serviabilité"}
           section1={
             "Le plus important pour nous c’est vous rendre service. Voilà pourquoi nous offrons des guides gratuits. Nous savons que c’est en vous rendant le meilleur service possible, que vous parlerez de nous aux autres personnes et que nous aurons plus de clients."
           }
         />
         <ValueCard
-          title={"LA TRANSPARENCE"}
+          title={"transparence"}
           section1={
             "Nous serons toujours transparents avec vous. À la différence des autres, chez nous vous savez exactement à quoi sert votre argent. Vous avez le choix de faire le paiement vous-même. Si nous payons pour vous, nous vous donnerons toujours les preuves de paiement."
           }
         />
       </section>
 
-      <section className="hidden md:block mt-40">
-        <div className="flex items-center justify-center">
-          <span className="text-center font-extrabold text-3xl text-sky-600">
+      <section className="hidden md:block mt-24">
+        <div className="items-center justify-center">
+          <div className="text-center font-extrabold text-2xl text-sky-600">
             TROIS VALEURS QUI GUIDENT NOS ACTIONS
-          </span>
+          </div>
+
+          <p className="text-xl py-5 mx-[17rem] font-['roboto-bold']">
+            RDC ÉTUDES est composée des anciens étudiants qui ont fréquenté
+            différents pays tels que l’Allemagne,la Belgique, le Brésil, le
+            Canada, Chypre du Nord, la France, les USA et la Roumanie.
+            L’entreprise est donc née de leurs expériences, réussites, échecs et
+            erreurs lors de la construction de leurs projets d'études. Ce sont
+            ces différentes expériences que nous vous offrons en espérant vous
+            aider à réussir votre projet d'études
+          </p>
         </div>
 
         <div className="grid grid-cols-3 mt-20">
           <ValueCard
-            title={"L'HONETETE"}
+            title={"honnêteté"}
             section1={
               "Nous vous dirons toujours la vérité par rapport à vos démarches. L’important pour nous c’est que vous ayez la vraie information. La réussite de vos démarches est et restera toujours notre première priorité."
             }
           />
           <ValueCard
-            title={"LA SERVIABILITE"}
+            title={"serviabilité"}
             section1={
               "Le plus important pour nous c’est vous rendre service. Voilà pourquoi nous offrons des guides gratuits. Nous savons que c’est en vous rendant le meilleur service possible, que vous parlerez de nous aux autres personnes et que nous aurons plus de clients."
             }
           />
           <ValueCard
-            title={"LA TRANSPARENCE"}
+            title={"transparence"}
             section1={
               "Nous serons toujours transparents avec vous. À la différence des autres, chez nous vous savez exactement à quoi sert votre argent. Vous avez le choix de faire le paiement vous-même. Si nous payons pour vous, nous vous donnerons toujours les preuves de paiement."
             }
@@ -159,7 +169,7 @@ const AboutUs = ({ teammMembers }) => {
         <div className="flex items-center justify-center mx-3">
           <span
             className={
-              "text-center font-bold uppercase mb-6 mt-6 md:text-3xl " +
+              "text-center font-bold uppercase mb-6 mt-6 md:text-2xl " +
               styles.about__values_title
             }
           >

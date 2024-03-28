@@ -8,12 +8,13 @@ const AboutUsPage = () => {
       query MyQuery {
         members: allMarkdownRemark(
           filter: { fileAbsolutePath: { regex: "/team/" } }
-          sort: { id: ASC }
+          sort: { frontmatter: { id: ASC } }
         ) {
           edges {
             node {
               id
               frontmatter {
+                id
                 name
                 title
                 about

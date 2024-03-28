@@ -79,8 +79,8 @@ const FAQ = () => {
             d‘accompagnement.\ Pour en savoir plus sur RDC Etudes, consultez
             notre page à propos.
           </p>
-          <p className="uppercase text-lg font-bold py-2">
-            Comment nous contacter ?{" "}
+          <p className="uppercase text-lg font-bold py-2 text-red-700">
+            1. Comment nous contacter ?{" "}
           </p>
           <p className="text-base md:text-2xl">
             Vous pouvez nous contacter par courriel salut@rdcetudes.com ou par
@@ -93,15 +93,15 @@ const FAQ = () => {
             notre service d’accompagnement, consultez notre page sur
             l’accompagnement.
           </p>
-          <p className="uppercase text-lg font-bold py-2 text-start">
-            Quels sont les pays pour lesquels vous offrez votre service
+          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+            2. Quels sont les pays pour lesquels vous offrez votre service
             d’accompagnement ?{" "}
           </p>
           Actuellement, nous pouvons vous aider à faire les démarches pour le
           Canada, les États-Unis et la Belgique.
-          <p className="uppercase text-lg font-bold py-2 text-start">
-            Que dois-je faire pour obtenir une admission et un visa pour étudier
-            à l’étranger ?
+          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+            3. Que dois-je faire pour obtenir une admission et un visa pour
+            étudier à l’étranger ?
           </p>{" "}
           <p className="text-base md:text-2xl">
             Pour obtenir une admission et un visa, vous devez commencer par
@@ -111,8 +111,8 @@ const FAQ = () => {
             de Visa. Pour savoir comment faire une demande d’admission ou de
             visa, consultez nos guides gratuits à ce sujet.
           </p>
-          <p className="uppercase text-lg font-bold py-2 text-start">
-            Quels sont les critères d’admissions ?
+          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+            4. Quels sont les critères d’admissions ?
           </p>
           <p className="text-base md:text-2xl">
             Les critères dépendent souvent de chaque université et/ou du
@@ -123,8 +123,8 @@ const FAQ = () => {
             faculté
           </p>
           d’informatique.
-          <p className="uppercase text-lg font-bold py-2 text-start">
-            Combien coûtent les études à l’étranger?
+          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+            5. Combien coûtent les études à l’étranger?
           </p>
           <p className="text-base md:text-2xl">
             Les frais académiques dépendent du pays, de l’université ainsi que
@@ -140,8 +140,8 @@ const FAQ = () => {
             bourses sont beaucoup plus accessibles aux étudiants qui visent les
             études supérieures, soit la maitrise ou le doctorat.
           </p>
-          <p className="uppercase text-lg font-bold py-2 text-start">
-            Comment trouver des bourses ?
+          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+            6. Comment trouver des bourses ?
           </p>
           <p className="text-base md:text-2xl">
             Généralement les bourses complètes sont données par des organismes
@@ -152,8 +152,8 @@ const FAQ = () => {
             facebook. N’hésitez donc pas de vous abonner pour recevoir les
             dernières opportunités.
           </p>
-          <p className="uppercase text-lg font-bold py-2 text-start">
-            Est-ce qu’on peut étudier la médecine ou le droit au Canada ?
+          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+            7. Est-ce qu’on peut étudier la médecine ou le droit au Canada ?
           </p>
           <p className="text-base md:text-2xl">
             Oui mais il est extrêmement difficile d’obtenir une inscription en
@@ -167,9 +167,9 @@ const FAQ = () => {
             préparatoires pour être à jour et bien évoluer dans leurs
             cheminements.
           </p>
-          <p className="uppercase text-lg font-bold py-2 text-start">
-            Peux-je introduire ma demande de permis d’études avant l’obtention
-            de mon CAQ ?{" "}
+          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+            8. Peux-je introduire ma demande de permis d’études avant
+            l’obtention de mon CAQ ?{" "}
           </p>
           <p className="text-base md:text-2xl">
             Non. Vous devez avoir au minimum la lettre d’approbation de votre

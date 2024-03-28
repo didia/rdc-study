@@ -1,5 +1,6 @@
 ---
 draft: false
+id: 6
 name: Ludovic Mpoto
 title: Associé, Directeur administratif et Mentor
 role: Chez RDC Etudes, Ludovic est en charge des affaires administratives de RDC Etudes et s’occupe aussi du projet de bureau de RDC Etudes au Canada.

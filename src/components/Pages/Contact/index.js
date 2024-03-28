@@ -126,25 +126,25 @@ const Contact = () => {
             }
           />
 
-          <ValueCard title={"Adresse E-mail"} section1={"info@rdcetudes.com"} />
+          <ValueCard title={"Adresse E-mail"} section1={"salut@rdcetudes.com"} />
         </section>
 
         <section className="hidden md:block">
           <div className="grid grid-cols-4">
             <ValueCard
-              extraStyle={"w-[20rem]"}
+              extraStyle={"w-[22rem]"}
               title={"Heure de service"}
               section1={"08H-16H30"}
               section2={"Du Lundi au Vendredi"}
             />
             <ValueCard
-              extraStyle={"w-[20rem]"}
+              extraStyle={"w-[22rem]"}
               title={"Téléphone"}
               section1={"+243826686661"}
               section2={"+243826686661"}
             />
             <ValueCard
-              extraStyle={"w-[20rem]"}
+              extraStyle={"w-[22rem]"}
               title={"Bureaux"}
               section1={
                 "Local LM3, Nouvelles galeries Présidentielles, Boulevard du 30 juin, Kinhsasa, République Démocratique du Congo"
@@ -152,9 +152,9 @@ const Contact = () => {
             />
 
             <ValueCard
-              extraStyle={"w-[20rem]"}
+              extraStyle={"w-[22rem]"}
               title={"Adresse E-mail"}
-              section1={"info@rdcetudes.com"}
+              section1={"salut@rdcetudes.com"}
             />
           </div>
         </section>

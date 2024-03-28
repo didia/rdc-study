@@ -1,5 +1,6 @@
 ---
 draft: false
+id: 1
 name: Jean Aimé Kikandi
 title: Associé, Directeur Général et Mentor
 role: Chez RDC Etudes, Aimé travaille fort à l’installation effective de notre premier bureau physique en Afrique qui sera basé à Kinshasa, République Démocratique du Congo. Il est aussi chargé des projets qui visent à communiquer la vision de RDC Etudes aux élèves, étudiants et parents de ce pays.

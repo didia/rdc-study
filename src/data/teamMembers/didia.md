@@ -1,5 +1,6 @@
 ---
 draft: false
+id: 4
 name: Aristote Diasonama
 title: Associé, Directeur des stratégies et Mentor
 role: Chez RDC Etudes, Aristote est le gardien de la mission et des objectifs. Il s’assure que tout le monde travaille dans la même direction pour offrir les meilleurs guides possible sur les études à l‘étranger aux congolais. Il est aussi en charge du développement de notre application web.

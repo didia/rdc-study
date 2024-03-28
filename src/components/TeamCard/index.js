@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 const TeamCard = ({ member}) => {
     const image = getImage(member.image)
     return (
-      <div className="flex items-center justify-center mx-4 mb-8">
+      <div className="flex items-center justify-center mx-4 mb-24">
         <div className="relative w-full group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl">
           <div className="pb-6">
             <div className="flex flex-wrap justify-center">
@@ -24,7 +24,15 @@ const TeamCard = ({ member}) => {
               </h3>
               <div className="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
                 <div className="text-sm font-bold tracking-wide text-gray-600 dark:text-gray-300 font-mono">
-                  {member.title}
+                  {member.title.length < 44 ? (
+                    <p>
+                      {member.title}
+                      <br />
+                      <br />
+                    </p>
+                  ) : (
+                    member.title
+                  )}
                 </div>
               </div>
               <div className="w-full text-center">
@@ -88,7 +96,7 @@ const TeamCard = ({ member}) => {
             <div className="md:h-[350px] pt-3 mt-3 text-center border-t border-gray-200 dark:border-gray-700/50">
               <div className="flex flex-wrap justify-center">
                 <div className="w-full px-4">
-                  <p className="font-light leading-relaxed text-gray-600 dark:text-gray-400">
+                  <p className="font-light text-base leading-relaxed text-gray-600 dark:text-gray-400">
                     {member.about}
                   </p>
                 </div>

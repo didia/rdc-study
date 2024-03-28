@@ -69,7 +69,7 @@ export const Footer = () => {
               <p className="mb-4">
                 <a href="#!" className="text-white text-xl font-['roboto']">
                   <FontAwesomeIcon icon={faEnvelope} />
-                  &nbsp;&nbsp; rdcetudes@gmail.com
+                  &nbsp;&nbsp; salut@rdcetudes.com
                 </a>
               </p>
               <p className="mb-4">
@@ -271,7 +271,7 @@ export const Footer = () => {
               <p className="mb-6 text-start">
                 <a href="#!" className="text-white text-xl">
                   <FontAwesomeIcon icon={faEnvelope} />
-                  &nbsp;&nbsp; rdcetudes@gmail.com
+                  &nbsp;&nbsp; salut@rdcetudes.com
                 </a>
               </p>
               <p className="mb-6 text-start">

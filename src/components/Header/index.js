@@ -5,6 +5,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faLinkedin,
+  faWhatsapp,
   faXTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -68,7 +69,6 @@ const Header = () => {
                   style={{ fontSize: "35px" }}
                 />
               </a>
-
               <a
                 href="https://www.linkedin.com/company/rdcetudes/"
                 className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
@@ -78,7 +78,6 @@ const Header = () => {
                   style={{ fontSize: "35px" }}
                 />
               </a>
-
               <a
                 href="https://twitter.com/rdcetudes"
                 className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
@@ -86,6 +85,15 @@ const Header = () => {
                 <FontAwesomeIcon
                   icon={faXTwitter}
                   style={{ fontSize: "30px" }}
+                />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?text=www.rdcetudes.com"
+                className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
+              >
+                <FontAwesomeIcon
+                  icon={faWhatsapp}
+                  style={{ fontSize: "35px" }}
                 />
               </a>
             </div>

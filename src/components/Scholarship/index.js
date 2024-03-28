@@ -3,8 +3,9 @@ import * as style from "./styles.module.scss";
 import { Carousel, Card } from 'flowbite-react';
 import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faClock, faGraduationCap, faCheckCircle, faQuestionCircle, faClose } from '@fortawesome/free-solid-svg-icons';
 import _ from "lodash";
+import { Banner } from 'flowbite-react';
 
 const Scholarship = ({ scholarships }) => {
     const limitedScholarShips = _.filter(
@@ -35,12 +36,41 @@ const LEVEL_ORDERS = [
             pouvons cependant vous assister à postuler pour la bourse de votre
             choix sans pour autant garantir l’obtention de celle-ci. Vous
             trouverez toutes les offres des bourses dont nous avons connaissance
-            sur notre{" "}
-            <a href="/bourse" className="text-yellow-600">
-              site web
-            </a>
-            .
+            dans la section Bourses d'études.
           </p>
+          <div className="mb-10">
+            <Banner class="mb-5">
+              <div className="flex mt-10 justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+                <div className="mx-auto flex items-center">
+                  <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-red-700 dark:text-gray-400">
+                    <FontAwesomeIcon
+                      icon={faCheckCircle}
+                      className="mr-4 h-8 w-8"
+                    />
+                    <span className="[&_p]:inline">
+                      J’ai compris, j’aimerais quand même être assisté(e) pour
+                      la bourse
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </Banner>
+            <Banner>
+              <div className="flex justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+                <div className="mx-auto flex items-center">
+                  <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-cyan-600 dark:text-gray-400">
+                    <FontAwesomeIcon
+                      icon={faQuestionCircle}
+                      className="mr-4 h-8 w-8"
+                    />
+                    <span className="[&_p]:inline">
+                      Pour quelle bourse souhaitez-vous être assisté(e) ?
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </Banner>
+          </div>
         </div>
 
         <div className={style.scholarship}>

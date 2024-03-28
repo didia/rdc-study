@@ -1,5 +1,6 @@
 ---
 draft: false
+id: 3
 name: Kevin Diasonama
 title: Associé et Mentor
 role: Chez RDC Etudes, Kevin est chargé d’implanter une réprésentation de RDC Etudes au Congo et d’en assurer le développement. Il s’assure aussi que le guide du Canada est le plus complet et détaillé possible et assiste les étudiants dans leurs démarches pour le Canada.

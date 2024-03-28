@@ -1,5 +1,6 @@
 ---
 draft: false
+id: 2
 name: Nadia Nkuba
 title: Associée, Directrice marketing et communications
 role: Chez RDC Etudes, Nadia est chargée de faire parvenir l’information de façon amusante, subtile et clair à tous les congolais répartis à travers le monde.

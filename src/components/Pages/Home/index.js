@@ -8,13 +8,13 @@ import ContactForm from "../../../components/ContactForm";
 import NewsCard from "../../NewsCard";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faQuoteLeft, faGraduationCap, faFileEdit, faHandsHelping, faTicket, faHandshake, faQuestion, faLanguage, faTicketSimple, faPassport, faAssistiveListeningSystems } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faCheckCircle, faClose, faQuestionCircle, faQuoteLeft, faGraduationCap, faFileEdit, faHandsHelping, faTicket, faHandshake, faQuestion, faLanguage, faTicketSimple, faPassport, faAssistiveListeningSystems } from "@fortawesome/free-solid-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 import SecondaryBtn from "../../Button/Secondary";
 import PrimaryBtn from "../../Button/Primary";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import 'animate.css';
-import { Dropdown } from "flowbite-react";
+import { Dropdown, Banner } from "flowbite-react";
 import { faHireAHelper } from "@fortawesome/free-brands-svg-icons";
 
 const Home = ({ guideCountries, articles, scholarships }) => {
@@ -45,10 +45,68 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 ou à l'étranger
               </div>
               <div>
-                <SecondaryBtn
-                  fontSize={"text-base"}
-                  text={"Je veux une assistance"}
-                />
+                <Dropdown
+                  class="md:hidden font-['monserrat-bold'] bg-sky-600 text-white text-xl font-bold py-2 px-2 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
+                  label="Demander une assistance"
+                  placement="bottom-start"
+                >
+                  <a href="/bourse">
+                    <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                      {" "}
+                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                        <FontAwesomeIcon
+                          icon={faGraduationCap}
+                          className="mr-3 h-5"
+                        />
+                        Je veux une bourse
+                      </Dropdown.Item>
+                    </div>
+                  </a>
+                  <a href="/help">
+                    <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                        <FontAwesomeIcon
+                          icon={faAssistiveListeningSystems}
+                          className="mr-3 h-5"
+                        />
+                        Je veux une consultation
+                      </Dropdown.Item>
+                    </div>
+                  </a>
+                  <a href="/help">
+                    <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                        <FontAwesomeIcon
+                          icon={faHandsHelping}
+                          className="mr-3 h-5"
+                        />
+                        Je veux une assistance
+                      </Dropdown.Item>
+                    </div>
+                  </a>
+                  <a href="/document">
+                    <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
+                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                        <FontAwesomeIcon
+                          icon={faFileEdit}
+                          className="mr-3 h-5"
+                        />
+                        Je veux une traduction des documents
+                      </Dropdown.Item>
+                    </div>
+                  </a>
+                  <a href="/billet">
+                    <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                        <FontAwesomeIcon
+                          icon={faPassport}
+                          className="mr-3 h-5"
+                        />{" "}
+                        Je veux acheter un billet
+                      </Dropdown.Item>
+                    </div>
+                  </a>
+                </Dropdown>
               </div>
             </div>
           </div>
@@ -88,9 +146,9 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             <Dropdown
               class="hidden md:flex font-['monserrat-bold'] bg-sky-600 text-white text-xl font-bold py-4 px-4 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
               label="Demander une assistance"
-              placement="right-start"
+              placement="bottom-start"
             >
-              <a href="/help">
+              <a href="/bourse">
                 <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
                   {" "}
                   <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
@@ -113,7 +171,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                   </Dropdown.Item>
                 </div>
               </a>
-              <a href="/bourse">
+              <a href="/help">
                 <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
                   <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
                     <FontAwesomeIcon
@@ -124,7 +182,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                   </Dropdown.Item>
                 </div>
               </a>
-              <a href="/bourse">
+              <a href="/document">
                 <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
                   <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
                     <FontAwesomeIcon icon={faFileEdit} className="mr-3 h-5" />
@@ -132,7 +190,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                   </Dropdown.Item>
                 </div>
               </a>
-              <a href="/bourse">
+              <a href="/billet">
                 <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
                   <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
                     <FontAwesomeIcon icon={faPassport} className="mr-3 h-5" />{" "}
@@ -333,8 +391,43 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               nous pouvons cependant vous assister à postuler pour la bourse de
               votre choix sans pour autant garantir l’obtention de celle-ci.
               Vous trouverez toutes les offres des bourses dont nous avons
-              connaissance sur notre site web rdcetudes.com/bourses.
+              connaissance dans la section Bourses d'études
             </p>
+
+            <div className="">
+              <Banner class="mb-5 w-[50rem]">
+                <div className="flex mt-10 justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+                  <div className="mx-auto flex items-center">
+                    <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-red-700 dark:text-gray-400">
+                      <FontAwesomeIcon
+                        icon={faCheckCircle}
+                        className="mr-4 h-8 w-8"
+                      />
+                      <span className="[&_p]:inline">
+                        J’ai compris, j’aimerais quand même être assisté(e) pour
+                        la bourse
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </Banner>
+              <Banner class="w-[50rem]">
+                <div className="flex justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+                  <div className="mx-auto flex items-center">
+                    <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-cyan-600 dark:text-gray-400">
+                      <FontAwesomeIcon
+                        icon={faQuestionCircle}
+                        className="mr-4 h-8 w-8"
+                      />
+                      <span className="[&_p]:inline">
+                        Pour quelle bourse souhaitez-vous être assisté(e) ?
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </Banner>
+            </div>
+
           </div>
           <div className=" mt-40">
             <StaticImage
@@ -358,59 +451,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </div>
       </div>
 
-      <div className="text-center ml-auto px-3 mr-auto mb-7 md:hidden">
-        <div class="inline-flex rounded-md shadow-sm " role="group">
-          <a
-            href="/bourse"
-            class="inline-flex items-center py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-s-lg hover:bg-sky-600 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
-          >
-            <FontAwesomeIcon
-              icon={faGraduationCap}
-              className="text-yellow-600 h-5"
-            />
-            Je veux une bourse
-          </a>
-          <a
-            href="/help"
-            class="inline-flex items-center py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-gray-900 hover:bg-sky-600 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
-          >
-            <FontAwesomeIcon
-              icon={faHandshake}
-              className="text-yellow-600 h-5"
-            />
-            Je veux une consultation
-          </a>
-          <a
-            href="/help"
-            class="inline-flex items-center py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-e-lg hover:bg-sky-600 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
-          >
-            <FontAwesomeIcon
-              icon={faQuestion}
-              className="text-yellow-600 h-5"
-            />
-            Je veux une assistance
-          </a>
-        </div>
-      </div>
       <Scholarship scholarships={scholarships} />
 
-      <p className="text-center mb-10 md:hidden">
-        <p className="text-lg px-6 py-3">
-          Pour quelle bourse souhaitez-vous être assisté ?
-        </p>
-        <SecondaryBtn
-          link={"/bourse"}
-          fontSize={"text-base"}
-          text={"je veux une bourse"}
-        >
-          <i className="px-2">
-            <FontAwesomeIcon icon={faArrowRight} />
-          </i>
-        </SecondaryBtn>
-      </p>
-
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-        <section className="mb-5 md:mx-32 md:mt-20">
+        <section className="mb-5 mt-16 md:mx-32 md:mt-20">
           <div className="text-left px-3 md:p-8 mb-5">
             <span className="text-sky-600 text-lg font-black uppercase md:text-2xl font-['monserrat-bold']">
               Les dernières nouvelles
