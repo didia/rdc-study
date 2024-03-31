@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media-folder: static/images
+public_folder: ../../static/images/
+
+collections:
+  - name: "scholarship-packages"
+    preview: false
+    label: "Scholarship Packages"
+    folder: "../../data/scholarships"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: Title", name: "title", widget: "string" }
+      - { label: "Deadline", name: "deadline", widget: date }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: image }
+      - { label: "StartDate", name: "startDate", widget: date }
+      - { label: "Levels", name: "levels", widget: "string" }
+      - { label: "TargetCountries", name: "targetCountries", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

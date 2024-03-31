@@ -144,7 +144,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               à l'étranger
             </p>
             <Dropdown
-              class="hidden md:flex font-['monserrat-bold'] bg-sky-600 text-white text-xl font-bold py-4 px-4 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
+              class="hidden md:flex !font-['monserrat-bold'] !bg-sky-600 text-white text-xl font-bold !py-4 !px-4 !rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
               label="Demander une assistance"
               placement="bottom-start"
             >
@@ -427,7 +427,6 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 </div>
               </Banner>
             </div>
-
           </div>
           <div className=" mt-40">
             <StaticImage
