@@ -168,7 +168,7 @@ const LEVEL_ORDERS = [
                       >
                         <div>
                           <a href={`/${fisrtItem.frontmatter.slug}`}>
-                            <h5 className="text-xl font-bold tracking-tight text-sky-600 dark:text-white">
+                            <h5 className="text-xl max-[1484px]:text-lg font-bold tracking-tight text-sky-600 dark:text-white">
                               {fisrtItem.frontmatter.title}
                             </h5>
                           </a>
@@ -206,8 +206,8 @@ const LEVEL_ORDERS = [
                         )}
                       >
                         <div>
-                          <a href={`/${secondItem.frontmatter.slug}`}>
-                            <h5 className="text-xl font-bold tracking-tight text-sky-600 dark:text-white">
+                          <a href={`/${secondItem.frontmatter.slug}`} className='max-[1484px]:text-lg'>
+                            <h5 className="text-xl max-[1484px]:text-lg font-bold tracking-tight text-sky-600 dark:text-white">
                               {secondItem.frontmatter.title}
                             </h5>
                           </a>
@@ -232,44 +232,6 @@ const LEVEL_ORDERS = [
                       </Card>
                     )}
 
-                    {thirdItem && (
-                      <Card
-                        className="max-w-sm mx-4 bg-slate-200 h-[29rem]"
-                        imgAlt="Meaningful alt text for an image that is not purely decorative"
-                        renderImage={() => (
-                          <GatsbyImage
-                            image={getImage(thirdItem.frontmatter.thumbnail)}
-                            class="h-60 w-full"
-                            alt={thirdItem.frontmatter.title}
-                          />
-                        )}
-                      >
-                        <div>
-                          <a href={`/${thirdItem.frontmatter.slug}`}>
-                            <h5 className="text-xl font-bold tracking-tight text-sky-600 dark:text-white">
-                              {thirdItem.frontmatter.title}
-                            </h5>
-                          </a>
-
-                          <p className="text-yellow-500 my-2">
-                            <FontAwesomeIcon icon={faClock} />
-                            &nbsp;
-                            {thirdItem.frontmatter.deadline}
-                          </p>
-
-                          <p className="text-lg text-left">
-                            <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
-                            {levelsText}
-                          </p>
-
-                          <a href={`/${thirdItem.frontmatter.slug}`}>
-                            <p className="text-sky-600 font-semibold text-lg py-4">
-                              Détails
-                            </p>
-                          </a>
-                        </div>
-                      </Card>
-                    )}
                   </div>
                 );
               })}

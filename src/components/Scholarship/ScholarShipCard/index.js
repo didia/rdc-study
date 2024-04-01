@@ -73,21 +73,17 @@ const ScholarShipCard = ({ scholarship }) => {
         <div class="h-[420px] md:w-[33rem] mx-3 p-4 bg-white border border-gray-400 rounded-3xl shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
           <div className="">
             <a href={`/${scholarshipItem.slug}`}>
-              <h5 class="mb-2 text-xl md:text-sm font-bold font-['roboto-bold'] uppercase">
+              <h5 class="mb-2 text-sm md:text-lg font-bold font-['roboto-bold'] uppercase">
                 {scholarshipItem.title}
               </h5>
             </a>
             <p class="text-base font-['roboto']">{scholarshipItem.excerpt}</p>
 
             <div className="py-4">
-              <ul className="ml-5 text-base">
+              <ul className="ml-5 text-sm md:text-lg">
                 <li className="py-1">
                   <FontAwesomeIcon icon={faGraduationCap} className="h-6" />
                   &nbsp;&nbsp; {levelsText}
-                </li>
-                <li className="py-1">
-                  <FontAwesomeIcon icon={faEdit} className="h-6" />
-                  &nbsp;&nbsp; All Subjects
                 </li>
                 <li className="py-1 text-yellow-600">
                   <FontAwesomeIcon icon={faCalendar} className="h-6" />
@@ -97,11 +93,11 @@ const ScholarShipCard = ({ scholarship }) => {
             </div>
           </div>
 
-          <p className=" text-red-800 font-['roboto-bold'] uppercase">
+          <p className=" text-red-800 font-['roboto-bold'] text-xs uppercase">
             Aucune date limite
           </p>
 
-          <div className="w-36 ml-auto uppercase">
+          <div className="w-36 ml-auto uppercase md:bottom-0 md:absolute md:mb-4">
             <Button
               className=" rounded-none bg-sky-600"
               href={`/${scholarshipItem.slug}`}

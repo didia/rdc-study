@@ -1,3 +1,15 @@
 title {
     font-size: 3rem;
 }
+
+@media only screen and (max-width: 1398px) {
+    .title {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1344px) {
+    .title {
+        font-size: 0.8rem;
+    }
+}

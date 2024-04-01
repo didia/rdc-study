@@ -3,3 +3,12 @@
         background-color: #4bb4d4;
     }
 }
+.icon {
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1344px) {
+    .icon {
+        font-size: 25px;
+    }
+}

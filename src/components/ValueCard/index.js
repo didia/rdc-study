@@ -13,7 +13,7 @@ const ValueCard = ({ title, section1, section2, extraStyle }) => {
           <h5 className="uppercase text-center mb-1 text-xl md:text-2xl font-medium leading-tight text-sky-600">
             {title}
           </h5>
-          <p className="mb-6 mt-6 md:mt-10 text-base md:text-lg text-center leading-normal">
+          <p className="mb-6 mt-6 md:mt-10 text-base md:text-lg text-center leading-normal font-['roboto']">
             {section1}
           </p>
 

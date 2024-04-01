@@ -84,7 +84,7 @@ const Billet = () => {
               <AnimationOnScroll animateIn="animate__bounceInLeft">
                 <StaticImage
                   alt="tourist"
-                  height={450}
+                  height={350}
                   src="../../../images/Free-Photo-Tourist-runningfast.png"
                 />
               </AnimationOnScroll>
@@ -97,7 +97,7 @@ const Billet = () => {
               />
             </div>
           </div>
-          <div className="col-span-5 text-sky-600 text-3xl font-['monserrat'] z-10 -mt-24 -ml-40">
+          <div className="col-span-5 text-sky-600 text-2xl font-['monserrat'] z-10 -mt-24 -ml-40">
             Nous savons comment l'achat du billet peut être un casse-tête pour
             vous ! Trouvez le bon itinéraire qui correspond à vos besoins et vos
             moyens n'est toujours pas évident ! Procurez-vous un billet à un
@@ -111,11 +111,11 @@ const Billet = () => {
           </div>
         </div>
 
-        <div className="bg-[#862304] font-bold w-full text-center text-white text-4xl font-['roboto'] px-44 py-24">
+        <div className="bg-[#862304] font-bold w-full text-center text-white text-3xl font-['roboto'] px-44 py-24">
           Pour quelle destination souhaitez-vous acheter le billet ?
         </div>
 
-        <div className="mb-32 mt-28 border rounded-lg px-10  mx-[30rem] py-7 shadow-md">
+        <div className="mb-32 mt-28 border rounded-lg px-5 mx-[25rem] py-7 shadow-md">
           <div className="inline-block relative w-full py-5">
             <input
               type="text"

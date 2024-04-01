@@ -46,10 +46,10 @@ const Bourse = ({ scholarships }) => {
                 en cours trouvées pour vous avec amour par l'équipe RDC Études.
               </span>
             </p>
-              <Banner class="mt-16">
+              <Banner class="mt-12">
                 <div className="flex justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                   <div className="mx-auto flex items-center">
-                    <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-cyan-600 dark:text-gray-400">
+                    <p className="flex items-center text-sm font-['monserrat-bold'] font-normal text-cyan-600 dark:text-gray-400">
                       <FontAwesomeIcon
                         icon={faQuestionCircle}
                         className="mr-4 h-8 w-8"
@@ -77,6 +77,7 @@ const Bourse = ({ scholarships }) => {
               <StaticImage
                 alt="Ellipse 6"
                 height={160}
+                className="max-sm:opacity-50"
                 src="../../../images/Ellipse6.png"
               />
             </div>
@@ -86,6 +87,7 @@ const Bourse = ({ scholarships }) => {
             <StaticImage
               alt="plane"
               height={280}
+              className="max-sm:opacity-40"
               src="../../../images/png-clipart-black-airway-aviation-aircraft-removebg-preview.png"
             />
           </div>
@@ -94,11 +96,12 @@ const Bourse = ({ scholarships }) => {
             <StaticImage
               alt="Ellipse blue 6"
               height={180}
+              className="max-sm:opacity-40"
               src="../../../images/Ellipse_blue6.png"
             />
           </div>
           <div className={styles.ellipse__fourth}>
-            <StaticImage alt="Ellipse" src="../../../images/Ellipse8.png" />
+            <StaticImage alt="Ellipse" className=" max-sm:opacity-40" src="../../../images/Ellipse8.png" />
           </div>
 
           <div className={styles.bourse__img_container}>
@@ -207,7 +210,7 @@ const Bourse = ({ scholarships }) => {
       </section>
 
       <section className="md:hidden px-4"></section>
-      <section className="px-4 mb-24 mt-24 md:hidden">
+      <section className="px-4 mb-24 mt-40 md:hidden">
         {scholarships.map((scholarship, index) => {
           return (
             <div className="mb-10" key={index}>

@@ -86,7 +86,7 @@ const TranslateDocs = () => {
               <AnimationOnScroll animateIn="animate__bounceInLeft">
                 <StaticImage
                   alt="tourist"
-                  height={450}
+                  height={350}
                   src="../../../images/translate_document.jpg"
                 />
               </AnimationOnScroll>
@@ -99,7 +99,7 @@ const TranslateDocs = () => {
               />
             </div>
           </div>
-          <div className="col-span-5 text-sky-600 text-3xl font-['monserrat'] z-10 -mt-24 -ml-40">
+          <div className="col-span-5 text-sky-600 text-3xl max-[1384px]:ml-1 max-[1384px]:text-2xl font-['monserrat'] z-10 -mt-24 -ml-40">
             Faites traduire vos documents académiques, professionnels et
             administratifs par un traducteur assermenté de RDC ÉTUDES.
           </div>
@@ -111,7 +111,7 @@ const TranslateDocs = () => {
           </div>
         </div>
 
-        <div className="bg-[#862304] h-72 w-full text-center text-white text-4xl font-['roboto'] px-44 py-12">
+        <div className="bg-[#862304] h-72 w-full text-center text-white text-4xl font-['roboto'] px-44 py-12 max-[1384px]:text-3xl">
           Traduisez l'intégralité de vos documents chez RdcEtudes
           <p className="mt-2">
             <br />
@@ -121,7 +121,7 @@ const TranslateDocs = () => {
           </p>
         </div>
 
-        <div className="mb-32 mt-28 border rounded-lg px-10 mx-[30rem] py-7 shadow-md">
+        <div className="mb-32 mt-28 border rounded-lg px-5 mx-[25rem] py-7 shadow-md">
           <div className="inline-block relative w-full py-5">
             <input
               type="text"

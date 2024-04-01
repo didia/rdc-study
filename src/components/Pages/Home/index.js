@@ -46,12 +46,12 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               </div>
               <div>
                 <Dropdown
-                  class="md:hidden font-['monserrat-bold'] bg-sky-600 text-white text-xl font-bold py-2 px-2 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
+                  class="md:hidden font-['monserrat-bold'] bg-sky-600 text-white text-base font-bold py-2 px-2 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
                   label="Demander une assistance"
                   placement="bottom-start"
                 >
                   <a href="/bourse">
-                    <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                    <div className="hover:bg-gray-100 tex-base cursor-pointer hover:text-yellow-400 hover:text-lg">
                       {" "}
                       <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
                         <FontAwesomeIcon
@@ -63,7 +63,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                     </div>
                   </a>
                   <a href="/help">
-                    <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                    <div className="hover:bg-gray-100 text-base cursor-pointer hover:text-yellow-400 hover:text-lg">
                       <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
                         <FontAwesomeIcon
                           icon={faAssistiveListeningSystems}
@@ -74,7 +74,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                     </div>
                   </a>
                   <a href="/help">
-                    <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                    <div className="hover:bg-gray-100 text-base cursor-pointer hover:text-yellow-400 hover:text-lg">
                       <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
                         <FontAwesomeIcon
                           icon={faHandsHelping}
@@ -85,7 +85,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                     </div>
                   </a>
                   <a href="/document">
-                    <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
+                    <div className="hover:bg-gray-100 text-sm cursor-pointer hover:text-yellow-400 hover:text-sm">
                       <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
                         <FontAwesomeIcon
                           icon={faFileEdit}
@@ -96,7 +96,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                     </div>
                   </a>
                   <a href="/billet">
-                    <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                    <div className="hover:bg-gray-100 text-base cursor-pointer hover:text-yellow-400 hover:text-lg">
                       <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
                         <FontAwesomeIcon
                           icon={faPassport}
@@ -134,7 +134,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <div className="max-md:hidden flex -mt-32 mx-28">
         <div className="z-10">
           <div className="text-start">
-            <p className="text-5xl text-sky-600 font-black font-['monserrat-bold']">
+            <p className="text-4xl text-sky-600 font-black font-['monserrat-bold']">
               Pourquoi RDC-Etudes ?
             </p>
             <p className="text-xl my-4 font-['roboto']">
@@ -383,10 +383,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
         <div className="col-span-7 flex">
           <div>
-            <p className="text-5xl font-black text-sky-600 font-['monserrat-bold']">
+            <p className=" max-[1456px]:text-4xl text-5xl font-black text-sky-600 font-['monserrat-bold']">
               Bourses d'études
             </p>
-            <p className="py-4 text-2xl mr-[15rem] font-['roboto']">
+            <p className="py-4 max-[1456px]:text-xl text-2xl mr-[15rem] font-['roboto']">
               Chez RDC ÉTUDES nous n’offrons malheureusement pas des bourses
               nous pouvons cependant vous assister à postuler pour la bourse de
               votre choix sans pour autant garantir l’obtention de celle-ci.
@@ -395,7 +395,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             </p>
 
             <div className="">
-              <Banner class="mb-5 w-[50rem]">
+              <Banner class="mb-5 w-[50rem] max-[1484px]:w-[35rem]">
                 <div className="flex mt-10 justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                   <div className="mx-auto flex items-center">
                     <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-red-700 dark:text-gray-400">
@@ -411,7 +411,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                   </div>
                 </div>
               </Banner>
-              <Banner class="w-[50rem]">
+              <Banner class="w-[50rem] max-[1484px]:w-[35rem]">
                 <div className="flex justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                   <div className="mx-auto flex items-center">
                     <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-cyan-600 dark:text-gray-400">
@@ -454,7 +454,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <Scholarship scholarships={scholarships} />
 
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-        <section className="mb-5 mt-16 md:mx-32 md:mt-20">
+        <section className="mb-5 mt-16 md:mt-20">
           <div className="text-left px-3 md:p-8 mb-5">
             <span className="text-sky-600 text-lg font-black uppercase md:text-2xl font-['monserrat-bold']">
               Les dernières nouvelles
@@ -475,14 +475,14 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
       <section className="mb-5 mt-12 md:mt-16">
         <div className="text-center md:mb-10">
-          <span className="text-sky-600 text-2xl font-black md:text-4xl font-['monserrat-bold']">
+          <span className="text-sky-600 max-[1484px]:text-xl text-2xl font-black md:text-4xl font-['monserrat-bold']">
             Nos partenaires
           </span>{" "}
         </div>
 
         <AnimationOnScroll animateIn="animate__fadeInRight" animateOnce>
           <div className="container relative z-40 mx-auto ">
-            <div className="grid grid-cols-3 md:grid-cols-4 py-6 text-center md:mx-10">
+            <div className="grid grid-cols-3 md:grid-cols-4 py-6 text-center">
               <div>
                 <a href="/article/faire-une-formation-professionnelle-institut-a-l-institut-africain-de-haute-formation">
                   <StaticImage
@@ -556,13 +556,13 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
       <section className="mb-5 mt-12 md:mt-16">
         <div className="text-center md:py-10">
-          <span className="text-sky-600 text-2xl font-black md:text-4xl font-['monserrat-bold']">
+          <span className="text-sky-600 max-[1484px]:text-lg text-2xl font-black md:text-4xl font-['monserrat-bold']">
             Témoignages
           </span>{" "}
         </div>
 
-        <div className="hidden md:grid md:grid-cols-3 gap-4 mx-48">
-          <div className="rounded-2xl h-[300px] px-5 py-7 bg-sky-600">
+        <div className="hidden md:grid md:grid-cols-3 gap-8 mx-48">
+          <div className="rounded-2xl h-[300px] px-2 py-7 bg-sky-600">
             <div className="z-10">
               <FontAwesomeIcon
                 icon={faQuoteLeft}
@@ -576,13 +576,13 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
               </p>
-              <p className="text-start text-white mt-20 md:text-lg font-['roboto-bold']">
+              <p className="text-start text-white mt-20 max-[1384px]:mt-12 md:text-lg font-['roboto-bold']">
                 Candidat X
               </p>
             </div>
           </div>
 
-          <div className="rounded-2xl h-[300px] px-5 py-7 bg-sky-600">
+          <div className="rounded-2xl h-[300px] px-2 py-7 bg-sky-600">
             <div className="z-10">
               <FontAwesomeIcon
                 icon={faQuoteLeft}
@@ -596,12 +596,12 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
               </p>
-              <p className="text-start text-white mt-20 md:text-lg">
+              <p className="text-start text-white mt-20 md:text-lg max-[1384px]:mt-12">
                 Candidat X
               </p>
             </div>
           </div>
-          <div className="rounded-2xl h-[300px] px-5 py-7 bg-sky-600">
+          <div className="rounded-2xl h-[300px] px-2 py-7 bg-sky-600">
             <div className="z-10">
               <FontAwesomeIcon
                 icon={faQuoteLeft}
@@ -615,14 +615,14 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
               </p>
-              <p className="text-start text-white mt-20 md:text-lg">
+              <p className="text-start text-white mt-20 md:text-lg max-[1384px]:mt-12">
                 Candidat X
               </p>
             </div>
           </div>
         </div>
 
-        <div className="md:hidden mx-6 mt-5 rounded-2xl px-5 py-7 bg-sky-600">
+        <div className="md:hidden mx-6 mt-5 rounded-2xl px-2 py-7 bg-sky-600">
           <div className="z-10">
             <FontAwesomeIcon
               icon={faQuoteLeft}

@@ -7,9 +7,6 @@ import _ from "lodash";
 
 const StudyCountry = ({ guideCountries }) => {
 
-  useEffect(() => {
-    console.log("guideCountries : ", guideCountries);
-  })
   const substring = (val) => {
     return val.substring(0, 130) + "...";
   };
@@ -82,7 +79,7 @@ const StudyCountry = ({ guideCountries }) => {
                         {fisrtItem && (
                           <Card
                             className="max-w-sm mx-4 h-[420px]"
-                            imgAlt="Meaningful alt text for an image that is not purely decorative"
+                            imgAlt={fisrtItem.frontmatter.title}
                             renderImage={() => (
                               <GatsbyImage
                                 image={getImage(
@@ -125,30 +122,6 @@ const StudyCountry = ({ guideCountries }) => {
                             </a>
                             <p className="font-['roboto-bold'] font-normal text-gray-700 dark:text-gray-400 text-sm">
                               {secondItem.frontmatter.excerpt}
-                            </p>
-                          </Card>
-                        )}
-                        {thirdItem && (
-                          <Card
-                            className="max-w-sm mx-4 h-[420px]"
-                            imgAlt="Meaningful alt text for an image that is not purely decorative"
-                            renderImage={() => (
-                              <GatsbyImage
-                                image={getImage(
-                                  thirdItem.frontmatter.thumbnail
-                                )}
-                                class="h-60 w-full"
-                                alt={thirdItem.frontmatter.title}
-                              />
-                            )}
-                          >
-                            <a href={`/${thirdItem.frontmatter.slug}`}>
-                              <h5 className="text-2xl font-['roboto'] font-bold tracking-tight text-gray-900 dark:text-white">
-                                {thirdItem.frontmatter.name}
-                              </h5>
-                            </a>
-                            <p className="font-['roboto-bold'] font-normal text-gray-700 dark:text-gray-400 text-sm">
-                              {thirdItem.frontmatter.excerpt}
                             </p>
                           </Card>
                         )}

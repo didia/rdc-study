@@ -66,7 +66,7 @@ const Header = () => {
               >
                 <FontAwesomeIcon
                   icon={faFacebook}
-                  style={{ fontSize: "35px" }}
+                  className={ styles.icon }
                 />
               </a>
               <a
@@ -75,7 +75,7 @@ const Header = () => {
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  style={{ fontSize: "35px" }}
+                  className={ styles.icon }
                 />
               </a>
               <a
@@ -84,7 +84,7 @@ const Header = () => {
               >
                 <FontAwesomeIcon
                   icon={faXTwitter}
-                  style={{ fontSize: "30px" }}
+                  className={ styles.icon }
                 />
               </a>
               <a
@@ -93,7 +93,7 @@ const Header = () => {
               >
                 <FontAwesomeIcon
                   icon={faWhatsapp}
-                  style={{ fontSize: "35px" }}
+                  className={ styles.icon }
                 />
               </a>
             </div>

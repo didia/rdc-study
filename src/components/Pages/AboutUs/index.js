@@ -60,11 +60,11 @@ const AboutUs = ({ teammMembers }) => {
           </div>
           <div className="col-span-7 z-10 mt-20">
             <div className="text-start ml-20 pr-60">
-              <span className="text-4xl text-sky-600 font-extrabold">
+              <span className="text-3xl text-sky-600 font-['roboto-bold']">
                 Pourquoi choisir RDC ÉTUDES pour votre projet d'études?
               </span>{" "}
               <p className="py-5">
-                <span className="text-2xl">
+                <span className="text-2xl font-['roboto']">
                   Nous réalisons cette mission chaque jour en guidant et
                   soutenant les étudiants dans la réalisation de leurs projets
                   d'études tout en les orientant sur le plan académique et
@@ -98,7 +98,7 @@ const AboutUs = ({ teammMembers }) => {
         <div className="flex items-center justify-center mx-8 font-['roboto-bold'] py-3">
           <span
             className={
-              "text-center font-extrabold text-2xl " +
+              "text-center font-extrabold text-2xl font-['roboto-bold'] " +
               styles.about__values_title
             }
           >
@@ -128,11 +128,11 @@ const AboutUs = ({ teammMembers }) => {
 
       <section className="hidden md:block mt-24">
         <div className="items-center justify-center">
-          <div className="text-center font-extrabold text-2xl text-sky-600">
+          <div className="text-center font-extrabold text-2xl font-['roboto-bold'] text-sky-600">
             TROIS VALEURS QUI GUIDENT NOS ACTIONS
           </div>
 
-          <p className="text-xl py-5 mx-[17rem] font-['roboto-bold']">
+          <p className="text-xl py-5 mx-[15rem] font-['roboto']">
             RDC ÉTUDES est composée des anciens étudiants qui ont fréquenté
             différents pays tels que l’Allemagne,la Belgique, le Brésil, le
             Canada, Chypre du Nord, la France, les USA et la Roumanie.
