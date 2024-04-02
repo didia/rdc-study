@@ -13,7 +13,7 @@ const PrimaryBtn = ({ text, fontSize, href, children }) => {
         </a>
 
         <a href={href}>
-          <button className="hidden md:flex font-['monserrat-bold'] bg-sky-600 text-white text-lg font-bold py-5 px-4 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white">
+          <button className="hidden md:flex font-['roboto'] bg-sky-600 text-white text-lg py-3 px-3 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white">
             {text}
           </button>
         </a>

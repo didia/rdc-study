@@ -35,10 +35,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
           <div className={style.contact_content}>
             <div className="text-start">
-              <div className="text-3xl text-white font-black uppercase mt-2 mb-4 font-['monserrat-bold']">
-                Rdc etudes
+              <div className="text-2xl text-white font-black mt-2 mb-4 font-['monserrat-bold']">
+               Pourquoi Rdc etudes ?
               </div>
-              <div className="text-base text-white mb-7 font-['roboto-bold']">
+              <div className="text-base text-white mb-7 font-['roboto']">
                 RDC ETUDES est une entreprise axée sur l'éducation qui a pour
                 mission de faciliter l'accès à une éducation de qualité pour les
                 étudiants africains francophones, que ce soit sur le continent
@@ -46,7 +46,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               </div>
               <div>
                 <Dropdown
-                  class="md:hidden font-['monserrat-bold'] bg-sky-600 text-white text-base font-bold py-2 px-2 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
+                  class="md:hidden font-['roboto'] bg-sky-600 text-white text-base font-bold py-2 px-2 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
                   label="Demander une assistance"
                   placement="bottom-start"
                 >
@@ -144,14 +144,14 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               à l'étranger
             </p>
             <Dropdown
-              class="hidden md:flex font-['monserrat-bold'] bg-sky-600 text-white text-xl font-bold py-4 px-4 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
+              class="hidden md:flex !font-['roboto-bold'] !bg-sky-600 text-white !text-xl !py-3 !px-3 rounded-xl !transition-colors !duration-300 !ease-in-out !hover:bg-yellow-500 !hover:text-white"
               label="Demander une assistance"
               placement="bottom-start"
             >
               <a href="/bourse">
-                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
+                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
                   {" "}
-                  <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                  <Dropdown.Item class="mx-4 py-2 text-base font-['roboto']">
                     <FontAwesomeIcon
                       icon={faGraduationCap}
                       className="mr-3 h-5"
@@ -161,8 +161,8 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 </div>
               </a>
               <a href="/help">
-                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
-                  <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
+                  <Dropdown.Item class="mx-4 py-2 text-base font-['roboto']">
                     <FontAwesomeIcon
                       icon={faAssistiveListeningSystems}
                       className="mr-3 h-5"
@@ -172,8 +172,8 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                 </div>
               </a>
               <a href="/help">
-                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
-                  <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
+                  <Dropdown.Item class="mx-4 py-2 text-base font-['roboto']">
                     <FontAwesomeIcon
                       icon={faHandsHelping}
                       className="mr-3 h-5"
@@ -184,15 +184,15 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               </a>
               <a href="/document">
                 <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
-                  <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                  <Dropdown.Item class="mx-4 py-2 text-base font-['roboto']">
                     <FontAwesomeIcon icon={faFileEdit} className="mr-3 h-5" />
                     Je veux une traduction des documents
                   </Dropdown.Item>
                 </div>
               </a>
               <a href="/billet">
-                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-xl">
-                  <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
+                  <Dropdown.Item class="mx-4 py-2 text-base font-['roboto']">
                     <FontAwesomeIcon icon={faPassport} className="mr-3 h-5" />{" "}
                     Je veux acheter un billet
                   </Dropdown.Item>
@@ -252,10 +252,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </div>
 
           <div className="col-span-5">
-            <span className="text-sky-600 text-2xl font-black font-['monserrat-bold']">
+            <span className="text-sky-600 text-xl font-black font-['monserrat-bold']">
               Où souhaitez-vous étudier ?
             </span>{" "}
-            <p className="font-['roboto'] mr-3 text-base">
+            <p className="font-['roboto'] text-base">
               Nous vous accompagnons à réaliser votre projet d'études dans les
               meilleurs universités du monde. L'accompgnement RDC Etudes
               consiste à vous orienter dans votre projet d'études tout en les
@@ -313,7 +313,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               />
             </div>
 
-            <div className="col-span-6 py-16 mr-10">
+            <div className="col-span-6 py-16 mx-10">
               <span className="text-sky-600 font-black text-4xl">
                 Où souhaitez-vous étudier ?
               </span>{" "}
@@ -383,10 +383,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
         <div className="col-span-7 flex">
           <div>
-            <p className=" max-[1456px]:text-4xl text-5xl font-black text-sky-600 font-['monserrat-bold']">
+            <p className="text-3xl font-black text-sky-600 font-['monserrat-bold']">
               Bourses d'études
             </p>
-            <p className="py-4 max-[1456px]:text-xl text-2xl mr-[15rem] font-['roboto']">
+            <p className="py-4 text-xl mr-[15rem] font-['roboto']">
               Chez RDC ÉTUDES nous n’offrons malheureusement pas des bourses
               nous pouvons cependant vous assister à postuler pour la bourse de
               votre choix sans pour autant garantir l’obtention de celle-ci.
@@ -395,10 +395,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             </p>
 
             <div className="">
-              <Banner class="mb-5 w-[50rem] max-[1484px]:w-[35rem]">
+              <Banner class="mb-5 w-[37rem]">
                 <div className="flex mt-10 justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                   <div className="mx-auto flex items-center">
-                    <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-red-700 dark:text-gray-400">
+                    <p className="flex items-center text-base font-['roboto-bold'] font-normal text-red-700 dark:text-gray-400">
                       <FontAwesomeIcon
                         icon={faCheckCircle}
                         className="mr-4 h-8 w-8"
@@ -411,10 +411,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                   </div>
                 </div>
               </Banner>
-              <Banner class="w-[50rem] max-[1484px]:w-[35rem]">
+              <Banner class="w-[37rem]">
                 <div className="flex justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                   <div className="mx-auto flex items-center">
-                    <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-cyan-600 dark:text-gray-400">
+                    <p className="flex items-center text-base font-['roboto-bold'] font-normal text-cyan-600 dark:text-gray-400">
                       <FontAwesomeIcon
                         icon={faQuestionCircle}
                         className="mr-4 h-8 w-8"
@@ -456,7 +456,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <section className="mb-5 mt-16 md:mt-20">
           <div className="text-left px-3 md:p-8 mb-5">
-            <span className="text-sky-600 text-lg font-black uppercase md:text-2xl font-['monserrat-bold']">
+            <span className="text-sky-600 text-lg font-black uppercase md:text-2xl font-['roboto-bold']">
               Les dernières nouvelles
             </span>{" "}
             <div className="h-4 w-full border-b-2 border-sky-600"></div>
@@ -475,7 +475,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
       <section className="mb-5 mt-12 md:mt-16">
         <div className="text-center md:mb-10">
-          <span className="text-sky-600 max-[1484px]:text-xl text-2xl font-black md:text-4xl font-['monserrat-bold']">
+          <span className="text-sky-600 text-2xl font-black md:text-3xl font-['roboto-bold']">
             Nos partenaires
           </span>{" "}
         </div>
@@ -556,7 +556,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
       <section className="mb-5 mt-12 md:mt-16">
         <div className="text-center md:py-10">
-          <span className="text-sky-600 max-[1484px]:text-lg text-2xl font-black md:text-4xl font-['monserrat-bold']">
+          <span className="text-sky-600 max-[1484px]:text-lg text-2xl font-black md:text-3xl font-['monserrat-bold']">
             Témoignages
           </span>{" "}
         </div>

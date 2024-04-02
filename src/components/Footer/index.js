@@ -15,9 +15,9 @@ export const Footer = () => {
         <div className="bg-white flex items-center justify-center border-t-2 border-sky-600 p-3 lg:justify-between">
           <div className="flex justify-between md:w-full md:text-center md:ml-60">
             <div className="">
-              <span className="text-red-900 font-extrabold text-xl md:text-3xl font-['roboto-bold']">
+              <span className="text-red-900 font-extrabold text-xl md:text-3xl font-['roboto']">
                 Avez-vous des questions ?
-                <p className="hidden md:block text-base font-['roboto-bold']">
+                <p className="hidden md:block text-base font-['roboto']">
                   Consulter notre foire aux questions
                 </p>
               </span>
@@ -41,7 +41,7 @@ export const Footer = () => {
               <div className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
                 <StaticImage alt="logo" src="../../images/Logo_white.png" />
               </div>
-              <p className="mx-10 font-['roboto-bold']">
+              <p className="mx-10 font-['roboto']">
                 RDC ETUDES vous apporte toutes les nouveautés sur les bourses et
                 l’éducation de qualité directement dans votre boîte email.
               </p>
@@ -49,7 +49,7 @@ export const Footer = () => {
             <div>
               <h2
                 style={{ fontSize: "25px" }}
-                className="mb-4 flex justify-center font-bold uppercase md:justify-start font-['roboto-bold']"
+                className="mb-4 flex justify-center font-bold uppercase md:justify-start font-['roboto']"
               >
                 CONTACTS
               </h2>
@@ -170,7 +170,7 @@ export const Footer = () => {
                 <div className="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
                   <form className="flex flex-row">
                     <input
-                      className="h-16 text-grey-darker text-grey-darkest border border-gray-100 font-bold w-full py-1 px-2 outline-none text-lg text-gray-600 font-['roboto']"
+                      className="h-16 text-grey-darker text-grey-darkest border border-gray-100 font-bold w-full py-1 px-2 outline-none text-base text-gray-600 font-['roboto']"
                       type="text"
                       placeholder="Entrer votre email"
                       style={{
@@ -204,24 +204,24 @@ export const Footer = () => {
         </div>
 
         <div className="hidden md:block mx-10 py-10 text-center">
-          <div className="grid gap-8 grid-cols-4">
-            <div>
+          <div className="grid gap-20 grid-cols-12">
+            <div className="col-span-4">
               <div className="mb-4 flex items-center justify-center font-semibold uppercase">
                 <StaticImage alt="logo" src="../../images/Logo_white.png" />
               </div>
-              <p className="text-lg">
+              <p className="text-lg font-['roboto']">
                 Réussir vous apporte toutes les nouveautés sur les bourses et
                 l’éducation de qualité directement dans votre boîte email.
               </p>
 
               <div className="hero bg-gredient-dark h-400px flex flex-col px-2">
-                <p className="mb-5 mt-5 text-xl font-bold">
+                <p className="mb-5 mt-5 text-xl font-['roboto-bold']">
                   Abonnez-vous à notre newsLetter
                 </p>
                 <div className="search-box mx-auto my-auto w-full">
                   <form className="flex flex-row">
                     <input
-                      className="h-16 text-grey-darker text-grey-darkest border border-gray-100 font-bold w-full py-1 outline-none text-lg text-gray-600"
+                      className="h-16 text-grey-darker text-grey-darkest border border-gray-100 font-bold w-full py-1 outline-none text-base text-gray-600"
                       type="text"
                       placeholder="Entrer votre email"
                       style={{
@@ -251,31 +251,32 @@ export const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="py-8">
-              <h2 className="mb-4 text-2xl font-bold uppercase text-start">
+            <div className=" col-span-8 grid grid-cols-3">
+            <div className="py-8 font-['roboto']">
+              <h2 className="mb-4 text-xl font-bold uppercase text-start font-['roboto-bold']">
                 CONTACTS
               </h2>
               <p className="mb-6 text-start">
-                <a href="#!" className="text-white text-xl">
+                <a href="#!" className="text-white text-lg">
                   <FontAwesomeIcon icon={faPhone} />
                   &nbsp;&nbsp; +243 99 994 9712
                 </a>
               </p>
               <p className="mb-6 text-start">
-                <a href="#!" className="text-white text-2xl">
-                  <FontAwesomeIcon icon={faWhatsapp} className="text-xl" />
+                <a href="#!" className="text-white text-lg">
+                  <FontAwesomeIcon icon={faWhatsapp} />
                   &nbsp;&nbsp; +1 (581) 318-0180
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="#!" className="text-white text-xl">
+                <a href="#!" className="text-white text-lg">
                   <FontAwesomeIcon icon={faEnvelope} />
                   &nbsp;&nbsp; salut@rdcetudes.com
                 </a>
               </p>
               <p className="mb-6 text-start">
-                <a href="#!" className="text-white text-xl">
+                <a href="#!" className="text-white text-lg">
                   <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
                   &nbsp;&nbsp; Local 1m3 de la nouvelle galerie présidentielle,
                   Kinshasa, Gombe
@@ -283,64 +284,65 @@ export const Footer = () => {
               </p>
             </div>
 
-            <div className="py-8">
-              <h2 className="mb-4 text-2xl font-bold uppercase text-start">
+            <div className="py-8 font-['roboto']">
+              <h2 className="mb-4 text-xl font-bold uppercase text-start font-['roboto-bold']">
                 Pages
               </h2>
 
               <p className="mb-6 text-start">
-                <a href="/" className="text-white text-xl">
+                <a href="/" className="text-white text-lg">
                   Acceuil
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="/bourse" className="text-white text-xl">
+                <a href="/bourse" className="text-white text-lg">
                   Bourses
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="/aboutUs" className="text-white text-xl">
+                <a href="/aboutUs" className="text-white text-lg">
                   Qui sommes-nous ?
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="/faq" className="text-white text-xl">
+                <a href="/faq" className="text-white text-lg">
                   Questions populaires
                 </a>
               </p>
             </div>
 
-            <div className="py-8">
-              <h2 className="mb-4 text-2xl font-bold uppercase text-start">
+            <div className="py-8 font-['roboto']">
+              <h2 className="mb-4 text-xl font-bold uppercase text-start font-['roboto-bold']">
                 Autres Pages
               </h2>
 
               <p className="mb-6 text-start">
-                <a href="/healthcare" className="text-white text-xl">
+                <a href="/healthcare" className="text-white text-lg">
                   Examens médicaux
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="/privacy" className="text-white text-xl">
+                <a href="/privacy" className="text-white text-lg">
                   Politiques de confidentialité
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="/help" className="text-white text-xl">
+                <a href="/help" className="text-white text-lg">
                   Besoin d'aide ?
                 </a>
               </p>
+            </div>
             </div>
           </div>
         </div>
 
         <div className="bg-sky-600 p-6 text-center">
-          <span className="text-xl font-['roboto-bold']">
+          <span className="text-lg font-['roboto']">
             © 2023 RDC Etudes. Tous droits réservés
           </span>
         </div>

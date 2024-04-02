@@ -70,14 +70,14 @@ const ScholarShipCard = ({ scholarship }) => {
         </Button>
       </Card> */}
 
-        <div class="h-[420px] md:w-[33rem] mx-3 p-4 bg-white border border-gray-400 rounded-3xl shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
+        <div class="md:h-[400px] md:w-[33rem] mx-3 p-4 bg-white border border-gray-400 rounded-3xl shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
           <div className="">
             <a href={`/${scholarshipItem.slug}`}>
               <h5 class="mb-2 text-sm md:text-lg font-bold font-['roboto-bold'] uppercase">
                 {scholarshipItem.title}
               </h5>
             </a>
-            <p class="text-base font-['roboto']">{scholarshipItem.excerpt}</p>
+            <p class="text-sm font-['roboto']">{scholarshipItem.excerpt}</p>
 
             <div className="py-4">
               <ul className="ml-5 text-sm md:text-lg">
@@ -93,13 +93,9 @@ const ScholarShipCard = ({ scholarship }) => {
             </div>
           </div>
 
-          <p className=" text-red-800 font-['roboto-bold'] text-xs uppercase">
-            Aucune date limite
-          </p>
-
-          <div className="w-36 ml-auto uppercase md:bottom-0 md:absolute md:mb-4">
+          <div className="w-full h-1/7 uppercase md:bottom-0 md:absolute md:mb-4">
             <Button
-              className=" rounded-none bg-sky-600"
+              className="w-36 rounded-none bg-sky-600"
               href={`/${scholarshipItem.slug}`}
             >
               Voir détails

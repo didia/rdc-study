@@ -8,7 +8,8 @@ import * as styles from "./styles.module.scss";
 import TeamCard from "../../TeamCard";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
-
+import { Dropdown } from "flowbite-react";
+import { FontAwesomeIcon, faGraduationCap, faAssistiveListeningSystems, faHandsHelping, faFileEdit, faPassport } from "@fortawesome/react-fontawesome";
 const AboutUs = ({ teammMembers }) => {
 
   return (
@@ -25,11 +26,11 @@ const AboutUs = ({ teammMembers }) => {
 
           <div className="col-span-8 z-10">
             <div className="text-start ml-4">
-              <span className="text-2xl font-bold text-sky-600">
+              <span className="text-xl font-['roboto] font-bold text-sky-600">
                 Pourquoi choisir RDC ÉTUDES pour votre projet d'études?
               </span>{" "}
-              <p>
-                <span className="text-base font-['roboto-bold']">
+              <p className="mt-3">
+                <span className="text-base font-['roboto']">
                   Nous réalisons cette mission chaque jour en guidant et
                   soutenant les étudiants dans la réalisation de leurs projets
                   d'études tout en les orientant sur le plan académique et
@@ -64,7 +65,7 @@ const AboutUs = ({ teammMembers }) => {
                 Pourquoi choisir RDC ÉTUDES pour votre projet d'études?
               </span>{" "}
               <p className="py-5">
-                <span className="text-2xl font-['roboto']">
+                <span className="text-xl font-['roboto']">
                   Nous réalisons cette mission chaque jour en guidant et
                   soutenant les étudiants dans la réalisation de leurs projets
                   d'études tout en les orientant sur le plan académique et
@@ -72,10 +73,73 @@ const AboutUs = ({ teammMembers }) => {
                 </span>
                 <br />
                 <br />
-                <PrimaryBtn
+                <Dropdown
+                  class="font-['roboto'] bg-sky-600 text-white text-base font-bold py-2 px-2 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
+                  label="Demander une assistance"
+                  placement="bottom-start"
+                >
+                  <a href="/bourse">
+                    <div className="hover:bg-gray-100 tex-base cursor-pointer hover:text-yellow-400 hover:text-lg">
+                      {" "}
+                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                        <FontAwesomeIcon
+                          icon={faGraduationCap}
+                          className="mr-3 h-5"
+                        />
+                        Je veux une bourse
+                      </Dropdown.Item>
+                    </div>
+                  </a>
+                  <a href="/help">
+                    <div className="hover:bg-gray-100 text-base cursor-pointer hover:text-yellow-400 hover:text-lg">
+                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                        <FontAwesomeIcon
+                          icon={faAssistiveListeningSystems}
+                          className="mr-3 h-5"
+                        />
+                        Je veux une consultation
+                      </Dropdown.Item>
+                    </div>
+                  </a>
+                  <a href="/help">
+                    <div className="hover:bg-gray-100 text-base cursor-pointer hover:text-yellow-400 hover:text-lg">
+                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                        <FontAwesomeIcon
+                          icon={faHandsHelping}
+                          className="mr-3 h-5"
+                        />
+                        Je veux une assistance
+                      </Dropdown.Item>
+                    </div>
+                  </a>
+                  <a href="/document">
+                    <div className="hover:bg-gray-100 text-sm cursor-pointer hover:text-yellow-400 hover:text-sm">
+                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                        <FontAwesomeIcon
+                          icon={faFileEdit}
+                          className="mr-3 h-5"
+                        />
+                        Je veux une traduction des documents
+                      </Dropdown.Item>
+                    </div>
+                  </a>
+                  <a href="/billet">
+                    <div className="hover:bg-gray-100 text-base cursor-pointer hover:text-yellow-400 hover:text-lg">
+                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                        <FontAwesomeIcon
+                          icon={faPassport}
+                          className="mr-3 h-5"
+                        />{" "}
+                        Je veux acheter un billet
+                      </Dropdown.Item>
+                    </div>
+                  </a>
+                </Dropdown>
+
+                {/* <PrimaryBtn
                   text={"Demander une assistance"}
                   fontSize={"text-lg"}
-                />
+                /> */}
               </p>
             </div>
           </div>
@@ -98,7 +162,7 @@ const AboutUs = ({ teammMembers }) => {
         <div className="flex items-center justify-center mx-8 font-['roboto-bold'] py-3">
           <span
             className={
-              "text-center font-extrabold text-2xl font-['roboto-bold'] " +
+              "text-center font-extrabold text-lg font-['roboto-bold'] " +
               styles.about__values_title
             }
           >
@@ -169,7 +233,7 @@ const AboutUs = ({ teammMembers }) => {
         <div className="flex items-center justify-center mx-3">
           <span
             className={
-              "text-center font-bold uppercase mb-6 mt-6 md:text-2xl " +
+              "text-center text-lg font-['roboto-bold'] uppercase mb-6 mt-6 md:text-2xl " +
               styles.about__values_title
             }
           >
@@ -185,7 +249,7 @@ const AboutUs = ({ teammMembers }) => {
       </div>
 
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-        <div className="hidden md:grid grid-cols-4 mx-10">
+        <div className="hidden md:grid grid-cols-3 mx-10">
           {teammMembers.map((member) => {
             return <TeamCard member={member.frontmatter} />;
           })}

@@ -75,7 +75,7 @@ const StudyCountry = ({ guideCountries }) => {
                     const secondItem = guideCountries[index + 1];
                     const thirdItem = guideCountries[index + 2];
                     return (
-                      <div className="flex mx-60" key={index}>
+                      <div className="grid grid-cols-3 place-items-center" key={index}>
                         {fisrtItem && (
                           <Card
                             className="max-w-sm mx-4 h-[420px]"
@@ -122,6 +122,31 @@ const StudyCountry = ({ guideCountries }) => {
                             </a>
                             <p className="font-['roboto-bold'] font-normal text-gray-700 dark:text-gray-400 text-sm">
                               {secondItem.frontmatter.excerpt}
+                            </p>
+                          </Card>
+                        )}
+
+                    {thirdItem && (
+                          <Card
+                            className="max-w-sm mx-4 h-[420px]"
+                            imgAlt="Meaningful alt text for an image that is not purely decorative"
+                            renderImage={() => (
+                              <GatsbyImage
+                                image={getImage(
+                                  thirdItem.frontmatter.thumbnail
+                                )}
+                                class="h-60 w-full"
+                                alt={thirdItem.frontmatter.title}
+                              />
+                            )}
+                          >
+                            <a href={`/${thirdItem.frontmatter.slug}`}>
+                              <h5 className="text-2xl font-['roboto'] font-bold tracking-tight text-gray-900 dark:text-white">
+                                {thirdItem.frontmatter.name}
+                              </h5>
+                            </a>
+                            <p className="font-['roboto-bold'] font-normal text-gray-700 dark:text-gray-400 text-sm">
+                              {thirdItem.frontmatter.excerpt}
                             </p>
                           </Card>
                         )}

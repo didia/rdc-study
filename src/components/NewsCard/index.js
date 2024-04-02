@@ -21,7 +21,7 @@ const NewsCard = ({ ItemData }) => {
         <div className="col-span-7 -mt-2 md:-ml-[4rem]">
           <a
             href={`/${ItemData.slug}`}
-            className="text-sky-600 text-lg md:text-2xl font-extrabold font-['monserrat-bold']"
+            className="text-sky-600 text-base md:text-2xl font-extrabold font-['roboto-bold']"
           >
             {ItemData.title}
           </a>

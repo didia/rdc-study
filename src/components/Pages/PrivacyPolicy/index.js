@@ -164,23 +164,20 @@ const PrivacyPolicy = () => {
 
       <section className="mx-20 mt-12 mb-10 hidden md:block">
         <div>
-          <span className="text-3xl font-bold">
+          <span className="text-3xl font-['roboto-bold']">
             La politique de confidentialité de RDC Etudes.
           </span>
-          <p className="uppercase text-2xl font-bold py-8">
-            Politique de confidentialité
-          </p>
-          <p className="text-xl">
+          <p className="text-xl font-['roboto']">
             IntroductionDevant le développement des nouveaux outils de
             communication, il est nécessaire de porter une attention
             particulière à la protection de la vie privée. C‘est pourquoi, nous
             nous engageons à respecter la confidentialité des renseignements
             personnels que nous collectons.
           </p>
-          <p className="uppercase text-2xl font-bold py-6">
+          <p className="uppercase text-2xl font-bold py-6 font-['roboto-bold']">
             COLLECTE DES RENSEIGNEMENTS PERSONNELS
           </p>
-          <p className="text-xl">
+          <p className="text-xl font-['roboto']">
             Nous collectons les renseignements suivants :
             <ul className="list-disc ml-5">
               <li className="py-2">Nom</li>
@@ -193,10 +190,10 @@ const PrivacyPolicy = () => {
             des informations vous concernant.
           </p>
 
-          <p className="uppercase text-2xl font-bold py-4">
+          <p className="uppercase text-2xl font-bold py-4 font-['roboto-bold']">
             FORMULAIRES ET INTERACTIVITÉ
           </p>
-          <p className="text-xl">
+          <p className="text-xl font-['roboto']">
             Vos renseignements personnels sont collectés par le biais du
             formulaire de Contact sur chaque page de ce site web Nous utilisons
             les renseignements ainsi collectés pour les finalités suivantes :
@@ -210,7 +207,7 @@ const PrivacyPolicy = () => {
               Nous utilisons les renseignements ainsi collectés pour les
               finalités suivantes
             </ul>
-            <p className="uppercase text-2xl font-bold py-4">
+            <p className="uppercase text-2xl font-bold py-4 font-['roboto-bold']">
               DROIT D‘OPPOSITION ET DE RETRAIT
             </p>
             Nous nous engageons à vous offrir un droit d‘opposition et de
@@ -223,16 +220,14 @@ const PrivacyPolicy = () => {
             par exemple, dans une liste de diffusion. Pour pouvoir exercer ces
             droits, vous pouvez contacter:Code postal: Local 1M3, Nouvelles
             Galéries Présidentielles, Kinshasa, R.D. CongoCourriel :
-            salut@rdcetudes.comTéléphone : +243 822 313 039Section du site web :
-            https://www.rdcetudes.com/
-            <p className="uppercase text-xl font-bold py-2">DROIT D‘ACCÈS</p>
+            salut@rdcetudes.comTéléphone : +243 822 313 039
+            <p className="uppercase text-xl font-bold py-2 font-['roboto-bold']">DROIT D‘ACCÈS</p>
             Nous nous engageons à reconnaître un droit d‘accès et de
             rectification aux personnes concernées désireuses de consulter,
             modifier, voire radier les informations les concernant.L‘exercice de
             ce droit se fera :Code postal : Local 1M3, Nouvelles Galéries
             Présidentielles, Kinshasa, R.D. CongoCourriel :
-            salut@rdcetudes.comTéléphone : +243 822 313 039Section du site web :
-            https://www.rdcetudes.com/ SÉCURITÉ Les renseignements personnels
+            salut@rdcetudes.comTéléphone : +243 822 313 039. SÉCURITÉ Les renseignements personnels
             que nous collectons sont conservés dans un environnement sécurisé.
             Les personnes travaillant pour nous sont tenues de respecter la
             confidentialité de vos informations.Pour assurer la sécurité de vos

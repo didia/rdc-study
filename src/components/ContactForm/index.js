@@ -67,7 +67,7 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
           <div className="grid grid-cols-2 my-16">
             <div>
               <div className="text-center z-10 ml-40">
-                <span className="text-sky-600 text-5xl max-[1384px]:text-4xl font-black font-['monserrat-bold']">
+                <span className="text-sky-600 text-3xl max-[1384px]:text-4xl font-black font-['monserrat-bold']">
                   Besoin d'un service ?
                 </span>{" "}
                 <p className="py-4 text-xl font-['roboto']">
@@ -105,7 +105,7 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
                     </div>
 
                     <div className="py-4">
-                      <PrimaryBtn text={"Soumettre"} fontSize={"xl"} />
+                      <PrimaryBtn text={"Soumettre"} fontSize={"lg"} />
                     </div>
                   </div>
                 </div>

@@ -42,7 +42,7 @@ const LEVEL_ORDERS = [
             <Banner class="mb-5">
               <div className="flex mt-10 justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                 <div className="mx-auto flex items-center">
-                  <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-red-700 dark:text-gray-400">
+                  <p className="flex items-center text-base font-['roboto-bold'] font-normal text-red-700 dark:text-gray-400">
                     <FontAwesomeIcon
                       icon={faCheckCircle}
                       className="mr-4 h-8 w-8"
@@ -58,7 +58,7 @@ const LEVEL_ORDERS = [
             <Banner>
               <div className="flex justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                 <div className="mx-auto flex items-center">
-                  <p className="flex items-center text-base font-['monserrat-bold'] font-normal text-cyan-600 dark:text-gray-400">
+                  <p className="flex items-center text-base font-['roboto-bold'] font-normal text-cyan-600 dark:text-gray-400">
                     <FontAwesomeIcon
                       icon={faQuestionCircle}
                       className="mr-4 h-8 w-8"
@@ -77,12 +77,14 @@ const LEVEL_ORDERS = [
           <StaticImage
             className={style.scholarship__overlay}
             alt="plane"
+            placeholder="blurred"
             src="../../images/depositphotos_42487119-stock-photo-good-looking-african-graduate.png"
           />
           <div className={style.scholarship_inner}>
             <StaticImage
               className={style.scholarship_inner__overlay}
               alt="overlay"
+              placeholder="blurred"
               src="../../images/Rectangle10.png"
             />
             <div className={"md:hidden " + style.scholarship__content}>
@@ -106,23 +108,24 @@ const LEVEL_ORDERS = [
                             image={image}
                             alt={scholarship.frontmatter.title}
                             className="rounded-t-lg"
+                            placeholder="blurred"
                             style={{ height: "200px" }}
                           />
                         </a>
                       </div>
                       <div className="">
                         <a href={`/${scholarship.frontmatter.slug}`}>
-                          <p className="px-3 py-1 text-sm text-sky-600 font-extrabold uppercase font-['monserrat-bold']">
+                          <p className="px-3 py-1 text-base text-sky-600 font-['roboto-bold']">
                             {scholarship.frontmatter.title}
                           </p>
                         </a>
-                        <p className="text-yellow-500 font-['roboto']">
+                        <p className="text-yellow-500 text-base font-['roboto']">
                           <FontAwesomeIcon icon={faClock} />
                           &nbsp;
                           {scholarship.frontmatter.deadline}
                         </p>
 
-                        <p className="text-lg text-left ml-3 py-2 font-['roboto']">
+                        <p className="text-base text-left ml-3 py-2 font-['roboto']">
                           <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
                           {levelsText}
                         </p>
@@ -134,7 +137,7 @@ const LEVEL_ORDERS = [
             </div>
 
             <Carousel
-              className="hidden md:grid -mt-[40rem] z-30 relative"
+              className="hidden md:grid -mt-[40rem] z-30"
               slide={true}
               indicators={false}
             >
@@ -153,10 +156,10 @@ const LEVEL_ORDERS = [
                 const secondItem = scholarships[index + 1];
                 const thirdItem = scholarships[index + 2];
                 return (
-                  <div className="flex mx-64">
+                  <div className="grid grid-cols-3 place-items-center">
                     {fisrtItem && (
                       <Card
-                        className="max-w-sm mx-4 bg-slate-200 h-[29rem]"
+                        className="max-w-sm mx-4 h-[420px]"
                         imgAlt="Meaningful alt text for an image that is not purely decorative"
                         renderImage={() => (
                           <GatsbyImage
@@ -167,25 +170,28 @@ const LEVEL_ORDERS = [
                         )}
                       >
                         <div>
-                          <a href={`/${fisrtItem.frontmatter.slug}`}>
-                            <h5 className="text-xl max-[1484px]:text-lg font-bold tracking-tight text-sky-600 dark:text-white">
+                          <a
+                            href={`/${fisrtItem.frontmatter.slug}`}
+                            className="max-[1484px]:text-lg"
+                          >
+                            <h5 className="text-lg font-[roboto-bold] tracking-tight text-sky-600 dark:text-white">
                               {fisrtItem.frontmatter.title}
                             </h5>
                           </a>
 
-                          <p className="text-yellow-500 my-2">
+                          <p className="text-yellow-500 my-2 font-[bold]">
                             <FontAwesomeIcon icon={faClock} />
                             &nbsp;
                             {fisrtItem.frontmatter.deadline}
                           </p>
 
-                          <p className="text-lg text-left">
+                          <p className="text-lg text-left font-[roboto]">
                             <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
                             {levelsText}
                           </p>
 
                           <a href={`/${fisrtItem.frontmatter.slug}`}>
-                            <p className="text-sky-600 font-semibold text-lg py-4">
+                            <p className="text-sky-600 font-semibold text-lg py-4 font-[roboto-bold]">
                               Détails
                             </p>
                           </a>
@@ -193,9 +199,10 @@ const LEVEL_ORDERS = [
                       </Card>
                     )}
 
-                    {secondItem && (
+
+{secondItem && (
                       <Card
-                        className="max-w-sm mx-4 bg-slate-200 h-[29rem]"
+                        className="max-w-sm mx-4 h-[420px]"
                         imgAlt="Meaningful alt text for an image that is not purely decorative"
                         renderImage={() => (
                           <GatsbyImage
@@ -206,25 +213,28 @@ const LEVEL_ORDERS = [
                         )}
                       >
                         <div>
-                          <a href={`/${secondItem.frontmatter.slug}`} className='max-[1484px]:text-lg'>
-                            <h5 className="text-xl max-[1484px]:text-lg font-bold tracking-tight text-sky-600 dark:text-white">
+                          <a
+                            href={`/${secondItem.frontmatter.slug}`}
+                            className="max-[1484px]:text-lg"
+                          >
+                            <h5 className="text-lg font-[roboto-bold] tracking-tight text-sky-600 dark:text-white">
                               {secondItem.frontmatter.title}
                             </h5>
                           </a>
 
-                          <p className="text-yellow-500 my-2">
+                          <p className="text-yellow-500 my-2 font-[bold]">
                             <FontAwesomeIcon icon={faClock} />
                             &nbsp;
                             {secondItem.frontmatter.deadline}
                           </p>
 
-                          <p className="text-lg text-left">
+                          <p className="text-lg text-left font-[roboto]">
                             <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
                             {levelsText}
                           </p>
 
                           <a href={`/${secondItem.frontmatter.slug}`}>
-                            <p className="text-sky-600 font-semibold text-lg py-4">
+                            <p className="text-sky-600 font-semibold text-lg py-4 font-[roboto-bold]">
                               Détails
                             </p>
                           </a>
@@ -232,6 +242,48 @@ const LEVEL_ORDERS = [
                       </Card>
                     )}
 
+
+                    {thirdItem && (
+                      <Card
+                        className="max-w-sm mx-4 h-[420px]"
+                        imgAlt="Meaningful alt text for an image that is not purely decorative"
+                        renderImage={() => (
+                          <GatsbyImage
+                            image={getImage(thirdItem.frontmatter.thumbnail)}
+                            class="h-60 w-full"
+                            alt={thirdItem.frontmatter.title}
+                          />
+                        )}
+                      >
+                        <div>
+                          <a
+                            href={`/${thirdItem.frontmatter.slug}`}
+                            className="max-[1484px]:text-lg"
+                          >
+                            <h5 className="text-lg font-[roboto-bold] tracking-tight text-sky-600 dark:text-white">
+                              {thirdItem.frontmatter.title}
+                            </h5>
+                          </a>
+
+                          <p className="text-yellow-500 my-2 font-[bold]">
+                            <FontAwesomeIcon icon={faClock} />
+                            &nbsp;
+                            {thirdItem.frontmatter.deadline}
+                          </p>
+
+                          <p className="text-lg text-left font-[roboto]">
+                            <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
+                            {levelsText}
+                          </p>
+
+                          <a href={`/${thirdItem.frontmatter.slug}`}>
+                            <p className="text-sky-600 font-semibold text-lg py-4 font-[roboto-bold]">
+                              Détails
+                            </p>
+                          </a>
+                        </div>
+                      </Card>
+                    )}
                   </div>
                 );
               })}

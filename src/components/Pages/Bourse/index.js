@@ -46,25 +46,10 @@ const Bourse = ({ scholarships }) => {
                 en cours trouvées pour vous avec amour par l'équipe RDC Études.
               </span>
             </p>
-              <Banner class="mt-12">
-                <div className="flex justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
-                  <div className="mx-auto flex items-center">
-                    <p className="flex items-center text-sm font-['monserrat-bold'] font-normal text-cyan-600 dark:text-gray-400">
-                      <FontAwesomeIcon
-                        icon={faQuestionCircle}
-                        className="mr-4 h-8 w-8"
-                      />
-                      <span className="[&_p]:inline">
-                        Pour quelle bourse souhaitez-vous être assisté(e) ?
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </Banner>
           </div>
         </div>
 
-        <div className="w-full h-full mt-10">
+        <div className="w-full h-full">
           <div style={{ marginTop: "20px" }}>
             <div className={styles.ellipse__first}>
               <StaticImage
@@ -145,35 +130,16 @@ const Bourse = ({ scholarships }) => {
 
           <div className="flex -ml-[23rem] mt-[5rem]">
             <div>
-              <p className="text-5xl font-black text-sky-600">
+              <p className="text-4xl font-black text-sky-600">
                 Bourses d'études
               </p>
-              <p className="py-4 text-2xl mr-[35rem] font-['roboto']">
+              <p className="py-4 text-xl mr-[35rem] font-['roboto']">
                 Chez RDC ETUDES nous recherchons et mettons en votre
                 disponibilite des offres de bourses d'études auxquelles vous
                 pouvez postuler et bénéficier d’une éducation de qualité dans
                 les meilleures universités du monde. Voici les offres de bourses
                 en cours trouvées pour vous avec amour par l'équipe RDC Études.
               </p>
-              <div className="mt-20">
-                <a href="#bourses">
-                  <Banner class="mt-10">
-                    <div className="flex w-[50rem] justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
-                      <div className="mx-auto flex items-center">
-                        <p className="flex items-center text-lg font-['monserrat-bold'] font-normal text-cyan-600 dark:text-gray-400">
-                          <FontAwesomeIcon
-                            icon={faQuestionCircle}
-                            className="mr-4 h-8 w-8"
-                          />
-                          <span className="[&_p]:inline">
-                            Pour quelle bourse souhaitez-vous être assisté(e) ?
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </Banner>
-                </a>
-              </div>
             </div>
           </div>
 
@@ -190,7 +156,7 @@ const Bourse = ({ scholarships }) => {
               <AnimationOnScroll animateIn="animate__bounceInRight" animateOnce>
                 <StaticImage
                   alt="plane"
-                  height={500}
+                  height={400}
                   src="../../../images/Young-Girl-Student-HD-Free-PNG-Image 1.png"
                 />
               </AnimationOnScroll>
@@ -210,7 +176,7 @@ const Bourse = ({ scholarships }) => {
       </section>
 
       <section className="md:hidden px-4"></section>
-      <section className="px-4 mb-24 mt-40 md:hidden">
+      <section className="px-4 mb-24 mt-12 md:hidden">
         {scholarships.map((scholarship, index) => {
           return (
             <div className="mb-10" key={index}>
@@ -280,13 +246,11 @@ const Bourse = ({ scholarships }) => {
             const thirdItem = scholarships[index + 2];
 
             return (
-              <AnimationOnScroll animateIn="animate__bounceInLeft">
                 <div className="flex">
                   {fisrtItem && <ScholarShipCard scholarship={fisrtItem} />}
                   {secondItem && <ScholarShipCard scholarship={secondItem} />}
                   {thirdItem && <ScholarShipCard scholarship={thirdItem} />}
                 </div>
-              </AnimationOnScroll>
             );
           })}
         </Carousel>
