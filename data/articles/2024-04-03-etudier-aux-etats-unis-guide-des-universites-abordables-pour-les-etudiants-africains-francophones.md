@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "Étudier aux États-Unis : Guide des Universités Abordables pour les
   Étudiants Africains Francophones"
 excerpt: L'éducation supérieure aux États-Unis représente un idéal pour de
