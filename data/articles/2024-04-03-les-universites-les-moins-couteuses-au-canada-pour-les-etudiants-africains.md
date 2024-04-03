@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Les Universités les Moins Coûteuses au Canada pour les Étudiants Africains.
 excerpt: >+
   Chaque année, des milliers d'étudiants de l'Afrique francophone envisagent de
