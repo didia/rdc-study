@@ -40,8 +40,15 @@ L'Université Sainte-Anne, en Nouvelle-Écosse, est la seule université francop
 * **Logement :** Envisagez des options de logement hors campus, qui peuvent être moins coûteuses que les résidences universitaires.
 * **Assurance santé :** L'assurance santé est obligatoire au Canada. Comparez les plans d'assurance pour trouver l'option la plus économique qui répond à vos besoins.
 
-### Conclusion
+Étudier au Canada peut être une expérience enrichissante et abordable, même pour les étudiants venant de loin. En choisissant l'une des universités mentionnées ci-dessus et en suivant nos conseils pour minimiser les coûts, vous pouvez réaliser vos rêves d'étudier à l'étranger sans compromettre votre avenir financier.
 
-Étudier au Canada peut être une expérience enrichissante et abordable, même pour les étudiants venant de loin. En choisissant l'une des universités mentionnées ci-dessus et en suivant nos conseils pour minimiser les coûts, les étudiants africains peuvent réaliser leur rêve d'étudier à l'étranger sans compromettre leur avenir financier.
+## B﻿esoin d'aide ?
 
-<!--EndFragment-->
+En supposant que vous choisissez d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes, vous devrez prévoir entre 380 USD et 700 USD pour toutes vos démarches d’admission. Ces frais se présentent comme suit:
+
+* **80 USD à 250 USD** pour la demande d’admission.
+* **0 à 150 USD** pour l’envoi et reception des documents.
+* **400 USD** pour les frais d’assistance RDC Etudes.
+
+
+NB: Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
