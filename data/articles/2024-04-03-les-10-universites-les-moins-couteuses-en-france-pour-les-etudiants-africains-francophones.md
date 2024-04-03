@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Les 10 universités les moins coûteuses en France pour les étudiants
   africains francophones.
 excerpt: La France se positionne comme une destination de choix pour les
