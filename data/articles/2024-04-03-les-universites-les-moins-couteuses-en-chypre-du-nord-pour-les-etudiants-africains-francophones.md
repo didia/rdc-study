@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Les Universités les moins coûteuses en Chypre du Nord pour les Étudiants
   Africains Francophones
 excerpt: >
