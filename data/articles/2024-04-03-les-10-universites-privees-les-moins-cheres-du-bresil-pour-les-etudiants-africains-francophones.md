@@ -1,7 +1,7 @@
 ---
 draft: false
-title: Les 10 Universités Privées les Moins Chères du Brésil pour les Étudiants
-  Africains Francophones.
+title: Les 10 Universités privées les moins Chères du Brésil pour les Étudiants
+  Africains francophones.
 excerpt: Le Brésil, connu pour sa diversité culturelle et ses paysages
   époustouflants, offre également des opportunités d'éducation supérieure à des
   coûts relativement bas, spécialement dans ses universités privées. Pour les
@@ -12,70 +12,70 @@ excerpt: Le Brésil, connu pour sa diversité culturelle et ses paysages
 thumbnail: /images/uploads/dall-e-2024-04-03-11.43.24-an-illustration-featuring-a-diverse-group-of-african-francophone-students-holding-flags-from-various-african-countries-standing-in-front-of-a-modern-.jpg
 date: 2024-04-03T10:38:37.924Z
 ---
-#### 1. Université Paulista (UNIP)
+## 1. Université Paulista (UNIP)
 
 * **Frais de scolarité**: À partir de 3 000 USD par an.
 * **Programmes populaires**: Ingénierie, Informatique, Affaires.
 * **Aide financière**: Des bourses partielles sont disponibles pour les étudiants internationaux.
 * **Langue d'enseignement**: Majoritairement en portugais, avec quelques programmes en anglais.
 
-#### 2. Université Anhembi Morumbi
+## 2. Université Anhembi Morumbi
 
 * **Frais de scolarité**: Environ 4 000 USD par an.
 * **Programmes populaires**: Gastronomie, Design de mode, Aviation.
 * **Aide financière**: Possibilité de bourses pour performances académiques.
 * **Langue d'enseignement**: Portugais et quelques cours en anglais.
 
-#### 3. Université Pontificia Catholica do Paraná (PUCPR)
+## 3. Université Pontificia Catholica do Paraná (PUCPR)
 
 * **Frais de scolarité**: À partir de 5 000 USD par an.
 * **Programmes populaires**: Médecine, Droit, Architecture.
 * **Aide financière**: Bourses disponibles pour les étudiants méritants.
 * **Langue d'enseignement**: Portugais.
 
-#### 4. Université de Fortaleza (UNIFOR)
+## 4. Université de Fortaleza (UNIFOR)
 
 * **Frais de scolarité**: Environ 5 500 USD par an.
 * **Programmes populaires**: Administration des affaires, Droit, Informatique.
 * **Aide financière**: Options de bourses pour étudiants internationaux.
 * **Langue d'enseignement**: Portugais, avec quelques options en anglais.
 
-#### 5. Université Presbytérienne Mackenzie
+## 5. Université Presbytérienne Mackenzie
 
 * **Frais de scolarité**: Environ 6 000 USD par an.
 * **Programmes populaires**: Génie civil, Psychologie, Design.
 * **Aide financière**: Programme de bourses pour étudiants étrangers.
 * **Langue d'enseignement**: Portugais.
 
-#### 6. Université Cândido Mendes
+## 6. Université Cândido Mendes
 
 * **Frais de scolarité**: À partir de 3 500 USD par an.
 * **Programmes populaires**: Droit, Administration, Psychologie.
 * **Aide financière**: Bourses disponibles selon les critères d’excellence académique.
 * **Langue d'enseignement**: Portugais.
 
-#### 7. Centro Universitário das Faculdades Metropolitanas Unidas (FMU)
+## 7. Centro Universitário das Faculdades Metropolitanas Unidas (FMU)
 
 * **Frais de scolarité**: Environ 4 500 USD par an.
 * **Programmes populaires**: Droit, Ingénierie, Gestion d’entreprise.
 * **Aide financière**: Bourses partielles pour les étudiants internationaux.
 * **Langue d'enseignement**: Portugais.
 
-#### 8. Université Positivo
+## 8. Université Positivo
 
 * **Frais de scolarité**: À partir de 4 000 USD par an.
 * **Programmes populaires**: Dentisterie, Ingénierie de logiciel, Architecture.
 * **Aide financière**: Bourses d'études basées sur le mérite.
 * **Langue d'enseignement**: Portugais.
 
-#### 9. Université FUMEC
+## 9. Université FUMEC
 
 * **Frais de scolarité**: Environ 4 000 USD par an.
 * **Programmes populaires**: Design de mode, Systèmes d’information, Administration des affaires.
 * **Aide financière**: Bourses d’excellence pour les étudiants étrangers.
 * **Langue d'enseignement**: Portugais.
 
-#### 10. Université Ibirapuera
+# 10. Université Ibirapuera
 
 * **Frais de scolarité**: À partir de 3 000 USD par an.
 * **Programmes populaires**: Architecture, Dentisterie, Psychologie.
