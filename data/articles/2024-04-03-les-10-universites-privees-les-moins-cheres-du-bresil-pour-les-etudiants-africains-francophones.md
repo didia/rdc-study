@@ -1,7 +1,7 @@
 ---
 draft: false
-title: Les 10 Universités Privées les Moins Chères du Brésil pour les Étudiants
-  Africains Francophones.
+title: Les 10 Universités privées les moins Chères du Brésil pour les Étudiants
+  Africains francophones.
 excerpt: Le Brésil, connu pour sa diversité culturelle et ses paysages
   époustouflants, offre également des opportunités d'éducation supérieure à des
   coûts relativement bas, spécialement dans ses universités privées. Pour les
