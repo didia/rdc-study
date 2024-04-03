@@ -42,6 +42,8 @@ L'Université Sainte-Anne, en Nouvelle-Écosse, est la seule université francop
 
 Étudier au Canada peut être une expérience enrichissante et abordable, même pour les étudiants venant de loin. En choisissant l'une des universités mentionnées ci-dessus et en suivant nos conseils pour minimiser les coûts, vous pouvez réaliser vos rêves d'étudier à l'étranger sans compromettre votre avenir financier.
 
+Pour plus d'informations sur les modalités d'admission dans les universités canadiennes, [veuillez consulter notre guide](https://www.rdcetudes.com/guides/canada/admission).
+
 ## B﻿esoin d'aide ?
 
 En supposant que vous choisissez d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes, vous devrez prévoir entre 380 USD et 700 USD pour toutes vos démarches d’admission. Ces frais se présentent comme suit:
@@ -49,6 +51,5 @@ En supposant que vous choisissez d’être accompagné dans votre demande d’ad
 * **80 USD à 250 USD** pour la demande d’admission.
 * **0 à 150 USD** pour l’envoi et reception des documents.
 * **400 USD** pour les frais d’assistance RDC Etudes.
-
 
 NB: Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
