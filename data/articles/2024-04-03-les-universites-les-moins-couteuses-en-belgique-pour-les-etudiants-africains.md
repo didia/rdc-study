@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Les Universités les Moins Coûteuses en Belgique pour les Étudiants Africains.
 excerpt: >+
   Pour les étudiants africains désireux de poursuivre leurs études supérieures à
