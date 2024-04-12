@@ -73,14 +73,14 @@ const ScholarShipCard = ({ scholarship }) => {
         <div class="md:h-[400px] md:w-[33rem] mx-3 p-4 bg-white border border-gray-400 rounded-3xl shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
           <div className="">
             <a href={`/${scholarshipItem.slug}`}>
-              <h5 class="mb-2 text-sm md:text-lg font-bold font-['roboto-bold'] uppercase">
+              <h5 class="mb-2 text-sm md:text-base font-['roboto-bold'] uppercase">
                 {scholarshipItem.title}
               </h5>
             </a>
-            <p class="text-sm font-['roboto']">{scholarshipItem.excerpt}</p>
+            <p class="text-base font-['roboto'] md:mt-5">{scholarshipItem.excerpt}</p>
 
             <div className="py-4">
-              <ul className="ml-5 text-sm md:text-lg">
+              <ul className="ml-5 text-sm font-['roboto'] uppercase md:text-lg">
                 <li className="py-1">
                   <FontAwesomeIcon icon={faGraduationCap} className="h-6" />
                   &nbsp;&nbsp; {levelsText}
@@ -95,7 +95,7 @@ const ScholarShipCard = ({ scholarship }) => {
 
           <div className="w-full h-1/7 uppercase md:bottom-0 md:absolute md:mb-4">
             <Button
-              className="w-36 rounded-none bg-sky-600"
+              className="w-36 rounded-none bg-sky-600 font-semibold font-['roboto']"
               href={`/${scholarshipItem.slug}`}
             >
               Voir détails

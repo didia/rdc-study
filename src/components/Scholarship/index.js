@@ -3,7 +3,7 @@ import * as style from "./styles.module.scss";
 import { Carousel, Card } from 'flowbite-react';
 import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock, faGraduationCap, faCheckCircle, faQuestionCircle, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faClock, faGraduationCap, faCheckCircle, faQuestionCircle, faClose, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import _ from "lodash";
 import { Banner } from 'flowbite-react';
 
@@ -28,10 +28,10 @@ const LEVEL_ORDERS = [
     <>
       <section className="mb-5">
         <div className="text-center mx-3 mb-3 md:hidden">
-          <span className="text-sky-600 text-2xl font-black font-['monserrat-bold']">
+          <span className="text-sky-600 text-2xl font-semibold font-['monserrat']">
             Bourses d'études
           </span>{" "}
-          <p className="font-['roboto']">
+          <p className="font-['roboto'] mt-3">
             Chez RDC ÉTUDES nous n’offrons malheureusement pas des bourses nous
             pouvons cependant vous assister à postuler pour la bourse de votre
             choix sans pour autant garantir l’obtention de celle-ci. Vous
@@ -42,7 +42,7 @@ const LEVEL_ORDERS = [
             <Banner class="mb-5">
               <div className="flex mt-10 justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                 <div className="mx-auto flex items-center">
-                  <p className="flex items-center text-base font-['roboto-bold'] font-normal text-red-700 dark:text-gray-400">
+                  <p className="flex items-center text-base font-['roboto'] font-normal text-red-700 dark:text-gray-400">
                     <FontAwesomeIcon
                       icon={faCheckCircle}
                       className="mr-4 h-8 w-8"
@@ -58,7 +58,7 @@ const LEVEL_ORDERS = [
             <Banner>
               <div className="flex justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                 <div className="mx-auto flex items-center">
-                  <p className="flex items-center text-base font-['roboto-bold'] font-normal text-cyan-600 dark:text-gray-400">
+                  <p className="flex items-center text-base font-['roboto'] font-normal text-cyan-600 dark:text-gray-400">
                     <FontAwesomeIcon
                       icon={faQuestionCircle}
                       className="mr-4 h-8 w-8"
@@ -115,17 +115,17 @@ const LEVEL_ORDERS = [
                       </div>
                       <div className="">
                         <a href={`/${scholarship.frontmatter.slug}`}>
-                          <p className="px-3 py-1 text-base text-sky-600 font-['roboto-bold']">
+                          <p className="px-3 py-1 text-base text-sky-600 font-['roboto']">
                             {scholarship.frontmatter.title}
                           </p>
                         </a>
-                        <p className="text-yellow-500 text-base font-['roboto']">
+                        <p className="text-yellow-500 text-sm font-['roboto']">
                           <FontAwesomeIcon icon={faClock} />
                           &nbsp;
                           {scholarship.frontmatter.deadline}
                         </p>
 
-                        <p className="text-base text-left ml-3 py-2 font-['roboto']">
+                        <p className="text-base text-left ml-6 py-2 font-['roboto']">
                           <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
                           {levelsText}
                         </p>
@@ -174,25 +174,25 @@ const LEVEL_ORDERS = [
                             href={`/${fisrtItem.frontmatter.slug}`}
                             className="max-[1484px]:text-lg"
                           >
-                            <h5 className="text-lg font-[roboto-bold] tracking-tight text-sky-600 dark:text-white">
+                            <h5 className="text-lg font-['roboto'] tracking-tight text-sky-600 dark:text-white">
                               {fisrtItem.frontmatter.title}
                             </h5>
                           </a>
 
-                          <p className="text-yellow-500 my-2 font-[bold]">
+                          <p className="text-yellow-500 my-2 mt-5 font-['roboto']">
                             <FontAwesomeIcon icon={faClock} />
                             &nbsp;
                             {fisrtItem.frontmatter.deadline}
                           </p>
 
-                          <p className="text-lg text-left font-[roboto]">
+                          <p className="text-lg text-left font-['roboto']">
                             <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
                             {levelsText}
                           </p>
 
                           <a href={`/${fisrtItem.frontmatter.slug}`}>
-                            <p className="text-sky-600 font-semibold text-lg py-4 font-[roboto-bold]">
-                              Détails
+                            <p className="text-sky-600 font-semibold text-lg py-4 font-['roboto']">
+                              Détails <FontAwesomeIcon icon={faArrowRight}/>
                             </p>
                           </a>
                         </div>
@@ -217,25 +217,25 @@ const LEVEL_ORDERS = [
                             href={`/${secondItem.frontmatter.slug}`}
                             className="max-[1484px]:text-lg"
                           >
-                            <h5 className="text-lg font-[roboto-bold] tracking-tight text-sky-600 dark:text-white">
+                            <h5 className="text-lg font-['roboto'] tracking-tight text-sky-600 dark:text-white">
                               {secondItem.frontmatter.title}
                             </h5>
                           </a>
 
-                          <p className="text-yellow-500 my-2 font-[bold]">
+                          <p className="text-yellow-500 my-2 mt-5 font-['roboto']">
                             <FontAwesomeIcon icon={faClock} />
                             &nbsp;
                             {secondItem.frontmatter.deadline}
                           </p>
 
-                          <p className="text-lg text-left font-[roboto]">
+                          <p className="text-lg text-left font-['roboto']">
                             <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
                             {levelsText}
                           </p>
 
                           <a href={`/${secondItem.frontmatter.slug}`}>
-                            <p className="text-sky-600 font-semibold text-lg py-4 font-[roboto-bold]">
-                              Détails
+                            <p className="text-sky-600 font-semibold text-lg py-4 font-['roboto']">
+                              Détails <FontAwesomeIcon icon={faArrowRight}/>
                             </p>
                           </a>
                         </div>
@@ -255,30 +255,30 @@ const LEVEL_ORDERS = [
                           />
                         )}
                       >
-                        <div>
+                       <div>
                           <a
                             href={`/${thirdItem.frontmatter.slug}`}
                             className="max-[1484px]:text-lg"
                           >
-                            <h5 className="text-lg font-[roboto-bold] tracking-tight text-sky-600 dark:text-white">
+                            <h5 className="text-lg font-['roboto'] tracking-tight text-sky-600 dark:text-white">
                               {thirdItem.frontmatter.title}
                             </h5>
                           </a>
 
-                          <p className="text-yellow-500 my-2 font-[bold]">
+                          <p className="text-yellow-500 my-2 mt-5 font-['roboto']">
                             <FontAwesomeIcon icon={faClock} />
                             &nbsp;
                             {thirdItem.frontmatter.deadline}
                           </p>
 
-                          <p className="text-lg text-left font-[roboto]">
+                          <p className="text-lg text-left font-['roboto']">
                             <FontAwesomeIcon icon={faGraduationCap} /> &nbsp;{" "}
                             {levelsText}
                           </p>
 
                           <a href={`/${thirdItem.frontmatter.slug}`}>
-                            <p className="text-sky-600 font-semibold text-lg py-4 font-[roboto-bold]">
-                              Détails
+                            <p className="text-sky-600 font-semibold text-lg py-4 font-['roboto']">
+                              Détails <FontAwesomeIcon icon={faArrowRight}/>
                             </p>
                           </a>
                         </div>

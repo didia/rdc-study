@@ -54,7 +54,7 @@ const StudyCountry = ({ guideCountries }) => {
                       <div className="p-6">
                         <a
                           href={`/${guideCountry.frontmatter.slug}`}
-                          className="text-lg text-sky-600 font-extrabold uppercase"
+                          className="text-base text-sky-600 font-['roboto'] font-semibold uppercase"
                         >
                           {guideCountry.frontmatter.name}
                         </a>
@@ -91,11 +91,11 @@ const StudyCountry = ({ guideCountries }) => {
                             )}
                           >
                             <a href={`/${fisrtItem.frontmatter.slug}`}>
-                              <h5 className="text-2xl font-['roboto'] font-bold tracking-tight text-gray-900 dark:text-white">
+                              <h5 className="text-2xl font-['roboto'] text-sky-600 font-bold tracking-tight dark:text-white">
                                 {fisrtItem.frontmatter.name}
                               </h5>
                             </a>
-                            <p className="font-['roboto-bold'] font-normal text-gray-700 dark:text-gray-400 text-sm">
+                            <p className="font-['roboto'] font-normal text-gray-700 dark:text-gray-400 text-base">
                               {fisrtItem.frontmatter.excerpt}
                             </p>
                           </Card>
@@ -115,12 +115,12 @@ const StudyCountry = ({ guideCountries }) => {
                               />
                             )}
                           >
-                            <a href={`/${secondItem.frontmatter.slug}`}>
-                              <h5 className="text-2xl font-['roboto'] font-bold tracking-tight text-gray-900 dark:text-white">
+                            <a href={`/${fisrtItem.frontmatter.slug}`}>
+                              <h5 className="text-2xl font-['roboto'] text-sky-600 font-bold tracking-tight dark:text-white">
                                 {secondItem.frontmatter.name}
                               </h5>
                             </a>
-                            <p className="font-['roboto-bold'] font-normal text-gray-700 dark:text-gray-400 text-sm">
+                            <p className="font-['roboto'] font-normal text-gray-700 dark:text-gray-400 text-base">
                               {secondItem.frontmatter.excerpt}
                             </p>
                           </Card>
@@ -141,11 +141,11 @@ const StudyCountry = ({ guideCountries }) => {
                             )}
                           >
                             <a href={`/${thirdItem.frontmatter.slug}`}>
-                              <h5 className="text-2xl font-['roboto'] font-bold tracking-tight text-gray-900 dark:text-white">
+                              <h5 className="text-2xl font-['roboto'] text-sky-600 font-bold tracking-tight dark:text-white">
                                 {thirdItem.frontmatter.name}
                               </h5>
                             </a>
-                            <p className="font-['roboto-bold'] font-normal text-gray-700 dark:text-gray-400 text-sm">
+                            <p className="font-['roboto'] font-normal text-gray-700 dark:text-gray-400 text-base">
                               {thirdItem.frontmatter.excerpt}
                             </p>
                           </Card>

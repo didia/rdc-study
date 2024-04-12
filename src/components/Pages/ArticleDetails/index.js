@@ -3,7 +3,7 @@ import Layout from "../../Layout";
 import HtmlContent from "../../HtmlContent"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock, faGlobe, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faClock, faGlobe, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import NewsCard from "../../NewsCard";
 
 const ArticleDetails = ({ article, content, otherArticles }) => {
@@ -12,7 +12,7 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
   return (
     <Layout pageTitle={"Détails sur la article d'études"}>
       <section>
-        <div className="grid grid-cols-1 mx-4 py-3">
+        <div className="grid grid-cols-1">
           <div>
             <GatsbyImage
               image={image}
@@ -22,26 +22,27 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
             />
           </div>
         </div>
-        <div className="mx-4 md:mx-8">
+        <div className="mx-4 md:mx-28 md:mt-10">
           <p className="text-sky-600 text-xl md:text-2xl md:uppercase font-bold text-start">
             {article.title}
           </p>
-          <p className="py-2 text-md text-gray-600">{article.excerpt}</p>
+          <p className="py-2 text-lg text-gray-600 font-['roboto']">{article.excerpt}</p>
 
-          <p className="text-lg text-yellow-500">Date : {article.date}</p>
+          <p className="text-lg text-yellow-500"><FontAwesomeIcon icon={faCalendar} />  {article.date}</p>
         </div>
 
-        <div className="mx-4 md:mx-8">
-          <HtmlContent content={content} htmlclassName="md:text-lg" />
+        <div className="mx-4 md:mx-28">
+          <HtmlContent content={content} htmlclassName="md:text-lg font-['roboto'] mt-10" />
         </div>
       </section>
 
-      <section className="mx-2 mb-10 md:mx-16">
-        <div className="text-sky-600 text-lg font-black absolute mt-10 uppercase">
-          Autres articles
-        </div>
-        <div className="h-20 border-b-2 border-sky-600"></div>
-        <div className="">
+      <section className="mb-5 mt-10 md:mt-10">
+          <div className="text-left mx-28 px-3 md:p-8 mb-5">
+            <span className="text-sky-600 text-lg font-black uppercase md:text-xl font-['roboto-bold']">
+              Les dernières nouvelles
+            </span>{" "}
+            <div className="h-4 w-full border-b border-sky-600"></div>
+          </div>
           {otherArticles.map((article) => {
             return (
               <NewsCard
@@ -50,7 +51,6 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
               />
             );
           })}
-        </div>
       </section>
     </Layout>
   );

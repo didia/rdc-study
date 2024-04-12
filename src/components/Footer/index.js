@@ -15,7 +15,7 @@ export const Footer = () => {
         <div className="bg-white flex items-center justify-center border-t-2 border-sky-600 p-3 lg:justify-between">
           <div className="flex justify-between md:w-full md:text-center md:ml-60">
             <div className="">
-              <span className="text-red-900 font-extrabold text-xl md:text-3xl font-['roboto']">
+              <span className="text-red-900 text-lg md:text-3xl font-['roboto']">
                 Avez-vous des questions ?
                 <p className="hidden md:block text-base font-['roboto']">
                   Consulter notre foire aux questions
@@ -48,32 +48,31 @@ export const Footer = () => {
             </div>
             <div>
               <h2
-                style={{ fontSize: "25px" }}
-                className="mb-4 flex justify-center font-bold uppercase md:justify-start font-['roboto']"
+                className="mb-4 flex text-xl justify-center font-bold uppercase md:justify-start font-['roboto-bold']"
               >
                 CONTACTS
               </h2>
               <p className="mb-4 justify-center">
-                <a href="#!" className="text-white text-xl font-['roboto']">
+                <a href="#!" className="text-white text-base font-['roboto']">
                   <FontAwesomeIcon icon={faPhone} />
                   &nbsp;&nbsp; +243 99 994 9712
                 </a>
               </p>
               <p className="mb-4 justify-center">
-                <a href="#!" className="text-white text-xl font-['roboto']">
+                <a href="#!" className="text-white text-base font-['roboto']">
                   <FontAwesomeIcon icon={faWhatsapp} className="text-2xl" />
                   &nbsp;&nbsp; +1 (581) 318-0180
                 </a>
               </p>
 
               <p className="mb-4">
-                <a href="#!" className="text-white text-xl font-['roboto']">
+                <a href="#!" className="text-white text-base font-['roboto']">
                   <FontAwesomeIcon icon={faEnvelope} />
                   &nbsp;&nbsp; salut@rdcetudes.com
                 </a>
               </p>
               <p className="mb-4">
-                <a href="#!" className="text-white text-xl font-['roboto']">
+                <a href="#!" className="text-white text-lg font-['roboto']">
                   <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
                   &nbsp;&nbsp; Local 1m3 de la nouvelle galerie présidentielle,
                   Kinshasa, Gombe
@@ -112,58 +111,57 @@ export const Footer = () => {
             <div>
               <a
                 href="/"
-                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto']"
               >
                 Acceuil
               </a>
 
               <a
                 href="/bourse"
-                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto']"
               >
                 Bourses
               </a>
               <a
                 href="/aboutUs"
-                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto']"
               >
                 Qui sommes-nous ?
               </a>
               <a
                 href="/faq"
-                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto']"
               >
                 Questions populaires
               </a>
               <a
                 href="/healthcare"
-                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto']"
               >
                 Examens médicaux
               </a>
               <a
                 href="/privacy"
-                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto']"
               >
                 Politiques de confidentialité
               </a>
               <a
                 href="/help"
-                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto']"
               >
                 Besoin d'aide ?
               </a>
               <a
                 href="/partenership"
-                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto-bold']"
+                className="mb-4 flex justify-center uppercase md:justify-start font-['roboto']"
               >
                 Nos Partenaires
               </a>
 
               <div className="hero bg-gredient-dark h-400px flex flex-col px-2">
                 <p
-                  className="mb-5 mt-5 font-['roboto-bold']"
-                  style={{ fontSize: "20px" }}
+                  className="mb-5 mt-5 font-['roboto'] text-lg font-semibold"
                 >
                   Abonnez-vous à notre newsLetter
                 </p>

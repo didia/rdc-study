@@ -35,7 +35,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
           <div className={style.contact_content}>
             <div className="text-start">
-              <div className="text-2xl text-white font-black mt-2 mb-4 font-['monserrat-bold']">
+              <div className="text-2xl text-white font-bold mt-2 mb-4 font-['monserrat']">
                Pourquoi Rdc etudes ?
               </div>
               <div className="text-base text-white mb-7 font-['roboto']">
@@ -46,14 +46,14 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               </div>
               <div>
                 <Dropdown
-                  class="md:hidden font-['roboto'] bg-sky-600 text-white text-base font-bold py-2 px-2 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
+                  class="md:!hidden !font-['roboto'] !bg-sky-600 !text-white !text-base !font-bold !py-2 !px-2 !rounded-xl !transition-colors !duration-300 !ease-in-out !hover:bg-yellow-500 !hover:text-white"
                   label="Demander une assistance"
                   placement="bottom-start"
                 >
                   <a href="/bourse">
                     <div className="hover:bg-gray-100 tex-base cursor-pointer hover:text-yellow-400 hover:text-lg">
                       {" "}
-                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                      <Dropdown.Item class="mx-4 py-2 text-base font-['roboto']">
                         <FontAwesomeIcon
                           icon={faGraduationCap}
                           className="mr-3 h-5"
@@ -64,7 +64,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                   </a>
                   <a href="/help">
                     <div className="hover:bg-gray-100 text-base cursor-pointer hover:text-yellow-400 hover:text-lg">
-                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                      <Dropdown.Item class="mx-4 py-2 text-base font-['roboto']">
                         <FontAwesomeIcon
                           icon={faAssistiveListeningSystems}
                           className="mr-3 h-5"
@@ -73,9 +73,9 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                       </Dropdown.Item>
                     </div>
                   </a>
-                  <a href="/help">
+                  <a href="/assistance">
                     <div className="hover:bg-gray-100 text-base cursor-pointer hover:text-yellow-400 hover:text-lg">
-                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                      <Dropdown.Item class="mx-4 py-2 text-base font-['roboto']">
                         <FontAwesomeIcon
                           icon={faHandsHelping}
                           className="mr-3 h-5"
@@ -86,7 +86,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                   </a>
                   <a href="/document">
                     <div className="hover:bg-gray-100 text-sm cursor-pointer hover:text-yellow-400 hover:text-sm">
-                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                      <Dropdown.Item class="mx-4 py-2 text-base font-['roboto']">
                         <FontAwesomeIcon
                           icon={faFileEdit}
                           className="mr-3 h-5"
@@ -97,7 +97,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                   </a>
                   <a href="/billet">
                     <div className="hover:bg-gray-100 text-base cursor-pointer hover:text-yellow-400 hover:text-lg">
-                      <Dropdown.Item class="mx-4 py-2 text-md font-['monserrat']">
+                      <Dropdown.Item class="mx-4 py-2 text-base font-['roboto']">
                         <FontAwesomeIcon
                           icon={faPassport}
                           className="mr-3 h-5"
@@ -134,10 +134,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <div className="max-md:hidden flex -mt-32 mx-28">
         <div className="z-10">
           <div className="text-start">
-            <p className="text-4xl text-sky-600 font-black font-['monserrat-bold']">
+            <p className="text-5xl text-sky-600 font-medium font-['monserrat']">
               Pourquoi RDC-Etudes ?
             </p>
-            <p className="text-xl my-4 font-['roboto']">
+            <p className="text-2xl my-4 !font-extralight font-['roboto']">
               RDC ETUDES est une entreprise axée sur l'éducation qui a pour
               mission de faciliter l'accès à une éducation de qualité pour les
               étudiants africains francophones, que ce soit sur le continent ou
@@ -171,7 +171,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                   </Dropdown.Item>
                 </div>
               </a>
-              <a href="/help">
+              <a href="/assistance">
                 <div className="hover:bg-gray-100 cursor-pointer hover:text-yellow-400 hover:text-lg">
                   <Dropdown.Item class="mx-4 py-2 text-base font-['roboto']">
                     <FontAwesomeIcon
@@ -252,10 +252,10 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </div>
 
           <div className="col-span-5">
-            <span className="text-sky-600 text-xl font-black font-['monserrat-bold']">
+            <span className="text-sky-600 text-xl font-medium font-['monserrat']">
               Où souhaitez-vous étudier ?
             </span>{" "}
-            <p className="font-['roboto'] text-base">
+            <p className="font-['roboto'] text-base text-left font-light">
               Nous vous accompagnons à réaliser votre projet d'études dans les
               meilleurs universités du monde. L'accompgnement RDC Etudes
               consiste à vous orienter dans votre projet d'études tout en les
@@ -314,7 +314,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             </div>
 
             <div className="col-span-6 py-16 mx-10">
-              <span className="text-sky-600 font-black text-4xl">
+              <span className="text-sky-600 font-normal text-5xl">
                 Où souhaitez-vous étudier ?
               </span>{" "}
               <p className="text-xl py-6 font-['roboto']">
@@ -383,7 +383,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
         <div className="col-span-7 flex">
           <div>
-            <p className="text-3xl font-black text-sky-600 font-['monserrat-bold']">
+            <p className="text-4xl font-medium text-sky-600 font-['monserrat']">
               Bourses d'études
             </p>
             <p className="py-4 text-xl mr-[15rem] font-['roboto']">
@@ -398,7 +398,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               <Banner class="mb-5 w-[37rem]">
                 <div className="flex mt-10 justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                   <div className="mx-auto flex items-center">
-                    <p className="flex items-center text-base font-['roboto-bold'] font-normal text-red-700 dark:text-gray-400">
+                    <p className="flex items-center text-base font-['roboto'] font-normal text-red-700 dark:text-gray-400">
                       <FontAwesomeIcon
                         icon={faCheckCircle}
                         className="mr-4 h-8 w-8"
@@ -414,7 +414,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               <Banner class="w-[37rem]">
                 <div className="flex justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                   <div className="mx-auto flex items-center">
-                    <p className="flex items-center text-base font-['roboto-bold'] font-normal text-cyan-600 dark:text-gray-400">
+                    <p className="flex items-center text-base font-['roboto'] font-normal text-cyan-600 dark:text-gray-400">
                       <FontAwesomeIcon
                         icon={faQuestionCircle}
                         className="mr-4 h-8 w-8"
@@ -454,12 +454,12 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <Scholarship scholarships={scholarships} />
 
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-        <section className="mb-5 mt-16 md:mt-20">
-          <div className="text-left px-3 md:p-8 mb-5">
-            <span className="text-sky-600 text-lg font-black uppercase md:text-2xl font-['roboto-bold']">
+        <section className="mb-5 mt-10 md:mt-7">
+          <div className="text-left px-3 md:p-8 md:mx-24 mb-5">
+            <span className="text-sky-600 text-lg font-black uppercase md:text-xl font-['roboto']">
               Les dernières nouvelles
             </span>{" "}
-            <div className="h-4 w-full border-b-2 border-sky-600"></div>
+            <div className="h-4 w-full border-b border-sky-600"></div>
           </div>
 
           {articles.map((article) => {
@@ -473,9 +473,9 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </section>
       </AnimationOnScroll>
 
-      <section className="mb-5 mt-12 md:mt-16">
+      <section className="mb-5 mt-12 md:mt-24">
         <div className="text-center md:mb-10">
-          <span className="text-sky-600 text-2xl font-black md:text-3xl font-['roboto-bold']">
+          <span className="text-sky-600 text-2xl font-semibold md:text-4xl font-['roboto']">
             Nos partenaires
           </span>{" "}
         </div>
@@ -494,7 +494,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                     objectFit="contain"
                   />
 
-                  <p className=" text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6 font-['roboto-bold']">
+                  <p className=" text-xs font-medium capitalize font-body text-green-900 lg:text-base md:text-base md:pt-6 font-['roboto']">
                     INSTITUT AFRICAIN DE HAUTE FORMATION (TUNISIE)
                   </p>
                 </a>
@@ -510,7 +510,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                     height={90}
                     objectFit="contain"
                   />
-                  <p className="pt-10 text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6 font-['roboto-bold']">
+                  <p className="pt-10 text-xs font-medium capitalize font-body text-green-900 lg:text-base md:text-base md:pt-6 font-['roboto']">
                     EXCELIA GROUP (FRANCE)
                   </p>
                 </a>
@@ -527,7 +527,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                     objectFit="contain"
                   />
 
-                  <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6 font-['roboto-bold']">
+                  <p className="text-xs font-medium  capitalize font-body text-green-900 lg:text-base md:text-base md:pt-6 font-['roboto']">
                     UNIVERSITE MEDIPOL D'ISTANBUL (TURQUIE)
                   </p>
                 </a>
@@ -544,7 +544,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
                     objectFit="contain"
                   />
 
-                  <p className="text-xs font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
+                  <p className="text-xs font-medium capitalize font-['roboto'] font-body text-green-900 lg:text-base md:text-base md:pt-6">
                     UNIVERSITE EUROPEENNE DE LEFKE EN CHYPRE DU NORD
                   </p>
                 </a>
@@ -556,7 +556,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
       <section className="mb-5 mt-12 md:mt-16">
         <div className="text-center md:py-10">
-          <span className="text-sky-600 max-[1484px]:text-lg text-2xl font-black md:text-3xl font-['monserrat-bold']">
+          <span className="text-sky-600 font-semibold max-[1484px]:text-2xl text-3xl md:text-3xl font-['roboto']">
             Témoignages
           </span>{" "}
         </div>
@@ -571,7 +571,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               />
             </div>
             <div className="z-20 -mt-7">
-              <p className="text-center text-sm md:text-xl text-white font-['roboto']">
+              <p className="text-center text-sm md:text-lg text-white font-['roboto']">
                 Lorem ispum dolor fortuna simpre cresis, out decresis vita
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
@@ -591,7 +591,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               />
             </div>
             <div className="z-20 -mt-7">
-              <p className="text-center text-sm text-white md:text-xl font-['roboto']">
+              <p className="text-center text-sm text-white md:text-lg font-['roboto']">
                 Lorem ispum dolor fortuna simpre cresis, out decresis vita
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis
@@ -610,7 +610,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               />
             </div>
             <div className="z-20 -mt-7">
-              <p className="text-center text-sm text-white md:text-xl font-['roboto']">
+              <p className="text-center text-sm text-white md:text-lg font-['roboto']">
                 Lorem ispum dolor fortuna simpre cresis, out decresis vita
                 detastabilis Lorem ispum dolor fortuna simpre cresis, out
                 decresis

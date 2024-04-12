@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <>
       <nav className="bg-white shadow-lg sticky top-0 z-50">
-        <div className="mx-auto px-4 md:px-28">
+        <div className="mx-auto px-4 md:px-16">
           <div className="flex justify-between">
             <div className="flex space-x-20">
               <div>
@@ -44,9 +44,10 @@ const Header = () => {
                 </a>
               </div>
 
-              <div className="hidden md:flex md:space-x-5 items-center uppercase">
+              <div className="hidden md:flex md:space-x-3 items-center uppercase">
                 <NavLink title={"acceuil"} url={"/"} />
                 <NavLink title={"bourses d'études"} url={"/bourse"} />
+                <NavLink title={"articles"} url={"/bourse"} />
                 {/* <NavLink title={"examens médicaux"} url={"/healthcare"} /> */}
                 <NavLink
                   title={"Politique de Confidentialité"}

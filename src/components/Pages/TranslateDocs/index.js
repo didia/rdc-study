@@ -5,18 +5,17 @@ import { StaticImage } from "gatsby-plugin-image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
 import PrimaryBtn from "../../Button/Primary";
-import img1 from "../../../images/translate_document.jpg";
 
 const TranslateDocs = () => {
   return (
     <Layout pageTitle={"Page d'aide"}>
       <section className="mb-14 md:hidden">
         <div className="grid grid-cols-12 gap-2 mb-14">
-          <div className="col-span-4">
+          <div className="col-span-3">
             <div className={styles.ellipse__first}>
               <StaticImage
                 alt="tourist"
-                height={150}
+                height={130}
                 src="../../../images/translate_document.jpg"
               />
             </div>
@@ -28,7 +27,7 @@ const TranslateDocs = () => {
               />
             </div>
           </div>
-          <div className="ml-12 col-span-6 text-sky-600 text-2xl font-extrabold z-10 mt-10">
+          <div className="col-span-8 text-sky-600 text-xl font-medium font-['monserrat'] z-10 mt-6">
             Avez-vous des documents à traduire ?
             <p>
               <StaticImage
@@ -39,7 +38,7 @@ const TranslateDocs = () => {
               />
             </p>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1">
             <StaticImage
               alt="plane"
               src="../../../images/earth-with-plane-drawing-png.png"
@@ -48,13 +47,13 @@ const TranslateDocs = () => {
         </div>
 
         <div
-          className="mt-24 h-56 w-full text-center text-white text-base px-12 py-3 font-['roboto-bold']"
+          className="mt-24 h-56 w-full text-center text-white text-base px-10 py-3 font-['roboto']"
           style={{ backgroundColor: "#862304" }}
         >
           Faites traduire vos documents académiques, professionnels et
           administratifs par un traducteur assermenté de RDC ÉTUDES.
-          <div className="mt-5 bg-yellow-600 text-white py-4 mx-7 ml-auto mr-auto w-[20rem] text-2xl font-['roboto']">
-            <span className="text-white font-bold"> 15 $ / Page </span>
+          <div className="mt-5 bg-yellow-600 text-white py-4 mx-7 ml-auto mr-auto w-[12rem] text-xl font-['roboto']">
+            <span className="text-white"> 15 $ / Page </span>
           </div>
         </div>
 
@@ -63,7 +62,7 @@ const TranslateDocs = () => {
             <input
               type="text"
               placeholder="Combien de documents souhaitez-vous traduire?"
-              className="mt-5 block h-16 appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
+              className="mt-5 block h-16 text-sm appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
 
@@ -71,7 +70,7 @@ const TranslateDocs = () => {
             <input
               type="text"
               placeholder="Combien de documents souhaitez-vous traduire?"
-              className="mt-5 block h-16 appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
+              className="mt-5 block h-16 text-sm appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
 
@@ -99,7 +98,7 @@ const TranslateDocs = () => {
               />
             </div>
           </div>
-          <div className="col-span-5 text-sky-600 text-3xl max-[1384px]:ml-1 max-[1384px]:text-2xl font-['monserrat'] z-10 -mt-24 -ml-40">
+          <div className="col-span-5 font-light text-sky-600 text-3xl max-[1384px]:ml-1 max-[1384px]:text-2xl font-['monserrat'] z-10 -mt-24 -ml-40">
             Faites traduire vos documents académiques, professionnels et
             administratifs par un traducteur assermenté de RDC ÉTUDES.
           </div>
@@ -111,22 +110,22 @@ const TranslateDocs = () => {
           </div>
         </div>
 
-        <div className="bg-[#862304] h-72 w-full text-center text-white text-4xl font-['roboto'] px-44 py-12 max-[1384px]:text-3xl">
-          Traduisez l'intégralité de vos documents chez RdcEtudes
+        <div className="bg-[#862304] font-light h-72 w-full text-center text-white text-3xl font-['roboto'] px-44 py-12 max-[1384px]:text-3xl">
+          <p className=" font-light"> Traduisez l'intégralité de vos documents chez RdcEtudes</p>
           <p className="mt-2">
             <br />
             <div className=" bg-yellow-600 text-white py-4 mx-7 ml-auto mr-auto w-[20rem] text-2xl font-['roboto']">
-              <span className="text-white font-bold"> 15 $ / Page </span>
+              <span className="text-white"> 15 $ / Page </span>
             </div>
           </p>
         </div>
 
-        <div className="mb-32 mt-28 border rounded-lg px-5 mx-[25rem] py-7 shadow-md">
+        <div className="mb-32 mt-20 border rounded-lg px-5 mx-[25rem] py-7 shadow-md">
           <div className="inline-block relative w-full py-5">
             <input
               type="text"
               placeholder="Combien de documents souhaitez-vous traduire?"
-              className="mt-5 block h-16 appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
+              className="mt-5 block h-16 font-normal appearance-none w-full bg-white border-2 border-black hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
 

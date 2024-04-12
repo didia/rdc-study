@@ -32,13 +32,13 @@ const Bourse = ({ scholarships }) => {
           <div className="text-start mx-10 z-10">
             <span
               className={
-                styles.bourse__title + " font-['monserrat-bold'] uppercase"
+                styles.bourse__title + " font-['monserrat'] font-semibold uppercase"
               }
             >
               Bourses d'études
             </span>{" "}
             <p className="mt-4">
-              <span className="text-base font-['roboto-bold']">
+              <span className="text-base font-['roboto']">
                 Chez RDC ETUDES nous recherchons et mettons en votre
                 disponibilite des offres de bourses d'études auxquelles vous
                 pouvez postuler et bénéficier d’une éducation de qualité dans
@@ -128,12 +128,12 @@ const Bourse = ({ scholarships }) => {
             </div>
           </div>
 
-          <div className="flex -ml-[23rem] mt-[5rem]">
+          <div className="flex -ml-[20rem] mt-[5rem]">
             <div>
-              <p className="text-4xl font-black text-sky-600">
+              <p className=" text-4xl font-semibold font-['monserrat'] text-sky-600">
                 Bourses d'études
               </p>
-              <p className="py-4 text-xl mr-[35rem] font-['roboto']">
+              <p className="py-4 text-xl mr-[35rem] font-light font-['roboto']">
                 Chez RDC ETUDES nous recherchons et mettons en votre
                 disponibilite des offres de bourses d'études auxquelles vous
                 pouvez postuler et bénéficier d’une éducation de qualité dans
@@ -168,7 +168,7 @@ const Bourse = ({ scholarships }) => {
           <AnimationOnScroll animateIn="animate__bounceInLeft" animateOnce>
             <StaticImage
               alt="Ellipse 6"
-              height={300}
+              height={250}
               src="../../../images/Travel-Icon-Transparent-Background.png"
             />
           </AnimationOnScroll>
