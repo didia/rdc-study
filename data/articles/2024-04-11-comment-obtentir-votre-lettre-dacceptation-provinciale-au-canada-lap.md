@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Comment obtentir votre lettre d'acceptation provinciale au Canada (LAP)
 excerpt: Depuis le 22 janvier 2024, les étudiants internationaux souhaitant
   étudier au Canada doivent obtenir une Lettre d'Attestation Provinciale (LAP)
