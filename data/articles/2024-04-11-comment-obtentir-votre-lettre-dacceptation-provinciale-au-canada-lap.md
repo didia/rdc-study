@@ -10,8 +10,6 @@ excerpt: Depuis le 22 janvier 2024, les étudiants internationaux souhaitant
 thumbnail: /images/uploads/dall-e-2024-04-11-18.52.43-a-group-of-joyful-black-international-students-holding-a-large-map-of-canada-excitedly-pointing-to-various-provinces-including-ontario.-they-are-sur.jpg
 date: 2024-04-11T18:03:06.621Z
 ---
-<!--StartFragment-->
-
 Pour l'Ontario, par exemple, la LAP confirme l'intention d'étudier dans un établissement postsecondaire de cette province. Toutefois, certaines exceptions peuvent s'appliquer à cette règle.
 
 **Processus d'obtention de la LAP :** Au cours de votre démarche d'admission, l'établissement d'enseignement postsecondaire demandera la LAP en votre nom. Après approbation par le Ministère des Collèges et Universités, vous serez notifié et recevrez une copie de la LAP. Le processus de notification peut varier d'un établissement à l'autre.
