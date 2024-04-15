@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Combien coûtent les démarches d'études au Canada pour un étudiant congolais ?
 excerpt: "Pour un étudiant congolais préparant ses démarches pour obtenir un
   visa d'études pour le Canada, plusieurs coûts doivent être pris en compte. Ces
