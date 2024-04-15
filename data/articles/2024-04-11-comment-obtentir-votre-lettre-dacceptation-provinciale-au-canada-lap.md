@@ -20,4 +20,4 @@ Il est important de noter que vous n'avez pas à demander personnellement la LAP
 
 En cas de questions sur le processus de LAP, il est conseillé de contacter directement l'établissement d'enseignement.
 
-<!--EndFragment-->
+P﻿our plus d'informations sur la demande du permis d'etudes, veuillez consulter [notre guide en ligne](https://www.rdcetudes.com/guides/canada/visa).
