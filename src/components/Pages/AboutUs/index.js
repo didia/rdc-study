@@ -196,7 +196,7 @@ const AboutUs = ({ teammMembers }) => {
             TROIS VALEURS QUI GUIDENT NOS ACTIONS
           </div>
 
-          <p className="text-xl py-5 mx-[15rem] font-['roboto']">
+          <p className="text-xl py-5 mx-[10rem] font-normal font-['roboto']">
             RDC ÉTUDES est composée des anciens étudiants qui ont fréquenté
             différents pays tels que l’Allemagne,la Belgique, le Brésil, le
             Canada, Chypre du Nord, la France, les USA et la Roumanie.

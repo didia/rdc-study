@@ -27,7 +27,7 @@ const Billet = () => {
               />
             </div>
           </div>
-          <div className="col-span-6 text-sky-600 text-2xl font-extrabold z-10 mt-10">
+          <div className="col-span-6 text-sky-600 text-2xl font-['roboto'] z-10 mt-10">
             Pour quelle destination souhaitez-vous acheter le billet ?
             <p>
               <StaticImage
@@ -111,7 +111,7 @@ const Billet = () => {
           </div>
         </div>
 
-        <div className="bg-[#862304] font-bold w-full text-center text-white text-3xl font-['roboto'] px-44 py-24">
+        <div className="bg-[#862304] w-full text-center text-white text-3xl font-['roboto'] px-44 py-24">
           Pour quelle destination souhaitez-vous acheter le billet ?
         </div>
 

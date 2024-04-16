@@ -147,8 +147,8 @@ const Assistance = () => {
               />
             </div>
           </div>
-          <div className="col-span-6 text-sky-600 text-lg font-bold font-['monserrat'] z-10 mt-10">
-            Pour quel pays souhaitez-vous être consulté ?
+          <div className="col-span-6 text-sky-600 text-lg font-medium font-['monserrat'] z-10 mt-10">
+            Pour quel pays souhaitez-vous être assisté ?
             <p>
               <StaticImage
                 height={50}
@@ -201,7 +201,7 @@ const Assistance = () => {
           </div>
 
           <p className="uppercase text-center text-sm">
-            Pour quel service souhaitez-vous être consulté(e) ?
+            Pour quel service souhaitez-vous être assisté (e) ?
           </p>
 
           <div className="inline-block relative w-full py-5">
@@ -256,7 +256,7 @@ const Assistance = () => {
         </div>
 
         <div className="bg-[#862304] h-72 w-full text-center text-white text-3xl font-['roboto'] px-44 py-12">
-          Pour quel pays souhaitez-vous être consulté(e) ?
+          Pour quel pays souhaitez-vous être assisté (e) ?
           <div className="mt-2">
             <br />
             <div className=" bg-yellow-600 text-white py-4 mx-7 ml-auto mr-auto w-[20rem] text-2xl font-['roboto']">
@@ -290,7 +290,7 @@ const Assistance = () => {
           </div>
 
           <p className="uppercase text-center text-xl">
-            Pour quel service souhaitez-vous être consulté(e) ?
+            Pour quel service souhaitez-vous être assisté (e) ?
           </p>
 
           <div className="inline-block relative w-full py-5">

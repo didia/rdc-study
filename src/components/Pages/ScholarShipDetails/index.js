@@ -60,34 +60,41 @@ const ScholarShipDetails = ({ bourse, content, otherScholarShips }) => {
         <div className="grid grid-cols-1">
           <GatsbyImage image={image} className="w-full" alt={bourse.title} />
         </div>
-        <div className="mx-4 py-3">
+        <div className="mx-16 py-6">
           <p className="text-sky-600 font-['font-roboto'] text-2xl font-bold text-start">
             {bourse.title}
           </p>
           <p className="py-3 text-xl font-['roboto']">{bourse.excerpt}</p>
-          <div className="flex justify-around">
-            <div className="text-xl font-['roboto']">
-              {" "}
-              <FontAwesomeIcon icon={faGlobe} /> Canada
-            </div>
-            <div className="inline text-xl font-['roboto']">
-              {" "}
-              <FontAwesomeIcon icon={faClock} />
-              <span className="px-2">Doctorat, Recherche</span>
-            </div>
-            <div className="text-xl font-['roboto']">
-              {" "}
-              <FontAwesomeIcon icon={faGraduationCap} />
-              <span className="px-2 text-red-600">Expire en Décembre</span>
-            </div>
-          </div>
+          
         </div>
 
-        <div className="py-8 mx-4">
+        <div className="py-8 mx-16">
           <HtmlContent content={content} htmlclassName={"text-xl font-['roboto']"} />
         </div>
+
       </section>
 
+      <section
+        className="bg-slate-50 hidden px-20 md:block h-[35rem]"
+        id="bourses"
+      >
+        <Carousel slide={true} indicators={false}>
+          {otherScholarShips.map((otherScholarShip, index) => {
+            const fisrtItem = otherScholarShips[index];
+            const secondItem = otherScholarShips[index + 1];
+            const thirdItem = otherScholarShips[index + 2];
+
+            return (
+                <div className="flex">
+                  {fisrtItem && <ScholarShipCard scholarship={fisrtItem} />}
+                  {secondItem && <ScholarShipCard scholarship={secondItem} />}
+                  {thirdItem && <ScholarShipCard scholarship={thirdItem} />}
+                </div>
+            );
+          })}
+        </Carousel>
+      </section>
+      
       <section className="mx-4 mb-10 md:hidden">
         <div className="text-sky-600 text-lg font-['roboto-bold'] font-black absolute mt-10 uppercase">
           Autres Bourses

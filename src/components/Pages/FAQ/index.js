@@ -10,7 +10,7 @@ const FAQ = () => {
           <div className="absolute">
             <StaticImage alt="question" src="../../../images/question.png" />
           </div>
-          <div className="absolute py-20 pl-10 text-center text-white text-xl font-bold uppercase z-20">
+          <div className="absolute font-['montserrat'] py-20 pl-10 text-center text-white text-xl font-bold uppercase z-20">
             Questions populaires
           </div>
           <div className="absolute bottom-0 right-0">
@@ -24,7 +24,7 @@ const FAQ = () => {
       </section>
 
       <section className="hidden md:block">
-        <div className="relative h-[35rem] w-full bg-sky-600">
+        <div className="relative h-[28rem] w-full bg-sky-600">
           <div className="absolute">
             <StaticImage
               alt="question"
@@ -37,7 +37,7 @@ const FAQ = () => {
               src="../../../images/question.png"
             />
           </div>
-          <div className="absolute py-40 ml-[20rem] text-center text-white text-6xl font-black uppercase z-20">
+          <div className="absolute py-40 ml-[20rem] text-center text-white text-5xl font-semibold font-['montserrat'] uppercase z-20">
             Questions populaires
           </div>
 
@@ -57,21 +57,21 @@ const FAQ = () => {
             <StaticImage
               src="../../../images/faq.png"
               alt="img student"
-              width={350}
+              width={270}
             />
           </div>
         </div>
       </section>
 
-      <section className="mx-8 mt-10 mb-20">
+      <section className="mx-8 md:mx-12 mt-10 mb-20 font-['roboto']">
         <div className="text-justify text-xl">
-          <span className="md:text-3xl font-bold font-['roboto'] text-yellow-500">
+          <span className="md:text-xl text-base uppercase font-bold text-yellow-500">
             Voici les réponses aux questions les plus souvent posées.
           </span>
-          <p className="uppercase text-lg md:text-2xl font-bold py-6">
+          <p className="uppercase text-lg md:text-2xl  py-6">
             Qu’est-ce que RDC Études ?{" "}
           </p>
-          <p className="text-base md:text-2xl">
+          <p className="text-base md:text-xl">
             RDC Etudes est une plateforme qui met gratuitement à votre
             disposition les informations nécessaires pour vos démarches d‘études
             à l’étranger. RDC Etudes peut aussi vous accompagner dans vos
@@ -79,10 +79,10 @@ const FAQ = () => {
             d‘accompagnement.\ Pour en savoir plus sur RDC Etudes, consultez
             notre page à propos.
           </p>
-          <p className="uppercase text-lg font-bold py-2 text-red-700">
+          <p className="uppercase text-base font-bold py-2 text-red-700">
             1. Comment nous contacter ?{" "}
           </p>
-          <p className="text-base md:text-2xl">
+          <p className="text-base md:text-xl">
             Vous pouvez nous contacter par courriel salut@rdcetudes.com ou par
             messagerie facebook. Faut-il payer pour accéder aux guides des
             démarches offerts par RDC Etudes? Non! Les guides des démarches sur
@@ -93,17 +93,17 @@ const FAQ = () => {
             notre service d’accompagnement, consultez notre page sur
             l’accompagnement.
           </p>
-          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+          <p className="uppercase text-base font-bold py-2 text-start text-red-700">
             2. Quels sont les pays pour lesquels vous offrez votre service
             d’accompagnement ?{" "}
           </p>
           Actuellement, nous pouvons vous aider à faire les démarches pour le
           Canada, les États-Unis et la Belgique.
-          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+          <p className="uppercase text-base font-bold py-2 text-start text-red-700">
             3. Que dois-je faire pour obtenir une admission et un visa pour
             étudier à l’étranger ?
           </p>{" "}
-          <p className="text-base md:text-2xl">
+          <p className="text-base md:text-xl">
             Pour obtenir une admission et un visa, vous devez commencer par
             choisir un ou des pays où vous voulez étudier. Ensuite vous devez
             choisir une université et procéder à la demande d’admission. Une
@@ -111,10 +111,10 @@ const FAQ = () => {
             de Visa. Pour savoir comment faire une demande d’admission ou de
             visa, consultez nos guides gratuits à ce sujet.
           </p>
-          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+          <p className="uppercase text-base font-bold py-2 text-start text-red-700">
             4. Quels sont les critères d’admissions ?
           </p>
-          <p className="text-base md:text-2xl">
+          <p className="text-base md:text-xl">
             Les critères dépendent souvent de chaque université et/ou du
             programme pour lequel vous demandez une admission. En général, il
             faut avoir des bonnes notes scolaires et avoir fait des études qui
@@ -123,10 +123,10 @@ const FAQ = () => {
             faculté
           </p>
           d’informatique.
-          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+          <p className="uppercase text-base font-bold py-2 text-start text-red-700">
             5. Combien coûtent les études à l’étranger?
           </p>
-          <p className="text-base md:text-2xl">
+          <p className="text-base md:text-xl">
             Les frais académiques dépendent du pays, de l’université ainsi que
             du programme d’études que vous avez choisi. En moyenne vous devez
             vous attendre en moyenne à: * Entre 4 000 USD et 13 000 USD par
@@ -140,10 +140,10 @@ const FAQ = () => {
             bourses sont beaucoup plus accessibles aux étudiants qui visent les
             études supérieures, soit la maitrise ou le doctorat.
           </p>
-          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+          <p className="uppercase text-base font-bold py-2 text-start text-red-700">
             6. Comment trouver des bourses ?
           </p>
-          <p className="text-base md:text-2xl">
+          <p className="text-base md:text-xl">
             Généralement les bourses complètes sont données par des organismes
             internationales ou des organismes gouvernementaux. Vous devez donc
             être à l’affut en consultant régulièrement les sites de ces
@@ -152,10 +152,10 @@ const FAQ = () => {
             facebook. N’hésitez donc pas de vous abonner pour recevoir les
             dernières opportunités.
           </p>
-          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+          <p className="uppercase text-base font-bold py-2 text-start text-red-700">
             7. Est-ce qu’on peut étudier la médecine ou le droit au Canada ?
           </p>
-          <p className="text-base md:text-2xl">
+          <p className="text-base md:text-xl">
             Oui mais il est extrêmement difficile d’obtenir une inscription en
             médecine ou en droit pour les études du premier cycle au Canada. Ces
             programmes sont contingentés et le nombre d’étudiants étrangers
@@ -167,11 +167,11 @@ const FAQ = () => {
             préparatoires pour être à jour et bien évoluer dans leurs
             cheminements.
           </p>
-          <p className="uppercase text-lg font-bold py-2 text-start text-red-700">
+          <p className="uppercase text-base font-bold py-2 text-start text-red-700">
             8. Peux-je introduire ma demande de permis d’études avant
             l’obtention de mon CAQ ?{" "}
           </p>
-          <p className="text-base md:text-2xl">
+          <p className="text-base md:text-xl">
             Non. Vous devez avoir au minimum la lettre d’approbation de votre
             CAQ avant d’introduire votre demande de permis d’études.
           </p>

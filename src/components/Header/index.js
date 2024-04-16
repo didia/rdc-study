@@ -47,7 +47,7 @@ const Header = () => {
               <div className="hidden md:flex md:space-x-3 items-center uppercase">
                 <NavLink title={"acceuil"} url={"/"} />
                 <NavLink title={"bourses d'études"} url={"/bourse"} />
-                <NavLink title={"articles"} url={"/bourse"} />
+                <NavLink title={"articles"} url={"/article"} />
                 {/* <NavLink title={"examens médicaux"} url={"/healthcare"} /> */}
                 <NavLink
                   title={"Politique de Confidentialité"}
@@ -57,6 +57,7 @@ const Header = () => {
                 <NavLink title={"aide"} url={"/help"} />
                 {/* <NavLink title={"faq"} url={"/faq"} /> */}
                 <NavLink title={"Contacts"} url={"/contactUs"} />
+                <NavLink title={"Faq"} url={"/faq"} />
               </div>
             </div>
 
