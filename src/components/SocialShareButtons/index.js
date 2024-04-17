@@ -44,7 +44,7 @@ const SocialShareButtons = ({ title, subject, message, path, img}) => {
               ],
               padding: 12,          
               radius: 4,            
-              show_total: true,     
+              show_total: false,     
               show_mobile: true,    
               show_toggle: false,    
               size: 48,             

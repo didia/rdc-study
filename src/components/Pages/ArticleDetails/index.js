@@ -46,8 +46,8 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
                           img={sharedImg}
       />
       <section className="mb-5 mt-10 md:mt-10">
-          <div className="text-left mx-28 px-3 md:p-8 mb-5">
-            <span className="text-sky-600 text-lg font-black uppercase md:text-xl font-['roboto-bold']">
+          <div className="text-left px-3 md:p-8 mb-5">
+            <span className="text-sky-600 text-base font-black uppercase md:text-xl font-['roboto-bold']">
               Les dernières nouvelles
             </span>{" "}
             <div className="h-4 w-full border-b border-sky-600"></div>

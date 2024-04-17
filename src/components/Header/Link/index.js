@@ -4,7 +4,7 @@ import * as styles from "./styles.module.scss";
 const NavLink = ({title, url}) => {
     return (
       <>
-        <li className="md:hidden border py-2 border-white border-opacity-60 opacity-60 text-base">
+        <li className="md:hidden border font-['roboto'] py-2 border-white border-opacity-60 opacity-60 text-sm">
           {" "}
           <a href={url}>{title}</a>
         </li>

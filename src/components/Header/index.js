@@ -40,7 +40,7 @@ const Header = () => {
                   <StaticImage
                     src="../../images/logo.png"
                     alt="Logo"
-                    className="h-12 w-12 mr-2 md:h-20 md:w-20"
+                    className="h-12 w-12 mr-2 md:h-16 md:w-16"
                   />
                 </a>
               </div>
@@ -133,6 +133,7 @@ const Header = () => {
             <ul className="w-full">
               <NavLink title={"acceuil"} url={"/"} />
               <NavLink title={"bourses d'études"} url={"/bourse"} />
+              <NavLink title={"articles"} url={"/article"} />
               {/* <NavLink title={"examens médicaux"} url={"/healthcare"} /> */}
               <NavLink
                 title={"Politique de Confidentialité"}
