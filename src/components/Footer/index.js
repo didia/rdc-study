@@ -255,30 +255,30 @@ export const Footer = () => {
                 CONTACTS
               </h2>
               <p className="mb-6 text-start">
-                <a href="#!" className="text-white text-lg">
+                <p className="text-white text-lg">
                   <FontAwesomeIcon icon={faPhone} />
                   &nbsp;&nbsp; +243 99 994 9712
-                </a>
+                </p>
               </p>
               <p className="mb-6 text-start">
-                <a href="#!" className="text-white text-lg">
+                <a href="https://api.whatsapp.com/send?phone=+1(581)318-0180&text=Laissez-nous%20un%20message" className="text-white text-lg">
                   <FontAwesomeIcon icon={faWhatsapp} />
                   &nbsp;&nbsp; +1 (581) 318-0180
                 </a>
               </p>
 
               <p className="mb-6 text-start">
-                <a href="#!" className="text-white text-lg">
+                <p className="text-white text-lg">
                   <FontAwesomeIcon icon={faEnvelope} />
                   &nbsp;&nbsp; salut@rdcetudes.com
-                </a>
+                </p>
               </p>
               <p className="mb-6 text-start">
-                <a href="#!" className="text-white text-lg">
+                <p  className="text-white text-lg">
                   <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
                   &nbsp;&nbsp; Local 1m3 de la nouvelle galerie présidentielle,
                   Kinshasa, Gombe
-                </a>
+                </p>
               </p>
             </div>
 
@@ -300,14 +300,14 @@ export const Footer = () => {
               </p>
 
               <p className="mb-6 text-start">
-                <a href="/aboutUs" className="text-white text-lg">
-                  Qui sommes-nous ?
+                <a href="/article" className="text-white text-lg">
+                  Articles
                 </a>
               </p>
-
+              
               <p className="mb-6 text-start">
-                <a href="/faq" className="text-white text-lg">
-                  Questions populaires
+                <a href="/aboutUs" className="text-white text-lg">
+                  Qui sommes-nous ?
                 </a>
               </p>
             </div>
@@ -332,6 +332,12 @@ export const Footer = () => {
               <p className="mb-6 text-start">
                 <a href="/help" className="text-white text-lg">
                   Besoin d'aide ?
+                </a>
+              </p>
+
+              <p className="mb-6 text-start">
+                <a href="/faq" className="text-white text-lg">
+                  Questions populaires
                 </a>
               </p>
             </div>

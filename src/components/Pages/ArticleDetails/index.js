@@ -9,10 +9,8 @@ import SocialShareButtons from "../../SocialShareButtons";
 
 const ArticleDetails = ({ article, content, otherArticles }) => {
   const image = getImage(article.thumbnail);
-  const sharedImg = article.thumbnail.childImageSharp.gatsbyImageData
-  useEffect(() => {
-    console.log("sharedImg : ", getImage);
-  })
+  let sharedImg = null
+  sharedImg = article.thumbnail && article.thumbnail.childImageSharp && article.thumbnail.childImageSharp.gatsbyImageData
   return (
     <Layout pageTitle={"Détails sur la article d'études"}>
       <section>

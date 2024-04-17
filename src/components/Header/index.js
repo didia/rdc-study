@@ -63,28 +63,7 @@ const Header = () => {
             </div>
 
             <div className="hidden md:flex items-center space-x-1 ">
-            <InlineShareButtons
-          config={{
-            property: config.shareThisProperty,
-            alignment: 'center',
-            color: 'social',
-            enabled: true,
-            font_size: 16,
-            labels: null,
-            language: 'fr',
-            networks: ['whatsapp','facebook', 'twitter'],
-            min_count: 50,
-            padding: 12,
-            radius: 30,           
-            show_total: false,
-            size: 40,             
-            url: config.siteURL,
-            description: config.siteDescription,
-            title: config.siteTitle,
-            username: '@rdcetudes'
-          }}
-        />
-              {/* <a
+              <a
                 href="https://www.facebook.com/rdcetudes"
                 className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
               >
@@ -103,14 +82,14 @@ const Header = () => {
                 />
               </a>
               <a
-                href="https://api.whatsapp.com/send?text=www.rdcetudes.com"
+                href="https://api.whatsapp.com/send?phone=+1(581)318-0180&text=Laissez-nous%20un%20message"
                 className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faWhatsapp}
                   className={ styles.icon }
                 />
-              </a> */}
+              </a>
             </div>
 
             <div className="md:hidden flex items-center">
