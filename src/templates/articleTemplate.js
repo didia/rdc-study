@@ -8,7 +8,11 @@ export default function ArticleTemplate({ data }) {
   const allArticles = articles.edges.map((edge) => edge.node);
 
   return (
-    <ArticleDetails article={frontmatter} content={html} otherArticles={allArticles} />
+    <ArticleDetails 
+                    article={frontmatter} 
+                    content={html} 
+                    otherArticles={allArticles}
+    />
   );
 }
 

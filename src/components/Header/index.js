@@ -8,7 +8,8 @@ import {
   faWhatsapp,
   faXTwitter
 } from "@fortawesome/free-brands-svg-icons";
-
+import {InlineShareButtons} from 'sharethis-reactjs';
+import config from "../../../config";
 import NavLink from "./Link";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -44,7 +45,7 @@ const Header = () => {
                 </a>
               </div>
 
-              <div className="hidden md:flex md:space-x-3 items-center uppercase">
+              <div className="hidden md:flex md:space-x-5 items-center uppercase">
                 <NavLink title={"acceuil"} url={"/"} />
                 <NavLink title={"bourses d'études"} url={"/bourse"} />
                 <NavLink title={"articles"} url={"/article"} />
@@ -61,22 +62,34 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="hidden md:flex items-center space-x-3 ">
-              <a
+            <div className="hidden md:flex items-center space-x-1 ">
+            <InlineShareButtons
+          config={{
+            property: config.shareThisProperty,
+            alignment: 'center',
+            color: 'social',
+            enabled: true,
+            font_size: 16,
+            labels: null,
+            language: 'fr',
+            networks: ['whatsapp','facebook', 'twitter'],
+            min_count: 50,
+            padding: 12,
+            radius: 30,           
+            show_total: false,
+            size: 40,             
+            url: config.siteURL,
+            description: config.siteDescription,
+            title: config.siteTitle,
+            username: '@rdcetudes'
+          }}
+        />
+              {/* <a
                 href="https://www.facebook.com/rdcetudes"
                 className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faFacebook}
-                  className={ styles.icon }
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/rdcetudes/"
-                className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
-              >
-                <FontAwesomeIcon
-                  icon={faLinkedin}
                   className={ styles.icon }
                 />
               </a>
@@ -97,7 +110,7 @@ const Header = () => {
                   icon={faWhatsapp}
                   className={ styles.icon }
                 />
-              </a>
+              </a> */}
             </div>
 
             <div className="md:hidden flex items-center">

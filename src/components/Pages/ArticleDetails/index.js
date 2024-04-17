@@ -1,14 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Layout from "../../Layout";
 import HtmlContent from "../../HtmlContent"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faClock, faGlobe, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import NewsCard from "../../NewsCard";
+import SocialShareButtons from "../../SocialShareButtons";
 
 const ArticleDetails = ({ article, content, otherArticles }) => {
   const image = getImage(article.thumbnail);
-
+  const sharedImg = article.thumbnail.childImageSharp.gatsbyImageData
+  useEffect(() => {
+    console.log("sharedImg : ", getImage);
+  })
   return (
     <Layout pageTitle={"Détails sur la article d'études"}>
       <section>
@@ -36,6 +40,13 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
         </div>
       </section>
 
+      <SocialShareButtons 
+                          title={article.title} 
+                          subject={article.slug} 
+                          message={article.excerpt} 
+                          path={article.slug} 
+                          img={sharedImg}
+      />
       <section className="mb-5 mt-10 md:mt-10">
           <div className="text-left mx-28 px-3 md:p-8 mb-5">
             <span className="text-sky-600 text-lg font-black uppercase md:text-xl font-['roboto-bold']">

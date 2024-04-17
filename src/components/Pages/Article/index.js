@@ -5,6 +5,9 @@ import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faClock, faGlobe, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import NewsCard from "../../NewsCard";
+import SocialShareButtons from "../../SocialShareButtons";
+import config from "../../../../config";
+
 const Article = ({ otherArticles }) => {
 
   return (
@@ -27,6 +30,14 @@ const Article = ({ otherArticles }) => {
           </div>
         </div>
       </section>
+
+      <SocialShareButtons 
+                          title={"Découvrez les derniers articles postés sur RDC-Etudes"} 
+                          subject={"Découvrez les derniers articles postés sur RDC-Etudes"} 
+                          message={"Découvrez les derniers articles postés sur RDC-Etudes"} 
+                          path={`${config.siteURL}/article`} 
+                          img={null}
+      />
 
       <section className="hidden md:block">
         <div className="relative h-[28rem] w-full bg-sky-600">
