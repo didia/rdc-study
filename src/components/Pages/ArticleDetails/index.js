@@ -12,7 +12,7 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
   let sharedImg = null
   sharedImg = article.thumbnail && article.thumbnail.childImageSharp && article.thumbnail.childImageSharp.gatsbyImageData
   return (
-    <Layout pageTitle={"Détails sur la article d'études"}>
+    <Layout pageTitle={article.title}>
       <section>
         <div className="grid grid-cols-1">
           <div>
