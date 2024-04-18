@@ -7,7 +7,7 @@ import { Accordion } from "flowbite-react";
 const PrivacyPolicy = () => {
   return (
     <Layout pageTitle="Pourquoi RDC-&Eacute;tudes">
-      <section className="md:hidden bg-sky-600 -mt-4">
+      <section className="md:hidden bg-[#4bb4d4] -mt-4">
         <div className="grid grid-cols-12 mb-5 mt-4 ">
           <div className="col-span-2"></div>
           <div className="col-span-8 z-20">
@@ -33,7 +33,7 @@ const PrivacyPolicy = () => {
         </div>
       </section>
 
-      <section className="hidden md:block bg-sky-600 pb-16 -z-[999]">
+      <section className="hidden md:block bg-[#4bb4d4] pb-16 -z-[999]">
         <div className="flex">
           <div className="flex">
             <StaticImage

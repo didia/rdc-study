@@ -14,7 +14,7 @@ const Article = ({ otherArticles }) => {
     <Layout pageTitle={"Rdc Etudes Articles"}>
 
 <section className="md:hidden">
-        <div className="relative h-60 w-full bg-sky-600">
+        <div className="relative h-60 w-full bg-[#4bb4d4]">
           <div className="absolute">
             <StaticImage alt="question" height={150} src="../../../images/Ellipse12.png" />
           </div>
@@ -40,7 +40,7 @@ const Article = ({ otherArticles }) => {
       />
 
       <section className="hidden md:block">
-        <div className="relative h-[28rem] w-full bg-sky-600">
+        <div className="relative h-[28rem] w-full bg-[#4bb4d4]">
           <div className="absolute">
             <StaticImage
               alt="question"
@@ -64,7 +64,7 @@ const Article = ({ otherArticles }) => {
 
       <section className="mb-5 mt-10 md:mt-10">
           <div className="text-left md:mx-32 px-3 md:p-8 mb-5">
-            <span className="text-sky-600 md:text-lg uppercase text-sm font-['roboto-bold']">
+            <span className="text-[#4bb4d4] md:text-lg uppercase text-sm font-['roboto-bold']">
             Découvrez les derniers articles postés sur RDC-Etudes.
             </span>{" "}
             <div className="h-4 w-full border-b border-sky-600"></div>

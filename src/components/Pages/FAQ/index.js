@@ -6,7 +6,7 @@ const FAQ = () => {
   return (
     <Layout pageTitle="FAQ">
       <section className="md:hidden">
-        <div className="relative h-60 w-full bg-sky-600">
+        <div className="relative h-60 w-full bg-[#4bb4d4]">
           <div className="absolute">
             <StaticImage alt="question" src="../../../images/question.png" />
           </div>
@@ -24,7 +24,7 @@ const FAQ = () => {
       </section>
 
       <section className="hidden md:block">
-        <div className="relative h-[28rem] w-full bg-sky-600">
+        <div className="relative h-[28rem] w-full bg-[#4bb4d4]">
           <div className="absolute">
             <StaticImage
               alt="question"

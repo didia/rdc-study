@@ -12,7 +12,7 @@ const CountryCard = () => {
           />
         </div>
         <div className="p-6">
-          <p className="text-base text-sky-600 font-extrabold">CANADA</p>
+          <p className="text-base text-[#4bb4d4] font-extrabold">CANADA</p>
         </div>
       </div>
     );

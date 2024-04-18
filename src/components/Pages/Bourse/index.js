@@ -130,7 +130,7 @@ const Bourse = ({ scholarships }) => {
 
           <div className="flex -ml-[20rem] mt-[5rem]">
             <div>
-              <p className=" text-4xl font-semibold font-['monserrat'] text-sky-600">
+              <p className=" text-4xl font-semibold font-['monserrat'] text-[#4bb4d4]">
                 Bourses d'études
               </p>
               <p className="py-4 text-xl mr-[35rem] font-light font-['roboto']">

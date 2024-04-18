@@ -27,7 +27,7 @@ const Billet = () => {
               />
             </div>
           </div>
-          <div className="col-span-6 text-sky-600 text-2xl font-['roboto'] z-10 mt-10">
+          <div className="col-span-6 text-[#4bb4d4] text-2xl font-['roboto'] z-10 mt-10">
             Pour quelle destination souhaitez-vous acheter le billet ?
             <p>
               <StaticImage
@@ -97,7 +97,7 @@ const Billet = () => {
               />
             </div>
           </div>
-          <div className="col-span-5 text-sky-600 text-2xl font-['monserrat'] z-10 -mt-24 -ml-40">
+          <div className="col-span-5 text-[#4bb4d4] text-2xl font-['monserrat'] z-10 -mt-24 -ml-40">
             Nous savons comment l'achat du billet peut être un casse-tête pour
             vous ! Trouvez le bon itinéraire qui correspond à vos besoins et vos
             moyens n'est toujours pas évident ! Procurez-vous un billet à un

@@ -10,7 +10,7 @@ const NavLink = ({title, url}) => {
         </li>
         <a
           href={url}
-          className={"hidden md:flex text-sky-600 font-['roboto'] uppercase " + styles.title}
+          className={"hidden md:flex text-[#4bb4d4] font-['roboto'] uppercase " + styles.title}
         >
           {" "}
           {title}

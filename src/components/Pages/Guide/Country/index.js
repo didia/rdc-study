@@ -36,7 +36,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
                   </div>
 
                   <div>
-                    <p className="text-sky-600 text-2xl font-extrabold text-center mb-3">
+                    <p className="text-[#4bb4d4] text-2xl font-extrabold text-center mb-3">
                       {guide.title}
                     </p>
                   </div>
@@ -46,7 +46,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
             </>
           ) : (
             <div className="col-span-10 z-10 mt-5">
-              <p className="text-sky-600 text-2xl font-extrabold text-start mb-3">
+              <p className="text-[#4bb4d4] text-2xl font-extrabold text-start mb-3">
                 {guide.title}
               </p>
               <p className="text-base text-justify mr-3">{guide.excerpt}</p>
@@ -71,7 +71,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
               <div className="col-span-11 z-10 mt-5">
                 <div className="grid grid-cols-12 gap-10">
                   <div className=" col-span-8">
-                    <p className="text-sky-600 text-5xl font-extrabold text-start mb-3">
+                    <p className="text-[#4bb4d4] text-5xl font-extrabold text-start mb-3">
                       {guide.title}
                     </p>
                     <p className="text-xl text-justify py-4">{guide.excerpt}</p>
@@ -89,7 +89,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
             </>
           ) : (
             <div className="col-span-10 z-10 mt-5">
-              <p className="text-sky-600 text-4xl font-extrabold text-start mb-3">
+              <p className="text-[#4bb4d4] text-4xl font-extrabold text-start mb-3">
                 {guide.title}
               </p>
               <p className="text-xl text-justify mr-3">{guide.excerpt}</p>
@@ -121,7 +121,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
       </section>
 
       <section className="mx-6 md:hidden">
-        <div className="text-sky-600 text-xl font-black absolute mt-10 uppercase">
+        <div className="text-[#4bb4d4] text-xl font-black absolute mt-10 uppercase">
           Guides reliés
         </div>
         <div className="h-20 border-b-2 border-sky-600"></div>
@@ -141,7 +141,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
               <div className="text-start">
                 <a
                   href={`/${relatedGuide.slug}`}
-                  className="text-sky-600 text-md font-bold uppercase"
+                  className="text-[#4bb4d4] text-md font-bold uppercase"
                 >
                   {relatedGuide.title}
                 </a>
@@ -156,7 +156,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
       </section>
 
       <section className="mx-20 hidden md:block">
-        <div className="text-sky-600 text-xl font-black absolute mt-10 uppercase">
+        <div className="text-[#4bb4d4] text-xl font-black absolute mt-10 uppercase">
           Guides reliés
         </div>
         <div className="h-20 border-b-2 border-sky-600"></div>
@@ -184,7 +184,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
                     </p>
                     <a
                       href={`/${relatedGuide.slug}`}
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#4bb4d4] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     >
                       Lire le guide
                       <svg
@@ -212,7 +212,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
       </section>
 
       <section className="mx-6 md:hidden">
-        <div className="text-sky-600 text-md font-black absolute mt-10 uppercase">
+        <div className="text-[#4bb4d4] text-md font-black absolute mt-10 uppercase">
           Autres guides qui pourraient vous intéresser
         </div>
         <div className="h-20 border-b-2 py-12 border-sky-600"></div>
@@ -232,7 +232,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
               <div className="text-start">
                 <a
                   href={`/${otherGuide.slug}`}
-                  className="text-sky-600 text-md font-bold uppercase"
+                  className="text-[#4bb4d4] text-md font-bold uppercase"
                 >
                   {otherGuide.title}
                 </a>
@@ -247,7 +247,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
       </section>
 
       <section className="mx-20 hidden md:block">
-        <div className="text-sky-600 text-xl font-black absolute mt-20 uppercase">
+        <div className="text-[#4bb4d4] text-xl font-black absolute mt-20 uppercase">
           Autres guides qui pourraient vous intéresser
         </div>
         <div className="h-20 border-b-2 py-16 border-sky-600"></div>
@@ -275,7 +275,7 @@ const CountryGuide = ({ guide, relatedGuides, otherGuides }) => {
                     </p>
                     <a
                       href={`/${otherGuide.slug}`}
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-600 rounded-lg hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#4bb4d4] rounded-lg hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     >
                       Lire le guide
                       <svg

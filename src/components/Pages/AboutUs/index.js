@@ -26,7 +26,7 @@ const AboutUs = ({ teammMembers }) => {
 
           <div className="col-span-8 z-10">
             <div className="text-start ml-4">
-              <span className="text-xl font-['roboto] font-bold text-sky-600">
+              <span className="text-xl font-['roboto] font-bold text-[#4bb4d4]">
                 Pourquoi choisir RDC ÉTUDES pour votre projet d'études?
               </span>{" "}
               <p className="mt-3">
@@ -61,7 +61,7 @@ const AboutUs = ({ teammMembers }) => {
           </div>
           <div className="col-span-7 z-10 mt-20">
             <div className="text-start ml-20 pr-60">
-              <span className="text-3xl text-sky-600 font-['roboto-bold']">
+              <span className="text-3xl text-[#4bb4d4] font-['roboto-bold']">
                 Pourquoi choisir RDC ÉTUDES pour votre projet d'études?
               </span>{" "}
               <p className="py-5">
@@ -74,7 +74,7 @@ const AboutUs = ({ teammMembers }) => {
                 <br />
                 <br />
                 <Dropdown
-                  class="font-['roboto'] bg-sky-600 text-white text-base font-bold py-2 px-2 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
+                  class="font-['roboto'] bg-[#4bb4d4] text-white text-base font-bold py-2 px-2 rounded-xl transition-colors duration-300 ease-in-out hover:bg-yellow-500 hover:text-white"
                   label="Demander une assistance"
                   placement="bottom-start"
                 >
@@ -192,7 +192,7 @@ const AboutUs = ({ teammMembers }) => {
 
       <section className="hidden md:block mt-24">
         <div className="items-center justify-center">
-          <div className="text-center font-extrabold text-2xl font-['roboto-bold'] text-sky-600">
+          <div className="text-center font-extrabold text-2xl font-['roboto-bold'] text-[#4bb4d4]">
             TROIS VALEURS QUI GUIDENT NOS ACTIONS
           </div>
 

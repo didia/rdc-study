@@ -29,7 +29,7 @@ const ScholarShipDetails = ({ bourse, content, otherScholarShips }) => {
           </div>
         </div>
         <div className="mx-4">
-          <p className="text-sky-600 text-xl font-['roboto-bold'] text-start">
+          <p className="text-[#4bb4d4] text-xl font-['roboto-bold'] text-start">
             {bourse.title}
           </p>
           <p className="py-3 text-sm font-['roboto']">{bourse.excerpt}</p>
@@ -61,7 +61,7 @@ const ScholarShipDetails = ({ bourse, content, otherScholarShips }) => {
           <GatsbyImage image={image} className="w-full" alt={bourse.title} />
         </div>
         <div className="mx-16 py-6">
-          <p className="text-sky-600 font-['font-roboto'] text-2xl font-bold text-start">
+          <p className="text-[#4bb4d4] font-['font-roboto'] text-2xl font-bold text-start">
             {bourse.title}
           </p>
           <p className="py-3 text-xl font-['roboto']">{bourse.excerpt}</p>
@@ -96,7 +96,7 @@ const ScholarShipDetails = ({ bourse, content, otherScholarShips }) => {
       </section>
       
       <section className="mx-4 mb-10 md:hidden">
-        <div className="text-sky-600 text-lg font-['roboto-bold'] font-black absolute mt-10 uppercase">
+        <div className="text-[#4bb4d4] text-lg font-['roboto-bold'] font-black absolute mt-10 uppercase">
           Autres Bourses
         </div>
         <div className="h-20 border-b border-sky-600"></div>

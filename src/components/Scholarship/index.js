@@ -28,7 +28,7 @@ const LEVEL_ORDERS = [
     <>
       <section className="mb-5">
         <div className="text-center mx-3 mb-3 md:hidden">
-          <span className="text-sky-600 text-2xl font-semibold font-['monserrat']">
+          <span className="text-[#4bb4d4] text-2xl font-semibold font-['monserrat']">
             Bourses d'études
           </span>{" "}
           <p className="font-['roboto'] mt-3">
@@ -115,7 +115,7 @@ const LEVEL_ORDERS = [
                       </div>
                       <div className="">
                         <a href={`/${scholarship.frontmatter.slug}`}>
-                          <p className="px-3 py-1 text-base text-sky-600 font-['roboto']">
+                          <p className="px-3 py-1 text-base text-[#4bb4d4] font-['roboto']">
                             {scholarship.frontmatter.title}
                           </p>
                         </a>
@@ -174,7 +174,7 @@ const LEVEL_ORDERS = [
                             href={`/${fisrtItem.frontmatter.slug}`}
                             className="max-[1484px]:text-lg"
                           >
-                            <h5 className="text-lg font-['roboto'] tracking-tight text-sky-600 dark:text-white">
+                            <h5 className="text-lg font-['roboto'] tracking-tight text-[#4bb4d4] dark:text-white">
                               {fisrtItem.frontmatter.title}
                             </h5>
                           </a>
@@ -191,7 +191,7 @@ const LEVEL_ORDERS = [
                           </p>
 
                           <a href={`/${fisrtItem.frontmatter.slug}`}>
-                            <p className="text-sky-600 font-semibold text-lg py-4 font-['roboto']">
+                            <p className="text-[#4bb4d4] font-semibold text-lg py-4 font-['roboto']">
                               Détails <FontAwesomeIcon icon={faArrowRight}/>
                             </p>
                           </a>
@@ -217,7 +217,7 @@ const LEVEL_ORDERS = [
                             href={`/${secondItem.frontmatter.slug}`}
                             className="max-[1484px]:text-lg"
                           >
-                            <h5 className="text-lg font-['roboto'] tracking-tight text-sky-600 dark:text-white">
+                            <h5 className="text-lg font-['roboto'] tracking-tight text-[#4bb4d4] dark:text-white">
                               {secondItem.frontmatter.title}
                             </h5>
                           </a>
@@ -234,7 +234,7 @@ const LEVEL_ORDERS = [
                           </p>
 
                           <a href={`/${secondItem.frontmatter.slug}`}>
-                            <p className="text-sky-600 font-semibold text-lg py-4 font-['roboto']">
+                            <p className="text-[#4bb4d4] font-semibold text-lg py-4 font-['roboto']">
                               Détails <FontAwesomeIcon icon={faArrowRight}/>
                             </p>
                           </a>
@@ -260,7 +260,7 @@ const LEVEL_ORDERS = [
                             href={`/${thirdItem.frontmatter.slug}`}
                             className="max-[1484px]:text-lg"
                           >
-                            <h5 className="text-lg font-['roboto'] tracking-tight text-sky-600 dark:text-white">
+                            <h5 className="text-lg font-['roboto'] tracking-tight text-[#4bb4d4] dark:text-white">
                               {thirdItem.frontmatter.title}
                             </h5>
                           </a>
@@ -277,7 +277,7 @@ const LEVEL_ORDERS = [
                           </p>
 
                           <a href={`/${thirdItem.frontmatter.slug}`}>
-                            <p className="text-sky-600 font-semibold text-lg py-4 font-['roboto']">
+                            <p className="text-[#4bb4d4] font-semibold text-lg py-4 font-['roboto']">
                               Détails <FontAwesomeIcon icon={faArrowRight}/>
                             </p>
                           </a>

@@ -25,7 +25,7 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
           </div>
         </div>
         <div className="mx-4 md:mx-28 md:mt-10">
-          <p className="text-sky-600 text-xl md:text-2xl md:uppercase font-bold text-start">
+          <p className="text-[#4bb4d4] text-xl md:text-2xl md:uppercase font-bold text-start">
             {article.title}
           </p>
           <p className="py-2 text-lg text-gray-600 font-['roboto']">{article.excerpt}</p>
@@ -46,11 +46,11 @@ const ArticleDetails = ({ article, content, otherArticles }) => {
                           img={sharedImg}
       />
       <section className="mb-5 mt-10 md:mt-10">
-          <div className="text-left px-3 md:p-8 mb-5">
-            <span className="text-sky-600 text-base font-black uppercase md:text-xl font-['roboto-bold']">
+          <div className="text-left md:mx-32 px-3 md:p-8 mb-5">
+            <span className="text-[#4bb4d4] text-base font-black uppercase md:text-xl font-['roboto-bold']">
               Les dernières nouvelles
             </span>{" "}
-            <div className="h-4 w-full border-b border-sky-600"></div>
+            <div className="h-4 w-full border-b text-[#4bb4d4]"></div>
           </div>
           {otherArticles.map((article) => {
             return (

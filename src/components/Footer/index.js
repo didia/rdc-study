@@ -11,7 +11,7 @@ import { faFacebook, faLinkedin, faInstagram, faTwitter, faWhatsapp } from "@for
 export const Footer = () => {
   return (
     <div>
-      <footer className="bg-sky-600 text-center text-white lg:text-left">
+      <footer className="bg-[#4bb4d4] text-center text-white lg:text-left">
         <div className="bg-white flex items-center justify-center border-t-2 border-sky-600 p-3 lg:justify-between">
           <div className="flex justify-between md:w-full md:text-center md:ml-60">
             <div className="">
@@ -25,7 +25,7 @@ export const Footer = () => {
             <div className="ml-5">
               <a
                 href="/faq"
-                className="bg-sky-600 text-sm md:text-xl md:px-8 md:py-2 rounded-lg px-2 py-2"
+                className="bg-[#4bb4d4] text-sm md:text-xl md:px-8 md:py-2 rounded-lg px-2 py-2"
               >
                 Faq
               </a>
@@ -185,7 +185,7 @@ export const Footer = () => {
                       className="flex items-center bg-gray-100 rounded rounded-l-none border-0 px-1 font-bold text-grey-100"
                     >
                       <button
-                        className="border-2 border-sky-600 hover:bg-gredient-light text-lg text-sky-600 font-bold py-3 px-6 rounded font-['roboto-bold']"
+                        className="border-2 border-sky-600 hover:bg-gredient-light text-lg text-[#4bb4d4] font-bold py-3 px-6 rounded font-['roboto-bold']"
                         style={{
                           borderRadius: "10px",
                           backgroundColor: "#D9D9D9",
@@ -236,7 +236,7 @@ export const Footer = () => {
                       className="flex items-center bg-gray-100 rounded rounded-l-none border-0 px-1 font-bold text-grey-100"
                     >
                       <button
-                        className="border-2 border-sky-600 hover:bg-gredient-light text-lg text-sky-600 font-bold py-3 px-6 rounded"
+                        className="border-2 border-sky-600 hover:bg-gredient-light text-lg text-[#4bb4d4] font-bold py-3 px-6 rounded"
                         style={{
                           borderRadius: "10px",
                           backgroundColor: "#D9D9D9",
@@ -345,7 +345,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="bg-sky-600 p-6 text-center">
+        <div className="bg-[#4bb4d4] p-6 text-center">
           <span className="text-lg font-['roboto']">
             © 2023 RDC Etudes. Tous droits réservés
           </span>

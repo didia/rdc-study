@@ -54,7 +54,7 @@ const StudyCountry = ({ guideCountries }) => {
                       <div className="p-6">
                         <a
                           href={`/${guideCountry.frontmatter.slug}`}
-                          className="text-base text-sky-600 font-['roboto'] font-semibold uppercase"
+                          className="text-base text-[#4bb4d4] font-['roboto'] font-semibold uppercase"
                         >
                           {guideCountry.frontmatter.name}
                         </a>
@@ -91,7 +91,7 @@ const StudyCountry = ({ guideCountries }) => {
                             )}
                           >
                             <a href={`/${fisrtItem.frontmatter.slug}`}>
-                              <h5 className="text-2xl font-['roboto'] text-sky-600 font-bold tracking-tight dark:text-white">
+                              <h5 className="text-2xl font-['roboto'] text-[#4bb4d4] font-bold tracking-tight dark:text-white">
                                 {fisrtItem.frontmatter.name}
                               </h5>
                             </a>
@@ -116,7 +116,7 @@ const StudyCountry = ({ guideCountries }) => {
                             )}
                           >
                             <a href={`/${fisrtItem.frontmatter.slug}`}>
-                              <h5 className="text-2xl font-['roboto'] text-sky-600 font-bold tracking-tight dark:text-white">
+                              <h5 className="text-2xl font-['roboto'] text-[#4bb4d4] font-bold tracking-tight dark:text-white">
                                 {secondItem.frontmatter.name}
                               </h5>
                             </a>
@@ -141,7 +141,7 @@ const StudyCountry = ({ guideCountries }) => {
                             )}
                           >
                             <a href={`/${thirdItem.frontmatter.slug}`}>
-                              <h5 className="text-2xl font-['roboto'] text-sky-600 font-bold tracking-tight dark:text-white">
+                              <h5 className="text-2xl font-['roboto'] text-[#4bb4d4] font-bold tracking-tight dark:text-white">
                                 {thirdItem.frontmatter.name}
                               </h5>
                             </a>

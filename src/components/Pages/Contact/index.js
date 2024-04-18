@@ -74,11 +74,11 @@ const Contact = () => {
                 src="../../../images/search-location2.png"
               />
               <div className="text-start ml-16 -mt-5">
-                <span className="text-sky-600 text-5xl font-extrabold">
+                <span className="text-[#4bb4d4] text-5xl font-extrabold">
                   Contactez RDC Etudes
                 </span>{" "}
                 <p className="mt-5">
-                  <span className="text-2xl font-['roboto']">
+                  <span className="text-xl font-['roboto']">
                     RDC ETUDES vous offre des services de consultation qui vous
                     permet de discuter avec un mentor sur l'état de votre projet
                     d'études. Vous êtes bloqué(e)? Vous ne savez par où

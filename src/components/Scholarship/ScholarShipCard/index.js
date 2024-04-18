@@ -95,7 +95,7 @@ const ScholarShipCard = ({ scholarship }) => {
 
           <div className="w-full h-1/7 uppercase md:bottom-0 md:absolute md:mb-4">
             <Button
-              className="w-36 rounded-none bg-sky-600 font-semibold font-['roboto']"
+              className="w-36 rounded-none bg-[#4bb4d4] font-semibold font-['roboto']"
               href={`/${scholarshipItem.slug}`}
             >
               Voir détails

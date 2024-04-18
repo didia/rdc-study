@@ -10,7 +10,7 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
       <>
         <section className={marginBottom + " md:hidden mt-12"}>
           <div className="text-center mx-10 z-10">
-            <span className="text-sky-600 text-2xl font-semibold font-['roboto']">
+            <span className="text-[#4bb4d4] text-2xl font-semibold font-['roboto']">
               Besoin d'un service ?
             </span>{" "}
             <p className="py-4 font-['roboto']">
@@ -48,7 +48,7 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
                 </div>
 
                 <div className="py-4">
-                  <button className="bg-sky-600 hover:bg-blue-700 text-white font-light py-2 px-4 rounded-md">
+                  <button className="bg-[#4bb4d4] hover:bg-blue-700 text-white font-light py-2 px-4 rounded-md">
                     Envoyer
                   </button>
                 </div>
@@ -67,7 +67,7 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
           <div className="grid grid-cols-2 my-16">
             <div>
               <div className="text-center z-10 ml-40">
-                <span className="text-sky-600 text-4xl max-[1384px]:text-4xl font-semibold font-['monserrat']">
+                <span className="text-[#4bb4d4] text-4xl max-[1384px]:text-4xl font-semibold font-['monserrat']">
                   Besoin d'un service ?
                 </span>{" "}
                 <p className="py-4 text-xl font-['roboto']">

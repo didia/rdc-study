@@ -27,7 +27,7 @@ const TranslateDocs = () => {
               />
             </div>
           </div>
-          <div className="col-span-8 text-sky-600 text-xl font-medium font-['monserrat'] z-10 mt-6">
+          <div className="col-span-8 text-[#4bb4d4] text-xl font-medium font-['monserrat'] z-10 mt-6">
             Avez-vous des documents à traduire ?
             <p>
               <StaticImage
@@ -98,7 +98,7 @@ const TranslateDocs = () => {
               />
             </div>
           </div>
-          <div className="col-span-5 font-light text-sky-600 text-3xl max-[1384px]:ml-1 max-[1384px]:text-2xl font-['monserrat'] z-10 -mt-24 -ml-40">
+          <div className="col-span-5 font-light text-[#4bb4d4] text-3xl max-[1384px]:ml-1 max-[1384px]:text-2xl font-['monserrat'] z-10 -mt-24 -ml-40">
             Faites traduire vos documents académiques, professionnels et
             administratifs par un traducteur assermenté de RDC ÉTUDES.
           </div>

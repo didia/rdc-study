@@ -18,7 +18,7 @@ const CountryStudy = () => {
             </div>
           </div>
           <div className="col-span-8 ml-5 z-10 mt-5">
-            <p className="text-sky-600 text-xl font-extrabold text-start">
+            <p className="text-[#4bb4d4] text-xl font-extrabold text-start">
               Etudier en France
             </p>
             <p className="text-start text-xs">
@@ -120,7 +120,7 @@ const CountryStudy = () => {
               à monter le meilleur dossier possible pour vos démarches.
             </p>
             <p className="py-4">
-              <button className="bg-sky-600 text-white py-4 px-10 rounded-full uppercase text-xs">
+              <button className="bg-[#4bb4d4] text-white py-4 px-10 rounded-full uppercase text-xs">
                 Demander une assistance
               </button>
             </p>
@@ -142,7 +142,7 @@ const CountryStudy = () => {
           </div>
 
           <div className="mx-10 text-justify">
-            <p className="text-sky-600 text-xl font-bold uppercase">
+            <p className="text-[#4bb4d4] text-xl font-bold uppercase">
               étudier au canada
             </p>
             <p className="py-2">
@@ -167,7 +167,7 @@ const CountryStudy = () => {
           </div>
 
           <div className="mx-10 text-justify">
-            <p className="text-sky-600 text-xl font-bold uppercase">
+            <p className="text-[#4bb4d4] text-xl font-bold uppercase">
               étudier au canada
             </p>
             <p className="py-2">

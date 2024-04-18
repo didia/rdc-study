@@ -65,7 +65,7 @@ const Header = () => {
             <div className="hidden md:flex items-center space-x-1 ">
               <a
                 href="https://www.facebook.com/rdcetudes"
-                className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
+                className="py-2 px-2 font-medium text-[#4bb4d4] rounded hover:bg-[#4bb4d4] hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faFacebook}
@@ -74,7 +74,7 @@ const Header = () => {
               </a>
               <a
                 href="https://twitter.com/rdcetudes"
-                className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
+                className="py-2 px-2 font-medium text-[#4bb4d4] rounded hover:bg-[#4bb4d4] hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faXTwitter}
@@ -83,7 +83,7 @@ const Header = () => {
               </a>
               <a
                 href="https://api.whatsapp.com/send?phone=+1(581)318-0180&text=Laissez-nous%20un%20message"
-                className="py-2 px-2 font-medium text-sky-600 rounded hover:bg-sky-600 hover:text-white transition duration-300"
+                className="py-2 px-2 font-medium text-[#4bb4d4] rounded hover:bg-[#4bb4d4] hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon
                   icon={faWhatsapp}
@@ -102,12 +102,12 @@ const Header = () => {
               >
                 {toggleNav ? (
                   <FontAwesomeIcon
-                    className="text-4xl text-cyan-500"
+                    className="text-4xl text-[#4bb4d4]"
                     icon={faXmark}
                   />
                 ) : (
                   <svg
-                    className="w-8 h-8 text-cyan-500"
+                    className="w-8 h-8 text-[#4bb4d4]"
                     x-show="!showMenu"
                     fill="none"
                     strokeLinecap="round"

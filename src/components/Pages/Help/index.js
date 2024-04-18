@@ -147,7 +147,7 @@ const Help = () => {
               />
             </div>
           </div>
-          <div className="col-span-5 text-sky-600 text-lg font-extrabold z-10 mt-10">
+          <div className="col-span-5 text-[#4bb4d4] text-lg font-extrabold z-10 mt-10">
             Pour quel pays souhaitez-vous être consulté ?
             <p>
               <StaticImage
@@ -246,7 +246,7 @@ const Help = () => {
               />
             </div>
           </div>
-          <div className="col-span-5 text-sky-600 text-2xl font-['monserrat'] z-10 -mt-24 -ml-40">
+          <div className="col-span-5 text-[#4bb4d4] text-2xl font-['monserrat'] z-10 -mt-24 -ml-40">
             RDC ETUDES vous offre des services de consultation qui vous permet
             de discuter avec un mentor sur l'état de votre projet d'études. Vous
             êtes bloqué(e)? Vous ne savez par où commencer ? Nos mentors seront

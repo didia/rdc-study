@@ -17,7 +17,7 @@ const HealthCare = () => {
         </div>
 
         <div className="mx-4 text-start">
-          <p className="text-sky-600 text-xl font-bold">
+          <p className="text-[#4bb4d4] text-xl font-bold">
             Puis-je passer les examens médicaux pour le canada sans que
             l'immigration ne me le demande ?
           </p>
@@ -156,7 +156,7 @@ const HealthCare = () => {
         </div>
 
         <div className="mx-8 text-start">
-          <p className="text-sky-600 text-3xl font-bold">
+          <p className="text-[#4bb4d4] text-3xl font-bold">
             Puis-je passer les examens médicaux pour le canada sans que
             l'immigration ne me le demande ?
           </p>

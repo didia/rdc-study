@@ -16,7 +16,7 @@ const PartenerShip = () => {
         </div>
 
         <div className="mx-4 text-start">
-          <p className="text-sky-600 text-xl font-bold">
+          <p className="text-[#4bb4d4] text-xl font-bold">
             Optez pour l'Université Européenne Lefke en Chypre du Nord
           </p>
 

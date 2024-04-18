@@ -5,7 +5,7 @@ const SecondaryBtn = ({ text, fontSize, link }) => {
   return (
     <a
       href={link}
-      className={`font-['roboto-bold'] md:font-['monserrat-bold'] text-slate-100 bg-yellow-400 py-3 font-black px-5 rounded-md transition-colors duration-300 ease-in-out hover:bg-sky-600 hover:text-white ${
+      className={`font-['roboto-bold'] md:font-['monserrat-bold'] text-slate-100 bg-yellow-400 py-3 font-black px-5 rounded-md transition-colors duration-300 ease-in-out hover:bg-[#4bb4d4] hover:text-white ${
         fontSize ? fontSize : " text-xs"
       }`}
     >

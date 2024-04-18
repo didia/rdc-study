@@ -147,7 +147,7 @@ const Assistance = () => {
               />
             </div>
           </div>
-          <div className="col-span-6 text-sky-600 text-lg font-medium font-['monserrat'] z-10 mt-10">
+          <div className="col-span-6 text-[#4bb4d4] text-lg font-medium font-['monserrat'] z-10 mt-10">
             Pour quel pays souhaitez-vous être assisté ?
             <p>
               <StaticImage
@@ -243,7 +243,7 @@ const Assistance = () => {
               />
             </div>
           </div>
-          <div className="col-span-5 text-sky-600 text-3xl font-['monserrat'] z-10 -mt-40 -ml-40">
+          <div className="col-span-5 text-[#4bb4d4] text-3xl font-['monserrat'] z-10 -mt-40 -ml-40">
             L'accompgnement RDC ETUDES consiste à vous orienter dans votre projet d'études du choix de l'université jusqu'à l'obtention de votre visa.
           </div>
           <div className="col-span-2">

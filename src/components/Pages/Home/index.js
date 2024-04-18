@@ -46,7 +46,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               </div>
               <div>
                 <Dropdown
-                  class="md:!hidden !font-['roboto'] !bg-sky-600 !text-white !text-base !font-bold !py-2 !px-2 !rounded-xl !transition-colors !duration-300 !ease-in-out !hover:bg-yellow-500 !hover:text-white"
+                  class="md:!hidden !font-['roboto'] !bg-[#4bb4d4] !text-white !text-base !font-bold !py-2 !px-2 !rounded-xl !transition-colors !duration-300 !ease-in-out !hover:bg-yellow-500 !hover:text-white"
                   label="Demander une assistance"
                   placement="bottom-start"
                 >
@@ -134,7 +134,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <div className="max-md:hidden flex -mt-32 mx-28">
         <div className="z-10">
           <div className="text-start">
-            <p className="text-5xl text-sky-600 font-medium font-['monserrat']">
+            <p className="text-5xl text-[#4bb4d4] font-medium font-['monserrat']">
               Pourquoi RDC-Etudes ?
             </p>
             <p className="text-2xl my-4 !font-extralight font-['roboto']">
@@ -144,7 +144,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               à l'étranger
             </p>
             <Dropdown
-              class="hidden md:flex !font-['roboto-bold'] !bg-sky-600 text-white !text-xl !py-3 !px-3 rounded-xl !transition-colors !duration-300 !ease-in-out !hover:bg-yellow-500 !hover:text-white"
+              class="hidden md:flex !font-['roboto-bold'] !bg-[#4bb4d4] text-white !text-xl !py-3 !px-3 rounded-xl !transition-colors !duration-300 !ease-in-out !hover:bg-yellow-500 !hover:text-white"
               label="Demander une assistance"
               placement="bottom-start"
             >
@@ -252,7 +252,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </div>
 
           <div className="col-span-5">
-            <span className="text-sky-600 text-xl font-medium font-['monserrat']">
+            <span className="text-[#4bb4d4] text-xl font-medium font-['monserrat']">
               Où souhaitez-vous étudier ?
             </span>{" "}
             <p className="font-['roboto'] text-base text-left font-light">
@@ -314,7 +314,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             </div>
 
             <div className="col-span-6 py-16 mx-10">
-              <span className="text-sky-600 font-normal text-5xl">
+              <span className="text-[#4bb4d4] font-normal text-5xl">
                 Où souhaitez-vous étudier ?
               </span>{" "}
               <p className="text-xl py-6 font-['roboto']">
@@ -383,7 +383,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
         <div className="col-span-7 flex">
           <div>
-            <p className="text-4xl font-medium text-sky-600 font-['monserrat']">
+            <p className="text-4xl font-medium text-[#4bb4d4] font-['monserrat']">
               Bourses d'études
             </p>
             <p className="py-4 text-xl mr-[15rem] font-['roboto']">
@@ -456,7 +456,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <section className="mb-5 mt-10 md:mt-7">
           <div className="text-left px-3 md:p-8 md:mx-24 mb-5">
-            <span className="text-sky-600 text-lg font-black uppercase md:text-xl font-['roboto']">
+            <span className="text-[#4bb4d4] text-lg font-black uppercase md:text-xl font-['roboto']">
               Les dernières nouvelles
             </span>{" "}
             <div className="h-4 w-full border-b border-sky-600"></div>
@@ -475,7 +475,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
       <section className="mb-5 mt-12 md:mt-24">
         <div className="text-center md:mb-10">
-          <span className="text-sky-600 text-2xl font-semibold md:text-4xl font-['roboto']">
+          <span className="text-[#4bb4d4] text-2xl font-semibold md:text-4xl font-['roboto']">
             Nos partenaires
           </span>{" "}
         </div>
@@ -556,13 +556,13 @@ const Home = ({ guideCountries, articles, scholarships }) => {
 
       <section className="mb-5 mt-12 md:mt-16">
         <div className="text-center md:py-10">
-          <span className="text-sky-600 font-semibold max-[1484px]:text-2xl text-3xl md:text-3xl font-['roboto']">
+          <span className="text-[#4bb4d4] font-semibold max-[1484px]:text-2xl text-3xl md:text-3xl font-['roboto']">
             Témoignages
           </span>{" "}
         </div>
 
         <div className="hidden md:grid md:grid-cols-3 gap-8 mx-48">
-          <div className="rounded-2xl h-[300px] px-2 py-7 bg-sky-600">
+          <div className="rounded-2xl h-[300px] px-2 py-7 bg-[#4bb4d4]">
             <div className="z-10">
               <FontAwesomeIcon
                 icon={faQuoteLeft}
@@ -582,7 +582,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             </div>
           </div>
 
-          <div className="rounded-2xl h-[300px] px-2 py-7 bg-sky-600">
+          <div className="rounded-2xl h-[300px] px-2 py-7 bg-[#4bb4d4]">
             <div className="z-10">
               <FontAwesomeIcon
                 icon={faQuoteLeft}
@@ -601,7 +601,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
               </p>
             </div>
           </div>
-          <div className="rounded-2xl h-[300px] px-2 py-7 bg-sky-600">
+          <div className="rounded-2xl h-[300px] px-2 py-7 bg-[#4bb4d4]">
             <div className="z-10">
               <FontAwesomeIcon
                 icon={faQuoteLeft}
@@ -622,7 +622,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
           </div>
         </div>
 
-        <div className="md:hidden mx-6 mt-5 rounded-2xl px-2 py-7 bg-sky-600">
+        <div className="md:hidden mx-6 mt-5 rounded-2xl px-2 py-7 bg-[#4bb4d4]">
           <div className="z-10">
             <FontAwesomeIcon
               icon={faQuoteLeft}

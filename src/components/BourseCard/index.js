@@ -6,8 +6,8 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const BourseCard = ({ setDescription=true, textSize }) => {
   const titleClass = setDescription
-    ? "font-bold mb-2 text-sky-600 text-xl"
-    : "font-bold mb-2 text-sky-600 text-lg";
+    ? "font-bold mb-2 text-[#4bb4d4] text-xl"
+    : "font-bold mb-2 text-[#4bb4d4] text-lg";
 
   return (
     <>
@@ -35,7 +35,7 @@ const BourseCard = ({ setDescription=true, textSize }) => {
         </p>
         {setDescription && (
           <div className="px-2 pt-2">
-            <span className="inline-block rounded-full py-1 text-sm font-semibold text-sky-600 mb-2">
+            <span className="inline-block rounded-full py-1 text-sm font-semibold text-[#4bb4d4] mb-2">
               Détails
             </span>
           </div>

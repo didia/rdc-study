@@ -20,7 +20,7 @@ const BourseDetails = ({ bourse, content }) => {
           </div>
         </div>
         <div className="mx-6">
-          <p className="text-sky-600 text-xl font-bold text-start">
+          <p className="text-[#4bb4d4] text-xl font-bold text-start">
             {bourse.title}
           </p>
           <p className="py-3 text-sm">{bourse.excerpt}</p>
