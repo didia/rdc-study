@@ -473,7 +473,7 @@ const Home = ({ guideCountries, articles, scholarships }) => {
         </section>
       </AnimationOnScroll>
 
-      <section className="mb-5 mt-12 md:mt-24">
+      <section className="mb-5 md:mb-28 mt-12 md:mt-28">
         <div className="text-center md:mb-10">
           <span className="text-[#4bb4d4] text-2xl font-semibold md:text-4xl font-['roboto']">
             Nos partenaires
@@ -552,94 +552,6 @@ const Home = ({ guideCountries, articles, scholarships }) => {
             </div>
           </div>
         </AnimationOnScroll>
-      </section>
-
-      <section className="mb-5 mt-12 md:mt-16">
-        <div className="text-center md:py-10">
-          <span className="text-[#4bb4d4] font-semibold max-[1484px]:text-2xl text-3xl md:text-3xl font-['roboto']">
-            Témoignages
-          </span>{" "}
-        </div>
-
-        <div className="hidden md:grid md:grid-cols-3 gap-8 mx-48">
-          <div className="rounded-2xl h-[300px] px-2 py-7 bg-[#4bb4d4]">
-            <div className="z-10">
-              <FontAwesomeIcon
-                icon={faQuoteLeft}
-                color="white"
-                className="text-6xl opacity-25"
-              />
-            </div>
-            <div className="z-20 -mt-7">
-              <p className="text-center text-sm md:text-lg text-white font-['roboto']">
-                Lorem ispum dolor fortuna simpre cresis, out decresis vita
-                detastabilis Lorem ispum dolor fortuna simpre cresis, out
-                decresis
-              </p>
-              <p className="text-start text-white mt-20 max-[1384px]:mt-12 md:text-lg font-['roboto-bold']">
-                Candidat X
-              </p>
-            </div>
-          </div>
-
-          <div className="rounded-2xl h-[300px] px-2 py-7 bg-[#4bb4d4]">
-            <div className="z-10">
-              <FontAwesomeIcon
-                icon={faQuoteLeft}
-                color="white"
-                className="text-6xl opacity-25"
-              />
-            </div>
-            <div className="z-20 -mt-7">
-              <p className="text-center text-sm text-white md:text-lg font-['roboto']">
-                Lorem ispum dolor fortuna simpre cresis, out decresis vita
-                detastabilis Lorem ispum dolor fortuna simpre cresis, out
-                decresis
-              </p>
-              <p className="text-start text-white mt-20 md:text-lg max-[1384px]:mt-12">
-                Candidat X
-              </p>
-            </div>
-          </div>
-          <div className="rounded-2xl h-[300px] px-2 py-7 bg-[#4bb4d4]">
-            <div className="z-10">
-              <FontAwesomeIcon
-                icon={faQuoteLeft}
-                color="white"
-                className="text-6xl opacity-25"
-              />
-            </div>
-            <div className="z-20 -mt-7">
-              <p className="text-center text-sm text-white md:text-lg font-['roboto']">
-                Lorem ispum dolor fortuna simpre cresis, out decresis vita
-                detastabilis Lorem ispum dolor fortuna simpre cresis, out
-                decresis
-              </p>
-              <p className="text-start text-white mt-20 md:text-lg max-[1384px]:mt-12">
-                Candidat X
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="md:hidden mx-6 mt-5 rounded-2xl px-2 py-7 bg-[#4bb4d4]">
-          <div className="z-10">
-            <FontAwesomeIcon
-              icon={faQuoteLeft}
-              color="white"
-              className="text-6xl opacity-25"
-            />
-          </div>
-          <div className="z-20 -mt-7">
-            <p className="text-center text-sm text-white font-['roboto-bold']">
-              Lorem ispum dolor fortuna simpre cresis, out decresis vita
-              detastabilis Lorem ispum dolor fortuna simpre cresis, out decresis
-            </p>
-            <p className="text-start text-white mt-4 font-['roboto-bold']">
-              Candidat X
-            </p>
-          </div>
-        </div>
       </section>
 
       <ContactForm marginBottom={"mb-40"} />
