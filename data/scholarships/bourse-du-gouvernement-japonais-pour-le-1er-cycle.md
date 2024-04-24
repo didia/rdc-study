@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourses d'études du gouvernement Japonais pour étudiants du 1er cycle
-deadline: 2021-08-31T20:10:23.163Z
+deadline: 2024-05-24T20:10:23.163Z
 excerpt: Chaque année le gouvernement japonais octroie des bourses complètes aux
   étudiants étrangers souhaitant poursuivre leurs études de premier cycle dans
   des universités japonaises dans le cadre du programme de bourses d’études du
@@ -42,13 +42,13 @@ Pour bénéficier de la bourse vous devez remplir les conditions suivantes:
 
 Pour postuler à la bourse MEXT, vous devez envoyer les documents suivants à l'ambassade du Japon de votre pays:
 
-1. [Le formulaire de demande](https://www.studyinjapan.go.jp/en/_mt/2021/04/Application_Undergraduate.pdf)
+1. [Le formulaire de demande](https://www.studyinjapan.go.jp/en/_mt/2024/04/2025_Application_Undergraduate.pdf)
 2. [Le formulaire de demande de préférence de placement direct](https://www.studyinjapan.go.jp/en/_mt/2021/04/2022_DirectPlacement_Undergraduate.pdf) (uniquement pour ceux qui parlent déjà japonais);
 3. Bulletins scolaires;
 4. Diplôme de fin d'études secondaires; 
-5. <a href="https://www.studyinjapan.go.jp/en/assets/pdf/app/undergraduate/2021_SampleRecommendation.pdf" target="_blank" rel="noopener noreferrer">Une lettre de recommandation du directeur ou d’un enseignant de la dernière école fréquentée</a>
+5. [Une lettre de recommandation](https://www.studyinjapan.go.jp/en/_mt/2024/04/2025_SampleRecommendation_Undergraduate.pdf) du directeur ou d’un enseignant de la dernière école fréquentée.
 6. Preuve officielle d’inscription à l’Université (uniquement pour les étudiants actuellement inscrits dans une université);
-7. [Un certificat de santé](https://www.studyinjapan.go.jp/en/_mt/2021/04/2022_HealthCertificate.pdf)
+7. [Un certificat de santé](https://www.studyinjapan.go.jp/en/_mt/2024/04/2025_HealthCertificate_Undergraduate.pdf)
 8. Preuve officielle de réussite à un examen d’entrée à l’Université (Uniquement pour ceux qui ont réussi un examen d’entrée à l’Université);
 9. Certificat de compétence linguistique (Uniquement si le demandeur possède des documents attestant ses compétences en japonais ou en anglais); soumettez-en 2 copies.
 
