@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "La Recherche de Logements Étudiants pour les Étudiants Africains à
   l'Étranger : Défis et Opportunités"
 excerpt: Pour les étudiants africains poursuivant des études à l'étranger,
