@@ -48,7 +48,7 @@ Les États-Unis et le Canada sont des destinations prisées par les étudiants a
 
 * **Frais de permis d’études** : 150 CAD (environ 68 000 FCFA).
 * **Biométrie** : 85 CAD (environ 38 500 FCFA).
-* **Preuve de fonds** : Environ 10 000 CAD (environ 4 550 000 FCFA) pour couvrir les frais de subsistance.
+* **Preuve de fonds** : Environ 40 000 CAD (environ 18 200 000 FCFA) pour couvrir les frais de subsistance.
 * **Assurance santé** : Varie selon la province, entre 600 et 900 CAD par an (environ 273 000 - 410 000 FCFA).
 
 ## Conclusion
