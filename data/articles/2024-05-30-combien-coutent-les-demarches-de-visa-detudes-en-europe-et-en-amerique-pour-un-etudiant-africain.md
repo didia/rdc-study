@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Combien coûtent les démarches de visa d'Études en Europe et en Amérique
   pour un Étudiant Africain ?
 excerpt: >+
