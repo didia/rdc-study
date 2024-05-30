@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Les diplômes congolais sont-ils reconnus dans les universités internationales ?
 excerpt: >+
   De plus en plus d'étudiants congolais aspirent à poursuivre leurs études à
@@ -46,4 +46,4 @@ Il est essentiel de contacter le service des admissions de l'université cible p
 
 En résumé, les diplômes congolais peuvent être reconnus dans les universités internationales, mais cela nécessite le respect des critères spécifiques de l'établissement d'accueil. Les étudiants doivent se préparer en conséquence, en rassemblant tous les documents nécessaires et en s'assurant de répondre aux exigences académiques et linguistiques. Avec une préparation adéquate, les étudiants congolais peuvent accéder à des opportunités éducatives internationales et réaliser leurs ambitions académiques et professionnelles
 
-Pour mieux préparer votre projet d'études pour une université internationale, faites-vous accompagner par un mentor RDC ÉTUDES qui vous guidera sur le meilleur des choix à faire pour être admis(e).
+Pour mieux préparer votre projet d'études pour une université internationale, faites-vous [accompagner par un mentor RDC ÉTUDES](https://www.rdcetudes.com/accompagnement) qui vous guidera sur le meilleur des choix à faire pour être admis(e).
