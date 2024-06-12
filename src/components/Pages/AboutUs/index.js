@@ -229,7 +229,7 @@ const AboutUs = ({ teammMembers }) => {
         </div>
       </section>
 
-      <section className="mb-10 md:mb-20">
+      <section className="mb-10 md:mb-20 md:mt-20">
         <div className="flex items-center justify-center mx-3">
           <span
             className={

@@ -161,7 +161,7 @@ export const Footer = () => {
 
               <div className="hero bg-gredient-dark h-400px flex flex-col px-2">
                 <p
-                  className="mb-5 mt-5 font-['roboto'] text-lg font-semibold"
+                  className="mb-5 mt-5 font-['roboto'] text-yellow-400 text-lg font-semibold"
                 >
                   Abonnez-vous à notre newsLetter
                 </p>
@@ -213,7 +213,7 @@ export const Footer = () => {
               </p>
 
               <div className="hero bg-gredient-dark h-400px flex flex-col px-2">
-                <p className="mb-5 mt-5 text-xl font-['roboto-bold']">
+                <p className="mb-5 mt-5 text-xl text-[#b98d09] font-['roboto-bold']">
                   Abonnez-vous à notre newsLetter
                 </p>
                 <div className="search-box mx-auto my-auto w-full">
