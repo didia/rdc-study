@@ -18,7 +18,9 @@ const ContactForm = ({ title, bgImg, marginBottom }) => {
 
     async function submiForm(e) {
         e.preventDefault();
-        const toastId = toast.loading("Envoi en cours....")
+        const toastId = toast.loading("Envoi en cours....", {
+          position: "bottom-left"
+        })
         
         // setTimeout(() => {
         //   toast.dismiss({ id: toastId });

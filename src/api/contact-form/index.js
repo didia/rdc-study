@@ -1,42 +1,43 @@
-const mailgun = require('mailgun-js')
-const nodemailer = require('nodemailer')
-const nodemailerTransport = require('nodemailer-mailgun-transport')
+import Mailjet from "node-mailjet";
 
-const auth = {
-  auth: {
-    apiKey: process.env.MAILGUN_API_KEY,
-    domain: process.env.MAILGUN_DOMAIN,
-  },
-};
+const client = Mailjet.Client.apiConnect(
+  process.env.MJ_APIKEY_PUBLIC,
+  process.env.MJ_APIKEY_PRIVATE
+);
 
-const nodemailerMailgun = nodemailer.createTransport(nodemailerTransport(auth));
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ message: 'Method Not Allowed' });
+  }
 
+  const { email, name, message } = req.body;
+ 
+  if (!email || !name || !message) {
+  return res.status(400).json({ message: 'Bad Request: Missing required fields' });
+}
 
-export default function handler(req, res) {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    const data = {
-      name: req.body.name,
-      email: req.body.email,
-      msg: req.body.message,
-    };
+  try {
+    const response = await client.post('send', { version: 'v3.1' }).request({
+      Messages: [
+        {
+          From: {
+            Email: "philippe@243technologies.com",
+            Name: "RDC Etudes Website",
+          },
+          To: [
+            {
+              Email: "salut@rdcetudes.com",
+              Name: "RDC Etudes",
+            },
+          ],
+          Subject: `Feedback de ${email}` ,
+          TextPart: message,
+        },
+      ],
+    });
 
-    nodemailerMailgun.sendMail(
-      {
-        from: "philippembambi413@gmail.com",
-        // to: "salut@rdcetudes.com",
-        to: "philippembambi413@gmail.com",
-        subject: req.body.message,
-        html: `<p>${req.body.message}</p>`,
-        text: "Mailgun rocks, pow pow!",
-      },
-      function (err, info) {
-        if (err) {
-          console.log("Error: " + err);
-          res.status(500).json({ message: err });
-        } else {
-          console.log("Response: " + info);
-          res.status(200).json({ message: info });
-        }
-      }
-    );
+    res.status(200).json({ status: 'Email sent successfully' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 }

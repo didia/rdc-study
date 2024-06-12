@@ -39,6 +39,7 @@
     "gatsby-transformer-sharp": "^5.12.2",
     "lodash": "^4.17.21",
     "mailgun-js": "^0.22.0",
+    "node-mailjet": "^6.0.5",
     "nodemailer": "^6.9.13",
     "nodemailer-mailgun-transport": "^2.1.5",
     "postcss": "^8.4.31",
