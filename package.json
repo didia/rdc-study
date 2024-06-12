@@ -21,8 +21,10 @@
     "@mdx-js/react": "^3.0.0",
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.16",
+    "axios": "^1.6.8",
     "classnames": "^2.3.2",
     "date-fns": "^2.30.0",
+    "dotenv": "^16.4.5",
     "flowbite": "^2.2.0",
     "flowbite-react": "^0.7.0",
     "gatsby": "^5.12.4",
@@ -36,6 +38,9 @@
     "gatsby-transformer-remark": "^6.12.3",
     "gatsby-transformer-sharp": "^5.12.2",
     "lodash": "^4.17.21",
+    "mailgun-js": "^0.22.0",
+    "nodemailer": "^6.9.13",
+    "nodemailer-mailgun-transport": "^2.1.5",
     "postcss": "^8.4.31",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -44,6 +49,7 @@
     "react-helmet": "^6.1.0",
     "react-intl": "^6.5.5",
     "react-multi-carousel": "^2.8.4",
+    "react-toastify": "^10.0.5",
     "sharethis-reactjs": "^1.6.0",
     "tailwindcss": "^3.3.4"
   }

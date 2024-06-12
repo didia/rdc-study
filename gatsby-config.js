@@ -1,6 +1,8 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     keywords: `Une éducation de qualité pour tous`,
