@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourse d’études de l’initiative d’Ashinaga pour les orphelins d’Afrique.
-deadline: 2023-01-20T02:00:00.000Z
+deadline: 2024-12-31T02:00:00.000Z
 excerpt: Ashinaga est une organisation à but non lucratif basée au Japon, qui
   procure un soutien éducatif et émotionnel à des étudiants orphelins déterminés
   à retourner dans leur pays afin d’y effectuer un changement.
@@ -53,7 +53,7 @@ Une fois que vous avez réuni les documents requis, vous pouvez choisir de postu
 ### Postuler en ligne
 
 1. Numérisez tous les documents requis ci-haut en format PDF ou JPEG.
-2. [Postuler en ligne](https://ashinaga.smapply.net/acc/r/?g=80409).
+2. [Postuler en ligne](https://form.jotform.com/AshinagaAAI/Inscription2025).
 
 ### Postuler par email
 
