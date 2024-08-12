@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Bourse d’études de l’initiative d’Ashinaga pour les orphelins d’Afrique.
-deadline: 2023-01-20T02:00:00.000Z
+deadline: 2024-12-31T02:00:00.000Z
 excerpt: Ashinaga est une organisation à but non lucratif basée au Japon, qui
   procure un soutien éducatif et émotionnel à des étudiants orphelins déterminés
   à retourner dans leur pays afin d’y effectuer un changement.
@@ -26,7 +26,7 @@ targetCountries:
 ## Quels sont les critères de la bourse ?
 
 * Être orphelin de père ou de mère ou encore de deux ( fournir un document officiel en attestant).
-* Avoir terminé le cycle secondaire et avoir obtenu le baccalauréat (les baccalauréats techniques, technologiques ou professionnels ne sont pas acceptés) après le 8 aout 2020 (2021 et 2022 inclus) ou l’obtiendront avant le 28 février 2020.
+* Avoir terminé le cycle secondaire et avoir obtenu le baccalauréat (les baccalauréats techniques, technologiques ou professionnels ne sont pas acceptés).
 * Avoir la citoyenneté et ont complété, ou vont compléter, leur éducation secondaire dans l’un des pays suivants : Afrique du Sud, Bénin, Botswana, Burkina Faso, Burundi, Cameroun, Comores, Côte d’Ivoire, Djibouti, Érythrée, Eswatini, Ethiopie, Gabon, Gambie, Ghana, Guinée Conakry, Kenya, Lesotho, Libéria, Madagascar, Malawi, Mali, Maurice, Mauritanie, Namibie, Niger, Nigéria, Ouganda, République Centrafricaine, République Démocratique du Congo, République du Congo, Rwanda, Sénégal, Seychelles, Sierra Leone, Somalie, Soudan du Sud, Tanzanie, Tchad, Togo, Zambie et Zimbabwe.
 * Être nés après le 1er septembre 2000.
 * N’avoir pas les capacités financières pour étudier à l’université jusqu’à l’obtention d’un premier diplôme.
@@ -53,7 +53,7 @@ Une fois que vous avez réuni les documents requis, vous pouvez choisir de postu
 ### Postuler en ligne
 
 1. Numérisez tous les documents requis ci-haut en format PDF ou JPEG.
-2. [Postuler en ligne](https://ashinaga.smapply.net/acc/r/?g=80409).
+2. [Postuler en ligne](https://form.jotform.com/AshinagaAAI/Inscription2025).
 
 ### Postuler par email
 
@@ -61,4 +61,4 @@ Une fois que vous avez réuni les documents requis, vous pouvez choisir de postu
 2. Remplissez le formulaire de candidature puis numérisez-le ainsi que tous les documents requis ci-haut en format PDF ou JPEG
 3. Envoyer le formulaire et vos documents dans un seul email à <a href="mailto:**admissions.fr@ashinaga.org**">**admissions.fr@ashinaga.org**</a>. Utilisez votre nom et pays comme titre de votre adresse email.
 
-Pour plus d’informations sur la bourse, veuillez consulter [le site web du programme](https://ashinaga.smapply.net/).
+Pour plus d’informations sur la bourse, veuillez consulter [le site web du programme](https://www.ashinaga.org/fr/our-work/ashinaga-africa-initiative/).
