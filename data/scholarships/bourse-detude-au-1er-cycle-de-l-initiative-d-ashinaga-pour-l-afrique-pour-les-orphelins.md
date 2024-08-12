@@ -61,4 +61,4 @@ Une fois que vous avez réuni les documents requis, vous pouvez choisir de postu
 2. Remplissez le formulaire de candidature puis numérisez-le ainsi que tous les documents requis ci-haut en format PDF ou JPEG
 3. Envoyer le formulaire et vos documents dans un seul email à <a href="mailto:**admissions.fr@ashinaga.org**">**admissions.fr@ashinaga.org**</a>. Utilisez votre nom et pays comme titre de votre adresse email.
 
-Pour plus d’informations sur la bourse, veuillez consulter [le site web du programme](https://ashinaga.smapply.net/).
+Pour plus d’informations sur la bourse, veuillez consulter [le site web du programme](https://www.ashinaga.org/fr/our-work/ashinaga-africa-initiative/).
