@@ -26,7 +26,7 @@ targetCountries:
 ## Quels sont les critères de la bourse ?
 
 * Être orphelin de père ou de mère ou encore de deux ( fournir un document officiel en attestant).
-* Avoir terminé le cycle secondaire et avoir obtenu le baccalauréat (les baccalauréats techniques, technologiques ou professionnels ne sont pas acceptés) après le 8 aout 2020 (2021 et 2022 inclus) ou l’obtiendront avant le 28 février 2020.
+* Avoir terminé le cycle secondaire et avoir obtenu le baccalauréat (les baccalauréats techniques, technologiques ou professionnels ne sont pas acceptés).
 * Avoir la citoyenneté et ont complété, ou vont compléter, leur éducation secondaire dans l’un des pays suivants : Afrique du Sud, Bénin, Botswana, Burkina Faso, Burundi, Cameroun, Comores, Côte d’Ivoire, Djibouti, Érythrée, Eswatini, Ethiopie, Gabon, Gambie, Ghana, Guinée Conakry, Kenya, Lesotho, Libéria, Madagascar, Malawi, Mali, Maurice, Mauritanie, Namibie, Niger, Nigéria, Ouganda, République Centrafricaine, République Démocratique du Congo, République du Congo, Rwanda, Sénégal, Seychelles, Sierra Leone, Somalie, Soudan du Sud, Tanzanie, Tchad, Togo, Zambie et Zimbabwe.
 * Être nés après le 1er septembre 2000.
 * N’avoir pas les capacités financières pour étudier à l’université jusqu’à l’obtention d’un premier diplôme.
