@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Programme ARES: Bourses de masters et stages de spécialisation en Belgique"
-deadline: 2023-01-27T04:59:34.000Z
+deadline: null
 excerpt: Cette année, 200 bourses de bacheliers de spécialisation, masters de
   spécialisation et de formations continues offertes à de jeunes professionnels
   des pays partenaires de l'ARES dans le cadre des Formations internationales au
@@ -10,7 +10,7 @@ tags:
   - bourses;belgique;ares;kinshasa;congo;rdc;etudes;rdcetudes;bourses d’études
     belgique;bourses gratuites;bourses d’études pour étudiants africains
 thumbnail: /images/uploads/actu-appel-bourses-2019-2020_fr.jpg
-startDate: 2020-10-28T00:31:40.583Z
+startDate: null
 levels:
   - graduate
   - internship
