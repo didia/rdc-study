@@ -40,18 +40,13 @@ Le programme dure généralement une année académique. Les participants passen
 
 Les candidats doivent commencer le processus de candidature en rassemblant les documents suivants : 
 
-Tous les relevés de notes universitaires traduits en anglais.
+* Tous les relevés de notes universitaires traduits en anglais.
+* Copies certifiées conformes des diplômes traduites en anglais.
+* Deux lettres de recommandation en anglais (Au moins une lettre de recommandation doit provenir d'un employeur actuel et une autre d'un ancien professeur ou universitaire)
+* Résultats du TOEFL ou preuve d'inscription au TOEFL s'ils prévoient de passer le test après la date limite de candidature.
 
-Copies certifiées conformes des diplômes traduites en anglais.
-
-Deux lettres de recommandation en anglais (Au moins une lettre de recommandation doit provenir d'un employeur actuel et une autre d'un ancien professeur ou universitaire)
-
-Résultats du TOEFL ou preuve d'inscription au TOEFL s'ils prévoient de passer le test après la date limite de candidature.
+Une fois les documents réunis, vous devez vous rendre auprès de l’ambassade des Etats-Unis  ou accéder au formulaire de candidature au programme de bourses Humphrey 2025-2026 à l'adresse  [https://apply.iie.org/huberthhumphrey ](https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapply.iie.org%2Fhuberthhumphrey&data=05%7C02%7CNsosemeDD%40state.gov%7Cabfa578fa4ae4eb3900008dc74c46ce0%7C66cf50745afe48d1a691a12b2121f44b%7C0%7C0%7C638513634212214583%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=vxqI2fU5RJXts4RGD8e1bZl8g9n3YMPDaJc9d%2FfvbOc%3D&reserved=0).
 
 **N﻿B : Les dates limites de candidature varient selon les pays. L'ambassade des États-Unis ou la commission binationale Fulbright vous informera de sa date limite interne de réception des candidatures. Les ambassades et commissions américaines doivent soumettre leurs candidatures à l'Institute of International Education de Washington, DC, avant la mi-septembre.**
 
-
-
-
-
-<!--EndFragment-->
+Pour plus d'informations spécifiques à votre pays et pour commencer votre candidature, vous pouvez visiter le site de l'ambassade ou du consulat des États-Unis dans votre pays ou consulter le site officiel du programme Humphrey [ici](https://www.humphreyfellowship.org)
