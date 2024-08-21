@@ -38,9 +38,20 @@ Le programme dure généralement une année académique. Les participants passen
 
 ## Comment postuler ?
 
-Les candidats doivent commencer le processus de candidature le plus tôt possible afin de s'assurer que tous les documents nécessaires sont reçus avant la date limite *du 30 août* . Cela comprend :
+Les candidats doivent commencer le processus de candidature en rassemblant les documents suivants : 
 
-* Tous les relevés de notes universitaires traduits en anglais.
-* Copies certifiées conformes des diplômes,
-* Deux lettres de recommandation en anglais (Au moins une lettre de recommandation doit provenir d'un employeur actuel et une autre d'un ancien professeur ou universitaire)
-* Résultats du TOEFL ou preuve d'inscription au TOEFL s'ils prévoient de passer le test après la date limite de candidature.
+Tous les relevés de notes universitaires traduits en anglais.
+
+Copies certifiées conformes des diplômes traduites en anglais.
+
+Deux lettres de recommandation en anglais (Au moins une lettre de recommandation doit provenir d'un employeur actuel et une autre d'un ancien professeur ou universitaire)
+
+Résultats du TOEFL ou preuve d'inscription au TOEFL s'ils prévoient de passer le test après la date limite de candidature.
+
+**N﻿B : Les dates limites de candidature varient selon les pays. L'ambassade des États-Unis ou la commission binationale Fulbright vous informera de sa date limite interne de réception des candidatures. Les ambassades et commissions américaines doivent soumettre leurs candidatures à l'Institute of International Education de Washington, DC, avant la mi-septembre.**
+
+
+
+
+
+<!--EndFragment-->
