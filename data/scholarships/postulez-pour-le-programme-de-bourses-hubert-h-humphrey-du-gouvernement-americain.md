@@ -37,3 +37,10 @@ Le programme dure généralement une année académique. Les participants passen
 7. Les candidats doivent être disponibles pour voyager entre avril et août 2025.
 
 ## Comment postuler ?
+
+Les candidats doivent commencer le processus de candidature le plus tôt possible afin de s'assurer que tous les documents nécessaires sont reçus avant la date limite *du 30 août* . Cela comprend :
+
+* Tous les relevés de notes universitaires traduits en anglais.
+* Copies certifiées conformes des diplômes,
+* Deux lettres de recommandation en anglais (Au moins une lettre de recommandation doit provenir d'un employeur actuel et une autre d'un ancien professeur ou universitaire)
+* Résultats du TOEFL ou preuve d'inscription au TOEFL s'ils prévoient de passer le test après la date limite de candidature.
