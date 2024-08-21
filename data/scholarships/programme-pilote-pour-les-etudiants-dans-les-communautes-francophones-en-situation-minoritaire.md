@@ -44,6 +44,4 @@ Pour être admissible au PPECFSM, vous devez répondre aux critères suivants :
 
 Le [montant dont vous avez besoin](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/etudier-canada/permis-etudes/programme-pilote-etudiants-cfsm.html#s5) dépend de la taille de la communauté où se trouve le campus principal de votre établissement d’enseignement.
 
-
-
-# Comment postuler ?
+P﻿our plus d'informations, veuillez consulter [le site de l'immigration canadienne](https://www.canada.ca/fr/immigration-refugies-citoyennete/services/etudier-canada/permis-etudes/programme-pilote-etudiants-cfsm.html#s1).
