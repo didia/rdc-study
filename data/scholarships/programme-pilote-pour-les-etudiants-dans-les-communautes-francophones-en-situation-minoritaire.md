@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Programme pilote pour les étudiants dans les communautés francophones en
   situation minoritaire
 deadline: 2024-12-31T14:32:52.977Z
