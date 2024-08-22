@@ -1,13 +1,12 @@
 ---
-title: >-
-  Bourse d’études du recteur pour étudiants étrangers à l’Université d’Ottawa au
-  Canada
+draft: true
+title: Bourse d’études du recteur pour étudiants étrangers à l’Université
+  d’Ottawa au Canada
 deadline: 2020-05-01T03:59:00.000Z
-excerpt: >-
-  La Bourse du recteur a pour objectif de fournir de l’aide financière à un(e)
-  étudiant(e) international(e) qui, par son engagement et son travail bénévole,
-  correspond d’une manière exceptionnelle aux objectifs de l’Université d’Ottawa
-  tel qu’énoncés dans son mandat.
+excerpt: La Bourse du recteur a pour objectif de fournir de l’aide financière à
+  un(e) étudiant(e) international(e) qui, par son engagement et son travail
+  bénévole, correspond d’une manière exceptionnelle aux objectifs de
+  l’Université d’Ottawa tel qu’énoncés dans son mandat.
 tags:
   - bourses
   - uottawa
@@ -18,6 +17,7 @@ tags:
   - Congo
   - Canada
 thumbnail: /images/uploads/uttowa.jpg
+startDate: 2024-08-22T09:53:30.483Z
 levels:
   - undergraduate
 targetCountries:
