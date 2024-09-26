@@ -18,9 +18,9 @@ import {isGoingToQuebecState, hasCAQState} from './states';
 import styles from './styles.module.scss';
 
 // Constants
-import {Steps} from './steps';
+//import {steps} from './steps';
 
-const CanadaCAQCheckStep = ({onNextStep, onPreviousStep}) => {
+const CanadaCAQCheckStep = ({onNextStep, onPreviousStep, steps}) => {
   const intl = useIntl();
   const [isGoingToQuebec, setIsGoingToQuebec] = useRecoilState(isGoingToQuebecState);
   const [hasCAQ, setHasCAQ] = useRecoilState(hasCAQState);
@@ -43,7 +43,7 @@ const CanadaCAQCheckStep = ({onNextStep, onPreviousStep}) => {
           setIsGoingToQuebec(isGoingToQuebec);
           setHasCAQ(hasCAQ);
 
-          onNextStep(!isGoingToQuebec || hasCAQ ? Steps.AssistanceLevelCheck : Steps.AboutCandidate);
+          onNextStep(!isGoingToQuebec || hasCAQ ? steps.AssistanceLevelCheck : steps.AboutCandidate);
         }}
       >
         {({isSubmitting}) => (
