@@ -15,6 +15,7 @@ name: France
 thumbnail: ./images/france.jpg
 date: 2020-04-12
 ---
+
 **Que faut-il pour étudier en France ?**
 
 Pour étudier en France, il faut au préalable avoir obtenu une admission dans un établissement d’études supérieures français.
@@ -53,9 +54,9 @@ Toutefois, vous pouvez obtenir une liste complète des bourses offertes par la F
 En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir **1 100 USD + 50 euros** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-* **100 USD** pour les frais de dossier.
-* **50 EUROS** pour les frais de visa.
-* **1 000 USD** pour les frais d'assistance RDC Etudes. (**400 USD** pour l'admission et **600 USD** pour le Visa).
+- **100 USD** pour les frais de dossier.
+- **50 EUROS** pour les frais de visa.
+- **1 000 USD** pour les frais d'assistance RDC Etudes. (**400 USD** pour l'admission et **600 USD** pour le Visa).
 
 **NB**: Ces montants sont basés sur les informations que nous avons consultés au moment de la rédaction de ce guide.
 Pour avoir les montants à jour, nous vous conseillons de vous informer auprès de votre espace Campus France ou un consulat de France dans votre pays.

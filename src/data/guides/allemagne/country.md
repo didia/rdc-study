@@ -12,6 +12,7 @@ thumbnail: images/allemagne.jpg
 name: Allemagne
 date: 2021-10-26
 ---
+
 ## Que faut-il pour étudier en Allemagne ?
 
 ## Combien coûtent les études en Allemagne ?

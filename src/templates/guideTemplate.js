@@ -37,7 +37,7 @@ const splitRelatedAndOthers = (guides, mainGuide) => {
   relatedGuides.sort(
     (guide1, guide2) =>
       mainGuide.related.indexOf(guide1.slug) -
-      mainGuide.related.indexOf(guide2.slug)
+      mainGuide.related.indexOf(guide2.slug),
   );
 
   return { relatedGuides, otherGuides };
@@ -47,17 +47,20 @@ export default function GuideTemplate({ data }) {
   const { markdownRemark, allMarkdownRemark } = data; // data.markdownRemark holds our post data
   const guide = guideMarkdownRemark(markdownRemark);
   const allGuides = allMarkdownRemark.edges.map((edge) =>
-    guideMarkdownRemark(edge.node)
+    guideMarkdownRemark(edge.node),
   );
 
   const { relatedGuides, otherGuides } = splitRelatedAndOthers(
     allGuides,
-    guide
+    guide,
   );
 
-
   return (
-      <CountryGuide guide={guide} relatedGuides={relatedGuides} otherGuides={otherGuides} />
+    <CountryGuide
+      guide={guide}
+      relatedGuides={relatedGuides}
+      otherGuides={otherGuides}
+    />
   );
 }
 

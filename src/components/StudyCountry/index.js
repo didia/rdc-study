@@ -6,14 +6,13 @@ import { Card } from "flowbite-react";
 import _ from "lodash";
 
 const StudyCountry = ({ guideCountries }) => {
-
   const substring = (val) => {
     return val.substring(0, 130) + "...";
   };
 
   const firstThree = _.filter(
     guideCountries,
-    (guideCountry, index) => index < 3
+    (guideCountry, index) => index < 3,
   );
   return (
     <>
@@ -40,7 +39,10 @@ const StudyCountry = ({ guideCountries }) => {
                 {guideCountries.map((guideCountry) => {
                   const image = getImage(guideCountry.frontmatter.thumbnail);
                   return (
-                    <div className="block max-w-[15rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+                    <div
+                      key={guideCountry.frontmatter.slug}
+                      className="block max-w-[15rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                    >
                       <div className="relative overflow-hidden bg-cover bg-no-repeat">
                         <a href={`/${guideCountry.frontmatter.slug}`}>
                           <GatsbyImage
@@ -75,7 +77,10 @@ const StudyCountry = ({ guideCountries }) => {
                     const secondItem = guideCountries[index + 1];
                     const thirdItem = guideCountries[index + 2];
                     return (
-                      <div className="grid grid-cols-3 place-items-center" key={index}>
+                      <div
+                        className="grid grid-cols-3 place-items-center"
+                        key={index}
+                      >
                         {fisrtItem && (
                           <Card
                             className="max-w-sm mx-4 h-[420px]"
@@ -83,7 +88,7 @@ const StudyCountry = ({ guideCountries }) => {
                             renderImage={() => (
                               <GatsbyImage
                                 image={getImage(
-                                  fisrtItem.frontmatter.thumbnail
+                                  fisrtItem.frontmatter.thumbnail,
                                 )}
                                 class="h-60 w-full"
                                 alt={fisrtItem.frontmatter.title}
@@ -108,7 +113,7 @@ const StudyCountry = ({ guideCountries }) => {
                             renderImage={() => (
                               <GatsbyImage
                                 image={getImage(
-                                  secondItem.frontmatter.thumbnail
+                                  secondItem.frontmatter.thumbnail,
                                 )}
                                 class="h-60 w-full"
                                 alt={secondItem.frontmatter.title}
@@ -126,14 +131,14 @@ const StudyCountry = ({ guideCountries }) => {
                           </Card>
                         )}
 
-                    {thirdItem && (
+                        {thirdItem && (
                           <Card
                             className="max-w-sm mx-4 h-[420px]"
                             imgAlt="Meaningful alt text for an image that is not purely decorative"
                             renderImage={() => (
                               <GatsbyImage
                                 image={getImage(
-                                  thirdItem.frontmatter.thumbnail
+                                  thirdItem.frontmatter.thumbnail,
                                 )}
                                 class="h-60 w-full"
                                 alt={thirdItem.frontmatter.title}

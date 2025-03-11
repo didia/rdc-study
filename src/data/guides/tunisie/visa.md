@@ -12,6 +12,7 @@ name: Tunisie
 thumbnail: images/tunisie-visa.jpg
 date: 2021-07-30
 ---
+
 Une fois admis dans un établissement d’enseignement en Tunisie, vous pouvez commencer votre demande de visa d’études.
 
 Nous vous recommandons de commencer vos démarches de visa d’études au moins 2 mois avant la date de début de la session pour laquelle vous vous êtes inscrit.
@@ -40,20 +41,20 @@ Vous devez ensuite vous rendre à l’ambassade de la Tunisie pour déposer votr
 
 **Contacts de l'ambassade de la Tunisie en RDC**
 
-* **Tél : +243 700 78 78**
-* **Mail : Ambatukinshasa@yahoo.fr/at.kinshsasa@diplomatie.gov.tn**
-* **Adresse: 67-69 avenue du cercle, Gombe, Kinshasa/RD Congo**
-* **Heure de fonctionnement du lundi au vendredi de 8h30 à 15h30**
+- **Tél : +243 700 78 78**
+- **Mail : Ambatukinshasa@yahoo.fr/at.kinshsasa@diplomatie.gov.tn**
+- **Adresse: 67-69 avenue du cercle, Gombe, Kinshasa/RD Congo**
+- **Heure de fonctionnement du lundi au vendredi de 8h30 à 15h30**
 
 **COMBIEN ÇA COÛTE ?**
 
 En supposant que vous choisissez d’être accompagné dans votre demande de visa par le partenaire de RDC-Etudes, [le groupe ATUA JUNIOR](https://www.rdcetudes.com/articles/2021-08-01-groupe-atua-junior), vous devrez prévoir **90 euros** pour vos démarches de visa. Ces frais se présentent comme suit:
 
-* **90 euros** pour le frais des visas
+- **90 euros** pour le frais des visas
 
 En plus de ça, [le groupe ATUA JUNIOR](https://www.rdcetudes.com/articles/2021-08-01-groupe-atua-junior) offre des services de logistique à savoir :
 
-* **PACK BRONZE - 900 euros** qui comprend les services suivants :
+- **PACK BRONZE - 900 euros** qui comprend les services suivants :
 
 \- Recherche appartement (non meublé) et nettoyage 
 
@@ -67,7 +68,7 @@ En plus de ça, [le groupe ATUA JUNIOR](https://www.rdcetudes.com/articles/2021-
 
 \- Achat d’un lit et matelas neufs à 5 ans de garantie et  aménagement. 
 
-* **PACK SILVER - 1 400 euros** qui comprend les services suivants :
+- **PACK SILVER - 1 400 euros** qui comprend les services suivants :
 
 \- Recherche appartement (non meublé) et nettoyage 
 
@@ -93,7 +94,7 @@ En plus de ça, [le groupe ATUA JUNIOR](https://www.rdcetudes.com/articles/2021-
 
 \- Assurance frais de connexion du premier mois 
 
-* **PACK GOLDEN - 1 800 euros** qui comprend les services suivants :
+- **PACK GOLDEN - 1 800 euros** qui comprend les services suivants :
 
 \- Recherche appartement (non meublé) et nettoyage  - Réservation appartement  
 

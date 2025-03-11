@@ -16,6 +16,7 @@ name: Canada
 thumbnail: images/canada.jpg
 date: 2018-05-28
 ---
+
 ## Que faut-il pour étudier au Canada ?
 
 Pour étudier au Canada, il faut commencer par obtenir une admission dans un établissement d’enseignement désigné au Canada.\
@@ -54,8 +55,8 @@ Cette dernière ne s’applique que pour les étudiants ayant été admis dans u
 En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC Etudes](/accompagnement), vous devez prévoir entre **1 570 USD et 2 310 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-* **80 USD à 300 USD** pour le processus d’admission.
-* **490 USD à 610 USD** pour le processus de visa.
-* **1000 USD à 1400 USD** pour les frais d’assistance RDC Etudes.
+- **80 USD à 300 USD** pour le processus d’admission.
+- **490 USD à 610 USD** pour le processus de visa.
+- **1000 USD à 1400 USD** pour les frais d’assistance RDC Etudes.
 
 **NB**: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement canadien. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

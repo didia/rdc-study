@@ -1,13 +1,14 @@
 ---
 draft: false
-slug: 'france/admission'
-date: '2020-04-12'
-title: 'Obtenir une admission dans un établissement d’enseignement Français'
-excerpt: 'Pour vous rendre en France pour études, vous devez au préalable obtenir une admission dans un établissement d’enseignement en France. Ce guide vous présente les différentes étapes à suivre pour obtenir une admission dans n’importe quel établissement d’enseignement français.'
-thumbnail: 'images/france-admission.jpg'
-topic: 'admission'
-related: ['france/visa']
+slug: "france/admission"
+date: "2020-04-12"
+title: "Obtenir une admission dans un établissement d’enseignement Français"
+excerpt: "Pour vous rendre en France pour études, vous devez au préalable obtenir une admission dans un établissement d’enseignement en France. Ce guide vous présente les différentes étapes à suivre pour obtenir une admission dans n’importe quel établissement d’enseignement français."
+thumbnail: "images/france-admission.jpg"
+topic: "admission"
+related: ["france/visa"]
 ---
+
 Le processus d’admission en France peut se faire soit directement auprès de l’université de votre choix ou en utilisant la plateforme <a href="https://pastel.diplomatie.gouv.fr/etudesenfrance/dyn/public/authentification/login.html" target="_blank" rel="noreferrer noopener">Études en France</a>.
 À l’exception des candidats pour le Doctorat qui doivent s’inscrire directement à travers leurs universités, tous les candidats peuvent utiliser la plateforme Etudes en France pour leurs démarches d’admission.
 \
@@ -23,25 +24,25 @@ Notre guide est basé sur le processus avec Etudes en France. Voici donc les 5 �
    \
    \
    Vous pouvez obtenir une assistance pour l’éboration de votre projet d’études à travers [notre service d’accompagnement](/accompagnement) pour les démarches en France.
-   
+
 2. ## Créer votre compte et compléter votre dossier
 
    La demande d’admission se fait en ligne à travers <a href="https://pastel.diplomatie.gouv.fr/etudesenfrance/" target="_blank" rel="noreferrer noopener">la plateforme Etudes en France.</a>
    Vous devez donc avoir vos documents scannés en votre possession et remplir les sections suivantes sur vous:
-    
-   * Parcours et diplômes;
-   * Vos choix de formations;
-   * Vos compétences linguistiques.
-    
+
+   - Parcours et diplômes;
+   - Vos choix de formations;
+   - Vos compétences linguistiques.
+
    NB: Vous devez vérifier les prérequis et les modalités d’inscription des établissements que vous avez choisi. S’il y’a des demandes particulières comme les compétences linguistiques, vous devez les inclure.
 
-4. ## Soumettre et payer votre demande
+3. ## Soumettre et payer votre demande
 
    Pour soumettre votre demande, cliquez sur le boutton « soumettre son dossier ». Vous recevrez ensuite un email sur votre boîte personnelle vous indiquant le montant à payer, comment et où effectuer votre paiement.
    Une fois le paiement effectué, vous devez vous connecter à votre compte pour le déclarer.\
    Si votre dossier est complet, il est validé. Dans le cas contraire, il vous sera renvoyé pour corrections.
 
-5. ## Passer votre entretien pédagogique
+4. ## Passer votre entretien pédagogique
    Une fois votre dossier validé, connectez-vous à votre compte Études en France pour prendre votre rendez-vous pédagogique.
    \
    \
@@ -50,7 +51,7 @@ Notre guide est basé sur le processus avec Etudes en France. Voici donc les 5 �
    \
    \
    Normalement si vous avez bien élaboré votre projet d’études, vous devrez être en mesure de le présenter sans problème lors de l’entretien pédagogique.
-  
+
 Après ces 5 étapes, votre dossier d’admission est complet. Il est automatiquement transmis aux établissements que vous avez choisis.
 Vous devez ensuite vous connecter régulièrement à votre compte Études en France pour suivre l’état de votre dossier. Les réponses des établissements seront communiqués sur votre compte.
 \

@@ -4,7 +4,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const guideTemplate = require.resolve(`./src/templates/guideTemplate.js`);
   const articleTemplate = require.resolve(`./src/templates/articleTemplate.js`);
   const scholarShipTemplate = require.resolve(
-    `./src/templates/scholarshipTemplate.js`
+    `./src/templates/scholarshipTemplate.js`,
   );
 
   // Guide Query

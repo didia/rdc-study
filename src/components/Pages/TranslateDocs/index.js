@@ -111,7 +111,10 @@ const TranslateDocs = () => {
         </div>
 
         <div className="bg-[#862304] font-light h-72 w-full text-center text-white text-3xl font-['roboto'] px-44 py-12 max-[1384px]:text-3xl">
-          <p className=" font-light"> Traduisez l'intégralité de vos documents chez RdcEtudes</p>
+          <p className=" font-light">
+            {" "}
+            Traduisez l'intégralité de vos documents chez RdcEtudes
+          </p>
           <p className="mt-2">
             <br />
             <div className=" bg-yellow-600 text-white py-4 mx-7 ml-auto mr-auto w-[20rem] text-2xl font-['roboto']">

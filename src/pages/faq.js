@@ -1,8 +1,8 @@
-import React from 'react';
-import FAQ from '../components/Pages/FAQ';
+import React from "react";
+import FAQ from "../components/Pages/FAQ";
 
 const FAQPage = () => {
-    return ( <FAQ /> );
-}
- 
+  return <FAQ />;
+};
+
 export default FAQPage;

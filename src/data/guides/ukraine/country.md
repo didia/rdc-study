@@ -12,6 +12,7 @@ thumbnail: images/ukraine.jpg
 name: Ukraine
 date: 2021-10-26
 ---
+
 ## Que faut-il pour étudier en Ukraine ?
 
 ## Combien coûtent les études en Ukraine ?

@@ -1,49 +1,48 @@
 .ellipse {
-    &__first {
-        position: absolute;
-        top: 88px;
-    }
-    &__second {
-        position: absolute;
-        top: 89px;
-    }
-    &__third {
-        position: absolute;
-        right: 0;
-        top: 88px;
-    }
-    &__fourth {
-        position: absolute;
-        right: 0;
-        top: 88px;
-    }
-        &__fourth > img {
-            height: 180px;
-        }
+  &__first {
+    position: absolute;
+    top: 88px;
+  }
+  &__second {
+    position: absolute;
+    top: 89px;
+  }
+  &__third {
+    position: absolute;
+    right: 0;
+    top: 88px;
+  }
+  &__fourth {
+    position: absolute;
+    right: 0;
+    top: 88px;
+  }
+  &__fourth > img {
+    height: 180px;
+  }
 }
 
-
 .bourse {
-    &__title {
-        color: #0490DF;
-        font-weight: 900;
-        font-size: 26px;
-    }
-    &__description {
-        font-size: 16px;
-        line-height: 0;
-    }
-    &__btn {
-        font-size: 15px;
-        height: 45px;
-        font-weight: 500;
-    }
-    &__text {
-        color: red;
-    }
-    &__img_container {
-        position: absolute;
-        right: 0;
-        top: 145px;
-    }
+  &__title {
+    color: #0490df;
+    font-weight: 900;
+    font-size: 26px;
+  }
+  &__description {
+    font-size: 16px;
+    line-height: 0;
+  }
+  &__btn {
+    font-size: 15px;
+    height: 45px;
+    font-weight: 500;
+  }
+  &__text {
+    color: red;
+  }
+  &__img_container {
+    position: absolute;
+    right: 0;
+    top: 145px;
+  }
 }

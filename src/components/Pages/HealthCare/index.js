@@ -148,11 +148,11 @@ const HealthCare = () => {
 
       <section className="hidden md:block">
         <div className="mx-8 py-5 h-[500px]">
-            <StaticImage
-              alt="gallery"
-              className="block h-full w-full rounded-sm object-cover object-center"
-              src="../../../images/jeune-femme-entree-ecole-lit-livre.jpg"
-            />
+          <StaticImage
+            alt="gallery"
+            className="block h-full w-full rounded-sm object-cover object-center"
+            src="../../../images/jeune-femme-entree-ecole-lit-livre.jpg"
+          />
         </div>
 
         <div className="mx-8 text-start">
@@ -212,7 +212,9 @@ const HealthCare = () => {
             en matière d’examens médicaux sur le site web de l’immigration.
           </p>
 
-          <p className="py-2 font-bold text-2xl">Où passer l'examen médical ?</p>
+          <p className="py-2 font-bold text-2xl">
+            Où passer l'examen médical ?
+          </p>
 
           <p className="py-2 text-xl">
             Il existe une liste des médecins désignés dans chaque pays qui sont
@@ -285,7 +287,7 @@ const HealthCare = () => {
         </div>
       </section>
     </Layout>
-  ); 
+  );
 };
 
 export default HealthCare;

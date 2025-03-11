@@ -1,28 +1,35 @@
-import React from 'react';
+import React from "react";
 import * as style from "./styles.module.scss";
-import { Carousel, Card } from 'flowbite-react';
-import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock, faGraduationCap, faCheckCircle, faQuestionCircle, faClose, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Carousel, Card } from "flowbite-react";
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faClock,
+  faGraduationCap,
+  faCheckCircle,
+  faQuestionCircle,
+  faClose,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 import _ from "lodash";
-import { Banner } from 'flowbite-react';
+import { Banner } from "flowbite-react";
 
 const Scholarship = ({ scholarships }) => {
-    const limitedScholarShips = _.filter(
-      scholarships,
-      (guideCountry, index) => index < 3
-    );
+  const limitedScholarShips = _.filter(
+    scholarships,
+    (guideCountry, index) => index < 3,
+  );
 
   const substring = (val) => {
     return val.substring(0, 100) + "...";
   };
-const LEVEL_ORDERS = [
-  "undergraduate",
-  "graduate",
-  "postgraduate",
-  "research",
-  "internship",
-];
+  const LEVEL_ORDERS = [
+    "undergraduate",
+    "graduate",
+    "postgraduate",
+    "research",
+    "internship",
+  ];
 
   return (
     <>
@@ -39,7 +46,7 @@ const LEVEL_ORDERS = [
             dans la section Bourses d'études.
           </p>
           <div className="mb-10">
-            <Banner class="mb-5">
+            <Banner className="mb-5">
               <div className="flex mt-10 justify-between border-b-2 border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
                 <div className="mx-auto flex items-center">
                   <p className="flex items-center text-base font-['roboto'] font-normal text-red-700 dark:text-gray-400">
@@ -94,7 +101,7 @@ const LEVEL_ORDERS = [
                     .sort(
                       (level1, level2) =>
                         LEVEL_ORDERS.indexOf(level1) -
-                        LEVEL_ORDERS.indexOf(level2)
+                        LEVEL_ORDERS.indexOf(level2),
                     )
                     .map((level) => `${level}`)
                     .join(", ");
@@ -146,7 +153,7 @@ const LEVEL_ORDERS = [
                   .sort(
                     (level1, level2) =>
                       LEVEL_ORDERS.indexOf(level1) -
-                      LEVEL_ORDERS.indexOf(level2)
+                      LEVEL_ORDERS.indexOf(level2),
                   )
                   .map((level) => `${level}`)
                   .join(", ");
@@ -156,7 +163,10 @@ const LEVEL_ORDERS = [
                 const secondItem = scholarships[index + 1];
                 const thirdItem = scholarships[index + 2];
                 return (
-                  <div className="grid grid-cols-3 place-items-center">
+                  <div
+                    key={`scholarship-${index}`}
+                    className="grid grid-cols-3 place-items-center"
+                  >
                     {fisrtItem && (
                       <Card
                         className="max-w-sm mx-4 h-[420px]"
@@ -164,7 +174,7 @@ const LEVEL_ORDERS = [
                         renderImage={() => (
                           <GatsbyImage
                             image={getImage(fisrtItem.frontmatter.thumbnail)}
-                            class="h-60 w-full"
+                            className="h-60 w-full"
                             alt={fisrtItem.frontmatter.title}
                           />
                         )}
@@ -192,22 +202,21 @@ const LEVEL_ORDERS = [
 
                           <a href={`/${fisrtItem.frontmatter.slug}`}>
                             <p className="text-[#4bb4d4] font-semibold text-lg py-4 font-['roboto']">
-                              Détails <FontAwesomeIcon icon={faArrowRight}/>
+                              Détails <FontAwesomeIcon icon={faArrowRight} />
                             </p>
                           </a>
                         </div>
                       </Card>
                     )}
 
-
-{secondItem && (
+                    {secondItem && (
                       <Card
                         className="max-w-sm mx-4 h-[420px]"
                         imgAlt="Meaningful alt text for an image that is not purely decorative"
                         renderImage={() => (
                           <GatsbyImage
                             image={getImage(secondItem.frontmatter.thumbnail)}
-                            class="h-60 w-full"
+                            className="h-60 w-full"
                             alt={secondItem.frontmatter.title}
                           />
                         )}
@@ -235,13 +244,12 @@ const LEVEL_ORDERS = [
 
                           <a href={`/${secondItem.frontmatter.slug}`}>
                             <p className="text-[#4bb4d4] font-semibold text-lg py-4 font-['roboto']">
-                              Détails <FontAwesomeIcon icon={faArrowRight}/>
+                              Détails <FontAwesomeIcon icon={faArrowRight} />
                             </p>
                           </a>
                         </div>
                       </Card>
                     )}
-
 
                     {thirdItem && (
                       <Card
@@ -250,12 +258,12 @@ const LEVEL_ORDERS = [
                         renderImage={() => (
                           <GatsbyImage
                             image={getImage(thirdItem.frontmatter.thumbnail)}
-                            class="h-60 w-full"
+                            className="h-60 w-full"
                             alt={thirdItem.frontmatter.title}
                           />
                         )}
                       >
-                       <div>
+                        <div>
                           <a
                             href={`/${thirdItem.frontmatter.slug}`}
                             className="max-[1484px]:text-lg"
@@ -278,7 +286,7 @@ const LEVEL_ORDERS = [
 
                           <a href={`/${thirdItem.frontmatter.slug}`}>
                             <p className="text-[#4bb4d4] font-semibold text-lg py-4 font-['roboto']">
-                              Détails <FontAwesomeIcon icon={faArrowRight}/>
+                              Détails <FontAwesomeIcon icon={faArrowRight} />
                             </p>
                           </a>
                         </div>
@@ -294,5 +302,5 @@ const LEVEL_ORDERS = [
     </>
   );
 };
- 
+
 export default Scholarship;

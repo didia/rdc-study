@@ -1,8 +1,8 @@
-import React from 'react';
-import Maintenance from '../components/Pages/Maintenance';
+import React from "react";
+import Maintenance from "../components/Pages/Maintenance";
 
 const MaintenancePage = () => {
-    return <Maintenance />
-}
+  return <Maintenance />;
+};
 export default MaintenancePage;
-export const Head = () => <title>Maintenance</title>
+export const Head = () => <title>Maintenance</title>;

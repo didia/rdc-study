@@ -12,119 +12,119 @@ import { useState } from "react";
 const Help = () => {
   const countryServices = [
     {
-      country: 'Allemagne',
+      country: "Allemagne",
       services: [
-        'Cours de langue', 
-        'Proposition des universites', 
-        'Admission',
-        'Visa',
-        'Logement',
-        'Achat Billet'
-      ]
+        "Cours de langue",
+        "Proposition des universites",
+        "Admission",
+        "Visa",
+        "Logement",
+        "Achat Billet",
+      ],
     },
     {
-      country: 'Belgique',
+      country: "Belgique",
       services: [
-        'Equivalence des diplômes', 
-        'Admission', 
-        'Lettre de motivation',
-        'Remplissage des formulaires',
-        'Visa',
-        'Constitution des documents',
-        'Prise de rendez-vous à l\'ambassade',
-        'Interview à l\'ambassade',
-        'Logement',
-        'Achat Billet'
-      ]
+        "Equivalence des diplômes",
+        "Admission",
+        "Lettre de motivation",
+        "Remplissage des formulaires",
+        "Visa",
+        "Constitution des documents",
+        "Prise de rendez-vous à l'ambassade",
+        "Interview à l'ambassade",
+        "Logement",
+        "Achat Billet",
+      ],
     },
     {
-      country: 'Brésil',
+      country: "Brésil",
       services: [
-        'Cours de langue', 
-        'Proposition des universites', 
-        'Admission',
-        'Visa',
-        'Logement',
-        'Achat Billet'
-      ]
+        "Cours de langue",
+        "Proposition des universites",
+        "Admission",
+        "Visa",
+        "Logement",
+        "Achat Billet",
+      ],
     },
     {
-      country: 'Canada',
+      country: "Canada",
       services: [
-        'Proposition des universites', 
-        'Admission',
-        'CAQ',
-        'Permis d\'études et visa',
-        'Remplissage des formulaires',
-        'Lettre de motivation',
-        'Lettre explicative',
-        'Lettre d’engagement',
-        'Refus admission',
-        'Logement',
-        'Achat Billet'
-      ]
+        "Proposition des universites",
+        "Admission",
+        "CAQ",
+        "Permis d'études et visa",
+        "Remplissage des formulaires",
+        "Lettre de motivation",
+        "Lettre explicative",
+        "Lettre d’engagement",
+        "Refus admission",
+        "Logement",
+        "Achat Billet",
+      ],
     },
     {
-      country: 'Chypre du Nord',
+      country: "Chypre du Nord",
       services: [
-        'Traduction des documents', 
-        'Proposition des universités',
-        'Admission',
-        'Paiement Acompte',
-        'Logement',
-        'Achat Billet'
-      ]
+        "Traduction des documents",
+        "Proposition des universités",
+        "Admission",
+        "Paiement Acompte",
+        "Logement",
+        "Achat Billet",
+      ],
     },
     {
-      country: 'France',
+      country: "France",
       services: [
-        'Campus France', 
-        'Proposition des universités',
-        'Admission',
-        'Projet d\'études',
-        'CVEC',
-        'Visa'
-      ]
+        "Campus France",
+        "Proposition des universités",
+        "Admission",
+        "Projet d'études",
+        "CVEC",
+        "Visa",
+      ],
     },
     {
-      country: 'Roumanie',
+      country: "Roumanie",
       services: [
-        'Traduction des documents', 
-        'Propositions des universites',
-        'Admission',
-        'Paiement Acompte',
-        'Examens medicaux',
-        'Visa',
-        'Logement'
-      ]
+        "Traduction des documents",
+        "Propositions des universites",
+        "Admission",
+        "Paiement Acompte",
+        "Examens medicaux",
+        "Visa",
+        "Logement",
+      ],
     },
     {
-      country: 'Turquie',
+      country: "Turquie",
       services: [
-        'Traduction des documents', 
-        'Propositions des universites',
-        'Admission',
-        'Paiement Acompte',
-        'Examens medicaux',
-        'Visa',
-        'Logement'
-      ]
+        "Traduction des documents",
+        "Propositions des universites",
+        "Admission",
+        "Paiement Acompte",
+        "Examens medicaux",
+        "Visa",
+        "Logement",
+      ],
     },
     {
-      country: 'USA',
+      country: "USA",
       services: [
-        'Traduction des documents', 
-        'Propositions des universites',
-        'Admission',
-        'Remplissage des formulaires',
-        'Interview ambassade',
-        'Visa',
-        'Achat billet',
-        'Logement'
-      ]
-    }
-  ]
-  const [country, setCountry] = useState('');
+        "Traduction des documents",
+        "Propositions des universites",
+        "Admission",
+        "Remplissage des formulaires",
+        "Interview ambassade",
+        "Visa",
+        "Achat billet",
+        "Logement",
+      ],
+    },
+  ];
+  const [country, setCountry] = useState("");
   const [services, setServices] = useState(countryServices[0].services);
 
   return (

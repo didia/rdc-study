@@ -1,15 +1,25 @@
 import React from "react";
 import Layout from "../../Layout";
-import SecondaryBtn from "../../Button/Secondary"
+import SecondaryBtn from "../../Button/Secondary";
 import PrimaryBtn from "../../Button/Primary";
 import * as styles from "./styles.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
 import ScholarShipCard from "../../Scholarship/ScholarShipCard";
 import _ from "lodash";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import 'animate.css'
+import "animate.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap, faDollarSign, faEdit, faCalendarDay, faInfoCircle, faCheck, faCheckCircle, faClose, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGraduationCap,
+  faDollarSign,
+  faEdit,
+  faCalendarDay,
+  faInfoCircle,
+  faCheck,
+  faCheckCircle,
+  faClose,
+  faQuestionCircle,
+} from "@fortawesome/free-solid-svg-icons";
 import { Button, Banner, Carousel } from "flowbite-react";
 
 const Bourse = ({ scholarships }) => {
@@ -22,7 +32,7 @@ const Bourse = ({ scholarships }) => {
   ];
   const limitedScholarShips = _.filter(
     scholarships,
-    (guideCountry, index) => index <= 3
+    (guideCountry, index) => index <= 3,
   );
 
   return (
@@ -32,7 +42,8 @@ const Bourse = ({ scholarships }) => {
           <div className="text-start mx-10 z-10">
             <span
               className={
-                styles.bourse__title + " font-['monserrat'] font-semibold uppercase"
+                styles.bourse__title +
+                " font-['monserrat'] font-semibold uppercase"
               }
             >
               Bourses d'études
@@ -86,7 +97,11 @@ const Bourse = ({ scholarships }) => {
             />
           </div>
           <div className={styles.ellipse__fourth}>
-            <StaticImage alt="Ellipse" className=" max-sm:opacity-40" src="../../../images/Ellipse8.png" />
+            <StaticImage
+              alt="Ellipse"
+              className=" max-sm:opacity-40"
+              src="../../../images/Ellipse8.png"
+            />
           </div>
 
           <div className={styles.bourse__img_container}>
@@ -246,11 +261,11 @@ const Bourse = ({ scholarships }) => {
             const thirdItem = scholarships[index + 2];
 
             return (
-                <div className="flex">
-                  {fisrtItem && <ScholarShipCard scholarship={fisrtItem} />}
-                  {secondItem && <ScholarShipCard scholarship={secondItem} />}
-                  {thirdItem && <ScholarShipCard scholarship={thirdItem} />}
-                </div>
+              <div className="flex">
+                {fisrtItem && <ScholarShipCard scholarship={fisrtItem} />}
+                {secondItem && <ScholarShipCard scholarship={secondItem} />}
+                {thirdItem && <ScholarShipCard scholarship={thirdItem} />}
+              </div>
             );
           })}
         </Carousel>

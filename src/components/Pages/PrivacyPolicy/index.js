@@ -221,18 +221,20 @@ const PrivacyPolicy = () => {
             droits, vous pouvez contacter:Code postal: Local 1M3, Nouvelles
             Galéries Présidentielles, Kinshasa, R.D. CongoCourriel :
             salut@rdcetudes.comTéléphone : +243 822 313 039
-            <p className="uppercase text-xl font-bold py-2 font-['roboto-bold']">DROIT D‘ACCÈS</p>
+            <p className="uppercase text-xl font-bold py-2 font-['roboto-bold']">
+              DROIT D‘ACCÈS
+            </p>
             Nous nous engageons à reconnaître un droit d‘accès et de
             rectification aux personnes concernées désireuses de consulter,
             modifier, voire radier les informations les concernant.L‘exercice de
             ce droit se fera :Code postal : Local 1M3, Nouvelles Galéries
             Présidentielles, Kinshasa, R.D. CongoCourriel :
-            salut@rdcetudes.comTéléphone : +243 822 313 039. SÉCURITÉ Les renseignements personnels
-            que nous collectons sont conservés dans un environnement sécurisé.
-            Les personnes travaillant pour nous sont tenues de respecter la
-            confidentialité de vos informations.Pour assurer la sécurité de vos
-            renseignements personnels, nous avons recours aux mesures suivantes
-            :
+            salut@rdcetudes.comTéléphone : +243 822 313 039. SÉCURITÉ Les
+            renseignements personnels que nous collectons sont conservés dans un
+            environnement sécurisé. Les personnes travaillant pour nous sont
+            tenues de respecter la confidentialité de vos informations.Pour
+            assurer la sécurité de vos renseignements personnels, nous avons
+            recours aux mesures suivantes :
             <ul className="list-disc ml-5">
               <li className="py-2">Protocole SSL (Secure Sockets Layer)</li>
               <li className="py-2">Gestion des accès - personne autorisée</li>

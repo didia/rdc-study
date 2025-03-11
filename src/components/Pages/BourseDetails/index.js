@@ -2,15 +2,19 @@ import React from "react";
 import Layout from "../../Layout";
 import BourseCard from "../../BourseCard";
 import { StaticImage } from "gatsby-plugin-image";
-import HtmlContent from "../../HtmlContent"
+import HtmlContent from "../../HtmlContent";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock, faGlobe, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import {
+  faClock,
+  faGlobe,
+  faGraduationCap,
+} from "@fortawesome/free-solid-svg-icons";
 
 const BourseDetails = ({ bourse, content }) => {
-   const image = getImage(bourse.thumbnail);
- 
+  const image = getImage(bourse.thumbnail);
+
   return (
     <Layout pageTitle={"Détails sur la bourse d'études"}>
       <section>

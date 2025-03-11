@@ -6,7 +6,13 @@ import {
   faPhone,
   faMagnifyingGlassLocation,
 } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faLinkedin, faInstagram, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faLinkedin,
+  faInstagram,
+  faTwitter,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
   return (
@@ -47,9 +53,7 @@ export const Footer = () => {
               </p>
             </div>
             <div>
-              <h2
-                className="mb-4 flex text-xl justify-center font-bold uppercase md:justify-start font-['roboto-bold']"
-              >
+              <h2 className="mb-4 flex text-xl justify-center font-bold uppercase md:justify-start font-['roboto-bold']">
                 CONTACTS
               </h2>
               <p className="mb-4 justify-center">
@@ -160,9 +164,7 @@ export const Footer = () => {
               </a>
 
               <div className="hero bg-gredient-dark h-400px flex flex-col px-2">
-                <p
-                  className="mb-5 mt-5 font-['roboto'] text-yellow-400 text-lg font-semibold"
-                >
+                <p className="mb-5 mt-5 font-['roboto'] text-yellow-400 text-lg font-semibold">
                   Abonnez-vous à notre newsLetter
                 </p>
                 <div className="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
@@ -250,97 +252,100 @@ export const Footer = () => {
               </div>
             </div>
             <div className=" col-span-8 grid grid-cols-3">
-            <div className="py-8 font-['roboto']">
-              <h2 className="mb-4 text-xl font-bold uppercase text-start font-['roboto-bold']">
-                CONTACTS
-              </h2>
-              <p className="mb-6 text-start">
-                <p className="text-white text-lg">
-                  <FontAwesomeIcon icon={faPhone} />
-                  &nbsp;&nbsp; +243 99 994 9712
+              <div className="py-8 font-['roboto']">
+                <h2 className="mb-4 text-xl font-bold uppercase text-start font-['roboto-bold']">
+                  CONTACTS
+                </h2>
+                <div className="mb-6 text-start">
+                  <span className="text-white text-lg">
+                    <FontAwesomeIcon icon={faPhone} />
+                    &nbsp;&nbsp; +243 99 994 9712
+                  </span>
+                </div>
+                <div className="mb-6 text-start">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+1(581)318-0180&text=Laissez-nous%20un%20message"
+                    className="text-white text-lg"
+                  >
+                    <FontAwesomeIcon icon={faWhatsapp} />
+                    &nbsp;&nbsp; +1 (581) 318-0180
+                  </a>
+                </div>
+
+                <div className="mb-6 text-start">
+                  <span className="text-white text-lg">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    &nbsp;&nbsp; salut@rdcetudes.com
+                  </span>
+                </div>
+                <div className="mb-6 text-start">
+                  <span className="text-white text-lg">
+                    <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
+                    &nbsp;&nbsp; Local 1m3 de la nouvelle galerie
+                    présidentielle, Kinshasa, Gombe
+                  </span>
+                </div>
+              </div>
+
+              <div className="py-8 font-['roboto']">
+                <h2 className="mb-4 text-xl font-bold uppercase text-start font-['roboto-bold']">
+                  Pages
+                </h2>
+
+                <p className="mb-6 text-start">
+                  <a href="/" className="text-white text-lg">
+                    Acceuil
+                  </a>
                 </p>
-              </p>
-              <p className="mb-6 text-start">
-                <a href="https://api.whatsapp.com/send?phone=+1(581)318-0180&text=Laissez-nous%20un%20message" className="text-white text-lg">
-                  <FontAwesomeIcon icon={faWhatsapp} />
-                  &nbsp;&nbsp; +1 (581) 318-0180
-                </a>
-              </p>
 
-              <p className="mb-6 text-start">
-                <p className="text-white text-lg">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                  &nbsp;&nbsp; salut@rdcetudes.com
+                <p className="mb-6 text-start">
+                  <a href="/bourse" className="text-white text-lg">
+                    Bourses
+                  </a>
                 </p>
-              </p>
-              <p className="mb-6 text-start">
-                <p  className="text-white text-lg">
-                  <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
-                  &nbsp;&nbsp; Local 1m3 de la nouvelle galerie présidentielle,
-                  Kinshasa, Gombe
+
+                <p className="mb-6 text-start">
+                  <a href="/article" className="text-white text-lg">
+                    Articles
+                  </a>
                 </p>
-              </p>
-            </div>
 
-            <div className="py-8 font-['roboto']">
-              <h2 className="mb-4 text-xl font-bold uppercase text-start font-['roboto-bold']">
-                Pages
-              </h2>
+                <p className="mb-6 text-start">
+                  <a href="/aboutUs" className="text-white text-lg">
+                    Qui sommes-nous ?
+                  </a>
+                </p>
+              </div>
 
-              <p className="mb-6 text-start">
-                <a href="/" className="text-white text-lg">
-                  Acceuil
-                </a>
-              </p>
+              <div className="py-8 font-['roboto']">
+                <h2 className="mb-4 text-xl font-bold uppercase text-start font-['roboto-bold']">
+                  Autres Pages
+                </h2>
 
-              <p className="mb-6 text-start">
-                <a href="/bourse" className="text-white text-lg">
-                  Bourses
-                </a>
-              </p>
+                <p className="mb-6 text-start">
+                  <a href="/healthcare" className="text-white text-lg">
+                    Examens médicaux
+                  </a>
+                </p>
 
-              <p className="mb-6 text-start">
-                <a href="/article" className="text-white text-lg">
-                  Articles
-                </a>
-              </p>
-              
-              <p className="mb-6 text-start">
-                <a href="/aboutUs" className="text-white text-lg">
-                  Qui sommes-nous ?
-                </a>
-              </p>
-            </div>
+                <p className="mb-6 text-start">
+                  <a href="/privacy" className="text-white text-lg">
+                    Politiques de confidentialité
+                  </a>
+                </p>
 
-            <div className="py-8 font-['roboto']">
-              <h2 className="mb-4 text-xl font-bold uppercase text-start font-['roboto-bold']">
-                Autres Pages
-              </h2>
+                <p className="mb-6 text-start">
+                  <a href="/help" className="text-white text-lg">
+                    Besoin d'aide ?
+                  </a>
+                </p>
 
-              <p className="mb-6 text-start">
-                <a href="/healthcare" className="text-white text-lg">
-                  Examens médicaux
-                </a>
-              </p>
-
-              <p className="mb-6 text-start">
-                <a href="/privacy" className="text-white text-lg">
-                  Politiques de confidentialité
-                </a>
-              </p>
-
-              <p className="mb-6 text-start">
-                <a href="/help" className="text-white text-lg">
-                  Besoin d'aide ?
-                </a>
-              </p>
-
-              <p className="mb-6 text-start">
-                <a href="/faq" className="text-white text-lg">
-                  Questions populaires
-                </a>
-              </p>
-            </div>
+                <p className="mb-6 text-start">
+                  <a href="/faq" className="text-white text-lg">
+                    Questions populaires
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -2,23 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-    font-family: 'monserrat';
-    src: local('monserrat'), url(../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+  font-family: "monserrat";
+  src:
+    local("monserrat"),
+    url(../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf)
+      format("truetype");
 }
 
 @font-face {
-    font-family: 'monserrat-bold';
-    src: local('monserrat-bold'), url(../assets/fonts/montserrat/static/Montserrat-Bold.ttf) format('truetype');
+  font-family: "monserrat-bold";
+  src:
+    local("monserrat-bold"),
+    url(../assets/fonts/montserrat/static/Montserrat-Bold.ttf)
+      format("truetype");
 }
 
 @font-face {
-    font-family: 'roboto';
-    src: local('roboto'), url(../assets/fonts/roboto/Roboto-Light.ttf) format('truetype');
+  font-family: "roboto";
+  src:
+    local("roboto"),
+    url(../assets/fonts/roboto/Roboto-Light.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'roboto-bold';
-    src: local('roboto-bold'), url(../assets/fonts/roboto/Roboto-Regular.ttf) format('truetype');
+  font-family: "roboto-bold";
+  src:
+    local("roboto-bold"),
+    url(../assets/fonts/roboto/Roboto-Regular.ttf) format("truetype");
 }

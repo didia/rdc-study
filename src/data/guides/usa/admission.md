@@ -1,12 +1,12 @@
 ---
 draft: false
-slug: 'usa/admission'
-date: '2018-03-30'
-title: 'Obtenir une admission dans une université américaine'
+slug: "usa/admission"
+date: "2018-03-30"
+title: "Obtenir une admission dans une université américaine"
 excerpt: "Pour vous rendre aux États-Unis pour études, vous devez au préalable obtenir une admission dans une institution américaine d‘enseignement reconnue. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n‘importe quelle institution américaine d‘enseignement."
-thumbnail: 'images/usa-admission.jpg'
-topic: 'admission'
-related: ['usa/visa']
+thumbnail: "images/usa-admission.jpg"
+topic: "admission"
+related: ["usa/visa"]
 ---
 
 Le processus d‘admission diffère d‘une institution à une autre. Toutefois les étapes générales sont sensiblement les mêmes dans toutes les institutions.\

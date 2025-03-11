@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ValueCard = ({ title, section1, section2, extraStyle }) => {
   return (
@@ -25,5 +25,5 @@ const ValueCard = ({ title, section1, section2, extraStyle }) => {
     </>
   );
 };
- 
+
 export default ValueCard;

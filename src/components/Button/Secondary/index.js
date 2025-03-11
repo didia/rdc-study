@@ -1,5 +1,4 @@
-import React from 'react';
-import * as styles from "./styles.module.scss";
+import React from "react";
 
 const SecondaryBtn = ({ text, fontSize, link }) => {
   return (

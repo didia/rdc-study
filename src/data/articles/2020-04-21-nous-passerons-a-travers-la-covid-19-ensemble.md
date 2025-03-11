@@ -29,6 +29,7 @@ tags:
   - études à l'étranger.
 date: 2020-04-20T23:51:11.084Z
 ---
+
 Chers membres de la communauté RDC Etudes,
 
 Le monde traverse actuellement une situation d'incertitude avec la pandémie de la Covid-19, plusieurs personnes étant confinées à la maison, les universités et les frontières des plusieurs pays fermées. Plusieurs d’entre vous s’inquiètent avec raison de l’avenir de leur projet d’études. Je vais donc par ce message vous mettre à jour sur l’état des choses et vous informer sur ce que RDC Etudes fait pour vous assister dans cette situation.

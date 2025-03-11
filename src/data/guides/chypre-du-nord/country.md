@@ -3,12 +3,12 @@ draft: false
 slug: chypre-du-nord
 date: 2020-08-14
 title: Etudier à Chypre du Nord
-excerpt: À ne pas confondre avec l'Île de Chypre, La république turque de Chypre du Nord est reconnue pour les faibles coûts des études et la facilité des démarches d’immigration. Étudier à Chypre du Nord offre un rapport qualité/prix très attrayant aux étudiants étrangers. 
+excerpt: À ne pas confondre avec l'Île de Chypre, La république turque de Chypre du Nord est reconnue pour les faibles coûts des études et la facilité des démarches d’immigration. Étudier à Chypre du Nord offre un rapport qualité/prix très attrayant aux étudiants étrangers.
 thumbnail: images/chypre-du-nord.jpg
 flag: images/flag.png
 name: Chypre du Nord
 topic: country
-related: ['chypre-du-nord/admission', 'chypre-du-nord/visa']
+related: ["chypre-du-nord/admission", "chypre-du-nord/visa"]
 ---
 
 ## Que faut-il pour étudier à Chypre du Nord ?

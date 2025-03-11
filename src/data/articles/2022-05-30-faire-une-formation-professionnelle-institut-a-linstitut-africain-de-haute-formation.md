@@ -11,67 +11,68 @@ excerpt: " Créé en 2016 l'institut africain de haute formation est l`un de plu
 thumbnail: /images/uploads/iahf.png
 date: 2022-05-30T15:14:44.229Z
 ---
+
 L`[IAHF](https://iahf.tn/) dispose de plusieurs formes de formations ;
 
-* Formation normale 
-* Formation accélérée
-* Formation pour entreprise 
+- Formation normale 
+- Formation accélérée
+- Formation pour entreprise 
 
  **Les filières liées à la formation normale sont** : 
 
-* Langues étrangères 
-* Etablir la liasse fiscale et son annexe 
-* Développeur d'application PHP/SYMFONY 
-* Development java 
-* Machine Learning 
-* Community manager 
-* Maîtriser des principes et normes IFRS de A à Z 
-* Sage comptabilité 100
-* Les travaux de fin d`exercice 
-* Laravel
+- Langues étrangères 
+- Etablir la liasse fiscale et son annexe 
+- Développeur d'application PHP/SYMFONY 
+- Development java 
+- Machine Learning 
+- Community manager 
+- Maîtriser des principes et normes IFRS de A à Z 
+- Sage comptabilité 100
+- Les travaux de fin d`exercice 
+- Laravel
 
 **Filière liées à la formation accélérées ;**
 
-* Marketing 
-* Langues 
-* Développement personnel et gestion des ressources humaines 
-* Informatique 
-* Industrielle 
-* Design 
-* Comptabilité et finance 
+- Marketing 
+- Langues 
+- Développement personnel et gestion des ressources humaines 
+- Informatique 
+- Industrielle 
+- Design 
+- Comptabilité et finance 
 
 **Filière liées à  la formation pour les  entreprises** ;  
 
-* Comptabilité et finance 
-* Commerce international
-* Finance islamique 
-* Technique bancaire 
-* Marketing 
-* Assistant de direction 
-* Développement web
-* Information de gestion
-* Réseau et sécurité informatique
-* Comptable d`entreprise 
-* Secrétariat
-* Technique de soutien en informatique de gestion
-* Formalités douanières 
-* Commerce et distribution 
+- Comptabilité et finance 
+- Commerce international
+- Finance islamique 
+- Technique bancaire 
+- Marketing 
+- Assistant de direction 
+- Développement web
+- Information de gestion
+- Réseau et sécurité informatique
+- Comptable d`entreprise 
+- Secrétariat
+- Technique de soutien en informatique de gestion
+- Formalités douanières 
+- Commerce et distribution 
 
 Les diplômes délivrés chez l` IAHF sont les suivants ;
 
-* CAP ; Certificat d`Aptitude Professionnelle 
-*  BTP ; Brevet et Technicien Professionnel
-*  BTS ; Brevet de Technicien Supérieurs   
+- CAP ; Certificat d`Aptitude Professionnelle 
+-  BTP ; Brevet et Technicien Professionnel
+-  BTS ; Brevet de Technicien Supérieurs   
 
 Les diplômes  BTP sont délivrés à des personnes n'ayant pas obtenus des diplômes d'état
 
 Les filières disponibles pour cette catégorie sont inscrits là-dessous :
 
-* Comptable d`entreprise 
-* Soutien en informatique de gestion
-* Commerce et distribution
-* Secrétariat
-* Formalité douanière 
+- Comptable d`entreprise 
+- Soutien en informatique de gestion
+- Commerce et distribution
+- Secrétariat
+- Formalité douanière 
 
 Les diplômes  BTS sont délivrés à des personnes ayant déjà obtenus un diplôme d'étude supérieur, les filières disponible pour cette catégories sont inscrits là-dessous :
 
@@ -87,9 +88,9 @@ Réseau et sécurité informatique
 
 **Documents à fournir** :
 
-* Copie de passeport 
-* Copie de diplôme de Bac ou bien d`attestation de réussite Bac pour le BTS et pour le BTP attestation scolaire.
-* Photo Passeport
+- Copie de passeport 
+- Copie de diplôme de Bac ou bien d`attestation de réussite Bac pour le BTS et pour le BTP attestation scolaire.
+- Photo Passeport
 
 **COMBIEN COÛTENT LES ETUDES A IAFH?**
 
@@ -101,8 +102,8 @@ NB: L`institut Africain de haute formation  vous donne la possibilité de payer
 
 En supposant que vous choisissez [d’être accompagné dans vos démarches par un mentor de RDC-Etudes](https://www.rdcetudes.com/accompagnement), vous devez prévoir entre **1450$** pour toutes vos démarches. Ces frais se présentent comme suit:
 
-*  400 euros Frais d'inscription 
-*  400$ Assistance admission  
-* 90 euros Frais de visa
-* 85 dollars Frais de logement à l'Université 
-* 400$ Assistance Visa
+- 400 euros Frais d'inscription
+- 400$ Assistance admission  
+- 90 euros Frais de visa
+- 85 dollars Frais de logement à l'Université
+- 400$ Assistance Visa

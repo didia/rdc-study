@@ -17,6 +17,7 @@ targetCountries:
   - sa
   - africa
 ---
+
 ## En quoi consiste la bourse ?
 
 <a href="https://www.nexteinstein.org/" target="_blank" rel="noopener noreferrer">L’Institut Africain des Sciences Mathématiques</a> offre des bourses complètes de 3 semestres axées sur la résolution de problèmes informatiques et les compétences en programmation. Les boursiers auront la possibilité de rivaliser dans les domaines les plus avancés des sciences mathématiques. La bourse couvre l’hébergement, l’alimentation et les frais de voyage.
@@ -25,10 +26,10 @@ targetCountries:
 
 Pour bénéficier à la bourse de Master, vous devez remplir les conditions suivantes:
 
-* Être titulaires ou s’attendre à obtenir, au plus tard à la date du début de la formation AIMS, un diplôme universitaire en mathématiques de 4 ans ou dans toute autre discipline des sciences / génie avec une composante mathématique significative;
-* Les dossiers doivent démontrer de solides compétences en mathématiques, en leadership et en service communautaire.
+- Être titulaires ou s’attendre à obtenir, au plus tard à la date du début de la formation AIMS, un diplôme universitaire en mathématiques de 4 ans ou dans toute autre discipline des sciences / génie avec une composante mathématique significative;
+- Les dossiers doivent démontrer de solides compétences en mathématiques, en leadership et en service communautaire.
 
-**NB: Les candidatures féminines sont vivement encouragées.** 
+**NB: Les candidatures féminines sont vivement encouragées.**
 
 ## Comment postuler ?
 

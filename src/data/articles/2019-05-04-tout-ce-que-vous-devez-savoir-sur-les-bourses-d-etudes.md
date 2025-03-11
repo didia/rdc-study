@@ -27,8 +27,9 @@ tags:
   - Bourse d’études
   - étudier gratuitement
   - étudier à l’étranger
-date: '2019-05-04T19:21:07-04:00'
+date: "2019-05-04T19:21:07-04:00"
 ---
+
 En effet, les étudiants cherchent souvent une bourse d’études pouvant prendre en charge toutes leurs dépenses, c’est-à-dire les frais de scolarité, le logement et les frais de subsistance dans leur pays de destination. Cependant, c’est très rare de tomber sur les bourses d’études qui offrent tous ces avantages.
 
 Aussi, il est plus facile de trouver des bourses d’études pour les cycles supérieurs (maîtrise et doctorat) que celles du premier cycle (licence ou baccalauréat). Cependant, en sachant quels sont les différents types de bourses, nous pensons que vous serez mieux en mesure de cerner vos options.
@@ -42,7 +43,7 @@ Il existe trois types de bourses d’études en ce qui concerne la couverture de
    Par exemple, la Turquie via son [programme de bourse d’études pour les étudiants étrangers](https://www.rdcetudes.com/articles/2019-01-20-candidatures-ouvertes-pour-le-programme-de-bourses-d-etudes-2019-en-turquie) offre des bourses d’études complètes.
 2. _**Les bourses d’études partielles**_\
    Ces formes de bourses sont les plus populaires. Elles consistent souvent à une prise en charge partielle des frais de scolarité de l’étudiant ou tout autre frais nécessaire à son séjour dans son pays de destination. Ces bourses sont souvent offertes par les universités, des organismes de charité ou des bienfaiteurs.\
-   Le gouvernement brésilien par exemple par son [programme PEC-G](https://www.rdcetudes.com/articles/2018-08-01-etudier-gratuitement-au-br%C3%A9sil-c-est-possible) permet aux étudiants sélectionnés d’étudier gratuitement mais la subsistance est assurée par l’étudiant (e). 
+   Le gouvernement brésilien par exemple par son [programme PEC-G](https://www.rdcetudes.com/articles/2018-08-01-etudier-gratuitement-au-br%C3%A9sil-c-est-possible) permet aux étudiants sélectionnés d’étudier gratuitement mais la subsistance est assurée par l’étudiant (e).
 3. _**Les ententes des réductions de frais académiques**_\
    Généralement les étudiants étrangers paient des frais académiques supérieures à ceux des étudiants nationaux. Cependant certaines ententes entre pays permettent aux étudiants étrangers de payer comme les étudiants nationaux. Généralement, si ces ententes existent entre votre pays d’origine et celui de destination, vous devez faire la demande de cette réduction auprès de votre ministère de l’éducation ou auprès de l’ambassade de votre pays dans le pays de destination. L’Université d’Ottawa par exemple accorde [une exonération partielle des frais de scolarités](https://www.rdcetudes.com/articles/2018-07-30-%C3%A9tudier-%C3%A0-co%C3%BBts-r%C3%A9duits-%C3%A0-l-universit%C3%A9-d-ottawa) aux étudiants francophones.
 

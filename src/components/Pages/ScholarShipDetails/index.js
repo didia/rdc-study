@@ -1,10 +1,15 @@
 import React from "react";
 import Layout from "../../Layout";
-import HtmlContent from "../../HtmlContent"
+import HtmlContent from "../../HtmlContent";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendar, faClock, faGlobe, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCalendar,
+  faClock,
+  faGlobe,
+  faGraduationCap,
+} from "@fortawesome/free-solid-svg-icons";
 import ScholarShipCard from "../../Scholarship/ScholarShipCard";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
@@ -65,13 +70,14 @@ const ScholarShipDetails = ({ bourse, content, otherScholarShips }) => {
             {bourse.title}
           </p>
           <p className="py-3 text-xl font-['roboto']">{bourse.excerpt}</p>
-          
         </div>
 
         <div className="py-8 mx-16">
-          <HtmlContent content={content} htmlclassName={"text-xl font-['roboto']"} />
+          <HtmlContent
+            content={content}
+            htmlclassName={"text-xl font-['roboto']"}
+          />
         </div>
-
       </section>
 
       <section
@@ -85,16 +91,16 @@ const ScholarShipDetails = ({ bourse, content, otherScholarShips }) => {
             const thirdItem = otherScholarShips[index + 2];
 
             return (
-                <div className="flex">
-                  {fisrtItem && <ScholarShipCard scholarship={fisrtItem} />}
-                  {secondItem && <ScholarShipCard scholarship={secondItem} />}
-                  {thirdItem && <ScholarShipCard scholarship={thirdItem} />}
-                </div>
+              <div className="flex">
+                {fisrtItem && <ScholarShipCard scholarship={fisrtItem} />}
+                {secondItem && <ScholarShipCard scholarship={secondItem} />}
+                {thirdItem && <ScholarShipCard scholarship={thirdItem} />}
+              </div>
             );
           })}
         </Carousel>
       </section>
-      
+
       <section className="mx-4 mb-10 md:hidden">
         <div className="text-[#4bb4d4] text-lg font-['roboto-bold'] font-black absolute mt-10 uppercase">
           Autres Bourses
@@ -110,7 +116,6 @@ const ScholarShipDetails = ({ bourse, content, otherScholarShips }) => {
           })}
         </div>
       </section>
-
     </Layout>
   );
 };

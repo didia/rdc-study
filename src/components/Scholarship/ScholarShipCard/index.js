@@ -1,7 +1,13 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap, faClock, faCalendar, faEdit, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGraduationCap,
+  faClock,
+  faCalendar,
+  faEdit,
+  faDollarSign,
+} from "@fortawesome/free-solid-svg-icons";
 import { Card, Button } from "flowbite-react";
 
 const ScholarShipCard = ({ scholarship }) => {
@@ -15,12 +21,12 @@ const ScholarShipCard = ({ scholarship }) => {
 
   const scholarshipItem = { ...scholarship.frontmatter };
   const levelsText = scholarshipItem.levels
-  .sort(
-    (level1, level2) =>
-      LEVEL_ORDERS.indexOf(level1) - LEVEL_ORDERS.indexOf(level2)
-              )
-      .map((level) => `${level}`)
-              .join(", ");
+    .sort(
+      (level1, level2) =>
+        LEVEL_ORDERS.indexOf(level1) - LEVEL_ORDERS.indexOf(level2),
+    )
+    .map((level) => `${level}`)
+    .join(", ");
   const image = getImage(scholarshipItem.thumbnail);
 
   return (
@@ -70,38 +76,40 @@ const ScholarShipCard = ({ scholarship }) => {
         </Button>
       </Card> */}
 
-        <div class="md:h-[400px] md:w-[33rem] mx-3 p-4 bg-white border border-gray-400 rounded-3xl shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
-          <div className="">
-            <a href={`/${scholarshipItem.slug}`}>
-              <h5 class="mb-2 text-sm md:text-base font-['roboto-bold'] uppercase">
-                {scholarshipItem.title}
-              </h5>
-            </a>
-            <p class="text-base font-['roboto'] md:mt-5">{scholarshipItem.excerpt}</p>
+      <div class="md:h-[400px] md:w-[33rem] mx-3 p-4 bg-white border border-gray-400 rounded-3xl shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
+        <div className="">
+          <a href={`/${scholarshipItem.slug}`}>
+            <h5 class="mb-2 text-sm md:text-base font-['roboto-bold'] uppercase">
+              {scholarshipItem.title}
+            </h5>
+          </a>
+          <p class="text-base font-['roboto'] md:mt-5">
+            {scholarshipItem.excerpt}
+          </p>
 
-            <div className="py-4">
-              <ul className="ml-5 text-sm font-['roboto'] uppercase md:text-lg">
-                <li className="py-1">
-                  <FontAwesomeIcon icon={faGraduationCap} className="h-6" />
-                  &nbsp;&nbsp; {levelsText}
-                </li>
-                <li className="py-1 text-yellow-600">
-                  <FontAwesomeIcon icon={faCalendar} className="h-6" />
-                  &nbsp;&nbsp; {scholarship.frontmatter.deadline}
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="w-full h-1/7 uppercase md:bottom-0 md:absolute md:mb-4">
-            <Button
-              className="w-36 rounded-none bg-[#4bb4d4] font-semibold font-['roboto']"
-              href={`/${scholarshipItem.slug}`}
-            >
-              Voir détails
-            </Button>
+          <div className="py-4">
+            <ul className="ml-5 text-sm font-['roboto'] uppercase md:text-lg">
+              <li className="py-1">
+                <FontAwesomeIcon icon={faGraduationCap} className="h-6" />
+                &nbsp;&nbsp; {levelsText}
+              </li>
+              <li className="py-1 text-yellow-600">
+                <FontAwesomeIcon icon={faCalendar} className="h-6" />
+                &nbsp;&nbsp; {scholarship.frontmatter.deadline}
+              </li>
+            </ul>
           </div>
         </div>
+
+        <div className="w-full h-1/7 uppercase md:bottom-0 md:absolute md:mb-4">
+          <Button
+            className="w-36 rounded-none bg-[#4bb4d4] font-semibold font-['roboto']"
+            href={`/${scholarshipItem.slug}`}
+          >
+            Voir détails
+          </Button>
+        </div>
+      </div>
     </>
   );
 };

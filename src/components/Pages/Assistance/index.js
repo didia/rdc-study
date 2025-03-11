@@ -12,119 +12,119 @@ import { useState } from "react";
 const Assistance = () => {
   const countryServices = [
     {
-      country: 'Allemagne',
+      country: "Allemagne",
       services: [
-        'Cours de langue', 
-        'Proposition des universites', 
-        'Admission',
-        'Visa',
-        'Logement',
-        'Achat Billet'
-      ]
+        "Cours de langue",
+        "Proposition des universites",
+        "Admission",
+        "Visa",
+        "Logement",
+        "Achat Billet",
+      ],
     },
     {
-      country: 'Belgique',
+      country: "Belgique",
       services: [
-        'Equivalence des diplômes', 
-        'Admission', 
-        'Lettre de motivation',
-        'Remplissage des formulaires',
-        'Visa',
-        'Constitution des documents',
-        'Prise de rendez-vous à l\'ambassade',
-        'Interview à l\'ambassade',
-        'Logement',
-        'Achat Billet'
-      ]
+        "Equivalence des diplômes",
+        "Admission",
+        "Lettre de motivation",
+        "Remplissage des formulaires",
+        "Visa",
+        "Constitution des documents",
+        "Prise de rendez-vous à l'ambassade",
+        "Interview à l'ambassade",
+        "Logement",
+        "Achat Billet",
+      ],
     },
     {
-      country: 'Brésil',
+      country: "Brésil",
       services: [
-        'Cours de langue', 
-        'Proposition des universites', 
-        'Admission',
-        'Visa',
-        'Logement',
-        'Achat Billet'
-      ]
+        "Cours de langue",
+        "Proposition des universites",
+        "Admission",
+        "Visa",
+        "Logement",
+        "Achat Billet",
+      ],
     },
     {
-      country: 'Canada',
+      country: "Canada",
       services: [
-        'Proposition des universites', 
-        'Admission',
-        'CAQ',
-        'Permis d\'études et visa',
-        'Remplissage des formulaires',
-        'Lettre de motivation',
-        'Lettre explicative',
-        'Lettre d’engagement',
-        'Refus admission',
-        'Logement',
-        'Achat Billet'
-      ]
+        "Proposition des universites",
+        "Admission",
+        "CAQ",
+        "Permis d'études et visa",
+        "Remplissage des formulaires",
+        "Lettre de motivation",
+        "Lettre explicative",
+        "Lettre d’engagement",
+        "Refus admission",
+        "Logement",
+        "Achat Billet",
+      ],
     },
     {
-      country: 'Chypre du Nord',
+      country: "Chypre du Nord",
       services: [
-        'Traduction des documents', 
-        'Proposition des universités',
-        'Admission',
-        'Paiement Acompte',
-        'Logement',
-        'Achat Billet'
-      ]
+        "Traduction des documents",
+        "Proposition des universités",
+        "Admission",
+        "Paiement Acompte",
+        "Logement",
+        "Achat Billet",
+      ],
     },
     {
-      country: 'France',
+      country: "France",
       services: [
-        'Campus France', 
-        'Proposition des universités',
-        'Admission',
-        'Projet d\'études',
-        'CVEC',
-        'Visa'
-      ]
+        "Campus France",
+        "Proposition des universités",
+        "Admission",
+        "Projet d'études",
+        "CVEC",
+        "Visa",
+      ],
     },
     {
-      country: 'Roumanie',
+      country: "Roumanie",
       services: [
-        'Traduction des documents', 
-        'Propositions des universites',
-        'Admission',
-        'Paiement Acompte',
-        'Examens medicaux',
-        'Visa',
-        'Logement'
-      ]
+        "Traduction des documents",
+        "Propositions des universites",
+        "Admission",
+        "Paiement Acompte",
+        "Examens medicaux",
+        "Visa",
+        "Logement",
+      ],
     },
     {
-      country: 'Turquie',
+      country: "Turquie",
       services: [
-        'Traduction des documents', 
-        'Propositions des universites',
-        'Admission',
-        'Paiement Acompte',
-        'Examens medicaux',
-        'Visa',
-        'Logement'
-      ]
+        "Traduction des documents",
+        "Propositions des universites",
+        "Admission",
+        "Paiement Acompte",
+        "Examens medicaux",
+        "Visa",
+        "Logement",
+      ],
     },
     {
-      country: 'USA',
+      country: "USA",
       services: [
-        'Traduction des documents', 
-        'Propositions des universites',
-        'Admission',
-        'Remplissage des formulaires',
-        'Interview ambassade',
-        'Visa',
-        'Achat billet',
-        'Logement'
-      ]
-    }
-  ]
-  const [country, setCountry] = useState('');
+        "Traduction des documents",
+        "Propositions des universites",
+        "Admission",
+        "Remplissage des formulaires",
+        "Interview ambassade",
+        "Visa",
+        "Achat billet",
+        "Logement",
+      ],
+    },
+  ];
+  const [country, setCountry] = useState("");
   const [services, setServices] = useState([]);
 
   return (
@@ -170,7 +170,8 @@ const Assistance = () => {
           className="w-full mt-20 py-16 text-center text-white text-base px-12 font-['roboto-bold']"
           style={{ backgroundColor: "#862304" }}
         >
-          L'accompgnement RDC ETUDES consiste à vous orienter dans votre projet d'études du choix de l'université jusqu'à l'obtention de votre visa.
+          L'accompgnement RDC ETUDES consiste à vous orienter dans votre projet
+          d'études du choix de l'université jusqu'à l'obtention de votre visa.
           <div className=" bg-yellow-600 text-white mt-4 py-4 text-lg font-['roboto']">
             Prix de consultation :{" "}
             <span className="text-white font-bold"> 30 $ </span>
@@ -186,7 +187,7 @@ const Assistance = () => {
               {countryServices.map((countryService, index) => {
                 return (
                   <option
-                  onClick={(e) => {
+                    onClick={(e) => {
                       setCountry(e.target.value);
                       setServices(countryService.services);
                     }}
@@ -244,7 +245,9 @@ const Assistance = () => {
             </div>
           </div>
           <div className="col-span-5 text-[#4bb4d4] text-3xl font-['monserrat'] z-10 -mt-40 -ml-40">
-            L'accompgnement RDC ETUDES consiste à vous orienter dans votre projet d'études du choix de l'université jusqu'à l'obtention de votre visa.
+            L'accompgnement RDC ETUDES consiste à vous orienter dans votre
+            projet d'études du choix de l'université jusqu'à l'obtention de
+            votre visa.
           </div>
           <div className="col-span-2">
             <StaticImage

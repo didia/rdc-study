@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as styles from "./styles.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
 
-const BourseCard = ({ setDescription=true, textSize }) => {
+const BourseCard = ({ setDescription = true, textSize }) => {
   const titleClass = setDescription
     ? "font-bold mb-2 text-[#4bb4d4] text-xl"
     : "font-bold mb-2 text-[#4bb4d4] text-lg";

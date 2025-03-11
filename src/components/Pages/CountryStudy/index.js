@@ -27,7 +27,10 @@ const CountryStudy = () => {
             </p>
           </div>
           <div className="col-span-3 mt-7">
-            <StaticImage alt="flag" src="../../../images/580b585b2edbce24c47b27ff.png" />
+            <StaticImage
+              alt="flag"
+              src="../../../images/580b585b2edbce24c47b27ff.png"
+            />
           </div>
         </div>
 

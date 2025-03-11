@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const NewsCard = ({ ItemData }) => {
   const image = getImage(ItemData.thumbnail);
   const substring = (val) => {
     return val.substring(0, 130) + "...";
-  }
+  };
   return (
     <>
       <div className="grid grid-cols-12 gap-8 justify-evenly py-3 md:mx-40">
@@ -40,5 +40,5 @@ const NewsCard = ({ ItemData }) => {
     </>
   );
 };
- 
+
 export default NewsCard;

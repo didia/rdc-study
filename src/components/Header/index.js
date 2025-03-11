@@ -4,12 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
-  faLinkedin,
   faWhatsapp,
-  faXTwitter
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import {InlineShareButtons} from 'sharethis-reactjs';
-import config from "../../../config";
 import NavLink from "./Link";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -18,12 +15,10 @@ const Header = () => {
   const navBarRef = useRef();
   const [toggleNav, setToggleNav] = useState(false);
   useEffect(() => {
-    
-    if(toggleNav) {
+    if (toggleNav) {
       navBarRef.current.classList.remove("hidden");
       navBarRef.current.classList.add("visible");
-    }
-    else{
+    } else {
       navBarRef.current.classList.remove("visible");
       navBarRef.current.classList.add("hidden");
     }
@@ -67,28 +62,19 @@ const Header = () => {
                 href="https://www.facebook.com/rdcetudes"
                 className="py-2 px-2 font-medium text-[#4bb4d4] rounded hover:bg-[#4bb4d4] hover:text-white transition duration-300"
               >
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  className={ styles.icon }
-                />
+                <FontAwesomeIcon icon={faFacebook} className={styles.icon} />
               </a>
               <a
                 href="https://twitter.com/rdcetudes"
                 className="py-2 px-2 font-medium text-[#4bb4d4] rounded hover:bg-[#4bb4d4] hover:text-white transition duration-300"
               >
-                <FontAwesomeIcon
-                  icon={faXTwitter}
-                  className={ styles.icon }
-                />
+                <FontAwesomeIcon icon={faXTwitter} className={styles.icon} />
               </a>
               <a
                 href="https://api.whatsapp.com/send?phone=+1(581)318-0180&text=Laissez-nous%20un%20message"
                 className="py-2 px-2 font-medium text-[#4bb4d4] rounded hover:bg-[#4bb4d4] hover:text-white transition duration-300"
               >
-                <FontAwesomeIcon
-                  icon={faWhatsapp}
-                  className={ styles.icon }
-                />
+                <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
               </a>
             </div>
 

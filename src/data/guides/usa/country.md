@@ -14,6 +14,7 @@ name: États-Unis
 thumbnail: images/usa.jpg
 date: 2018-03-30
 ---
+
 ## Que faut-il pour étudier aux États-Unis?
 
 Pour étudier aux États-Unis, il faut commencer par obtenir une admission dans une institution d’enseignement américaine reconnue par le gouvernement américain.\
@@ -49,8 +50,8 @@ Toutefois certaines universités offrent des bourses d’excellence aux étudian
 En supposant que vous choisissez [d’être accompagné dans vos démarches par un assistant de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1410 USD et 1750 USD** pour toutes vos démarches.
 Ces frais se présentent comme suit:
 
-* **100 USD à 350 USD** pour le processus d’admission.
-* **510 USD à 600 USD** pour le processus de Visa.
-* **799.99 USD** pour les frais d’assistance RDC-Etudes. (**400 USD** pour chaque service: Admission et Visa)
+- **100 USD à 350 USD** pour le processus d’admission.
+- **510 USD à 600 USD** pour le processus de Visa.
+- **799.99 USD** pour les frais d’assistance RDC-Etudes. (**400 USD** pour chaque service: Admission et Visa)
 
 **NB**: Ces prix sont juste là à titre d’estimé, ils peuvent changer par rapport à votre location, aux universités ou encore s’ils sont changés par le gouvernement américain. Veuillez toujours vous fier à leurs sites web pour les prix plus à jour.

@@ -9,9 +9,15 @@ import TeamCard from "../../TeamCard";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
 import { Dropdown } from "flowbite-react";
-import { FontAwesomeIcon, faGraduationCap, faAssistiveListeningSystems, faHandsHelping, faFileEdit, faPassport } from "@fortawesome/react-fontawesome";
+import {
+  FontAwesomeIcon,
+  faGraduationCap,
+  faAssistiveListeningSystems,
+  faHandsHelping,
+  faFileEdit,
+  faPassport,
+} from "@fortawesome/react-fontawesome";
 const AboutUs = ({ teammMembers }) => {
-
   return (
     <Layout pageTitle="Pourquoi RDC-&Eacute;tudes">
       <section className="md:hidden">

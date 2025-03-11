@@ -13,6 +13,7 @@ related:
 date: 2018-11-19
 topic: admission
 ---
+
 Le processus d’admission reste sensiblement le même pour la majorité d’universités belges. Si vous êtes étudiants résidant hors de l’union européenne, vous devez présenter votre demande d’admission entre le 15 février et le 30 avril de chaque année.
 \
 \
@@ -60,8 +61,8 @@ Une fois admis, vous devrez maintenant faire une demande visa long séjour pour 
 En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un assistant de RDC Etudes](/accompagnement), vous devrez prévoir entre **300 USD et 680 USD** pour toutes vos démarches d’admission.
 Ces frais se présentent comme suit:
 
-* **0 à 230 USD** pour la demande d’admission.
-* **0 à 150 USD** pour l’envoi et reception des documents.
-* **400 USD** pour les frais d’assistance RDC Etudes.
+- **0 à 230 USD** pour la demande d’admission.
+- **0 à 150 USD** pour l’envoi et reception des documents.
+- **400 USD** pour les frais d’assistance RDC Etudes.
 
-*NB*: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
+_NB_: Ces montants ne sont qu’une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.

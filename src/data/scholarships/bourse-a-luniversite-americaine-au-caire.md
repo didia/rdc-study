@@ -13,23 +13,24 @@ levels:
 targetCountries:
   - eg
 ---
+
 ## En quoi consiste la bourse ?
 
 [La bourse de  l'Université Américaine](https://www.aucegypt.edu/admissions/fellowships/listings/african-graduate) au Caire  couvre :
 
-* Frais de scolarité, pour un maximum de neuf crédits par semestre
-* Allocation mensuelle
-* Frais de service médical et d'assurance maladie
-* Une allocation mensuelle de logement pour les non-résidents du Caire ou un logement dans des résidences universitaires au campus AUC New Cairo
+- Frais de scolarité, pour un maximum de neuf crédits par semestre
+- Allocation mensuelle
+- Frais de service médical et d'assurance maladie
+- Une allocation mensuelle de logement pour les non-résidents du Caire ou un logement dans des résidences universitaires au campus AUC New Cairo
 
 ## Quels sont les critères de la bourse ?
 
 Pour postuler à la bourse, vous devez remplir les critères suivants : 
 
-* Être ressortissants africains non égyptiens
-* Pour les nouveaux étudiants à la recherche d'un diplôme d'études supérieures; admission complète à l'un des programmes d'études supérieures de l'AUC, satisfaisant  [les conditions d'admission complètes des diplômés de l'AUC](http://www.aucegypt.edu/admissions/graduate/admissions-requirements)
-* Soumettez un score d'examen international TOEFL iBT ou un score d'examen universitaire IELTS selon les  [scores seuils pour les admissions aux diplômés de l'AUC](https://documents.aucegypt.edu/docs/admissions/GR_SSC%20TOEFL-IELTS.pdf)
-* Avoir un besoin financier
+- Être ressortissants africains non égyptiens
+- Pour les nouveaux étudiants à la recherche d'un diplôme d'études supérieures; admission complète à l'un des programmes d'études supérieures de l'AUC, satisfaisant  [les conditions d'admission complètes des diplômés de l'AUC](http://www.aucegypt.edu/admissions/graduate/admissions-requirements)
+- Soumettez un score d'examen international TOEFL iBT ou un score d'examen universitaire IELTS selon les  [scores seuils pour les admissions aux diplômés de l'AUC](https://documents.aucegypt.edu/docs/admissions/GR_SSC%20TOEFL-IELTS.pdf)
+- Avoir un besoin financier
 
 ## Comment postuler ?
 

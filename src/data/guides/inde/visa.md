@@ -3,10 +3,10 @@ draft: false
 slug: inde/visa
 date: 2020-11-13
 title: Obtenir un visa d’études pour l’Inde.
-excerpt: Avec votre admission dans un établissement d‘enseignement indien en main, vous devez maintenant faire une demande de visa au consulat de l’Inde dans votre pays. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le visa d‘études pour l’Inde.  
+excerpt: Avec votre admission dans un établissement d‘enseignement indien en main, vous devez maintenant faire une demande de visa au consulat de l’Inde dans votre pays. Ce guide vous donne les informations nécessaires et vous explique les différentes étapes à suivre pour obtenir le visa d‘études pour l’Inde.
 thumbnail: images/visa.jpg
 topic: visa
-related: ['inde/admission']
+related: ["inde/admission"]
 ---
 
 Pour faire une demande de visa d'études en Inde, vous devez montrer à l’agent de visa que vous avez obtenu votre admission d’un établissement d’enseignement en Inde et lui prouver que vous ou votre garant aurez les moyens nécessaires pour financer vos études en Inde.
@@ -46,7 +46,7 @@ Ces frais se présentent comme suit:
 - **80 USD** pour les frais de visa.
 - **400 USD** pour les frais d’assistance RDC Études.
 
-_NB_: 
+_NB_:
+
 - Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer par rapport à votre location ou encore s’ils sont changés par le gouvernement indien. Veuillez toujours vous fier à leur site web pour les montants actualisés.
 - Les citoyens originaires du Gabon, de la République Centrafricaine, la République du Congo et de la République Démocratique du Congo doivent être munis d’une carte de vaccination contre la fièvre jaune pour visiter l’Inde. Vous devez donc prévoir des coûts additionnels associés à ces frais qui varient selon le pays concerné.
-
