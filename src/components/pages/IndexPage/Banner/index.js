@@ -15,7 +15,7 @@ const Banner = () => {
         <div className={styles.logo}>
           <div className={styles.logo__icon}>
             <img
-              src="/images/logo.png"
+              src="/logo.png"
               width={60}
               height={60}
               alt="RDC Etudes Logo"
