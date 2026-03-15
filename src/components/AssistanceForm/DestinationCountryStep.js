@@ -1,7 +1,7 @@
 'use client';
 
 // Vendor
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import {useIntl} from 'react-intl';
 import {useForm, FormProvider} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
@@ -72,6 +72,7 @@ const DestinationCountryStep = ({onNextStep, onPreviousStep, recapMode}) => {
   const setHasAdmission = useAssistanceFormStore((s) => s.setHasAdmission);
 
   const [showHasAdmission, setShowHasAdmission] = useState(!!destinationCountry);
+  const hasAdmissionNodeRef = useRef(null);
 
   const methods = useForm({
     resolver: zodResolver(destinationCountrySchema(intl)),
@@ -121,12 +122,20 @@ const DestinationCountryStep = ({onNextStep, onPreviousStep, recapMode}) => {
               )}
             </div>
 
-            <CSSTransition in={showHasAdmission} timeout={200} classNames="fade" unmountOnExit>
-              <YesNoField
-                label={intl.formatMessage({id: 'assistance-form.steps.destination-country.labels.has-admission'})}
-                name="hasAdmission"
-                options={HAS_ADMISSION_OPTIONS}
-              />
+            <CSSTransition
+              in={showHasAdmission}
+              timeout={200}
+              classNames="fade"
+              unmountOnExit
+              nodeRef={hasAdmissionNodeRef}
+            >
+              <div ref={hasAdmissionNodeRef}>
+                <YesNoField
+                  label={intl.formatMessage({id: 'assistance-form.steps.destination-country.labels.has-admission'})}
+                  name="hasAdmission"
+                  options={HAS_ADMISSION_OPTIONS}
+                />
+              </div>
             </CSSTransition>
           </div>
 
