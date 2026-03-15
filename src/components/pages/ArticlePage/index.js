@@ -1,15 +1,13 @@
 // Vendor
 import React from 'react';
-import T from 'prop-types';
 import classnames from 'classnames';
-import Img from 'gatsby-image';
+import Image from 'next/image';
 
 // Styles
 import styles from './styles.module.scss';
 
 // Components
 import PageLayout from '../../PageLayout';
-import SEO from '../../SEO';
 import ArticleList from '../../ArticleList';
 import PostMeta from '../../PostMeta';
 import SocialShareButtons from '../../SocialShareButtons';
@@ -26,12 +24,12 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
 
   return (
     <PageLayout>
-      <SEO key="seo" meta={page} />
+
       <section key="content" className={classnames(styles.wrapper, styles['wrapper--content'])}>
         <div className={styles.inner}>
           <div className={styles.cover}>
             <div className={styles['cover__image-wrapper']}>
-              <Img fluid={article.thumbnail.fluid} alt={article.title} />
+              <Image src={article.thumbnail} alt={article.title} width={800} height={450} className={styles.coverImage} style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
             </div>
 
             {article.thumbnailCredits && (
@@ -63,23 +61,6 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
       </section>
     </PageLayout>
   );
-};
-
-ArticlePage.propTypes = {
-  article: T.shape({
-    content: T.string.isRequired,
-    metaImage: T.object.isRequired,
-    date: T.string.isRequired,
-    excerpt: T.string.isRequired,
-    path: T.string.isRequired,
-    tags: T.arrayOf(T.string),
-    thumbnail: T.object.isRequired,
-    thumbnailCredits: T.string,
-    timeToRead: T.number.isRequired,
-    title: T.string.isRequired,
-  }).isRequired,
-  hasMoreArticles: T.bool,
-  otherArticles: T.arrayOf(T.object),
 };
 
 export default ArticlePage;

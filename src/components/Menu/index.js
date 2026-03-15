@@ -1,61 +1,45 @@
-// Vendor
-import React from 'react';
-import {Link} from 'gatsby';
-import T from 'prop-types';
+'use client';
+
+import React, {useCallback, useRef, useEffect} from 'react';
+import Link from 'next/link';
 import {FormattedMessage} from 'react-intl';
 import classnames from 'classnames';
-import enhanceWithClickOutside from 'react-click-outside';
 
-// Styles
 import styles from './styles.module.scss';
 
 const MENU_ITEMS = [
-  {
-    labelKey: 'menu.home-link-label',
-    to: '/'
-  },
-  {
-    labelKey: 'menu.scholarships-link-label',
-    to: '/bourses'
-  },
-  {
-    labelKey: 'menu.assistance-link-label',
-    to: '/accompagnement'
-  },
-  {
-    labelKey: 'menu.about-us-link-label',
-    to: '/a-propos'
-  },
-  {
-    labelKey: 'menu.partner-link-label',
-    to: '/nos-partenaires'
-  },
-  {
-    labelKey: 'menu.faq-label',
-    to: '/questions-populaires'
-  },
-  {
-    labelKey: 'menu.legal-notes-label',
-    to: '/assistance-visa'
-  },
-  {
-    labelKey: 'menu.privacy-policy-link-label',
-    to: '/politique-de-confidentialite'
-  }
+  {labelKey: 'menu.home-link-label', to: '/'},
+  {labelKey: 'menu.scholarships-link-label', to: '/bourses'},
+  {labelKey: 'menu.assistance-link-label', to: '/accompagnement'},
+  {labelKey: 'menu.about-us-link-label', to: '/a-propos'},
+  {labelKey: 'menu.partner-link-label', to: '/nos-partenaires'},
+  {labelKey: 'menu.faq-label', to: '/questions-populaires'},
+  {labelKey: 'menu.legal-notes-label', to: '/assistance-visa'},
+  {labelKey: 'menu.privacy-policy-link-label', to: '/politique-de-confidentialite'},
 ];
 
-class InnerMenu extends React.Component {
-  handleClickOutside() {
-    if (this.props.isVisible) {
-      this.props.onToggleMenu();
-    }
-  }
+const Menu = ({isVisible, onToggleMenu}) => {
+  const innerRef = useRef(null);
 
-  render() {
-    const {onToggleMenu} = this.props;
+  const handleClickOutside = useCallback(
+    (event) => {
+      if (isVisible && innerRef.current && !innerRef.current.contains(event.target)) {
+        onToggleMenu();
+      }
+    },
+    [isVisible, onToggleMenu]
+  );
 
-    return (
-      <div className={styles.inner}>
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [handleClickOutside]);
+
+  const visibilityClass = isVisible ? styles['menu--visible'] : null;
+
+  return (
+    <nav className={classnames(styles.menu, visibilityClass)}>
+      <div className={styles.inner} ref={innerRef}>
         <FormattedMessage id="menu.title">{(text) => <h2 className={styles.title}>{text}</h2>}</FormattedMessage>
 
         <ul className={styles.links}>
@@ -63,7 +47,7 @@ class InnerMenu extends React.Component {
             <li key={`menu-item-${index}`} className={styles.links__item}>
               <FormattedMessage id={item.labelKey}>
                 {(text) => (
-                  <Link onClick={onToggleMenu} className={styles['links-item__link']} to={item.to}>
+                  <Link onClick={onToggleMenu} className={styles['links-item__link']} href={item.to}>
                     {text}
                   </Link>
                 )}
@@ -80,30 +64,8 @@ class InnerMenu extends React.Component {
           )}
         </FormattedMessage>
       </div>
-    );
-  }
-}
-
-const InnerMenuWithClickOutside = enhanceWithClickOutside(InnerMenu);
-
-InnerMenu.propTypes = {
-  isVisible: T.bool,
-  onToggleMenu: T.func.isRequired
-};
-
-const Menu = ({isVisible, onToggleMenu}) => {
-  const visibilityClass = isVisible ? styles['menu--visible'] : null;
-
-  return (
-    <nav className={classnames(styles.menu, visibilityClass)}>
-      <InnerMenuWithClickOutside isVisible={isVisible} onToggleMenu={onToggleMenu} />
     </nav>
   );
-};
-
-Menu.propTypes = {
-  isVisible: T.bool,
-  onToggleMenu: T.func.isRequired
 };
 
 export default Menu;

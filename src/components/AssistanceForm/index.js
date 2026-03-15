@@ -1,6 +1,7 @@
+'use client';
+
 // Vendor
-import React, {useRef} from 'react';
-import {useRecoilState, useRecoilValue, useSetRecoilState} from 'recoil';
+import React, {useRef, useEffect} from 'react';
 import T from 'prop-types';
 
 // Components
@@ -9,20 +10,28 @@ import Card from '../Card';
 // Styles
 import styles from './styles.module.scss';
 
-// State
-import {currentStepState, previousStepState, previousStepsState, initializeState} from './states';
+// Store
+import {useAssistanceFormStore} from './store';
 import Steps, {getStepComponent, goToNextStep, goToPreviousStep, goToStep} from './steps';
-
-export {initializeState};
 
 // Utils
 import isScrolledIntoView from '../../utils/is-scrolled-into-view';
 
-const MasterForm = () => {
+const MasterForm = ({assistancePackages, services, fromGuide, service}) => {
   const currentStepRef = useRef(null);
-  const setPreviousSteps = useSetRecoilState(previousStepsState);
-  const [currentStep, setCurrentStep] = useRecoilState(currentStepState);
-  const previousStep = useRecoilValue(previousStepState);
+
+  const currentStep = useAssistanceFormStore((s) => s.currentStep);
+  const previousSteps = useAssistanceFormStore((s) => s.previousSteps);
+  const setCurrentStep = useAssistanceFormStore((s) => s.setCurrentStep);
+  const setPreviousSteps = useAssistanceFormStore((s) => s.setPreviousSteps);
+  const initialize = useAssistanceFormStore((s) => s.initialize);
+  const getPreviousStep = useAssistanceFormStore((s) => s.getPreviousStep);
+
+  const previousStep = getPreviousStep();
+
+  useEffect(() => {
+    initialize({fromGuide, assistancePackages, services});
+  }, [fromGuide, assistancePackages, services, initialize]);
 
   const scrollIntoViewIfNecessary = () => {
     if (!isScrolledIntoView(currentStepRef.current)) {
@@ -60,6 +69,13 @@ const MasterForm = () => {
       </Card>
     </div>
   );
+};
+
+MasterForm.propTypes = {
+  assistancePackages: T.object,
+  services: T.array,
+  fromGuide: T.string,
+  service: T.string
 };
 
 export default MasterForm;

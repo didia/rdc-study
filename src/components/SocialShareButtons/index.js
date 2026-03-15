@@ -1,67 +1,55 @@
-// Vendor
-import React, {useEffect, useState} from 'react';
-import T from 'prop-types';
-import {StickyShareButtons} from 'sharethis-reactjs';
-import {injectIntl} from 'react-intl';
+'use client';
 
-// Utils
-import getCanonicalLink from '../../utils/get-canonical-link';
+// Vendor
+import React from 'react';
+import T from 'prop-types';
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+  EmailShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  WhatsappIcon,
+  EmailIcon,
+} from 'react-share';
 
 // Config
 import config from '../../../config';
 
-const {shareThisProperty} = config;
+// Styles
+import styles from './styles.module.scss';
 
-const SOCIAL_SHARE_BUTTONS_DELAY = 2000;
+const ICON_SIZE = 40;
 
-const SocialShareButtons = injectIntl(({intl, title, excerpt, path}) => {
-  const [showShareButtons, setShowShareButtons] = useState(false);
-
-  useEffect(() => {
-    // eslint-disable-next-line max-nested-callbacks
-    const timeout = setTimeout(() => setShowShareButtons(true), SOCIAL_SHARE_BUTTONS_DELAY);
-    return () => clearTimeout(timeout);
-  }, []);
-
-  const canonicalLink = getCanonicalLink(path);
-  const link = `${canonicalLink}?utm_source=rdcetudes.com&utm_medium=email&campaign=user_share`;
-  const emailMessage = intl.formatMessage({id: 'shared.social-share.email.message'}, {excerpt, link});
+const SocialShareButtons = ({path, title, excerpt}) => {
+  const url = `${config.siteURL}${path}`;
 
   return (
-    /* eslint-disable camelcase */
-    showShareButtons && (
-      <StickyShareButtons
-        config={{
-          property: shareThisProperty,
-          alignment: 'left',
-          color: 'social',
-          enabled: true,
-          labels: 'cta',
-          language: 'fr',
-          networks: ['whatsapp', 'facebook', 'twitter', 'email'],
-          min_count: 10,
-          show_mobile: true,
-          show_toggle: false,
-          show_total: true,
-          top: 200,
-          message: emailMessage,
-          subject: title,
-          username: '@rdcetudes',
-          url: canonicalLink
-        }}
-      />
-    )
-    /* eslint-enable camelcase */
+    <div className={styles.wrapper}>
+      <WhatsappShareButton url={url} title={title}>
+        <WhatsappIcon size={ICON_SIZE} round />
+      </WhatsappShareButton>
+
+      <FacebookShareButton url={url} quote={excerpt}>
+        <FacebookIcon size={ICON_SIZE} round />
+      </FacebookShareButton>
+
+      <TwitterShareButton url={url} title={title} via="rdcetudes">
+        <TwitterIcon size={ICON_SIZE} round />
+      </TwitterShareButton>
+
+      <EmailShareButton url={url} subject={title} body={excerpt}>
+        <EmailIcon size={ICON_SIZE} round />
+      </EmailShareButton>
+    </div>
   );
-});
+};
 
 SocialShareButtons.propTypes = {
   excerpt: T.string.isRequired,
   path: T.string.isRequired,
   title: T.string.isRequired,
-  intl: T.shape({
-    formatMessage: T.func
-  })
 };
 
 export default SocialShareButtons;

@@ -1,5 +1,6 @@
 // Vendor
 import axios from 'axios';
+import * as Sentry from '@sentry/nextjs';
 
 // Config
 import config from '../../config';
@@ -16,10 +17,6 @@ export default async function subscribeToNewsletter({email, firstName, lastName}
   try {
     await axios.post(newsletterEndpoint, payload);
   } catch (error) {
-    if (!window.Sentry) {
-      return;
-    }
-
-    window.Sentry.captureException(error);
+    Sentry.captureException(error);
   }
 }

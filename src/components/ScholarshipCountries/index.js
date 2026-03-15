@@ -1,3 +1,5 @@
+'use client';
+
 // Vendor
 import React from 'react';
 import T from 'prop-types';
@@ -10,7 +12,8 @@ import styles from './styles.module.scss';
 const ScholarshipCountries = injectIntl(({className, countries, tag, intl}) => {
   const Tag = tag || 'div';
 
-  const levelsText = countries.map((level) => intl.formatMessage({id: `shared.countries.${level}`})).join(', ');
+  const safeCountries = Array.isArray(countries) ? countries : [];
+  const levelsText = safeCountries.map((level) => intl.formatMessage({id: `shared.countries.${level}`})).join(', ');
 
   return (
     <Tag className={className}>

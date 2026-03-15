@@ -1,7 +1,8 @@
+'use client';
+
 // Vendor
 import React from 'react';
-import T from 'prop-types';
-import {Formik, Form, Field} from 'formik';
+import {useForm, FormProvider, useFormContext} from 'react-hook-form';
 import classnames from 'classnames';
 
 // Styles
@@ -23,79 +24,60 @@ const OPTIONS = [
   }
 ];
 
-const yesNoFieldOnChange = (field, onChange) => (event) => {
-  if (onChange) {
-    onChange(event.target.value);
-  }
+export const YesNoField = ({label, name, options, onChange}) => {
+  const {register, setValue, watch} = useFormContext();
+  const value = watch(name);
 
-  field.onChange(event);
+  const handleChange = (event) => {
+    setValue(name, event.target.value, {shouldValidate: true});
+    if (onChange) {
+      onChange(event.target.value);
+    }
+  };
+
+  return (
+    <div className={classnames('field', styles.field)}>
+      {label && (
+        <label htmlFor={name} className={styles.label}>
+          {label}
+        </label>
+      )}
+
+      <Selector
+        name={name}
+        value={value}
+        options={options || OPTIONS}
+        className={styles.input}
+        onChange={handleChange}
+      />
+    </div>
+  );
 };
 
-export const YesNoField = ({label, name, options, onChange}) => (
-  <div className={classnames('field', styles.field)}>
-    {label && (
-      <label htmlFor={name} className={styles.label}>
-        {label}
-      </label>
-    )}
+const YesNoStepForm = ({title, value, options, onSubmit, onPreviousStep}) => {
+  const methods = useForm({
+    defaultValues: {field: value ? 'true' : 'false'}
+  });
 
-    <Field name={name}>
-      {({field}) => (
-        <Selector
-          {...field}
-          options={options || OPTIONS}
-          className={styles.input}
-          onChange={yesNoFieldOnChange(field, onChange)}
-        />
-      )}
-    </Field>
-  </div>
-);
+  const {handleSubmit, formState: {isSubmitting}} = methods;
 
-const YesNoStepForm = ({title, value, options, onSubmit, onPreviousStep}) => (
-  <StepForm title={title}>
-    <Formik
-      initialValues={{field: value ? 'true' : 'false'}}
-      onSubmit={(values) => {
-        onSubmit(values.field === 'true');
-      }}
-    >
-      {({isSubmitting}) => (
-        <Form>
+  const onFormSubmit = (values) => {
+    onSubmit(values.field === 'true');
+  };
+
+  return (
+    <StepForm title={title}>
+      <FormProvider {...methods}>
+        <form onSubmit={handleSubmit(onFormSubmit)}>
           <div className={styles.fields}>
             <YesNoField name="field" options={options} />
           </div>
 
           <StepActions disabled={isSubmitting} onPrevious={onPreviousStep} />
-        </Form>
-      )}
-    </Formik>
-  </StepForm>
-);
+        </form>
+      </FormProvider>
+    </StepForm>
+  );
+};
 
 export default YesNoStepForm;
-
-YesNoField.propTypes = {
-  label: T.string,
-  name: T.string.isRequired,
-  options: T.arrayOf(
-    T.shape({
-      labelKey: T.string.isRequired,
-      value: T.string.isRequired
-    })
-  ),
-  onChange: T.func
-};
-
-YesNoStepForm.propTypes = {
-  title: T.string.isRequired,
-  value: T.bool,
-  options: T.arrayOf(
-    T.shape({
-      labelKey: T.string.isRequired,
-      value: T.string.isRequired
-    })
-  ),
-  onPreviousStep: T.func.isRequired,
-  onSubmit: T.func.isRequired
-};

@@ -1,25 +1,23 @@
+'use client';
+
 // Vendor
 import React from 'react';
 import {useIntl} from 'react-intl';
 import classnames from 'classnames';
-import {Formik, Form, Field, ErrorMessage} from 'formik';
-import {string, object} from 'yup';
-import T from 'prop-types';
-import {useRecoilState} from 'recoil';
+import {useForm} from 'react-hook-form';
+import {zodResolver} from '@hookform/resolvers/zod';
+import {z} from 'zod';
 
 // Styles
 import styles from './styles.module.scss';
-
-// Utils
-import {formikFieldErrorClass} from './utils';
 
 // Components
 import Selector from '../Selector';
 import StepActions from './StepActions';
 import StepForm from './StepForm';
 
-// States
-import {aboutCandidateState} from './states';
+// Store
+import {useAssistanceFormStore} from './store';
 
 // Const
 import {Steps} from './steps';
@@ -77,147 +75,133 @@ const SUPPORTED_ORIGIN_COUNTRIES = [
 ];
 
 const aboutCandidateSchema = (intl) =>
-  object().shape({
-    firstName: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
-    lastName: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
-    phone: string().required(intl.formatMessage({id: 'shared.forms.validation.required'})),
-    email: string()
-      .email(intl.formatMessage({id: 'shared.forms.validation.email'}))
-      .required(intl.formatMessage({id: 'shared.forms.validation.required'})),
-    originCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'}))
+  z.object({
+    firstName: z.string().min(1, intl.formatMessage({id: 'shared.forms.validation.required'})),
+    lastName: z.string().min(1, intl.formatMessage({id: 'shared.forms.validation.required'})),
+    phone: z.string().min(1, intl.formatMessage({id: 'shared.forms.validation.required'})),
+    email: z
+      .string()
+      .min(1, intl.formatMessage({id: 'shared.forms.validation.required'}))
+      .email(intl.formatMessage({id: 'shared.forms.validation.email'})),
+    originCountry: z.string().min(1, intl.formatMessage({id: 'shared.forms.validation.required'}))
   });
 
 const AboutCandidateStep = ({onNextStep, onPreviousStep}) => {
   const intl = useIntl();
-  const [aboutCandidateData, setAboutCandidateData] = useRecoilState(aboutCandidateState);
+  const aboutCandidateData = useAssistanceFormStore((s) => s.aboutCandidate);
+  const setAboutCandidateData = useAssistanceFormStore((s) => s.setAboutCandidate);
+
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    watch,
+    formState: {errors, isSubmitting}
+  } = useForm({
+    resolver: zodResolver(aboutCandidateSchema(intl)),
+    defaultValues: aboutCandidateData
+  });
+
+  const originCountryValue = watch('originCountry');
+
+  const onSubmit = (values) => {
+    setAboutCandidateData(values);
+    onNextStep(Steps.SubmitForm);
+  };
 
   return (
     <StepForm
       title={intl.formatMessage({id: 'assistance-form.steps.about-candidate.title'})}
       description={intl.formatMessage({id: 'assistance-form.steps.about-candidate.description'})}
     >
-      <Formik
-        initialValues={aboutCandidateData}
-        validationSchema={aboutCandidateSchema(intl)}
-        onSubmit={(values) => {
-          setAboutCandidateData(values);
-          onNextStep(Steps.SubmitForm);
-        }}
-      >
-        {({isSubmitting}) => (
-          <Form>
-            <div className={classnames(styles.fields, styles['fields--2-by-2'])}>
-              <div className={classnames('field', styles.field)}>
-                <label htmlFor="firstName" className={styles.label}>
-                  {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.first-name'})}
-                </label>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className={classnames(styles.fields, styles['fields--2-by-2'])}>
+          <div className={classnames('field', styles.field)}>
+            <label htmlFor="firstName" className={styles.label}>
+              {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.first-name'})}
+            </label>
 
-                <Field name="firstName">
-                  {({field, meta}) => (
-                    <input
-                      type="text"
-                      className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      placeholder={intl.formatMessage({
-                        id: 'assistance-form.steps.about-candidate.placeholders.first-name'
-                      })}
-                      {...field}
-                    />
-                  )}
-                </Field>
+            <input
+              type="text"
+              className={classnames(styles.input, errors.firstName ? styles.error : null)}
+              placeholder={intl.formatMessage({
+                id: 'assistance-form.steps.about-candidate.placeholders.first-name'
+              })}
+              {...register('firstName')}
+            />
 
-                <ErrorMessage name="firstName" className={styles['error-message']} component="div" />
-              </div>
+            {errors.firstName && <div className={styles['error-message']}>{errors.firstName.message}</div>}
+          </div>
 
-              <div className={classnames('field', styles.field)}>
-                <label htmlFor="lastName" className={styles.label}>
-                  {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.last-name'})}
-                </label>
+          <div className={classnames('field', styles.field)}>
+            <label htmlFor="lastName" className={styles.label}>
+              {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.last-name'})}
+            </label>
 
-                <Field name="lastName">
-                  {({field, meta}) => (
-                    <input
-                      type="text"
-                      className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      placeholder={intl.formatMessage({
-                        id: 'assistance-form.steps.about-candidate.placeholders.last-name'
-                      })}
-                      {...field}
-                    />
-                  )}
-                </Field>
+            <input
+              type="text"
+              className={classnames(styles.input, errors.lastName ? styles.error : null)}
+              placeholder={intl.formatMessage({
+                id: 'assistance-form.steps.about-candidate.placeholders.last-name'
+              })}
+              {...register('lastName')}
+            />
 
-                <ErrorMessage name="lastName" className={styles['error-message']} component="div" />
-              </div>
+            {errors.lastName && <div className={styles['error-message']}>{errors.lastName.message}</div>}
+          </div>
 
-              <div className={classnames('field', styles.field)}>
-                <label htmlFor="email" className={styles.label}>
-                  {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.email'})}
-                </label>
+          <div className={classnames('field', styles.field)}>
+            <label htmlFor="email" className={styles.label}>
+              {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.email'})}
+            </label>
 
-                <Field name="email">
-                  {({field, meta}) => (
-                    <input
-                      type="email"
-                      className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      placeholder={intl.formatMessage({id: 'assistance-form.steps.about-candidate.placeholders.email'})}
-                      {...field}
-                    />
-                  )}
-                </Field>
+            <input
+              type="email"
+              className={classnames(styles.input, errors.email ? styles.error : null)}
+              placeholder={intl.formatMessage({id: 'assistance-form.steps.about-candidate.placeholders.email'})}
+              {...register('email')}
+            />
 
-                <ErrorMessage name="email" className={styles['error-message']} component="div" />
-              </div>
+            {errors.email && <div className={styles['error-message']}>{errors.email.message}</div>}
+          </div>
 
-              <div className={classnames('field', styles.field)}>
-                <label htmlFor="phone" className={styles.label}>
-                  {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.phone'})}
-                </label>
+          <div className={classnames('field', styles.field)}>
+            <label htmlFor="phone" className={styles.label}>
+              {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.phone'})}
+            </label>
 
-                <Field name="phone">
-                  {({field, meta}) => (
-                    <input
-                      type="tel"
-                      className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      placeholder={intl.formatMessage({id: 'assistance-form.steps.about-candidate.placeholders.phone'})}
-                      {...field}
-                    />
-                  )}
-                </Field>
+            <input
+              type="tel"
+              className={classnames(styles.input, errors.phone ? styles.error : null)}
+              placeholder={intl.formatMessage({id: 'assistance-form.steps.about-candidate.placeholders.phone'})}
+              {...register('phone')}
+            />
 
-                <ErrorMessage name="phone" className={styles['error-message']} component="div" />
-              </div>
+            {errors.phone && <div className={styles['error-message']}>{errors.phone.message}</div>}
+          </div>
 
-              <div className={classnames('field', styles.field)}>
-                <label htmlFor="originCountry" className={styles.label}>
-                  {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.origin-country'})}
-                </label>
+          <div className={classnames('field', styles.field)}>
+            <label htmlFor="originCountry" className={styles.label}>
+              {intl.formatMessage({id: 'assistance-form.steps.about-candidate.labels.origin-country'})}
+            </label>
 
-                <Field name="originCountry">
-                  {({field, meta}) => (
-                    <Selector
-                      options={SUPPORTED_ORIGIN_COUNTRIES}
-                      className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      placeholderKey="shared.country-selector.placeholder"
-                      {...field}
-                    />
-                  )}
-                </Field>
+            <Selector
+              options={SUPPORTED_ORIGIN_COUNTRIES}
+              className={classnames(styles.input, errors.originCountry ? styles.error : null)}
+              placeholderKey="shared.country-selector.placeholder"
+              name="originCountry"
+              value={originCountryValue}
+              onChange={(e) => setValue('originCountry', e.target.value, {shouldValidate: true})}
+            />
 
-                <ErrorMessage name="originCountry" className={styles['error-message']} component="div" />
-              </div>
-            </div>
+            {errors.originCountry && <div className={styles['error-message']}>{errors.originCountry.message}</div>}
+          </div>
+        </div>
 
-            <StepActions disabled={isSubmitting} onPrevious={onPreviousStep} />
-          </Form>
-        )}
-      </Formik>
+        <StepActions disabled={isSubmitting} onPrevious={onPreviousStep} />
+      </form>
     </StepForm>
   );
-};
-
-AboutCandidateStep.propTypes = {
-  onNextStep: T.func,
-  onPreviousStep: T.func
 };
 
 export default AboutCandidateStep;

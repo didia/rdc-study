@@ -1,15 +1,13 @@
 // Vendor
 import React from 'react';
-import T from 'prop-types';
 import classnames from 'classnames';
-import Img from 'gatsby-image';
+import Image from 'next/image';
 
 // Styles
 import styles from './styles.module.scss';
 
 // Component
 import PageLayout from '../../PageLayout';
-import SEO from '../../SEO';
 import SocialShareButtons from '../../SocialShareButtons';
 import ScholarshipLevels from '../../ScholarshipLevels';
 import ScholarshipDeadline from '../../ScholarshipDeadline';
@@ -29,12 +27,12 @@ const ScholarshipPage = ({scholarship, otherScholarships}) => {
 
   return (
     <PageLayout>
-      <SEO key="seo" meta={page} />
+
       <section key="content" className={classnames(styles.wrapper, styles['wrapper--content'])}>
         <div className={styles.inner}>
           <div className={styles.cover}>
             <div className={styles['cover__image-wrapper']}>
-              <Img fluid={scholarship.thumbnail.fluid} alt={scholarship.title} />
+              <Image src={scholarship.thumbnail} alt={scholarship.title} width={800} height={450} className={styles.coverImage} style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
             </div>
 
             {scholarship.thumbnailCredits && (
@@ -72,23 +70,6 @@ const ScholarshipPage = ({scholarship, otherScholarships}) => {
       </section>
     </PageLayout>
   );
-};
-
-ScholarshipPage.propTypes = {
-  scholarship: T.shape({
-    content: T.string.isRequired,
-    deadline: T.string,
-    excerpt: T.string.isRequired,
-    levels: T.array,
-    metaImage: T.object.isRequired,
-    path: T.string.isRequired,
-    tags: T.arrayOf(T.string),
-    targetCountries: T.arrayOf(T.string),
-    thumbnail: T.object.isRequired,
-    thumbnailCredits: T.string,
-    title: T.string.isRequired,
-  }).isRequired,
-  otherScholarships: T.arrayOf(T.object).isRequired,
 };
 
 export default ScholarshipPage;

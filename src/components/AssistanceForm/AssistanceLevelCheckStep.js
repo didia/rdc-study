@@ -1,14 +1,15 @@
+'use client';
+
 // Vendor
 import React from 'react';
 import {useIntl} from 'react-intl';
 import T from 'prop-types';
-import {useRecoilState} from 'recoil';
 
 // Components
 import YesNoStepForm from './YesNoStepForm';
 
-// States
-import {isAlreadyAdvancedState} from './states';
+// Store
+import {useAssistanceFormStore} from './store';
 
 // Constants
 import {Steps} from './steps';
@@ -26,7 +27,8 @@ const ASSISTANCE_LEVEL_OPTIONS = [
 
 const AssistanceLevelCheckStep = ({onNextStep, onPreviousStep}) => {
   const intl = useIntl();
-  const [isAlreadyAdvanced, setIsAlreadyAdvanced] = useRecoilState(isAlreadyAdvancedState);
+  const isAlreadyAdvanced = useAssistanceFormStore((s) => s.isAlreadyAdvanced);
+  const setIsAlreadyAdvanced = useAssistanceFormStore((s) => s.setIsAlreadyAdvanced);
 
   return (
     <YesNoStepForm

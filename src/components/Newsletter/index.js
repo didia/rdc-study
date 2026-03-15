@@ -1,3 +1,5 @@
+'use client';
+
 // Vendor
 import React, {useState} from 'react';
 import classnames from 'classnames';

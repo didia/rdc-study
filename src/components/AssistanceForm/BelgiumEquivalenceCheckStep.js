@@ -1,9 +1,9 @@
+'use client';
+
 // Vendor
 import React, {useState} from 'react';
 import {useIntl} from 'react-intl';
-import {Formik, Form} from 'formik';
-import T from 'prop-types';
-import {useRecoilState} from 'recoil';
+import {useForm, FormProvider} from 'react-hook-form';
 import {CSSTransition} from 'react-transition-group';
 
 // Components
@@ -11,8 +11,8 @@ import StepForm from './StepForm';
 import StepActions from './StepActions';
 import {YesNoField} from './YesNoStepForm';
 
-// States
-import {hasGraduateStudiesDiplomaState, hasHighSchoolDiplomaEquivalenceState} from './states';
+// Store
+import {useAssistanceFormStore} from './store';
 
 // Styles
 import styles from './styles.module.scss';
@@ -22,61 +22,57 @@ import {Steps} from './steps';
 
 const BelgiumEquivalenceCheckStep = ({onNextStep, onPreviousStep}) => {
   const intl = useIntl();
-  const [hasGraduateStudiesDiploma, setHasGraduateStudiesDiploma] = useRecoilState(hasGraduateStudiesDiplomaState);
-  const [hasHighSchoolDiplomaEquivalence, setHasHighSchoolDiplomaEquivalence] = useRecoilState(
-    hasHighSchoolDiplomaEquivalenceState
-  );
+  const hasGraduateStudiesDiploma = useAssistanceFormStore((s) => s.hasGraduateStudiesDiploma);
+  const setHasGraduateStudiesDiploma = useAssistanceFormStore((s) => s.setHasGraduateStudiesDiploma);
+  const hasHighSchoolDiplomaEquivalence = useAssistanceFormStore((s) => s.hasHighSchoolDiplomaEquivalence);
+  const setHasHighSchoolDiplomaEquivalence = useAssistanceFormStore((s) => s.setHasHighSchoolDiplomaEquivalence);
 
   const [showHasHighSchoolDiplomaEquivalence, setShowHasHighSchoolDiplomaEquivalence] = useState(
     !hasGraduateStudiesDiploma
   );
 
-  const initialValues = {
-    hasGraduateStudiesDiploma: hasGraduateStudiesDiploma ? 'true' : 'false',
-    hasHighSchoolDiplomaEquivalence: hasHighSchoolDiplomaEquivalence ? 'true' : 'false'
+  const methods = useForm({
+    defaultValues: {
+      hasGraduateStudiesDiploma: hasGraduateStudiesDiploma ? 'true' : 'false',
+      hasHighSchoolDiplomaEquivalence: hasHighSchoolDiplomaEquivalence ? 'true' : 'false'
+    }
+  });
+
+  const {handleSubmit, formState: {isSubmitting}} = methods;
+
+  const onSubmit = (values) => {
+    const hasGraduateStudiesDiploma = values.hasGraduateStudiesDiploma === 'true';
+    const hasHighSchoolDiplomaEquivalence = values.hasHighSchoolDiplomaEquivalence === 'true';
+
+    setHasGraduateStudiesDiploma(hasGraduateStudiesDiploma);
+    setHasHighSchoolDiplomaEquivalence(hasHighSchoolDiplomaEquivalence);
+
+    onNextStep(Steps.AboutCandidate);
   };
 
   return (
     <StepForm title={intl.formatMessage({id: 'assistance-form.steps.belgium-equivalence-check.title'})}>
-      <Formik
-        initialValues={initialValues}
-        onSubmit={(values) => {
-          const hasGraduateStudiesDiploma = values.hasGraduateStudiesDiploma === 'true';
-          const hasHighSchoolDiplomaEquivalence = values.hasHighSchoolDiplomaEquivalence === 'true';
+      <FormProvider {...methods}>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div className={styles.fields}>
+            <YesNoField
+              name="hasGraduateStudiesDiploma"
+              onChange={(value) => setShowHasHighSchoolDiplomaEquivalence(value === 'false')}
+            />
 
-          setHasGraduateStudiesDiploma(hasGraduateStudiesDiploma);
-          setHasHighSchoolDiplomaEquivalence(hasHighSchoolDiplomaEquivalence);
-
-          onNextStep(Steps.AboutCandidate);
-        }}
-      >
-        {({isSubmitting}) => (
-          <Form>
-            <div className={styles.fields}>
+            <CSSTransition in={showHasHighSchoolDiplomaEquivalence} timeout={200} classNames="fade" unmountOnExit>
               <YesNoField
-                name="hasGraduateStudiesDiploma"
-                onChange={(value) => setShowHasHighSchoolDiplomaEquivalence(value === 'false')}
+                label={intl.formatMessage({id: 'assistance-form.steps.belgium-equivalence-check.has-equivalence'})}
+                name="hasHighSchoolDiplomaEquivalence"
               />
+            </CSSTransition>
+          </div>
 
-              <CSSTransition in={showHasHighSchoolDiplomaEquivalence} timeout={200} classNames="fade" unmountOnExit>
-                <YesNoField
-                  label={intl.formatMessage({id: 'assistance-form.steps.belgium-equivalence-check.has-equivalence'})}
-                  name="hasHighSchoolDiplomaEquivalence"
-                />
-              </CSSTransition>
-            </div>
-
-            <StepActions disabled={isSubmitting} onPrevious={onPreviousStep} />
-          </Form>
-        )}
-      </Formik>
+          <StepActions disabled={isSubmitting} onPrevious={onPreviousStep} />
+        </form>
+      </FormProvider>
     </StepForm>
   );
 };
 
 export default BelgiumEquivalenceCheckStep;
-
-BelgiumEquivalenceCheckStep.propTypes = {
-  onNextStep: T.func,
-  onPreviousStep: T.func
-};

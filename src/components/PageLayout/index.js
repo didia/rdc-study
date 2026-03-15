@@ -1,89 +1,46 @@
-// Vendor
-import React from 'react';
-import T from 'prop-types';
-import {IntlProvider} from 'react-intl';
+'use client';
+
+import React, {useState, useEffect} from 'react';
 import classnames from 'classnames';
 
-// Locale
-import messages from '../../locales/fr.json';
-
-// Styles
-import '../../assets/styles/main.scss';
 import styles from './styles.module.scss';
 
-// Components
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
-import Menu from '../../components/Menu';
-import SEO from '../../components/SEO';
+import Footer from '../Footer';
+import Header from '../Header';
+import Menu from '../Menu';
 
-class TemplateWrapper extends React.Component {
-  constructor(props) {
-    super(props);
+const PageLayout = ({children, footerClassName, headerWithTitle, pageWrapperClassName}) => {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-    this.state = {
-      isMenuVisible: false,
-      isLoading: true
-    };
+  useEffect(() => {
+    const timeoutId = setTimeout(() => setIsLoading(false), 100);
+    return () => clearTimeout(timeoutId);
+  }, []);
 
-    this.handleToggleMenu = this.handleToggleMenu.bind(this);
-  }
+  const handleToggleMenu = () => setIsMenuVisible((prev) => !prev);
 
-  componentDidMount() {
-    this.timeoutId = setTimeout(() => {
-      this.setState({
-        ...this.state,
-        isLoading: false
-      });
-    }, 100);
-  }
+  const pageWrapperMenuVisibilityClassName = isMenuVisible ? styles['page-wrapper--menu-visible'] : null;
+  const globalIsLoadingClassName = isLoading ? 'is-loading' : null;
 
-  componentWillUnmount() {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
-    }
-  }
+  return (
+    <div>
+      <div
+        className={classnames(
+          styles['page-wrapper'],
+          pageWrapperMenuVisibilityClassName,
+          pageWrapperClassName,
+          globalIsLoadingClassName
+        )}
+      >
+        <Header withTitle={headerWithTitle} onToggleMenu={handleToggleMenu} />
+        {children}
+        <Footer className={footerClassName} />
+      </div>
 
-  handleToggleMenu() {
-    this.setState({
-      isMenuVisible: !this.state.isMenuVisible
-    });
-  }
-
-  render() {
-    const {children, footerClassName, headerWithTitle, pageWrapperClassName} = this.props;
-    const pageWrapperMenuVisibilityClassName = this.state.isMenuVisible ? styles['page-wrapper--menu-visible'] : null;
-    const globalIsLoadingClassName = this.state.isLoading ? 'is-loading' : null;
-
-    return (
-      <IntlProvider locale="fr" messages={messages}>
-        <div>
-          <div
-            className={classnames(
-              styles['page-wrapper'],
-              pageWrapperMenuVisibilityClassName,
-              pageWrapperClassName,
-              globalIsLoadingClassName
-            )}
-          >
-            <SEO />
-            <Header withTitle={headerWithTitle} onToggleMenu={this.handleToggleMenu} />
-            {children}
-            <Footer className={footerClassName} />
-          </div>
-
-          <Menu onToggleMenu={this.handleToggleMenu} isVisible={this.state.isMenuVisible} />
-        </div>
-      </IntlProvider>
-    );
-  }
-}
-
-TemplateWrapper.propTypes = {
-  children: T.oneOfType([T.arrayOf(T.element), T.element]).isRequired,
-  footerClassName: T.string,
-  headerWithTitle: T.bool,
-  pageWrapperClassName: T.string
+      <Menu onToggleMenu={handleToggleMenu} isVisible={isMenuVisible} />
+    </div>
+  );
 };
 
-export default TemplateWrapper;
+export default PageLayout;

@@ -1,8 +1,9 @@
+'use client';
+
 // Vendor
 import React from 'react';
-import T from 'prop-types';
 import classnames from 'classnames';
-import Img from 'gatsby-image';
+import Image from 'next/image';
 import {FormattedMessage} from 'react-intl';
 
 // Styles
@@ -14,7 +15,7 @@ import Card from '../../Card';
 const imageClassPerIndex = (index) => (index % 2 === 0 ? 'image left' : 'image right');
 
 const page = {
-  description: 'Nous voulons que tout le monde ait facilement accès à une éducation de qualité.',
+  description: 'Nous voulons que tout le monde ait facilement acces a une education de qualite.',
   title: 'Pourquoi RDC-Etudes?',
   path: '/a-propos',
 };
@@ -64,7 +65,7 @@ const AboutUsPage = ({team}) => {
           {team.map((member, index) => (
             <Card key={member.name} className={styles['team-member-list__item']}>
               <div className={classnames(styles['team-member-photo-outer'], imageClassPerIndex(index))}>
-                <Img fluid={member.image.childImageSharp.fluid} alt={member.name} />
+                <Image src={member.image} alt={member.name} width={350} height={350} style={{objectFit: 'cover'}} />
               </div>
 
               <div className={styles['team-member-info']}>
@@ -83,18 +84,6 @@ const AboutUsPage = ({team}) => {
       </section>
     </GenericPage>
   );
-};
-
-AboutUsPage.propTypes = {
-  team: T.arrayOf(
-    T.shape({
-      about: T.string.isRequired,
-      image: T.object.isRequired,
-      name: T.string.isRequired,
-      role: T.string.isRequired,
-      title: T.string.isRequired,
-    }).isRequired
-  ).isRequired,
 };
 
 export default AboutUsPage;

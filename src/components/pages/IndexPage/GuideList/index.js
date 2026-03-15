@@ -1,9 +1,10 @@
+'use client';
+
 // Vendor
 import React from 'react';
 import T from 'prop-types';
 import {FormattedMessage} from 'react-intl';
-import Img from 'gatsby-image';
-import {Link} from 'gatsby';
+import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
@@ -18,13 +19,13 @@ const GuideList = ({className, guides, id}) => (
       {guides.map((guide) => (
         <Link
           key={`${guide.path}?utm_source=rdcetudes&utm_content=home-page`}
-          to={guide.path}
+          href={guide.path}
           className={styles['grid-item']}
           aria-label={guide.name}
         >
           <article className={styles['grid-item-wrapper']}>
             <div className="image">
-              <Img className={styles.image} fluid={guide.thumbnail.fluid} alt={guide.title} />
+              <img className={styles.image} src={guide.thumbnail} alt={guide.title} />
             </div>
             <h3 className={styles['grid-item-title']}>{guide.name}</h3>
           </article>

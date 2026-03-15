@@ -1,18 +1,16 @@
+'use client';
+
 // Vendor
 import React, {useState} from 'react';
 import {useIntl} from 'react-intl';
-import {Formik, Form, Field, ErrorMessage} from 'formik';
-import {string, object} from 'yup';
+import {useForm, FormProvider} from 'react-hook-form';
+import {zodResolver} from '@hookform/resolvers/zod';
+import {z} from 'zod';
 import classnames from 'classnames';
-import {useRecoilState} from 'recoil';
-import T from 'prop-types';
 import {CSSTransition} from 'react-transition-group';
 
 // Styles
 import styles from './styles.module.scss';
-
-// Utils
-import {formikFieldErrorClass} from './utils';
 
 // Components
 import Selector from '../Selector';
@@ -20,8 +18,8 @@ import StepActions from './StepActions';
 import StepForm from './StepForm';
 import {YesNoField} from './YesNoStepForm';
 
-// States
-import {destinationCountryState, hasAdmissionState} from './states';
+// Store
+import {useAssistanceFormStore} from './store';
 
 // Constants
 import DestinationCountries from './destination-countries';
@@ -50,14 +48,10 @@ const HAS_ADMISSION_OPTIONS = [
 ];
 
 const destinationCountrySchema = (intl) =>
-  object().shape({
-    destinationCountry: string().required(intl.formatMessage({id: 'shared.forms.validation.required'}))
+  z.object({
+    destinationCountry: z.string().min(1, intl.formatMessage({id: 'shared.forms.validation.required'})),
+    hasAdmission: z.string()
   });
-
-const onChangeDestinationCountry = (field, setShowHasAdmission) => (event) => {
-  setShowHasAdmission(true);
-  field.onChange(event);
-};
 
 // eslint-disable-next-line complexity
 const getNextStep = ({destinationCountry, hasAdmission}) => {
@@ -72,68 +66,75 @@ const getNextStep = ({destinationCountry, hasAdmission}) => {
 
 const DestinationCountryStep = ({onNextStep, onPreviousStep, recapMode}) => {
   const intl = useIntl();
-  const [destinationCountry, setDestinationCountry] = useRecoilState(destinationCountryState);
-  const [hasAdmission, setHasAdmission] = useRecoilState(hasAdmissionState);
+  const destinationCountry = useAssistanceFormStore((s) => s.destinationCountry);
+  const setDestinationCountry = useAssistanceFormStore((s) => s.setDestinationCountry);
+  const hasAdmission = useAssistanceFormStore((s) => s.hasAdmission);
+  const setHasAdmission = useAssistanceFormStore((s) => s.setHasAdmission);
 
   const [showHasAdmission, setShowHasAdmission] = useState(!!destinationCountry);
 
+  const methods = useForm({
+    resolver: zodResolver(destinationCountrySchema(intl)),
+    defaultValues: {
+      destinationCountry,
+      hasAdmission: hasAdmission ? 'true' : 'false'
+    }
+  });
+
+  const {handleSubmit, setValue, watch, formState: {errors, isSubmitting}} = methods;
+  const destinationCountryValue = watch('destinationCountry');
+
+  const onSubmit = (values) => {
+    const hasAdmission = values.hasAdmission === 'true';
+
+    setDestinationCountry(values.destinationCountry);
+    setHasAdmission(hasAdmission);
+
+    const nextStep = getNextStep({hasAdmission, destinationCountry: values.destinationCountry});
+
+    onNextStep(nextStep);
+  };
+
+  const onChangeDestinationCountry = (event) => {
+    setShowHasAdmission(true);
+    setValue('destinationCountry', event.target.value, {shouldValidate: true});
+  };
+
   return (
     <StepForm recapMode={recapMode} title={intl.formatMessage({id: 'assistance-form.steps.destination-country.title'})}>
-      <Formik
-        initialValues={{destinationCountry, hasAdmission: hasAdmission ? 'true' : 'false'}}
-        validationSchema={destinationCountrySchema(intl)}
-        onSubmit={(values) => {
-          const hasAdmission = values.hasAdmission === 'true';
+      <FormProvider {...methods}>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div className={styles.fields}>
+            <div className={classnames('field', styles.field)}>
+              <Selector
+                name="destinationCountry"
+                value={destinationCountryValue}
+                options={SUPPORTED_DESTINATION_COUNTRIES}
+                className={classnames(styles.input, errors.destinationCountry ? styles.error : null)}
+                disabled={recapMode}
+                placeholderKey="shared.country-selector.placeholder"
+                onChange={onChangeDestinationCountry}
+              />
 
-          setDestinationCountry(values.destinationCountry);
-          setHasAdmission(hasAdmission);
-
-          const nextStep = getNextStep({hasAdmission, destinationCountry: values.destinationCountry});
-
-          onNextStep(nextStep);
-        }}
-      >
-        {({isSubmitting}) => (
-          <Form>
-            <div className={styles.fields}>
-              <div className={classnames('field', styles.field)}>
-                <Field name="destinationCountry">
-                  {({field, meta}) => (
-                    <Selector
-                      {...field}
-                      options={SUPPORTED_DESTINATION_COUNTRIES}
-                      className={classnames(styles.input, formikFieldErrorClass(meta))}
-                      disabled={recapMode}
-                      placeholderKey="shared.country-selector.placeholder"
-                      onChange={onChangeDestinationCountry(field, setShowHasAdmission)}
-                    />
-                  )}
-                </Field>
-
-                <ErrorMessage name="destinationCountry" className={styles['error-message']} component="div" />
-              </div>
-
-              <CSSTransition in={showHasAdmission} timeout={200} classNames="fade" unmountOnExit>
-                <YesNoField
-                  label={intl.formatMessage({id: 'assistance-form.steps.destination-country.labels.has-admission'})}
-                  name="hasAdmission"
-                  options={HAS_ADMISSION_OPTIONS}
-                />
-              </CSSTransition>
+              {errors.destinationCountry && (
+                <div className={styles['error-message']}>{errors.destinationCountry.message}</div>
+              )}
             </div>
 
-            <StepActions disabled={isSubmitting} onPrevious={onPreviousStep} />
-          </Form>
-        )}
-      </Formik>
+            <CSSTransition in={showHasAdmission} timeout={200} classNames="fade" unmountOnExit>
+              <YesNoField
+                label={intl.formatMessage({id: 'assistance-form.steps.destination-country.labels.has-admission'})}
+                name="hasAdmission"
+                options={HAS_ADMISSION_OPTIONS}
+              />
+            </CSSTransition>
+          </div>
+
+          <StepActions disabled={isSubmitting} onPrevious={onPreviousStep} />
+        </form>
+      </FormProvider>
     </StepForm>
   );
-};
-
-DestinationCountryStep.propTypes = {
-  onNextStep: T.func,
-  onPreviousStep: T.func,
-  recapMode: T.bool
 };
 
 export default DestinationCountryStep;

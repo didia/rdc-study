@@ -1,4 +1,6 @@
-import {Link} from 'gatsby';
+'use client';
+
+import Link from 'next/link';
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
@@ -37,12 +39,12 @@ const PartenairesPage = () => {
   return (
     <GenericPage page={page}>
       <div>
-        
-        
+
+
         {PARTNER_LINK.map((item, index) => (
-          
+
           <h2>
-            <FormattedMessage id={item.labelKey}>{(text) => <Link to={item.to}>{text}</Link>}</FormattedMessage>
+            <FormattedMessage id={item.labelKey}>{(text) => <Link href={item.to}>{text}</Link>}</FormattedMessage>
           </h2>
         ))}
       </div>

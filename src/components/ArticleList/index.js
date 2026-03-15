@@ -1,10 +1,11 @@
+'use client';
+
 // Vendor
 import React from 'react';
 import T from 'prop-types';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
-import Img from 'gatsby-image';
-import {Link} from 'gatsby';
+import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
@@ -12,10 +13,10 @@ import PostMeta from '../PostMeta';
 
 const Article = ({article}) => {
   return (
-    <Link to={article.path} className={styles.article}>
+    <Link href={article.path} className={styles.article}>
       <article className={styles.article__inner}>
         <div className={classnames(styles['image-wrapper'])}>
-          <Img className={styles.image} fluid={article.thumbnail.fluid} alt={article.title} />
+          <img className={styles.image} src={article.thumbnail} alt={article.title} />
         </div>
 
         <div className={styles.content}>
@@ -35,10 +36,7 @@ Article.propTypes = {
     excerpt: T.string.isRequired,
     path: T.string.isRequired,
     title: T.string.isRequired,
-    thumbnail: T.shape({
-      fluid: T.object.isRequired,
-      sizes: T.object,
-    }).isRequired,
+    thumbnail: T.string.isRequired,
   }),
 };
 
@@ -61,7 +59,7 @@ const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, 
         <FormattedMessage id="shared.see-more-text">
           {(text) => (
             <div className={styles['see-more-button-wrapper']}>
-              <Link to="/articles" className={classnames('button', styles['see-more-button'])}>
+              <Link href="/articles" className={classnames('button', styles['see-more-button'])}>
                 {text}
               </Link>
             </div>
@@ -75,9 +73,7 @@ const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, 
 ArticleList.propTypes = {
   articles: T.arrayOf(
     T.shape({
-      thumbnal: T.shape({
-        fluid: T.object,
-      }),
+      thumbnail: T.string,
     })
   ),
   className: T.string,

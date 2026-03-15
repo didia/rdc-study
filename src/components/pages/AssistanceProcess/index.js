@@ -1,21 +1,21 @@
-import {Link} from 'gatsby';
+'use client';
+
+import Link from 'next/link';
 import React from 'react';
-import T from 'prop-types';
 import {FormattedMessage} from 'react-intl';
-import {RecoilRoot} from 'recoil';
-import {useQueryParam, StringParam} from 'use-query-params';
+import {useSearchParams} from 'next/navigation';
 
 // Styles
 import styles from './styles.module.scss';
 
 // Components
 import GenericPage from '../GenericPage';
-import AssistanceForm, {initializeState} from '../../AssistanceForm';
+import AssistanceForm from '../../AssistanceForm';
 import CompetitiveAdvantages from '../IndexPage/CompetitiveAdvantages';
 
 
 const page = {
-  description:"L'accaompagnement RDC ETUDES consiste à vous orienter dans votre projet d'études du choix de l'université jusqu'à l'obtention de votre visa.",
+  description:"L'accaompagnement RDC ETUDES consiste a vous orienter dans votre projet d'etudes du choix de l'universite jusqu'a l'obtention de votre visa.",
   title: 'JE SOUHAITE ETRE ASSISTE PAR UN MENTOR RDC ETUDES.',
   path: '/accompagnement'
 };
@@ -23,32 +23,26 @@ const page = {
 
 
 const AssistanceProcess = ({assistancePackages, services}) => {
-  const [fromGuide] = useQueryParam('pour', StringParam);
-  const [service] = useQueryParam('service', StringParam);
+  const searchParams = useSearchParams();
+  const fromGuide = searchParams.get('pour');
+  const service = searchParams.get('service');
 
   return (
     <GenericPage page={page} bannerClassName={styles.banner}>
-      <RecoilRoot initializeState={initializeState({assistancePackages, services, fromGuide, service})}>
-        <AssistanceForm />
+      <AssistanceForm assistancePackages={assistancePackages} services={services} fromGuide={fromGuide} service={service} />
 
-        <section className={styles['offer-block']}>
-          <CompetitiveAdvantages />
+      <section className={styles['offer-block']}>
+        <CompetitiveAdvantages />
 
-          <p style={{marginTop: '20px'}}>
-            <FormattedMessage id="pages.assistance.visa.warning" />
-            <FormattedMessage id="pages.assistance.visa.warning-learn-more">
-              {(text) => <Link to="/assistance-visa">{text}</Link>}
-            </FormattedMessage>
-          </p>
-        </section>
-      </RecoilRoot>
+        <p style={{marginTop: '20px'}}>
+          <FormattedMessage id="pages.assistance.visa.warning" />
+          <FormattedMessage id="pages.assistance.visa.warning-learn-more">
+            {(text) => <Link href="/assistance-visa">{text}</Link>}
+          </FormattedMessage>
+        </p>
+      </section>
     </GenericPage>
   );
-};
-
-AssistanceProcess.propTypes = {
-  assistancePackages: T.object.isRequired,
-  services: T.array.isRequired
 };
 
 export default AssistanceProcess;

@@ -27,9 +27,8 @@ export default {
       }
     ]
   },
-  contactFormEndpoint: `${process.env.GATSBY_API_ENDPOINT}/contact-form`,
-  newsletterEndpoint: `${process.env.GATSBY_API_ENDPOINT}/newsletter`,
-  shareThisProperty: '5d96bedd2303400012f930c1',
+  contactFormEndpoint: `${process.env.NEXT_PUBLIC_API_ENDPOINT}/contact-form`,
+  newsletterEndpoint: `${process.env.NEXT_PUBLIC_API_ENDPOINT}/newsletter`,
   siteCountries: [
     'Bénin',
     'Burkina Faso',
@@ -56,9 +55,9 @@ export default {
   siteDescription: "Nous accompagnons les étudiants d'Afrique francophone dans leurs projets d'études.",
   siteFBAppID: '192570431528735',
   siteKeywords:
-    'etudier à l’étranger, étudier au Canada, étudier en France, étudier aux États—Unis, étudier en Belgique, bourses d‘études gratuites, projet d‘études, carrières',
+    'etudier à l\'étranger, étudier au Canada, étudier en France, étudier aux États—Unis, étudier en Belgique, bourses d\'études gratuites, projet d\'études, carrières',
   siteLogo: '/logo.png',
   siteImage: '/sharable-image.jpg',
-  siteTitle: 'RDC Etudes - Votre source d’informations sur les études à l’étranger!',
-  siteURL: process.env.GATSBY_SITE_URL || 'https://www.rdcetudes.com'
+  siteTitle: 'RDC Etudes - Votre source d\'informations sur les études à l\'étranger!',
+  siteURL: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.rdcetudes.com'
 };
