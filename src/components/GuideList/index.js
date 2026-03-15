@@ -1,20 +1,21 @@
+'use client';
+
 // Vendor
 import React from 'react';
 import T from 'prop-types';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
-import Img from 'gatsby-image';
-import {Link} from 'gatsby';
+import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
 
 const Guide = ({guide}) => {
   return (
-    <Link to={guide.path} className={styles.article}>
+    <Link href={guide.path} className={styles.article}>
       <article>
         <div className={classnames(styles['image-wrapper'], 'image')}>
-          <Img className={styles.image} fluid={guide.thumbnail.fluid} alt={guide.title} />
+          <img className={styles.image} src={guide.thumbnail} alt={guide.title} />
         </div>
         <h3 className="major">{guide.title}</h3>
         <p>{guide.excerpt}</p>
@@ -33,9 +34,7 @@ Guide.propTypes = {
     excerpt: T.string.isRequired,
     path: T.string.isRequired,
     title: T.string.isRequired,
-    thumbnail: T.shape({
-      fluid: T.object,
-    }).isRequired,
+    thumbnail: T.string.isRequired,
   }),
 };
 

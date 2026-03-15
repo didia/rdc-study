@@ -1,7 +1,8 @@
+'use client';
+
 // Vendor
 import React from 'react';
-import T from 'prop-types';
-import {Link} from 'gatsby';
+import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
@@ -31,7 +32,7 @@ const ScholarshipPage = ({activeOnly, page, scholarships}) => {
         <FormattedMessage id={disclaimerTranslationId} />
         <FormattedMessage id={linkLabelTranslationId}>
           {(linkLabel) => (
-            <Link className={styles.link} to={link}>
+            <Link className={styles.link} href={link}>
               {linkLabel}
             </Link>
           )}
@@ -40,12 +41,6 @@ const ScholarshipPage = ({activeOnly, page, scholarships}) => {
       <ScholarshipList showNewsletter scholarships={scholarships} showAllScholarshipsLink={activeOnly} />
     </GenericPage>
   );
-};
-
-ScholarshipPage.propTypes = {
-  page: T.object.isRequired,
-  activeOnly: T.bool,
-  scholarships: T.arrayOf(T.object),
 };
 
 export default ScholarshipPage;

@@ -1,7 +1,9 @@
+'use client';
+
 // Vendor
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
-import {Link} from 'gatsby';
+import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
@@ -18,7 +20,7 @@ const NotFoundPage = () => (
 
         <FormattedMessage id="not-found.return-home-button-text">
           {(text) => (
-            <Link to="/" className="button special">
+            <Link href="/" className="button special">
               {text}
             </Link>
           )}

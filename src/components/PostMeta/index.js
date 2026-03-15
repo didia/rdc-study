@@ -1,3 +1,5 @@
+'use client';
+
 // Vendor
 import React from 'react';
 import T from 'prop-types';

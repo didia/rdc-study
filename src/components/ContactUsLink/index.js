@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 import T from 'prop-types';

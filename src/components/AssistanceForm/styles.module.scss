@@ -11,7 +11,7 @@
   padding: 25px;
 }
 
-:global(.field) label.label {
+.card :global(.field) label.label {
   margin-top: 0;
   color: _palette(bg);
 }
@@ -136,12 +136,12 @@ select.input {
   color: _palette(accent);
 }
 
-:global(.fade-enter) {
+.card :global(.fade-enter) {
   opacity: 0;
   transform: scale(0.9);
 }
 
-:global(.fade-enter-active) {
+.card :global(.fade-enter-active) {
   opacity: 1;
   transform: translateX(0);
   transition: opacity 200ms, transform 200ms;

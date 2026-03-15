@@ -1,11 +1,10 @@
-// Vendor
+'use client';
+
 import React from 'react';
-import {Link} from 'gatsby';
+import Link from 'next/link';
 import {FormattedMessage} from 'react-intl';
 import classnames from 'classnames';
-import T from 'prop-types';
 
-// Styles
 import styles from './styles.module.scss';
 
 const Header = ({withTitle, onToggleMenu}) => {
@@ -16,7 +15,7 @@ const Header = ({withTitle, onToggleMenu}) => {
       <h1 className={styles.title}>
         <FormattedMessage id="header.title">
           {(text) => (
-            <Link to="/" className={styles.title__link}>
+            <Link href="/" className={styles.title__link}>
               {text}
             </Link>
           )}
@@ -35,11 +34,6 @@ const Header = ({withTitle, onToggleMenu}) => {
       </nav>
     </header>
   );
-};
-
-Header.propTypes = {
-  onToggleMenu: T.func.isRequired,
-  withTitle: T.bool,
 };
 
 export default Header;

@@ -1,15 +1,22 @@
 # Project dependencies
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-.cache
 node_modules
 yarn-error.log
 
-# Build directory
-/public
+# Next.js build output
+/.next
+/out
 
 # Editor
 .idea
 
-#Env
+# Env
 .env.*
 *.env
+
+# Generated data assets (copied from data/ by scripts/copy-data-assets.mjs)
+/public/data
+
+# Misc
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts

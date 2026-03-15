@@ -1,8 +1,9 @@
+'use client';
+
 // Vendor
 import React from 'react';
-import T from 'prop-types';
 import {FormattedMessage} from 'react-intl';
-import {Link} from 'gatsby';
+import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
@@ -25,7 +26,7 @@ const Assistance = ({guideSlug}) => (
       <div className={styles['call-to-action-wrapper']}>
         <FormattedMessage id="pages.index.banner.call-to-action-button-text">
           {(text) => (
-            <Link to={`/accompagnement?pour=${guideSlug}`} className="button special call-to-action">
+            <Link href={`/accompagnement?pour=${guideSlug}`} className="button special call-to-action">
               {text}
             </Link>
           )}
@@ -34,10 +35,6 @@ const Assistance = ({guideSlug}) => (
     </div>
   </div>
 );
-
-Assistance.propTypes = {
-  guideSlug: T.string.isRequired
-};
 
 const GuidePage = ({guide, otherGuides, relatedGuides}) => {
   const pageWrapperClassName = styles[`page-wrapper--${guide.slug}`];
@@ -72,19 +69,6 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
       )}
     </GenericPage>
   );
-};
-
-GuidePage.propTypes = {
-  guide: T.shape({
-    content: T.string.isRequired,
-    metaImage: T.string.isRequired,
-    excerpt: T.string.isRequired,
-    path: T.string.isRequired,
-    slug: T.string.isRequired,
-    title: T.string.isRequired
-  }).isRequired,
-  otherGuides: T.arrayOf(T.object),
-  relatedGuides: T.arrayOf(T.object)
 };
 
 export default GuidePage;

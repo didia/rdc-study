@@ -1,17 +1,17 @@
+'use client';
+
 // Vendor
 import React from 'react';
-import T from 'prop-types';
-import {Link} from 'gatsby';
+import Link from 'next/link';
 import {FormattedMessage} from 'react-intl';
-import {RecoilRoot} from 'recoil';
-import {useQueryParam, StringParam} from 'use-query-params';
+import {useSearchParams} from 'next/navigation';
 
 // Styles
 import styles from './styles.module.scss';
 
 // Components
 import GenericPage from '../GenericPage';
-import AssistanceForm, {initializeState} from '../../AssistanceForm';
+import AssistanceForm from '../../AssistanceForm';
 import CompetitiveAdvantages from '../IndexPage/CompetitiveAdvantages';
 
 const page = {
@@ -20,49 +20,43 @@ const page = {
 };
 
 const AssistancePage = ({assistancePackages, services}) => {
-  const [fromGuide] = useQueryParam('pour', StringParam);
-  const [service] = useQueryParam('service', StringParam);
+  const searchParams = useSearchParams();
+  const fromGuide = searchParams.get('pour');
+  const service = searchParams.get('service');
 
   return (
     <GenericPage page={page} bannerClassName={styles.banner}>
-      <RecoilRoot initializeState={initializeState({assistancePackages, services, fromGuide, service})}>
-        <section style={{position: 'relative', marginTop: '-176px'}}>
-          <div style={{margin: 'auto', width: '585px'}}>
-            <FormattedMessage id="pages.assistance.call-to-action-button-text">
-              {(text) => (
-                <Link to="/assistance-bourse" className="button special call-to-action" style={{marginRight: '7px'}}>
-                  {text}
-                </Link>
-              )}
-            </FormattedMessage>
-            <FormattedMessage id="pages.accompanied.call-to-action-button-text">
-              {(text) => (
-                <Link to="/assistance-process" className="button special call-to-action">
-                  {text}
-                </Link>
-              )}
-            </FormattedMessage>
-          </div>
-          <br />
-          <br />
-          <br />
-          <CompetitiveAdvantages />
+      <section style={{position: 'relative', marginTop: '-176px'}}>
+        <div style={{margin: 'auto', width: '585px'}}>
+          <FormattedMessage id="pages.assistance.call-to-action-button-text">
+            {(text) => (
+              <Link href="/assistance-bourse" className="button special call-to-action" style={{marginRight: '7px'}}>
+                {text}
+              </Link>
+            )}
+          </FormattedMessage>
+          <FormattedMessage id="pages.accompanied.call-to-action-button-text">
+            {(text) => (
+              <Link href="/assistance-process" className="button special call-to-action">
+                {text}
+              </Link>
+            )}
+          </FormattedMessage>
+        </div>
+        <br />
+        <br />
+        <br />
+        <CompetitiveAdvantages />
 
-          <p style={{marginTop: '20px'}}>
-            <FormattedMessage id="pages.assistance.visa.warning" />
-            <FormattedMessage id="pages.assistance.visa.warning-learn-more">
-              {(text) => <Link to="/assistance-visa">{text}</Link>}
-            </FormattedMessage>
-          </p>
-        </section>
-      </RecoilRoot>
+        <p style={{marginTop: '20px'}}>
+          <FormattedMessage id="pages.assistance.visa.warning" />
+          <FormattedMessage id="pages.assistance.visa.warning-learn-more">
+            {(text) => <Link href="/assistance-visa">{text}</Link>}
+          </FormattedMessage>
+        </p>
+      </section>
     </GenericPage>
   );
-};
-
-AssistancePage.propTypes = {
-  assistancePackages: T.object.isRequired,
-  services: T.array.isRequired
 };
 
 export default AssistancePage;

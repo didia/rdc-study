@@ -1,17 +1,14 @@
-// Vendor
-import React, {Component} from 'react';
-import differenceInCalendarDays from 'date-fns/differenceInCalendarDays';
-import {injectIntl} from 'react-intl';
-import T from 'prop-types';
+'use client';
+
+import React, {useState, useEffect} from 'react';
+import {differenceInCalendarDays} from 'date-fns';
+import {useIntl} from 'react-intl';
 import classnames from 'classnames';
 
-// Styles
 import styles from './styles.module.scss';
 
-// Constants
 const MAX_NUMBER_OF_DAYS_IN_MONTH = 31;
 
-// eslint-disable-next-line complexity
 const getDeadlineMessage = (date, intl) => {
   if (!date) {
     return {
@@ -21,7 +18,6 @@ const getDeadlineMessage = (date, intl) => {
   }
 
   const deadline = new Date(date);
-
   const remainingDays = differenceInCalendarDays(deadline, new Date());
 
   if (remainingDays >= 0 && remainingDays < MAX_NUMBER_OF_DAYS_IN_MONTH) {
@@ -41,39 +37,24 @@ const getDeadlineMessage = (date, intl) => {
   };
 };
 
-class ScholarshipDeadline extends Component {
-  state = {
-    color: null,
-    message: null,
-  };
+const ScholarshipDeadline = ({className, tag, date}) => {
+  const intl = useIntl();
+  const [deadlineInfo, setDeadlineInfo] = useState({color: null, message: null});
 
-  componentDidMount() {
-    this.setState(getDeadlineMessage(this.props.date, this.props.intl));
-  }
+  useEffect(() => {
+    setDeadlineInfo(getDeadlineMessage(date, intl));
+  }, [date, intl]);
 
-  render() {
-    const {className, tag} = this.props;
-    const Tag = tag || 'div';
+  const Tag = tag || 'div';
 
-    return (
-      <Tag className={className}>
-        <span
-          className={classnames('far fa-clock', styles.text, styles[this.state.color])}
-          dangerouslySetInnerHTML={{__html: this.state.message}}
-        />
-      </Tag>
-    );
-  }
-}
-
-ScholarshipDeadline.propTypes = {
-  className: T.string,
-  tag: T.elementType,
-  date: T.string,
-  intl: T.shape({
-    formatDate: T.func,
-    formatMessage: T.func,
-  }),
+  return (
+    <Tag className={className}>
+      <span
+        className={classnames('far fa-clock', styles.text, deadlineInfo.color && styles[deadlineInfo.color])}
+        dangerouslySetInnerHTML={{__html: deadlineInfo.message}}
+      />
+    </Tag>
+  );
 };
 
-export default injectIntl(ScholarshipDeadline);
+export default ScholarshipDeadline;

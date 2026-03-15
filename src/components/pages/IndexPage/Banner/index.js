@@ -1,34 +1,26 @@
+'use client';
+
 // Vendor
 import React from 'react';
+import Image from 'next/image';
 import {FormattedMessage} from 'react-intl';
-import {useStaticQuery, graphql, Link} from 'gatsby';
-import Img from 'gatsby-image';
+import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
 
 const Banner = () => {
-  const data = useStaticQuery(graphql`
-    query LogoQuery {
-      imageSharp(fluid: {originalName: {regex: "/logo.png/"}}) {
-        fluid(maxWidth: 60) {
-          ...GatsbyImageSharpFluid
-          presentationWidth
-          presentationHeight
-        }
-      }
-    }
-  `);
-
   return (
     <section className={styles.banner}>
       <div className={styles.wrapper}>
         <div className={styles.logo}>
           <div className={styles.logo__icon}>
-            <Img
-              fluid={data.imageSharp.fluid}
-              style={{width: data.imageSharp.fluid.presentationWidth, height: data.imageSharp.fluid.presentationHeight}}
+            <Image
+              src="/logo.png"
+              width={60}
+              height={60}
               alt="RDC Etudes Logo"
+              priority
             />
           </div>
         </div>
@@ -44,7 +36,7 @@ const Banner = () => {
         <div className={styles['call-to-action-wrapper']}>
           <FormattedMessage id="pages.index.banner.call-to-action-button-text">
             {(text) => (
-              <Link to="/accompagnement" className="button special call-to-action">
+              <Link href="/accompagnement" className="button special call-to-action">
                 {text}
               </Link>
             )}

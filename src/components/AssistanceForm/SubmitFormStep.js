@@ -1,12 +1,13 @@
+'use client';
+
 // Vendor
 import React, {useState} from 'react';
 import {useIntl} from 'react-intl';
-import T from 'prop-types';
-import {useRecoilValue, useSetRecoilState} from 'recoil';
 import axios from 'axios';
-import {Formik, Form, Field, ErrorMessage} from 'formik';
+import {useForm} from 'react-hook-form';
+import {zodResolver} from '@hookform/resolvers/zod';
+import {z} from 'zod';
 import classnames from 'classnames';
-import {object, string} from 'yup';
 
 // Styles
 import styles from './styles.module.scss';
@@ -14,8 +15,8 @@ import styles from './styles.module.scss';
 // Components
 import HtmlContent from '../HtmlContent';
 
-// State
-import {availableAssistanceTypesState, assistancePackageState, aboutCandidateState, serviceState} from './states';
+// Store
+import {useAssistanceFormStore} from './store';
 
 // Config
 import config from '../../../config';
@@ -39,8 +40,8 @@ const getCheckedClassName = (currentValue, expectedValue) =>
     : null;
 
 const serviceSchema = (intl) =>
-  object().shape({
-    service: string().required(intl.formatMessage({id: 'shared.assistance-types.required'}))
+  z.object({
+    service: z.string().min(1, intl.formatMessage({id: 'shared.assistance-types.required'}))
   });
 
 const formattedAssistancePrice = (intl, price) => {
@@ -53,10 +54,12 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
   const [showError, setShowError] = useState(false);
   const [message, setMessage] = useState(null);
 
-  const aboutCandidate = useRecoilValue(aboutCandidateState);
-  const assistancePackage = useRecoilValue(assistancePackageState);
-  const availableAssistanceTypes = useRecoilValue(availableAssistanceTypesState);
-  const setServiceState = useSetRecoilState(serviceState);
+  const aboutCandidate = useAssistanceFormStore((s) => s.aboutCandidate);
+  const getAssistancePackage = useAssistanceFormStore((s) => s.getAssistancePackage);
+  const getAvailableAssistanceTypes = useAssistanceFormStore((s) => s.getAvailableAssistanceTypes);
+  const setService = useAssistanceFormStore((s) => s.setService);
+  const assistancePackage = getAssistancePackage();
+  const availableAssistanceTypes = getAvailableAssistanceTypes();
 
   const name = `${aboutCandidate.firstName} ${aboutCandidate.lastName}`;
   const messageTranslationKey = aboutCandidate.phone
@@ -75,12 +78,25 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
     await axios.post(contactFormEndpoint, payload);
   };
 
-  const onSubmit = async (service) => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: {errors, isSubmitting}
+  } = useForm({
+    resolver: zodResolver(serviceSchema(intl)),
+    defaultValues: {service: ''}
+  });
+
+  const serviceValue = watch('service');
+
+  const onSubmit = async (values) => {
     setShowError(false);
+    setService(values.service);
 
-    const assistancePackageTitle = assistancePackage.title.replace(/Assistance/gi, service);
+    const assistancePackageTitle = assistancePackage.title.replace(/Assistance/gi, values.service);
 
-    const message = intl.formatMessage(
+    const msg = intl.formatMessage(
       {id: messageTranslationKey},
       {
         name,
@@ -90,24 +106,24 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
       }
     );
 
-    setMessage(message);
+    setMessage(msg);
 
     try {
-      if (service === AssistanceTypes.INFORMATION) {
+      if (values.service === AssistanceTypes.INFORMATION) {
         await subscribeToNewsletter({
           email: aboutCandidate.email,
           firstName: aboutCandidate.firstName,
           lastName: aboutCandidate.lastName
         });
       } else {
-        await submitAssistance(message);
+        await submitAssistance(msg);
       }
 
       analyticsPushEvent({
         category: 'AssistanceForm',
-        action: service,
+        action: values.service,
         label: assistancePackage.slug,
-        value: AssistancePrices[service]
+        value: AssistancePrices[values.service]
       });
 
       onNextStep(Steps.FormSubmitted);
@@ -132,74 +148,56 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
         })}
       </h3>
 
-      <Formik
-        initialValues={{service: ''}}
-        validationSchema={serviceSchema(intl)}
-        onSubmit={(values) => {
-          setServiceState(values.service);
-          return onSubmit(values.service);
-        }}
-      >
-        {({isSubmitting, isValid, values}) => (
-          <Form className={styles.form}>
-            <div
+      <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+        <div
+          className={classnames(
+            styles['radio-button-group'],
+            errors.service ? styles['radio-button-group--invalid'] : null
+          )}
+        >
+          {availableAssistanceTypes.map((assistanceType) => (
+            <label
+              key={assistanceType.type}
               className={classnames(
-                styles['radio-button-group'],
-                !isValid ? styles['radio-button-group--invalid'] : null
+                'radio-button-label',
+                styles['radio-button-label'],
+                getCheckedClassName(serviceValue, assistanceType.type)
               )}
             >
-              {availableAssistanceTypes.map((assistanceType) => (
-                <label
-                  key={assistanceType.type}
-                  className={classnames(
-                    'radio-button-label',
-                    styles['radio-button-label'],
-                    getCheckedClassName(values.service, assistanceType.type)
-                  )}
-                >
-                  <Field type="radio" name="service" value={assistanceType.type} className={styles.input} />
-                  <div>
-                    {intl.formatMessage({id: assistanceType.title})}
-                    <p className="bold">{formattedAssistancePrice(intl, assistanceType.price)}</p>
-                  </div>
-                </label>
-              ))}
-            </div>
-
-            <ErrorMessage name="service" className={styles['error-message']} component="p" />
-
-            {showError && (
-              <p
-                className={styles['error-message']}
-                dangerouslySetInnerHTML={{
-                  __html: intl.formatMessage({id: 'assistance-form.steps.submit-form.error-message'}, {message})
-                }}
+              <input
+                type="radio"
+                value={assistanceType.type}
+                className={styles.input}
+                {...register('service')}
               />
-            )}
+              <div>
+                {intl.formatMessage({id: assistanceType.title})}
+                <p className="bold">{formattedAssistancePrice(intl, assistanceType.price)}</p>
+              </div>
+            </label>
+          ))}
+        </div>
 
-            <StepActions
-              disabled={isSubmitting}
-              nextButtonLabelKey="assistance-form.steps.submit-form.next-button-label"
-              previousButtonLabelKey="assistance-form.steps.submit-form.restart-button-label"
-              onPrevious={onRestart}
-            />
-          </Form>
+        {errors.service && <p className={styles['error-message']}>{errors.service.message}</p>}
+
+        {showError && (
+          <p
+            className={styles['error-message']}
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({id: 'assistance-form.steps.submit-form.error-message'}, {message})
+            }}
+          />
         )}
-      </Formik>
+
+        <StepActions
+          disabled={isSubmitting}
+          nextButtonLabelKey="assistance-form.steps.submit-form.next-button-label"
+          previousButtonLabelKey="assistance-form.steps.submit-form.restart-button-label"
+          onPrevious={onRestart}
+        />
+      </form>
     </StepForm>
   );
-};
-
-SubmitFormStep.propTypes = {
-  assistancePackages: T.objectOf(
-    T.shape({
-      content: T.string.isRequired,
-      slug: T.string.isRequired,
-      title: T.string.isRequired
-    })
-  ),
-  onNextStep: T.func,
-  onRestart: T.func
 };
 
 export default SubmitFormStep;

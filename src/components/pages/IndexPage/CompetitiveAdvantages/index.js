@@ -1,3 +1,5 @@
+'use client';
+
 // Vendor
 import React from 'react';
 import T from 'prop-types';
@@ -5,7 +7,7 @@ import {FormattedMessage} from 'react-intl';
 import classnames from 'classnames';
 
 // Components
-import {Link} from 'gatsby';
+import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
@@ -55,7 +57,7 @@ const CompetitiveAdvantages = ({className}) => (
     <div className={styles['call-to-action-wrapper']}>
       <FormattedMessage id="pages.index.competitive-advantages.call-to-action">
         {(callToActionText) => (
-          <Link to="/a-propos" className="button special call-to-action">
+          <Link href="/a-propos" className="button special call-to-action">
             {callToActionText}
           </Link>
         )}

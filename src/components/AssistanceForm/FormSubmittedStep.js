@@ -1,14 +1,15 @@
+'use client';
+
 // Vendor
 import React from 'react';
 import {useIntl} from 'react-intl';
-import {Link} from 'gatsby';
-import {useRecoilValue} from 'recoil';
+import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
 
-// States
-import {assistancePackageState, serviceState} from './states';
+// Store
+import {useAssistanceFormStore} from './store';
 
 // Constants
 import {AssistanceTypes} from '../../constants/assistance';
@@ -43,8 +44,9 @@ const translationKeysMap = {
 
 const FormSubmittedStep = () => {
   const intl = useIntl();
-  const assistancePackage = useRecoilValue(assistancePackageState);
-  const assistanceType = useRecoilValue(serviceState);
+  const getAssistancePackage = useAssistanceFormStore((s) => s.getAssistancePackage);
+  const assistanceType = useAssistanceFormStore((s) => s.service);
+  const assistancePackage = getAssistancePackage();
 
   const translations = translationKeysMap[assistanceType];
 
@@ -64,7 +66,7 @@ const FormSubmittedStep = () => {
       />
 
       <div className={styles['centralized-button-wrapper']}>
-        <Link to={guidePath} className="button special call-to-action">
+        <Link href={guidePath} className="button special call-to-action">
           {intl.formatMessage({id: 'assistance-form.steps.form-submitted.read-guide-button'})}
         </Link>
       </div>

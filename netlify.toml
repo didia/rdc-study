@@ -1,6 +1,9 @@
 [build]
-  publish = "public/"
   command = "npm run build"
-  ignore = "git log -1 --pretty=%B | grep dependabot"
+  publish = ".next"
+
 [build.environment]
-  NODE_VERSION = "12"
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

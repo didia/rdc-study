@@ -1,7 +1,8 @@
+'use client';
+
 // Vendor
 import React from 'react';
-import {Link} from 'gatsby';
-import T from 'prop-types';
+import Link from 'next/link';
 import {FormattedMessage} from 'react-intl';
 
 // Styles
@@ -28,7 +29,7 @@ const ServiceList = ({services}) => (
             </FormattedMessage>
             <FormattedMessage id="shared.service-call-to-action">
               {(label) => (
-                <Link to={getAssistanceRequestLink(service)} className="button special call-to-action">
+                <Link href={getAssistanceRequestLink(service)} className="button special call-to-action">
                   {label}
                 </Link>
               )}
@@ -47,19 +48,3 @@ const ServicesPage = ({page, services}) => (
 );
 
 export default ServicesPage;
-
-ServiceList.propTypes = {
-  services: T.arrayOf(
-    T.shape({
-      slug: T.string.isRequired,
-      title: T.string.isRequired,
-      price: T.number.isRequired,
-      excerpt: T.string.isRequired
-    })
-  ).isRequired
-};
-
-ServicesPage.propTypes = {
-  page: T.object.isRequired,
-  services: T.array.isRequired
-};
