@@ -12,7 +12,7 @@ import styles from './styles.module.scss';
 
 // From styles.image: width 150px (100px at small, 130px hover)
 const IMAGE_WIDTH = 150;
-const IMAGE_HEIGHT = 150;
+const IMAGE_HEIGHT = 115;
 
 const GuideList = ({className, guides, id}) => (
   <div id={id} className={className}>
@@ -36,7 +36,7 @@ const GuideList = ({className, guides, id}) => (
                 alt={guide.title}
                 width={IMAGE_WIDTH}
                 height={IMAGE_HEIGHT}
-                style={{objectFit: 'cover', width: '100%', height: 'auto'}}
+                style={{objectFit: 'cover'}}
               />
             </div>
             <h3 className={styles['grid-item-title']}>{guide.name}</h3>

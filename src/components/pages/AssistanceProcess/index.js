@@ -15,7 +15,7 @@ import CompetitiveAdvantages from '../IndexPage/CompetitiveAdvantages';
 
 const page = {
   description:
-    "L'accaompagnement RDC ETUDES consiste a vous orienter dans votre projet d'etudes du choix de l'universite jusqu'a l'obtention de votre visa.",
+    "L'accompagnement RDC ETUDES consiste a vous orienter dans votre projet d'etudes du choix de l'universite jusqu'a l'obtention de votre visa.",
   title: 'JE SOUHAITE ETRE ASSISTE PAR UN MENTOR RDC ETUDES.',
   path: '/accompagnement'
 };

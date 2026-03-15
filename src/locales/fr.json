@@ -27,6 +27,8 @@
   "assistance-form.steps.destination-country.labels.has-admission-positive-option": "Oui, j’ai déjà mon admission",
   "assistance-form.steps.destination-country.title": "Dans quel pays voulez-vous étudier ?",
 
+  "assistance-form.steps.form-submitted.title": "Demande d'accompagnement reçue",
+  "assistance-form.steps.form-submitted.message": "Votre demande d'accompagnement a été reçue. Vous pouvez dès à présent entamer la conversation avec votre mentor en cliquant sur le bouton ci-dessous.",
   "assistance-form.steps.form-submitted.description": "Votre demande d’assistance a été reçue par notre équipe. Un membre de l’équipe vous contactera dans un délai de trois jours ouvrables. Nous vous remercions pour la confiance que vous nous accordez.",
   "assistance-form.steps.form-submitted.guide-call-to-action": "Si ce n’est pas déjà fait, nous vous recommandons de lire attentivement le guide gratuit concernant vos futures démarches pour vous faire une idée de l’assistance que vous recevrez.",
   "assistance-form.steps.form-submitted.read-guide-button": "Lire le guide",
@@ -177,10 +179,11 @@
   "shared.assistance-types.price-free": "Prix: Gratuit",
 
   "assistance-form.steps.accompagnement-terms.title": "Modalités de l'accompagnement",
-  "assistance-form.steps.accompagnement-terms.paragraph1": "Une première rencontre sera organisée avec le mentor pour évaluer votre dossier avant de poursuivre l'accompagnement. Pour ce faire un dépôt non remboursable de 100 USD doit être fait avant ce premier appel.",
-  "assistance-form.steps.accompagnement-terms.paragraph2": "Le solde restant de vos frais d'accompagnement sera payé avant de finaliser l'accompagnement.",
-  "assistance-form.steps.accompagnement-terms.question": "Voulez-vous toujours poursuivre avec cette demande d'accompagnement ?",
-  "assistance-form.steps.accompagnement-terms.yes": "Oui",
+  "assistance-form.steps.accompagnement-terms.paragraph1": "Nous recevons un grand nombre de demandes d’accompagnement et nous ne pouvons malheureusement pas accompagner tout le monde. Afin de consacrer notre temps et notre expertise aux candidats réellement engagés dans leur projet d’études, une première rencontre d’évaluation sera organisée avec un mentor pour analyser votre dossier.",
+  "assistance-form.steps.accompagnement-terms.paragraph2": "Pour confirmer cette première consultation et réserver votre place, un dépôt non remboursable de 100 USD est requis avant l’appel. Ce montant permet de valider votre engagement dans la démarche.",
+  "assistance-form.steps.accompagnement-terms.paragraph3": "Si votre dossier est retenu pour l’accompagnement, le solde des frais sera payé au moment de finaliser le processus d’accompagnement.",
+  "assistance-form.steps.accompagnement-terms.question": "Souhaitez-vous poursuivre avec cette demande d’accompagnement ?",
+  "assistance-form.steps.accompagnement-terms.yes": "Oui, je souhaite poursuivre",
   "assistance-form.steps.accompagnement-terms.no": "Non",
 
   "assistance-form.steps.form-submitted.contact-whatsapp": "Contacter via WhatsApp",
