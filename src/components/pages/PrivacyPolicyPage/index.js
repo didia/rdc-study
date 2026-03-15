@@ -1,6 +1,6 @@
 import React from 'react';
 
-import config from '../../../config';
+import config from '@/config';
 import GenericPage from '../GenericPage';
 
 const page = {
