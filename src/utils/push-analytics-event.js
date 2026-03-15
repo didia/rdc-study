@@ -1,9 +1,10 @@
-const pushAnalyticsEvent = (eventData) => {
+const pushAnalyticsEvent = ({action, category, label, value, ...rest} = {}) => {
   if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
-    window.gtag('event', eventData.action || 'web-analytics', {
-      event_category: eventData.category || undefined,
-      event_label: eventData.label || undefined,
-      ...eventData,
+    window.gtag('event', action || 'web-analytics', {
+      event_category: category || undefined,
+      event_label: label || undefined,
+      value: value || undefined,
+      ...rest,
     });
   }
 };
