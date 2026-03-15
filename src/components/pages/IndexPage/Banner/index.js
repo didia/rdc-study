@@ -2,6 +2,7 @@
 
 // Vendor
 import React from 'react';
+import Image from 'next/image';
 import {FormattedMessage} from 'react-intl';
 import Link from 'next/link';
 
@@ -14,11 +15,12 @@ const Banner = () => {
       <div className={styles.wrapper}>
         <div className={styles.logo}>
           <div className={styles.logo__icon}>
-            <img
+            <Image
               src="/logo.png"
               width={60}
               height={60}
               alt="RDC Etudes Logo"
+              priority
             />
           </div>
         </div>
