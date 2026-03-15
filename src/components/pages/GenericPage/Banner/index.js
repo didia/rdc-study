@@ -29,8 +29,8 @@ Banner.propTypes = {
     description: T.string.isRequired,
     socialShareEnabled: T.boolean,
     title: T.string.isRequired,
-    path: T.string.isRequired,
-  }),
+    path: T.string.isRequired
+  })
 };
 
 export default Banner;

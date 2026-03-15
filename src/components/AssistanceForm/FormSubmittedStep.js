@@ -11,6 +11,9 @@ import styles from './styles.module.scss';
 // Store
 import {useAssistanceFormStore} from './store';
 
+// Config
+import config from '../../../config';
+
 // Constants
 import {AssistanceTypes} from '../../constants/assistance';
 
@@ -18,11 +21,6 @@ const translationKeysMap = {
   [AssistanceTypes.ASSISTANCE]: {
     title: 'assistance-form.steps.form-submitted.assistance.title',
     firstParagraph: 'assistance-form.steps.form-submitted.assistance.first-paragraph',
-    secondParagraph: 'assistance-form.steps.form-submitted.guide-call-to-action'
-  },
-  [AssistanceTypes.CONSULTATION]: {
-    title: 'assistance-form.steps.form-submitted.consultation.title',
-    firstParagraph: 'assistance-form.steps.form-submitted.consultation.first-paragraph',
     secondParagraph: 'assistance-form.steps.form-submitted.guide-call-to-action'
   },
   [AssistanceTypes.INFORMATION]: {
@@ -44,13 +42,30 @@ const translationKeysMap = {
 
 const FormSubmittedStep = () => {
   const intl = useIntl();
+  const aboutCandidate = useAssistanceFormStore((s) => s.aboutCandidate);
   const getAssistancePackage = useAssistanceFormStore((s) => s.getAssistancePackage);
   const assistanceType = useAssistanceFormStore((s) => s.service);
   const assistancePackage = getAssistancePackage();
 
   const translations = translationKeysMap[assistanceType];
-
   const guidePath = `/guides/${assistancePackage.slug}`;
+
+  const name = `${aboutCandidate.firstName} ${aboutCandidate.lastName}`;
+  const assistancePackageTitle = assistancePackage.title.replace(/Assistance/gi, assistanceType);
+  const messageTranslationKey = aboutCandidate.phone
+    ? 'assistance-form.steps.submit-form.assistance-request-message-with-phone'
+    : 'assistance-form.steps.submit-form.assistance-request-message';
+  const assistanceMessage = intl.formatMessage(
+    {id: messageTranslationKey},
+    {
+      name,
+      assistancePackage: assistancePackageTitle,
+      originCountry: aboutCandidate.originCountry,
+      phone: aboutCandidate.phone
+    }
+  );
+  const whatsAppBaseLink = config.contact?.phones?.[0]?.link || 'https://wa.me/16139171416';
+  const whatsAppLink = `${whatsAppBaseLink}${whatsAppBaseLink.includes('?') ? '&' : '?'}text=${encodeURIComponent(assistanceMessage)}`;
 
   return (
     <div>
@@ -69,6 +84,9 @@ const FormSubmittedStep = () => {
         <Link href={guidePath} className="button special call-to-action">
           {intl.formatMessage({id: 'assistance-form.steps.form-submitted.read-guide-button'})}
         </Link>
+        <a href={whatsAppLink} target="_blank" rel="noopener noreferrer" className="button call-to-action">
+          {intl.formatMessage({id: 'assistance-form.steps.form-submitted.contact-whatsapp'})}
+        </a>
       </div>
     </div>
   );

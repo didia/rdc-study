@@ -36,7 +36,10 @@ const CanadaCAQCheckStep = ({onNextStep, onPreviousStep}) => {
     }
   });
 
-  const {handleSubmit, formState: {isSubmitting}} = methods;
+  const {
+    handleSubmit,
+    formState: {isSubmitting}
+  } = methods;
 
   const onSubmit = (values) => {
     const isGoingToQuebec = values.isGoingToQuebec === 'true';

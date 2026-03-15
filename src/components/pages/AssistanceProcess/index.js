@@ -13,14 +13,12 @@ import GenericPage from '../GenericPage';
 import AssistanceForm from '../../AssistanceForm';
 import CompetitiveAdvantages from '../IndexPage/CompetitiveAdvantages';
 
-
 const page = {
-  description:"L'accaompagnement RDC ETUDES consiste a vous orienter dans votre projet d'etudes du choix de l'universite jusqu'a l'obtention de votre visa.",
+  description:
+    "L'accaompagnement RDC ETUDES consiste a vous orienter dans votre projet d'etudes du choix de l'universite jusqu'a l'obtention de votre visa.",
   title: 'JE SOUHAITE ETRE ASSISTE PAR UN MENTOR RDC ETUDES.',
   path: '/accompagnement'
 };
-
-
 
 const AssistanceProcess = ({assistancePackages, services}) => {
   const searchParams = useSearchParams();
@@ -29,7 +27,12 @@ const AssistanceProcess = ({assistancePackages, services}) => {
 
   return (
     <GenericPage page={page} bannerClassName={styles.banner}>
-      <AssistanceForm assistancePackages={assistancePackages} services={services} fromGuide={fromGuide} service={service} />
+      <AssistanceForm
+        assistancePackages={assistancePackages}
+        services={services}
+        fromGuide={fromGuide}
+        service={service}
+      />
 
       <section className={styles['offer-block']}>
         <CompetitiveAdvantages />

@@ -1,5 +1,6 @@
 // Components
 import AboutCandidateStep from './AboutCandidateStep';
+import AccompagnementTermsStep from './AccompagnementTermsStep';
 import BelgiumEquivalenceCheckStep from './BelgiumEquivalenceCheckStep';
 import CanadaCAQCheckStep from './CanadaCAQCheckStep';
 import DestinationCountryStep from './DestinationCountryStep';
@@ -9,6 +10,7 @@ import SubmitFormStep from './SubmitFormStep';
 
 export const Steps = {
   AboutCandidate: 'AboutCandidate',
+  AccompagnementTerms: 'AccompagnementTerms',
   AssistanceLevelCheck: 'AssistanceLevelCheck',
   BelgiumEquivalenceCheck: 'BelgiumEquivalenceCheck',
   CanadaCAQCheck: 'CanadaCAQCheck',
@@ -19,6 +21,7 @@ export const Steps = {
 
 const StepRegistry = {
   [Steps.AboutCandidate]: AboutCandidateStep,
+  [Steps.AccompagnementTerms]: AccompagnementTermsStep,
   [Steps.AssistanceLevelCheck]: AssistanceLevelCheckStep,
   [Steps.BelgiumEquivalenceCheck]: BelgiumEquivalenceCheckStep,
   [Steps.CanadaCAQCheck]: CanadaCAQCheckStep,

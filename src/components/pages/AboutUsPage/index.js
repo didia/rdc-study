@@ -9,6 +9,9 @@ import {FormattedMessage} from 'react-intl';
 // Styles
 import styles from './styles.module.scss';
 
+// From styles.team-member-photo-outer (width 100%); intrinsic size for square avatar
+const TEAM_IMAGE_SIZE = 350;
+
 import GenericPage from '../GenericPage';
 import Card from '../../Card';
 
@@ -17,22 +20,22 @@ const imageClassPerIndex = (index) => (index % 2 === 0 ? 'image left' : 'image r
 const page = {
   description: 'Nous voulons que tout le monde ait facilement acces a une education de qualite.',
   title: 'Pourquoi RDC-Etudes?',
-  path: '/a-propos',
+  path: '/a-propos'
 };
 
 const values = [
   {
     titleKey: 'pages.about-us.values.honesty.title',
-    descriptionKey: 'pages.about-us.values.honesty.description',
+    descriptionKey: 'pages.about-us.values.honesty.description'
   },
   {
     titleKey: 'pages.about-us.values.helpfulness.title',
-    descriptionKey: 'pages.about-us.values.helpfulness.description',
+    descriptionKey: 'pages.about-us.values.helpfulness.description'
   },
   {
     titleKey: 'pages.about-us.values.transparency.title',
-    descriptionKey: 'pages.about-us.values.transparency.description',
-  },
+    descriptionKey: 'pages.about-us.values.transparency.description'
+  }
 ];
 
 const AboutUsPage = ({team}) => {
@@ -65,7 +68,13 @@ const AboutUsPage = ({team}) => {
           {team.map((member, index) => (
             <Card key={member.name} className={styles['team-member-list__item']}>
               <div className={classnames(styles['team-member-photo-outer'], imageClassPerIndex(index))}>
-                <Image src={member.image} alt={member.name} width={350} height={350} style={{objectFit: 'cover'}} />
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={TEAM_IMAGE_SIZE}
+                  height={TEAM_IMAGE_SIZE}
+                  style={{objectFit: 'cover'}}
+                />
               </div>
 
               <div className={styles['team-member-info']}>

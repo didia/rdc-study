@@ -1,10 +1,12 @@
 export default {
+  /** When true, phone/WhatsApp is shown in footer, privacy policy, etc. When false, phone is only visible after form submission (accompagnement). Set NEXT_PUBLIC_SHOW_PHONE_ON_SITE=true to show everywhere. */
+  showPhonePublicly: process.env.NEXT_PUBLIC_SHOW_PHONE_ON_SITE === 'true',
   contact: {
     address: {
       country: 'R.D. Congo',
-      locality: 'Kinshasa',
-      name: 'Local 1M3, Nouvelles Galeries Présidentielles',
-      streetAddress: 'Boulevard du 30 Juin'
+      locality: 'Huilerie, Lingwala',
+      name: 'RDC Etudes',
+      streetAddress: 'av. Kitega n°147'
     },
     email: {
       label: 'salut@rdcetudes.com',
@@ -16,14 +18,9 @@ export default {
     },
     phones: [
       {
-        countryFlag: '🇨🇩',
-        label: '+243 99 994 9712',
-        link: 'tel:+243999949712'
-      },
-      {
         countryFlag: '🌏',
-        label: '+1 (581) 318-0180 (WhatsApp)',
-        link: 'tel:+1-581-318-0180'
+        label: '+1 613 917-1416 (WhatsApp)',
+        link: 'https://wa.me/16139171416'
       }
     ]
   },

@@ -4,7 +4,7 @@ const pushAnalyticsEvent = ({action, category, label, value, ...rest} = {}) => {
       event_category: category || undefined,
       event_label: label || undefined,
       value: value || undefined,
-      ...rest,
+      ...rest
     });
   }
 };

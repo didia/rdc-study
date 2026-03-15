@@ -120,6 +120,7 @@
   "pages.guides-show.assistance.visa.description-2": "Les mentors RDC Études peuvent vous aider à monter votre dossier ou à analyser votre dossier si vous l’avez déjà monté dans le but de vous aider à éviter les petites ",
   "pages.guides-show.other-guides.title": "Autres guides qui pourraient vous intéresser",
   "pages.guides-show.related-guides.title": "Guides réliés",
+  "pages.guides-show.last-updated": "Dernière mise à jour : {date}",
 
   "pages.index.banner.title": "Une éducation de qualité pour tous!",
   "pages.index.banner.description": "Nous vous accompagnons dans la réussite de votre projet d’études, de l’admission à l’obtention de votre diplôme!",
@@ -172,7 +173,17 @@
   "shared.assistance-types.assistance.title": "Je suis prêt à commencer mes démarches et je veux qu’un mentor RDC Études m’aide à les réaliser afin d’augmenter mes chances de succès.",
   "shared.assistance-types.required": "Vous devez choisir le type d’assistance désiré avant de soumettre votre demande.",
   "shared.assistance-types.price": "Prix: {price} $ US",
+  "shared.assistance-types.price-accompaniment": "Prix d'accompagnement: {price} $ US",
   "shared.assistance-types.price-free": "Prix: Gratuit",
+
+  "assistance-form.steps.accompagnement-terms.title": "Modalités de l'accompagnement",
+  "assistance-form.steps.accompagnement-terms.paragraph1": "Une première rencontre sera organisée avec le mentor pour évaluer votre dossier avant de poursuivre l'accompagnement. Pour ce faire un dépôt non remboursable de 100 USD doit être fait avant ce premier appel.",
+  "assistance-form.steps.accompagnement-terms.paragraph2": "Le solde restant de vos frais d'accompagnement sera payé avant de finaliser l'accompagnement.",
+  "assistance-form.steps.accompagnement-terms.question": "Voulez-vous toujours poursuivre avec cette demande d'accompagnement ?",
+  "assistance-form.steps.accompagnement-terms.yes": "Oui",
+  "assistance-form.steps.accompagnement-terms.no": "Non",
+
+  "assistance-form.steps.form-submitted.contact-whatsapp": "Contacter via WhatsApp",
 
   "shared.contact-us-text": "Contactez-nous",
 
@@ -267,5 +278,5 @@
   "partner.atua-junior": "5. GROUPE ATUA JUNIOR",
   "pages.assistance.call-to-action-button-text": "Je veux une bourse d'études",
   "pages.accompanied.call-to-action-button-text": "Je veux etre accompagné",
-  "shared.link.site":" rdcetudes.com/bourses"
+  "shared.link.site": " rdcetudes.com/bourses"
 }

@@ -35,8 +35,8 @@ ScholarshipLevels.propTypes = {
   tag: T.elementType,
   levels: T.arrayOf(T.string.isRequired),
   intl: T.shape({
-    formatMessage: T.func,
-  }),
+    formatMessage: T.func
+  })
 };
 
 export default ScholarshipLevels;

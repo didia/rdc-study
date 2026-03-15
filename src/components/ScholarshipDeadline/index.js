@@ -13,7 +13,7 @@ const getDeadlineMessage = (date, intl) => {
   if (!date) {
     return {
       color: 'green',
-      message: intl.formatMessage({id: 'scholarship-deadline.no-expiration'}),
+      message: intl.formatMessage({id: 'scholarship-deadline.no-expiration'})
     };
   }
 
@@ -23,7 +23,7 @@ const getDeadlineMessage = (date, intl) => {
   if (remainingDays >= 0 && remainingDays < MAX_NUMBER_OF_DAYS_IN_MONTH) {
     return {
       color: 'yellow',
-      message: intl.formatMessage({id: 'scholarship-deadline.remaining-days'}, {date, days: remainingDays}),
+      message: intl.formatMessage({id: 'scholarship-deadline.remaining-days'}, {date, days: remainingDays})
     };
   }
 
@@ -33,7 +33,7 @@ const getDeadlineMessage = (date, intl) => {
 
   return {
     color: remainingDays < 0 ? 'red' : 'green',
-    message: intl.formatMessage({id: messageKey}, {date, deadline: formattedDeadline}),
+    message: intl.formatMessage({id: messageKey}, {date, deadline: formattedDeadline})
   };
 };
 

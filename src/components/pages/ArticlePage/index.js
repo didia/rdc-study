@@ -6,6 +6,10 @@ import Image from 'next/image';
 // Styles
 import styles from './styles.module.scss';
 
+// From styles.cover__image-wrapper: max-height 400px, width 100%
+const COVER_IMAGE_WIDTH = 800;
+const COVER_IMAGE_HEIGHT = 400;
+
 // Components
 import PageLayout from '../../PageLayout';
 import ArticleList from '../../ArticleList';
@@ -19,17 +23,23 @@ const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
     image: article.metaImage,
     keywords: article.tags,
     path: article.path,
-    title: article.title,
+    title: article.title
   };
 
   return (
     <PageLayout>
-
       <section key="content" className={classnames(styles.wrapper, styles['wrapper--content'])}>
         <div className={styles.inner}>
           <div className={styles.cover}>
             <div className={styles['cover__image-wrapper']}>
-              <Image src={article.thumbnail} alt={article.title} width={800} height={450} className={styles.coverImage} style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
+              <Image
+                src={article.thumbnail}
+                alt={article.title}
+                width={COVER_IMAGE_WIDTH}
+                height={COVER_IMAGE_HEIGHT}
+                className={styles.coverImage}
+                style={{objectFit: 'cover', width: '100%', height: 'auto'}}
+              />
             </div>
 
             {article.thumbnailCredits && (

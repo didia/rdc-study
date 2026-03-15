@@ -60,7 +60,9 @@
   border-bottom: 0;
   margin-bottom: 0;
   font-size: 0.8em;
-  transition: opacity #{_duration(transition)} ease-in-out, visibility #{_duration(transition)};
+  transition:
+    opacity #{_duration(transition)} ease-in-out,
+    visibility #{_duration(transition)};
   visibility: visible;
 }
 

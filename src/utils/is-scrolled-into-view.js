@@ -4,4 +4,4 @@ export default function isScrolledIntoView(el) {
   const elemBottom = rect.bottom;
 
   return elemTop >= 0 && elemBottom <= window.innerHeight;
-};
+}

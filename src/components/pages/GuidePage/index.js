@@ -2,7 +2,7 @@
 
 // Vendor
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
+import {FormattedMessage, useIntl} from 'react-intl';
 import Link from 'next/link';
 
 // Styles
@@ -37,6 +37,7 @@ const Assistance = ({guideSlug}) => (
 );
 
 const GuidePage = ({guide, otherGuides, relatedGuides}) => {
+  const intl = useIntl();
   const pageWrapperClassName = styles[`page-wrapper--${guide.slug}`];
   const bannerClassName = styles[`banner--${guide.slug}`];
   const footerClassName = styles[`footer--${guide.slug}`];
@@ -49,6 +50,8 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
     socialShareEnabled: true
   };
 
+  const formattedUpdated = guide.updated && intl.formatDate(guide.updated, {dateStyle: 'long', timeZone: 'UTC'});
+
   return (
     <GenericPage
       bannerClassName={bannerClassName}
@@ -56,6 +59,11 @@ const GuidePage = ({guide, otherGuides, relatedGuides}) => {
       page={page}
       pageWrapperClassName={pageWrapperClassName}
     >
+      {formattedUpdated && (
+        <p className={styles['last-updated']} aria-label="Date de dernière mise à jour">
+          <FormattedMessage id="pages.guides-show.last-updated" values={{date: formattedUpdated}} />
+        </p>
+      )}
       <HtmlContent content={guide.content} />
 
       <Assistance guideSlug={guide.slug} />

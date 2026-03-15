@@ -2,6 +2,7 @@
 draft: false
 slug: 'canada/admission'
 date: '2018-05-28'
+updated: '2026-03-15'
 title: 'Obtenir une admission dans une université canadienne'
 excerpt: "Pour vous rendre au Canada pour études, vous devez au préalable obtenir une admission d‘un établissement d‘enseignement désigné au Canada. Ce guide vous explique les différentes étapes à suivre pour obtenir une admission dans n‘importe quel établissement d‘enseignement au Canada."
 thumbnail: 'images/canada-admission.jpg'
@@ -9,56 +10,125 @@ topic: 'admission'
 related: ['canada/visa', 'canada/caq']
 ---
 
-Le processus d‘admission diffère d‘une institution à une autre. Toutefois les étapes générales sont sensiblement les mêmes dans toutes les institutions.\
-Voici donc les différentes étapes à suivre pour obtenir une admission dans une université américaine:
+Pour pouvoir étudier au Canada, vous devez d’abord obtenir une **lettre d’acceptation d’un établissement d’enseignement désigné (Designated Learning Institution – DLI)**.
 
-1.  ## Choisir un programme d‘études
+Cette lettre d’admission est **obligatoire** pour pouvoir déposer une demande de permis d’études auprès d’Immigration Canada.
 
-    Dans quel domaine allez-vous étudier? Quel programme d‘études? Il est important d‘avoir au minimum deux choix potentiels de domaine ou sujet d‘études que vous voulez poursuivre au cas où vous n'obtenez pas d’admission dans votre programme de choix.\
-    Nous vous conseillons donc de baser votre choix sur 3 facteurs principaux: Votre niveau de confort avec le sujet, votre passion pour le sujet ainsi que les opportunités d‘emplois au Canada dans votre pays d’origine.
+Les étapes ci-dessous expliquent comment obtenir une admission.
 
-2.  ## Choisir un collège ou une université
+---
 
-    Le Canada étant un pays bilingue, vous pouvez poursuivre vos études en Français ou en Anglais.
-    L’avantage d‘étudier en Anglais est que cela vous offre plus d’opportunités puisque le Canada est majoritairement anglophone.
+# 1. Choisir un programme d’études
 
-    Au Canada, vous avez la possibilité de poursuivre vos études soit à l‘Université ou au Collège (Cégép au Québec).
-    Au Collège, vous obtiendrez après deux ans d‘études soit un diplôme professionnel ou un diplôme pré-universitaire selon le programme d’études poursuivi. Vous pouvez ensuite vous inscrire à l‘Université pour compléter votre licence.
-    L‘avantage du collège est que la durée et les coûts des études sont géneralement inférieurs à ceux des universités.
-    \
-    \
-    Les coûts des études et les requis pour une inscription varient d‘une université à une autre. Il est donc important pour vous de choisir une université qui correspond non seulement à votre situation financière mais aussi à votre niveau académique.
-    \
-    \
-    Voici une liste non-exhaustive des collèges et universités que vous pouvez explorer:
+Avant toute démarche, vous devez déterminer :
 
-    - **Collèges:** <a href="https://www.dawsoncollege.qc.ca/admissions/admission-requirements/international-students/" target="_blank" rel="nofollow noopener">Dawson College (Anglais)</a>, <a href="https://www.cegepgarneau.ca/etudier-a-garneau/etudiants-internationaux" target="_blank" rel="nofollow noopener">Cégép Garneau (Français)</a>, <a href="https://ccnb.ca/international/futurs-etudiants-internationaux/se-renseigner-sur-ladmission.aspx" target="_blank" rel="nofollow noopener">Collège communautaire du Nouveau-Brunswick (Français).</a>
-    - **Universités:** <a href="http://www.uottawa.ca/voici-uottawa/" target="_blank" rel="nofollow noopener">Université d’Ottawa (Anglais, Français)</a>, <a href="https://choisir.umoncton.ca/international" target="_blank" rel="nofollow noopener">Université de Moncton (Français)</a>, <a href="https://www.ulaval.ca/international/etudiants-internationaux.html" target="_blank" rel="nofollow noopener">Université Laval (Français)</a>
+- le **niveau d’études** (collège, baccalauréat, maîtrise, doctorat)
+- le **programme d’études**
+- la **durée du programme**
 
-3.  ## Faire la demande d‘admission
+Votre choix doit être **cohérent avec votre parcours académique et professionnel**, car cette cohérence sera évaluée lors de votre demande de permis d’études.
 
-    Maintenant que vous avez choisi votre université, vous pouvez procéder à votre admission. Rendez vous sur le site de l’Université que vous avez choisi et trouvez l’onglet admission.\
-    Généralement, tous les sites d’admission exigent de créer un compte en ligne afin de suivre l’évolution de votre demande.\
-    Remplissez tous les champs demandés et créez votre compte. Lisez et remplissez attentivement les formulaires en ligne qui vous seront présentées.\
-    Contrairement à toutes les autres Universités, les admissions dans les Universités de l’Ontario ne se font pas à travers les sites web des universités mais plutôt à travers le site web du <a href="https://www.ouac.on.ca/fr/" target="_blank" rel="nofollow noopener">centre de demande d’admission aux universités de l’Ontario.</a>
+Les agents d’immigration examinent notamment :
 
-    Pour finaliser votre demande, il faudra payer les frais de traitement de dossier. Ces frais sont payables en ligne pour la majorité d‘universités au moyen d’une carte visa ou Mastercard. Ils sont également payables par virement bancaire et via transfert d’argent (Western Union, Money gram) selon les exigences de l’université concernée.
+- votre formation précédente
+- votre expérience professionnelle
+- la pertinence du programme choisi
 
-    Une fois que vous aurez complété et soumis votre demande, vous recevrez un message de confirmation et une liste des documents que vous devrez fournir à l’université par email ou ou par courrier postal selon ce que requiert l‘Université.
-    Certaines universités comme l’Université de Moncton par exemple exigent d’envoyer des documents soit originaux soit des copies certifiés et légalisés par voie postale.
+---
 
-    Le délais de traitement de demande d’admission varient beaucoup dépendamment de l’Université et le cycle d’admission.
-    Admettons que vous ayez soumis votre demande à l’Université Laval, il vous faudra attendre 4 semaines avant de recevoir une réponse. Inutile de vous inquiéter. Vous devez être patient.
+# 2. Choisir un établissement d’enseignement
 
-Une fois admis, vous devrez maintenant faire une demande de permis d’études. Pour cela, [consultez notre guide sur les étapes à suivre pour obtenir un visa d‘études pour le Canada.](/guides/canada/visa)
+Vous devez vous assurer que l’établissement choisi est un **établissement d’enseignement désigné (DLI)**.
 
-## Combien ça coûte ?
+Liste officielle des DLI :  
+https://www.canada.ca/fr/immigration-refugies-citoyennete/services/etudier-canada/etablissements-enseignement-designes.html
 
-En supposant que vous choisissez [d’être accompagné dans votre demande d’admission par un mentor de RDC Etudes](/accompagnement), vous devrez prévoir entre **380 USD et 700 USD** pour toutes vos démarches d’admission.
-Ces frais se présentent comme suit:
+Au Canada, vous pouvez étudier dans :
 
-- **80 USD à 250 USD** pour la demande d’admission.
-- **0 à 150 USD** pour l’envoi et reception des documents.
-- **400 USD** pour les frais d’assistance RDC Etudes.
+### Collèges
+Les collèges offrent :
 
-_NB_: Ces montants ne sont qu‘une estimation des coûts réels, ils peuvent changer selon les universités. Veuillez toujours vous fier à leurs sites web pour les montants actualisés.
+- des diplômes techniques
+- des programmes professionnels
+- des programmes préuniversitaires
+
+Durée typique : **2 à 3 ans**
+
+### Universités
+Les universités offrent :
+
+- Baccalauréat
+- Maîtrise
+- Doctorat
+
+Durée typique :
+
+- Bac : 3 à 4 ans
+- Maîtrise : 1 à 2 ans
+
+---
+
+# 3. Vérifier les conditions d’admission
+
+Chaque établissement fixe ses propres exigences.
+
+Les documents généralement demandés sont :
+
+- diplômes et relevés de notes
+- copie du passeport
+- CV
+- lettre de motivation
+- preuve de compétence linguistique (IELTS, TOEFL, TEF ou autre)
+- frais de demande
+
+Certaines universités exigent également :
+
+- lettres de recommandation
+- portfolio
+- entretien
+
+---
+
+# 4. Faire la demande d’admission
+
+La plupart des demandes se font **en ligne** sur le site de l’université.
+
+Les étapes sont généralement :
+
+1. créer un compte étudiant
+2. remplir le formulaire d’admission
+3. téléverser les documents
+4. payer les frais de demande
+
+Les frais d’admission varient généralement entre :
+
+**80 CAD et 250 CAD**
+
+---
+
+# 5. Recevoir la décision
+
+Après analyse de votre dossier, l’établissement peut :
+
+- accepter votre demande
+- refuser votre demande
+- demander des documents supplémentaires
+
+Si vous êtes accepté, vous recevrez une **lettre d’admission officielle**.
+
+Cette lettre sera utilisée pour :
+
+- la demande de CAQ (si Québec)
+- la demande de permis d’études
+
+---
+
+# Combien ça coûte ?
+
+Les frais pour l’admission peuvent inclure :
+
+- frais de demande : **80 à 250 USD**
+- envoi de documents : **0 à 150 USD**
+- assistance éventuelle : **400 USD**
+
+Ces montants peuvent varier selon l’établissement.

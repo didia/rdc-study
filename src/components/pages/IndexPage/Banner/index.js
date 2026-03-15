@@ -15,13 +15,7 @@ const Banner = () => {
       <div className={styles.wrapper}>
         <div className={styles.logo}>
           <div className={styles.logo__icon}>
-            <Image
-              src="/logo.png"
-              width={60}
-              height={60}
-              alt="RDC Etudes Logo"
-              priority
-            />
+            <Image src="/logo.png" width={60} height={60} alt="RDC Etudes Logo" priority />
           </div>
         </div>
 

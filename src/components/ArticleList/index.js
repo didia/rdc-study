@@ -5,18 +5,30 @@ import React from 'react';
 import T from 'prop-types';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
+import Image from 'next/image';
 import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
 import PostMeta from '../PostMeta';
 
+// From styles.image / .image-wrapper: width 300px (200px at small)
+const IMAGE_WIDTH = 300;
+const IMAGE_HEIGHT = 200;
+
 const Article = ({article}) => {
   return (
     <Link href={article.path} className={styles.article}>
       <article className={styles.article__inner}>
         <div className={classnames(styles['image-wrapper'])}>
-          <img className={styles.image} src={article.thumbnail} alt={article.title} />
+          <Image
+            className={styles.image}
+            src={article.thumbnail}
+            alt={article.title}
+            width={IMAGE_WIDTH}
+            height={IMAGE_HEIGHT}
+            style={{objectFit: 'cover', width: '100%', height: 'auto'}}
+          />
         </div>
 
         <div className={styles.content}>
@@ -36,8 +48,8 @@ Article.propTypes = {
     excerpt: T.string.isRequired,
     path: T.string.isRequired,
     title: T.string.isRequired,
-    thumbnail: T.string.isRequired,
-  }),
+    thumbnail: T.string.isRequired
+  })
 };
 
 const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, titleKey}) => {
@@ -73,14 +85,14 @@ const ArticleList = ({className, descriptionKey, articles, hasMoreArticles, id, 
 ArticleList.propTypes = {
   articles: T.arrayOf(
     T.shape({
-      thumbnail: T.string,
+      thumbnail: T.string
     })
   ),
   className: T.string,
   descriptionKey: T.string,
   hasMoreArticles: T.bool,
   id: T.string,
-  titleKey: T.string,
+  titleKey: T.string
 };
 
 export default ArticleList;

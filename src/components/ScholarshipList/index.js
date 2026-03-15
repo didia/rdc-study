@@ -3,6 +3,7 @@
 // Vendor
 import React from 'react';
 import T from 'prop-types';
+import Image from 'next/image';
 import Link from 'next/link';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
@@ -18,13 +19,23 @@ import Button from '../Button';
 
 // Constants
 const NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER = 6;
+// Intrinsic dimensions for Next/Image; .image is width: 100% in styles.image
+const IMAGE_WIDTH = 400;
+const IMAGE_HEIGHT = 225;
 
 const Scholarship = ({scholarship}) => {
   return (
     <article className={styles.card}>
       <Link href={scholarship.path} className={styles.card__body} tabIndex="0">
         <div className={styles['image-wrapper']}>
-          <img className={styles.image} src={scholarship.thumbnail} alt={scholarship.title} />
+          <Image
+            className={styles.image}
+            src={scholarship.thumbnail}
+            alt={scholarship.title}
+            width={IMAGE_WIDTH}
+            height={IMAGE_HEIGHT}
+            style={{objectFit: 'cover', width: '100%', height: 'auto'}}
+          />
         </div>
         <div className={styles.card__header}>
           <h6 className={styles.card__title}>{scholarship.title}</h6>
@@ -55,8 +66,8 @@ Scholarship.propTypes = {
     levels: T.arrayOf(T.string.isRequired),
     path: T.string.isRequired,
     title: T.string.isRequired,
-    thumbnail: T.string.isRequired,
-  }),
+    thumbnail: T.string.isRequired
+  })
 };
 
 const ScholarshipList = ({
@@ -65,7 +76,7 @@ const ScholarshipList = ({
   scholarships,
   showAllScholarshipsLink,
   showNewsletter,
-  titleKey,
+  titleKey
 }) => {
   const scholarships1 = scholarships.slice(0, NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER);
   const scholarships2 = scholarships.slice(NUMBER_OF_SCHOLARSHIPS_BEFORE_NEWSLETTER);
@@ -115,7 +126,7 @@ ScholarshipList.propTypes = {
   scholarships: T.arrayOf(T.shape({})),
   showAllScholarshipsLink: T.bool,
   showNewsletter: T.bool,
-  titleKey: T.string,
+  titleKey: T.string
 };
 
 export default ScholarshipList;

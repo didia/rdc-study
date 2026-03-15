@@ -81,10 +81,11 @@ const Footer = ({className}) => {
     name: '',
     showError: false,
     showSuccess: false,
-    isSubmitting: false,
+    isSubmitting: false
   });
 
-  const submitDisabledState = formState.email && formState.message && formState.name && !formState.isSubmitting ? '' : 'disabled';
+  const submitDisabledState =
+    formState.email && formState.message && formState.name && !formState.isSubmitting ? '' : 'disabled';
   const shouldShowContactForm = formState.showSuccess || formState.showError;
 
   const handleChange = (event) => {
@@ -108,20 +109,32 @@ const Footer = ({className}) => {
       message,
       name,
       form: 'contact',
-      link: typeof window !== 'undefined' ? window.location.href : '',
+      link: typeof window !== 'undefined' ? window.location.href : ''
     };
 
     setFormState((prev) => ({...prev, isSubmitting: true}));
 
-    analyticsPushEvent({category: 'ContactForm', action: 'Submit', label: typeof window !== 'undefined' ? window.location.pathname : ''});
+    analyticsPushEvent({
+      category: 'ContactForm',
+      action: 'Submit',
+      label: typeof window !== 'undefined' ? window.location.pathname : ''
+    });
 
     try {
       await axios.post(contactFormEndpoint, payload);
       setFormState((prev) => ({...prev, isSubmitting: false, showError: false, showSuccess: true}));
-      analyticsPushEvent({category: 'ContactForm', action: 'SubmitSuccess', label: typeof window !== 'undefined' ? window.location.pathname : ''});
+      analyticsPushEvent({
+        category: 'ContactForm',
+        action: 'SubmitSuccess',
+        label: typeof window !== 'undefined' ? window.location.pathname : ''
+      });
     } catch (error) {
       setFormState((prev) => ({...prev, isSubmitting: false, showError: true, showSuccess: false}));
-      analyticsPushEvent({category: 'ContactForm', action: 'SubmitError', label: typeof window !== 'undefined' ? window.location.pathname : ''});
+      analyticsPushEvent({
+        category: 'ContactForm',
+        action: 'SubmitError',
+        label: typeof window !== 'undefined' ? window.location.pathname : ''
+      });
       console.error('An error occured: ', error);
     }
   };
@@ -167,18 +180,20 @@ const Footer = ({className}) => {
             <a href={contact.email.link}>{contact.email.label}</a>
           </li>
 
-          <li className={styles.contact__item}>
-            <i className={classnames(styles['contact-item__icon'], 'fas fa-phone')} />
-            <div>
-              {contact.phones.map((phone) => (
-                <div key={phone.label}>
-                  <a href={phone.link}>
-                    {phone.countryFlag} {phone.label}
-                  </a>
-                </div>
-              ))}
-            </div>
-          </li>
+          {config.showPhonePublicly && (
+            <li className={styles.contact__item}>
+              <i className={classnames(styles['contact-item__icon'], 'fas fa-phone')} />
+              <div>
+                {contact.phones.map((phone) => (
+                  <div key={phone.label}>
+                    <a href={phone.link}>
+                      {phone.countryFlag} {phone.label}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </li>
+          )}
 
           <li className={styles.contact__item}>
             <i className={classnames(styles['contact-item__icon'], 'fas fa-home')} />

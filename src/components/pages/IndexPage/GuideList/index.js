@@ -4,10 +4,15 @@
 import React from 'react';
 import T from 'prop-types';
 import {FormattedMessage} from 'react-intl';
+import Image from 'next/image';
 import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
+
+// From styles.image: width 150px (100px at small, 130px hover)
+const IMAGE_WIDTH = 150;
+const IMAGE_HEIGHT = 150;
 
 const GuideList = ({className, guides, id}) => (
   <div id={id} className={className}>
@@ -25,7 +30,14 @@ const GuideList = ({className, guides, id}) => (
         >
           <article className={styles['grid-item-wrapper']}>
             <div className="image">
-              <img className={styles.image} src={guide.thumbnail} alt={guide.title} />
+              <Image
+                className={styles.image}
+                src={guide.thumbnail}
+                alt={guide.title}
+                width={IMAGE_WIDTH}
+                height={IMAGE_HEIGHT}
+                style={{objectFit: 'cover', width: '100%', height: 'auto'}}
+              />
             </div>
             <h3 className={styles['grid-item-title']}>{guide.name}</h3>
           </article>

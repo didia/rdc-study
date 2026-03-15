@@ -27,9 +27,8 @@ const BelgiumEquivalenceCheckStep = ({onNextStep, onPreviousStep}) => {
   const hasHighSchoolDiplomaEquivalence = useAssistanceFormStore((s) => s.hasHighSchoolDiplomaEquivalence);
   const setHasHighSchoolDiplomaEquivalence = useAssistanceFormStore((s) => s.setHasHighSchoolDiplomaEquivalence);
 
-  const [showHasHighSchoolDiplomaEquivalence, setShowHasHighSchoolDiplomaEquivalence] = useState(
-    !hasGraduateStudiesDiploma
-  );
+  const [showHasHighSchoolDiplomaEquivalence, setShowHasHighSchoolDiplomaEquivalence] =
+    useState(!hasGraduateStudiesDiploma);
 
   const methods = useForm({
     defaultValues: {
@@ -38,7 +37,10 @@ const BelgiumEquivalenceCheckStep = ({onNextStep, onPreviousStep}) => {
     }
   });
 
-  const {handleSubmit, formState: {isSubmitting}} = methods;
+  const {
+    handleSubmit,
+    formState: {isSubmitting}
+  } = methods;
 
   const onSubmit = (values) => {
     const hasGraduateStudiesDiploma = values.hasGraduateStudiesDiploma === 'true';

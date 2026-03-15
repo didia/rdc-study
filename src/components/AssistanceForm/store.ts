@@ -210,32 +210,15 @@ export const useAssistanceFormStore = create<AssistanceFormState>((set, get) => 
 
   getAvailableAssistanceTypes: () => {
     const state = get();
-    const {hasReadGuide, isAlreadyAdvanced, destinationCountry} = state;
-    const {originCountry} = state.aboutCandidate;
+    const {isAlreadyAdvanced, destinationCountry} = state;
 
     const assistanceTypesList: AssistanceType[] = [];
-    const consultationPrice = AssistancePrices[AssistanceTypes.CONSULTATION];
 
-    if (hasReadGuide) {
-      assistanceTypesList.push({
-        type: AssistanceTypes.CONSULTATION,
-        title: 'shared.assistance-types.consultation-from-guide.title',
-        price: consultationPrice
-      });
-    } else {
-      assistanceTypesList.push(
-        {
-          type: AssistanceTypes.INFORMATION,
-          title: 'shared.assistance-types.information.title',
-          price: AssistancePrices[AssistanceTypes.INFORMATION]
-        },
-        {
-          type: AssistanceTypes.CONSULTATION,
-          title: 'shared.assistance-types.consultation.title',
-          price: consultationPrice
-        }
-      );
-    }
+    assistanceTypesList.push({
+      type: AssistanceTypes.INFORMATION,
+      title: 'shared.assistance-types.information.title',
+      price: AssistancePrices[AssistanceTypes.INFORMATION]
+    });
 
     if (isAlreadyAdvanced) {
       assistanceTypesList.push({
@@ -265,9 +248,6 @@ export const useAssistanceFormStore = create<AssistanceFormState>((set, get) => 
   // Initialization
   initialize: ({fromGuide, assistancePackages, services}) => {
     set({assistancePackages, services});
-    preselectAssistancePackage(
-      (partial) => set(partial),
-      fromGuide
-    );
+    preselectAssistancePackage((partial) => set(partial), fromGuide);
   }
 }));

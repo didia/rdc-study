@@ -30,9 +30,9 @@ const DestinationCountries = {
   TURQUIE: {
     labelKey: 'shared.countries.tr',
     value: 'Turquie'
-  },
+  }
 };
 
-export const destinationCountrySlugs = Object.keys(DestinationCountries).map(key => DestinationCountries[key].value)
+export const destinationCountrySlugs = Object.keys(DestinationCountries).map((key) => DestinationCountries[key].value);
 
 export default DestinationCountries;

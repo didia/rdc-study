@@ -5,17 +5,29 @@ import React from 'react';
 import T from 'prop-types';
 import classnames from 'classnames';
 import {FormattedMessage} from 'react-intl';
+import Image from 'next/image';
 import Link from 'next/link';
 
 // Styles
 import styles from './styles.module.scss';
+
+// Intrinsic dimensions for Next/Image; .image is width: 100% in styles
+const IMAGE_WIDTH = 400;
+const IMAGE_HEIGHT = 225;
 
 const Guide = ({guide}) => {
   return (
     <Link href={guide.path} className={styles.article}>
       <article>
         <div className={classnames(styles['image-wrapper'], 'image')}>
-          <img className={styles.image} src={guide.thumbnail} alt={guide.title} />
+          <Image
+            className={styles.image}
+            src={guide.thumbnail}
+            alt={guide.title}
+            width={IMAGE_WIDTH}
+            height={IMAGE_HEIGHT}
+            style={{objectFit: 'cover', width: '100%', height: 'auto'}}
+          />
         </div>
         <h3 className="major">{guide.title}</h3>
         <p>{guide.excerpt}</p>
@@ -34,8 +46,8 @@ Guide.propTypes = {
     excerpt: T.string.isRequired,
     path: T.string.isRequired,
     title: T.string.isRequired,
-    thumbnail: T.string.isRequired,
-  }),
+    thumbnail: T.string.isRequired
+  })
 };
 
 const GuideList = ({className, descriptionKey, guides, id, titleKey}) => {
@@ -59,7 +71,7 @@ GuideList.propTypes = {
   descriptionKey: T.string,
   guides: T.arrayOf(T.object),
   id: T.string,
-  titleKey: T.string,
+  titleKey: T.string
 };
 
 export default GuideList;

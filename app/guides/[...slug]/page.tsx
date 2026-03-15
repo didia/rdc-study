@@ -54,6 +54,7 @@ export default async function GuideRoute({params}: {params: Promise<{slug: strin
         title: guide.title,
         topic: guide.topic,
         related: guide.related,
+        updated: guide.updated,
       }}
       relatedGuides={relatedGuides.map(mapGuide)}
       otherGuides={otherGuides.map(mapGuide)}

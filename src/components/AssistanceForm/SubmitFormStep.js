@@ -3,7 +3,6 @@
 // Vendor
 import React, {useState} from 'react';
 import {useIntl} from 'react-intl';
-import axios from 'axios';
 import {useForm} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
 import {z} from 'zod';
@@ -33,6 +32,7 @@ import analyticsPushEvent from '../../utils/push-analytics-event';
 import StepActions from './StepActions';
 import StepForm from './StepForm';
 import subscribeToNewsletter from '../../utils/subscribe-to-newsletter';
+import {submitAssistanceRequest} from './utils';
 
 const getCheckedClassName = (currentValue, expectedValue) =>
   currentValue === expectedValue
@@ -45,7 +45,7 @@ const serviceSchema = (intl) =>
   });
 
 const formattedAssistancePrice = (intl, price) => {
-  const translationKey = price ? 'shared.assistance-types.price' : 'shared.assistance-types.price-free';
+  const translationKey = price ? 'shared.assistance-types.price-accompaniment' : 'shared.assistance-types.price-free';
   return intl.formatMessage({id: translationKey}, {price});
 };
 
@@ -67,15 +67,13 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
     : 'assistance-form.steps.submit-form.assistance-request-message';
 
   const submitAssistance = async (message) => {
-    const payload = {
+    await submitAssistanceRequest({
+      endpoint: contactFormEndpoint,
       message,
       name,
-      form: 'assistance',
       email: aboutCandidate.email,
       link: getCurrentUrl()
-    };
-
-    await axios.post(contactFormEndpoint, payload);
+    });
   };
 
   const {
@@ -115,18 +113,22 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
           firstName: aboutCandidate.firstName,
           lastName: aboutCandidate.lastName
         });
+        analyticsPushEvent({
+          category: 'AssistanceForm',
+          action: values.service,
+          label: assistancePackage.slug,
+          value: AssistancePrices[values.service]
+        });
+        onNextStep(Steps.FormSubmitted);
       } else {
-        await submitAssistance(msg);
+        analyticsPushEvent({
+          category: 'AssistanceForm',
+          action: values.service,
+          label: assistancePackage.slug,
+          value: AssistancePrices[values.service]
+        });
+        onNextStep(Steps.AccompagnementTerms);
       }
-
-      analyticsPushEvent({
-        category: 'AssistanceForm',
-        action: values.service,
-        label: assistancePackage.slug,
-        value: AssistancePrices[values.service]
-      });
-
-      onNextStep(Steps.FormSubmitted);
     } catch (error) {
       setShowError(true);
 
@@ -164,12 +166,7 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
                 getCheckedClassName(serviceValue, assistanceType.type)
               )}
             >
-              <input
-                type="radio"
-                value={assistanceType.type}
-                className={styles.input}
-                {...register('service')}
-              />
+              <input type="radio" value={assistanceType.type} className={styles.input} {...register('service')} />
               <div>
                 {intl.formatMessage({id: assistanceType.title})}
                 <p className="bold">{formattedAssistancePrice(intl, assistanceType.price)}</p>

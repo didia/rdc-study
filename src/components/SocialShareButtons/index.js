@@ -11,7 +11,7 @@ import {
   FacebookIcon,
   TwitterIcon,
   WhatsappIcon,
-  EmailIcon,
+  EmailIcon
 } from 'react-share';
 
 // Config
@@ -49,7 +49,7 @@ const SocialShareButtons = ({path, title, excerpt}) => {
 SocialShareButtons.propTypes = {
   excerpt: T.string.isRequired,
   path: T.string.isRequired,
-  title: T.string.isRequired,
+  title: T.string.isRequired
 };
 
 export default SocialShareButtons;

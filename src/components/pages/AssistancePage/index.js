@@ -15,7 +15,7 @@ import AssistanceForm from '../../AssistanceForm';
 import CompetitiveAdvantages from '../IndexPage/CompetitiveAdvantages';
 
 const page = {
- title: 'JE VEUX UNE ASSISTANCE',
+  title: 'JE VEUX UNE ASSISTANCE',
   path: '/accompagnement'
 };
 
@@ -27,10 +27,10 @@ const AssistancePage = ({assistancePackages, services}) => {
   return (
     <GenericPage page={page} bannerClassName={styles.banner}>
       <section style={{position: 'relative', marginTop: '-176px'}}>
-        <div style={{margin: 'auto', width: '585px'}}>
+        <div className={styles.ctaButtons}>
           <FormattedMessage id="pages.assistance.call-to-action-button-text">
             {(text) => (
-              <Link href="/assistance-bourse" className="button special call-to-action" style={{marginRight: '7px'}}>
+              <Link href="/assistance-bourse" className="button special call-to-action">
                 {text}
               </Link>
             )}
@@ -43,9 +43,6 @@ const AssistancePage = ({assistancePackages, services}) => {
             )}
           </FormattedMessage>
         </div>
-        <br />
-        <br />
-        <br />
         <CompetitiveAdvantages />
 
         <p style={{marginTop: '20px'}}>

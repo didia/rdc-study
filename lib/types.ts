@@ -27,6 +27,7 @@ export type Guide = {
   flag?: string;
   thumbnail: string;
   date?: string;
+  updated?: string;
   path: string;
   draft: boolean;
   metaImage?: {

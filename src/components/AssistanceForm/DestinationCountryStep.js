@@ -82,7 +82,12 @@ const DestinationCountryStep = ({onNextStep, onPreviousStep, recapMode}) => {
     }
   });
 
-  const {handleSubmit, setValue, watch, formState: {errors, isSubmitting}} = methods;
+  const {
+    handleSubmit,
+    setValue,
+    watch,
+    formState: {errors, isSubmitting}
+  } = methods;
   const destinationCountryValue = watch('destinationCountry');
 
   const onSubmit = (values) => {

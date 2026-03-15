@@ -15,7 +15,7 @@ const MENU_ITEMS = [
   {labelKey: 'menu.partner-link-label', to: '/nos-partenaires'},
   {labelKey: 'menu.faq-label', to: '/questions-populaires'},
   {labelKey: 'menu.legal-notes-label', to: '/assistance-visa'},
-  {labelKey: 'menu.privacy-policy-link-label', to: '/politique-de-confidentialite'},
+  {labelKey: 'menu.privacy-policy-link-label', to: '/politique-de-confidentialite'}
 ];
 
 const Menu = ({isVisible, onToggleMenu}) => {

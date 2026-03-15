@@ -59,7 +59,10 @@ const YesNoStepForm = ({title, value, options, onSubmit, onPreviousStep}) => {
     defaultValues: {field: value ? 'true' : 'false'}
   });
 
-  const {handleSubmit, formState: {isSubmitting}} = methods;
+  const {
+    handleSubmit,
+    formState: {isSubmitting}
+  } = methods;
 
   const onFormSubmit = (values) => {
     onSubmit(values.field === 'true');

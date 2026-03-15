@@ -142,6 +142,7 @@ export async function getGuides(showDraft = false): Promise<Guide[]> {
         flag: data.flag ? resolveImagePath(data.flag, sourceDir) : undefined,
         thumbnail: resolveImagePath(data.thumbnail, sourceDir),
         date: data.date,
+        updated: data.updated,
         path: `/guides/${data.slug}`,
         draft: Boolean(data.draft),
         metaImage: data.thumbnail
@@ -167,15 +168,15 @@ export function splitRelatedAndOthers(
     (g) => g.topic === guide.topic && g.slug !== guide.slug
   );
 
-  if (!guide.related || guide.related.length === 0) {
-    return {relatedGuides: [], otherGuides: sameTopicGuides};
-  }
+  // Resolve related guides from allGuides so cross-topic links work (e.g. admission → visa)
+  const relatedGuides =
+    guide.related?.length > 0
+      ? guide.related
+          .map((relatedSlug) => allGuides.find((g) => g.slug === relatedSlug))
+          .filter((g): g is Guide => g !== undefined)
+      : [];
 
-  const relatedGuides = guide.related
-    .map((relatedSlug) => sameTopicGuides.find((g) => g.slug === relatedSlug))
-    .filter((g): g is Guide => g !== undefined);
-
-  const relatedSlugs = new Set(guide.related);
+  const relatedSlugs = new Set(guide.related ?? []);
   const otherGuides = sameTopicGuides.filter((g) => !relatedSlugs.has(g.slug));
 
   return {relatedGuides, otherGuides};

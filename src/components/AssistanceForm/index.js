@@ -61,11 +61,7 @@ const MasterForm = ({assistancePackages, services, fromGuide, service}) => {
   return (
     <div ref={currentStepRef} className={styles['card-wrapper']}>
       <Card className={styles.card}>
-        <CurrentStepComponent
-          onNextStep={onNextStep}
-          onPreviousStep={onPreviousStep}
-          onRestart={onRestart}
-        />
+        <CurrentStepComponent onNextStep={onNextStep} onPreviousStep={onPreviousStep} onRestart={onRestart} />
       </Card>
     </div>
   );

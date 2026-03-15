@@ -1,7 +1,10 @@
 .wrapper {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    filter 0.25s ease;
   transition-delay: 1s;
   filter: blur(0);
 }

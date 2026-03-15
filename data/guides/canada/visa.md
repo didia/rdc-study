@@ -1,5 +1,6 @@
 ---
 draft: false
+updated: '2026-03-15'
 title: Obtenir un permis d‘études pour le Canada
 excerpt: Avec votre admission dans une établissement d‘enseignement canadien en
   mains, vous devez maintenant faire une demande de visa à Immigration Canada.
@@ -15,85 +16,214 @@ related:
 date: 2018-03-30
 topic: visa
 ---
-Une fois admis dans un établissement d’enseignement au Canada, vous pouvez commencer votre demande de permis d’études pour immigrer au Canada.\
-Pour entrer au Canada vous avez besoin d’un visa de résident temporaire et un permis d’études pour y étudier. Vous obtiendrez d’abord votre visa de résident et une fois au Canada, votre permis d’études vous sera délivré.
 
-Nous vous recommandons de commencer vos démarches de permis d’études au moins 3 mois avant la date de début de la session pour laquelle vous vous êtes inscrit.
+Une fois admis dans un établissement d’enseignement désigné (Designated Learning Institution – **DLI**) au Canada, vous devez présenter une demande de **permis d’études** auprès d’Immigration, Réfugiés et Citoyenneté Canada (IRCC).
 
-Si votre établissement d’enseignement au Canada se trouve dans la province du Québec, vous devez au préalable obtenir un Certificat d’Acceptation du Québec (CAQ) avant de faire une demande de permis d’études.
-Pour savoir comment vous y prendre, consultez notre [guide gratuit sur l’obtention d’un CAQ.](/guides/canada/caq)
+Un permis d’études est une autorisation officielle qui vous permet d’étudier légalement au Canada pendant une période déterminée.
 
-Voici donc les différentes étapes générales à suivre pour vos démarches de visa:
+Pour entrer au Canada, la plupart des étudiants doivent obtenir :
 
-1. ## Choisissez le type de demande
+- un **visa de résident temporaire (VRT)** ou une **autorisation de voyage électronique (AVE)** ;
+- un **permis d’études**.
 
-   Vous pouvez faire votre demande de permis d’études deux manières: en ligne ou au centre de réception des demandes de visa (CRDV).
+Nous recommandons de commencer les démarches **au moins 4 à 6 mois avant le début de votre session**.
 
-   Pour faire la demande en ligne, vous devez être en mesure de numériser vos documents et avoir une carte de crédit valide pour payer les frais de demande.\
-   L’avantage de faire la demande en ligne est que c’est plus rapide et il y’a moins de documents réquis comparé à ce que le CRDV demande.
+Pour les étudiants qui vont étudier au Québec, vous devez **obtenir un Certificat d’Acceptation du Québec (CAQ)** avant de faire votre demande de permis d’études.
 
-   Si vous choisissez de faire la demande en ligne, vous devez commencer par créer votre compte sur <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/compte.html" target="_blank" rel="nofollow noopener">le site web de l‘immigration.</a>
-2. ## Obtenir les formulaires exigés pour la demande
+Pour savoir comment obtenir un CAQ, consultez notre guide :
 
-   Une liste de formulaires à remplir sont exigés lorsque vous présentez votre demande de permis d’études.\
-   Ces formulaires sont disponibles au CRDV ou encore gratuitement en ligne sur <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html" target="_blank" rel="nofollow noopener">le site web de immigration et citoyenneté Canada.</a>
+[Obtenir un certificat d’acceptation du Québec](/guides/canada/caq)
 
-   Pour la demande en ligne, les formulaires seront déjà disponible pour téléchargement à travers votre compte.
-3. ## Remplir les formulaires
+---
 
-   Vous devez remplir complètement et avec précision tous les formulaires demandés.\
-   Fiez-vous donc au <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html" target="_blank" rel="nofollow noopener">guide en ligne</a> sur le site d‘Immigration Canada pour savoir quoi mettre dans chaque case.\
-   Si vous avez toujours des doutes, contactez-nous! Nous offrons des services pour vous accompagner dans ce processus.
-4. ## Rassembler tous les documents exigés
+# Étapes pour obtenir un permis d’études au Canada
 
-   Parmi les formulaires obtenus au point 3, vous trouverez un formulaire nommé liste de contrôle.\
-   Cette list énumère tous les documents supplémentaires que vous devrez joindre à votre demande y compris vos photos passeport. Assurez-vous de n’oublier aucun document.
+## 1. Vérifier votre admissibilité
 
-   Pour la demande au CRDV, des documents supplémentaires peuvent être sollicités en plus de ceux déjà présents dans la liste de contrôle.
-   Vous trouverez ces documents dans le document nommé **Directives du bureau de visa de Dakar** pour le CRDV de Kinshasa.
-   Ce document est aussi disponible pour téléchargement <a href="http://www.cic.gc.ca/francais/pdf/trousses/form/IMM5826F.pdf" target="_blank" rel="nofollow noopener">sur le site d’Immigration Canada.</a> Il est important de fournir tous ces documents si vous faites une demande au CRDV.
+Avant de faire votre demande, vous devez vérifier que vous remplissez les critères principaux.
 
-   Si vous faites la demande en ligne, vous n’aurez pas besoin de fournir une bonne partie de ces documents. Toutefois, vous devez founir tous les documents exigés dans la liste de contrôle.
-5. ## Le plan d’études et l’engagement à quitter le Canada après ses études
+Pour être admissible, vous devez :
 
-   Nous avons créé une section à part pour ces deux documents au vu de leur importance pour la demande de permis d’études.
+- avoir une **lettre d’acceptation d’un établissement d’enseignement désigné (DLI)** ;
+- prouver que vous disposez de **fonds suffisants** pour payer vos études et votre séjour ;
+- démontrer que vous **respecterez les lois canadiennes** ;
+- démontrer que vous **quitterez le Canada à la fin de vos études** ;
+- être en **bonne santé** et parfois passer un **examen médical** ;
+- ne pas avoir de **casier judiciaire**.
 
-   Vous devez rédiger un plan d’études qui explique pourquoi vous avez choisi le Canada comme pays d’études et non la RDC,
-   pourquoi vous avez choisi votre programme d’études et comment vous comptez utiliser l’argent disponible pour financer vos études.
+Référence officielle :  
+https://www.canada.ca/fr/immigration-refugies-citoyennete/services/etudier-canada/permis-etudes/presenter-demande.html
 
-   Ensuite vous devez fournir [un engagement écrit à quitter le Canada après la fin de vos études](/guides/canada/visa/exemple-lettre-engagement-quitter-canada-apres-etudes).
-   Cet engagement permet au Canada de s’assurer que vous n‘essaierez pas de rester illégalement au Canada.
+---
 
-   Si vous avez besoin d’aide pour rédiger ces documents, nous vous encourageons à souscrire à notre [service d’accompagnement](/accompagnement), plus spécifiquement le forfait Visa.
-6. ## Vérifiez que vous avez tous les documents
+## 2. Préparer les documents requis
 
-   Assurez vous de bien remplir vos formulaires et de présenter tous les documents demandés pour pouvoir compléter votre demande.\
-   Un grand nombre d’étudiants se voit refusé la demande par manque d’attention. Un formulaire mal rempli, un document oublié, un document de trop qui n’a pas sa place,
-   des preuves financières jugées insuffisantes, une demande jugée incomplète, un manque de plan d’étude, ne pas avoir convaincu l’agent du visa, sont quelques raisons de refus de la plus part des demandes de permis d’études.
-7. ## Déposez votre demande
+La préparation du dossier est l’étape la plus importante.
 
-   Vous devez ensuite vous rendre au CRDV pour déposer vos documents. Au dépôt de votre demande, vous allez payer les frais de traitement, les frais du CRDV ainsi que les frais pour les données biométriques.
+Voici les principaux documents exigés :
 
-   Si vous avez fait votre demande en ligne, vous allez juste téléverser vos documents en ligne et payer les frais de traitement.\
-   Une fois que le bureau aura réçu votre demande, vous serez invité à aller déposer vos données biométriques au CRDV.
-8. ## Examen médicale et réponse à la demande
+### Documents obligatoires
 
-   Le délai de traitement est varie selon votre location et la période de demande. En moyenne, le délai de demande à Kinshasa est de 6 semaines en moyenne sans compter le délai de transit entre le CRDV de Kinshasa et le bureau de visa de Dakar où les demandes sont acheminées et traitées.\
-   Pour savoir quel sera votre délai exact, veuillez consulter le <a href="http://www.cic.gc.ca/francais/information/delais/index.asp" target="_blank" rel="nofollow noopener">site d’Immigration Canada à cet effet.</a>
+- Passeport valide
+- Lettre d’acceptation d’un établissement canadien (DLI)
+- Certificat d’acceptation du Québec (CAQ) si vous étudiez au Québec
+- Preuves financières
+- Lettre d’explication (plan d’études)
+- Photos d’identité
+- Formulaires d’immigration complétés
 
-   Si votre demande est approuvée, vous recevrez par email une invitation à passer des examens médicaux.
-   La réponse finale dépendra ainsi des résultats de ces examens médicaux.\
-   Dans le cas d’un rejet, vous recevrez une lettre vous expliquant pourquoi votre demande a été rejetée.
+### Preuves financières
 
-## Combien ça coûte ?
+Vous devez démontrer que vous disposez d’assez d’argent pour couvrir :
 
-En supposant que vous choisissez [d’être accompagné dans votre demande de visa par un mentor de RDC-Etudes](/accompagnement), vous devrez prévoir entre **1 170 USD et 1200 USD** pour vos démarches de visa.
-Ces frais se présentent comme suit:
+- les frais de scolarité
+- les frais de subsistance
+- les frais de transport
 
-* **20 USD à 50 USD** pour les documents administratifs à obtenir de votre gouvernement.
-* **200 USD** pour le frais des visas (Y compris les empreintes)
-* **320 USD** pour les frais des examens médicaux.
-* **30 USD** pour l'envie du passeport 
-* **600 USD** pour les frais d’assistance RDC-Etudes.
+Depuis 2024, les exigences financières minimales sont :
 
-**NB**: RDC n’a pas le droit de faire votre demande de permis d‘études à votre place, vous représenter au près du gouvernement canadien ou vous conseiller en ce qui concerne l'immigration au Canada. Notre assistance en ce qui concerne le permis d‘études se limite au niveau de l‘élaboration de votre projet d‘études, votre stratégie financière pour prendre en charges vos études ainsi que dans l'assistance logistique autour de votre demande. Pour en savoir plus, consultez les [limitations légales de notre assistance Visa.](/assistance-visa)
+- **20 635 CAD par année pour les dépenses de subsistance** (hors frais de scolarité)
+
+Les preuves financières peuvent inclure :
+
+- relevés bancaires
+- attestations de prise en charge
+- preuves de revenus
+- bourses
+- lettres de soutien financier
+
+---
+
+## 3. Remplir les formulaires
+
+Les formulaires principaux incluent :
+
+- IMM1294 – Demande de permis d’études
+- IMM5645 – Renseignements sur la famille
+- IMM5483 – Liste de contrôle des documents
+
+Ces formulaires sont disponibles sur le site officiel :
+
+https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-5269-presenter-demande-permis-etudes.html
+
+Il est essentiel de :
+
+- remplir tous les champs
+- signer les formulaires
+- vérifier l’exactitude des informations
+
+---
+
+## 4. Rédiger la lettre d’explication (plan d’études)
+
+La lettre d’explication est un document clé dans votre demande.
+
+Elle permet d’expliquer à l’agent :
+
+- pourquoi vous avez choisi le Canada
+- pourquoi vous avez choisi ce programme
+- comment vos études s’inscrivent dans votre parcours
+- comment vous financerez vos études
+- pourquoi vous retournerez dans votre pays après vos études
+
+Consultez notre guide :
+
+[Comment écrire une lettre d’explication](/guides/canada/visa/lettre-explication)
+
+---
+
+## 5. Déposer la demande
+
+Vous pouvez faire la demande :
+
+### En ligne (recommandé)
+
+Sur le site officiel d’IRCC :
+
+https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/compte.html
+
+Avantages :
+
+- traitement plus rapide
+- suivi en ligne
+- moins de documents physiques
+
+### Au centre de réception des demandes de visa (CRDV)
+
+À Kinshasa, les demandes passent par le **CRDV VFS Global**.
+
+---
+
+## 6. Fournir les données biométriques
+
+Après avoir soumis votre demande, vous recevrez une **lettre d’instructions biométriques**.
+
+Vous devrez alors vous rendre au CRDV pour fournir :
+
+- empreintes digitales
+- photo biométrique
+
+---
+
+## 7. Examen médical
+
+Selon votre situation, vous devrez passer un **examen médical auprès d’un médecin désigné par IRCC**.
+
+Cet examen vise à vérifier que vous ne présentez pas de risque pour la santé publique.
+
+---
+
+## 8. Attendre la décision
+
+Les délais de traitement varient selon :
+
+- le pays
+- la période de l’année
+- la complétude du dossier
+
+Pour connaître les délais :
+
+https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/delais-traitement.html
+
+Si votre demande est approuvée, vous recevrez :
+
+- une **lettre d’introduction pour le permis d’études**
+- un **visa de résident temporaire**
+
+Le permis d’études sera délivré **à votre arrivée au Canada**.
+
+---
+
+# Pourquoi les demandes sont refusées ?
+
+Les refus sont généralement liés à :
+
+- un projet d’études jugé incohérent
+- des preuves financières insuffisantes
+- des liens insuffisants avec le pays d’origine
+- un manque de clarté dans la lettre d’explication
+- un dossier incomplet
+
+Il est donc essentiel de **préparer un dossier solide et cohérent**.
+
+---
+
+# Combien ça coûte ?
+
+Les frais gouvernementaux sont actuellement :
+
+- **150 CAD** : permis d’études
+- **85 CAD** : biométrie
+
+À cela peuvent s’ajouter :
+
+- examens médicaux
+- traduction des documents
+- envoi du passeport
+- frais d’accompagnement
+
+Si vous choisissez d’être accompagné par un mentor RDC-Etudes, vous devrez prévoir un budget total estimé entre :
+
+**800 USD et 1400 USD pour l’ensemble des démarches.**
+
+**NB** : Ces montants peuvent changer. Consultez toujours les sites officiels pour les montants à jour.

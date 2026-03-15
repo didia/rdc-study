@@ -1,3 +1,9 @@
+.last-updated {
+  font-size: 0.9em;
+  color: _palette(fg-light);
+  margin: 0 0 1em 0;
+}
+
 .guide-learn-more-link {
   @include icon($where: 'after');
   display: block;
@@ -10,7 +16,9 @@
   font-weight: _font(weight-heading-bold);
   letter-spacing: _font(kern-heading);
   color: mix(_palette(fg-bold), _palette(accent), 35%);
-  transition: color #{_duration(transition)} ease-in-out, border-bottom-color #{_duration(transition)} ease-in-out;
+  transition:
+    color #{_duration(transition)} ease-in-out,
+    border-bottom-color #{_duration(transition)} ease-in-out;
 
   &::after {
     display: inline-block;

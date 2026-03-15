@@ -1,11 +1,12 @@
 import React from 'react';
 
+import config from '../../../config';
 import GenericPage from '../GenericPage';
 
 const page = {
   description: 'La politique de confidentialité de RDC Etudes.',
   title: 'Politique de confidentialité',
-  path: '/politique-de-confidentialite',
+  path: '/politique-de-confidentialite'
 };
 
 const PrivacyPolicyPage = () => (
@@ -34,7 +35,8 @@ const PrivacyPolicyPage = () => (
     <hr />
     <h2>Formulaires&nbsp; et interactivité:</h2>
     <p>
-      Vos renseignements personnels sont collectés par le biais du formulaire de Contact sur chaque page de ce site web{' '}
+      Vos renseignements personnels sont collectés par le biais du formulaire de Contact sur chaque page de ce site
+      web{' '}
     </p>
     <p>Nous utilisons les renseignements ainsi collectés pour les finalités suivantes :</p>
     <ul>
@@ -69,9 +71,13 @@ const PrivacyPolicyPage = () => (
     </p>
     <p>
       Pour pouvoir exercer ces droits, vous pouvez contacter: <br />
-      Code postal: Local 1M3, Nouvelles Galéries Présidentielles, Kinshasa, R.D. Congo
+      Adresse : av. Kitega n°147, Huilerie, Lingwala, Kinshasa, R.D. Congo
       <br /> Courriel : salut@rdcetudes.com
-      <br /> Téléphone : +243 822 313 039
+      {config.showPhonePublicly && (
+        <>
+          <br /> WhatsApp : {config.contact.phones[0]?.label ?? '+1 613 917-1416 (WhatsApp)'}
+        </>
+      )}
       <br /> Section du site web : https://www.rdcetudes.com/
       <br />{' '}
     </p>
@@ -82,10 +88,14 @@ const PrivacyPolicyPage = () => (
       consulter, modifier, voire radier les informations les concernant.
       <br />
       L‘exercice de ce droit se fera :<br />
-      Code postal : Local 1M3, Nouvelles Galéries Présidentielles, Kinshasa, R.D. Congo
+      Adresse : av. Kitega n°147, Huilerie, Lingwala, Kinshasa, R.D. Congo
       <br /> Courriel : salut@rdcetudes.com
-      <br />
-      Téléphone : +243 822 313 039
+      {config.showPhonePublicly && (
+        <>
+          <br />
+          WhatsApp : {config.contact.phones[0]?.label ?? '+1 613 917-1416 (WhatsApp)'}
+        </>
+      )}
       <br /> Section du site web : https://www.rdcetudes.com/
       <br />
     </p>

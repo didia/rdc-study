@@ -27,8 +27,8 @@ ScholarshipCountries.propTypes = {
   tag: T.elementType,
   countries: T.arrayOf(T.string.isRequired),
   intl: T.shape({
-    formatMessage: T.func,
-  }),
+    formatMessage: T.func
+  })
 };
 
 export default ScholarshipCountries;

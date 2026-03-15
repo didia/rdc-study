@@ -1,5 +1,6 @@
 ---
 draft: false
+updated: '2026-03-15'
 title: Obtenir un certificat d’acceptation du Québec (CAQ)
 excerpt: Si vous êtes admis dans un établissement d’enseignement au Québec, vous
   devez au préalable obtenir un certificat d’acceptation du Québec (CAQ) avant

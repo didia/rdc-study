@@ -1,6 +1,7 @@
 .page-wrapper {
   background-color: _palette(bg);
-  background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
+  background-image:
+    linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
     url('../../assets/images/background-image.jpg');
   background-position: center, center;
   background-size: auto, cover;

@@ -6,6 +6,10 @@ import Image from 'next/image';
 // Styles
 import styles from './styles.module.scss';
 
+// From styles.cover__image-wrapper: max-height 400px, width 100%
+const COVER_IMAGE_WIDTH = 800;
+const COVER_IMAGE_HEIGHT = 400;
+
 // Component
 import PageLayout from '../../PageLayout';
 import SocialShareButtons from '../../SocialShareButtons';
@@ -22,17 +26,23 @@ const ScholarshipPage = ({scholarship, otherScholarships}) => {
     image: scholarship.metaImage,
     keywords: scholarship.tags,
     path: scholarship.path,
-    title: scholarship.title,
+    title: scholarship.title
   };
 
   return (
     <PageLayout>
-
       <section key="content" className={classnames(styles.wrapper, styles['wrapper--content'])}>
         <div className={styles.inner}>
           <div className={styles.cover}>
             <div className={styles['cover__image-wrapper']}>
-              <Image src={scholarship.thumbnail} alt={scholarship.title} width={800} height={450} className={styles.coverImage} style={{objectFit: 'cover', width: '100%', height: 'auto'}} />
+              <Image
+                src={scholarship.thumbnail}
+                alt={scholarship.title}
+                width={COVER_IMAGE_WIDTH}
+                height={COVER_IMAGE_HEIGHT}
+                className={styles.coverImage}
+                style={{objectFit: 'cover', width: '100%', height: 'auto'}}
+              />
             </div>
 
             {scholarship.thumbnailCredits && (

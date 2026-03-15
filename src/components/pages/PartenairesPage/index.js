@@ -31,18 +31,14 @@ const PARTNER_LINK = [
   {
     labelKey: 'partner.atua-junior',
     to: '/articles/2021-08-01-groupe-atua-junior'
-  },
-
+  }
 ];
 
 const PartenairesPage = () => {
   return (
     <GenericPage page={page}>
       <div>
-
-
         {PARTNER_LINK.map((item, index) => (
-
           <h2>
             <FormattedMessage id={item.labelKey}>{(text) => <Link href={item.to}>{text}</Link>}</FormattedMessage>
           </h2>
