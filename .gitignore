@@ -13,6 +13,9 @@ yarn-error.log
 .env.*
 *.env
 
+# Generated data assets (copied from data/ by scripts/copy-data-assets.mjs)
+/public/data
+
 # Misc
 .DS_Store
 *.tsbuildinfo

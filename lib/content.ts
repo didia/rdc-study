@@ -52,10 +52,20 @@ function getAllFiles(dir: string, ext = '.md'): string[] {
   return files;
 }
 
-function resolveImagePath(imagePath: string | undefined): string {
+function resolveImagePath(imagePath: string | undefined, sourceDir?: string): string {
   if (!imagePath) return '';
   if (imagePath.startsWith('/')) return imagePath;
   if (imagePath.startsWith('http')) return imagePath;
+
+  // If we know the source file's directory, resolve the relative path
+  // so the URL maps to /data/<relative-dir>/<imagePath>.
+  // The prebuild script (scripts/copy-data-assets.mjs) mirrors data/ into
+  // public/data/, so these URLs resolve to real files.
+  if (sourceDir) {
+    const relativeDir = path.relative(DATA_DIR, sourceDir);
+    return `/data/${relativeDir}/${imagePath}`;
+  }
+
   return `/${imagePath}`;
 }
 
@@ -119,6 +129,7 @@ export async function getGuides(showDraft = false): Promise<Guide[]> {
       if (!data.slug) return null;
 
       const html = await markdownToHtml(content);
+      const sourceDir = path.dirname(filePath);
 
       return {
         content: html,
@@ -128,13 +139,13 @@ export async function getGuides(showDraft = false): Promise<Guide[]> {
         topic: data.topic || 'country',
         related: data.related || [],
         name: data.name || '',
-        flag: data.flag ? resolveImagePath(data.flag) : undefined,
-        thumbnail: resolveImagePath(data.thumbnail),
+        flag: data.flag ? resolveImagePath(data.flag, sourceDir) : undefined,
+        thumbnail: resolveImagePath(data.thumbnail, sourceDir),
         date: data.date,
         path: `/guides/${data.slug}`,
         draft: Boolean(data.draft),
         metaImage: data.thumbnail
-          ? {src: resolveImagePath(data.thumbnail), width: 1200, height: 630}
+          ? {src: resolveImagePath(data.thumbnail, sourceDir), width: 1200, height: 630}
           : undefined,
       } as Guide;
     })
@@ -317,5 +328,11 @@ export async function getTeam(): Promise<TeamMember[]> {
   if (!fs.existsSync(filePath)) return [];
 
   const fileContent = fs.readFileSync(filePath, 'utf-8');
-  return JSON.parse(fileContent);
+  const members: TeamMember[] = JSON.parse(fileContent);
+  const teamDir = path.dirname(filePath);
+
+  return members.map((member) => ({
+    ...member,
+    image: resolveImagePath(member.image, teamDir),
+  }));
 }

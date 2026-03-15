@@ -11,7 +11,8 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "dev": "next dev",
+    "prebuild": "node scripts/copy-data-assets.mjs",
+    "dev": "node scripts/copy-data-assets.mjs && next dev",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
