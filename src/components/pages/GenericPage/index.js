@@ -3,20 +3,25 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import styles from './styles.module.scss';
+import ui from '../../site/ui.module.scss';
+import SiteLayout from '../../site/SiteLayout';
+import {Section, PageBanner} from '../../site/Section';
 
-import PageLayout from '../../PageLayout';
-import Banner from './Banner';
-
-const GenericPage = ({children, bannerClassName, footerClassName, page, pageWrapperClassName}) => {
-  return (
-    <PageLayout pageWrapperClassName={pageWrapperClassName} footerClassName={footerClassName}>
-      <Banner key="banner" page={page} className={bannerClassName} />
-      <section key="content" className={classnames(styles.wrapper, styles['wrapper--content'])}>
-        <div className={styles.inner}>{children}</div>
-      </section>
-    </PageLayout>
-  );
-};
+/**
+ * Plain content page: banner (page.title / description) + white content section.
+ * `prose` (default) styles raw HTML/markdown children; turn it off for pages that bring their own layout.
+ */
+const GenericPage = ({children, page, active, prose = true, withNewsletter = true}) => (
+  <SiteLayout active={active} withNewsletter={withNewsletter} newsletterTone="dark">
+    <PageBanner
+      title={page.title}
+      lead={page.description}
+      share={page.socialShareEnabled ? {path: page.path, title: page.title, excerpt: page.description} : undefined}
+    />
+    <Section tone="white">
+      <div className={classnames(prose && ui.prose, ui.narrow)}>{children}</div>
+    </Section>
+  </SiteLayout>
+);
 
 export default GenericPage;

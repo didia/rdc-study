@@ -3,56 +3,51 @@
 // Vendor
 import React from 'react';
 import Link from 'next/link';
-import {FormattedMessage} from 'react-intl';
+import classnames from 'classnames';
+import {FormattedMessage, useIntl} from 'react-intl';
 import {useSearchParams} from 'next/navigation';
 
 // Styles
 import styles from './styles.module.scss';
+import ui from '../../site/ui.module.scss';
 
 // Components
-import GenericPage from '../GenericPage';
-import AssistanceForm from '../../AssistanceForm';
-import CompetitiveAdvantages from '../IndexPage/CompetitiveAdvantages';
+import SiteLayout from '../../site/SiteLayout';
+import {Section, PageBanner} from '../../site/Section';
+import {Trust} from '../../site/Sections';
+import VisaWarning from '../../site/VisaWarning';
 
-const page = {
-  title: 'JE VEUX UNE ASSISTANCE',
-  path: '/accompagnement'
-};
-
-const AssistancePage = ({assistancePackages, services}) => {
-  const searchParams = useSearchParams();
-  const fromGuide = searchParams.get('pour');
-  const service = searchParams.get('service');
+const AssistancePage = () => {
+  const intl = useIntl();
+  const query = useSearchParams().toString();
+  const t = (id) => intl.formatMessage({id: `site.assistance.${id}`});
 
   return (
-    <GenericPage page={page} bannerClassName={styles.banner}>
-      <section style={{position: 'relative', marginTop: '-176px'}}>
-        <div className={styles.ctaButtons}>
+    <SiteLayout active="/accompagnement" newsletterTone="dark">
+      <PageBanner eyebrow={t('eyebrow')} title={t('title')} lead={t('lead')} />
+
+      <Section tone="light">
+        <div className={styles.choices}>
           <FormattedMessage id="pages.assistance.call-to-action-button-text">
             {(text) => (
-              <Link href="/assistance-bourse" className="button special call-to-action">
+              <Link href="/assistance-bourse" className={classnames(ui.btn, ui.ghost)}>
                 {text}
               </Link>
             )}
           </FormattedMessage>
           <FormattedMessage id="pages.accompanied.call-to-action-button-text">
             {(text) => (
-              <Link href="/assistance-process" className="button special call-to-action">
+              <Link href={query ? `/assistance-process?${query}` : '/assistance-process'} className={ui.btn}>
                 {text}
               </Link>
             )}
           </FormattedMessage>
         </div>
-        <CompetitiveAdvantages />
+      </Section>
 
-        <p style={{marginTop: '20px'}}>
-          <FormattedMessage id="pages.assistance.visa.warning" />
-          <FormattedMessage id="pages.assistance.visa.warning-learn-more">
-            {(text) => <Link href="/assistance-visa">{text}</Link>}
-          </FormattedMessage>
-        </p>
-      </section>
-    </GenericPage>
+      <Trust tone="dark" />
+      <VisaWarning tone="white" />
+    </SiteLayout>
   );
 };
 

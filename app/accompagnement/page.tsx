@@ -1,5 +1,4 @@
 import {Suspense} from 'react';
-import {getAssistancePackageDictionary, getServices} from '@/lib/content';
 import {generatePageMetadata} from '@/lib/metadata';
 import AssistancePage from '@/components/pages/AssistancePage';
 
@@ -9,15 +8,10 @@ export const metadata = generatePageMetadata({
   path: '/accompagnement',
 });
 
-export default async function AccompagnementPage() {
-  const [assistancePackages, services] = await Promise.all([
-    getAssistancePackageDictionary(),
-    getServices(),
-  ]);
-
+export default function AccompagnementPage() {
   return (
     <Suspense>
-      <AssistancePage assistancePackages={assistancePackages} services={services} />
+      <AssistancePage />
     </Suspense>
   );
 }

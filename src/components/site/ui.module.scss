@@ -1,0 +1,720 @@
+// Design primitives for the "RDC Etudes brand refresh" (see claude.ai/design project bc118d82).
+// Each section sets its colors through the tone classes below.
+
+.site {
+  background: #fff;
+  color: #2e3141;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.6;
+  min-height: 100vh;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  :where(a) {
+    border-bottom: 0;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+      color: inherit;
+    }
+  }
+
+  :where(h1, h2, h3, h4) {
+    margin: 0;
+    color: inherit;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  :where(p) {
+    margin: 0;
+  }
+
+  :where(b, strong) {
+    color: inherit;
+    font-weight: 600;
+  }
+}
+
+.section {
+  position: relative;
+  padding: 96px 80px;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.dark {
+  --bg: #2e3141;
+  --fg: #fff;
+  --m: rgba(255, 255, 255, 0.62);
+  --ln: rgba(255, 255, 255, 0.14);
+  --cd: #353849;
+}
+
+.deep {
+  --bg: #232634;
+  --fg: #fff;
+  --m: rgba(255, 255, 255, 0.62);
+  --ln: rgba(255, 255, 255, 0.14);
+  --cd: #2e3141;
+}
+
+.light {
+  --bg: #f3f4f9;
+  --fg: #2e3141;
+  --m: rgba(46, 49, 65, 0.7);
+  --ln: rgba(46, 49, 65, 0.14);
+  --cd: #fff;
+}
+
+.white {
+  --bg: #fff;
+  --fg: #2e3141;
+  --m: rgba(46, 49, 65, 0.7);
+  --ln: rgba(46, 49, 65, 0.14);
+  --cd: #f3f4f9;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  color: #4c5c96;
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    width: 28px;
+    height: 2px;
+    background: currentColor;
+  }
+}
+
+.dark .eyebrow,
+.deep .eyebrow {
+  color: #9fb0ee;
+}
+
+.title {
+  margin-bottom: 14px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.lead {
+  max-width: 560px;
+  color: var(--m);
+}
+
+.head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 3.5em;
+  padding: 0 2em;
+  border: 0;
+  border-radius: 999px;
+  background: #4c5c96;
+  color: #fff;
+  cursor: pointer;
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #53639e;
+    color: #fff;
+    opacity: 1;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+}
+
+.ghost {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.35);
+
+  &:hover {
+    background: transparent;
+  }
+}
+
+.light .ghost,
+.white .ghost {
+  box-shadow: inset 0 0 0 2px rgba(46, 49, 65, 0.3);
+  color: var(--fg);
+
+  &:hover {
+    color: var(--fg);
+  }
+}
+
+.grid3 {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+// Page banner (light, below the header)
+.banner {
+  padding: 56px 80px 88px;
+  background: #fff;
+  color: #2e3141;
+
+  h1 {
+    margin-bottom: 18px;
+    font-size: 46px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+  }
+
+  .lead {
+    max-width: 660px;
+    font-size: 19px;
+  }
+}
+
+// Numbered steps
+.steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.steps3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.step {
+  position: relative;
+  padding: 0 22px 0 0;
+
+  &:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    right: 0;
+    left: 44px;
+    height: 2px;
+    background: var(--ln);
+  }
+
+  h3 {
+    margin-bottom: 8px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  p {
+    color: var(--m);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+.num {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 22px;
+  border-radius: 50%;
+  background: #4c5c96;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.stepEnd .num {
+  background: #fff;
+  color: #4c5c96;
+}
+
+// Positioning
+.pos {
+  display: grid;
+  align-items: start;
+  gap: 64px;
+  grid-template-columns: 1fr 1.3fr;
+
+  h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .lead {
+    max-width: none;
+  }
+}
+
+.posLead {
+  color: var(--fg);
+  font-size: 19px;
+}
+
+.pos .posSecondary {
+  margin-top: 16px;
+}
+
+// Trust
+.trust {
+  display: grid;
+  align-items: center;
+  gap: 56px;
+  grid-template-columns: 1.1fr 1fr;
+
+  ul {
+    display: grid;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    gap: 16px;
+    padding: 20px 22px;
+    border: 1px solid var(--ln);
+    border-radius: 18px;
+    background: var(--cd);
+  }
+
+  li i {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #4c5c96;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  li b {
+    display: block;
+    margin-bottom: 2px;
+    font-family: Raleway, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  li span {
+    color: var(--m);
+    font-size: 15px;
+  }
+}
+
+// Service cards
+.svc {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--ln);
+  border-radius: 18px;
+  background: var(--cd);
+}
+
+.svcImage {
+  height: 170px;
+  background-color: #3b3f55;
+  background-position: center;
+  background-size: cover;
+}
+
+.svcBody {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  padding: 26px;
+
+  h3 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  p {
+    color: var(--m);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .btn {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+}
+
+.svcPrice {
+  margin-top: auto;
+  color: var(--fg);
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  + .btn {
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 980px) {
+  .section {
+    padding: 64px 32px;
+  }
+
+  .banner {
+    padding: 40px 32px 56px;
+
+    h1 {
+      font-size: 34px;
+    }
+  }
+
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps,
+  .steps3 {
+    gap: 32px;
+    grid-template-columns: 1fr;
+  }
+
+  .step:not(:last-child)::before {
+    display: none;
+  }
+
+  .pos,
+  .trust {
+    gap: 32px;
+    grid-template-columns: 1fr;
+  }
+
+  .head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 48px 20px;
+  }
+
+  .banner {
+    padding: 32px 20px 44px;
+
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Rich text (markdown/HTML content: articles, guides, scholarships, legal pages)
+.prose {
+  color: color-mix(in srgb, var(--fg) 85%, transparent);
+  font-size: 18px;
+  line-height: 1.7;
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    margin: 2em 0 0.6em;
+    color: var(--fg);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  h1,
+  h2 {
+    font-size: 22px;
+    scroll-margin-top: 24px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 14px;
+  }
+
+  :where(p, ul, ol, blockquote, table, pre) {
+    margin: 0 0 1.2em;
+  }
+
+  :where(ul, ol) {
+    padding-left: 1.4em;
+  }
+
+  :where(li) {
+    margin: 0.3em 0;
+  }
+
+  :where(strong, b) {
+    color: var(--fg);
+    font-weight: 600;
+  }
+
+  :where(em, i) {
+    font-style: italic;
+  }
+
+  a {
+    border-bottom: 1px solid rgba(17, 138, 236, 0.35);
+    color: #118aec;
+
+    &:hover {
+      color: #118aec;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  blockquote {
+    padding: 4px 0 4px 20px;
+    border-left: 3px solid #4c5c96;
+    font-style: italic;
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    margin: 2.4em 0;
+    background: var(--ln);
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  :where(th, td) {
+    padding: 10px 14px;
+    border: 1px solid var(--ln);
+    color: inherit;
+    text-align: left;
+  }
+
+  :where(th) {
+    background: var(--cd);
+    color: var(--fg);
+  }
+
+  pre,
+  code {
+    border-radius: 8px;
+    background: var(--cd);
+    font-size: 0.9em;
+  }
+
+  code {
+    padding: 2px 6px;
+  }
+
+  pre {
+    overflow-x: auto;
+    padding: 16px;
+  }
+
+  pre code {
+    padding: 0;
+  }
+}
+
+// Detail layout: content + sticky aside
+.detail {
+  display: grid;
+  align-items: start;
+  gap: 56px;
+  grid-template-columns: minmax(0, 1fr) 340px;
+}
+
+.aside {
+  position: sticky;
+  top: 20px;
+  display: grid;
+  align-self: start;
+  gap: 16px;
+  padding: 28px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 2px 40px rgba(14, 30, 37, 0.16);
+  color: #2e3141;
+
+  .btn {
+    justify-content: center;
+  }
+}
+
+.asideTitle {
+  font:
+    700 13px Raleway,
+    sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.asideText {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.fact {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+
+  span {
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  b {
+    font-weight: 500;
+    text-align: right;
+  }
+}
+
+.meta {
+  color: var(--m);
+  font-size: 14px;
+}
+
+.chip {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #4c5c96;
+  color: #fff;
+  font:
+    700 11px Raleway,
+    sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cover {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 18px;
+  margin-bottom: 28px;
+  background: #e3e5ee;
+}
+
+.coverCredit {
+  margin: -16px 0 24px;
+  color: var(--m);
+  font-size: 12px;
+
+  a {
+    color: inherit;
+  }
+}
+
+.btnGhostDark {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px rgba(46, 49, 65, 0.3);
+  color: #2e3141 !important;
+
+  &:hover {
+    background: transparent;
+  }
+}
+
+@media (max-width: 980px) {
+  .detail {
+    gap: 32px;
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    position: static;
+  }
+
+  .cover {
+    height: 220px;
+  }
+}
+
+.narrow {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+// ScholarshipDeadline puts the Font Awesome family on its text; restore the body font, keep the icon.
+.fact b > div > span {
+  font-family: Roboto, 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+
+  &::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+  }
+}

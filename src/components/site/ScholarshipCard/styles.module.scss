@@ -1,0 +1,81 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 2px 40px rgba(14, 30, 37, 0.16);
+  color: #2e3141;
+  font-family: Roboto, 'Source Sans Pro', sans-serif;
+}
+
+.image {
+  display: block;
+  height: 150px;
+  overflow: hidden;
+  background: #e3e5ee;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 22px 22px;
+
+  small {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: #000;
+    font-family: Roboto, 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.3;
+    text-transform: none;
+  }
+}
+
+.levels,
+.deadline {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+// ScholarshipLevels/ScholarshipDeadline put the Font Awesome family on the text span; restore the
+// body font for the text and keep Font Awesome for the icon (::before).
+.levels > span,
+.deadline > span {
+  font-family: Roboto, 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+}
+
+.levels > span::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.deadline > span::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+}
+
+.deadline {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.more {
+  padding-top: 8px;
+  color: #118aec !important;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
