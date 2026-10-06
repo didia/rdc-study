@@ -19,8 +19,8 @@ export default {
     phones: [
       {
         countryFlag: '🌏',
-        label: '+1 613 917-1416 (WhatsApp)',
-        link: 'https://wa.me/16139171416'
+        label: '+1 (581) 318-0180 (WhatsApp)',
+        link: 'https://wa.me/15813180180'
       }
     ]
   },

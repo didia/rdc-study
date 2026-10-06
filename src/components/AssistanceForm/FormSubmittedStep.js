@@ -34,7 +34,7 @@ const FormSubmittedStep = () => {
       phone: aboutCandidate.phone
     }
   );
-  const whatsAppBaseLink = config.contact?.phones?.[0]?.link || 'https://wa.me/16139171416';
+  const whatsAppBaseLink = config.contact?.phones?.[0]?.link || 'https://wa.me/15813180180';
   const whatsAppLink = `${whatsAppBaseLink}${whatsAppBaseLink.includes('?') ? '&' : '?'}text=${encodeURIComponent(assistanceMessage)}`;
 
   return (

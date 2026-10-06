@@ -46,6 +46,7 @@ type AssistanceFormState = {
   // Service state
   hasReadGuide: boolean;
   isAlreadyAdvanced: boolean;
+  guideSlugs: string[];
   services: Service[];
   service: string;
 
@@ -67,12 +68,14 @@ type AssistanceFormState = {
   getPreviousStep: () => string | null;
   getAssistancePackage: () => any;
   getAvailableAssistanceTypes: () => AssistanceType[];
+  getGuidePath: () => string;
 
   // Initialization
   initialize: (initialData: {
     fromGuide?: string | null;
     assistancePackages: AssistancePackageDictionary;
     services: Service[];
+    guideSlugs?: string[];
   }) => void;
 };
 
@@ -109,6 +112,9 @@ const getSelectedPackage = (state: AssistanceFormState): AssistancePackageType =
     return state.hasAdmission ? AssistancePackageType.Visa : AssistancePackageType.Admission;
   }
 };
+
+const getAssistancePackageSlug = (state: AssistanceFormState): string =>
+  `${state.destinationCountry}/${getSelectedPackage(state)}`;
 
 // eslint-disable-next-line complexity
 const preselectAssistancePackage = (
@@ -175,6 +181,7 @@ export const useAssistanceFormStore = create<AssistanceFormState>((set, get) => 
   // Service state
   hasReadGuide: false,
   isAlreadyAdvanced: false,
+  guideSlugs: [],
   services: [],
   service: '',
 
@@ -203,9 +210,7 @@ export const useAssistanceFormStore = create<AssistanceFormState>((set, get) => 
 
   getAssistancePackage: () => {
     const state = get();
-    const selectedPackage = getSelectedPackage(state);
-    const assistancePackageSlug = `${state.destinationCountry}/${selectedPackage}`;
-    return state.assistancePackages[assistancePackageSlug];
+    return state.assistancePackages[getAssistancePackageSlug(state)];
   },
 
   getAvailableAssistanceTypes: () => {
@@ -245,9 +250,18 @@ export const useAssistanceFormStore = create<AssistanceFormState>((set, get) => 
     return assistanceTypesList;
   },
 
+  getGuidePath: () => {
+    const state = get();
+    const guideSlug = getAssistancePackageSlug(state);
+    const hasGuide = state.guideSlugs.includes(guideSlug);
+
+    // Fall back to the country guide when the selected package has no dedicated guide
+    return `/guides/${hasGuide ? guideSlug : state.destinationCountry}`;
+  },
+
   // Initialization
-  initialize: ({fromGuide, assistancePackages, services}) => {
-    set({assistancePackages, services});
+  initialize: ({fromGuide, assistancePackages, services, guideSlugs = []}) => {
+    set({assistancePackages, services, guideSlugs});
     preselectAssistancePackage((partial) => set(partial), fromGuide);
   }
 }));

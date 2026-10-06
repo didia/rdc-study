@@ -3,6 +3,7 @@
 // Vendor
 import React, {useState} from 'react';
 import {useIntl} from 'react-intl';
+import {useRouter} from 'next/navigation';
 import {useForm} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
 import {z} from 'zod';
@@ -51,12 +52,14 @@ const formattedAssistancePrice = (intl, price) => {
 
 const SubmitFormStep = ({onNextStep, onRestart}) => {
   const intl = useIntl();
+  const router = useRouter();
   const [showError, setShowError] = useState(false);
   const [message, setMessage] = useState(null);
 
   const aboutCandidate = useAssistanceFormStore((s) => s.aboutCandidate);
   const getAssistancePackage = useAssistanceFormStore((s) => s.getAssistancePackage);
   const getAvailableAssistanceTypes = useAssistanceFormStore((s) => s.getAvailableAssistanceTypes);
+  const getGuidePath = useAssistanceFormStore((s) => s.getGuidePath);
   const setService = useAssistanceFormStore((s) => s.setService);
   const assistancePackage = getAssistancePackage();
   const availableAssistanceTypes = getAvailableAssistanceTypes();
@@ -119,7 +122,7 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
           label: assistancePackage.slug,
           value: AssistancePrices[values.service]
         });
-        onNextStep(Steps.FormSubmitted);
+        router.push(getGuidePath());
       } else {
         analyticsPushEvent({
           category: 'AssistanceForm',

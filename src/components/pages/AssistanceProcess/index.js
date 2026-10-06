@@ -20,7 +20,7 @@ const page = {
   path: '/accompagnement'
 };
 
-const AssistanceProcess = ({assistancePackages, services}) => {
+const AssistanceProcess = ({assistancePackages, services, guideSlugs}) => {
   const searchParams = useSearchParams();
   const fromGuide = searchParams.get('pour');
   const service = searchParams.get('service');
@@ -30,6 +30,7 @@ const AssistanceProcess = ({assistancePackages, services}) => {
       <AssistanceForm
         assistancePackages={assistancePackages}
         services={services}
+        guideSlugs={guideSlugs}
         fromGuide={fromGuide}
         service={service}
       />
