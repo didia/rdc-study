@@ -1,6 +1,6 @@
 'use client';
 
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import classnames from 'classnames';
@@ -48,12 +48,27 @@ const Brand = ({className}) => {
 export const SiteHeader = ({active}) => {
   const intl = useIntl();
   const [isOpen, setIsOpen] = useState(false);
+  const toggleRef = useRef(null);
+
+  useEffect(() => {
+    if (!isOpen) return undefined;
+
+    const closeOnEscape = (event) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+        toggleRef.current.focus();
+      }
+    };
+    document.addEventListener('keydown', closeOnEscape);
+    return () => document.removeEventListener('keydown', closeOnEscape);
+  }, [isOpen]);
 
   return (
     <header className={styles.header}>
       <Brand />
 
       <button
+        ref={toggleRef}
         type="button"
         className={styles.toggle}
         aria-expanded={isOpen}

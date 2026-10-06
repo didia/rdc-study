@@ -50,7 +50,7 @@ const NewsletterBand = ({tone = 'deep'}) => {
               value={email}
               onChange={(e) => setEmail(e.currentTarget.value)}
             />
-            <button className={classnames(ui.btn)} type="submit" disabled={!email || status === 'submitting'}>
+            <button className={classnames(ui.btn)} type="submit" disabled={!email || status === 'submitting' || status === 'success'}>
               {t('button')}
             </button>
           </form>

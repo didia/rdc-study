@@ -4,7 +4,7 @@
 import React, {useMemo, useState} from 'react';
 import Link from 'next/link';
 import classnames from 'classnames';
-import {differenceInCalendarDays} from 'date-fns';
+import {isSameMonth, isSameWeek, startOfDay, isBefore} from 'date-fns';
 import {useIntl} from 'react-intl';
 
 // Styles
@@ -19,15 +19,19 @@ import ScholarshipCard from '../../site/ScholarshipCard';
 const PAGE_SIZE = 9;
 const LEVEL_ORDERS = ['undergraduate', 'graduate', 'postgraduate', 'research', 'internship', 'formation'];
 const ALL = 'all';
+// Front matter value for scholarships open to every academic level.
+const ALL_LEVELS = 'all';
 
 const matchesDeadline = (deadline, filter) => {
   if (filter === ALL) return true;
   if (filter === 'none') return !deadline;
   if (!deadline) return false;
 
-  const remainingDays = differenceInCalendarDays(new Date(deadline), new Date());
-  if (filter === 'week') return remainingDays >= 0 && remainingDays <= 7;
-  return remainingDays >= 0 && remainingDays <= 31;
+  const date = new Date(deadline);
+  const now = new Date();
+  if (isBefore(date, startOfDay(now))) return false;
+  if (filter === 'week') return isSameWeek(date, now, {weekStartsOn: 1});
+  return isSameMonth(date, now);
 };
 
 const Select = ({label, value, onChange, options}) => (
@@ -74,7 +78,7 @@ const ScholarshipsPage = ({activeOnly, page, scholarships}) => {
   const filtered = scholarships.filter(
     (s) =>
       (country === ALL || (s.targetCountries || []).includes(country)) &&
-      (level === ALL || (s.levels || []).includes(level)) &&
+      (level === ALL || (s.levels || []).some((l) => l === level || l === ALL_LEVELS)) &&
       matchesDeadline(s.deadline, deadline)
   );
 
@@ -93,7 +97,12 @@ const ScholarshipsPage = ({activeOnly, page, scholarships}) => {
 
   return (
     <SiteLayout active="/bourses" newsletterTone="dark">
-      <PageBanner eyebrow={t('eyebrow')} title={page.title} lead={page.description} />
+      <PageBanner
+        eyebrow={t('eyebrow')}
+        title={page.title}
+        lead={page.description}
+        share={page.socialShareEnabled ? {path: page.path, title: page.title, excerpt: page.description} : undefined}
+      />
 
       <Section tone="light">
         <div className={styles.filters}>

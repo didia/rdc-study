@@ -79,7 +79,7 @@ const IndexPage = ({countryCount, destinations, scholarships, services}) => {
     <SiteLayout active="/">
       <Hero t={t} countryCount={countryCount} />
 
-      <Section tone="light">
+      <Section tone="light" id="guides">
         <SectionHead
           eyebrow={t('home.destinations.eyebrow')}
           title={t('home.destinations.title')}

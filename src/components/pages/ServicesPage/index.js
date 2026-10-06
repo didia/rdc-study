@@ -26,7 +26,12 @@ const ServicesPage = ({services}) => {
 
   return (
     <SiteLayout active="/nos-services">
-      <PageBanner eyebrow={t('eyebrow')} title={t('title')} lead={t('lead')} />
+      <PageBanner
+        eyebrow={t('eyebrow')}
+        title={t('title')}
+        lead={t('lead')}
+        share={{path: '/nos-services', title: t('title'), excerpt: t('lead')}}
+      />
 
       <Section tone="light">
         <div className={ui.grid3}>

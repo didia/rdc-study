@@ -35,12 +35,14 @@ const PrivacyPolicyPage = () => (
     <hr />
     <h2>Formulaires&nbsp; et interactivité:</h2>
     <p>
-      Vos renseignements personnels sont collectés par le biais du formulaire de Contact sur chaque page de ce site
-      web{' '}
+      Vos renseignements personnels sont collectés par le biais du formulaire d‘assistance, de l‘inscription à notre
+      infolettre et des courriels que vous nous envoyez.
     </p>
     <p>Nous utilisons les renseignements ainsi collectés pour les finalités suivantes :</p>
     <ul>
-      <li>Contact</li>
+      <li>Répondre à votre demande d‘assistance</li>
+      <li>Vous envoyer notre infolettre Réussir</li>
+      <li>Vous répondre lorsque vous nous écrivez</li>
     </ul>
     <p>
       Vos renseignements sont également collectés par le biais de l‘interactivité pouvant s‘établir entre vous et notre
