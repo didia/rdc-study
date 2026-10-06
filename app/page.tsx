@@ -32,6 +32,11 @@ export default async function Home() {
       thumbnail: g.thumbnail,
     }));
 
+  const countryNames = allGuides
+    .filter((g) => g.topic === 'country')
+    .map((g) => g.name)
+    .filter((name): name is string => Boolean(name));
+
   const now = Date.now();
   const scholarships = allScholarships
     .filter((s) => s.timestamp > now)
@@ -55,5 +60,12 @@ export default async function Home() {
       assistanceRequestLink: s.assistanceRequestLink,
     }));
 
-  return <IndexPage destinations={destinations} scholarships={scholarships} services={services} />;
+  return (
+    <IndexPage
+      countryCount={countryNames.length}
+      destinations={destinations}
+      scholarships={scholarships}
+      services={services}
+    />
+  );
 }

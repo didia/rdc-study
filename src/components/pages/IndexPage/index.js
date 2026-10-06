@@ -23,22 +23,28 @@ import ServiceCard from '../../site/ServiceCard';
 // Data
 import SERVICE_IMAGES from '../../site/service-images';
 
-const STAT_IDS = ['families', 'since', 'countries'];
-
 const getServiceHref = ({slug, assistanceRequestLink}) => assistanceRequestLink || `/accompagnement?service=${slug}`;
 
-const Stats = ({t}) => (
-  <div className={styles.stats}>
-    {STAT_IDS.map((id) => (
-      <div key={id}>
-        <strong>{t(`stats.${id}.value`)}</strong>
-        <span>{t(`stats.${id}.label`)}</span>
-      </div>
-    ))}
-  </div>
-);
+const Stats = ({t, countryCount}) => {
+  const stats = [
+    {id: 'families', value: t('stats.families.value')},
+    {id: 'since', value: t('stats.since.value')},
+    {id: 'countries', value: countryCount}
+  ];
 
-const Hero = ({t}) => (
+  return (
+    <div className={styles.stats}>
+      {stats.map(({id, value}) => (
+        <div key={id}>
+          <strong>{value}</strong>
+          <span>{t(`stats.${id}.label`)}</span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const Hero = ({t, countryCount}) => (
   <div className={styles.hero}>
     <div>
       <Eyebrow>{t('hero.eyebrow')}</Eyebrow>
@@ -54,24 +60,24 @@ const Hero = ({t}) => (
           {t('hero.cta-secondary')}
         </Link>
       </div>
-      <Stats t={t} />
+      <Stats t={t} countryCount={countryCount} />
     </div>
     <div className={styles.photo}>
       <div className={styles.float}>
         <strong>{t('stats.families.value')}</strong>
-        <span>{t('hero.float-text')}</span>
+        <span>{t('hero.float-text', {count: countryCount})}</span>
       </div>
     </div>
   </div>
 );
 
-const IndexPage = ({destinations, scholarships, services}) => {
+const IndexPage = ({countryCount, destinations, scholarships, services}) => {
   const intl = useIntl();
-  const t = (id) => intl.formatMessage({id: `site.${id}`});
+  const t = (id, values) => intl.formatMessage({id: `site.${id}`}, values);
 
   return (
     <SiteLayout active="/">
-      <Hero t={t} />
+      <Hero t={t} countryCount={countryCount} />
 
       <Section tone="light">
         <SectionHead
@@ -140,6 +146,7 @@ const IndexPage = ({destinations, scholarships, services}) => {
 };
 
 IndexPage.propTypes = {
+  countryCount: T.number.isRequired,
   destinations: T.arrayOf(T.object).isRequired,
   scholarships: T.arrayOf(T.object).isRequired,
   services: T.arrayOf(T.object).isRequired

@@ -15,15 +15,17 @@ import {Positioning} from '../../site/Sections';
 import Testimonials from '../../site/Testimonials';
 
 const VALUE_IDS = ['reliability', 'transparency', 'honesty', 'helpfulness'];
-const STATS = [
-  {valueKey: 'site.stats.families.value', labelKey: 'site.about.stats.families.label'},
-  {valueKey: 'site.stats.countries.value', labelKey: 'site.about.stats.countries.label'},
-  {valueKey: 'site.about.stats.free.value', labelKey: 'site.about.stats.free.label'}
-];
-
-const AboutUsPage = ({team}) => {
+const AboutUsPage = ({team, countryNames}) => {
   const intl = useIntl();
-  const t = (id) => intl.formatMessage({id: `site.about.${id}`});
+  const t = (id, values) => intl.formatMessage({id: `site.about.${id}`}, values);
+  const stats = [
+    {label: t('stats.families.label'), value: intl.formatMessage({id: 'site.stats.families.value'})},
+    {
+      label: t('stats.countries.label', {countries: countryNames.join(', ')}),
+      value: countryNames.length
+    },
+    {label: t('stats.free.label'), value: t('stats.free.value')}
+  ];
 
   return (
     <SiteLayout active="/a-propos" newsletterTone="dark">
@@ -34,10 +36,10 @@ const AboutUsPage = ({team}) => {
       <Section tone="light">
         <SectionHead eyebrow={t('stats.eyebrow')} title={t('stats.title')} />
         <div className={styles.stats}>
-          {STATS.map((stat) => (
-            <div key={stat.labelKey}>
-              <strong>{intl.formatMessage({id: stat.valueKey})}</strong>
-              <span>{intl.formatMessage({id: stat.labelKey})}</span>
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <strong>{stat.value}</strong>
+              <span>{stat.label}</span>
             </div>
           ))}
         </div>
