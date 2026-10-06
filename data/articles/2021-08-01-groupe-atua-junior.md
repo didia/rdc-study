@@ -19,7 +19,7 @@ Le département Groupe ATUA JUNIOR – CONSULTING est dédié à l’orientation
 
 Le département Groupe ATUA JUNIOR – CONSULTING accompagne également les étudiants  dans les différentes démarches pour l’obtention du titre de séjour une fois que ses derniers  arrivent sur le territoire Tunisien. 
 
-B. G.A.J TRAVEL 
+**B. G.A.J TRAVEL** 
 
 Le département Groupe ATUA JUNIOR – TRAVEL est dédié à l’accueil des nouveaux étudiants  dès l’aéroport jusqu’à leurs différentes habitations. 
 
