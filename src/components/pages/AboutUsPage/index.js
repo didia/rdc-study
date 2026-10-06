@@ -2,96 +2,90 @@
 
 // Vendor
 import React from 'react';
-import classnames from 'classnames';
 import Image from 'next/image';
-import {FormattedMessage} from 'react-intl';
+import {useIntl} from 'react-intl';
 
 // Styles
 import styles from './styles.module.scss';
 
-// From styles.team-member-photo-outer (width 100%); intrinsic size for square avatar
-const TEAM_IMAGE_SIZE = 350;
+// Components
+import SiteLayout from '../../site/SiteLayout';
+import {Section, PageBanner, SectionHead} from '../../site/Section';
+import {Positioning} from '../../site/Sections';
+import Testimonials from '../../site/Testimonials';
 
-import GenericPage from '../GenericPage';
-import Card from '../../Card';
+const VALUE_IDS = ['reliability', 'transparency', 'honesty', 'helpfulness'];
+const AboutUsPage = ({team, countryNames}) => {
+  const intl = useIntl();
+  const t = (id, values) => intl.formatMessage({id: `site.about.${id}`}, values);
+  const stats = [
+    {label: t('stats.families.label'), value: intl.formatMessage({id: 'site.stats.families.value'})},
+    {
+      label: t('stats.countries.label', {countries: countryNames.join(', ')}),
+      value: countryNames.length
+    },
+    {label: t('stats.free.label'), value: t('stats.free.value')}
+  ];
 
-const imageClassPerIndex = (index) => (index % 2 === 0 ? 'image left' : 'image right');
-
-const page = {
-  description: 'Nous voulons que tout le monde ait facilement acces a une education de qualite.',
-  title: 'Pourquoi RDC-Etudes?',
-  path: '/a-propos'
-};
-
-const values = [
-  {
-    titleKey: 'pages.about-us.values.honesty.title',
-    descriptionKey: 'pages.about-us.values.honesty.description'
-  },
-  {
-    titleKey: 'pages.about-us.values.helpfulness.title',
-    descriptionKey: 'pages.about-us.values.helpfulness.description'
-  },
-  {
-    titleKey: 'pages.about-us.values.transparency.title',
-    descriptionKey: 'pages.about-us.values.transparency.description'
-  }
-];
-
-const AboutUsPage = ({team}) => {
   return (
-    <GenericPage page={page}>
-      <section className={styles.section}>
-        <FormattedMessage id="pages.about-us.values.title">
-          {(text) => <h2 className={styles['text-center']}>{text}</h2>}
-        </FormattedMessage>
+    <SiteLayout active="/a-propos" newsletterTone="dark">
+      <PageBanner eyebrow={t('eyebrow')} title={t('title')} lead={t('lead')} />
 
-        <div className={styles['value-list']}>
-          {values.map((value, i) => (
-            <Card key={`value-${i}`} className={styles['value-list__item']}>
-              <FormattedMessage id={value.titleKey}>
-                {(text) => <h3 className={styles['value-title']}>{text}</h3>}
-              </FormattedMessage>
+      <Positioning tone="dark" />
 
-              <FormattedMessage id={value.descriptionKey} tagName="p" />
-            </Card>
+      <Section tone="light">
+        <SectionHead eyebrow={t('stats.eyebrow')} title={t('stats.title')} />
+        <div className={styles.stats}>
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <strong>{stat.value}</strong>
+              <span>{stat.label}</span>
+            </div>
           ))}
         </div>
-      </section>
+      </Section>
 
-      <section className={styles.section}>
-        <FormattedMessage id="pages.about-us.mentors.title">
-          {(text) => <h2 className={styles['text-center']}>{text}</h2>}
-        </FormattedMessage>
-
-        <div className={styles['team-member-list']}>
-          {team.map((member, index) => (
-            <Card key={member.name} className={styles['team-member-list__item']}>
-              <div className={classnames(styles['team-member-photo-outer'], imageClassPerIndex(index))}>
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  width={TEAM_IMAGE_SIZE}
-                  height={TEAM_IMAGE_SIZE}
-                  style={{objectFit: 'cover'}}
-                />
-              </div>
-
-              <div className={styles['team-member-info']}>
-                <header className={styles['team-member-info__header']}>
-                  <h4 className={styles['team-member-info-name']}>{member.name}</h4>
-                  <p className={styles['team-member-info-title']}>{member.title}</p>
-                </header>
-
-                <section className={styles['team-member-info__details']}>
-                  <p className={styles['team-member-info-about']}>{member.about}</p>
-                </section>
-              </div>
-            </Card>
+      <Section tone="white">
+        <SectionHead eyebrow={t('values.eyebrow')} title={t('values.title')} />
+        <div className={styles.values}>
+          {VALUE_IDS.map((id) => (
+            <div key={id}>
+              <h3>{t(`values.${id}.title`)}</h3>
+              <p>{t(`values.${id}.text`)}</p>
+            </div>
           ))}
         </div>
-      </section>
-    </GenericPage>
+      </Section>
+
+      {team.length > 0 && (
+        <Section tone="light">
+          <SectionHead eyebrow={t('team.eyebrow')} title={t('team.title')} />
+          <div className={styles.team}>
+            {team.map((member) => (
+              <article key={member.name} className={styles.member}>
+                <div className={styles.photo}>
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={350}
+                    height={350}
+                    style={{objectFit: 'cover', width: '100%', height: '100%'}}
+                  />
+                </div>
+                <div>
+                  <h3>{member.name}</h3>
+                  <span className={styles.memberTitle}>{member.title}</span>
+                  <p>{member.role}</p>
+                  <p>{member.about}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </Section>
+      )}
+
+      <Testimonials tone="white" />
+    </SiteLayout>
   );
 };
 

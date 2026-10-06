@@ -1,84 +1,112 @@
+'use client';
+
 // Vendor
 import React from 'react';
-import classnames from 'classnames';
 import Image from 'next/image';
+import Link from 'next/link';
+import classnames from 'classnames';
+import {useIntl} from 'react-intl';
 
 // Styles
-import styles from './styles.module.scss';
+import ui from '../../site/ui.module.scss';
 
-// From styles.cover__image-wrapper: max-height 400px, width 100%
-const COVER_IMAGE_WIDTH = 800;
-const COVER_IMAGE_HEIGHT = 400;
-
-// Component
-import PageLayout from '../../PageLayout';
-import SocialShareButtons from '../../SocialShareButtons';
-import ScholarshipLevels from '../../ScholarshipLevels';
+// Components
+import SiteLayout from '../../site/SiteLayout';
+import {Section, PageBanner, SectionHead} from '../../site/Section';
+import ScholarshipCard from '../../site/ScholarshipCard';
 import ScholarshipDeadline from '../../ScholarshipDeadline';
-import ScholarshipCountries from '../../ScholarshipCountries';
 import HtmlContent from '../../HtmlContent';
-import ScholarshipList from '../../../components/ScholarshipList';
-import Newsletter from '../../Newsletter';
 
 const ScholarshipPage = ({scholarship, otherScholarships}) => {
-  const page = {
-    description: scholarship.excerpt,
-    image: scholarship.metaImage,
-    keywords: scholarship.tags,
-    path: scholarship.path,
-    title: scholarship.title
-  };
+  const intl = useIntl();
+  const t = (id) => intl.formatMessage({id: `site.scholarship.${id}`});
+
+  const levels = (scholarship.levels || []).map((level) => intl.formatMessage({id: `scholarship-levels.${level}`}));
+  const countries = (scholarship.targetCountries || [])
+    .filter((code) => intl.messages[`shared.countries.${code}`])
+    .map((code) => intl.formatMessage({id: `shared.countries.${code}`}));
+
+  const eyebrow = [t('eyebrow'), levels.join(', '), countries.join(', ')].filter(Boolean).join(' · ');
 
   return (
-    <PageLayout>
-      <section key="content" className={classnames(styles.wrapper, styles['wrapper--content'])}>
-        <div className={styles.inner}>
-          <div className={styles.cover}>
-            <div className={styles['cover__image-wrapper']}>
+    <SiteLayout active="/bourses" newsletterTone="dark">
+      <PageBanner
+        eyebrow={eyebrow}
+        title={scholarship.title}
+        lead={scholarship.excerpt}
+        share={{path: scholarship.path, title: scholarship.title, excerpt: scholarship.excerpt}}
+      />
+
+      <Section tone="light">
+        <div className={ui.detail}>
+          <article>
+            <div className={ui.cover}>
               <Image
                 src={scholarship.thumbnail}
                 alt={scholarship.title}
-                width={COVER_IMAGE_WIDTH}
-                height={COVER_IMAGE_HEIGHT}
-                className={styles.coverImage}
-                style={{objectFit: 'cover', width: '100%', height: 'auto'}}
+                fill
+                priority
+                sizes="(max-width: 980px) 100vw, 800px"
+                style={{objectFit: 'cover'}}
               />
             </div>
-
             {scholarship.thumbnailCredits && (
-              <div
-                className={styles['thumbnail-credit']}
-                dangerouslySetInnerHTML={{__html: scholarship.thumbnailCredits}}
-              />
+              <div className={ui.coverCredit} dangerouslySetInnerHTML={{__html: scholarship.thumbnailCredits}} />
             )}
 
-            <div className={styles['cover__title-excerpt-wrapper']}>
-              <h1 className={styles.cover__title}>{scholarship.title}</h1>
-              <p className={styles.cover__description}>{scholarship.excerpt}</p>
-              <div className={styles.cover__meta}>
-                <ScholarshipCountries className={styles['cover-meta__item']} countries={scholarship.targetCountries} />
-                <ScholarshipLevels className={styles['cover-meta__item']} levels={scholarship.levels} />
-                <ScholarshipDeadline className={styles['cover-meta__item']} date={scholarship.deadline} />
+            <HtmlContent content={scholarship.content} />
+
+            <p className={ui.meta} style={{marginTop: 24}}>
+              {t('note')}
+            </p>
+          </article>
+
+          <aside className={ui.aside}>
+            {countries.length > 0 && (
+              <div className={ui.fact}>
+                <span>{t('facts.country')}</span>
+                <b>{countries.join(', ')}</b>
               </div>
+            )}
+            {levels.length > 0 && (
+              <div className={ui.fact}>
+                <span>{t('facts.level')}</span>
+                <b>{levels.join(', ')}</b>
+              </div>
+            )}
+            <div className={ui.fact}>
+              <span>{t('facts.deadline')}</span>
+              <b>
+                <ScholarshipDeadline date={scholarship.deadline} />
+              </b>
             </div>
-
-            <SocialShareButtons path={scholarship.path} excerpt={scholarship.excerpt} title={scholarship.title} />
-          </div>
-
-          <HtmlContent content={scholarship.content} />
-
-          <Newsletter className={styles.newsletter} />
-
-          {otherScholarships && otherScholarships.length > 0 && (
-            <ScholarshipList
-              showAllScholarshipsLink
-              scholarships={otherScholarships}
-              titleKey="pages.scholarships-show.other-scholarships.title"
-            />
-          )}
+            <Link className={classnames(ui.btn)} href="/accompagnement">
+              {intl.formatMessage({id: 'site.nav.cta'})}
+            </Link>
+          </aside>
         </div>
-      </section>
-    </PageLayout>
+      </Section>
+
+      {otherScholarships && otherScholarships.length > 0 && (
+        <Section tone="white">
+          <SectionHead
+            title={intl.formatMessage({id: 'pages.scholarships-show.other-scholarships.title'})}
+            action={
+              <Link className={classnames(ui.btn, ui.ghost)} href="/bourses">
+                {intl.formatMessage({id: 'scholarship-list.see-all'})}
+              </Link>
+            }
+          />
+          <ul className={ui.grid3}>
+            {otherScholarships.slice(0, 3).map((other) => (
+              <li key={other.path}>
+                <ScholarshipCard scholarship={other} />
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+    </SiteLayout>
   );
 };
 

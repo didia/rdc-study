@@ -34,3 +34,14 @@ GOOGLE_TAG_MANAGER_ID=The Google Tag Manager Id #require in production
 GATSBY_SENTRY_DSN=The DSN for Sentry #required in production
 SURGE_DOMAIN=The domain name for the surge app
 ```
+
+### Feature flags
+
+Sections that are built but waiting for real content are hidden by default. Set the variable to `true` to show them:
+
+```
+NEXT_PUBLIC_FEATURE_TESTIMONIALS=true     # Testimonials + "what AI assistants say" (home, services). Content: `site.testimonials.*` in src/locales/fr.json
+NEXT_PUBLIC_FEATURE_FEATURED_GUIDE=true   # Featured step-by-step guide on /guides. Content: `site.guides.featured.*` in src/locales/fr.json
+```
+
+To show a photo for testimonial N, add `"site.testimonials.items.N.photo": "/images/uploads/<file>.jpg"` to fr.json.

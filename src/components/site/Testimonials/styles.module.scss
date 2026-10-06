@@ -1,0 +1,107 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px;
+  margin: 0;
+  border: 1px solid var(--ln);
+  border-radius: 18px;
+  background: var(--cd);
+
+  blockquote {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    color: var(--fg);
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.5;
+  }
+
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+
+    b {
+      font:
+        700 12px Raleway,
+        sans-serif;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    span {
+      color: var(--m);
+      font-size: 14px;
+    }
+  }
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.04) 0 10px, rgba(0, 0, 0, 0.08) 10px 20px), #dfe1ec;
+  color: var(--m);
+  font:
+    600 9px Raleway,
+    sans-serif;
+  letter-spacing: 0.1em;
+  object-fit: cover;
+  text-transform: uppercase;
+}
+
+.ai {
+  padding: 32px;
+  margin-top: 40px;
+  border-radius: 18px;
+  background: #2e3141;
+  color: #fff;
+
+  .card {
+    padding: 22px;
+    border-color: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    --fg: #fff;
+    --m: rgba(255, 255, 255, 0.62);
+
+    blockquote {
+      font-size: 16px;
+    }
+  }
+}
+
+.aiLabel {
+  margin-bottom: 20px;
+  color: #9fb0ee;
+  font:
+    700 12px Raleway,
+    sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.aiGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 980px) {
+  .aiGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .ai {
+    padding: 20px;
+  }
+}

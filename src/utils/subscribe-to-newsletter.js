@@ -18,5 +18,6 @@ export default async function subscribeToNewsletter({email, firstName, lastName}
     await axios.post(newsletterEndpoint, payload);
   } catch (error) {
     Sentry.captureException(error);
+    throw error;
   }
 }
