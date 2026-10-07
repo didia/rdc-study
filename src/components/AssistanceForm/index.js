@@ -17,7 +17,7 @@ import Steps, {getStepComponent, goToNextStep, goToPreviousStep, goToStep} from 
 // Utils
 import isScrolledIntoView from '../../utils/is-scrolled-into-view';
 
-const MasterForm = ({assistancePackages, services, fromGuide, service}) => {
+const MasterForm = ({assistancePackages, services, guideSlugs, fromGuide, service}) => {
   const currentStepRef = useRef(null);
 
   const currentStep = useAssistanceFormStore((s) => s.currentStep);
@@ -30,8 +30,8 @@ const MasterForm = ({assistancePackages, services, fromGuide, service}) => {
   const previousStep = getPreviousStep();
 
   useEffect(() => {
-    initialize({fromGuide, assistancePackages, services});
-  }, [fromGuide, assistancePackages, services, initialize]);
+    initialize({fromGuide, assistancePackages, services, guideSlugs});
+  }, [fromGuide, assistancePackages, services, guideSlugs, initialize]);
 
   const scrollIntoViewIfNecessary = () => {
     if (!isScrolledIntoView(currentStepRef.current)) {
@@ -70,6 +70,7 @@ const MasterForm = ({assistancePackages, services, fromGuide, service}) => {
 MasterForm.propTypes = {
   assistancePackages: T.object,
   services: T.array,
+  guideSlugs: T.array,
   fromGuide: T.string,
   service: T.string
 };

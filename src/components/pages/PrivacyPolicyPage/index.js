@@ -77,7 +77,7 @@ const PrivacyPolicyPage = () => (
       <br /> Courriel : salut@rdcetudes.com
       {config.showPhonePublicly && (
         <>
-          <br /> WhatsApp : {config.contact.phones[0]?.label ?? '+1 613 917-1416 (WhatsApp)'}
+          <br /> WhatsApp : {config.contact.phones[0]?.label ?? '+1 (581) 318-0180 (WhatsApp)'}
         </>
       )}
       <br /> Section du site web : https://www.rdcetudes.com/
@@ -95,7 +95,7 @@ const PrivacyPolicyPage = () => (
       {config.showPhonePublicly && (
         <>
           <br />
-          WhatsApp : {config.contact.phones[0]?.label ?? '+1 613 917-1416 (WhatsApp)'}
+          WhatsApp : {config.contact.phones[0]?.label ?? '+1 (581) 318-0180 (WhatsApp)'}
         </>
       )}
       <br /> Section du site web : https://www.rdcetudes.com/

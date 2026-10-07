@@ -1,5 +1,5 @@
 import {Suspense} from 'react';
-import {getAssistancePackageDictionary, getServices} from '@/lib/content';
+import {getAssistancePackageDictionary, getGuides, getServices} from '@/lib/content';
 import {generatePageMetadata} from '@/lib/metadata';
 import AssistanceProcess from '@/components/pages/AssistanceProcess';
 
@@ -10,14 +10,16 @@ export const metadata = generatePageMetadata({
 });
 
 export default async function AssistanceProcessPage() {
-  const [assistancePackages, services] = await Promise.all([
+  const [assistancePackages, services, guides] = await Promise.all([
     getAssistancePackageDictionary(),
     getServices(),
+    getGuides(),
   ]);
+  const guideSlugs = guides.map((guide) => guide.slug);
 
   return (
     <Suspense>
-      <AssistanceProcess assistancePackages={assistancePackages} services={services} />
+      <AssistanceProcess assistancePackages={assistancePackages} services={services} guideSlugs={guideSlugs} />
     </Suspense>
   );
 }
