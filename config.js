@@ -1,4 +1,14 @@
 export default {
+  /**
+   * Sections that are built but hidden until their real content is filled in (see src/locales/fr.json, `site.*`).
+   * Set the matching NEXT_PUBLIC_FEATURE_* variable to 'true' to show them.
+   */
+  features: {
+    /** Student testimonials + "what AI assistants say" block (`site.testimonials.*`). */
+    testimonials: process.env.NEXT_PUBLIC_FEATURE_TESTIMONIALS === 'true',
+    /** Featured step-by-step guide on /guides (`site.guides.featured.*`). */
+    featuredGuide: process.env.NEXT_PUBLIC_FEATURE_FEATURED_GUIDE === 'true'
+  },
   /** When true, phone/WhatsApp is shown in footer, privacy policy, etc. When false, phone is only visible after form submission (accompagnement). Set NEXT_PUBLIC_SHOW_PHONE_ON_SITE=true to show everywhere. */
   showPhonePublicly: process.env.NEXT_PUBLIC_SHOW_PHONE_ON_SITE === 'true',
   contact: {

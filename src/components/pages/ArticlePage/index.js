@@ -1,75 +1,88 @@
+'use client';
+
 // Vendor
 import React from 'react';
-import classnames from 'classnames';
 import Image from 'next/image';
+import Link from 'next/link';
+import classnames from 'classnames';
+import {useIntl} from 'react-intl';
 
 // Styles
-import styles from './styles.module.scss';
-
-// From styles.cover__image-wrapper: max-height 400px, width 100%
-const COVER_IMAGE_WIDTH = 800;
-const COVER_IMAGE_HEIGHT = 400;
+import ui from '../../site/ui.module.scss';
 
 // Components
-import PageLayout from '../../PageLayout';
-import ArticleList from '../../ArticleList';
-import PostMeta from '../../PostMeta';
-import SocialShareButtons from '../../SocialShareButtons';
+import SiteLayout from '../../site/SiteLayout';
+import {Section, PageBanner, SectionHead} from '../../site/Section';
+import ContentCard from '../../site/ContentCard';
+import PostMeta from '../../site/PostMeta';
 import HtmlContent from '../../HtmlContent';
 
-const ArticlePage = ({article, hasMoreArticles, otherArticles}) => {
-  const page = {
-    description: article.excerpt,
-    image: article.metaImage,
-    keywords: article.tags,
-    path: article.path,
-    title: article.title
-  };
+const NUMBER_OF_RELATED_ARTICLES = 3;
+
+const ArticlePage = ({article, otherArticles}) => {
+  const intl = useIntl();
+  const t = (id) => intl.formatMessage({id: `site.articles.${id}`});
+  const related = (otherArticles || []).slice(0, NUMBER_OF_RELATED_ARTICLES);
 
   return (
-    <PageLayout>
-      <section key="content" className={classnames(styles.wrapper, styles['wrapper--content'])}>
-        <div className={styles.inner}>
-          <div className={styles.cover}>
-            <div className={styles['cover__image-wrapper']}>
+    <SiteLayout active="/articles" newsletterTone="dark">
+      <PageBanner
+        eyebrow={t('detail.eyebrow')}
+        title={article.title}
+        lead={article.excerpt}
+        share={{path: article.path, title: article.title, excerpt: article.excerpt}}
+      />
+
+      <Section tone="white">
+        <div className={ui.detail}>
+          <article>
+            <div className={ui.cover}>
               <Image
                 src={article.thumbnail}
                 alt={article.title}
-                width={COVER_IMAGE_WIDTH}
-                height={COVER_IMAGE_HEIGHT}
-                className={styles.coverImage}
-                style={{objectFit: 'cover', width: '100%', height: 'auto'}}
+                fill
+                priority
+                sizes="(max-width: 980px) 100vw, 800px"
+                style={{objectFit: 'cover'}}
               />
             </div>
-
             {article.thumbnailCredits && (
-              <div
-                className={styles['thumbnail-credit']}
-                dangerouslySetInnerHTML={{__html: article.thumbnailCredits}}
-              />
+              <div className={ui.coverCredit} dangerouslySetInnerHTML={{__html: article.thumbnailCredits}} />
             )}
-
-            <div className={styles['cover__title-excerpt-wrapper']}>
-              <h1 className={styles.cover__title}>{article.title}</h1>
-              <p className={styles.cover__description}>{article.excerpt}</p>
+            <p className={ui.meta} style={{marginBottom: 24}}>
               <PostMeta post={article} />
-            </div>
+            </p>
+            <HtmlContent content={article.content} />
+          </article>
 
-            <SocialShareButtons path={article.path} title={article.title} excerpt={article.excerpt} />
-          </div>
-
-          <HtmlContent content={article.content} />
-
-          {otherArticles && otherArticles.length > 0 && (
-            <ArticleList
-              articles={otherArticles}
-              hasMoreArticles={hasMoreArticles}
-              titleKey="pages.articles-show.other-articles.title"
-            />
-          )}
+          <aside className={ui.aside}>
+            <b className={ui.asideTitle}>{t('help.title')}</b>
+            <p className={ui.asideText}>{t('help.text')}</p>
+            <Link className={classnames(ui.btn)} href="/accompagnement">
+              {intl.formatMessage({id: 'site.nav.cta'})}
+            </Link>
+          </aside>
         </div>
-      </section>
-    </PageLayout>
+      </Section>
+
+      {related.length > 0 && (
+        <Section tone="light">
+          <SectionHead eyebrow={t('related.eyebrow')} title={t('related.title')} />
+          <ul className={ui.grid3}>
+            {related.map((other) => (
+              <li key={other.path}>
+                <ContentCard
+                  href={other.path}
+                  image={other.thumbnail}
+                  title={other.title}
+                  meta={<PostMeta post={other} />}
+                />
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+    </SiteLayout>
   );
 };
 

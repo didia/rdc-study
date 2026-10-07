@@ -2,32 +2,31 @@
 
 // Vendor
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
 import Link from 'next/link';
+import classnames from 'classnames';
+import {useIntl} from 'react-intl';
 
-// Styles
-import styles from './styles.module.scss';
+import ui from '../../site/ui.module.scss';
+import SiteLayout from '../../site/SiteLayout';
+import {Section, PageBanner} from '../../site/Section';
 
-import PageLayout from '../../PageLayout';
+const NotFoundPage = () => {
+  const intl = useIntl();
 
-const NotFoundPage = () => (
-  <PageLayout>
-    <div className={styles.wrapper}>
-      <div className={styles.inner}>
-        <FormattedMessage id="not-found.title">{(text) => <h1 className="major">{text}</h1>}</FormattedMessage>
-
-        <FormattedMessage id="not-found.message-text">{(text) => <p>{text}</p>}</FormattedMessage>
-
-        <FormattedMessage id="not-found.return-home-button-text">
-          {(text) => (
-            <Link href="/" className="button special">
-              {text}
-            </Link>
-          )}
-        </FormattedMessage>
-      </div>
-    </div>
-  </PageLayout>
-);
+  return (
+    <SiteLayout withNewsletter={false}>
+      <PageBanner
+        eyebrow={intl.formatMessage({id: 'site.not-found.eyebrow'})}
+        title={intl.formatMessage({id: 'not-found.title'})}
+        lead={intl.formatMessage({id: 'not-found.message-text'})}
+      />
+      <Section tone="light">
+        <Link href="/" className={classnames(ui.btn)}>
+          {intl.formatMessage({id: 'not-found.return-home-button-text'})}
+        </Link>
+      </Section>
+    </SiteLayout>
+  );
+};
 
 export default NotFoundPage;

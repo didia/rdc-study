@@ -34,6 +34,12 @@ async function markdownToHtml(markdown: string): Promise<string> {
   return result.toString();
 }
 
+// Front matter sometimes holds a single value (e.g. `levels: all`) where a list is expected.
+function toArray(value: unknown): string[] {
+  if (Array.isArray(value)) return value;
+  return value ? [String(value)] : [];
+}
+
 function getAllFiles(dir: string, ext = '.md'): string[] {
   if (!fs.existsSync(dir)) return [];
 
@@ -209,8 +215,8 @@ export async function getScholarships(showDraft = false): Promise<Scholarship[]>
         thumbnail: resolveImagePath(data.thumbnail),
         thumbnailCredits: data.thumbnailCredits || undefined,
         startDate: data.startDate || undefined,
-        levels: data.levels || [],
-        targetCountries: data.targetCountries || [],
+        levels: toArray(data.levels),
+        targetCountries: toArray(data.targetCountries),
         tags: data.tags || [],
         slug: fileName,
         path: `/bourses/${fileName}`,

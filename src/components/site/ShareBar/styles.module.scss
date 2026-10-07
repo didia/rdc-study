@@ -1,0 +1,14 @@
+.share {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+
+  span {
+    font:
+      700 11px Raleway,
+      sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}

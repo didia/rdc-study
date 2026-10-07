@@ -57,7 +57,6 @@ export default async function ArticleRoute({params}: {params: Promise<{slug: str
         title: article.title,
       }}
       otherArticles={otherArticles}
-      hasMoreArticles={allArticles.length > 11}
     />
   );
 }

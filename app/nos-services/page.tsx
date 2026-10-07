@@ -11,13 +11,6 @@ export const metadata = generatePageMetadata({
 export default async function NosServicesPage() {
   const allServices = await getServices();
 
-  const page = {
-    title: 'Nous sommes là pour vous à chaque étape de votre projet d\'études!',
-    description: 'Que vous soyez au tout début ne sachant pas comment vous y prendre, que vous ayez déjà obtenu votre admission ou que vous soyez déjà dans votre pays de destination, nous offrons un éventail de services qui vous permettent de réussir votre projet d\'études',
-    path: '/nos-services',
-    socialShareEnabled: true,
-  };
-
   const services = allServices.map((s) => ({
     slug: s.slug,
     title: s.title,
@@ -26,5 +19,5 @@ export default async function NosServicesPage() {
     assistanceRequestLink: s.assistanceRequestLink,
   }));
 
-  return <ServicesPage page={page} services={services} />;
+  return <ServicesPage services={services} />;
 }

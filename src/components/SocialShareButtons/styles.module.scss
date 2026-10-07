@@ -1,9 +1,17 @@
 .wrapper {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  position: fixed;
-  left: 16px;
-  top: 200px;
-  z-index: 100;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  button {
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    line-height: 0;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
 }
