@@ -1,13 +1,13 @@
 # Phase 1 — Pipeline Tracker (replace the Excel file)
 
-**Goal:** by the end of this phase the team stops opening the spreadsheet. New requests from the website appear in the
+**Goal:** by the end of this phase the team works from the console instead of the spreadsheet. New requests from the website appear in the
 console on their own; staff can find any request, see its whole story, move it through the same stages the tabs
 represented, and know who owns it.
 
-**Usable result:** sign in at `/admin` → see all 595 historical requests + every new one → search/filter → open a
+**Usable result:** sign in at `/admin` → see every new website request (the console starts empty — clean start, no history imported) → search/filter → open a
 request → change status / add a note / assign → history is kept automatically.
 
-Depends on: [00](./00-decision-and-architecture.md), [01](./01-data-model.md), [02](./02-legacy-import.md).
+Depends on: [00](./00-decision-and-architecture.md), [01](./01-data-model.md).
 
 ## Delivery in three PRs
 
@@ -17,7 +17,7 @@ Each PR is independently mergeable and leaves `master` deployable.
 |----|----------|--------------|
 | **1A — Foundations** | Move CMS to `/cms`; Supabase projects + `supabase/` migrations (P1 tables, seeds, triggers, RLS) + pgTAP tests; `@supabase/ssr` clients; `middleware.ts`; `/admin/login`, `/admin` shell, staff invite flow; CI additions; README env docs; privacy-policy text | Highest-risk plumbing (route clash, auth, RLS) reviewed on its own; nothing user-visible on the public site changes |
 | **1B — Console** | Requests list (search/filter/sort/paginate), request detail (timeline, status change, notes, assign, edit fields), "New request" manual form, clients view, staff management page (admin), Contenu link | Pure console UI on top of 1A |
-| **1C — Live intake + import** | `POST /api/requests` + `submit_service_request()`; form dual-write; `scripts/import-tracker.mjs` + rehearsal on staging; production import; cut-over checklist | Touches the public form and production data, so it ships last, after the console is proven on staging |
+| **1C — Live intake** | `POST /api/requests` + `submit_service_request()`; form dual-write; price source-of-truth fix (300 $); cut-over checklist | Touches the public form, so it ships last, after the console is proven on staging |
 
 ## Scope
 
@@ -61,7 +61,7 @@ Each PR is independently mergeable and leaves `master` deployable.
 - Left: client card (name, email, phone with **`wa.me` link** and `mailto:`, origin, other requests by the same client),
   request facts (service, destination, package, source, source URL, submitted date), the **original message** verbatim,
   and structured `form_answers` rendered as readable key/values.
-- Right: **timeline** (`request_events`, newest first): created/imported, status changes (from→to, who, when), notes,
+- Right: **timeline** (`request_events`, newest first): created, status changes (from→to, who, when), notes,
   assignments. **Add note** box (with channel selector: WhatsApp / email / phone / office) → `note` or `contact_attempt` event.
 - Editable fields (agent+): client name/email/phone/origin, service type, destination, package, `status_reason`.
   Edits to tracked fields (service/destination/package) write a `field_change` event with old→new in `metadata`.
@@ -79,7 +79,7 @@ keeps the actor).
 
 **Contenu:** nav item linking to `/cms`; a small explainer page is *not* needed.
 
-### 1C — Live intake + import
+### 1C — Live intake
 
 **Public intake — `POST /api/requests`** (`app/api/requests/route.ts`, `runtime = 'nodejs'`)
 - Body (zod-validated, max 8 KB): `idempotencyKey`, `firstName`, `lastName`, `email`, `phone?`, `originCountry`,
@@ -102,14 +102,21 @@ keeps the actor).
 - The structured payload is built where `aboutCandidate`, `assistancePackage`, destination and the yes/no answers already
   live (`store.ts`), not by re-parsing the sentence.
 
-**Import:** build `scripts/import-tracker.mjs` per [02](./02-legacy-import.md), rehearse on staging, review the report with the
-owner, import into production, run the reconciliation queries, archive the report privately.
+**Price source of truth (300 $):** the owner confirmed Assistance costs **300 $**, which matches
+`data/services/assistance.md`, but `src/constants/assistance.js` `AssistancePrices.assistance` is **400** and is what the
+form's `store.ts` displays. In this PR the form reads prices from the `services` content it already receives (the store
+is initialised with `services`) and `AssistancePrices` is deleted (or, minimally, corrected to 300 with a test that it equals
+`data/services/assistance.md`). The same value is what the console later uses as the default agreed price, and what the
+analytics event reports. Check the other services' displayed prices against their `.md` files at the same time.
+
+**No import.** The console launches empty. The old workbook is archived read-only outside the repo; open leads still
+being worked from it are re-entered by hand via *Nouvelle demande* during the cut-over week (owner decides which).
 
 **Cut-over checklist** (done together with the owner):
-1. Production import reconciled (595 requests, per-status counts match).
+1. Staging verified end-to-end with synthetic requests; production starts with zero rows.
 2. Team trained in a 30-minute walkthrough; each agent has signed in and enrolled MFA.
 3. Two weeks of **soak**: new form submissions are compared with the notification emails daily (expect 1:1).
-4. Spreadsheet frozen (read-only) and moved out of shared drives; "source of truth" statement shared with the team.
+4. Spreadsheet frozen (read-only), moved out of shared drives and any still-open leads re-entered; "source of truth" statement shared with the team.
 5. Privacy-policy update live (what/why/where/retention/deletion contact).
 
 ## Acceptance criteria
@@ -123,7 +130,7 @@ owner, import into production, run the reconciliation queries, archive the repor
 - [ ] With the Supabase env vars removed, the form still succeeds via the legacy path.
 - [ ] List filters (status pills, search, assignee, date range) are reflected in the URL and survive reload; search for a
       known synthetic name/email/phone fragment finds the right request.
-- [ ] Import dry-run on the owner's real workbook prints 595 requests and a review list; production counts reconcile.
+- [ ] The assistance form displays 300 $ for Assistance, matching `data/services/assistance.md`; no price constant duplicates the content files.
 - [ ] `/cms` works with Netlify Identity login; `/admin` is not indexed (robots + header + sitemap).
 - [ ] CI green: lint, build, Vitest, pgTAP.
 
@@ -135,5 +142,5 @@ client merge, CSV export (all Phase 2+). No client-facing view of status.
 ## Risks specific to this phase
 
 - *Form regression* → dual-write + soak + kill switch env var `ADMIN_INTAKE_ENABLED=false` (route returns 204, form falls back to legacy only).
-- *Mis-parsed legacy rows* → dry-run report, owner review, `--rollback`.
+- *Open leads lost in the switch* → cut-over week checklist: owner lists leads still open in the workbook and they are re-entered manually.
 - *Auth lockout of the only admin* → create two admin users; document recovery via Supabase dashboard.

@@ -1,6 +1,6 @@
 # Phase 3 — Payments, Documents & Delivery
 
-**Goal:** close the loop after "Acompte payé". Today the spreadsheet ends at the deposit; money received (Mobile Money,
+**Goal:** close the loop after "Acompte payé". Today the old tracker ended at the deposit; money received (Mobile Money,
 cash at the office), signed contracts, receipts and the actual mentoring work are tracked nowhere.
 
 **Usable result:** an agent records a 100 $ Mobile Money deposit against a request, uploads the signed contract, the status
@@ -14,9 +14,11 @@ Depends on Phases 1–2 in production. Adds tables `payments`, `request_document
 ## Scope
 
 ### 3.1 Agreed price
-- On a request at/after `awaiting_payment`: set **agreed price** (default from `data/services/<service>.md` `price`,
-  overridable — discounts happen; the form doc mentions 200 $ in two 100 $ tranches while `assistance.md` says 300,
-  so the console never assumes a number). Shown with **paid / balance** on the detail page and as list columns.
+- On a request at/after `awaiting_payment`: set **agreed price**, defaulting from `data/services/<service>.md` `price`
+  (**Assistance = 300 $**, owner-confirmed; the same file feeds the public form after the Phase 1 fix), overridable by
+  agent+ for discounts (override requires a reason, logged). Shown with **paid / balance** on the detail page and as list columns.
+- **Deposit rule:** configurable share (default **50 %**, i.e. 150 $ of 300 $, in line with the old "two equal tranches"
+  process) in `/admin/parametres`; to be confirmed with the owner.
 
 ### 3.2 Payments ledger
 - "Enregistrer un paiement" (agent+): kind (acompte / solde / total / remboursement), amount, currency (USD default; CDF/EUR
@@ -41,7 +43,7 @@ Depends on Phases 1–2 in production. Adds tables `payments`, `request_document
   edited by admin in `/admin/modeles` (versioned; the generated PDF is stored as a `contract` document, so later template
   edits never rewrite history). Same for a **receipt** per payment.
 - PDF generation server-side (small lib such as `pdf-lib` or `@react-pdf/renderer`) in a route handler.
-- Needs the client's postal address: add optional `clients.address` (the legacy form doc's step 4 collects it).
+- Needs the client's postal address: add optional `clients.address` (step 4 of `documentation/ASSISTANCE-FORM.md` collects it).
 
 ### 3.5 Delivery tracking (after payment)
 - Activate statuses `in_progress`, `completed` (set `is_active=true`) and `paid`.

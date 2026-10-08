@@ -33,8 +33,6 @@ Answers the question the spreadsheet was named for — conversions.
 - **Trend:** requests per week/month.
 - Implemented as SQL views / RPC (`v_funnel`, `fn_conversion_by(dimension, from, to)`) so numbers are testable; charts with
   a tiny dependency (e.g. `recharts`) or plain SVG; follow the `dataviz` conventions for colour/accessibility.
-- Legacy imported rows are included but carry approximate dates (`last_activity_at`); the dashboard marks
-  "données historiques" with a toggle to exclude `source='legacy_import'` from time-based metrics.
 
 ### 2.4 Board view — `/admin/demandes?vue=tableau`
 - Kanban with columns = statuses (same order as the old tabs); drag a card to change status (confirmation dialog for moves
@@ -44,7 +42,7 @@ Answers the question the spreadsheet was named for — conversions.
 ### 2.5 Lost reasons
 - `lost_reasons` lookup seeded (admin-editable): `no_response`, `too_expensive`, `chose_competitor`, `not_eligible`,
   `changed_plans`, `visa_refused_elsewhere`, `duplicate`, `other`. Required when entering `lost_failed` / `lost_no_response`
-  (not retroactive for imported rows).
+
 
 ### 2.6 WhatsApp & email templates
 - `message_templates` managed by admin (`/admin/modeles`): first contact, reminder, payment instructions (Mobile Money
@@ -83,5 +81,5 @@ Automatic sending via the WhatsApp Business API; email campaign tooling; payment
 
 ## Risks
 
-- *Metric trust:* legacy dates are coarse → label and filter (above).
+- *Small numbers:* the console starts empty, so early percentages are noisy → show absolute counts next to every rate and hide rates below a minimum sample (e.g. 10).
 - *Template misuse (wrong person):* always show the rendered message and recipient before opening WhatsApp.

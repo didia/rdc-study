@@ -116,16 +116,17 @@ visas — treat it as sensitive.
   and `/admin/**`.
 - **Privacy policy:** update `app/politique-de-confidentialite` to state what is stored, why, where (Supabase region),
   retention, and how to request deletion — shipped with Phase 1 (intake starts storing data).
-- **The Excel file contains real personal data.** Do not commit it, never put rows in specs/tests/fixtures; tests use
-  synthetic fixtures. After import and sign-off, move the file to restricted storage.
+- **Personal data will live in the database (owner-confirmed)**, so the controls above are launch requirements, not
+  hardening extras. The old Excel workbook is *not* imported; archive it outside the repo (restricted drive), never commit it,
+  and use only synthetic fixtures in tests and docs.
 
 ## 6. Environments & deployment
 
 | Env | Supabase project | Netlify context | Notes |
 |-----|------------------|-----------------|-------|
 | Local | `supabase start` (Docker) | `npm run dev` | seeded with synthetic data |
-| Staging / previews | `rdcetudes-staging` (Free OK) | Deploy Previews + branch deploys | safe place to rehearse the import |
-| Production | `rdcetudes-prod` (**Pro**) | Production | import runs here once |
+| Staging / previews | `rdcetudes-staging` (Free OK) | Deploy Previews + branch deploys | safe place to rehearse migrations and intake with synthetic data |
+| Production | `rdcetudes-prod` (**Pro**) | Production | starts empty |
 
 - Env vars (Netlify, per context): `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`,
   `SUPABASE_SERVICE_ROLE_KEY` (server-only), `ADMIN_ALLOWED_EMAIL_DOMAINS` (optional belt-and-braces), plus Turnstile keys
@@ -139,10 +140,10 @@ visas — treat it as sensitive.
 ## 7. Testing strategy
 
 The repo has no test runner today. Phase 1 adds **Vitest** for pure logic only where bugs would hurt:
-message parser, country/status normalisation, intake payload validation, status-transition rules. Database behaviour
+country/phone normalisation, intake payload validation and catalogue checks, status-transition rules. Database behaviour
 (RLS: anon denied, viewer read-only, agent can update, only admin can delete; trigger writes events) is tested with
 **pgTAP** via `supabase test db`. UI is verified manually per phase checklist, with a Playwright smoke test added in
-Phase 4. The import script ships with `--dry-run` and a reconciliation report (see [02](./02-legacy-import.md)).
+Phase 4. Intake is exercised end-to-end on staging with synthetic data before it is enabled in production.
 
 ## 8. Risks
 
