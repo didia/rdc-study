@@ -72,10 +72,22 @@ const PrivacyPolicyPage = () => (
       publicitaires.
     </p>
     <p>
-      Nous conservons ces informations pendant 24 mois après la clôture de votre demande, puis nous les supprimons ou
-      les anonymisons. Vous pouvez demander à tout moment l‘accès, la rectification ou la suppression de ces données en
-      écrivant à salut@rdcetudes.com.
+      Nous conservons ces informations pendant 24 mois après la clôture de votre demande, puis nous effaçons vos
+      données personnelles (nom, coordonnées, messages, documents) ; seuls des chiffres anonymes (montants, dates,
+      pays) sont gardés pour nos statistiques et notre comptabilité. Vous pouvez demander à tout moment l‘accès, la
+      rectification ou la suppression de ces données en écrivant à salut@rdcetudes.com.
     </p>
+    <p>
+      <strong>Prestataires qui traitent des données pour notre compte :</strong>
+    </p>
+    <ul>
+      <li>Supabase – base de données et authentification de l‘équipe</li>
+      <li>Netlify – hébergement du site</li>
+      <li>Amazon Web Services (SES) – envoi des courriels du formulaire</li>
+      <li>Resend – notifications internes par courriel à l‘équipe</li>
+      <li>Sentry – suivi des erreurs techniques</li>
+      <li>Google Analytics – mesure d‘audience anonymisée du site</li>
+    </ul>
     <hr />
     <h2>Droit d‘opposition et de retrait</h2>
     <p>
