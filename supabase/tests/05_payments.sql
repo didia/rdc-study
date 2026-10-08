@@ -12,6 +12,7 @@ insert into public.staff_profiles (id, full_name, role) values
   ('00000000-0000-0000-0000-0000000000e3', 'Viewer E', 'viewer');
 update public.staff_profiles set active = false
  where id not in ('00000000-0000-0000-0000-0000000000e1', '00000000-0000-0000-0000-0000000000e2', '00000000-0000-0000-0000-0000000000e3');
+delete from public.payments;
 delete from public.service_requests;
 
 insert into public.clients (id, first_name, last_name, email) values ('10000000-0000-0000-0000-0000000000e1', 'Pay', 'Er', 'pay@test.local');
