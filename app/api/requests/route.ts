@@ -6,6 +6,7 @@ import {listPackages} from '@/lib/admin/catalogue';
 import {createSupabaseServiceClient} from '@/lib/admin/db/server';
 import {isAdminConfigured} from '@/lib/admin/env';
 import {buildSubmission, intakeSchema} from '@/lib/admin/intake';
+import {notifyNewRequest} from '@/lib/admin/notify';
 
 export const runtime = 'nodejs';
 
@@ -107,7 +108,9 @@ export async function POST(request: NextRequest) {
 
     const {data, error} = await supabase.rpc('submit_service_request', {payload: built.payload as any});
     if (error) throw error;
-    const result = data as {reference: string; duplicate: boolean};
+    const result = data as {id: string; reference: string; duplicate: boolean};
+    // Best effort and after the write: a mail failure never costs a lead.
+    if (!result.duplicate) await notifyNewRequest(result.id).catch((error) => Sentry.captureException(error, {tags: {area: 'notifications'}}));
     return json(request, {ok: true, reference: result.reference, duplicate: result.duplicate}, 200);
   } catch (error) {
     Sentry.captureException(error, {tags: {area: 'intake'}});
