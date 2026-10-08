@@ -43,6 +43,9 @@ ADMIN_INTAKE_ENABLED=Set to false to stop storing assistance requests (kill swit
 INTAKE_RATE_LIMIT=Max stored requests per IP per hour (default 10)
 TURNSTILE_SECRET_KEY=Optional Cloudflare Turnstile secret; when set the intake route requires a valid token
 NEXT_PUBLIC_TRACK_INFORMATION_REQUESTS=Set to false to stop logging "information" choices as requests (default on)
+RESEND_API_KEY / NOTIFY_FROM=Optional transactional email (Resend) for new-request alerts and the daily digest
+CRON_SECRET=Shared secret between the scheduled function (netlify/functions/daily-digest.mts) and /api/cron/digest
+GITHUB_REPO / GITHUB_TOKEN / NETLIFY_API_TOKEN / NETLIFY_SITE_ID=Optional read-only content integrations (see documentation/cms-auth.md)
 ```
 
 Producing the first admin: `node --env-file=.env.local scripts/create-admin.mjs --email … --name "…"` (see `supabase/README.md`).

@@ -5,6 +5,12 @@ import path from 'path';
 const nextConfig = {
   trailingSlash: false,
 
+  // The console and the intake route read Markdown content (data/**) at request time: ship it with the functions.
+  outputFileTracingIncludes: {
+    '/admin/**': ['./data/assistance-packages/**/*', './data/articles/**/*', './data/guides/**/*', './data/scholarships/**/*'],
+    '/api/requests': ['./data/assistance-packages/**/*'],
+  },
+
   sassOptions: {
     includePaths: [
       path.join(process.cwd(), 'src/assets/styles'),

@@ -15,7 +15,7 @@ const NAV: {href: string; label: string; adminOnly?: boolean; minRole?: 'agent';
   {href: '/admin/paiements', label: 'admin.nav.payments', minRole: 'agent'},
   {href: '/admin/clients', label: 'admin.nav.clients'},
   {href: '/admin/tarifs', label: 'admin.nav.prices'},
-  {href: '/cms', label: 'admin.nav.content', external: true},
+  {href: '/admin/contenu', label: 'admin.nav.content'},
   {href: '/admin/modeles', label: 'admin.nav.templates', adminOnly: true},
   {href: '/admin/parametres', label: 'admin.nav.settings', adminOnly: true},
   {href: '/admin/audit', label: 'admin.nav.audit', adminOnly: true},
@@ -48,6 +48,7 @@ export function Shell({profile, overdue = 0, children}: {profile: StaffProfile; 
               {profile.full_name} <span className={styles.roleBadge}>{ROLE_LABELS[profile.role]}</span>
             </summary>
             <div className={styles.userMenuPanel}>
+              <Link href="/admin/profil">{t('admin.nav.profile')}</Link>
               <Link href="/admin/securite">{t('admin.nav.security')}</Link>
               <form action={signOut}>
                 <button type="submit">{t('admin.nav.sign-out')}</button>
