@@ -235,6 +235,27 @@ export type Database = {
         }
         Relationships: []
       }
+      app_settings: {
+        Row: {
+          key: string
+          updated_at: string
+          updated_by: string | null
+          value: Json
+        }
+        Insert: {
+          key: string
+          updated_at?: string
+          updated_by?: string | null
+          value: Json
+        }
+        Update: {
+          key?: string
+          updated_at?: string
+          updated_by?: string | null
+          value?: Json
+        }
+        Relationships: []
+      }
       rate_limits: {
         Row: {
           hits: number
@@ -512,6 +533,34 @@ export type Database = {
       submit_service_request: {
         Args: { payload: Json }
         Returns: Json
+      }
+      fn_funnel: {
+        Args: { p_from: string; p_to: string }
+        Returns: { step: string; ord: number; n: number }[]
+      }
+      fn_conversion_by: {
+        Args: { p_dimension: string; p_from: string; p_to: string }
+        Returns: { label: string; total: number; won: number }[]
+      }
+      fn_speed: {
+        Args: { p_from: string; p_to: string }
+        Returns: { median_hours_to_contact: number | null; contacted_count: number; median_hours_to_won: number | null; won_count: number }[]
+      }
+      fn_loss_analysis: {
+        Args: { p_from: string; p_to: string }
+        Returns: { kind: string; label: string; n: number }[]
+      }
+      fn_trend: {
+        Args: { p_from: string; p_grain: string; p_to: string }
+        Returns: { period: string; n: number }[]
+      }
+      fn_client_duplicates: {
+        Args: never
+        Returns: { a_id: string; b_id: string; reason: string; score: number }[]
+      }
+      merge_clients: {
+        Args: { p_drop: string; p_keep: string }
+        Returns: number
       }
       resolve_price: {
         Args: { p_package_slug?: string; p_service_type: string }

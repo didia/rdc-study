@@ -64,3 +64,11 @@ export async function saveTemplate(_prev: FormState, formData: FormData): Promis
   if (error) return {error: error.code === '23505' ? t('admin.templates.code-taken') : t('admin.requests.failed'), values: submittedValues(formData)};
   return {success: t('admin.requests.saved')};
 }
+
+export async function setRoundRobin(_prev: FormState, formData: FormData): Promise<FormState> {
+  const {supabase} = await requireStaff('admin');
+  const enabled = formData.get('enabled') === 'on';
+  const {error} = await supabase.from('app_settings').upsert({key: 'round_robin_enabled', value: enabled});
+  revalidatePath('/admin/parametres');
+  return error ? {error: t('admin.requests.failed')} : {success: t('admin.requests.saved')};
+}

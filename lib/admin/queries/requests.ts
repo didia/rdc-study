@@ -129,3 +129,11 @@ export async function listStaff(supabase: Supabase, activeOnly = true) {
   const {data} = await query;
   return data ?? [];
 }
+
+/** Open requests per assignee (workload), keyed by staff id; '' = unassigned. */
+export async function openLoadByAssignee(supabase: Supabase, openCodes: string[]) {
+  const {data} = await supabase.from('service_requests').select('assigned_to').in('status', openCodes).limit(10000);
+  const load: Record<string, number> = {};
+  for (const row of data ?? []) load[row.assigned_to ?? ''] = (load[row.assigned_to ?? ''] ?? 0) + 1;
+  return load;
+}
