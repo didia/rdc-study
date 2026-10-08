@@ -3,7 +3,7 @@
 // Vendor
 import React from 'react';
 import T from 'prop-types';
-import {injectIntl} from 'react-intl';
+import {useIntl} from 'react-intl';
 import classnames from 'classnames';
 
 // Styles
@@ -12,7 +12,8 @@ import styles from './styles.module.scss';
 // constants
 const LEVEL_ORDERS = ['undergraduate', 'graduate', 'postgraduate', 'research', 'internship'];
 
-const ScholarshipLevels = injectIntl(({className, levels, tag, intl}) => {
+const ScholarshipLevels = ({className, levels, tag}) => {
+  const intl = useIntl();
   const Tag = tag || 'div';
   const safeLevels = Array.isArray(levels) ? levels : [];
 
@@ -28,15 +29,12 @@ const ScholarshipLevels = injectIntl(({className, levels, tag, intl}) => {
       </span>
     </Tag>
   );
-});
+};
 
 ScholarshipLevels.propTypes = {
   className: T.string,
   tag: T.elementType,
-  levels: T.arrayOf(T.string.isRequired),
-  intl: T.shape({
-    formatMessage: T.func
-  })
+  levels: T.arrayOf(T.string.isRequired)
 };
 
 export default ScholarshipLevels;
