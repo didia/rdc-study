@@ -72,3 +72,13 @@ export async function setRoundRobin(_prev: FormState, formData: FormData): Promi
   revalidatePath('/admin/parametres');
   return error ? {error: t('admin.requests.failed')} : {success: t('admin.requests.saved')};
 }
+
+export async function setDepositShare(_prev: FormState, formData: FormData): Promise<FormState> {
+  const {supabase} = await requireStaff('admin');
+  const percent = Number(String(formData.get('percent') ?? '').replace(',', '.'));
+  if (!Number.isFinite(percent) || percent < 1 || percent > 100) return {error: t('admin.settings.invalid-percent'), values: submittedValues(formData)};
+  const {error} = await supabase.from('app_settings').upsert({key: 'deposit_share', value: Math.round(percent * 100) / 10000});
+  revalidatePath('/admin/parametres');
+  revalidatePath('/admin/demandes');
+  return error ? {error: t('admin.requests.failed')} : {success: t('admin.requests.saved')};
+}

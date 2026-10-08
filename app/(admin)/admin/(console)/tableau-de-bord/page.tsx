@@ -6,7 +6,9 @@ import {packageLabel} from '@/lib/admin/catalogue';
 import {DIMENSIONS, MIN_SAMPLE_FOR_RATE, parseRange, rate, type Dimension} from '@/lib/admin/dashboard';
 import {formatDate} from '@/lib/admin/format';
 import {t} from '@/lib/admin/i18n';
-import {getInsights} from '@/lib/admin/queries/insights';
+import {formatCents, methodLabel} from '@/lib/admin/money';
+import {getInsights, getRevenue} from '@/lib/admin/queries/insights';
+import {hasRole} from '@/lib/admin/roles';
 import {serviceLabel, sourceLabel} from '@/lib/admin/vocab';
 
 const FUNNEL_LABELS: Record<string, string> = {
@@ -25,11 +27,12 @@ const prettyLabel = (dimension: Dimension, label: string) => {
 };
 
 export default async function DashboardPage({searchParams}: {searchParams: Promise<{from?: string; to?: string; dim?: string}>}) {
-  const {supabase} = await requireStaff();
+  const {supabase, profile} = await requireStaff();
   const raw = await searchParams;
   const range = parseRange(raw);
   const dimension = (DIMENSIONS as readonly string[]).includes(raw.dim ?? '') ? (raw.dim as Dimension) : 'destination';
   const data = await getInsights(supabase, range, dimension);
+  const revenue = hasRole(profile.role, 'agent') ? await getRevenue(supabase, range) : null;
 
   const submitted = data.funnel.find((f) => f.step === 'submitted')?.n ?? 0;
   const maxTrend = Math.max(1, ...data.trend.map((p) => p.n));
@@ -142,6 +145,31 @@ export default async function DashboardPage({searchParams}: {searchParams: Promi
         </section>
       </div>
 
+      {revenue && (
+        <section className={styles.card}>
+          <h2>{t('admin.dashboard.revenue')}</h2>
+          <p className={styles.muted} style={{marginBottom: 12}}>{t('admin.dashboard.revenue-lead')}</p>
+          <div className={styles.detailGrid}>
+            <RevenueTable title={t('admin.dashboard.revenue-month')} rows={revenue.month} label={(l) => l} />
+            <RevenueTable title={t('admin.dashboard.revenue-method')} rows={revenue.method} label={methodLabel} />
+            <RevenueTable title={t('admin.dashboard.revenue-destination')} rows={revenue.destination} label={(l) => l} />
+            <RevenueTable title={t('admin.dashboard.revenue-package')} rows={revenue.package} label={(l) => (l === '—' ? l : packageLabel(l))} />
+          </div>
+          <dl className={styles.facts} style={{marginTop: 16}}>
+            <dt>{t('admin.dashboard.outstanding')}</dt>
+            <dd>
+              {revenue.outstanding.length
+                ? revenue.outstanding.map((o) => `${formatCents(o.outstanding_cents, o.currency)} (${t('admin.dashboard.n-requests', {n: o.requests})})`).join(' · ')
+                : formatCents(0)}
+            </dd>
+            <dt>{t('admin.dashboard.avg-delivery')}</dt>
+            <dd>{revenue.delivery?.avg_days_deposit_to_completed != null ? `${revenue.delivery.avg_days_deposit_to_completed} j (${t('admin.dashboard.n-requests', {n: revenue.delivery.completed_count})})` : '—'}</dd>
+            <dt>{t('admin.dashboard.refund-rate')}</dt>
+            <dd>{revenue.delivery?.refunded_share != null ? `${Math.round(Number(revenue.delivery.refunded_share) * 1000) / 10} %` : '—'}</dd>
+          </dl>
+        </section>
+      )}
+
       <section className={styles.card}>
         <h2>{t(data.grain === 'week' ? 'admin.dashboard.trend-week' : 'admin.dashboard.trend-month')}</h2>
         {data.trend.length === 0 ? (
@@ -179,4 +207,24 @@ function CountList({rows}: {rows: {label: string; n: number}[]}) {
 function formatHours(hours: number | null | undefined) {
   if (hours === null || hours === undefined) return '—';
   return hours >= 48 ? `${Math.round((hours / 24) * 10) / 10} j` : `${hours} h`;
+}
+
+function RevenueTable({title, rows, label}: {title: string; rows: {label: string; currency: string; net_cents: number; payments: number}[]; label: (l: string) => string}) {
+  return (
+    <div>
+      <h3 className={styles.subhead}>{title}</h3>
+      {rows.length === 0 ? (
+        <p className={styles.muted}>—</p>
+      ) : (
+        <ul className={styles.countList}>
+          {rows.map((r) => (
+            <li key={`${r.label}-${r.currency}`}>
+              <span>{label(r.label)}</span>
+              <strong>{formatCents(r.net_cents, r.currency)}</strong>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
 }

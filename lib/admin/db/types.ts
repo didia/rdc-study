@@ -256,6 +256,57 @@ export type Database = {
         }
         Relationships: []
       }
+      payments: {
+        Row: {
+          amount_cents: number
+          created_at: string
+          currency: string
+          external_ref: string | null
+          id: string
+          kind: string
+          method: string
+          note: string | null
+          paid_at: string
+          recorded_by: string | null
+          request_id: string
+          void_reason: string | null
+          voided_at: string | null
+          voided_by: string | null
+        }
+        Insert: {
+          amount_cents: number
+          created_at?: string
+          currency?: string
+          external_ref?: string | null
+          id?: string
+          kind: string
+          method: string
+          note?: string | null
+          paid_at: string
+          recorded_by?: string | null
+          request_id: string
+          void_reason?: string | null
+          voided_at?: string | null
+          voided_by?: string | null
+        }
+        Update: {
+          amount_cents?: number
+          created_at?: string
+          currency?: string
+          external_ref?: string | null
+          id?: string
+          kind?: string
+          method?: string
+          note?: string | null
+          paid_at?: string
+          recorded_by?: string | null
+          request_id?: string
+          void_reason?: string | null
+          voided_at?: string | null
+          voided_by?: string | null
+        }
+        Relationships: []
+      }
       rate_limits: {
         Row: {
           hits: number
@@ -407,6 +458,8 @@ export type Database = {
           submitted_at: string
           updated_at: string
           lost_reason: string | null
+          agreed_price_cents: number | null
+          agreed_currency: string
         }
         Insert: {
           assigned_to?: string | null
@@ -434,6 +487,8 @@ export type Database = {
           submitted_at?: string
           updated_at?: string
           lost_reason?: string | null
+          agreed_price_cents?: number | null
+          agreed_currency?: string
         }
         Update: {
           assigned_to?: string | null
@@ -461,6 +516,8 @@ export type Database = {
           submitted_at?: string
           updated_at?: string
           lost_reason?: string | null
+          agreed_price_cents?: number | null
+          agreed_currency?: string
         }
         Relationships: [
           {
@@ -515,7 +572,14 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      request_paid: {
+        Row: {
+          currency: string | null
+          net_cents: number | null
+          request_id: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       check_rate_limit: {
@@ -561,6 +625,18 @@ export type Database = {
       merge_clients: {
         Args: { p_drop: string; p_keep: string }
         Returns: number
+      }
+      fn_revenue_by: {
+        Args: { p_dimension: string; p_from: string; p_to: string }
+        Returns: { label: string; currency: string; net_cents: number; payments: number }[]
+      }
+      fn_outstanding: {
+        Args: never
+        Returns: { currency: string; outstanding_cents: number; requests: number }[]
+      }
+      fn_delivery_stats: {
+        Args: { p_from: string; p_to: string }
+        Returns: { avg_days_deposit_to_completed: number | null; completed_count: number; refunded_share: number | null }[]
       }
       resolve_price: {
         Args: { p_package_slug?: string; p_service_type: string }

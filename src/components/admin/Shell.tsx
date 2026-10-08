@@ -3,15 +3,16 @@ import Link from 'next/link';
 import {signOut} from '@/lib/admin/actions/auth';
 import type {StaffProfile} from '@/lib/admin/auth';
 import {t} from '@/lib/admin/i18n';
-import {isAdmin, ROLE_LABELS} from '@/lib/admin/roles';
+import {hasRole, isAdmin, ROLE_LABELS} from '@/lib/admin/roles';
 import styles from './admin.module.scss';
 import {NavLink} from './NavLink';
 
 // Items are added here as each console section ships.
-const NAV: {href: string; label: string; adminOnly?: boolean; external?: boolean; badge?: boolean}[] = [
+const NAV: {href: string; label: string; adminOnly?: boolean; minRole?: 'agent'; external?: boolean; badge?: boolean}[] = [
   {href: '/admin', label: 'admin.nav.today', badge: true},
   {href: '/admin/demandes', label: 'admin.nav.requests'},
   {href: '/admin/tableau-de-bord', label: 'admin.nav.dashboard'},
+  {href: '/admin/paiements', label: 'admin.nav.payments', minRole: 'agent'},
   {href: '/admin/clients', label: 'admin.nav.clients'},
   {href: '/admin/tarifs', label: 'admin.nav.prices'},
   {href: '/cms', label: 'admin.nav.content', external: true},
@@ -21,7 +22,7 @@ const NAV: {href: string; label: string; adminOnly?: boolean; external?: boolean
 ];
 
 export function Shell({profile, overdue = 0, children}: {profile: StaffProfile; overdue?: number; children: React.ReactNode}) {
-  const items = NAV.filter((item) => !item.adminOnly || isAdmin(profile.role));
+  const items = NAV.filter((item) => (!item.adminOnly || isAdmin(profile.role)) && (!item.minRole || hasRole(profile.role, item.minRole)));
   return (
     <div className={styles.shell}>
       <aside className={styles.sidebar}>
