@@ -19,6 +19,7 @@ const NAV: {href: string; label: string; adminOnly?: boolean; minRole?: 'agent';
   {href: '/admin/modeles', label: 'admin.nav.templates', adminOnly: true},
   {href: '/admin/parametres', label: 'admin.nav.settings', adminOnly: true},
   {href: '/admin/audit', label: 'admin.nav.audit', adminOnly: true},
+  {href: '/admin/confidentialite', label: 'admin.nav.privacy', adminOnly: true},
   {href: '/admin/equipe', label: 'admin.nav.team', adminOnly: true},
 ];
 
