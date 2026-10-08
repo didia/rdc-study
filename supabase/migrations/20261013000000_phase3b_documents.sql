@@ -34,7 +34,7 @@ revoke all on function public.log_document() from public, anon;
 create trigger request_documents_log after insert on public.request_documents
   for each row execute function public.log_document();
 
-revoke all on public.request_documents from anon;
+revoke all on public.request_documents from anon, authenticated;
 grant select, insert on public.request_documents to authenticated;
 grant all on public.request_documents to service_role;
 alter table public.request_documents enable row level security;
@@ -80,7 +80,7 @@ create table public.document_templates (
   unique (kind, version)
 );
 
-revoke all on public.document_templates from anon;
+revoke all on public.document_templates from anon, authenticated;
 grant select, insert on public.document_templates to authenticated;
 grant all on public.document_templates to service_role;
 alter table public.document_templates enable row level security;
