@@ -39,6 +39,10 @@ NEXT_PUBLIC_SUPABASE_URL=Supabase project URL
 NEXT_PUBLIC_SUPABASE_ANON_KEY=Supabase anon / publishable key (safe for the browser; RLS protects the data)
 SUPABASE_SERVICE_ROLE_KEY=Supabase service-role / secret key — SERVER ONLY, never expose; used for staff invitations and public intake
 ADMIN_ALLOWED_EMAIL_DOMAINS=Optional comma-separated list of email domains allowed for staff invitations
+ADMIN_INTAKE_ENABLED=Set to false to stop storing assistance requests (kill switch: the form keeps sending the legacy email)
+INTAKE_RATE_LIMIT=Max stored requests per IP per hour (default 10)
+TURNSTILE_SECRET_KEY=Optional Cloudflare Turnstile secret; when set the intake route requires a valid token
+NEXT_PUBLIC_TRACK_INFORMATION_REQUESTS=Set to false to stop logging "information" choices as requests (default on)
 ```
 
 Producing the first admin: `node --env-file=.env.local scripts/create-admin.mjs --email … --name "…"` (see `supabase/README.md`).

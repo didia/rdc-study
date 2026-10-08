@@ -21,7 +21,7 @@ export function LoginForm({next}: {next?: string}) {
       <input type="hidden" name="next" value={next ?? ''} />
       <div className={styles.field}>
         <label htmlFor="email">{t('admin.auth.email')}</label>
-        <input id="email" name="email" type="email" autoComplete="username" required className={styles.input} />
+        <input id="email" name="email" type="email" autoComplete="username" required defaultValue={state?.values?.email ?? ''} className={styles.input} />
       </div>
       <div className={styles.field}>
         <label htmlFor="password">{t('admin.auth.password')}</label>

@@ -213,7 +213,6 @@ collections:
     fields:
       - {label: "Identifiant", name: "slug", widget: "string"}
       - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Prix", name: "price", widget: "number", value_type: "int", default: 0}
       - {label: "Courte description", name: "excerpt", widget: "text", pattern: ['^.{1,250}.$', "Le resumé de l'article doit avoir moins de 250 caractères"]}
       - {label: "Titre du choix dans le formulaire d’assistance", name: "assistanceFormServiceChoiceLabel", widget: "string"}
       - {label: "Titre du message de confirmation de la demande", name: "assistanceFormConfirmationTitle", widget: "string"}

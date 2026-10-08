@@ -1,7 +1,6 @@
 ---
 slug: verification-et-lettre
 title: Projet d’études
-price: 150
 excerpt: Nous allons analyser votre dossier de demande de visa pour vous assurer que vous n’avez rien manqué et que vous avez mis toutes les chances de votre coté pour l’obtention du visa.
 rank: 2
 assistanceFormServiceChoiceLabel: En plus de vérifier ma demande, je veux que vous m’aidiez à mieux expliquer mon projet d’études afin de maximiser mes chances d’obtention du visa.

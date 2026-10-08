@@ -14,6 +14,24 @@ export const ORIGIN_COUNTRIES: string[] = [...ORIGIN_CODES.map(country), OTHER_C
 
 export const DESTINATION_COUNTRIES: string[] = ['be', 'ca', 'cytr', 'fr', 'in', 'tn', 'tr', 'us', 'ro'].map(country);
 
+// Destination slugs used by the public form (DestinationCountries values) -> canonical labels.
+const DESTINATION_BY_SLUG: Record<string, string> = {
+  belgique: 'Belgique',
+  canada: 'Canada',
+  france: 'France',
+  inde: 'Inde',
+  'chypre-du-nord': 'Chypre du Nord',
+  usa: 'États-Unis',
+  tunisie: 'Tunisie',
+  turquie: 'Turquie',
+  roumanie: 'Roumanie',
+};
+
+export function destinationFromSlug(slug: string | null | undefined): string | null {
+  if (!slug) return null;
+  return DESTINATION_BY_SLUG[slug.trim().toLowerCase()] ?? normalizeCountry(slug, DESTINATION_COUNTRIES);
+}
+
 export const SERVICE_TYPES = [
   {code: 'assistance', label: 'Assistance'},
   {code: 'consultation', label: 'Consultation'},

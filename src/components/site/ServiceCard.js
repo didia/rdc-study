@@ -7,7 +7,7 @@ import {useIntl} from 'react-intl';
 
 import ui from './ui.module.scss';
 
-const ServiceCard = ({title, text, price, image, href}) => {
+const ServiceCard = ({title, text, price, priceFrom, image, href}) => {
   const intl = useIntl();
 
   return (
@@ -16,7 +16,11 @@ const ServiceCard = ({title, text, price, image, href}) => {
       <div className={ui.svcBody}>
         <h3>{title}</h3>
         <p>{text}</p>
-        {price !== undefined && <div className={ui.svcPrice}>{intl.formatMessage({id: 'shared.price'}, {price})}</div>}
+        {price !== undefined && (
+          <div className={ui.svcPrice}>
+            {intl.formatMessage({id: priceFrom && price > 0 ? 'shared.price-from' : 'shared.price'}, {price})}
+          </div>
+        )}
         <Link className={classnames(ui.btn)} href={href}>
           {intl.formatMessage({id: 'shared.service-call-to-action'})}
         </Link>

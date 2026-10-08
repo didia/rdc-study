@@ -588,5 +588,35 @@
   "admin.requests.new.force": "Il s'agit d'une autre personne : créer un nouveau client quand même",
   "admin.staff.deactivate": "Désactiver",
   "admin.staff.reactivate": "Réactiver",
-  "admin.staff.last-admin": "Impossible : il doit rester au moins un administrateur actif."
+  "admin.staff.last-admin": "Impossible : il doit rester au moins un administrateur actif.",
+
+  "shared.price-from": "À partir de {price} $ US",
+
+  "admin.nav.prices": "Tarifs",
+  "admin.prices.title": "Tarifs",
+  "admin.prices.lead": "Les prix sont lus par le site : une modification apparaît pour tous les nouveaux visiteurs en quelques instants, sans mise en ligne.",
+  "admin.prices.read-only": "Seuls les administrateurs peuvent modifier les tarifs.",
+  "admin.prices.none": "Aucun prix défini.",
+  "admin.prices.amount": "Prix (USD)",
+  "admin.prices.reason": "Motif du changement",
+  "admin.prices.remove": "Supprimer l'exception",
+  "admin.prices.add-exception": "Ajouter une exception",
+  "admin.prices.exception-for": "S'applique à",
+  "admin.prices.all-packages-of-type": "Tous les dossiers :",
+  "admin.prices.confirm": "Le nouveau prix s'affichera pour tous les nouveaux visiteurs.",
+  "admin.prices.saved": "Tarif enregistré.",
+  "admin.prices.removed": "Exception supprimée.",
+  "admin.prices.removed-short": "supprimé",
+  "admin.prices.invalid": "Vérifiez le service, le tarif concerné et le motif (3 caractères minimum).",
+  "admin.prices.invalid-amount": "Montant invalide (ex. 450 ou 450,50).",
+  "admin.prices.locked": "Ce service reste gratuit.",
+  "admin.prices.no-exceptions": "Les exceptions ne sont possibles que pour l'assistance.",
+  "admin.prices.last-change": "modifié par {who} le {when}",
+  "admin.prices.history": "Historique des changements",
+  "admin.prices.when": "Date",
+  "admin.prices.scope": "Tarif",
+  "admin.prices.change": "Changement",
+  "admin.prices.by": "Par",
+
+  "assistance-form.steps.form-submitted.reference": "Votre numéro de référence : {reference}. Indiquez-le si vous nous écrivez."
 }

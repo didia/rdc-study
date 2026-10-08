@@ -15,7 +15,6 @@ import config from '../../../config';
 
 // Constants
 import Steps from './steps';
-import {AssistancePrices} from '../../constants/assistance';
 
 // Utils
 import getCurrentUrl from '../../utils/get-current-url';
@@ -33,6 +32,9 @@ const AccompagnementTermsStep = ({onNextStep, onPreviousStep}) => {
   const aboutCandidate = useAssistanceFormStore((s) => s.aboutCandidate);
   const getAssistancePackage = useAssistanceFormStore((s) => s.getAssistancePackage);
   const service = useAssistanceFormStore((s) => s.service);
+  const getIntakePayload = useAssistanceFormStore((s) => s.getIntakePayload);
+  const getPriceCents = useAssistanceFormStore((s) => s.getPriceCents);
+  const setRequestReference = useAssistanceFormStore((s) => s.setRequestReference);
 
   const assistancePackage = getAssistancePackage();
   const name = `${aboutCandidate.firstName} ${aboutCandidate.lastName}`;
@@ -55,18 +57,20 @@ const AccompagnementTermsStep = ({onNextStep, onPreviousStep}) => {
     setShowError(false);
     setIsSubmitting(true);
     try {
-      await submitAssistanceRequest({
+      const {reference} = await submitAssistanceRequest({
         endpoint: contactFormEndpoint,
         message: msg,
         name,
         email: aboutCandidate.email,
-        link: getCurrentUrl()
+        link: getCurrentUrl(),
+        intake: getIntakePayload({message: msg, sourceUrl: getCurrentUrl()})
       });
+      setRequestReference(reference);
       analyticsPushEvent({
         category: 'AssistanceForm',
         action: service,
         label: assistancePackage.slug,
-        value: AssistancePrices[service]
+        value: getPriceCents(service) / 100
       });
       onNextStep(Steps.FormSubmitted);
     } catch (error) {

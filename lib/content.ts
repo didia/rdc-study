@@ -9,6 +9,9 @@ import rehypePrismPlus from 'rehype-prism-plus';
 import rehypeStringify from 'rehype-stringify';
 import readingTime from 'reading-time';
 
+import {getServicePrices} from './prices';
+import {lowestPrice} from './price-resolve';
+
 import type {
   Article,
   Guide,
@@ -257,17 +260,21 @@ export async function getServices(): Promise<Service[]> {
   const dir = path.join(DATA_DIR, 'services');
   const files = getAllFiles(dir);
 
+  const prices = await getServicePrices();
+
   const services = await Promise.all(
     files.map(async (filePath) => {
       const fileContent = fs.readFileSync(filePath, 'utf-8');
       const {data, content} = matter(fileContent);
       const html = await markdownToHtml(content);
+      const lowest = lowestPrice(prices, data.slug);
 
       return {
         content: html,
         slug: data.slug,
         title: data.title,
-        price: data.price,
+        price: lowest ? lowest.cents / 100 : undefined,
+        priceFrom: lowest?.varies ?? false,
         excerpt: data.excerpt || '',
         rank: data.rank || 0,
         assistanceFormServiceChoiceLabel: data.assistanceFormServiceChoiceLabel || '',
