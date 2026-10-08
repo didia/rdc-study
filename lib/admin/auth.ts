@@ -16,6 +16,7 @@ export type StaffContext =
   | {status: 'anonymous'}
   | {status: 'forbidden'; user: User}
   | {status: 'mfa_required'; user: User; profile: StaffProfile}
+  | {status: 'mfa_setup_required'; user: User; profile: StaffProfile; supabase: SupabaseServerClient}
   | {status: 'ok'; user: User; profile: StaffProfile; supabase: SupabaseServerClient};
 
 // A valid JWT is not enough: an *active* staff_profiles row is required, and a user who
@@ -41,10 +42,17 @@ export async function getStaffContext(): Promise<StaffContext> {
     return {status: 'mfa_required', user, profile};
   }
 
+  // Enforced for admin/agent: without a verified second factor they must enrol first. The database enforces the
+  // same rule (staff_role() needs aal2), this only routes the person to the right page.
+  if (profile.role === 'admin' || profile.role === 'agent') {
+    const {data: enforced} = await supabase.rpc('mfa_enforced');
+    if (enforced && aal?.currentLevel !== 'aal2') return {status: 'mfa_setup_required', user, profile, supabase};
+  }
+
   return {status: 'ok', user, profile, supabase};
 }
 
-export async function requireStaff(minimum: StaffRole = 'viewer') {
+export async function requireStaff(minimum: StaffRole = 'viewer', options: {allowMfaSetup?: boolean} = {}) {
   const ctx = await getStaffContext();
   switch (ctx.status) {
     case 'unconfigured':
@@ -54,6 +62,9 @@ export async function requireStaff(minimum: StaffRole = 'viewer') {
       redirect('/admin/acces-refuse');
     case 'mfa_required':
       redirect('/admin/mfa');
+    case 'mfa_setup_required':
+      if (!options.allowMfaSetup) redirect('/admin/securite?obligatoire=1');
+      return {...ctx, supabase: ctx.supabase};
   }
   if (!hasRole(ctx.profile.role, minimum)) redirect('/admin/acces-refuse?raison=role');
   return ctx;

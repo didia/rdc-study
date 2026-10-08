@@ -3,7 +3,7 @@
 import {useActionState} from 'react';
 
 import {saveDocumentTemplate} from '@/lib/admin/actions/documents';
-import {saveLostReason, saveTemplate, setDepositShare, setRoundRobin} from '@/lib/admin/actions/settings';
+import {saveLostReason, saveTemplate, setDepositShare, setEnforceMfa, setRoundRobin} from '@/lib/admin/actions/settings';
 import {t} from '@/lib/admin/i18n';
 import styles from './admin.module.scss';
 import {Feedback} from './Feedback';
@@ -123,6 +123,23 @@ export function DocumentTemplateForm({template}: {template: {kind: string; versi
       <Feedback state={state} />
       <div>
         <button type="submit" className={styles.button} disabled={pending}>{t('admin.templates.new-version')}</button>
+      </div>
+    </form>
+  );
+}
+
+export function EnforceMfaForm({enabled, missing}: {enabled: boolean; missing: string[]}) {
+  const [state, action, pending] = useActionState(setEnforceMfa, undefined);
+  return (
+    <form action={action} className={styles.form}>
+      <label className={styles.checkLine}>
+        <input type="checkbox" name="enabled" defaultChecked={enabled} /> {t('admin.settings.enforce-mfa')}
+      </label>
+      <p className={styles.hint}>{t('admin.settings.enforce-mfa-hint')}</p>
+      {missing.length > 0 && <p className={styles.warning}>{t('admin.settings.mfa-missing', {names: missing.join(', ')})}</p>}
+      <Feedback state={state} />
+      <div>
+        <button type="submit" className={styles.button} disabled={pending}>{t('admin.requests.save')}</button>
       </div>
     </form>
   );
