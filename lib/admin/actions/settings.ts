@@ -82,3 +82,16 @@ export async function setDepositShare(_prev: FormState, formData: FormData): Pro
   revalidatePath('/admin/demandes');
   return error ? {error: t('admin.requests.failed')} : {success: t('admin.requests.saved')};
 }
+
+// Making the second factor mandatory: the admin turning it on must already have one, or they would lock themselves out.
+export async function setEnforceMfa(_prev: FormState, formData: FormData): Promise<FormState> {
+  const {supabase} = await requireStaff('admin');
+  const enable = formData.get('enabled') === 'on';
+  if (enable) {
+    const {data: aal} = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
+    if (aal?.currentLevel !== 'aal2') return {error: t('admin.settings.mfa-self-first')};
+  }
+  const {error} = await supabase.from('app_settings').upsert({key: 'enforce_mfa', value: enable});
+  revalidatePath('/admin/parametres');
+  return error ? {error: t('admin.requests.failed')} : {success: t('admin.requests.saved')};
+}

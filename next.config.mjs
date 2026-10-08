@@ -1,26 +1,6 @@
 import {withSentryConfig} from '@sentry/nextjs';
 import path from 'path';
 
-const isDev = process.env.NODE_ENV !== 'production';
-
-// Strict CSP for the private console. Next.js needs inline scripts/styles (no nonce setup here);
-// Supabase and Sentry are the only external origins the console talks to.
-function adminCsp() {
-  const supabase = process.env.NEXT_PUBLIC_SUPABASE_URL ? new URL(process.env.NEXT_PUBLIC_SUPABASE_URL).origin : '';
-  return [
-    "default-src 'self'",
-    `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''}`,
-    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-    "font-src 'self' data: https://fonts.gstatic.com",
-    "img-src 'self' data: blob:",
-    `connect-src 'self' ${supabase} https://*.supabase.co https://*.ingest.sentry.io https://*.ingest.us.sentry.io${isDev ? ' ws:' : ''}`.replace(/\s+/g, ' '),
-    "frame-ancestors 'none'",
-    "base-uri 'self'",
-    "form-action 'self'",
-    "object-src 'none'",
-  ].join('; ');
-}
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: false,
@@ -44,7 +24,6 @@ const nextConfig = {
         headers: [
           {key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive'},
           {key: 'Cache-Control', value: 'no-store, max-age=0'},
-          {key: 'Content-Security-Policy', value: adminCsp()},
           {key: 'X-Frame-Options', value: 'DENY'},
           {key: 'Referrer-Policy', value: 'same-origin'},
         ],

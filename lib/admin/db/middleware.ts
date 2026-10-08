@@ -7,9 +7,10 @@ import type {Database} from './types';
 const PUBLIC_PATHS = ['/admin/login', '/admin/mot-de-passe-oublie', '/admin/auth/callback', '/admin/acces-refuse'];
 
 // Refreshes the Supabase session cookies and sends anonymous visitors to the login page.
-export async function updateSession(request: NextRequest) {
+export async function updateSession(request: NextRequest, requestHeaders?: Headers) {
   const config = getSupabasePublicConfig();
-  let response = NextResponse.next({request});
+  const next = () => NextResponse.next({request: requestHeaders ? {headers: requestHeaders} : request});
+  let response = next();
   if (!config) return response; // pages show a "console not configured" state
 
   const supabase = createServerClient<Database>(config.url, config.anonKey, {
@@ -17,7 +18,7 @@ export async function updateSession(request: NextRequest) {
       getAll: () => request.cookies.getAll(),
       setAll: (list) => {
         list.forEach(({name, value}) => request.cookies.set(name, value));
-        response = NextResponse.next({request});
+        response = next();
         list.forEach(({name, value, options}) => response.cookies.set(name, value, options));
       },
     },

@@ -717,6 +717,14 @@ export type Database = {
         Args: { p_request_id: string }
         Returns: boolean
       }
+      mfa_enforced: {
+        Args: never
+        Returns: boolean
+      }
+      fn_login_events: {
+        Args: { p_from: string; p_to: string }
+        Returns: { at: string; action: string; email: string | null; ip_address: string | null }[]
+      }
       resolve_price: {
         Args: { p_package_slug?: string; p_service_type: string }
         Returns: number

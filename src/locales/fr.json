@@ -856,5 +856,25 @@
   "admin.requests.event.unchecked": "Étape rouverte",
 
   "admin.today.delivery": "Mes dossiers à accompagner",
-  "admin.today.delivery-empty": "Aucun dossier ne vous est confié pour le moment."
+  "admin.today.delivery-empty": "Aucun dossier ne vous est confié pour le moment.",
+
+  "admin.nav.audit": "Journal d'audit",
+  "admin.security.mfa.required": "La double authentification est obligatoire pour votre rôle. Activez-la pour accéder à la console.",
+  "admin.settings.security": "Sécurité",
+  "admin.settings.enforce-mfa": "Rendre la double authentification obligatoire pour les administrateurs et les agents",
+  "admin.settings.enforce-mfa-hint": "Appliqué par la base de données : sans seconde vérification, ces comptes ne voient plus aucune donnée. Activez-la d'abord sur votre propre compte.",
+  "admin.settings.mfa-missing": "Sans double authentification pour l'instant : {names}. Ils devront l'activer à leur prochaine connexion.",
+  "admin.settings.mfa-self-first": "Activez et validez d'abord la double authentification sur votre propre compte (menu utilisateur → Sécurité), puis reconnectez-vous avec le code.",
+  "admin.staff.mfa": "Double authentification",
+  "admin.staff.mfa-on": "Activée",
+  "admin.staff.mfa-off": "Non",
+  "admin.audit.title": "Journal d'audit",
+  "admin.audit.actor": "Acteur",
+  "admin.audit.type": "Type",
+  "admin.audit.detail": "Détail",
+  "admin.audit.empty": "Aucune entrée.",
+  "admin.audit.count": "{count} événement(s)",
+  "admin.audit.requests-history": "Historique des demandes",
+  "admin.audit.exports": "Exports et fusions",
+  "admin.audit.logins": "Connexions (30 derniers jours par défaut)"
 }
