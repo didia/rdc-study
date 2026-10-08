@@ -5,6 +5,7 @@ import {redirect} from 'next/navigation';
 import {z} from 'zod';
 
 import {requireStaff} from '../auth';
+import {hasRole} from '../roles';
 import {t} from '../i18n';
 import {nextFollowUpOnStatusChange} from '../followup';
 import {findClientMatches} from '../queries/clients';
@@ -158,7 +159,9 @@ const noteSchema = z.object({
 });
 
 async function addNoteImpl(formData: FormData): Promise<FormState> {
-  const {supabase, user} = await requireStaff('agent');
+  const {supabase, user, profile} = await requireStaff();
+  const isMentor = profile.role === 'mentor';
+  if (!isMentor && !hasRole(profile.role, 'agent')) return {error: t('admin.requests.failed')};
   const parsed = noteSchema.safeParse({
     id: formData.get('id'),
     body: formData.get('body'),
@@ -168,8 +171,8 @@ async function addNoteImpl(formData: FormData): Promise<FormState> {
 
   const {error} = await supabase.from('request_events').insert({
     request_id: parsed.data.id,
-    type: parsed.data.channel ? 'contact_attempt' : 'note',
-    channel: (parsed.data.channel || null) as any,
+    type: !isMentor && parsed.data.channel ? 'contact_attempt' : 'note',
+    channel: (isMentor ? null : parsed.data.channel || null) as any,
     body: parsed.data.body,
     actor_id: user.id,
   });

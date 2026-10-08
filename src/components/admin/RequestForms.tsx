@@ -117,7 +117,7 @@ export function AssignForm({id, current, updatedAt, staff}: {id: string; current
   );
 }
 
-export function NoteForm({id}: {id: string}) {
+export function NoteForm({id, hideChannel = false}: {id: string; hideChannel?: boolean}) {
   const [state, action, pending] = useActionState(addNote, undefined);
   return (
     <form action={action} className={styles.form}>
@@ -126,7 +126,7 @@ export function NoteForm({id}: {id: string}) {
         <label htmlFor="body">{t('admin.requests.note.label')}</label>
         <textarea id="body" name="body" required maxLength={4000} defaultValue={state?.values?.body ?? ''} className={styles.textarea} />
       </div>
-      <div className={styles.field}>
+      {!hideChannel && <div className={styles.field}>
         <label htmlFor="channel">{t('admin.requests.note.channel')}</label>
         <select id="channel" name="channel" defaultValue="" className={styles.select}>
           <option value="">{t('admin.requests.note.plain')}</option>
@@ -134,7 +134,7 @@ export function NoteForm({id}: {id: string}) {
             <option key={c.code} value={c.code}>{t('admin.requests.note.contact-via', {channel: c.label})}</option>
           ))}
         </select>
-      </div>
+      </div>}
       <Feedback state={state} />
       <div>
         <button type="submit" className={styles.button} disabled={pending}>{t('admin.requests.note.submit')}</button>

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import {notFound} from 'next/navigation';
 
 import {ContactMenu} from '@/components/admin/ContactMenu';
+import {DeliveryPanel} from '@/components/admin/DeliveryPanel';
 import {DocumentsPanel} from '@/components/admin/DocumentsPanel';
 import {ReceiptButton} from '@/components/admin/ReceiptButton';
 import {AgreedPriceForm, RecordPaymentForm, SuggestionBanner, VoidPaymentForm} from '@/components/admin/PaymentForms';
@@ -16,6 +17,7 @@ import {getClientRequests, getRequest, getRequestEvents, getStatuses, listStaff}
 import {RELANCE_LIMIT, relancesSinceLastStatusChange} from '@/lib/admin/followup';
 import {getLostReasons, getTemplates} from '@/lib/admin/queries/today';
 import {formatCents, effectivePrice, kindLabel, methodLabel, netByCurrency, paymentSuggestion} from '@/lib/admin/money';
+import {checklistFor, type ChecklistState} from '@/lib/admin/checklist';
 import {documentKindLabel} from '@/lib/admin/documents';
 import {canEdit, hasRole, isAdmin} from '@/lib/admin/roles';
 import {defaultPaymentInstructions, officeAddress} from '@/lib/admin/templates';
@@ -46,7 +48,8 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
         supabase.from('app_settings').select('value').eq('key', 'deposit_share').maybeSingle(),
       ])
     : [{data: null}, {data: null}];
-  const {data: documentRows} = canSeeMoney
+  const isMentorEarly = profile.role === 'mentor';
+  const {data: documentRows} = canSeeMoney || isMentorEarly
     ? await supabase.from('request_documents').select('*, uploader:staff_profiles(full_name)').eq('request_id', id).order('created_at', {ascending: false})
     : {data: null};
   const documents = (documentRows ?? []).map((d: any) => ({
@@ -82,6 +85,17 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
     payment_instructions: defaultPaymentInstructions(),
     office_address: officeAddress(),
   };
+  const isMentor = profile.role === 'mentor';
+  const showDelivery = ['deposit_paid', 'paid', 'in_progress', 'completed'].includes(request.status);
+  const pkg = listPackages().find((p) => p.slug === request.package_slug);
+  const checklistState = (request.delivery_checklist ?? {}) as ChecklistState;
+  const checklistItems = checklistFor(request.package_slug, pkg?.services).map((i) => ({
+    key: i.key,
+    label: i.label,
+    done: !!checklistState[i.key]?.done,
+    meta: checklistState[i.key]?.at ? `${staffName(checklistState[i.key].by ?? null)} · ${formatDate(checklistState[i.key].at ?? null)}` : null,
+  }));
+  const mentors = staff.filter((m) => m.role === 'mentor' || m.role === 'agent' || m.role === 'admin');
   const answers = Object.entries((request.form_answers ?? {}) as Record<string, unknown>);
 
   return (
@@ -166,6 +180,12 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
               </dd>
               <dt>{t('admin.requests.submitted')}</dt>
               <dd>{formatDateTime(request.submitted_at)}</dd>
+              {request.mentor_id && (
+                <>
+                  <dt>{t('admin.delivery.mentor')}</dt>
+                  <dd>{staffName(request.mentor_id)}</dd>
+                </>
+              )}
               <dt>{t('admin.requests.quoted-price')}</dt>
               <dd>{formatMoney(request.quoted_price_cents, request.quoted_currency ?? 'USD')}</dd>
               {request.lost_reason && (
@@ -228,6 +248,20 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
                   <FollowUpForm id={request.id} value={request.next_follow_up_at} />
                 </>
               )}
+            </section>
+          )}
+          {showDelivery && (editable || isMentor) && (
+            <section className={styles.card}>
+              <h2>{t('admin.delivery.title')}</h2>
+              <DeliveryPanel
+                requestId={request.id}
+                items={checklistItems}
+                status={request.status}
+                canWork
+                canAssign={editable}
+                mentorId={request.mentor_id}
+                mentors={mentors.map((m) => ({id: m.id, full_name: m.full_name}))}
+              />
             </section>
           )}
           {editable && (
@@ -302,16 +336,16 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
             </section>
           )}
 
-          {canSeeMoney && (
+          {(canSeeMoney || isMentor) && (
             <section className={styles.card}>
               <h2>{t('admin.documents.title')}</h2>
-              <DocumentsPanel requestId={request.id} documents={documents} canGenerate={editable && price != null} />
+              <DocumentsPanel requestId={request.id} documents={documents} canGenerate={editable && price != null} kinds={isMentor ? ['deliverable', 'other'] : undefined} />
             </section>
           )}
 
           <section className={styles.card}>
             <h2>{t('admin.requests.timeline')}</h2>
-            {editable && <NoteForm id={request.id} />}
+            {(editable || isMentor) && <NoteForm id={request.id} hideChannel={isMentor} />}
             <ol className={styles.timeline}>
               {events.map((e) => (
                 <li key={e.id} className={styles.timelineItem}>
@@ -352,7 +386,9 @@ function eventTitle(
     case 'status_change':
       return t('admin.requests.event.status', {from: statusLabel(e.from_status), to: statusLabel(e.to_status)});
     case 'assignment':
-      return t('admin.requests.event.assignment', {name: staffName(e.metadata?.to ?? null)});
+      return e.metadata?.role === 'mentor'
+        ? t('admin.requests.event.mentor', {name: staffName(e.metadata?.to ?? null)})
+        : t('admin.requests.event.assignment', {name: staffName(e.metadata?.to ?? null)});
     case 'contact_attempt':
       return t('admin.requests.event.contact', {channel: channelLabel(e.channel)});
     case 'field_change':
@@ -360,6 +396,7 @@ function eventTitle(
         return t('admin.requests.event.agreed-price', {from: formatCents(e.metadata?.from ?? 0), to: formatCents(e.metadata?.to ?? 0)});
       }
       if (e.metadata?.field === 'client_id') return t('admin.requests.event.merged');
+      if (e.metadata?.field === 'checklist') return t(e.metadata?.done ? 'admin.requests.event.checked' : 'admin.requests.event.unchecked');
       return e.metadata?.field === 'has_dispute'
         ? t('admin.requests.event.dispute')
         : t('admin.requests.event.field', {field: fieldLabel(e.metadata?.field), from: String(e.metadata?.from ?? '—'), to: String(e.metadata?.to ?? '—')});

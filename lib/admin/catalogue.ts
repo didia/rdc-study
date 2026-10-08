@@ -5,7 +5,7 @@ import matter from 'gray-matter';
 
 import {KIND_LABELS} from './catalogue-labels';
 
-export type CataloguePackage = {slug: string; title: string; country: string; kind: string};
+export type CataloguePackage = {slug: string; title: string; country: string; kind: string; services: string[]};
 
 let cache: CataloguePackage[] | null = null;
 
@@ -19,7 +19,8 @@ export function listPackages(): CataloguePackage[] {
       const {data} = matter(fs.readFileSync(path.join(dir, file), 'utf-8'));
       const slug = String(data.slug ?? '');
       const [country = '', kind = ''] = slug.split('/');
-      return {slug, title: String(data.title ?? slug), country, kind};
+      const services = Array.isArray(data.services) ? data.services.map(String) : [];
+      return {slug, title: String(data.title ?? slug), country, kind, services};
     })
     .filter((p) => p.slug)
     .sort((a, b) => a.slug.localeCompare(b.slug));

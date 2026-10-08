@@ -843,5 +843,18 @@
   "admin.templates.contract": "Contrat de service",
   "admin.templates.receipt": "Reçu de paiement",
   "admin.templates.doc-title": "Titre du document",
-  "admin.templates.new-version": "Enregistrer une nouvelle version"
+  "admin.templates.new-version": "Enregistrer une nouvelle version",
+
+  "admin.delivery.title": "Accompagnement",
+  "admin.delivery.mentor": "Mentor",
+  "admin.delivery.no-mentor": "Aucun mentor",
+  "admin.delivery.progress": "{done} / {total} étapes terminées",
+  "admin.delivery.start": "Démarrer l'accompagnement",
+  "admin.delivery.complete": "Marquer comme terminé",
+  "admin.requests.event.mentor": "Mentor : {name}",
+  "admin.requests.event.checked": "Étape terminée",
+  "admin.requests.event.unchecked": "Étape rouverte",
+
+  "admin.today.delivery": "Mes dossiers à accompagner",
+  "admin.today.delivery-empty": "Aucun dossier ne vous est confié pour le moment."
 }
