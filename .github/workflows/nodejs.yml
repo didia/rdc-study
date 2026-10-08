@@ -3,8 +3,7 @@ name: CI
 on:
   push:
     branches: [master, main]
-  pull_request:
-    branches: [master, main]
+  pull_request: # any base branch, so stacked PRs get checked too
 
 jobs:
   build:
