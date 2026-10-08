@@ -2,6 +2,7 @@
 
 import {useActionState} from 'react';
 
+import {saveDocumentTemplate} from '@/lib/admin/actions/documents';
 import {saveLostReason, saveTemplate, setDepositShare, setRoundRobin} from '@/lib/admin/actions/settings';
 import {t} from '@/lib/admin/i18n';
 import styles from './admin.module.scss';
@@ -100,6 +101,28 @@ export function DepositShareForm({share}: {share: number}) {
       <Feedback state={state} />
       <div>
         <button type="submit" className={styles.button} disabled={pending}>{t('admin.requests.save')}</button>
+      </div>
+    </form>
+  );
+}
+
+export function DocumentTemplateForm({template}: {template: {kind: string; version: number; title: string; body: string}}) {
+  const [state, action, pending] = useActionState(saveDocumentTemplate, undefined);
+  return (
+    <form action={action} className={styles.form} key={`${template.kind}-${template.version}`} style={{marginBottom: 20}}>
+      <input type="hidden" name="kind" value={template.kind} />
+      <h3>{template.kind === 'contract' ? t('admin.templates.contract') : t('admin.templates.receipt')} <span className={styles.badge}>v{template.version}</span></h3>
+      <div className={styles.field}>
+        <label htmlFor={`dt-title-${template.kind}`}>{t('admin.templates.doc-title')}</label>
+        <input id={`dt-title-${template.kind}`} name="title" required defaultValue={state?.values?.title ?? template.title} className={styles.input} />
+      </div>
+      <div className={styles.field}>
+        <label htmlFor={`dt-body-${template.kind}`}>{t('admin.templates.body')}</label>
+        <textarea id={`dt-body-${template.kind}`} name="body" required rows={10} defaultValue={state?.values?.body ?? template.body} className={styles.textarea} />
+      </div>
+      <Feedback state={state} />
+      <div>
+        <button type="submit" className={styles.button} disabled={pending}>{t('admin.templates.new-version')}</button>
       </div>
     </form>
   );
