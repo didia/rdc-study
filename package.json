@@ -21,7 +21,8 @@
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "db:test": "supabase test db",
-    "db:lint": "supabase db lint --level warning"
+    "db:lint": "supabase db lint --level warning",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -59,6 +60,7 @@
   "devDependencies": {
     "@netlify/functions": "^6.0.2",
     "@netlify/plugin-nextjs": "^5.15.9",
+    "@playwright/test": "^1.64.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",

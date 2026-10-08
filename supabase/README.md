@@ -94,3 +94,5 @@ Supabase is down. `ADMIN_INTAKE_ENABLED=false` (or missing Supabase variables) t
 
 Prices are edited at `/admin/tarifs` (admins). The site reads them from the database (cached, invalidated on save);
 `lib/default-prices.ts` is only an outage fallback and must be kept in sync with the seed.
+
+Backups and the restore drill: [`RESTORE.md`](RESTORE.md). Day-to-day operation (monitoring, secrets, switches): [`documentation/operations.md`](../documentation/operations.md).
