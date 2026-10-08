@@ -75,7 +75,7 @@ reset role;
 select is((select count(*)::int from public.clients where id = '10000000-0000-0000-0000-0000000000d2'), 0, 'the dropped client is gone');
 select is((select client_id from public.service_requests where id = '20000000-0000-0000-0000-0000000000d1'), '10000000-0000-0000-0000-0000000000d1'::uuid, 'the request now belongs to the kept client');
 select is((select count(*)::int from public.request_events where request_id = '20000000-0000-0000-0000-0000000000d1' and body = 'Client fusionné'), 1, 'the merge is in the request timeline');
-select is((select count(*)::int from public.audit_events where type = 'merge_clients'), 1, 'and in the audit log');
+select is((select count(*)::int from public.audit_events where type = 'merge_clients' and metadata->>'dropped' = '10000000-0000-0000-0000-0000000000d2'), 1, 'and in the audit log');
 
 -- Round robin ---------------------------------------------------------------------------------
 update public.app_settings set value = 'true'::jsonb where key = 'round_robin_enabled';
