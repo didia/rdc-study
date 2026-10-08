@@ -1,4 +1,4 @@
-import {withSentryConfig} from '@sentry/nextjs';
+import {withSentryConfig} from '@sentry/nextjs/config';
 import path from 'path';
 
 /** @type {import('next').NextConfig} */
@@ -6,7 +6,7 @@ const nextConfig = {
   trailingSlash: false,
 
   sassOptions: {
-    includePaths: [
+    loadPaths: [
       path.join(process.cwd(), 'src/assets/styles'),
       'node_modules',
     ],
