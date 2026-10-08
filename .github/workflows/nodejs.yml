@@ -38,7 +38,6 @@ jobs:
   database:
     name: Database (migrations, RLS tests, lint)
     runs-on: ubuntu-latest
-    if: ${{ hashFiles('supabase/config.toml') != '' }}
 
     steps:
       - uses: actions/checkout@v4
