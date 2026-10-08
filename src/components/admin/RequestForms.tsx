@@ -158,7 +158,7 @@ export function DisputeToggle({id, hasDispute}: {id: string; hasDispute: boolean
 
 type EditProps = {
   request: {id: string; updated_at: string; service_type: string; destination_country: string | null; package_slug: string | null; status_reason: string | null};
-  client: {id: string; first_name: string; last_name: string; email: string | null; phone: string | null; origin_country: string | null};
+  client: {id: string; first_name: string; last_name: string; email: string | null; phone: string | null; origin_country: string | null; address: string | null};
   packages: {slug: string; label: string}[];
 };
 
@@ -186,6 +186,10 @@ export function EditDetailsForm({request, client, packages}: EditProps) {
         <div className={styles.field}>
           <label htmlFor="phone">{t('admin.clients.phone')}</label>
           <input id="phone" name="phone" defaultValue={v('phone', client.phone)} className={styles.input} />
+        </div>
+        <div className={styles.field}>
+          <label htmlFor="address">{t('admin.clients.address')}</label>
+          <input id="address" name="address" defaultValue={v('address', client.address)} className={styles.input} />
         </div>
         <div className={styles.field}>
           <label htmlFor="originCountry">{t('admin.clients.origin')}</label>

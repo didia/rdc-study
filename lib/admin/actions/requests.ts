@@ -251,6 +251,7 @@ async function updateRequestDetailsImpl(formData: FormData): Promise<FormState> 
       email,
       phone,
       phone_e164: normalizePhone(phone),
+      address: blank(formData.get('address')),
       origin_country: normalizeCountry(origin, ORIGIN_COUNTRIES) ?? origin,
     })
     .eq('id', clientId.data);

@@ -2,6 +2,8 @@ import Link from 'next/link';
 import {notFound} from 'next/navigation';
 
 import {ContactMenu} from '@/components/admin/ContactMenu';
+import {DocumentsPanel} from '@/components/admin/DocumentsPanel';
+import {ReceiptButton} from '@/components/admin/ReceiptButton';
 import {AgreedPriceForm, RecordPaymentForm, SuggestionBanner, VoidPaymentForm} from '@/components/admin/PaymentForms';
 import {AssignForm, DisputeToggle, EditDetailsForm, FollowUpForm, NoteForm, StatusChangeForm} from '@/components/admin/RequestForms';
 import {StatusBadge} from '@/components/admin/StatusBadge';
@@ -14,6 +16,7 @@ import {getClientRequests, getRequest, getRequestEvents, getStatuses, listStaff}
 import {RELANCE_LIMIT, relancesSinceLastStatusChange} from '@/lib/admin/followup';
 import {getLostReasons, getTemplates} from '@/lib/admin/queries/today';
 import {formatCents, effectivePrice, kindLabel, methodLabel, netByCurrency, paymentSuggestion} from '@/lib/admin/money';
+import {documentKindLabel} from '@/lib/admin/documents';
 import {canEdit, hasRole, isAdmin} from '@/lib/admin/roles';
 import {defaultPaymentInstructions, officeAddress} from '@/lib/admin/templates';
 import {channelLabel, serviceLabel, sourceLabel, whatsappLink} from '@/lib/admin/vocab';
@@ -43,6 +46,18 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
         supabase.from('app_settings').select('value').eq('key', 'deposit_share').maybeSingle(),
       ])
     : [{data: null}, {data: null}];
+  const {data: documentRows} = canSeeMoney
+    ? await supabase.from('request_documents').select('*, uploader:staff_profiles(full_name)').eq('request_id', id).order('created_at', {ascending: false})
+    : {data: null};
+  const documents = (documentRows ?? []).map((d: any) => ({
+    id: d.id,
+    kind: d.kind,
+    file_name: d.file_name,
+    size_bytes: d.size_bytes,
+    created_at: d.created_at,
+    uploaded_by_name: d.uploader?.full_name ?? null,
+    date: formatDate(d.created_at),
+  }));
   const net = netByCurrency(payments ?? []);
   const price = effectivePrice(request);
   const suggestion = canSeeMoney
@@ -270,7 +285,10 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
                         </div>
                         {p.voided_at && <div className={styles.stale}>{t('admin.payments.voided-on', {date: formatDate(p.voided_at), reason: p.void_reason ?? ''})}</div>}
                       </div>
-                      {isAdmin(profile.role) && !p.voided_at && <VoidPaymentForm requestId={request.id} paymentId={p.id} />}
+                      <div>
+                        {editable && !p.voided_at && <ReceiptButton requestId={request.id} paymentId={p.id} />}
+                        {isAdmin(profile.role) && !p.voided_at && <VoidPaymentForm requestId={request.id} paymentId={p.id} />}
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -281,6 +299,13 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
                   <RecordPaymentForm requestId={request.id} defaultCurrency={request.agreed_currency} />
                 </details>
               )}
+            </section>
+          )}
+
+          {canSeeMoney && (
+            <section className={styles.card}>
+              <h2>{t('admin.documents.title')}</h2>
+              <DocumentsPanel requestId={request.id} documents={documents} canGenerate={editable && price != null} />
             </section>
           )}
 
@@ -338,6 +363,8 @@ function eventTitle(
       return e.metadata?.field === 'has_dispute'
         ? t('admin.requests.event.dispute')
         : t('admin.requests.event.field', {field: fieldLabel(e.metadata?.field), from: String(e.metadata?.from ?? '—'), to: String(e.metadata?.to ?? '—')});
+    case 'document':
+      return t('admin.requests.event.document', {kind: documentKindLabel(e.metadata?.kind ?? '')});
     case 'note':
       return t('admin.requests.event.note');
     case 'payment': {

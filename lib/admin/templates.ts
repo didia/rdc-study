@@ -12,12 +12,13 @@ export type TemplateVars = {
 
 const KNOWN = ['first_name', 'last_name', 'package', 'reference', 'staff_name', 'payment_instructions', 'office_address'];
 
-/** Replaces {{placeholders}}; unknown placeholders are left visible so staff notice them before sending. */
+/** Replaces {{placeholders}}; ones with no value at all are left visible so staff notice them before anything is sent. */
+export function fillTemplate(body: string, vars: Record<string, string | undefined>): string {
+  return body.replace(/\{\{\s*([a-z_]+)\s*\}\}/g, (match, key: string) => (vars[key] !== undefined ? (vars[key] as string) : match));
+}
+
 export function renderTemplate(body: string, vars: TemplateVars): string {
-  return body.replace(/\{\{\s*([a-z_]+)\s*\}\}/g, (match, key: string) => {
-    const value = (vars as Record<string, string | undefined>)[key];
-    return KNOWN.includes(key) && value ? value : match;
-  });
+  return fillTemplate(body, vars as Record<string, string | undefined>);
 }
 
 export const PLACEHOLDERS = KNOWN;
