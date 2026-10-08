@@ -115,7 +115,8 @@ create view public.request_paid with (security_invoker = true) as
    where voided_at is null
    group by request_id, currency;
 
-revoke all on public.payments, public.request_paid from anon;
+-- Explicit: new tables inherit permissive default grants (DELETE included) on some Supabase versions.
+revoke all on public.payments, public.request_paid from anon, authenticated;
 grant select, insert, update on public.payments to authenticated;
 grant select on public.request_paid to authenticated;
 grant all on public.payments, public.request_paid to service_role;
