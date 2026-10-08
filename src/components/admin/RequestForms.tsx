@@ -1,35 +1,94 @@
 'use client';
 
-import {useActionState} from 'react';
+import {useActionState, useState} from 'react';
 
 import {addNote, assignRequest, changeStatus, toggleDispute, updateRequestDetails} from '@/lib/admin/actions/requests';
+import {setFollowUpDate} from '@/lib/admin/actions/followup';
 import {t} from '@/lib/admin/i18n';
 import {CHANNELS, DESTINATION_COUNTRIES, ORIGIN_COUNTRIES, SERVICE_TYPES} from '@/lib/admin/vocab';
 import type {StatusRow} from '@/lib/admin/queries/requests';
 import styles from './admin.module.scss';
 import {Feedback} from './Feedback';
 
-export function StatusChangeForm({id, current, updatedAt, statuses}: {id: string; current: string; updatedAt: string; statuses: StatusRow[]}) {
+const FOLLOW_UP_CHOICES = [1, 2, 3, 5, 7, 14];
+
+export function StatusChangeForm({
+  id,
+  current,
+  updatedAt,
+  statuses,
+  lostReasons,
+}: {
+  id: string;
+  current: string;
+  updatedAt: string;
+  statuses: StatusRow[];
+  lostReasons: {code: string; label_fr: string}[];
+}) {
   const [state, action, pending] = useActionState(changeStatus, undefined);
+  const [target, setTarget] = useState(current);
+  const stage = statuses.find((s) => s.code === target)?.stage;
   return (
     <form action={action} className={styles.form}>
       <input type="hidden" name="id" value={id} />
       <input type="hidden" name="updatedAt" value={updatedAt} />
       <div className={styles.field}>
         <label htmlFor="status">{t('admin.requests.status.label')}</label>
-        <select key={current} id="status" name="status" defaultValue={current} className={styles.select}>
+        <select key={current} id="status" name="status" defaultValue={current} onChange={(e) => setTarget(e.target.value)} className={styles.select}>
           {statuses.map((s) => (
             <option key={s.code} value={s.code}>{s.label_fr}</option>
           ))}
         </select>
       </div>
+      {stage === 'lost' && (
+        <div className={styles.field}>
+          <label htmlFor="lostReason">{t('admin.requests.status.lost-reason')}</label>
+          <select id="lostReason" name="lostReason" required defaultValue="" className={styles.select}>
+            <option value="" disabled>—</option>
+            {lostReasons.map((r) => (
+              <option key={r.code} value={r.code}>{r.label_fr}</option>
+            ))}
+          </select>
+        </div>
+      )}
+      {stage === 'open' && (
+        <div className={styles.field}>
+          <label htmlFor="followUp">{t('admin.requests.status.follow-up')}</label>
+          <select id="followUp" name="followUp" defaultValue="auto" className={styles.select}>
+            <option value="auto">{t('admin.requests.status.follow-up-auto')}</option>
+            <option value="none">{t('admin.requests.status.follow-up-none')}</option>
+            {FOLLOW_UP_CHOICES.map((d) => (
+              <option key={d} value={d}>{t('admin.requests.status.follow-up-days', {days: d})}</option>
+            ))}
+          </select>
+        </div>
+      )}
       <div className={styles.field}>
         <label htmlFor="reason">{t('admin.requests.status.reason')}</label>
-        <input id="reason" name="reason" className={styles.input} placeholder={t('admin.requests.status.reason-hint')} />
+        <input id="reason" name="reason" className={styles.input} placeholder={t('admin.requests.status.reason-hint')} defaultValue={state?.values?.reason ?? ''} />
       </div>
       <Feedback state={state} />
       <div>
         <button type="submit" className={styles.button} disabled={pending}>{t('admin.requests.status.submit')}</button>
+      </div>
+    </form>
+  );
+}
+
+export function FollowUpForm({id, value}: {id: string; value: string | null}) {
+  const [state, action, pending] = useActionState(setFollowUpDate, undefined);
+  const date = value ? value.slice(0, 10) : '';
+  return (
+    <form action={action} className={styles.form} key={date}>
+      <input type="hidden" name="id" value={id} />
+      <div className={styles.field}>
+        <label htmlFor="followUpDate">{t('admin.requests.reminder')}</label>
+        <input id="followUpDate" type="date" name="date" defaultValue={date} className={styles.input} />
+        <span className={styles.hint}>{t('admin.requests.reminder-hint')}</span>
+      </div>
+      <Feedback state={state} />
+      <div>
+        <button type="submit" className={styles.buttonSecondary} disabled={pending}>{t('admin.requests.save')}</button>
       </div>
     </form>
   );

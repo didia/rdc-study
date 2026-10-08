@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
 import {bulkUpdate} from '@/lib/admin/actions/requests';
+import {deleteView, saveView} from '@/lib/admin/actions/views';
+import {getLostReasons} from '@/lib/admin/queries/today';
 import {SelectAll} from '@/components/admin/SelectAll';
 import {StatusBadge} from '@/components/admin/StatusBadge';
 import styles from '@/components/admin/admin.module.scss';
@@ -18,11 +20,13 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
   const params = parseListParams(await searchParams);
   const editable = canEdit(profile.role);
 
-  const [statuses, staff, list, counts] = await Promise.all([
+  const [statuses, staff, list, counts, lostReasons, {data: views}] = await Promise.all([
     getStatuses(supabase),
     listStaff(supabase),
     listRequests(supabase, params, user.id),
     statusCounts(supabase, params, user.id),
+    getLostReasons(supabase),
+    supabase.from('saved_views').select('id, name, params, shared, owner_id').order('name'),
   ]);
   const stageOf = (code: string) => statuses.find((s) => s.code === code)?.stage ?? 'open';
   const totalAll = Object.values(counts).reduce((a, b) => a + b, 0);
@@ -41,11 +45,46 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
     <>
       <div className={styles.pageHeader}>
         <h1>{t('admin.requests.title')}</h1>
-        {editable && (
-          <Link href="/admin/demandes/nouvelle" className={styles.button}>
-            {t('admin.requests.new.title')}
-          </Link>
-        )}
+        <div className={styles.headerActions}>
+          {editable && (
+            <a href={`/admin/demandes/export${toQueryString(params)}`} className={styles.buttonSecondary}>
+              {t('admin.requests.export')}
+            </a>
+          )}
+          {editable && (
+            <Link href="/admin/demandes/nouvelle" className={styles.button}>
+              {t('admin.requests.new.title')}
+            </Link>
+          )}
+        </div>
+      </div>
+
+      <div className={styles.viewsBar}>
+        <span className={styles.muted}>{t('admin.views.title')}</span>
+        {(views ?? []).length === 0 && <span className={styles.muted}>{t('admin.views.none')}</span>}
+        {(views ?? []).map((v) => (
+          <span key={v.id} className={styles.viewChip}>
+            <Link href={`/admin/demandes${toQueryString(parseListParams(v.params as any))}`}>{v.name}</Link>
+            {v.shared && <small title={t('admin.views.shared')}> ↗</small>}
+            {v.owner_id === user.id && (
+              <form action={deleteView} style={{display: 'inline'}}>
+                <input type="hidden" name="id" value={v.id} />
+                <button type="submit" className={styles.linkButton} aria-label={t('admin.views.delete', {name: v.name})}>×</button>
+              </form>
+            )}
+          </span>
+        ))}
+        <details className={styles.details}>
+          <summary>{t('admin.views.save')}</summary>
+          <form action={saveView} className={styles.rowForm}>
+            <input type="hidden" name="back" value={currentUrl} />
+            <input name="name" required maxLength={80} className={styles.input} placeholder={t('admin.views.name')} />
+            <label className={styles.checkLine}>
+              <input type="checkbox" name="shared" /> {t('admin.views.share')}
+            </label>
+            <button type="submit" className={styles.buttonSecondary}>{t('admin.requests.save')}</button>
+          </form>
+        </details>
       </div>
 
       <nav className={styles.pills} aria-label={t('admin.requests.pills')}>
@@ -104,6 +143,12 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
             <select name="status" className={styles.select} aria-label={t('admin.requests.status.label')} defaultValue="contacted">
               {statuses.map((s) => (
                 <option key={s.code} value={s.code}>{s.label_fr}</option>
+              ))}
+            </select>
+            <select name="lostReason" className={styles.select} aria-label={t('admin.requests.status.lost-reason')} defaultValue="">
+              <option value="">{t('admin.requests.status.lost-reason')} (si perdue)</option>
+              {lostReasons.map((r) => (
+                <option key={r.code} value={r.code}>{r.label_fr}</option>
               ))}
             </select>
             <input name="reason" className={styles.input} placeholder={t('admin.requests.status.reason')} />

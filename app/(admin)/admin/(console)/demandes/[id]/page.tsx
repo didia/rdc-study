@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import {notFound} from 'next/navigation';
 
-import {AssignForm, DisputeToggle, EditDetailsForm, NoteForm, StatusChangeForm} from '@/components/admin/RequestForms';
+import {ContactMenu} from '@/components/admin/ContactMenu';
+import {AssignForm, DisputeToggle, EditDetailsForm, FollowUpForm, NoteForm, StatusChangeForm} from '@/components/admin/RequestForms';
 import {StatusBadge} from '@/components/admin/StatusBadge';
 import styles from '@/components/admin/admin.module.scss';
 import {requireStaff} from '@/lib/admin/auth';
@@ -9,7 +10,10 @@ import {listPackages, packageLabel} from '@/lib/admin/catalogue';
 import {formatDate, formatDateTime, formatMoney} from '@/lib/admin/format';
 import {t} from '@/lib/admin/i18n';
 import {getClientRequests, getRequest, getRequestEvents, getStatuses, listStaff} from '@/lib/admin/queries/requests';
+import {RELANCE_LIMIT, relancesSinceLastStatusChange} from '@/lib/admin/followup';
+import {getLostReasons, getTemplates} from '@/lib/admin/queries/today';
 import {canEdit} from '@/lib/admin/roles';
+import {defaultPaymentInstructions, officeAddress} from '@/lib/admin/templates';
 import {channelLabel, serviceLabel, sourceLabel, whatsappLink} from '@/lib/admin/vocab';
 
 const uuidLike = /^[0-9a-f-]{36}$/i;
@@ -21,11 +25,13 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
   const request = await getRequest(supabase, id);
   if (!request) notFound();
 
-  const [statuses, staff, events, others] = await Promise.all([
+  const [statuses, staff, events, others, lostReasons, templates] = await Promise.all([
     getStatuses(supabase, true),
     listStaff(supabase),
     getRequestEvents(supabase, id),
     getClientRequests(supabase, request.client_id, id),
+    getLostReasons(supabase),
+    getTemplates(supabase),
   ]);
   const editable = canEdit(profile.role);
   const activeStatuses = statuses.filter((s) => s.is_active || s.code === request.status);
@@ -36,6 +42,17 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
   const packages = listPackages().map((p) => ({slug: p.slug, label: packageLabel(p.slug)}));
   const priceMismatch =
     request.quoted_price_cents != null && request.displayed_price_cents != null && request.quoted_price_cents !== request.displayed_price_cents;
+  const relances = relancesSinceLastStatusChange(events);
+  const stage = statuses.find((x) => x.code === request.status)?.stage;
+  const templateVars = {
+    first_name: client.first_name,
+    last_name: client.last_name,
+    package: request.package_slug ? packageLabel(request.package_slug) : serviceLabel(request.service_type),
+    reference: request.reference,
+    staff_name: profile.full_name.split(' ')[0],
+    payment_instructions: defaultPaymentInstructions(),
+    office_address: officeAddress(),
+  };
   const answers = Object.entries((request.form_answers ?? {}) as Record<string, unknown>);
 
   return (
@@ -51,6 +68,12 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
           {editable && <DisputeToggle id={request.id} hasDispute={request.has_dispute} />}
         </div>
       </div>
+
+      {stage === 'open' && relances >= RELANCE_LIMIT && (
+        <p className={styles.warning} role="status" style={{marginBottom: 16}}>
+          {t('admin.requests.relance-suggestion', {count: relances})}
+        </p>
+      )}
 
       {priceMismatch && (
         <p className={styles.warning} role="status" style={{marginBottom: 16}}>
@@ -107,6 +130,18 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
               <dd>{formatDateTime(request.submitted_at)}</dd>
               <dt>{t('admin.requests.quoted-price')}</dt>
               <dd>{formatMoney(request.quoted_price_cents, request.quoted_currency ?? 'USD')}</dd>
+              {request.lost_reason && (
+                <>
+                  <dt>{t('admin.requests.status.lost-reason')}</dt>
+                  <dd>{lostReasons.find((r) => r.code === request.lost_reason)?.label_fr ?? request.lost_reason}</dd>
+                </>
+              )}
+              {request.next_follow_up_at && (
+                <>
+                  <dt>{t('admin.requests.reminder')}</dt>
+                  <dd>{formatDate(request.next_follow_up_at)}</dd>
+                </>
+              )}
               <dt>{t('admin.requests.status-reason')}</dt>
               <dd>{request.status_reason ?? '—'}</dd>
             </dl>
@@ -146,9 +181,29 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
           {editable && (
             <section className={styles.card}>
               <h2>{t('admin.requests.status.change')}</h2>
-              <StatusChangeForm id={request.id} current={request.status} updatedAt={request.updated_at} statuses={activeStatuses} />
+              <StatusChangeForm id={request.id} current={request.status} updatedAt={request.updated_at} statuses={activeStatuses} lostReasons={lostReasons} />
               <hr style={{margin: '18px 0', border: 0, borderTop: '1px solid var(--line)'}} />
               <AssignForm id={request.id} current={request.assigned_to} updatedAt={request.updated_at} staff={staff} />
+              {stage === 'open' && (
+                <>
+                  <hr style={{margin: '18px 0', border: 0, borderTop: '1px solid var(--line)'}} />
+                  <FollowUpForm id={request.id} value={request.next_follow_up_at} />
+                </>
+              )}
+            </section>
+          )}
+          {editable && (
+            <section className={styles.card}>
+              <h2>{t('admin.contact.title')}</h2>
+              <ContactMenu
+                requestId={request.id}
+                clientName={`${client.first_name} ${client.last_name}`}
+                email={client.email}
+                phone={client.phone}
+                phoneE164={client.phone_e164}
+                vars={templateVars}
+                templates={templates}
+              />
             </section>
           )}
           {!editable && (
