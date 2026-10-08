@@ -12,8 +12,7 @@ import {STAFF_ROLES} from '../roles';
 import {safeAdminPath} from '../safe-redirect';
 import {isAllowedStaffEmail} from '../staff-email';
 import {t} from '../i18n';
-
-export type FormState = {error?: string; success?: string} | undefined;
+import type {FormState} from '../form-state';
 
 const MIN_PASSWORD_LENGTH = 12;
 

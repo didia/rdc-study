@@ -9,7 +9,8 @@ import {NavLink} from './NavLink';
 
 // Items are added here as each console section ships.
 const NAV: {href: string; label: string; adminOnly?: boolean; external?: boolean}[] = [
-  {href: '/admin', label: 'admin.nav.home'},
+  {href: '/admin/demandes', label: 'admin.nav.requests'},
+  {href: '/admin/clients', label: 'admin.nav.clients'},
   {href: '/cms', label: 'admin.nav.content', external: true},
   {href: '/admin/equipe', label: 'admin.nav.team', adminOnly: true},
 ];
