@@ -2,6 +2,7 @@ import Link from 'next/link';
 import {notFound} from 'next/navigation';
 
 import {ContactMenu} from '@/components/admin/ContactMenu';
+import {AgreedPriceForm, RecordPaymentForm, SuggestionBanner, VoidPaymentForm} from '@/components/admin/PaymentForms';
 import {AssignForm, DisputeToggle, EditDetailsForm, FollowUpForm, NoteForm, StatusChangeForm} from '@/components/admin/RequestForms';
 import {StatusBadge} from '@/components/admin/StatusBadge';
 import styles from '@/components/admin/admin.module.scss';
@@ -12,7 +13,8 @@ import {t} from '@/lib/admin/i18n';
 import {getClientRequests, getRequest, getRequestEvents, getStatuses, listStaff} from '@/lib/admin/queries/requests';
 import {RELANCE_LIMIT, relancesSinceLastStatusChange} from '@/lib/admin/followup';
 import {getLostReasons, getTemplates} from '@/lib/admin/queries/today';
-import {canEdit} from '@/lib/admin/roles';
+import {formatCents, effectivePrice, kindLabel, methodLabel, netByCurrency, paymentSuggestion} from '@/lib/admin/money';
+import {canEdit, hasRole, isAdmin} from '@/lib/admin/roles';
 import {defaultPaymentInstructions, officeAddress} from '@/lib/admin/templates';
 import {channelLabel, serviceLabel, sourceLabel, whatsappLink} from '@/lib/admin/vocab';
 
@@ -34,6 +36,18 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
     getTemplates(supabase),
   ]);
   const editable = canEdit(profile.role);
+  const canSeeMoney = hasRole(profile.role, 'agent');
+  const [{data: payments}, {data: depositSetting}] = canSeeMoney
+    ? await Promise.all([
+        supabase.from('payments').select('*').eq('request_id', id).order('paid_at', {ascending: false}).order('created_at', {ascending: false}),
+        supabase.from('app_settings').select('value').eq('key', 'deposit_share').maybeSingle(),
+      ])
+    : [{data: null}, {data: null}];
+  const net = netByCurrency(payments ?? []);
+  const price = effectivePrice(request);
+  const suggestion = canSeeMoney
+    ? paymentSuggestion({status: request.status, price, currency: request.agreed_currency, net, depositShare: Number(depositSetting?.value ?? 0.5)})
+    : null;
   const activeStatuses = statuses.filter((s) => s.is_active || s.code === request.status);
   const staffName = (uid: string | null) => staff.find((s) => s.id === uid)?.full_name ?? t('admin.requests.unassigned');
   const statusLabel = (code: string | null) => statuses.find((s) => s.code === code)?.label_fr ?? code ?? '';
@@ -73,6 +87,15 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
         <p className={styles.warning} role="status" style={{marginBottom: 16}}>
           {t('admin.requests.relance-suggestion', {count: relances})}
         </p>
+      )}
+
+      {editable && suggestion && (
+        <SuggestionBanner
+          requestId={request.id}
+          status={suggestion.status}
+          label={statusLabel(suggestion.status)}
+          amounts={`${formatCents(suggestion.paid, request.agreed_currency)} / ${formatCents(suggestion.threshold, request.agreed_currency)}`}
+        />
       )}
 
       {priceMismatch && (
@@ -215,6 +238,52 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
             </section>
           )}
 
+          {canSeeMoney && (
+            <section className={styles.card}>
+              <h2>{t('admin.payments.title')}</h2>
+              <dl className={styles.facts}>
+                <dt>{t('admin.payments.price')}</dt>
+                <dd>
+                  {price != null ? formatCents(price, request.agreed_currency) : '—'}
+                  {request.agreed_price_cents != null && request.agreed_price_cents !== request.quoted_price_cents && (
+                    <span className={styles.muted}> ({t('admin.payments.quoted', {price: formatCents(request.quoted_price_cents ?? 0, request.quoted_currency ?? 'USD')})})</span>
+                  )}
+                </dd>
+                <dt>{t('admin.payments.paid')}</dt>
+                <dd>{Object.keys(net).length ? Object.entries(net).map(([c, n]) => formatCents(n, c)).join(' · ') : formatCents(0, request.agreed_currency)}</dd>
+                <dt>{t('admin.payments.balance')}</dt>
+                <dd>{price != null ? formatCents(price - (net[request.agreed_currency] ?? 0), request.agreed_currency) : '—'}</dd>
+              </dl>
+              {editable && (
+                <div style={{marginTop: 12}}>
+                  <AgreedPriceForm requestId={request.id} quotedCents={request.quoted_price_cents} agreedCents={request.agreed_price_cents} currency={request.agreed_currency} />
+                </div>
+              )}
+              {(payments ?? []).length > 0 && (
+                <ul className={styles.paymentList}>
+                  {(payments ?? []).map((p) => (
+                    <li key={p.id} className={p.voided_at ? styles.voided : undefined}>
+                      <div>
+                        <strong>{p.kind === 'refund' ? '−' : ''}{formatCents(p.amount_cents, p.currency)}</strong> · {kindLabel(p.kind)} · {methodLabel(p.method)}
+                        <div className={styles.muted}>
+                          {formatDate(p.paid_at)}{p.external_ref ? ` · ${p.external_ref}` : ''}{p.note ? ` · ${p.note}` : ''}
+                        </div>
+                        {p.voided_at && <div className={styles.stale}>{t('admin.payments.voided-on', {date: formatDate(p.voided_at), reason: p.void_reason ?? ''})}</div>}
+                      </div>
+                      {isAdmin(profile.role) && !p.voided_at && <VoidPaymentForm requestId={request.id} paymentId={p.id} />}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {editable && (
+                <details className={styles.details} style={{marginTop: 14}} open={(payments ?? []).length === 0 && stage !== 'lost'}>
+                  <summary>{t('admin.payments.record')}</summary>
+                  <RecordPaymentForm requestId={request.id} defaultCurrency={request.agreed_currency} />
+                </details>
+              )}
+            </section>
+          )}
+
           <section className={styles.card}>
             <h2>{t('admin.requests.timeline')}</h2>
             {editable && <NoteForm id={request.id} />}
@@ -262,11 +331,20 @@ function eventTitle(
     case 'contact_attempt':
       return t('admin.requests.event.contact', {channel: channelLabel(e.channel)});
     case 'field_change':
+      if (e.metadata?.field === 'agreed_price') {
+        return t('admin.requests.event.agreed-price', {from: formatCents(e.metadata?.from ?? 0), to: formatCents(e.metadata?.to ?? 0)});
+      }
+      if (e.metadata?.field === 'client_id') return t('admin.requests.event.merged');
       return e.metadata?.field === 'has_dispute'
         ? t('admin.requests.event.dispute')
         : t('admin.requests.event.field', {field: fieldLabel(e.metadata?.field), from: String(e.metadata?.from ?? '—'), to: String(e.metadata?.to ?? '—')});
     case 'note':
       return t('admin.requests.event.note');
+    case 'payment': {
+      const amount = formatCents(e.metadata?.amount_cents ?? 0, e.metadata?.currency ?? 'USD');
+      const values = {amount, kind: kindLabel(e.metadata?.kind ?? '')};
+      return e.metadata?.action === 'voided' ? t('admin.requests.event.payment-voided', values) : t('admin.requests.event.payment', values);
+    }
     default:
       return e.type;
   }

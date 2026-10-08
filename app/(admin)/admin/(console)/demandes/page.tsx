@@ -12,7 +12,8 @@ import {formatDate, timeAgo} from '@/lib/admin/format';
 import {t} from '@/lib/admin/i18n';
 import {isStale, PAGE_SIZE, parseListParams, toQueryString} from '@/lib/admin/list-params';
 import {getStatuses, listRequests, listStaff, openLoadByAssignee, statusCounts} from '@/lib/admin/queries/requests';
-import {canEdit} from '@/lib/admin/roles';
+import {effectivePrice, formatCents} from '@/lib/admin/money';
+import {canEdit, hasRole} from '@/lib/admin/roles';
 import {DESTINATION_COUNTRIES, ORIGIN_COUNTRIES, SERVICE_TYPES, SOURCES, serviceLabel, sourceLabel} from '@/lib/admin/vocab';
 import {packageLabel} from '@/lib/admin/catalogue';
 
@@ -32,6 +33,11 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
     supabase.from('saved_views').select('id, name, params, shared, owner_id').order('name'),
     getStatuses(supabase).then((all) => openLoadByAssignee(supabase, all.filter((x) => x.stage === 'open').map((x) => x.code))),
   ]);
+  const showMoney = hasRole(profile.role, 'agent') && !boardView;
+  const {data: paidRows} = showMoney && list.rows.length
+    ? await supabase.from('request_paid').select('request_id, currency, net_cents').in('request_id', list.rows.map((r) => r.id))
+    : {data: []};
+  const paidOf = (id: string, currency: string) => Number((paidRows ?? []).find((p) => p.request_id === id && p.currency === currency)?.net_cents ?? 0);
   const stageOf = (code: string) => statuses.find((s) => s.code === code)?.stage ?? 'open';
   const totalAll = Object.values(counts).reduce((a, b) => a + b, 0);
   const pages = Math.max(1, Math.ceil(list.total / PAGE_SIZE));
@@ -211,6 +217,7 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
                 <th>{t('admin.requests.destination')}</th>
                 <th><Link href={sortHref('status')}>{t('admin.requests.status.label')}</Link></th>
                 <th>{t('admin.requests.assignee')}</th>
+                {showMoney && <th>{t('admin.payments.paid-balance')}</th>}
                 <th><Link href={sortHref('submitted_at')}>{t('admin.requests.submitted')}</Link></th>
                 <th><Link href={sortHref('last_activity_at')}>{t('admin.requests.last-activity')}</Link></th>
               </tr>
@@ -218,7 +225,7 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
             <tbody>
               {list.rows.length === 0 && (
                 <tr>
-                  <td colSpan={9} className={styles.muted}>{t('admin.requests.empty')}</td>
+                  <td colSpan={10} className={styles.muted}>{t('admin.requests.empty')}</td>
                 </tr>
               )}
               {list.rows.map((r) => (
@@ -239,6 +246,21 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
                     {r.has_dispute && <div className={styles.stale}>{t('admin.requests.dispute.badge')}</div>}
                   </td>
                   <td>{r.assignee?.full_name ?? <span className={styles.muted}>{t('admin.requests.unassigned')}</span>}</td>
+                  {showMoney && (
+                    <td>
+                      {(() => {
+                        const price = effectivePrice(r);
+                        if (price == null) return '—';
+                        const paid = paidOf(r.id, r.agreed_currency);
+                        return (
+                          <>
+                            {formatCents(paid, r.agreed_currency)}
+                            <div className={styles.muted}>{t('admin.payments.balance-short', {amount: formatCents(price - paid, r.agreed_currency)})}</div>
+                          </>
+                        );
+                      })()}
+                    </td>
+                  )}
                   <td title={sourceLabel(r.source)}>{formatDate(r.submitted_at)}</td>
                   <td>
                     {timeAgo(r.last_activity_at)}
