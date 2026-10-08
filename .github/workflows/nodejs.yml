@@ -26,5 +26,32 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Unit tests
+        run: npm test
+
       - name: Build
         run: npm run build
+
+  database:
+    name: Database (migrations, RLS tests, lint)
+    runs-on: ubuntu-latest
+    if: ${{ hashFiles('supabase/config.toml') != '' }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Start local Supabase (applies migrations)
+        run: supabase db start
+
+      - name: Lint schema
+        run: supabase db lint --level warning --fail-on error
+
+      - name: pgTAP tests (RLS, triggers, prices)
+        run: supabase test db

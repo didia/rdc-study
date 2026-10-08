@@ -4,5 +4,8 @@ module.exports = {
   generateRobotsTxt: true,
   changefreq: 'daily',
   priority: 0.7,
-  exclude: ['/admin', '/admin/*'],
+  robotsTxtOptions: {
+    policies: [{userAgent: '*', allow: '/', disallow: ['/admin', '/cms']}],
+  },
+  exclude: ['/admin', '/admin/*', '/cms', '/cms/*'],
 };
