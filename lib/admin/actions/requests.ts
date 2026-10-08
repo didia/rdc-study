@@ -89,6 +89,20 @@ export async function changeStatus(_prev: FormState, formData: FormData): Promis
   return result?.error ? {...result, values: submittedValues(formData)} : result;
 }
 
+// Board drag & drop and keyboard moves: same rules and same history as the status dialog.
+export async function moveRequestStatus(input: {id: string; status: string; lostReason?: string | null}): Promise<{error?: string}> {
+  const {supabase} = await requireStaff('agent');
+  const id = uuid.safeParse(input.id);
+  if (!id.success || !input.status) return {error: FAILED()};
+  const error = await applyStatusChange(supabase, id.data, input.status, {
+    reason: null,
+    lostReason: input.lostReason ?? null,
+    expectedUpdatedAt: null,
+  });
+  revalidate(id.data);
+  return error ? {error} : {};
+}
+
 export async function assignRequest(_prev: FormState, formData: FormData): Promise<FormState> {
   const {supabase} = await requireStaff('agent');
   const id = uuid.safeParse(formData.get('id'));
