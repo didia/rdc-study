@@ -1,7 +1,7 @@
 ---
 slug: assistance
 title: Assistance
-price: 300
+price: 400
 excerpt: Un mentor RDC Études vous aidera à réaliser vos démarches afin d’augmenter vos chances de succès.
 rank: 1
 assistanceFormServiceChoiceLabel: Je suis prêt à commencer mes démarches et je veux qu’un mentor RDC Études m’aide à les réaliser afin d’augmenter mes chances de succès.
