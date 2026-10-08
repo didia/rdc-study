@@ -11,7 +11,7 @@ describe('renderTemplate', () => {
       'Bonjour Grace, RDC-2026-0002 (Canada – Visa)',
     );
   });
-  it('leaves unknown or empty placeholders visible', () => {
+  it('leaves unknown or missing placeholders visible', () => {
     expect(renderTemplate('{{nope}} {{payment_instructions}}', vars)).toBe('{{nope}} {{payment_instructions}}');
   });
 });
