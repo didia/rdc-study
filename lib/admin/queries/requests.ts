@@ -72,14 +72,14 @@ async function applyFilters<T extends {or: any; eq: any; gte: any; lt: any; in: 
   return {query: q};
 }
 
-export async function listRequests(supabase: Supabase, params: ListParams, userId: string) {
+export async function listRequests(supabase: Supabase, params: ListParams, userId: string, pageSize = PAGE_SIZE) {
   let query: any = supabase.from('service_requests').select(LIST_SELECT, {count: 'exact'});
   query = (await applyFilters(supabase, query, params, userId, {withStatus: true})).query;
-  const from = (params.page - 1) * PAGE_SIZE;
+  const from = (params.page - 1) * pageSize;
   const {data, count, error} = await query
     .order(params.sort, {ascending: params.dir === 'asc'})
     .order('created_at', {ascending: false})
-    .range(from, from + PAGE_SIZE - 1);
+    .range(from, from + pageSize - 1);
   return {rows: (data ?? []) as RequestListItem[], total: count ?? 0, error};
 }
 

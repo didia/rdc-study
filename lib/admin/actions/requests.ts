@@ -6,6 +6,7 @@ import {z} from 'zod';
 
 import {requireStaff} from '../auth';
 import {t} from '../i18n';
+import {nextFollowUpOnStatusChange} from '../followup';
 import {findClientMatches} from '../queries/clients';
 import {CHANNELS, DESTINATION_COUNTRIES, MANUAL_SOURCES, normalizeCountry, normalizePhone, ORIGIN_COUNTRIES, SERVICE_TYPES} from '../vocab';
 import {submittedValues, type FormState} from '../form-state';
@@ -28,41 +29,64 @@ function revalidate(id?: string) {
 // Status & assignment (detail page and bulk)
 // ---------------------------------------------------------------------------
 
+type StatusChangeOptions = {
+  reason: string | null;
+  lostReason?: string | null;
+  followUp?: string; // 'auto' | 'none' | '<days>'
+  expectedUpdatedAt: string | null;
+};
+
 async function applyStatusChange(
   supabase: Awaited<ReturnType<typeof requireStaff>>['supabase'],
   id: string,
   toStatus: string,
-  reason: string | null,
-  expectedUpdatedAt: string | null,
+  {reason, lostReason, followUp = 'auto', expectedUpdatedAt}: StatusChangeOptions,
 ): Promise<string | null> {
   const {data: statuses} = await supabase.from('request_statuses').select('code, stage');
   const stageOf = (code: string) => statuses?.find((s) => s.code === code)?.stage;
-  if (!stageOf(toStatus)) return t('admin.requests.status.invalid');
+  const toStage = stageOf(toStatus);
+  if (!toStage) return t('admin.requests.status.invalid');
 
   const {data: current} = await supabase.from('service_requests').select('status, updated_at').eq('id', id).maybeSingle();
   if (!current) return FAILED();
   if (current.status === toStatus) return null;
-  if (stageOf(current.status) === 'lost' && stageOf(toStatus) !== 'lost' && !reason) {
+  if (stageOf(current.status) === 'lost' && toStage !== 'lost' && !reason) {
     return t('admin.requests.status.reopen-needs-reason');
   }
+  if (toStage === 'lost' && !lostReason) return t('admin.requests.status.lost-needs-reason');
 
-  let query = supabase.from('service_requests').update({status: toStatus, status_reason: reason}).eq('id', id);
+  const patch: any = {status: toStatus, status_reason: reason};
+  if (toStage === 'lost') patch.lost_reason = lostReason;
+  const reminder = nextFollowUpOnStatusChange(toStage, toStatus, followUp);
+  if (reminder.set) patch.next_follow_up_at = reminder.value ? reminder.value.toISOString() : null;
+
+  let query = supabase.from('service_requests').update(patch).eq('id', id);
   if (expectedUpdatedAt) query = query.eq('updated_at', expectedUpdatedAt);
   const {data, error} = await query.select('id');
-  if (error) return FAILED();
+  if (error) return error.code === '23503' ? t('admin.requests.status.lost-needs-reason') : FAILED();
   if (!data?.length) return CONFLICT();
   return null;
 }
 
-export async function changeStatus(_prev: FormState, formData: FormData): Promise<FormState> {
+async function changeStatusImpl(formData: FormData): Promise<FormState> {
   const {supabase} = await requireStaff('agent');
   const id = uuid.safeParse(formData.get('id'));
   const toStatus = String(formData.get('status') ?? '');
   if (!id.success || !toStatus) return {error: FAILED()};
 
-  const error = await applyStatusChange(supabase, id.data, toStatus, blank(formData.get('reason')), blank(formData.get('updatedAt')));
+  const error = await applyStatusChange(supabase, id.data, toStatus, {
+    reason: blank(formData.get('reason')),
+    lostReason: blank(formData.get('lostReason')),
+    followUp: String(formData.get('followUp') ?? 'auto'),
+    expectedUpdatedAt: blank(formData.get('updatedAt')),
+  });
   revalidate(id.data);
   return error ? {error} : {success: t('admin.requests.status.changed')};
+}
+
+export async function changeStatus(_prev: FormState, formData: FormData): Promise<FormState> {
+  const result = await changeStatusImpl(formData);
+  return result?.error ? {...result, values: submittedValues(formData)} : result;
 }
 
 export async function assignRequest(_prev: FormState, formData: FormData): Promise<FormState> {
@@ -96,7 +120,13 @@ export async function bulkUpdate(formData: FormData) {
       await supabase.from('service_requests').update({assigned_to: assignee}).eq('id', id);
     } else if (action === 'status') {
       const toStatus = String(formData.get('status') ?? '');
-      if (toStatus) await applyStatusChange(supabase, id, toStatus, blank(formData.get('reason')), null);
+      if (toStatus) {
+        await applyStatusChange(supabase, id, toStatus, {
+          reason: blank(formData.get('reason')),
+          lostReason: blank(formData.get('lostReason')),
+          expectedUpdatedAt: null,
+        });
+      }
     }
   }
   revalidate();

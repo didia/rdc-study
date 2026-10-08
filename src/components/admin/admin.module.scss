@@ -824,3 +824,83 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+// --- Today ----------------------------------------------------------------------
+
+.todayList {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todayItem {
+  display: grid;
+  gap: 8px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+
+  &:first-child {
+    border-top: 0;
+  }
+}
+
+.todayHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.todayActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+
+  .input.input {
+    width: auto;
+    min-height: 36px;
+  }
+
+  .button.button,
+  .buttonSecondary.buttonSecondary {
+    min-height: 36px;
+    padding: 0 12px;
+  }
+}
+
+.count {
+  display: inline-block;
+  min-width: 22px;
+  padding: 0 7px;
+  background: var(--red);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.countMuted {
+  composes: count;
+  background: #e4e7ec;
+  color: var(--ink);
+}
+
+.viewsBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+}
+
+.viewChip {
+  padding: 3px 10px;
+  background: #eef2ff;
+  border-radius: 999px;
+}
