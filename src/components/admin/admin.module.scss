@@ -53,6 +53,12 @@
     }
   }
 
+  // The public site paints <strong> white (dark sections); the console is light.
+  strong,
+  b {
+    color: inherit;
+  }
+
   :where(input, select, textarea, button) {
     font: inherit;
     letter-spacing: normal;
@@ -782,6 +788,39 @@
 
 @media (max-width: 860px) {
   .detailGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+// --- Prices ---------------------------------------------------------------------
+
+.priceBlock {
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+
+  &:first-of-type {
+    border-top: 0;
+  }
+}
+
+.priceHead {
+  margin-bottom: 10px;
+}
+
+.priceRow {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(110px, 160px) minmax(180px, 1fr) auto;
+  align-items: end;
+}
+
+.priceActions {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 860px) {
+  .priceRow {
     grid-template-columns: minmax(0, 1fr);
   }
 }

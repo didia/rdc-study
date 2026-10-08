@@ -25,7 +25,7 @@ const {contactFormEndpoint} = config;
 
 // Constants
 import Steps from './steps';
-import {AssistanceTypes, AssistancePrices} from '../../constants/assistance';
+import {AssistanceTypes} from '../../constants/assistance';
 
 // Utils
 import getCurrentUrl from '../../utils/get-current-url';
@@ -33,7 +33,7 @@ import analyticsPushEvent from '../../utils/push-analytics-event';
 import StepActions from './StepActions';
 import StepForm from './StepForm';
 import subscribeToNewsletter from '../../utils/subscribe-to-newsletter';
-import {submitAssistanceRequest} from './utils';
+import {submitAssistanceRequest, trackInformationRequest} from './utils';
 
 const getCheckedClassName = (currentValue, expectedValue) =>
   currentValue === expectedValue
@@ -60,6 +60,8 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
   const getAssistancePackage = useAssistanceFormStore((s) => s.getAssistancePackage);
   const getAvailableAssistanceTypes = useAssistanceFormStore((s) => s.getAvailableAssistanceTypes);
   const getGuidePath = useAssistanceFormStore((s) => s.getGuidePath);
+  const getIntakePayload = useAssistanceFormStore((s) => s.getIntakePayload);
+  const getPriceCents = useAssistanceFormStore((s) => s.getPriceCents);
   const setService = useAssistanceFormStore((s) => s.setService);
   const assistancePackage = getAssistancePackage();
   const availableAssistanceTypes = getAvailableAssistanceTypes();
@@ -116,11 +118,13 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
           firstName: aboutCandidate.firstName,
           lastName: aboutCandidate.lastName
         });
+        // Selecting a service updates the store synchronously, so the payload below carries the chosen service.
+        await trackInformationRequest(getIntakePayload({message: msg, sourceUrl: getCurrentUrl()}));
         analyticsPushEvent({
           category: 'AssistanceForm',
           action: values.service,
           label: assistancePackage.slug,
-          value: AssistancePrices[values.service]
+          value: getPriceCents(values.service) / 100
         });
         router.push(getGuidePath());
       } else {
@@ -128,7 +132,7 @@ const SubmitFormStep = ({onNextStep, onRestart}) => {
           category: 'AssistanceForm',
           action: values.service,
           label: assistancePackage.slug,
-          value: AssistancePrices[values.service]
+          value: getPriceCents(values.service) / 100
         });
         onNextStep(Steps.AccompagnementTerms);
       }

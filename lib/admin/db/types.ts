@@ -130,6 +130,24 @@ export type Database = {
           },
         ]
       }
+      rate_limits: {
+        Row: {
+          hits: number
+          key: string
+          window_start: string
+        }
+        Insert: {
+          hits?: number
+          key: string
+          window_start: string
+        }
+        Update: {
+          hits?: number
+          key?: string
+          window_start?: string
+        }
+        Relationships: []
+      }
       request_statuses: {
         Row: {
           code: string
@@ -163,7 +181,7 @@ export type Database = {
           changed_by: string | null
           currency: string
           id: number
-          new_amount_cents: number
+          new_amount_cents: number | null
           old_amount_cents: number | null
           reason: string | null
           scope: string
@@ -174,7 +192,7 @@ export type Database = {
           changed_by?: string | null
           currency: string
           id?: never
-          new_amount_cents: number
+          new_amount_cents: number | null
           old_amount_cents?: number | null
           reason?: string | null
           scope: string
@@ -185,7 +203,7 @@ export type Database = {
           changed_by?: string | null
           currency?: string
           id?: never
-          new_amount_cents?: number
+          new_amount_cents?: number | null
           old_amount_cents?: number | null
           reason?: string | null
           scope?: string
@@ -371,6 +389,22 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      check_rate_limit: {
+        Args: { p_key: string; p_limit: number; p_window_seconds: number }
+        Returns: boolean
+      }
+      remove_service_price: {
+        Args: { p_reason: string; p_scope: string; p_service_type: string }
+        Returns: undefined
+      }
+      set_service_price: {
+        Args: { p_amount_cents: number; p_reason: string; p_scope: string; p_service_type: string }
+        Returns: undefined
+      }
+      submit_service_request: {
+        Args: { payload: Json }
+        Returns: Json
+      }
       resolve_price: {
         Args: { p_package_slug?: string; p_service_type: string }
         Returns: number

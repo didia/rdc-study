@@ -11,7 +11,7 @@ import {Trust} from '../../site/Sections';
 import VisaWarning from '../../site/VisaWarning';
 import AssistanceForm from '../../AssistanceForm';
 
-const AssistanceProcess = ({assistancePackages, services, guideSlugs}) => {
+const AssistanceProcess = ({assistancePackages, services, guideSlugs, prices}) => {
   const intl = useIntl();
   const searchParams = useSearchParams();
   const fromGuide = searchParams.get('pour');
@@ -32,6 +32,7 @@ const AssistanceProcess = ({assistancePackages, services, guideSlugs}) => {
           guideSlugs={guideSlugs}
           fromGuide={fromGuide}
           service={service}
+          prices={prices}
         />
       </Section>
 

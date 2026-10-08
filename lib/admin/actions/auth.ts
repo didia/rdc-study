@@ -31,7 +31,7 @@ export async function signIn(_prev: FormState, formData: FormData): Promise<Form
 
   const supabase = await createSupabaseServerClient();
   const {error} = await supabase.auth.signInWithPassword({email: parsed.data.email!, password: parsed.data.password!});
-  if (error) return {error: t('admin.auth.invalid-credentials')};
+  if (error) return {error: t('admin.auth.invalid-credentials'), values: {email: parsed.data.email!}};
 
   redirect(safeAdminPath(String(formData.get('next') ?? '')));
 }

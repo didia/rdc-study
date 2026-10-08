@@ -3,6 +3,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
+import {KIND_LABELS} from './catalogue-labels';
+
 export type CataloguePackage = {slug: string; title: string; country: string; kind: string};
 
 let cache: CataloguePackage[] | null = null;
@@ -24,12 +26,6 @@ export function listPackages(): CataloguePackage[] {
   return cache;
 }
 
-export const KIND_LABELS: Record<string, string> = {
-  admission: 'Admission',
-  caq: 'CAQ',
-  equivalence: 'Équivalence',
-  visa: 'Visa / permis d’études',
-};
 
 const COUNTRY_LABELS: Record<string, string> = {
   belgique: 'Belgique',

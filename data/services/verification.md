@@ -1,7 +1,6 @@
 ---
 slug: verification
 title: Vérification
-price: 100
 excerpt: Nous allons analyser votre dossier de demande de visa pour vous assurer que vous n’avez rien manqué et que vous avez mis toutes les chances de votre coté pour l’obtention du visa.
 rank: 3
 assistanceFormServiceChoiceLabel: Je veux que vous analysiez ma demande pour m'indiquer comment l’améliorer et augmenter mes chances d’obtention du visa.

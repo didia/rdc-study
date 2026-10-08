@@ -79,3 +79,18 @@ invited from `/admin/equipe`. Lost-phone recovery: remove the user's factor in t
   `anon` access to new tables by default; a pgTAP test fails if you forget).
 - New `security definer` functions: `set search_path = ''`, and revoke `execute` from `public`/`anon`.
 - Add a pgTAP test next to the change.
+
+## Going live with intake (cut-over checklist)
+
+The public assistance form posts to `/api/requests` **and** still sends the legacy email, so nothing is lost if
+Supabase is down. `ADMIN_INTAKE_ENABLED=false` (or missing Supabase variables) turns storage off without touching the form.
+
+1. Staging verified end-to-end with synthetic requests; production starts with zero rows.
+2. Team trained (30 min); every agent has signed in and enrolled TOTP.
+3. Two weeks of soak: compare new requests with the notification emails daily (expect 1:1). A request that reached the
+   email but not the console is reported to Sentry as `assistance_request_not_stored` — enter it by hand with *Nouvelle demande*.
+4. Freeze the old spreadsheet, re-enter still-open leads by hand, announce the console as the source of truth.
+5. Privacy-policy section reviewed by the owner (retention, hosting region) and live.
+
+Prices are edited at `/admin/tarifs` (admins). The site reads them from the database (cached, invalidated on save);
+`lib/default-prices.ts` is only an outage fallback and must be kept in sync with the seed.

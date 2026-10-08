@@ -1,6 +1,7 @@
 import {Suspense} from 'react';
 import {getAssistancePackageDictionary, getGuides, getServices} from '@/lib/content';
 import {generatePageMetadata} from '@/lib/metadata';
+import {getServicePrices} from '@/lib/prices';
 import AssistanceProcess from '@/components/pages/AssistanceProcess';
 
 export const metadata = generatePageMetadata({
@@ -10,16 +11,17 @@ export const metadata = generatePageMetadata({
 });
 
 export default async function AssistanceProcessPage() {
-  const [assistancePackages, services, guides] = await Promise.all([
+  const [assistancePackages, services, guides, prices] = await Promise.all([
     getAssistancePackageDictionary(),
     getServices(),
     getGuides(),
+    getServicePrices(),
   ]);
   const guideSlugs = guides.map((guide) => guide.slug);
 
   return (
     <Suspense>
-      <AssistanceProcess assistancePackages={assistancePackages} services={services} guideSlugs={guideSlugs} />
+      <AssistanceProcess assistancePackages={assistancePackages} services={services} guideSlugs={guideSlugs} prices={prices} />
     </Suspense>
   );
 }

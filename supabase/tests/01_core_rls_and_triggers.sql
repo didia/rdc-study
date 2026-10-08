@@ -136,11 +136,11 @@ select is((select updated_at from public.service_requests where id = '20000000-0
 select pg_temp.act_as('00000000-0000-0000-0000-0000000000a1');
 select set_config('app.price_reason', 'test', true);
 update public.service_prices set amount_cents = 45000 where service_type = 'assistance' and scope = '*';
-select is((select count(*)::int from public.service_price_history where service_type = 'assistance' and scope = '*'), 1,
+select is((select count(*)::int from public.service_price_history where service_type = 'assistance' and scope = '*' and reason = 'test'), 1,
   'an admin price update leaves one history row');
 select is((select old_amount_cents from public.service_price_history where reason = 'test'), 40000,
   'history records the old amount and reason');
-select throws_ok($$delete from public.service_prices$$, '42501', null, 'prices cannot be deleted');
+select is(pg_temp.affected('delete from public.service_prices where scope = ''*'''), 0, 'default prices cannot be deleted');
 select throws_ok($$update public.service_price_history set reason = 'x'$$, '42501', null, 'price history is not updatable');
 select throws_ok($$update public.staff_profiles set role = 'viewer' where id = '00000000-0000-0000-0000-0000000000a1'$$,
   'P0001', null, 'the last active admin cannot be demoted');
