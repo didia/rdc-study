@@ -15,6 +15,8 @@ const nextConfig = {
 
   images: {
     formats: ['image/avif', 'image/webp'],
+    // Default is 60s, which makes the optimizer re-process images for every crawler visit.
+    minimumCacheTTL: 60 * 60 * 24 * 30,
   },
 
   async redirects() {
