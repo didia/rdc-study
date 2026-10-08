@@ -14,6 +14,7 @@ export type TodayData = {
   unassignedNew: RequestListItem[];
   waiting: RequestListItem[];
   mine: RequestListItem[];
+  delivery: RequestListItem[];
 };
 
 // Mine first, then the oldest reminder first.
@@ -33,6 +34,13 @@ export async function getTodayData(supabase: Supabase, userId: string, statuses:
     .limit(1000);
   const rows = (data ?? []) as unknown as RequestListItem[];
   const now = Date.now();
+  const {data: deliveryData} = await supabase
+    .from('service_requests')
+    .select(SELECT)
+    .eq('mentor_id', userId)
+    .in('status', ['deposit_paid', 'paid', 'in_progress'])
+    .order('last_activity_at', {ascending: true})
+    .limit(200);
 
   const overdue = rows.filter((r) => isOverdue(r.next_follow_up_at, now)).sort(byUrgency(userId));
   const overdueIds = new Set(overdue.map((r) => r.id));
@@ -43,6 +51,7 @@ export async function getTodayData(supabase: Supabase, userId: string, statuses:
       .filter((r) => !overdueIds.has(r.id) && isWaitingTooLong(r.status, r.last_activity_at, now))
       .sort((a, b) => a.last_activity_at.localeCompare(b.last_activity_at)),
     mine: rows.filter((r) => r.assigned_to === userId),
+    delivery: (deliveryData ?? []) as unknown as RequestListItem[],
   };
 }
 

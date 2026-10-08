@@ -529,6 +529,8 @@ export type Database = {
           lost_reason: string | null
           agreed_price_cents: number | null
           agreed_currency: string
+          mentor_id: string | null
+          delivery_checklist: Json
         }
         Insert: {
           assigned_to?: string | null
@@ -558,6 +560,8 @@ export type Database = {
           lost_reason?: string | null
           agreed_price_cents?: number | null
           agreed_currency?: string
+          mentor_id?: string | null
+          delivery_checklist?: Json
         }
         Update: {
           assigned_to?: string | null
@@ -587,6 +591,8 @@ export type Database = {
           lost_reason?: string | null
           agreed_price_cents?: number | null
           agreed_currency?: string
+          mentor_id?: string | null
+          delivery_checklist?: Json
         }
         Relationships: [
           {
@@ -706,6 +712,10 @@ export type Database = {
       fn_delivery_stats: {
         Args: { p_from: string; p_to: string }
         Returns: { avg_days_deposit_to_completed: number | null; completed_count: number; refunded_share: number | null }[]
+      }
+      is_my_request: {
+        Args: { p_request_id: string }
+        Returns: boolean
       }
       resolve_price: {
         Args: { p_package_slug?: string; p_service_type: string }

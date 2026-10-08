@@ -12,7 +12,7 @@ import {Feedback} from './Feedback';
 
 export type DocumentItem = {id: string; kind: string; file_name: string; size_bytes: number | null; created_at: string; uploaded_by_name: string | null; date: string};
 
-export function DocumentsPanel({requestId, documents, canGenerate}: {requestId: string; documents: DocumentItem[]; canGenerate: boolean}) {
+export function DocumentsPanel({requestId, documents, canGenerate, kinds}: {requestId: string; documents: DocumentItem[]; canGenerate: boolean; kinds?: string[]}) {
   const router = useRouter();
   const [error, setError] = useState<string>();
   const [busy, setBusy] = useState(false);
@@ -88,8 +88,8 @@ export function DocumentsPanel({requestId, documents, canGenerate}: {requestId: 
         <div className={styles.inlineForm}>
           <div className={styles.field}>
             <label htmlFor="doc-kind">{t('admin.documents.kind')}</label>
-            <select id="doc-kind" name="kind" defaultValue="client_document" className={styles.select}>
-              {DOCUMENT_KINDS.map((k) => (
+            <select id="doc-kind" name="kind" defaultValue={kinds?.[0] ?? 'client_document'} className={styles.select}>
+              {DOCUMENT_KINDS.filter((k) => !kinds || kinds.includes(k.code)).map((k) => (
                 <option key={k.code} value={k.code}>{k.label}</option>
               ))}
             </select>

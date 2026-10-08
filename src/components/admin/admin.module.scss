@@ -1063,3 +1063,16 @@
     text-decoration: line-through;
   }
 }
+
+.checklist {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: grid;
+    gap: 2px;
+  }
+}

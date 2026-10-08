@@ -14,7 +14,7 @@ import {serviceLabel} from '@/lib/admin/vocab';
 
 export default async function TodayPage() {
   const {supabase, user, profile} = await requireStaff();
-  const statuses = await getStatuses(supabase);
+  const statuses = await getStatuses(supabase, true);
   const data = await getTodayData(supabase, user.id, statuses);
   const editable = canEdit(profile.role);
 
@@ -49,6 +49,16 @@ export default async function TodayPage() {
           </Item>
         ))}
       </Section>
+
+      {(data.delivery.length > 0 || profile.role === 'mentor') && (
+        <Section title={t('admin.today.delivery')} count={data.delivery.length} empty={t('admin.today.delivery-empty')}>
+          {data.delivery.map((r) => (
+            <Item key={r.id} request={r} statuses={statuses}>
+              <p className={styles.muted}>{t('admin.today.last-activity', {when: timeAgo(r.last_activity_at)})}</p>
+            </Item>
+          ))}
+        </Section>
+      )}
 
       <Section title={t('admin.today.mine')} count={data.mine.length} empty={t('admin.today.mine-empty')}>
         {data.mine.map((r) => (
