@@ -99,17 +99,23 @@ create index sr_submitted_idx on service_requests (submitted_at desc);
 create index sr_followup_idx on service_requests (next_follow_up_at) where next_follow_up_at is not null;
 create index sr_client_idx   on service_requests (client_id);
 
--- Editable prices (see phase 1 §1C "Pricing"): one row per service type
+-- Editable prices (see phase 1 §1C "Pricing"): a default per service + optional overrides by package scope
 create table service_prices (
-  service_type  text primary key,          -- same codes as service_requests.service_type
+  service_type  text not null,             -- same codes as service_requests.service_type (+ 'guides-de-demarche' for the site card)
+  scope         text not null default '*', -- '*' (default) | 'kind:<admission|caq|equivalence|visa>' | 'pkg:<country/kind>' e.g. 'pkg:canada/visa'
   amount_cents  int not null check (amount_cents >= 0),
   currency      text not null default 'USD',
   updated_at    timestamptz not null default now(),
-  updated_by    uuid references staff_profiles(id)
+  updated_by    uuid references staff_profiles(id),
+  primary key (service_type, scope),
+  check (scope = '*' or scope ~ '^(kind|pkg):[a-z0-9/-]+$')
 );
+-- Resolution (SQL function resolve_price(service_type, package_slug)): most specific wins —
+--   'pkg:<package_slug>'  →  'kind:<kind of package_slug>'  →  '*'.   kind = text after the last '/' of the slug.
 create table service_price_history (        -- append-only, written by trigger on service_prices
   id            bigint generated always as identity primary key,
   service_type  text not null,
+  scope         text not null,
   old_amount_cents int, new_amount_cents int not null,
   currency      text not null,
   reason        text,
@@ -208,8 +214,12 @@ alter table service_requests
 are not in the old tracker (it stopped at "Acompte payé"/"Réussi") but exist so Phase 3 has somewhere to go; they are
 hidden in the UI until Phase 3 (`is_active=false`) so Phase 1 stays faithful to the current process.
 
-`service_prices` is seeded with: `information` 0, `consultation` 30, `verification` 150, `verification-et-lettre` 200,
-**`assistance` 400**. The `information` row is locked to 0 (check in the admin action).
+`service_prices` is seeded with (service · scope → USD): `information` · `*` → 0; `consultation` · `*` → 30;
+`verification` · `*` → 150; `verification-et-lettre` · `*` → 200; `guides-de-demarche` · `*` → 0 (site card only);
+**`assistance` · `*` → 400** (admission, CAQ, équivalence and any other package) and
+**`assistance` · `kind:visa` → 600** (every visa package: `canada/visa`, `belgique/visa`, `france/visa`, `usa/visa`,
+`inde/visa`, `chypre-du-nord/visa`). A country-specific visa price later = one extra `pkg:<country>/visa` row. The
+`information` row is locked to 0 (check in the admin action).
 
 Controlled lists live in code (`lib/admin/vocab.ts`), not tables, because they change rarely and are shared with the form:
 - `ORIGIN_COUNTRIES` — the 44 entries of the old workbook's "Pays dorigine" list (+ "Autre"), which already matches the audience.
@@ -234,8 +244,8 @@ Controlled lists live in code (`lib/admin/vocab.ts`), not tables, because they c
    "reopen" with a reason). Hard rules in the DB would fight real-life WhatsApp conversations; revisit if data shows abuse.
 6. **`log_price_change()`** (AFTER UPDATE on `service_prices`) — inserts a `service_price_history` row (old → new, actor, optional reason
    passed via `set_config('app.price_reason', …, true)` by the admin action) and refreshes `updated_at/updated_by`.
-7. **`submit_service_request()`** reads the current `service_prices` row for the requested service and stores it in
-   `quoted_price_cents` (the browser-supplied `displayedPriceCents` is stored separately, never trusted).
+7. **`resolve_price(service_type, package_slug)`** (stable SQL function, also used by `submit_service_request()`) returns the
+   most specific matching `service_prices` row; the request stores the result in `quoted_price_cents` (the browser-supplied `displayedPriceCents` is stored separately, never trusted).
 8. **`merge_clients(keep uuid, drop uuid)`** (P2) — moves requests, copies missing fields, logs events, deletes `drop`.
 
 ## 6. Row Level Security
@@ -268,6 +278,7 @@ event) so the route cannot be tricked into arbitrary writes and the logic is tes
 - `agent` can insert/update requests, cannot delete; cannot update or delete `request_events`.
 - Changing `service_requests.status` writes exactly one `status_change` event with the actor.
 - Only `admin` can update `service_prices`; every update writes one `service_price_history` row; history is not updatable/deletable.
-- `submit_service_request()` stores the DB price as `quoted_price_cents` even if the payload claims another price.
+- `resolve_price('assistance','canada/visa')` = 600 and `('assistance','canada/admission')` = 400, `('assistance','canada/caq')` = 400; adding a `pkg:canada/visa` row overrides the kind row only for that package.
+- `submit_service_request()` stores the resolved DB price as `quoted_price_cents` even if the payload claims another price.
 - Same email submitted twice → one `clients` row, two requests; same `idempotency_key` → one request.
 - (P3) `mentor` sees only assigned requests and their clients/events/documents.

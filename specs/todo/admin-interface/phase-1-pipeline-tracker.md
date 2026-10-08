@@ -106,27 +106,39 @@ keeps the actor).
 
 **Problem today:** the price lives in two places that already disagree. Service cards (`app/nos-services`, home) read
 `price` from `data/services/*.md`; the assistance form reads `AssistancePrices` in `src/constants/assistance.js`
-(`store.ts`). Assistance is **400 $** (owner-confirmed; `assistance.md` is set to 400 in the spec PR), but other services
-differ (e.g. vérification 100 in `.md` vs 150 in the constant). Prices will change often, and editing them through the CMS
+(`store.ts`). Assistance is **400 $ for admission, CAQ, équivalence and other packages, and 600 $ for visa packages**
+(owner-confirmed); neither file can express that — the constant has one assistance price (400) and `assistance.md` one
+value (set to 400 in the spec PR) — and other services differ too (e.g. vérification 100 in `.md` vs 150 in the constant). Prices will change often, and editing them through the CMS
 means a git commit plus a rebuild, and would still not touch the form's constant.
 
 **Design: prices become data in the database, edited at `/admin/tarifs`, read by the public site.**
 
-1. **Storage:** `service_prices` + append-only `service_price_history` ([01 §3](./01-data-model.md)), created in 1A.
-2. **Admin page `/admin/tarifs`** (all staff can view; **admin** can edit): one row per service type with current price
-   (USD), "last changed by / when", an inline editor, a required short *reason* field, and a confirmation ("Le nouveau prix
+1. **Storage:** `service_prices` + append-only `service_price_history` ([01 §3](./01-data-model.md)), created in 1A. A price row is
+   a *default per service* plus optional *overrides by package scope* (`kind:visa`, or one package such as `pkg:canada/visa`);
+   the most specific match wins. Seed: assistance 400 default, assistance `kind:visa` 600.
+2. **Admin page `/admin/tarifs`** (all staff can view; **admin** can edit): one block per service. The Assistance block shows
+   **"Tarif par défaut (admission, CAQ, équivalence, autres) — 400 $"** and **"Visa / permis d'études — 600 $"**, plus an
+   **"Ajouter une exception"** action (pick a package type or a specific package, e.g. Canada – Visa, and a price) so a
+   country-specific price needs no developer. Each row shows the current price (USD), "last changed by / when", an inline editor, a required short *reason* field, and a confirmation ("Le nouveau prix
    s'affichera pour tous les nouveaux visiteurs"). `information` is fixed at 0. History list below. Saving is a Server Action
    that updates the row (RLS: admin only), then calls `revalidateTag('service-prices')`.
 3. **Public read path:** `lib/prices.ts` → `getServicePrices()` using the service-role client inside
    `unstable_cache(..., { tags: ['service-prices'], revalidate: 3600 })`. `lib/content.ts#getServices()` overlays these prices on the
    Markdown services, so `app/page.tsx`, `app/nos-services/page.tsx` and the form (which already receives `services` as props)
    need no further change. Result: a price edit appears on the site within seconds, with no deploy.
-4. **Remove the duplicates:** delete `AssistancePrices` from `src/constants/assistance.js` (the store builds `price` from
-   `services`); remove `price` from the services front-matter and from the **Services** collection in `public/cms/config.yml`
+   - **Service cards** (home, `/nos-services`) show one number per service, so when a service has several prices they show
+     **"À partir de 400 $"** (the lowest) — new i18n key next to `shared.price`.
+   - **Assistance form:** the overlay hands the form the whole price list (default + overrides). `store.ts`
+     `getAvailableAssistanceTypes()` no longer reads a constant; it asks a small pure helper
+     `priceFor(prices, serviceType, packageSlug)` (same resolution order as `resolve_price`, unit-tested with Vitest) using the
+     package already selected by the visitor (`getAssistancePackage().slug`, e.g. `canada/visa`). So a visitor going for a visa
+     sees 600 $, one going for an admission sees 400 $.
+4. **Remove the duplicates:** delete `AssistancePrices` from `src/constants/assistance.js` (the store builds `price` from the
+   overlaid price list); remove `price` from the services front-matter and from the **Services** collection in `public/cms/config.yml`
    so nobody edits a dead field. `lib/default-prices.ts` keeps seed values **only as an outage fallback** (used when Supabase is
    unreachable at render time); a Vitest test asserts it covers every `AssistanceTypes` value.
-5. **Quoted price snapshot:** the form sends `displayedPriceCents`; `submit_service_request()` stores the server-side current
-   price as `quoted_price_cents`. If they differ (the price changed while the visitor was on the page) the request detail page
+5. **Quoted price snapshot:** the form sends `displayedPriceCents` and `packageSlug`; `submit_service_request()` stores
+   `resolve_price(serviceType, packageSlug)` as `quoted_price_cents`. If they differ (the price changed while the visitor was on the page) the request detail page
    shows a warning "Prix affiché au client : X $ — à honorer" so staff can decide. Analytics events use the same
    server-provided price.
 6. **Failure behaviour:** if the price lookup fails and no cached value exists, the form uses the fallback prices and
@@ -155,15 +167,17 @@ being worked from it are re-entered by hand via *Nouvelle demande* during the cu
 - [ ] With the Supabase env vars removed, the form still succeeds via the legacy path.
 - [ ] List filters (status pills, search, assignee, date range) are reflected in the URL and survive reload; search for a
       known synthetic name/email/phone fragment finds the right request.
-- [ ] Admin changes Assistance from 400 to e.g. 450 at `/admin/tarifs`: within ~1 minute the service card, the home card and the assistance form all show 450 (no deploy), a history row records who/when/why, and an `agent` cannot edit prices.
-- [ ] A request submitted after the change stores `quoted_price_cents = 45000`; one submitted from a page loaded before the change shows the "prix affiché" warning.
+- [ ] In the assistance form, choosing Canada → visa shows 600 $; Canada → admission, Canada → CAQ and Belgique → équivalence show 400 $; service cards show "À partir de 400 $".
+- [ ] Admin changes the Assistance default from 400 to e.g. 450 at `/admin/tarifs`: within ~1 minute the service card and the admission/CAQ/équivalence form prices show 450 while visa stays 600 (no deploy); a history row records who/when/why; an `agent` cannot edit prices.
+- [ ] Admin adds a `pkg:canada/visa` exception: only Canada's visa price changes.
+- [ ] A request submitted after that change for `canada/admission` stores `quoted_price_cents = 45000` (and 60000 for a visa request); one submitted from a page loaded before the change shows the "prix affiché" warning.
 - [ ] No price constant remains in `src/constants/assistance.js`; the CMS Services collection no longer has a price field.
 - [ ] `/cms` works with Netlify Identity login; `/admin` is not indexed (robots + header + sitemap).
 - [ ] CI green: lint, build, Vitest, pgTAP.
 
 ## Non-goals (Phase 1)
 
-Per-client or time-limited (promotional) prices, scheduled price changes, per-country price lists, dashboards/KPIs, kanban board, reminders, message templates, payments, documents, email notifications to staff,
+Per-client or time-limited (promotional) prices, scheduled price changes, dashboards/KPIs, kanban board, reminders, message templates, payments, documents, email notifications to staff,
 client merge, CSV export (all Phase 2+). No client-facing view of status.
 
 ## Risks specific to this phase
