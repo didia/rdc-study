@@ -17,7 +17,7 @@ Each PR is independently mergeable and leaves `master` deployable.
 |----|----------|--------------|
 | **1A — Foundations** | Move CMS to `/cms`; Supabase projects + `supabase/` migrations (P1 tables, seeds, triggers, RLS) + pgTAP tests; `@supabase/ssr` clients; `middleware.ts`; `/admin/login`, `/admin` shell, staff invite flow; CI additions; README env docs; privacy-policy text | Highest-risk plumbing (route clash, auth, RLS) reviewed on its own; nothing user-visible on the public site changes |
 | **1B — Console** | Requests list (search/filter/sort/paginate), request detail (timeline, status change, notes, assign, edit fields), "New request" manual form, clients view, staff management page (admin), Contenu link | Pure console UI on top of 1A |
-| **1C — Live intake** | `POST /api/requests` + `submit_service_request()`; form dual-write; price source-of-truth fix (300 $); cut-over checklist | Touches the public form, so it ships last, after the console is proven on staging |
+| **1C — Live intake + pricing** | `POST /api/requests` + `submit_service_request()`; form dual-write; editable prices (`/admin/tarifs`) wired to the public site and form; cut-over checklist | Touches the public form, so it ships last, after the console is proven on staging |
 
 ## Scope
 
@@ -29,13 +29,13 @@ Each PR is independently mergeable and leaves `master` deployable.
 2. **Supabase setup** (runbook committed in `supabase/README.md`): create staging + prod projects, disable public
    sign-ups, set Site URL + redirect URLs (`/admin/auth/callback`), set the auth email templates in French, region closest to
    users/staff (document choice; privacy policy mentions it).
-3. **Migrations:** exactly the P1 objects in [01 §3–§6](./01-data-model.md) + seed statuses. Included pgTAP tests.
+3. **Migrations:** exactly the P1 objects in [01 §3–§6](./01-data-model.md) + seed statuses and prices (incl. `service_prices`). Included pgTAP tests.
 4. **Auth:** email + password with TOTP MFA *enrolment available* (not enforced yet); password reset; invite flow
    (admin creates user in `/admin/staff` → Supabase invite → first login sets password → `staff_profiles` row created by
    the admin action, role chosen at invite time). `middleware.ts` refreshes the session and redirects unauthenticated
    `/admin/**` to `/admin/login`; pages additionally verify an *active* `staff_profiles` row (no profile ⇒ "Accès non
    autorisé" page).
-5. **App shell** `app/(admin)/admin/layout.tsx`: sidebar (Demandes, Clients, Contenu → `/cms`, Équipe [admin only]),
+5. **App shell** `app/(admin)/admin/layout.tsx`: sidebar (Demandes, Clients, Tarifs, Contenu → `/cms`, Équipe [admin only]),
    header with user menu (profile, enrol MFA, sign out). French UI strings in `src/locales/fr.json` under `admin.*`.
    Responsive down to tablet; usable on a phone for quick lookups.
 6. **Hygiene:** `noindex` metadata + `X-Robots-Tag` header and `Cache-Control: no-store` for `/admin/**` (via
@@ -79,7 +79,7 @@ keeps the actor).
 
 **Contenu:** nav item linking to `/cms`; a small explainer page is *not* needed.
 
-### 1C — Live intake
+### 1C — Live intake and pricing
 
 **Public intake — `POST /api/requests`** (`app/api/requests/route.ts`, `runtime = 'nodejs'`)
 - Body (zod-validated, max 8 KB): `idempotencyKey`, `firstName`, `lastName`, `email`, `phone?`, `originCountry`,
@@ -102,12 +102,37 @@ keeps the actor).
 - The structured payload is built where `aboutCandidate`, `assistancePackage`, destination and the yes/no answers already
   live (`store.ts`), not by re-parsing the sentence.
 
-**Price source of truth (300 $):** the owner confirmed Assistance costs **300 $**, which matches
-`data/services/assistance.md`, but `src/constants/assistance.js` `AssistancePrices.assistance` is **400** and is what the
-form's `store.ts` displays. In this PR the form reads prices from the `services` content it already receives (the store
-is initialised with `services`) and `AssistancePrices` is deleted (or, minimally, corrected to 300 with a test that it equals
-`data/services/assistance.md`). The same value is what the console later uses as the default agreed price, and what the
-analytics event reports. Check the other services' displayed prices against their `.md` files at the same time.
+### Pricing (editable from the admin)
+
+**Problem today:** the price lives in two places that already disagree. Service cards (`app/nos-services`, home) read
+`price` from `data/services/*.md`; the assistance form reads `AssistancePrices` in `src/constants/assistance.js`
+(`store.ts`). Assistance is **400 $** (owner-confirmed; `assistance.md` is set to 400 in the spec PR), but other services
+differ (e.g. vérification 100 in `.md` vs 150 in the constant). Prices will change often, and editing them through the CMS
+means a git commit plus a rebuild, and would still not touch the form's constant.
+
+**Design: prices become data in the database, edited at `/admin/tarifs`, read by the public site.**
+
+1. **Storage:** `service_prices` + append-only `service_price_history` ([01 §3](./01-data-model.md)), created in 1A.
+2. **Admin page `/admin/tarifs`** (all staff can view; **admin** can edit): one row per service type with current price
+   (USD), "last changed by / when", an inline editor, a required short *reason* field, and a confirmation ("Le nouveau prix
+   s'affichera pour tous les nouveaux visiteurs"). `information` is fixed at 0. History list below. Saving is a Server Action
+   that updates the row (RLS: admin only), then calls `revalidateTag('service-prices')`.
+3. **Public read path:** `lib/prices.ts` → `getServicePrices()` using the service-role client inside
+   `unstable_cache(..., { tags: ['service-prices'], revalidate: 3600 })`. `lib/content.ts#getServices()` overlays these prices on the
+   Markdown services, so `app/page.tsx`, `app/nos-services/page.tsx` and the form (which already receives `services` as props)
+   need no further change. Result: a price edit appears on the site within seconds, with no deploy.
+4. **Remove the duplicates:** delete `AssistancePrices` from `src/constants/assistance.js` (the store builds `price` from
+   `services`); remove `price` from the services front-matter and from the **Services** collection in `public/cms/config.yml`
+   so nobody edits a dead field. `lib/default-prices.ts` keeps seed values **only as an outage fallback** (used when Supabase is
+   unreachable at render time); a Vitest test asserts it covers every `AssistanceTypes` value.
+5. **Quoted price snapshot:** the form sends `displayedPriceCents`; `submit_service_request()` stores the server-side current
+   price as `quoted_price_cents`. If they differ (the price changed while the visitor was on the page) the request detail page
+   shows a warning "Prix affiché au client : X $ — à honorer" so staff can decide. Analytics events use the same
+   server-provided price.
+6. **Failure behaviour:** if the price lookup fails and no cached value exists, the form uses the fallback prices and
+   intake records `displayed_price` only (flagged `price_unverified`), so a Supabase outage never blocks a lead.
+
+Prices of services not on the form (if added later) are just additional rows.
 
 **No import.** The console launches empty. The old workbook is archived read-only outside the repo; open leads still
 being worked from it are re-entered by hand via *Nouvelle demande* during the cut-over week (owner decides which).
@@ -130,13 +155,15 @@ being worked from it are re-entered by hand via *Nouvelle demande* during the cu
 - [ ] With the Supabase env vars removed, the form still succeeds via the legacy path.
 - [ ] List filters (status pills, search, assignee, date range) are reflected in the URL and survive reload; search for a
       known synthetic name/email/phone fragment finds the right request.
-- [ ] The assistance form displays 300 $ for Assistance, matching `data/services/assistance.md`; no price constant duplicates the content files.
+- [ ] Admin changes Assistance from 400 to e.g. 450 at `/admin/tarifs`: within ~1 minute the service card, the home card and the assistance form all show 450 (no deploy), a history row records who/when/why, and an `agent` cannot edit prices.
+- [ ] A request submitted after the change stores `quoted_price_cents = 45000`; one submitted from a page loaded before the change shows the "prix affiché" warning.
+- [ ] No price constant remains in `src/constants/assistance.js`; the CMS Services collection no longer has a price field.
 - [ ] `/cms` works with Netlify Identity login; `/admin` is not indexed (robots + header + sitemap).
 - [ ] CI green: lint, build, Vitest, pgTAP.
 
 ## Non-goals (Phase 1)
 
-Dashboards/KPIs, kanban board, reminders, message templates, payments, documents, email notifications to staff,
+Per-client or time-limited (promotional) prices, scheduled price changes, per-country price lists, dashboards/KPIs, kanban board, reminders, message templates, payments, documents, email notifications to staff,
 client merge, CSV export (all Phase 2+). No client-facing view of status.
 
 ## Risks specific to this phase

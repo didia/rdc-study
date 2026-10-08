@@ -87,6 +87,9 @@ create table service_requests (
   last_activity_at  timestamptz not null default now(),    -- replaces "Dernière mise à jour"
   closed_at         timestamptz,           -- set by trigger when the request enters a 'lost' status (P3: also 'completed'); see §5
   idempotency_key   text unique,           -- intake double-submit protection
+  quoted_price_cents int,                  -- price at submission, set server-side from service_prices (never from the browser)
+  quoted_currency   text default 'USD',
+  displayed_price_cents int,               -- what the visitor's page showed; differs from quoted only if the price changed mid-session
   created_at        timestamptz not null default now(),
   updated_at        timestamptz not null default now()
 );
@@ -95,6 +98,24 @@ create index sr_assigned_idx on service_requests (assigned_to);
 create index sr_submitted_idx on service_requests (submitted_at desc);
 create index sr_followup_idx on service_requests (next_follow_up_at) where next_follow_up_at is not null;
 create index sr_client_idx   on service_requests (client_id);
+
+-- Editable prices (see phase 1 §1C "Pricing"): one row per service type
+create table service_prices (
+  service_type  text primary key,          -- same codes as service_requests.service_type
+  amount_cents  int not null check (amount_cents >= 0),
+  currency      text not null default 'USD',
+  updated_at    timestamptz not null default now(),
+  updated_by    uuid references staff_profiles(id)
+);
+create table service_price_history (        -- append-only, written by trigger on service_prices
+  id            bigint generated always as identity primary key,
+  service_type  text not null,
+  old_amount_cents int, new_amount_cents int not null,
+  currency      text not null,
+  reason        text,
+  changed_by    uuid references staff_profiles(id),
+  changed_at    timestamptz not null default now()
+);
 
 create table request_events (               -- append-only history / Journal
   id          bigint generated always as identity primary key,
@@ -157,6 +178,7 @@ create table request_documents (
   uploaded_by uuid references staff_profiles(id),
   created_at timestamptz not null default now()
 );
+-- agreed price defaults to quoted_price_cents (price at submission), NOT today's price
 alter table service_requests
   add column agreed_price_cents int, add column agreed_currency text default 'USD',
   add column mentor_id uuid references staff_profiles(id);
@@ -186,6 +208,9 @@ alter table service_requests
 are not in the old tracker (it stopped at "Acompte payé"/"Réussi") but exist so Phase 3 has somewhere to go; they are
 hidden in the UI until Phase 3 (`is_active=false`) so Phase 1 stays faithful to the current process.
 
+`service_prices` is seeded with: `information` 0, `consultation` 30, `verification` 150, `verification-et-lettre` 200,
+**`assistance` 400**. The `information` row is locked to 0 (check in the admin action).
+
 Controlled lists live in code (`lib/admin/vocab.ts`), not tables, because they change rarely and are shared with the form:
 - `ORIGIN_COUNTRIES` — the 44 entries of the old workbook's "Pays dorigine" list (+ "Autre"), which already matches the audience.
 - `DESTINATION_COUNTRIES` — Belgique, Canada, Chypre du Nord, France, Inde, Tunisie, États-Unis, + Roumanie (new guide)
@@ -207,7 +232,11 @@ Controlled lists live in code (`lib/admin/vocab.ts`), not tables, because they c
 4. **`staff_role()`** `security definer`, `stable` — returns the caller's role if `staff_profiles.active`, else `null`.
 5. **Transition rules** are advisory in the UI (default: any open status → any status; `lost_*` → `new`/`contacted` requires
    "reopen" with a reason). Hard rules in the DB would fight real-life WhatsApp conversations; revisit if data shows abuse.
-6. **`merge_clients(keep uuid, drop uuid)`** (P2) — moves requests, copies missing fields, logs events, deletes `drop`.
+6. **`log_price_change()`** (AFTER UPDATE on `service_prices`) — inserts a `service_price_history` row (old → new, actor, optional reason
+   passed via `set_config('app.price_reason', …, true)` by the admin action) and refreshes `updated_at/updated_by`.
+7. **`submit_service_request()`** reads the current `service_prices` row for the requested service and stores it in
+   `quoted_price_cents` (the browser-supplied `displayedPriceCents` is stored separately, never trusted).
+8. **`merge_clients(keep uuid, drop uuid)`** (P2) — moves requests, copies missing fields, logs events, deletes `drop`.
 
 ## 6. Row Level Security
 
@@ -217,6 +246,8 @@ All tables: `alter table … enable row level security;` and **no policy for `an
 |-------|--------|--------|--------|--------|
 | `staff_profiles` | any active staff (own row at minimum) | `admin` | `admin` (self may edit own `full_name`/`whatsapp`) | `admin` |
 | `request_statuses`, `lost_reasons` | any active staff | `admin` | `admin` | `admin` |
+| `service_prices` | any active staff | `admin` | `admin` | **none** |
+| `service_price_history` | any active staff | trigger only | **none** | **none** |
 | `clients` | active staff; `mentor` only if they have an assigned request for that client | `admin`,`agent` | `admin`,`agent` | `admin` |
 | `service_requests` | `admin`,`agent`,`viewer` all; `mentor` only `mentor_id = auth.uid()` (P3) | `admin`,`agent` | `admin`,`agent`; `mentor` limited to status/notes on assigned (P3) | `admin` |
 | `request_events` | follows parent request visibility | `admin`,`agent`,`mentor`(assigned) with `actor_id = auth.uid()` | **none** | **none** |
@@ -236,5 +267,7 @@ event) so the route cannot be tricked into arbitrary writes and the logic is tes
 - `viewer` can select, cannot insert/update; inactive staff see nothing.
 - `agent` can insert/update requests, cannot delete; cannot update or delete `request_events`.
 - Changing `service_requests.status` writes exactly one `status_change` event with the actor.
+- Only `admin` can update `service_prices`; every update writes one `service_price_history` row; history is not updatable/deletable.
+- `submit_service_request()` stores the DB price as `quoted_price_cents` even if the payload claims another price.
 - Same email submitted twice → one `clients` row, two requests; same `idempotency_key` → one request.
 - (P3) `mentor` sees only assigned requests and their clients/events/documents.

@@ -41,8 +41,9 @@ Gateway (no further updates/maintenance), so content editing could break without
   counts of published vs `draft: true` articles / guides / scholarships; list of drafts with last-modified date and a
   **"Modifier dans le CMS"** deep link (`/cms/#/collections/<name>/entries/<slug>`); open editorial-workflow PRs
   (those labelled `netlify-cms/*` / `sveltia`) with links.
-- **Catalogue view:** services and assistance packages with current prices, side by side with request volume per package
-  (from Phase 2 metrics) — helps decide pricing/copy changes. Read-only; editing still goes through the CMS.
+- **Catalogue view:** services and assistance packages with current prices (from `service_prices`, editable at `/admin/tarifs`),
+  side by side with request volume and conversion per package (Phase 2 metrics) and the price-change history — helps decide
+  pricing/copy changes. Package/service *copy* is still edited in the CMS.
 - **Publish status:** shows the latest Netlify deploy status for `master` (Netlify API, read-only) so editors know when a
   published change is live.
 - **Content health checks** (nice-to-have): guides marked `draft` but linked from the site, articles missing a thumbnail.

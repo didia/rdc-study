@@ -11,7 +11,7 @@ and (2) reach the existing **content** tooling from one place.
 | Decision | Consequence in the specs |
 |----------|--------------------------|
 | **Clean start — the old tracker's history is not imported.** | No import script, no `legacy_*` columns or sources. The workbook is archived read-only outside the repo and the console starts empty. |
-| **Assistance costs 300 $.** | `data/services/assistance.md` (300) is the single source of truth. The form's `AssistancePrices` constant still says 400 — it is aligned/removed in Phase 1 (see [phase 1 §1C](./phase-1-pipeline-tracker.md)). |
+| **Assistance costs 400 $, and prices must be editable from the admin (they will change).** | Prices move into the database (`service_prices`) and are edited at `/admin/tarifs`; the public site (service cards and assistance form) reads them from there, and each request stores the price quoted at submission. `data/services/assistance.md` is set to 400 now; the duplicated price constants are removed in Phase 1 ([phase 1 §1C](./phase-1-pipeline-tracker.md#pricing-editable-from-the-admin)). |
 | **Personal data will be stored in the database.** | The privacy/security controls (RLS, MFA, audit trail, retention, privacy-policy update — [00 §5](./00-decision-and-architecture.md), [phase 4](./phase-4-content-and-hardening.md)) are required, not optional. |
 
 ## Documents
@@ -70,7 +70,8 @@ intake and auth have to ship together.
 |---|----------|------------------------------|
 | 1 | Who needs access and with what rights? | Roles `admin` (Aristote), `agent` (e.g. the WhatsApp follow-up person), `mentor` (Phase 3, sees only assigned requests), `viewer`. |
 | 2 | What was the old "Litiges" (disputes) column for? | It looked unused. Model a simple `has_dispute` flag + note event. |
-| 3 | Deposit rule for the 300 $ Assistance fee | USD. The old form doc described two equal tranches (i.e. 150 $ + 150 $ at 300 $); Phase 3 uses a configurable deposit share, default 50 %. Confirm. |
+| 3 | Deposit rule for the Assistance fee | USD. The old form doc described two equal tranches; Phase 3 uses a configurable deposit share, default 50 % (200 $ of 400 $). Confirm. |
+| 8 | Prices of the other services | Today the site disagrees with itself: service cards read `data/services/*.md` while the form reads a code constant. Assistance = 400 in both now. For the rest, the database is seeded from what the **form** charges (consultation 30, vérification 150, vérification + lettre 200, information free); the `.md` files say vérification 100 and vérification + lettre 150. Confirm the right values; they are editable afterwards anyway. |
 | 4 | Retention of personal data | Keep 24 months after a request is closed, then anonymise (Phase 4). Confirm with whatever the privacy policy promises. |
 | 5 | Should "information"-only visitors be tracked? | Today they only go to the newsletter. Phase 1 logs them as lightweight `information` requests behind a flag so the funnel top is measurable. Can be switched off. |
 | 6 | Service types beyond the site's five (`information`, `assistance`, `consultation`, `verification`, `verification-et-lettre`) | None for now (the old workbook also listed ticket sales, refusal analysis, study-project drafting). Add to `lib/admin/vocab.ts` if those services are still offered. |

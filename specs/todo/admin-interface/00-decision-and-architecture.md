@@ -92,7 +92,9 @@ Articles, guides, scholarships, services and packages are static, SEO-critical, 
 build time. Moving them to Postgres would lose version history and the editorial workflow, force the public site to
 become dynamic, and re-create a CMS we already have. **Requests reference catalogue items by slug** (`package_slug =
 'canada/visa'`, `service_type = 'assistance'`) as plain text validated in app code against `data/**` at write time —
-no foreign keys into content.
+no foreign keys into content. **Exception — prices:** they change often and must update without a deploy, so they
+are operational data in Postgres (`service_prices`), edited in the console and overlaid on the Markdown services at render
+time ([phase 1 §1C](./phase-1-pipeline-tracker.md#pricing-editable-from-the-admin)).
 
 "Managing content" from the console therefore means: a **Contenu** entry in the nav (Phase 1), a draft/publish overview
 and deep links into the CMS (Phase 4), and fixing the CMS's authentication (Phase 4, §5 of that doc).

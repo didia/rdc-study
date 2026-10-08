@@ -14,10 +14,10 @@ Depends on Phases 1–2 in production. Adds tables `payments`, `request_document
 ## Scope
 
 ### 3.1 Agreed price
-- On a request at/after `awaiting_payment`: set **agreed price**, defaulting from `data/services/<service>.md` `price`
-  (**Assistance = 300 $**, owner-confirmed; the same file feeds the public form after the Phase 1 fix), overridable by
-  agent+ for discounts (override requires a reason, logged). Shown with **paid / balance** on the detail page and as list columns.
-- **Deposit rule:** configurable share (default **50 %**, i.e. 150 $ of 300 $, in line with the old "two equal tranches"
+- On a request at/after `awaiting_payment`: set **agreed price**, defaulting to the request's **`quoted_price_cents`** — the
+  price at the moment the client submitted (Assistance was **400 $** at launch), *not* today's price, so later price edits at
+  `/admin/tarifs` never change what an existing client owes. Overridable by agent+ for discounts (override requires a reason, logged). Shown with **paid / balance** on the detail page and as list columns.
+- **Deposit rule:** configurable share (default **50 %**, i.e. 200 $ of 400 $, in line with the old "two equal tranches"
   process) in `/admin/parametres`; to be confirmed with the owner.
 
 ### 3.2 Payments ledger
