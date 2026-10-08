@@ -4,36 +4,44 @@ This the repository for the rdc-study project.
 
 ## Running
 
-Make sure that you have the Gatsby CLI program installed:
-
 ```sh
-npm install --global gatsby-cli
+npm install
+npm run dev        # http://localhost:3000
+npm run typecheck  # TypeScript
+npm test           # Vitest (pure logic)
+npm run build      # production build (+ sitemap/robots via next-sitemap)
 ```
 
-Then you can run it by:
+The public site works with no environment variables at all. Only the admin console (`/admin`) needs the Supabase
+variables below; without them `/admin` shows a "console not configured" login page.
 
-```sh
-npm start
+## Admin console
+
+A private console for the team lives at `/admin` (staff requests tracker; see `specs/todo/admin-interface/`).
+The content editor (Sveltia CMS) lives at `/cms`.
+
+Backend: Supabase (Postgres + Auth). Schema, RLS policies and tests are in `supabase/`; setup, local development,
+environments and the first-admin runbook are in [`supabase/README.md`](supabase/README.md).
+
+## Environment variables
+
+Local values go in `.env.local` (git-ignored); in production they are set in Netlify per context.
+
+```
+NEXT_PUBLIC_SITE_URL=Canonical site URL, used by the sitemap (defaults to https://www.rdcetudes.com)
+NEXT_PUBLIC_API_ENDPOINT=Base URL of the contact-form API (AWS API Gateway → Lambda → SES)
+NEXT_PUBLIC_GA4_MEASUREMENT_ID=Google Analytics 4 measurement id (production)
+NEXT_PUBLIC_SENTRY_DSN_URL=Sentry DSN (production)
+SENTRY_ORG / SENTRY_PROJECT=Sentry build-time configuration (source maps)
+
+# Admin console (all optional for the public site)
+NEXT_PUBLIC_SUPABASE_URL=Supabase project URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY=Supabase anon / publishable key (safe for the browser; RLS protects the data)
+SUPABASE_SERVICE_ROLE_KEY=Supabase service-role / secret key — SERVER ONLY, never expose; used for staff invitations and public intake
+ADMIN_ALLOWED_EMAIL_DOMAINS=Optional comma-separated list of email domains allowed for staff invitations
 ```
 
-## Producing background images
-
-For background images, our styling structure right now does not allow us to use `gatsby-images`. So what we do is we run the image through the graphql query and copy the image produced to use it as background.
-
-## Environment Variables
-
-We use `nv` to inject our environment variables when running locally.
-All environment variables prefixed by `GATSBY_` will be exposed to the browser.
-
-```
-AWS_BUCKET_NAME=The AWS Bucket name where the app is deployed #required for deploiement
-CLOUDFRONT_ID=The cloud front id for the app #required for deploiement
-GATSBY_GOOGLE_AD_CLIENT=The Google Ad Client #required
-GATSBY_CONTACT_FORM_ENDPOINT=The endpoint to send contact information #required
-GOOGLE_TAG_MANAGER_ID=The Google Tag Manager Id #require in production
-GATSBY_SENTRY_DSN=The DSN for Sentry #required in production
-SURGE_DOMAIN=The domain name for the surge app
-```
+Producing the first admin: `node --env-file=.env.local scripts/create-admin.mjs --email … --name "…"` (see `supabase/README.md`).
 
 ### Feature flags
 
