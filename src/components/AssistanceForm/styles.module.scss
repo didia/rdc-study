@@ -256,13 +256,6 @@ select.input {
   margin-bottom: 1em;
 }
 
-@include breakpoint(small) {
-  .card-wrapper {
-    padding-top: _size(header-height, small);
-    margin-top: calc(-#{_size(header-height, small)} - 180px);
-  }
-}
-
 @include breakpoint(xsmall) {
   .fields {
     display: block;

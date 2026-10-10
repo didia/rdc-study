@@ -41,7 +41,16 @@ export default function GlobalError({
               textAlign: 'center',
             }}
           >
-            <h1 style={{marginTop: 0, fontFamily: 'Raleway, Helvetica, sans-serif'}}>Une erreur est survenue</h1>
+            <h1
+              style={{
+                marginTop: 0,
+                color: '#2e3141',
+                fontFamily: 'Raleway, Helvetica, sans-serif',
+                fontSize: '1.75rem',
+              }}
+            >
+              Une erreur est survenue
+            </h1>
             <p>La page a rencontré un problème inattendu. Vous pouvez revenir à l&apos;accueil et réessayer.</p>
             <a
               href="/"

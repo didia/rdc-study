@@ -68,7 +68,10 @@ const MasterForm = ({assistancePackages, services, guideSlugs, fromGuide, servic
   };
 
   const CurrentStepComponent = getStepComponent(currentStep);
-  const activeStageIndex = FLOW_STAGES.findIndex((stage) => stage.steps.includes(currentStep));
+  const isSubmitted = currentStep === Steps.FormSubmitted;
+  const activeStageIndex = isSubmitted
+    ? FLOW_STAGES.length
+    : FLOW_STAGES.findIndex((stage) => stage.steps.includes(currentStep));
 
   return (
     <div ref={currentStepRef} className={styles['card-wrapper']}>
