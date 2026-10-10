@@ -5,6 +5,7 @@ import {useState, type FormEvent} from 'react';
 
 import {createSupabaseBrowserClient} from '@/lib/admin/db/browser';
 import {t} from '@/lib/admin/i18n';
+import {startTotpEnrollment} from '@/lib/admin/mfa-enroll';
 import styles from './admin.module.scss';
 
 // Second factor after sign-in (user has a verified TOTP factor but the session is aal1).
@@ -65,10 +66,7 @@ export function MfaEnroll() {
     setPending(true);
     setError(undefined);
     const supabase = createSupabaseBrowserClient();
-    const {data, error: enrollError} = await supabase.auth.mfa.enroll({
-      factorType: 'totp',
-      friendlyName: `RDC Études ${new Date().toISOString().slice(0, 10)}`,
-    });
+    const {data, error: enrollError} = await startTotpEnrollment(supabase.auth.mfa, 'RDC Études');
     setPending(false);
     if (enrollError || !data) {
       setError(t('admin.mfa.enroll-failed'));
