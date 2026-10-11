@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import {useActionState} from 'react';
 
-import {requestPasswordReset, signIn, updatePassword, type FormState} from '@/lib/admin/actions/auth';
+import {requestPasswordReset, signIn, updatePassword} from '@/lib/admin/actions/auth';
+import type {FormState} from '@/lib/admin/form-state';
 import {t} from '@/lib/admin/i18n';
 import styles from './admin.module.scss';
 

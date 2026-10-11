@@ -13,6 +13,10 @@ insert into public.staff_profiles (id, full_name, role, active) values
   ('00000000-0000-0000-0000-0000000000a2', 'Test Agent', 'agent', true),
   ('00000000-0000-0000-0000-0000000000a3', 'Test Viewer', 'viewer', true),
   ('00000000-0000-0000-0000-0000000000a4', 'Test Inactive', 'agent', false);
+-- A dev database may hold real admins/seed rows: neutralise them so counts and the last-admin rule are deterministic.
+update public.staff_profiles set active = false
+ where id not in ('00000000-0000-0000-0000-0000000000a1', '00000000-0000-0000-0000-0000000000a2',
+                  '00000000-0000-0000-0000-0000000000a3', '00000000-0000-0000-0000-0000000000a4');
 insert into public.clients (id, first_name, last_name, email) values
   ('10000000-0000-0000-0000-000000000001', 'Alice', 'Example', 'alice@test.local');
 insert into public.service_requests (id, client_id, service_type, source)
@@ -76,7 +80,7 @@ select pg_temp.reset_role();
 
 -- viewer -----------------------------------------------------------------------
 select pg_temp.act_as('00000000-0000-0000-0000-0000000000a3');
-select is((select count(*)::int from public.service_requests), 1, 'viewer can read requests');
+select is((select count(*)::int from public.service_requests where id = '20000000-0000-0000-0000-000000000001'), 1, 'viewer can read requests');
 select throws_ok($$insert into public.clients (first_name, last_name) values ('x','y')$$, '42501', null, 'viewer cannot insert clients');
 select is(pg_temp.affected('update public.service_requests set has_dispute = true'), 0, 'viewer cannot update requests');
 select pg_temp.reset_role();
@@ -176,14 +180,14 @@ select is((select public.staff_role())::text, null, 'staff_role() is null on an 
 select pg_temp.reset_role();
 
 select pg_temp.act_as_aal('00000000-0000-0000-0000-0000000000b1', 'aal2');
-select is((select count(*)::int from public.service_requests), 1, 'aal2 session of an enrolled admin reads requests');
+select is((select count(*)::int from public.service_requests where id = '20000000-0000-0000-0000-000000000001'), 1, 'aal2 session of an enrolled admin reads requests');
 select is(pg_temp.affected('update public.service_prices set amount_cents = amount_cents'),
   (select count(*)::int from public.service_prices),
   'aal2 session of an enrolled admin can update prices');
 select pg_temp.reset_role();
 
 select pg_temp.act_as_aal('00000000-0000-0000-0000-0000000000b2', 'aal1');
-select is((select count(*)::int from public.service_requests), 1,
+select is((select count(*)::int from public.service_requests where id = '20000000-0000-0000-0000-000000000001'), 1,
   'an unverified (abandoned) factor does not lock staff out');
 select pg_temp.reset_role();
 
