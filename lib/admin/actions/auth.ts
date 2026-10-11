@@ -2,11 +2,13 @@
 
 import {revalidatePath} from 'next/cache';
 import {redirect} from 'next/navigation';
+import type {User} from '@supabase/supabase-js';
 import {z} from 'zod';
 
 import {requireStaff} from '../auth';
 import {createSupabaseServerClient, createSupabaseServiceClient} from '../db/server';
 import {isAdminConfigured} from '../env';
+import {MFA_THEN_PASSWORD_PATH, needsMfaChallenge} from '../mfa';
 import {getRequestOrigin} from '../origin';
 import {STAFF_ROLES} from '../roles';
 import {safeAdminPath} from '../safe-redirect';
@@ -71,6 +73,9 @@ export async function updatePassword(_prev: FormState, formData: FormData): Prom
   const supabase = await createSupabaseServerClient();
   const {data} = await supabase.auth.getUser();
   if (!data.user) redirect('/admin/login');
+  // Supabase refuses a password change on an aal1 session once a factor is verified
+  // (insufficient_aal): send recovery sessions through the challenge first.
+  if (await needsMfaChallenge(supabase)) redirect(MFA_THEN_PASSWORD_PATH);
 
   const {error} = await supabase.auth.updateUser({password});
   if (error) return {error: t('admin.password.failed')};
@@ -83,8 +88,26 @@ const inviteSchema = z.object({
   role: z.enum(STAFF_ROLES as [string, ...string[]]),
 });
 
+// Postgres unique_violation: the staff profile (same id as the auth user) already exists.
+const UNIQUE_VIOLATION = '23505';
+// An auth user created less than this long ago, never confirmed, is taken as created by the
+// invitation being processed. Generous so clock skew between app and auth server cannot matter.
+const FRESH_ACCOUNT_WINDOW_MS = 60_000;
+
+function createdByThisInvitation(user: User, startedAt: number): boolean {
+  const createdAt = Date.parse(user.created_at);
+  return (
+    Number.isFinite(createdAt) &&
+    createdAt >= startedAt - FRESH_ACCOUNT_WINDOW_MS &&
+    !user.confirmed_at &&
+    !user.last_sign_in_at
+  );
+}
+
 // Admin-only. Creates the auth user (invite email) and the staff profile in one go; the profile
-// is what grants access, so a half-created invitation is rolled back.
+// is what grants access, so a half-created invitation is rolled back. Idempotent: inviting an
+// address whose invitation is still pending makes Supabase reuse (and re-email) the same auth
+// user, in which case the existing profile is left as is and nothing is deleted.
 export async function inviteStaff(_prev: FormState, formData: FormData): Promise<FormState> {
   await requireStaff('admin');
   const parsed = inviteSchema.safeParse({
@@ -97,21 +120,28 @@ export async function inviteStaff(_prev: FormState, formData: FormData): Promise
 
   const service = createSupabaseServiceClient();
   const origin = await getRequestOrigin();
+  const startedAt = Date.now();
   const {data, error} = await service.auth.admin.inviteUserByEmail(parsed.data.email, {
     redirectTo: `${origin}/admin/auth/callback?next=/admin/mot-de-passe`,
   });
   if (error || !data.user) return {error: t('admin.staff.invite.failed')};
 
+  const sent: FormState = {success: t('admin.staff.invite.sent', {email: parsed.data.email})};
   const {error: profileError} = await service.from('staff_profiles').insert({
     id: data.user.id,
     full_name: parsed.data.fullName,
     role: parsed.data.role as (typeof STAFF_ROLES)[number],
   });
   if (profileError) {
-    await service.auth.admin.deleteUser(data.user.id);
+    // Resent or concurrent invitation: the profile is already there, the email has been re-sent.
+    if (profileError.code === UNIQUE_VIOLATION) return sent;
+    const {data: existing} = await service.from('staff_profiles').select('id').eq('id', data.user.id).maybeSingle();
+    if (existing) return sent;
+    // Only compensate for an account this very invitation created, never a pre-existing one.
+    if (createdByThisInvitation(data.user, startedAt)) await service.auth.admin.deleteUser(data.user.id);
     return {error: t('admin.staff.invite.failed')};
   }
 
   revalidatePath('/admin/equipe');
-  return {success: t('admin.staff.invite.sent', {email: parsed.data.email})};
+  return sent;
 }

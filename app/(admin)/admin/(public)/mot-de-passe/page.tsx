@@ -5,6 +5,7 @@ import {SetPasswordForm} from '@/components/admin/AuthForms';
 import {isAdminConfigured} from '@/lib/admin/env';
 import {createSupabaseServerClient} from '@/lib/admin/db/server';
 import {t} from '@/lib/admin/i18n';
+import {MFA_THEN_PASSWORD_PATH, needsMfaChallenge} from '@/lib/admin/mfa';
 
 // Reached from an invitation or password-reset email: the callback route has already signed the user in.
 export default async function SetPasswordPage() {
@@ -12,6 +13,7 @@ export default async function SetPasswordPage() {
   const supabase = await createSupabaseServerClient();
   const {data} = await supabase.auth.getUser();
   if (!data.user) redirect('/admin/login');
+  if (await needsMfaChallenge(supabase)) redirect(MFA_THEN_PASSWORD_PATH);
 
   return (
     <AuthCard title={t('admin.password.title')} lead={t('admin.password.lead')}>
