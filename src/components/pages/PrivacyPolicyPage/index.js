@@ -25,6 +25,7 @@ const PrivacyPolicyPage = () => (
     <ul>
       <li>Nom</li>
       <li>Adresse électronique</li>
+      <li>Numéro de téléphone ou WhatsApp, pays d‘origine et pays de destination (formulaire d‘assistance)</li>
     </ul>
 
     <p>
@@ -57,6 +58,24 @@ const PrivacyPolicyPage = () => (
     <ul>
       <li>Correspondance</li>
     </ul>
+    <hr />
+    <h2>Suivi de vos demandes d‘assistance</h2>
+    <p>
+      Lorsque vous remplissez le formulaire d‘assistance, votre demande est enregistrée dans notre outil de suivi
+      afin que l‘équipe de RDC Études puisse y répondre. Sont conservés : votre nom, votre adresse électronique, votre
+      numéro de téléphone ou WhatsApp, votre pays d‘origine, le pays de destination et le service demandés, vos réponses
+      au formulaire ainsi que les notes de suivi de notre équipe (échanges, relances, paiements).
+    </p>
+    <p>
+      Ces données sont hébergées chez notre prestataire Supabase (base de données PostgreSQL). Seuls les membres de
+      l‘équipe RDC Études disposant d‘un compte personnel y ont accès. Elles ne sont ni vendues ni partagées à des fins
+      publicitaires.
+    </p>
+    <p>
+      Nous conservons ces informations pendant 24 mois après la clôture de votre demande, puis nous les supprimons ou
+      les anonymisons. Vous pouvez demander à tout moment l‘accès, la rectification ou la suppression de ces données en
+      écrivant à salut@rdcetudes.com.
+    </p>
     <hr />
     <h2>Droit d‘opposition et de retrait</h2>
     <p>

@@ -1,0 +1,43 @@
+name: Deploy database migrations
+
+# Applies supabase/migrations to staging, then (after manual approval of the `production`
+# environment) to production. Disabled until the repository variable SUPABASE_DEPLOY_ENABLED
+# is set to "true" — see supabase/README.md.
+
+on:
+  push:
+    branches: [master]
+    paths: ['supabase/migrations/**']
+  workflow_dispatch:
+
+jobs:
+  staging:
+    if: ${{ vars.SUPABASE_DEPLOY_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    environment: staging
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - run: supabase link --project-ref "${{ secrets.SUPABASE_PROJECT_REF }}"
+      - run: supabase db push
+
+  production:
+    needs: staging
+    if: ${{ vars.SUPABASE_DEPLOY_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    environment: production # configure required reviewers on this environment
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - run: supabase link --project-ref "${{ secrets.SUPABASE_PROJECT_REF }}"
+      - run: supabase db push
