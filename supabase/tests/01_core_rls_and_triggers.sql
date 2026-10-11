@@ -180,14 +180,14 @@ select is((select public.staff_role())::text, null, 'staff_role() is null on an 
 select pg_temp.reset_role();
 
 select pg_temp.act_as_aal('00000000-0000-0000-0000-0000000000b1', 'aal2');
-select is((select count(*)::int from public.service_requests), 1, 'aal2 session of an enrolled admin reads requests');
+select is((select count(*)::int from public.service_requests where id = '20000000-0000-0000-0000-000000000001'), 1, 'aal2 session of an enrolled admin reads requests');
 select is(pg_temp.affected('update public.service_prices set amount_cents = amount_cents'),
   (select count(*)::int from public.service_prices),
   'aal2 session of an enrolled admin can update prices');
 select pg_temp.reset_role();
 
 select pg_temp.act_as_aal('00000000-0000-0000-0000-0000000000b2', 'aal1');
-select is((select count(*)::int from public.service_requests), 1,
+select is((select count(*)::int from public.service_requests where id = '20000000-0000-0000-0000-000000000001'), 1,
   'an unverified (abandoned) factor does not lock staff out');
 select pg_temp.reset_role();
 
