@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
-import {bulkReasonMessage, bulkUpdate} from '@/lib/admin/actions/requests';
+import {bulkUpdate} from '@/lib/admin/actions/requests';
+import {bulkReasonMessage} from '@/lib/admin/status-errors';
 import {BulkSubmit} from '@/components/admin/BulkSubmit';
 import {SelectAll} from '@/components/admin/SelectAll';
 import {StatusBadge} from '@/components/admin/StatusBadge';

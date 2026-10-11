@@ -6,6 +6,7 @@ import {z} from 'zod';
 
 import {requireStaff} from '../auth';
 import {t} from '../i18n';
+import {STATUS_ERRORS, type StatusError} from '../status-errors';
 import {listPackages} from '../catalogue';
 import {findClientMatches} from '../queries/clients';
 import {CHANNELS, DESTINATION_COUNTRIES, MANUAL_SOURCES, normalizeCountry, normalizePhone, ORIGIN_COUNTRIES, SERVICE_TYPES} from '../vocab';
@@ -28,15 +29,6 @@ function revalidate(id?: string) {
 // ---------------------------------------------------------------------------
 // Status & assignment (detail page and bulk)
 // ---------------------------------------------------------------------------
-
-type StatusError = 'invalid' | 'reopen' | 'failed' | 'conflict';
-const STATUS_ERRORS: Record<StatusError, () => string> = {
-  invalid: () => t('admin.requests.status.invalid'),
-  reopen: () => t('admin.requests.status.reopen-needs-reason'),
-  failed: FAILED,
-  conflict: CONFLICT,
-};
-export const bulkReasonMessage = (code: string | undefined) => (code && code in STATUS_ERRORS ? STATUS_ERRORS[code as StatusError]() : FAILED());
 
 async function applyStatusChange(
   supabase: Awaited<ReturnType<typeof requireStaff>>['supabase'],
