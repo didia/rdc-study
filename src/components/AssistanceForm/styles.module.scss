@@ -3,6 +3,70 @@
   margin: 0 auto;
 }
 
+.progress {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.stage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid var(--ln, rgba(46, 49, 65, 0.14));
+  border-radius: 12px;
+  background: var(--cd, #fff);
+  color: var(--m, rgba(46, 49, 65, 0.7));
+}
+
+.stage--active {
+  border-color: _palette(accent);
+  color: _palette(accent);
+}
+
+.stage--completed {
+  border-color: rgba(31, 143, 95, 0.4);
+  color: #1f8f5f;
+}
+
+.stage__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(46, 49, 65, 0.1);
+  font-size: 13px;
+  font-weight: 700;
+
+  .stage--active & {
+    background: _palette(accent);
+    color: #fff;
+  }
+
+  .stage--completed & {
+    background: #1f8f5f;
+    color: #fff;
+  }
+}
+
+.stage__label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .progress {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .card {
   display: flex;
   position: relative;
@@ -190,13 +254,6 @@ select.input {
 .assistance-package ul {
   margin-top: -1em !important;
   margin-bottom: 1em;
-}
-
-@include breakpoint(small) {
-  .card-wrapper {
-    padding-top: _size(header-height, small);
-    margin-top: calc(-#{_size(header-height, small)} - 180px);
-  }
 }
 
 @include breakpoint(xsmall) {
