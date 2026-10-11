@@ -2,6 +2,7 @@ import 'server-only';
 
 import type {createSupabaseServerClient} from '../db/server';
 import type {Database} from '../db/types';
+import {zonedDayStart} from '../format';
 import {PAGE_SIZE, searchTerms, type ListParams} from '../list-params';
 
 type Supabase = Awaited<ReturnType<typeof createSupabaseServerClient>>;
@@ -63,12 +64,8 @@ async function applyFilters<T extends {or: any; eq: any; gte: any; lt: any; in: 
   if (params.assignee === 'none') q = q.is('assigned_to', null);
   else if (params.assignee === 'me') q = q.eq('assigned_to', userId);
   else if (params.assignee) q = q.eq('assigned_to', params.assignee);
-  if (params.from) q = q.gte('submitted_at', `${params.from}T00:00:00Z`);
-  if (params.to) {
-    const next = new Date(`${params.to}T00:00:00Z`);
-    next.setUTCDate(next.getUTCDate() + 1);
-    q = q.lt('submitted_at', next.toISOString());
-  }
+  if (params.from) q = q.gte('submitted_at', zonedDayStart(params.from).toISOString());
+  if (params.to) q = q.lt('submitted_at', zonedDayStart(params.to, 1).toISOString());
   return {query: q};
 }
 

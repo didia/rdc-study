@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(39);
+select plan(50);
 
 -- Fixtures -----------------------------------------------------------------
 insert into auth.users (id, instance_id, aud, role, email) values
@@ -25,6 +25,12 @@ values ('20000000-0000-0000-0000-000000000001', '10000000-0000-0000-0000-0000000
 create function pg_temp.act_as(uid uuid) returns void language plpgsql as $$
 begin
   perform set_config('request.jwt.claims', json_build_object('sub', uid, 'role', 'authenticated')::text, true);
+  set local role authenticated;
+end;
+$$;
+create function pg_temp.act_as_aal(uid uuid, aal text) returns void language plpgsql as $$
+begin
+  perform set_config('request.jwt.claims', json_build_object('sub', uid, 'role', 'authenticated', 'aal', aal)::text, true);
   set local role authenticated;
 end;
 $$;
@@ -152,6 +158,55 @@ select is(public.resolve_price('assistance', 'canada/admission'), 45000, 'admiss
 select is(public.resolve_price('assistance', 'belgique/equivalence'), 45000, 'équivalence uses the default price');
 insert into public.service_prices (service_type, scope, amount_cents) values ('assistance', 'pkg:canada/visa', 70000);
 select is(public.resolve_price('assistance', 'canada/visa'), 70000, 'a package override beats the kind price');
+
+-- second factor: a verified factor makes an aal1 (password-only) session useless -------------
+insert into auth.users (id, instance_id, aud, role, email) values
+  ('00000000-0000-0000-0000-0000000000b1', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'mfa-admin@test.local'),
+  ('00000000-0000-0000-0000-0000000000b2', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'half-enrolled@test.local');
+insert into public.staff_profiles (id, full_name, role, active) values
+  ('00000000-0000-0000-0000-0000000000b1', 'MFA Admin', 'admin', true),
+  ('00000000-0000-0000-0000-0000000000b2', 'Half Enrolled', 'agent', true);
+insert into auth.mfa_factors (id, user_id, factor_type, status, created_at, updated_at) values
+  ('30000000-0000-0000-0000-000000000001', '00000000-0000-0000-0000-0000000000b1', 'totp', 'verified', now(), now()),
+  ('30000000-0000-0000-0000-000000000002', '00000000-0000-0000-0000-0000000000b2', 'totp', 'unverified', now(), now());
+
+select pg_temp.act_as_aal('00000000-0000-0000-0000-0000000000b1', 'aal1');
+select is((select count(*)::int from public.service_requests), 0, 'aal1 session of an enrolled admin reads no requests');
+select is((select count(*)::int from public.clients), 0, 'aal1 session of an enrolled admin reads no clients');
+select is((select count(*)::int from public.staff_profiles), 1, 'aal1 session can still read its own profile (MFA challenge page)');
+select is(pg_temp.affected('update public.service_prices set amount_cents = amount_cents'), 0,
+  'aal1 session of an enrolled admin cannot update prices');
+select is((select public.staff_role())::text, null, 'staff_role() is null on an aal1 session with a verified factor');
+select pg_temp.reset_role();
+
+select pg_temp.act_as_aal('00000000-0000-0000-0000-0000000000b1', 'aal2');
+select is((select count(*)::int from public.service_requests where id = '20000000-0000-0000-0000-000000000001'), 1, 'aal2 session of an enrolled admin reads requests');
+select is(pg_temp.affected('update public.service_prices set amount_cents = amount_cents'),
+  (select count(*)::int from public.service_prices),
+  'aal2 session of an enrolled admin can update prices');
+select pg_temp.reset_role();
+
+select pg_temp.act_as_aal('00000000-0000-0000-0000-0000000000b2', 'aal1');
+select is((select count(*)::int from public.service_requests where id = '20000000-0000-0000-0000-000000000001'), 1,
+  'an unverified (abandoned) factor does not lock staff out');
+select pg_temp.reset_role();
+
+-- request references never truncate or collide --------------------------------------------
+create temp table seq_before as select last_value, is_called from public.request_ref_seq;
+select setval('public.request_ref_seq', 999);
+insert into public.service_requests (id, client_id, service_type, source)
+  values ('20000000-0000-0000-0000-000000000002', '10000000-0000-0000-0000-000000000001', 'assistance', 'manual');
+select setval('public.request_ref_seq', 9999);
+insert into public.service_requests (id, client_id, service_type, source)
+  values ('20000000-0000-0000-0000-000000000003', '10000000-0000-0000-0000-000000000001', 'assistance', 'manual');
+select matches((select reference from public.service_requests where id = '20000000-0000-0000-0000-000000000002'), '^RDC-[0-9]{4}-1000$',
+  'sequence 1000 formats as 4 digits');
+select matches((select reference from public.service_requests where id = '20000000-0000-0000-0000-000000000003'), '^RDC-[0-9]{4}-10000$',
+  'sequence 10000 keeps all 5 digits');
+select is((select count(distinct reference)::int from public.service_requests
+            where id in ('20000000-0000-0000-0000-000000000002', '20000000-0000-0000-0000-000000000003')), 2,
+  'references around the 9999/10000 boundary are distinct');
+select setval('public.request_ref_seq', (select last_value from seq_before), (select is_called from seq_before));
 
 select * from finish();
 rollback;

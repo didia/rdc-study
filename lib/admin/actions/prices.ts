@@ -1,6 +1,6 @@
 'use server';
 
-import {revalidatePath, revalidateTag} from 'next/cache';
+import {revalidatePath, updateTag} from 'next/cache';
 import {z} from 'zod';
 
 import {PRICES_TAG} from '../../prices';
@@ -17,7 +17,7 @@ const schema = z.object({
 });
 
 function refreshPublicPrices() {
-  revalidateTag(PRICES_TAG);
+  updateTag(PRICES_TAG);
   for (const path of ['/', '/nos-services', '/assistance-process', '/admin/tarifs']) revalidatePath(path);
 }
 

@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
 import {bulkUpdate} from '@/lib/admin/actions/requests';
+import {bulkReasonMessage} from '@/lib/admin/status-errors';
+import {BulkSubmit} from '@/components/admin/BulkSubmit';
 import {SelectAll} from '@/components/admin/SelectAll';
 import {StatusBadge} from '@/components/admin/StatusBadge';
 import styles from '@/components/admin/admin.module.scss';
@@ -15,7 +17,10 @@ import {packageLabel} from '@/lib/admin/catalogue';
 
 export default async function RequestsPage({searchParams}: {searchParams: Promise<Record<string, string | string[] | undefined>>}) {
   const {supabase, user, profile} = await requireStaff();
-  const params = parseListParams(await searchParams);
+  const rawParams = await searchParams;
+  const params = parseListParams(rawParams);
+  const bulkFailed = Number(Array.isArray(rawParams.bulkFailed) ? rawParams.bulkFailed[0] : rawParams.bulkFailed) || 0;
+  const bulkReason = Array.isArray(rawParams.bulkReason) ? rawParams.bulkReason[0] : rawParams.bulkReason;
   const editable = canEdit(profile.role);
 
   const [statuses, staff, list, counts] = await Promise.all([
@@ -89,25 +94,32 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
         </div>
       </form>
 
+      {bulkFailed > 0 && (
+        <div className={styles.alertError} role="alert">
+          {t('admin.requests.bulk.failed', {count: bulkFailed, reason: bulkReasonMessage(bulkReason)})}
+        </div>
+      )}
+
       <form action={bulkUpdate}>
         <input type="hidden" name="back" value={currentUrl} />
         {editable && (
           <div className={styles.bulkBar}>
             <strong>{t('admin.requests.bulk')}</strong>
             <select name="assignee" className={styles.select} aria-label={t('admin.requests.assignee')} defaultValue="">
-              <option value="">{t('admin.requests.unassigned')}</option>
+              <option value="" disabled>{t('admin.requests.bulk.choose-assignee')}</option>
               {staff.map((s) => (
                 <option key={s.id} value={s.id}>{s.full_name}</option>
               ))}
             </select>
-            <button type="submit" name="bulk" value="assign" className={styles.buttonSecondary}>{t('admin.requests.assign')}</button>
+            <BulkSubmit value="assign">{t('admin.requests.assign')}</BulkSubmit>
+            <BulkSubmit value="unassign">{t('admin.requests.bulk.unassign')}</BulkSubmit>
             <select name="status" className={styles.select} aria-label={t('admin.requests.status.label')} defaultValue="contacted">
               {statuses.map((s) => (
                 <option key={s.code} value={s.code}>{s.label_fr}</option>
               ))}
             </select>
             <input name="reason" className={styles.input} placeholder={t('admin.requests.status.reason')} />
-            <button type="submit" name="bulk" value="status" className={styles.buttonSecondary}>{t('admin.requests.status.submit')}</button>
+            <BulkSubmit value="status">{t('admin.requests.status.submit')}</BulkSubmit>
           </div>
         )}
 
@@ -129,7 +141,7 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
             <tbody>
               {list.rows.length === 0 && (
                 <tr>
-                  <td colSpan={9} className={styles.muted}>{t('admin.requests.empty')}</td>
+                  <td colSpan={editable ? 9 : 8} className={styles.muted}>{t('admin.requests.empty')}</td>
                 </tr>
               )}
               {list.rows.map((r) => (
