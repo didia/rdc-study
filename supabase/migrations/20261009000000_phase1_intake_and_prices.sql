@@ -59,6 +59,10 @@ begin
   if coalesce(trim(p_reason), '') = '' then
     raise exception 'A reason is required' using errcode = 'P0001';
   end if;
+  -- Without it every visa package would silently fall back to the default price.
+  if p_service_type = 'assistance' and p_scope = 'kind:visa' then
+    raise exception 'The visa price cannot be removed' using errcode = 'P0001';
+  end if;
   perform set_config('app.price_reason', trim(p_reason), true);
   delete from public.service_prices where service_type = p_service_type and scope = p_scope;
 end;
@@ -109,7 +113,7 @@ $$;
 
 create function public.submit_service_request(payload jsonb)
 returns jsonb
-language plpgsql security definer set search_path = public, extensions as $$
+language plpgsql security definer set search_path = '' as $$
 declare
   v_key        text := nullif(payload->>'idempotencyKey', '');
   v_email      text := lower(nullif(trim(payload->>'email'), ''));
@@ -142,10 +146,16 @@ begin
     nullif(left(payload->>'originCountry', 80), '')
   )
   on conflict (email) where email is not null do update
-    set phone          = coalesce(excluded.phone, public.clients.phone),
-        phone_e164     = case when excluded.phone is not null then excluded.phone_e164 else public.clients.phone_e164 end,
+    -- A public form must not change a number staff already hold (it drives the WhatsApp link): fill gaps only.
+    -- The number typed in this submission stays in form_answers.submitted_phone.
+    set phone          = coalesce(public.clients.phone, excluded.phone),
+        phone_e164     = case when public.clients.phone is null then excluded.phone_e164 else public.clients.phone_e164 end,
         origin_country = coalesce(public.clients.origin_country, excluded.origin_country)
   returning id into v_client_id;
+
+  if nullif(trim(payload->>'phone'), '') is not null then
+    v_answers := v_answers || jsonb_build_object('submitted_phone', left(trim(payload->>'phone'), 40));
+  end if;
 
   v_quoted := public.resolve_price(v_service, v_package);
   if v_quoted is null then

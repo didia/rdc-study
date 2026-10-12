@@ -59,7 +59,7 @@ export async function removePriceException(_prev: FormState, formData: FormData)
     scope: formData.get('scope'),
     reason: formData.get('reason'),
   });
-  if (!parsed.success || parsed.data.scope === '*') return {error: t('admin.prices.invalid')};
+  if (!parsed.success || parsed.data.scope === '*' || parsed.data.scope === 'kind:visa') return {error: t('admin.prices.invalid')};
 
   const {error} = await supabase.rpc('remove_service_price', {
     p_service_type: parsed.data.serviceType,
