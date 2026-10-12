@@ -132,6 +132,7 @@ const IndexPage = ({countryCount, destinations, scholarships, services}) => {
               title={service.title}
               text={service.excerpt}
               price={service.price}
+              priceFrom={service.priceFrom}
               image={SERVICE_IMAGES[service.slug]}
               href={getServiceHref(service)}
             />

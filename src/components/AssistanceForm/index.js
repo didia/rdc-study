@@ -28,7 +28,7 @@ const FLOW_STAGES = [
   {label: 'Validation', steps: [Steps.AccompagnementTerms, Steps.FormSubmitted]}
 ];
 
-const MasterForm = ({assistancePackages, services, guideSlugs, fromGuide, service}) => {
+const MasterForm = ({assistancePackages, services, guideSlugs, fromGuide, service, prices}) => {
   const currentStepRef = useRef(null);
 
   const currentStep = useAssistanceFormStore((s) => s.currentStep);
@@ -41,8 +41,8 @@ const MasterForm = ({assistancePackages, services, guideSlugs, fromGuide, servic
   const previousStep = getPreviousStep();
 
   useEffect(() => {
-    initialize({fromGuide, assistancePackages, services, guideSlugs});
-  }, [fromGuide, assistancePackages, services, guideSlugs, initialize]);
+    initialize({fromGuide, assistancePackages, services, guideSlugs, prices});
+  }, [fromGuide, assistancePackages, services, guideSlugs, prices, initialize]);
 
   const scrollIntoViewIfNecessary = () => {
     if (!isScrolledIntoView(currentStepRef.current)) {
@@ -103,7 +103,8 @@ MasterForm.propTypes = {
   services: T.array,
   guideSlugs: T.array,
   fromGuide: T.string,
-  service: T.string
+  service: T.string,
+  prices: T.array
 };
 
 export default MasterForm;

@@ -18,6 +18,7 @@ const FormSubmittedStep = () => {
   const aboutCandidate = useAssistanceFormStore((s) => s.aboutCandidate);
   const getAssistancePackage = useAssistanceFormStore((s) => s.getAssistancePackage);
   const assistanceType = useAssistanceFormStore((s) => s.service);
+  const requestReference = useAssistanceFormStore((s) => s.requestReference);
   const assistancePackage = getAssistancePackage();
 
   const name = `${aboutCandidate.firstName} ${aboutCandidate.lastName}`;
@@ -46,6 +47,12 @@ const FormSubmittedStep = () => {
       <p className={styles['form-submitted-paragraph']}>
         {intl.formatMessage({id: 'assistance-form.steps.form-submitted.message'})}
       </p>
+
+      {requestReference && (
+        <p className={styles['form-submitted-paragraph']}>
+          {intl.formatMessage({id: 'assistance-form.steps.form-submitted.reference'}, {reference: requestReference})}
+        </p>
+      )}
 
       <div className={styles['centralized-button-wrapper']}>
         <a

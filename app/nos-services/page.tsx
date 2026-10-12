@@ -15,6 +15,7 @@ export default async function NosServicesPage() {
     slug: s.slug,
     title: s.title,
     price: s.price,
+    priceFrom: s.priceFrom,
     excerpt: s.excerpt,
     assistanceRequestLink: s.assistanceRequestLink,
   }));

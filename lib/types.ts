@@ -63,7 +63,10 @@ export type Service = {
   content: string;
   slug: string;
   title: string;
-  price: number;
+  /** Lowest price in USD, overlaid from the editable prices (see lib/prices.ts); undefined when unknown. */
+  price?: number;
+  /** True when the service has several prices (shown as "À partir de"). */
+  priceFrom?: boolean;
   excerpt: string;
   rank?: number;
   assistanceFormServiceChoiceLabel: string;

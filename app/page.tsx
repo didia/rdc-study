@@ -56,6 +56,7 @@ export default async function Home() {
       slug: s.slug,
       title: s.title,
       price: s.price,
+      priceFrom: s.priceFrom,
       excerpt: s.excerpt,
       assistanceRequestLink: s.assistanceRequestLink,
     }));
