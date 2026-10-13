@@ -29,6 +29,7 @@ describe('csv', () => {
     expect(csvCell('+1234')).toBe("'+1234");
     expect(csvCell('-5')).toBe("'-5");
     expect(csvCell('@cmd')).toBe("'@cmd");
+    expect(csvCell(' =1+1')).toBe("' =1+1");
   });
   it('starts with a BOM and uses CRLF', () => {
     expect(toCsv(['a', 'b'], [[1, 2]])).toBe('﻿a,b\r\n1,2\r\n');

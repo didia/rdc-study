@@ -38,6 +38,12 @@ function inAdminZone(iso: string): Date {
   return new Date(wall.getUTCFullYear(), wall.getUTCMonth(), wall.getUTCDate(), wall.getUTCHours(), wall.getUTCMinutes(), wall.getUTCSeconds());
 }
 
+/** The office's calendar day (yyyy-mm-dd) of an instant — what a date picker should show. */
+export function adminDay(iso: string): string {
+  const instant = new Date(iso).getTime();
+  return new Date(instant + zoneOffset(instant, ADMIN_TIMEZONE)).toISOString().slice(0, 10);
+}
+
 export const formatDate = (iso: string | null | undefined) =>
   iso ? format(inAdminZone(iso), 'd MMM yyyy', {locale: fr}) : '—';
 

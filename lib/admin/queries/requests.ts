@@ -76,6 +76,7 @@ export async function listRequests(supabase: Supabase, params: ListParams, userI
   const {data, count, error} = await query
     .order(params.sort, {ascending: params.dir === 'asc'})
     .order('created_at', {ascending: false})
+    .order('id')
     .range(from, from + pageSize - 1);
   return {rows: (data ?? []) as RequestListItem[], total: count ?? 0, error};
 }

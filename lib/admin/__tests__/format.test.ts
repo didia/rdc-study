@@ -1,6 +1,6 @@
 import {describe, expect, it} from 'vitest';
 
-import {formatDate, zonedDayStart} from '../format';
+import {adminDay, formatDate, zonedDayStart} from '../format';
 
 describe('zonedDayStart', () => {
   it('starts the day at local midnight of the given zone', () => {
@@ -18,5 +18,12 @@ describe('formatDate', () => {
   it('reads the instant in the office zone', () => {
     // 23:30 UTC is already the next day in Kinshasa (UTC+1).
     expect(formatDate('2026-03-09T23:30:00Z')).toContain('10');
+  });
+});
+
+describe('adminDay', () => {
+  it('gives the office calendar day, not the UTC one', () => {
+    expect(adminDay('2026-03-09T23:30:00Z')).toBe('2026-03-10');
+    expect(adminDay('2026-03-10T08:00:00Z')).toBe('2026-03-10');
   });
 });

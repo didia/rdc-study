@@ -642,6 +642,7 @@
   "admin.today.last-activity": "Dernière activité {when}",
   "admin.today.done-button": "Fait",
   "admin.today.done": "Relance enregistrée.",
+  "admin.today.done-not-logged": "Le rappel a été déplacé, mais le contact n’a pas pu être enregistré. Ajoutez une note sur la demande.",
   "admin.today.done-note": "Relance effectuée",
   "admin.today.snoozed": "Relance reportée.",
   "admin.today.snoozed-note": "Relance reportée au {date}",

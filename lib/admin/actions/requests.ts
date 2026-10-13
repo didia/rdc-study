@@ -38,6 +38,9 @@ type StatusChangeOptions = {
   expectedUpdatedAt: string | null;
 };
 
+// 'auto' | 'none' | a snooze of 1–90 days.
+const validFollowUp = (choice: string) => choice === 'auto' || choice === 'none' || (/^\d{1,2}$/.test(choice) && Number(choice) >= 1 && Number(choice) <= 90);
+
 async function applyStatusChange(
   supabase: Awaited<ReturnType<typeof requireStaff>>['supabase'],
   id: string,
@@ -55,7 +58,13 @@ async function applyStatusChange(
   if (stageOf(current.status) === 'lost' && toStage !== 'lost' && !reason) {
     return 'reopen';
   }
-  if (toStage === 'lost' && !lostReason) return 'lost-reason';
+  if (toStage === 'lost') {
+    // The database enforces a reason too; this also refuses a deactivated one with a readable message.
+    if (!lostReason) return 'lost-reason';
+    const {data: reason} = await supabase.from('lost_reasons').select('code').eq('code', lostReason).eq('is_active', true).maybeSingle();
+    if (!reason) return 'lost-reason';
+  }
+  if (!validFollowUp(followUp)) return 'invalid';
 
   const patch: any = {status: toStatus, status_reason: reason};
   if (toStage === 'lost') patch.lost_reason = lostReason;
@@ -65,7 +74,7 @@ async function applyStatusChange(
   let query = supabase.from('service_requests').update(patch).eq('id', id);
   if (expectedUpdatedAt) query = query.eq('updated_at', expectedUpdatedAt);
   const {data, error} = await query.select('id');
-  if (error) return error.code === '23503' ? 'lost-reason' : 'failed';
+  if (error) return error.code === '23503' || error.code === '23514' ? 'lost-reason' : 'failed';
   if (!data?.length) return 'conflict';
   return null;
 }

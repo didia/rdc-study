@@ -4,6 +4,7 @@ import {useActionState, useEffect, useRef, useState} from 'react';
 
 import {addNote, assignRequest, changeStatus, toggleDispute, updateRequestDetails} from '@/lib/admin/actions/requests';
 import {setFollowUpDate} from '@/lib/admin/actions/followup';
+import {adminDay} from '@/lib/admin/format';
 import {t} from '@/lib/admin/i18n';
 import {CHANNELS, DESTINATION_COUNTRIES, ORIGIN_COUNTRIES, SERVICE_TYPES} from '@/lib/admin/vocab';
 import type {StatusRow} from '@/lib/admin/queries/requests';
@@ -77,7 +78,7 @@ export function StatusChangeForm({
 
 export function FollowUpForm({id, value}: {id: string; value: string | null}) {
   const [state, action, pending] = useActionState(setFollowUpDate, undefined);
-  const date = value ? value.slice(0, 10) : '';
+  const date = value ? adminDay(value) : '';
   return (
     <form action={action} className={styles.form} key={date}>
       <input type="hidden" name="id" value={id} />

@@ -123,7 +123,7 @@ select lives_ok($$update public.staff_profiles set full_name = 'Renamed Agent' w
 select pg_temp.reset_role();
 
 -- request lifecycle fields -------------------------------------------------------
-update public.service_requests set status = 'lost_no_response' where id = '20000000-0000-0000-0000-000000000001';
+update public.service_requests set status = 'lost_no_response', lost_reason = 'no_response' where id = '20000000-0000-0000-0000-000000000001';
 select isnt((select closed_at from public.service_requests where id = '20000000-0000-0000-0000-000000000001'), null,
   'closed_at is set when entering a lost status');
 update public.service_requests set status = 'contacted' where id = '20000000-0000-0000-0000-000000000001';
