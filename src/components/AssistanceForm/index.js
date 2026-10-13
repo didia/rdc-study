@@ -2,6 +2,7 @@
 
 // Vendor
 import React, {useRef, useEffect} from 'react';
+import classnames from 'classnames';
 import T from 'prop-types';
 
 // Components
@@ -16,6 +17,16 @@ import Steps, {getStepComponent, goToNextStep, goToPreviousStep, goToStep} from 
 
 // Utils
 import isScrolledIntoView from '../../utils/is-scrolled-into-view';
+
+const FLOW_STAGES = [
+  {
+    label: 'Projet',
+    steps: [Steps.DestinationCountry, Steps.BelgiumEquivalenceCheck, Steps.CanadaCAQCheck, Steps.AssistanceLevelCheck]
+  },
+  {label: 'Profil', steps: [Steps.AboutCandidate]},
+  {label: 'Service', steps: [Steps.SubmitForm]},
+  {label: 'Validation', steps: [Steps.AccompagnementTerms, Steps.FormSubmitted]}
+];
 
 const MasterForm = ({assistancePackages, services, guideSlugs, fromGuide, service, prices}) => {
   const currentStepRef = useRef(null);
@@ -57,9 +68,29 @@ const MasterForm = ({assistancePackages, services, guideSlugs, fromGuide, servic
   };
 
   const CurrentStepComponent = getStepComponent(currentStep);
+  const isSubmitted = currentStep === Steps.FormSubmitted;
+  const activeStageIndex = isSubmitted
+    ? FLOW_STAGES.length
+    : FLOW_STAGES.findIndex((stage) => stage.steps.includes(currentStep));
 
   return (
     <div ref={currentStepRef} className={styles['card-wrapper']}>
+      <ol className={styles.progress} aria-label="Progression du formulaire">
+        {FLOW_STAGES.map((stage, index) => (
+          <li
+            key={stage.label}
+            className={classnames(
+              styles.stage,
+              index === activeStageIndex ? styles['stage--active'] : null,
+              index < activeStageIndex ? styles['stage--completed'] : null
+            )}
+            aria-current={index === activeStageIndex ? 'step' : undefined}
+          >
+            <span className={styles.stage__number}>{index < activeStageIndex ? '✓' : index + 1}</span>
+            <span className={styles.stage__label}>{stage.label}</span>
+          </li>
+        ))}
+      </ol>
       <Card className={styles.card}>
         <CurrentStepComponent onNextStep={onNextStep} onPreviousStep={onPreviousStep} onRestart={onRestart} />
       </Card>

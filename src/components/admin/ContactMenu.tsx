@@ -28,7 +28,7 @@ export function ContactMenu({requestId, clientName, email, phone, phoneE164, var
   const [override, setOverride] = useState<{id: string; text: string} | null>(null);
   const message = override && override.id === templateId ? override.text : rendered;
   const [mark, setMark] = useState(true);
-  const [status, setStatus] = useState<string>();
+  const [status, setStatus] = useState<{error: boolean; text: string}>();
 
   if (templates.length === 0) return <p className={styles.muted}>{t('admin.contact.no-templates')}</p>;
 
@@ -42,7 +42,7 @@ export function ContactMenu({requestId, clientName, email, phone, phoneE164, var
   async function onOpen() {
     if (!mark) return;
     const result = await logContact({id: requestId, channel: isEmail ? 'email' : 'whatsapp', note: template?.label});
-    setStatus(result?.error ?? t('admin.requests.note.added'));
+    setStatus(result?.error ? {error: true, text: result.error} : {error: false, text: t('admin.requests.note.added')});
   }
 
   return (
@@ -88,7 +88,7 @@ export function ContactMenu({requestId, clientName, email, phone, phoneE164, var
           {isEmail ? t('admin.contact.no-email') : phone ? t('admin.clients.phone-not-international') : t('admin.contact.add-phone')}
         </p>
       )}
-      {status && <p className={styles.alertSuccess} role="status">{status}</p>}
+      {status && <p className={status.error ? styles.alertError : styles.alertSuccess} role={status.error ? 'alert' : 'status'}>{status.text}</p>}
     </div>
   );
 }
