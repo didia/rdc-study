@@ -3,6 +3,8 @@
 -- Delivery statuses become visible (Phase 3 gives them a purpose); `completed` closes a request.
 update public.request_statuses set is_active = true where code in ('paid', 'in_progress', 'completed');
 
+-- Same function as Phase 2A (lost-reason guards included); the only change is that `completed` also
+-- closes a request. Keep the two in step: this replaces the whole body.
 create or replace function public.service_requests_before_write() returns trigger
 language plpgsql set search_path = '' as $$
 declare
@@ -19,14 +21,22 @@ begin
     status_changed := new.status is distinct from old.status;
   end if;
 
+  if tg_op = 'UPDATE' then
+    if new.lost_reason is not null and new.lost_reason is distinct from old.lost_reason
+       and not exists (select 1 from public.lost_reasons where code = new.lost_reason and is_active) then
+      raise exception 'inactive lost reason' using errcode = 'check_violation';
+    end if;
+  end if;
+
   if status_changed then
     select stage into new_stage from public.request_statuses where code = new.status;
-    if new_stage = 'lost' or new.status = 'completed' then
+    if new_stage = 'lost' then
+      if tg_op = 'UPDATE' and new.lost_reason is null then
+        raise exception 'a lost status requires a lost reason' using errcode = 'check_violation';
+      end if;
       new.closed_at = coalesce(new.closed_at, now());
     else
-      new.closed_at = null;
-    end if;
-    if new_stage <> 'lost' then
+      new.closed_at = case when new.status = 'completed' then coalesce(new.closed_at, now()) else null end;
       new.lost_reason = null;
     end if;
   end if;
