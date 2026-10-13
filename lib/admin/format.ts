@@ -44,8 +44,14 @@ export function adminDay(iso: string): string {
   return new Date(instant + zoneOffset(instant, ADMIN_TIMEZONE)).toISOString().slice(0, 10);
 }
 
-export const formatDate = (iso: string | null | undefined) =>
-  iso ? format(inAdminZone(iso), 'd MMM yyyy', {locale: fr}) : '—';
+// A bare yyyy-mm-dd is a calendar day, not an instant: show it as written, never shifted by a timezone.
+const BARE_DAY = /^(\d{4})-(\d{2})-(\d{2})$/;
+
+export const formatDate = (iso: string | null | undefined) => {
+  if (!iso) return '—';
+  const day = BARE_DAY.exec(iso);
+  return format(day ? new Date(Number(day[1]), Number(day[2]) - 1, Number(day[3])) : inAdminZone(iso), 'd MMM yyyy', {locale: fr});
+};
 
 export const formatDateTime = (iso: string | null | undefined) =>
   iso ? format(inAdminZone(iso), "d MMM yyyy 'à' HH:mm", {locale: fr}) : '—';

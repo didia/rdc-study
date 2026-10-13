@@ -18,6 +18,7 @@ export default async function ClientsPage({searchParams}: {searchParams: Promise
     <>
       <div className={styles.pageHeader}>
         <h1>{t('admin.clients.title')}</h1>
+        <Link href="/admin/clients/doublons">{t('admin.clients.duplicates')} →</Link>
       </div>
       <form method="get" className={styles.filters}>
         <div className={styles.field}>

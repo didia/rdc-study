@@ -2,7 +2,7 @@
 
 import {useActionState} from 'react';
 
-import {saveLostReason, saveTemplate} from '@/lib/admin/actions/settings';
+import {saveLostReason, saveTemplate, setRoundRobin} from '@/lib/admin/actions/settings';
 import {t} from '@/lib/admin/i18n';
 import styles from './admin.module.scss';
 import {Feedback} from './Feedback';
@@ -64,6 +64,22 @@ export function TemplateForm({template}: {template?: Template}) {
       <label className={styles.checkLine}>
         <input type="checkbox" name="active" defaultChecked={template?.is_active ?? true} /> {t('admin.settings.active')}
       </label>
+      <Feedback state={state} />
+      <div>
+        <button type="submit" className={styles.button} disabled={pending}>{t('admin.requests.save')}</button>
+      </div>
+    </form>
+  );
+}
+
+export function RoundRobinForm({enabled}: {enabled: boolean}) {
+  const [state, action, pending] = useActionState(setRoundRobin, undefined);
+  return (
+    <form action={action} className={styles.form}>
+      <label className={styles.checkLine}>
+        <input type="checkbox" name="enabled" defaultChecked={enabled} /> {t('admin.settings.round-robin')}
+      </label>
+      <p className={styles.hint}>{t('admin.settings.round-robin-hint')}</p>
       <Feedback state={state} />
       <div>
         <button type="submit" className={styles.button} disabled={pending}>{t('admin.requests.save')}</button>

@@ -12,6 +12,7 @@ import {NavLink} from './NavLink';
 const NAV: {href: string; label: string; adminOnly?: boolean; external?: boolean; hideForMentor?: boolean; badge?: boolean}[] = [
   {href: '/admin', label: 'admin.nav.today', hideForMentor: true, badge: true},
   {href: '/admin/demandes', label: 'admin.nav.requests', hideForMentor: true},
+  {href: '/admin/tableau-de-bord', label: 'admin.nav.dashboard', hideForMentor: true},
   {href: '/admin/clients', label: 'admin.nav.clients', hideForMentor: true},
   {href: '/admin/tarifs', label: 'admin.nav.prices'},
   {href: '/cms', label: 'admin.nav.content', external: true},

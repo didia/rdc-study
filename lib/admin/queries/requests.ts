@@ -81,14 +81,22 @@ export async function listRequests(supabase: Supabase, params: ListParams, userI
   return {rows: (data ?? []) as RequestListItem[], total: count ?? 0, error};
 }
 
-/** Counts per status for the current filters (status filter excluded) — the replacement for the spreadsheet tabs. */
-export async function statusCounts(supabase: Supabase, params: ListParams, userId: string) {
-  let query: any = supabase.from('service_requests').select('status, client:clients!inner(origin_country)');
+/**
+ * Per status, for the current filters (status filter excluded): how many requests, and when the least
+ * recently active one was last touched. Counts are the replacement for the spreadsheet tabs; the board
+ * uses both so its column headers describe every matching request, not just the loaded page.
+ */
+export async function statusSummary(supabase: Supabase, params: ListParams, userId: string) {
+  let query: any = supabase.from('service_requests').select('status, last_activity_at, client:clients!inner(origin_country)');
   query = (await applyFilters(supabase, query, params, userId, {withStatus: false})).query;
   const {data} = await query.limit(10000);
   const counts: Record<string, number> = {};
-  for (const row of (data ?? []) as {status: string}[]) counts[row.status] = (counts[row.status] ?? 0) + 1;
-  return counts;
+  const oldest: Record<string, string> = {};
+  for (const row of (data ?? []) as {status: string; last_activity_at: string}[]) {
+    counts[row.status] = (counts[row.status] ?? 0) + 1;
+    if (!oldest[row.status] || row.last_activity_at < oldest[row.status]) oldest[row.status] = row.last_activity_at;
+  }
+  return {counts, oldest};
 }
 
 export async function getRequest(supabase: Supabase, id: string) {
@@ -126,4 +134,12 @@ export async function listStaff(supabase: Supabase, activeOnly = true) {
   if (activeOnly) query = query.eq('active', true);
   const {data} = await query;
   return data ?? [];
+}
+
+/** Open requests per assignee (workload), keyed by staff id; '' = unassigned. */
+export async function openLoadByAssignee(supabase: Supabase, openCodes: string[]) {
+  const {data} = await supabase.from('service_requests').select('assigned_to').in('status', openCodes).limit(10000);
+  const load: Record<string, number> = {};
+  for (const row of data ?? []) load[row.assigned_to ?? ''] = (load[row.assigned_to ?? ''] ?? 0) + 1;
+  return load;
 }

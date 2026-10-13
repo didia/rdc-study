@@ -904,3 +904,134 @@
   background: #eef2ff;
   border-radius: 999px;
 }
+
+// --- Dashboard --------------------------------------------------------------------
+
+.funnel {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.funnelLabel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.barTrack {
+  height: 14px;
+  background: #eef0f4;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  min-width: 2px;
+  background: var(--blue);
+  border-radius: 7px;
+}
+
+.subhead {
+  margin: 12px 0 6px;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.countList {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+}
+
+.columns {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 180px;
+  padding-top: 18px;
+  overflow-x: auto;
+}
+
+.column {
+  display: flex;
+  flex: 1 0 34px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 4px;
+  color: var(--muted);
+}
+
+.columnValue {
+  color: var(--ink);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.columnBar {
+  width: 100%;
+  min-height: 2px;
+  background: var(--blue);
+  border-radius: 4px 4px 0 0;
+}
+
+// --- Board ----------------------------------------------------------------------------
+
+.board {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding-bottom: 12px;
+  overflow-x: auto;
+}
+
+.boardColumn {
+  display: grid;
+  flex: 0 0 240px;
+  gap: 8px;
+  min-height: 120px;
+  padding: 8px;
+  background: #eceef2;
+  border-radius: 10px;
+}
+
+.boardHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px 8px;
+  border-top: 3px solid;
+}
+
+.boardCard {
+  display: grid;
+  gap: 2px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: grab;
+
+  .select.select {
+    min-height: 32px;
+    margin-top: 6px;
+    padding: 2px 28px 2px 8px;
+    font-size: 0.8125rem;
+  }
+}
