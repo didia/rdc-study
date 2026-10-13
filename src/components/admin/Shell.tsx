@@ -9,15 +9,18 @@ import {NavLink} from './NavLink';
 
 // Mentors have no read access to requests/clients (RLS) until Phase 3, so those links are hidden for them.
 // Items are added here as each console section ships.
-const NAV: {href: string; label: string; adminOnly?: boolean; external?: boolean; hideForMentor?: boolean}[] = [
+const NAV: {href: string; label: string; adminOnly?: boolean; external?: boolean; hideForMentor?: boolean; badge?: boolean}[] = [
+  {href: '/admin', label: 'admin.nav.today', hideForMentor: true, badge: true},
   {href: '/admin/demandes', label: 'admin.nav.requests', hideForMentor: true},
   {href: '/admin/clients', label: 'admin.nav.clients', hideForMentor: true},
   {href: '/admin/tarifs', label: 'admin.nav.prices'},
   {href: '/cms', label: 'admin.nav.content', external: true},
+  {href: '/admin/modeles', label: 'admin.nav.templates', adminOnly: true},
+  {href: '/admin/parametres', label: 'admin.nav.settings', adminOnly: true},
   {href: '/admin/equipe', label: 'admin.nav.team', adminOnly: true},
 ];
 
-export function Shell({profile, children}: {profile: StaffProfile; children: React.ReactNode}) {
+export function Shell({profile, overdue = 0, children}: {profile: StaffProfile; overdue?: number; children: React.ReactNode}) {
   const items = NAV.filter((item) => (!item.adminOnly || isAdmin(profile.role)) && !(item.hideForMentor && profile.role === 'mentor'));
   return (
     <div className={styles.shell}>
@@ -30,7 +33,7 @@ export function Shell({profile, children}: {profile: StaffProfile; children: Rea
                 {t(item.label)}
               </a>
             ) : (
-              <NavLink key={item.href} href={item.href} label={t(item.label)} />
+              <NavLink key={item.href} href={item.href} label={t(item.label)} badge={item.badge ? overdue : 0} />
             ),
           )}
         </nav>

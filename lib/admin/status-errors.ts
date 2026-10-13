@@ -1,10 +1,11 @@
 import {t} from './i18n';
 
-export type StatusError = 'invalid' | 'reopen' | 'failed' | 'conflict';
+export type StatusError = 'invalid' | 'reopen' | 'lost-reason' | 'failed' | 'conflict';
 
 export const STATUS_ERRORS: Record<StatusError, () => string> = {
   invalid: () => t('admin.requests.status.invalid'),
   reopen: () => t('admin.requests.status.reopen-needs-reason'),
+  'lost-reason': () => t('admin.requests.status.lost-needs-reason'),
   failed: () => t('admin.requests.failed'),
   conflict: () => t('admin.requests.conflict'),
 };

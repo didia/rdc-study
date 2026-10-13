@@ -130,6 +130,111 @@ export type Database = {
           },
         ]
       }
+      lost_reasons: {
+        Row: {
+          code: string
+          is_active: boolean
+          label_fr: string
+          sort_order: number
+        }
+        Insert: {
+          code: string
+          is_active?: boolean
+          label_fr: string
+          sort_order: number
+        }
+        Update: {
+          code?: string
+          is_active?: boolean
+          label_fr?: string
+          sort_order?: number
+        }
+        Relationships: []
+      }
+      message_templates: {
+        Row: {
+          body_fr: string
+          channel: string
+          code: string
+          id: string
+          is_active: boolean
+          label: string
+          sort_order: number
+          updated_at: string
+        }
+        Insert: {
+          body_fr: string
+          channel: string
+          code: string
+          id?: string
+          is_active?: boolean
+          label: string
+          sort_order?: number
+          updated_at?: string
+        }
+        Update: {
+          body_fr?: string
+          channel?: string
+          code?: string
+          id?: string
+          is_active?: boolean
+          label?: string
+          sort_order?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      saved_views: {
+        Row: {
+          created_at: string
+          id: string
+          name: string
+          owner_id: string
+          params: Json
+          shared: boolean
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          name: string
+          owner_id: string
+          params: Json
+          shared?: boolean
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          name?: string
+          owner_id?: string
+          params?: Json
+          shared?: boolean
+        }
+        Relationships: []
+      }
+      audit_events: {
+        Row: {
+          actor_id: string | null
+          created_at: string
+          id: number
+          metadata: Json
+          type: string
+        }
+        Insert: {
+          actor_id?: string | null
+          created_at?: string
+          id?: number
+          metadata?: Json
+          type: string
+        }
+        Update: {
+          actor_id?: string | null
+          created_at?: string
+          id?: number
+          metadata?: Json
+          type?: string
+        }
+        Relationships: []
+      }
       rate_limits: {
         Row: {
           hits: number
@@ -280,6 +385,7 @@ export type Database = {
           status_reason: string | null
           submitted_at: string
           updated_at: string
+          lost_reason: string | null
         }
         Insert: {
           assigned_to?: string | null
@@ -306,6 +412,7 @@ export type Database = {
           status_reason?: string | null
           submitted_at?: string
           updated_at?: string
+          lost_reason?: string | null
         }
         Update: {
           assigned_to?: string | null
@@ -332,6 +439,7 @@ export type Database = {
           status_reason?: string | null
           submitted_at?: string
           updated_at?: string
+          lost_reason?: string | null
         }
         Relationships: [
           {
