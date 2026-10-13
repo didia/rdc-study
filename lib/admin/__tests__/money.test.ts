@@ -33,17 +33,28 @@ describe('effectivePrice', () => {
 });
 
 describe('paymentSuggestion', () => {
-  const base = {price: 40000, currency: 'USD', depositShare: 0.5};
+  const order = {awaiting_payment: 70, deposit_paid: 80, paid: 90, in_progress: 100, completed: 110, lost_no_response: 130};
+  const base = {price: 40000, currency: 'USD', depositShare: 0.5, order, stage: 'open'};
   it('suggests the deposit status at the deposit threshold', () => {
     expect(paymentSuggestion({...base, status: 'awaiting_payment', net: {USD: 20000}})).toEqual({status: 'deposit_paid', paid: 20000, threshold: 20000});
     expect(paymentSuggestion({...base, status: 'awaiting_payment', net: {USD: 19999}})).toBeNull();
   });
   it('suggests paid once the price is covered', () => {
-    expect(paymentSuggestion({...base, status: 'deposit_paid', net: {USD: 40000}})?.status).toBe('paid');
+    expect(paymentSuggestion({...base, status: 'deposit_paid', stage: 'won', net: {USD: 40000}})?.status).toBe('paid');
   });
   it('does not suggest moving backwards or twice', () => {
-    expect(paymentSuggestion({...base, status: 'deposit_paid', net: {USD: 20000}})).toBeNull();
-    expect(paymentSuggestion({...base, status: 'in_progress', net: {USD: 40000}})).toBeNull();
+    expect(paymentSuggestion({...base, status: 'deposit_paid', stage: 'won', net: {USD: 20000}})).toBeNull();
+    expect(paymentSuggestion({...base, status: 'in_progress', stage: 'won', net: {USD: 40000}})).toBeNull();
+  });
+  it('stays quiet on lost requests, whatever was paid', () => {
+    expect(paymentSuggestion({...base, status: 'lost_no_response', stage: 'lost', net: {USD: 20000}})).toBeNull();
+    expect(paymentSuggestion({...base, status: 'lost_no_response', stage: 'lost', net: {USD: 40000}})).toBeNull();
+  });
+  it('follows the statuses order, not their codes', () => {
+    // a custom status between the deposit and the full payment is already "ahead" of the deposit
+    const custom = {...order, deposit_review: 85};
+    expect(paymentSuggestion({...base, order: custom, status: 'deposit_review', stage: 'won', net: {USD: 20000}})).toBeNull();
+    expect(paymentSuggestion({...base, order: custom, status: 'deposit_review', stage: 'won', net: {USD: 40000}})?.status).toBe('paid');
   });
   it('ignores money in another currency and missing prices', () => {
     expect(paymentSuggestion({...base, status: 'awaiting_payment', net: {CDF: 99999999}})).toBeNull();

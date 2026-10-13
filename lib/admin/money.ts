@@ -49,22 +49,29 @@ export type PaymentSuggestion = {status: 'deposit_paid' | 'paid'; paid: number; 
 
 /**
  * One-click status suggestions (never applied silently): `paid` once the price is covered, `deposit_paid` once the
- * deposit share is. Only for the request's own currency, and only moving forward.
+ * deposit share is. Only for the request's own currency, only for open or won requests, and only moving forward:
+ * "forward" is judged on the statuses' sort order (an admin-editable table), not on a list of codes.
  */
 export function paymentSuggestion(args: {
   status: string;
+  stage: string | undefined;
+  /** sort_order of every status code */
+  order: Record<string, number>;
   price: number | null;
   currency: string;
   net: Record<string, number>;
   depositShare: number;
 }): PaymentSuggestion {
-  const {status, price, currency, net, depositShare} = args;
-  if (!price || price <= 0) return null;
+  const {status, stage, order, price, currency, net, depositShare} = args;
+  if (!price || price <= 0 || stage === 'lost') return null;
+  const here = order[status];
+  const paidAt = order.paid;
+  const depositAt = order.deposit_paid;
+  if (here === undefined || paidAt === undefined || depositAt === undefined) return null;
   const paid = net[currency] ?? 0;
-  const ahead = ['paid', 'in_progress', 'completed'];
-  if (ahead.includes(status)) return null;
+  if (here >= paidAt) return null;
   if (paid >= price) return {status: 'paid', paid, threshold: price};
   const deposit = Math.round(price * depositShare);
-  if (status !== 'deposit_paid' && deposit > 0 && paid >= deposit) return {status: 'deposit_paid', paid, threshold: deposit};
+  if (here < depositAt && deposit > 0 && paid >= deposit) return {status: 'deposit_paid', paid, threshold: deposit};
   return null;
 }

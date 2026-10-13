@@ -16,6 +16,9 @@ export async function getRevenue(supabase: Supabase, range: Range) {
     supabase.rpc('fn_outstanding'),
     supabase.rpc('fn_delivery_stats', {p_from: from, p_to: to}),
   ]);
+  // A failing query must not read as "no revenue": let the error page show instead.
+  const failed = [month, method, destination, pkg, outstanding, delivery].find((r) => r.error);
+  if (failed?.error) throw new Error(`Revenue query failed: ${failed.error.message}`);
   return {
     month: month.data ?? [],
     method: method.data ?? [],

@@ -46,7 +46,15 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
   const net = netByCurrency(payments ?? []);
   const price = effectivePrice(request);
   const suggestion = canSeeMoney
-    ? paymentSuggestion({status: request.status, price, currency: request.agreed_currency, net, depositShare: Number(depositSetting?.value ?? 0.5)})
+    ? paymentSuggestion({
+        status: request.status,
+        stage: statuses.find((s) => s.code === request.status)?.stage,
+        order: Object.fromEntries(statuses.map((s) => [s.code, s.sort_order])),
+        price,
+        currency: request.agreed_currency,
+        net,
+        depositShare: Number(depositSetting?.value ?? 0.5),
+      })
     : null;
   const activeStatuses = statuses.filter((s) => s.is_active || s.code === request.status);
   // Resolve against every staff member: a request can still belong to someone since deactivated.
@@ -335,7 +343,10 @@ function eventTitle(
       return t('admin.requests.event.contact', {channel: channelLabel(e.channel)});
     case 'field_change':
       if (e.metadata?.field === 'agreed_price') {
-        return t('admin.requests.event.agreed-price', {from: formatCents(e.metadata?.from ?? 0), to: formatCents(e.metadata?.to ?? 0)});
+        return t('admin.requests.event.agreed-price', {
+          from: formatCents(e.metadata?.from ?? 0, e.metadata?.from_currency ?? 'USD'),
+          to: formatCents(e.metadata?.to ?? 0, e.metadata?.to_currency ?? 'USD'),
+        });
       }
       if (e.metadata?.field === 'client_id') return t('admin.requests.event.merged');
       return e.metadata?.field === 'has_dispute'

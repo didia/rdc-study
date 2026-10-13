@@ -4,7 +4,7 @@ import styles from '@/components/admin/admin.module.scss';
 import {requireStaff} from '@/lib/admin/auth';
 import {formatDate} from '@/lib/admin/format';
 import {t} from '@/lib/admin/i18n';
-import {CURRENCIES, formatCents, kindLabel, methodLabel, netByCurrency, PAYMENT_KINDS, PAYMENT_METHODS} from '@/lib/admin/money';
+import {formatCents, kindLabel, methodLabel, netByCurrency, PAYMENT_KINDS, PAYMENT_METHODS} from '@/lib/admin/money';
 import {listPayments, PAYMENTS_PAGE_SIZE, parsePaymentFilters} from '@/lib/admin/queries/payments';
 import {listStaff} from '@/lib/admin/queries/requests';
 import {isAdmin} from '@/lib/admin/roles';
@@ -12,7 +12,7 @@ import {isAdmin} from '@/lib/admin/roles';
 export default async function PaymentsPage({searchParams}: {searchParams: Promise<Record<string, string | string[] | undefined>>}) {
   const {supabase, profile} = await requireStaff('agent');
   const filters = parsePaymentFilters(await searchParams);
-  const [{rows, total}, staff] = await Promise.all([listPayments(supabase, filters), listStaff(supabase, false)]);
+  const [{rows, total, error}, staff] = await Promise.all([listPayments(supabase, filters), listStaff(supabase, false)]);
   const pages = Math.max(1, Math.ceil(total / PAYMENTS_PAGE_SIZE));
 
   const query = (f: Partial<typeof filters>) => {
@@ -27,7 +27,6 @@ export default async function PaymentsPage({searchParams}: {searchParams: Promis
 
   // Totals of this page's non-voided rows, per currency (never mixed).
   const totals = netByCurrency(rows.map((r) => ({id: r.id, kind: r.kind, amount_cents: r.amount_cents, currency: r.currency, voided_at: r.voided_at})));
-  void CURRENCIES;
 
   return (
     <>
@@ -58,6 +57,10 @@ export default async function PaymentsPage({searchParams}: {searchParams: Promis
           <Link href="/admin/paiements">{t('admin.requests.reset')}</Link>
         </div>
       </form>
+
+      {error && (
+        <p className={styles.alertError} role="alert" style={{marginBottom: 12}}>{t('admin.payments.load-failed')}</p>
+      )}
 
       <p style={{marginBottom: 12}}>
         <strong>{t('admin.payments.total-page')}</strong>{' '}

@@ -57,6 +57,8 @@ async function recordPaymentImpl(formData: FormData): Promise<FormState> {
     note: parsed.data.note || null,
   });
   refresh(parsed.data.id);
+  if (error?.code === '23505') return {error: t('admin.payments.duplicate')};
+  if (error?.message.includes('refund cannot exceed')) return {error: t('admin.payments.refund-too-high')};
   return error ? {error: t('admin.requests.failed')} : {success: t('admin.payments.recorded')};
 }
 
@@ -79,13 +81,16 @@ export async function voidPayment(_prev: FormState, formData: FormData): Promise
     .is('voided_at', null)
     .select('id');
   refresh(requestId.data);
+  if (error?.message.includes('Void the refunds')) return {error: t('admin.payments.void-refunded')};
   if (error || !data?.length) return {error: t('admin.requests.failed')};
   return {success: t('admin.payments.voided')};
 }
 
-// Agreed price: defaults to what was quoted at submission; any override needs a reason (kept in the timeline).
+// Agreed price: defaults to what was quoted at submission. Any override needs a reason, a non-USD price needs an
+// explicit amount (the quote is in USD) and the currency is locked once payments exist; the database enforces all
+// of it and writes the timeline entry in the same transaction (set_agreed_price).
 export async function setAgreedPrice(_prev: FormState, formData: FormData): Promise<FormState> {
-  const {supabase, user} = await requireStaff('agent');
+  const {supabase} = await requireStaff('agent');
   const id = uuid.safeParse(formData.get('id'));
   if (!id.success) return {error: t('admin.requests.failed')};
   const currency = z.enum(CURRENCIES).safeParse(formData.get('currency') ?? 'USD');
@@ -94,28 +99,17 @@ export async function setAgreedPrice(_prev: FormState, formData: FormData): Prom
   const raw = String(formData.get('amount') ?? '').trim();
   const cents = raw === '' ? null : dollarsToCents(raw);
   if (raw !== '' && cents === null) return {error: t('admin.prices.invalid-amount')};
-  const reason = String(formData.get('reason') ?? '').trim();
+  if (currency.data !== 'USD' && cents === null) return {error: t('admin.payments.currency-needs-amount')};
 
-  const {data: before} = await supabase
-    .from('service_requests')
-    .select('agreed_price_cents, agreed_currency, quoted_price_cents')
-    .eq('id', id.data)
-    .maybeSingle();
-  if (!before) return {error: t('admin.requests.failed')};
-  if (cents !== null && cents !== before.quoted_price_cents && reason.length < 3) return {error: t('admin.payments.override-needs-reason')};
-
-  const {error} = await supabase
-    .from('service_requests')
-    .update({agreed_price_cents: cents, agreed_currency: currency.data})
-    .eq('id', id.data);
-  if (error) return {error: t('admin.requests.failed')};
-  await supabase.from('request_events').insert({
-    request_id: id.data,
-    type: 'field_change',
-    body: reason || null,
-    metadata: {field: 'agreed_price', from: before.agreed_price_cents ?? before.quoted_price_cents, to: cents ?? before.quoted_price_cents},
-    actor_id: user.id,
+  const {error} = await supabase.rpc('set_agreed_price', {
+    p_id: id.data,
+    p_cents: cents,
+    p_currency: currency.data,
+    p_reason: String(formData.get('reason') ?? ''),
   });
   refresh(id.data);
+  if (error?.message.includes('reason is required')) return {error: t('admin.payments.override-needs-reason')};
+  if (error?.message.includes('currency cannot change')) return {error: t('admin.payments.currency-locked')};
+  if (error) return {error: t('admin.requests.failed')};
   return {success: t('admin.payments.agreed-saved')};
 }
