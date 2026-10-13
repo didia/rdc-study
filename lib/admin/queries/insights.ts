@@ -1,6 +1,7 @@
 import 'server-only';
 
 import type {createSupabaseServerClient} from '../db/server';
+import {ADMIN_TIMEZONE} from '../format';
 import {rangeBounds, trendGrain, type Dimension, type Range} from '../dashboard';
 
 type Supabase = Awaited<ReturnType<typeof createSupabaseServerClient>>;
@@ -32,7 +33,7 @@ export async function getInsights(supabase: Supabase, range: Range, dimension: D
     supabase.rpc('fn_conversion_by', {p_dimension: dimension, p_from: from, p_to: to}),
     supabase.rpc('fn_speed', {p_from: from, p_to: to}),
     supabase.rpc('fn_loss_analysis', {p_from: from, p_to: to}),
-    supabase.rpc('fn_trend', {p_from: from, p_to: to, p_grain: trendGrain(range)}),
+    supabase.rpc('fn_trend', {p_from: from, p_to: to, p_grain: trendGrain(range), p_tz: ADMIN_TIMEZONE}),
   ]);
   return {
     funnel: funnel.data ?? [],

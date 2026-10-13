@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(19);
+select plan(26);
 
 insert into auth.users (id, instance_id, aud, role, email) values
   ('00000000-0000-0000-0000-0000000000d1', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'd1@test.local'),
@@ -77,6 +77,47 @@ select is((select count(*)::int from public.clients where id = '10000000-0000-00
 select is((select client_id from public.service_requests where id = '20000000-0000-0000-0000-0000000000d1'), '10000000-0000-0000-0000-0000000000d1'::uuid, 'the request now belongs to the kept client');
 select is((select count(*)::int from public.request_events where request_id = '20000000-0000-0000-0000-0000000000d1' and body = 'Client fusionné'), 1, 'the merge is in the request timeline');
 select is((select count(*)::int from public.audit_events where type = 'merge_clients' and metadata->>'dropped' = '10000000-0000-0000-0000-0000000000d2'), 1, 'and in the audit log');
+
+-- Merge: fail closed for NULL roles, inherit blanks safely -------------------------------------
+insert into auth.users (id, instance_id, aud, role, email) values
+  ('00000000-0000-0000-0000-0000000000d4', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'd4@test.local');
+insert into public.staff_profiles (id, full_name, role, active) values ('00000000-0000-0000-0000-0000000000d4', 'Gone Agent', 'agent', false);
+insert into public.clients (id, first_name, last_name, email, phone, phone_e164, origin_country) values
+  ('10000000-0000-0000-0000-0000000000e1', 'Keep', 'Blank', null, '0812345678', null, null),
+  ('10000000-0000-0000-0000-0000000000e2', 'Donor', 'Full', 'donor@test.local', '+243899999999', '+243899999999', 'Mali');
+
+set local role authenticated;
+select set_config('request.jwt.claims', json_build_object('sub', '00000000-0000-0000-0000-0000000000d4', 'role', 'authenticated')::text, true);
+select throws_ok($$select public.merge_clients('10000000-0000-0000-0000-0000000000e1', '10000000-0000-0000-0000-0000000000e2')$$,
+  '42501', null, 'a deactivated staff member (NULL role) cannot merge clients');
+reset role;
+
+insert into auth.mfa_factors (id, user_id, factor_type, status, created_at, updated_at)
+values (gen_random_uuid(), '00000000-0000-0000-0000-0000000000d2', 'totp', 'verified', now(), now());
+set local role authenticated;
+select set_config('request.jwt.claims', json_build_object('sub', '00000000-0000-0000-0000-0000000000d2', 'role', 'authenticated', 'aal', 'aal1')::text, true);
+select throws_ok($$select public.merge_clients('10000000-0000-0000-0000-0000000000e1', '10000000-0000-0000-0000-0000000000e2')$$,
+  '42501', null, 'an enrolled agent who has not passed MFA (aal1) cannot merge clients');
+reset role;
+delete from auth.mfa_factors where user_id = '00000000-0000-0000-0000-0000000000d2';
+
+set local role authenticated;
+select set_config('request.jwt.claims', json_build_object('sub', '00000000-0000-0000-0000-0000000000d2', 'role', 'authenticated')::text, true);
+select is(public.merge_clients('10000000-0000-0000-0000-0000000000e1', '10000000-0000-0000-0000-0000000000e2'), 0,
+  'a keeper without an email can inherit the donor''s unique email');
+reset role;
+select is((select email from public.clients where id = '10000000-0000-0000-0000-0000000000e1'), 'donor@test.local', 'the keeper now holds the donor''s email');
+select results_eq(
+  $$select phone, phone_e164 from public.clients where id = '10000000-0000-0000-0000-0000000000e1'$$,
+  $$values ('0812345678'::text, null::text)$$,
+  'the keeper''s raw phone is not paired with the donor''s normalized number');
+
+-- Dashboard trend buckets follow the office calendar (Kinshasa is UTC+1) ------------------------
+insert into public.service_requests (client_id, service_type, source, submitted_at)
+values ('10000000-0000-0000-0000-0000000000e1', 'assistance', 'website_form', '2026-02-28T23:30:00Z');
+select is((select period from public.fn_trend('2026-02-27', '2026-03-01', 'month', 'Africa/Kinshasa')), '2026-03-01'::date,
+  'a request at 23:30 UTC on 28 February is a March request in the office calendar');
+select is((select period from public.fn_trend('2026-02-27', '2026-03-01', 'month', 'UTC')), '2026-02-01'::date, 'and a February one in UTC');
 
 -- Round robin ---------------------------------------------------------------------------------
 update public.app_settings set value = 'true'::jsonb where key = 'round_robin_enabled';

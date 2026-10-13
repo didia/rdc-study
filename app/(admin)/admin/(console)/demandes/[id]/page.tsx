@@ -29,7 +29,7 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
 
   const [statuses, staff, events, others, lostReasons, templates] = await Promise.all([
     getStatuses(supabase, true),
-    listStaff(supabase),
+    listStaff(supabase, false),
     getRequestEvents(supabase, id),
     getClientRequests(supabase, request.client_id, id),
     getLostReasons(supabase),
@@ -49,7 +49,9 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
     ? paymentSuggestion({status: request.status, price, currency: request.agreed_currency, net, depositShare: Number(depositSetting?.value ?? 0.5)})
     : null;
   const activeStatuses = statuses.filter((s) => s.is_active || s.code === request.status);
-  const staffName = (uid: string | null) => staff.find((s) => s.id === uid)?.full_name ?? t('admin.requests.unassigned');
+  // Resolve against every staff member: a request can still belong to someone since deactivated.
+  const staffName = (uid: string | null) => (uid ? (staff.find((s) => s.id === uid)?.full_name ?? uid) : t('admin.requests.unassigned'));
+  const assignable = staff.filter((s) => s.active || s.id === request.assigned_to);
   const statusLabel = (code: string | null) => statuses.find((s) => s.code === code)?.label_fr ?? code ?? '';
   const client = request.client;
   const wa = whatsappLink(client.phone_e164);
@@ -79,7 +81,7 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
         <div className={styles.headerActions}>
           <StatusBadge status={request.status} statuses={statuses} />
           {request.has_dispute && <span className={styles.badgeOff}>{t('admin.requests.dispute.badge')}</span>}
-          {editable && <DisputeToggle id={request.id} hasDispute={request.has_dispute} />}
+          {editable && <DisputeToggle id={request.id} hasDispute={request.has_dispute} updatedAt={request.updated_at} />}
         </div>
       </div>
 
@@ -92,6 +94,7 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
       {editable && suggestion && (
         <SuggestionBanner
           requestId={request.id}
+          updatedAt={request.updated_at}
           status={suggestion.status}
           label={statusLabel(suggestion.status)}
           amounts={`${formatCents(suggestion.paid, request.agreed_currency)} / ${formatCents(suggestion.threshold, request.agreed_currency)}`}
@@ -206,7 +209,7 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
               <h2>{t('admin.requests.status.change')}</h2>
               <StatusChangeForm id={request.id} current={request.status} updatedAt={request.updated_at} statuses={activeStatuses} lostReasons={lostReasons} />
               <hr style={{margin: '18px 0', border: 0, borderTop: '1px solid var(--line)'}} />
-              <AssignForm id={request.id} current={request.assigned_to} updatedAt={request.updated_at} staff={staff} />
+              <AssignForm id={request.id} current={request.assigned_to} updatedAt={request.updated_at} staff={assignable} />
               {stage === 'open' && (
                 <>
                   <hr style={{margin: '18px 0', border: 0, borderTop: '1px solid var(--line)'}} />

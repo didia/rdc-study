@@ -4,12 +4,16 @@ import {useActionState} from 'react';
 
 import {removePriceException, savePrice} from '@/lib/admin/actions/prices';
 import {t} from '@/lib/admin/i18n';
+import type {FormState} from '@/lib/admin/form-state';
 import styles from './admin.module.scss';
 import {Feedback} from './Feedback';
 
 export function PriceForm({serviceType, scope, amountCents, locked, canRemove}: {serviceType: string; scope: string; amountCents: number; locked?: boolean; canRemove?: boolean}) {
-  const [state, action, pending] = useActionState(savePrice, undefined);
-  const [removeState, removeAction, removing] = useActionState(removePriceException, undefined);
+  // One state for both buttons, so the outcome of the latest action replaces an earlier one (e.g. a save error).
+  const [state, action, pending] = useActionState(
+    (prev: FormState, formData: FormData) => (formData.get('intent') === 'remove' ? removePriceException(prev, formData) : savePrice(prev, formData)),
+    undefined,
+  );
   const dollars = (amountCents / 100).toString();
   return (
     <div className={styles.priceEditor}>
@@ -27,13 +31,13 @@ export function PriceForm({serviceType, scope, amountCents, locked, canRemove}: 
         <div className={styles.priceActions}>
           <button type="submit" className={styles.button} disabled={pending || locked}>{t('admin.requests.save')}</button>
           {canRemove && (
-            <button type="submit" formAction={removeAction} className={styles.buttonSecondary} disabled={removing}>
+            <button type="submit" name="intent" value="remove" className={styles.buttonSecondary} disabled={pending}>
               {t('admin.prices.remove')}
             </button>
           )}
         </div>
       </form>
-      <Feedback state={state ?? removeState} />
+      <Feedback state={state} />
     </div>
   );
 }

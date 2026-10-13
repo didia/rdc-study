@@ -2,6 +2,7 @@
 // view is shareable and survives a reload.
 
 export const PAGE_SIZE = 25;
+export const BOARD_PAGE_SIZE = 200; // cards per page on the board view
 export const STALE_AFTER_DAYS = 7;
 
 export const SORTS = ['submitted_at', 'last_activity_at', 'reference', 'status'] as const;
