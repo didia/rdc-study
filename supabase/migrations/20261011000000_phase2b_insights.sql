@@ -282,7 +282,7 @@ $$;
 -- submit_service_request: assign when round-robin is on.
 create or replace function public.submit_service_request(payload jsonb)
 returns jsonb
-language plpgsql security definer set search_path = public, extensions as $$
+language plpgsql security definer set search_path = '' as $$
 declare
   v_key        text := nullif(payload->>'idempotencyKey', '');
   v_email      text := lower(nullif(trim(payload->>'email'), ''));
@@ -315,10 +315,15 @@ begin
     nullif(left(payload->>'originCountry', 80), '')
   )
   on conflict (email) where email is not null do update
-    set phone          = coalesce(excluded.phone, public.clients.phone),
-        phone_e164     = case when excluded.phone is not null then excluded.phone_e164 else public.clients.phone_e164 end,
+    -- The number typed in this submission stays in form_answers.submitted_phone.
+    set phone          = coalesce(public.clients.phone, excluded.phone),
+        phone_e164     = case when public.clients.phone is null then excluded.phone_e164 else public.clients.phone_e164 end,
         origin_country = coalesce(public.clients.origin_country, excluded.origin_country)
   returning id into v_client_id;
+
+  if nullif(trim(payload->>'phone'), '') is not null then
+    v_answers := v_answers || jsonb_build_object('submitted_phone', left(trim(payload->>'phone'), 40));
+  end if;
 
   v_quoted := public.resolve_price(v_service, v_package);
   if v_quoted is null then
