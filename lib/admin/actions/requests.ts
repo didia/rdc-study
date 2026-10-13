@@ -100,18 +100,25 @@ export async function changeStatus(_prev: FormState, formData: FormData): Promis
   return result?.error ? {...result, values: submittedValues(formData)} : result;
 }
 
-// Board drag & drop and keyboard moves: same rules and same history as the status dialog.
-export async function moveRequestStatus(input: {id: string; status: string; lostReason?: string | null}): Promise<{error?: string}> {
+// Board drag & drop and keyboard moves: same rules and same history as the status dialog. The card's
+// `updatedAt` is required, so a stale board is refused (conflict) instead of overwriting a newer change.
+export async function moveRequestStatus(input: {
+  id: string;
+  status: string;
+  updatedAt: string;
+  lostReason?: string | null;
+  reason?: string | null;
+}): Promise<{error?: string}> {
   const {supabase} = await requireStaff('agent');
   const id = uuid.safeParse(input.id);
-  if (!id.success || !input.status) return {error: FAILED()};
+  if (!id.success || !input.status || !input.updatedAt) return {error: FAILED()};
   const error = await applyStatusChange(supabase, id.data, input.status, {
-    reason: null,
+    reason: blank(input.reason),
     lostReason: input.lostReason ?? null,
-    expectedUpdatedAt: null,
+    expectedUpdatedAt: input.updatedAt,
   });
   revalidate(id.data);
-  return error ? {error} : {};
+  return error ? {error: STATUS_ERRORS[error]()} : {};
 }
 
 export async function assignRequest(_prev: FormState, formData: FormData): Promise<FormState> {

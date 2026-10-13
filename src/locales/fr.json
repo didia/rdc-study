@@ -736,6 +736,7 @@
   "admin.requests.view-list": "Liste",
   "admin.requests.view-board": "Tableau",
   "admin.board.lost-reason": "Raison de la perte :",
+  "admin.board.reopen-reason": "Pourquoi rouvrir cette demande ?",
   "admin.board.confirm": "Confirmer",
   "admin.board.cancel": "Annuler",
   "admin.board.oldest": "plus ancienne : {age}",

@@ -147,10 +147,11 @@ language sql stable set search_path = '' as $$
   order by 1, 3 desc;
 $$;
 
-create function public.fn_trend(p_from timestamptz, p_to timestamptz, p_grain text)
+create function public.fn_trend(p_from timestamptz, p_to timestamptz, p_grain text, p_tz text default 'Africa/Kinshasa')
 returns table (period date, n int)
 language sql stable set search_path = '' as $$
-  select date_trunc(case when p_grain = 'month' then 'month' else 'week' end, r.submitted_at)::date, count(*)::int
+  -- Buckets follow the office calendar, like the date filters and the displayed dates.
+  select date_trunc(case when p_grain = 'month' then 'month' else 'week' end, r.submitted_at at time zone p_tz)::date, count(*)::int
     from public.service_requests r
    where r.submitted_at >= p_from and r.submitted_at < p_to
    group by 1 order by 1;
@@ -182,27 +183,33 @@ declare
   moved int;
   dropped public.clients;
 begin
-  if public.staff_role() not in ('admin', 'agent') then
+  -- staff_role() is NULL for a deactivated account or a session that has not passed MFA: fail closed.
+  if not coalesce(public.staff_role() in ('admin', 'agent'), false) then
     raise exception 'Not allowed' using errcode = '42501';
   end if;
   if p_keep = p_drop then
     raise exception 'Cannot merge a client with itself' using errcode = '22023';
   end if;
+
+  -- Lock both rows (in a fixed order, so two merges cannot deadlock) before reading either, so a
+  -- concurrent edit of the donor is either merged or waits; it is never silently lost.
+  perform 1 from public.clients where id in (p_keep, p_drop) order by id for update;
   select * into dropped from public.clients where id = p_drop;
   if not found or not exists (select 1 from public.clients where id = p_keep) then
     raise exception 'Client not found' using errcode = 'P0002';
   end if;
 
+  -- The donor's email must be released first: it is unique and enforced immediately.
+  update public.clients set email = null where id = p_drop;
+
   update public.clients k set
     email          = coalesce(k.email, dropped.email),
-    phone          = coalesce(k.phone, dropped.phone),
-    phone_e164     = coalesce(k.phone_e164, dropped.phone_e164),
+    -- The raw phone and its normalized form travel together: inherit the donor's pair only when the keeper has neither.
+    phone          = case when k.phone is null and k.phone_e164 is null then dropped.phone else k.phone end,
+    phone_e164     = case when k.phone is null and k.phone_e164 is null then dropped.phone_e164 else k.phone_e164 end,
     origin_country = coalesce(k.origin_country, dropped.origin_country),
     notes          = nullif(concat_ws(E'\n', k.notes, dropped.notes), '')
    where k.id = p_keep;
-  -- The dropped email must be released first (unique), so it is cleared on the old row before the move.
-  update public.clients set email = null where id = p_drop;
-  update public.clients k set email = coalesce(k.email, dropped.email) where k.id = p_keep;
 
   insert into public.request_events (request_id, type, body, actor_id, metadata)
   select r.id, 'field_change', 'Client fusionné', auth.uid(),
@@ -224,11 +231,11 @@ $$;
 revoke all on function public.merge_clients(uuid, uuid), public.reached_status(uuid, text, text[]),
   public.fn_funnel(timestamptz, timestamptz), public.fn_conversion_by(text, timestamptz, timestamptz),
   public.fn_speed(timestamptz, timestamptz), public.fn_loss_analysis(timestamptz, timestamptz),
-  public.fn_trend(timestamptz, timestamptz, text), public.fn_client_duplicates() from public, anon;
+  public.fn_trend(timestamptz, timestamptz, text, text), public.fn_client_duplicates() from public, anon;
 grant execute on function public.merge_clients(uuid, uuid), public.reached_status(uuid, text, text[]),
   public.fn_funnel(timestamptz, timestamptz), public.fn_conversion_by(text, timestamptz, timestamptz),
   public.fn_speed(timestamptz, timestamptz), public.fn_loss_analysis(timestamptz, timestamptz),
-  public.fn_trend(timestamptz, timestamptz, text), public.fn_client_duplicates() to authenticated;
+  public.fn_trend(timestamptz, timestamptz, text, text), public.fn_client_duplicates() to authenticated;
 
 -- ---------------------------------------------------------------------------
 -- Round-robin assignment of new website requests (off by default)

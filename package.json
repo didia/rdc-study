@@ -22,7 +22,7 @@
     "typecheck": "tsc --noEmit",
     "db:test": "supabase test db",
     "db:lint": "supabase db lint --level warning",
-    "db:test:concurrency": "bash supabase/tests/concurrency/last-admin.sh"
+    "db:test:concurrency": "bash supabase/tests/concurrency/last-admin.sh && bash supabase/tests/concurrency/merge-clients.sh"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",

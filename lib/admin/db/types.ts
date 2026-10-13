@@ -551,7 +551,7 @@ export type Database = {
         Returns: { kind: string; label: string; n: number }[]
       }
       fn_trend: {
-        Args: { p_from: string; p_grain: string; p_to: string }
+        Args: { p_from: string; p_grain: string; p_to: string; p_tz?: string }
         Returns: { period: string; n: number }[]
       }
       fn_client_duplicates: {
