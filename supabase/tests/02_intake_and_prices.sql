@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(25);
+select plan(31);
 
 insert into auth.users (id, instance_id, aud, role, email) values
   ('00000000-0000-0000-0000-0000000000b1', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'padmin@test.local'),
@@ -59,6 +59,23 @@ select is((select count(*)::int from public.service_requests r join public.clien
             where c.email = 'intake@test.local'), 2, 'with two requests');
 select is((select quoted_price_cents from public.service_requests where idempotency_key = 'key-2'), 40000, 'admission is quoted at the default price');
 select is((select first_name from public.clients where email = 'intake@test.local'), 'Test', 'an existing client name is not overwritten');
+
+-- A later public submission must not replace the number staff hold.
+select public.submit_service_request(jsonb_build_object(
+  'idempotencyKey', 'key-3', 'email', 'intake@test.local', 'serviceType', 'assistance',
+  'phone', '081 000 0001', 'phoneE164', null));
+select is((select phone_e164 from public.clients where email = 'intake@test.local'), '+243810000000', 'a local-format phone does not clear phone_e164');
+select public.submit_service_request(jsonb_build_object(
+  'idempotencyKey', 'key-4', 'email', 'intake@test.local', 'serviceType', 'assistance',
+  'phone', '+1 202 555 0143', 'phoneE164', '+12025550143'));
+select is((select phone from public.clients where email = 'intake@test.local'), '+243 81 000 0000', 'a different phone does not replace the stored one');
+select is((select phone_e164 from public.clients where email = 'intake@test.local'), '+243810000000', 'nor does it replace phone_e164');
+select is((select form_answers->>'submitted_phone' from public.service_requests where idempotency_key = 'key-4'), '+1 202 555 0143',
+  'the submitted number is kept on the request');
+select public.submit_service_request(jsonb_build_object('idempotencyKey', 'key-5', 'email', 'nophone@test.local', 'serviceType', 'assistance'));
+select public.submit_service_request(jsonb_build_object(
+  'idempotencyKey', 'key-6', 'email', 'nophone@test.local', 'serviceType', 'assistance', 'phone', '+243 81 000 0002', 'phoneE164', '+243810000002'));
+select is((select phone_e164 from public.clients where email = 'nophone@test.local'), '+243810000002', 'a missing phone is filled in by a later submission');
 reset role;
 
 -- Rate limit -----------------------------------------------------------------------------
@@ -79,6 +96,7 @@ select is((select reason from public.service_price_history where scope = 'pkg:ca
 select lives_ok($$select public.remove_service_price('assistance', 'pkg:canada/visa', 'Promo over')$$, 'an admin can remove an exception');
 select is((select count(*)::int from public.service_price_history where scope = 'pkg:canada/visa' and new_amount_cents is null), 1, 'removal is kept in the history');
 select is(public.resolve_price('assistance', 'canada/visa'), 60000, 'the kind price applies again');
+select throws_ok($$select public.remove_service_price('assistance', 'kind:visa', 'Cleanup')$$, 'P0001', null, 'the visa price cannot be removed');
 reset role;
 
 select * from finish();

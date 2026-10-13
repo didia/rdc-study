@@ -1,6 +1,6 @@
 'use client';
 
-import {useActionState, useState} from 'react';
+import {useActionState, useEffect, useRef, useState} from 'react';
 
 import {addNote, assignRequest, changeStatus, toggleDispute, updateRequestDetails} from '@/lib/admin/actions/requests';
 import {setFollowUpDate} from '@/lib/admin/actions/followup';
@@ -94,7 +94,7 @@ export function FollowUpForm({id, value}: {id: string; value: string | null}) {
   );
 }
 
-export function AssignForm({id, current, updatedAt, staff}: {id: string; current: string | null; updatedAt: string; staff: {id: string; full_name: string}[]}) {
+export function AssignForm({id, current, updatedAt, staff}: {id: string; current: string | null; updatedAt: string; staff: {id: string; full_name: string; active?: boolean}[]}) {
   const [state, action, pending] = useActionState(assignRequest, undefined);
   return (
     <form action={action} className={styles.form}>
@@ -105,7 +105,7 @@ export function AssignForm({id, current, updatedAt, staff}: {id: string; current
         <select key={current ?? 'none'} id="assignee" name="assignee" defaultValue={current ?? ''} className={styles.select}>
           <option value="">{t('admin.requests.unassigned')}</option>
           {staff.map((s) => (
-            <option key={s.id} value={s.id}>{s.full_name}</option>
+            <option key={s.id} value={s.id}>{s.active === false ? `${s.full_name} ${t('admin.requests.inactive')}` : s.full_name}</option>
           ))}
         </select>
       </div>
@@ -119,8 +119,13 @@ export function AssignForm({id, current, updatedAt, staff}: {id: string; current
 
 export function NoteForm({id}: {id: string}) {
   const [state, action, pending] = useActionState(addNote, undefined);
+  const formRef = useRef<HTMLFormElement>(null);
+  // Clear the fields once the note is saved so a second click cannot add it twice.
+  useEffect(() => {
+    if (state?.success) formRef.current?.reset();
+  }, [state]);
   return (
-    <form action={action} className={styles.form}>
+    <form ref={formRef} action={action} className={styles.form}>
       <input type="hidden" name="id" value={id} />
       <div className={styles.field}>
         <label htmlFor="body">{t('admin.requests.note.label')}</label>
@@ -143,15 +148,17 @@ export function NoteForm({id}: {id: string}) {
   );
 }
 
-export function DisputeToggle({id, hasDispute}: {id: string; hasDispute: boolean}) {
-  const [, action, pending] = useActionState(toggleDispute, undefined);
+export function DisputeToggle({id, hasDispute, updatedAt}: {id: string; hasDispute: boolean; updatedAt: string}) {
+  const [state, action, pending] = useActionState(toggleDispute, undefined);
   return (
     <form action={action}>
       <input type="hidden" name="id" value={id} />
+      <input type="hidden" name="updatedAt" value={updatedAt} />
       <input type="hidden" name="hasDispute" value={String(!hasDispute)} />
       <button type="submit" className={styles.linkButton} disabled={pending}>
         {hasDispute ? t('admin.requests.dispute.clear') : t('admin.requests.dispute.mark')}
       </button>
+      <Feedback state={state} />
     </form>
   );
 }
