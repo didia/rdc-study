@@ -47,6 +47,7 @@ export type Database = {
           phone_e164: string | null
           preferred_channel: string | null
           updated_at: string
+          address: string | null
         }
         Insert: {
           created_at?: string
@@ -60,6 +61,7 @@ export type Database = {
           phone_e164?: string | null
           preferred_channel?: string | null
           updated_at?: string
+          address?: string | null
         }
         Update: {
           created_at?: string
@@ -73,6 +75,7 @@ export type Database = {
           phone_e164?: string | null
           preferred_channel?: string | null
           updated_at?: string
+          address?: string | null
         }
         Relationships: []
       }
@@ -304,6 +307,72 @@ export type Database = {
           void_reason?: string | null
           voided_at?: string | null
           voided_by?: string | null
+        }
+        Relationships: []
+      }
+      request_documents: {
+        Row: {
+          created_at: string
+          file_name: string
+          id: string
+          kind: string
+          mime_type: string | null
+          request_id: string
+          size_bytes: number | null
+          storage_path: string
+          uploaded_by: string | null
+        }
+        Insert: {
+          created_at?: string
+          file_name: string
+          id?: string
+          kind: string
+          mime_type?: string | null
+          request_id: string
+          size_bytes?: number | null
+          storage_path: string
+          uploaded_by?: string | null
+        }
+        Update: {
+          created_at?: string
+          file_name?: string
+          id?: string
+          kind?: string
+          mime_type?: string | null
+          request_id?: string
+          size_bytes?: number | null
+          storage_path?: string
+          uploaded_by?: string | null
+        }
+        Relationships: []
+      }
+      document_templates: {
+        Row: {
+          body: string
+          created_at: string
+          created_by: string | null
+          id: string
+          kind: string
+          title: string
+          version: number
+        }
+        Insert: {
+          body: string
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          kind: string
+          title: string
+          version: number
+        }
+        Update: {
+          body?: string
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          kind?: string
+          title?: string
+          version?: number
         }
         Relationships: []
       }
