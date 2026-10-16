@@ -2,7 +2,8 @@
 
 insert into public.app_settings (key, value) values ('enforce_mfa', 'false'::jsonb);
 
--- Once enforced, admin and agent only count as staff on an aal2 (second factor verified) session.
+-- Staff who enrolled a verified second factor always need an aal2 session (phase 1 rule, kept).
+-- Once enforced, admin and agent need aal2 even before enrolling, which sends them to enrolment.
 -- Row Level Security is therefore the enforcement point, not just the UI.
 create or replace function public.staff_role() returns public.staff_role
 language sql stable security definer set search_path = '' as $$
@@ -10,9 +11,16 @@ language sql stable security definer set search_path = '' as $$
     from public.staff_profiles p
    where p.id = auth.uid() and p.active
      and (
-       p.role not in ('admin', 'agent')
-       or not coalesce((select s.value = 'true'::jsonb from public.app_settings s where s.key = 'enforce_mfa'), false)
-       or coalesce(auth.jwt() ->> 'aal', 'aal1') = 'aal2'
+       coalesce(auth.jwt() ->> 'aal', 'aal1') = 'aal2'
+       or (
+         not exists (
+           select 1 from auth.mfa_factors f where f.user_id = p.id and f.status = 'verified'
+         )
+         and (
+           p.role not in ('admin', 'agent')
+           or not coalesce((select s.value = 'true'::jsonb from public.app_settings s where s.key = 'enforce_mfa'), false)
+         )
+       )
      )
 $$;
 
