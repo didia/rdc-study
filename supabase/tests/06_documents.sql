@@ -56,8 +56,10 @@ select pg_temp.act_as('00000000-0000-0000-0000-0000000000f3');
 select is((select count(*)::int from storage.objects where bucket_id = 'request-docs'), 0, 'a viewer cannot read any document (no signed URL can be minted)');
 reset role;
 
--- A failed registration can be cleaned up, a registered document cannot be removed from storage
+-- A failed registration can be cleaned up, a registered document cannot be removed from storage.
+-- Raw deletes from storage tables are blocked by a trigger unless the Storage API's flag is set: mimic the API here.
 reset role;
+select set_config('storage.allow_delete_query', 'true', true);
 insert into storage.objects (bucket_id, name) values ('request-docs', 'request/20000000-0000-0000-0000-0000000000f1/failed.pdf');
 select pg_temp.act_as('00000000-0000-0000-0000-0000000000f2');
 delete from storage.objects where name = 'request/20000000-0000-0000-0000-0000000000f1/failed.pdf';
