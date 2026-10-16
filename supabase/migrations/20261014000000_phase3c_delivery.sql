@@ -29,11 +29,8 @@ create policy clients_mentor_select on public.clients for select to authenticate
   using (public.staff_role() = 'mentor'
          and exists (select 1 from public.service_requests r where r.client_id = clients.id and r.mentor_id = auth.uid()));
 
--- Events: staff as before; a mentor sees their requests' history but never payments.
-drop policy re_select on public.request_events;
-create policy re_select on public.request_events for select to authenticated
-  using (exists (select 1 from public.service_requests r where r.id = request_id)
-         and (public.staff_role() <> 'mentor' or type <> 'payment'));
+-- Events: a mentor sees their requests' history (never payments) and may add notes and field changes.
+-- (request_events reads: phase3a's re_select already keeps payments and agreed-price entries away from mentors.)
 
 drop policy re_insert on public.request_events;
 create policy re_insert on public.request_events for insert to authenticated
@@ -87,7 +84,8 @@ begin
 end;
 $$;
 revoke all on function public.mentor_update_guard() from public, anon;
-create trigger sr_mentor_guard before update on public.service_requests
+-- Named to sort before sr_before_write: triggers fire alphabetically, and the guard must refuse first.
+create trigger sr_a_mentor_guard before update on public.service_requests
   for each row execute function public.mentor_update_guard();
 
 -- Log mentor (re)assignment on the timeline.
