@@ -60,7 +60,7 @@ reset role;
 -- Raw deletes from storage tables are blocked by a trigger unless the Storage API's flag is set: mimic the API here.
 reset role;
 select set_config('storage.allow_delete_query', 'true', true);
-insert into storage.objects (bucket_id, name) values ('request-docs', 'request/20000000-0000-0000-0000-0000000000f1/failed.pdf');
+insert into storage.objects (bucket_id, name, owner) values ('request-docs', 'request/20000000-0000-0000-0000-0000000000f1/failed.pdf', '00000000-0000-0000-0000-0000000000f2');
 select pg_temp.act_as('00000000-0000-0000-0000-0000000000f2');
 delete from storage.objects where name = 'request/20000000-0000-0000-0000-0000000000f1/failed.pdf';
 delete from storage.objects where name = 'request/20000000-0000-0000-0000-0000000000f1/aaaa-contract.pdf';

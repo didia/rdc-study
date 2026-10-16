@@ -121,6 +121,10 @@ on conflict (id) do update set public = false, file_size_limit = excluded.file_s
 create policy request_docs_read on storage.objects for select to authenticated
   using (bucket_id = 'request-docs'
          and exists (select 1 from public.request_documents d where d.storage_path = name));
+-- A DELETE (or an INSERT ... RETURNING, which is how the Storage API uploads) with a WHERE clause also has to pass
+-- the SELECT policies, so the uploader may see their own not-yet-registered object. Nobody else can.
+create policy request_docs_read_own_pending on storage.objects for select to authenticated
+  using (bucket_id = 'request-docs' and owner = auth.uid() and public.staff_role() in ('admin', 'agent'));
 -- Cleanup: staff can remove an object that never got a document row (a registration that failed after the
 -- upload). A registered document is never deletable, and an unregistered object is unreadable to everyone anyway.
 create policy request_docs_cleanup on storage.objects for delete to authenticated
