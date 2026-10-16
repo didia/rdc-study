@@ -10,7 +10,7 @@ import rehypeStringify from 'rehype-stringify';
 import readingTime from 'reading-time';
 
 import {getServicePrices} from './prices';
-import {lowestPrice} from './price-resolve';
+import {cardPriceType, lowestPrice} from './price-resolve';
 
 import type {
   Article,
@@ -267,7 +267,7 @@ export async function getServices(): Promise<Service[]> {
       const fileContent = fs.readFileSync(filePath, 'utf-8');
       const {data, content} = matter(fileContent);
       const html = await markdownToHtml(content);
-      const lowest = lowestPrice(prices, data.slug);
+      const lowest = lowestPrice(prices, cardPriceType(data.slug));
 
       return {
         content: html,

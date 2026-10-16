@@ -1,6 +1,6 @@
 import {describe, expect, it} from 'vitest';
 
-import {documentPath, safeFileName, validateUpload} from '../documents';
+import {documentPath, receiptBlocker, registrationFileName, safeFileName, validateUpload} from '../documents';
 
 describe('documents', () => {
   it('limits size and type', () => {
@@ -20,5 +20,26 @@ describe('documents', () => {
 
   it('follows the request/<id>/<uuid>-<name> convention', () => {
     expect(documentPath('abc', 'u1', 'Diplôme.pdf')).toBe('request/abc/u1-Diplome.pdf');
+  });
+});
+
+describe('registration metadata', () => {
+  it('keeps names within the registration limit, preserving the extension', () => {
+    const long = `${'a'.repeat(240)}.pdf`;
+    const name = registrationFileName(long);
+    expect(name).toHaveLength(200);
+    expect(name.endsWith('.pdf')).toBe(true);
+    expect(registrationFileName('contrat.pdf')).toBe('contrat.pdf');
+    expect(registrationFileName('   ')).toBe('document');
+    expect(registrationFileName('b'.repeat(300))).toHaveLength(200);
+  });
+});
+
+describe('receipt eligibility', () => {
+  it('allows received money only: no receipt for voided payments or refunds', () => {
+    expect(receiptBlocker({kind: 'deposit', voided_at: null})).toBeNull();
+    expect(receiptBlocker({kind: 'balance'})).toBeNull();
+    expect(receiptBlocker({kind: 'deposit', voided_at: '2026-10-01T00:00:00Z'})).toBe('voided');
+    expect(receiptBlocker({kind: 'refund', voided_at: null})).toBe('refund');
   });
 });

@@ -5,7 +5,7 @@ import {useActionState, useState, type FormEvent} from 'react';
 
 import {generateContract, getDocumentUrl, registerDocument} from '@/lib/admin/actions/documents';
 import {createSupabaseBrowserClient} from '@/lib/admin/db/browser';
-import {DOCUMENT_KINDS, documentKindLabel, documentPath, validateUpload} from '@/lib/admin/documents';
+import {DOCUMENT_KINDS, documentKindLabel, documentPath, registrationFileName, validateUpload} from '@/lib/admin/documents';
 import {t} from '@/lib/admin/i18n';
 import styles from './admin.module.scss';
 import {Feedback} from './Feedback';
@@ -50,12 +50,15 @@ export function DocumentsPanel({requestId, documents, canGenerate, kinds}: {requ
       setBusy(false);
       return;
     }
-    const result = await registerDocument({requestId, kind, path, fileName: file.name, mimeType: file.type, size: file.size});
-    setBusy(false);
+    const result = await registerDocument({requestId, kind, path, fileName: registrationFileName(file.name), mimeType: file.type, size: file.size});
     if (result.error) {
+      // The object is not readable without a document row: remove it so retries do not pile up copies.
+      await supabase.storage.from('request-docs').remove([path]);
+      setBusy(false);
       setError(result.error);
       return;
     }
+    setBusy(false);
     form.reset();
     router.refresh();
   }

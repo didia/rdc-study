@@ -23,10 +23,11 @@ export async function setStaffRole(_prev: FormState, formData: FormData): Promis
 }
 
 export async function setStaffActive(_prev: FormState, formData: FormData): Promise<FormState> {
-  const {supabase} = await requireStaff('admin');
+  const {supabase, user} = await requireStaff('admin');
   const id = uuid.safeParse(formData.get('id'));
   if (!id.success) return {error: t('admin.requests.failed')};
   const active = formData.get('active') === 'true';
+  if (!active && id.data === user.id) return {error: t('admin.requests.failed')};
 
   const {error} = await supabase.from('staff_profiles').update({active}).eq('id', id.data);
   revalidatePath('/admin/equipe');

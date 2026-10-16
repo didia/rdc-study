@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(13);
+select plan(16);
 
 insert into auth.users (id, instance_id, aud, role, email) values
   ('00000000-0000-0000-0000-0000000000c1', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'c1@test.local'),
@@ -35,6 +35,17 @@ select is((select metadata->>'lost_reason' from public.request_events
 update public.service_requests set status = 'contacted' where id = '20000000-0000-0000-0000-0000000000c1';
 select is((select lost_reason from public.service_requests where id = '20000000-0000-0000-0000-0000000000c1'), null,
           'reopening clears the lost reason');
+
+-- a lost status cannot be written without an active reason
+update public.lost_reasons set is_active = false where code = 'duplicate';
+select throws_ok($$update public.service_requests set status = 'lost_failed' where id = '20000000-0000-0000-0000-0000000000c1'$$,
+                 '23514', null, 'a lost status without a reason is rejected');
+select throws_ok($$update public.service_requests set status = 'lost_failed', lost_reason = 'duplicate' where id = '20000000-0000-0000-0000-0000000000c1'$$,
+                 '23514', null, 'an inactive lost reason is rejected');
+select lives_ok($$update public.service_requests set status = 'lost_failed', lost_reason = 'other' where id = '20000000-0000-0000-0000-0000000000c1'$$,
+                'an active lost reason is accepted');
+update public.service_requests set status = 'contacted' where id = '20000000-0000-0000-0000-0000000000c1';
+update public.lost_reasons set is_active = true where code = 'duplicate';
 
 -- templates: admins write, agents read
 select pg_temp.act_as('00000000-0000-0000-0000-0000000000c2');

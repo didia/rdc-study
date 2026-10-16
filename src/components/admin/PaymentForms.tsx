@@ -121,7 +121,7 @@ export function AgreedPriceForm({requestId, quotedCents, agreedCents, currency}:
 }
 
 // One click, never silent: staff confirm the money really arrived before the status moves.
-export function SuggestionBanner({requestId, status, label, amounts}: {requestId: string; status: string; label: string; amounts: string}) {
+export function SuggestionBanner({requestId, updatedAt, status, label, amounts}: {requestId: string; updatedAt: string; status: string; label: string; amounts: string}) {
   const router = useRouter();
   const [pending, start] = useTransition();
   const [error, setError] = useState<string>();
@@ -134,7 +134,7 @@ export function SuggestionBanner({requestId, status, label, amounts}: {requestId
         disabled={pending}
         onClick={() =>
           start(async () => {
-            const result = await moveRequestStatus({id: requestId, status});
+            const result = await moveRequestStatus({id: requestId, status, updatedAt});
             if (result.error) setError(result.error);
             router.refresh();
           })

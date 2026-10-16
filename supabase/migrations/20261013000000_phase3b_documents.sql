@@ -44,6 +44,66 @@ create policy documents_insert on public.request_documents for insert to authent
   with check (public.staff_role() in ('admin', 'agent') and uploaded_by = auth.uid());
 
 -- ---------------------------------------------------------------------------
+-- Merging duplicate clients must not lose the address added in this phase
+-- (same function as Phase 2B, plus address inheritance; grants are preserved by CREATE OR REPLACE)
+-- ---------------------------------------------------------------------------
+
+-- Moves every request of `p_drop` to `p_keep`, fills the blanks of `p_keep`, logs it, removes `p_drop`.
+create or replace function public.merge_clients(p_keep uuid, p_drop uuid)
+returns int
+language plpgsql security definer set search_path = '' as $$
+declare
+  moved int;
+  dropped public.clients;
+begin
+  -- staff_role() is NULL for a deactivated account or a session that has not passed MFA: fail closed.
+  if not coalesce(public.staff_role() in ('admin', 'agent'), false) then
+    raise exception 'Not allowed' using errcode = '42501';
+  end if;
+  if p_keep = p_drop then
+    raise exception 'Cannot merge a client with itself' using errcode = '22023';
+  end if;
+
+  -- Lock both rows (in a fixed order, so two merges cannot deadlock) before reading either, so a
+  -- concurrent edit of the donor is either merged or waits; it is never silently lost.
+  perform 1 from public.clients where id in (p_keep, p_drop) order by id for update;
+  select * into dropped from public.clients where id = p_drop;
+  if not found or not exists (select 1 from public.clients where id = p_keep) then
+    raise exception 'Client not found' using errcode = 'P0002';
+  end if;
+
+  -- The donor's email must be released first: it is unique and enforced immediately.
+  update public.clients set email = null where id = p_drop;
+
+  update public.clients k set
+    email          = coalesce(k.email, dropped.email),
+    -- The raw phone and its normalized form travel together: inherit the donor's pair only when the keeper has neither.
+    phone          = case when k.phone is null and k.phone_e164 is null then dropped.phone else k.phone end,
+    phone_e164     = case when k.phone is null and k.phone_e164 is null then dropped.phone_e164 else k.phone_e164 end,
+    origin_country = coalesce(k.origin_country, dropped.origin_country),
+    address        = coalesce(k.address, dropped.address),
+    notes          = nullif(concat_ws(E'\n', k.notes, dropped.notes), '')
+   where k.id = p_keep;
+
+  insert into public.request_events (request_id, type, body, actor_id, metadata)
+  select r.id, 'field_change', 'Client fusionné', auth.uid(),
+         jsonb_build_object('field', 'client_id', 'from', p_drop, 'to', p_keep)
+    from public.service_requests r where r.client_id = p_drop;
+
+  update public.service_requests set client_id = p_keep where client_id = p_drop;
+  get diagnostics moved = row_count;
+
+  insert into public.audit_events (actor_id, type, metadata)
+  values (auth.uid(), 'merge_clients', jsonb_build_object('kept', p_keep, 'dropped', p_drop, 'requests_moved', moved,
+          'dropped_name', dropped.first_name || ' ' || dropped.last_name));
+
+  delete from public.clients where id = p_drop;
+  return moved;
+end;
+$$;
+
+
+-- ---------------------------------------------------------------------------
 -- Private bucket: 10 MB, allow-listed types, access mirrors the table policies
 -- ---------------------------------------------------------------------------
 
@@ -61,6 +121,15 @@ on conflict (id) do update set public = false, file_size_limit = excluded.file_s
 create policy request_docs_read on storage.objects for select to authenticated
   using (bucket_id = 'request-docs'
          and exists (select 1 from public.request_documents d where d.storage_path = name));
+-- A DELETE (or an INSERT ... RETURNING, which is how the Storage API uploads) with a WHERE clause also has to pass
+-- the SELECT policies, so the uploader may see their own not-yet-registered object. Nobody else can.
+create policy request_docs_read_own_pending on storage.objects for select to authenticated
+  using (bucket_id = 'request-docs' and owner = auth.uid() and public.staff_role() in ('admin', 'agent'));
+-- Cleanup: staff can remove an object that never got a document row (a registration that failed after the
+-- upload). A registered document is never deletable, and an unregistered object is unreadable to everyone anyway.
+create policy request_docs_cleanup on storage.objects for delete to authenticated
+  using (bucket_id = 'request-docs' and public.staff_role() in ('admin', 'agent')
+         and not exists (select 1 from public.request_documents d where d.storage_path = name));
 -- Uploading: staff who can edit, into the request/ prefix only.
 create policy request_docs_upload on storage.objects for insert to authenticated
   with check (bucket_id = 'request-docs' and name like 'request/%' and public.staff_role() in ('admin', 'agent'));

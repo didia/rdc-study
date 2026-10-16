@@ -23,7 +23,8 @@ insert into public.lost_reasons (code, label_fr, sort_order) values
 
 alter table public.service_requests add column lost_reason text references public.lost_reasons (code);
 
--- Leaving a lost status clears the reason; the status_change event records it when entering one.
+-- Entering a lost status requires an active reason (enforced here, not only in the console action);
+-- leaving a lost status clears it; the status_change event records it.
 create or replace function public.service_requests_before_write() returns trigger
 language plpgsql set search_path = '' as $$
 declare
@@ -40,9 +41,19 @@ begin
     status_changed := new.status is distinct from old.status;
   end if;
 
+  if tg_op = 'UPDATE' then
+    if new.lost_reason is not null and new.lost_reason is distinct from old.lost_reason
+       and not exists (select 1 from public.lost_reasons where code = new.lost_reason and is_active) then
+      raise exception 'inactive lost reason' using errcode = 'check_violation';
+    end if;
+  end if;
+
   if status_changed then
     select stage into new_stage from public.request_statuses where code = new.status;
     if new_stage = 'lost' then
+      if tg_op = 'UPDATE' and new.lost_reason is null then
+        raise exception 'a lost status requires a lost reason' using errcode = 'check_violation';
+      end if;
       new.closed_at = coalesce(new.closed_at, now());
     else
       new.closed_at = null;

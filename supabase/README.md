@@ -7,7 +7,8 @@ supabase/
   config.toml        local stack + auth settings (mirror these in the hosted projects, see below)
   migrations/        the schema — the ONLY way production changes (never edit prod in the dashboard)
   templates/         French auth emails (invitation, password reset)
-  tests/             pgTAP tests: RLS, triggers, price resolution (`npm run db:test`)
+  tests/             pgTAP tests: RLS, MFA (aal1/aal2), triggers, price resolution (`npm run db:test`);
+                     tests/concurrency/: two-session race tests (`npm run db:test:concurrency`)
 ```
 
 ## Local development
