@@ -6,7 +6,7 @@ import {z} from 'zod';
 
 import {requireStaff} from '../auth';
 import {packageLabel} from '../catalogue';
-import {DOCUMENT_KINDS, documentPath} from '../documents';
+import {DOCUMENT_KINDS, documentPath, receiptBlocker, registrationFileName} from '../documents';
 import type {FormState} from '../form-state';
 import {submittedValues} from '../form-state';
 import {t} from '../i18n';
@@ -23,7 +23,7 @@ const registerSchema = z.object({
   requestId: uuid,
   kind: z.enum(DOCUMENT_KINDS.map((k) => k.code) as [string, ...string[]]),
   path: z.string().max(400),
-  fileName: z.string().min(1).max(200),
+  fileName: z.string().min(1).max(1000),
   mimeType: z.string().max(120).optional(),
   size: z.number().int().min(0).max(10 * 1024 * 1024),
 });
@@ -44,7 +44,7 @@ export async function registerDocument(input: z.infer<typeof registerSchema>): P
     request_id: requestId,
     kind: parsed.data.kind,
     storage_path: path,
-    file_name: parsed.data.fileName,
+    file_name: registrationFileName(parsed.data.fileName),
     mime_type: parsed.data.mimeType ?? null,
     size_bytes: parsed.data.size,
     uploaded_by: user.id,
@@ -140,7 +140,9 @@ export async function generateReceipt(_prev: FormState, formData: FormData): Pro
     supabase.from('document_templates').select('*').eq('kind', 'receipt').order('version', {ascending: false}).limit(1).maybeSingle(),
   ]);
   if (!payment || !request || !template) return {error: t('admin.documents.not-found')};
-  if (payment.voided_at) return {error: t('admin.documents.voided-payment')};
+  const blocker = receiptBlocker(payment);
+  if (blocker === 'voided') return {error: t('admin.documents.voided-payment')};
+  if (blocker === 'refund') return {error: t('admin.documents.refund-receipt')};
 
   const client = (request as any).client;
   const vars = receiptVariables({

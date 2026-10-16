@@ -7,13 +7,14 @@ import {hasRole, isAdmin, ROLE_LABELS} from '@/lib/admin/roles';
 import styles from './admin.module.scss';
 import {NavLink} from './NavLink';
 
+// Mentors have no read access to requests/clients (RLS) until Phase 3, so those links are hidden for them.
 // Items are added here as each console section ships.
-const NAV: {href: string; label: string; adminOnly?: boolean; minRole?: 'agent'; external?: boolean; badge?: boolean}[] = [
-  {href: '/admin', label: 'admin.nav.today', badge: true},
-  {href: '/admin/demandes', label: 'admin.nav.requests'},
-  {href: '/admin/tableau-de-bord', label: 'admin.nav.dashboard'},
+const NAV: {href: string; label: string; adminOnly?: boolean; minRole?: 'agent'; external?: boolean; hideForMentor?: boolean; badge?: boolean}[] = [
+  {href: '/admin', label: 'admin.nav.today', hideForMentor: true, badge: true},
+  {href: '/admin/demandes', label: 'admin.nav.requests', hideForMentor: true},
+  {href: '/admin/tableau-de-bord', label: 'admin.nav.dashboard', hideForMentor: true},
   {href: '/admin/paiements', label: 'admin.nav.payments', minRole: 'agent'},
-  {href: '/admin/clients', label: 'admin.nav.clients'},
+  {href: '/admin/clients', label: 'admin.nav.clients', hideForMentor: true},
   {href: '/admin/tarifs', label: 'admin.nav.prices'},
   {href: '/cms', label: 'admin.nav.content', external: true},
   {href: '/admin/modeles', label: 'admin.nav.templates', adminOnly: true},
@@ -22,7 +23,12 @@ const NAV: {href: string; label: string; adminOnly?: boolean; minRole?: 'agent';
 ];
 
 export function Shell({profile, overdue = 0, children}: {profile: StaffProfile; overdue?: number; children: React.ReactNode}) {
-  const items = NAV.filter((item) => (!item.adminOnly || isAdmin(profile.role)) && (!item.minRole || hasRole(profile.role, item.minRole)));
+  const items = NAV.filter(
+    (item) =>
+      (!item.adminOnly || isAdmin(profile.role)) &&
+      (!item.minRole || hasRole(profile.role, item.minRole)) &&
+      !(item.hideForMentor && profile.role === 'mentor'),
+  );
   return (
     <div className={styles.shell}>
       <aside className={styles.sidebar}>

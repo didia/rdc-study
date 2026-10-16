@@ -2,6 +2,7 @@ import 'server-only';
 
 import type {createSupabaseServerClient} from '../db/server';
 import type {Database} from '../db/types';
+import {zonedDayStart} from '../format';
 import {PAGE_SIZE, searchTerms, type ListParams} from '../list-params';
 
 type Supabase = Awaited<ReturnType<typeof createSupabaseServerClient>>;
@@ -63,12 +64,8 @@ async function applyFilters<T extends {or: any; eq: any; gte: any; lt: any; in: 
   if (params.assignee === 'none') q = q.is('assigned_to', null);
   else if (params.assignee === 'me') q = q.eq('assigned_to', userId);
   else if (params.assignee) q = q.eq('assigned_to', params.assignee);
-  if (params.from) q = q.gte('submitted_at', `${params.from}T00:00:00Z`);
-  if (params.to) {
-    const next = new Date(`${params.to}T00:00:00Z`);
-    next.setUTCDate(next.getUTCDate() + 1);
-    q = q.lt('submitted_at', next.toISOString());
-  }
+  if (params.from) q = q.gte('submitted_at', zonedDayStart(params.from).toISOString());
+  if (params.to) q = q.lt('submitted_at', zonedDayStart(params.to, 1).toISOString());
   return {query: q};
 }
 
@@ -79,18 +76,27 @@ export async function listRequests(supabase: Supabase, params: ListParams, userI
   const {data, count, error} = await query
     .order(params.sort, {ascending: params.dir === 'asc'})
     .order('created_at', {ascending: false})
+    .order('id')
     .range(from, from + pageSize - 1);
   return {rows: (data ?? []) as RequestListItem[], total: count ?? 0, error};
 }
 
-/** Counts per status for the current filters (status filter excluded) — the replacement for the spreadsheet tabs. */
-export async function statusCounts(supabase: Supabase, params: ListParams, userId: string) {
-  let query: any = supabase.from('service_requests').select('status, client:clients!inner(origin_country)');
+/**
+ * Per status, for the current filters (status filter excluded): how many requests, and when the least
+ * recently active one was last touched. Counts are the replacement for the spreadsheet tabs; the board
+ * uses both so its column headers describe every matching request, not just the loaded page.
+ */
+export async function statusSummary(supabase: Supabase, params: ListParams, userId: string) {
+  let query: any = supabase.from('service_requests').select('status, last_activity_at, client:clients!inner(origin_country)');
   query = (await applyFilters(supabase, query, params, userId, {withStatus: false})).query;
   const {data} = await query.limit(10000);
   const counts: Record<string, number> = {};
-  for (const row of (data ?? []) as {status: string}[]) counts[row.status] = (counts[row.status] ?? 0) + 1;
-  return counts;
+  const oldest: Record<string, string> = {};
+  for (const row of (data ?? []) as {status: string; last_activity_at: string}[]) {
+    counts[row.status] = (counts[row.status] ?? 0) + 1;
+    if (!oldest[row.status] || row.last_activity_at < oldest[row.status]) oldest[row.status] = row.last_activity_at;
+  }
+  return {counts, oldest};
 }
 
 export async function getRequest(supabase: Supabase, id: string) {

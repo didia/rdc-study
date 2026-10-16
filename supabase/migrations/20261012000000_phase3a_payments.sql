@@ -3,6 +3,8 @@
 -- Delivery statuses become visible (Phase 3 gives them a purpose); `completed` closes a request.
 update public.request_statuses set is_active = true where code in ('paid', 'in_progress', 'completed');
 
+-- Same function as Phase 2A (lost-reason guards included); the only change is that `completed` also
+-- closes a request. Keep the two in step: this replaces the whole body.
 create or replace function public.service_requests_before_write() returns trigger
 language plpgsql set search_path = '' as $$
 declare
@@ -19,14 +21,22 @@ begin
     status_changed := new.status is distinct from old.status;
   end if;
 
+  if tg_op = 'UPDATE' then
+    if new.lost_reason is not null and new.lost_reason is distinct from old.lost_reason
+       and not exists (select 1 from public.lost_reasons where code = new.lost_reason and is_active) then
+      raise exception 'inactive lost reason' using errcode = 'check_violation';
+    end if;
+  end if;
+
   if status_changed then
     select stage into new_stage from public.request_statuses where code = new.status;
-    if new_stage = 'lost' or new.status = 'completed' then
+    if new_stage = 'lost' then
+      if tg_op = 'UPDATE' and new.lost_reason is null then
+        raise exception 'a lost status requires a lost reason' using errcode = 'check_violation';
+      end if;
       new.closed_at = coalesce(new.closed_at, now());
     else
-      new.closed_at = null;
-    end if;
-    if new_stage <> 'lost' then
+      new.closed_at = case when new.status = 'completed' then coalesce(new.closed_at, now()) else null end;
       new.lost_reason = null;
     end if;
   end if;
@@ -36,7 +46,7 @@ $$;
 
 alter table public.service_requests
   add column agreed_price_cents int check (agreed_price_cents is null or agreed_price_cents >= 0),
-  add column agreed_currency text not null default 'USD';
+  add column agreed_currency text not null default 'USD' check (agreed_currency in ('USD', 'CDF', 'EUR'));
 
 -- ---------------------------------------------------------------------------
 -- Payments (money records are never edited or deleted: a mistake is voided)
@@ -61,13 +71,27 @@ create table public.payments (
 );
 create index payments_request_idx on public.payments (request_id);
 create index payments_paid_at_idx on public.payments (paid_at desc);
+-- The same Mobile Money / bank transaction cannot be recorded twice (a voided entry frees its reference).
+create unique index payments_external_ref_uq on public.payments (method, external_ref)
+  where external_ref is not null and voided_at is null;
 
 create function public.payments_guard() returns trigger
 language plpgsql set search_path = '' as $$
+declare
+  net bigint;
 begin
   if tg_op = 'INSERT' then
     new.recorded_by = coalesce(new.recorded_by, auth.uid());
     new.voided_at = null; new.voided_by = null; new.void_reason = null;
+    if new.kind = 'refund' then
+      -- The request row lock serialises refunds and voids, so two concurrent ones cannot both pass the check.
+      perform 1 from public.service_requests where id = new.request_id for update;
+      select coalesce(sum(case when kind = 'refund' then -amount_cents else amount_cents end), 0) into net
+        from public.payments where request_id = new.request_id and currency = new.currency and voided_at is null;
+      if new.amount_cents > net then
+        raise exception 'A refund cannot exceed the net amount received in this currency' using errcode = 'P0001';
+      end if;
+    end if;
     return new;
   end if;
   -- UPDATE: the only allowed change is voiding a live payment.
@@ -78,6 +102,16 @@ begin
         is distinct from (to_jsonb(old) - 'voided_at' - 'voided_by' - 'void_reason') then
     raise exception 'Payments are immutable: only a void (with a reason) is allowed' using errcode = 'P0001';
   end if;
+  if old.kind <> 'refund' then
+    -- Voiding money that a refund already counts on would leave a negative balance: void the refund first.
+    perform 1 from public.service_requests where id = old.request_id for update;
+    select coalesce(sum(case when kind = 'refund' then -amount_cents else amount_cents end), 0) into net
+      from public.payments where request_id = old.request_id and currency = old.currency and voided_at is null and id <> old.id;
+    if net < 0 then
+      raise exception 'Void the refunds recorded after this payment first' using errcode = 'P0001';
+    end if;
+  end if;
+  new.voided_at = now();
   new.voided_by = coalesce(auth.uid(), new.voided_by);
   return new;
 end;
@@ -106,6 +140,81 @@ $$;
 create trigger payments_log after insert or update on public.payments
   for each row execute function public.log_payment();
 revoke all on function public.payments_guard(), public.log_payment() from public, anon;
+
+-- The timeline copies money (payment amounts, agreed-price changes): only staff who may see payments read those events.
+drop policy re_select on public.request_events;
+create policy re_select on public.request_events for select to authenticated
+  using (
+    exists (select 1 from public.service_requests r where r.id = request_id)
+    and (
+      public.staff_role() in ('admin', 'agent')
+      or (type <> 'payment' and not (type = 'field_change' and coalesce(metadata->>'field', '') = 'agreed_price'))
+    )
+  );
+
+-- ---------------------------------------------------------------------------
+-- Agreed price: any override needs a reason and leaves a timeline entry, whatever the write path.
+-- The reason travels with the transaction (set_agreed_price), like app.price_reason for prices.
+-- ---------------------------------------------------------------------------
+
+create function public.agreed_price_guard() returns trigger
+language plpgsql set search_path = '' as $$
+declare
+  reason text := trim(coalesce(current_setting('app.agreed_price_reason', true), ''));
+begin
+  -- The quote is in USD: another currency never reinterprets it, the amount must be given.
+  if new.agreed_currency <> 'USD' and new.agreed_price_cents is null then
+    raise exception 'A price in % needs an explicit amount (the quote is in USD)', new.agreed_currency using errcode = 'P0001';
+  end if;
+  -- Payments are matched to the price by currency: switching would strand them.
+  if new.agreed_currency is distinct from old.agreed_currency
+     and exists (select 1 from public.payments where request_id = new.id and currency = old.agreed_currency and voided_at is null) then
+    raise exception 'The currency cannot change while payments exist in %', old.agreed_currency using errcode = 'P0001';
+  end if;
+  -- Only falling back to the quote is free.
+  if not (new.agreed_currency = 'USD' and (new.agreed_price_cents is null or new.agreed_price_cents = new.quoted_price_cents))
+     and length(reason) < 3 then
+    raise exception 'A reason is required to override the quoted price' using errcode = 'P0001';
+  end if;
+  return new;
+end;
+$$;
+create trigger service_requests_agreed_price_guard before update on public.service_requests
+  for each row when (old.agreed_price_cents is distinct from new.agreed_price_cents
+                     or old.agreed_currency is distinct from new.agreed_currency)
+  execute function public.agreed_price_guard();
+
+create function public.log_agreed_price() returns trigger
+language plpgsql security definer set search_path = '' as $$
+begin
+  insert into public.request_events (request_id, type, body, actor_id, metadata)
+  values (new.id, 'field_change', nullif(trim(coalesce(current_setting('app.agreed_price_reason', true), '')), ''), auth.uid(),
+          jsonb_build_object('field', 'agreed_price',
+                             'from', coalesce(old.agreed_price_cents, old.quoted_price_cents), 'from_currency', old.agreed_currency,
+                             'to', coalesce(new.agreed_price_cents, new.quoted_price_cents), 'to_currency', new.agreed_currency));
+  return null;
+end;
+$$;
+create trigger service_requests_log_agreed_price after update on public.service_requests
+  for each row when (old.agreed_price_cents is distinct from new.agreed_price_cents
+                     or old.agreed_currency is distinct from new.agreed_currency)
+  execute function public.log_agreed_price();
+
+-- One transaction: set the reason the triggers read, then update (RLS: admins and agents).
+create function public.set_agreed_price(p_id uuid, p_cents int, p_currency text, p_reason text)
+returns void
+language plpgsql set search_path = '' as $$
+begin
+  perform set_config('app.agreed_price_reason', trim(coalesce(p_reason, '')), true);
+  update public.service_requests set agreed_price_cents = p_cents, agreed_currency = p_currency where id = p_id;
+  if not found then
+    raise exception 'Request not found' using errcode = 'P0002';
+  end if;
+end;
+$$;
+revoke all on function public.agreed_price_guard(), public.log_agreed_price() from public, anon;
+revoke all on function public.set_agreed_price(uuid, int, text, text) from public, anon;
+grant execute on function public.set_agreed_price(uuid, int, text, text) to authenticated;
 
 -- Net money received per request and currency (never summed across currencies); voided payments ignored.
 create view public.request_paid with (security_invoker = true) as
@@ -170,9 +279,9 @@ language sql stable set search_path = '' as $$
          sum(coalesce(r.agreed_price_cents, r.quoted_price_cents) - coalesce(pd.net_cents, 0))::bigint,
          count(*)::int
     from public.service_requests r
+    join public.request_statuses s on s.code = r.status and (s.stage = 'won' or s.code = 'awaiting_payment')
     left join public.request_paid pd on pd.request_id = r.id and pd.currency = r.agreed_currency
-   where r.status in ('awaiting_payment', 'deposit_paid', 'paid', 'in_progress', 'completed')
-     and coalesce(r.agreed_price_cents, r.quoted_price_cents) is not null
+   where coalesce(r.agreed_price_cents, r.quoted_price_cents) is not null
      and coalesce(r.agreed_price_cents, r.quoted_price_cents) - coalesce(pd.net_cents, 0) > 0
    group by r.agreed_currency;
 $$;
