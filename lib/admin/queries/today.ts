@@ -14,6 +14,7 @@ export type TodayData = {
   unassignedNew: RequestListItem[];
   waiting: RequestListItem[];
   mine: RequestListItem[];
+  delivery: RequestListItem[];
 };
 
 // Mine first, then the oldest reminder first.
@@ -43,6 +44,14 @@ export async function getTodayData(supabase: Supabase, userId: string, statuses:
   const now = Date.now();
   const nowIso = new Date(now).toISOString();
   const base = () => supabase.from('service_requests').select(SELECT).in('status', open);
+  const {data: deliveryData, error: deliveryError} = await supabase
+    .from('service_requests')
+    .select(SELECT)
+    .eq('mentor_id', userId)
+    .in('status', ['deposit_paid', 'paid', 'in_progress'])
+    .order('last_activity_at', {ascending: true})
+    .limit(200);
+  if (deliveryError) throw new Error(`Today: ${deliveryError.message}`);
 
   // A request is waiting too long once its last activity is older than its status's threshold.
   const waitingFilter = open
@@ -65,6 +74,7 @@ export async function getTodayData(supabase: Supabase, userId: string, statuses:
     unassignedNew,
     waiting: waitingCandidates.filter((r) => !overdueIds.has(r.id)),
     mine,
+    delivery: (deliveryData ?? []) as unknown as RequestListItem[],
   };
 }
 

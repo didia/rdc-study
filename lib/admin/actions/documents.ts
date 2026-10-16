@@ -34,7 +34,7 @@ function refresh(requestId: string) {
 
 // The browser uploads straight to the private bucket (RLS decides who may); this records the document.
 export async function registerDocument(input: z.infer<typeof registerSchema>): Promise<{error?: string}> {
-  const {supabase, user} = await requireStaff('agent');
+  const {supabase, user} = await requireStaff(); // RLS decides: admin/agent, or the mentor of the request
   const parsed = registerSchema.safeParse(input);
   if (!parsed.success) return {error: t('admin.documents.invalid')};
   const {requestId, path} = parsed.data;
@@ -55,7 +55,7 @@ export async function registerDocument(input: z.infer<typeof registerSchema>): P
 
 // Short-lived signed URL, minted with the caller's own rights: no document row they can see, no URL.
 export async function getDocumentUrl(documentId: string): Promise<{url?: string; error?: string}> {
-  const {supabase} = await requireStaff('agent');
+  const {supabase} = await requireStaff();
   if (!uuid.safeParse(documentId).success) return {error: t('admin.documents.invalid')};
   const {data: doc} = await supabase.from('request_documents').select('storage_path, file_name').eq('id', documentId).maybeSingle();
   if (!doc) return {error: t('admin.documents.not-found')};
