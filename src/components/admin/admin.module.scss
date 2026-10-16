@@ -1035,3 +1035,31 @@
     font-size: 0.8125rem;
   }
 }
+
+// --- Payments ---------------------------------------------------------------------
+
+.paymentList {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+  }
+}
+
+.voided {
+  opacity: 0.6;
+
+  strong {
+    text-decoration: line-through;
+  }
+}

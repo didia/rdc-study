@@ -6,6 +6,29 @@ import {rangeBounds, trendGrain, type Dimension, type Range} from '../dashboard'
 
 type Supabase = Awaited<ReturnType<typeof createSupabaseServerClient>>;
 
+export async function getRevenue(supabase: Supabase, range: Range) {
+  const {from, to} = rangeBounds(range);
+  const [month, method, destination, pkg, outstanding, delivery] = await Promise.all([
+    supabase.rpc('fn_revenue_by', {p_dimension: 'month', p_from: from, p_to: to}),
+    supabase.rpc('fn_revenue_by', {p_dimension: 'method', p_from: from, p_to: to}),
+    supabase.rpc('fn_revenue_by', {p_dimension: 'destination', p_from: from, p_to: to}),
+    supabase.rpc('fn_revenue_by', {p_dimension: 'package', p_from: from, p_to: to}),
+    supabase.rpc('fn_outstanding'),
+    supabase.rpc('fn_delivery_stats', {p_from: from, p_to: to}),
+  ]);
+  // A failing query must not read as "no revenue": let the error page show instead.
+  const failed = [month, method, destination, pkg, outstanding, delivery].find((r) => r.error);
+  if (failed?.error) throw new Error(`Revenue query failed: ${failed.error.message}`);
+  return {
+    month: month.data ?? [],
+    method: method.data ?? [],
+    destination: destination.data ?? [],
+    package: pkg.data ?? [],
+    outstanding: outstanding.data ?? [],
+    delivery: delivery.data?.[0] ?? null,
+  };
+}
+
 export async function getInsights(supabase: Supabase, range: Range, dimension: Dimension) {
   const {from, to} = rangeBounds(range);
   const [funnel, breakdown, speed, loss, trend] = await Promise.all([

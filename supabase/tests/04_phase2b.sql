@@ -13,6 +13,7 @@ insert into public.staff_profiles (id, full_name, role) values
 update public.staff_profiles set active = false
  where id not in ('00000000-0000-0000-0000-0000000000d1', '00000000-0000-0000-0000-0000000000d2', '00000000-0000-0000-0000-0000000000d3');
 -- Isolate from any dev data: the funnel is computed over a window nothing else touches.
+delete from public.payments;
 delete from public.service_requests;
 
 insert into public.clients (id, first_name, last_name, email, phone_e164, origin_country) values

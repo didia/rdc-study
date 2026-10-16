@@ -2,7 +2,7 @@
 
 import {useActionState} from 'react';
 
-import {saveLostReason, saveTemplate, setRoundRobin} from '@/lib/admin/actions/settings';
+import {saveLostReason, saveTemplate, setDepositShare, setRoundRobin} from '@/lib/admin/actions/settings';
 import {t} from '@/lib/admin/i18n';
 import styles from './admin.module.scss';
 import {Feedback} from './Feedback';
@@ -80,6 +80,23 @@ export function RoundRobinForm({enabled}: {enabled: boolean}) {
         <input type="checkbox" name="enabled" defaultChecked={enabled} /> {t('admin.settings.round-robin')}
       </label>
       <p className={styles.hint}>{t('admin.settings.round-robin-hint')}</p>
+      <Feedback state={state} />
+      <div>
+        <button type="submit" className={styles.button} disabled={pending}>{t('admin.requests.save')}</button>
+      </div>
+    </form>
+  );
+}
+
+export function DepositShareForm({share}: {share: number}) {
+  const [state, action, pending] = useActionState(setDepositShare, undefined);
+  return (
+    <form action={action} className={styles.form}>
+      <div className={styles.field}>
+        <label htmlFor="percent">{t('admin.settings.deposit-share')}</label>
+        <input id="percent" name="percent" inputMode="decimal" required defaultValue={state?.values?.percent ?? String(Math.round(share * 1000) / 10)} className={styles.input} />
+        <span className={styles.hint}>{t('admin.settings.deposit-share-hint')}</span>
+      </div>
       <Feedback state={state} />
       <div>
         <button type="submit" className={styles.button} disabled={pending}>{t('admin.requests.save')}</button>
