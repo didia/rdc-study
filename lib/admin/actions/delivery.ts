@@ -47,30 +47,43 @@ export async function toggleChecklistItem(input: {id: string; key: string; done:
   if (!item) return {error: t('admin.requests.failed')};
 
   const next: ChecklistState = toggled(request.delivery_checklist as ChecklistState, input.key, input.done, user.id);
-  const {data, error} = await supabase
-    .from('service_requests')
-    .update({delivery_checklist: next as any})
-    .eq('id', input.id)
-    .eq('updated_at', request.updated_at)
-    .select('id');
-  if (error) return {error: t('admin.requests.failed')};
-  if (!data?.length) return {error: t('admin.requests.conflict')};
-
-  await supabase.from('request_events').insert({
-    request_id: input.id,
-    type: 'field_change',
-    body: item.label,
-    metadata: {field: 'checklist', item: input.key, done: input.done},
-    actor_id: user.id,
+  // The tick and its timeline entry are written together (one transaction), and only if nobody changed the request meanwhile.
+  const {data: saved, error} = await supabase.rpc('set_delivery_checklist', {
+    p_id: input.id,
+    p_expected_updated_at: request.updated_at,
+    p_checklist: next as any,
+    p_key: input.key,
+    p_done: input.done,
+    p_label: item.label,
   });
+  if (error) return {error: t('admin.requests.failed')};
+  if (!saved) return {error: t('admin.requests.conflict')};
   refresh(input.id);
   return {};
 }
 
+// Delivery only moves forward: start from deposit_paid/paid, complete from any of the three. Completed is final here,
+// and a lost or sales-stage request is never touched (reopening goes through the status dialog and its reason).
+const FROM: Record<'in_progress' | 'completed', string[]> = {
+  in_progress: ['deposit_paid', 'paid'],
+  completed: ['deposit_paid', 'paid', 'in_progress'],
+};
+
 export async function setDeliveryStatus(input: {id: string; status: 'in_progress' | 'completed'}): Promise<{error?: string}> {
   const {supabase} = await requireDeliveryAccess();
-  if (!uuid.safeParse(input.id).success || !['in_progress', 'completed'].includes(input.status)) return {error: t('admin.requests.failed')};
-  const {data, error} = await supabase.from('service_requests').update({status: input.status, status_reason: null}).eq('id', input.id).select('id');
+  if (!uuid.safeParse(input.id).success || !(input.status in FROM)) return {error: t('admin.requests.failed')};
+
+  const {data: request} = await supabase.from('service_requests').select('status, updated_at').eq('id', input.id).maybeSingle();
+  if (!request) return {error: t('admin.requests.failed')};
+  if (!FROM[input.status].includes(request.status)) return {error: t('admin.requests.conflict')};
+
+  const {data, error} = await supabase
+    .from('service_requests')
+    .update({status: input.status, status_reason: null})
+    .eq('id', input.id)
+    .eq('updated_at', request.updated_at)
+    .select('id');
   refresh(input.id);
-  return error || !data?.length ? {error: t('admin.requests.failed')} : {};
+  if (error) return {error: t('admin.requests.failed')};
+  return data?.length ? {} : {error: t('admin.requests.conflict')};
 }

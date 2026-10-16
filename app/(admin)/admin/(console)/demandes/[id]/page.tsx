@@ -105,7 +105,8 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
     done: !!checklistState[i.key]?.done,
     meta: checklistState[i.key]?.at ? `${staffName(checklistState[i.key].by ?? null)} · ${formatDate(checklistState[i.key].at ?? null)}` : null,
   }));
-  const mentors = staff.filter((m) => m.role === 'mentor' || m.role === 'agent' || m.role === 'admin');
+  // Active staff only, plus the current mentor even if deactivated since (shown as such).
+  const mentors = staff.filter((m) => (m.role === 'mentor' || m.role === 'agent' || m.role === 'admin') && (m.active || m.id === request.mentor_id));
   const answers = Object.entries((request.form_answers ?? {}) as Record<string, unknown>);
 
   return (
@@ -271,7 +272,7 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
                 canWork
                 canAssign={editable}
                 mentorId={request.mentor_id}
-                mentors={mentors.map((m) => ({id: m.id, full_name: m.full_name}))}
+                mentors={mentors.map((m) => ({id: m.id, full_name: m.full_name, active: m.active}))}
               />
             </section>
           )}

@@ -665,6 +665,10 @@ export type Database = {
         Args: { p_reason: string; p_scope: string; p_service_type: string }
         Returns: undefined
       }
+      set_delivery_checklist: {
+        Args: { p_checklist: Json; p_done: boolean; p_expected_updated_at: string; p_id: string; p_key: string; p_label: string }
+        Returns: boolean
+      }
       set_agreed_price: {
         Args: { p_cents: number | null; p_currency: string; p_id: string; p_reason: string }
         Returns: undefined

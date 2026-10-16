@@ -7,11 +7,11 @@ import {hasRole, isAdmin, ROLE_LABELS} from '@/lib/admin/roles';
 import styles from './admin.module.scss';
 import {NavLink} from './NavLink';
 
-// Mentors have no read access to requests/clients (RLS) until Phase 3, so those links are hidden for them.
+// Mentors see only their own requests (RLS), so the dashboard and client directory are hidden for them.
 // Items are added here as each console section ships.
 const NAV: {href: string; label: string; adminOnly?: boolean; minRole?: 'agent'; external?: boolean; hideForMentor?: boolean; badge?: boolean}[] = [
-  {href: '/admin', label: 'admin.nav.today', hideForMentor: true, badge: true},
-  {href: '/admin/demandes', label: 'admin.nav.requests', hideForMentor: true},
+  {href: '/admin', label: 'admin.nav.today', badge: true},
+  {href: '/admin/demandes', label: 'admin.nav.requests'},
   {href: '/admin/tableau-de-bord', label: 'admin.nav.dashboard', hideForMentor: true},
   {href: '/admin/paiements', label: 'admin.nav.payments', minRole: 'agent'},
   {href: '/admin/clients', label: 'admin.nav.clients', hideForMentor: true},

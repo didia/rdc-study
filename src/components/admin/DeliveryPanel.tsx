@@ -16,20 +16,25 @@ type Props = {
   canWork: boolean;
   canAssign: boolean;
   mentorId: string | null;
-  mentors: {id: string; full_name: string}[];
+  mentors: {id: string; full_name: string; active: boolean}[];
 };
 
 export function DeliveryPanel({requestId, items, status, canWork, canAssign, mentorId, mentors}: Props) {
   const router = useRouter();
   const [pending, start] = useTransition();
   const [error, setError] = useState<string>();
+  const [mentor, setMentor] = useState(mentorId ?? '');
   const done = items.filter((i) => i.done).length;
 
-  const run = (action: () => Promise<{error?: string}>) =>
+  // On a refused save, `onError` puts the control back to what the server has.
+  const run = (action: () => Promise<{error?: string}>, onError?: () => void) =>
     start(async () => {
       setError(undefined);
       const result = await action();
-      if (result.error) setError(result.error);
+      if (result.error) {
+        setError(result.error);
+        onError?.();
+      }
       router.refresh();
     });
 
@@ -38,19 +43,22 @@ export function DeliveryPanel({requestId, items, status, canWork, canAssign, men
       {canAssign && (
         <div className={styles.field}>
           <label htmlFor="mentor">{t('admin.delivery.mentor')}</label>
-          <select
-            id="mentor"
-            key={mentorId ?? 'none'}
-            defaultValue={mentorId ?? ''}
-            className={styles.select}
-            disabled={pending}
-            onChange={(e) => run(() => assignMentor({id: requestId, mentorId: e.target.value || null}))}
-          >
+          <select id="mentor" value={mentor} className={styles.select} disabled={pending} onChange={(e) => setMentor(e.target.value)}>
             <option value="">{t('admin.delivery.no-mentor')}</option>
             {mentors.map((m) => (
-              <option key={m.id} value={m.id}>{m.full_name}</option>
+              <option key={m.id} value={m.id}>{m.active ? m.full_name : `${m.full_name} ${t('admin.requests.inactive')}`}</option>
             ))}
           </select>
+          <div>
+            <button
+              type="button"
+              className={styles.buttonSecondary}
+              disabled={pending || mentor === (mentorId ?? '')}
+              onClick={() => run(() => assignMentor({id: requestId, mentorId: mentor || null}), () => setMentor(mentorId ?? ''))}
+            >
+              {t('admin.requests.assign')}
+            </button>
+          </div>
         </div>
       )}
 
