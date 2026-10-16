@@ -16,7 +16,7 @@ import {getClientRequests, getRequest, getRequestEvents, getStatuses, listStaff}
 import {RELANCE_LIMIT, relancesSinceLastStatusChange} from '@/lib/admin/followup';
 import {getLostReasons, getTemplates} from '@/lib/admin/queries/today';
 import {formatCents, effectivePrice, kindLabel, methodLabel, netByCurrency, paymentSuggestion} from '@/lib/admin/money';
-import {documentKindLabel} from '@/lib/admin/documents';
+import {documentKindLabel, receiptBlocker} from '@/lib/admin/documents';
 import {canEdit, hasRole, isAdmin} from '@/lib/admin/roles';
 import {defaultPaymentInstructions, officeAddress} from '@/lib/admin/templates';
 import {channelLabel, serviceLabel, sourceLabel, whatsappLink} from '@/lib/admin/vocab';
@@ -297,7 +297,7 @@ export default async function RequestDetailPage({params}: {params: Promise<{id: 
                         {p.voided_at && <div className={styles.stale}>{t('admin.payments.voided-on', {date: formatDate(p.voided_at), reason: p.void_reason ?? ''})}</div>}
                       </div>
                       <div>
-                        {editable && !p.voided_at && <ReceiptButton requestId={request.id} paymentId={p.id} />}
+                        {editable && !receiptBlocker(p) && <ReceiptButton requestId={request.id} paymentId={p.id} />}
                         {isAdmin(profile.role) && !p.voided_at && <VoidPaymentForm requestId={request.id} paymentId={p.id} />}
                       </div>
                     </li>

@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(13);
+select plan(20);
 
 insert into auth.users (id, instance_id, aud, role, email) values
   ('00000000-0000-0000-0000-0000000000f1', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'f1@test.local'),
@@ -55,6 +55,36 @@ reset role;
 select pg_temp.act_as('00000000-0000-0000-0000-0000000000f3');
 select is((select count(*)::int from storage.objects where bucket_id = 'request-docs'), 0, 'a viewer cannot read any document (no signed URL can be minted)');
 reset role;
+
+-- A failed registration can be cleaned up, a registered document cannot be removed from storage
+reset role;
+insert into storage.objects (bucket_id, name) values ('request-docs', 'request/20000000-0000-0000-0000-0000000000f1/failed.pdf');
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000f2');
+delete from storage.objects where name = 'request/20000000-0000-0000-0000-0000000000f1/failed.pdf';
+delete from storage.objects where name = 'request/20000000-0000-0000-0000-0000000000f1/aaaa-contract.pdf';
+reset role;
+select is((select count(*)::int from storage.objects where name = 'request/20000000-0000-0000-0000-0000000000f1/failed.pdf'), 0,
+  'staff can remove an unregistered object');
+select is((select count(*)::int from storage.objects where name = 'request/20000000-0000-0000-0000-0000000000f1/aaaa-contract.pdf'), 1,
+  'a registered document stays in storage');
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000f3');
+delete from storage.objects where name = 'request/20000000-0000-0000-0000-0000000000f1/orphan.pdf';
+reset role;
+select is((select count(*)::int from storage.objects where name = 'request/20000000-0000-0000-0000-0000000000f1/orphan.pdf'), 1,
+  'a viewer cannot remove objects');
+
+-- Merging duplicate clients keeps the address
+insert into public.clients (id, first_name, last_name, address) values
+  ('10000000-0000-0000-0000-0000000000f2', 'Keep', 'NoAddress', null),
+  ('10000000-0000-0000-0000-0000000000f3', 'Donor', 'WithAddress', 'Kinshasa, Gombe'),
+  ('10000000-0000-0000-0000-0000000000f4', 'Keep', 'HasAddress', 'Lubumbashi'),
+  ('10000000-0000-0000-0000-0000000000f5', 'Donor', 'OtherAddress', 'Goma');
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000f2');
+select lives_ok($$select public.merge_clients('10000000-0000-0000-0000-0000000000f2', '10000000-0000-0000-0000-0000000000f3')$$, 'agent merges into a keeper without address');
+select lives_ok($$select public.merge_clients('10000000-0000-0000-0000-0000000000f4', '10000000-0000-0000-0000-0000000000f5')$$, 'agent merges into a keeper with address');
+reset role;
+select is((select address from public.clients where id = '10000000-0000-0000-0000-0000000000f2'), 'Kinshasa, Gombe', 'the keeper inherits the donor''s address');
+select is((select address from public.clients where id = '10000000-0000-0000-0000-0000000000f4'), 'Lubumbashi', 'an existing address is not overwritten');
 
 -- Templates are versioned: only admins add versions
 select pg_temp.act_as('00000000-0000-0000-0000-0000000000f2');

@@ -17,8 +17,8 @@ export default async function MergePage({searchParams}: {searchParams: Promise<{
   if (!kept || !dropped) notFound();
   const {count} = await supabase.from('service_requests').select('id', {count: 'exact', head: true}).eq('client_id', drop);
 
-  const filled = (['email', 'phone', 'origin_country'] as const).filter((f) => !kept[f] && dropped[f]);
-  const fieldLabel = {email: t('admin.auth.email'), phone: t('admin.clients.phone'), origin_country: t('admin.clients.origin')};
+  const filled = (['email', 'phone', 'origin_country', 'address'] as const).filter((f) => !kept[f] && dropped[f]);
+  const fieldLabel = {email: t('admin.auth.email'), phone: t('admin.clients.phone'), origin_country: t('admin.clients.origin'), address: t('admin.clients.address')};
 
   return (
     <>
@@ -38,12 +38,12 @@ export default async function MergePage({searchParams}: {searchParams: Promise<{
           <div>
             <h2>{t('admin.clients.merge-keep')}</h2>
             <p><strong>{kept.first_name} {kept.last_name}</strong></p>
-            <p className={styles.muted}>{[kept.email, kept.phone, kept.origin_country].filter(Boolean).join(' · ')}</p>
+            <p className={styles.muted}>{[kept.email, kept.phone, kept.origin_country, kept.address].filter(Boolean).join(' · ')}</p>
           </div>
           <div>
             <h2>{t('admin.clients.merge-drop')}</h2>
             <p><strong>{dropped.first_name} {dropped.last_name}</strong></p>
-            <p className={styles.muted}>{[dropped.email, dropped.phone, dropped.origin_country].filter(Boolean).join(' · ')}</p>
+            <p className={styles.muted}>{[dropped.email, dropped.phone, dropped.origin_country, dropped.address].filter(Boolean).join(' · ')}</p>
           </div>
         </div>
         <h2 style={{marginTop: 18}}>{t('admin.clients.merge-preview')}</h2>
