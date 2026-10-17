@@ -2,6 +2,13 @@ import {defineConfig, devices} from '@playwright/test';
 
 // Smoke tests against a production build and a local Supabase stack (see .github/workflows/nodejs.yml, job `e2e`).
 // Locally: `supabase start`, put its URL/keys in .env.local, `npm run build`, then `npm run test:e2e`.
+// The specs read the stored rows with the service-role key from .env.local (CI writes it there too).
+try {
+  process.loadEnvFile('.env.local');
+} catch {
+  // not present: the variables may already be in the environment
+}
+
 const port = Number(process.env.E2E_PORT ?? 3100);
 
 export default defineConfig({

@@ -1,6 +1,6 @@
 import {expect, test} from '@playwright/test';
 
-import {signIn, uniqueEmail} from './helpers';
+import {fetchRequest, signIn, uniqueEmail} from './helpers';
 
 test('health probe answers without touching the database', async ({request}) => {
   const response = await request.get('/api/requests/health');
@@ -84,12 +84,12 @@ test('the public assistance form stores a request with the price shown to the vi
   await page.getByRole('button', {name: /Oui, je souhaite/}).click();
   await expect(page.getByText(/numéro de référence/i)).toBeVisible({timeout: 15_000});
 
-  await signInAgain(page);
+  await signIn(page);
   await page.goto(`/admin/demandes?q=${encodeURIComponent(email)}`);
   await expect(page.getByText('Belgique – Admission')).toBeVisible();
-});
 
-async function signInAgain(page: import('@playwright/test').Page) {
-  const {signIn} = await import('./helpers');
-  await signIn(page);
-}
+  // The list does not render the column, so read it back: the price shown to the visitor (400 $ US) must be stored.
+  const reference = (await page.getByRole('link', {name: /^RDC-\d{4}-\d{4,}$/}).first().textContent())?.trim() ?? '';
+  expect(reference).toMatch(/^RDC-/);
+  expect((await fetchRequest(reference)).displayed_price_cents).toBe(40000);
+});

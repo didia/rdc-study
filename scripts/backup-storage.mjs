@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Copies every object of the private `request-docs` bucket into a local directory (for the weekly backup job).
 //   node scripts/backup-storage.mjs <output-dir>
-// Needs NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY.
+// Needs NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY. When EXPECTED_OBJECT_COUNT is set (the workflow passes
+// `select count(*) from storage.objects where bucket_id = 'request-docs'`), the job fails if fewer files were copied.
 import {mkdir, writeFile} from 'node:fs/promises';
 import path from 'node:path';
 
@@ -18,13 +19,19 @@ if (!out || !url || !key) {
 const supabase = createClient(url, key, {auth: {persistSession: false, autoRefreshToken: false}});
 const bucket = supabase.storage.from('request-docs');
 
+const PAGE_SIZE = 1000;
+
+// list() returns at most `limit` entries per call, so page with a stable sort until a short page.
 async function* walk(prefix = '') {
-  const {data, error} = await bucket.list(prefix, {limit: 1000});
-  if (error) throw error;
-  for (const entry of data ?? []) {
-    const full = prefix ? `${prefix}/${entry.name}` : entry.name;
-    if (entry.id === null) yield* walk(full); // folder
-    else yield full;
+  for (let offset = 0; ; offset += PAGE_SIZE) {
+    const {data, error} = await bucket.list(prefix, {limit: PAGE_SIZE, offset, sortBy: {column: 'name', order: 'asc'}});
+    if (error) throw error;
+    for (const entry of data ?? []) {
+      const full = prefix ? `${prefix}/${entry.name}` : entry.name;
+      if (entry.id === null) yield* walk(full); // folder
+      else yield full;
+    }
+    if ((data?.length ?? 0) < PAGE_SIZE) return;
   }
 }
 
@@ -38,3 +45,16 @@ for await (const file of walk()) {
   count += 1;
 }
 console.log(`Backed up ${count} file(s) to ${out}`);
+
+const expected = process.env.EXPECTED_OBJECT_COUNT;
+if (expected !== undefined && expected !== '') {
+  if (!/^\d+$/.test(expected)) {
+    console.error(`EXPECTED_OBJECT_COUNT is not a number: "${expected}"`);
+    process.exit(1);
+  }
+  // Fewer files than storage.objects means documents were skipped; a few more is just uploads made during the run.
+  if (count < Number(expected)) {
+    console.error(`Incomplete copy: ${count} file(s) downloaded but storage.objects has ${expected}`);
+    process.exit(1);
+  }
+}

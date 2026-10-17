@@ -5,7 +5,8 @@
 | What | How |
 |------|-----|
 | Intake errors | Sentry alert on events tagged `area:intake` (the intake route reports storage failures there) |
-| Legacy fallback usage | Sentry alert on the message `assistance_request_not_stored` (the visitor was served by the email path only — enter the request by hand) |
+| Legacy fallback usage | Sentry alert on the message `assistance_request_not_stored` (the visitor was served by the email path only — re-enter the request from the legacy contact-form email; the Sentry event carries no personal data) |
+| Weekly backup | GitHub → Actions → "Weekly backup": turn on failure notifications for the workflow (a red Sunday run means there is no new backup) |
 | Notification failures | Sentry tag `area:notifications` |
 | Retention | `retention_dry_run` / `retention_run` rows in `/admin/audit` |
 | Uptime | HTTP check on `https://www.rdcetudes.com/api/requests/health` (expects `{"ok":true}`, touches no data) |

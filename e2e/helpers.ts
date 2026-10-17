@@ -13,3 +13,17 @@ export async function signIn(page: Page, user = ADMIN) {
 }
 
 export const uniqueEmail = (prefix: string) => `${prefix}.${Date.now()}@example.test`;
+
+// Reads one stored request with the service-role key (PostgREST), e.g. to check a column the console does not render.
+export async function fetchRequest(reference: string): Promise<{displayed_price_cents: number | null}> {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key) throw new Error('NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required (see .env.local)');
+  const response = await fetch(`${url}/rest/v1/service_requests?reference=eq.${encodeURIComponent(reference)}&select=displayed_price_cents`, {
+    headers: {apikey: key, Authorization: `Bearer ${key}`},
+  });
+  expect(response.ok).toBe(true);
+  const rows = await response.json();
+  expect(rows).toHaveLength(1);
+  return rows[0];
+}
