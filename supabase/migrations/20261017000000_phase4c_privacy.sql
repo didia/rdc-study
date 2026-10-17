@@ -9,16 +9,29 @@ insert into public.app_settings (key, value) values
 -- Payments stay immutable, with one exception: anonymisation may blank the free-text fields (note, reference).
 create or replace function public.payments_guard() returns trigger
 language plpgsql set search_path = '' as $$
+declare
+  net bigint;
 begin
   if tg_op = 'INSERT' then
     new.recorded_by = coalesce(new.recorded_by, auth.uid());
     new.voided_at = null; new.voided_by = null; new.void_reason = null;
+    if new.kind = 'refund' then
+      -- The request row lock serialises refunds and voids, so two concurrent ones cannot both pass the check.
+      perform 1 from public.service_requests where id = new.request_id for update;
+      select coalesce(sum(case when kind = 'refund' then -amount_cents else amount_cents end), 0) into net
+        from public.payments where request_id = new.request_id and currency = new.currency and voided_at is null;
+      if new.amount_cents > net then
+        raise exception 'A refund cannot exceed the net amount received in this currency' using errcode = 'P0001';
+      end if;
+    end if;
     return new;
   end if;
+  -- Anonymisation may blank the free-text fields, nothing else.
   if current_setting('app.anonymising', true) = 'on'
      and (to_jsonb(new) - 'note' - 'external_ref') is not distinct from (to_jsonb(old) - 'note' - 'external_ref') then
     return new;
   end if;
+  -- UPDATE: the only allowed change is voiding a live payment.
   if old.voided_at is not null
      or new.voided_at is null
      or coalesce(trim(new.void_reason), '') = ''
@@ -26,6 +39,16 @@ begin
         is distinct from (to_jsonb(old) - 'voided_at' - 'voided_by' - 'void_reason') then
     raise exception 'Payments are immutable: only a void (with a reason) is allowed' using errcode = 'P0001';
   end if;
+  if old.kind <> 'refund' then
+    -- Voiding money that a refund already counts on would leave a negative balance: void the refund first.
+    perform 1 from public.service_requests where id = old.request_id for update;
+    select coalesce(sum(case when kind = 'refund' then -amount_cents else amount_cents end), 0) into net
+      from public.payments where request_id = old.request_id and currency = old.currency and voided_at is null and id <> old.id;
+    if net < 0 then
+      raise exception 'Void the refunds recorded after this payment first' using errcode = 'P0001';
+    end if;
+  end if;
+  new.voided_at = now();
   new.voided_by = coalesce(auth.uid(), new.voided_by);
   return new;
 end;
