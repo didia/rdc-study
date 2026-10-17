@@ -1,6 +1,6 @@
 'use server';
 
-import {revalidatePath, revalidateTag} from 'next/cache';
+import {revalidatePath, updateTag} from 'next/cache';
 import {z} from 'zod';
 
 import {PRICES_TAG} from '../../prices';
@@ -17,7 +17,7 @@ const schema = z.object({
 });
 
 function refreshPublicPrices() {
-  revalidateTag(PRICES_TAG);
+  updateTag(PRICES_TAG);
   for (const path of ['/', '/nos-services', '/assistance-process', '/admin/tarifs']) revalidatePath(path);
 }
 
@@ -59,7 +59,7 @@ export async function removePriceException(_prev: FormState, formData: FormData)
     scope: formData.get('scope'),
     reason: formData.get('reason'),
   });
-  if (!parsed.success || parsed.data.scope === '*') return {error: t('admin.prices.invalid')};
+  if (!parsed.success || parsed.data.scope === '*' || parsed.data.scope === 'kind:visa') return {error: t('admin.prices.invalid')};
 
   const {error} = await supabase.rpc('remove_service_price', {
     p_service_type: parsed.data.serviceType,

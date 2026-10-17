@@ -16,10 +16,12 @@ export type BoardCard = {
   assignee: string | null;
   status: string;
   lastActivityAt: string;
+  updatedAt: string;
   ageLabel: string;
   stale: boolean;
 };
-export type BoardColumn = {code: string; label: string; stage: string; color: string | null; oldest: string | null};
+// `total` and `oldest` describe every matching request of the column, not only the ones loaded on this page.
+export type BoardColumn = {code: string; label: string; stage: string; color: string | null; total: number; oldest: string | null};
 
 type Props = {
   columns: BoardColumn[];
@@ -35,20 +37,26 @@ export function Board({columns, cards, lostReasons, canEdit}: Props) {
   const [pending, startTransition] = useTransition();
   const [dragging, setDragging] = useState<string | null>(null);
   const [error, setError] = useState<string>();
-  const [askLost, setAskLost] = useState<{id: string; status: string} | null>(null);
+  // A move that needs an explanation first: a lost reason (entering a lost status) or a reopen reason (leaving one).
+  const [ask, setAsk] = useState<{id: string; status: string; kind: 'lost' | 'reopen'} | null>(null);
   const stageOf = (code: string) => columns.find((c) => c.code === code)?.stage;
 
-  function move(id: string, status: string, lostReason?: string) {
+  function move(id: string, status: string, extra?: {lostReason?: string; reason?: string}) {
     const card = cards.find((c) => c.id === id);
     if (!card || card.status === status) return;
-    if (stageOf(status) === 'lost' && !lostReason) {
-      setAskLost({id, status});
+    const toStage = stageOf(status);
+    if (toStage === 'lost' && !extra?.lostReason) {
+      setAsk({id, status, kind: 'lost'});
+      return;
+    }
+    if (toStage !== 'lost' && stageOf(card.status) === 'lost' && !extra?.reason) {
+      setAsk({id, status, kind: 'reopen'});
       return;
     }
     setError(undefined);
-    setAskLost(null);
+    setAsk(null);
     startTransition(async () => {
-      const result = await moveRequestStatus({id, status, lostReason});
+      const result = await moveRequestStatus({id, status, updatedAt: card.updatedAt, ...extra});
       if (result.error) setError(result.error);
       router.refresh();
     });
@@ -58,24 +66,39 @@ export function Board({columns, cards, lostReasons, canEdit}: Props) {
     <div>
       {error && <p className={styles.alertError} role="alert" style={{marginBottom: 12}}>{error}</p>}
 
-      {askLost && (
+      {ask && (
         <form
           className={styles.bulkBar}
           onSubmit={(event) => {
             event.preventDefault();
-            const reason = String(new FormData(event.currentTarget).get('lostReason') ?? '');
-            if (reason) move(askLost.id, askLost.status, reason);
+            const data = new FormData(event.currentTarget);
+            if (ask.kind === 'lost') {
+              const lostReason = String(data.get('lostReason') ?? '');
+              if (lostReason) move(ask.id, ask.status, {lostReason});
+            } else {
+              const reason = String(data.get('reason') ?? '').trim();
+              if (reason) move(ask.id, ask.status, {reason});
+            }
           }}
         >
-          <strong>{t('admin.board.lost-reason')}</strong>
-          <select name="lostReason" required defaultValue="" className={styles.select} aria-label={t('admin.requests.status.lost-reason')}>
-            <option value="" disabled>—</option>
-            {lostReasons.map((r) => (
-              <option key={r.code} value={r.code}>{r.label_fr}</option>
-            ))}
-          </select>
+          {ask.kind === 'lost' ? (
+            <>
+              <strong>{t('admin.board.lost-reason')}</strong>
+              <select name="lostReason" required defaultValue="" className={styles.select} aria-label={t('admin.requests.status.lost-reason')}>
+                <option value="" disabled>—</option>
+                {lostReasons.map((r) => (
+                  <option key={r.code} value={r.code}>{r.label_fr}</option>
+                ))}
+              </select>
+            </>
+          ) : (
+            <>
+              <strong>{t('admin.board.reopen-reason')}</strong>
+              <input name="reason" required className={styles.input} placeholder={t('admin.requests.status.reason')} aria-label={t('admin.board.reopen-reason')} />
+            </>
+          )}
           <button type="submit" className={styles.button}>{t('admin.board.confirm')}</button>
-          <button type="button" className={styles.buttonSecondary} onClick={() => setAskLost(null)}>{t('admin.board.cancel')}</button>
+          <button type="button" className={styles.buttonSecondary} onClick={() => setAsk(null)}>{t('admin.board.cancel')}</button>
         </form>
       )}
 
@@ -96,7 +119,7 @@ export function Board({columns, cards, lostReasons, canEdit}: Props) {
             >
               <header className={styles.boardHead} style={{borderTopColor: column.color ?? '#667085'}}>
                 <strong>{column.label}</strong>
-                <span className={styles.countMuted}>{items.length}</span>
+                <span className={styles.countMuted}>{column.total}</span>
                 {column.oldest && <small className={styles.muted}>{t('admin.board.oldest', {age: column.oldest})}</small>}
               </header>
               {items.map((card) => (

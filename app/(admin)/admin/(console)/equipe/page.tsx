@@ -3,7 +3,7 @@ import {StaffActiveForm, StaffRoleForm} from '@/components/admin/StaffRowForms';
 import {requireStaff} from '@/lib/admin/auth';
 import {mfaEnrolment} from '@/lib/admin/staff-mfa';
 import {listCmsCollaborators} from '@/lib/admin/integrations';
-import {t} from '@/lib/admin/i18n';
+import {t, tOr} from '@/lib/admin/i18n';
 import styles from '@/components/admin/admin.module.scss';
 
 export default async function TeamPage() {
@@ -54,14 +54,14 @@ export default async function TeamPage() {
       </section>
       <section className={styles.card}>
         <h2>{t('admin.staff.cms-access')}</h2>
-        {cms === null ? (
-          <p className={styles.muted}>{t('admin.content.not-configured')}</p>
+        {cms.status !== 'ok' ? (
+          <p className={styles.muted}>{t(cms.status === 'error' ? 'admin.content.unavailable' : 'admin.content.not-configured')}</p>
         ) : (
           <ul className={styles.countList}>
-            {cms.map((c) => (
+            {cms.data.map((c) => (
               <li key={c.login}>
                 <span>{c.login}</span>
-                <span className={styles.muted}>{c.permission}</span>
+                <span className={styles.muted}>{tOr(`admin.content.github-role.${c.permission}`, c.permission)}</span>
               </li>
             ))}
           </ul>

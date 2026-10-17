@@ -41,4 +41,21 @@ export function safeFileName(name: string): string {
   return truncated || 'document';
 }
 
+/** Longest file name the registration accepts (schema and column check); longer names keep their extension. */
+export const MAX_FILE_NAME_LENGTH = 200;
+export function registrationFileName(name: string): string {
+  const trimmed = name.trim() || 'document';
+  if (trimmed.length <= MAX_FILE_NAME_LENGTH) return trimmed;
+  const dot = trimmed.lastIndexOf('.');
+  const ext = dot > 0 && trimmed.length - dot <= 12 ? trimmed.slice(dot) : '';
+  return trimmed.slice(0, MAX_FILE_NAME_LENGTH - ext.length) + ext;
+}
+
+/** A receipt acknowledges money received by the agency: not for cancelled payments, and not for refunds (money paid out). */
+export function receiptBlocker(payment: {voided_at?: string | null; kind: string}): 'voided' | 'refund' | null {
+  if (payment.voided_at) return 'voided';
+  if (payment.kind === 'refund') return 'refund';
+  return null;
+}
+
 export const documentPath = (requestId: string, uuid: string, fileName: string) => `request/${requestId}/${uuid}-${safeFileName(fileName)}`;

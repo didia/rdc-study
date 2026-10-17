@@ -41,10 +41,11 @@ SUPABASE_SERVICE_ROLE_KEY=Supabase service-role / secret key — SERVER ONLY, ne
 ADMIN_ALLOWED_EMAIL_DOMAINS=Optional comma-separated list of email domains allowed for staff invitations
 ADMIN_INTAKE_ENABLED=Set to false to stop storing assistance requests (kill switch: the form keeps sending the legacy email)
 INTAKE_RATE_LIMIT=Max stored requests per IP per hour (default 10)
-TURNSTILE_SECRET_KEY=Optional Cloudflare Turnstile secret; when set the intake route requires a valid token
+TURNSTILE_SECRET_KEY=Optional Cloudflare Turnstile secret; the intake route only requires a token when NEXT_PUBLIC_TURNSTILE_SITE_KEY is also set (the form does not render the widget yet, so leave both unset for now)
+NEXT_PUBLIC_TURNSTILE_SITE_KEY=Optional Cloudflare Turnstile site key (see above)
 NEXT_PUBLIC_TRACK_INFORMATION_REQUESTS=Set to false to stop logging "information" choices as requests (default on)
 RESEND_API_KEY / NOTIFY_FROM=Optional transactional email (Resend) for new-request alerts and the daily digest
-CRON_SECRET=Shared secret between the scheduled function (netlify/functions/daily-digest.mts) and /api/cron/digest
+CRON_SECRET=Shared secret between the scheduled functions (netlify/functions/daily-digest.mts, monthly-retention.mts) and /api/cron/digest, /api/cron/retention
 GITHUB_REPO / GITHUB_TOKEN / NETLIFY_API_TOKEN / NETLIFY_SITE_ID=Optional read-only content integrations (see documentation/cms-auth.md)
 ```
 

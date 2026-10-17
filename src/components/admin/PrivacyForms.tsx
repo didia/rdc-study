@@ -10,7 +10,8 @@ import {Feedback} from './Feedback';
 export function RetentionSettingsForm({months, auto}: {months: number; auto: boolean}) {
   const [state, action, pending] = useActionState(saveRetentionSettings, undefined);
   return (
-    <form action={action} className={styles.form}>
+    // The inputs are uncontrolled: remount when the saved values change so they never fall back to the previous ones.
+    <form key={`${months}:${auto}`} action={action} className={styles.form}>
       <div className={styles.field}>
         <label htmlFor="months">{t('admin.privacy.months')}</label>
         <input id="months" name="months" type="number" min={6} max={120} required defaultValue={months} className={styles.input} />
@@ -28,11 +29,10 @@ export function RetentionSettingsForm({months, auto}: {months: number; auto: boo
   );
 }
 
-export function RunRetentionForm({months, disabled}: {months: number; disabled: boolean}) {
+export function RunRetentionForm({disabled}: {disabled: boolean}) {
   const [state, action, pending] = useActionState(runRetentionNow, undefined);
   return (
     <form action={action} className={styles.form}>
-      <input type="hidden" name="months" value={months} />
       <label className={styles.checkLine}>
         <input type="checkbox" name="confirm" value="yes" required /> {t('admin.privacy.confirm')}
       </label>

@@ -5,7 +5,7 @@ import {requireStaff} from '@/lib/admin/auth';
 import {listPackages, packageLabel} from '@/lib/admin/catalogue';
 import {cmsEntryLink, readContentIndex, summarise} from '@/lib/admin/content-index';
 import {formatDate, formatDateTime, timeAgo} from '@/lib/admin/format';
-import {t} from '@/lib/admin/i18n';
+import {t, tOr} from '@/lib/admin/i18n';
 import {latestProductionDeploy, listCmsPullRequests} from '@/lib/admin/integrations';
 import {formatCents} from '@/lib/admin/money';
 import {getServicePrices} from '@/lib/prices';
@@ -14,11 +14,14 @@ import {hasRole} from '@/lib/admin/roles';
 
 const COLLECTION_LABELS: Record<string, string> = {article: 'admin.content.articles', guide: 'admin.content.guides', scholarships: 'admin.content.scholarships'};
 
+const unavailableKey = (status: 'unconfigured' | 'error' | 'empty') =>
+  ({unconfigured: 'admin.content.not-configured', error: 'admin.content.unavailable', empty: 'admin.content.no-deploy'})[status];
+
 export default async function ContentPage() {
   const {supabase, profile} = await requireStaff();
   const entries = readContentIndex();
   const summary = summarise(entries);
-  const drafts = entries.filter((e) => e.draft).sort((a, b) => b.modified.localeCompare(a.modified));
+  const drafts = entries.filter((e) => e.draft).sort((a, b) => (b.date ?? '').localeCompare(a.date ?? '') || a.title.localeCompare(b.title, 'fr'));
   const missingThumb = entries.filter((e) => e.collection !== 'guide' && !e.thumbnail && !e.draft).slice(0, 20);
   const [prs, deploy, prices] = await Promise.all([listCmsPullRequests(), latestProductionDeploy(), getServicePrices()]);
 
@@ -47,13 +50,13 @@ export default async function ContentPage() {
         ))}
         <section className={styles.card}>
           <h2>{t('admin.content.deploy')}</h2>
-          {deploy ? (
+          {deploy.status === 'ok' && deploy.data ? (
             <p>
-              <span className={styles.badge}>{deploy.state}</span>{' '}
-              <span className={styles.muted}>{deploy.publishedAt ? timeAgo(deploy.publishedAt) : ''}</span>
+              <span className={styles.badge}>{tOr(`admin.content.deploy-state.${deploy.data.state}`, deploy.data.state)}</span>{' '}
+              <span className={styles.muted}>{deploy.data.publishedAt ? timeAgo(deploy.data.publishedAt) : ''}</span>
             </p>
           ) : (
-            <p className={styles.muted}>{t('admin.content.not-configured')}</p>
+            <p className={styles.muted}>{t(unavailableKey(deploy.status === 'ok' ? 'empty' : deploy.status))}</p>
           )}
         </section>
       </div>
@@ -69,7 +72,7 @@ export default async function ContentPage() {
                 <tr>
                   <th>{t('admin.content.entry')}</th>
                   <th>{t('admin.content.type')}</th>
-                  <th>{t('admin.content.modified')}</th>
+                  <th>{t('admin.content.date')}</th>
                   <th />
                 </tr>
               </thead>
@@ -78,7 +81,7 @@ export default async function ContentPage() {
                   <tr key={`${d.collection}-${d.slug}`}>
                     <td>{d.title}</td>
                     <td>{t(COLLECTION_LABELS[d.collection])}</td>
-                    <td>{formatDate(d.modified)}</td>
+                    <td>{d.date ? formatDate(d.date) : '—'}</td>
                     <td><a href={cmsEntryLink(d.collection, d.slug)}>{t('admin.content.edit-in-cms')} ↗</a></td>
                   </tr>
                 ))}
@@ -90,13 +93,13 @@ export default async function ContentPage() {
 
       <section className={styles.card}>
         <h2>{t('admin.content.workflow')}</h2>
-        {prs === null ? (
-          <p className={styles.muted}>{t('admin.content.not-configured')}</p>
-        ) : prs.length === 0 ? (
+        {prs.status !== 'ok' ? (
+          <p className={styles.muted}>{t(unavailableKey(prs.status))}</p>
+        ) : prs.data.length === 0 ? (
           <p className={styles.muted}>{t('admin.content.no-prs')}</p>
         ) : (
           <ul className={styles.countList}>
-            {prs.map((pr) => (
+            {prs.data.map((pr) => (
               <li key={pr.number}>
                 <a href={pr.url} target="_blank" rel="noopener noreferrer">#{pr.number} {pr.title}</a>
                 <span className={styles.muted}>{pr.author} · {formatDateTime(pr.updatedAt)}</span>

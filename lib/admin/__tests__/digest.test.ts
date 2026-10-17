@@ -40,7 +40,9 @@ describe('digest', () => {
   it('builds a readable email with links, escaping client names', () => {
     const d = buildDigest([req({id: 'x', next_follow_up_at: '2026-10-19T00:00:00Z', clientName: '<b>Eve</b>'})], 'u1', 'agent', now);
     const mail = digestEmail('Agent', d, 'https://www.rdcetudes.com');
-    expect(mail.subject).toContain('1 demande');
+    expect(mail.subject).toBe("RDC Études – 1 demande à traiter aujourd'hui");
+    const two = buildDigest([req({id: 'x', next_follow_up_at: '2026-10-19T00:00:00Z'}), req({id: 'y', next_follow_up_at: '2026-10-19T00:00:00Z'})], 'u1', 'agent', now);
+    expect(digestEmail('Agent', two, 'https://www.rdcetudes.com').subject).toBe("RDC Études – 2 demandes à traiter aujourd'hui");
     expect(mail.text).toContain('https://www.rdcetudes.com/admin/demandes/x');
     expect(mail.html).toContain('&lt;b&gt;Eve&lt;/b&gt;');
     expect(mail.html).not.toContain('<b>Eve');

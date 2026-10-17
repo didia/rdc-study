@@ -4,7 +4,7 @@ import path from 'path';
 import matter from 'gray-matter';
 
 // Read-only inventory of the git-backed content (data/**), for the console's "Contenu" page.
-export type ContentEntry = {collection: 'article' | 'guide' | 'scholarships'; slug: string; title: string; draft: boolean; modified: string; thumbnail: boolean};
+export type ContentEntry = {collection: 'article' | 'guide' | 'scholarships'; slug: string; title: string; draft: boolean; date: string | null; thumbnail: boolean};
 
 const COLLECTIONS = [
   {dir: 'articles', collection: 'article' as const},
@@ -24,6 +24,12 @@ export function cmsEntryLink(collection: string, slug: string): string {
   return `/cms/#/collections/${collection}/entries/${slug}`;
 }
 
+// File mtimes are the checkout time on a deploy, not an edit time, so only the front-matter `date` (articles) is shown.
+function frontMatterDate(value: unknown): string | null {
+  const date = value instanceof Date ? value : typeof value === 'string' ? new Date(value) : null;
+  return date && !Number.isNaN(date.getTime()) ? date.toISOString() : null;
+}
+
 export function readContentIndex(root = path.join(process.cwd(), 'data')): ContentEntry[] {
   return COLLECTIONS.flatMap(({dir, collection}) =>
     walk(path.join(root, dir)).map((file) => {
@@ -34,7 +40,7 @@ export function readContentIndex(root = path.join(process.cwd(), 'data')): Conte
         slug,
         title: String(data.title ?? slug),
         draft: data.draft === true,
-        modified: fs.statSync(file).mtime.toISOString(),
+        date: frontMatterDate(data.date),
         thumbnail: Boolean(data.thumbnail),
       };
     }),
