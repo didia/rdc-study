@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(17);
+select plan(30);
 
 insert into auth.users (id, instance_id, aud, role, email) values
   ('00000000-0000-0000-0000-0000000000a9', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'm0@test.local'),
@@ -64,7 +64,54 @@ select lives_ok($$insert into public.request_events (request_id, type, body, act
 select throws_ok($$insert into public.request_events (request_id, type, body, actor_id)
   values ('20000000-0000-0000-0000-0000000000b9', 'note', 'intrusion', '00000000-0000-0000-0000-0000000000b9')$$,
   '42501', null, 'but not to someone else''s');
+-- Fields the guard locks, even without a status change
+select throws_ok($$update public.service_requests set closed_at = now() where id = '20000000-0000-0000-0000-0000000000a9'$$,
+  '42501', null, 'a mentor cannot touch closed_at');
+select throws_ok($$update public.service_requests set next_follow_up_at = null, status_reason = 'client a payé' where id = '20000000-0000-0000-0000-0000000000a9'$$,
+  '42501', null, 'nor the follow-up date or the status reason');
+select throws_ok($$update public.service_requests set status = 'completed', closed_at = '2020-01-01' where id = '20000000-0000-0000-0000-0000000000a9'$$,
+  '42501', null, 'completion cannot be backdated');
+select lives_ok($$update public.service_requests set status = 'completed', status_reason = null where id = '20000000-0000-0000-0000-0000000000a9'$$,
+  'a status move may clear the reason');
+select ok((select closed_at from public.service_requests where id = '20000000-0000-0000-0000-0000000000a9') > now() - interval '1 minute',
+  'completion is stamped by the database');
+-- The timeline: notes and checklist ticks only
+select throws_ok($$insert into public.request_events (request_id, type, actor_id, metadata)
+  values ('20000000-0000-0000-0000-0000000000a9', 'field_change', '00000000-0000-0000-0000-0000000000b9', '{"field":"agreed_price","to":100}')$$,
+  '42501', null, 'a mentor cannot forge a price change on the timeline');
+select is(public.set_delivery_checklist('20000000-0000-0000-0000-0000000000a9',
+            (select updated_at from public.service_requests where id = '20000000-0000-0000-0000-0000000000a9'),
+            '{"choose_program": {"done": false}}'::jsonb, 'choose_program', false, 'Choisir le programme'), true,
+  'a tick is saved through the checklist function');
+select is((select count(*)::int from public.request_events where request_id = '20000000-0000-0000-0000-0000000000a9'
+            and type = 'field_change' and metadata->>'field' = 'checklist'), 1, 'and logged with it');
+select is(public.set_delivery_checklist('20000000-0000-0000-0000-0000000000a9', now() - interval '1 day',
+            '{}'::jsonb, 'choose_program', true, 'Choisir le programme'), false, 'a stale tick is refused, without an event');
+select is((select count(*)::int from public.request_events where request_id = '20000000-0000-0000-0000-0000000000a9'
+            and type = 'field_change' and metadata->>'field' = 'checklist'), 1, 'no event for the refused tick');
+-- Deliverable upload through the Storage API (INSERT ... RETURNING), then cleanup of a failed registration
+create function pg_temp.upload(p_name text, p_owner uuid) returns int language plpgsql as $$
+declare n int;
+begin
+  -- INSERT ... RETURNING is how the Storage API uploads.
+  with u as (insert into storage.objects (bucket_id, name, owner) values ('request-docs', p_name, p_owner) returning name)
+    select count(*) into n from u;
+  return n;
+end;
+$$;
+select is(pg_temp.upload('request/20000000-0000-0000-0000-0000000000a9/livrable.pdf', '00000000-0000-0000-0000-0000000000b9'), 1,
+  'a mentor can upload a deliverable to their request');
+select throws_ok($$insert into storage.objects (bucket_id, name, owner)
+  values ('request-docs', 'request/20000000-0000-0000-0000-0000000000b9/intrus.pdf', '00000000-0000-0000-0000-0000000000b9')$$,
+  '42501', null, 'but not to another mentor''s request');
 reset role;
+
+select set_config('storage.allow_delete_query', 'true', true);
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000b9');
+delete from storage.objects where name = 'request/20000000-0000-0000-0000-0000000000a9/livrable.pdf';
+reset role;
+select is((select count(*)::int from storage.objects where name = 'request/20000000-0000-0000-0000-0000000000a9/livrable.pdf'), 0,
+  'a mentor can clean up their own unregistered upload');
 
 select pg_temp.act_as('00000000-0000-0000-0000-0000000000c9');
 select is((select count(*)::int from public.request_documents where request_id = '20000000-0000-0000-0000-0000000000a9'), 0, 'another mentor cannot see those documents');

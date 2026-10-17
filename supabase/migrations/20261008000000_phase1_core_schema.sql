@@ -48,10 +48,17 @@ create index clients_name_trgm on public.clients
 
 create sequence public.request_ref_seq;
 
+-- RDC-<year>-<sequence>, padded to at least 4 digits but never truncated (lpad alone would cut
+-- 10000 down to 1000 and collide). The sequence is global, so references stay unique across years.
+create function public.next_request_reference() returns text
+language sql volatile set search_path = '' as $$
+  select 'RDC-' || to_char(now(), 'YYYY') || '-' || lpad(n, greatest(4, length(n)), '0')
+    from (select nextval('public.request_ref_seq')::text as n) s
+$$;
+
 create table public.service_requests (
   id                    uuid primary key default gen_random_uuid(),
-  reference             text unique not null default
-                          'RDC-' || to_char(now(), 'YYYY') || '-' || lpad(nextval('public.request_ref_seq')::text, 4, '0'),
+  reference             text unique not null default public.next_request_reference(),
   client_id             uuid not null references public.clients (id) on delete restrict,
   service_type          text not null,
   destination_country   text,
@@ -152,11 +159,23 @@ insert into public.service_prices (service_type, scope, amount_cents) values
 -- Functions
 -- ---------------------------------------------------------------------------
 
--- Role of the caller when they are an active staff member, else null.
+-- Role of the caller when they are an active staff member, else null. A staff member who has a
+-- verified second factor only counts on an aal2 session, so a password alone (aal1) never reaches
+-- the data through the API; staff who have not enrolled yet keep working until they do. Reading
+-- one's own profile does not go through this function, which is what lets the MFA challenge page
+-- load the profile on an aal1 session.
 create function public.staff_role() returns public.staff_role
 language sql stable security definer set search_path = ''
 as $$
-  select role from public.staff_profiles where id = auth.uid() and active
+  select p.role
+    from public.staff_profiles p
+   where p.id = auth.uid() and p.active
+     and (
+       coalesce(auth.jwt() ->> 'aal', 'aal1') = 'aal2'
+       or not exists (
+         select 1 from auth.mfa_factors f where f.user_id = p.id and f.status = 'verified'
+       )
+     )
 $$;
 
 create function public.set_updated_at() returns trigger
@@ -248,6 +267,11 @@ begin
   end if;
 
   if old.role = 'admin' and old.active and demoting then
+    -- Two concurrent transactions removing two different admins would each still see the other
+    -- one as active (write skew; row locks on different rows do not help). Serialize the check
+    -- on a transaction-scoped lock: the second one waits for the first to commit, and its count
+    -- below (a fresh snapshot under READ COMMITTED) then sees the committed state.
+    perform pg_advisory_xact_lock(hashtextextended('public.staff_profiles.last_admin', 0));
     select count(*) into other_admins
       from public.staff_profiles where role = 'admin' and active and id <> old.id;
     if other_admins = 0 then
@@ -340,6 +364,7 @@ grant all on all sequences in schema public to service_role;
 grant usage on sequence public.request_ref_seq to authenticated;
 grant execute on function public.staff_role() to authenticated;
 grant execute on function public.resolve_price(text, text) to authenticated;
+grant execute on function public.next_request_reference() to authenticated, service_role;
 
 alter table public.staff_profiles        enable row level security;
 alter table public.request_statuses      enable row level security;

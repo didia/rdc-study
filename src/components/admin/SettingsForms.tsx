@@ -1,6 +1,6 @@
 'use client';
 
-import {useActionState} from 'react';
+import {useActionState, useEffect, useState} from 'react';
 
 import {saveDocumentTemplate} from '@/lib/admin/actions/documents';
 import {saveLostReason, saveTemplate, setDepositShare, setEnforceMfa, setRoundRobin} from '@/lib/admin/actions/settings';
@@ -130,10 +130,15 @@ export function DocumentTemplateForm({template}: {template: {kind: string; versi
 
 export function EnforceMfaForm({enabled, missing}: {enabled: boolean; missing: string[]}) {
   const [state, action, pending] = useActionState(setEnforceMfa, undefined);
+  const [checked, setChecked] = useState(enabled);
+  // A refused save leaves the stored value unchanged: show it again instead of the rejected choice.
+  useEffect(() => {
+    setChecked(enabled);
+  }, [state, enabled]);
   return (
     <form action={action} className={styles.form}>
       <label className={styles.checkLine}>
-        <input type="checkbox" name="enabled" defaultChecked={enabled} /> {t('admin.settings.enforce-mfa')}
+        <input type="checkbox" name="enabled" checked={checked} onChange={(e) => setChecked(e.target.checked)} /> {t('admin.settings.enforce-mfa')}
       </label>
       <p className={styles.hint}>{t('admin.settings.enforce-mfa-hint')}</p>
       {missing.length > 0 && <p className={styles.warning}>{t('admin.settings.mfa-missing', {names: missing.join(', ')})}</p>}

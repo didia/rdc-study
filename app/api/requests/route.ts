@@ -7,6 +7,7 @@ import {createSupabaseServiceClient} from '@/lib/admin/db/server';
 import {isAdminConfigured} from '@/lib/admin/env';
 import {buildSubmission, intakeSchema} from '@/lib/admin/intake';
 import {notifyNewRequest} from '@/lib/admin/notify';
+import {turnstileOk} from '@/lib/admin/turnstile';
 
 export const runtime = 'nodejs';
 
@@ -45,21 +46,6 @@ function clientKey(request: NextRequest): string {
   return createHash('sha256').update(`${ip}:${process.env.SUPABASE_SERVICE_ROLE_KEY ?? ''}`).digest('hex').slice(0, 32);
 }
 
-async function turnstileOk(token: string | undefined, request: NextRequest): Promise<boolean> {
-  const secret = process.env.TURNSTILE_SECRET_KEY;
-  if (!secret) return true; // optional hardening
-  if (!token) return false;
-  try {
-    const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
-      method: 'POST',
-      body: new URLSearchParams({secret, response: token, remoteip: request.headers.get('x-forwarded-for') ?? ''}),
-    });
-    return Boolean((await response.json()).success);
-  } catch {
-    return false;
-  }
-}
-
 // Public intake for the assistance form. Never throws to the browser: 422 on validation, 503 when storage fails
 // (the form keeps working through the legacy email path either way).
 export async function POST(request: NextRequest) {
@@ -94,7 +80,7 @@ export async function POST(request: NextRequest) {
   const built = buildSubmission(body, listPackages().map((p) => p.slug));
   if ('issues' in built) return json(request, {error: 'validation', fields: built.issues}, 422);
 
-  if (!(await turnstileOk(body.turnstileToken, request))) return json(request, {error: 'captcha'}, 422);
+  if (!(await turnstileOk(body.turnstileToken, request.headers.get('x-forwarded-for') ?? ''))) return json(request, {error: 'captcha'}, 422);
 
   try {
     const supabase = createSupabaseServiceClient();

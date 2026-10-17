@@ -3,6 +3,8 @@ import Link from 'next/link';
 import {bulkUpdate} from '@/lib/admin/actions/requests';
 import {deleteView, saveView} from '@/lib/admin/actions/views';
 import {getLostReasons} from '@/lib/admin/queries/today';
+import {bulkReasonMessage} from '@/lib/admin/status-errors';
+import {BulkSubmit} from '@/components/admin/BulkSubmit';
 import {Board, type BoardCard} from '@/components/admin/Board';
 import {SelectAll} from '@/components/admin/SelectAll';
 import {StatusBadge} from '@/components/admin/StatusBadge';
@@ -10,9 +12,9 @@ import styles from '@/components/admin/admin.module.scss';
 import {requireStaff} from '@/lib/admin/auth';
 import {formatDate, timeAgo} from '@/lib/admin/format';
 import {t} from '@/lib/admin/i18n';
-import {isStale, PAGE_SIZE, parseListParams, toQueryString} from '@/lib/admin/list-params';
-import {getStatuses, listRequests, listStaff, openLoadByAssignee, statusCounts} from '@/lib/admin/queries/requests';
+import {BOARD_PAGE_SIZE, isStale, PAGE_SIZE, parseListParams, toQueryString} from '@/lib/admin/list-params';
 import {effectivePrice, formatCents} from '@/lib/admin/money';
+import {getStatuses, listRequests, listStaff, openLoadByAssignee, statusSummary} from '@/lib/admin/queries/requests';
 import {canEdit, hasRole} from '@/lib/admin/roles';
 import {DESTINATION_COUNTRIES, ORIGIN_COUNTRIES, SERVICE_TYPES, SOURCES, serviceLabel, sourceLabel} from '@/lib/admin/vocab';
 import {packageLabel} from '@/lib/admin/catalogue';
@@ -21,14 +23,16 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
   const {supabase, user, profile} = await requireStaff();
   const rawParams = await searchParams;
   const params = parseListParams(rawParams);
+  const bulkFailed = Number(Array.isArray(rawParams.bulkFailed) ? rawParams.bulkFailed[0] : rawParams.bulkFailed) || 0;
+  const bulkReason = Array.isArray(rawParams.bulkReason) ? rawParams.bulkReason[0] : rawParams.bulkReason;
   const boardView = rawParams.vue === 'tableau';
   const editable = canEdit(profile.role);
 
-  const [statuses, staff, list, counts, lostReasons, {data: views}, load] = await Promise.all([
+  const [statuses, staff, list, {counts, oldest}, lostReasons, {data: views}, load] = await Promise.all([
     getStatuses(supabase),
     listStaff(supabase),
-    listRequests(supabase, boardView ? {...params, status: [], page: 1} : params, user.id, boardView ? 500 : undefined),
-    statusCounts(supabase, params, user.id),
+    listRequests(supabase, boardView ? {...params, status: []} : params, user.id, boardView ? BOARD_PAGE_SIZE : undefined),
+    statusSummary(supabase, params, user.id),
     getLostReasons(supabase),
     supabase.from('saved_views').select('id, name, params, shared, owner_id').order('name'),
     getStatuses(supabase).then((all) => openLoadByAssignee(supabase, all.filter((x) => x.stage === 'open').map((x) => x.code))),
@@ -40,22 +44,29 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
   const paidOf = (id: string, currency: string) => Number((paidRows ?? []).find((p) => p.request_id === id && p.currency === currency)?.net_cents ?? 0);
   const stageOf = (code: string) => statuses.find((s) => s.code === code)?.stage ?? 'open';
   const totalAll = Object.values(counts).reduce((a, b) => a + b, 0);
-  const pages = Math.max(1, Math.ceil(list.total / PAGE_SIZE));
+  const pages = Math.max(1, Math.ceil(list.total / (boardView ? BOARD_PAGE_SIZE : PAGE_SIZE)));
   const currentUrl = `/admin/demandes${toQueryString(params)}`;
 
+  // Every in-page link keeps the current view (list or board).
+  const hrefFor = (next: Partial<typeof params>) => {
+    const qs = new URLSearchParams(toQueryString(next).slice(1));
+    if (boardView) qs.set('vue', 'tableau');
+    const text = qs.toString();
+    return `/admin/demandes${text ? `?${text}` : ''}`;
+  };
   const pillHref = (code: string | null) => {
     const status = code === null ? [] : params.status.includes(code) ? params.status.filter((s) => s !== code) : [...params.status, code];
-    return `/admin/demandes${toQueryString({...params, status, page: 1})}`;
+    return hrefFor({...params, status, page: 1});
   };
   const sortHref = (key: string) =>
-    `/admin/demandes${toQueryString({...params, sort: key as any, dir: params.sort === key && params.dir === 'desc' ? 'asc' : 'desc', page: 1})}`;
+    hrefFor({...params, sort: key as any, dir: params.sort === key && params.dir === 'desc' ? 'asc' : 'desc', page: 1});
   const viewHref = (vue: 'liste' | 'tableau') => {
     const qs = new URLSearchParams(toQueryString({...params, page: 1}).slice(1));
     if (vue === 'tableau') qs.set('vue', 'tableau');
     const text = qs.toString();
     return `/admin/demandes${text ? `?${text}` : ''}`;
   };
-  const pageHref = (page: number) => `/admin/demandes${toQueryString({...params, page})}`;
+  const pageHref = (page: number) => hrefFor({...params, page});
 
   return (
     <>
@@ -150,6 +161,12 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
         </div>
       </form>
 
+      {bulkFailed > 0 && (
+        <div className={styles.alertError} role="alert">
+          {t('admin.requests.bulk.failed', {count: bulkFailed, reason: bulkReasonMessage(bulkReason)})}
+        </div>
+      )}
+
       {boardView ? (
         <Board
           columns={statuses.map((st) => ({
@@ -157,10 +174,8 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
             label: st.label_fr,
             stage: st.stage,
             color: st.color,
-            oldest: (() => {
-              const oldest = list.rows.filter((r) => r.status === st.code).map((r) => r.last_activity_at).sort()[0];
-              return oldest ? timeAgo(oldest) : null;
-            })(),
+            total: counts[st.code] ?? 0,
+            oldest: oldest[st.code] ? timeAgo(oldest[st.code]) : null,
           }))}
           cards={list.rows.map<BoardCard>((r) => ({
             id: r.id,
@@ -170,6 +185,7 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
             assignee: r.assignee?.full_name ?? null,
             status: r.status,
             lastActivityAt: r.last_activity_at,
+            updatedAt: r.updated_at,
             ageLabel: timeAgo(r.last_activity_at),
             stale: isStale(r.last_activity_at, stageOf(r.status)),
           }))}
@@ -184,12 +200,13 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
           <div className={styles.bulkBar}>
             <strong>{t('admin.requests.bulk')}</strong>
             <select name="assignee" className={styles.select} aria-label={t('admin.requests.assignee')} defaultValue="">
-              <option value="">{t('admin.requests.unassigned')}</option>
+              <option value="" disabled>{t('admin.requests.bulk.choose-assignee')}</option>
               {staff.map((s) => (
                 <option key={s.id} value={s.id}>{s.full_name}</option>
               ))}
             </select>
-            <button type="submit" name="bulk" value="assign" className={styles.buttonSecondary}>{t('admin.requests.assign')}</button>
+            <BulkSubmit value="assign">{t('admin.requests.assign')}</BulkSubmit>
+            <BulkSubmit value="unassign">{t('admin.requests.bulk.unassign')}</BulkSubmit>
             <select name="status" className={styles.select} aria-label={t('admin.requests.status.label')} defaultValue="contacted">
               {statuses.map((s) => (
                 <option key={s.code} value={s.code}>{s.label_fr}</option>
@@ -202,7 +219,7 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
               ))}
             </select>
             <input name="reason" className={styles.input} placeholder={t('admin.requests.status.reason')} />
-            <button type="submit" name="bulk" value="status" className={styles.buttonSecondary}>{t('admin.requests.status.submit')}</button>
+            <BulkSubmit value="status">{t('admin.requests.status.submit')}</BulkSubmit>
           </div>
         )}
 
@@ -225,7 +242,7 @@ export default async function RequestsPage({searchParams}: {searchParams: Promis
             <tbody>
               {list.rows.length === 0 && (
                 <tr>
-                  <td colSpan={10} className={styles.muted}>{t('admin.requests.empty')}</td>
+                  <td colSpan={(editable ? 9 : 8) + (showMoney ? 1 : 0)} className={styles.muted}>{t('admin.requests.empty')}</td>
                 </tr>
               )}
               {list.rows.map((r) => (

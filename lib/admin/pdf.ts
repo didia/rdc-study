@@ -123,8 +123,8 @@ export async function renderPdf(args: {title: string; subtitle: string; paragrap
 
   for (const paragraph of args.paragraphs) {
     const lines = wrap(paragraph, font, size, textWidth);
-    ensureRoom(lines.length * lineHeight);
     for (const line of lines) {
+      ensureRoom(lineHeight);
       page.drawText(line, {x: margin, y, size, font, color: rgb(0.12, 0.14, 0.19)});
       y -= lineHeight;
     }

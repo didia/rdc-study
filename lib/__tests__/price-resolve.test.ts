@@ -2,7 +2,7 @@ import {describe, expect, it} from 'vitest';
 
 import {AssistanceTypes} from '../../src/constants/assistance';
 import {DEFAULT_PRICES} from '../default-prices';
-import {lowestPrice, priceFor, type PriceRow} from '../price-resolve';
+import {cardPriceType, lowestPrice, priceFor, type PriceRow} from '../price-resolve';
 
 describe('priceFor (mirrors resolve_price in SQL)', () => {
   it('uses the visa price for visa packages and the default elsewhere', () => {
@@ -39,5 +39,14 @@ describe('lowestPrice', () => {
     expect(lowestPrice(DEFAULT_PRICES, 'assistance')).toEqual({cents: 40000, varies: true});
     expect(lowestPrice(DEFAULT_PRICES, 'consultation')).toEqual({cents: 3000, varies: false});
     expect(lowestPrice(DEFAULT_PRICES, 'unknown')).toBeNull();
+  });
+});
+
+describe('cardPriceType', () => {
+  it('reads the guides card from the editable guides-de-demarche row, not the locked information row', () => {
+    expect(cardPriceType('information')).toBe('guides-de-demarche');
+    expect(cardPriceType('assistance')).toBe('assistance');
+    const prices: PriceRow[] = [...DEFAULT_PRICES.filter((p) => p.service_type !== 'guides-de-demarche'), {service_type: 'guides-de-demarche', scope: '*', amount_cents: 2500}];
+    expect(lowestPrice(prices, cardPriceType('information'))).toEqual({cents: 2500, varies: false});
   });
 });

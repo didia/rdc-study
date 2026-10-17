@@ -7,6 +7,7 @@ type Supabase = Awaited<ReturnType<typeof createSupabaseServerClient>>;
 export type PaymentFilters = {from: string; to: string; method: string; kind: string; agent: string; voided: boolean; page: number};
 export const PAYMENTS_PAGE_SIZE = 50;
 
+const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const date = (v: string | undefined) => (v && /^\d{4}-\d{2}-\d{2}$/.test(v) ? v : '');
 
 export function parsePaymentFilters(raw: Record<string, string | string[] | undefined>): PaymentFilters {
@@ -17,7 +18,7 @@ export function parsePaymentFilters(raw: Record<string, string | string[] | unde
     to: date(one('to')),
     method: one('method'),
     kind: one('kind'),
-    agent: one('agent'),
+    agent: uuidPattern.test(one('agent')) ? one('agent') : '',
     voided: one('voided') === '1',
     page: Number.isFinite(page) && page > 0 ? page : 1,
   };
@@ -38,6 +39,7 @@ export async function listPayments(supabase: Supabase, f: PaymentFilters, pageSi
   if (f.agent) query = query.eq('recorded_by', f.agent);
   if (!f.voided) query = query.is('voided_at', null);
   const from = (f.page - 1) * pageSize;
-  const {data, count} = await query.range(from, from + pageSize - 1);
-  return {rows: (data ?? []) as any[], total: count ?? 0};
+  const {data, count, error} = await query.range(from, from + pageSize - 1);
+  // A page past the end is not a failure, just an empty page.
+  return {rows: (data ?? []) as any[], total: count ?? 0, error: error?.code === 'PGRST103' ? null : error};
 }

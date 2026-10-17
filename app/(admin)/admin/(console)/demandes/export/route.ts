@@ -11,6 +11,8 @@ import {serviceLabel, sourceLabel} from '@/lib/admin/vocab';
 export const dynamic = 'force-dynamic';
 
 const EXPORT_LIMIT = 5000;
+// PostgREST caps a response at `max_rows` (1 000 in supabase/config.toml), so the list is read page by page.
+const EXPORT_PAGE = 1000;
 
 // CSV of the current filtered list. Personal data leaves the system, so it is agent+ only and audit-logged.
 export async function GET(request: NextRequest) {
@@ -18,13 +20,26 @@ export async function GET(request: NextRequest) {
   if (ctx.status !== 'ok' || !canEdit(ctx.profile.role)) return new NextResponse('Forbidden', {status: 403});
 
   const params = parseListParams(Object.fromEntries(request.nextUrl.searchParams.entries()));
-  const {rows, total} = await listRequests(ctx.supabase, {...params, page: 1}, ctx.user.id, EXPORT_LIMIT);
+  const rows: Awaited<ReturnType<typeof listRequests>>['rows'] = [];
+  let total = 0;
+  for (let page = 1; ; page += 1) {
+    const result = await listRequests(ctx.supabase, {...params, page}, ctx.user.id, EXPORT_PAGE);
+    if (result.error) return new NextResponse('Export failed', {status: 500});
+    total = result.total;
+    rows.push(...result.rows);
+    if (total > EXPORT_LIMIT) return new NextResponse('Too many rows to export; narrow the filters', {status: 413});
+    if (rows.length >= total || !result.rows.length) break;
+  }
+  // Never hand out a file that looks complete but is not.
+  if (rows.length !== total) return new NextResponse('Export incomplete; try again', {status: 500});
 
-  await ctx.supabase.from('audit_events').insert({
+  // The file only leaves once its audit row is written.
+  const {error: auditError} = await ctx.supabase.from('audit_events').insert({
     actor_id: ctx.user.id,
     type: 'export_requests',
     metadata: {filters: toQueryString({...params, page: 1}), rows: rows.length, total},
   });
+  if (auditError) return new NextResponse('Export failed', {status: 500});
 
   const csv = toCsv(
     ['Référence', 'Prénom', 'Nom', 'E-mail', 'Téléphone', 'Pays d’origine', 'Service', 'Dossier', 'Destination', 'Statut', 'Responsable', 'Source', 'Reçue le', 'Dernière activité'],

@@ -7,7 +7,8 @@ supabase/
   config.toml        local stack + auth settings (mirror these in the hosted projects, see below)
   migrations/        the schema — the ONLY way production changes (never edit prod in the dashboard)
   templates/         French auth emails (invitation, password reset)
-  tests/             pgTAP tests: RLS, triggers, price resolution (`npm run db:test`)
+  tests/             pgTAP tests: RLS, MFA (aal1/aal2), triggers, price resolution (`npm run db:test`);
+                     tests/concurrency/: two-session race tests (`npm run db:test:concurrency`)
 ```
 
 ## Local development
@@ -54,8 +55,10 @@ For each project, in the Supabase dashboard (these cannot be expressed in migrat
    (French; they link to `/admin/auth/callback?token_hash=…`).
 4. **Authentication → Multi-Factor:** enable TOTP.
 5. **Authentication → Password:** minimum length 12.
-6. Region: pick the closest to the staff and note it in the privacy policy.
-7. Link and push the schema: `supabase link --project-ref <ref> && supabase db push`
+6. **Authentication → Sessions** (Pro plan only): time-box 12 hours, inactivity timeout 2 hours. `config.toml` sets these for the
+   local stack only; hosted projects ignore it. A free staging project cannot set them, so session limits are not tested there.
+7. Region: pick the closest to the staff and note it in the privacy policy.
+8. Link and push the schema: `supabase link --project-ref <ref> && supabase db push`
    (CI does this on merge once `SUPABASE_DEPLOY_ENABLED=true`, see `.github/workflows/supabase-deploy.yml`).
 
 Netlify environment variables per context: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`,
