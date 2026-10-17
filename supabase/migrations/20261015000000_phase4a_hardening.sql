@@ -37,6 +37,7 @@ begin
   return new;
 end;
 $$;
+revoke all on function public.guard_enforce_mfa() from public, anon, authenticated;
 create trigger app_settings_guard_enforce_mfa before insert or update on public.app_settings
   for each row execute function public.guard_enforce_mfa();
 
