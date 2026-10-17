@@ -30,42 +30,57 @@ export async function sendEmail(email: Email): Promise<boolean> {
   }
 }
 
-/** Email address of a staff member (lives in auth.users, service role only). */
+/** Email address of a staff member (lives in auth.users, service role only). Throws on a lookup failure. */
 export async function staffEmail(userId: string): Promise<string | null> {
-  const {data} = await createSupabaseServiceClient().auth.admin.getUserById(userId);
+  const {data, error} = await createSupabaseServiceClient().auth.admin.getUserById(userId);
+  if (error) throw error;
   return data.user?.email ?? null;
 }
 
-// After a website request is stored: tell the assigned person, or the admins who asked to be told.
+// After a website request is stored: tell the assigned person, or the opted-in admins when nobody
+// (active, opted in) is assigned. Lookup failures throw so the caller reports them; a mail failure
+// for one recipient never stops the others.
 export async function notifyNewRequest(requestId: string): Promise<void> {
   const service = createSupabaseServiceClient();
-  const {data: request} = await service
+  const {data: request, error} = await service
     .from('service_requests')
     .select('id, reference, service_type, destination_country, assigned_to, client:clients(first_name, last_name)')
     .eq('id', requestId)
     .maybeSingle();
+  if (error) throw error;
   if (!request) return;
 
-  let recipients: string[];
+  let recipients: string[] = [];
   if (request.assigned_to) {
-    const {data: person} = await service.from('staff_profiles').select('id, notify_new_request').eq('id', request.assigned_to).maybeSingle();
-    recipients = person?.notify_new_request ? [person.id] : [];
-  } else {
-    const {data: admins} = await service.from('staff_profiles').select('id').eq('role', 'admin').eq('active', true).eq('notify_new_request', true);
+    const {data: person, error: personError} = await service
+      .from('staff_profiles')
+      .select('id, active, notify_new_request')
+      .eq('id', request.assigned_to)
+      .maybeSingle();
+    if (personError) throw personError;
+    if (person?.active && person.notify_new_request) recipients = [person.id];
+  }
+  if (recipients.length === 0) {
+    const {data: admins, error: adminsError} = await service.from('staff_profiles').select('id').eq('role', 'admin').eq('active', true).eq('notify_new_request', true);
+    if (adminsError) throw adminsError;
     recipients = (admins ?? []).map((a) => a.id);
   }
 
   const client = (request as any).client;
   const mail = newRequestEmail({
     reference: request.reference,
-    clientName: `${client.first_name} ${client.last_name}`,
+    clientName: client ? `${client.first_name} ${client.last_name}` : '',
     service: serviceLabel(request.service_type),
     destination: request.destination_country,
     requestId: request.id,
     baseUrl: siteBaseUrl(),
   });
   for (const id of recipients) {
-    const to = await staffEmail(id);
-    if (to) await sendEmail({to, ...mail});
+    try {
+      const to = await staffEmail(id);
+      if (to) await sendEmail({to, ...mail});
+    } catch (error) {
+      Sentry.captureException(error, {tags: {area: 'notifications'}});
+    }
   }
 }

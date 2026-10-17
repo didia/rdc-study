@@ -6,6 +6,8 @@ export default async () => {
   const secret = process.env.CRON_SECRET;
   if (!base || !secret) return new Response('digest not configured', {status: 200});
   const response = await fetch(`${base}/api/cron/digest`, {method: 'POST', headers: {Authorization: `Bearer ${secret}`}});
+  // Only the unconfigured short-circuit above is a 200: a failing digest must turn the scheduled run red.
+  if (!response.ok) return new Response(`digest failed: upstream ${response.status}`, {status: 502});
   return new Response(`digest: ${response.status}`, {status: 200});
 };
 

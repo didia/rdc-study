@@ -10,6 +10,10 @@ export type DigestRequest = {
   clientName: string;
 };
 
+/** Roles that get the morning digest: it only lists assigned (and, for admins, unassigned) open requests. */
+export const DIGEST_ROLES = ['admin', 'agent'] as const;
+export const receivesDigest = (role: string) => (DIGEST_ROLES as readonly string[]).includes(role);
+
 export type Digest = {overdue: DigestRequest[]; unassignedNew: DigestRequest[]; waiting: DigestRequest[]};
 
 /** What one person should look at this morning. Unassigned new requests go to admins only. */
@@ -48,7 +52,7 @@ export function digestEmail(name: string, digest: Digest, baseUrl: string): {sub
     .join('');
   const total = digest.overdue.length + digest.unassignedNew.length + digest.waiting.length;
   return {
-    subject: `RDC Études – ${total} demande(s) à traiter aujourd'hui`,
+    subject: `RDC Études – ${total} ${total === 1 ? 'demande à traiter' : 'demandes à traiter'} aujourd'hui`,
     text: `Bonjour ${name},\n\n${lines.join('\n\n')}\n\nConsole : ${baseUrl}/admin`,
     html: `<p>Bonjour ${esc(name)},</p>${html}<p><a href="${baseUrl}/admin">Ouvrir la console</a></p>`,
   };
