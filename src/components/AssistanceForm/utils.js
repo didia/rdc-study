@@ -1,6 +1,7 @@
 // styles
 import styles from './styles.module.scss';
 import axios from 'axios';
+import * as Sentry from '@sentry/nextjs';
 
 export const formikFieldErrorClass = ({touched, error}) => (touched && error ? styles.error : null);
 
@@ -52,14 +53,13 @@ export const trackInformationRequest = async (intake) => {
   }
 };
 
+// Axios errors carry the request config (and its body: names, emails). Report only what is needed to triage.
 function reportError(error, tag) {
-  if (typeof window !== 'undefined' && window.Sentry) {
-    window.Sentry.captureException(error, {tags: {area: tag}});
-  }
+  const safeError = new Error(error?.message ?? String(error));
+  safeError.name = error?.name ?? 'Error';
+  Sentry.captureException(safeError, {tags: {area: tag}, extra: {status: error?.response?.status}});
 }
 
 function reportMessage(tag) {
-  if (typeof window !== 'undefined' && window.Sentry) {
-    window.Sentry.captureMessage(tag, 'warning');
-  }
+  Sentry.captureMessage(tag, 'warning');
 }

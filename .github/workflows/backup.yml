@@ -1,0 +1,66 @@
+name: Weekly backup
+
+# Logical dump of the production database + the private documents bucket, encrypted with a public key (only the
+# owner holds the private key) and copied to a private S3-compatible bucket. Disabled until BACKUP_ENABLED=true.
+# Setup and restore procedure: supabase/RESTORE.md
+
+on:
+  schedule:
+    - cron: '30 3 * * 0'
+  workflow_dispatch:
+
+jobs:
+  backup:
+    if: ${{ vars.BACKUP_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: npm
+      - run: npm ci
+
+      # The project runs Postgres 17 (supabase/config.toml); pg_dump refuses to dump a newer server than itself, and the
+      # runner's default client is older. Install the matching client from the PGDG repository and fail if it is not 17.
+      - name: Install the Postgres 17 client
+        run: |
+          sudo install -d /usr/share/postgresql-common/pgdg
+          sudo curl -fsSL -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc https://www.postgresql.org/media/keys/ACCC4CF8.asc
+          echo "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
+          sudo apt-get update && sudo apt-get install -y postgresql-client-17 gnupg
+          echo /usr/lib/postgresql/17/bin >> "$GITHUB_PATH"
+
+      - name: Dump the database
+        env:
+          BACKUP_DB_URL: ${{ secrets.BACKUP_DB_URL }}
+        run: |
+          pg_dump --version | grep -q 'pg_dump (PostgreSQL) 17' || { echo "pg_dump 17 required"; pg_dump --version; exit 1; }
+          mkdir -p backup
+          pg_dump "$BACKUP_DB_URL" --no-owner --no-privileges --schema=public --schema=auth -Fc -f backup/db.dump
+          psql "$BACKUP_DB_URL" -At -v ON_ERROR_STOP=1 -c "select count(*) from storage.objects where bucket_id = 'request-docs'" > backup/expected-objects.txt
+          echo "request-docs objects: $(cat backup/expected-objects.txt)"
+
+      - name: Copy the documents bucket
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.BACKUP_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.BACKUP_SUPABASE_SERVICE_ROLE_KEY }}
+        run: EXPECTED_OBJECT_COUNT="$(cat backup/expected-objects.txt)" node scripts/backup-storage.mjs backup/documents
+
+      - name: Encrypt (public key only)
+        env:
+          GPG_PUBLIC_KEY: ${{ secrets.BACKUP_GPG_PUBLIC_KEY }}
+          GPG_RECIPIENT: ${{ secrets.BACKUP_GPG_RECIPIENT }}
+        run: |
+          echo "$GPG_PUBLIC_KEY" | gpg --batch --import
+          tar -C backup -czf backup.tar.gz .
+          gpg --batch --yes --trust-model always --encrypt --recipient "$GPG_RECIPIENT" -o "rdcetudes-$(date +%F).tar.gz.gpg" backup.tar.gz
+
+      - name: Upload to the private bucket
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.BACKUP_S3_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.BACKUP_S3_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.BACKUP_S3_REGION }}
+          S3_BUCKET: ${{ secrets.BACKUP_S3_BUCKET }}
+          S3_ENDPOINT: ${{ secrets.BACKUP_S3_ENDPOINT }}
+        run: aws s3 cp rdcetudes-*.tar.gz.gpg "s3://$S3_BUCKET/weekly/" ${S3_ENDPOINT:+--endpoint-url "$S3_ENDPOINT"}

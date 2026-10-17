@@ -53,3 +53,53 @@ jobs:
 
       - name: pgTAP tests (RLS, triggers, prices)
         run: supabase test db
+
+  e2e:
+    name: End-to-end smoke tests (Playwright + local Supabase)
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: npm
+
+      - run: npm ci
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Start local Supabase (auth, storage, API only)
+        run: supabase start -x studio,imgproxy,realtime,edge-runtime,logflare,vector,supavisor,postgres-meta
+
+      - name: Configure the app against the local stack
+        run: |
+          supabase status -o env > /tmp/supabase.env
+          set -a; . /tmp/supabase.env; set +a
+          {
+            echo "NEXT_PUBLIC_SUPABASE_URL=$API_URL"
+            echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=$ANON_KEY"
+            echo "SUPABASE_SERVICE_ROLE_KEY=$SERVICE_ROLE_KEY"
+          } > .env.local
+          node --env-file=.env.local scripts/create-admin.mjs --email e2e-admin@example.test --name "E2E Admin" --password 'e2e-admin-password-1'
+
+      - run: npm run build
+
+      - run: npx playwright install --with-deps chromium
+
+      - run: npm run test:e2e
+        env:
+          CI: 'true'
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7
+
