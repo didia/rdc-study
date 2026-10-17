@@ -70,6 +70,7 @@ export default async function ClientDetailPage({params, searchParams}: {params: 
           </table>
         </div>
       </section>
+      {erreur === 'fichiers' && <p className={styles.alertError} role="alert">{t('admin.privacy.files-failed')}</p>}
       {client.anonymised_at && <p className={styles.alertInfo}>{t('admin.privacy.anonymised-on', {date: formatDate(client.anonymised_at)})}</p>}
       {isAdmin(profile.role) && !client.anonymised_at && (
         <section className={styles.card}>
@@ -81,6 +82,7 @@ export default async function ClientDetailPage({params, searchParams}: {params: 
           <form action={anonymiseClientAction} className={styles.form} style={{marginTop: 16}}>
             <input type="hidden" name="id" value={client.id} />
             {erreur === 'confirmation' && <p className={styles.alertError} role="alert">{t('admin.privacy.confirm-needed')}</p>}
+            {erreur === 'echec' && <p className={styles.alertError} role="alert">{t('admin.privacy.failed')}</p>}
             <label className={styles.checkLine}>
               <input type="checkbox" name="confirm" value="yes" required /> {t('admin.privacy.anonymise-confirm')}
             </label>

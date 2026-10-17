@@ -262,11 +262,16 @@ async function updateRequestDetailsImpl(formData: FormData): Promise<FormState> 
   const clientId = uuid.safeParse(formData.get('clientId'));
   if (!id.success || !clientId.success) return {error: FAILED()};
 
+  // An anonymised client's identity is final: the form does not offer it and the database refuses it.
+  const {data: clientRow} = await supabase.from('clients').select('anonymised_at').eq('id', clientId.data).maybeSingle();
+  if (!clientRow) return {error: FAILED()};
+  const locked = clientRow.anonymised_at != null;
+
   const email = blank(formData.get('email'))?.toLowerCase() ?? null;
-  if (email && !z.string().email().safeParse(email).success) return {error: t('admin.requests.invalid-email')};
+  if (!locked && email && !z.string().email().safeParse(email).success) return {error: t('admin.requests.invalid-email')};
   const firstName = blank(formData.get('firstName'));
   const lastName = blank(formData.get('lastName'));
-  if (!firstName || !lastName) return {error: t('admin.requests.name-required')};
+  if (!locked && (!firstName || !lastName)) return {error: t('admin.requests.name-required')};
   const phone = blank(formData.get('phone'));
   const origin = blank(formData.get('originCountry'));
 
@@ -291,7 +296,7 @@ async function updateRequestDetailsImpl(formData: FormData): Promise<FormState> 
   if (expected && before.updated_at !== expected) return {error: CONFLICT()};
 
   // Client first: if the email is taken nothing else has been written yet.
-  const {error: clientError} = await supabase
+  const {error: clientError} = locked ? {error: null} : await supabase
     .from('clients')
     .update({
       first_name: firstName,

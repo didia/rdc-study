@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(14);
+select plan(31);
 
 insert into auth.users (id, instance_id, aud, role, email) values
   ('00000000-0000-0000-0000-0000000000a1', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'ra@test.local'),
@@ -45,6 +45,13 @@ begin
 end;
 $$;
 
+create function pg_temp.back() returns void language plpgsql as $$
+begin
+  reset role;
+  perform set_config('request.jwt.claims', '', true);
+end;
+$$;
+
 select pg_temp.act_as('00000000-0000-0000-0000-0000000000a2');
 select throws_ok($$select public.anonymise_client('10000000-0000-0000-0000-0000000000a1')$$, '42501', null, 'an agent cannot anonymise');
 reset role;
@@ -67,6 +74,74 @@ select is((select count(*)::int from public.request_documents where request_id =
 select is((select anonymised_at is not null from public.clients where id = '10000000-0000-0000-0000-0000000000a1'), true, 'the client is marked anonymised (and leaves the candidate list)');
 select results_eq($$select step, n from public.fn_funnel('2022-01-01', '2027-01-01')$$, $$select step, n from before_funnel$$, 'dashboard funnel totals are unchanged');
 select results_eq($$select label, total, won from public.fn_conversion_by('destination', '2022-01-01', '2027-01-01')$$, $$select label, total, won from before_dest$$, 'and so are the breakdowns');
+
+-- ---------------------------------------------------------------------------
+-- Review follow-ups
+-- ---------------------------------------------------------------------------
+
+-- The deleted document waits in the queue until the file is really gone.
+select is((select count(*)::int from public.storage_delete_queue where path = 'request/20000000-0000-0000-0000-0000000000a1/p-passport.pdf'), 1,
+  'the document path is queued in the same transaction that deletes the row');
+select public.ack_storage_deletes(array['request/20000000-0000-0000-0000-0000000000a1/p-passport.pdf']);
+select is((select count(*)::int from public.storage_delete_queue where path = 'request/20000000-0000-0000-0000-0000000000a1/p-passport.pdf'), 0, 'acknowledging removes it from the queue');
+
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000a1');
+select is(public.anonymise_client('10000000-0000-0000-0000-0000000000a1'), '{}'::text[], 'anonymising twice is a no-op');
+select pg_temp.back();
+select is((select count(*)::int from public.audit_events where type = 'anonymise_client' and metadata->>'client_id' = '10000000-0000-0000-0000-0000000000a1'), 1, 'and writes one audit row');
+select is((select count(*)::int from public.audit_events where type = 'export_client' and metadata->>'client_id' = '10000000-0000-0000-0000-0000000000a1'), 1,
+  'the export recorded itself');
+
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000a2');
+select throws_ok($$select public.fn_client_export('10000000-0000-0000-0000-0000000000a3')$$, '42501', null, 'an agent cannot export a client');
+select throws_ok($$select * from public.fn_retention_candidates(24)$$, '42501', null, 'an agent cannot list retention candidates');
+select pg_temp.back();
+
+-- A closure date cannot be chosen by the user: an open request stays open for retention.
+insert into public.clients (id, first_name, last_name, email) values ('10000000-0000-0000-0000-0000000000a4', 'Forged', 'Open', 'forged@test.local');
+insert into public.service_requests (id, client_id, service_type, source, status) values
+  ('20000000-0000-0000-0000-0000000000a5', '10000000-0000-0000-0000-0000000000a4', 'assistance', 'website_form', 'new');
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000a2');
+update public.service_requests set closed_at = now() - interval '30 months' where id = '20000000-0000-0000-0000-0000000000a5';
+update public.service_requests set closed_at = now() - interval '40 months' where id = '20000000-0000-0000-0000-0000000000a2';
+select pg_temp.back();
+select is((select closed_at from public.service_requests where id = '20000000-0000-0000-0000-0000000000a5'), null, 'a closure date typed onto an open request is ignored');
+select is((select closed_at > now() - interval '3 months' from public.service_requests where id = '20000000-0000-0000-0000-0000000000a2'), true, 'and a closed request keeps its real closure date');
+select is((select count(*)::int from public.fn_retention_candidates(24) where client_id = '10000000-0000-0000-0000-0000000000a4'), 0, 'so that client is not a candidate');
+
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000a1');
+select throws_ok($$select public.anonymise_client('10000000-0000-0000-0000-0000000000a3', 'retention_24m')$$, 'P0001', null,
+  'a retention run refuses a client that has an open request');
+select pg_temp.back();
+
+-- anonymised_at is not an ordinary column.
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000a2');
+select throws_ok($$update public.clients set anonymised_at = now() where id = '10000000-0000-0000-0000-0000000000a3'$$, 'P0001', null, 'an agent cannot mark a client as anonymised');
+select throws_ok($$update public.clients set email = 'back@test.local' where id = '10000000-0000-0000-0000-0000000000a1'$$, 'P0001', null, 'nor write personal data back into an anonymised client');
+select pg_temp.back();
+
+-- A client that never had a request is not kept forever.
+insert into public.clients (id, first_name, last_name, email, created_at) values ('10000000-0000-0000-0000-0000000000a6', 'No', 'Request', 'none@test.local', now() - interval '30 months');
+select is((select count(*)::int from public.fn_retention_candidates(24) where client_id = '10000000-0000-0000-0000-0000000000a6'), 1, 'an old client with no request is a candidate');
+
+-- A merge keeps the dropped name on the audit trail; anonymising the survivor removes it. A void reason is free text too.
+insert into public.clients (id, first_name, last_name, email) values
+  ('10000000-0000-0000-0000-0000000000b1', 'Keep', 'Me', 'keep@test.local'),
+  ('10000000-0000-0000-0000-0000000000b2', 'Dropped', 'Person', 'dropped@test.local');
+insert into public.service_requests (id, client_id, service_type, source, status) values
+  ('20000000-0000-0000-0000-0000000000b1', '10000000-0000-0000-0000-0000000000b1', 'assistance', 'manual', 'new');
+insert into public.payments (id, request_id, kind, amount_cents, method, paid_at, recorded_by) values
+  ('30000000-0000-0000-0000-0000000000b1', '20000000-0000-0000-0000-0000000000b1', 'deposit', 5000, 'other', '2026-01-01', '00000000-0000-0000-0000-0000000000a1');
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000a1');
+select public.merge_clients('10000000-0000-0000-0000-0000000000b1', '10000000-0000-0000-0000-0000000000b2');
+update public.payments set voided_at = now(), void_reason = 'Called John on +243 1' where id = '30000000-0000-0000-0000-0000000000b1';
+select public.anonymise_client('10000000-0000-0000-0000-0000000000b1', 'subject_request');
+select pg_temp.back();
+select is((select count(*)::int from public.audit_events where type = 'merge_clients' and metadata->>'kept' = '10000000-0000-0000-0000-0000000000b1' and metadata ? 'dropped_name'), 0,
+  'the merged-away name leaves the audit trail');
+select is((select void_reason from public.payments where id = '30000000-0000-0000-0000-0000000000b1'), 'anonymised', 'a void reason is replaced by a placeholder');
+select is((select count(*)::int from public.request_events where request_id = '20000000-0000-0000-0000-0000000000b1' and type = 'payment' and metadata->>'action' = 'voided'), 1,
+  'and the timeline shows the one real void, not one per anonymised payment');
 
 select * from finish();
 rollback;

@@ -744,7 +744,7 @@ export type Database = {
       }
       fn_retention_candidates: {
         Args: { p_months: number }
-        Returns: { client_id: string; requests: number; last_closed_at: string }[]
+        Returns: { client_id: string; first_name: string; last_name: string; requests: number; last_closed_at: string; request_refs: string[] }[]
       }
       anonymise_client: {
         Args: { p_client: string; p_reason?: string }
@@ -753,6 +753,14 @@ export type Database = {
       fn_client_export: {
         Args: { p_client: string }
         Returns: Json
+      }
+      fn_storage_delete_queue: {
+        Args: Record<PropertyKey, never>
+        Returns: string[]
+      }
+      ack_storage_deletes: {
+        Args: { p_paths: string[] }
+        Returns: undefined
       }
       resolve_price: {
         Args: { p_package_slug?: string; p_service_type: string }

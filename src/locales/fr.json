@@ -909,6 +909,10 @@
   "admin.audit.type.export_requests": "Export des demandes",
   "admin.audit.type.export_payments": "Export des paiements",
   "admin.audit.type.export_audit": "Export du journal",
+  "admin.audit.type.retention_run": "Anonymisation mensuelle",
+  "admin.audit.type.retention_dry_run": "Simulation d'anonymisation",
+  "admin.audit.type.anonymise_client": "Client anonymisé",
+  "admin.audit.type.export_client": "Export des données d'un client",
   "admin.audit.login.login": "Connexion",
   "admin.audit.login.logout": "Déconnexion",
   "admin.audit.login.user_signedup": "Compte créé",
@@ -987,5 +991,10 @@
   "admin.privacy.export": "Exporter les données (JSON)",
   "admin.privacy.anonymise": "Anonymiser ce client",
   "admin.privacy.anonymise-confirm": "Je confirme : effacer les données personnelles et les documents de ce client (irréversible).",
-  "admin.privacy.anonymised-on": "Ce client a été anonymisé le {date}."
+  "admin.privacy.anonymised-on": "Ce client a été anonymisé le {date}.",
+  "admin.privacy.client": "Client",
+  "admin.privacy.partial": "{count} client(s) anonymisé(s), mais {failed} opération(s) ont échoué : les fichiers restants seront supprimés au prochain passage. Vérifiez le journal.",
+  "admin.privacy.failed": "L'anonymisation a échoué. Rien n'a été effacé ou l'opération est incomplète : réessayez.",
+  "admin.privacy.files-failed": "Les données du client sont effacées, mais certains fichiers n'ont pas pu être supprimés. Ils seront réessayés au prochain passage (ou relancez l'anonymisation d'un client).",
+  "admin.privacy.anonymised-locked": "Ce client est anonymisé : ses informations personnelles ne peuvent plus être modifiées."
 }
