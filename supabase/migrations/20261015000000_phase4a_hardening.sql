@@ -24,6 +24,22 @@ language sql stable security definer set search_path = '' as $$
      )
 $$;
 
+-- Turning the flag on needs a second-factor session. settings_write lets any admin write app_settings through
+-- PostgREST, so the rule cannot live only in the server action. Service-role and migration writes are not bound by it.
+create function public.guard_enforce_mfa() returns trigger
+language plpgsql set search_path = '' as $$
+begin
+  if new.key = 'enforce_mfa' and new.value = 'true'::jsonb
+     and current_user = 'authenticated'
+     and coalesce(auth.jwt() ->> 'aal', 'aal1') <> 'aal2' then
+    raise exception 'Enabling enforce_mfa requires a verified second factor session' using errcode = '42501';
+  end if;
+  return new;
+end;
+$$;
+create trigger app_settings_guard_enforce_mfa before insert or update on public.app_settings
+  for each row execute function public.guard_enforce_mfa();
+
 -- The app needs to know whether the second factor is mandatory even before the session is aal2.
 create function public.mfa_enforced() returns boolean
 language sql stable security definer set search_path = '' as $$
@@ -33,7 +49,7 @@ revoke all on function public.mfa_enforced() from public, anon;
 grant execute on function public.mfa_enforced() to authenticated;
 
 -- Sign-in activity from the auth service log (admin only).
-create function public.fn_login_events(p_from timestamptz, p_to timestamptz)
+create function public.fn_login_events(p_from timestamptz, p_to timestamptz, p_actor uuid default null)
 returns table (at timestamptz, action text, email text, ip_address text)
 language sql stable security definer set search_path = '' as $$
   select a.created_at,
@@ -43,10 +59,11 @@ language sql stable security definer set search_path = '' as $$
     from auth.audit_log_entries a
    where public.staff_role() = 'admin'
      and a.created_at >= p_from and a.created_at < p_to
+     and (p_actor is null or a.payload ->> 'actor_id' = p_actor::text)
      and a.payload ->> 'action' in ('login', 'logout', 'user_signedup', 'user_invited', 'user_recovery_requested',
                                     'user_modified', 'factor_in_progress', 'factor_unenrolled', 'user_repeated_signup')
    order by a.created_at desc
    limit 500
 $$;
-revoke all on function public.fn_login_events(timestamptz, timestamptz) from public, anon;
-grant execute on function public.fn_login_events(timestamptz, timestamptz) to authenticated;
+revoke all on function public.fn_login_events(timestamptz, timestamptz, uuid) from public, anon;
+grant execute on function public.fn_login_events(timestamptz, timestamptz, uuid) to authenticated;

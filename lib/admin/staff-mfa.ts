@@ -9,7 +9,8 @@ export async function mfaEnrolment(userIds: string[]): Promise<Record<string, bo
     const service = createSupabaseServiceClient();
     await Promise.all(
       userIds.map(async (id) => {
-        const {data} = await service.auth.admin.mfa.listFactors({userId: id});
+        const {data, error} = await service.auth.admin.mfa.listFactors({userId: id});
+        if (error) return; // lookup failed: unknown, shown as "—" rather than as "not enrolled"
         result[id] = !!data?.factors?.some((f) => f.factor_type === 'totp' && f.status === 'verified');
       }),
     );
