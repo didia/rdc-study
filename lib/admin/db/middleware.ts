@@ -9,7 +9,13 @@ const PUBLIC_PATHS = ['/admin/login', '/admin/mot-de-passe-oublie', '/admin/auth
 // Refreshes the Supabase session cookies and sends anonymous visitors to the login page.
 export async function updateSession(request: NextRequest, requestHeaders?: Headers) {
   const config = getSupabasePublicConfig();
-  const next = () => NextResponse.next({request: requestHeaders ? {headers: requestHeaders} : request});
+  const next = () => {
+    // Forward the cookies as they are now: after a token refresh `setAll` has rotated them on `request`, and the
+    // render must not authenticate with the consumed refresh token.
+    const cookie = request.headers.get('cookie');
+    if (requestHeaders && cookie) requestHeaders.set('cookie', cookie);
+    return NextResponse.next({request: requestHeaders ? {headers: requestHeaders} : request});
+  };
   let response = next();
   if (!config) return response; // pages show a "console not configured" state
 

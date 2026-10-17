@@ -674,6 +674,14 @@ export type Database = {
         Args: { p_reason: string; p_scope: string; p_service_type: string }
         Returns: undefined
       }
+      set_delivery_checklist: {
+        Args: { p_checklist: Json; p_done: boolean; p_expected_updated_at: string; p_id: string; p_key: string; p_label: string }
+        Returns: boolean
+      }
+      set_agreed_price: {
+        Args: { p_cents: number | null; p_currency: string; p_id: string; p_reason: string }
+        Returns: undefined
+      }
       set_service_price: {
         Args: { p_amount_cents: number; p_reason: string; p_scope: string; p_service_type: string }
         Returns: undefined
@@ -683,7 +691,7 @@ export type Database = {
         Returns: Json
       }
       fn_funnel: {
-        Args: { p_from: string; p_to: string }
+        Args: { p_actor?: string; p_from: string; p_to: string }
         Returns: { step: string; ord: number; n: number }[]
       }
       fn_conversion_by: {
@@ -691,15 +699,15 @@ export type Database = {
         Returns: { label: string; total: number; won: number }[]
       }
       fn_speed: {
-        Args: { p_from: string; p_to: string }
+        Args: { p_actor?: string; p_from: string; p_to: string }
         Returns: { median_hours_to_contact: number | null; contacted_count: number; median_hours_to_won: number | null; won_count: number }[]
       }
       fn_loss_analysis: {
-        Args: { p_from: string; p_to: string }
+        Args: { p_actor?: string; p_from: string; p_to: string }
         Returns: { kind: string; label: string; n: number }[]
       }
       fn_trend: {
-        Args: { p_from: string; p_grain: string; p_to: string }
+        Args: { p_from: string; p_grain: string; p_to: string; p_tz?: string }
         Returns: { period: string; n: number }[]
       }
       fn_client_duplicates: {
@@ -719,7 +727,7 @@ export type Database = {
         Returns: { currency: string; outstanding_cents: number; requests: number }[]
       }
       fn_delivery_stats: {
-        Args: { p_from: string; p_to: string }
+        Args: { p_actor?: string; p_from: string; p_to: string }
         Returns: { avg_days_deposit_to_completed: number | null; completed_count: number; refunded_share: number | null }[]
       }
       is_my_request: {
@@ -731,7 +739,7 @@ export type Database = {
         Returns: boolean
       }
       fn_login_events: {
-        Args: { p_from: string; p_to: string }
+        Args: { p_actor?: string; p_from: string; p_to: string }
         Returns: { at: string; action: string; email: string | null; ip_address: string | null }[]
       }
       fn_retention_candidates: {

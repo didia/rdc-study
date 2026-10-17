@@ -100,7 +100,7 @@ export function NewRequestForm({statuses, packages}: {statuses: StatusRow[]; pac
           <ul className={styles.matchList}>
             {state.matches.map((m) => (
               <li key={m.id}>
-                <button type="submit" name="clientId" value={m.id} className={styles.buttonSecondary}>
+                <button type="submit" name="clientId" value={m.id} className={styles.buttonSecondary} disabled={pending}>
                   {t('admin.requests.new.use-client', {name: `${m.first_name} ${m.last_name}`})}
                 </button>{' '}
                 <span className={styles.muted}>{[m.email, m.phone].filter(Boolean).join(' · ')}</span>
@@ -108,7 +108,7 @@ export function NewRequestForm({statuses, packages}: {statuses: StatusRow[]; pac
             ))}
           </ul>
           <label className={styles.checkLine}>
-            <input type="checkbox" name="forceNew" value="true" /> {t('admin.requests.new.force')}
+            <input type="checkbox" name="forceNew" value="true" disabled={pending} /> {t('admin.requests.new.force')}
           </label>
         </div>
       ) : null}

@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(8);
+select plan(11);
 
 -- Every table in public must have RLS enabled: a new table without it fails CI.
 select is((select string_agg(c.relname, ', ') from pg_class c join pg_namespace n on n.oid = c.relnamespace
@@ -38,6 +38,18 @@ $$;
 select pg_temp.act_as('00000000-0000-0000-0000-0000000000a2', 'aal1');
 select is(public.staff_role()::text, 'agent', 'without enforcement an aal1 agent is staff');
 reset role;
+
+-- An admin without a second-factor session cannot switch the flag on through the API.
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000a1', 'aal1');
+select throws_ok($$update public.app_settings set value = 'true'::jsonb where key = 'enforce_mfa'$$, '42501', null,
+  'an aal1 admin cannot turn enforce_mfa on');
+reset role;
+select is((select value from public.app_settings where key = 'enforce_mfa'), 'false'::jsonb, 'and the flag stays off');
+select pg_temp.act_as('00000000-0000-0000-0000-0000000000a1', 'aal2');
+select lives_ok($$update public.app_settings set value = 'true'::jsonb where key = 'enforce_mfa'$$,
+  'an aal2 admin can turn enforce_mfa on');
+reset role;
+update public.app_settings set value = 'false'::jsonb where key = 'enforce_mfa';
 
 update public.app_settings set value = 'true'::jsonb where key = 'enforce_mfa';
 

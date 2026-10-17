@@ -8,6 +8,8 @@ import {requireStaff} from '../auth';
 import {hasRole} from '../roles';
 import {t} from '../i18n';
 import {nextFollowUpOnStatusChange} from '../followup';
+import {STATUS_ERRORS, type StatusError} from '../status-errors';
+import {listPackages} from '../catalogue';
 import {findClientMatches} from '../queries/clients';
 import {CHANNELS, DESTINATION_COUNTRIES, MANUAL_SOURCES, normalizeCountry, normalizePhone, ORIGIN_COUNTRIES, SERVICE_TYPES} from '../vocab';
 import {submittedValues, type FormState} from '../form-state';
@@ -37,24 +39,33 @@ type StatusChangeOptions = {
   expectedUpdatedAt: string | null;
 };
 
+// 'auto' | 'none' | a snooze of 1–90 days.
+const validFollowUp = (choice: string) => choice === 'auto' || choice === 'none' || (/^\d{1,2}$/.test(choice) && Number(choice) >= 1 && Number(choice) <= 90);
+
 async function applyStatusChange(
   supabase: Awaited<ReturnType<typeof requireStaff>>['supabase'],
   id: string,
   toStatus: string,
   {reason, lostReason, followUp = 'auto', expectedUpdatedAt}: StatusChangeOptions,
-): Promise<string | null> {
+): Promise<StatusError | null> {
   const {data: statuses} = await supabase.from('request_statuses').select('code, stage');
   const stageOf = (code: string) => statuses?.find((s) => s.code === code)?.stage;
   const toStage = stageOf(toStatus);
-  if (!toStage) return t('admin.requests.status.invalid');
+  if (!toStage) return 'invalid';
 
   const {data: current} = await supabase.from('service_requests').select('status, updated_at').eq('id', id).maybeSingle();
-  if (!current) return FAILED();
+  if (!current) return 'failed';
   if (current.status === toStatus) return null;
   if (stageOf(current.status) === 'lost' && toStage !== 'lost' && !reason) {
-    return t('admin.requests.status.reopen-needs-reason');
+    return 'reopen';
   }
-  if (toStage === 'lost' && !lostReason) return t('admin.requests.status.lost-needs-reason');
+  if (toStage === 'lost') {
+    // The database enforces a reason too; this also refuses a deactivated one with a readable message.
+    if (!lostReason) return 'lost-reason';
+    const {data: reason} = await supabase.from('lost_reasons').select('code').eq('code', lostReason).eq('is_active', true).maybeSingle();
+    if (!reason) return 'lost-reason';
+  }
+  if (!validFollowUp(followUp)) return 'invalid';
 
   const patch: any = {status: toStatus, status_reason: reason};
   if (toStage === 'lost') patch.lost_reason = lostReason;
@@ -64,8 +75,8 @@ async function applyStatusChange(
   let query = supabase.from('service_requests').update(patch).eq('id', id);
   if (expectedUpdatedAt) query = query.eq('updated_at', expectedUpdatedAt);
   const {data, error} = await query.select('id');
-  if (error) return error.code === '23503' ? t('admin.requests.status.lost-needs-reason') : FAILED();
-  if (!data?.length) return CONFLICT();
+  if (error) return error.code === '23503' || error.code === '23514' ? 'lost-reason' : 'failed';
+  if (!data?.length) return 'conflict';
   return null;
 }
 
@@ -82,7 +93,7 @@ async function changeStatusImpl(formData: FormData): Promise<FormState> {
     expectedUpdatedAt: blank(formData.get('updatedAt')),
   });
   revalidate(id.data);
-  return error ? {error} : {success: t('admin.requests.status.changed')};
+  return error ? {error: STATUS_ERRORS[error]()} : {success: t('admin.requests.status.changed')};
 }
 
 export async function changeStatus(_prev: FormState, formData: FormData): Promise<FormState> {
@@ -90,18 +101,25 @@ export async function changeStatus(_prev: FormState, formData: FormData): Promis
   return result?.error ? {...result, values: submittedValues(formData)} : result;
 }
 
-// Board drag & drop and keyboard moves: same rules and same history as the status dialog.
-export async function moveRequestStatus(input: {id: string; status: string; lostReason?: string | null}): Promise<{error?: string}> {
+// Board drag & drop and keyboard moves: same rules and same history as the status dialog. The card's
+// `updatedAt` is required, so a stale board is refused (conflict) instead of overwriting a newer change.
+export async function moveRequestStatus(input: {
+  id: string;
+  status: string;
+  updatedAt: string;
+  lostReason?: string | null;
+  reason?: string | null;
+}): Promise<{error?: string}> {
   const {supabase} = await requireStaff('agent');
   const id = uuid.safeParse(input.id);
-  if (!id.success || !input.status) return {error: FAILED()};
+  if (!id.success || !input.status || !input.updatedAt) return {error: FAILED()};
   const error = await applyStatusChange(supabase, id.data, input.status, {
-    reason: null,
+    reason: blank(input.reason),
     lostReason: input.lostReason ?? null,
-    expectedUpdatedAt: null,
+    expectedUpdatedAt: input.updatedAt,
   });
   revalidate(id.data);
-  return error ? {error} : {};
+  return error ? {error: STATUS_ERRORS[error]()} : {};
 }
 
 export async function assignRequest(_prev: FormState, formData: FormData): Promise<FormState> {
@@ -125,27 +143,48 @@ export async function bulkUpdate(formData: FormData) {
   const ids = formData.getAll('ids').map(String).filter((v) => uuid.safeParse(v).success);
   const action = String(formData.get('bulk'));
   const back = String(formData.get('back') ?? '/admin/demandes');
-  if (!ids.length) redirect(back);
+  const target = back.startsWith('/admin/demandes') ? back : '/admin/demandes';
+  if (!ids.length) redirect(target);
 
-  // One update per row so the triggers log every event with its own actor.
-  for (const id of ids) {
-    if (action === 'assign') {
-      const assignee = blank(formData.get('assignee'));
-      if (assignee && !uuid.safeParse(assignee).success) continue;
-      await supabase.from('service_requests').update({assigned_to: assignee}).eq('id', id);
-    } else if (action === 'status') {
-      const toStatus = String(formData.get('status') ?? '');
-      if (toStatus) {
-        await applyStatusChange(supabase, id, toStatus, {
+  const assignee = blank(formData.get('assignee'));
+  const toStatus = String(formData.get('status') ?? '');
+  // Refuse an action that has nothing to apply rather than silently clearing or skipping rows.
+  const invalid =
+    (action === 'assign' && !(assignee && uuid.safeParse(assignee).success)) ||
+    (action === 'status' && !toStatus) ||
+    !['assign', 'unassign', 'status'].includes(action);
+
+  const failures: {id: string; code: string}[] = [];
+  if (invalid) {
+    failures.push(...ids.map((id) => ({id, code: 'failed'})));
+  } else {
+    // One update per row so the triggers log every event with its own actor.
+    for (const id of ids) {
+      if (action === 'assign' || action === 'unassign') {
+        const {data, error} = await supabase
+          .from('service_requests')
+          .update({assigned_to: action === 'assign' ? assignee : null})
+          .eq('id', id)
+          .select('id');
+        if (error || !data?.length) failures.push({id, code: 'failed'});
+      } else {
+        const code = await applyStatusChange(supabase, id, toStatus, {
           reason: blank(formData.get('reason')),
           lostReason: blank(formData.get('lostReason')),
           expectedUpdatedAt: null,
         });
+        if (code) failures.push({id, code});
       }
     }
   }
   revalidate();
-  redirect(back.startsWith('/admin/demandes') ? back : '/admin/demandes');
+  if (failures.length) {
+    const url = new URL(target, 'http://local');
+    url.searchParams.set('bulkFailed', String(failures.length));
+    url.searchParams.set('bulkReason', failures[0].code);
+    redirect(`${url.pathname}${url.search}`);
+  }
+  redirect(target);
 }
 
 // ---------------------------------------------------------------------------
@@ -190,18 +229,25 @@ export async function toggleDispute(_prev: FormState, formData: FormData): Promi
   const id = uuid.safeParse(formData.get('id'));
   if (!id.success) return {error: FAILED()};
   const next = formData.get('hasDispute') === 'true';
-  const {error} = await supabase.from('service_requests').update({has_dispute: next}).eq('id', id.data);
-  if (!error) {
-    await supabase.from('request_events').insert({
-      request_id: id.data,
-      type: 'field_change',
-      body: next ? t('admin.requests.dispute.on') : t('admin.requests.dispute.off'),
-      metadata: {field: 'has_dispute', to: next},
-      actor_id: user.id,
-    });
-  }
+
+  let update = supabase.from('service_requests').update({has_dispute: next}).eq('id', id.data);
+  const updatedAt = blank(formData.get('updatedAt'));
+  if (updatedAt) update = update.eq('updated_at', updatedAt);
+  const {data, error} = await update.select('id');
   revalidate(id.data);
-  return error ? {error: FAILED()} : undefined;
+  if (error) return {error: FAILED()};
+  if (!data?.length) return {error: CONFLICT()};
+
+  const {error: eventError} = await supabase.from('request_events').insert({
+    request_id: id.data,
+    type: 'field_change',
+    body: next ? t('admin.requests.dispute.on') : t('admin.requests.dispute.off'),
+    metadata: {field: 'has_dispute', to: next},
+    actor_id: user.id,
+  });
+  // The flag is already changed; say so rather than pretending the click did nothing.
+  if (eventError) return {error: t('admin.requests.dispute.audit-failed')};
+  return {success: next ? t('admin.requests.dispute.on') : t('admin.requests.dispute.off')};
 }
 
 // ---------------------------------------------------------------------------
@@ -234,18 +280,17 @@ async function updateRequestDetailsImpl(formData: FormData): Promise<FormState> 
 
   const {data: before} = await supabase
     .from('service_requests')
-    .select('service_type, destination_country, package_slug, updated_at')
+    .select('client_id, service_type, destination_country, package_slug, updated_at')
     .eq('id', id.data)
     .maybeSingle();
   if (!before) return {error: FAILED()};
+  // The client being edited must be the request's own client, never whatever id the browser sent.
+  if (before.client_id !== clientId.data) return {error: FAILED()};
 
   const expected = blank(formData.get('updatedAt'));
-  let update = supabase.from('service_requests').update(requestPatch).eq('id', id.data);
-  if (expected) update = update.eq('updated_at', expected);
-  const {data: updated, error} = await update.select('id');
-  if (error) return {error: FAILED()};
-  if (!updated?.length) return {error: CONFLICT()};
+  if (expected && before.updated_at !== expected) return {error: CONFLICT()};
 
+  // Client first: if the email is taken nothing else has been written yet.
   const {error: clientError} = await supabase
     .from('clients')
     .update({
@@ -262,15 +307,26 @@ async function updateRequestDetailsImpl(formData: FormData): Promise<FormState> 
     return {error: clientError.code === '23505' ? t('admin.requests.email-taken') : FAILED()};
   }
 
+  // Any edit counts as activity (the stale marker must clear even when only client fields or the reason changed).
+  let update = supabase
+    .from('service_requests')
+    .update({...requestPatch, last_activity_at: new Date().toISOString()})
+    .eq('id', id.data);
+  if (expected) update = update.eq('updated_at', expected);
+  const {data: updated, error} = await update.select('id');
+  if (error) return {error: FAILED()};
+  if (!updated?.length) return {error: CONFLICT()};
+
   for (const field of TRACKED) {
     if ((before as any)[field] !== (requestPatch as any)[field]) {
-      await supabase.from('request_events').insert({
+      const {error: eventError} = await supabase.from('request_events').insert({
         request_id: id.data,
         type: 'field_change',
         body: null,
         metadata: {field, from: (before as any)[field], to: (requestPatch as any)[field]},
         actor_id: user.id,
       });
+      if (eventError) return {error: t('admin.requests.audit-failed')};
     }
   }
   revalidate(id.data);
@@ -294,10 +350,17 @@ async function createRequestImpl(formData: FormData): Promise<NewRequestState> {
   const serviceType = String(formData.get('serviceType') ?? '');
   const source = String(formData.get('source') ?? '');
   const initialStatus = String(formData.get('status') ?? 'new');
+  const packageSlug = blank(formData.get('packageSlug'));
   if (!SERVICE_TYPES.some((s) => s.code === serviceType)) return {error: t('admin.requests.new.invalid')};
   if (!MANUAL_SOURCES.some((s) => s.code === source)) return {error: t('admin.requests.new.invalid')};
+  if (packageSlug && !listPackages().some((p) => p.slug === packageSlug)) return {error: t('admin.requests.new.invalid')};
+
+  // A hand-entered request must start in an open, active status (never already won or lost).
+  const {data: statusRow} = await supabase.from('request_statuses').select('stage, is_active').eq('code', initialStatus).maybeSingle();
+  if (!statusRow || statusRow.stage !== 'open' || !statusRow.is_active) return {error: t('admin.requests.new.invalid')};
 
   let clientId = blank(formData.get('clientId'));
+  let createdClientId: string | null = null;
   if (clientId && !uuid.safeParse(clientId).success) return {error: t('admin.requests.new.invalid')};
 
   if (!clientId) {
@@ -332,11 +395,20 @@ async function createRequestImpl(formData: FormData): Promise<NewRequestState> {
       return {error: error?.code === '23505' ? t('admin.requests.email-taken') : FAILED()};
     }
     clientId = client.id;
+    createdClientId = client.id;
   }
 
-  const packageSlug = blank(formData.get('packageSlug'));
+  // Best effort: do not leave behind a client the agent did not mean to keep.
+  const discardCreatedClient = async () => {
+    if (createdClientId) await supabase.from('clients').delete().eq('id', createdClientId);
+  };
+
   // The price the client would be quoted today (never taken from the browser).
-  const {data: quoted} = await supabase.rpc('resolve_price', {p_service_type: serviceType, p_package_slug: packageSlug ?? undefined});
+  const {data: quoted, error: priceError} = await supabase.rpc('resolve_price', {p_service_type: serviceType, p_package_slug: packageSlug ?? undefined});
+  if (priceError) {
+    await discardCreatedClient();
+    return {error: FAILED()};
+  }
 
   const {data: request, error} = await supabase
     .from('service_requests')
@@ -351,7 +423,10 @@ async function createRequestImpl(formData: FormData): Promise<NewRequestState> {
     })
     .select('id')
     .single();
-  if (error || !request) return {error: FAILED()};
+  if (error || !request) {
+    await discardCreatedClient();
+    return {error: FAILED()};
+  }
 
   const note = blank(formData.get('note'));
   if (note) {

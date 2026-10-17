@@ -8,3 +8,6 @@ export function t(key: string, values?: Record<string, string | number>): string
   if (!values) return template;
   return template.replace(/\{(\w+)\}/g, (_, name) => String(values[name] ?? `{${name}}`));
 }
+
+/** Translation when the key exists, otherwise the given fallback (e.g. a raw value from an external API). */
+export const tOr = (key: string, fallback: string): string => dictionary[key] ?? fallback;

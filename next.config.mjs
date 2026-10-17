@@ -1,4 +1,4 @@
-import {withSentryConfig} from '@sentry/nextjs';
+import {withSentryConfig} from '@sentry/nextjs/config';
 import path from 'path';
 
 /** @type {import('next').NextConfig} */
@@ -12,7 +12,7 @@ const nextConfig = {
   },
 
   sassOptions: {
-    includePaths: [
+    loadPaths: [
       path.join(process.cwd(), 'src/assets/styles'),
       'node_modules',
     ],
@@ -21,6 +21,8 @@ const nextConfig = {
 
   images: {
     formats: ['image/avif', 'image/webp'],
+    // Default is 60s, which makes the optimizer re-process images for every crawler visit.
+    minimumCacheTTL: 60 * 60 * 24 * 30,
   },
 
   async headers() {

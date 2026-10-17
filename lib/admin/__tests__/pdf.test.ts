@@ -1,3 +1,5 @@
+import {inflateSync} from 'node:zlib';
+
 import {describe, expect, it} from 'vitest';
 
 import {contractVariables, documentParagraphs, receiptVariables, renderPdf, sanitizeForPdf} from '../pdf';
@@ -62,6 +64,27 @@ describe('renderPdf', () => {
     const bytes = await renderPdf({title: 'Contrat de service', subtitle: 'RDC-2026-0002', paragraphs: long, footer: 'RDC Études'});
     expect(Buffer.from(bytes.slice(0, 5)).toString()).toBe('%PDF-');
     expect(Buffer.from(bytes).toString('latin1')).toMatch(/\/Count [2-9]/);
+  });
+
+  it('continues a paragraph that is longer than a page onto the next pages', async () => {
+    const words = Array.from({length: 1300}, (_, i) => `w${String(i).padStart(4, '0')}`);
+    const bytes = await renderPdf({title: 'Contrat', subtitle: 'REF', paragraphs: [words.join(' ')], footer: 'RDC'});
+    const raw = Buffer.from(bytes).toString('latin1');
+    expect(raw).toMatch(/\/Count [3-9]/);
+    // Text is drawn as hex strings in Flate streams: decode them and make sure no word was drawn off-page or dropped.
+    let text = '';
+    for (const m of raw.matchAll(/stream\r?\n([\s\S]*?)\r?\nendstream/g)) {
+      let content: string;
+      try {
+        content = inflateSync(Buffer.from(m[1], 'latin1')).toString('latin1');
+      } catch {
+        continue;
+      }
+      for (const h of content.matchAll(/<([0-9a-fA-F]+)>\s*Tj/g)) text += Buffer.from(h[1], 'hex').toString('latin1') + ' ';
+      const ys = [...content.matchAll(/1 0 0 1 [\d.]+ (-?[\d.]+) Tm/g)].map((y) => Number(y[1]));
+      expect(ys.every((y) => y > 0)).toBe(true);
+    }
+    for (const w of words) expect(text).toContain(w);
   });
 
   it('survives characters the standard fonts cannot draw', () => {

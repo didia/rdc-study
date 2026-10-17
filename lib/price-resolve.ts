@@ -23,3 +23,12 @@ export function lowestPrice(prices: PriceRow[], serviceType: string): {cents: nu
   const cents = Math.min(...amounts);
   return {cents, varies: amounts.some((a) => a !== cents)};
 }
+
+// The guides card on the site (data/services/guides-de-demarche.md, slug `information`) has its own editable row,
+// separate from the locked `information` choice of the form.
+const CARD_PRICE_TYPES: Record<string, string> = {information: 'guides-de-demarche'};
+
+/** The `service_prices.service_type` behind a service card on the public site. */
+export function cardPriceType(serviceSlug: string): string {
+  return CARD_PRICE_TYPES[serviceSlug] ?? serviceSlug;
+}
