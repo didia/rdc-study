@@ -166,48 +166,55 @@ export function DisputeToggle({id, hasDispute, updatedAt}: {id: string; hasDispu
 
 type EditProps = {
   request: {id: string; updated_at: string; service_type: string; destination_country: string | null; package_slug: string | null; status_reason: string | null};
-  client: {id: string; first_name: string; last_name: string; email: string | null; phone: string | null; origin_country: string | null; address: string | null};
+  client: {id: string; first_name: string; last_name: string; email: string | null; phone: string | null; origin_country: string | null; address: string | null; anonymised_at: string | null};
   packages: {slug: string; label: string}[];
 };
 
 export function EditDetailsForm({request, client, packages}: EditProps) {
   const [state, action, pending] = useActionState(updateRequestDetails, undefined);
   const v = (name: string, fallback: string | null) => state?.values?.[name] ?? fallback ?? '';
+  const locked = client.anonymised_at != null;
   return (
     <form key={state?.values ? JSON.stringify(state.values) : 'edit'} action={action} className={styles.form}>
       <input type="hidden" name="id" value={request.id} />
       <input type="hidden" name="clientId" value={client.id} />
       <input type="hidden" name="updatedAt" value={request.updated_at} />
       <div className={styles.inlineForm}>
-        <div className={styles.field}>
-          <label htmlFor="firstName">{t('admin.clients.first-name')}</label>
-          <input id="firstName" name="firstName" defaultValue={v('firstName', client.first_name)} required className={styles.input} />
-        </div>
-        <div className={styles.field}>
-          <label htmlFor="lastName">{t('admin.clients.last-name')}</label>
-          <input id="lastName" name="lastName" defaultValue={v('lastName', client.last_name)} required className={styles.input} />
-        </div>
-        <div className={styles.field}>
-          <label htmlFor="email">{t('admin.auth.email')}</label>
-          <input id="email" name="email" type="email" defaultValue={v('email', client.email)} className={styles.input} />
-        </div>
-        <div className={styles.field}>
-          <label htmlFor="phone">{t('admin.clients.phone')}</label>
-          <input id="phone" name="phone" defaultValue={v('phone', client.phone)} className={styles.input} />
-        </div>
-        <div className={styles.field}>
-          <label htmlFor="address">{t('admin.clients.address')}</label>
-          <input id="address" name="address" defaultValue={v('address', client.address)} className={styles.input} />
-        </div>
-        <div className={styles.field}>
-          <label htmlFor="originCountry">{t('admin.clients.origin')}</label>
-          <select id="originCountry" name="originCountry" defaultValue={v('originCountry', client.origin_country)} className={styles.select}>
-            <option value="">—</option>
-            {withCurrent(ORIGIN_COUNTRIES, client.origin_country).map((c) => (
-              <option key={c} value={c}>{c}</option>
-            ))}
-          </select>
-        </div>
+        {locked ? (
+          <p className={styles.muted}>{t('admin.privacy.anonymised-locked')}</p>
+        ) : (
+          <>
+            <div className={styles.field}>
+              <label htmlFor="firstName">{t('admin.clients.first-name')}</label>
+              <input id="firstName" name="firstName" defaultValue={v('firstName', client.first_name)} required className={styles.input} />
+            </div>
+            <div className={styles.field}>
+              <label htmlFor="lastName">{t('admin.clients.last-name')}</label>
+              <input id="lastName" name="lastName" defaultValue={v('lastName', client.last_name)} required className={styles.input} />
+            </div>
+            <div className={styles.field}>
+              <label htmlFor="email">{t('admin.auth.email')}</label>
+              <input id="email" name="email" type="email" defaultValue={v('email', client.email)} className={styles.input} />
+            </div>
+            <div className={styles.field}>
+              <label htmlFor="phone">{t('admin.clients.phone')}</label>
+              <input id="phone" name="phone" defaultValue={v('phone', client.phone)} className={styles.input} />
+            </div>
+            <div className={styles.field}>
+              <label htmlFor="address">{t('admin.clients.address')}</label>
+              <input id="address" name="address" defaultValue={v('address', client.address)} className={styles.input} />
+            </div>
+            <div className={styles.field}>
+              <label htmlFor="originCountry">{t('admin.clients.origin')}</label>
+              <select id="originCountry" name="originCountry" defaultValue={v('originCountry', client.origin_country)} className={styles.select}>
+                <option value="">—</option>
+                {withCurrent(ORIGIN_COUNTRIES, client.origin_country).map((c) => (
+                  <option key={c} value={c}>{c}</option>
+                ))}
+              </select>
+            </div>
+          </>
+        )}
         <div className={styles.field}>
           <label htmlFor="serviceType">{t('admin.requests.service')}</label>
           <select id="serviceType" name="serviceType" defaultValue={v('serviceType', request.service_type)} className={styles.select}>

@@ -48,6 +48,7 @@ export type Database = {
           preferred_channel: string | null
           updated_at: string
           address: string | null
+          anonymised_at: string | null
         }
         Insert: {
           created_at?: string
@@ -62,6 +63,7 @@ export type Database = {
           preferred_channel?: string | null
           updated_at?: string
           address?: string | null
+          anonymised_at?: string | null
         }
         Update: {
           created_at?: string
@@ -76,6 +78,7 @@ export type Database = {
           preferred_channel?: string | null
           updated_at?: string
           address?: string | null
+          anonymised_at?: string | null
         }
         Relationships: []
       }
@@ -738,6 +741,26 @@ export type Database = {
       fn_login_events: {
         Args: { p_actor?: string; p_from: string; p_to: string }
         Returns: { at: string; action: string; email: string | null; ip_address: string | null }[]
+      }
+      fn_retention_candidates: {
+        Args: { p_months: number }
+        Returns: { client_id: string; first_name: string; last_name: string; requests: number; last_closed_at: string; request_refs: string[] }[]
+      }
+      anonymise_client: {
+        Args: { p_client: string; p_reason?: string }
+        Returns: string[]
+      }
+      fn_client_export: {
+        Args: { p_client: string }
+        Returns: Json
+      }
+      fn_storage_delete_queue: {
+        Args: Record<PropertyKey, never>
+        Returns: string[]
+      }
+      ack_storage_deletes: {
+        Args: { p_paths: string[] }
+        Returns: undefined
       }
       resolve_price: {
         Args: { p_package_slug?: string; p_service_type: string }
