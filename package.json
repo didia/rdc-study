@@ -58,6 +58,7 @@
     "zustand": "^5.0.15"
   },
   "devDependencies": {
+    "@netlify/functions": "^6.0.2",
     "@netlify/plugin-nextjs": "^5.16.2",
     "@types/node": "^26.6.4",
     "@types/react": "^19.3.0",

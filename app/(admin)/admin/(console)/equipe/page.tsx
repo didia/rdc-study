@@ -2,13 +2,15 @@ import {InviteStaffForm} from '@/components/admin/InviteStaffForm';
 import {StaffActiveForm, StaffRoleForm} from '@/components/admin/StaffRowForms';
 import {requireStaff} from '@/lib/admin/auth';
 import {mfaEnrolment} from '@/lib/admin/staff-mfa';
-import {t} from '@/lib/admin/i18n';
+import {listCmsCollaborators} from '@/lib/admin/integrations';
+import {t, tOr} from '@/lib/admin/i18n';
 import styles from '@/components/admin/admin.module.scss';
 
 export default async function TeamPage() {
   const {supabase, user} = await requireStaff('admin');
   const {data: staff} = await supabase.from('staff_profiles').select('*').order('created_at');
   const mfa = await mfaEnrolment((staff ?? []).map((m) => m.id));
+  const cms = await listCmsCollaborators();
 
   return (
     <>
@@ -49,6 +51,21 @@ export default async function TeamPage() {
             </tbody>
           </table>
         </div>
+      </section>
+      <section className={styles.card}>
+        <h2>{t('admin.staff.cms-access')}</h2>
+        {cms.status !== 'ok' ? (
+          <p className={styles.muted}>{t(cms.status === 'error' ? 'admin.content.unavailable' : 'admin.content.not-configured')}</p>
+        ) : (
+          <ul className={styles.countList}>
+            {cms.data.map((c) => (
+              <li key={c.login}>
+                <span>{c.login}</span>
+                <span className={styles.muted}>{tOr(`admin.content.github-role.${c.permission}`, c.permission)}</span>
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
     </>
   );

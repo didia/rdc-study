@@ -626,6 +626,8 @@ export type Database = {
           id: string
           role: Database["public"]["Enums"]["staff_role"]
           whatsapp: string | null
+          notify_new_request: boolean
+          notify_digest: boolean
         }
         Insert: {
           active?: boolean
@@ -634,6 +636,8 @@ export type Database = {
           id: string
           role?: Database["public"]["Enums"]["staff_role"]
           whatsapp?: string | null
+          notify_new_request?: boolean
+          notify_digest?: boolean
         }
         Update: {
           active?: boolean
@@ -642,6 +646,8 @@ export type Database = {
           id?: string
           role?: Database["public"]["Enums"]["staff_role"]
           whatsapp?: string | null
+          notify_new_request?: boolean
+          notify_digest?: boolean
         }
         Relationships: []
       }
