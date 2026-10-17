@@ -682,7 +682,7 @@ export type Database = {
         Returns: Json
       }
       fn_funnel: {
-        Args: { p_from: string; p_to: string }
+        Args: { p_actor?: string; p_from: string; p_to: string }
         Returns: { step: string; ord: number; n: number }[]
       }
       fn_conversion_by: {
@@ -690,11 +690,11 @@ export type Database = {
         Returns: { label: string; total: number; won: number }[]
       }
       fn_speed: {
-        Args: { p_from: string; p_to: string }
+        Args: { p_actor?: string; p_from: string; p_to: string }
         Returns: { median_hours_to_contact: number | null; contacted_count: number; median_hours_to_won: number | null; won_count: number }[]
       }
       fn_loss_analysis: {
-        Args: { p_from: string; p_to: string }
+        Args: { p_actor?: string; p_from: string; p_to: string }
         Returns: { kind: string; label: string; n: number }[]
       }
       fn_trend: {
@@ -718,12 +718,20 @@ export type Database = {
         Returns: { currency: string; outstanding_cents: number; requests: number }[]
       }
       fn_delivery_stats: {
-        Args: { p_from: string; p_to: string }
+        Args: { p_actor?: string; p_from: string; p_to: string }
         Returns: { avg_days_deposit_to_completed: number | null; completed_count: number; refunded_share: number | null }[]
       }
       is_my_request: {
         Args: { p_request_id: string }
         Returns: boolean
+      }
+      mfa_enforced: {
+        Args: never
+        Returns: boolean
+      }
+      fn_login_events: {
+        Args: { p_actor?: string; p_from: string; p_to: string }
+        Returns: { at: string; action: string; email: string | null; ip_address: string | null }[]
       }
       resolve_price: {
         Args: { p_package_slug?: string; p_service_type: string }

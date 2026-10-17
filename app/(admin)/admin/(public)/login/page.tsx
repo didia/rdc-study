@@ -14,6 +14,7 @@ export default async function LoginPage({searchParams}: {searchParams: Promise<{
 
   if (ctx.status === 'ok') redirect(target);
   if (ctx.status === 'mfa_required') redirect('/admin/mfa');
+  if (ctx.status === 'mfa_setup_required') redirect('/admin/securite?obligatoire=1');
   if (ctx.status === 'forbidden') redirect('/admin/acces-refuse');
 
   return (

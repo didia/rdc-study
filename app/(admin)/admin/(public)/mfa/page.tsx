@@ -10,6 +10,7 @@ export default async function MfaPage({searchParams}: {searchParams: Promise<{ne
   const {next} = await searchParams;
   const ctx = await getStaffContext();
   if (ctx.status === 'ok') redirect(safeAdminPath(next));
+  if (ctx.status === 'mfa_setup_required') redirect('/admin/securite?obligatoire=1');
   if (ctx.status !== 'mfa_required') redirect('/admin/login');
 
   return (
