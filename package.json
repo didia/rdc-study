@@ -46,7 +46,7 @@
     "sass": "^1.105.1",
     "unified": "^11.0.5",
     "zod": "^4.6.5",
-    "zustand": "^5.0.15"
+    "zustand": "^5.0.16"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.16.2",
