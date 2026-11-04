@@ -17,6 +17,9 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
     // Default is 60s, which makes the optimizer re-process images for every crawler visit.
     minimumCacheTTL: 60 * 60 * 24 * 30,
+    // The default list goes up to 3840px, and the largest entry becomes the plain `src`
+    // that crawlers and no-srcset clients download. Nothing on the site renders wider than ~1200px.
+    deviceSizes: [640, 828, 1080, 1200, 1920],
   },
 
   async redirects() {
