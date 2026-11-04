@@ -33,7 +33,7 @@
     "prismjs": "^1.30.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.0",
-    "react-hook-form": "^7.89.0",
+    "react-hook-form": "^7.91.0",
     "react-intl": "^12.1.4",
     "react-share": "^5.3.0",
     "react-transition-group": "^4.4.5",
